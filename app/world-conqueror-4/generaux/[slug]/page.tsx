@@ -8,11 +8,21 @@ import {
   getGeneral,
   getAllGenerals,
   getEliteUnit,
+  getCandidatesForGeneralSlot,
   GENERAL_CATEGORY_META,
   COUNTRY_FLAGS,
   FACTION_META,
 } from "@/lib/units";
-import type { Metadata } from "next";
+import type {
+  Metadata,
+} from "next";
+import type {
+  AttributeKey,
+  AttributeValue,
+  GeneralQuality,
+  GeneralSkill,
+  TrainingStage,
+} from "@/lib/types";
 
 export function generateStaticParams() {
   return getAllGeneralSlugs().map((slug) => ({ slug }));
@@ -22,10 +32,29 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const g = getGeneral(params.slug);
   if (!g) return { title: "Général introuvable" };
   return {
-    title: `${g.name} (WC4) — Compétences, bonus & unités recommandées | Wiki FR`,
-    description: `Fiche complète du général ${g.name} dans World Conqueror 4 : ${g.shortDesc} Skills, bonus, meilleures unités à coupler.`,
+    title: `${g.name} (WC4) — Compétences, attributs & guide | Wiki FR`,
+    description: `Fiche complète du général ${g.name} dans World Conqueror 4 : ${g.shortDesc} Attributs, skills, training, unités recommandées.`,
   };
 }
+
+const QUALITY_META: Record<
+  GeneralQuality,
+  { label: string; icon: string; color: string; slots: number }
+> = {
+  bronze:  { label: "Bronze",  icon: "🥉", color: "#cd7f32", slots: 3 },
+  silver:  { label: "Silver",  icon: "🥈", color: "#c0c0c0", slots: 4 },
+  gold:    { label: "Gold",    icon: "🥇", color: "#d4a44a", slots: 5 },
+  marshal: { label: "Marshal", icon: "⭐", color: "#ff6b6b", slots: 5 },
+};
+
+const ATTR_LABELS: { key: AttributeKey; label: string; icon: string }[] = [
+  { key: "infantry",  label: "Infanterie", icon: "🪖" },
+  { key: "artillery", label: "Artillerie", icon: "🎯" },
+  { key: "armor",     label: "Blindé",     icon: "🛡" },
+  { key: "navy",      label: "Marine",     icon: "⚓" },
+  { key: "airforce",  label: "Aviation",   icon: "✈" },
+  { key: "marching",  label: "Marche",     icon: "🥾" },
+];
 
 export default function GeneralPage({ params }: { params: { slug: string } }) {
   const g = getGeneral(params.slug);
@@ -34,6 +63,7 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
   const m = GENERAL_CATEGORY_META[g.category];
   const scorpion = g.faction === "scorpion";
   const faction = FACTION_META[g.faction];
+  const quality = QUALITY_META[g.quality];
 
   const related = getAllGenerals()
     .filter((x) => x.slug !== g.slug && x.category === g.category)
@@ -57,13 +87,11 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
       ? `${acqMeta.icon} ${g.acquisition.cost} ${acqMeta.label.toLowerCase()}`
       : `${acqMeta.icon} ${acqMeta.label}`;
 
-  // Attribute labels
-  const ATTR_LABELS: { key: keyof NonNullable<typeof g.attributes>; label: string; icon: string }[] = [
-    { key: "offense", label: "Offensif", icon: "⚔️" },
-    { key: "defense", label: "Défensif", icon: "🛡" },
-    { key: "intelligence", label: "Intelligence", icon: "🧠" },
-    { key: "charisma", label: "Charisme", icon: "⭐" },
-  ];
+  const hasAnyAttribute =
+    g.attributes &&
+    ATTR_LABELS.some(({ key }) => g.attributes?.[key] != null);
+
+  const replaceableCount = g.skills.filter((s) => s.replaceable).length;
 
   return (
     <>
@@ -85,7 +113,9 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
           <ul className="list-none text-sm">
             <li><a href="#attributes" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⭐ Attributs</a></li>
             <li><a href="#skills" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⚡ Compétences</a></li>
-            {g.trained && <li><a href="#trained" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🎓 Version entraînée</a></li>}
+            {g.hasTrainingPath && (
+              <li><a href="#training" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⚔ Entraînement (Épées/Sceptres)</a></li>
+            )}
             <li><a href="#bonuses" className="block px-2 py-1 text-dim no-underline hover:text-gold2">📊 Bonus</a></li>
             <li><a href="#acquisition" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🎁 Obtention</a></li>
             <li><a href="#units" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🛡 Unités recommandées</a></li>
@@ -107,7 +137,7 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
             <div
               className="rounded-lg border-2 h-[220px] grid place-items-center relative"
               style={{
-                borderColor: scorpion ? "#c8372d" : "#d4a44a",
+                borderColor: scorpion ? "#c8372d" : quality.color,
                 background: scorpion
                   ? "linear-gradient(135deg, #2a0f12, #1a1418)"
                   : "linear-gradient(135deg, #1a2230, #12161e)",
@@ -118,7 +148,7 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
                 style={{
                   background: scorpion
                     ? "linear-gradient(135deg, #4a0f12, #c8372d)"
-                    : "linear-gradient(135deg, #8b7d4a, #d4a44a)",
+                    : `linear-gradient(135deg, #8b7d4a, ${quality.color})`,
                   color: scorpion ? "#fff" : "#0f1419",
                 }}
               >
@@ -135,73 +165,103 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
                   Tier {g.rank}
                 </span>
               </div>
+              <div className="absolute bottom-2.5 left-2.5">
+                <span
+                  className="text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded border"
+                  style={{
+                    borderColor: quality.color,
+                    background: `${quality.color}22`,
+                    color: quality.color,
+                  }}
+                >
+                  {quality.icon} {quality.label}
+                </span>
+              </div>
             </div>
             <div>
               <h1 className="text-3xl text-gold2 font-extrabold mb-1">{g.name}</h1>
               <div className="text-dim text-sm mb-4">{g.shortDesc}</div>
               <div className="flex flex-wrap gap-2 mb-4">
-                <Tag accent>
-                  {m.icon} Général {m.label}
-                </Tag>
-                <Tag>
-                  {COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}
-                </Tag>
+                <Tag accent>{m.icon} Général {m.label}</Tag>
+                <Tag>{COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}</Tag>
                 <Tag>🎖 Tier {g.rank}</Tag>
+                <Tag accent>{quality.icon} {quality.label} · {quality.slots} slots</Tag>
                 <Tag accent>{acqPillText}</Tag>
-                {g.trained && <Tag accent>🎓 Version entraînée disponible</Tag>}
+                {g.hasTrainingPath && <Tag accent>⚔ Training Épées/Sceptres</Tag>}
+                {replaceableCount > 0 && (
+                  <Tag accent>🎓 {replaceableCount} slot{replaceableCount > 1 ? "s" : ""} libre{replaceableCount > 1 ? "s" : ""}</Tag>
+                )}
                 <Tag scorpion={scorpion}>
                   {scorpion ? "🦂" : "🌍"} {faction.label}
                 </Tag>
-                {!g.verified && <Tag>⚠️ Données à vérifier en jeu</Tag>}
+                {!g.verified && <Tag>⚠ Données à vérifier in-game</Tag>}
               </div>
               <p className="text-ink text-sm leading-relaxed">{g.longDesc}</p>
             </div>
           </div>
 
-          {/* ATTRIBUTES */}
+          {/* ATTRIBUTES (6 aptitudes) */}
           <div id="attributes" className="bg-panel border border-border rounded-lg p-6 mb-6">
-            <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              ⭐ Attributs
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
+                ⭐ Attributs
+              </h3>
+              <span className="text-muted text-[10px] uppercase tracking-widest">
+                {hasAnyAttribute ? "Actuel + plafond via promotions" : ""}
+              </span>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {ATTR_LABELS.map(({ key, label, icon }) => {
-                const val = g.attributes?.[key];
+                const val = (g.attributes?.[key] ?? null) as AttributeValue | null;
                 return (
                   <div
                     key={key}
                     className="border border-border rounded-lg p-3 bg-bg3"
                   >
-                    <div className="text-muted text-[10px] uppercase tracking-widest mb-1">
+                    <div className="text-muted text-[10px] uppercase tracking-widest mb-1.5">
                       {icon} {label}
                     </div>
-                    <StarRow value={val ?? null} max={5} />
+                    <AttributeBar value={val} />
                   </div>
                 );
               })}
             </div>
-            {!g.attributes || Object.values(g.attributes).every((v) => v == null) ? (
+            {!hasAnyAttribute && (
               <div className="mt-3 text-muted text-[11px] italic">
                 Valeurs à capturer depuis l'émulateur (Académie militaire → fiche du général).
+                Chaque attribut est noté de 0 à 5 étoiles, avec une 6ᵉ étoile « shiny bonus » rare pour les aptitudes maxées.
               </div>
-            ) : null}
+            )}
           </div>
 
-          {/* SKILLS */}
+          {/* SKILLS — inline vote widget for replaceable slots */}
           <div id="skills" className="bg-panel border border-border rounded-lg p-6 mb-6">
-            <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              ⚡ Compétences de base
-            </h3>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
+                ⚡ Compétences
+              </h3>
+              <span className="text-muted text-[10px] uppercase tracking-widest">
+                {g.skills.length} slot{g.skills.length > 1 ? "s" : ""} · qualité {quality.label}
+              </span>
+            </div>
             <div className="space-y-3">
-              {g.skills.map((s, i) => (
-                <SkillCard key={i} skill={s} />
+              {g.skills.map((s) => (
+                <SkillBlock key={s.slot} skill={s} generalSlug={g.slug} category={g.category} />
               ))}
             </div>
+            {replaceableCount > 0 && (
+              <div className="mt-4 text-muted text-[11px] italic">
+                🎓 Les slots marqués « libre » peuvent être remplacés via l'Académie pour
+                {" "}<strong>des médailles</strong>. Vous pouvez voter pour votre préférence —
+                les résultats communautaires apparaissent ci-dessous chaque slot.
+              </div>
+            )}
           </div>
 
-          {/* TRAINED FORM */}
-          {g.trained && (
+          {/* TRAINING PATH (Swords/Sceptres of Dominance) */}
+          {g.hasTrainingPath && g.training && (
             <div
-              id="trained"
+              id="training"
               className="border-2 rounded-lg p-6 mb-6"
               style={{
                 borderColor: "#d4a44a",
@@ -209,44 +269,36 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
                   "linear-gradient(135deg, rgba(212,164,74,0.10) 0%, rgba(212,164,74,0.02) 100%), #1a2230",
               }}
             >
-              <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center justify-between gap-3 mb-4">
                 <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
-                  🎓 Version entraînée
+                  ⚔ Entraînement (Épées/Sceptres de Domination)
                 </h3>
-                {g.trained.unlockCost != null && (
-                  <span className="bg-gold/20 border border-gold/40 text-gold2 text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
-                    {g.trained.unlockCost}{" "}
-                    {g.trained.unlockCurrency === "medals"
-                      ? "médailles"
-                      : g.trained.unlockCurrency === "iron-cross"
-                      ? "✠"
-                      : g.trained.unlockCurrency}
-                  </span>
-                )}
+                <div className="flex gap-2">
+                  {g.training.totalSwordCost != null && (
+                    <span className="text-[11px] font-extrabold px-2 py-0.5 rounded border bg-gold/20 border-gold/40 text-gold2">
+                      ⚔ {g.training.totalSwordCost} épées
+                    </span>
+                  )}
+                  {g.training.totalSceptreCost != null && (
+                    <span className="text-[11px] font-extrabold px-2 py-0.5 rounded border bg-gold/20 border-gold/40 text-gold2">
+                      🪄 {g.training.totalSceptreCost} sceptres
+                    </span>
+                  )}
+                </div>
               </div>
-              {g.trained.notes && (
-                <p className="text-dim text-xs mb-4 italic">{g.trained.notes}</p>
+              {g.training.summary && (
+                <p className="text-dim text-sm mb-4 italic">{g.training.summary}</p>
               )}
-              <div className="space-y-3">
-                {g.trained.skills.map((s, i) => (
-                  <SkillCard key={i} skill={s} trained />
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+                {g.training.stages.map((stage) => (
+                  <TrainingStageCard key={stage.stage} stage={stage} />
                 ))}
               </div>
-
-              {g.trained.trainedSlots && g.trained.trainedSlots.length > 0 && (
-                <div className="mt-5 space-y-4">
-                  <div className="text-muted text-[10px] uppercase tracking-widest font-bold border-t border-gold/20 pt-4">
-                    🗳 Vote communautaire — slots entraînables
-                  </div>
-                  {g.trained.trainedSlots.map((ts) => (
-                    <TrainedSkillVote
-                      key={ts.slot}
-                      generalSlug={g.slug}
-                      slotData={ts}
-                    />
-                  ))}
-                </div>
-              )}
+              <div className="mt-4 text-muted text-[11px] italic">
+                💡 Les Épées et Sceptres de Domination sont une ressource premium : ~4 épées + 2 sceptres
+                gratuits par mois via la boutique. Seuls les généraux de qualité bronze, silver ou gold
+                peuvent être entraînés — les Maréchaux (IAP) n'ont pas de training path.
+              </div>
             </div>
           )}
 
@@ -288,15 +340,20 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
                 )}
               </div>
               <div className="text-dim text-sm leading-relaxed">
-                {g.acquisition.notes || "Détails d'obtention à confirmer en jeu."}
+                {g.acquisition.notes || "Détails d'obtention à confirmer in-game."}
                 {g.acquisition.type === "campaign" && (
                   <p className="mt-2 text-amber-200 text-xs">
-                    ⚠️ Ce général est débloqué via la campagne (non-obtenable en Conquête libre).
+                    ⚠ Ce général est débloqué via la campagne (non-obtenable en Conquête libre).
                   </p>
                 )}
                 {g.acquisition.type === "medals" && (
                   <p className="mt-2 text-muted text-xs">
                     🎖 Les médailles sont obtenues en complétant des missions de campagne et en gagnant des Conquêtes.
+                  </p>
+                )}
+                {g.acquisition.type === "iron-cross" && (
+                  <p className="mt-2 text-amber-200 text-xs">
+                    💰 Ce général Marshal ne peut être obtenu qu'avec des Croix de fer (IAP).
                   </p>
                 )}
               </div>
@@ -375,30 +432,59 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
   );
 }
 
-function StarRow({ value, max = 5 }: { value: number | null; max?: number }) {
-  if (value == null) {
-    return (
-      <div className="text-muted text-[11px] italic">— à vérifier</div>
-    );
+// ─── components ──────────────────────────────────────────────────────────
+
+function AttributeBar({ value }: { value: AttributeValue | null }) {
+  if (!value) {
+    return <div className="text-muted text-[11px] italic">— à vérifier</div>;
   }
-  const filled = Math.max(0, Math.min(max, Math.round(value)));
+  const MAX_SCALE = 6;
+  const start = Math.max(0, Math.min(MAX_SCALE, value.start));
+  const max = Math.max(start, Math.min(MAX_SCALE, value.max));
+
   return (
-    <div className="flex gap-0.5 text-lg leading-none" aria-label={`${filled}/${max}`}>
-      {Array.from({ length: max }).map((_, i) => (
-        <span key={i} className={i < filled ? "text-gold" : "text-border"}>
-          ★
-        </span>
-      ))}
+    <div className="flex flex-col gap-1">
+      <div className="flex gap-0.5 text-base leading-none" aria-label={`${start}/${max} (max ${MAX_SCALE})`}>
+        {Array.from({ length: MAX_SCALE }).map((_, i) => {
+          const filled = i < start;
+          const potential = i >= start && i < max;
+          const shiny = i === 5 && max >= 6; // 6th star = shiny bonus
+          return (
+            <span
+              key={i}
+              className={
+                shiny
+                  ? "text-amber-300 drop-shadow"
+                  : filled
+                  ? "text-gold"
+                  : potential
+                  ? "text-gold/30"
+                  : "text-border"
+              }
+            >
+              ★
+            </span>
+          );
+        })}
+      </div>
+      <div className="text-muted text-[10px] tabular-nums">
+        {start}/{max}
+        {max > start && (
+          <span className="text-dim"> (potentiel +{max - start})</span>
+        )}
+      </div>
     </div>
   );
 }
 
-function SkillCard({
+function SkillBlock({
   skill,
-  trained,
+  generalSlug,
+  category,
 }: {
-  skill: import("@/lib/types").GeneralSkill;
-  trained?: boolean;
+  skill: GeneralSkill;
+  generalSlug: string;
+  category: string;
 }) {
   const rating = skill.rating;
   const ratingColor =
@@ -410,10 +496,20 @@ function SkillCard({
       ? "bg-blue-500/20 border-blue-500/40 text-blue-300"
       : "bg-bg3 border-border text-dim";
 
+  // Re-fetch the general & candidates server-side (the page already resolved g;
+  // this keeps the component pure).
+  const g = getGeneral(generalSlug);
+  const candidates =
+    skill.replaceable && g
+      ? getCandidatesForGeneralSlot(g, skill.slot)
+      : [];
+  void category;
+
   return (
     <div
-      className={`border rounded-lg p-4 ${trained ? "bg-gold/5" : "bg-bg3"}`}
-      style={{ borderColor: trained ? "rgba(212,164,74,0.3)" : undefined }}
+      className={`border rounded-lg p-4 ${
+        skill.replaceable ? "border-gold/40 bg-gold/5" : "bg-bg3 border-border"
+      }`}
     >
       <div className="flex items-center justify-between gap-3 mb-1.5">
         <div className="flex items-center gap-2">
@@ -421,21 +517,85 @@ function SkillCard({
             Slot {skill.slot}
           </span>
           <span className="text-gold2 font-bold text-sm">{skill.name}</span>
+          {skill.replaceable && (
+            <span className="text-[9px] font-extrabold uppercase tracking-widest px-1.5 py-0.5 rounded border bg-gold/15 border-gold/40 text-gold2">
+              🎓 Libre
+            </span>
+          )}
         </div>
         <div className="flex items-center gap-2">
-          {skill.stars != null && <StarRow value={skill.stars} max={5} />}
-          {rating ? (
+          {rating && (
             <span
               className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded border ${ratingColor}`}
             >
               {rating}
             </span>
-          ) : (
-            <span className="text-muted text-[10px] italic">grade ?</span>
           )}
         </div>
       </div>
       <div className="text-dim text-sm leading-relaxed">{skill.desc}</div>
+      {skill.replaceableReason && (
+        <div className="text-muted text-[10px] italic mt-1">
+          {skill.replaceableReason}
+        </div>
+      )}
+
+      {skill.replaceable && candidates.length > 0 && (
+        <TrainedSkillVote
+          generalSlug={generalSlug}
+          slot={skill.slot}
+          currentSkillName={skill.name}
+          candidates={candidates}
+        />
+      )}
+    </div>
+  );
+}
+
+function TrainingStageCard({ stage }: { stage: TrainingStage }) {
+  return (
+    <div className="border border-gold/30 rounded-lg p-3 bg-bg3">
+      <div className="flex items-center justify-between mb-2">
+        <span className="text-gold2 font-bold text-xs uppercase tracking-widest">
+          Étape {stage.stage}
+        </span>
+        <div className="flex gap-1">
+          {stage.swordCost != null && (
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-gold/20 border border-gold/40 text-gold2">
+              ⚔ {stage.swordCost}
+            </span>
+          )}
+          {stage.sceptreCost != null && (
+            <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-gold/20 border border-gold/40 text-gold2">
+              🪄 {stage.sceptreCost}
+            </span>
+          )}
+        </div>
+      </div>
+      {stage.label && (
+        <div className="text-dim text-xs mb-1">{stage.label}</div>
+      )}
+      {stage.notes && (
+        <div className="text-muted text-[11px] italic">{stage.notes}</div>
+      )}
+      {(stage.skillChanges?.length ?? 0) > 0 && (
+        <div className="mt-2 text-[11px] text-dim">
+          <div className="text-muted uppercase tracking-widest text-[9px] mb-0.5">Effets</div>
+          <ul className="list-disc pl-4 space-y-0.5">
+            {stage.skillChanges!.map((c, i) => (
+              <li key={i}>
+                Slot {c.slot} : {c.kind === "unlock" ? "🆕" : c.kind === "upgrade" ? "⬆" : "♻"}{" "}
+                {c.newName || c.notes || "modification"}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {(!stage.swordCost && !stage.sceptreCost && !stage.notes) && (
+        <div className="text-muted text-[11px] italic mt-1">
+          Coût à vérifier in-game.
+        </div>
+      )}
     </div>
   );
 }

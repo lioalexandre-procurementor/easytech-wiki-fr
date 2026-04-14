@@ -1,14 +1,15 @@
 {
   "slug": "colson",
   "name": "Colson",
-  "nameEn": null,
+  "nameEn": "Colson",
   "faction": "scorpion",
   "category": "tank",
   "rank": "S",
+  "quality": "gold",
   "country": "XX",
   "countryName": "Empire du Scorpion",
-  "shortDesc": "Troisième capitaine de l'Empire du Scorpion — détails in-game à confirmer.",
-  "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Disponible dans le pack des trois généraux terroristes. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion (Titan Tank, Heavenly Beginning Tank).",
+  "shortDesc": "Troisième capitaine de l'Empire du Scorpion.",
+  "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion. Gold (5 slots).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus sur chars Scorpion.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Réduction de dégâts sur unités alliées.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,16 +37,41 @@
       "desc": "Vitesse offensive accrue.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable — à confirmer.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": null,
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
     "type": "campaign",
     "cost": null,
@@ -65,6 +95,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

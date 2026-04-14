@@ -1,14 +1,15 @@
 {
   "slug": "kuznetsov",
   "name": "Nikolaï Kouznetsov",
-  "nameEn": null,
+  "nameEn": "Nikolai Kuznetsov",
   "faction": "standard",
   "category": "navy",
   "rank": "S",
+  "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Après entraînement, meilleur amiral de la marine soviétique.",
-  "longDesc": "Une fois entraîné, Kouznetsov devient le meilleur amiral du jeu pour la marine. Particulièrement efficace avec les navires russes modernes (Arleigh Burke équivalents, Typhoon).",
+  "shortDesc": "Après entraînement, meilleur amiral F2P de la marine soviétique.",
+  "longDesc": "Une fois entièrement entraîné, Kouznetsov devient l'un des meilleurs amiraux F2P du jeu, au niveau de Cunningham et meilleur que Yamaguchi/Darlan. Silver (4 slots, 2 étapes de training).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus offensif tous navires soviétiques.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Bonus supplémentaire sur navires modernes.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,52 +37,54 @@
       "desc": "Défense navale améliorée.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": {
-    "name": "Kouznetsov (entraîné)",
-    "skills": [
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
       {
-        "slot": 1,
-        "name": "Flotte rouge (S+)",
-        "desc": "Post-entraînement — à vérifier.",
-        "rating": null,
-        "stars": null,
-        "icon": null
+        "stage": 1,
+        "label": "Silver → 1er palier",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
       },
       {
-        "slot": 2,
-        "name": "Doctrine moderne (amélioré)",
-        "desc": "Post-entraînement — à vérifier.",
-        "rating": null,
-        "stars": null,
-        "icon": null
-      },
-      {
-        "slot": 3,
-        "name": "Héros de l'Union Soviétique",
-        "desc": "Skill signature ajouté — à confirmer.",
-        "rating": null,
-        "stars": null,
-        "icon": null
+        "stage": 2,
+        "label": "2e palier (forme finale)",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
       }
     ],
-    "attributes": {
-      "offense": null,
-      "defense": null,
-      "intelligence": null,
-      "charisma": null
-    },
-    "unlockCost": null,
-    "unlockCurrency": "medals",
-    "notes": "Entraînement fortement recommandé."
+    "totalSwordCost": null,
+    "totalSceptreCost": null,
+    "summary": "2 étapes (silver). Training fortement recommandé par la communauté."
   },
   "acquisition": {
     "type": "medals",
@@ -102,6 +109,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

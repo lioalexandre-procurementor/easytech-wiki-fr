@@ -1,14 +1,15 @@
 {
   "slug": "montgomery",
   "name": "Bernard Montgomery",
-  "nameEn": null,
+  "nameEn": "Bernard Montgomery",
   "faction": "standard",
   "category": "infantry",
   "rank": "A",
+  "quality": "silver",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Commandant britannique, spécialiste de la guerre d'infanterie méthodique.",
-  "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier, correct pour les scénarios WWII britanniques.",
+  "shortDesc": "Commandant britannique, guerre d'infanterie méthodique.",
+  "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier. Silver (4 slots, 2 étapes de training).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus défensif en position retranchée.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Bonus sur infanterie du Commonwealth.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,16 +37,55 @@
       "desc": "Leadership général — bonus adjacents.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": null,
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Silver → 1er palier",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
+      },
+      {
+        "stage": 2,
+        "label": "2e palier (forme finale)",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
+      }
+    ],
+    "totalSwordCost": null,
+    "totalSceptreCost": null,
+    "summary": "2 étapes (silver)."
+  },
   "acquisition": {
     "type": "medals",
     "cost": null,
@@ -65,6 +109,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

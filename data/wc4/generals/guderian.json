@@ -1,14 +1,15 @@
 {
   "slug": "guderian",
   "name": "Heinz Guderian",
-  "nameEn": null,
+  "nameEn": "Heinz Guderian",
   "faction": "standard",
   "category": "tank",
   "rank": "S",
+  "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
   "shortDesc": "Père de la Blitzkrieg et meilleur général blindé du jeu.",
-  "longDesc": "Considéré comme le meilleur commandant de World Conqueror 4. Théoricien de la Blitzkrieg, il possède les trois meilleurs skills blindés du jeu ainsi que les compétences Machiniste et Rumeur. À placer sur un King Tiger, IS-3 ou M1A1 Abrams pour un effet maximal.",
+  "longDesc": "Considéré comme le meilleur commandant de World Conqueror 4. Théoricien de la Blitzkrieg, il possède les trois meilleurs skills blindés du jeu. En tant que général Gold, il dispose de 5 slots de compétences. À placer sur un King Tiger, IS-3 ou M1A1 Abrams pour un effet maximal.",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Attaques de char +25%, mouvement amélioré.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,120 +27,65 @@
       "desc": "Bonus d'attaque et de défense sur tous les chars adjacents.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
-      "name": "Machiniste (entraîné)",
-      "desc": "Unité mécanisée : réparation accélérée.",
+      "name": "Percée mécanisée",
+      "desc": "Unité mécanisée : bonus de pénétration — à vérifier.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Compétence apprenable — fille l'emplacement avec la skill de ton choix (Machiniste, Rumeur, etc.).",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert — pool de skills apprenables via médailles à l'Académie"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer in-game (5 slots pour Gold).",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert — à confirmer in-game si 4 ou 5 slots au total"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": {
-    "name": "Guderian (entraîné)",
-    "skills": [
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
       {
-        "slot": 1,
-        "name": "Blitzkrieg (S+)",
-        "desc": "Version améliorée post-entraînement — à vérifier.",
-        "rating": null,
-        "stars": null,
-        "icon": null
-      },
-      {
-        "slot": 2,
-        "name": "Commandant blindé (S+)",
-        "desc": "Version améliorée post-entraînement — à vérifier.",
-        "rating": null,
-        "stars": null,
-        "icon": null
-      },
-      {
-        "slot": 3,
-        "name": "Rumeur",
-        "desc": "Skill de mobilité ajouté à l'entraînement — à confirmer.",
-        "rating": null,
-        "stars": null,
-        "icon": null
+        "stage": 1,
+        "label": "Étape 1/1 — Gold unique",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
       }
     ],
-    "attributes": {
-      "offense": null,
-      "defense": null,
-      "intelligence": null,
-      "charisma": null
-    },
-    "unlockCost": null,
-    "unlockCurrency": "medals",
-    "notes": "Trained variant confirmé par la communauté — coût et skills exacts à capturer en jeu.",
-    "trainedSlots": [
-      {
-        "slot": 1,
-        "recommended": "blitzkrieg-mastery",
-        "recommendationReason": "Meilleur DPS pour conquête 1980 — à valider vs Armor Lord selon patch.",
-        "candidates": [
-          {
-            "id": "blitzkrieg-mastery",
-            "name": "Maîtrise Blitzkrieg",
-            "desc": "Attaque char +35%, mouvement +1 case. Skill signature de Guderian, variante entraînée.",
-            "rating": "S+",
-            "popularMeta": true
-          },
-          {
-            "id": "armor-genius",
-            "name": "Génie Blindé",
-            "desc": "Attaque char +25% et réduction des dégâts reçus de 15%.",
-            "rating": "S"
-          },
-          {
-            "id": "panzer-lord",
-            "name": "Seigneur Panzer",
-            "desc": "Attaque char +30%, défense char +15%.",
-            "rating": "A"
-          },
-          {
-            "id": "desert-fox",
-            "name": "Renard du Désert",
-            "desc": "Bonus de terrain désertique, mobilité accrue.",
-            "rating": "B"
-          }
-        ]
-      },
-      {
-        "slot": 2,
-        "recommended": "armor-commander",
-        "recommendationReason": "Le plus polyvalent pour formation de chars groupés.",
-        "candidates": [
-          {
-            "id": "armor-commander",
-            "name": "Commandant blindé (S+)",
-            "desc": "Bonus d'attaque et de défense sur tous les chars adjacents.",
-            "rating": "S+",
-            "popularMeta": true
-          },
-          {
-            "id": "machinist",
-            "name": "Machiniste",
-            "desc": "Unité mécanisée : réparation accélérée hors combat.",
-            "rating": "A"
-          },
-          {
-            "id": "rumor",
-            "name": "Rumeur",
-            "desc": "Les ennemis adjacents subissent une pénalité de moral.",
-            "rating": "A"
-          }
-        ]
-      }
-    ]
+    "totalSwordCost": null,
+    "totalSceptreCost": null,
+    "summary": "Guderian est Gold : une seule étape de training, coût à confirmer (élevé, ~10 sceptres + 200 épées selon communauté)."
   },
   "acquisition": {
     "type": "medals",
@@ -164,6 +112,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

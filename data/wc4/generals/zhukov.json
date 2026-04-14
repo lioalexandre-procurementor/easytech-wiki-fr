@@ -1,14 +1,15 @@
 {
   "slug": "zhukov",
   "name": "Gueorgui Joukov",
-  "nameEn": null,
+  "nameEn": "Georgy Zhukov",
   "faction": "standard",
   "category": "balanced",
   "rank": "S",
+  "quality": "marshal",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général polyvalent au niveau de Konev en artillerie.",
-  "longDesc": "Joukov est un général d'artillerie/polyvalent de premier rang, au niveau de Konev en appui-feu. Option alternative pour les joueurs qui veulent flexibilité sur plusieurs types d'unités.",
+  "shortDesc": "Maréchal IAP polyvalent — au niveau de Konev en appui-feu.",
+  "longDesc": "Joukov est un maréchal (IAP, achat réel uniquement) polyvalent de premier rang, au niveau de Konev en appui-feu. Marshal (5 slots).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus défensif global sur secteur.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Attaques massives coordonnées.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,21 +37,46 @@
       "desc": "Leadership général — bonus sur toute la faction soviétique.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Signature IAP",
+      "desc": "Compétence premium supplémentaire — à vérifier.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable — à confirmer si Marshal a un slot libre.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer : les Marshals IAP ont-ils un slot libre ?"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": null,
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
-    "type": "medals",
+    "type": "iron-cross",
     "cost": null,
-    "currency": "medals",
-    "notes": "Store — à confirmer"
+    "currency": "iron-cross",
+    "notes": "Marshal IAP — achat réel uniquement"
   },
   "bonuses": [
     {
@@ -66,6 +96,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

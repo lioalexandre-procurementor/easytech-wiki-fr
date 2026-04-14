@@ -1,9 +1,23 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { UnitData, Category, Tier, Faction, GeneralData, GeneralCategory } from "./types";
+import type {
+  UnitData,
+  Category,
+  Tier,
+  Faction,
+  GeneralData,
+  GeneralCategory,
+  LearnableSkill,
+} from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data", "wc4", "elite-units");
 const GENERALS_DIR = path.join(process.cwd(), "data", "wc4", "generals");
+const LEARNABLE_FILE = path.join(
+  process.cwd(),
+  "data",
+  "wc4",
+  "learnable-skills.json"
+);
 
 const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3 };
 
@@ -67,6 +81,38 @@ export function getAllGeneralSlugs(): string[] {
     .readdirSync(GENERALS_DIR)
     .filter(f => f.endsWith(".json") && !f.startsWith("_"))
     .map(f => f.replace(/\.json$/, ""));
+}
+
+// ========== Learnable skills catalog (vote candidates) ==========
+
+let _learnableCache: LearnableSkill[] | null = null;
+
+export function getAllLearnableSkills(): LearnableSkill[] {
+  if (_learnableCache) return _learnableCache;
+  if (!fs.existsSync(LEARNABLE_FILE)) return [];
+  _learnableCache = JSON.parse(fs.readFileSync(LEARNABLE_FILE, "utf8")) as LearnableSkill[];
+  return _learnableCache;
+}
+
+export function getLearnableSkill(id: string): LearnableSkill | null {
+  return getAllLearnableSkills().find(s => s.id === id) ?? null;
+}
+
+/**
+ * Returns the pool of learnable skills eligible for a given general's replaceable slot.
+ * A skill is eligible if it has no `appliesTo` restriction, or includes the general's category.
+ */
+export function getCandidatesForGeneralSlot(
+  general: GeneralData,
+  slot: number
+): LearnableSkill[] {
+  const skill = general.skills.find(s => s.slot === slot);
+  if (!skill || !skill.replaceable) return [];
+  const all = getAllLearnableSkills();
+  return all.filter(ls => {
+    if (!ls.appliesTo || ls.appliesTo.length === 0) return true;
+    return ls.appliesTo.includes(general.category);
+  });
 }
 
 // ========== Metadata ==========

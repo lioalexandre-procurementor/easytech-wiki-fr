@@ -1,0 +1,146 @@
+[
+  {
+    "id": "rumor",
+    "name": "Rumeur",
+    "desc": "Chance d'éviter un coup critique ennemi sur l'unité commandée. Utile défensivement contre les armées spammant les crits.",
+    "rating": "A",
+    "appliesTo": [],
+    "popularMeta": false,
+    "editorialNote": "Skill utilitaire — dépanne, pas premier choix sauf meta défensif."
+  },
+  {
+    "id": "inspiration",
+    "name": "Inspiration",
+    "desc": "Augmente les chances d'attaque critique de l'unité commandée.",
+    "rating": "S",
+    "appliesTo": [],
+    "popularMeta": true,
+    "editorialNote": "Meta offensif global — quasi auto-pick sur un slot libre pour les généraux offensifs."
+  },
+  {
+    "id": "inferior-victory",
+    "name": "Victoire du Faible",
+    "desc": "Bonus d'attaque quand l'unité est en sous-nombre face à l'ennemi adjacent.",
+    "rating": "A",
+    "appliesTo": [],
+    "popularMeta": false,
+    "editorialNote": "Situational — fort en conquête défensive, faible en rush."
+  },
+  {
+    "id": "panzer-leader",
+    "name": "Commandant Panzer",
+    "desc": "Bonus de dégâts offensifs pour les unités blindées commandées.",
+    "rating": "S+",
+    "appliesTo": ["tank"],
+    "popularMeta": true,
+    "editorialNote": "Le pick auto pour tout slot libre sur un général blindé."
+  },
+  {
+    "id": "sailor",
+    "name": "Marin",
+    "desc": "Bonus d'attaque et de défense pour les navires commandés.",
+    "rating": "A",
+    "appliesTo": ["navy"],
+    "popularMeta": true,
+    "editorialNote": "Solide pour les amiraux sans skill de type naval innée."
+  },
+  {
+    "id": "fleet-leader",
+    "name": "Commandant de flotte",
+    "desc": "Bonus plus fort que Marin sur les flottes mais s'applique à tous les navires adjacents.",
+    "rating": "S",
+    "appliesTo": ["navy"],
+    "popularMeta": true,
+    "editorialNote": "Supérieur à Marin pour les conquêtes navales — pick meta naval."
+  },
+  {
+    "id": "industrial-expert",
+    "name": "Expert industriel",
+    "desc": "Réduction du coût de production et du temps pour les unités dans la province commandée.",
+    "rating": "B",
+    "appliesTo": [],
+    "popularMeta": false,
+    "editorialNote": "Très fort en conquête longue durée, faible en PvP rapide."
+  },
+  {
+    "id": "technology-expert",
+    "name": "Expert technique",
+    "desc": "Bonus de recherche accéléré tant que le général contrôle une capitale ou centre de commandement.",
+    "rating": "B",
+    "appliesTo": [],
+    "popularMeta": false,
+    "editorialNote": "Fort sur un général 'arrière' (maréchal)."
+  },
+  {
+    "id": "artillery-master",
+    "name": "Maître Canonnier",
+    "desc": "Bonus de dégâts et de portée pour les unités d'artillerie commandées.",
+    "rating": "S+",
+    "appliesTo": ["artillery"],
+    "popularMeta": true,
+    "editorialNote": "Auto-pick pour tout slot libre sur un général artillerie."
+  },
+  {
+    "id": "sky-marshal",
+    "name": "Maréchal du Ciel",
+    "desc": "Bonus offensif et défensif pour les unités aéroportées commandées.",
+    "rating": "S",
+    "appliesTo": ["airforce"],
+    "popularMeta": true,
+    "editorialNote": "Meta pour tout aviateur avec slot libre."
+  },
+  {
+    "id": "trench-master",
+    "name": "Maître des Tranchées",
+    "desc": "Bonus de défense massif pour les unités d'infanterie en position retranchée.",
+    "rating": "A",
+    "appliesTo": ["infantry"],
+    "popularMeta": true,
+    "editorialNote": "Excellent pour les généraux infanterie défensifs (Montgomery, Rundstedt)."
+  },
+  {
+    "id": "infantry-leader",
+    "name": "Commandant d'infanterie",
+    "desc": "Bonus d'attaque pour les unités d'infanterie commandées.",
+    "rating": "S",
+    "appliesTo": ["infantry"],
+    "popularMeta": true,
+    "editorialNote": "Pick auto pour infanterie offensive."
+  },
+  {
+    "id": "logistics-expert",
+    "name": "Expert logistique",
+    "desc": "Vitesse de déplacement +1 case/tour pour l'unité commandée.",
+    "rating": "A",
+    "appliesTo": [],
+    "popularMeta": false,
+    "editorialNote": "Compense un général lent. Pas un pick offensif."
+  },
+  {
+    "id": "fortification",
+    "name": "Fortification",
+    "desc": "HP +10% pour l'unité commandée quand elle est sur une case avec structure défensive.",
+    "rating": "B",
+    "appliesTo": [],
+    "popularMeta": false,
+    "editorialNote": "Niche défensif."
+  },
+  {
+    "id": "rapid-fire",
+    "name": "Tir Rapide",
+    "desc": "Réduit le cooldown d'attaque de l'unité commandée.",
+    "rating": "A",
+    "appliesTo": ["artillery", "airforce"],
+    "popularMeta": false,
+    "editorialNote": "Secondaire — préférer Maître Canonnier sur un slot d'artillerie."
+  },
+  {
+    "id": "first-strike",
+    "name": "Première Frappe",
+    "desc": "L'unité commandée attaque en premier lors d'engagements corps-à-corps.",
+    "rating": "S",
+    "appliesTo": ["tank", "infantry"],
+    "popularMeta": false,
+    "editorialNote": "Fort en blindés agressifs. Bonne alternative à Inspiration."
+  }
+]

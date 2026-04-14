@@ -5,8 +5,10 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
+    "quality": "gold",
     "country": "DE",
-    "hasTrained": true,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -15,8 +17,10 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
+    "quality": "gold",
     "country": "DE",
-    "hasTrained": true,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -25,8 +29,10 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
+    "quality": "gold",
     "country": "US",
-    "hasTrained": false,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -35,8 +41,10 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
+    "quality": "silver",
     "country": "RU",
-    "hasTrained": true,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -45,8 +53,10 @@
     "faction": "standard",
     "category": "artillery",
     "rank": "S",
+    "quality": "gold",
     "country": "RU",
-    "hasTrained": false,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -55,9 +65,11 @@
     "faction": "standard",
     "category": "balanced",
     "rank": "S",
+    "quality": "marshal",
     "country": "RU",
-    "hasTrained": false,
-    "acquisition": "medals"
+    "hasTrainingPath": false,
+    "hasReplaceableSkills": true,
+    "acquisition": "iron-cross"
   },
   {
     "slug": "donitz",
@@ -65,8 +77,10 @@
     "faction": "standard",
     "category": "navy",
     "rank": "S",
+    "quality": "gold",
     "country": "DE",
-    "hasTrained": false,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -75,8 +89,10 @@
     "faction": "standard",
     "category": "navy",
     "rank": "S",
+    "quality": "gold",
     "country": "JP",
-    "hasTrained": false,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -85,8 +101,10 @@
     "faction": "standard",
     "category": "navy",
     "rank": "S",
+    "quality": "silver",
     "country": "RU",
-    "hasTrained": true,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -95,8 +113,10 @@
     "faction": "standard",
     "category": "infantry",
     "rank": "A",
+    "quality": "silver",
     "country": "GB",
-    "hasTrained": false,
+    "hasTrainingPath": true,
+    "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
   {
@@ -105,8 +125,10 @@
     "faction": "scorpion",
     "category": "balanced",
     "rank": "S",
+    "quality": "gold",
     "country": "XX",
-    "hasTrained": false,
+    "hasTrainingPath": false,
+    "hasReplaceableSkills": true,
     "acquisition": "campaign"
   },
   {
@@ -115,8 +137,10 @@
     "faction": "scorpion",
     "category": "artillery",
     "rank": "S",
+    "quality": "gold",
     "country": "XX",
-    "hasTrained": false,
+    "hasTrainingPath": false,
+    "hasReplaceableSkills": true,
     "acquisition": "campaign"
   },
   {
@@ -125,8 +149,10 @@
     "faction": "scorpion",
     "category": "tank",
     "rank": "S",
+    "quality": "gold",
     "country": "XX",
-    "hasTrained": false,
+    "hasTrainingPath": false,
+    "hasReplaceableSkills": true,
     "acquisition": "campaign"
   }
 ]

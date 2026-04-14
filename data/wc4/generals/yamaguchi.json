@@ -1,14 +1,15 @@
 {
   "slug": "yamaguchi",
   "name": "Tamon Yamaguchi",
-  "nameEn": null,
+  "nameEn": "Tamon Yamaguchi",
   "faction": "standard",
   "category": "navy",
   "rank": "S",
+  "quality": "gold",
   "country": "JP",
   "countryName": "Japon",
   "shortDesc": "Amiral japonais polyvalent — aussi excellent en aviation.",
-  "longDesc": "Yamaguchi est l'un des meilleurs amiraux du jeu et fonctionne également très bien comme général aviation (double usage). Synergie forte avec les porte-avions (Akagi, Enterprise).",
+  "longDesc": "Yamaguchi est l'un des meilleurs amiraux du jeu et fonctionne également très bien comme général aviation (double usage). Gold (5 slots).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus d'attaque tous types navals.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Bonus sur avions lancés depuis carriers.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,16 +37,56 @@
       "desc": "Moral amélioré — réduction des pertes.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": null,
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Étape 1/1 — Gold",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
+      }
+    ],
+    "totalSwordCost": null,
+    "totalSceptreCost": null,
+    "summary": "Coût à confirmer."
+  },
   "acquisition": {
     "type": "medals",
     "cost": null,
@@ -66,6 +111,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

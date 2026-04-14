@@ -11,9 +11,10 @@ const VOTE_TTL_DAYS = 30;
 const COOKIE_PREFIX = "wc4_vote_";
 const TOTAL_FIELD = "__total";
 
-function parseSlot(raw: unknown): 1 | 2 | null {
+function parseSlot(raw: unknown): number | null {
   const n = Number(raw);
-  return n === 1 || n === 2 ? n : null;
+  if (!Number.isInteger(n)) return null;
+  return n >= 1 && n <= 5 ? n : null;
 }
 
 function cookieName(general: string, slot: number) {
@@ -29,7 +30,7 @@ function clientIp(req: NextRequest): string | null {
 async function readCounts(
   redis: ReturnType<typeof getRedis>,
   general: string,
-  slot: 1 | 2
+  slot: number
 ): Promise<Record<string, number>> {
   if (!redis) return {};
   const raw = (await redis.hgetall(voteKey(general, slot))) as Record<

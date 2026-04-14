@@ -1,14 +1,15 @@
 {
   "slug": "rommel",
   "name": "Erwin Rommel",
-  "nameEn": null,
+  "nameEn": "Erwin Rommel",
   "faction": "standard",
   "category": "tank",
   "rank": "S",
+  "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
   "shortDesc": "Le Renard du Désert — général blindé offensif-défensif.",
-  "longDesc": "Rommel est un général tank de haute volée. Ses skills Feu Croisé (Crossfire) et Assaut Blindé (Armoured Assault) donnent des dégâts de contre-attaque supplémentaires et des bonus offensifs généraux. Excellent sur Königs Tiger ou M26 Pershing.",
+  "longDesc": "Rommel est un général tank de haute volée. Ses skills Feu Croisé et Assaut Blindé donnent des dégâts de contre-attaque supplémentaires et des bonus offensifs. Excellent sur Königs Tiger ou M26 Pershing. 5 slots de compétences (Gold).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Dégâts supplémentaires en contre-attaque quand attaqué.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Dégâts +15% pour toutes les attaques blindées.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,52 +37,55 @@
       "desc": "Bonus supplémentaire en terrain désertique.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert, pool learnable-skills"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer : 4 ou 5 slots au total"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": {
-    "name": "Rommel (entraîné)",
-    "skills": [
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
       {
-        "slot": 1,
-        "name": "Feu Croisé (amélioré)",
-        "desc": "Version post-entraînement — à vérifier.",
-        "rating": null,
-        "stars": null,
-        "icon": null
-      },
-      {
-        "slot": 2,
-        "name": "Assaut Blindé (amélioré)",
-        "desc": "Version post-entraînement — à vérifier.",
-        "rating": null,
-        "stars": null,
-        "icon": null
-      },
-      {
-        "slot": 3,
-        "name": "Renard du désert",
-        "desc": "Skill légendaire post-entraînement — à confirmer.",
-        "rating": null,
-        "stars": null,
-        "icon": null
+        "stage": 1,
+        "label": "Étape 1/1 — Gold unique",
+        "swordCost": null,
+        "sceptreCost": null,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
       }
     ],
-    "attributes": {
-      "offense": null,
-      "defense": null,
-      "intelligence": null,
-      "charisma": null
-    },
-    "unlockCost": null,
-    "unlockCurrency": "medals",
-    "notes": "À confirmer en jeu."
+    "totalSwordCost": null,
+    "totalSceptreCost": null,
+    "summary": "Coût training à confirmer."
   },
   "acquisition": {
     "type": "medals",
@@ -103,6 +111,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

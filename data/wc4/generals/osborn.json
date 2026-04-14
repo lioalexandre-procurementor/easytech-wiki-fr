@@ -1,14 +1,15 @@
 {
   "slug": "osborn",
   "name": "Osborn",
-  "nameEn": null,
+  "nameEn": "Osborn",
   "faction": "scorpion",
   "category": "balanced",
   "rank": "S",
+  "quality": "gold",
   "country": "XX",
   "countryName": "Empire du Scorpion",
   "shortDesc": "Leader de l'Empire du Scorpion — ancien général britannique Alfred.",
-  "longDesc": "Osborn est le chef de l'Empire du Scorpion (New World Order). Son identité originelle était Alfred, un général britannique non-recrutable qui apparaît dans la mission Dunkerque de l'événement Origin of the Scorpion Empire. À partir du scénario Modern War il devient l'antagoniste final du jeu. Disponible dans le pack des trois généraux terroristes (Osborn, Williams, Colson).",
+  "longDesc": "Osborn est le chef de l'Empire du Scorpion (New World Order). Son identité originelle était Alfred, un général britannique non-recrutable qui apparaît dans la mission Dunkerque de l'événement Origin of the Scorpion Empire. Disponible dans le pack des trois généraux terroristes. Gold (5 slots).",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus massif sur toutes les unités mystiques.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Activation de capacités spéciales faction Scorpion.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,16 +37,41 @@
       "desc": "Moral + leadership sur unités alliées.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable — à confirmer si les capitaines Scorpion ont un slot libre.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer — Scorpion gold slots"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": null,
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
     "type": "campaign",
     "cost": null,
@@ -66,6 +96,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }

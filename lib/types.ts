@@ -50,52 +50,103 @@ export interface GameMeta {
   available: boolean;
 }
 
-export type GeneralCategory = "tank" | "infantry" | "artillery" | "navy" | "airforce" | "balanced";
+// ─── GENERALS ───────────────────────────────────────────────────────────────
+
+export type GeneralCategory =
+  | "tank"
+  | "infantry"
+  | "artillery"
+  | "navy"
+  | "airforce"
+  | "balanced";
 export type GeneralRank = "S" | "A" | "B" | "C";
+
+// WC4 lettered skill rating visible in-game (E → S+).
 export type SkillRating = "E" | "D" | "C" | "B" | "A" | "S" | "S+";
 
+// Quality tier of the general — drives total skill slot count.
+// bronze = 3 skills, silver = 4, gold = 5, marshal (IAP) = 5.
+export type GeneralQuality = "bronze" | "silver" | "gold" | "marshal";
+
+// ─── Attributes (6 combat aptitudes) ────────────────────────────────────────
+// Every general is rated on 6 aptitudes. Each has a starting star level (filled)
+// and a max star level (filled + empty = ceiling reachable via promotions/training).
+// The normal scale is 0..5. A 6th "shiny" star exists as a bonus for maxed aptitudes.
+
+export type AttributeKey =
+  | "infantry"
+  | "artillery"
+  | "armor"
+  | "navy"
+  | "airforce"
+  | "marching";
+
+export interface AttributeValue {
+  start: number;   // 0..6 — current filled stars (as acquired)
+  max: number;     // 0..6 — ceiling reachable via promotion/training
+}
+
+export type GeneralAttributes = {
+  [K in AttributeKey]?: AttributeValue | null;
+};
+
+// ─── Skills ─────────────────────────────────────────────────────────────────
+// Each skill slot holds one skill. `replaceable: true` means the player can
+// swap this skill for one from the universal learnable-skill catalog via
+// medals at the Academy. Those slots are where the community voting feature
+// plugs in.
+
 export interface GeneralSkill {
-  slot: 1 | 2 | 3;
-  name: string;
-  desc: string;
-  rating?: SkillRating | null;  // WC4 letter grade E → S+
-  stars?: number | null;        // 0..5 visual star count
+  slot: number;                   // 1-based slot index (1..5)
+  name: string;                   // display name FR
+  desc: string;                   // description FR
+  rating?: SkillRating | null;    // in-game letter grade if visible
+  stars?: number | null;          // 0..5 visual star count if displayed
   icon?: string | null;
+  replaceable?: boolean;          // true → player can swap via medals; vote UI shows here
+  replaceableReason?: string;     // optional tooltip, e.g. "Slot laissé ouvert aux choix communautaires"
 }
 
-export interface GeneralAttributes {
-  offense?: number | null;      // 0..5 stars
-  defense?: number | null;
-  intelligence?: number | null;
-  charisma?: number | null;
-}
+// ─── Training (premium tier upgrade via Sword/Sceptre of Dominance) ─────────
+// Distinct from replaceable skills. This is the premium mechanic that raises
+// a general's tier (bronze→silver→gold). Each stage has a cost in swords +
+// sceptres and can unlock new innate skills or bump attribute ceilings.
+// Bronze generals need 3 stages, silver 2, gold 1 to reach their final form.
 
-export interface TrainedSkillCandidate {
-  id: string;                          // unique slug, e.g. "blitzkrieg-mastery"
-  name: string;                        // "Maîtrise Blitzkrieg"
-  desc: string;                        // description FR
-  rating?: SkillRating | null;
-  stars?: number | null;
-  icon?: string | null;
-  popularMeta?: boolean;               // reserved for future tagging
-}
-
-export interface TrainedSkillSlot {
-  slot: 1 | 2;
-  candidates: TrainedSkillCandidate[]; // all possible choices at this slot
-  recommended?: string;                // id of our editorial pick
-  recommendationReason?: string;       // why we recommend it
-}
-
-export interface TrainedForm {
-  name?: string;                       // e.g. "Guderian (entraîné)"
-  skills: GeneralSkill[];              // post-training skills (legacy display)
-  attributes?: GeneralAttributes | null;
-  unlockCost?: number | null;
-  unlockCurrency?: "medals" | "iron-cross" | "coin" | null;
+export interface TrainingStageSkillChange {
+  slot: number;              // which skill slot is changed
+  kind: "unlock" | "upgrade" | "replace";
+  newName?: string;          // for unlock/replace: resulting skill name
+  newDesc?: string;
+  newRating?: SkillRating | null;
   notes?: string;
-  trainedSlots?: TrainedSkillSlot[];   // trainable slots with candidates for voting
 }
+
+export interface TrainingStageAttributeDelta {
+  key: AttributeKey;
+  maxDelta?: number | null;  // +1 star on the ceiling, etc.
+  startDelta?: number | null;
+  notes?: string;
+}
+
+export interface TrainingStage {
+  stage: number;                                      // 1, 2, 3…
+  label?: string;                                     // "Bronze → Silver", etc.
+  swordCost: number | null;                           // Swords of Dominance
+  sceptreCost: number | null;                         // Sceptres of Dominance
+  skillChanges?: TrainingStageSkillChange[];
+  attributeDeltas?: TrainingStageAttributeDelta[];
+  notes?: string;
+}
+
+export interface TrainingPath {
+  stages: TrainingStage[];
+  totalSwordCost?: number | null;
+  totalSceptreCost?: number | null;
+  summary?: string;   // short editorial description of why training this general is worth it
+}
+
+// ─── Acquisition ────────────────────────────────────────────────────────────
 
 export type AcquisitionType =
   | "starter"
@@ -112,6 +163,8 @@ export interface Acquisition {
   notes?: string;
 }
 
+// ─── The full general record ────────────────────────────────────────────────
+
 export interface GeneralData {
   slug: string;
   name: string;
@@ -119,16 +172,33 @@ export interface GeneralData {
   faction: Faction;
   category: GeneralCategory;
   rank: GeneralRank;
+  quality: GeneralQuality;                // drives skill slot count
   country: string;
   countryName: string;
   shortDesc: string;
   longDesc: string;
-  skills: GeneralSkill[];                  // base skills (1..3)
-  attributes?: GeneralAttributes | null;   // offense / def / int / charisma stars
-  trained?: TrainedForm | null;            // optional trained variant
-  acquisition: Acquisition;                // how to get + cost
-  bonuses: { target: string; value: string }[];  // summary numeric bonuses
+  skills: GeneralSkill[];                 // length should match quality (3/4/5)
+  attributes?: GeneralAttributes | null;
+  hasTrainingPath: boolean;               // eligible for Sword/Sceptre premium training
+  training?: TrainingPath | null;         // full per-stage data (filled after verification)
+  acquisition: Acquisition;
+  bonuses: { target: string; value: string }[];
   recommendedUnits: string[];
   verified: boolean;
   sources?: string[];
+}
+
+// ─── Universal learnable-skill catalog (vote feature) ───────────────────────
+// A separate file (lib/data/learnable-skills.json) holds the universal list.
+// When a general has a skill with replaceable=true, the vote dialog pulls
+// candidates from this catalog, optionally filtered by `appliesTo`.
+
+export interface LearnableSkill {
+  id: string;                            // slug, e.g. "panzer-leader"
+  name: string;                          // FR display name
+  desc: string;
+  rating?: SkillRating | null;
+  appliesTo?: GeneralCategory[];         // empty/undefined = all categories
+  popularMeta?: boolean;                 // editorial "best practice" flag
+  editorialNote?: string;                // short justification for the meta pick
 }

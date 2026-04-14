@@ -7,7 +7,7 @@ import {
   COUNTRY_FLAGS,
   FACTION_META,
 } from "@/lib/units";
-import type { GeneralCategory, GeneralData } from "@/lib/types";
+import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -24,6 +24,40 @@ const CAT_ORDER: GeneralCategory[] = [
   "airforce",
   "balanced",
 ];
+
+const QUALITY_META: Record<
+  GeneralQuality,
+  { label: string; icon: string; bg: string; border: string; text: string }
+> = {
+  bronze: {
+    label: "Bronze",
+    icon: "🥉",
+    bg: "rgba(180,110,60,0.15)",
+    border: "rgba(205,127,50,0.5)",
+    text: "#e8a574",
+  },
+  silver: {
+    label: "Argent",
+    icon: "🥈",
+    bg: "rgba(180,180,190,0.12)",
+    border: "rgba(192,192,192,0.5)",
+    text: "#d7d7de",
+  },
+  gold: {
+    label: "Or",
+    icon: "🥇",
+    bg: "rgba(212,164,74,0.18)",
+    border: "rgba(212,164,74,0.6)",
+    text: "#e8c678",
+  },
+  marshal: {
+    label: "Maréchal",
+    icon: "👑",
+    bg: "rgba(200,55,45,0.15)",
+    border: "rgba(200,55,45,0.55)",
+    text: "#f0a090",
+  },
+};
 
 export default function GeneralsList() {
   const all = getAllGenerals();
@@ -159,6 +193,8 @@ export default function GeneralsList() {
 
 function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
   const m = GENERAL_CATEGORY_META[g.category];
+  const q = QUALITY_META[g.quality];
+  const replaceableCount = g.skills.filter((s) => s.replaceable).length;
   return (
     <Link
       href={`/world-conqueror-4/generaux/${g.slug}`}
@@ -189,6 +225,16 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
           >
             Tier {g.rank}
           </span>
+          <span
+            className="text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded border"
+            style={{
+              backgroundColor: q.bg,
+              borderColor: q.border,
+              color: q.text,
+            }}
+          >
+            {q.icon} {q.label}
+          </span>
           <span className="text-[10px] text-muted uppercase tracking-widest">
             {COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}
           </span>
@@ -204,9 +250,14 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
           {acqIcon(g.acquisition.type)} {acqShortLabel(g.acquisition.type)}
           {g.acquisition.cost != null && ` · ${g.acquisition.cost}`}
         </span>
-        {g.trained && (
+        {g.hasTrainingPath && (
+          <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-red-500/10 border border-red-500/40 text-red-300">
+            ⚔️ Training
+          </span>
+        )}
+        {replaceableCount > 0 && (
           <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-gold/15 border border-gold/40 text-gold2">
-            🎓 Entraînable
+            🎓 {replaceableCount} slot{replaceableCount > 1 ? "s" : ""} libre{replaceableCount > 1 ? "s" : ""}
           </span>
         )}
       </div>

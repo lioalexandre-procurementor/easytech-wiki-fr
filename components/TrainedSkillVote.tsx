@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import type { TrainedSkillSlot } from "@/lib/types";
+import type { LearnableSkill } from "@/lib/types";
 
 type VoteApiResponse = {
   counts: Record<string, number>;
@@ -12,7 +12,11 @@ type VoteApiResponse = {
 
 interface Props {
   generalSlug: string;
-  slotData: TrainedSkillSlot;
+  slot: number;                 // 1..5 — the replaceable skill slot
+  currentSkillName?: string;    // the default/innate skill name at this slot (for context)
+  candidates: LearnableSkill[]; // eligible learnable skills for this general's category
+  recommended?: string;         // id of the editorial pick
+  recommendationReason?: string;
 }
 
 const TURNSTILE_SRC =
@@ -60,7 +64,14 @@ function loadTurnstileScript(): Promise<void> {
   });
 }
 
-export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
+export default function TrainedSkillVote({
+  generalSlug,
+  slot,
+  currentSkillName,
+  candidates,
+  recommended,
+  recommendationReason,
+}: Props) {
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [hasVoted, setHasVoted] = useState(false);
   const [disabled, setDisabled] = useState(false);
@@ -77,7 +88,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/vote?general=${generalSlug}&slot=${slotData.slot}`, {
+    fetch(`/api/vote?general=${generalSlug}&slot=${slot}`, {
       cache: "no-store",
     })
       .then((r) => r.json() as Promise<VoteApiResponse>)
@@ -96,7 +107,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [generalSlug, slotData.slot]);
+  }, [generalSlug, slot]);
 
   useEffect(() => {
     if (!modalOpen || disabled || !siteKey) return;
@@ -123,9 +134,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
   }, [modalOpen, disabled, siteKey]);
 
   const openVoteModal = () => {
-    setSelectedSkill(
-      slotData.recommended || slotData.candidates[0]?.id || null
-    );
+    setSelectedSkill(recommended || candidates[0]?.id || null);
     setErrorMsg(null);
     setTurnstileToken(null);
     setModalOpen(true);
@@ -142,7 +151,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
 
   const submitVote = async () => {
     if (!selectedSkill) return;
-    if (!turnstileToken) {
+    if (siteKey && !turnstileToken) {
       setErrorMsg("Merci de compléter la vérification anti-bot.");
       return;
     }
@@ -154,7 +163,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           general: generalSlug,
-          slot: slotData.slot,
+          slot,
           skill: selectedSkill,
           turnstileToken,
         }),
@@ -182,53 +191,55 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
   };
 
   const total = Object.values(counts).reduce((a, b) => a + b, 0);
-  const ranked = slotData.candidates
+  const ranked = candidates
     .map((c) => ({ ...c, votes: counts[c.id] || 0 }))
     .sort((a, b) => b.votes - a.votes);
   const top3 = ranked.slice(0, 3);
-  const recommendedCandidate = slotData.recommended
-    ? slotData.candidates.find((c) => c.id === slotData.recommended)
-    : null;
+  const recommendedCandidate = recommended
+    ? candidates.find((c) => c.id === recommended)
+    : candidates.find((c) => c.popularMeta) || null;
 
   return (
     <div
-      className="border rounded-lg p-5 bg-bg3"
+      className="mt-3 border rounded-lg p-4 bg-bg3"
       style={{
-        borderColor: "rgba(212,164,74,0.4)",
-        minHeight: 320,
+        borderColor: "rgba(212,164,74,0.3)",
+        minHeight: 280,
       }}
     >
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
-          <span className="text-muted text-[10px] uppercase tracking-widest font-bold">
-            Slot {slotData.slot}
+          <span className="text-gold2 text-[10px] font-extrabold uppercase tracking-widest">
+            🎓 Slot entraînable
           </span>
-          <span className="text-gold2 font-bold text-sm uppercase tracking-widest">
-            Compétences recommandées
-          </span>
+          {currentSkillName && (
+            <span className="text-muted text-[10px]">
+              Défaut : « {currentSkillName} »
+            </span>
+          )}
         </div>
       </div>
 
       {recommendedCandidate && (
-        <div className="mb-4 p-3 rounded border border-gold/40 bg-gold/10">
-          <div className="flex items-center justify-between gap-2 mb-1">
-            <div className="flex items-center gap-2">
-              <span className="text-gold2 text-[10px] font-extrabold uppercase tracking-widest">
-                ⭐ Notre pick
+        <div className="mb-3 p-2.5 rounded border border-gold/40 bg-gold/10">
+          <div className="flex items-center justify-between gap-2 mb-0.5">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="text-gold2 text-[10px] font-extrabold uppercase tracking-widest shrink-0">
+                ⭐ Meta
               </span>
-              <span className="text-gold2 font-bold text-sm">
+              <span className="text-gold2 font-bold text-sm truncate">
                 {recommendedCandidate.name}
               </span>
             </div>
             {recommendedCandidate.rating && (
-              <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded border bg-red-500/20 border-red-500/40 text-red-300">
+              <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded border bg-red-500/20 border-red-500/40 text-red-300 shrink-0">
                 {recommendedCandidate.rating}
               </span>
             )}
           </div>
-          {slotData.recommendationReason && (
+          {(recommendationReason || recommendedCandidate.editorialNote) && (
             <div className="text-dim text-xs italic">
-              {slotData.recommendationReason}
+              {recommendationReason || recommendedCandidate.editorialNote}
             </div>
           )}
         </div>
@@ -243,7 +254,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
             {[0, 1, 2].map((i) => (
               <div
                 key={i}
-                className="h-7 rounded bg-border/40 animate-pulse"
+                className="h-6 rounded bg-border/40 animate-pulse"
               />
             ))}
           </div>
@@ -315,7 +326,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
           >
             <div className="p-4 border-b border-border flex items-center justify-between">
               <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm">
-                Slot {slotData.slot} — Votre préférence
+                Slot {slot} — Votre préférence
               </h3>
               <button
                 type="button"
@@ -328,7 +339,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
             </div>
 
             <div className="overflow-y-auto p-4 space-y-2 flex-1">
-              {slotData.candidates.map((c) => {
+              {candidates.map((c) => {
                 const votes = counts[c.id] || 0;
                 const checked = selectedSkill === c.id;
                 return (
@@ -343,7 +354,7 @@ export default function TrainedSkillVote({ generalSlug, slotData }: Props) {
                     <div className="flex items-start gap-3">
                       <input
                         type="radio"
-                        name={`vote-${slotData.slot}`}
+                        name={`vote-${slot}`}
                         checked={checked}
                         onChange={() => setSelectedSkill(c.id)}
                         className="mt-1"

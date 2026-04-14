@@ -1,14 +1,15 @@
 {
   "slug": "patton",
   "name": "George Patton",
-  "nameEn": null,
+  "nameEn": "George S. Patton",
   "faction": "standard",
   "category": "tank",
   "rank": "S",
+  "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général blindé américain agressif, tier S avec survivabilité.",
-  "longDesc": "Patton est un général blindé top-tier de WC4. Offensive un peu moins pure que Rokossovsky mais bien meilleure survivabilité. Recommandé pour les chars lourds américains (M26 Pershing, M1A1 Abrams).",
+  "shortDesc": "Général blindé américain agressif — tier S avec survivabilité.",
+  "longDesc": "Patton est un général blindé top-tier de WC4. Offensive un peu moins pure que Rokossovsky mais bien meilleure survivabilité. Recommandé pour les chars lourds américains (M26 Pershing, M1A1 Abrams). Gold, 5 slots.",
   "skills": [
     {
       "slot": 1,
@@ -16,7 +17,9 @@
       "desc": "Bonus d'attaque permanent sur chars US.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 2,
@@ -24,7 +27,9 @@
       "desc": "Vitesse de déplacement améliorée.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
     },
     {
       "slot": 3,
@@ -32,16 +37,56 @@
       "desc": "HP max augmenté sur l'unité.",
       "rating": null,
       "stars": null,
-      "icon": null
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Slot libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "À confirmer"
     }
   ],
   "attributes": {
-    "offense": null,
-    "defense": null,
-    "intelligence": null,
-    "charisma": null
+    "infantry": null,
+    "artillery": null,
+    "armor": null,
+    "navy": null,
+    "airforce": null,
+    "marching": null
   },
-  "trained": null,
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Étape 1/1 — Gold",
+        "swordCost": 200,
+        "sceptreCost": 10,
+        "skillChanges": [],
+        "attributeDeltas": [],
+        "notes": null
+      }
+    ],
+    "totalSwordCost": 200,
+    "totalSceptreCost": 10,
+    "summary": "Patton : ~200 épées + 10 sceptres selon la communauté (à vérifier in-game)."
+  },
   "acquisition": {
     "type": "medals",
     "cost": null,
@@ -65,6 +110,8 @@
   "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+    "https://world-conqueror-4.fandom.com/wiki/Skills",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
   ]
 }
