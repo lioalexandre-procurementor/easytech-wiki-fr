@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "EasyTech Wiki — World Conqueror, European War & more",
+    "description": "The reference wiki for EasyTech strategy games: World Conqueror 4, European War 6/7, Great Conqueror Rome. Detailed elite unit stats, generals, technologies and guides.",
+    "shortTitle": "EasyTech Wiki"
+  },
+  "nav": {
+    "home": "Home",
+    "wc4": "World Conqueror 4",
+    "generals": "Generals",
+    "eliteUnits": "Elite Units",
+    "scorpion": "Scorpion Empire",
+    "searchPlaceholder": "Search for a unit or general…",
+    "localeSwitcher": "Language"
+  },
+  "footer": {
+    "about": "About",
+    "legal": "Legal",
+    "gdpr": "Privacy",
+    "votes": "Community Votes",
+    "contact": "Contact"
+  },
+  "breadcrumb": {
+    "separator": "›"
+  },
+  "general": {
+    "onThisPage": "On this page",
+    "attributes": "Attributes",
+    "skills": "Skills",
+    "training": "Training (Swords/Sceptres)",
+    "bonuses": "Bonuses",
+    "acquisition": "How to get",
+    "recommendedUnits": "Recommended units",
+    "relatedGenerals": "Similar generals",
+    "attributeCeiling": "Current + ceiling via promotions",
+    "toVerify": "— to verify",
+    "potentialSuffix": "(potential +{delta})",
+    "baseMode": "Base build",
+    "trainedMode": "Trained build",
+    "baseModeHint": "Stats and skills at purchase (before training)",
+    "trainedModeHint": "Stats and skills at max (after full training)",
+    "viewTrained": "View trained build →",
+    "viewBase": "← View base build",
+    "skillSlots": "{count, plural, one {# slot} other {# slots}}",
+    "skillSlotsLabel": "Skill slots",
+    "cost": "Cost",
+    "medalsCost": "{count} medals",
+    "quality": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "marshal": "Marshal"
+    }
+  },
+  "attributeKeys": {
+    "infantry": "Infantry",
+    "artillery": "Artillery",
+    "armor": "Armor",
+    "navy": "Navy",
+    "airforce": "Air Force",
+    "marching": "March"
+  },
+  "categories": {
+    "tank": "Armor",
+    "infantry": "Infantry",
+    "artillery": "Artillery",
+    "navy": "Navy",
+    "airforce": "Air Force",
+    "balanced": "Balanced"
+  },
+  "acquisitionTypes": {
+    "starter": "Starter",
+    "medals": "Medals",
+    "iron-cross": "Iron Cross",
+    "coin": "Coins",
+    "campaign": "Campaign",
+    "event": "Event"
+  },
+  "trainedPage": {
+    "intro": "Trained build of {name}: max stats, full training tree and total cost to max this general.",
+    "totalCost": "Total training cost",
+    "swords": "Swords",
+    "sceptres": "Sceptres",
+    "stageProgression": "Stage progression",
+    "backToBase": "← Back to base build",
+    "seoTitle": "{name} Trained Build — Max stats, training cost & final skills | WC4",
+    "seoDesc": "Full guide to training {name} in World Conqueror 4: max stats, sword and sceptre cost, final skills after all promotions."
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "site": {
+    "title": "EasyTech Wiki — World Conqueror, European War & plus",
+    "description": "Le wiki de référence pour les jeux de stratégie EasyTech : World Conqueror 4, European War 6/7, Great Conqueror Rome. Stats détaillées des unités d'élite, généraux, technologies et guides.",
+    "shortTitle": "EasyTech Wiki"
+  },
+  "nav": {
+    "home": "Accueil",
+    "wc4": "World Conqueror 4",
+    "generals": "Généraux",
+    "eliteUnits": "Unités d'élite",
+    "scorpion": "Empire du Scorpion",
+    "searchPlaceholder": "Rechercher une unité, un général…",
+    "localeSwitcher": "Langue"
+  },
+  "footer": {
+    "about": "À propos",
+    "legal": "Mentions légales",
+    "gdpr": "RGPD",
+    "votes": "Votes communautaires",
+    "contact": "Contact"
+  },
+  "breadcrumb": {
+    "separator": "›"
+  },
+  "general": {
+    "onThisPage": "Sur cette page",
+    "attributes": "Attributs",
+    "skills": "Compétences",
+    "training": "Entraînement (Épées/Sceptres)",
+    "bonuses": "Bonus",
+    "acquisition": "Obtention",
+    "recommendedUnits": "Unités recommandées",
+    "relatedGenerals": "Généraux similaires",
+    "attributeCeiling": "Actuel + plafond via promotions",
+    "toVerify": "— à vérifier",
+    "potentialSuffix": "(potentiel +{delta})",
+    "baseMode": "Version de base",
+    "trainedMode": "Version entraînée",
+    "baseModeHint": "Statistiques et compétences à l'achat (avant training)",
+    "trainedModeHint": "Statistiques et compétences au max (après tous les trainings)",
+    "viewTrained": "Voir la version entraînée →",
+    "viewBase": "← Voir la version de base",
+    "skillSlots": "{count, plural, one {# slot} other {# slots}}",
+    "skillSlotsLabel": "Emplacements de compétence",
+    "cost": "Coût",
+    "medalsCost": "{count} médailles",
+    "quality": {
+      "bronze": "Bronze",
+      "silver": "Argent",
+      "gold": "Or",
+      "marshal": "Maréchal"
+    }
+  },
+  "attributeKeys": {
+    "infantry": "Infanterie",
+    "artillery": "Artillerie",
+    "armor": "Blindé",
+    "navy": "Marine",
+    "airforce": "Aviation",
+    "marching": "Marche"
+  },
+  "categories": {
+    "tank": "Blindé",
+    "infantry": "Infanterie",
+    "artillery": "Artillerie",
+    "navy": "Marine",
+    "airforce": "Aviation",
+    "balanced": "Polyvalent"
+  },
+  "acquisitionTypes": {
+    "starter": "Starter",
+    "medals": "Médailles",
+    "iron-cross": "Croix de fer",
+    "coin": "Pièces",
+    "campaign": "Campagne",
+    "event": "Événement"
+  },
+  "trainedPage": {
+    "intro": "Version entraînée de {name} : statistiques maximales, arbre de training complet et coût total pour maxer ce général.",
+    "totalCost": "Coût total du training",
+    "swords": "Épées",
+    "sceptres": "Sceptres",
+    "stageProgression": "Progression par étape",
+    "backToBase": "← Fiche de base",
+    "seoTitle": "{name} entraîné — Build max, coût training & compétences finales | WC4",
+    "seoDesc": "Guide complet pour entraîner {name} dans World Conqueror 4 : statistiques max, coût en épées et sceptres, compétences après promotions."
+  }
+}
