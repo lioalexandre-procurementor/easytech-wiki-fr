@@ -1,24 +1,53 @@
 {
   "slug": "montgomery",
   "name": "Bernard Montgomery",
+  "nameEn": null,
   "faction": "standard",
   "category": "infantry",
   "rank": "A",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "obtainability": "shop",
   "shortDesc": "Commandant britannique, spécialiste de la guerre d'infanterie méthodique.",
   "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier, correct pour les scénarios WWII britanniques.",
   "skills": [
     {
+      "slot": 1,
       "name": "Plan méthodique",
-      "desc": "Bonus défensif en position retranchée."
+      "desc": "Bonus défensif en position retranchée.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Huitième Armée",
-      "desc": "Bonus sur infanterie du Commonwealth."
+      "desc": "Bonus sur infanterie du Commonwealth.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Commandement terrestre",
+      "desc": "Leadership général — bonus adjacents.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — coût modéré à confirmer"
+  },
   "bonuses": [
     {
       "target": "Défense infanterie",

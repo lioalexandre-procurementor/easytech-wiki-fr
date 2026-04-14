@@ -1,24 +1,53 @@
 {
   "slug": "colson",
   "name": "Colson",
+  "nameEn": null,
   "faction": "scorpion",
   "category": "tank",
   "rank": "S",
   "country": "XX",
   "countryName": "Empire du Scorpion",
-  "obtainability": "campaign",
   "shortDesc": "Troisième capitaine de l'Empire du Scorpion — détails in-game à confirmer.",
   "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Disponible dans le pack des trois généraux terroristes. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion (Titan Tank, Heavenly Beginning Tank).",
   "skills": [
     {
+      "slot": 1,
       "name": "Commandant blindé mystique",
-      "desc": "Bonus sur chars Scorpion."
+      "desc": "Bonus sur chars Scorpion.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Défense du Scorpion",
-      "desc": "Réduction de dégâts sur unités alliées."
+      "desc": "Réduction de dégâts sur unités alliées.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Assaut mystique",
+      "desc": "Vitesse offensive accrue.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "campaign",
+    "cost": null,
+    "currency": null,
+    "notes": "Pack des 3 généraux terroristes"
+  },
   "bonuses": [
     {
       "target": "Attaque chars Scorpion",

@@ -1,24 +1,53 @@
 {
   "slug": "zhukov",
   "name": "Gueorgui Joukov",
+  "nameEn": null,
   "faction": "standard",
   "category": "balanced",
   "rank": "S",
   "country": "RU",
   "countryName": "URSS",
-  "obtainability": "shop",
   "shortDesc": "Général polyvalent au niveau de Konev en artillerie.",
   "longDesc": "Joukov est un général d'artillerie/polyvalent de premier rang, au niveau de Konev en appui-feu. Option alternative pour les joueurs qui veulent flexibilité sur plusieurs types d'unités.",
   "skills": [
     {
+      "slot": 1,
       "name": "Défense de Moscou",
-      "desc": "Bonus défensif global sur secteur."
+      "desc": "Bonus défensif global sur secteur.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Rouleau compresseur",
-      "desc": "Attaques massives coordonnées."
+      "desc": "Attaques massives coordonnées.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Maréchal de l'URSS",
+      "desc": "Leadership général — bonus sur toute la faction soviétique.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque artillerie",

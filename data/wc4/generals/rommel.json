@@ -1,24 +1,90 @@
 {
   "slug": "rommel",
   "name": "Erwin Rommel",
+  "nameEn": null,
   "faction": "standard",
   "category": "tank",
   "rank": "S",
   "country": "DE",
   "countryName": "Allemagne",
-  "obtainability": "shop",
   "shortDesc": "Le Renard du Désert — général blindé offensif-défensif.",
   "longDesc": "Rommel est un général tank de haute volée. Ses skills Feu Croisé (Crossfire) et Assaut Blindé (Armoured Assault) donnent des dégâts de contre-attaque supplémentaires et des bonus offensifs généraux. Excellent sur Königs Tiger ou M26 Pershing.",
   "skills": [
     {
+      "slot": 1,
       "name": "Feu Croisé",
-      "desc": "Dégâts supplémentaires en contre-attaque quand attaqué."
+      "desc": "Dégâts supplémentaires en contre-attaque quand attaqué.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Assaut Blindé",
-      "desc": "Dégâts +15% pour toutes les attaques blindées."
+      "desc": "Dégâts +15% pour toutes les attaques blindées.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Commandant du désert",
+      "desc": "Bonus supplémentaire en terrain désertique.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": {
+    "name": "Rommel (entraîné)",
+    "skills": [
+      {
+        "slot": 1,
+        "name": "Feu Croisé (amélioré)",
+        "desc": "Version post-entraînement — à vérifier.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      },
+      {
+        "slot": 2,
+        "name": "Assaut Blindé (amélioré)",
+        "desc": "Version post-entraînement — à vérifier.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      },
+      {
+        "slot": 3,
+        "name": "Renard du désert",
+        "desc": "Skill légendaire post-entraînement — à confirmer.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      }
+    ],
+    "attributes": {
+      "offense": null,
+      "defense": null,
+      "intelligence": null,
+      "charisma": null
+    },
+    "unlockCost": null,
+    "unlockCurrency": "medals",
+    "notes": "À confirmer en jeu."
+  },
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque char",

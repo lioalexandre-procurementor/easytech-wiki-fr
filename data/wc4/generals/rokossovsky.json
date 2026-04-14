@@ -1,24 +1,90 @@
 {
   "slug": "rokossovsky",
   "name": "Konstantin Rokossovsky",
+  "nameEn": null,
   "faction": "standard",
   "category": "tank",
   "rank": "S",
   "country": "RU",
   "countryName": "URSS",
-  "obtainability": "shop",
   "shortDesc": "Général blindé soviétique — meilleures capacités offensives après entraînement.",
   "longDesc": "Après entraînement, Rokossovsky est l'un des meilleurs généraux blindés du jeu, avec une puissance offensive supérieure à Patton. À prioriser pour les chars soviétiques (IS-3, T-72). À entraîner avant Patton.",
   "skills": [
     {
+      "slot": 1,
       "name": "Opération Bagration",
-      "desc": "Bonus offensif massif sur secteur attaqué."
+      "desc": "Bonus offensif massif sur secteur attaqué.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Commandement ferme",
-      "desc": "Réduit les pertes alliées adjacentes."
+      "desc": "Réduit les pertes alliées adjacentes.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Fer de lance",
+      "desc": "Vitesse accrue en attaque.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": {
+    "name": "Rokossovsky (entraîné)",
+    "skills": [
+      {
+        "slot": 1,
+        "name": "Opération Bagration (S+)",
+        "desc": "Post-entraînement — à vérifier.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      },
+      {
+        "slot": 2,
+        "name": "Commandement ferme (amélioré)",
+        "desc": "Post-entraînement — à vérifier.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      },
+      {
+        "slot": 3,
+        "name": "Percée soviétique",
+        "desc": "Skill signature ajouté — à confirmer.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      }
+    ],
+    "attributes": {
+      "offense": null,
+      "defense": null,
+      "intelligence": null,
+      "charisma": null
+    },
+    "unlockCost": null,
+    "unlockCurrency": "medals",
+    "notes": "Entraînement fortement recommandé par la communauté."
+  },
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque char",

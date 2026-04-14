@@ -1,24 +1,53 @@
 {
   "slug": "konev",
   "name": "Ivan Konev",
+  "nameEn": null,
   "faction": "standard",
   "category": "artillery",
   "rank": "S",
   "country": "RU",
   "countryName": "URSS",
-  "obtainability": "shop",
   "shortDesc": "Meilleur général d'artillerie — l'équivalent de Guderian pour l'artillerie.",
   "longDesc": "Konev est pour l'artillerie ce que Guderian est pour les chars : la référence S-tier absolue. À pairer avec Schwerer Gustav, Topol-M ou M142 HIMARS pour optimiser les dégâts de frappe.",
   "skills": [
     {
+      "slot": 1,
       "name": "Maître canonnier",
-      "desc": "+30% dégâts artillerie."
+      "desc": "+30% dégâts artillerie.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Tir de barrage",
-      "desc": "+1 portée pour toute artillerie commandée."
+      "desc": "+1 portée pour toute artillerie commandée.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Commandant des canons",
+      "desc": "Réduction du cooldown de tir.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque artillerie",

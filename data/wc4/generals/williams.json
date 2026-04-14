@@ -1,24 +1,53 @@
 {
   "slug": "williams",
   "name": "Williams",
+  "nameEn": null,
   "faction": "scorpion",
   "category": "artillery",
   "rank": "S",
   "country": "XX",
   "countryName": "Empire du Scorpion",
-  "obtainability": "campaign",
   "shortDesc": "L'un des trois capitaines de l'Empire du Scorpion, concepteur du KS-90.",
   "longDesc": "Williams est l'un des trois capitaines de l'Empire du Scorpion, avec Osborn et Colson. Selon le lore, il a conçu et produit le KS-90, l'artillerie automotrice d'élite mystique. À pairer naturellement avec le KS-90 ou les autres artilleries Scorpion.",
   "skills": [
     {
+      "slot": 1,
       "name": "Ingénieur mystique",
-      "desc": "Bonus spécial sur KS-90 et artilleries Scorpion."
+      "desc": "Bonus spécial sur KS-90 et artilleries Scorpion.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Nano-technologie",
-      "desc": "Récupération HP 3%/tour pour unités contrôlées."
+      "desc": "Récupération HP 3%/tour pour unités contrôlées.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Concepteur d'élite",
+      "desc": "Vitesse de production des unités spéciales accrue.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "campaign",
+    "cost": null,
+    "currency": null,
+    "notes": "Pack des 3 généraux terroristes"
+  },
   "bonuses": [
     {
       "target": "Attaque KS-90",

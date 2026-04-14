@@ -5,7 +5,9 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
-    "country": "DE"
+    "country": "DE",
+    "hasTrained": true,
+    "acquisition": "medals"
   },
   {
     "slug": "rommel",
@@ -13,7 +15,9 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
-    "country": "DE"
+    "country": "DE",
+    "hasTrained": true,
+    "acquisition": "medals"
   },
   {
     "slug": "patton",
@@ -21,7 +25,9 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
-    "country": "US"
+    "country": "US",
+    "hasTrained": false,
+    "acquisition": "medals"
   },
   {
     "slug": "rokossovsky",
@@ -29,7 +35,9 @@
     "faction": "standard",
     "category": "tank",
     "rank": "S",
-    "country": "RU"
+    "country": "RU",
+    "hasTrained": true,
+    "acquisition": "medals"
   },
   {
     "slug": "konev",
@@ -37,7 +45,9 @@
     "faction": "standard",
     "category": "artillery",
     "rank": "S",
-    "country": "RU"
+    "country": "RU",
+    "hasTrained": false,
+    "acquisition": "medals"
   },
   {
     "slug": "zhukov",
@@ -45,7 +55,9 @@
     "faction": "standard",
     "category": "balanced",
     "rank": "S",
-    "country": "RU"
+    "country": "RU",
+    "hasTrained": false,
+    "acquisition": "medals"
   },
   {
     "slug": "donitz",
@@ -53,7 +65,9 @@
     "faction": "standard",
     "category": "navy",
     "rank": "S",
-    "country": "DE"
+    "country": "DE",
+    "hasTrained": false,
+    "acquisition": "medals"
   },
   {
     "slug": "yamaguchi",
@@ -61,7 +75,9 @@
     "faction": "standard",
     "category": "navy",
     "rank": "S",
-    "country": "JP"
+    "country": "JP",
+    "hasTrained": false,
+    "acquisition": "medals"
   },
   {
     "slug": "kuznetsov",
@@ -69,7 +85,9 @@
     "faction": "standard",
     "category": "navy",
     "rank": "S",
-    "country": "RU"
+    "country": "RU",
+    "hasTrained": true,
+    "acquisition": "medals"
   },
   {
     "slug": "montgomery",
@@ -77,7 +95,9 @@
     "faction": "standard",
     "category": "infantry",
     "rank": "A",
-    "country": "GB"
+    "country": "GB",
+    "hasTrained": false,
+    "acquisition": "medals"
   },
   {
     "slug": "osborn",
@@ -85,7 +105,9 @@
     "faction": "scorpion",
     "category": "balanced",
     "rank": "S",
-    "country": "XX"
+    "country": "XX",
+    "hasTrained": false,
+    "acquisition": "campaign"
   },
   {
     "slug": "williams",
@@ -93,7 +115,9 @@
     "faction": "scorpion",
     "category": "artillery",
     "rank": "S",
-    "country": "XX"
+    "country": "XX",
+    "hasTrained": false,
+    "acquisition": "campaign"
   },
   {
     "slug": "colson",
@@ -101,6 +125,8 @@
     "faction": "scorpion",
     "category": "tank",
     "rank": "S",
-    "country": "XX"
+    "country": "XX",
+    "hasTrained": false,
+    "acquisition": "campaign"
   }
 ]

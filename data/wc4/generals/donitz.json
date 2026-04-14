@@ -1,24 +1,53 @@
 {
   "slug": "donitz",
   "name": "Karl Dönitz",
+  "nameEn": null,
   "faction": "standard",
   "category": "navy",
   "rank": "S",
   "country": "DE",
   "countryName": "Allemagne",
-  "obtainability": "shop",
   "shortDesc": "Meilleur amiral de WC4 — spécialiste des sous-marins.",
   "longDesc": "Dönitz est « sans aucun doute le meilleur commandant naval » selon les tier lists communautaires. Spécialiste absolu des sous-marins (Type VII, Typhoon), il maximise les dégâts de torpille et la furtivité.",
   "skills": [
     {
+      "slot": 1,
       "name": "Meute de loups",
-      "desc": "Sous-marins : attaque coordonnée +40%."
+      "desc": "Sous-marins : attaque coordonnée +40%.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Guerre sous-marine",
-      "desc": "Furtivité améliorée."
+      "desc": "Furtivité améliorée.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Amiral de la Kriegsmarine",
+      "desc": "Bonus sur tous navires allemands.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque sous-marin",

@@ -1,24 +1,90 @@
 {
   "slug": "kuznetsov",
   "name": "Nikolaï Kouznetsov",
+  "nameEn": null,
   "faction": "standard",
   "category": "navy",
   "rank": "S",
   "country": "RU",
   "countryName": "URSS",
-  "obtainability": "shop",
   "shortDesc": "Après entraînement, meilleur amiral de la marine soviétique.",
   "longDesc": "Une fois entraîné, Kouznetsov devient le meilleur amiral du jeu pour la marine. Particulièrement efficace avec les navires russes modernes (Arleigh Burke équivalents, Typhoon).",
   "skills": [
     {
+      "slot": 1,
       "name": "Flotte rouge",
-      "desc": "Bonus offensif tous navires soviétiques."
+      "desc": "Bonus offensif tous navires soviétiques.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Doctrine moderne",
-      "desc": "Bonus supplémentaire sur navires modernes."
+      "desc": "Bonus supplémentaire sur navires modernes.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Commandant de la Baltique",
+      "desc": "Défense navale améliorée.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": {
+    "name": "Kouznetsov (entraîné)",
+    "skills": [
+      {
+        "slot": 1,
+        "name": "Flotte rouge (S+)",
+        "desc": "Post-entraînement — à vérifier.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      },
+      {
+        "slot": 2,
+        "name": "Doctrine moderne (amélioré)",
+        "desc": "Post-entraînement — à vérifier.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      },
+      {
+        "slot": 3,
+        "name": "Héros de l'Union Soviétique",
+        "desc": "Skill signature ajouté — à confirmer.",
+        "rating": null,
+        "stars": null,
+        "icon": null
+      }
+    ],
+    "attributes": {
+      "offense": null,
+      "defense": null,
+      "intelligence": null,
+      "charisma": null
+    },
+    "unlockCost": null,
+    "unlockCurrency": "medals",
+    "notes": "Entraînement fortement recommandé."
+  },
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque navale",

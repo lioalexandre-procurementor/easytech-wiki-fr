@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
+import TrainedSkillVote from "@/components/TrainedSkillVote";
 import {
   getAllGeneralSlugs,
   getGeneral,
@@ -42,13 +43,27 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
     .map((slug) => getEliteUnit(slug))
     .filter((u): u is NonNullable<typeof u> => u !== null);
 
-  const obtainLabel: Record<string, string> = {
-    free: "Gratuit",
-    event: "Événement",
-    shop: "Boutique",
-    premium: "Premium",
-    campaign: "Campagne",
+  const ACQUISITION_LABEL: Record<string, { icon: string; label: string }> = {
+    starter: { icon: "🥇", label: "Starter" },
+    medals: { icon: "🎖", label: "Médailles" },
+    "iron-cross": { icon: "✠", label: "Croix de fer" },
+    coin: { icon: "🪙", label: "Pièces" },
+    campaign: { icon: "🎬", label: "Campagne" },
+    event: { icon: "📅", label: "Événement" },
   };
+  const acqMeta = ACQUISITION_LABEL[g.acquisition.type] || { icon: "🎁", label: g.acquisition.type };
+  const acqPillText =
+    g.acquisition.cost != null
+      ? `${acqMeta.icon} ${g.acquisition.cost} ${acqMeta.label.toLowerCase()}`
+      : `${acqMeta.icon} ${acqMeta.label}`;
+
+  // Attribute labels
+  const ATTR_LABELS: { key: keyof NonNullable<typeof g.attributes>; label: string; icon: string }[] = [
+    { key: "offense", label: "Offensif", icon: "⚔️" },
+    { key: "defense", label: "Défensif", icon: "🛡" },
+    { key: "intelligence", label: "Intelligence", icon: "🧠" },
+    { key: "charisma", label: "Charisme", icon: "⭐" },
+  ];
 
   return (
     <>
@@ -68,10 +83,12 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
             Sur cette page
           </h4>
           <ul className="list-none text-sm">
+            <li><a href="#attributes" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⭐ Attributs</a></li>
             <li><a href="#skills" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⚡ Compétences</a></li>
+            {g.trained && <li><a href="#trained" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🎓 Version entraînée</a></li>}
             <li><a href="#bonuses" className="block px-2 py-1 text-dim no-underline hover:text-gold2">📊 Bonus</a></li>
+            <li><a href="#acquisition" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🎁 Obtention</a></li>
             <li><a href="#units" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🛡 Unités recommandées</a></li>
-            <li><a href="#lore" className="block px-2 py-1 text-dim no-underline hover:text-gold2">📖 Lore</a></li>
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
             Navigation
@@ -130,7 +147,8 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
                   {COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}
                 </Tag>
                 <Tag>🎖 Tier {g.rank}</Tag>
-                <Tag>🎁 {obtainLabel[g.obtainability] || g.obtainability}</Tag>
+                <Tag accent>{acqPillText}</Tag>
+                {g.trained && <Tag accent>🎓 Version entraînée disponible</Tag>}
                 <Tag scorpion={scorpion}>
                   {scorpion ? "🦂" : "🌍"} {faction.label}
                 </Tag>
@@ -140,20 +158,97 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
+          {/* ATTRIBUTES */}
+          <div id="attributes" className="bg-panel border border-border rounded-lg p-6 mb-6">
+            <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
+              ⭐ Attributs
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {ATTR_LABELS.map(({ key, label, icon }) => {
+                const val = g.attributes?.[key];
+                return (
+                  <div
+                    key={key}
+                    className="border border-border rounded-lg p-3 bg-bg3"
+                  >
+                    <div className="text-muted text-[10px] uppercase tracking-widest mb-1">
+                      {icon} {label}
+                    </div>
+                    <StarRow value={val ?? null} max={5} />
+                  </div>
+                );
+              })}
+            </div>
+            {!g.attributes || Object.values(g.attributes).every((v) => v == null) ? (
+              <div className="mt-3 text-muted text-[11px] italic">
+                Valeurs à capturer depuis l'émulateur (Académie militaire → fiche du général).
+              </div>
+            ) : null}
+          </div>
+
           {/* SKILLS */}
           <div id="skills" className="bg-panel border border-border rounded-lg p-6 mb-6">
             <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              ⚡ Compétences
+              ⚡ Compétences de base
             </h3>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="space-y-3">
               {g.skills.map((s, i) => (
-                <div key={i} className="border border-border rounded-lg p-4 bg-bg3">
-                  <div className="text-gold2 font-bold text-sm mb-1">{s.name}</div>
-                  <div className="text-dim text-sm leading-relaxed">{s.desc}</div>
-                </div>
+                <SkillCard key={i} skill={s} />
               ))}
             </div>
           </div>
+
+          {/* TRAINED FORM */}
+          {g.trained && (
+            <div
+              id="trained"
+              className="border-2 rounded-lg p-6 mb-6"
+              style={{
+                borderColor: "#d4a44a",
+                background:
+                  "linear-gradient(135deg, rgba(212,164,74,0.10) 0%, rgba(212,164,74,0.02) 100%), #1a2230",
+              }}
+            >
+              <div className="flex items-center gap-3 mb-2">
+                <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
+                  🎓 Version entraînée
+                </h3>
+                {g.trained.unlockCost != null && (
+                  <span className="bg-gold/20 border border-gold/40 text-gold2 text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
+                    {g.trained.unlockCost}{" "}
+                    {g.trained.unlockCurrency === "medals"
+                      ? "médailles"
+                      : g.trained.unlockCurrency === "iron-cross"
+                      ? "✠"
+                      : g.trained.unlockCurrency}
+                  </span>
+                )}
+              </div>
+              {g.trained.notes && (
+                <p className="text-dim text-xs mb-4 italic">{g.trained.notes}</p>
+              )}
+              <div className="space-y-3">
+                {g.trained.skills.map((s, i) => (
+                  <SkillCard key={i} skill={s} trained />
+                ))}
+              </div>
+
+              {g.trained.trainedSlots && g.trained.trainedSlots.length > 0 && (
+                <div className="mt-5 space-y-4">
+                  <div className="text-muted text-[10px] uppercase tracking-widest font-bold border-t border-gold/20 pt-4">
+                    🗳 Vote communautaire — slots entraînables
+                  </div>
+                  {g.trained.trainedSlots.map((ts) => (
+                    <TrainedSkillVote
+                      key={ts.slot}
+                      generalSlug={g.slug}
+                      slotData={ts}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* BONUSES */}
           <div id="bonuses" className="bg-panel border border-border rounded-lg p-6 mb-6">
@@ -172,6 +267,39 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
                   <div className="text-gold2 font-extrabold text-xl">{b.value}</div>
                 </div>
               ))}
+            </div>
+          </div>
+
+          {/* ACQUISITION */}
+          <div id="acquisition" className="bg-panel border border-border rounded-lg p-6 mb-6">
+            <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
+              🎁 Comment obtenir {g.name}
+            </h3>
+            <div className="grid md:grid-cols-[auto_1fr] gap-5 items-center">
+              <div className="border-2 border-gold rounded-lg p-4 text-center min-w-[160px]">
+                <div className="text-4xl mb-2">{acqMeta.icon}</div>
+                <div className="text-gold2 font-bold text-base mb-1">{acqMeta.label}</div>
+                {g.acquisition.cost != null ? (
+                  <div className="text-gold font-extrabold text-2xl">
+                    {g.acquisition.cost}
+                  </div>
+                ) : (
+                  <div className="text-muted text-[11px] italic">Coût à confirmer</div>
+                )}
+              </div>
+              <div className="text-dim text-sm leading-relaxed">
+                {g.acquisition.notes || "Détails d'obtention à confirmer en jeu."}
+                {g.acquisition.type === "campaign" && (
+                  <p className="mt-2 text-amber-200 text-xs">
+                    ⚠️ Ce général est débloqué via la campagne (non-obtenable en Conquête libre).
+                  </p>
+                )}
+                {g.acquisition.type === "medals" && (
+                  <p className="mt-2 text-muted text-xs">
+                    🎖 Les médailles sont obtenues en complétant des missions de campagne et en gagnant des Conquêtes.
+                  </p>
+                )}
+              </div>
             </div>
           </div>
 
@@ -244,6 +372,71 @@ export default function GeneralPage({ params }: { params: { slug: string } }) {
       </div>
       <Footer />
     </>
+  );
+}
+
+function StarRow({ value, max = 5 }: { value: number | null; max?: number }) {
+  if (value == null) {
+    return (
+      <div className="text-muted text-[11px] italic">— à vérifier</div>
+    );
+  }
+  const filled = Math.max(0, Math.min(max, Math.round(value)));
+  return (
+    <div className="flex gap-0.5 text-lg leading-none" aria-label={`${filled}/${max}`}>
+      {Array.from({ length: max }).map((_, i) => (
+        <span key={i} className={i < filled ? "text-gold" : "text-border"}>
+          ★
+        </span>
+      ))}
+    </div>
+  );
+}
+
+function SkillCard({
+  skill,
+  trained,
+}: {
+  skill: import("@/lib/types").GeneralSkill;
+  trained?: boolean;
+}) {
+  const rating = skill.rating;
+  const ratingColor =
+    rating === "S+" || rating === "S"
+      ? "bg-red-500/20 border-red-500/40 text-red-300"
+      : rating === "A"
+      ? "bg-gold/20 border-gold/40 text-gold2"
+      : rating === "B"
+      ? "bg-blue-500/20 border-blue-500/40 text-blue-300"
+      : "bg-bg3 border-border text-dim";
+
+  return (
+    <div
+      className={`border rounded-lg p-4 ${trained ? "bg-gold/5" : "bg-bg3"}`}
+      style={{ borderColor: trained ? "rgba(212,164,74,0.3)" : undefined }}
+    >
+      <div className="flex items-center justify-between gap-3 mb-1.5">
+        <div className="flex items-center gap-2">
+          <span className="text-muted text-[10px] uppercase tracking-widest font-bold">
+            Slot {skill.slot}
+          </span>
+          <span className="text-gold2 font-bold text-sm">{skill.name}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          {skill.stars != null && <StarRow value={skill.stars} max={5} />}
+          {rating ? (
+            <span
+              className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded border ${ratingColor}`}
+            >
+              {rating}
+            </span>
+          ) : (
+            <span className="text-muted text-[10px] italic">grade ?</span>
+          )}
+        </div>
+      </div>
+      <div className="text-dim text-sm leading-relaxed">{skill.desc}</div>
+    </div>
   );
 }
 

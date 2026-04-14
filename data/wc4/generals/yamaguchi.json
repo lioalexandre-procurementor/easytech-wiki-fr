@@ -1,24 +1,53 @@
 {
   "slug": "yamaguchi",
   "name": "Tamon Yamaguchi",
+  "nameEn": null,
   "faction": "standard",
   "category": "navy",
   "rank": "S",
   "country": "JP",
   "countryName": "Japon",
-  "obtainability": "shop",
   "shortDesc": "Amiral japonais polyvalent — aussi excellent en aviation.",
   "longDesc": "Yamaguchi est l'un des meilleurs amiraux du jeu et fonctionne également très bien comme général aviation (double usage). Synergie forte avec les porte-avions (Akagi, Enterprise).",
   "skills": [
     {
+      "slot": 1,
       "name": "Tactique navale",
-      "desc": "Bonus d'attaque tous types navals."
+      "desc": "Bonus d'attaque tous types navals.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     },
     {
+      "slot": 2,
       "name": "Aviation embarquée",
-      "desc": "Bonus sur avions lancés depuis carriers."
+      "desc": "Bonus sur avions lancés depuis carriers.",
+      "rating": null,
+      "stars": null,
+      "icon": null
+    },
+    {
+      "slot": 3,
+      "name": "Bushidō naval",
+      "desc": "Moral amélioré — réduction des pertes.",
+      "rating": null,
+      "stars": null,
+      "icon": null
     }
   ],
+  "attributes": {
+    "offense": null,
+    "defense": null,
+    "intelligence": null,
+    "charisma": null
+  },
+  "trained": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": null,
+    "currency": "medals",
+    "notes": "Store — à confirmer"
+  },
   "bonuses": [
     {
       "target": "Attaque navale",

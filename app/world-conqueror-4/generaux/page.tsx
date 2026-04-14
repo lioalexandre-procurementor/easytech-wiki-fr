@@ -198,7 +198,44 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
       <div className="text-muted text-[10px] uppercase tracking-widest mb-2">
         {m.icon} {m.label}
       </div>
-      <p className="text-dim text-xs leading-relaxed line-clamp-2">{g.shortDesc}</p>
+      <p className="text-dim text-xs leading-relaxed line-clamp-2 mb-3">{g.shortDesc}</p>
+      <div className="flex flex-wrap gap-1.5 mt-auto">
+        <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-bg3 border border-border text-dim">
+          {acqIcon(g.acquisition.type)} {acqShortLabel(g.acquisition.type)}
+          {g.acquisition.cost != null && ` · ${g.acquisition.cost}`}
+        </span>
+        {g.trained && (
+          <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-gold/15 border border-gold/40 text-gold2">
+            🎓 Entraînable
+          </span>
+        )}
+      </div>
     </Link>
+  );
+}
+
+function acqIcon(t: string): string {
+  return (
+    {
+      starter: "🥇",
+      medals: "🎖",
+      "iron-cross": "✠",
+      coin: "🪙",
+      campaign: "🎬",
+      event: "📅",
+    }[t] || "🎁"
+  );
+}
+
+function acqShortLabel(t: string): string {
+  return (
+    {
+      starter: "Starter",
+      medals: "Médailles",
+      "iron-cross": "Croix de fer",
+      coin: "Pièces",
+      campaign: "Campagne",
+      event: "Événement",
+    }[t] || t
   );
 }

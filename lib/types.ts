@@ -52,22 +52,83 @@ export interface GameMeta {
 
 export type GeneralCategory = "tank" | "infantry" | "artillery" | "navy" | "airforce" | "balanced";
 export type GeneralRank = "S" | "A" | "B" | "C";
+export type SkillRating = "E" | "D" | "C" | "B" | "A" | "S" | "S+";
+
+export interface GeneralSkill {
+  slot: 1 | 2 | 3;
+  name: string;
+  desc: string;
+  rating?: SkillRating | null;  // WC4 letter grade E → S+
+  stars?: number | null;        // 0..5 visual star count
+  icon?: string | null;
+}
+
+export interface GeneralAttributes {
+  offense?: number | null;      // 0..5 stars
+  defense?: number | null;
+  intelligence?: number | null;
+  charisma?: number | null;
+}
+
+export interface TrainedSkillCandidate {
+  id: string;                          // unique slug, e.g. "blitzkrieg-mastery"
+  name: string;                        // "Maîtrise Blitzkrieg"
+  desc: string;                        // description FR
+  rating?: SkillRating | null;
+  stars?: number | null;
+  icon?: string | null;
+  popularMeta?: boolean;               // reserved for future tagging
+}
+
+export interface TrainedSkillSlot {
+  slot: 1 | 2;
+  candidates: TrainedSkillCandidate[]; // all possible choices at this slot
+  recommended?: string;                // id of our editorial pick
+  recommendationReason?: string;       // why we recommend it
+}
+
+export interface TrainedForm {
+  name?: string;                       // e.g. "Guderian (entraîné)"
+  skills: GeneralSkill[];              // post-training skills (legacy display)
+  attributes?: GeneralAttributes | null;
+  unlockCost?: number | null;
+  unlockCurrency?: "medals" | "iron-cross" | "coin" | null;
+  notes?: string;
+  trainedSlots?: TrainedSkillSlot[];   // trainable slots with candidates for voting
+}
+
+export type AcquisitionType =
+  | "starter"
+  | "medals"
+  | "iron-cross"
+  | "coin"
+  | "campaign"
+  | "event";
+
+export interface Acquisition {
+  type: AcquisitionType;
+  cost: number | null;
+  currency: "medals" | "iron-cross" | "coin" | null;
+  notes?: string;
+}
 
 export interface GeneralData {
   slug: string;
   name: string;
   nameEn?: string;
-  faction: Faction;     // standard ou scorpion
+  faction: Faction;
   category: GeneralCategory;
   rank: GeneralRank;
   country: string;
   countryName: string;
   shortDesc: string;
   longDesc: string;
-  skills: { name: string; desc: string }[];
-  bonuses: { target: string; value: string }[];    // ex: { target: "Tank attack", value: "+30%" }
-  obtainability: "free" | "event" | "shop" | "premium" | "campaign";
-  recommendedUnits: string[];   // slugs des unités que ce général boost
+  skills: GeneralSkill[];                  // base skills (1..3)
+  attributes?: GeneralAttributes | null;   // offense / def / int / charisma stars
+  trained?: TrainedForm | null;            // optional trained variant
+  acquisition: Acquisition;                // how to get + cost
+  bonuses: { target: string; value: string }[];  // summary numeric bonuses
+  recommendedUnits: string[];
   verified: boolean;
   sources?: string[];
 }
