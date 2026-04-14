@@ -1,0 +1,41 @@
+{
+  "slug": "williams",
+  "name": "Williams",
+  "faction": "scorpion",
+  "category": "artillery",
+  "rank": "S",
+  "country": "XX",
+  "countryName": "Empire du Scorpion",
+  "obtainability": "campaign",
+  "shortDesc": "L'un des trois capitaines de l'Empire du Scorpion, concepteur du KS-90.",
+  "longDesc": "Williams est l'un des trois capitaines de l'Empire du Scorpion, avec Osborn et Colson. Selon le lore, il a conçu et produit le KS-90, l'artillerie automotrice d'élite mystique. À pairer naturellement avec le KS-90 ou les autres artilleries Scorpion.",
+  "skills": [
+    {
+      "name": "Ingénieur mystique",
+      "desc": "Bonus spécial sur KS-90 et artilleries Scorpion."
+    },
+    {
+      "name": "Nano-technologie",
+      "desc": "Récupération HP 3%/tour pour unités contrôlées."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque KS-90",
+      "value": "+35%"
+    },
+    {
+      "target": "Récupération HP",
+      "value": "+3%/tour"
+    }
+  ],
+  "recommendedUnits": [
+    "ks-90",
+    "e-775"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

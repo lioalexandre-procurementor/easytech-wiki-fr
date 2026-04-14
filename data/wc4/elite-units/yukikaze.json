@@ -1,0 +1,160 @@
+{
+  "slug": "yukikaze",
+  "name": "Yukikaze",
+  "nameEn": null,
+  "category": "navy",
+  "faction": "standard",
+  "country": "JP",
+  "countryName": "Japon",
+  "tier": "A",
+  "obtainability": "shop",
+  "shortDesc": "Destroyer japonais classe Kagero — « le destroyer chanceux ».",
+  "longDesc": "Célèbre pour avoir survécu à presque toutes les batailles majeures du Pacifique. Très forte esquive et vitesse.",
+  "stats": {
+    "atk": [
+      85,
+      95,
+      104,
+      114,
+      123,
+      133,
+      142,
+      152,
+      161,
+      171,
+      180,
+      190
+    ],
+    "def": [
+      45,
+      50,
+      54,
+      59,
+      63,
+      68,
+      72,
+      77,
+      81,
+      86,
+      90,
+      95
+    ],
+    "hp": [
+      110,
+      121,
+      132,
+      143,
+      154,
+      165,
+      175,
+      186,
+      197,
+      208,
+      219,
+      230
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "⚓",
+      "name": "Tir de barrage",
+      "desc": "Attaque multi-cibles sur les navires adjacents.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "⚙",
+      "name": "Coque renforcée",
+      "desc": "+20% HP en mer profonde.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "✈",
+      "name": "Défense AA",
+      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir Yukikaze dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à Yukikaze ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

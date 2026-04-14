@@ -1,0 +1,160 @@
+{
+  "slug": "is-3",
+  "name": "IS-3 Heavy Tank",
+  "nameEn": null,
+  "category": "tank",
+  "faction": "standard",
+  "country": "RU",
+  "countryName": "URSS",
+  "tier": "S",
+  "obtainability": "shop",
+  "shortDesc": "Char lourd soviétique à tourelle ogivale — une des meilleures unités blindées.",
+  "longDesc": "L'IS-3 est apparu fin 1945. Équivalent du King Tiger, qu'il surpasse parfois en pool de PV. Canon 122mm redoutable.",
+  "stats": {
+    "atk": [
+      80,
+      89,
+      98,
+      107,
+      116,
+      125,
+      135,
+      144,
+      153,
+      162,
+      171,
+      180
+    ],
+    "def": [
+      80,
+      90,
+      99,
+      109,
+      118,
+      128,
+      137,
+      147,
+      156,
+      166,
+      175,
+      185
+    ],
+    "hp": [
+      160,
+      176,
+      193,
+      209,
+      225,
+      242,
+      258,
+      275,
+      291,
+      307,
+      324,
+      340
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🛡",
+      "name": "Blindage renforcé",
+      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "⚙",
+      "name": "Cible prioritaire",
+      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "⚔",
+      "name": "Charge blindée",
+      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game (capacité signature).",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir IS-3 Heavy Tank dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à IS-3 Heavy Tank ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

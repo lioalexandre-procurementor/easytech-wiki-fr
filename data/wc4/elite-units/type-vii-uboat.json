@@ -1,55 +1,57 @@
 {
   "slug": "type-vii-uboat",
-  "name": "Type VII U-Boot",
+  "name": "Type VII U-Boat",
+  "nameEn": null,
   "category": "navy",
+  "faction": "standard",
   "country": "DE",
   "countryName": "Allemagne",
-  "tier": "S",
-  "obtainability": "event",
-  "shortDesc": "Sous-marin furtif allemand. Cauchemar des porte-avions et capital ships.",
-  "longDesc": "Le Type VII U-Boot est l'unité navale la plus crainte de WC4 grâce à sa furtivité et ses re-attacks. La communauté NamuWiki le considère comme le n°1 de la marine d'élite, devant le Richelieu et l'Enterprise.",
+  "tier": "A",
+  "obtainability": "shop",
+  "shortDesc": "Sous-marin d'attaque allemand WWII, ossature de la Kriegsmarine.",
+  "longDesc": "Sous-marin le plus produit de l'histoire (~700 unités). Colonne vertébrale de la Bataille de l'Atlantique. Furtivité et dégâts de torpille élevés.",
   "stats": {
     "atk": [
-      68,
-      72,
-      77,
-      81,
-      85,
-      89,
-      94,
-      98,
-      102,
-      106,
-      111,
-      115
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200
     ],
     "def": [
-      30,
-      32,
-      35,
-      37,
-      39,
-      42,
+      40,
       44,
       47,
-      49,
       51,
-      54,
-      56
+      55,
+      58,
+      62,
+      65,
+      69,
+      73,
+      76,
+      80
     ],
     "hp": [
-      300,
-      320,
-      340,
-      360,
-      380,
-      400,
-      420,
-      440,
-      460,
-      480,
-      500,
-      520
+      120,
+      132,
+      144,
+      155,
+      167,
+      179,
+      191,
+      203,
+      215,
+      226,
+      238,
+      250
     ],
     "mov": [
       3,
@@ -83,104 +85,76 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "🌫",
-      "name": "Plongée",
-      "desc": "Invisible aux unités de surface non-ASW.",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Torpilles G7e",
-      "desc": "+30% dégâts vs capital ships.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Tube lance-torpilles 533mm",
-      "desc": "Attaque +6.",
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "active-skill",
-      "icon": "💥",
-      "name": "Salve de torpilles",
-      "desc": "Tire 4 torpilles (AoE 2 cases). Cooldown : 3 tours.",
+      "icon": "⚓",
+      "name": "Tir de barrage",
+      "desc": "Attaque multi-cibles sur les navires adjacents.",
       "milestone": true
     },
     {
       "lvl": 7,
       "type": "passive",
-      "icon": "🛡️",
+      "icon": "⚙",
       "name": "Coque renforcée",
-      "desc": "Défense +5, réduction dégâts ASW -25%.",
+      "desc": "+20% HP en mer profonde.",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "active-skill",
-      "icon": "💥",
-      "name": "Attaque coordonnée Wolfpack",
-      "desc": "Inflige des dégâts splash. +50% dégâts si plusieurs U-Boots à 3 cases.",
+      "icon": "✈",
+      "name": "Défense AA",
+      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
       "milestone": true
-    },
-    {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "📈",
-      "name": "Dégâts cumulatifs",
-      "desc": "+10% dégâts permanent par capital ship coulé (max +50%).",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Équipage Kriegsmarine vétéran",
-      "desc": "Attaque +8, +10% chance critique.",
-      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "passive",
-      "icon": "🎖️",
-      "name": "Loup gris des mers",
-      "desc": "Furtivité parfaite. Critiques ignorent toute défense.",
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Doenitz",
-    "Raeder",
-    "Yamamoto"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Salve de torpilles peut couler un cuirassé en un tour",
-    "<b>Lvl 5→9</b> — Wolfpack synergise avec marine multi-sub",
-    "<b>Lvl 9→12</b> — NamuWiki recommande fortement de monter le U-Boot au niveau 12"
-  ],
-  "verified": true,
-  "sources": [
-    "NamuWiki KR",
-    "Fandom EN"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le Type VII U-Boot dans World Conqueror 4 ?",
-      "a": "Le Type VII U-Boot s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir Type VII U-Boat dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le Type VII U-Boot vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Type VII U-Boot suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le Type VII U-Boot ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à Type VII U-Boat ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

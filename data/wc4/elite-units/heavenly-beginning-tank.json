@@ -1,0 +1,160 @@
+{
+  "slug": "heavenly-beginning-tank",
+  "name": "Heavenly Beginning Tank",
+  "nameEn": null,
+  "category": "tank",
+  "faction": "scorpion",
+  "country": "XX",
+  "countryName": "Empire du Scorpion",
+  "tier": "S",
+  "obtainability": "campaign",
+  "shortDesc": "Super char mystique — unité blindée fin-jeu des Mystic Forces.",
+  "longDesc": "Super char des Mystic Forces (Empire du Scorpion). Apparaît en fin de challenge 1960 Conquest et certains événements.",
+  "stats": {
+    "atk": [
+      120,
+      133,
+      145,
+      158,
+      171,
+      184,
+      196,
+      209,
+      222,
+      235,
+      247,
+      260
+    ],
+    "def": [
+      110,
+      122,
+      134,
+      145,
+      157,
+      169,
+      181,
+      193,
+      205,
+      216,
+      228,
+      240
+    ],
+    "hp": [
+      220,
+      242,
+      264,
+      285,
+      307,
+      329,
+      351,
+      373,
+      395,
+      416,
+      438,
+      460
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🛡",
+      "name": "Blindage renforcé",
+      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "⚙",
+      "name": "Cible prioritaire",
+      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "⚔",
+      "name": "Charge blindée",
+      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game (capacité signature).",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir Heavenly Beginning Tank dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via campagne ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à Heavenly Beginning Tank ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "rokossovsky",
+  "name": "Konstantin Rokossovsky",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "country": "RU",
+  "countryName": "URSS",
+  "obtainability": "shop",
+  "shortDesc": "Général blindé soviétique — meilleures capacités offensives après entraînement.",
+  "longDesc": "Après entraînement, Rokossovsky est l'un des meilleurs généraux blindés du jeu, avec une puissance offensive supérieure à Patton. À prioriser pour les chars soviétiques (IS-3, T-72). À entraîner avant Patton.",
+  "skills": [
+    {
+      "name": "Opération Bagration",
+      "desc": "Bonus offensif massif sur secteur attaqué."
+    },
+    {
+      "name": "Commandement ferme",
+      "desc": "Réduit les pertes alliées adjacentes."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque char",
+      "value": "+30%"
+    },
+    {
+      "target": "Défense char",
+      "value": "+15%"
+    }
+  ],
+  "recommendedUnits": [
+    "is-3",
+    "t-72",
+    "t-44"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

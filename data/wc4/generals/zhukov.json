@@ -1,0 +1,42 @@
+{
+  "slug": "zhukov",
+  "name": "Gueorgui Joukov",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "S",
+  "country": "RU",
+  "countryName": "URSS",
+  "obtainability": "shop",
+  "shortDesc": "Général polyvalent au niveau de Konev en artillerie.",
+  "longDesc": "Joukov est un général d'artillerie/polyvalent de premier rang, au niveau de Konev en appui-feu. Option alternative pour les joueurs qui veulent flexibilité sur plusieurs types d'unités.",
+  "skills": [
+    {
+      "name": "Défense de Moscou",
+      "desc": "Bonus défensif global sur secteur."
+    },
+    {
+      "name": "Rouleau compresseur",
+      "desc": "Attaques massives coordonnées."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque artillerie",
+      "value": "+25%"
+    },
+    {
+      "target": "Défense globale",
+      "value": "+15%"
+    }
+  ],
+  "recommendedUnits": [
+    "bm-21-grad",
+    "b-4-howitzer",
+    "topol-m"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

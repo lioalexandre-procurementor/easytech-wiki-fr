@@ -1,55 +1,57 @@
 {
   "slug": "schwerer-gustav",
   "name": "Schwerer Gustav",
+  "nameEn": null,
   "category": "artillery",
+  "faction": "standard",
   "country": "DE",
   "countryName": "Allemagne",
-  "tier": "A",
-  "obtainability": "event",
-  "shortDesc": "Canon ferroviaire géant. Portée et dégâts colossaux mais immobile.",
-  "longDesc": "Le Schwerer Gustav est le plus gros canon jamais construit. Dans WC4, c'est l'arme de siège ultime : portée et dégâts énormes, mais immobile et lente à recharger. Parfait pour réduire les forteresses ennemies depuis l'arrière de la ligne.",
+  "tier": "S",
+  "obtainability": "shop",
+  "shortDesc": "Plus gros canon sur rails jamais construit — artillerie ultime de siège.",
+  "longDesc": "Canon ferroviaire de 800mm. Dégâts dévastateurs mais mobilité quasi-nulle. Usage siège uniquement.",
   "stats": {
     "atk": [
-      110,
-      116,
-      123,
-      129,
-      135,
-      142,
-      148,
-      155,
-      161,
-      167,
-      174,
-      180
+      150,
+      168,
+      186,
+      205,
+      223,
+      241,
+      259,
+      277,
+      295,
+      314,
+      332,
+      350
     ],
     "def": [
-      12,
-      13,
-      15,
-      16,
-      17,
-      18,
       20,
-      21,
-      22,
       23,
       25,
-      26
+      28,
+      31,
+      34,
+      36,
+      39,
+      42,
+      45,
+      47,
+      50
     ],
     "hp": [
-      180,
-      196,
-      213,
-      229,
-      245,
-      262,
-      278,
-      295,
-      311,
-      327,
-      344,
-      360
+      100,
+      111,
+      122,
+      133,
+      144,
+      155,
+      165,
+      176,
+      187,
+      198,
+      209,
+      220
     ],
     "mov": [
       1,
@@ -66,112 +68,93 @@
       1
     ],
     "rng": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Obus de 800mm",
-      "desc": "Inflige des dégâts massifs (AoE 2 cases).",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "🏛️",
-      "name": "Brise-fortifications",
-      "desc": "+50% dégâts vs villes et défenses.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Calcul de tir",
-      "desc": "Attaque +10.",
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe Gustav",
-      "desc": "Tir géant : AoE 3x3, dégâts x2. Cooldown : 5 tours.",
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Portée étendue",
+      "desc": "+1 portée de tir.",
       "milestone": true
     },
     {
       "lvl": 7,
-      "type": "passive",
-      "icon": "🎯",
-      "name": "Précision géodésique",
-      "desc": "+10% précision à longue portée.",
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir précis",
+      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🏛️",
-      "name": "Réducteur de villes",
-      "desc": "Capture une ville en 1 tour si HP < 30%.",
+      "icon": "🔥",
+      "name": "Saturation",
+      "desc": "Dégâts de zone sur tuile adjacente.",
       "milestone": true
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Équipe ferroviaire",
-      "desc": "Attaque +15, recharge -1 tour.",
-      "milestone": false
     },
     {
       "lvl": 12,
       "type": "active-skill",
-      "icon": "🎖️",
-      "name": "Apocalypse",
-      "desc": "Détruit complètement une cible non-élite + AoE 5x5. Cooldown : 8 tours.",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Speer",
-    "Kesselring",
-    "Manstein"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Frappe Gustav vide les villes ennemies",
-    "<b>Lvl 5→9</b> — Réducteur de villes accélère les conquêtes",
-    "<b>Lvl 9→12</b> — Build siège pur"
-  ],
-  "verified": false,
-  "sources": [
-    "Extrapolation Fandom EN"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le Schwerer Gustav dans World Conqueror 4 ?",
-      "a": "Le Schwerer Gustav s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir Schwerer Gustav dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le Schwerer Gustav vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Schwerer Gustav suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le Schwerer Gustav ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à Schwerer Gustav ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

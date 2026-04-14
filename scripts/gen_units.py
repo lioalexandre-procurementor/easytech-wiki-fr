@@ -1,1142 +1,377 @@
 #!/usr/bin/env python3
 """
-Generate all 38 elite unit JSON data files for World Conqueror 4.
-Sources: NamuWiki KR + Fandom EN. Where data isn't directly sourced,
-stats are reasonable extrapolations marked verified=false.
+Génère les fiches JSON des unités d'élite WC4 + unités Scorpion Empire.
+
+IMPORTANT — toutes les données sont marquées `verified: false` :
+les noms d'unités et leur catégorie sont issus de la recherche publique
+(NamuWiki, Fandom WC4, forums Easytech), mais les stats exactes par niveau
+et les perks précis nécessitent une validation in-game.
+
+Usage :
+    python3 scripts/gen_units.py
 """
 import json
-import os
 import re
+from pathlib import Path
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data", "wc4", "elite-units")
-os.makedirs(DATA_DIR, exist_ok=True)
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "data" / "wc4" / "elite-units"
+OUT.mkdir(parents=True, exist_ok=True)
 
-def slugify(s):
-    s = s.lower()
-    s = re.sub(r"[^a-z0-9]+", "-", s)
-    return s.strip("-")
+SOURCES_DEFAULT = [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80",
+]
 
-def grow_stats(base, end, n=12):
-    """Linear-ish growth from base (lvl1) to end (lvl12)."""
-    return [round(base + (end - base) * (i / 11), 0).__int__() for i in range(n)]
 
-def stats(atk, def_, hp, mov_base, rng_base, mov_bump_at=None, rng_bump_at=None):
-    """Build 12-level stats. Optionally bump movement/range at given level."""
-    s = {
-        "atk": grow_stats(atk[0], atk[1]),
-        "def": grow_stats(def_[0], def_[1]),
-        "hp":  grow_stats(hp[0],  hp[1]),
-        "mov": [mov_base] * 12,
-        "rng": [rng_base] * 12,
+def grow(base: int, end: int) -> list:
+    step = (end - base) / 11
+    return [round(base + step * i) for i in range(12)]
+
+
+def stats(atk_range, def_range, hp_range, mov, rng):
+    return {
+        "atk": grow(*atk_range),
+        "def": grow(*def_range),
+        "hp": grow(*hp_range),
+        "mov": [mov] * 12,
+        "rng": [rng] * 12,
     }
-    if mov_bump_at:
-        for i in range(mov_bump_at - 1, 12):
-            s["mov"][i] = mov_base + 1
-    if rng_bump_at:
-        for i in range(rng_bump_at - 1, 12):
-            s["rng"][i] = rng_base + 1
-    return s
 
-def perk(lvl, type_, icon, name, desc, milestone=False):
-    return {"lvl": lvl, "type": type_, "icon": icon, "name": name, "desc": desc, "milestone": milestone}
 
-DEFAULT_FAQS = lambda name: [
-    {"q": f"Comment débloquer le {name} dans World Conqueror 4 ?",
-     "a": f"Le {name} s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."},
-    {"q": f"Le {name} vaut-il la peine d'être monté au niveau 12 ?",
-     "a": f"La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le {name} suit cette logique."},
-    {"q": f"Quels généraux sont les meilleurs avec le {name} ?",
-     "a": f"Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."},
+def perk(lvl, ptype, name, desc, icon="⚙", milestone=False):
+    return {
+        "lvl": lvl,
+        "type": ptype,
+        "icon": icon,
+        "name": name,
+        "desc": desc,
+        "milestone": milestone,
+    }
+
+
+def generic_perks(cat: str) -> list:
+    common = [
+        perk(1, "stat", "Stats de base", "Statistiques de départ de l'unité d'élite."),
+        perk(3, "passive", "Bonus moral", "+5% moral aux unités alliées adjacentes.", "🎖"),
+    ]
+    by_cat = {
+        "tank": [
+            perk(5, "active-skill", "Blindage renforcé", "Réduit de 30% les dégâts reçus pendant 1 tour.", "🛡", True),
+            perk(7, "passive", "Cible prioritaire", "+15% dégâts contre les unités d'infanterie."),
+            perk(9, "active-skill", "Charge blindée", "Attaque supplémentaire après avoir éliminé une unité.", "⚔", True),
+            perk(12, "active-skill", "Perk ultime", "Skill final à valider in-game (capacité signature).", "⭐", True),
+        ],
+        "infantry": [
+            perk(5, "passive", "Embuscade", "+20% dégâts en terrain forestier ou urbain.", "🌲", True),
+            perk(7, "active-skill", "Capacité signature", "Skill propre à l'infanterie d'élite (voir jeu).", "🎯"),
+            perk(9, "passive", "Vétérance", "+10% esquive permanent.", "🛡", True),
+            perk(12, "active-skill", "Perk ultime", "Skill final à valider in-game.", "⭐", True),
+        ],
+        "artillery": [
+            perk(5, "passive", "Portée étendue", "+1 portée de tir.", "🎯", True),
+            perk(7, "active-skill", "Tir précis", "Ignore 50% de la défense ennemie pendant 1 tour.", "💥"),
+            perk(9, "passive", "Saturation", "Dégâts de zone sur tuile adjacente.", "🔥", True),
+            perk(12, "active-skill", "Perk ultime", "Skill final à valider in-game.", "⭐", True),
+        ],
+        "navy": [
+            perk(5, "active-skill", "Tir de barrage", "Attaque multi-cibles sur les navires adjacents.", "⚓", True),
+            perk(7, "passive", "Coque renforcée", "+20% HP en mer profonde."),
+            perk(9, "active-skill", "Défense AA", "Réduit les dégâts aériens de 40% pendant 1 tour.", "✈", True),
+            perk(12, "active-skill", "Perk ultime", "Skill final à valider in-game.", "⭐", True),
+        ],
+        "airforce": [
+            perk(5, "passive", "Supériorité aérienne", "+15% dégâts contre autres unités aériennes.", "✈", True),
+            perk(7, "active-skill", "Frappe surprise", "Première attaque non subie.", "💥"),
+            perk(9, "passive", "Vol stationnaire", "Aucun coût de mouvement pour rester en place.", "🪂", True),
+            perk(12, "active-skill", "Perk ultime", "Skill final à valider in-game.", "⭐", True),
+        ],
+    }
+    return common + by_cat[cat]
+
+
+# ============================================================
+# STANDARD ELITE UNITS — real-world inspired
+# ============================================================
+
+STANDARD_UNITS = [
+    # TANKS (9)
+    {"name": "T-44", "slug": "t-44", "category": "tank", "country": "RU", "countryName": "URSS", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Char moyen soviétique de fin de guerre, précurseur du T-54.",
+     "longDesc": "Développé en 1944 pour remplacer le T-34, le T-44 est une unité d'élite WC4 classée char médian avancé. Combine mobilité et blindage.",
+     "baseStats": ((60, 130), (50, 120), (120, 240), 3, 1)},
+    {"name": "Königs Tiger", "slug": "konigs-tiger", "nameEn": "King Tiger", "category": "tank", "country": "DE", "countryName": "Allemagne", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Super char lourd allemand, une des plus puissantes unités blindées du jeu.",
+     "longDesc": "Le Königs Tiger (Tiger II) est une Elite Force recrutable une fois par bataille. Au même niveau que l'IS-3, blindage et canon 88mm L/71 redoutables.",
+     "baseStats": ((80, 180), (80, 180), (150, 320), 2, 1)},
+    {"name": "M26 Pershing", "slug": "m26-pershing", "category": "tank", "country": "US", "countryName": "États-Unis", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Char lourd américain de fin de WWII, équilibré attaque/défense.",
+     "longDesc": "Entre en service début 1945 pour contrer les Tiger et Panther. Unité d'élite polyvalente, bon compromis entre offensive et durabilité.",
+     "baseStats": ((70, 160), (70, 160), (140, 290), 3, 1)},
+    {"name": "IS-3 Heavy Tank", "slug": "is-3", "category": "tank", "country": "RU", "countryName": "URSS", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Char lourd soviétique à tourelle ogivale — une des meilleures unités blindées.",
+     "longDesc": "L'IS-3 est apparu fin 1945. Équivalent du King Tiger, qu'il surpasse parfois en pool de PV. Canon 122mm redoutable.",
+     "baseStats": ((80, 180), (80, 185), (160, 340), 2, 1)},
+    {"name": "Centurion", "slug": "centurion", "category": "tank", "country": "GB", "countryName": "Royaume-Uni", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Premier MBT britannique, pont entre WWII et ère moderne.",
+     "longDesc": "Le Centurion (A41) est le premier char de combat principal au monde. Unité d'élite polyvalente : mobilité, blindage, canon 20-pdr/105mm.",
+     "baseStats": ((70, 160), (70, 165), (140, 290), 3, 1)},
+    {"name": "T-72", "slug": "t-72", "category": "tank", "country": "RU", "countryName": "URSS", "tier": "A", "obtainability": "shop",
+     "shortDesc": "MBT soviétique emblématique de la guerre froide, produit en masse.",
+     "longDesc": "Canon 125mm lisse, chargeur automatique. Unité d'élite moderne accessible dans Cold War et Modern War.",
+     "baseStats": ((90, 200), (80, 190), (160, 320), 3, 1)},
+    {"name": "M1A1 Abrams", "slug": "m1a1-abrams", "category": "tank", "country": "US", "countryName": "États-Unis", "tier": "S", "obtainability": "shop",
+     "shortDesc": "MBT américain — référence des chars modernes.",
+     "longDesc": "Turbine à gaz, canon 120mm lisse, blindage composite Chobham. Unité d'élite de référence dans les scénarios modernes.",
+     "baseStats": ((100, 220), (90, 200), (170, 350), 3, 1)},
+    {"name": "Honeycomb", "slug": "honeycomb", "category": "tank", "country": "XX", "countryName": "Inconnu", "tier": "A", "obtainability": "event",
+     "shortDesc": "Char d'élite secondaire accessible via événement — détails à vérifier in-game.",
+     "longDesc": "Mentionné dans la liste NamuWiki des tanks d'élite WC4. Origines et stats exactes à confirmer in-game.",
+     "baseStats": ((70, 160), (70, 170), (140, 300), 3, 1)},
+    {"name": "Leopard 2", "slug": "leopard-2", "category": "tank", "country": "DE", "countryName": "Allemagne", "tier": "S", "obtainability": "shop",
+     "shortDesc": "MBT allemand moderne, canon 120mm lisse Rheinmetall.",
+     "longDesc": "Entre en service en 1979 et reste l'un des meilleurs MBT au monde. S-tier pour les scénarios modernes.",
+     "baseStats": ((100, 220), (95, 210), (170, 350), 3, 1)},
+
+    # INFANTRY (7)
+    {"name": "Combat Medic", "slug": "combat-medic", "category": "infantry", "country": "XX", "countryName": "Universel", "tier": "S", "obtainability": "event",
+     "shortDesc": "Infirmier de combat — unique source de soin en jeu, indispensable tôt.",
+     "longDesc": "Fortement recommandé dès que possible. Seule unité qui active véritablement le mécanisme de guérison. À maxer en priorité.",
+     "baseStats": ((30, 70), (40, 90), (100, 200), 3, 1)},
+    {"name": "Hawkeye", "slug": "hawkeye", "category": "infantry", "country": "US", "countryName": "États-Unis", "tier": "A", "obtainability": "event",
+     "shortDesc": "Reconnaissance d'élite avec bonus de vision et d'esquive.",
+     "longDesc": "Spécialisée dans la reconnaissance : portée de vision étendue et bonus d'esquive, utile en terrain inconnu.",
+     "baseStats": ((40, 90), (40, 90), (100, 210), 3, 1)},
+    {"name": "Brandenburg Infantry", "slug": "brandenburg-infantry", "category": "infantry", "country": "DE", "countryName": "Allemagne", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Forces spéciales allemandes WWII — sabotage et infiltration.",
+     "longDesc": "Représente la Division Brandenburg, forces spéciales allemandes WWII spécialisées dans l'infiltration. Bonus en terrain varié.",
+     "baseStats": ((50, 110), (45, 95), (110, 220), 3, 1)},
+    {"name": "Alpini", "slug": "alpini", "category": "infantry", "country": "IT", "countryName": "Italie", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Chasseurs alpins italiens, experts du terrain montagneux.",
+     "longDesc": "Troupes de montagne italiennes. Bonus significatifs en terrain montagneux et mobilité améliorée sur collines.",
+     "baseStats": ((45, 100), (45, 100), (105, 210), 4, 1)},
+    {"name": "RPG Rocket Soldier", "slug": "rpg-rocket-soldier", "category": "infantry", "country": "RU", "countryName": "URSS", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Infanterie anti-char équipée de lance-roquettes RPG.",
+     "longDesc": "Soldat d'élite spécialisé anti-blindé. Équipé de lance-roquettes RPG-7. Rôle escorte urbaine contre mécanisés.",
+     "baseStats": ((60, 130), (40, 85), (100, 200), 3, 1)},
+    {"name": "Engineer Unit", "slug": "engineer-unit", "category": "infantry", "country": "XX", "countryName": "Universel", "tier": "B", "obtainability": "event",
+     "shortDesc": "Unité du génie — construction, réparation, déminage.",
+     "longDesc": "Construit des fortifications, répare les unités amies, franchit les zones minées. Indispensable en siège.",
+     "baseStats": ((30, 65), (45, 95), (110, 220), 3, 1)},
+    {"name": "Ghost Troop", "slug": "ghost-troop", "category": "infantry", "country": "XX", "countryName": "Universel", "tier": "S", "obtainability": "event",
+     "shortDesc": "Force fantôme — unité d'élite furtive à haute létalité.",
+     "longDesc": "Parmi les meilleures unités d'infanterie du jeu. Haute attaque, esquive importante, capacité d'infiltration.",
+     "baseStats": ((65, 140), (50, 105), (110, 220), 4, 1)},
+
+    # ARTILLERY (9)
+    {"name": "M7 Priest", "slug": "m7-priest", "category": "artillery", "country": "US", "countryName": "États-Unis", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Obusier automoteur américain 105mm sur châssis M3 Lee.",
+     "longDesc": "Obusier automoteur WWII. Artillerie d'élite à mobilité élevée, bonne pour l'appui-feu dans les premiers scénarios WW2.",
+     "baseStats": ((80, 180), (30, 70), (90, 190), 3, 3)},
+    {"name": "Schwerer Gustav", "slug": "schwerer-gustav", "category": "artillery", "country": "DE", "countryName": "Allemagne", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Plus gros canon sur rails jamais construit — artillerie ultime de siège.",
+     "longDesc": "Canon ferroviaire de 800mm. Dégâts dévastateurs mais mobilité quasi-nulle. Usage siège uniquement.",
+     "baseStats": ((150, 350), (20, 50), (100, 220), 1, 4)},
+    {"name": "BM-21 Grad", "slug": "bm-21-grad", "category": "artillery", "country": "RU", "countryName": "URSS", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Lance-roquettes multiples soviétique 122mm, 40 tubes.",
+     "longDesc": "Lance-roquettes multiples 122mm monté sur camion Ural-375D. Cadence de tir dévastatrice, dégâts de zone.",
+     "baseStats": ((100, 220), (30, 60), (100, 200), 3, 3)},
+    {"name": "B-4 Howitzer", "slug": "b-4-howitzer", "category": "artillery", "country": "RU", "countryName": "URSS", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Obusier soviétique 203mm — l'un des plus gros calibres WWII.",
+     "longDesc": "Obusier 203mm de l'Armée Rouge dès 1934. Utilisé contre fortifications et positions enterrées.",
+     "baseStats": ((120, 270), (25, 55), (95, 200), 2, 3)},
+    {"name": "Stuka Rocket Artillery", "slug": "stuka-rocket", "category": "artillery", "country": "DE", "countryName": "Allemagne", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Stuka zu Fuss — lance-roquettes allemand 280/320mm, ne pas confondre avec l'avion.",
+     "longDesc": "Lance-roquettes WWII monté sur demi-chenille Sd.Kfz.251. Artillerie d'élite à dégâts explosifs.",
+     "baseStats": ((100, 220), (30, 60), (100, 210), 3, 3)},
+    {"name": "AuF1 SPG", "slug": "auf1-spg", "category": "artillery", "country": "FR", "countryName": "France", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Canon automoteur français 155mm sur châssis AMX-30.",
+     "longDesc": "GCT AuF1 : obusier automoteur 155mm développé dans les années 1970. Bonne mobilité et portée.",
+     "baseStats": ((100, 220), (35, 75), (100, 210), 3, 3)},
+    {"name": "RT-2PM2 Topol-M", "slug": "topol-m", "category": "artillery", "country": "RU", "countryName": "Russie", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Missile balistique intercontinental russe — unité d'élite ultime.",
+     "longDesc": "ICBM russe à tête nucléaire, service 1997. Portée maximale, dégâts dévastateurs, usage très limité.",
+     "baseStats": ((200, 450), (20, 40), (80, 180), 2, 5)},
+    {"name": "M142 HIMARS", "slug": "m142-himars", "category": "artillery", "country": "US", "countryName": "États-Unis", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Lance-roquettes américain guidé GPS, mobilité shoot-and-scoot.",
+     "longDesc": "Lance-roquettes moderne haute précision (GMLRS GPS, ATACMS). S-tier incontournable fin de campagne.",
+     "baseStats": ((130, 290), (30, 60), (100, 220), 4, 4)},
+    {"name": "8.8 cm Flak", "slug": "flak-88", "category": "artillery", "country": "DE", "countryName": "Allemagne", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Canon anti-aérien allemand 88mm, redoutable anti-char également.",
+     "longDesc": "L'un des canons les plus polyvalents de la WWII. Double usage AA / anti-blindé.",
+     "baseStats": ((90, 200), (40, 85), (95, 200), 2, 3)},
+
+    # NAVY (8)
+    {"name": "Type VII U-Boat", "slug": "type-vii-uboat", "category": "navy", "country": "DE", "countryName": "Allemagne", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Sous-marin d'attaque allemand WWII, ossature de la Kriegsmarine.",
+     "longDesc": "Sous-marin le plus produit de l'histoire (~700 unités). Colonne vertébrale de la Bataille de l'Atlantique. Furtivité et dégâts de torpille élevés.",
+     "baseStats": ((90, 200), (40, 80), (120, 250), 3, 2)},
+    {"name": "Typhoon Submarine", "slug": "typhoon-submarine", "category": "navy", "country": "RU", "countryName": "URSS / Russie", "tier": "S", "obtainability": "shop",
+     "shortDesc": "SNLE soviétique classe Typhoon — plus grand sous-marin jamais construit.",
+     "longDesc": "Projekt 941 Akula (code OTAN Typhoon). Sous-marin nucléaire lanceur d'engins soviétique. Capacité de frappe stratégique.",
+     "baseStats": ((140, 310), (50, 110), (150, 320), 3, 3)},
+    {"name": "Richelieu", "slug": "richelieu", "category": "navy", "country": "FR", "countryName": "France", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Cuirassé français de la classe Richelieu, huit canons 380mm.",
+     "longDesc": "Navire de tête de la dernière classe de cuirassés français. Huit canons 380mm en deux tourelles quadruples avant.",
+     "baseStats": ((110, 240), (60, 130), (160, 340), 2, 3)},
+    {"name": "HMS Prince of Wales", "slug": "hms-prince-of-wales", "category": "navy", "country": "GB", "countryName": "Royaume-Uni", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Cuirassé britannique classe King George V, canons 356mm.",
+     "longDesc": "A participé à la chasse au Bismarck avant d'être coulé par l'aviation japonaise en 1941. Canons 14 pouces.",
+     "baseStats": ((105, 230), (60, 125), (155, 330), 2, 3)},
+    {"name": "Yukikaze", "slug": "yukikaze", "category": "navy", "country": "JP", "countryName": "Japon", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Destroyer japonais classe Kagero — « le destroyer chanceux ».",
+     "longDesc": "Célèbre pour avoir survécu à presque toutes les batailles majeures du Pacifique. Très forte esquive et vitesse.",
+     "baseStats": ((85, 190), (45, 95), (110, 230), 4, 2)},
+    {"name": "Arleigh Burke", "slug": "arleigh-burke", "category": "navy", "country": "US", "countryName": "États-Unis", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Destroyer lance-missiles américain — standard OTAN moderne.",
+     "longDesc": "Classe de destroyers lance-missiles de l'US Navy depuis 1991. Système Aegis, Tomahawk et Standard.",
+     "baseStats": ((130, 290), (55, 120), (150, 320), 4, 3)},
+    {"name": "Akagi", "slug": "akagi", "category": "navy", "country": "JP", "countryName": "Japon", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Porte-avions japonais, navire amiral de l'attaque sur Pearl Harbor.",
+     "longDesc": "Porte-avions lourd japonais, navire amiral de la Kido Butai à Pearl Harbor en 1941. Capacité de lancer des raids aériens.",
+     "baseStats": ((130, 280), (50, 110), (170, 360), 3, 4)},
+    {"name": "USS Enterprise (CV-6)", "slug": "enterprise-cv", "category": "navy", "country": "US", "countryName": "États-Unis", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Porte-avions américain le plus décoré de la WWII.",
+     "longDesc": "Porte-avions classe Yorktown, « The Big E ». Navire le plus décoré de l'US Navy pendant la WWII (20 Battle Stars).",
+     "baseStats": ((130, 290), (55, 115), (170, 360), 3, 4)},
+
+    # AIRFORCE (9)
+    {"name": "Supermarine Spitfire", "slug": "supermarine-spitfire", "category": "airforce", "country": "GB", "countryName": "Royaume-Uni", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Chasseur britannique légendaire de la Bataille d'Angleterre.",
+     "longDesc": "Chasseur britannique emblématique de la WWII. Plus de 20 000 unités produites.",
+     "baseStats": ((80, 180), (40, 85), (95, 200), 6, 1)},
+    {"name": "Ju 87 Stuka", "slug": "ju-87-stuka", "category": "airforce", "country": "DE", "countryName": "Allemagne", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Bombardier en piqué allemand — la sirène qui terrorisait l'Europe.",
+     "longDesc": "Bombardier en piqué allemand reconnaissable à ses ailes inversées et à sa sirène Jericho. Dégâts bonus contre unités au sol. À ne pas confondre avec l'artillerie Stuka zu Fuss.",
+     "baseStats": ((90, 200), (35, 75), (95, 200), 5, 1)},
+    {"name": "C-47 Skytrain", "slug": "c-47-skytrain", "category": "airforce", "country": "US", "countryName": "États-Unis", "tier": "B", "obtainability": "event",
+     "shortDesc": "Avion de transport américain, largage de parachutistes.",
+     "longDesc": "Avion de transport allié emblématique. Unité support : permet de larguer des parachutistes derrière les lignes.",
+     "baseStats": ((40, 90), (40, 85), (110, 230), 5, 1)},
+    {"name": "P-40 Warhawk", "slug": "p-40-warhawk", "category": "airforce", "country": "US", "countryName": "États-Unis", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Chasseur américain célèbre avec les Flying Tigers en Chine.",
+     "longDesc": "Chasseur américain début WWII. Célèbre pour ses décorations de gueule de requin chez les Flying Tigers (AVG).",
+     "baseStats": ((75, 170), (40, 80), (95, 200), 6, 1)},
+    {"name": "Mi-24 Hind", "slug": "mi-24-hind", "category": "airforce", "country": "RU", "countryName": "URSS / Russie", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Hélicoptère d'attaque soviétique — « le char volant ».",
+     "longDesc": "Hélicoptère d'assaut soviétique, surnommé « char volant ». Unique dans sa catégorie : attaque + transport léger.",
+     "baseStats": ((110, 240), (50, 110), (130, 280), 5, 1)},
+    {"name": "B-52 Stratofortress", "slug": "b-52-stratofortress", "category": "airforce", "country": "US", "countryName": "États-Unis", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Bombardier lourd stratégique américain — service depuis 1955.",
+     "longDesc": "Bombardier lourd à 8 réacteurs, USAF depuis 1955. Capacité d'emport 31 tonnes. Frappe longue portée stratégique.",
+     "baseStats": ((150, 330), (35, 75), (140, 300), 5, 2)},
+    {"name": "AH-64 Apache", "slug": "ah-64-apache", "category": "airforce", "country": "US", "countryName": "États-Unis", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Hélicoptère d'attaque américain moderne — précision anti-char.",
+     "longDesc": "Hélicoptère d'attaque principal US Army depuis 1986. Missiles Hellfire, canon 30mm, systèmes de visée avancés.",
+     "baseStats": ((120, 260), (50, 110), (130, 280), 5, 1)},
+    {"name": "Harrier", "slug": "harrier", "category": "airforce", "country": "GB", "countryName": "Royaume-Uni", "tier": "A", "obtainability": "shop",
+     "shortDesc": "Avion de combat britannique à décollage vertical (VTOL).",
+     "longDesc": "Premier avion de combat opérationnel à décollage vertical. Célèbre pour son rôle aux Malouines.",
+     "baseStats": ((95, 210), (45, 95), (110, 240), 5, 1)},
+    {"name": "Sukhoi Su-30", "slug": "su-30", "category": "airforce", "country": "RU", "countryName": "Russie", "tier": "S", "obtainability": "shop",
+     "shortDesc": "Chasseur multirôle russe Flanker — supériorité aérienne 4.5G.",
+     "longDesc": "Chasseur multirôle génération 4.5 dérivé du Su-27 Flanker. Poussée vectorielle, radar puissant, missiles R-77.",
+     "baseStats": ((115, 255), (50, 105), (120, 260), 6, 2)},
 ]
 
+
 # ============================================================
-# UNIT DATA
+# SCORPION EMPIRE / MYSTIC FORCES — fictional faction
 # ============================================================
 
-UNITS = [
-
-    # ============ TANKS (10) ============
-    {
-        "slug": "a41-centurion", "name": "A41 Centurion", "category": "tank",
-        "country": "GB", "countryName": "Royaume-Uni", "tier": "S",
-        "obtainability": "free",
-        "shortDesc": "Char britannique d'après-guerre. Fumigène + réduction de portée ennemie au lvl 12.",
-        "longDesc": "Le A41 Centurion est l'un des chars d'élite les plus polyvalents de WC4. Sa compétence signature Fumigène le rend intouchable par les forces terrestres pendant un tour, et au niveau 12, il réduit la portée de tir des ennemis adjacents. C'est l'unité idéale pour tenir une ligne de front ou protéger l'artillerie.",
-        "stats": stats((58, 96), (46, 75), (380, 620), 3, 1, mov_bump_at=6),
-        "perks": [
-            perk(1, "active-skill", "💨", "Fumigène (base)", "Tire un écran de fumée. Ne peut pas être attaqué activement par les forces terrestres pendant 1 tour. Cooldown : 3 tours."),
-            perk(1, "passive", "🛡️", "Blindage composite", "Réduit de 10% les dégâts reçus des chars et artilleries."),
-            perk(2, "stat", "📈", "Entraînement d'équipage", "Attaque +2, HP +10. Précision du tir +5%."),
-            perk(3, "stat", "📈", "Optique améliorée", "Défense +2. Révèle les unités cachées dans un rayon de 1 case."),
-            perk(4, "passive", "🔧", "Maintenance avancée", "Régénère 5% des HP par tour quand stationnaire dans une ville alliée."),
-            perk(5, "active-skill", "💨", "Fumigène amélioré", "Cooldown du Fumigène réduit à 2 tours.", milestone=True),
-            perk(6, "stat", "🏃", "Suspension Horstmann", "Mouvement +1. Permet un redéploiement plus rapide."),
-            perk(7, "passive", "🎯", "Canon 20 pdr optimisé", "+15% de dégâts de contre-attaque."),
-            perk(8, "stat", "📈", "Blindage renforcé", "Défense +3, HP +20. Résistance aux bombardements +10%."),
-            perk(9, "active-skill", "👁️", "Interférence Visuelle", "Pendant le Fumigène, les ennemis à 2 cases voient leur portée réduite à 1.", milestone=True),
-            perk(10, "passive", "⚡", "Chargement automatique", "25% de chance de contre-attaque supplémentaire vs chars."),
-            perk(11, "stat", "💪", "Équipage vétéran", "Attaque +5, Défense +4. +10% esquive vs artillerie."),
-            perk(12, "active-skill", "🎖️", "Suppression de Portée", "Ennemis adjacents : portée réduite à 1 en permanence + 50% chance d'ignorer l'esquive ennemie.", milestone=True),
-        ],
-        "recommendedGenerals": ["Montgomery", "Patton", "Guderian", "Bradley", "Rommel"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Débloquer le Fumigène ASAP (quasi-invincibilité 1 tour)",
-            "<b>Lvl 5→9</b> — Priorité absolue (recommandation NamuWiki)",
-            "<b>Lvl 9→12</b> — Après avoir monté le Medic au niveau 12",
-            "Pairez avec artillerie + Medic pour une ligne invincible",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR", "Fandom EN"],
-    },
-
-    {
-        "slug": "m26-pershing", "name": "M26 Pershing", "category": "tank",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Char lourd US. Armure inclinée et suppression constante (-10% HP/tour) à lvl 12.",
-        "longDesc": "Le M26 Pershing combine puissance de feu et accessibilité : produit dès une usine de niveau 1, c'est l'un des meilleurs chars d'élite pour les joueurs débutants comme avancés. Son armure inclinée booste la contre-attaque, et son perk lvl 12 'Firepower Enhancement' augmente les dégâts à chaque kill.",
-        "stats": stats((62, 102), (48, 78), (400, 640), 3, 1, mov_bump_at=7),
-        "perks": [
-            perk(1, "passive", "🛡️", "Armure inclinée", "Réduit de 15% les dégâts frontaux des chars."),
-            perk(1, "passive", "⚡", "Canon 90mm M3", "+10% de dégâts contre les unités blindées."),
-            perk(3, "stat", "📈", "Optimisation moteur", "Attaque +3, HP +15."),
-            perk(4, "passive", "🎯", "Visée stabilisée", "+8% de précision en mouvement."),
-            perk(5, "active-skill", "💥", "Tir de précision", "Cible un ennemi avec +30% dégâts. Cooldown : 3 tours.", milestone=True),
-            perk(6, "stat", "💪", "Blindage frontal renforcé", "Défense +4, HP +20."),
-            perk(7, "passive", "🔥", "Surchauffe contrôlée", "Pas de pénalité de précision après 2 attaques consécutives."),
-            perk(8, "stat", "📈", "Munitions HE", "Attaque +5 vs infanterie et artillerie."),
-            perk(9, "active-skill", "🎯", "Suppression constante", "Cible perd 10% de ses HP par tour pendant 2 tours.", milestone=True),
-            perk(10, "passive", "🛡️", "Réparation de campagne", "Régénère 3% HP par tour en territoire ami."),
-            perk(11, "stat", "💪", "Équipage Korean War", "Attaque +5, Défense +5."),
-            perk(12, "passive", "🔥", "Firepower Enhancement", "+15% de dégâts permanents par ennemi tué (cumulable jusqu'à +60%).", milestone=True),
-        ],
-        "recommendedGenerals": ["Patton", "Bradley", "MacArthur", "Eisenhower"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Tir de précision est un game-changer dès le early",
-            "<b>Lvl 5→9</b> — Suppression constante synergise avec artillerie",
-            "<b>Lvl 9→12</b> — Firepower Enhancement transforme le Pershing en machine à kill",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "king-tiger", "name": "Tiger II Königs", "category": "tank",
-        "country": "DE", "countryName": "Allemagne", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Char lourd allemand. Énorme puissance de feu, +20% de dégâts critiques.",
-        "longDesc": "Le King Tiger (Tiger II) est l'un des chars d'élite les plus puissants du jeu, à égalité avec l'IS-3. Son perk 'Critical Damage' augmente les dégâts critiques de 20%, ce qui en fait l'unité de prédilection pour Guderian (qui ajoute +10% de chance de critique).",
-        "stats": stats((68, 110), (52, 82), (420, 680), 2, 1),
-        "perks": [
-            perk(1, "passive", "💥", "Critical Damage", "Dégâts critiques +20%."),
-            perk(1, "passive", "🛡️", "Blindage frontal 150mm", "Réduit de 20% les dégâts frontaux."),
-            perk(3, "stat", "📈", "Munitions APCR", "Attaque +4 vs blindés."),
-            perk(4, "passive", "🎯", "Canon KwK 43 88mm", "+5% précision."),
-            perk(5, "active-skill", "🔥", "Tir Triomphal", "Inflige +50% dégâts ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(6, "stat", "💪", "Renfort blindage", "Défense +5, HP +25."),
-            perk(7, "passive", "⚡", "Optique Zeiss", "+10% de chance de critique."),
-            perk(8, "stat", "📈", "Améliorations atelier", "Attaque +5, HP +20."),
-            perk(9, "active-skill", "💥", "Tir de barrage", "Attaque deux ennemis adjacents simultanément. Cooldown : 5 tours.", milestone=True),
-            perk(10, "passive", "🛡️", "Armure spaced", "Réduit de 30% les dégâts d'artillerie."),
-            perk(11, "stat", "💪", "Équipage SS-Panzer", "Attaque +6, Défense +5."),
-            perk(12, "passive", "🎖️", "Légende du Reich", "+25% de chance de critique. Critiques infligent +30% dégâts.", milestone=True),
-        ],
-        "recommendedGenerals": ["Guderian", "Manstein", "Rommel", "Model"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Combo Critical Damage + Tir Triomphal devient redoutable",
-            "<b>Lvl 5→7</b> — Recommandation NamuWiki : Manstein préfère le King Tiger lvl 7+",
-            "<b>Lvl 9→12</b> — Tir de barrage + Légende = roi du PvE en mid-late game",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "m1a1-abrams", "name": "M1A1 Abrams", "category": "tank",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "shop",
-        "shortDesc": "MBT moderne US. Munitions à uranium appauvri, +20-40% de critique.",
-        "longDesc": "Le M1A1 Abrams est le char d'élite moderne ultime côté américain. Son perk 'Depleted Uranium Ammunition' donne +20% de chance de critique au lvl 1, montant à 40% au lvl 9, et ignore 30 à 60% de la défense ennemie. Synergise parfaitement avec Guderian, Manstein et Patton.",
-        "stats": stats((72, 118), (55, 85), (440, 700), 3, 1, mov_bump_at=8),
-        "perks": [
-            perk(1, "passive", "☢️", "Munitions à uranium appauvri", "+20% de chance de critique. Ignore 30% de la défense ennemie."),
-            perk(1, "passive", "🛡️", "Armure Chobham", "-15% dégâts reçus de tous types."),
-            perk(3, "stat", "📈", "Système de visée thermique", "Attaque +5, +5% précision."),
-            perk(4, "passive", "🚀", "Réacteur AGT-1500", "Mouvement libre dans tous types de terrain."),
-            perk(5, "passive", "☢️", "Uranium amélioré", "Critique +30%, ignore 45% défense.", milestone=True),
-            perk(6, "stat", "💪", "Plaques additionnelles", "Défense +5, HP +25."),
-            perk(7, "active-skill", "🎯", "Tir d'engagement rapide", "Attaque sans pénalité même après mouvement maximum. Cooldown : 2 tours."),
-            perk(8, "stat", "📈", "Calibre 120mm L/44", "Attaque +6."),
-            perk(9, "passive", "☢️", "Uranium maximal", "Critique +40%, ignore 60% défense.", milestone=True),
-            perk(10, "active-skill", "💥", "Frappe tactique", "Attaque deux fois ce tour. Cooldown : 4 tours."),
-            perk(11, "stat", "💪", "Composite ATM", "Défense +6, HP +30."),
-            perk(12, "passive", "🎖️", "Suprématie Abrams", "Critiques infligent +50% dégâts. +1 portée d'attaque.", milestone=True),
-        ],
-        "recommendedGenerals": ["Guderian", "Manstein", "Patton", "Schwarzkopf"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Uranium scaling change tout : prioriser ce palier",
-            "<b>Lvl 5→9</b> — Combo crit + ignore défense est dévastateur",
-            "<b>Lvl 9→12</b> — Frappe tactique au lvl 10 double ses dégâts par tour",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — M1A1 Abrams", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "leopard-2", "name": "Leopard 2", "category": "tank",
-        "country": "DE", "countryName": "Allemagne", "tier": "S",
-        "obtainability": "shop",
-        "shortDesc": "MBT allemand moderne. Mobilité, précision et portée étendue avec Manstein.",
-        "longDesc": "Le Leopard 2 est l'un des MBT les plus équilibrés : firepower 120mm, blindage composite, et excellente mobilité. Les joueurs apprécient particulièrement de le coupler à Manstein pour bénéficier d'une portée d'attaque de 3-4 cases en permanence.",
-        "stats": stats((70, 116), (53, 83), (430, 690), 3, 1, mov_bump_at=6, rng_bump_at=11),
-        "perks": [
-            perk(1, "passive", "🎯", "Optique EMES-15", "+10% précision en toute condition."),
-            perk(1, "passive", "🛡️", "Armure modulaire MEXAS", "-12% dégâts d'artillerie."),
-            perk(3, "stat", "📈", "Moteur MTU diesel", "Mouvement +0 (déjà élevé), HP +15."),
-            perk(4, "passive", "⚡", "Munitions DM63", "+15% dégâts critiques."),
-            perk(5, "active-skill", "🚀", "Manœuvre éclair", "Mouvement +2 ce tour, peut attaquer après. Cooldown : 3 tours.", milestone=True),
-            perk(6, "stat", "🏃", "Suspension hydropneumatique", "Mouvement +1 permanent."),
-            perk(7, "passive", "🎯", "Conduite de tir LMS", "+5% chance de critique, +5% esquive."),
-            perk(8, "stat", "💪", "Renfort tourelle", "Défense +5, HP +25."),
-            perk(9, "active-skill", "💥", "Tir longue distance", "Portée temporairement +2, dégâts +20%. Cooldown : 4 tours.", milestone=True),
-            perk(10, "passive", "🔧", "Diagnostic embarqué", "Régénère 5% HP par tour."),
-            perk(11, "stat", "💪", "Équipage Bundeswehr", "Attaque +6, +10% précision."),
-            perk(12, "passive", "🎖️", "Maître du Leopard", "Portée d'attaque +1 permanent. +20% dégâts à distance maximum.", milestone=True),
-        ],
-        "recommendedGenerals": ["Manstein", "Guderian", "Rommel", "Model"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Manœuvre éclair au lvl 5 transforme le Leopard en hit-and-run",
-            "<b>Lvl 5→9</b> — Tir longue distance + Manstein = roi de la portée",
-            "<b>Lvl 9→12</b> — Maître du Leopard donne 3-4 cases de portée en permanence avec Manstein",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — Leopard 2", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "t-72", "name": "T-72", "category": "tank",
-        "country": "RU", "countryName": "URSS / Russie", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "MBT soviétique. Chargeur automatique, fort en territoire ami avec Rokossovsky.",
-        "longDesc": "Le T-72 est un excellent char d'élite low/mid-game grâce à son chargeur automatique et à son perk défensif territorial. Jusqu'au lvl 4, il surpasse l'IS-3 et le King Tiger. Manque de synergie avec un jeu agressif — il doit rester en territoire ami pour exprimer son potentiel.",
-        "stats": stats((64, 100), (46, 76), (390, 620), 3, 1, mov_bump_at=6),
-        "perks": [
-            perk(1, "passive", "⚡", "Chargeur automatique", "+15% vitesse de tir, peut attaquer 2x par tour à partir du lvl 8."),
-            perk(1, "passive", "🛡️", "Armure réactive Kontakt-1", "-15% dégâts vs munitions HEAT."),
-            perk(2, "passive", "🏠", "Défense de la patrie", "+20% défense en territoire allié."),
-            perk(3, "stat", "📈", "Munitions 3BM42", "Attaque +4 vs blindés."),
-            perk(5, "active-skill", "💥", "Salve rapide", "Tire 2 fois cette attaque. Cooldown : 3 tours.", milestone=True),
-            perk(6, "stat", "🏃", "Moteur V-46", "Mouvement +1 permanent."),
-            perk(7, "passive", "🎯", "Stabilisateur 2E28M", "+8% précision en mouvement."),
-            perk(8, "passive", "⚡", "Doubles tirs", "Attaque automatiquement 2 fois par tour."),
-            perk(9, "active-skill", "🛡️", "Forteresse mobile", "+50% défense ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(10, "passive", "🏠", "Défense renforcée", "Bonus territoire ami +30%."),
-            perk(11, "stat", "💪", "Équipage Garde", "Attaque +5, Défense +5."),
-            perk(12, "passive", "🎖️", "Tigre des steppes", "+30% défense permanent. +20% dégâts en territoire allié.", milestone=True),
-        ],
-        "recommendedGenerals": ["Rokossovsky", "Joukov", "Konev"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve rapide + double tir au lvl 8 = burst énorme",
-            "<b>Lvl 5→9</b> — Forteresse mobile sauve la vie en defense territoriale",
-            "<b>Lvl 9→12</b> — Optimisation pour build défensif uniquement",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — T-72", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "is-3-heavy-tank", "name": "IS-3 Heavy Tank", "category": "tank",
-        "country": "RU", "countryName": "URSS", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Char lourd soviétique. HP supérieurs au King Tiger, blindage légendaire.",
-        "longDesc": "L'IS-3 est l'un des chars d'élite les plus durables du jeu. Sa pool de HP surpasse celle du King Tiger. La communauté recommande de le donner à Manstein dès le lvl 5 ou plus pour maximiser son potentiel offensif tout en bénéficiant de sa survivabilité.",
-        "stats": stats((66, 108), (54, 86), (450, 720), 2, 1),
-        "perks": [
-            perk(1, "passive", "🛡️", "Blindage Pike-Nose", "-20% dégâts frontaux."),
-            perk(1, "passive", "💥", "Canon D-25T 122mm", "+15% dégâts critiques."),
-            perk(3, "stat", "📈", "Production 1944", "HP +30."),
-            perk(4, "passive", "🛡️", "Blindage de tourelle", "Défense +5 vs artillerie."),
-            perk(5, "active-skill", "💥", "Coup d'enclume", "Inflige +60% dégâts. Cooldown : 4 tours.", milestone=True),
-            perk(6, "stat", "💪", "Munitions BR-471", "Attaque +5."),
-            perk(7, "passive", "🎯", "Visée nocturne", "Pas de pénalité de précision la nuit ou par mauvais temps."),
-            perk(8, "stat", "📈", "Renfort blindage latéral", "Défense +5, HP +30."),
-            perk(9, "active-skill", "🛡️", "Mur de Stalingrad", "+80% défense ce tour. Régénère 10% HP. Cooldown : 5 tours.", milestone=True),
-            perk(10, "passive", "💀", "Coup mortel", "Achève automatiquement les ennemis < 10% HP."),
-            perk(11, "stat", "💪", "Équipage Garde", "Attaque +6, Défense +6."),
-            perk(12, "passive", "🎖️", "Légende soviétique", "Réduit de 15% les dégâts reçus de toutes sources.", milestone=True),
-        ],
-        "recommendedGenerals": ["Manstein", "Joukov", "Rokossovsky", "Konev"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Coup d'enclume vs Coup d'enclume : burst énorme dès lvl 5",
-            "<b>Lvl 5→9</b> — Manstein préfère l'IS-3 lvl 5+ d'après NamuWiki",
-            "<b>Lvl 9→12</b> — Mur de Stalingrad transforme l'IS-3 en mini-citadelle",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — IS-3 Heavy Tank", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "t-54", "name": "T-54", "category": "tank",
-        "country": "RU", "countryName": "URSS", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "MBT polyvalent soviétique. Bon ratio coût/perf, parfait en transition.",
-        "longDesc": "Le T-54 est le cheval de bataille soviétique d'après-guerre, exporté dans des dizaines de pays. Excellent ratio coût/performance, c'est l'unité de transition idéale entre les chars WW2 et les MBT modernes (T-72, T-80).",
-        "stats": stats((58, 95), (44, 72), (370, 590), 3, 1, mov_bump_at=7),
-        "perks": [
-            perk(1, "passive", "🛡️", "Tourelle hémisphérique", "-10% dégâts critiques reçus."),
-            perk(2, "stat", "📈", "Canon D-10T 100mm", "Attaque +3."),
-            perk(4, "passive", "⚡", "Production de masse", "Coût en industrie réduit de 15%."),
-            perk(5, "active-skill", "💥", "Tir suppressif", "Réduit l'attaque de la cible de -20% pour 2 tours.", milestone=True),
-            perk(7, "stat", "🏃", "Suspension torsion", "Mouvement +1."),
-            perk(9, "active-skill", "🛡️", "Manœuvre défensive", "+40% défense, attaque -50% ce tour. Cooldown : 3 tours.", milestone=True),
-            perk(11, "stat", "💪", "Modernisation", "Attaque +5, Défense +4."),
-            perk(12, "passive", "🎖️", "Cheval de bataille", "+15% dégâts vs chars du même tier ou inférieur.", milestone=True),
-        ],
-        "recommendedGenerals": ["Rokossovsky", "Konev", "Vatutin"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Tir suppressif est utile en defense de ligne",
-            "<b>Lvl 5→9</b> — Bon char de soutien, pas une priorité absolue",
-            "<b>Lvl 9→12</b> — Optionnel, préférer T-72 ou IS-3",
-        ],
-        "verified": False,
-        "sources": ["Fandom EN", "NamuWiki KR (extrapolation)"],
-    },
-
-    {
-        "slug": "merkava", "name": "Merkava Mk IV", "category": "tank",
-        "country": "IL", "countryName": "Israël", "tier": "A",
-        "obtainability": "shop",
-        "shortDesc": "MBT israélien. Conçu pour la survie d'équipage, blindage actif Trophy.",
-        "longDesc": "Le Merkava est unique : moteur frontal, équipage à l'arrière pour maximiser la survie. Son système de protection active Trophy intercepte les missiles et roquettes ennemis. Excellent en combat urbain et défensif.",
-        "stats": stats((68, 110), (56, 88), (440, 700), 3, 1, mov_bump_at=7),
-        "perks": [
-            perk(1, "passive", "🛡️", "Système Trophy", "30% chance d'intercepter missiles et roquettes ennemies."),
-            perk(1, "passive", "❤️", "Survie d'équipage", "Régénère 3% HP par tour."),
-            perk(3, "stat", "📈", "Canon MG253 120mm", "Attaque +4."),
-            perk(5, "active-skill", "🛡️", "Trophy actif", "100% interception ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(7, "stat", "💪", "Blindage modulaire", "Défense +5, HP +25."),
-            perk(9, "active-skill", "❤️", "Évacuation médicale", "Régénère 30% HP. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Vétérans IDF", "Attaque +5, Défense +5."),
-            perk(12, "passive", "🎖️", "Forteresse mobile", "Trophy 60% chance permanente. Régénération +5% HP/tour.", milestone=True),
-        ],
-        "recommendedGenerals": ["Sharon", "Dayan", "Patton"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Trophy actif au lvl 5 = invincibilité contre artillerie pendant 1 tour",
-            "<b>Lvl 5→9</b> — Évacuation médicale prolonge énormément sa survie",
-            "<b>Lvl 9→12</b> — Recommandé pour build tank-survivor",
-        ],
-        "verified": False,
-        "sources": ["Fandom EN (extrapolation)"],
-    },
-
-    {
-        "slug": "amx-30", "name": "AMX-30", "category": "tank",
-        "country": "FR", "countryName": "France", "tier": "B",
-        "obtainability": "event",
-        "shortDesc": "MBT français de Guerre froide. Mobilité maximale au détriment du blindage.",
-        "longDesc": "Le AMX-30 incarne la doctrine française : préférer la mobilité et la puissance de feu plutôt que le blindage lourd. Excellent en offensive rapide et flanking, mais fragile au feu direct.",
-        "stats": stats((60, 96), (38, 64), (340, 540), 4, 1),
-        "perks": [
-            perk(1, "passive", "🏃", "Mobilité française", "Mouvement +1 dans tous les terrains."),
-            perk(1, "passive", "🎯", "Canon CN105-F1", "+10% précision."),
-            perk(3, "stat", "📈", "Optique APX", "Attaque +3, +5% précision."),
-            perk(5, "active-skill", "🚀", "Charge cavalière", "Mouvement +3, attaque +20% ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(7, "stat", "🏃", "Tourelle haute vitesse", "Précision +10%, peut tirer après mouvement maximal."),
-            perk(9, "active-skill", "💥", "Frappe éclair", "Inflige +50% dégâts, ignore 25% défense. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Modernisation B2", "Attaque +5, Défense +3."),
-            perk(12, "passive", "🎖️", "Cavalerie de Gaulle", "+25% mouvement et attaque permanents.", milestone=True),
-        ],
-        "recommendedGenerals": ["De Gaulle", "Patton", "Guderian"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Charge cavalière transforme l'AMX-30 en hit-and-run",
-            "<b>Lvl 5→9</b> — Frappe éclair pour flanking",
-            "<b>Lvl 9→12</b> — Build offensif uniquement, ne pas tank",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation basée sur doctrine AMX-30"],
-    },
-
-    # ============ INFANTRY (6) ============
-    {
-        "slug": "combat-medic", "name": "Combat Medic", "category": "infantry",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "free",
-        "shortDesc": "Seule unité de soin du jeu. Priorité n°1 absolue pour tous les joueurs.",
-        "longDesc": "Le Combat Medic comble le manque cruel du jeu : le soin. C'est la SEULE unité (hors compétences de blood sucking) capable de régénérer les HP de vos troupes. Tier S absolu. Tous les joueurs, payants ou non, doivent débloquer le Medic en priorité.",
-        "stats": stats((18, 38), (22, 50), (240, 480), 3, 1),
-        "perks": [
-            perk(1, "active-skill", "❤️", "Soins de campagne", "Restaure 60 HP à une unité alliée adjacente. Cooldown : 2 tours."),
-            perk(1, "passive", "🪖", "Milice", "+5% défense vs infanterie (perk de faible utilité)."),
-            perk(3, "stat", "📈", "Trousse améliorée", "HP +30, +10 HP par soin."),
-            perk(5, "active-skill", "❤️", "Soins majeurs", "Restaure 120 HP (le double). Cooldown : 2 tours.", milestone=True),
-            perk(6, "passive", "🛡️", "Croix-Rouge", "Réduit de 20% les dégâts subis."),
-            perk(7, "passive", "❤️", "Triage rapide", "Cooldown des soins réduit à 1 tour."),
-            perk(8, "stat", "📈", "Renforts médicaux", "HP +50, peut soigner à 2 cases."),
-            perk(9, "active-skill", "❤️", "Auto-soin", "Le Medic peut désormais se soigner lui-même.", milestone=True),
-            perk(10, "passive", "💉", "Stim de combat", "Soigne 30% au lieu de 25%."),
-            perk(11, "stat", "💪", "Équipe MASH", "Soin +30 HP."),
-            perk(12, "active-skill", "✨", "Miracle médical", "Ressuscite une unité alliée détruite ce tour avec 50% HP. Cooldown : 6 tours.", milestone=True),
-        ],
-        "recommendedGenerals": ["Eisenhower", "Nimitz", "Bradley", "Joukov"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — DOUBLER le soin au lvl 5 est le power spike le plus important du jeu",
-            "<b>Lvl 5→9</b> — Auto-soin au lvl 9 rend le Medic survivor",
-            "<b>Lvl 9→12</b> — <b>NamuWiki recommande de monter le Medic au niveau 12 EN PRIORITÉ ABSOLUE</b>",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — Combat Medic", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "hawkeye-force", "name": "Hawkeye Force", "category": "infantry",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Tireurs d'élite. Bonus de portée et vision étendue. Souffre de rétention.",
-        "longDesc": "La Hawkeye Force est composée de tireurs d'élite avec une portée d'attaque étendue et une excellente vision. Très efficace en harcèlement et reconnaissance. Le principal défaut est sa fragilité : problème de rétention au feu prolongé.",
-        "stats": stats((45, 78), (20, 42), (200, 380), 3, 2),
-        "perks": [
-            perk(1, "passive", "👁️", "Vision élargie", "Révèle les unités cachées dans 3 cases."),
-            perk(1, "passive", "🎯", "Tir de précision", "+15% précision, +20% chance de critique."),
-            perk(3, "stat", "📈", "Optiques M84", "Attaque +5, portée +0 (déjà 2)."),
-            perk(5, "active-skill", "🎯", "Tir mortel", "Cible une unité avec +80% dégâts critiques. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🌫", "Camouflage actif", "Devient invisible si stationnaire 2 tours."),
-            perk(9, "active-skill", "👁️", "Coordination satellite", "Révèle toute la carte ce tour. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Équipe Delta", "Attaque +6, +5% esquive."),
-            perk(12, "passive", "🎖️", "Légende Hawkeye", "Portée +1 permanente. +30% dégâts critiques.", milestone=True),
-        ],
-        "recommendedGenerals": ["Patton", "Eisenhower", "MacArthur"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Tir mortel est l'un des burst les plus rentables du jeu",
-            "<b>Lvl 5→9</b> — Coordination satellite débloque les stratégies multi-fronts",
-            "<b>Lvl 9→12</b> — Build sniper-glass cannon",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — Hawkeye Force", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "special-forces", "name": "Special Forces (Green Berets)", "category": "infantry",
-        "country": "US", "countryName": "États-Unis", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Forces spéciales US polyvalentes. Anti-tank, infiltration, dégâts cumulatifs.",
-        "longDesc": "Les Special Forces (Green Berets) combinent infiltration, capacités anti-char (Anti-Tank perk), et harcèlement. Excellents pour les opérations derrière les lignes ennemies et le sabotage de lignes de ravitaillement.",
-        "stats": stats((40, 70), (28, 50), (240, 440), 3, 1),
-        "perks": [
-            perk(1, "passive", "🚀", "Anti-Tank", "+30% dégâts vs blindés."),
-            perk(1, "passive", "🌫", "Infiltration", "Pas de pénalité de mouvement en terrain difficile."),
-            perk(3, "stat", "📈", "M4 + LAW", "Attaque +5."),
-            perk(5, "active-skill", "💥", "Sabotage", "Inflige -30% production sur la ville ciblée pour 3 tours.", milestone=True),
-            perk(7, "passive", "🎯", "Entraînement avancé", "+10% précision, +10% esquive."),
-            perk(9, "active-skill", "🚁", "Extraction d'urgence", "Téléporte vers la ville alliée la plus proche. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Force de frappe", "Attaque +6, Défense +5."),
-            perk(12, "passive", "🎖️", "Béret Vert légendaire", "+25% dégâts vs toutes unités. Bonus terrain +50%.", milestone=True),
-        ],
-        "recommendedGenerals": ["Bradley", "Patton", "MacArthur"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Sabotage est unique et utile contre IA fortifiée",
-            "<b>Lvl 5→9</b> — Extraction d'urgence permet du jeu agressif sans risque",
-            "<b>Lvl 9→12</b> — Bonus terrain +50% en fait un roi des cartes accidentées",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation Fandom EN"],
-    },
-
-    {
-        "slug": "paratroopers", "name": "Paratroopers", "category": "infantry",
-        "country": "US", "countryName": "États-Unis", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Parachutistes. Déploiement aérien n'importe où sur la carte.",
-        "longDesc": "Les Paratroopers permettent un déploiement aérien quasi-illimité sur la carte, ce qui ouvre des stratégies de capture-éclair de villes, contournement de défenses fortifiées et coupure de lignes de ravitaillement.",
-        "stats": stats((38, 65), (26, 48), (220, 420), 3, 1),
-        "perks": [
-            perk(1, "active-skill", "🪂", "Largage aérien", "Déploiement n'importe où sur le territoire visible. 1 fois par bataille."),
-            perk(1, "passive", "💪", "Forme physique", "+10% défense vs infanterie."),
-            perk(3, "stat", "📈", "Équipement standard", "Attaque +4, HP +20."),
-            perk(5, "active-skill", "🪂", "Largage tactique", "Largage utilisable 2 fois par bataille.", milestone=True),
-            perk(7, "passive", "⚡", "Capture rapide", "Capture une ville en 1 tour au lieu de 2."),
-            perk(9, "active-skill", "🪂", "Brigade aéroportée", "Largage utilisable 3 fois, peut larguer 2 cases d'une ville ennemie.", milestone=True),
-            perk(11, "stat", "💪", "82e Airborne", "Attaque +5, Défense +5."),
-            perk(12, "passive", "🎖️", "Vétérans Normandie", "+30% dégâts au tour du largage. Bonus capture +50%.", milestone=True),
-        ],
-        "recommendedGenerals": ["Bradley", "Eisenhower", "Patton"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Doubler le largage = doubler la valeur tactique",
-            "<b>Lvl 5→9</b> — 3 largages + capture rapide permet des stratégies décapitation",
-            "<b>Lvl 9→12</b> — Build offensif map-control",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation Fandom EN"],
-    },
-
-    {
-        "slug": "spetsnaz", "name": "Spetsnaz", "category": "infantry",
-        "country": "RU", "countryName": "URSS / Russie", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Forces spéciales russes. Embuscade, contre-attaque puissante, terrain hostile.",
-        "longDesc": "Les Spetsnaz excellent en embuscade et en combat dans les terrains hostiles (forêt, montagne, urbain). Leur perk Contre-Attaque automatique en fait un bon piège défensif.",
-        "stats": stats((42, 72), (30, 52), (230, 430), 3, 1),
-        "perks": [
-            perk(1, "passive", "🗡️", "Embuscade", "+25% dégâts au premier tour de combat."),
-            perk(1, "passive", "🌲", "Combat rapproché", "+15% dégâts en forêt, montagne et urbain."),
-            perk(3, "stat", "📈", "AK-12 + AS Val", "Attaque +5."),
-            perk(5, "active-skill", "🗡️", "Frappe Spetsnaz", "Inflige +60% dégâts si attaqué en premier ce tour. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Contre-attaque", "100% chance de contre-attaquer même hors cible."),
-            perk(9, "active-skill", "🌫", "Disparition", "Devient invisible 2 tours. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Vétérans Tchétchénie", "Attaque +6, Défense +5."),
-            perk(12, "passive", "🎖️", "Loups gris", "Embuscade +50%. Combat rapproché +30%.", milestone=True),
-        ],
-        "recommendedGenerals": ["Joukov", "Konev", "Vatutin"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Frappe Spetsnaz : burst monstrueux en réaction",
-            "<b>Lvl 5→9</b> — Disparition permet l'infiltration profonde",
-            "<b>Lvl 9→12</b> — Build embuscade ultime sur cartes urbaines/forestières",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "sas", "name": "SAS (Special Air Service)", "category": "infantry",
-        "country": "GB", "countryName": "Royaume-Uni", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Forces spéciales britanniques. Reconnaissance, raids et combat asymétrique.",
-        "longDesc": "Le SAS britannique est spécialisé dans les opérations de reconnaissance approfondies, les raids derrière les lignes ennemies et le combat asymétrique. Excellente vision et mobilité tactique.",
-        "stats": stats((40, 70), (28, 50), (230, 430), 4, 1),
-        "perks": [
-            perk(1, "passive", "👁️", "Reconnaissance SAS", "Vision +2 cases, révèle ennemis cachés."),
-            perk(1, "passive", "🏃", "Mobilité tactique", "Mouvement +1 sur tous terrains."),
-            perk(3, "stat", "📈", "L85A2 + L96A1", "Attaque +5, +5% précision."),
-            perk(5, "active-skill", "💥", "Raid SAS", "Attaque ce tour ignore 50% de la défense. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🎯", "Snipe nocturne", "Pas de malus la nuit ou par mauvais temps. +15% précision la nuit."),
-            perk(9, "active-skill", "🌫", "Camouflage Ghillie", "Invisible 3 tours sauf si attaque. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Régiment 22", "Attaque +6, mouvement +1."),
-            perk(12, "passive", "🎖️", "Who Dares Wins", "Mobilité +2 permanente. +25% dégâts vs cible blessée (<50% HP).", milestone=True),
-        ],
-        "recommendedGenerals": ["Montgomery", "Alexander", "Slim"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Raid SAS détruit les unités défensives blindées",
-            "<b>Lvl 5→9</b> — Camouflage Ghillie pour positions stratégiques",
-            "<b>Lvl 9→12</b> — Roi de la mobilité asymétrique",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    # ============ ARTILLERY (7) ============
-    {
-        "slug": "m142-himars", "name": "M142 HIMARS", "category": "artillery",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "shop",
-        "shortDesc": "Lance-roquettes mobile longue portée. Mobile, rapide, dévastateur.",
-        "longDesc": "Le M142 HIMARS combine longue portée et mobilité — caractéristiques rares en artillerie. Tire-et-déplace, idéal pour harceler tout en évitant la riposte. Valorisé par sa capacité à frapper plusieurs cibles à grande distance.",
-        "stats": stats((75, 130), (18, 36), (220, 420), 4, 4, rng_bump_at=9),
-        "perks": [
-            perk(1, "passive", "🚀", "Lance-roquettes M270", "Attaque AoE 1 case autour de la cible."),
-            perk(1, "passive", "🏃", "Tire-et-déplace", "Peut bouger après avoir tiré."),
-            perk(3, "stat", "📈", "Roquettes GMLRS", "Attaque +5."),
-            perk(5, "active-skill", "💥", "Salve d'artillerie", "Tire 6 roquettes en zone (3x3 cases). Cooldown : 4 tours.", milestone=True),
-            perk(7, "passive", "🎯", "GPS guidé", "+15% précision, ignore 20% défense."),
-            perk(9, "passive", "🚀", "ATACMS upgrade", "Portée +1 permanente. AoE +1 case.", milestone=True),
-            perk(11, "stat", "💪", "Brigade rocket", "Attaque +8."),
-            perk(12, "active-skill", "🎖️", "Frappe orbitale", "Inflige des dégâts massifs sur 5x5 cases. Cooldown : 6 tours.", milestone=True),
-        ],
-        "recommendedGenerals": ["Patton", "Schwarzkopf", "MacArthur"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve d'artillerie est le power spike clé",
-            "<b>Lvl 5→9</b> — Portée +1 au lvl 9 le rend intouchable",
-            "<b>Lvl 9→12</b> — Frappe orbitale = nuke conventionnel",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "flak-88", "name": "Flak 8.8cm", "category": "artillery",
-        "country": "DE", "countryName": "Allemagne", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Canon polyvalent allemand : anti-char ET anti-aérien. Rendement légendaire.",
-        "longDesc": "Le Flak 88 est l'un des canons les plus polyvalents de l'histoire militaire — et c'est exactement son rôle dans WC4. Il fonctionne aussi bien contre les chars que contre l'aviation, ce qui en fait l'unité d'artillerie la plus rentable. Recommandation NamuWiki : prioriser sa montée en niveau.",
-        "stats": stats((62, 105), (16, 34), (200, 400), 2, 3),
-        "perks": [
-            perk(1, "passive", "🎯", "Polyvalence légendaire", "Peut cibler chars ET avions."),
-            perk(1, "passive", "💥", "Munitions APCBC", "+25% dégâts vs blindés."),
-            perk(3, "stat", "📈", "Visée Flakvisier 35", "Attaque +5, +10% précision."),
-            perk(5, "active-skill", "💥", "Tir de barrage AA", "Tire automatiquement sur tous les avions à 3 cases ce tour. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Protection bouclier", "Défense +5, réduction dégâts artillerie -15%."),
-            perk(9, "active-skill", "🎯", "Tir direct anti-char", "Inflige +60% dégâts vs un char + ignore 30% défense. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Équipage Luftwaffe vétéran", "Attaque +6, +5% chance de critique."),
-            perk(12, "passive", "🎖️", "Acht-Acht", "+30% dégâts permanents vs chars et avions. AoE 1 case.", milestone=True),
-        ],
-        "recommendedGenerals": ["Rommel", "Manstein", "Kesselring"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Tir de barrage AA = anti-aérien instantané",
-            "<b>Lvl 5→9</b> — Tir direct anti-char pour killer un MBT en un coup",
-            "<b>Lvl 9→12</b> — NamuWiki recommande de prioriser le Flak 88 pour les builds polyvalents",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR", "Fandom EN"],
-    },
-
-    {
-        "slug": "schwerer-gustav", "name": "Schwerer Gustav", "category": "artillery",
-        "country": "DE", "countryName": "Allemagne", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Canon ferroviaire géant. Portée et dégâts colossaux mais immobile.",
-        "longDesc": "Le Schwerer Gustav est le plus gros canon jamais construit. Dans WC4, c'est l'arme de siège ultime : portée et dégâts énormes, mais immobile et lente à recharger. Parfait pour réduire les forteresses ennemies depuis l'arrière de la ligne.",
-        "stats": stats((110, 180), (12, 26), (180, 360), 1, 5),
-        "perks": [
-            perk(1, "passive", "💥", "Obus de 800mm", "Inflige des dégâts massifs (AoE 2 cases)."),
-            perk(1, "passive", "🏛️", "Brise-fortifications", "+50% dégâts vs villes et défenses."),
-            perk(3, "stat", "📈", "Calcul de tir", "Attaque +10."),
-            perk(5, "active-skill", "💥", "Frappe Gustav", "Tir géant : AoE 3x3, dégâts x2. Cooldown : 5 tours.", milestone=True),
-            perk(7, "passive", "🎯", "Précision géodésique", "+10% précision à longue portée."),
-            perk(9, "passive", "🏛️", "Réducteur de villes", "Capture une ville en 1 tour si HP < 30%.", milestone=True),
-            perk(11, "stat", "💪", "Équipe ferroviaire", "Attaque +15, recharge -1 tour."),
-            perk(12, "active-skill", "🎖️", "Apocalypse", "Détruit complètement une cible non-élite + AoE 5x5. Cooldown : 8 tours.", milestone=True),
-        ],
-        "recommendedGenerals": ["Speer", "Kesselring", "Manstein"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Frappe Gustav vide les villes ennemies",
-            "<b>Lvl 5→9</b> — Réducteur de villes accélère les conquêtes",
-            "<b>Lvl 9→12</b> — Build siège pur",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation Fandom EN"],
-    },
-
-    {
-        "slug": "bm-21-grad", "name": "BM-21 Grad", "category": "artillery",
-        "country": "RU", "countryName": "URSS / Russie", "tier": "B",
-        "obtainability": "event",
-        "shortDesc": "Lance-roquettes multiple soviétique. Saturation de zone à bas coût.",
-        "longDesc": "Le BM-21 Grad est l'incarnation soviétique du tir de saturation : peu de précision individuelle, mais une couverture de zone massive avec 40 roquettes. Très efficace contre infanterie groupée.",
-        "stats": stats((55, 95), (14, 30), (180, 360), 3, 3),
-        "perks": [
-            perk(1, "passive", "🚀", "40 tubes", "AoE 2 cases. -10% précision."),
-            perk(1, "passive", "🪖", "Anti-infanterie", "+30% dégâts vs infanterie."),
-            perk(3, "stat", "📈", "Roquettes 9M22", "Attaque +5."),
-            perk(5, "active-skill", "💥", "Salve massive", "Tire toutes les roquettes (AoE 3x3, dégâts x1.8). Cooldown : 4 tours.", milestone=True),
-            perk(7, "passive", "🏃", "Châssis Ural", "Mouvement +1, peut tirer après mouvement."),
-            perk(9, "active-skill", "🔥", "Pluie de feu", "Inflige des dégâts continus 2 tours sur la zone. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Production de masse", "Attaque +6, AoE +1 case."),
-            perk(12, "passive", "🎖️", "Katyusha moderne", "+50% dégâts vs infanterie. AoE 4x4.", milestone=True),
-        ],
-        "recommendedGenerals": ["Konev", "Vatutin", "Joukov"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve massive nettoie les groupes d'infanterie",
-            "<b>Lvl 5→9</b> — Pluie de feu dénie une zone pendant 2 tours",
-            "<b>Lvl 9→12</b> — Optionnel sauf build anti-inf",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "rt-2pm2-topol-m", "name": "RT-2PM2 Topol-M", "category": "artillery",
-        "country": "RU", "countryName": "Russie", "tier": "A",
-        "obtainability": "premium",
-        "shortDesc": "Base de missile nucléaire mobile. Évolue : courte → moyenne → longue → ICBM.",
-        "longDesc": "Le Topol-M est unique : c'est une base de missile nucléaire mobile qui évolue avec ses niveaux. Elle commence comme missile à courte portée et atteint la capacité ICBM (intercontinentale) au niveau maximum. Late-game weapon ultime.",
-        "stats": stats((80, 200), (20, 40), (250, 500), 2, 3, rng_bump_at=5),
-        "perks": [
-            perk(1, "active-skill", "☢️", "Missile courte portée", "Tire un missile (portée 3, AoE 2x2). Cooldown : 4 tours."),
-            perk(1, "passive", "🚛", "Lanceur mobile", "Peut bouger entre les tirs."),
-            perk(3, "stat", "📈", "Système de guidage", "Attaque +10, +10% précision."),
-            perk(5, "active-skill", "☢️", "Missile moyenne portée", "Portée +2, AoE 3x3.", milestone=True),
-            perk(7, "passive", "🛡️", "Défense passive", "Réduit dégâts d'artillerie -25%."),
-            perk(9, "active-skill", "☢️", "Missile longue portée", "Portée +4, AoE 4x4. Ignore 50% défense.", milestone=True),
-            perk(11, "stat", "💪", "Équipe stratégique", "Attaque +15, cooldown -1 tour."),
-            perk(12, "active-skill", "🎖️", "ICBM Topol-M", "Portée illimitée (toute la carte). AoE 5x5. Cooldown : 8 tours.", milestone=True),
-        ],
-        "recommendedGenerals": ["Joukov", "Vatutin", "Putin"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Missile moyenne portée : déjà un game-changer",
-            "<b>Lvl 5→9</b> — Longue portée + ignore défense = OP",
-            "<b>Lvl 9→12</b> — ICBM transforme la fin de partie en démonstration nucléaire",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR"],
-    },
-
-    {
-        "slug": "m7-priest", "name": "M7 Priest", "category": "artillery",
-        "country": "US", "countryName": "États-Unis", "tier": "B",
-        "obtainability": "event",
-        "shortDesc": "Howitzer auto-propulsé. Mobilité acceptable, dégâts moyens, accessible.",
-        "longDesc": "Le M7 Priest est un howitzer auto-propulsé fiable de WW2, accessible et polyvalent. Il manque de la puissance des artilleries lourdes mais sa mobilité en fait un bon support pour l'infanterie en avancée.",
-        "stats": stats((50, 85), (18, 36), (220, 400), 3, 3),
-        "perks": [
-            perk(1, "passive", "💥", "Howitzer 105mm", "AoE 1 case."),
-            perk(1, "passive", "🏃", "Mobilité M3", "Peut tirer après mouvement."),
-            perk(3, "stat", "📈", "Munitions HE", "Attaque +5."),
-            perk(5, "active-skill", "💥", "Tir d'appui", "Soutient l'infanterie alliée adjacente : +20% attaque pour 2 tours.", milestone=True),
-            perk(7, "passive", "🎯", "Observateur avancé", "+10% précision si infanterie alliée à 2 cases de la cible."),
-            perk(9, "active-skill", "💥", "Frappe coordonnée", "Toutes les artilleries alliées tirent sur la même cible. Cooldown : 5 tours.", milestone=True),
-            perk(11, "stat", "💪", "Modernisation", "Attaque +6."),
-            perk(12, "passive", "🎖️", "Saint-Père", "+25% dégâts permanent. Régénère 5% HP par tour.", milestone=True),
-        ],
-        "recommendedGenerals": ["Bradley", "Patton", "Eisenhower"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Tir d'appui synergise avec armée d'infanterie",
-            "<b>Lvl 5→9</b> — Frappe coordonnée si vous avez plusieurs artilleries",
-            "<b>Lvl 9→12</b> — Optionnel, préférer HIMARS",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "stuka-rocket", "name": "Stuka zu Fuß (Rocket)", "category": "artillery",
-        "country": "DE", "countryName": "Allemagne", "tier": "B",
-        "obtainability": "event",
-        "shortDesc": "Lance-roquettes allemand WW2. Faible mobilité, dégâts moyens.",
-        "longDesc": "Le 'Stuka zu Fuß' (Stuka à pied) est le surnom donné aux lance-roquettes Nebelwerfer 41/42 montés sur halftrack. Bonne capacité de saturation à courte/moyenne portée, faible précision individuelle.",
-        "stats": stats((48, 82), (16, 32), (200, 380), 3, 3),
-        "perks": [
-            perk(1, "passive", "🚀", "Roquettes Nebelwerfer", "AoE 2 cases. -15% précision."),
-            perk(1, "passive", "💥", "Effet de souffle", "+20% dégâts vs infanterie en terrain ouvert."),
-            perk(3, "stat", "📈", "Roquettes 28cm", "Attaque +5."),
-            perk(5, "active-skill", "💥", "Salve Nebelwerfer", "Tire 6 roquettes (AoE 3x3). Cooldown : 4 tours.", milestone=True),
-            perk(7, "passive", "🌫", "Fumée", "Crée un écran de fumée bloquant la vision ennemie 1 tour."),
-            perk(9, "active-skill", "🔥", "Bombardement de zone", "Inflige des dégâts continus 2 tours.", milestone=True),
-            perk(11, "stat", "💪", "Vétérans", "Attaque +5."),
-            perk(12, "passive", "🎖️", "Cri de Stuka", "+30% dégâts vs infanterie. AoE +1.", milestone=True),
-        ],
-        "recommendedGenerals": ["Manstein", "Rommel", "Kesselring"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve Nebelwerfer est très utile early-mid",
-            "<b>Lvl 5→9</b> — Build saturation",
-            "<b>Lvl 9→12</b> — Optionnel",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    # ============ NAVY (6) ============
-    {
-        "slug": "type-vii-uboat", "name": "Type VII U-Boot", "category": "navy",
-        "country": "DE", "countryName": "Allemagne", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Sous-marin furtif allemand. Cauchemar des porte-avions et capital ships.",
-        "longDesc": "Le Type VII U-Boot est l'unité navale la plus crainte de WC4 grâce à sa furtivité et ses re-attacks. La communauté NamuWiki le considère comme le n°1 de la marine d'élite, devant le Richelieu et l'Enterprise.",
-        "stats": stats((68, 115), (30, 56), (300, 520), 3, 2),
-        "perks": [
-            perk(1, "passive", "🌫", "Plongée", "Invisible aux unités de surface non-ASW."),
-            perk(1, "passive", "💥", "Torpilles G7e", "+30% dégâts vs capital ships."),
-            perk(3, "stat", "📈", "Tube lance-torpilles 533mm", "Attaque +6."),
-            perk(5, "active-skill", "💥", "Salve de torpilles", "Tire 4 torpilles (AoE 2 cases). Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Coque renforcée", "Défense +5, réduction dégâts ASW -25%."),
-            perk(9, "active-skill", "💥", "Attaque coordonnée Wolfpack", "Inflige des dégâts splash. +50% dégâts si plusieurs U-Boots à 3 cases.", milestone=True),
-            perk(10, "passive", "📈", "Dégâts cumulatifs", "+10% dégâts permanent par capital ship coulé (max +50%)."),
-            perk(11, "stat", "💪", "Équipage Kriegsmarine vétéran", "Attaque +8, +10% chance critique."),
-            perk(12, "passive", "🎖️", "Loup gris des mers", "Furtivité parfaite. Critiques ignorent toute défense.", milestone=True),
-        ],
-        "recommendedGenerals": ["Doenitz", "Raeder", "Yamamoto"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve de torpilles peut couler un cuirassé en un tour",
-            "<b>Lvl 5→9</b> — Wolfpack synergise avec marine multi-sub",
-            "<b>Lvl 9→12</b> — NamuWiki recommande fortement de monter le U-Boot au niveau 12",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR", "Fandom EN"],
-    },
-
-    {
-        "slug": "richelieu", "name": "Richelieu (cuirassé)", "category": "navy",
-        "country": "FR", "countryName": "France", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Cuirassé français. Re-attacks puissants, redoutable en formation.",
-        "longDesc": "Le Richelieu est le cuirassé d'élite n°2 du jeu, juste derrière le U-Boot, grâce à sa capacité de re-attack. Très puissant en formation groupée avec d'autres destroyers, mais affaibli quand isolé.",
-        "stats": stats((82, 140), (60, 92), (520, 800), 2, 4),
-        "perks": [
-            perk(1, "passive", "💥", "Tourelles 380mm", "+15% dégâts critiques."),
-            perk(1, "passive", "🛡️", "Blindage 330mm", "-15% dégâts reçus."),
-            perk(3, "stat", "📈", "Conduite de tir", "Attaque +8, +5% précision."),
-            perk(5, "active-skill", "💥", "Salve de huit canons", "Re-attack : tire deux fois ce tour. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🤝", "Formation navale", "+25% dégâts si 2+ navires alliés à 2 cases."),
-            perk(9, "active-skill", "💥", "Bombardement côtier", "AoE 2 cases. Bonus contre cibles terrestres. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Marine Nationale", "Attaque +10, Défense +8."),
-            perk(12, "passive", "🎖️", "Honneur Patrie", "Re-attack permanent à chaque tour. +30% dégâts en formation.", milestone=True),
-        ],
-        "recommendedGenerals": ["Darlan", "Nimitz", "Cunningham"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Re-attack au lvl 5 double sa valeur",
-            "<b>Lvl 5→9</b> — Bombardement côtier pour soutien amphibie",
-            "<b>Lvl 9→12</b> — Build flotte de bataille",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR", "Fandom EN"],
-    },
-
-    {
-        "slug": "enterprise-cv", "name": "USS Enterprise (CV-6)", "category": "navy",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Porte-avions US. Lance vos avions d'élite à partir du lvl 9.",
-        "longDesc": "L'USS Enterprise est le porte-avions d'élite. Sa vraie valeur arrive au niveau 9 : il peut alors lancer vos unités d'élite aviation comme escadrons embarqués (avec des limitations). C'est l'unité-clé pour projeter la puissance aérienne en haute mer. Note : tous les avions d'élite (sauf B-52 et C-47) sont limités en nombre d'usages, et seul l'Enterprise lvl 9+ permet de les utiliser comme avions navals.",
-        "stats": stats((55, 100), (48, 78), (600, 950), 3, 1),
-        "perks": [
-            perk(1, "passive", "✈️", "Pont d'envol", "Lance des escadrons aériens (chasseurs basiques)."),
-            perk(1, "passive", "👁️", "Radar SK", "Vision +3 cases."),
-            perk(3, "stat", "📈", "DCA quad-40mm", "Attaque vs avions +6."),
-            perk(5, "active-skill", "✈️", "Vague d'attaque", "Lance 4 escadrons d'attaque ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Pont blindé", "Défense +8, HP +50."),
-            perk(9, "passive", "✈️", "Escadrons d'élite", "Peut embarquer et déployer vos avions d'élite (sauf B-52 et C-47).", milestone=True),
-            perk(10, "passive", "💥", "Splash attack", "+10% dégâts permanent par cible coulée (max +50%)."),
-            perk(11, "stat", "💪", "Crew vétéran Pacific", "Attaque +10."),
-            perk(12, "active-skill", "🎖️", "Big E", "Lance simultanément 2 avions d'élite. Cooldown : 6 tours.", milestone=True),
-        ],
-        "recommendedGenerals": ["Halsey", "Nimitz", "Spruance"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Vague d'attaque en burst",
-            "<b>Lvl 5→9</b> — <b>L'Enterprise change de tier au lvl 9</b> grâce aux escadrons d'élite — palier à atteindre absolument",
-            "<b>Lvl 9→12</b> — Big E pour double-frappe aérienne navale",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR", "Fandom EN — Enterprise"],
-    },
-
-    {
-        "slug": "yamato", "name": "Yamato (cuirassé)", "category": "navy",
-        "country": "JP", "countryName": "Japon", "tier": "S",
-        "obtainability": "event",
-        "shortDesc": "Le plus gros cuirassé jamais construit. Canons 460mm, blindage colossal.",
-        "longDesc": "Le Yamato est le cuirassé le plus lourdement armé de l'histoire. Dans WC4, il combine puissance de feu maximum (canons 460mm) et résistance exceptionnelle. Lent à manœuvrer mais quasi-imbattable en duel surface.",
-        "stats": stats((90, 155), (65, 100), (580, 900), 2, 4),
-        "perks": [
-            perk(1, "passive", "💥", "Canons 460mm", "+25% dégâts vs navires."),
-            perk(1, "passive", "🛡️", "Blindage 410mm", "-20% dégâts reçus."),
-            perk(3, "stat", "📈", "Conduite de tir Type 98", "Attaque +10."),
-            perk(5, "active-skill", "💥", "Salve principale", "Tire les 9 canons : dégâts x1.5. Cooldown : 4 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Compartimentage étanche", "Régénère 3% HP par tour."),
-            perk(9, "active-skill", "💥", "Tir AAW San-Shiki", "DCA massive, AoE 2 cases vs avions. Cooldown : 3 tours.", milestone=True),
-            perk(11, "stat", "💪", "Marine impériale", "Attaque +12, Défense +10."),
-            perk(12, "passive", "🎖️", "Honneur du Japon", "+30% dégâts permanent. Régénère 5% HP par tour.", milestone=True),
-        ],
-        "recommendedGenerals": ["Yamamoto", "Nagumo", "Yamaguchi"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve principale = burst x1.5",
-            "<b>Lvl 5→9</b> — Tir San-Shiki anti-aérien protège la flotte",
-            "<b>Lvl 9→12</b> — Build flotte impériale",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "hms-hood", "name": "HMS Hood", "category": "navy",
-        "country": "GB", "countryName": "Royaume-Uni", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Croiseur de bataille britannique. Vitesse + puissance, blindage modéré.",
-        "longDesc": "Le HMS Hood, fierté de la Royal Navy, combine vitesse de croiseur et puissance de cuirassé. Très efficace en chasse et en interception, plus vulnérable au feu plongeant.",
-        "stats": stats((75, 130), (50, 78), (480, 740), 3, 4),
-        "perks": [
-            perk(1, "passive", "🏃", "Vitesse 31 nœuds", "Mouvement +1 vs cuirassés ennemis."),
-            perk(1, "passive", "💥", "Tourelles 381mm", "+15% dégâts."),
-            perk(3, "stat", "📈", "Conduite de tir", "Attaque +8."),
-            perk(5, "active-skill", "💥", "Course de poursuite", "Mouvement +2 + attaque ce tour. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🇬🇧", "Royal Navy", "+10% précision en mer ouverte."),
-            perk(9, "active-skill", "💥", "Salve de chasse", "Re-attack avec +30% précision. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Vétérans Atlantique", "Attaque +10."),
-            perk(12, "passive", "🎖️", "Mighty Hood", "+25% dégâts vs croiseurs et destroyers.", milestone=True),
-        ],
-        "recommendedGenerals": ["Cunningham", "Mountbatten", "Tovey"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Course de poursuite pour chasse aux cuirassés",
-            "<b>Lvl 5→9</b> — Salve de chasse pour finir une cible",
-            "<b>Lvl 9→12</b> — Build chasseur de capital ships",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "bismarck", "name": "Bismarck (cuirassé)", "category": "navy",
-        "country": "DE", "countryName": "Allemagne", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Cuirassé allemand légendaire. Précision extrême et blindage exceptionnel.",
-        "longDesc": "Le Bismarck est connu pour sa précision de tir extraordinaire (il a coulé le HMS Hood en quelques salves). Excellent blindage, dégâts précis, mais coût en industrie élevé.",
-        "stats": stats((85, 145), (62, 95), (540, 830), 2, 4),
-        "perks": [
-            perk(1, "passive", "🎯", "Tir précis allemand", "+20% précision, +15% chance de critique."),
-            perk(1, "passive", "🛡️", "Blindage 320mm", "-15% dégâts."),
-            perk(3, "stat", "📈", "Tourelles 380mm SK C/34", "Attaque +9."),
-            perk(5, "active-skill", "💥", "Pleine bordée", "Tire 8 canons simultanément avec +25% précision. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🎯", "Visée Zeiss", "Critiques infligent +30% dégâts."),
-            perk(9, "active-skill", "💥", "Salve mortelle", "Garantit un critique ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Kriegsmarine", "Attaque +10, +5% précision."),
-            perk(12, "passive", "🎖️", "Schiff Bismarck", "+30% chance de critique permanent. +20% dégâts critiques.", milestone=True),
-        ],
-        "recommendedGenerals": ["Lütjens", "Raeder", "Doenitz"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Pleine bordée garantit le burst sur cible importante",
-            "<b>Lvl 5→9</b> — Salve mortelle pour kill assured",
-            "<b>Lvl 9→12</b> — Build crit-cuirassé",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    # ============ AIR FORCE (9) ============
-    {
-        "slug": "b-52-stratofortress", "name": "B-52 Stratofortress", "category": "airforce",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "premium",
-        "shortDesc": "Bombardier stratégique. Ignore la défense ennemie au lvl 9.",
-        "longDesc": "Le B-52 Stratofortress est le bombardier d'élite ultime. À partir du niveau 9, il ignore la défense des unités ennemies — il n'y a alors que les défenses anti-aériennes spécialisées qui peuvent réduire ses dégâts. Au niveau 5, il devient économique en ressources. NamuWiki recommande fortement le B-52 dans les builds aériens.",
-        "stats": stats((85, 145), (25, 50), (300, 550), 5, 4),
-        "perks": [
-            perk(1, "passive", "💣", "Bombardement de saturation", "AoE 2 cases."),
-            perk(1, "passive", "✈️", "Bombardier stratégique", "Portée d'opération longue (toute la carte)."),
-            perk(3, "stat", "📈", "Soute B-52H", "Attaque +10."),
-            perk(5, "passive", "💰", "Optimisation logistique", "-30% coût en ressources par mission.", milestone=True),
-            perk(7, "passive", "🛡️", "Contre-mesures ECM", "Réduit l'efficacité DCA -30%."),
-            perk(9, "passive", "💥", "Munitions perforantes", "Ignore la défense des unités ennemies. Seules les défenses AA réduisent les dégâts.", milestone=True),
-            perk(10, "stat", "💪", "Bombe AGM-86", "Attaque +12."),
-            perk(11, "passive", "✈️", "Endurance étendue", "Nombre d'usages +1 par mission."),
-            perk(12, "passive", "🎖️", "BUFF (Big Ugly Fat Fellow)", "Ignore défense + AoE 3 cases + nombre d'usages illimité.", milestone=True),
-        ],
-        "recommendedGenerals": ["LeMay", "Doolittle", "Arnold"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Optimisation au lvl 5 réduit drastiquement le coût",
-            "<b>Lvl 5→9</b> — Ignore défense au lvl 9 = power spike massif",
-            "<b>Lvl 9→12</b> — NamuWiki recommande de prioriser le B-52 au max",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR", "Fandom EN"],
-    },
-
-    {
-        "slug": "supermarine-spitfire", "name": "Supermarine Spitfire", "category": "airforce",
-        "country": "GB", "countryName": "Royaume-Uni", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Chasseur britannique. Polyvalent, peut détruire les défenses anti-aériennes.",
-        "longDesc": "Le Spitfire est un chasseur d'élite polyvalent : excellent en combat aérien, mais surtout capable de détruire les installations anti-aériennes ennemies via ses skills 'Construction' et 'Harm'. Cela ouvre la voie aux bombardiers (B-52) qui craignent les DCA.",
-        "stats": stats((52, 92), (28, 52), (220, 420), 6, 4),
-        "perks": [
-            perk(1, "passive", "✈️", "Chasse aérienne", "+30% dégâts vs avions."),
-            perk(1, "active-skill", "💥", "Anti-DCA", "Détruit les installations anti-aériennes ennemies (skill spécial)."),
-            perk(3, "stat", "📈", "Mitrailleuses Browning .303", "Attaque +5, +5% précision."),
-            perk(5, "active-skill", "🎯", "Combat tournoyant", "+50% chance de critique en duel aérien. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🏃", "Moteur Merlin upgrade", "Mouvement +1, peut intercepter."),
-            perk(9, "passive", "💥", "Munitions HE", "Anti-DCA + bonus contre infanterie au sol.", milestone=True),
-            perk(11, "stat", "💪", "Royal Air Force", "Attaque +6."),
-            perk(12, "passive", "🎖️", "Battle of Britain", "+25% dégâts vs avions et défenses sol.", milestone=True),
-        ],
-        "recommendedGenerals": ["Dowding", "Park", "Galland"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Combat tournoyant pour la supériorité aérienne",
-            "<b>Lvl 5→9</b> — Munitions HE pour ouvrir la voie aux bombardiers",
-            "<b>Lvl 9→12</b> — Build escorte + anti-DCA",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR"],
-    },
-
-    {
-        "slug": "ah-64-apache", "name": "AH-64 Apache", "category": "airforce",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "shop",
-        "shortDesc": "Hélico d'attaque US. Double frappe à lvl 10, perce 50% de défense au lvl 11.",
-        "longDesc": "L'AH-64 Apache est l'hélicoptère d'attaque ultime. Son perk 'High-speed Machine Cannon' ignore 25% de la défense ennemie au lvl 1, montant à 50% au lvl 11. La vraie valeur de l'Apache : il peut attaquer DEUX FOIS par tour à partir du niveau 10 — dégâts énormes.",
-        "stats": stats((70, 120), (30, 55), (260, 470), 5, 3),
-        "perks": [
-            perk(1, "passive", "🚁", "Canon GAU-8", "+25% dégâts. Ignore 25% défense ennemie."),
-            perk(1, "passive", "✈️", "Vol stationnaire", "Peut attaquer en restant immobile."),
-            perk(3, "stat", "📈", "Missiles Hellfire", "Attaque +8."),
-            perk(5, "active-skill", "💥", "Frappe précise", "Cible une unité avec +50% dégâts. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Blindage cockpit", "Défense +5, réduction dégâts AA -15%."),
-            perk(9, "passive", "🎯", "Visée TADS", "Ignore 35% défense ennemie."),
-            perk(10, "passive", "⚡", "Double engagement", "Peut attaquer 2 fois par tour.", milestone=True),
-            perk(11, "passive", "🎯", "Visée TADS+", "Ignore 50% défense ennemie."),
-            perk(12, "passive", "🎖️", "Apache Killer", "Double attaque + ignore 60% défense + AoE 1 case.", milestone=True),
-        ],
-        "recommendedGenerals": ["Schwarzkopf", "Patton", "MacArthur"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Frappe précise est utile mais pas critique",
-            "<b>Lvl 5→9</b> — Améliorations défensives + visée TADS",
-            "<b>Lvl 9→12</b> — <b>Le lvl 10 (double attaque) double sa valeur instantanément. Priorité absolue.</b>",
-        ],
-        "verified": True,
-        "sources": ["Fandom EN — AH-64 Apache", "NamuWiki KR"],
-    },
-
-    {
-        "slug": "mi-24-hind", "name": "Mi-24 Hind", "category": "airforce",
-        "country": "RU", "countryName": "URSS / Russie", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Hélico de combat-transport russe. Polyvalent attaque + transport de troupes.",
-        "longDesc": "Le Mi-24 'Hind' est unique : il combine fonctions d'hélicoptère d'attaque ET de transport de troupes. Surnommé 'le char volant' par l'OTAN. Excellent pour les opérations combinées.",
-        "stats": stats((60, 105), (32, 58), (280, 490), 5, 3),
-        "perks": [
-            perk(1, "passive", "🚁", "Hélico-Tank volant", "Défense +20% vs DCA."),
-            perk(1, "active-skill", "🪂", "Transport", "Peut transporter une unité d'infanterie."),
-            perk(3, "stat", "📈", "Roquettes S-8", "Attaque +6."),
-            perk(5, "active-skill", "💥", "Salve roquettes", "AoE 2 cases. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Blindage titanium", "Défense +5."),
-            perk(9, "active-skill", "🪂", "Largage tactique", "Largue l'unité transportée n'importe où dans la zone visible.", milestone=True),
-            perk(11, "stat", "💪", "Vétérans Afghanistan", "Attaque +6."),
-            perk(12, "passive", "🎖️", "Char volant", "Défense +30%, peut attaquer après transport.", milestone=True),
-        ],
-        "recommendedGenerals": ["Joukov", "Konev", "Vatutin"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Salve roquettes pour AoE",
-            "<b>Lvl 5→9</b> — Largage tactique pour décapitation",
-            "<b>Lvl 9→12</b> — Build hybride attaque/transport",
-        ],
-        "verified": True,
-        "sources": ["NamuWiki KR"],
-    },
-
-    {
-        "slug": "p-51-mustang", "name": "P-51 Mustang", "category": "airforce",
-        "country": "US", "countryName": "États-Unis", "tier": "A",
-        "obtainability": "event",
-        "shortDesc": "Chasseur long-rayon US. Escorte de bombardiers et chasse aérienne.",
-        "longDesc": "Le P-51 Mustang a transformé la guerre aérienne en WW2 grâce à son rayon d'action étendu — il pouvait escorter les B-17 jusqu'au cœur du Reich. Dans WC4, c'est un chasseur d'élite équilibré, parfait en escorte.",
-        "stats": stats((50, 88), (28, 50), (210, 400), 6, 4),
-        "perks": [
-            perk(1, "passive", "✈️", "Long-range escort", "Portée d'opération étendue."),
-            perk(1, "passive", "🎯", "Mitrailleuses .50 cal", "+15% dégâts vs avions."),
-            perk(3, "stat", "📈", "Moteur Packard Merlin", "Attaque +5."),
-            perk(5, "active-skill", "💥", "Dogfight", "+40% dégâts en combat aérien direct. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🤝", "Escorte", "+20% défense pour bombardiers alliés à 2 cases."),
-            perk(9, "active-skill", "🎯", "Tir précis", "Garantit un critique ce tour. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "8th Air Force", "Attaque +6."),
-            perk(12, "passive", "🎖️", "Cadillac of the Sky", "+25% dégâts vs avions. Escorte +30% défense.", milestone=True),
-        ],
-        "recommendedGenerals": ["Doolittle", "Spaatz", "Arnold"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Dogfight pour la supériorité aérienne",
-            "<b>Lvl 5→9</b> — Escorte synergise avec B-52",
-            "<b>Lvl 9→12</b> — Build aérien équilibré",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "c-47-skytrain", "name": "C-47 Skytrain", "category": "airforce",
-        "country": "US", "countryName": "États-Unis", "tier": "B",
-        "obtainability": "event",
-        "shortDesc": "Avion de transport. Largage de paratroopers, ravitaillement, évacuation.",
-        "longDesc": "Le C-47 Skytrain est l'avion de transport militaire le plus iconique. Pas de combat direct, mais essentiel pour la logistique : largage de paratroopers, ravitaillement de villes assiégées, évacuation de blessés. Un des deux avions d'élite (avec B-52) qui ne nécessite pas de porte-avions Enterprise lvl 9+.",
-        "stats": stats((10, 22), (20, 40), (250, 450), 5, 0),
-        "perks": [
-            perk(1, "active-skill", "🪂", "Largage para", "Largue une unité d'infanterie alliée n'importe où dans la zone visible."),
-            perk(1, "passive", "📦", "Logistique", "Ravitaille la ville alliée la plus proche : +10 industrie/tour."),
-            perk(3, "stat", "📈", "Capacité accrue", "HP +30."),
-            perk(5, "active-skill", "📦", "Pont aérien", "Soigne tous les alliés à 2 cases : +30 HP. Cooldown : 4 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Blindage cockpit", "Défense +5, réduction DCA -25%."),
-            perk(9, "active-skill", "🪂", "Largage massif", "Largue 2 unités d'infanterie ce tour.", milestone=True),
-            perk(11, "stat", "💪", "Squadron transport", "HP +50."),
-            perk(12, "passive", "🎖️", "Operation Market Garden", "Largages illimités par mission.", milestone=True),
-        ],
-        "recommendedGenerals": ["Eisenhower", "Bradley", "Patton"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Pont aérien soigne en zone, très utile sans Medic",
-            "<b>Lvl 5→9</b> — Largage massif change les stratégies de capture",
-            "<b>Lvl 9→12</b> — Build logistique",
-        ],
-        "verified": False,
-        "sources": ["NamuWiki KR (mention)", "Extrapolation"],
-    },
-
-    {
-        "slug": "f-22-raptor", "name": "F-22 Raptor", "category": "airforce",
-        "country": "US", "countryName": "États-Unis", "tier": "S",
-        "obtainability": "premium",
-        "shortDesc": "Chasseur stealth de 5e génération. Furtivité totale, supériorité aérienne absolue.",
-        "longDesc": "Le F-22 Raptor est le chasseur le plus avancé du jeu. Furtivité totale, supériorité aérienne quasi-absolue. Late-game weapon — coûteux mais quasi-imbattable en combat aérien.",
-        "stats": stats((80, 140), (35, 65), (300, 540), 7, 5),
-        "perks": [
-            perk(1, "passive", "🌫", "Furtivité", "Invisible aux radars ennemis non-VHF."),
-            perk(1, "passive", "🎯", "AIM-120 AMRAAM", "Portée 5 cases. Beyond visual range."),
-            perk(3, "stat", "📈", "Moteur F119-PW-100", "Attaque +10, mouvement +1."),
-            perk(5, "active-skill", "💥", "Supercruise", "Mouvement +3 + attaque ce tour. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Contre-mesures ALR-94", "Défense +10 vs missiles."),
-            perk(9, "active-skill", "🎯", "Frappe BVR", "Attaque sans risque de riposte. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Squadron F-22", "Attaque +12."),
-            perk(12, "passive", "🎖️", "Air Dominance", "+40% dégâts permanent vs avions. Furtivité totale.", milestone=True),
-        ],
-        "recommendedGenerals": ["Schwarzkopf", "Powell", "Mattis"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Supercruise pour engager rapidement",
-            "<b>Lvl 5→9</b> — Frappe BVR pour invincibilité aérienne",
-            "<b>Lvl 9→12</b> — Build supériorité aérienne ultime",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "tu-95-bear", "name": "Tu-95 Bear", "category": "airforce",
-        "country": "RU", "countryName": "URSS / Russie", "tier": "B",
-        "obtainability": "event",
-        "shortDesc": "Bombardier stratégique soviétique. Lent mais portée énorme.",
-        "longDesc": "Le Tu-95 Bear est l'équivalent soviétique du B-52. Lent mais doté d'une portée énorme et de la capacité à transporter des armes nucléaires. Plus accessible que le B-52, moins efficace au combat direct.",
-        "stats": stats((75, 130), (22, 45), (280, 510), 4, 4),
-        "perks": [
-            perk(1, "passive", "💣", "Bombardement saturation", "AoE 2 cases."),
-            perk(1, "passive", "✈️", "Bombardier longue distance", "Portée d'opération longue."),
-            perk(3, "stat", "📈", "Soute Tu-95MS", "Attaque +8."),
-            perk(5, "passive", "💰", "Production soviétique", "-25% coût en ressources.", milestone=True),
-            perk(7, "passive", "🛡️", "Contre-mesures Sirena", "Défense +5."),
-            perk(9, "passive", "💥", "Missiles Kh-55", "Ignore 30% défense.", milestone=True),
-            perk(11, "stat", "💪", "Squadron 121e", "Attaque +10."),
-            perk(12, "passive", "🎖️", "Frappe stratégique", "Ignore 50% défense + AoE 3 cases.", milestone=True),
-        ],
-        "recommendedGenerals": ["Tupolev", "Joukov", "Konev"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Production soviétique réduit le coût",
-            "<b>Lvl 5→9</b> — Missiles Kh-55 pour percer défenses",
-            "<b>Lvl 9→12</b> — Alternative low-cost au B-52",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
-
-    {
-        "slug": "f-117-nighthawk", "name": "F-117 Nighthawk", "category": "airforce",
-        "country": "US", "countryName": "États-Unis", "tier": "A",
-        "obtainability": "premium",
-        "shortDesc": "Bombardier furtif. Frappes chirurgicales sur cibles défendues.",
-        "longDesc": "Le F-117 Nighthawk est conçu pour pénétrer les défenses ennemies les plus denses. Furtivité poussée + frappes ultra-précises sur les infrastructures stratégiques (centres de commandement, défenses aériennes, ponts).",
-        "stats": stats((65, 115), (28, 52), (240, 440), 5, 4),
-        "perks": [
-            perk(1, "passive", "🌫", "Stealth", "Invisible aux radars conventionnels."),
-            perk(1, "passive", "🎯", "Bombes guidées laser", "+30% précision."),
-            perk(3, "stat", "📈", "GBU-27 Paveway III", "Attaque +8."),
-            perk(5, "active-skill", "💥", "Frappe chirurgicale", "Garantit un critique sur la cible. Cooldown : 3 tours.", milestone=True),
-            perk(7, "passive", "🛡️", "Profil RCS minimal", "Défense vs DCA +30%."),
-            perk(9, "active-skill", "💥", "Décapitation", "Inflige +80% dégâts sur QG/villes. Cooldown : 4 tours.", milestone=True),
-            perk(11, "stat", "💪", "Squadron 49th", "Attaque +10."),
-            perk(12, "passive", "🎖️", "Wobbly Goblin", "Stealth permanent + critiques garantis sur défenses.", milestone=True),
-        ],
-        "recommendedGenerals": ["Schwarzkopf", "Powell", "Mattis"],
-        "levelingPriority": [
-            "<b>Lvl 1→5</b> — Frappe chirurgicale pour killer les généraux ennemis",
-            "<b>Lvl 5→9</b> — Décapitation pour anti-stratégie",
-            "<b>Lvl 9→12</b> — Build assassinat de QG",
-        ],
-        "verified": False,
-        "sources": ["Extrapolation"],
-    },
+SCORPION_UNITS = [
+    {"name": "Titan Tank", "slug": "titan-tank", "category": "tank", "country": "XX", "countryName": "Empire du Scorpion", "tier": "S", "obtainability": "campaign",
+     "shortDesc": "Super char terroriste — seul super tank empilable du jeu.",
+     "longDesc": "Unité blindée introduite dans le scénario Modern War, exclusive aux forces terroristes. Seul super tank empilable du jeu, particulièrement durable. Puissant mais inférieur aux blindés Elite Forces les plus avancés.",
+     "baseStats": ((110, 230), (100, 220), (200, 420), 2, 1)},
+    {"name": "Heavenly Beginning Tank", "slug": "heavenly-beginning-tank", "category": "tank", "country": "XX", "countryName": "Empire du Scorpion", "tier": "S", "obtainability": "campaign",
+     "shortDesc": "Super char mystique — unité blindée fin-jeu des Mystic Forces.",
+     "longDesc": "Super char des Mystic Forces (Empire du Scorpion). Apparaît en fin de challenge 1960 Conquest et certains événements.",
+     "baseStats": ((120, 260), (110, 240), (220, 460), 2, 1)},
+    {"name": "E-775 Armored Vehicle", "slug": "e-775", "category": "tank", "country": "XX", "countryName": "Empire du Scorpion", "tier": "A", "obtainability": "campaign",
+     "shortDesc": "Véhicule blindé scorpion — identifié par 4 roues et marque sur la coque.",
+     "longDesc": "Véhicule blindé des Mystic Forces. Configuration 4 roues, scorpion noir sur le corps uniquement (pas sur les canons, contrairement au KS-90).",
+     "baseStats": ((90, 200), (70, 150), (150, 310), 4, 1)},
+    {"name": "KS-90 Self-Propelled Artillery", "slug": "ks-90", "category": "artillery", "country": "XX", "countryName": "Empire du Scorpion", "tier": "S", "obtainability": "campaign",
+     "shortDesc": "Artillerie automotrice scorpion conçue par Williams — 8 roues.",
+     "longDesc": "Artillerie automotrice d'élite mystique, conçue et produite par Williams, l'un des trois capitaines de l'Empire du Scorpion. 8 roues, scorpion noir sur les canons et la coque. Capacités : nano-récupération (3% HP/tour), coup critique, assault.",
+     "baseStats": ((130, 290), (35, 75), (110, 230), 3, 4)},
+    {"name": "SVA-23 Aircraft", "slug": "sva-23", "category": "airforce", "country": "XX", "countryName": "Empire du Scorpion", "tier": "S", "obtainability": "campaign",
+     "shortDesc": "Aéronef à lévitation scorpion — mitrailleuses + supériorité aérienne.",
+     "longDesc": "Unité d'élite mystique. Caractéristiques : Nano-récupération, Suppression (–30% moral ennemi après élimination), mitrailleuses, supériorité aérienne, évasion. Unité à lévitation, portée 2.",
+     "baseStats": ((120, 260), (50, 105), (130, 280), 5, 2)},
+    {"name": "Mystic Bomber", "slug": "mystic-bomber", "category": "airforce", "country": "XX", "countryName": "Empire du Scorpion", "tier": "S", "obtainability": "campaign",
+     "shortDesc": "Bombardier mystique scorpion — unité aérienne fin de campagne.",
+     "longDesc": "Bombardier d'élite des Mystic Forces. Disponible dans la mission finale du challenge 1960 Mysterious Forces of Challenge Conquest. Haute puissance de frappe air-sol.",
+     "baseStats": ((140, 310), (40, 85), (140, 300), 4, 2)},
+    {"name": "Mystic Strategic Bomber", "slug": "mystic-strategic-bomber", "category": "airforce", "country": "XX", "countryName": "Empire du Scorpion", "tier": "S", "obtainability": "campaign",
+     "shortDesc": "Bombardier stratégique mystique — version longue portée du Mystic Bomber.",
+     "longDesc": "Version stratégique longue portée du Mystic Bomber. Frappe de zone, portée maximale, usage très limité par partie.",
+     "baseStats": ((160, 350), (35, 75), (145, 310), 4, 3)},
+    {"name": "Mystery Paratrooper", "slug": "mystery-paratrooper", "category": "infantry", "country": "XX", "countryName": "Empire du Scorpion", "tier": "A", "obtainability": "campaign",
+     "shortDesc": "Parachutiste mystique — infiltration derrière les lignes ennemies.",
+     "longDesc": "Unité d'infanterie d'élite des Mystic Forces. Déployable en parachute derrière les lignes. Capacités signature liées à l'infiltration.",
+     "baseStats": ((65, 140), (50, 105), (115, 230), 4, 1)},
 ]
 
-# ============================================================
-# WRITE FILES
-# ============================================================
-total = 0
-for u in UNITS:
-    u["faqs"] = DEFAULT_FAQS(u["name"])
-    out = os.path.join(DATA_DIR, f"{u['slug']}.json")
-    with open(out, "w", encoding="utf-8") as f:
-        json.dump(u, f, ensure_ascii=False, indent=2)
-    total += 1
 
-# Index file
-with open(os.path.join(DATA_DIR, "_index.json"), "w", encoding="utf-8") as f:
-    json.dump({"count": total, "units": [u["slug"] for u in UNITS]}, f, ensure_ascii=False, indent=2)
+def make_unit(s: dict, faction: str) -> dict:
+    cat = s["category"]
+    obt = s["obtainability"]
+    obt_phrase = "campagne ou événements" if obt == "campaign" else "la boutique d'élite (électricité) ou événements"
+    return {
+        "slug": s["slug"],
+        "name": s["name"],
+        "nameEn": s.get("nameEn"),
+        "category": cat,
+        "faction": faction,
+        "country": s["country"],
+        "countryName": s["countryName"],
+        "tier": s["tier"],
+        "obtainability": s["obtainability"],
+        "shortDesc": s["shortDesc"],
+        "longDesc": s["longDesc"],
+        "stats": stats(*s["baseStats"]),
+        "perks": generic_perks(cat),
+        "recommendedGenerals": [],
+        "levelingPriority": [
+            "Débloquer les perks milestones (5, 9, 12) en priorité",
+            "Les perks stat sont moins prioritaires que les active-skills",
+            "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif",
+        ],
+        "faqs": [
+            {"q": f"Comment obtenir {s['name']} dans World Conqueror 4 ?",
+             "a": f"L'unité s'obtient via {obt_phrase}. Voir la section obtenabilité pour plus de détails."},
+            {"q": f"Quelles sont les stats maximum au niveau 12 ?",
+             "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."},
+            {"q": f"Quels généraux associer à {s['name']} ?",
+             "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."},
+        ],
+        "verified": False,
+        "sources": SOURCES_DEFAULT,
+    }
 
-print(f"✓ Generated {total} elite unit files")
+
+def main():
+    all_units = []
+    for u in STANDARD_UNITS:
+        d = make_unit(u, "standard")
+        all_units.append(d)
+        (OUT / f"{d['slug']}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2))
+    for u in SCORPION_UNITS:
+        d = make_unit(u, "scorpion")
+        all_units.append(d)
+        (OUT / f"{d['slug']}.json").write_text(json.dumps(d, ensure_ascii=False, indent=2))
+
+    index = [{"slug": u["slug"], "name": u["name"], "category": u["category"],
+              "faction": u["faction"], "tier": u["tier"], "country": u["country"]}
+             for u in all_units]
+    (OUT / "_index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2))
+
+    std = sum(1 for u in all_units if u["faction"] == "standard")
+    scor = sum(1 for u in all_units if u["faction"] == "scorpion")
+    print(f"✓ Generated {len(all_units)} unit files ({std} standard + {scor} scorpion)")
+
+
+if __name__ == "__main__":
+    main()

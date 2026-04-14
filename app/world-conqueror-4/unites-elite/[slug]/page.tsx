@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { TierBadge } from "@/components/TierBadge";
 import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
-import { getAllSlugs, getEliteUnit, CATEGORY_META, COUNTRY_FLAGS, getUnitsByCategory } from "@/lib/units";
+import { getAllSlugs, getEliteUnit, CATEGORY_META, COUNTRY_FLAGS, getUnitsByCategory, FACTION_META, getAllGenerals } from "@/lib/units";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -25,10 +25,31 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
   const unit = getEliteUnit(params.slug);
   if (!unit) notFound();
 
-  const sameCat = getUnitsByCategory(unit.category)
+  const sameCat = getUnitsByCategory(unit.category, unit.faction)
     .filter(u => u.slug !== unit.slug)
     .slice(0, 3);
   const meta = CATEGORY_META[unit.category];
+  const factionMeta = FACTION_META[unit.faction];
+  const isScorpion = unit.faction === "scorpion";
+  const sidebarUnits = getUnitsByCategory(unit.category, unit.faction);
+
+  // Auto-link recommended generals by name if not explicitly listed as slugs
+  const allGens = getAllGenerals();
+  const linkedGenerals = unit.recommendedGenerals
+    .map(ref => {
+      const lower = ref.toLowerCase();
+      return allGens.find(g =>
+        g.slug === lower ||
+        g.name.toLowerCase() === lower ||
+        g.name.toLowerCase().includes(lower)
+      );
+    })
+    .filter((g): g is NonNullable<typeof g> => g !== undefined);
+  // Also add generals that recommend this unit
+  const reverseGens = allGens.filter(g => g.recommendedUnits.includes(unit.slug));
+  const matchedGenerals = Array.from(
+    new Map([...linkedGenerals, ...reverseGens].map(g => [g.slug, g])).values()
+  );
 
   return (
     <>
@@ -50,9 +71,11 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
             <li><a href="#strategy" className="block px-2 py-1 text-dim no-underline hover:text-gold2">Stratégie</a></li>
             <li><a href="#faq" className="block px-2 py-1 text-dim no-underline hover:text-gold2">FAQ</a></li>
           </ul>
-          <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">{meta.plural} d'élite</h4>
+          <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
+            {meta.plural} {isScorpion ? "(Scorpion)" : "d'élite"}
+          </h4>
           <ul className="list-none text-sm">
-            {getUnitsByCategory(unit.category).map(u => (
+            {sidebarUnits.map(u => (
               <li key={u.slug}>
                 <Link href={`/world-conqueror-4/unites-elite/${u.slug}`}
                   className={`block px-2 py-1 rounded no-underline ${u.slug === unit.slug ? "text-gold2 font-bold bg-gold/10 border-l-2 border-gold pl-2.5" : "text-dim hover:text-gold2"}`}>
@@ -64,6 +87,10 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">Navigation</h4>
           <ul className="list-none text-sm">
             <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">← Toutes les unités d'élite</Link></li>
+            {isScorpion && (
+              <li><Link href="/world-conqueror-4/empire-du-scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 Empire du Scorpion</Link></li>
+            )}
+            <li><Link href="/world-conqueror-4/generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">👨‍✈️ Généraux</Link></li>
           </ul>
         </aside>
 
@@ -80,6 +107,9 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
               <div className="flex flex-wrap gap-2 mb-4">
                 <Tag accent>{meta.icon} {meta.label} d'élite</Tag>
                 <Tag>{COUNTRY_FLAGS[unit.country]} {unit.countryName}</Tag>
+                <Tag scorpion={isScorpion}>
+                  {isScorpion ? "🦂" : "🌍"} {factionMeta.label}
+                </Tag>
                 <Tag>📊 Niveaux 1-12</Tag>
                 <Tag>🎁 {unit.obtainability === "free" ? "Gratuite" : unit.obtainability === "event" ? "Événement" : unit.obtainability === "shop" ? "Boutique" : "Premium"}</Tag>
                 {!unit.verified && <Tag>⚠️ Données à vérifier en jeu</Tag>}
@@ -87,6 +117,13 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
               <p className="text-ink text-sm leading-relaxed">{unit.longDesc}</p>
             </div>
           </div>
+
+          {/* UNVERIFIED DISCLAIMER */}
+          {!unit.verified && (
+            <div className="mb-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg text-amber-200 text-sm">
+              ⚠️ <strong>Données en cours de vérification.</strong> Les stats et perks de cette fiche sont extrapolés depuis les recherches publiques (NamuWiki, Fandom WC4). Une phase de vérification in-game est en cours — la fiche passera en « verified » après validation à l'émulateur.
+            </div>
+          )}
 
           {/* INTERACTIVE BLOCK */}
           <div id="stats"></div>
@@ -104,15 +141,35 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
                 <h4 className="text-ink font-bold mb-2.5">👨‍✈️ Généraux recommandés</h4>
                 <p className="text-dim text-sm mb-3">Les généraux les plus efficaces avec cette unité :</p>
                 <div>
-                  {unit.recommendedGenerals.map(g => (
-                    <span key={g} className="inline-flex items-center gap-2 bg-bg3 border border-border px-3 py-1.5 rounded-full mr-1.5 mb-1.5 text-sm">
-                      <span className="w-5 h-5 rounded-full grid place-items-center text-[10px] font-extrabold text-[#0f1419]"
-                            style={{ background: "linear-gradient(135deg, #8b7d4a, #d4a44a)" }}>
-                        {g.slice(0, 2).toUpperCase()}
+                  {matchedGenerals.length > 0 ? (
+                    matchedGenerals.map(g => (
+                      <Link
+                        key={g.slug}
+                        href={`/world-conqueror-4/generaux/${g.slug}`}
+                        className="inline-flex items-center gap-2 bg-bg3 border border-border px-3 py-1.5 rounded-full mr-1.5 mb-1.5 text-sm no-underline hover:border-gold transition-colors"
+                      >
+                        <span className="w-5 h-5 rounded-full grid place-items-center text-[10px] font-extrabold text-[#0f1419]"
+                              style={{ background: "linear-gradient(135deg, #8b7d4a, #d4a44a)" }}>
+                          {g.name.split(" ").map(s => s[0]).slice(0, 2).join("").toUpperCase()}
+                        </span>
+                        <span className="text-gold2">{g.name}</span>
+                      </Link>
+                    ))
+                  ) : unit.recommendedGenerals.length > 0 ? (
+                    unit.recommendedGenerals.map(g => (
+                      <span key={g} className="inline-flex items-center gap-2 bg-bg3 border border-border px-3 py-1.5 rounded-full mr-1.5 mb-1.5 text-sm">
+                        <span className="w-5 h-5 rounded-full grid place-items-center text-[10px] font-extrabold text-[#0f1419]"
+                              style={{ background: "linear-gradient(135deg, #8b7d4a, #d4a44a)" }}>
+                          {g.slice(0, 2).toUpperCase()}
+                        </span>
+                        {g}
                       </span>
-                      {g}
-                    </span>
-                  ))}
+                    ))
+                  ) : (
+                    <Link href="/world-conqueror-4/generaux" className="text-dim text-sm no-underline hover:text-gold2">
+                      Explorer les généraux du wiki →
+                    </Link>
+                  )}
                 </div>
               </div>
               <div>
@@ -175,7 +232,17 @@ export default function UnitPage({ params }: { params: { slug: string } }) {
   );
 }
 
-function Tag({ children, accent }: { children: React.ReactNode; accent?: boolean }) {
+function Tag({ children, accent, scorpion }: { children: React.ReactNode; accent?: boolean; scorpion?: boolean }) {
+  if (scorpion) {
+    return (
+      <span
+        className="px-2.5 py-1 rounded-xl text-xs font-semibold border text-red-200"
+        style={{ background: "rgba(200,55,45,0.15)", borderColor: "#c8372d" }}
+      >
+        {children}
+      </span>
+    );
+  }
   return (
     <span className={`px-2.5 py-1 rounded-xl text-xs font-semibold border ${accent ? "bg-gold/15 border-gold text-gold2" : "bg-bg3 border-border text-dim"}`}>
       {children}

@@ -1,0 +1,41 @@
+{
+  "slug": "donitz",
+  "name": "Karl Dönitz",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "obtainability": "shop",
+  "shortDesc": "Meilleur amiral de WC4 — spécialiste des sous-marins.",
+  "longDesc": "Dönitz est « sans aucun doute le meilleur commandant naval » selon les tier lists communautaires. Spécialiste absolu des sous-marins (Type VII, Typhoon), il maximise les dégâts de torpille et la furtivité.",
+  "skills": [
+    {
+      "name": "Meute de loups",
+      "desc": "Sous-marins : attaque coordonnée +40%."
+    },
+    {
+      "name": "Guerre sous-marine",
+      "desc": "Furtivité améliorée."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque sous-marin",
+      "value": "+40%"
+    },
+    {
+      "target": "Furtivité",
+      "value": "+25%"
+    }
+  ],
+  "recommendedUnits": [
+    "type-vii-uboat",
+    "typhoon-submarine"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

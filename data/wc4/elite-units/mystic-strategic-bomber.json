@@ -1,0 +1,160 @@
+{
+  "slug": "mystic-strategic-bomber",
+  "name": "Mystic Strategic Bomber",
+  "nameEn": null,
+  "category": "airforce",
+  "faction": "scorpion",
+  "country": "XX",
+  "countryName": "Empire du Scorpion",
+  "tier": "S",
+  "obtainability": "campaign",
+  "shortDesc": "Bombardier stratégique mystique — version longue portée du Mystic Bomber.",
+  "longDesc": "Version stratégique longue portée du Mystic Bomber. Frappe de zone, portée maximale, usage très limité par partie.",
+  "stats": {
+    "atk": [
+      160,
+      177,
+      195,
+      212,
+      229,
+      246,
+      264,
+      281,
+      298,
+      315,
+      333,
+      350
+    ],
+    "def": [
+      35,
+      39,
+      42,
+      46,
+      50,
+      53,
+      57,
+      60,
+      64,
+      68,
+      71,
+      75
+    ],
+    "hp": [
+      145,
+      160,
+      175,
+      190,
+      205,
+      220,
+      235,
+      250,
+      265,
+      280,
+      295,
+      310
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "✈",
+      "name": "Supériorité aérienne",
+      "desc": "+15% dégâts contre autres unités aériennes.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Frappe surprise",
+      "desc": "Première attaque non subie.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🪂",
+      "name": "Vol stationnaire",
+      "desc": "Aucun coût de mouvement pour rester en place.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir Mystic Strategic Bomber dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via campagne ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à Mystic Strategic Bomber ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

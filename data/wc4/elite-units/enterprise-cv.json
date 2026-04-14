@@ -1,55 +1,57 @@
 {
   "slug": "enterprise-cv",
   "name": "USS Enterprise (CV-6)",
+  "nameEn": null,
   "category": "navy",
+  "faction": "standard",
   "country": "US",
   "countryName": "États-Unis",
   "tier": "S",
-  "obtainability": "event",
-  "shortDesc": "Porte-avions US. Lance vos avions d'élite à partir du lvl 9.",
-  "longDesc": "L'USS Enterprise est le porte-avions d'élite. Sa vraie valeur arrive au niveau 9 : il peut alors lancer vos unités d'élite aviation comme escadrons embarqués (avec des limitations). C'est l'unité-clé pour projeter la puissance aérienne en haute mer. Note : tous les avions d'élite (sauf B-52 et C-47) sont limités en nombre d'usages, et seul l'Enterprise lvl 9+ permet de les utiliser comme avions navals.",
+  "obtainability": "shop",
+  "shortDesc": "Porte-avions américain le plus décoré de la WWII.",
+  "longDesc": "Porte-avions classe Yorktown, « The Big E ». Navire le plus décoré de l'US Navy pendant la WWII (20 Battle Stars).",
   "stats": {
     "atk": [
-      55,
-      59,
-      63,
-      67,
-      71,
-      75,
-      80,
-      84,
-      88,
-      92,
-      96,
-      100
+      130,
+      145,
+      159,
+      174,
+      188,
+      203,
+      217,
+      232,
+      246,
+      261,
+      275,
+      290
     ],
     "def": [
-      48,
-      51,
-      53,
-      56,
-      59,
-      62,
-      64,
-      67,
-      70,
-      73,
-      75,
-      78
+      55,
+      60,
+      66,
+      71,
+      77,
+      82,
+      88,
+      93,
+      99,
+      104,
+      110,
+      115
     ],
     "hp": [
-      600,
-      632,
-      664,
-      695,
-      727,
-      759,
-      791,
-      823,
-      855,
-      886,
-      918,
-      950
+      170,
+      187,
+      205,
+      222,
+      239,
+      256,
+      274,
+      291,
+      308,
+      325,
+      343,
+      360
     ],
     "mov": [
       3,
@@ -66,121 +68,93 @@
       3
     ],
     "rng": [
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "✈️",
-      "name": "Pont d'envol",
-      "desc": "Lance des escadrons aériens (chasseurs basiques).",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "👁️",
-      "name": "Radar SK",
-      "desc": "Vision +3 cases.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "DCA quad-40mm",
-      "desc": "Attaque vs avions +6.",
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "active-skill",
-      "icon": "✈️",
-      "name": "Vague d'attaque",
-      "desc": "Lance 4 escadrons d'attaque ce tour. Cooldown : 4 tours.",
+      "icon": "⚓",
+      "name": "Tir de barrage",
+      "desc": "Attaque multi-cibles sur les navires adjacents.",
       "milestone": true
     },
     {
       "lvl": 7,
       "type": "passive",
-      "icon": "🛡️",
-      "name": "Pont blindé",
-      "desc": "Défense +8, HP +50.",
+      "icon": "⚙",
+      "name": "Coque renforcée",
+      "desc": "+20% HP en mer profonde.",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "passive",
-      "icon": "✈️",
-      "name": "Escadrons d'élite",
-      "desc": "Peut embarquer et déployer vos avions d'élite (sauf B-52 et C-47).",
+      "type": "active-skill",
+      "icon": "✈",
+      "name": "Défense AA",
+      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
       "milestone": true
-    },
-    {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Splash attack",
-      "desc": "+10% dégâts permanent par cible coulée (max +50%).",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Crew vétéran Pacific",
-      "desc": "Attaque +10.",
-      "milestone": false
     },
     {
       "lvl": 12,
       "type": "active-skill",
-      "icon": "🎖️",
-      "name": "Big E",
-      "desc": "Lance simultanément 2 avions d'élite. Cooldown : 6 tours.",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Halsey",
-    "Nimitz",
-    "Spruance"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Vague d'attaque en burst",
-    "<b>Lvl 5→9</b> — <b>L'Enterprise change de tier au lvl 9</b> grâce aux escadrons d'élite — palier à atteindre absolument",
-    "<b>Lvl 9→12</b> — Big E pour double-frappe aérienne navale"
-  ],
-  "verified": true,
-  "sources": [
-    "NamuWiki KR",
-    "Fandom EN — Enterprise"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le USS Enterprise (CV-6) dans World Conqueror 4 ?",
-      "a": "Le USS Enterprise (CV-6) s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir USS Enterprise (CV-6) dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le USS Enterprise (CV-6) vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le USS Enterprise (CV-6) suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le USS Enterprise (CV-6) ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à USS Enterprise (CV-6) ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

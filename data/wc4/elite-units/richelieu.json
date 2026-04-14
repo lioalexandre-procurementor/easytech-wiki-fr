@@ -1,55 +1,57 @@
 {
   "slug": "richelieu",
-  "name": "Richelieu (cuirassé)",
+  "name": "Richelieu",
+  "nameEn": null,
   "category": "navy",
+  "faction": "standard",
   "country": "FR",
   "countryName": "France",
-  "tier": "S",
-  "obtainability": "event",
-  "shortDesc": "Cuirassé français. Re-attacks puissants, redoutable en formation.",
-  "longDesc": "Le Richelieu est le cuirassé d'élite n°2 du jeu, juste derrière le U-Boot, grâce à sa capacité de re-attack. Très puissant en formation groupée avec d'autres destroyers, mais affaibli quand isolé.",
+  "tier": "A",
+  "obtainability": "shop",
+  "shortDesc": "Cuirassé français de la classe Richelieu, huit canons 380mm.",
+  "longDesc": "Navire de tête de la dernière classe de cuirassés français. Huit canons 380mm en deux tourelles quadruples avant.",
   "stats": {
     "atk": [
-      82,
-      87,
-      93,
-      98,
-      103,
-      108,
-      114,
-      119,
-      124,
-      129,
-      135,
-      140
+      110,
+      122,
+      134,
+      145,
+      157,
+      169,
+      181,
+      193,
+      205,
+      216,
+      228,
+      240
     ],
     "def": [
       60,
-      63,
       66,
-      69,
-      72,
-      75,
-      77,
-      80,
-      83,
-      86,
-      89,
-      92
+      73,
+      79,
+      85,
+      92,
+      98,
+      105,
+      111,
+      117,
+      124,
+      130
     ],
     "hp": [
-      520,
-      545,
-      571,
-      596,
-      622,
-      647,
-      673,
-      698,
-      724,
-      749,
-      775,
-      800
+      160,
+      176,
+      193,
+      209,
+      225,
+      242,
+      258,
+      275,
+      291,
+      307,
+      324,
+      340
     ],
     "mov": [
       2,
@@ -66,113 +68,93 @@
       2
     ],
     "rng": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Tourelles 380mm",
-      "desc": "+15% dégâts critiques.",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "🛡️",
-      "name": "Blindage 330mm",
-      "desc": "-15% dégâts reçus.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Conduite de tir",
-      "desc": "Attaque +8, +5% précision.",
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "active-skill",
-      "icon": "💥",
-      "name": "Salve de huit canons",
-      "desc": "Re-attack : tire deux fois ce tour. Cooldown : 3 tours.",
+      "icon": "⚓",
+      "name": "Tir de barrage",
+      "desc": "Attaque multi-cibles sur les navires adjacents.",
       "milestone": true
     },
     {
       "lvl": 7,
       "type": "passive",
-      "icon": "🤝",
-      "name": "Formation navale",
-      "desc": "+25% dégâts si 2+ navires alliés à 2 cases.",
+      "icon": "⚙",
+      "name": "Coque renforcée",
+      "desc": "+20% HP en mer profonde.",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "active-skill",
-      "icon": "💥",
-      "name": "Bombardement côtier",
-      "desc": "AoE 2 cases. Bonus contre cibles terrestres. Cooldown : 4 tours.",
+      "icon": "✈",
+      "name": "Défense AA",
+      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
       "milestone": true
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Marine Nationale",
-      "desc": "Attaque +10, Défense +8.",
-      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "passive",
-      "icon": "🎖️",
-      "name": "Honneur Patrie",
-      "desc": "Re-attack permanent à chaque tour. +30% dégâts en formation.",
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Darlan",
-    "Nimitz",
-    "Cunningham"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Re-attack au lvl 5 double sa valeur",
-    "<b>Lvl 5→9</b> — Bombardement côtier pour soutien amphibie",
-    "<b>Lvl 9→12</b> — Build flotte de bataille"
-  ],
-  "verified": true,
-  "sources": [
-    "NamuWiki KR",
-    "Fandom EN"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le Richelieu (cuirassé) dans World Conqueror 4 ?",
-      "a": "Le Richelieu (cuirassé) s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir Richelieu dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le Richelieu (cuirassé) vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Richelieu (cuirassé) suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le Richelieu (cuirassé) ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à Richelieu ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

@@ -1,0 +1,160 @@
+{
+  "slug": "b-4-howitzer",
+  "name": "B-4 Howitzer",
+  "nameEn": null,
+  "category": "artillery",
+  "faction": "standard",
+  "country": "RU",
+  "countryName": "URSS",
+  "tier": "A",
+  "obtainability": "shop",
+  "shortDesc": "Obusier soviétique 203mm — l'un des plus gros calibres WWII.",
+  "longDesc": "Obusier 203mm de l'Armée Rouge dès 1934. Utilisé contre fortifications et positions enterrées.",
+  "stats": {
+    "atk": [
+      120,
+      134,
+      147,
+      161,
+      175,
+      188,
+      202,
+      215,
+      229,
+      243,
+      256,
+      270
+    ],
+    "def": [
+      25,
+      28,
+      30,
+      33,
+      36,
+      39,
+      41,
+      44,
+      47,
+      50,
+      52,
+      55
+    ],
+    "hp": [
+      95,
+      105,
+      114,
+      124,
+      133,
+      143,
+      152,
+      162,
+      171,
+      181,
+      190,
+      200
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Portée étendue",
+      "desc": "+1 portée de tir.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir précis",
+      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🔥",
+      "name": "Saturation",
+      "desc": "Dégâts de zone sur tuile adjacente.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir B-4 Howitzer dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à B-4 Howitzer ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

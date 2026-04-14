@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "guderian",
+    "name": "Heinz Guderian",
+    "faction": "standard",
+    "category": "tank",
+    "rank": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "rommel",
+    "name": "Erwin Rommel",
+    "faction": "standard",
+    "category": "tank",
+    "rank": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "patton",
+    "name": "George Patton",
+    "faction": "standard",
+    "category": "tank",
+    "rank": "S",
+    "country": "US"
+  },
+  {
+    "slug": "rokossovsky",
+    "name": "Konstantin Rokossovsky",
+    "faction": "standard",
+    "category": "tank",
+    "rank": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "konev",
+    "name": "Ivan Konev",
+    "faction": "standard",
+    "category": "artillery",
+    "rank": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "zhukov",
+    "name": "Gueorgui Joukov",
+    "faction": "standard",
+    "category": "balanced",
+    "rank": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "donitz",
+    "name": "Karl Dönitz",
+    "faction": "standard",
+    "category": "navy",
+    "rank": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "yamaguchi",
+    "name": "Tamon Yamaguchi",
+    "faction": "standard",
+    "category": "navy",
+    "rank": "S",
+    "country": "JP"
+  },
+  {
+    "slug": "kuznetsov",
+    "name": "Nikolaï Kouznetsov",
+    "faction": "standard",
+    "category": "navy",
+    "rank": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "montgomery",
+    "name": "Bernard Montgomery",
+    "faction": "standard",
+    "category": "infantry",
+    "rank": "A",
+    "country": "GB"
+  },
+  {
+    "slug": "osborn",
+    "name": "Osborn",
+    "faction": "scorpion",
+    "category": "balanced",
+    "rank": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "williams",
+    "name": "Williams",
+    "faction": "scorpion",
+    "category": "artillery",
+    "rank": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "colson",
+    "name": "Colson",
+    "faction": "scorpion",
+    "category": "tank",
+    "rank": "S",
+    "country": "XX"
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "slug": "konev",
+  "name": "Ivan Konev",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "country": "RU",
+  "countryName": "URSS",
+  "obtainability": "shop",
+  "shortDesc": "Meilleur général d'artillerie — l'équivalent de Guderian pour l'artillerie.",
+  "longDesc": "Konev est pour l'artillerie ce que Guderian est pour les chars : la référence S-tier absolue. À pairer avec Schwerer Gustav, Topol-M ou M142 HIMARS pour optimiser les dégâts de frappe.",
+  "skills": [
+    {
+      "name": "Maître canonnier",
+      "desc": "+30% dégâts artillerie."
+    },
+    {
+      "name": "Tir de barrage",
+      "desc": "+1 portée pour toute artillerie commandée."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque artillerie",
+      "value": "+30%"
+    },
+    {
+      "target": "Portée",
+      "value": "+1"
+    }
+  ],
+  "recommendedUnits": [
+    "schwerer-gustav",
+    "topol-m",
+    "m142-himars"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

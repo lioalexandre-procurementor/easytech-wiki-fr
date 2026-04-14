@@ -1,55 +1,57 @@
 {
   "slug": "bm-21-grad",
   "name": "BM-21 Grad",
+  "nameEn": null,
   "category": "artillery",
+  "faction": "standard",
   "country": "RU",
-  "countryName": "URSS / Russie",
-  "tier": "B",
-  "obtainability": "event",
-  "shortDesc": "Lance-roquettes multiple soviétique. Saturation de zone à bas coût.",
-  "longDesc": "Le BM-21 Grad est l'incarnation soviétique du tir de saturation : peu de précision individuelle, mais une couverture de zone massive avec 40 roquettes. Très efficace contre infanterie groupée.",
+  "countryName": "URSS",
+  "tier": "A",
+  "obtainability": "shop",
+  "shortDesc": "Lance-roquettes multiples soviétique 122mm, 40 tubes.",
+  "longDesc": "Lance-roquettes multiples 122mm monté sur camion Ural-375D. Cadence de tir dévastatrice, dégâts de zone.",
   "stats": {
     "atk": [
-      55,
-      59,
-      62,
-      66,
-      70,
-      73,
-      77,
-      80,
-      84,
-      88,
-      91,
-      95
+      100,
+      111,
+      122,
+      133,
+      144,
+      155,
+      165,
+      176,
+      187,
+      198,
+      209,
+      220
     ],
     "def": [
-      14,
-      15,
-      17,
-      18,
-      20,
-      21,
-      23,
-      24,
-      26,
-      27,
-      29,
-      30
+      30,
+      33,
+      35,
+      38,
+      41,
+      44,
+      46,
+      49,
+      52,
+      55,
+      57,
+      60
     ],
     "hp": [
-      180,
-      196,
-      213,
-      229,
-      245,
-      262,
-      278,
-      295,
-      311,
-      327,
-      344,
-      360
+      100,
+      109,
+      118,
+      127,
+      136,
+      145,
+      155,
+      164,
+      173,
+      182,
+      191,
+      200
     ],
     "mov": [
       3,
@@ -83,95 +85,76 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "40 tubes",
-      "desc": "AoE 2 cases. -10% précision.",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "🪖",
-      "name": "Anti-infanterie",
-      "desc": "+30% dégâts vs infanterie.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Roquettes 9M22",
-      "desc": "Attaque +5.",
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Salve massive",
-      "desc": "Tire toutes les roquettes (AoE 3x3, dégâts x1.8). Cooldown : 4 tours.",
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Portée étendue",
+      "desc": "+1 portée de tir.",
       "milestone": true
     },
     {
       "lvl": 7,
-      "type": "passive",
-      "icon": "🏃",
-      "name": "Châssis Ural",
-      "desc": "Mouvement +1, peut tirer après mouvement.",
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir précis",
+      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "🔥",
-      "name": "Pluie de feu",
-      "desc": "Inflige des dégâts continus 2 tours sur la zone. Cooldown : 5 tours.",
+      "name": "Saturation",
+      "desc": "Dégâts de zone sur tuile adjacente.",
       "milestone": true
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Production de masse",
-      "desc": "Attaque +6, AoE +1 case.",
-      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "passive",
-      "icon": "🎖️",
-      "name": "Katyusha moderne",
-      "desc": "+50% dégâts vs infanterie. AoE 4x4.",
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Konev",
-    "Vatutin",
-    "Joukov"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Salve massive nettoie les groupes d'infanterie",
-    "<b>Lvl 5→9</b> — Pluie de feu dénie une zone pendant 2 tours",
-    "<b>Lvl 9→12</b> — Optionnel sauf build anti-inf"
-  ],
-  "verified": false,
-  "sources": [
-    "Extrapolation"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le BM-21 Grad dans World Conqueror 4 ?",
-      "a": "Le BM-21 Grad s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir BM-21 Grad dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le BM-21 Grad vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le BM-21 Grad suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le BM-21 Grad ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à BM-21 Grad ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

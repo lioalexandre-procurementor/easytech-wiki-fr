@@ -2,19 +2,22 @@ import Link from "next/link";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
-import { getAllEliteUnits, CATEGORY_META } from "@/lib/units";
+import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, CATEGORY_META } from "@/lib/units";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "World Conqueror 4 — Wiki FR | EasyTech Wiki",
-  description: "Le guide francophone le plus complet de World Conqueror 4 : 38 unités d'élite niveau par niveau, généraux, technologies, scénarios et stratégies.",
+  description: "Le guide francophone le plus complet de World Conqueror 4 : unités d'élite, faction Empire du Scorpion, généraux, technologies, scénarios et stratégies.",
 };
 
 export default function WC4Hub() {
-  const units = getAllEliteUnits();
-  const top = units.slice(0, 6);
+  const allUnits = getAllEliteUnits();
+  const standardUnits = getUnitsByFaction("standard");
+  const scorpionUnits = getUnitsByFaction("scorpion");
+  const generals = getAllGenerals();
+  const top = standardUnits.slice(0, 6);
   const counts = (Object.keys(CATEGORY_META) as Array<keyof typeof CATEGORY_META>)
-    .map(k => ({ key: k, count: units.filter(u => u.category === k).length, ...CATEGORY_META[k] }));
+    .map(k => ({ key: k, count: standardUnits.filter(u => u.category === k).length, ...CATEGORY_META[k] }));
 
   return (
     <>
@@ -29,9 +32,9 @@ export default function WC4Hub() {
           <SidebarSection title="World Conqueror 4">
             <SidebarLink href="/world-conqueror-4" active>🏠 Accueil WC4</SidebarLink>
             <SidebarLink href="#">📘 Guide débutant</SidebarLink>
-            <SidebarLink href="#">⚔️ Unités standards</SidebarLink>
             <SidebarLink href="/world-conqueror-4/unites-elite">🏅 Unités d'élite</SidebarLink>
-            <SidebarLink href="#">👨‍✈️ Généraux</SidebarLink>
+            <SidebarLink href="/world-conqueror-4/empire-du-scorpion">🦂 Empire du Scorpion</SidebarLink>
+            <SidebarLink href="/world-conqueror-4/generaux">👨‍✈️ Généraux</SidebarLink>
             <SidebarLink href="#">🔬 Technologies</SidebarLink>
             <SidebarLink href="#">🗺 Scénarios</SidebarLink>
             <SidebarLink href="#">🌍 Conquêtes</SidebarLink>
@@ -62,10 +65,13 @@ export default function WC4Hub() {
               </Link>
             </div>
             <div className="flex flex-wrap gap-7 mt-5">
-              <Stat n={units.length} l="Unités d'élite"/>
-              <Stat n="175+" l="Généraux"/>
-              <Stat n="60+" l="Scénarios"/>
+              <Stat n={standardUnits.length} l="Unités d'élite"/>
+              <Stat n={scorpionUnits.length} l="Unités Scorpion"/>
+              <Stat n={generals.length} l="Généraux"/>
               <Stat n="12" l="Niveaux max"/>
+            </div>
+            <div className="mt-5 p-3 bg-amber-500/10 border border-amber-500/30 rounded text-amber-200 text-xs">
+              ⚠️ <strong>Wiki en construction</strong> — les stats et perks affichés sont extrapolés depuis les recherches publiques (NamuWiki, Fandom WC4). Une phase de vérification in-game est en cours. Les fiches marquées « verified » ont été validées à l'émulateur.
             </div>
           </section>
 

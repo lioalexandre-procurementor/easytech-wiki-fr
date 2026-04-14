@@ -1,43 +1,402 @@
-{
-  "count": 38,
-  "units": [
-    "a41-centurion",
-    "m26-pershing",
-    "king-tiger",
-    "m1a1-abrams",
-    "leopard-2",
-    "t-72",
-    "is-3-heavy-tank",
-    "t-54",
-    "merkava",
-    "amx-30",
-    "combat-medic",
-    "hawkeye-force",
-    "special-forces",
-    "paratroopers",
-    "spetsnaz",
-    "sas",
-    "m142-himars",
-    "flak-88",
-    "schwerer-gustav",
-    "bm-21-grad",
-    "rt-2pm2-topol-m",
-    "m7-priest",
-    "stuka-rocket",
-    "type-vii-uboat",
-    "richelieu",
-    "enterprise-cv",
-    "yamato",
-    "hms-hood",
-    "bismarck",
-    "b-52-stratofortress",
-    "supermarine-spitfire",
-    "ah-64-apache",
-    "mi-24-hind",
-    "p-51-mustang",
-    "c-47-skytrain",
-    "f-22-raptor",
-    "tu-95-bear",
-    "f-117-nighthawk"
-  ]
-}
+[
+  {
+    "slug": "t-44",
+    "name": "T-44",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "A",
+    "country": "RU"
+  },
+  {
+    "slug": "konigs-tiger",
+    "name": "Königs Tiger",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "m26-pershing",
+    "name": "M26 Pershing",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "A",
+    "country": "US"
+  },
+  {
+    "slug": "is-3",
+    "name": "IS-3 Heavy Tank",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "centurion",
+    "name": "Centurion",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "A",
+    "country": "GB"
+  },
+  {
+    "slug": "t-72",
+    "name": "T-72",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "A",
+    "country": "RU"
+  },
+  {
+    "slug": "m1a1-abrams",
+    "name": "M1A1 Abrams",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "honeycomb",
+    "name": "Honeycomb",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "A",
+    "country": "XX"
+  },
+  {
+    "slug": "leopard-2",
+    "name": "Leopard 2",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "combat-medic",
+    "name": "Combat Medic",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "hawkeye",
+    "name": "Hawkeye",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "A",
+    "country": "US"
+  },
+  {
+    "slug": "brandenburg-infantry",
+    "name": "Brandenburg Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "A",
+    "country": "DE"
+  },
+  {
+    "slug": "alpini",
+    "name": "Alpini",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "A",
+    "country": "IT"
+  },
+  {
+    "slug": "rpg-rocket-soldier",
+    "name": "RPG Rocket Soldier",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "A",
+    "country": "RU"
+  },
+  {
+    "slug": "engineer-unit",
+    "name": "Engineer Unit",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "B",
+    "country": "XX"
+  },
+  {
+    "slug": "ghost-troop",
+    "name": "Ghost Troop",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "m7-priest",
+    "name": "M7 Priest",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "A",
+    "country": "US"
+  },
+  {
+    "slug": "schwerer-gustav",
+    "name": "Schwerer Gustav",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "bm-21-grad",
+    "name": "BM-21 Grad",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "A",
+    "country": "RU"
+  },
+  {
+    "slug": "b-4-howitzer",
+    "name": "B-4 Howitzer",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "A",
+    "country": "RU"
+  },
+  {
+    "slug": "stuka-rocket",
+    "name": "Stuka Rocket Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "A",
+    "country": "DE"
+  },
+  {
+    "slug": "auf1-spg",
+    "name": "AuF1 SPG",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "A",
+    "country": "FR"
+  },
+  {
+    "slug": "topol-m",
+    "name": "RT-2PM2 Topol-M",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "m142-himars",
+    "name": "M142 HIMARS",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "flak-88",
+    "name": "8.8 cm Flak",
+    "category": "artillery",
+    "faction": "standard",
+    "tier": "A",
+    "country": "DE"
+  },
+  {
+    "slug": "type-vii-uboat",
+    "name": "Type VII U-Boat",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "A",
+    "country": "DE"
+  },
+  {
+    "slug": "typhoon-submarine",
+    "name": "Typhoon Submarine",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "richelieu",
+    "name": "Richelieu",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "A",
+    "country": "FR"
+  },
+  {
+    "slug": "hms-prince-of-wales",
+    "name": "HMS Prince of Wales",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "A",
+    "country": "GB"
+  },
+  {
+    "slug": "yukikaze",
+    "name": "Yukikaze",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "A",
+    "country": "JP"
+  },
+  {
+    "slug": "arleigh-burke",
+    "name": "Arleigh Burke",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "akagi",
+    "name": "Akagi",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "S",
+    "country": "JP"
+  },
+  {
+    "slug": "enterprise-cv",
+    "name": "USS Enterprise (CV-6)",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "supermarine-spitfire",
+    "name": "Supermarine Spitfire",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "A",
+    "country": "GB"
+  },
+  {
+    "slug": "ju-87-stuka",
+    "name": "Ju 87 Stuka",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "A",
+    "country": "DE"
+  },
+  {
+    "slug": "c-47-skytrain",
+    "name": "C-47 Skytrain",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "B",
+    "country": "US"
+  },
+  {
+    "slug": "p-40-warhawk",
+    "name": "P-40 Warhawk",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "A",
+    "country": "US"
+  },
+  {
+    "slug": "mi-24-hind",
+    "name": "Mi-24 Hind",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "b-52-stratofortress",
+    "name": "B-52 Stratofortress",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "ah-64-apache",
+    "name": "AH-64 Apache",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "harrier",
+    "name": "Harrier",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "A",
+    "country": "GB"
+  },
+  {
+    "slug": "su-30",
+    "name": "Sukhoi Su-30",
+    "category": "airforce",
+    "faction": "standard",
+    "tier": "S",
+    "country": "RU"
+  },
+  {
+    "slug": "titan-tank",
+    "name": "Titan Tank",
+    "category": "tank",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "heavenly-beginning-tank",
+    "name": "Heavenly Beginning Tank",
+    "category": "tank",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "e-775",
+    "name": "E-775 Armored Vehicle",
+    "category": "tank",
+    "faction": "scorpion",
+    "tier": "A",
+    "country": "XX"
+  },
+  {
+    "slug": "ks-90",
+    "name": "KS-90 Self-Propelled Artillery",
+    "category": "artillery",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "sva-23",
+    "name": "SVA-23 Aircraft",
+    "category": "airforce",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "mystic-bomber",
+    "name": "Mystic Bomber",
+    "category": "airforce",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "mystic-strategic-bomber",
+    "name": "Mystic Strategic Bomber",
+    "category": "airforce",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
+  },
+  {
+    "slug": "mystery-paratrooper",
+    "name": "Mystery Paratrooper",
+    "category": "infantry",
+    "faction": "scorpion",
+    "tier": "A",
+    "country": "XX"
+  }
+]

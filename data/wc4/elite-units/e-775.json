@@ -1,0 +1,160 @@
+{
+  "slug": "e-775",
+  "name": "E-775 Armored Vehicle",
+  "nameEn": null,
+  "category": "tank",
+  "faction": "scorpion",
+  "country": "XX",
+  "countryName": "Empire du Scorpion",
+  "tier": "A",
+  "obtainability": "campaign",
+  "shortDesc": "Véhicule blindé scorpion — identifié par 4 roues et marque sur la coque.",
+  "longDesc": "Véhicule blindé des Mystic Forces. Configuration 4 roues, scorpion noir sur le corps uniquement (pas sur les canons, contrairement au KS-90).",
+  "stats": {
+    "atk": [
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200
+    ],
+    "def": [
+      70,
+      77,
+      85,
+      92,
+      99,
+      106,
+      114,
+      121,
+      128,
+      135,
+      143,
+      150
+    ],
+    "hp": [
+      150,
+      165,
+      179,
+      194,
+      208,
+      223,
+      237,
+      252,
+      266,
+      281,
+      295,
+      310
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🛡",
+      "name": "Blindage renforcé",
+      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "⚙",
+      "name": "Cible prioritaire",
+      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "⚔",
+      "name": "Charge blindée",
+      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game (capacité signature).",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir E-775 Armored Vehicle dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via campagne ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à E-775 Armored Vehicle ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

@@ -1,55 +1,57 @@
 {
   "slug": "m142-himars",
   "name": "M142 HIMARS",
+  "nameEn": null,
   "category": "artillery",
+  "faction": "standard",
   "country": "US",
   "countryName": "États-Unis",
   "tier": "S",
   "obtainability": "shop",
-  "shortDesc": "Lance-roquettes mobile longue portée. Mobile, rapide, dévastateur.",
-  "longDesc": "Le M142 HIMARS combine longue portée et mobilité — caractéristiques rares en artillerie. Tire-et-déplace, idéal pour harceler tout en évitant la riposte. Valorisé par sa capacité à frapper plusieurs cibles à grande distance.",
+  "shortDesc": "Lance-roquettes américain guidé GPS, mobilité shoot-and-scoot.",
+  "longDesc": "Lance-roquettes moderne haute précision (GMLRS GPS, ATACMS). S-tier incontournable fin de campagne.",
   "stats": {
     "atk": [
-      75,
-      80,
-      85,
-      90,
-      95,
-      100,
-      105,
-      110,
-      115,
-      120,
-      125,
-      130
+      130,
+      145,
+      159,
+      174,
+      188,
+      203,
+      217,
+      232,
+      246,
+      261,
+      275,
+      290
     ],
     "def": [
-      18,
-      20,
-      21,
-      23,
-      25,
-      26,
-      28,
-      29,
-      31,
+      30,
       33,
-      34,
-      36
+      35,
+      38,
+      41,
+      44,
+      46,
+      49,
+      52,
+      55,
+      57,
+      60
     ],
     "hp": [
-      220,
-      238,
-      256,
-      275,
-      293,
-      311,
-      329,
-      347,
-      365,
-      384,
-      402,
-      420
+      100,
+      111,
+      122,
+      133,
+      144,
+      155,
+      165,
+      176,
+      187,
+      198,
+      209,
+      220
     ],
     "mov": [
       4,
@@ -74,105 +76,85 @@
       4,
       4,
       4,
-      5,
-      5,
-      5,
-      5
+      4,
+      4,
+      4,
+      4
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Lance-roquettes M270",
-      "desc": "Attaque AoE 1 case autour de la cible.",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "🏃",
-      "name": "Tire-et-déplace",
-      "desc": "Peut bouger après avoir tiré.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Roquettes GMLRS",
-      "desc": "Attaque +5.",
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Salve d'artillerie",
-      "desc": "Tire 6 roquettes en zone (3x3 cases). Cooldown : 4 tours.",
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Portée étendue",
+      "desc": "+1 portée de tir.",
       "milestone": true
     },
     {
       "lvl": 7,
-      "type": "passive",
-      "icon": "🎯",
-      "name": "GPS guidé",
-      "desc": "+15% précision, ignore 20% défense.",
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir précis",
+      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🚀",
-      "name": "ATACMS upgrade",
-      "desc": "Portée +1 permanente. AoE +1 case.",
+      "icon": "🔥",
+      "name": "Saturation",
+      "desc": "Dégâts de zone sur tuile adjacente.",
       "milestone": true
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Brigade rocket",
-      "desc": "Attaque +8.",
-      "milestone": false
     },
     {
       "lvl": 12,
       "type": "active-skill",
-      "icon": "🎖️",
-      "name": "Frappe orbitale",
-      "desc": "Inflige des dégâts massifs sur 5x5 cases. Cooldown : 6 tours.",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Patton",
-    "Schwarzkopf",
-    "MacArthur"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Salve d'artillerie est le power spike clé",
-    "<b>Lvl 5→9</b> — Portée +1 au lvl 9 le rend intouchable",
-    "<b>Lvl 9→12</b> — Frappe orbitale = nuke conventionnel"
-  ],
-  "verified": true,
-  "sources": [
-    "Fandom EN",
-    "NamuWiki KR"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le M142 HIMARS dans World Conqueror 4 ?",
-      "a": "Le M142 HIMARS s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir M142 HIMARS dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le M142 HIMARS vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le M142 HIMARS suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le M142 HIMARS ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à M142 HIMARS ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

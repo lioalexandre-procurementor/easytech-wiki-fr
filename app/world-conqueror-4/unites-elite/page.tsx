@@ -2,19 +2,19 @@ import Link from "next/link";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitRow } from "@/components/UnitRow";
-import { getAllEliteUnits, CATEGORY_META } from "@/lib/units";
+import { getUnitsByFaction, CATEGORY_META } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Toutes les unités d'élite de World Conqueror 4 (FR) — Stats & Perks",
-  description: "Liste complète des 38 unités d'élite de WC4 par catégorie : chars, infanterie, artillerie, marine, aviation. Stats, tier list, perks niveau par niveau.",
+  description: "Liste complète des unités d'élite standard de WC4 par catégorie : chars, infanterie, artillerie, marine, aviation. Stats, tier list, perks niveau par niveau.",
 };
 
 const ORDER: Category[] = ["tank", "infantry", "artillery", "navy", "airforce"];
 
 export default function ElitesList() {
-  const all = getAllEliteUnits();
+  const all = getUnitsByFaction("standard");
 
   return (
     <>
@@ -39,6 +39,8 @@ export default function ElitesList() {
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">Navigation</h4>
           <ul className="list-none">
             <li><Link href="/world-conqueror-4" className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">← Retour au hub WC4</Link></li>
+            <li><Link href="/world-conqueror-4/empire-du-scorpion" className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">🦂 Empire du Scorpion</Link></li>
+            <li><Link href="/world-conqueror-4/generaux" className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">👨‍✈️ Généraux</Link></li>
           </ul>
         </aside>
 
@@ -47,9 +49,21 @@ export default function ElitesList() {
             style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230" }}>
             <h1 className="text-3xl text-gold2 font-extrabold mb-2">Unités d'Élite — World Conqueror 4</h1>
             <p className="text-dim max-w-3xl">
-              Les <b>{all.length} forces d'élite</b> sont des unités uniques aux perks exclusifs, évolutives du niveau 1 au niveau 12.
-              Chaque fiche détaille les stats par niveau, les compétences actives et passives, et les meilleurs généraux à coupler.
+              Les <b>{all.length} forces d'élite</b> du roster standard sont des unités uniques aux perks exclusifs,
+              évolutives du niveau 1 au niveau 12. Chaque fiche détaille les stats par niveau, les compétences actives
+              et passives, et les meilleurs généraux à coupler.
             </p>
+            <div className="mt-4 flex flex-wrap gap-3 items-center">
+              <Link
+                href="/world-conqueror-4/empire-du-scorpion"
+                className="inline-block bg-red-500/15 border border-red-500/40 text-red-200 px-4 py-2 rounded-md text-sm font-semibold no-underline hover:bg-red-500/25 transition-colors"
+              >
+                🦂 Voir aussi les unités de l'Empire du Scorpion
+              </Link>
+              <span className="text-amber-300/80 text-xs">
+                ⚠️ Stats extrapolées — vérification in-game en cours
+              </span>
+            </div>
           </section>
 
           {ORDER.map(cat => {

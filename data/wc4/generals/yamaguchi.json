@@ -1,0 +1,42 @@
+{
+  "slug": "yamaguchi",
+  "name": "Tamon Yamaguchi",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "country": "JP",
+  "countryName": "Japon",
+  "obtainability": "shop",
+  "shortDesc": "Amiral japonais polyvalent — aussi excellent en aviation.",
+  "longDesc": "Yamaguchi est l'un des meilleurs amiraux du jeu et fonctionne également très bien comme général aviation (double usage). Synergie forte avec les porte-avions (Akagi, Enterprise).",
+  "skills": [
+    {
+      "name": "Tactique navale",
+      "desc": "Bonus d'attaque tous types navals."
+    },
+    {
+      "name": "Aviation embarquée",
+      "desc": "Bonus sur avions lancés depuis carriers."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque navale",
+      "value": "+25%"
+    },
+    {
+      "target": "Avion (depuis carrier)",
+      "value": "+20%"
+    }
+  ],
+  "recommendedUnits": [
+    "akagi",
+    "enterprise-cv",
+    "yukikaze"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

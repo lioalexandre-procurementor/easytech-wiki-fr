@@ -1,0 +1,42 @@
+{
+  "slug": "rommel",
+  "name": "Erwin Rommel",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "obtainability": "shop",
+  "shortDesc": "Le Renard du Désert — général blindé offensif-défensif.",
+  "longDesc": "Rommel est un général tank de haute volée. Ses skills Feu Croisé (Crossfire) et Assaut Blindé (Armoured Assault) donnent des dégâts de contre-attaque supplémentaires et des bonus offensifs généraux. Excellent sur Königs Tiger ou M26 Pershing.",
+  "skills": [
+    {
+      "name": "Feu Croisé",
+      "desc": "Dégâts supplémentaires en contre-attaque quand attaqué."
+    },
+    {
+      "name": "Assaut Blindé",
+      "desc": "Dégâts +15% pour toutes les attaques blindées."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque char",
+      "value": "+25%"
+    },
+    {
+      "target": "Contre-attaque",
+      "value": "+30%"
+    }
+  ],
+  "recommendedUnits": [
+    "konigs-tiger",
+    "m26-pershing",
+    "centurion"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

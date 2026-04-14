@@ -1,0 +1,41 @@
+{
+  "slug": "montgomery",
+  "name": "Bernard Montgomery",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "obtainability": "shop",
+  "shortDesc": "Commandant britannique, spécialiste de la guerre d'infanterie méthodique.",
+  "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier, correct pour les scénarios WWII britanniques.",
+  "skills": [
+    {
+      "name": "Plan méthodique",
+      "desc": "Bonus défensif en position retranchée."
+    },
+    {
+      "name": "Huitième Armée",
+      "desc": "Bonus sur infanterie du Commonwealth."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Défense infanterie",
+      "value": "+20%"
+    },
+    {
+      "target": "Attaque infanterie",
+      "value": "+15%"
+    }
+  ],
+  "recommendedUnits": [
+    "brandenburg-infantry",
+    "combat-medic"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "slug": "brandenburg-infantry",
+  "name": "Brandenburg Infantry",
+  "nameEn": null,
+  "category": "infantry",
+  "faction": "standard",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "A",
+  "obtainability": "shop",
+  "shortDesc": "Forces spéciales allemandes WWII — sabotage et infiltration.",
+  "longDesc": "Représente la Division Brandenburg, forces spéciales allemandes WWII spécialisées dans l'infiltration. Bonus en terrain varié.",
+  "stats": {
+    "atk": [
+      50,
+      55,
+      61,
+      66,
+      72,
+      77,
+      83,
+      88,
+      94,
+      99,
+      105,
+      110
+    ],
+    "def": [
+      45,
+      50,
+      54,
+      59,
+      63,
+      68,
+      72,
+      77,
+      81,
+      86,
+      90,
+      95
+    ],
+    "hp": [
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200,
+      210,
+      220
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "🌲",
+      "name": "Embuscade",
+      "desc": "+20% dégâts en terrain forestier ou urbain.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Capacité signature",
+      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🛡",
+      "name": "Vétérance",
+      "desc": "+10% esquive permanent.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir Brandenburg Infantry dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à Brandenburg Infantry ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

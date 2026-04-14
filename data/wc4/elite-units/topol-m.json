@@ -1,0 +1,160 @@
+{
+  "slug": "topol-m",
+  "name": "RT-2PM2 Topol-M",
+  "nameEn": null,
+  "category": "artillery",
+  "faction": "standard",
+  "country": "RU",
+  "countryName": "Russie",
+  "tier": "S",
+  "obtainability": "shop",
+  "shortDesc": "Missile balistique intercontinental russe — unité d'élite ultime.",
+  "longDesc": "ICBM russe à tête nucléaire, service 1997. Portée maximale, dégâts dévastateurs, usage très limité.",
+  "stats": {
+    "atk": [
+      200,
+      223,
+      245,
+      268,
+      291,
+      314,
+      336,
+      359,
+      382,
+      405,
+      427,
+      450
+    ],
+    "def": [
+      20,
+      22,
+      24,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      36,
+      38,
+      40
+    ],
+    "hp": [
+      80,
+      89,
+      98,
+      107,
+      116,
+      125,
+      135,
+      144,
+      153,
+      162,
+      171,
+      180
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "passive",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Portée étendue",
+      "desc": "+1 portée de tir.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir précis",
+      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🔥",
+      "name": "Saturation",
+      "desc": "Dégâts de zone sur tuile adjacente.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [],
+  "levelingPriority": [
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir RT-2PM2 Topol-M dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+    },
+    {
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+    },
+    {
+      "q": "Quels généraux associer à RT-2PM2 Topol-M ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+    }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+  ]
+}

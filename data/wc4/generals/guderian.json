@@ -1,0 +1,47 @@
+{
+  "slug": "guderian",
+  "name": "Heinz Guderian",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "obtainability": "shop",
+  "shortDesc": "Père de la Blitzkrieg et meilleur général blindé du jeu.",
+  "longDesc": "Considéré comme le meilleur commandant de World Conqueror 4. Théoricien de la Blitzkrieg, il possède les trois meilleurs skills blindés du jeu ainsi que les compétences Machiniste et Rumeur. À placer sur un King Tiger, IS-3 ou M1A1 Abrams pour un effet maximal.",
+  "skills": [
+    {
+      "name": "Blitzkrieg",
+      "desc": "Attaques de char +25%, mouvement amélioré."
+    },
+    {
+      "name": "Commandant blindé",
+      "desc": "Bonus d'attaque et de défense sur tous les chars adjacents."
+    },
+    {
+      "name": "Machiniste (entraîné)",
+      "desc": "Unité mécanisée : réparation accélérée."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque char",
+      "value": "+30%"
+    },
+    {
+      "target": "Défense char",
+      "value": "+20%"
+    }
+  ],
+  "recommendedUnits": [
+    "konigs-tiger",
+    "is-3",
+    "m1a1-abrams",
+    "leopard-2"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

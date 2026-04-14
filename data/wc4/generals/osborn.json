@@ -1,0 +1,42 @@
+{
+  "slug": "osborn",
+  "name": "Osborn",
+  "faction": "scorpion",
+  "category": "balanced",
+  "rank": "S",
+  "country": "XX",
+  "countryName": "Empire du Scorpion",
+  "obtainability": "campaign",
+  "shortDesc": "Leader de l'Empire du Scorpion — ancien général britannique Alfred.",
+  "longDesc": "Osborn est le chef de l'Empire du Scorpion (New World Order). Son identité originelle était Alfred, un général britannique non-recrutable qui apparaît dans la mission Dunkerque de l'événement Origin of the Scorpion Empire. À partir du scénario Modern War il devient l'antagoniste final du jeu. Disponible dans le pack des trois généraux terroristes (Osborn, Williams, Colson).",
+  "skills": [
+    {
+      "name": "Commandant suprême",
+      "desc": "Bonus massif sur toutes les unités mystiques."
+    },
+    {
+      "name": "Nouveau Monde",
+      "desc": "Activation de capacités spéciales faction Scorpion."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Unités Scorpion",
+      "value": "+30%"
+    },
+    {
+      "target": "Moral",
+      "value": "+25%"
+    }
+  ],
+  "recommendedUnits": [
+    "titan-tank",
+    "heavenly-beginning-tank",
+    "mystic-bomber"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}

@@ -1,55 +1,57 @@
 {
   "slug": "m1a1-abrams",
   "name": "M1A1 Abrams",
+  "nameEn": null,
   "category": "tank",
+  "faction": "standard",
   "country": "US",
   "countryName": "États-Unis",
   "tier": "S",
   "obtainability": "shop",
-  "shortDesc": "MBT moderne US. Munitions à uranium appauvri, +20-40% de critique.",
-  "longDesc": "Le M1A1 Abrams est le char d'élite moderne ultime côté américain. Son perk 'Depleted Uranium Ammunition' donne +20% de chance de critique au lvl 1, montant à 40% au lvl 9, et ignore 30 à 60% de la défense ennemie. Synergise parfaitement avec Guderian, Manstein et Patton.",
+  "shortDesc": "MBT américain — référence des chars modernes.",
+  "longDesc": "Turbine à gaz, canon 120mm lisse, blindage composite Chobham. Unité d'élite de référence dans les scénarios modernes.",
   "stats": {
     "atk": [
-      72,
-      76,
-      80,
-      85,
-      89,
-      93,
-      97,
-      101,
-      105,
-      110,
-      114,
-      118
+      100,
+      111,
+      122,
+      133,
+      144,
+      155,
+      165,
+      176,
+      187,
+      198,
+      209,
+      220
     ],
     "def": [
-      55,
-      58,
-      60,
-      63,
-      66,
-      69,
-      71,
-      74,
-      77,
-      80,
-      82,
-      85
+      90,
+      100,
+      110,
+      120,
+      130,
+      140,
+      150,
+      160,
+      170,
+      180,
+      190,
+      200
     ],
     "hp": [
-      440,
-      464,
-      487,
-      511,
-      535,
-      558,
-      582,
-      605,
-      629,
-      653,
-      676,
-      700
+      170,
+      186,
+      203,
+      219,
+      235,
+      252,
+      268,
+      285,
+      301,
+      317,
+      334,
+      350
     ],
     "mov": [
       3,
@@ -59,11 +61,11 @@
       3,
       3,
       3,
-      4,
-      4,
-      4,
-      4,
-      4
+      3,
+      3,
+      3,
+      3,
+      3
     ],
     "rng": [
       1,
@@ -83,129 +85,76 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "passive",
-      "icon": "☢️",
-      "name": "Munitions à uranium appauvri",
-      "desc": "+20% de chance de critique. Ignore 30% de la défense ennemie.",
-      "milestone": false
-    },
-    {
-      "lvl": 1,
-      "type": "passive",
-      "icon": "🛡️",
-      "name": "Armure Chobham",
-      "desc": "-15% dégâts reçus de tous types.",
+      "type": "stat",
+      "icon": "⚙",
+      "name": "Stats de base",
+      "desc": "Statistiques de départ de l'unité d'élite.",
       "milestone": false
     },
     {
       "lvl": 3,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Système de visée thermique",
-      "desc": "Attaque +5, +5% précision.",
-      "milestone": false
-    },
-    {
-      "lvl": 4,
       "type": "passive",
-      "icon": "🚀",
-      "name": "Réacteur AGT-1500",
-      "desc": "Mouvement libre dans tous types de terrain.",
+      "icon": "🎖",
+      "name": "Bonus moral",
+      "desc": "+5% moral aux unités alliées adjacentes.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "passive",
-      "icon": "☢️",
-      "name": "Uranium amélioré",
-      "desc": "Critique +30%, ignore 45% défense.",
+      "type": "active-skill",
+      "icon": "🛡",
+      "name": "Blindage renforcé",
+      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
       "milestone": true
     },
     {
-      "lvl": 6,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Plaques additionnelles",
-      "desc": "Défense +5, HP +25.",
-      "milestone": false
-    },
-    {
       "lvl": 7,
-      "type": "active-skill",
-      "icon": "🎯",
-      "name": "Tir d'engagement rapide",
-      "desc": "Attaque sans pénalité même après mouvement maximum. Cooldown : 2 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 8,
-      "type": "stat",
-      "icon": "📈",
-      "name": "Calibre 120mm L/44",
-      "desc": "Attaque +6.",
+      "type": "passive",
+      "icon": "⚙",
+      "name": "Cible prioritaire",
+      "desc": "+15% dégâts contre les unités d'infanterie.",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "passive",
-      "icon": "☢️",
-      "name": "Uranium maximal",
-      "desc": "Critique +40%, ignore 60% défense.",
-      "milestone": true
-    },
-    {
-      "lvl": 10,
       "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe tactique",
-      "desc": "Attaque deux fois ce tour. Cooldown : 4 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "stat",
-      "icon": "💪",
-      "name": "Composite ATM",
-      "desc": "Défense +6, HP +30.",
-      "milestone": false
+      "icon": "⚔",
+      "name": "Charge blindée",
+      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
+      "milestone": true
     },
     {
       "lvl": 12,
-      "type": "passive",
-      "icon": "🎖️",
-      "name": "Suprématie Abrams",
-      "desc": "Critiques infligent +50% dégâts. +1 portée d'attaque.",
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "Perk ultime",
+      "desc": "Skill final à valider in-game (capacité signature).",
       "milestone": true
     }
   ],
-  "recommendedGenerals": [
-    "Guderian",
-    "Manstein",
-    "Patton",
-    "Schwarzkopf"
-  ],
+  "recommendedGenerals": [],
   "levelingPriority": [
-    "<b>Lvl 1→5</b> — Uranium scaling change tout : prioriser ce palier",
-    "<b>Lvl 5→9</b> — Combo crit + ignore défense est dévastateur",
-    "<b>Lvl 9→12</b> — Frappe tactique au lvl 10 double ses dégâts par tour"
-  ],
-  "verified": true,
-  "sources": [
-    "Fandom EN — M1A1 Abrams",
-    "NamuWiki KR"
+    "Débloquer les perks milestones (5, 9, 12) en priorité",
+    "Les perks stat sont moins prioritaires que les active-skills",
+    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
   ],
   "faqs": [
     {
-      "q": "Comment débloquer le M1A1 Abrams dans World Conqueror 4 ?",
-      "a": "Le M1A1 Abrams s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+      "q": "Comment obtenir M1A1 Abrams dans World Conqueror 4 ?",
+      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
     },
     {
-      "q": "Le M1A1 Abrams vaut-il la peine d'être monté au niveau 12 ?",
-      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le M1A1 Abrams suit cette logique."
+      "q": "Quelles sont les stats maximum au niveau 12 ?",
+      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
     },
     {
-      "q": "Quels généraux sont les meilleurs avec le M1A1 Abrams ?",
-      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+      "q": "Quels généraux associer à M1A1 Abrams ?",
+      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
+    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "slug": "colson",
+  "name": "Colson",
+  "faction": "scorpion",
+  "category": "tank",
+  "rank": "S",
+  "country": "XX",
+  "countryName": "Empire du Scorpion",
+  "obtainability": "campaign",
+  "shortDesc": "Troisième capitaine de l'Empire du Scorpion — détails in-game à confirmer.",
+  "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Disponible dans le pack des trois généraux terroristes. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion (Titan Tank, Heavenly Beginning Tank).",
+  "skills": [
+    {
+      "name": "Commandant blindé mystique",
+      "desc": "Bonus sur chars Scorpion."
+    },
+    {
+      "name": "Défense du Scorpion",
+      "desc": "Réduction de dégâts sur unités alliées."
+    }
+  ],
+  "bonuses": [
+    {
+      "target": "Attaque chars Scorpion",
+      "value": "+30%"
+    },
+    {
+      "target": "Défense chars Scorpion",
+      "value": "+25%"
+    }
+  ],
+  "recommendedUnits": [
+    "titan-tank",
+    "heavenly-beginning-tank"
+  ],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://european-war-4.boards.net/thread/12989/all-generals-ranked-wc4"
+  ]
+}
