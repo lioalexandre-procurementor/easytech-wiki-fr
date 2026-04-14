@@ -17,13 +17,12 @@ import type {
   Metadata,
 } from "next";
 import type {
-  AttributeKey,
-  AttributeValue,
   GeneralQuality,
   GeneralSkill,
   TrainingStage,
 } from "@/lib/types";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { StatsGrid } from "@/components/general/StatsGrid";
 import { locales } from "@/src/i18n/config";
 
 export function generateStaticParams() {
@@ -52,14 +51,6 @@ const QUALITY_META: Record<
   marshal: { label: "Marshal", icon: "⭐", color: "#ff6b6b", slots: 5 },
 };
 
-const ATTR_LABELS: { key: AttributeKey; label: string; icon: string }[] = [
-  { key: "infantry",  label: "Infanterie", icon: "🪖" },
-  { key: "artillery", label: "Artillerie", icon: "🎯" },
-  { key: "armor",     label: "Blindé",     icon: "🛡" },
-  { key: "navy",      label: "Marine",     icon: "⚓" },
-  { key: "airforce",  label: "Aviation",   icon: "✈" },
-  { key: "marching",  label: "Marche",     icon: "🥾" },
-];
 
 export default async function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
   unstable_setRequestLocale(params.locale);
@@ -93,10 +84,6 @@ export default async function GeneralPage({ params }: { params: { locale: string
     g.acquisition.cost != null
       ? `${acqMeta.icon} ${g.acquisition.cost} ${acqMeta.label.toLowerCase()}`
       : `${acqMeta.icon} ${acqMeta.label}`;
-
-  const hasAnyAttribute =
-    g.attributes &&
-    ATTR_LABELS.some(({ key }) => g.attributes?.[key] != null);
 
   const replaceableCount = g.skills.filter((s) => s.replaceable).length;
 
@@ -209,38 +196,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
           </div>
 
           {/* ATTRIBUTES (6 aptitudes) */}
-          <div id="attributes" className="bg-panel border border-border rounded-lg p-6 mb-6">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
-                ⭐ Attributs
-              </h3>
-              <span className="text-muted text-[10px] uppercase tracking-widest">
-                {hasAnyAttribute ? "Actuel + plafond via promotions" : ""}
-              </span>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-              {ATTR_LABELS.map(({ key, label, icon }) => {
-                const val = (g.attributes?.[key] ?? null) as AttributeValue | null;
-                return (
-                  <div
-                    key={key}
-                    className="border border-border rounded-lg p-3 bg-bg3"
-                  >
-                    <div className="text-muted text-[10px] uppercase tracking-widest mb-1.5">
-                      {icon} {label}
-                    </div>
-                    <AttributeBar value={val} />
-                  </div>
-                );
-              })}
-            </div>
-            {!hasAnyAttribute && (
-              <div className="mt-3 text-muted text-[11px] italic">
-                Valeurs à capturer depuis l'émulateur (Académie militaire → fiche du général).
-                Chaque attribut est noté de 0 à 5 étoiles, avec une 6ᵉ étoile « shiny bonus » rare pour les aptitudes maxées.
-              </div>
-            )}
-          </div>
+          <StatsGrid attributes={g.attributes} mode="base" />
 
           {/* SKILLS — inline vote widget for replaceable slots */}
           <div id="skills" className="bg-panel border border-border rounded-lg p-6 mb-6">
@@ -441,49 +397,6 @@ export default async function GeneralPage({ params }: { params: { locale: string
 }
 
 // ─── components ──────────────────────────────────────────────────────────
-
-function AttributeBar({ value }: { value: AttributeValue | null }) {
-  if (!value) {
-    return <div className="text-muted text-[11px] italic">— à vérifier</div>;
-  }
-  const MAX_SCALE = 6;
-  const start = Math.max(0, Math.min(MAX_SCALE, value.start));
-  const max = Math.max(start, Math.min(MAX_SCALE, value.max));
-
-  return (
-    <div className="flex flex-col gap-1">
-      <div className="flex gap-0.5 text-base leading-none" aria-label={`${start}/${max} (max ${MAX_SCALE})`}>
-        {Array.from({ length: MAX_SCALE }).map((_, i) => {
-          const filled = i < start;
-          const potential = i >= start && i < max;
-          const shiny = i === 5 && max >= 6; // 6th star = shiny bonus
-          return (
-            <span
-              key={i}
-              className={
-                shiny
-                  ? "text-amber-300 drop-shadow"
-                  : filled
-                  ? "text-gold"
-                  : potential
-                  ? "text-gold/30"
-                  : "text-border"
-              }
-            >
-              ★
-            </span>
-          );
-        })}
-      </div>
-      <div className="text-muted text-[10px] tabular-nums">
-        {start}/{max}
-        {max > start && (
-          <span className="text-dim"> (potentiel +{max - start})</span>
-        )}
-      </div>
-    </div>
-  );
-}
 
 function SkillBlock({
   skill,
