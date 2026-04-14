@@ -63,19 +63,37 @@
     }
   ],
   "attributes": {
-    "infantry": null,
-    "artillery": null,
-    "armor": null,
-    "navy": null,
-    "airforce": null,
-    "marching": null
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 0,
+      "max": 0
+    },
+    "armor": {
+      "start": 2,
+      "max": 3
+    },
+    "navy": {
+      "start": 5,
+      "max": 5
+    },
+    "airforce": {
+      "start": 5,
+      "max": 6
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
   },
   "hasTrainingPath": false,
   "training": null,
   "acquisition": {
     "type": "campaign",
-    "cost": null,
-    "currency": null,
+    "cost": 6985,
+    "currency": "medals",
     "notes": "Pack des 3 généraux terroristes"
   },
   "bonuses": [
@@ -98,5 +116,10 @@
     "https://world-conqueror-4.fandom.com/wiki/Skills",
     "https://world-conqueror-4.fandom.com/wiki/Training",
     "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
-  ]
+  ],
+  "nameCanonical": "Coulson",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 9,
+  "apkId": 1057
 }

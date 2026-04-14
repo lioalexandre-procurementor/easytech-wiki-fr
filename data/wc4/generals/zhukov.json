@@ -63,19 +63,37 @@
     }
   ],
   "attributes": {
-    "infantry": null,
-    "artillery": null,
-    "armor": null,
-    "navy": null,
-    "airforce": null,
-    "marching": null
+    "infantry": {
+      "start": 6,
+      "max": 6
+    },
+    "artillery": {
+      "start": 6,
+      "max": 6
+    },
+    "armor": {
+      "start": 4,
+      "max": 4
+    },
+    "navy": {
+      "start": 2,
+      "max": 4
+    },
+    "airforce": {
+      "start": 1,
+      "max": 5
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
   },
   "hasTrainingPath": false,
   "training": null,
   "acquisition": {
     "type": "iron-cross",
-    "cost": null,
-    "currency": "iron-cross",
+    "cost": 5890,
+    "currency": "medals",
     "notes": "Marshal IAP — achat réel uniquement"
   },
   "bonuses": [
@@ -99,5 +117,10 @@
     "https://world-conqueror-4.fandom.com/wiki/Skills",
     "https://world-conqueror-4.fandom.com/wiki/Training",
     "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
-  ]
+  ],
+  "nameCanonical": "Zhukov",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 11,
+  "apkId": 1018
 }

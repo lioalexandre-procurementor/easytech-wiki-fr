@@ -63,12 +63,30 @@
     }
   ],
   "attributes": {
-    "infantry": null,
-    "artillery": null,
-    "armor": null,
-    "navy": null,
-    "airforce": null,
-    "marching": null
+    "infantry": {
+      "start": 3,
+      "max": 3
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 6,
+      "max": 6
+    },
+    "navy": {
+      "start": 2,
+      "max": 0
+    },
+    "airforce": {
+      "start": 3,
+      "max": 4
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
   },
   "hasTrainingPath": true,
   "training": {
@@ -89,7 +107,7 @@
   },
   "acquisition": {
     "type": "medals",
-    "cost": null,
+    "cost": 2675,
     "currency": "medals",
     "notes": "Store — à confirmer"
   },
@@ -113,5 +131,10 @@
     "https://world-conqueror-4.fandom.com/wiki/Skills",
     "https://world-conqueror-4.fandom.com/wiki/Training",
     "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
-  ]
+  ],
+  "nameCanonical": "Patton",
+  "skillSlots": 5,
+  "unlockHQLv": 10,
+  "militaryRank": 8,
+  "apkId": 1037
 }

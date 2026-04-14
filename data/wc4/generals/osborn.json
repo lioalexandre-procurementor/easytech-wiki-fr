@@ -63,19 +63,37 @@
     }
   ],
   "attributes": {
-    "infantry": null,
-    "artillery": null,
-    "armor": null,
-    "navy": null,
-    "airforce": null,
-    "marching": null
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 4
+    },
+    "armor": {
+      "start": 6,
+      "max": 6
+    },
+    "navy": {
+      "start": 3,
+      "max": 3
+    },
+    "airforce": {
+      "start": 3,
+      "max": 5
+    },
+    "marching": {
+      "start": 6,
+      "max": 6
+    }
   },
   "hasTrainingPath": false,
   "training": null,
   "acquisition": {
     "type": "campaign",
-    "cost": null,
-    "currency": null,
+    "cost": 6985,
+    "currency": "medals",
     "notes": "Pack des 3 généraux terroristes — campagne Modern War"
   },
   "bonuses": [
@@ -99,5 +117,10 @@
     "https://world-conqueror-4.fandom.com/wiki/Skills",
     "https://world-conqueror-4.fandom.com/wiki/Training",
     "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
-  ]
+  ],
+  "nameCanonical": "Osborn",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 9,
+  "apkId": 1104
 }

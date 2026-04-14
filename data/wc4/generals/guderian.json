@@ -19,7 +19,8 @@
       "stars": null,
       "icon": null,
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg"
     },
     {
       "slot": 2,
@@ -63,12 +64,30 @@
     }
   ],
   "attributes": {
-    "infantry": null,
-    "artillery": null,
-    "armor": null,
-    "navy": null,
-    "airforce": null,
-    "marching": null
+    "infantry": {
+      "start": 3,
+      "max": 3
+    },
+    "artillery": {
+      "start": 1,
+      "max": 0
+    },
+    "armor": {
+      "start": 6,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 3,
+      "max": 4
+    },
+    "marching": {
+      "start": 5,
+      "max": 5
+    }
   },
   "hasTrainingPath": true,
   "training": {
@@ -89,7 +108,7 @@
   },
   "acquisition": {
     "type": "medals",
-    "cost": null,
+    "cost": 2935,
     "currency": "medals",
     "notes": "Store — à confirmer en jeu (coût très élevé)"
   },
@@ -115,5 +134,10 @@
     "https://world-conqueror-4.fandom.com/wiki/Skills",
     "https://world-conqueror-4.fandom.com/wiki/Training",
     "https://european-war-4.boards.net/thread/19837/generals-training-guide-created-september"
-  ]
+  ],
+  "nameCanonical": "Guderian",
+  "skillSlots": 5,
+  "unlockHQLv": 16,
+  "militaryRank": 6,
+  "apkId": 1049
 }
