@@ -23,12 +23,17 @@ import type {
   GeneralSkill,
   TrainingStage,
 } from "@/lib/types";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export function generateStaticParams() {
-  return getAllGeneralSlugs().map((slug) => ({ slug }));
+  const slugs = getAllGeneralSlugs();
+  return locales.flatMap((locale) =>
+    slugs.map((slug) => ({ locale, slug }))
+  );
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export function generateMetadata({ params }: { params: { locale: string; slug: string } }): Metadata {
   const g = getGeneral(params.slug);
   if (!g) return { title: "Général introuvable" };
   return {
@@ -56,7 +61,8 @@ const ATTR_LABELS: { key: AttributeKey; label: string; icon: string }[] = [
   { key: "marching",  label: "Marche",     icon: "🥾" },
 ];
 
-export default function GeneralPage({ params }: { params: { slug: string } }) {
+export default function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
+  unstable_setRequestLocale(params.locale);
   const g = getGeneral(params.slug);
   if (!g) notFound();
 

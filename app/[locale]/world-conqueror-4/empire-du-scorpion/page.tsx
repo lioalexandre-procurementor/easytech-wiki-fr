@@ -11,6 +11,8 @@ import {
 } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export const metadata: Metadata = {
   title: "Empire du Scorpion (Black Scorpion / Mystic Forces) — WC4 Wiki FR",
@@ -18,9 +20,14 @@ export const metadata: Metadata = {
     "Guide complet de l'Empire du Scorpion dans World Conqueror 4 : unités mystiques (Titan Tank, KS-90, Heavenly Beginning Tank, SVA-23), capitaines Osborn, Williams et Colson, lore et stratégies.",
 };
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 const CAT_ORDER: Category[] = ["tank", "infantry", "artillery", "navy", "airforce"];
 
-export default function ScorpionHub() {
+export default function ScorpionHub({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   const units = getUnitsByFaction("scorpion");
   const generals = getGeneralsByFaction("scorpion");
   const meta = FACTION_META.scorpion;

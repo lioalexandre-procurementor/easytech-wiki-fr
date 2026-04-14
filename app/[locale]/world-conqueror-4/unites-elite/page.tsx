@@ -5,15 +5,22 @@ import { UnitRow } from "@/components/UnitRow";
 import { getUnitsByFaction, CATEGORY_META } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export const metadata: Metadata = {
   title: "Toutes les unités d'élite de World Conqueror 4 (FR) — Stats & Perks",
   description: "Liste complète des unités d'élite standard de WC4 par catégorie : chars, infanterie, artillerie, marine, aviation. Stats, tier list, perks niveau par niveau.",
 };
 
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
 const ORDER: Category[] = ["tank", "infantry", "artillery", "navy", "airforce"];
 
-export default function ElitesList() {
+export default function ElitesList({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   const all = getUnitsByFaction("standard");
 
   return (

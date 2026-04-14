@@ -7,12 +7,17 @@ import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
 import { getAllSlugs, getEliteUnit, CATEGORY_META, COUNTRY_FLAGS, getUnitsByCategory, FACTION_META, getAllGenerals } from "@/lib/units";
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export function generateStaticParams() {
-  return getAllSlugs().map(slug => ({ slug }));
+  const slugs = getAllSlugs();
+  return locales.flatMap((locale) =>
+    slugs.map((slug) => ({ locale, slug }))
+  );
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+export function generateMetadata({ params }: { params: { locale: string; slug: string } }): Metadata {
   const u = getEliteUnit(params.slug);
   if (!u) return { title: "Unité introuvable" };
   return {
@@ -21,7 +26,8 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function UnitPage({ params }: { params: { slug: string } }) {
+export default function UnitPage({ params }: { params: { locale: string; slug: string } }) {
+  unstable_setRequestLocale(params.locale);
   const unit = getEliteUnit(params.slug);
   if (!unit) notFound();
 

@@ -4,13 +4,20 @@ import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
 import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, CATEGORY_META } from "@/lib/units";
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export const metadata: Metadata = {
   title: "World Conqueror 4 — Wiki FR | EasyTech Wiki",
   description: "Le guide francophone le plus complet de World Conqueror 4 : unités d'élite, faction Empire du Scorpion, généraux, technologies, scénarios et stratégies.",
 };
 
-export default function WC4Hub() {
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function WC4Hub({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   const allUnits = getAllEliteUnits();
   const standardUnits = getUnitsByFaction("standard");
   const scorpionUnits = getUnitsByFaction("scorpion");

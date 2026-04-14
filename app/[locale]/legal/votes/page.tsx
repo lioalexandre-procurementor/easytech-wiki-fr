@@ -2,6 +2,8 @@ import Link from "next/link";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export const metadata: Metadata = {
   title: "Politique de vote communautaire | EasyTech Wiki FR",
@@ -9,7 +11,12 @@ export const metadata: Metadata = {
     "Comment fonctionne le vote communautaire sur les compétences entraînées des généraux : anonymat, garde-fous, durée de vote.",
 };
 
-export default function VotesLegalPage() {
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function VotesLegalPage({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   return (
     <>
       <TopBar />

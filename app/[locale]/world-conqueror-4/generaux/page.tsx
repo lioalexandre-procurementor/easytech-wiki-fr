@@ -9,12 +9,18 @@ import {
 } from "@/lib/units";
 import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
 import type { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
 export const metadata: Metadata = {
   title: "Tous les généraux de World Conqueror 4 (FR) — Tier List & Guides",
   description:
     "Liste complète des meilleurs généraux de WC4 : Guderian, Rommel, Patton, Rokossovsky, Konev, Zhukov, Dönitz, Montgomery, Osborn et les capitaines de l'Empire du Scorpion. Compétences, bonus et unités recommandées.",
 };
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 const CAT_ORDER: GeneralCategory[] = [
   "tank",
@@ -59,7 +65,8 @@ const QUALITY_META: Record<
   },
 };
 
-export default function GeneralsList() {
+export default function GeneralsList({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   const all = getAllGenerals();
   const standard = all.filter((g) => g.faction === "standard");
   const scorpion = all.filter((g) => g.faction === "scorpion");

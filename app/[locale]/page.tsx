@@ -2,8 +2,15 @@ import Link from "next/link";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { GAMES } from "@/lib/games";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { locales } from "@/src/i18n/config";
 
-export default function Home() {
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default function Home({ params }: { params: { locale: string } }) {
+  unstable_setRequestLocale(params.locale);
   return (
     <>
       <TopBar/>
