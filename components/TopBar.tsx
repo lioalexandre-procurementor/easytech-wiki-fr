@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 export async function TopBar() {
   const t = await getTranslations();
@@ -25,7 +26,7 @@ export async function TopBar() {
           <span>🔍</span>
           <input className="bg-transparent outline-none flex-1 text-sm placeholder:text-muted text-ink" placeholder={t("nav.searchPlaceholder")} />
         </div>
-        {/* <LocaleSwitcher /> placeholder — added in B6 */}
+        <LocaleSwitcher />
       </div>
     </div>
   );
