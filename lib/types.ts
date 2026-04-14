@@ -99,6 +99,8 @@ export type GeneralAttributes = {
 export interface GeneralSkill {
   slot: number;                   // 1-based slot index (1..5)
   name: string;                   // display name FR
+  /** Canonical English skill name from WC4 APK string tables. */
+  nameEn?: string;
   desc: string;                   // description FR
   rating?: SkillRating | null;    // in-game letter grade if visible
   stars?: number | null;          // 0..5 visual star count if displayed
@@ -186,6 +188,17 @@ export interface GeneralData {
   recommendedUnits: string[];
   verified: boolean;
   sources?: string[];
+  // ── Real-data additions (from wc4_export) ──
+  /** Canonical English name from game data (EName field in APK). Stable across locales. */
+  nameCanonical?: string;
+  /** Number of skill slots — authoritative count from APK. */
+  skillSlots?: number;
+  /** Required HQ level to unlock in shop. */
+  unlockHQLv?: number | null;
+  /** Military rank enum (1..6) from APK. */
+  militaryRank?: number | null;
+  /** Raw APK id for traceability. */
+  apkId?: number;
 }
 
 // ─── Universal learnable-skill catalog (vote feature) ───────────────────────
@@ -201,4 +214,23 @@ export interface LearnableSkill {
   appliesTo?: GeneralCategory[];         // empty/undefined = all categories
   popularMeta?: boolean;                 // editorial "best practice" flag
   editorialNote?: string;                // short justification for the meta pick
+}
+
+/**
+ * "Trained" projection of a general: everything promoted to its ceiling.
+ * Used by the `/trained` route variant. A GeneralData may carry a partial
+ * override here if the training unlocks skills/attributes that differ from
+ * simply maxing the base values.
+ */
+export interface TrainedGeneralView {
+  /** Attributes at their ceiling (i.e. every key set so `start === max`). */
+  attributes: GeneralAttributes;
+  /** Skills after all promotions applied (replace/unlock resolved). */
+  skills: GeneralSkill[];
+  /** Total training cost in swords. */
+  totalSwordCost: number | null;
+  /** Total training cost in sceptres. */
+  totalSceptreCost: number | null;
+  /** Human-readable summary of how the trained build differs from base. */
+  summary: string;
 }
