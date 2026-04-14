@@ -440,6 +440,25 @@ export default async function GeneralPage({ params }: { params: { locale: string
         </main>
       </div>
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: `${g.nameEn || g.name} — World Conqueror 4`,
+            about: {
+              "@type": "VideoGame",
+              name: "World Conqueror 4",
+              gamePlatform: ["Android", "iOS"],
+              publisher: { "@type": "Organization", name: "EasyTech" },
+            },
+            author: { "@type": "Organization", name: "EasyTech Wiki" },
+            inLanguage: params.locale,
+            description: g.shortDesc,
+          }),
+        }}
+      />
     </>
   );
 }
