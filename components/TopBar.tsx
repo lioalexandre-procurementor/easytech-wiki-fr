@@ -1,6 +1,8 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/src/i18n/navigation";
 
-export function TopBar() {
+export async function TopBar() {
+  const t = await getTranslations();
   return (
     <div className="bg-gradient-to-b from-[#0a0e13] to-[#121820] border-b border-border sticky top-0 z-50">
       <div className="max-w-[1320px] mx-auto flex items-center gap-7 px-6 py-3.5">
@@ -8,12 +10,12 @@ export function TopBar() {
           <div className="w-9 h-9 rounded-md grid place-items-center text-[#0f1419] font-black text-lg font-serif"
                style={{ background: "linear-gradient(135deg, #d4a44a, #c8372d)" }}>W</div>
           <div>
-            <div className="text-gold2 leading-none">EasyTech Wiki</div>
+            <div className="text-gold2 leading-none">{t("site.shortTitle")}</div>
             <div className="text-muted text-[11px] font-semibold uppercase tracking-widest mt-0.5">La référence FR</div>
           </div>
         </Link>
         <nav className="flex gap-0.5 ml-3 flex-1">
-          <NavLink href="/world-conqueror-4">World Conqueror 4</NavLink>
+          <NavLink href="/world-conqueror-4">{t("nav.wc4")}</NavLink>
           <NavLink href="#" disabled>European War 7</NavLink>
           <NavLink href="#" disabled>Great Conqueror Rome</NavLink>
           <NavLink href="#" disabled>Guides</NavLink>
@@ -21,8 +23,9 @@ export function TopBar() {
         </nav>
         <div className="flex items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5 w-[260px]">
           <span>🔍</span>
-          <input className="bg-transparent outline-none flex-1 text-sm placeholder:text-muted text-ink" placeholder="Rechercher une unité, général..." />
+          <input className="bg-transparent outline-none flex-1 text-sm placeholder:text-muted text-ink" placeholder={t("nav.searchPlaceholder")} />
         </div>
+        {/* <LocaleSwitcher /> placeholder — added in B6 */}
       </div>
     </div>
   );
@@ -33,7 +36,7 @@ function NavLink({ href, children, disabled }: { href: string; children: React.R
     return <span className="px-3.5 py-2 text-dim text-sm font-semibold rounded-md opacity-50 cursor-not-allowed">{children}</span>;
   }
   return (
-    <Link href={href} className="px-3.5 py-2 text-dim text-sm font-semibold rounded-md hover:bg-gold/10 hover:text-gold2 no-underline">
+    <Link href={href as any} className="px-3.5 py-2 text-dim text-sm font-semibold rounded-md hover:bg-gold/10 hover:text-gold2 no-underline">
       {children}
     </Link>
   );

@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import TrainedSkillVote from "@/components/TrainedSkillVote";
@@ -23,7 +23,7 @@ import type {
   GeneralSkill,
   TrainingStage,
 } from "@/lib/types";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
 
 export function generateStaticParams() {
@@ -61,8 +61,9 @@ const ATTR_LABELS: { key: AttributeKey; label: string; icon: string }[] = [
   { key: "marching",  label: "Marche",     icon: "🥾" },
 ];
 
-export default function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
+export default async function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
   unstable_setRequestLocale(params.locale);
+  const t = await getTranslations();
   const g = getGeneral(params.slug);
   if (!g) notFound();
 
@@ -103,11 +104,12 @@ export default function GeneralPage({ params }: { params: { locale: string; slug
     <>
       <TopBar />
       <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">Accueil</Link> <span className="mx-2 text-border">›</span>
-        <Link href="/world-conqueror-4" className="text-dim">World Conqueror 4</Link>{" "}
-        <span className="mx-2 text-border">›</span>
-        <Link href="/world-conqueror-4/generaux" className="text-dim">Généraux</Link>{" "}
-        <span className="mx-2 text-border">›</span>
+        <Link href="/" className="text-dim">{t("nav.home")}</Link>{" "}
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
+        <Link href="/world-conqueror-4" className="text-dim">{t("nav.wc4")}</Link>{" "}
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
+        <Link href="/world-conqueror-4/generaux" className="text-dim">{t("nav.generals")}</Link>{" "}
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
         <span>{g.name}</span>
       </div>
 
