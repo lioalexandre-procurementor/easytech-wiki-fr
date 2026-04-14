@@ -1,0 +1,178 @@
+{
+  "slug": "m142-himars",
+  "name": "M142 HIMARS",
+  "category": "artillery",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "shop",
+  "shortDesc": "Lance-roquettes mobile longue portée. Mobile, rapide, dévastateur.",
+  "longDesc": "Le M142 HIMARS combine longue portée et mobilité — caractéristiques rares en artillerie. Tire-et-déplace, idéal pour harceler tout en évitant la riposte. Valorisé par sa capacité à frapper plusieurs cibles à grande distance.",
+  "stats": {
+    "atk": [
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "def": [
+      18,
+      20,
+      21,
+      23,
+      25,
+      26,
+      28,
+      29,
+      31,
+      33,
+      34,
+      36
+    ],
+    "hp": [
+      220,
+      238,
+      256,
+      275,
+      293,
+      311,
+      329,
+      347,
+      365,
+      384,
+      402,
+      420
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🚀",
+      "name": "Lance-roquettes M270",
+      "desc": "Attaque AoE 1 case autour de la cible.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Tire-et-déplace",
+      "desc": "Peut bouger après avoir tiré.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Roquettes GMLRS",
+      "desc": "Attaque +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Salve d'artillerie",
+      "desc": "Tire 6 roquettes en zone (3x3 cases). Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "GPS guidé",
+      "desc": "+15% précision, ignore 20% défense.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🚀",
+      "name": "ATACMS upgrade",
+      "desc": "Portée +1 permanente. AoE +1 case.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Brigade rocket",
+      "desc": "Attaque +8.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "🎖️",
+      "name": "Frappe orbitale",
+      "desc": "Inflige des dégâts massifs sur 5x5 cases. Cooldown : 6 tours.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Patton",
+    "Schwarzkopf",
+    "MacArthur"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Salve d'artillerie est le power spike clé",
+    "<b>Lvl 5→9</b> — Portée +1 au lvl 9 le rend intouchable",
+    "<b>Lvl 9→12</b> — Frappe orbitale = nuke conventionnel"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le M142 HIMARS dans World Conqueror 4 ?",
+      "a": "Le M142 HIMARS s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le M142 HIMARS vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le M142 HIMARS suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le M142 HIMARS ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

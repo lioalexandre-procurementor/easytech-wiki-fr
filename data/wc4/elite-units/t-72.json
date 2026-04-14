@@ -1,0 +1,210 @@
+{
+  "slug": "t-72",
+  "name": "T-72",
+  "category": "tank",
+  "country": "RU",
+  "countryName": "URSS / Russie",
+  "tier": "A",
+  "obtainability": "event",
+  "shortDesc": "MBT soviétique. Chargeur automatique, fort en territoire ami avec Rokossovsky.",
+  "longDesc": "Le T-72 est un excellent char d'élite low/mid-game grâce à son chargeur automatique et à son perk défensif territorial. Jusqu'au lvl 4, il surpasse l'IS-3 et le King Tiger. Manque de synergie avec un jeu agressif — il doit rester en territoire ami pour exprimer son potentiel.",
+  "stats": {
+    "atk": [
+      64,
+      67,
+      71,
+      74,
+      77,
+      80,
+      84,
+      87,
+      90,
+      93,
+      97,
+      100
+    ],
+    "def": [
+      46,
+      49,
+      51,
+      54,
+      57,
+      60,
+      62,
+      65,
+      68,
+      71,
+      73,
+      76
+    ],
+    "hp": [
+      390,
+      411,
+      432,
+      453,
+      474,
+      495,
+      515,
+      536,
+      557,
+      578,
+      599,
+      620
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⚡",
+      "name": "Chargeur automatique",
+      "desc": "+15% vitesse de tir, peut attaquer 2x par tour à partir du lvl 8.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Armure réactive Kontakt-1",
+      "desc": "-15% dégâts vs munitions HEAT.",
+      "milestone": false
+    },
+    {
+      "lvl": 2,
+      "type": "passive",
+      "icon": "🏠",
+      "name": "Défense de la patrie",
+      "desc": "+20% défense en territoire allié.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Munitions 3BM42",
+      "desc": "Attaque +4 vs blindés.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Salve rapide",
+      "desc": "Tire 2 fois cette attaque. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "stat",
+      "icon": "🏃",
+      "name": "Moteur V-46",
+      "desc": "Mouvement +1 permanent.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Stabilisateur 2E28M",
+      "desc": "+8% précision en mouvement.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "passive",
+      "icon": "⚡",
+      "name": "Doubles tirs",
+      "desc": "Attaque automatiquement 2 fois par tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🛡️",
+      "name": "Forteresse mobile",
+      "desc": "+50% défense ce tour. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🏠",
+      "name": "Défense renforcée",
+      "desc": "Bonus territoire ami +30%.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage Garde",
+      "desc": "Attaque +5, Défense +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Tigre des steppes",
+      "desc": "+30% défense permanent. +20% dégâts en territoire allié.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Rokossovsky",
+    "Joukov",
+    "Konev"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Salve rapide + double tir au lvl 8 = burst énorme",
+    "<b>Lvl 5→9</b> — Forteresse mobile sauve la vie en defense territoriale",
+    "<b>Lvl 9→12</b> — Optimisation pour build défensif uniquement"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN — T-72",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le T-72 dans World Conqueror 4 ?",
+      "a": "Le T-72 s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le T-72 vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le T-72 suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le T-72 ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

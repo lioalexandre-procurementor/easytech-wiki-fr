@@ -1,0 +1,178 @@
+{
+  "slug": "flak-88",
+  "name": "Flak 8.8cm",
+  "category": "artillery",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Canon polyvalent allemand : anti-char ET anti-aérien. Rendement légendaire.",
+  "longDesc": "Le Flak 88 est l'un des canons les plus polyvalents de l'histoire militaire — et c'est exactement son rôle dans WC4. Il fonctionne aussi bien contre les chars que contre l'aviation, ce qui en fait l'unité d'artillerie la plus rentable. Recommandation NamuWiki : prioriser sa montée en niveau.",
+  "stats": {
+    "atk": [
+      62,
+      66,
+      70,
+      74,
+      78,
+      82,
+      85,
+      89,
+      93,
+      97,
+      101,
+      105
+    ],
+    "def": [
+      16,
+      18,
+      19,
+      21,
+      23,
+      24,
+      26,
+      27,
+      29,
+      31,
+      32,
+      34
+    ],
+    "hp": [
+      200,
+      218,
+      236,
+      255,
+      273,
+      291,
+      309,
+      327,
+      345,
+      364,
+      382,
+      400
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Polyvalence légendaire",
+      "desc": "Peut cibler chars ET avions.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Munitions APCBC",
+      "desc": "+25% dégâts vs blindés.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Visée Flakvisier 35",
+      "desc": "Attaque +5, +10% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir de barrage AA",
+      "desc": "Tire automatiquement sur tous les avions à 3 cases ce tour. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Protection bouclier",
+      "desc": "Défense +5, réduction dégâts artillerie -15%.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Tir direct anti-char",
+      "desc": "Inflige +60% dégâts vs un char + ignore 30% défense. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage Luftwaffe vétéran",
+      "desc": "Attaque +6, +5% chance de critique.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Acht-Acht",
+      "desc": "+30% dégâts permanents vs chars et avions. AoE 1 case.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Rommel",
+    "Manstein",
+    "Kesselring"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Tir de barrage AA = anti-aérien instantané",
+    "<b>Lvl 5→9</b> — Tir direct anti-char pour killer un MBT en un coup",
+    "<b>Lvl 9→12</b> — NamuWiki recommande de prioriser le Flak 88 pour les builds polyvalents"
+  ],
+  "verified": true,
+  "sources": [
+    "NamuWiki KR",
+    "Fandom EN"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Flak 8.8cm dans World Conqueror 4 ?",
+      "a": "Le Flak 8.8cm s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Flak 8.8cm vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Flak 8.8cm suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Flak 8.8cm ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

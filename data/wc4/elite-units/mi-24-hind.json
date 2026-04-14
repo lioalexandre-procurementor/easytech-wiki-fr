@@ -1,0 +1,177 @@
+{
+  "slug": "mi-24-hind",
+  "name": "Mi-24 Hind",
+  "category": "airforce",
+  "country": "RU",
+  "countryName": "URSS / Russie",
+  "tier": "A",
+  "obtainability": "event",
+  "shortDesc": "Hélico de combat-transport russe. Polyvalent attaque + transport de troupes.",
+  "longDesc": "Le Mi-24 'Hind' est unique : il combine fonctions d'hélicoptère d'attaque ET de transport de troupes. Surnommé 'le char volant' par l'OTAN. Excellent pour les opérations combinées.",
+  "stats": {
+    "atk": [
+      60,
+      64,
+      68,
+      72,
+      76,
+      80,
+      85,
+      89,
+      93,
+      97,
+      101,
+      105
+    ],
+    "def": [
+      32,
+      34,
+      37,
+      39,
+      41,
+      44,
+      46,
+      49,
+      51,
+      53,
+      56,
+      58
+    ],
+    "hp": [
+      280,
+      299,
+      318,
+      337,
+      356,
+      375,
+      395,
+      414,
+      433,
+      452,
+      471,
+      490
+    ],
+    "mov": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "rng": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🚁",
+      "name": "Hélico-Tank volant",
+      "desc": "Défense +20% vs DCA.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "🪂",
+      "name": "Transport",
+      "desc": "Peut transporter une unité d'infanterie.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Roquettes S-8",
+      "desc": "Attaque +6.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Salve roquettes",
+      "desc": "AoE 2 cases. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage titanium",
+      "desc": "Défense +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🪂",
+      "name": "Largage tactique",
+      "desc": "Largue l'unité transportée n'importe où dans la zone visible.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Vétérans Afghanistan",
+      "desc": "Attaque +6.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Char volant",
+      "desc": "Défense +30%, peut attaquer après transport.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Joukov",
+    "Konev",
+    "Vatutin"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Salve roquettes pour AoE",
+    "<b>Lvl 5→9</b> — Largage tactique pour décapitation",
+    "<b>Lvl 9→12</b> — Build hybride attaque/transport"
+  ],
+  "verified": true,
+  "sources": [
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Mi-24 Hind dans World Conqueror 4 ?",
+      "a": "Le Mi-24 Hind s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Mi-24 Hind vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Mi-24 Hind suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Mi-24 Hind ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

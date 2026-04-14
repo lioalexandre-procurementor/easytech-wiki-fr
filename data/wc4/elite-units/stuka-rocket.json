@@ -1,0 +1,177 @@
+{
+  "slug": "stuka-rocket",
+  "name": "Stuka zu Fuß (Rocket)",
+  "category": "artillery",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Lance-roquettes allemand WW2. Faible mobilité, dégâts moyens.",
+  "longDesc": "Le 'Stuka zu Fuß' (Stuka à pied) est le surnom donné aux lance-roquettes Nebelwerfer 41/42 montés sur halftrack. Bonne capacité de saturation à courte/moyenne portée, faible précision individuelle.",
+  "stats": {
+    "atk": [
+      48,
+      51,
+      54,
+      57,
+      60,
+      63,
+      67,
+      70,
+      73,
+      76,
+      79,
+      82
+    ],
+    "def": [
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      25,
+      26,
+      28,
+      29,
+      31,
+      32
+    ],
+    "hp": [
+      200,
+      216,
+      233,
+      249,
+      265,
+      282,
+      298,
+      315,
+      331,
+      347,
+      364,
+      380
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "rng": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🚀",
+      "name": "Roquettes Nebelwerfer",
+      "desc": "AoE 2 cases. -15% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Effet de souffle",
+      "desc": "+20% dégâts vs infanterie en terrain ouvert.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Roquettes 28cm",
+      "desc": "Attaque +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Salve Nebelwerfer",
+      "desc": "Tire 6 roquettes (AoE 3x3). Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🌫",
+      "name": "Fumée",
+      "desc": "Crée un écran de fumée bloquant la vision ennemie 1 tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🔥",
+      "name": "Bombardement de zone",
+      "desc": "Inflige des dégâts continus 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Vétérans",
+      "desc": "Attaque +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Cri de Stuka",
+      "desc": "+30% dégâts vs infanterie. AoE +1.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Manstein",
+    "Rommel",
+    "Kesselring"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Salve Nebelwerfer est très utile early-mid",
+    "<b>Lvl 5→9</b> — Build saturation",
+    "<b>Lvl 9→12</b> — Optionnel"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Stuka zu Fuß (Rocket) dans World Conqueror 4 ?",
+      "a": "Le Stuka zu Fuß (Rocket) s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Stuka zu Fuß (Rocket) vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Stuka zu Fuß (Rocket) suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Stuka zu Fuß (Rocket) ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

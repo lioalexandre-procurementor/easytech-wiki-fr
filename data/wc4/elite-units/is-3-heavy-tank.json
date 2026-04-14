@@ -1,0 +1,211 @@
+{
+  "slug": "is-3-heavy-tank",
+  "name": "IS-3 Heavy Tank",
+  "category": "tank",
+  "country": "RU",
+  "countryName": "URSS",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Char lourd soviétique. HP supérieurs au King Tiger, blindage légendaire.",
+  "longDesc": "L'IS-3 est l'un des chars d'élite les plus durables du jeu. Sa pool de HP surpasse celle du King Tiger. La communauté recommande de le donner à Manstein dès le lvl 5 ou plus pour maximiser son potentiel offensif tout en bénéficiant de sa survivabilité.",
+  "stats": {
+    "atk": [
+      66,
+      70,
+      74,
+      77,
+      81,
+      85,
+      89,
+      93,
+      97,
+      100,
+      104,
+      108
+    ],
+    "def": [
+      54,
+      57,
+      60,
+      63,
+      66,
+      69,
+      71,
+      74,
+      77,
+      80,
+      83,
+      86
+    ],
+    "hp": [
+      450,
+      475,
+      499,
+      524,
+      548,
+      573,
+      597,
+      622,
+      646,
+      671,
+      695,
+      720
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage Pike-Nose",
+      "desc": "-20% dégâts frontaux.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Canon D-25T 122mm",
+      "desc": "+15% dégâts critiques.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Production 1944",
+      "desc": "HP +30.",
+      "milestone": false
+    },
+    {
+      "lvl": 4,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage de tourelle",
+      "desc": "Défense +5 vs artillerie.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Coup d'enclume",
+      "desc": "Inflige +60% dégâts. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Munitions BR-471",
+      "desc": "Attaque +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Visée nocturne",
+      "desc": "Pas de pénalité de précision la nuit ou par mauvais temps.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Renfort blindage latéral",
+      "desc": "Défense +5, HP +30.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🛡️",
+      "name": "Mur de Stalingrad",
+      "desc": "+80% défense ce tour. Régénère 10% HP. Cooldown : 5 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "💀",
+      "name": "Coup mortel",
+      "desc": "Achève automatiquement les ennemis < 10% HP.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage Garde",
+      "desc": "Attaque +6, Défense +6.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Légende soviétique",
+      "desc": "Réduit de 15% les dégâts reçus de toutes sources.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Manstein",
+    "Joukov",
+    "Rokossovsky",
+    "Konev"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Coup d'enclume vs Coup d'enclume : burst énorme dès lvl 5",
+    "<b>Lvl 5→9</b> — Manstein préfère l'IS-3 lvl 5+ d'après NamuWiki",
+    "<b>Lvl 9→12</b> — Mur de Stalingrad transforme l'IS-3 en mini-citadelle"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN — IS-3 Heavy Tank",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le IS-3 Heavy Tank dans World Conqueror 4 ?",
+      "a": "Le IS-3 Heavy Tank s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le IS-3 Heavy Tank vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le IS-3 Heavy Tank suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le IS-3 Heavy Tank ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

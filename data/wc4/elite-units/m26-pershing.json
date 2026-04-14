@@ -1,0 +1,211 @@
+{
+  "slug": "m26-pershing",
+  "name": "M26 Pershing",
+  "category": "tank",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Char lourd US. Armure inclinée et suppression constante (-10% HP/tour) à lvl 12.",
+  "longDesc": "Le M26 Pershing combine puissance de feu et accessibilité : produit dès une usine de niveau 1, c'est l'un des meilleurs chars d'élite pour les joueurs débutants comme avancés. Son armure inclinée booste la contre-attaque, et son perk lvl 12 'Firepower Enhancement' augmente les dégâts à chaque kill.",
+  "stats": {
+    "atk": [
+      62,
+      66,
+      69,
+      73,
+      77,
+      80,
+      84,
+      87,
+      91,
+      95,
+      98,
+      102
+    ],
+    "def": [
+      48,
+      51,
+      53,
+      56,
+      59,
+      62,
+      64,
+      67,
+      70,
+      73,
+      75,
+      78
+    ],
+    "hp": [
+      400,
+      422,
+      444,
+      465,
+      487,
+      509,
+      531,
+      553,
+      575,
+      596,
+      618,
+      640
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Armure inclinée",
+      "desc": "Réduit de 15% les dégâts frontaux des chars.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⚡",
+      "name": "Canon 90mm M3",
+      "desc": "+10% de dégâts contre les unités blindées.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Optimisation moteur",
+      "desc": "Attaque +3, HP +15.",
+      "milestone": false
+    },
+    {
+      "lvl": 4,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Visée stabilisée",
+      "desc": "+8% de précision en mouvement.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir de précision",
+      "desc": "Cible un ennemi avec +30% dégâts. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Blindage frontal renforcé",
+      "desc": "Défense +4, HP +20.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🔥",
+      "name": "Surchauffe contrôlée",
+      "desc": "Pas de pénalité de précision après 2 attaques consécutives.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Munitions HE",
+      "desc": "Attaque +5 vs infanterie et artillerie.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Suppression constante",
+      "desc": "Cible perd 10% de ses HP par tour pendant 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Réparation de campagne",
+      "desc": "Régénère 3% HP par tour en territoire ami.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage Korean War",
+      "desc": "Attaque +5, Défense +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🔥",
+      "name": "Firepower Enhancement",
+      "desc": "+15% de dégâts permanents par ennemi tué (cumulable jusqu'à +60%).",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Patton",
+    "Bradley",
+    "MacArthur",
+    "Eisenhower"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Tir de précision est un game-changer dès le early",
+    "<b>Lvl 5→9</b> — Suppression constante synergise avec artillerie",
+    "<b>Lvl 9→12</b> — Firepower Enhancement transforme le Pershing en machine à kill"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le M26 Pershing dans World Conqueror 4 ?",
+      "a": "Le M26 Pershing s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le M26 Pershing vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le M26 Pershing suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le M26 Pershing ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

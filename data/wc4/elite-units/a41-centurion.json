@@ -1,0 +1,221 @@
+{
+  "slug": "a41-centurion",
+  "name": "A41 Centurion",
+  "category": "tank",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Char britannique d'après-guerre. Fumigène + réduction de portée ennemie au lvl 12.",
+  "longDesc": "Le A41 Centurion est l'un des chars d'élite les plus polyvalents de WC4. Sa compétence signature Fumigène le rend intouchable par les forces terrestres pendant un tour, et au niveau 12, il réduit la portée de tir des ennemis adjacents. C'est l'unité idéale pour tenir une ligne de front ou protéger l'artillerie.",
+  "stats": {
+    "atk": [
+      58,
+      61,
+      65,
+      68,
+      72,
+      75,
+      79,
+      82,
+      86,
+      89,
+      93,
+      96
+    ],
+    "def": [
+      46,
+      49,
+      51,
+      54,
+      57,
+      59,
+      62,
+      64,
+      67,
+      70,
+      72,
+      75
+    ],
+    "hp": [
+      380,
+      402,
+      424,
+      445,
+      467,
+      489,
+      511,
+      533,
+      555,
+      576,
+      598,
+      620
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "💨",
+      "name": "Fumigène (base)",
+      "desc": "Tire un écran de fumée. Ne peut pas être attaqué activement par les forces terrestres pendant 1 tour. Cooldown : 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage composite",
+      "desc": "Réduit de 10% les dégâts reçus des chars et artilleries.",
+      "milestone": false
+    },
+    {
+      "lvl": 2,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Entraînement d'équipage",
+      "desc": "Attaque +2, HP +10. Précision du tir +5%.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Optique améliorée",
+      "desc": "Défense +2. Révèle les unités cachées dans un rayon de 1 case.",
+      "milestone": false
+    },
+    {
+      "lvl": 4,
+      "type": "passive",
+      "icon": "🔧",
+      "name": "Maintenance avancée",
+      "desc": "Régénère 5% des HP par tour quand stationnaire dans une ville alliée.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💨",
+      "name": "Fumigène amélioré",
+      "desc": "Cooldown du Fumigène réduit à 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "stat",
+      "icon": "🏃",
+      "name": "Suspension Horstmann",
+      "desc": "Mouvement +1. Permet un redéploiement plus rapide.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Canon 20 pdr optimisé",
+      "desc": "+15% de dégâts de contre-attaque.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Blindage renforcé",
+      "desc": "Défense +3, HP +20. Résistance aux bombardements +10%.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "👁️",
+      "name": "Interférence Visuelle",
+      "desc": "Pendant le Fumigène, les ennemis à 2 cases voient leur portée réduite à 1.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⚡",
+      "name": "Chargement automatique",
+      "desc": "25% de chance de contre-attaque supplémentaire vs chars.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage vétéran",
+      "desc": "Attaque +5, Défense +4. +10% esquive vs artillerie.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "🎖️",
+      "name": "Suppression de Portée",
+      "desc": "Ennemis adjacents : portée réduite à 1 en permanence + 50% chance d'ignorer l'esquive ennemie.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Montgomery",
+    "Patton",
+    "Guderian",
+    "Bradley",
+    "Rommel"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Débloquer le Fumigène ASAP (quasi-invincibilité 1 tour)",
+    "<b>Lvl 5→9</b> — Priorité absolue (recommandation NamuWiki)",
+    "<b>Lvl 9→12</b> — Après avoir monté le Medic au niveau 12",
+    "Pairez avec artillerie + Medic pour une ligne invincible"
+  ],
+  "verified": true,
+  "sources": [
+    "NamuWiki KR",
+    "Fandom EN"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le A41 Centurion dans World Conqueror 4 ?",
+      "a": "Le A41 Centurion s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le A41 Centurion vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le A41 Centurion suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le A41 Centurion ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

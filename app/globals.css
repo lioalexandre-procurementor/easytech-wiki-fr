@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  background: #0f1419;
+  color: #e8ebf0;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.55;
+}
+a { color: #f2c265; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.ad-slot {
+  background: repeating-linear-gradient(45deg, rgba(212,164,74,0.05) 0, rgba(212,164,74,0.05) 10px, transparent 10px, transparent 20px);
+  border: 1px dashed #8b7d4a;
+  border-radius: 8px;
+  padding: 18px;
+  text-align: center;
+  color: #6b7685;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 16px 0;
+}
+
+@keyframes pulse-bg {
+  0%, 100% { background: transparent; }
+  50% { background: rgba(212,164,74,0.08); }
+}
+.pulse-bg { animation: pulse-bg 1.2s ease; }

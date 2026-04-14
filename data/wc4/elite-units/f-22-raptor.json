@@ -1,0 +1,177 @@
+{
+  "slug": "f-22-raptor",
+  "name": "F-22 Raptor",
+  "category": "airforce",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "premium",
+  "shortDesc": "Chasseur stealth de 5e génération. Furtivité totale, supériorité aérienne absolue.",
+  "longDesc": "Le F-22 Raptor est le chasseur le plus avancé du jeu. Furtivité totale, supériorité aérienne quasi-absolue. Late-game weapon — coûteux mais quasi-imbattable en combat aérien.",
+  "stats": {
+    "atk": [
+      80,
+      85,
+      91,
+      96,
+      102,
+      107,
+      113,
+      118,
+      124,
+      129,
+      135,
+      140
+    ],
+    "def": [
+      35,
+      38,
+      40,
+      43,
+      46,
+      49,
+      51,
+      54,
+      57,
+      60,
+      62,
+      65
+    ],
+    "hp": [
+      300,
+      322,
+      344,
+      365,
+      387,
+      409,
+      431,
+      453,
+      475,
+      496,
+      518,
+      540
+    ],
+    "mov": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "rng": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🌫",
+      "name": "Furtivité",
+      "desc": "Invisible aux radars ennemis non-VHF.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "AIM-120 AMRAAM",
+      "desc": "Portée 5 cases. Beyond visual range.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Moteur F119-PW-100",
+      "desc": "Attaque +10, mouvement +1.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Supercruise",
+      "desc": "Mouvement +3 + attaque ce tour. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Contre-mesures ALR-94",
+      "desc": "Défense +10 vs missiles.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Frappe BVR",
+      "desc": "Attaque sans risque de riposte. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Squadron F-22",
+      "desc": "Attaque +12.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Air Dominance",
+      "desc": "+40% dégâts permanent vs avions. Furtivité totale.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Schwarzkopf",
+    "Powell",
+    "Mattis"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Supercruise pour engager rapidement",
+    "<b>Lvl 5→9</b> — Frappe BVR pour invincibilité aérienne",
+    "<b>Lvl 9→12</b> — Build supériorité aérienne ultime"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le F-22 Raptor dans World Conqueror 4 ?",
+      "a": "Le F-22 Raptor s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le F-22 Raptor vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le F-22 Raptor suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le F-22 Raptor ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

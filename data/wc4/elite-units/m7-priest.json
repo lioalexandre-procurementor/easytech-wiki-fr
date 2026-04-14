@@ -1,0 +1,177 @@
+{
+  "slug": "m7-priest",
+  "name": "M7 Priest",
+  "category": "artillery",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Howitzer auto-propulsé. Mobilité acceptable, dégâts moyens, accessible.",
+  "longDesc": "Le M7 Priest est un howitzer auto-propulsé fiable de WW2, accessible et polyvalent. Il manque de la puissance des artilleries lourdes mais sa mobilité en fait un bon support pour l'infanterie en avancée.",
+  "stats": {
+    "atk": [
+      50,
+      53,
+      56,
+      60,
+      63,
+      66,
+      69,
+      72,
+      75,
+      79,
+      82,
+      85
+    ],
+    "def": [
+      18,
+      20,
+      21,
+      23,
+      25,
+      26,
+      28,
+      29,
+      31,
+      33,
+      34,
+      36
+    ],
+    "hp": [
+      220,
+      236,
+      253,
+      269,
+      285,
+      302,
+      318,
+      335,
+      351,
+      367,
+      384,
+      400
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "rng": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Howitzer 105mm",
+      "desc": "AoE 1 case.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Mobilité M3",
+      "desc": "Peut tirer après mouvement.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Munitions HE",
+      "desc": "Attaque +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir d'appui",
+      "desc": "Soutient l'infanterie alliée adjacente : +20% attaque pour 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Observateur avancé",
+      "desc": "+10% précision si infanterie alliée à 2 cases de la cible.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Frappe coordonnée",
+      "desc": "Toutes les artilleries alliées tirent sur la même cible. Cooldown : 5 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Modernisation",
+      "desc": "Attaque +6.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Saint-Père",
+      "desc": "+25% dégâts permanent. Régénère 5% HP par tour.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Bradley",
+    "Patton",
+    "Eisenhower"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Tir d'appui synergise avec armée d'infanterie",
+    "<b>Lvl 5→9</b> — Frappe coordonnée si vous avez plusieurs artilleries",
+    "<b>Lvl 9→12</b> — Optionnel, préférer HIMARS"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le M7 Priest dans World Conqueror 4 ?",
+      "a": "Le M7 Priest s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le M7 Priest vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le M7 Priest suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le M7 Priest ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

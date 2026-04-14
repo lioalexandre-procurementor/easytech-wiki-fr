@@ -1,0 +1,211 @@
+{
+  "slug": "leopard-2",
+  "name": "Leopard 2",
+  "category": "tank",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "S",
+  "obtainability": "shop",
+  "shortDesc": "MBT allemand moderne. Mobilité, précision et portée étendue avec Manstein.",
+  "longDesc": "Le Leopard 2 est l'un des MBT les plus équilibrés : firepower 120mm, blindage composite, et excellente mobilité. Les joueurs apprécient particulièrement de le coupler à Manstein pour bénéficier d'une portée d'attaque de 3-4 cases en permanence.",
+  "stats": {
+    "atk": [
+      70,
+      74,
+      78,
+      83,
+      87,
+      91,
+      95,
+      99,
+      103,
+      108,
+      112,
+      116
+    ],
+    "def": [
+      53,
+      56,
+      58,
+      61,
+      64,
+      67,
+      69,
+      72,
+      75,
+      78,
+      80,
+      83
+    ],
+    "hp": [
+      430,
+      454,
+      477,
+      501,
+      525,
+      548,
+      572,
+      595,
+      619,
+      643,
+      666,
+      690
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Optique EMES-15",
+      "desc": "+10% précision en toute condition.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Armure modulaire MEXAS",
+      "desc": "-12% dégâts d'artillerie.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Moteur MTU diesel",
+      "desc": "Mouvement +0 (déjà élevé), HP +15.",
+      "milestone": false
+    },
+    {
+      "lvl": 4,
+      "type": "passive",
+      "icon": "⚡",
+      "name": "Munitions DM63",
+      "desc": "+15% dégâts critiques.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🚀",
+      "name": "Manœuvre éclair",
+      "desc": "Mouvement +2 ce tour, peut attaquer après. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "stat",
+      "icon": "🏃",
+      "name": "Suspension hydropneumatique",
+      "desc": "Mouvement +1 permanent.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Conduite de tir LMS",
+      "desc": "+5% chance de critique, +5% esquive.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Renfort tourelle",
+      "desc": "Défense +5, HP +25.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir longue distance",
+      "desc": "Portée temporairement +2, dégâts +20%. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🔧",
+      "name": "Diagnostic embarqué",
+      "desc": "Régénère 5% HP par tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage Bundeswehr",
+      "desc": "Attaque +6, +10% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Maître du Leopard",
+      "desc": "Portée d'attaque +1 permanent. +20% dégâts à distance maximum.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Manstein",
+    "Guderian",
+    "Rommel",
+    "Model"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Manœuvre éclair au lvl 5 transforme le Leopard en hit-and-run",
+    "<b>Lvl 5→9</b> — Tir longue distance + Manstein = roi de la portée",
+    "<b>Lvl 9→12</b> — Maître du Leopard donne 3-4 cases de portée en permanence avec Manstein"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN — Leopard 2",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Leopard 2 dans World Conqueror 4 ?",
+      "a": "Le Leopard 2 s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Leopard 2 vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Leopard 2 suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Leopard 2 ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

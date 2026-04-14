@@ -1,0 +1,177 @@
+{
+  "slug": "supermarine-spitfire",
+  "name": "Supermarine Spitfire",
+  "category": "airforce",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "tier": "A",
+  "obtainability": "event",
+  "shortDesc": "Chasseur britannique. Polyvalent, peut détruire les défenses anti-aériennes.",
+  "longDesc": "Le Spitfire est un chasseur d'élite polyvalent : excellent en combat aérien, mais surtout capable de détruire les installations anti-aériennes ennemies via ses skills 'Construction' et 'Harm'. Cela ouvre la voie aux bombardiers (B-52) qui craignent les DCA.",
+  "stats": {
+    "atk": [
+      52,
+      56,
+      59,
+      63,
+      67,
+      70,
+      74,
+      77,
+      81,
+      85,
+      88,
+      92
+    ],
+    "def": [
+      28,
+      30,
+      32,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45,
+      48,
+      50,
+      52
+    ],
+    "hp": [
+      220,
+      238,
+      256,
+      275,
+      293,
+      311,
+      329,
+      347,
+      365,
+      384,
+      402,
+      420
+    ],
+    "mov": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "rng": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "✈️",
+      "name": "Chasse aérienne",
+      "desc": "+30% dégâts vs avions.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Anti-DCA",
+      "desc": "Détruit les installations anti-aériennes ennemies (skill spécial).",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Mitrailleuses Browning .303",
+      "desc": "Attaque +5, +5% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Combat tournoyant",
+      "desc": "+50% chance de critique en duel aérien. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Moteur Merlin upgrade",
+      "desc": "Mouvement +1, peut intercepter.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Munitions HE",
+      "desc": "Anti-DCA + bonus contre infanterie au sol.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Royal Air Force",
+      "desc": "Attaque +6.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Battle of Britain",
+      "desc": "+25% dégâts vs avions et défenses sol.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Dowding",
+    "Park",
+    "Galland"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Combat tournoyant pour la supériorité aérienne",
+    "<b>Lvl 5→9</b> — Munitions HE pour ouvrir la voie aux bombardiers",
+    "<b>Lvl 9→12</b> — Build escorte + anti-DCA"
+  ],
+  "verified": true,
+  "sources": [
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Supermarine Spitfire dans World Conqueror 4 ?",
+      "a": "Le Supermarine Spitfire s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Supermarine Spitfire vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Supermarine Spitfire suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Supermarine Spitfire ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

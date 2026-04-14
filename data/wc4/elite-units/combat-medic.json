@@ -1,0 +1,203 @@
+{
+  "slug": "combat-medic",
+  "name": "Combat Medic",
+  "category": "infantry",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Seule unité de soin du jeu. Priorité n°1 absolue pour tous les joueurs.",
+  "longDesc": "Le Combat Medic comble le manque cruel du jeu : le soin. C'est la SEULE unité (hors compétences de blood sucking) capable de régénérer les HP de vos troupes. Tier S absolu. Tous les joueurs, payants ou non, doivent débloquer le Medic en priorité.",
+  "stats": {
+    "atk": [
+      18,
+      20,
+      22,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      34,
+      36,
+      38
+    ],
+    "def": [
+      22,
+      25,
+      27,
+      30,
+      32,
+      35,
+      37,
+      40,
+      42,
+      45,
+      47,
+      50
+    ],
+    "hp": [
+      240,
+      262,
+      284,
+      305,
+      327,
+      349,
+      371,
+      393,
+      415,
+      436,
+      458,
+      480
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "❤️",
+      "name": "Soins de campagne",
+      "desc": "Restaure 60 HP à une unité alliée adjacente. Cooldown : 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🪖",
+      "name": "Milice",
+      "desc": "+5% défense vs infanterie (perk de faible utilité).",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Trousse améliorée",
+      "desc": "HP +30, +10 HP par soin.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "❤️",
+      "name": "Soins majeurs",
+      "desc": "Restaure 120 HP (le double). Cooldown : 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Croix-Rouge",
+      "desc": "Réduit de 20% les dégâts subis.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "❤️",
+      "name": "Triage rapide",
+      "desc": "Cooldown des soins réduit à 1 tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Renforts médicaux",
+      "desc": "HP +50, peut soigner à 2 cases.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "❤️",
+      "name": "Auto-soin",
+      "desc": "Le Medic peut désormais se soigner lui-même.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "💉",
+      "name": "Stim de combat",
+      "desc": "Soigne 30% au lieu de 25%.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipe MASH",
+      "desc": "Soin +30 HP.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "✨",
+      "name": "Miracle médical",
+      "desc": "Ressuscite une unité alliée détruite ce tour avec 50% HP. Cooldown : 6 tours.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Eisenhower",
+    "Nimitz",
+    "Bradley",
+    "Joukov"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — DOUBLER le soin au lvl 5 est le power spike le plus important du jeu",
+    "<b>Lvl 5→9</b> — Auto-soin au lvl 9 rend le Medic survivor",
+    "<b>Lvl 9→12</b> — <b>NamuWiki recommande de monter le Medic au niveau 12 EN PRIORITÉ ABSOLUE</b>"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN — Combat Medic",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Combat Medic dans World Conqueror 4 ?",
+      "a": "Le Combat Medic s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Combat Medic vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Combat Medic suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Combat Medic ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "slug": "amx-30",
+  "name": "AMX-30",
+  "category": "tank",
+  "country": "FR",
+  "countryName": "France",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "MBT français de Guerre froide. Mobilité maximale au détriment du blindage.",
+  "longDesc": "Le AMX-30 incarne la doctrine française : préférer la mobilité et la puissance de feu plutôt que le blindage lourd. Excellent en offensive rapide et flanking, mais fragile au feu direct.",
+  "stats": {
+    "atk": [
+      60,
+      63,
+      67,
+      70,
+      73,
+      76,
+      80,
+      83,
+      86,
+      89,
+      93,
+      96
+    ],
+    "def": [
+      38,
+      40,
+      43,
+      45,
+      47,
+      50,
+      52,
+      55,
+      57,
+      59,
+      62,
+      64
+    ],
+    "hp": [
+      340,
+      358,
+      376,
+      395,
+      413,
+      431,
+      449,
+      467,
+      485,
+      504,
+      522,
+      540
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Mobilité française",
+      "desc": "Mouvement +1 dans tous les terrains.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Canon CN105-F1",
+      "desc": "+10% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Optique APX",
+      "desc": "Attaque +3, +5% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🚀",
+      "name": "Charge cavalière",
+      "desc": "Mouvement +3, attaque +20% ce tour. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "stat",
+      "icon": "🏃",
+      "name": "Tourelle haute vitesse",
+      "desc": "Précision +10%, peut tirer après mouvement maximal.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Frappe éclair",
+      "desc": "Inflige +50% dégâts, ignore 25% défense. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Modernisation B2",
+      "desc": "Attaque +5, Défense +3.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Cavalerie de Gaulle",
+      "desc": "+25% mouvement et attaque permanents.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "De Gaulle",
+    "Patton",
+    "Guderian"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Charge cavalière transforme l'AMX-30 en hit-and-run",
+    "<b>Lvl 5→9</b> — Frappe éclair pour flanking",
+    "<b>Lvl 9→12</b> — Build offensif uniquement, ne pas tank"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation basée sur doctrine AMX-30"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le AMX-30 dans World Conqueror 4 ?",
+      "a": "Le AMX-30 s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le AMX-30 vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le AMX-30 suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le AMX-30 ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

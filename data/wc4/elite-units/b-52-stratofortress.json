@@ -1,0 +1,186 @@
+{
+  "slug": "b-52-stratofortress",
+  "name": "B-52 Stratofortress",
+  "category": "airforce",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "premium",
+  "shortDesc": "Bombardier stratégique. Ignore la défense ennemie au lvl 9.",
+  "longDesc": "Le B-52 Stratofortress est le bombardier d'élite ultime. À partir du niveau 9, il ignore la défense des unités ennemies — il n'y a alors que les défenses anti-aériennes spécialisées qui peuvent réduire ses dégâts. Au niveau 5, il devient économique en ressources. NamuWiki recommande fortement le B-52 dans les builds aériens.",
+  "stats": {
+    "atk": [
+      85,
+      90,
+      96,
+      101,
+      107,
+      112,
+      118,
+      123,
+      129,
+      134,
+      140,
+      145
+    ],
+    "def": [
+      25,
+      27,
+      30,
+      32,
+      34,
+      36,
+      39,
+      41,
+      43,
+      45,
+      48,
+      50
+    ],
+    "hp": [
+      300,
+      323,
+      345,
+      368,
+      391,
+      414,
+      436,
+      459,
+      482,
+      505,
+      527,
+      550
+    ],
+    "mov": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "rng": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💣",
+      "name": "Bombardement de saturation",
+      "desc": "AoE 2 cases.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "✈️",
+      "name": "Bombardier stratégique",
+      "desc": "Portée d'opération longue (toute la carte).",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Soute B-52H",
+      "desc": "Attaque +10.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "💰",
+      "name": "Optimisation logistique",
+      "desc": "-30% coût en ressources par mission.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Contre-mesures ECM",
+      "desc": "Réduit l'efficacité DCA -30%.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Munitions perforantes",
+      "desc": "Ignore la défense des unités ennemies. Seules les défenses AA réduisent les dégâts.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Bombe AGM-86",
+      "desc": "Attaque +12.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "✈️",
+      "name": "Endurance étendue",
+      "desc": "Nombre d'usages +1 par mission.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "BUFF (Big Ugly Fat Fellow)",
+      "desc": "Ignore défense + AoE 3 cases + nombre d'usages illimité.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "LeMay",
+    "Doolittle",
+    "Arnold"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Optimisation au lvl 5 réduit drastiquement le coût",
+    "<b>Lvl 5→9</b> — Ignore défense au lvl 9 = power spike massif",
+    "<b>Lvl 9→12</b> — NamuWiki recommande de prioriser le B-52 au max"
+  ],
+  "verified": true,
+  "sources": [
+    "NamuWiki KR",
+    "Fandom EN"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le B-52 Stratofortress dans World Conqueror 4 ?",
+      "a": "Le B-52 Stratofortress s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le B-52 Stratofortress vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le B-52 Stratofortress suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le B-52 Stratofortress ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

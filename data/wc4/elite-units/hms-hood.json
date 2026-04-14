@@ -1,0 +1,177 @@
+{
+  "slug": "hms-hood",
+  "name": "HMS Hood",
+  "category": "navy",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "tier": "A",
+  "obtainability": "event",
+  "shortDesc": "Croiseur de bataille britannique. Vitesse + puissance, blindage modéré.",
+  "longDesc": "Le HMS Hood, fierté de la Royal Navy, combine vitesse de croiseur et puissance de cuirassé. Très efficace en chasse et en interception, plus vulnérable au feu plongeant.",
+  "stats": {
+    "atk": [
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "def": [
+      50,
+      53,
+      55,
+      58,
+      60,
+      63,
+      65,
+      68,
+      70,
+      73,
+      75,
+      78
+    ],
+    "hp": [
+      480,
+      504,
+      527,
+      551,
+      575,
+      598,
+      622,
+      645,
+      669,
+      693,
+      716,
+      740
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "rng": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Vitesse 31 nœuds",
+      "desc": "Mouvement +1 vs cuirassés ennemis.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Tourelles 381mm",
+      "desc": "+15% dégâts.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Conduite de tir",
+      "desc": "Attaque +8.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Course de poursuite",
+      "desc": "Mouvement +2 + attaque ce tour. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🇬🇧",
+      "name": "Royal Navy",
+      "desc": "+10% précision en mer ouverte.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Salve de chasse",
+      "desc": "Re-attack avec +30% précision. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Vétérans Atlantique",
+      "desc": "Attaque +10.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Mighty Hood",
+      "desc": "+25% dégâts vs croiseurs et destroyers.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Cunningham",
+    "Mountbatten",
+    "Tovey"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Course de poursuite pour chasse aux cuirassés",
+    "<b>Lvl 5→9</b> — Salve de chasse pour finir une cible",
+    "<b>Lvl 9→12</b> — Build chasseur de capital ships"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le HMS Hood dans World Conqueror 4 ?",
+      "a": "Le HMS Hood s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le HMS Hood vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le HMS Hood suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le HMS Hood ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "slug": "c-47-skytrain",
+  "name": "C-47 Skytrain",
+  "category": "airforce",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Avion de transport. Largage de paratroopers, ravitaillement, évacuation.",
+  "longDesc": "Le C-47 Skytrain est l'avion de transport militaire le plus iconique. Pas de combat direct, mais essentiel pour la logistique : largage de paratroopers, ravitaillement de villes assiégées, évacuation de blessés. Un des deux avions d'élite (avec B-52) qui ne nécessite pas de porte-avions Enterprise lvl 9+.",
+  "stats": {
+    "atk": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22
+    ],
+    "def": [
+      20,
+      22,
+      24,
+      25,
+      27,
+      29,
+      31,
+      33,
+      35,
+      36,
+      38,
+      40
+    ],
+    "hp": [
+      250,
+      268,
+      286,
+      305,
+      323,
+      341,
+      359,
+      377,
+      395,
+      414,
+      432,
+      450
+    ],
+    "mov": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "rng": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "🪂",
+      "name": "Largage para",
+      "desc": "Largue une unité d'infanterie alliée n'importe où dans la zone visible.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "📦",
+      "name": "Logistique",
+      "desc": "Ravitaille la ville alliée la plus proche : +10 industrie/tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Capacité accrue",
+      "desc": "HP +30.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "📦",
+      "name": "Pont aérien",
+      "desc": "Soigne tous les alliés à 2 cases : +30 HP. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage cockpit",
+      "desc": "Défense +5, réduction DCA -25%.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🪂",
+      "name": "Largage massif",
+      "desc": "Largue 2 unités d'infanterie ce tour.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Squadron transport",
+      "desc": "HP +50.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Operation Market Garden",
+      "desc": "Largages illimités par mission.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Eisenhower",
+    "Bradley",
+    "Patton"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Pont aérien soigne en zone, très utile sans Medic",
+    "<b>Lvl 5→9</b> — Largage massif change les stratégies de capture",
+    "<b>Lvl 9→12</b> — Build logistique"
+  ],
+  "verified": false,
+  "sources": [
+    "NamuWiki KR (mention)",
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le C-47 Skytrain dans World Conqueror 4 ?",
+      "a": "Le C-47 Skytrain s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le C-47 Skytrain vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le C-47 Skytrain suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le C-47 Skytrain ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

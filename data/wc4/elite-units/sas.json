@@ -1,0 +1,177 @@
+{
+  "slug": "sas",
+  "name": "SAS (Special Air Service)",
+  "category": "infantry",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "tier": "A",
+  "obtainability": "event",
+  "shortDesc": "Forces spéciales britanniques. Reconnaissance, raids et combat asymétrique.",
+  "longDesc": "Le SAS britannique est spécialisé dans les opérations de reconnaissance approfondies, les raids derrière les lignes ennemies et le combat asymétrique. Excellente vision et mobilité tactique.",
+  "stats": {
+    "atk": [
+      40,
+      43,
+      45,
+      48,
+      51,
+      54,
+      56,
+      59,
+      62,
+      65,
+      67,
+      70
+    ],
+    "def": [
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50
+    ],
+    "hp": [
+      230,
+      248,
+      266,
+      285,
+      303,
+      321,
+      339,
+      357,
+      375,
+      394,
+      412,
+      430
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "👁️",
+      "name": "Reconnaissance SAS",
+      "desc": "Vision +2 cases, révèle ennemis cachés.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Mobilité tactique",
+      "desc": "Mouvement +1 sur tous terrains.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "L85A2 + L96A1",
+      "desc": "Attaque +5, +5% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Raid SAS",
+      "desc": "Attaque ce tour ignore 50% de la défense. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Snipe nocturne",
+      "desc": "Pas de malus la nuit ou par mauvais temps. +15% précision la nuit.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🌫",
+      "name": "Camouflage Ghillie",
+      "desc": "Invisible 3 tours sauf si attaque. Cooldown : 5 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Régiment 22",
+      "desc": "Attaque +6, mouvement +1.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Who Dares Wins",
+      "desc": "Mobilité +2 permanente. +25% dégâts vs cible blessée (<50% HP).",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Montgomery",
+    "Alexander",
+    "Slim"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Raid SAS détruit les unités défensives blindées",
+    "<b>Lvl 5→9</b> — Camouflage Ghillie pour positions stratégiques",
+    "<b>Lvl 9→12</b> — Roi de la mobilité asymétrique"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le SAS (Special Air Service) dans World Conqueror 4 ?",
+      "a": "Le SAS (Special Air Service) s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le SAS (Special Air Service) vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le SAS (Special Air Service) suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le SAS (Special Air Service) ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

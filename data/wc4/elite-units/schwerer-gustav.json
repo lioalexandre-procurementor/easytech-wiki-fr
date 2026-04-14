@@ -1,0 +1,177 @@
+{
+  "slug": "schwerer-gustav",
+  "name": "Schwerer Gustav",
+  "category": "artillery",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "A",
+  "obtainability": "event",
+  "shortDesc": "Canon ferroviaire géant. Portée et dégâts colossaux mais immobile.",
+  "longDesc": "Le Schwerer Gustav est le plus gros canon jamais construit. Dans WC4, c'est l'arme de siège ultime : portée et dégâts énormes, mais immobile et lente à recharger. Parfait pour réduire les forteresses ennemies depuis l'arrière de la ligne.",
+  "stats": {
+    "atk": [
+      110,
+      116,
+      123,
+      129,
+      135,
+      142,
+      148,
+      155,
+      161,
+      167,
+      174,
+      180
+    ],
+    "def": [
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      25,
+      26
+    ],
+    "hp": [
+      180,
+      196,
+      213,
+      229,
+      245,
+      262,
+      278,
+      295,
+      311,
+      327,
+      344,
+      360
+    ],
+    "mov": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rng": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Obus de 800mm",
+      "desc": "Inflige des dégâts massifs (AoE 2 cases).",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🏛️",
+      "name": "Brise-fortifications",
+      "desc": "+50% dégâts vs villes et défenses.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Calcul de tir",
+      "desc": "Attaque +10.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Frappe Gustav",
+      "desc": "Tir géant : AoE 3x3, dégâts x2. Cooldown : 5 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Précision géodésique",
+      "desc": "+10% précision à longue portée.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🏛️",
+      "name": "Réducteur de villes",
+      "desc": "Capture une ville en 1 tour si HP < 30%.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipe ferroviaire",
+      "desc": "Attaque +15, recharge -1 tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "🎖️",
+      "name": "Apocalypse",
+      "desc": "Détruit complètement une cible non-élite + AoE 5x5. Cooldown : 8 tours.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Speer",
+    "Kesselring",
+    "Manstein"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Frappe Gustav vide les villes ennemies",
+    "<b>Lvl 5→9</b> — Réducteur de villes accélère les conquêtes",
+    "<b>Lvl 9→12</b> — Build siège pur"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation Fandom EN"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Schwerer Gustav dans World Conqueror 4 ?",
+      "a": "Le Schwerer Gustav s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Schwerer Gustav vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Schwerer Gustav suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Schwerer Gustav ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

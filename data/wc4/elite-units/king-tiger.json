@@ -1,0 +1,211 @@
+{
+  "slug": "king-tiger",
+  "name": "Tiger II Königs",
+  "category": "tank",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Char lourd allemand. Énorme puissance de feu, +20% de dégâts critiques.",
+  "longDesc": "Le King Tiger (Tiger II) est l'un des chars d'élite les plus puissants du jeu, à égalité avec l'IS-3. Son perk 'Critical Damage' augmente les dégâts critiques de 20%, ce qui en fait l'unité de prédilection pour Guderian (qui ajoute +10% de chance de critique).",
+  "stats": {
+    "atk": [
+      68,
+      72,
+      76,
+      79,
+      83,
+      87,
+      91,
+      95,
+      99,
+      102,
+      106,
+      110
+    ],
+    "def": [
+      52,
+      55,
+      57,
+      60,
+      63,
+      66,
+      68,
+      71,
+      74,
+      77,
+      79,
+      82
+    ],
+    "hp": [
+      420,
+      444,
+      467,
+      491,
+      515,
+      538,
+      562,
+      585,
+      609,
+      633,
+      656,
+      680
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Critical Damage",
+      "desc": "Dégâts critiques +20%.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage frontal 150mm",
+      "desc": "Réduit de 20% les dégâts frontaux.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Munitions APCR",
+      "desc": "Attaque +4 vs blindés.",
+      "milestone": false
+    },
+    {
+      "lvl": 4,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Canon KwK 43 88mm",
+      "desc": "+5% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🔥",
+      "name": "Tir Triomphal",
+      "desc": "Inflige +50% dégâts ce tour. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 6,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Renfort blindage",
+      "desc": "Défense +5, HP +25.",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "⚡",
+      "name": "Optique Zeiss",
+      "desc": "+10% de chance de critique.",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Améliorations atelier",
+      "desc": "Attaque +5, HP +20.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Tir de barrage",
+      "desc": "Attaque deux ennemis adjacents simultanément. Cooldown : 5 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Armure spaced",
+      "desc": "Réduit de 30% les dégâts d'artillerie.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipage SS-Panzer",
+      "desc": "Attaque +6, Défense +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Légende du Reich",
+      "desc": "+25% de chance de critique. Critiques infligent +30% dégâts.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Guderian",
+    "Manstein",
+    "Rommel",
+    "Model"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Combo Critical Damage + Tir Triomphal devient redoutable",
+    "<b>Lvl 5→7</b> — Recommandation NamuWiki : Manstein préfère le King Tiger lvl 7+",
+    "<b>Lvl 9→12</b> — Tir de barrage + Légende = roi du PvE en mid-late game"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Tiger II Königs dans World Conqueror 4 ?",
+      "a": "Le Tiger II Königs s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Tiger II Königs vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Tiger II Königs suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Tiger II Königs ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

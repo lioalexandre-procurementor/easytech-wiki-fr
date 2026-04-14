@@ -1,0 +1,178 @@
+{
+  "slug": "richelieu",
+  "name": "Richelieu (cuirassé)",
+  "category": "navy",
+  "country": "FR",
+  "countryName": "France",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Cuirassé français. Re-attacks puissants, redoutable en formation.",
+  "longDesc": "Le Richelieu est le cuirassé d'élite n°2 du jeu, juste derrière le U-Boot, grâce à sa capacité de re-attack. Très puissant en formation groupée avec d'autres destroyers, mais affaibli quand isolé.",
+  "stats": {
+    "atk": [
+      82,
+      87,
+      93,
+      98,
+      103,
+      108,
+      114,
+      119,
+      124,
+      129,
+      135,
+      140
+    ],
+    "def": [
+      60,
+      63,
+      66,
+      69,
+      72,
+      75,
+      77,
+      80,
+      83,
+      86,
+      89,
+      92
+    ],
+    "hp": [
+      520,
+      545,
+      571,
+      596,
+      622,
+      647,
+      673,
+      698,
+      724,
+      749,
+      775,
+      800
+    ],
+    "mov": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "rng": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Tourelles 380mm",
+      "desc": "+15% dégâts critiques.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage 330mm",
+      "desc": "-15% dégâts reçus.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Conduite de tir",
+      "desc": "Attaque +8, +5% précision.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Salve de huit canons",
+      "desc": "Re-attack : tire deux fois ce tour. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🤝",
+      "name": "Formation navale",
+      "desc": "+25% dégâts si 2+ navires alliés à 2 cases.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Bombardement côtier",
+      "desc": "AoE 2 cases. Bonus contre cibles terrestres. Cooldown : 4 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Marine Nationale",
+      "desc": "Attaque +10, Défense +8.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Honneur Patrie",
+      "desc": "Re-attack permanent à chaque tour. +30% dégâts en formation.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Darlan",
+    "Nimitz",
+    "Cunningham"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Re-attack au lvl 5 double sa valeur",
+    "<b>Lvl 5→9</b> — Bombardement côtier pour soutien amphibie",
+    "<b>Lvl 9→12</b> — Build flotte de bataille"
+  ],
+  "verified": true,
+  "sources": [
+    "NamuWiki KR",
+    "Fandom EN"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Richelieu (cuirassé) dans World Conqueror 4 ?",
+      "a": "Le Richelieu (cuirassé) s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Richelieu (cuirassé) vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Richelieu (cuirassé) suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Richelieu (cuirassé) ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "slug": "hawkeye-force",
+  "name": "Hawkeye Force",
+  "category": "infantry",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Tireurs d'élite. Bonus de portée et vision étendue. Souffre de rétention.",
+  "longDesc": "La Hawkeye Force est composée de tireurs d'élite avec une portée d'attaque étendue et une excellente vision. Très efficace en harcèlement et reconnaissance. Le principal défaut est sa fragilité : problème de rétention au feu prolongé.",
+  "stats": {
+    "atk": [
+      45,
+      48,
+      51,
+      54,
+      57,
+      60,
+      63,
+      66,
+      69,
+      72,
+      75,
+      78
+    ],
+    "def": [
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42
+    ],
+    "hp": [
+      200,
+      216,
+      233,
+      249,
+      265,
+      282,
+      298,
+      315,
+      331,
+      347,
+      364,
+      380
+    ],
+    "mov": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "👁️",
+      "name": "Vision élargie",
+      "desc": "Révèle les unités cachées dans 3 cases.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Tir de précision",
+      "desc": "+15% précision, +20% chance de critique.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Optiques M84",
+      "desc": "Attaque +5, portée +0 (déjà 2).",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Tir mortel",
+      "desc": "Cible une unité avec +80% dégâts critiques. Cooldown : 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🌫",
+      "name": "Camouflage actif",
+      "desc": "Devient invisible si stationnaire 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "👁️",
+      "name": "Coordination satellite",
+      "desc": "Révèle toute la carte ce tour. Cooldown : 5 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Équipe Delta",
+      "desc": "Attaque +6, +5% esquive.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Légende Hawkeye",
+      "desc": "Portée +1 permanente. +30% dégâts critiques.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Patton",
+    "Eisenhower",
+    "MacArthur"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Tir mortel est l'un des burst les plus rentables du jeu",
+    "<b>Lvl 5→9</b> — Coordination satellite débloque les stratégies multi-fronts",
+    "<b>Lvl 9→12</b> — Build sniper-glass cannon"
+  ],
+  "verified": true,
+  "sources": [
+    "Fandom EN — Hawkeye Force",
+    "NamuWiki KR"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Hawkeye Force dans World Conqueror 4 ?",
+      "a": "Le Hawkeye Force s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Hawkeye Force vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Hawkeye Force suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Hawkeye Force ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}

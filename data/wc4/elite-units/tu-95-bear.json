@@ -1,0 +1,177 @@
+{
+  "slug": "tu-95-bear",
+  "name": "Tu-95 Bear",
+  "category": "airforce",
+  "country": "RU",
+  "countryName": "URSS / Russie",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Bombardier stratégique soviétique. Lent mais portée énorme.",
+  "longDesc": "Le Tu-95 Bear est l'équivalent soviétique du B-52. Lent mais doté d'une portée énorme et de la capacité à transporter des armes nucléaires. Plus accessible que le B-52, moins efficace au combat direct.",
+  "stats": {
+    "atk": [
+      75,
+      80,
+      85,
+      90,
+      95,
+      100,
+      105,
+      110,
+      115,
+      120,
+      125,
+      130
+    ],
+    "def": [
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      35,
+      37,
+      39,
+      41,
+      43,
+      45
+    ],
+    "hp": [
+      280,
+      301,
+      322,
+      343,
+      364,
+      385,
+      405,
+      426,
+      447,
+      468,
+      489,
+      510
+    ],
+    "mov": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "rng": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💣",
+      "name": "Bombardement saturation",
+      "desc": "AoE 2 cases.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "✈️",
+      "name": "Bombardier longue distance",
+      "desc": "Portée d'opération longue.",
+      "milestone": false
+    },
+    {
+      "lvl": 3,
+      "type": "stat",
+      "icon": "📈",
+      "name": "Soute Tu-95MS",
+      "desc": "Attaque +8.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "💰",
+      "name": "Production soviétique",
+      "desc": "-25% coût en ressources.",
+      "milestone": true
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Contre-mesures Sirena",
+      "desc": "Défense +5.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Missiles Kh-55",
+      "desc": "Ignore 30% défense.",
+      "milestone": true
+    },
+    {
+      "lvl": 11,
+      "type": "stat",
+      "icon": "💪",
+      "name": "Squadron 121e",
+      "desc": "Attaque +10.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎖️",
+      "name": "Frappe stratégique",
+      "desc": "Ignore 50% défense + AoE 3 cases.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": [
+    "Tupolev",
+    "Joukov",
+    "Konev"
+  ],
+  "levelingPriority": [
+    "<b>Lvl 1→5</b> — Production soviétique réduit le coût",
+    "<b>Lvl 5→9</b> — Missiles Kh-55 pour percer défenses",
+    "<b>Lvl 9→12</b> — Alternative low-cost au B-52"
+  ],
+  "verified": false,
+  "sources": [
+    "Extrapolation"
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Tu-95 Bear dans World Conqueror 4 ?",
+      "a": "Le Tu-95 Bear s'obtient via les événements récurrents, les récompenses de présence, l'électricité accumulée ou la boutique d'élite. Vérifiez régulièrement l'onglet événements pour ne pas rater une fenêtre de disponibilité."
+    },
+    {
+      "q": "Le Tu-95 Bear vaut-il la peine d'être monté au niveau 12 ?",
+      "a": "La recommandation communautaire (NamuWiki) est de prioriser le niveau 9 pour la plupart des unités d'élite, puis de pousser au 12 uniquement les unités de tier S. Le Tu-95 Bear suit cette logique."
+    },
+    {
+      "q": "Quels généraux sont les meilleurs avec le Tu-95 Bear ?",
+      "a": "Voir la section « Généraux recommandés » plus haut sur la page. Privilégiez les généraux dont les compétences amplifient le rôle de l'unité (offensif, défensif, mobilité)."
+    }
+  ]
+}
