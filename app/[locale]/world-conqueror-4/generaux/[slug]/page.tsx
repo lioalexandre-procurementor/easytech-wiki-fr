@@ -32,12 +32,46 @@ export function generateStaticParams() {
   );
 }
 
-export function generateMetadata({ params }: { params: { locale: string; slug: string } }): Metadata {
-  const g = getGeneral(params.slug);
-  if (!g) return { title: "Général introuvable" };
+export async function generateMetadata({
+  params: { locale, slug },
+}: {
+  params: { locale: string; slug: string };
+}): Promise<Metadata> {
+  const g = getGeneral(slug);
+  if (!g) return { title: "404" };
+  const name = g.nameEn || g.name;
+  const title =
+    locale === "fr"
+      ? `${name} (WC4) — Compétences, attributs & guide`
+      : `${name} (WC4) — Skills, attributes & guide`;
+  const description =
+    locale === "fr"
+      ? `Fiche complète du général ${name} dans World Conqueror 4 : ${g.shortDesc} Attributs, skills, training, unités recommandées.`
+      : `Complete profile of general ${name} in World Conqueror 4: ${g.shortDesc} Attributes, skills, training, recommended units.`;
   return {
-    title: `${g.name} (WC4) — Compétences, attributs & guide | Wiki FR`,
-    description: `Fiche complète du général ${g.name} dans World Conqueror 4 : ${g.shortDesc} Attributs, skills, training, unités recommandées.`,
+    title,
+    description,
+    alternates: {
+      canonical: `/${locale}/world-conqueror-4/${locale === "fr" ? "generaux" : "generals"}/${slug}`,
+      languages: {
+        fr: `/fr/world-conqueror-4/generaux/${slug}`,
+        en: `/en/world-conqueror-4/generals/${slug}`,
+        "x-default": `/fr/world-conqueror-4/generaux/${slug}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      type: "article",
+      locale: locale === "fr" ? "fr_FR" : "en_US",
+      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    robots: { index: true, follow: true },
   };
 }
 
@@ -193,6 +227,20 @@ export default async function GeneralPage({ params }: { params: { locale: string
               </div>
               <p className="text-ink text-sm leading-relaxed">{g.longDesc}</p>
             </div>
+          </div>
+
+          {/* CROSS-LINK: trained variant */}
+          <div className="mb-4">
+            <Link
+              href={
+                params.locale === "fr"
+                  ? `/world-conqueror-4/generaux/${g.slug}/entraine`
+                  : `/world-conqueror-4/generals/${g.slug}/trained`
+              }
+              className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold/10 border border-gold/30 text-gold2 hover:bg-gold/20 transition-colors"
+            >
+              {t("general.viewTrained")}
+            </Link>
           </div>
 
           {/* ATTRIBUTES (6 aptitudes) */}
