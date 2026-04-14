@@ -50,6 +50,16 @@
       "icon": null,
       "replaceable": true,
       "replaceableReason": "Slot ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Slot libre",
+      "desc": "Compétence apprenable — débloqué via training (5e slot Gold).",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot apprenable Gold — pool défini par l'Académie"
     }
   ],
   "attributes": {

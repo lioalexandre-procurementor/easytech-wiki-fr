@@ -40,16 +40,6 @@
       "icon": null,
       "replaceable": false,
       "replaceableReason": null
-    },
-    {
-      "slot": 4,
-      "name": "Slot libre",
-      "desc": "Emplacement apprenable.",
-      "rating": null,
-      "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Slot ouvert"
     }
   ],
   "attributes": {
