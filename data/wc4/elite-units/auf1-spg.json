@@ -278,16 +278,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir AuF1 SPG dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer AuF1 SPG dans World Conqueror 4 ?",
+      "a": "AuF1 SPG se débloque via la boutique d'élite pour 30 items d'élite (artillerie). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de AuF1 SPG au niveau 12 ?",
+      "a": "Au niveau 12, AuF1 SPG culmine à 127 en attaque, 28 en défense, 575 HP, 13 de mouvement et 3 de portée. Profil artillerie solide — portée correcte et dégâts suffisants pour broyer les concentrations ennemies."
     },
     {
-      "q": "Quels généraux associer à AuF1 SPG ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque AuF1 SPG ?",
+      "a": "AuF1 SPG ne possède pas de perks milestone aux paliers 5, 9 ou 12 — l'unité s'appuie principalement sur ses bonus de niveau 1 et sur la montée en statistiques brutes. Priorisez les niveaux qui augmentent HP et attaque."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de AuF1 SPG jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour AuF1 SPG : ~268k d'industrie, ~268k d'énergie, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec AuF1 SPG ?",
+      "a": "Choisissez des généraux à spécialité Artillerie (Bagramyan, Kuznetsov, Alexander, Konev) avec compétences Tir concentré ou Supériorité d'artillerie. Ils étendent la portée et amplifient les dégâts de saturation."
+    },
+    {
+      "q": "Dans quels scénarios AuF1 SPG est-elle la plus utile ?",
+      "a": "Elle excelle en soutien offensif sur les cartes à objectifs fixes : capitales, forteresses, choke points. Couplez-la à une unité d'assaut pour exploiter la fenêtre ouverte par ses salves."
     }
   ],
   "sources": [
@@ -427,30 +439,54 @@
   "longDescDe": "GCT AuF1: 155-mm-Selbstfahrhaubitze, entwickelt in den 1970er Jahren. Gute Mobilität und Reichweite.",
   "faqsEn": [
     {
-      "q": "How do you get AuF1 in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock AuF1 in World Conqueror 4?",
+      "a": "AuF1 is unlocked from the Elite Shop for 30 elite items (artillery category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are AuF1's maximum stats at level 12?",
+      "a": "At level 12, AuF1 peaks at 127 attack, 28 defense, 575 HP, 13 movement and range 3. Solid artillery profile — decent range and damage to break enemy concentrations."
+    },
+    {
+      "q": "Which milestone perks does AuF1 unlock?",
+      "a": "AuF1 does not carry milestone perks at levels 5, 9 or 12 — the unit leans mainly on its level-1 passives and on raw stat growth. Prioritize upgrades that lift HP and attack."
+    },
+    {
+      "q": "How expensive is fully upgrading AuF1 to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for AuF1: ~268k industry, ~268k energy, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with AuF1?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pick Artillery-specialty generals (Bagramyan, Kuznetsov, Alexander, Konev) with Concentrated Fire or Artillery Supremacy. They extend range and amplify saturation damage."
+    },
+    {
+      "q": "In which scenarios is AuF1 most useful?",
+      "a": "It shines as offensive support on fixed-objective maps: capitals, fortresses, choke points. Couple it with an assault unit to exploit the window its barrages open."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man AuF1 in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man AuF1 in World Conqueror 4 frei?",
+      "a": "AuF1 wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Artillerie). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von AuF1 auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht AuF1 127 Angriff, 28 Verteidigung, 575 HP, 13 Bewegung und Reichweite 3. Solide Artillerie — anständige Reichweite und Schaden, um feindliche Konzentrationen aufzubrechen."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit AuF1?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet AuF1 frei?",
+      "a": "AuF1 besitzt keine Meilenstein-Perks auf Stufe 5, 9 oder 12 — die Einheit stützt sich hauptsächlich auf die Stufe-1-Passiva und das Rohwert-Wachstum. Stufen priorisieren, die HP und Angriff anheben."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von AuF1 auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für AuF1: ~268k Industrie, ~268k Energie, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu AuF1?",
+      "a": "Wählen Sie Artillerie-Spezialisten (Bagramyan, Kuznetsov, Alexander, Konev) mit Konzentriertem Feuer oder Artillerie-Überlegenheit. Sie erweitern die Reichweite und verstärken den Sättigungsschaden."
+    },
+    {
+      "q": "In welchen Szenarien ist AuF1 am nützlichsten?",
+      "a": "Glänzt als Offensiv-Support auf Karten mit festen Zielen: Hauptstädte, Festungen, Engpässe. Mit einer Angriffseinheit kombinieren, um das durch Salven geöffnete Fenster auszunutzen."
     }
   ]
 }

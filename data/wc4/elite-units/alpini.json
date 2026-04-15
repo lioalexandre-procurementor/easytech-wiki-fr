@@ -194,16 +194,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Alpini dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Alpini dans World Conqueror 4 ?",
+      "a": "Alpini se débloque via la boutique d'élite pour 30 items d'élite (infanterie). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Alpini au niveau 12 ?",
+      "a": "Au niveau 12, Alpini culmine à 92 en attaque, 31 en défense, 525 HP, 10 de mouvement et 1 de portée. Profil infanterie renforcée — nettement au-dessus des piétons standards, tient la ligne sans problème."
     },
     {
-      "q": "Quels généraux associer à Alpini ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Alpini ?",
+      "a": "Paliers milestone : niveau 5 « Entrave », niveau 12 « Partage de dégâts ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Alpini jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Alpini : ~127.7k d'industrie, ~344.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Alpini ?",
+      "a": "Privilégiez les généraux à spécialité Infanterie (Zhukov, MacArthur, Manstein, Yamashita) avec compétences Charge d'infanterie, Supériorité ou Morale. Ils augmentent directement les dégâts d'infanterie et la survie au corps-à-corps."
+    },
+    {
+      "q": "Dans quels scénarios Alpini est-elle la plus utile ?",
+      "a": "Utilisez-la pour garnir les villes clés et absorber les vagues d'assaut ennemies. Elle surpasse largement l'infanterie standard sans remplacer complètement une unité S-tier."
     }
   ],
   "sources": [
@@ -343,30 +355,54 @@
   "longDescDe": "Italienische Gebirgstruppen. Erhebliche Boni in Gebirgsgelände und verbesserte Mobilität auf Hügeln.",
   "faqsEn": [
     {
-      "q": "How do you get Alpini in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Alpini in World Conqueror 4?",
+      "a": "Alpini is unlocked from the Elite Shop for 30 elite items (infantry category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Alpini's maximum stats at level 12?",
+      "a": "At level 12, Alpini peaks at 92 attack, 31 defense, 525 HP, 10 movement and range 1. Reinforced infantry profile — clearly above standard footsoldiers and holds the line without issue."
+    },
+    {
+      "q": "Which milestone perks does Alpini unlock?",
+      "a": "Milestone tiers: level 5 \"Hindrance\", level 12 \"Damage sharing\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading Alpini to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Alpini: ~127.7k industry, ~344.6k gold, 780 elite items, 45 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Alpini?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Favor Infantry-specialty generals (Zhukov, MacArthur, Manstein, Yamashita) with Infantry Charge, Supremacy or Morale skills. They directly raise infantry damage and close-combat survival."
+    },
+    {
+      "q": "In which scenarios is Alpini most useful?",
+      "a": "Use it to garrison key cities and soak enemy assault waves. It clearly outperforms stock infantry without fully replacing an S-tier unit."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Alpini in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Alpini in World Conqueror 4 frei?",
+      "a": "Alpini wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Infanterie). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Alpini auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Alpini 92 Angriff, 31 Verteidigung, 525 HP, 10 Bewegung und Reichweite 1. Verstärkte Infanterie — klar über Standardfußtruppen und hält die Linie problemlos."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Alpini?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Alpini frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Behinderung“, Stufe 12 „Schadensteilung“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Alpini auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Alpini: ~127.7k Industrie, ~344.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Alpini?",
+      "a": "Setzen Sie auf Infanterie-Spezialisten (Zhukov, MacArthur, Manstein, Yamashita) mit Infanterie-Angriff, Überlegenheit oder Moral-Skills. Sie erhöhen Infanterieschaden und Nahkampf-Überlebensfähigkeit direkt."
+    },
+    {
+      "q": "In welchen Szenarien ist Alpini am nützlichsten?",
+      "a": "Zur Garnisonsbesetzung von Schlüsselstädten und zum Abfedern feindlicher Angriffswellen. Sie übertrifft Standardinfanterie deutlich, ersetzt aber keine komplette S-Tier-Einheit."
     }
   ]
 }

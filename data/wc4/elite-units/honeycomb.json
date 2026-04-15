@@ -242,16 +242,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Honeycomb dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Honeycomb dans World Conqueror 4 ?",
+      "a": "Honeycomb est distribuée lors d'événements limités : récompenses de connexion, passe saisonnier ou boutique tournante. Hors de ces fenêtres elle reste inaccessible — gardez 30 items d'élite de côté pour la prochaine ouverture. Tier A."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Honeycomb au niveau 12 ?",
+      "a": "Au niveau 12, Honeycomb culmine à 96 en attaque, 35 en défense, 555 HP, 12 de mouvement et 2 de portée. Profil blindé robuste — équilibre solide entre frappe et encaissement, bien au-dessus des blindés standards."
     },
     {
-      "q": "Quels généraux associer à Honeycomb ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Honeycomb ?",
+      "a": "Palier milestone principal : niveau 9 « Marche forcée ». C'est le niveau à cibler en priorité pour Honeycomb — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Honeycomb jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Honeycomb : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Honeycomb ?",
+      "a": "Priorisez les généraux à spécialité Blindé (Rommel, Guderian, Patton, Model) avec compétences Blitz, Charge blindée ou Supériorité mécanisée. La synergie est directe : +attaque blindée et bonus de mouvement amplifient le profil offensif."
+    },
+    {
+      "q": "Dans quels scénarios Honeycomb est-elle la plus utile ?",
+      "a": "Utilisez-la comme colonne vertébrale d'une poussée blindée en campagne moderne. Moins explosive qu'une tête de liste S-tier mais robuste et polyvalente, elle absorbe la contre-attaque pendant que vos unités offensives font la différence."
     }
   ],
   "sources": [
@@ -391,30 +403,54 @@
   "longDescDe": "Auf NamuWikis Liste der WC4-Elite-Panzer aufgeführt. Genaue Herkunft und Werte im Spiel noch zu bestätigen.",
   "faqsEn": [
     {
-      "q": "How do you get Hive Tactical Vehicle in World Conqueror 4?",
-      "a": "The unit is event-exclusive — see the obtainability section above for the recurrence window and requirements."
+      "q": "How do you unlock Hive Tactical Vehicle in World Conqueror 4?",
+      "a": "Hive Tactical Vehicle is handed out through limited-time events: login rewards, season pass, or the rotating elite shop. Outside those windows it cannot be acquired — stash 30 elite items for the next opening. Tier A."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Hive Tactical Vehicle's maximum stats at level 12?",
+      "a": "At level 12, Hive Tactical Vehicle peaks at 96 attack, 35 defense, 555 HP, 12 movement and range 2. Sturdy armor profile — a solid balance of damage and bulk, clearly above stock tanks."
+    },
+    {
+      "q": "Which milestone perks does Hive Tactical Vehicle unlock?",
+      "a": "Main milestone tier: level 9 \"Forced march\". That is the level to prioritize for Hive Tactical Vehicle — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading Hive Tactical Vehicle to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Hive Tactical Vehicle: ~268k industry, ~7.9k tech, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Hive Tactical Vehicle?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Prioritize generals with an Armor specialty (Rommel, Guderian, Patton, Model) running Blitz, Armored Charge or Mechanized Supremacy. The synergy is direct: armor-attack bonuses and movement buffs amplify the unit's offensive profile."
+    },
+    {
+      "q": "In which scenarios is Hive Tactical Vehicle most useful?",
+      "a": "Use it as the backbone of an armored push in modern campaigns. Less explosive than an S-tier headline act but sturdy and versatile — it soaks the counter-attack while your offensive units close the deal."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Hive Tactical Vehicle in World Conqueror 4?",
-      "a": "Die Einheit ist Event-exklusiv — Wiederholungszyklus und Anforderungen findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Hive Tactical Vehicle in World Conqueror 4 frei?",
+      "a": "Hive Tactical Vehicle wird über zeitlich begrenzte Events vergeben: Login-Belohnungen, Saisonpass oder rotierender Elite-Shop. Außerhalb dieser Fenster nicht erhältlich — halten Sie 30 Elite-Items für die nächste Gelegenheit bereit. Stufe A."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Hive Tactical Vehicle auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Hive Tactical Vehicle 96 Angriff, 35 Verteidigung, 555 HP, 12 Bewegung und Reichweite 2. Robustes Panzer-Profil — solider Ausgleich zwischen Schlagkraft und Hülle, deutlich über Standardpanzern."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Hive Tactical Vehicle?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Hive Tactical Vehicle frei?",
+      "a": "Haupt-Meilenstein: Stufe 9 „Gewaltmarsch“. Diese Stufe zuerst für Hive Tactical Vehicle ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Hive Tactical Vehicle auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Hive Tactical Vehicle: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Hive Tactical Vehicle?",
+      "a": "Bevorzugen Sie Generäle mit Panzer-Spezialisierung (Rommel, Guderian, Patton, Model) und Fertigkeiten wie Blitz, Panzerangriff oder Mechanisierte Überlegenheit. Die Synergie ist direkt: Boni auf Panzerangriff und Bewegung verstärken das offensive Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist Hive Tactical Vehicle am nützlichsten?",
+      "a": "Als Rückgrat einer gepanzerten Offensive in modernen Kampagnen einsetzen. Weniger explosiv als eine S-Tier-Spitze, aber robust und vielseitig — sie fängt den Gegenangriff ab, während Ihre Offensiveinheiten den Sieg erzwingen."
     }
   ]
 }

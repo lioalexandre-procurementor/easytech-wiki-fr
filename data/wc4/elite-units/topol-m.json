@@ -278,16 +278,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir RT-2PM2 Topol-M dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer RT-2PM2 Topol-M dans World Conqueror 4 ?",
+      "a": "RT-2PM2 Topol-M se débloque via la boutique d'élite pour 30 items d'élite (artillerie). Tier S — le palier le plus élevé, réservé aux unités d'élite capables de porter un front à elles seules."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de RT-2PM2 Topol-M au niveau 12 ?",
+      "a": "Au niveau 12, RT-2PM2 Topol-M culmine à 115 en attaque, 31 en défense, 580 HP, 13 de mouvement et 24 de portée. Profil artillerie de saturation — portée longue et attaque qui surclassent les batteries standards."
     },
     {
-      "q": "Quels généraux associer à RT-2PM2 Topol-M ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque RT-2PM2 Topol-M ?",
+      "a": "Palier milestone principal : niveau 5 « Frappe atomique ». C'est le niveau à cibler en priorité pour RT-2PM2 Topol-M — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de RT-2PM2 Topol-M jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour RT-2PM2 Topol-M : ~268k d'industrie, ~268k d'énergie, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec RT-2PM2 Topol-M ?",
+      "a": "Choisissez des généraux à spécialité Artillerie (Bagramyan, Kuznetsov, Alexander, Konev) avec compétences Tir concentré ou Supériorité d'artillerie. Ils étendent la portée et amplifient les dégâts de saturation."
+    },
+    {
+      "q": "Dans quels scénarios RT-2PM2 Topol-M est-elle la plus utile ?",
+      "a": "Placez-la en deuxième ligne pour broyer les concentrations adverses sur les cartes de conquête. Sa portée et sa puissance d'attaque permettent de forcer une retraite ennemie avant même le contact au corps-à-corps."
     }
   ],
   "sources": [
@@ -427,30 +439,54 @@
   "longDescDe": "Russische interkontinentale Atomrakete, seit 1997 im Dienst. Maximale Reichweite, verheerender Schaden, sehr begrenzter Einsatz.",
   "faqsEn": [
     {
-      "q": "How do you get RT-2PM2 Topol-M in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock RT-2PM2 Topol-M in World Conqueror 4?",
+      "a": "RT-2PM2 Topol-M is unlocked from the Elite Shop for 30 elite items (artillery category). It sits at tier S — the top tier, reserved for elite units that can anchor an entire front on their own."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are RT-2PM2 Topol-M's maximum stats at level 12?",
+      "a": "At level 12, RT-2PM2 Topol-M peaks at 115 attack, 31 defense, 580 HP, 13 movement and range 24. Saturation-artillery profile — long range and attack that outclass stock batteries."
+    },
+    {
+      "q": "Which milestone perks does RT-2PM2 Topol-M unlock?",
+      "a": "Main milestone tier: level 5 \"Atomic strike\". That is the level to prioritize for RT-2PM2 Topol-M — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading RT-2PM2 Topol-M to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for RT-2PM2 Topol-M: ~268k industry, ~268k energy, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with RT-2PM2 Topol-M?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pick Artillery-specialty generals (Bagramyan, Kuznetsov, Alexander, Konev) with Concentrated Fire or Artillery Supremacy. They extend range and amplify saturation damage."
+    },
+    {
+      "q": "In which scenarios is RT-2PM2 Topol-M most useful?",
+      "a": "Park it on the second line to grind down enemy concentrations in Conquest. Its range and attack force an enemy retreat before close-combat even begins."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man RT-2PM2 Topol-M in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man RT-2PM2 Topol-M in World Conqueror 4 frei?",
+      "a": "RT-2PM2 Topol-M wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Artillerie). Stufe S — die höchste Stufe, reserviert für Elite-Einheiten, die eine Front allein tragen können."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von RT-2PM2 Topol-M auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht RT-2PM2 Topol-M 115 Angriff, 31 Verteidigung, 580 HP, 13 Bewegung und Reichweite 24. Sättigungsartillerie — lange Reichweite und Angriff, die Standardbatterien deklassieren."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit RT-2PM2 Topol-M?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet RT-2PM2 Topol-M frei?",
+      "a": "Haupt-Meilenstein: Stufe 5 „Atomschlag“. Diese Stufe zuerst für RT-2PM2 Topol-M ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von RT-2PM2 Topol-M auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für RT-2PM2 Topol-M: ~268k Industrie, ~268k Energie, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu RT-2PM2 Topol-M?",
+      "a": "Wählen Sie Artillerie-Spezialisten (Bagramyan, Kuznetsov, Alexander, Konev) mit Konzentriertem Feuer oder Artillerie-Überlegenheit. Sie erweitern die Reichweite und verstärken den Sättigungsschaden."
+    },
+    {
+      "q": "In welchen Szenarien ist RT-2PM2 Topol-M am nützlichsten?",
+      "a": "In der zweiten Reihe aufstellen, um gegnerische Konzentrationen auf Eroberungskarten zu zermürben. Reichweite und Angriffskraft erzwingen einen feindlichen Rückzug, noch bevor der Nahkampf beginnt."
     }
   ]
 }

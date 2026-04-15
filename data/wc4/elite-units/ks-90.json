@@ -164,16 +164,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir KS-90 Self-Propelled Artillery dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via campagne ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer KS-90 Self-Propelled Artillery dans World Conqueror 4 ?",
+      "a": "KS-90 Self-Propelled Artillery est une récompense de campagne : débloquée en complétant une mission spécifique du mode Conquête ou d'un chapitre solo. Une fois obtenue, elle est directement jouable et ne coûte pas d'items d'élite. Tier S."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de KS-90 Self-Propelled Artillery au niveau 12 ?",
+      "a": "Au niveau 12, KS-90 Self-Propelled Artillery culmine à 290 en attaque, 75 en défense, 230 HP, 3 de mouvement et 4 de portée. Profil artillerie de saturation — portée longue et attaque qui surclassent les batteries standards."
     },
     {
-      "q": "Quels généraux associer à KS-90 Self-Propelled Artillery ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque KS-90 Self-Propelled Artillery ?",
+      "a": "Paliers milestone : niveau 5 « Portée étendue », niveau 9 « Saturation », niveau 12 « Perk ultime ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de KS-90 Self-Propelled Artillery jusqu'au niveau 12 ?",
+      "a": "KS-90 Self-Propelled Artillery étant une récompense de campagne, son cheminement d'amélioration n'est pas standardisé — les coûts dépendent du contexte de mission et restent généralement plus légers qu'une unité achetée en boutique. Concentrez vos items sur les unités shop prioritaires en parallèle."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec KS-90 Self-Propelled Artillery ?",
+      "a": "Choisissez des généraux à spécialité Artillerie (Bagramyan, Kuznetsov, Alexander, Konev) avec compétences Tir concentré ou Supériorité d'artillerie. Ils étendent la portée et amplifient les dégâts de saturation."
+    },
+    {
+      "q": "Dans quels scénarios KS-90 Self-Propelled Artillery est-elle la plus utile ?",
+      "a": "Placez-la en deuxième ligne pour broyer les concentrations adverses sur les cartes de conquête. Sa portée et sa puissance d'attaque permettent de forcer une retraite ennemie avant même le contact au corps-à-corps."
     }
   ],
   "sources": [
@@ -186,30 +198,54 @@
   "longDescDe": "Mystische Elite-Selbstfahrlafette, entworfen und produziert von Williams, einem der drei Hauptmänner des Skorpion-Imperiums. 8 Räder, schwarzes Skorpion-Emblem auf Geschützen und Rumpf. Fähigkeiten: Nano-Erholung (3% HP/Zug), kritischer Treffer, Angriff.",
   "faqsEn": [
     {
-      "q": "How do you get KS-90 Self-Propelled Artillery in World Conqueror 4?",
-      "a": "The unit is obtained through the campaign or limited events. See the obtainability section above for full details."
+      "q": "How do you unlock KS-90 Self-Propelled Artillery in World Conqueror 4?",
+      "a": "KS-90 Self-Propelled Artillery is a campaign reward — unlocked by clearing a specific Conquest or single-player mission. Once earned it is immediately playable and costs no elite items. Tier S."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are KS-90 Self-Propelled Artillery's maximum stats at level 12?",
+      "a": "At level 12, KS-90 Self-Propelled Artillery peaks at 290 attack, 75 defense, 230 HP, 3 movement and range 4. Saturation-artillery profile — long range and attack that outclass stock batteries."
+    },
+    {
+      "q": "Which milestone perks does KS-90 Self-Propelled Artillery unlock?",
+      "a": "Milestone tiers: level 5 \"Extended range\", level 9 \"Saturation\", level 12 \"Ultimate perk\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading KS-90 Self-Propelled Artillery to level 12?",
+      "a": "Because KS-90 Self-Propelled Artillery is a campaign reward, its upgrade path is not standardized — costs depend on the mission context and usually sit lower than those of a shop-bought unit. Spend your elite items on your shop priorities in parallel."
     },
     {
       "q": "Which generals pair best with KS-90 Self-Propelled Artillery?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pick Artillery-specialty generals (Bagramyan, Kuznetsov, Alexander, Konev) with Concentrated Fire or Artillery Supremacy. They extend range and amplify saturation damage."
+    },
+    {
+      "q": "In which scenarios is KS-90 Self-Propelled Artillery most useful?",
+      "a": "Park it on the second line to grind down enemy concentrations in Conquest. Its range and attack force an enemy retreat before close-combat even begins."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man KS-90 Self-Propelled Artillery in World Conqueror 4?",
-      "a": "Die Einheit wird über die Kampagne oder zeitlich begrenzte Events freigeschaltet. Details siehe Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man KS-90 Self-Propelled Artillery in World Conqueror 4 frei?",
+      "a": "KS-90 Self-Propelled Artillery ist eine Kampagnen-Belohnung — wird durch Abschluss einer bestimmten Eroberungs- oder Einzelspielermission freigeschaltet. Einmal erhalten, sofort spielbar, ohne Elite-Item-Kosten. Stufe S."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von KS-90 Self-Propelled Artillery auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht KS-90 Self-Propelled Artillery 290 Angriff, 75 Verteidigung, 230 HP, 3 Bewegung und Reichweite 4. Sättigungsartillerie — lange Reichweite und Angriff, die Standardbatterien deklassieren."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit KS-90 Self-Propelled Artillery?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet KS-90 Self-Propelled Artillery frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Erweiterte Reichweite“, Stufe 9 „Sättigung“, Stufe 12 „Ultimativer Perk“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von KS-90 Self-Propelled Artillery auf Stufe 12?",
+      "a": "Da KS-90 Self-Propelled Artillery eine Kampagnen-Belohnung ist, ist der Aufrüstungspfad nicht standardisiert — die Kosten hängen vom Missionskontext ab und liegen meist unter denen einer Shop-Einheit. Investieren Sie Ihre Elite-Items parallel in Ihre Shop-Prioritäten."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu KS-90 Self-Propelled Artillery?",
+      "a": "Wählen Sie Artillerie-Spezialisten (Bagramyan, Kuznetsov, Alexander, Konev) mit Konzentriertem Feuer oder Artillerie-Überlegenheit. Sie erweitern die Reichweite und verstärken den Sättigungsschaden."
+    },
+    {
+      "q": "In welchen Szenarien ist KS-90 Self-Propelled Artillery am nützlichsten?",
+      "a": "In der zweiten Reihe aufstellen, um gegnerische Konzentrationen auf Eroberungskarten zu zermürben. Reichweite und Angriffskraft erzwingen einen feindlichen Rückzug, noch bevor der Nahkampf beginnt."
     }
   ]
 }

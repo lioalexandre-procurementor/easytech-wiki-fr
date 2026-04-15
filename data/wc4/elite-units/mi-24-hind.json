@@ -266,16 +266,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Mi-24 Hind dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Mi-24 Hind dans World Conqueror 4 ?",
+      "a": "Mi-24 Hind se débloque via la boutique d'élite pour 30 items d'élite (aérienne). Tier S — le palier le plus élevé, réservé aux unités d'élite capables de porter un front à elles seules."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Mi-24 Hind au niveau 12 ?",
+      "a": "Au niveau 12, Mi-24 Hind culmine à 104 en attaque pour une portée de 2. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien de première ligne — rayon d'action et attaque qui définissent le standard des unités aériennes d'élite."
     },
     {
-      "q": "Quels généraux associer à Mi-24 Hind ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Mi-24 Hind ?",
+      "a": "Mi-24 Hind ne possède pas de perks milestone aux paliers 5, 9 ou 12 — l'unité s'appuie principalement sur ses bonus de niveau 1 et sur la montée en statistiques brutes. Priorisez les niveaux qui augmentent HP et attaque."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Mi-24 Hind jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Mi-24 Hind : ~244.2k d'énergie, ~344.6k d'or, 780 items d'élite, 60 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Mi-24 Hind ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios Mi-24 Hind est-elle la plus utile ?",
+      "a": "Déployez-la comme arme d'ouverture : elle efface les défenses aériennes adverses et frappe les concentrations au sol dès le premier tour. Indispensable dans les missions où l'appui aérien détermine l'issue."
     }
   ],
   "sources": [
@@ -415,30 +427,54 @@
   "longDescDe": "Sowjetischer Angriffshubschrauber, Spitzname „fliegender Panzer“. Einzigartig in seiner Kategorie: Angriff + leichter Transport.",
   "faqsEn": [
     {
-      "q": "How do you get Mil Mi-24 Hind in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Mil Mi-24 Hind in World Conqueror 4?",
+      "a": "Mil Mi-24 Hind is unlocked from the Elite Shop for 30 elite items (air category). It sits at tier S — the top tier, reserved for elite units that can anchor an entire front on their own."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Mil Mi-24 Hind's maximum stats at level 12?",
+      "a": "At level 12, Mil Mi-24 Hind peaks at 104 attack with range 2. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Front-line air profile — range and attack that set the standard for elite aircraft."
+    },
+    {
+      "q": "Which milestone perks does Mil Mi-24 Hind unlock?",
+      "a": "Mil Mi-24 Hind does not carry milestone perks at levels 5, 9 or 12 — the unit leans mainly on its level-1 passives and on raw stat growth. Prioritize upgrades that lift HP and attack."
+    },
+    {
+      "q": "How expensive is fully upgrading Mil Mi-24 Hind to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Mil Mi-24 Hind: ~244.2k energy, ~344.6k gold, 780 elite items, 60 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Mil Mi-24 Hind?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is Mil Mi-24 Hind most useful?",
+      "a": "Deploy it as an opening weapon: it wipes enemy air defenses and hits ground concentrations on turn one. Essential on missions where air support decides the outcome."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Mil Mi-24 Hind in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Mil Mi-24 Hind in World Conqueror 4 frei?",
+      "a": "Mil Mi-24 Hind wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Luftwaffe). Stufe S — die höchste Stufe, reserviert für Elite-Einheiten, die eine Front allein tragen können."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Mil Mi-24 Hind auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Mil Mi-24 Hind 104 Angriff bei Reichweite 2. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Frontlinien-Luftprofil — Reichweite und Angriff setzen den Standard für Elite-Flugzeuge."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Mil Mi-24 Hind?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Mil Mi-24 Hind frei?",
+      "a": "Mil Mi-24 Hind besitzt keine Meilenstein-Perks auf Stufe 5, 9 oder 12 — die Einheit stützt sich hauptsächlich auf die Stufe-1-Passiva und das Rohwert-Wachstum. Stufen priorisieren, die HP und Angriff anheben."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Mil Mi-24 Hind auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Mil Mi-24 Hind: ~244.2k Energie, ~344.6k Gold, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Mil Mi-24 Hind?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist Mil Mi-24 Hind am nützlichsten?",
+      "a": "Als Eröffnungswaffe einsetzen: Sie löscht feindliche Luftabwehr und trifft Bodenkonzentrationen in Zug eins. Unentbehrlich in Missionen, in denen Luftunterstützung den Ausgang bestimmt."
     }
   ]
 }

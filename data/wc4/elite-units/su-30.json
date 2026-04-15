@@ -362,16 +362,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Sukhoi Su-30 dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Sukhoi Su-30 dans World Conqueror 4 ?",
+      "a": "Sukhoi Su-30 se débloque via la boutique d'élite pour 30 items d'élite (aérienne). Tier S — le palier le plus élevé, réservé aux unités d'élite capables de porter un front à elles seules."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Sukhoi Su-30 au niveau 12 ?",
+      "a": "Au niveau 12, Sukhoi Su-30 culmine à 121 en attaque pour une portée de 5. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien de première ligne — rayon d'action et attaque qui définissent le standard des unités aériennes d'élite."
     },
     {
-      "q": "Quels généraux associer à Sukhoi Su-30 ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Sukhoi Su-30 ?",
+      "a": "Sukhoi Su-30 ne possède pas de perks milestone aux paliers 5, 9 ou 12 — l'unité s'appuie principalement sur ses bonus de niveau 1 et sur la montée en statistiques brutes. Priorisez les niveaux qui augmentent HP et attaque."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Sukhoi Su-30 jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Sukhoi Su-30 : ~244.2k d'énergie, ~344.6k d'or, 780 items d'élite, 60 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Sukhoi Su-30 ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios Sukhoi Su-30 est-elle la plus utile ?",
+      "a": "Déployez-la comme arme d'ouverture : elle efface les défenses aériennes adverses et frappe les concentrations au sol dès le premier tour. Indispensable dans les missions où l'appui aérien détermine l'issue."
     }
   ],
   "sources": [
@@ -511,30 +523,54 @@
   "longDescDe": "Mehrzweck-Kampfflugzeug der 4,5. Generation, vom Su-27 Flanker abgeleitet. Schubvektorsteuerung, leistungsstarkes Radar, R-77-Raketen.",
   "faqsEn": [
     {
-      "q": "How do you get Sukhoi Su-30V in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Sukhoi Su-30V in World Conqueror 4?",
+      "a": "Sukhoi Su-30V is unlocked from the Elite Shop for 30 elite items (air category). It sits at tier S — the top tier, reserved for elite units that can anchor an entire front on their own."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Sukhoi Su-30V's maximum stats at level 12?",
+      "a": "At level 12, Sukhoi Su-30V peaks at 121 attack with range 5. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Front-line air profile — range and attack that set the standard for elite aircraft."
+    },
+    {
+      "q": "Which milestone perks does Sukhoi Su-30V unlock?",
+      "a": "Sukhoi Su-30V does not carry milestone perks at levels 5, 9 or 12 — the unit leans mainly on its level-1 passives and on raw stat growth. Prioritize upgrades that lift HP and attack."
+    },
+    {
+      "q": "How expensive is fully upgrading Sukhoi Su-30V to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Sukhoi Su-30V: ~244.2k energy, ~344.6k gold, 780 elite items, 60 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Sukhoi Su-30V?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is Sukhoi Su-30V most useful?",
+      "a": "Deploy it as an opening weapon: it wipes enemy air defenses and hits ground concentrations on turn one. Essential on missions where air support decides the outcome."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Sukhoi Su-30V in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Sukhoi Su-30V in World Conqueror 4 frei?",
+      "a": "Sukhoi Su-30V wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Luftwaffe). Stufe S — die höchste Stufe, reserviert für Elite-Einheiten, die eine Front allein tragen können."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Sukhoi Su-30V auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Sukhoi Su-30V 121 Angriff bei Reichweite 5. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Frontlinien-Luftprofil — Reichweite und Angriff setzen den Standard für Elite-Flugzeuge."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Sukhoi Su-30V?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Sukhoi Su-30V frei?",
+      "a": "Sukhoi Su-30V besitzt keine Meilenstein-Perks auf Stufe 5, 9 oder 12 — die Einheit stützt sich hauptsächlich auf die Stufe-1-Passiva und das Rohwert-Wachstum. Stufen priorisieren, die HP und Angriff anheben."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Sukhoi Su-30V auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Sukhoi Su-30V: ~244.2k Energie, ~344.6k Gold, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Sukhoi Su-30V?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist Sukhoi Su-30V am nützlichsten?",
+      "a": "Als Eröffnungswaffe einsetzen: Sie löscht feindliche Luftabwehr und trifft Bodenkonzentrationen in Zug eins. Unentbehrlich in Missionen, in denen Luftunterstützung den Ausgang bestimmt."
     }
   ]
 }

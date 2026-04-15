@@ -242,16 +242,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Centurion dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Centurion dans World Conqueror 4 ?",
+      "a": "Centurion se débloque via la boutique d'élite pour 30 items d'élite (blindés). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Centurion au niveau 12 ?",
+      "a": "Au niveau 12, Centurion culmine à 119 en attaque, 47 en défense, 725 HP, 11 de mouvement et 2 de portée. Profil blindé robuste — équilibre solide entre frappe et encaissement, bien au-dessus des blindés standards."
     },
     {
-      "q": "Quels généraux associer à Centurion ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Centurion ?",
+      "a": "Palier milestone principal : niveau 12 « Interférence visuelle ». C'est le niveau à cibler en priorité pour Centurion — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Centurion jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Centurion : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 45 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Centurion ?",
+      "a": "Priorisez les généraux à spécialité Blindé (Rommel, Guderian, Patton, Model) avec compétences Blitz, Charge blindée ou Supériorité mécanisée. La synergie est directe : +attaque blindée et bonus de mouvement amplifient le profil offensif."
+    },
+    {
+      "q": "Dans quels scénarios Centurion est-elle la plus utile ?",
+      "a": "Utilisez-la comme colonne vertébrale d'une poussée blindée en campagne moderne. Moins explosive qu'une tête de liste S-tier mais robuste et polyvalente, elle absorbe la contre-attaque pendant que vos unités offensives font la différence."
     }
   ],
   "sources": [
@@ -391,30 +403,54 @@
   "longDescDe": "Der Centurion (A41) ist der erste Kampfpanzer der Welt. Ausgewogene Elite-Einheit: Mobilität, Panzerung, 20-Pfünder-/105-mm-Kanone.",
   "faqsEn": [
     {
-      "q": "How do you get A41 Centurion in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock A41 Centurion in World Conqueror 4?",
+      "a": "A41 Centurion is unlocked from the Elite Shop for 30 elite items (armor category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are A41 Centurion's maximum stats at level 12?",
+      "a": "At level 12, A41 Centurion peaks at 119 attack, 47 defense, 725 HP, 11 movement and range 2. Sturdy armor profile — a solid balance of damage and bulk, clearly above stock tanks."
+    },
+    {
+      "q": "Which milestone perks does A41 Centurion unlock?",
+      "a": "Main milestone tier: level 12 \"Visual interference\". That is the level to prioritize for A41 Centurion — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading A41 Centurion to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for A41 Centurion: ~268k industry, ~7.9k tech, 780 elite items, 45 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with A41 Centurion?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Prioritize generals with an Armor specialty (Rommel, Guderian, Patton, Model) running Blitz, Armored Charge or Mechanized Supremacy. The synergy is direct: armor-attack bonuses and movement buffs amplify the unit's offensive profile."
+    },
+    {
+      "q": "In which scenarios is A41 Centurion most useful?",
+      "a": "Use it as the backbone of an armored push in modern campaigns. Less explosive than an S-tier headline act but sturdy and versatile — it soaks the counter-attack while your offensive units close the deal."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man A41 Centurion in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man A41 Centurion in World Conqueror 4 frei?",
+      "a": "A41 Centurion wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Panzer). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von A41 Centurion auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht A41 Centurion 119 Angriff, 47 Verteidigung, 725 HP, 11 Bewegung und Reichweite 2. Robustes Panzer-Profil — solider Ausgleich zwischen Schlagkraft und Hülle, deutlich über Standardpanzern."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit A41 Centurion?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet A41 Centurion frei?",
+      "a": "Haupt-Meilenstein: Stufe 12 „Visuelle Störung“. Diese Stufe zuerst für A41 Centurion ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von A41 Centurion auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für A41 Centurion: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu A41 Centurion?",
+      "a": "Bevorzugen Sie Generäle mit Panzer-Spezialisierung (Rommel, Guderian, Patton, Model) und Fertigkeiten wie Blitz, Panzerangriff oder Mechanisierte Überlegenheit. Die Synergie ist direkt: Boni auf Panzerangriff und Bewegung verstärken das offensive Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist A41 Centurion am nützlichsten?",
+      "a": "Als Rückgrat einer gepanzerten Offensive in modernen Kampagnen einsetzen. Weniger explosiv als eine S-Tier-Spitze, aber robust und vielseitig — sie fängt den Gegenangriff ab, während Ihre Offensiveinheiten den Sieg erzwingen."
     }
   ]
 }

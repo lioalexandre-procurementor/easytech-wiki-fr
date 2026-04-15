@@ -182,16 +182,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir C-47 Skytrain dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer C-47 Skytrain dans World Conqueror 4 ?",
+      "a": "C-47 Skytrain est distribuée lors d'événements limités : récompenses de connexion, passe saisonnier ou boutique tournante. Hors de ces fenêtres elle reste inaccessible — gardez 30 items d'élite de côté pour la prochaine ouverture. Tier B."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de C-47 Skytrain au niveau 12 ?",
+      "a": "Au niveau 12, C-47 Skytrain culmine à 0 en attaque pour une portée de 15. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien spécialisé — moins offensif qu'un S-tier mais pertinent pour des missions ciblées."
     },
     {
-      "q": "Quels généraux associer à C-47 Skytrain ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque C-47 Skytrain ?",
+      "a": "Palier milestone principal : niveau 5 « Préparation aérienne ». C'est le niveau à cibler en priorité pour C-47 Skytrain — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de C-47 Skytrain jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour C-47 Skytrain : ~244.2k d'énergie, ~199.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'énergie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec C-47 Skytrain ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios C-47 Skytrain est-elle la plus utile ?",
+      "a": "Réservez-la à des missions ciblées — reconnaissance, ravitaillement, appui léger. Elle n'est pas taillée pour gérer une supériorité aérienne totale."
     }
   ],
   "sources": [
@@ -331,30 +343,54 @@
   "longDescDe": "Ikonisches alliiertes Transportflugzeug. Unterstützungseinheit: ermöglicht den Absprung von Fallschirmjägern hinter den feindlichen Linien.",
   "faqsEn": [
     {
-      "q": "How do you get C-47 Skytrain in World Conqueror 4?",
-      "a": "The unit is event-exclusive — see the obtainability section above for the recurrence window and requirements."
+      "q": "How do you unlock C-47 Skytrain in World Conqueror 4?",
+      "a": "C-47 Skytrain is handed out through limited-time events: login rewards, season pass, or the rotating elite shop. Outside those windows it cannot be acquired — stash 30 elite items for the next opening. Tier B."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are C-47 Skytrain's maximum stats at level 12?",
+      "a": "At level 12, C-47 Skytrain peaks at 0 attack with range 15. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Specialist air profile — less offensive than an S-rank but relevant on targeted missions."
+    },
+    {
+      "q": "Which milestone perks does C-47 Skytrain unlock?",
+      "a": "Main milestone tier: level 5 \"Air preparation\". That is the level to prioritize for C-47 Skytrain — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading C-47 Skytrain to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for C-47 Skytrain: ~244.2k energy, ~199.6k gold, 780 elite items, 45 badges. The main bottleneck is energy and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with C-47 Skytrain?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is C-47 Skytrain most useful?",
+      "a": "Save it for targeted missions — reconnaissance, resupply, light support. Not built to carry full air supremacy."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man C-47 Skytrain in World Conqueror 4?",
-      "a": "Die Einheit ist Event-exklusiv — Wiederholungszyklus und Anforderungen findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man C-47 Skytrain in World Conqueror 4 frei?",
+      "a": "C-47 Skytrain wird über zeitlich begrenzte Events vergeben: Login-Belohnungen, Saisonpass oder rotierender Elite-Shop. Außerhalb dieser Fenster nicht erhältlich — halten Sie 30 Elite-Items für die nächste Gelegenheit bereit. Stufe B."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von C-47 Skytrain auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht C-47 Skytrain 0 Angriff bei Reichweite 15. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Spezialisten-Luftprofil — weniger offensiv als S-Rang, aber relevant bei gezielten Missionen."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit C-47 Skytrain?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet C-47 Skytrain frei?",
+      "a": "Haupt-Meilenstein: Stufe 5 „Luftvorbereitung“. Diese Stufe zuerst für C-47 Skytrain ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von C-47 Skytrain auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für C-47 Skytrain: ~244.2k Energie, ~199.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Energie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu C-47 Skytrain?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist C-47 Skytrain am nützlichsten?",
+      "a": "Für gezielte Missionen reservieren — Aufklärung, Nachschub, leichte Unterstützung. Nicht darauf ausgelegt, vollständige Luftüberlegenheit zu tragen."
     }
   ]
 }

@@ -266,16 +266,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir B-52 Stratofortress dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer B-52 Stratofortress dans World Conqueror 4 ?",
+      "a": "B-52 Stratofortress se débloque via la boutique d'élite pour 30 items d'élite (aérienne). Tier S — le palier le plus élevé, réservé aux unités d'élite capables de porter un front à elles seules."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de B-52 Stratofortress au niveau 12 ?",
+      "a": "Au niveau 12, B-52 Stratofortress culmine à 97 en attaque pour une portée de 16. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien de première ligne — rayon d'action et attaque qui définissent le standard des unités aériennes d'élite."
     },
     {
-      "q": "Quels généraux associer à B-52 Stratofortress ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque B-52 Stratofortress ?",
+      "a": "Palier milestone principal : niveau 12 « Suppression aérienne ». C'est le niveau à cibler en priorité pour B-52 Stratofortress — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de B-52 Stratofortress jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour B-52 Stratofortress : ~244.2k d'énergie, ~344.6k d'or, 780 items d'élite, 60 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec B-52 Stratofortress ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios B-52 Stratofortress est-elle la plus utile ?",
+      "a": "Déployez-la comme arme d'ouverture : elle efface les défenses aériennes adverses et frappe les concentrations au sol dès le premier tour. Indispensable dans les missions où l'appui aérien détermine l'issue."
     }
   ],
   "sources": [
@@ -415,30 +427,54 @@
   "longDescDe": "Achtstrahliger schwerer Bomber, seit 1955 bei der USAF im Einsatz. 31 Tonnen Zuladung. Strategischer Langstreckeneinsatz.",
   "faqsEn": [
     {
-      "q": "How do you get B-52 Stratofortress in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock B-52 Stratofortress in World Conqueror 4?",
+      "a": "B-52 Stratofortress is unlocked from the Elite Shop for 30 elite items (air category). It sits at tier S — the top tier, reserved for elite units that can anchor an entire front on their own."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are B-52 Stratofortress's maximum stats at level 12?",
+      "a": "At level 12, B-52 Stratofortress peaks at 97 attack with range 16. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Front-line air profile — range and attack that set the standard for elite aircraft."
+    },
+    {
+      "q": "Which milestone perks does B-52 Stratofortress unlock?",
+      "a": "Main milestone tier: level 12 \"Air suppression\". That is the level to prioritize for B-52 Stratofortress — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading B-52 Stratofortress to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for B-52 Stratofortress: ~244.2k energy, ~344.6k gold, 780 elite items, 60 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with B-52 Stratofortress?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is B-52 Stratofortress most useful?",
+      "a": "Deploy it as an opening weapon: it wipes enemy air defenses and hits ground concentrations on turn one. Essential on missions where air support decides the outcome."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man B-52 Stratofortress in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man B-52 Stratofortress in World Conqueror 4 frei?",
+      "a": "B-52 Stratofortress wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Luftwaffe). Stufe S — die höchste Stufe, reserviert für Elite-Einheiten, die eine Front allein tragen können."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von B-52 Stratofortress auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht B-52 Stratofortress 97 Angriff bei Reichweite 16. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Frontlinien-Luftprofil — Reichweite und Angriff setzen den Standard für Elite-Flugzeuge."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit B-52 Stratofortress?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet B-52 Stratofortress frei?",
+      "a": "Haupt-Meilenstein: Stufe 12 „Luftunterdrückung“. Diese Stufe zuerst für B-52 Stratofortress ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von B-52 Stratofortress auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für B-52 Stratofortress: ~244.2k Energie, ~344.6k Gold, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu B-52 Stratofortress?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist B-52 Stratofortress am nützlichsten?",
+      "a": "Als Eröffnungswaffe einsetzen: Sie löscht feindliche Luftabwehr und trifft Bodenkonzentrationen in Zug eins. Unentbehrlich in Missionen, in denen Luftunterstützung den Ausgang bestimmt."
     }
   ]
 }

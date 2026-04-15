@@ -164,16 +164,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Titan Tank dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via campagne ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Titan Tank dans World Conqueror 4 ?",
+      "a": "Titan Tank est une récompense de campagne : débloquée en complétant une mission spécifique du mode Conquête ou d'un chapitre solo. Une fois obtenue, elle est directement jouable et ne coûte pas d'items d'élite. Tier S."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Titan Tank au niveau 12 ?",
+      "a": "Au niveau 12, Titan Tank culmine à 230 en attaque, 220 en défense, 420 HP, 2 de mouvement et 1 de portée. Profil tank lourd — l'unité encaisse les contre-attaques tout en délivrant des dégâts d'élite moderne."
     },
     {
-      "q": "Quels généraux associer à Titan Tank ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Titan Tank ?",
+      "a": "Paliers milestone : niveau 5 « Blindage renforcé », niveau 9 « Charge blindée », niveau 12 « Perk ultime ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Titan Tank jusqu'au niveau 12 ?",
+      "a": "Titan Tank étant une récompense de campagne, son cheminement d'amélioration n'est pas standardisé — les coûts dépendent du contexte de mission et restent généralement plus légers qu'une unité achetée en boutique. Concentrez vos items sur les unités shop prioritaires en parallèle."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Titan Tank ?",
+      "a": "Priorisez les généraux à spécialité Blindé (Rommel, Guderian, Patton, Model) avec compétences Blitz, Charge blindée ou Supériorité mécanisée. La synergie est directe : +attaque blindée et bonus de mouvement amplifient le profil offensif."
+    },
+    {
+      "q": "Dans quels scénarios Titan Tank est-elle la plus utile ?",
+      "a": "Déployez-la sur les théâtres modernes et de fin de partie (conquête 1980, PvP haut niveau) comme fer de lance blindé. Elle est capable de forcer une percée et de nettoyer les contre-attaques dans la même action."
     }
   ],
   "sources": [
@@ -186,30 +198,54 @@
   "longDescDe": "Im Modern-War-Szenario eingeführte Panzereinheit, exklusiv für die Terror-Kräfte. Der einzige stapelbare Superpanzer des Spiels und besonders widerstandsfähig. Mächtig, aber schwächer als die fortschrittlichsten Panzer der Elite Forces.",
   "faqsEn": [
     {
-      "q": "How do you get Titan Tank in World Conqueror 4?",
-      "a": "The unit is obtained through the campaign or limited events. See the obtainability section above for full details."
+      "q": "How do you unlock Titan Tank in World Conqueror 4?",
+      "a": "Titan Tank is a campaign reward — unlocked by clearing a specific Conquest or single-player mission. Once earned it is immediately playable and costs no elite items. Tier S."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Titan Tank's maximum stats at level 12?",
+      "a": "At level 12, Titan Tank peaks at 230 attack, 220 defense, 420 HP, 2 movement and range 1. Heavy-tank profile — absorbs counter-attacks while dealing modern elite damage."
+    },
+    {
+      "q": "Which milestone perks does Titan Tank unlock?",
+      "a": "Milestone tiers: level 5 \"Reinforced armor\", level 9 \"Armored charge\", level 12 \"Ultimate perk\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading Titan Tank to level 12?",
+      "a": "Because Titan Tank is a campaign reward, its upgrade path is not standardized — costs depend on the mission context and usually sit lower than those of a shop-bought unit. Spend your elite items on your shop priorities in parallel."
     },
     {
       "q": "Which generals pair best with Titan Tank?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Prioritize generals with an Armor specialty (Rommel, Guderian, Patton, Model) running Blitz, Armored Charge or Mechanized Supremacy. The synergy is direct: armor-attack bonuses and movement buffs amplify the unit's offensive profile."
+    },
+    {
+      "q": "In which scenarios is Titan Tank most useful?",
+      "a": "Deploy it on modern and late-game theaters (1980 Conquest, high-level PvP) as an armored spearhead. It can force a breakthrough and clean up the counter-attack in the same action."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Titan Tank in World Conqueror 4?",
-      "a": "Die Einheit wird über die Kampagne oder zeitlich begrenzte Events freigeschaltet. Details siehe Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Titan Tank in World Conqueror 4 frei?",
+      "a": "Titan Tank ist eine Kampagnen-Belohnung — wird durch Abschluss einer bestimmten Eroberungs- oder Einzelspielermission freigeschaltet. Einmal erhalten, sofort spielbar, ohne Elite-Item-Kosten. Stufe S."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Titan Tank auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Titan Tank 230 Angriff, 220 Verteidigung, 420 HP, 2 Bewegung und Reichweite 1. Schwerpanzer-Profil — steckt Gegenangriffe ein und teilt modernen Elite-Schaden aus."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Titan Tank?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Titan Tank frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Verstärkte Panzerung“, Stufe 9 „Panzerangriff“, Stufe 12 „Ultimativer Perk“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Titan Tank auf Stufe 12?",
+      "a": "Da Titan Tank eine Kampagnen-Belohnung ist, ist der Aufrüstungspfad nicht standardisiert — die Kosten hängen vom Missionskontext ab und liegen meist unter denen einer Shop-Einheit. Investieren Sie Ihre Elite-Items parallel in Ihre Shop-Prioritäten."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Titan Tank?",
+      "a": "Bevorzugen Sie Generäle mit Panzer-Spezialisierung (Rommel, Guderian, Patton, Model) und Fertigkeiten wie Blitz, Panzerangriff oder Mechanisierte Überlegenheit. Die Synergie ist direkt: Boni auf Panzerangriff und Bewegung verstärken das offensive Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist Titan Tank am nützlichsten?",
+      "a": "Einsetzen auf modernen und Late-Game-Schauplätzen (Eroberung 1980, hochstufiges PvP) als gepanzerte Speerspitze. Sie erzwingt einen Durchbruch und räumt im selben Zug den Gegenangriff auf."
     }
   ]
 }

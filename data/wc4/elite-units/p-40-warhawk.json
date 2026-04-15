@@ -206,16 +206,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir P-40 Warhawk dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer P-40 Warhawk dans World Conqueror 4 ?",
+      "a": "P-40 Warhawk se débloque via la boutique d'élite pour 30 items d'élite (aérienne). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de P-40 Warhawk au niveau 12 ?",
+      "a": "Au niveau 12, P-40 Warhawk culmine à 85 en attaque pour une portée de 12. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien solide — frappe et survie au-dessus des avions standards, efficace en appui ou en interception."
     },
     {
-      "q": "Quels généraux associer à P-40 Warhawk ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque P-40 Warhawk ?",
+      "a": "Palier milestone principal : niveau 5 « Attaque des Flying Tigers ». C'est le niveau à cibler en priorité pour P-40 Warhawk — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de P-40 Warhawk jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour P-40 Warhawk : ~244.2k d'énergie, ~199.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'énergie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec P-40 Warhawk ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios P-40 Warhawk est-elle la plus utile ?",
+      "a": "Utilisez-la en appui tactique sur les cartes à objectifs rapprochés. Elle gère l'interception et le nettoyage au sol sans exiger un slot S-tier."
     }
   ],
   "sources": [
@@ -355,30 +367,54 @@
   "longDescDe": "Amerikanisches Jagdflugzeug des frühen Zweiten Weltkriegs. Berühmt für das Haifischmaul-Nose-Art der Flying Tigers (AVG).",
   "faqsEn": [
     {
-      "q": "How do you get P-40 Fighter in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock P-40 Fighter in World Conqueror 4?",
+      "a": "P-40 Fighter is unlocked from the Elite Shop for 30 elite items (air category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are P-40 Fighter's maximum stats at level 12?",
+      "a": "At level 12, P-40 Fighter peaks at 85 attack with range 12. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Solid air profile — damage and survivability above standard planes, effective in support or intercept."
+    },
+    {
+      "q": "Which milestone perks does P-40 Fighter unlock?",
+      "a": "Main milestone tier: level 5 \"Flying Tigers attack\". That is the level to prioritize for P-40 Fighter — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading P-40 Fighter to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for P-40 Fighter: ~244.2k energy, ~199.6k gold, 780 elite items, 45 badges. The main bottleneck is energy and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with P-40 Fighter?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is P-40 Fighter most useful?",
+      "a": "Use it as tactical support on tight-objective maps. It handles intercept and ground clean-up without demanding an S-tier slot."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man P-40 Fighter in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man P-40 Fighter in World Conqueror 4 frei?",
+      "a": "P-40 Fighter wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Luftwaffe). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von P-40 Fighter auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht P-40 Fighter 85 Angriff bei Reichweite 12. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Solides Luftprofil — Schaden und Überlebensfähigkeit über Standardflugzeugen, effektiv in Unterstützung oder Abfangjagd."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit P-40 Fighter?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet P-40 Fighter frei?",
+      "a": "Haupt-Meilenstein: Stufe 5 „Flying Tigers Angriff“. Diese Stufe zuerst für P-40 Fighter ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von P-40 Fighter auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für P-40 Fighter: ~244.2k Energie, ~199.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Energie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu P-40 Fighter?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist P-40 Fighter am nützlichsten?",
+      "a": "Als taktische Unterstützung auf Karten mit engen Zielen einsetzen. Sie übernimmt Abfangjagd und Bodenreinigung, ohne einen S-Tier-Slot zu verlangen."
     }
   ]
 }

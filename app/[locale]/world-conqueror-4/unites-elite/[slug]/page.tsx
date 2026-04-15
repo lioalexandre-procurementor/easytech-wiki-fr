@@ -258,8 +258,23 @@ export default async function UnitPage({ params }: { params: { locale: string; s
               locale === "de" ? (unit.faqsDe ?? unit.faqsEn ?? unit.faqs) :
               (unit.faqsEn ?? unit.faqs);
             if (!localizedFaqs || localizedFaqs.length === 0) return null;
+            // Google-eligible FAQPage schema — emitted for the currently-rendered locale only.
+            const faqSchema = {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: localizedFaqs.map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+              })),
+            };
             return (
               <div id="faq" className="bg-panel border border-border rounded-lg p-6 mt-8">
+                <script
+                  type="application/ld+json"
+                  // eslint-disable-next-line react/no-danger
+                  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
                 <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">❓ {tL("Questions fréquentes", "Frequently asked questions", "Häufig gestellte Fragen")}</h3>
                 {localizedFaqs.map((f, i) => (
                   <div key={i} className="border-b border-border last:border-none py-3.5">

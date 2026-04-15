@@ -206,16 +206,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Richelieu dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Richelieu dans World Conqueror 4 ?",
+      "a": "Richelieu se débloque via la boutique d'élite pour 30 items d'élite (navale). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Richelieu au niveau 12 ?",
+      "a": "Au niveau 12, Richelieu culmine à 127 en attaque, 46 en défense, 835 HP, 12 de mouvement et 3 de portée. Profil naval compétitif — bon compromis entre coque et puissance de feu, performante en escorte et en ligne."
     },
     {
-      "q": "Quels généraux associer à Richelieu ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Richelieu ?",
+      "a": "Paliers milestone : niveau 5 « Frappe coordonnée », niveau 12 « Brise-fer ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Richelieu jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Richelieu : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 45 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Richelieu ?",
+      "a": "Associez-la à des généraux à spécialité Marine (Yamamoto, Nimitz, Dönitz, Cunningham) avec compétences Flotte ou Supériorité navale. Les bonus de coque et d'attaque navale s'empilent sur le profil de l'unité."
+    },
+    {
+      "q": "Dans quels scénarios Richelieu est-elle la plus utile ?",
+      "a": "Utilisez-la comme pilier d'une flotte d'escorte ou en ligne de front maritime. Elle tient tête aux unités navales standards et supporte l'essentiel des engagements sans coûter un slot S-tier."
     }
   ],
   "sources": [
@@ -355,30 +367,54 @@
   "longDescDe": "Typschiff der letzten Klasse französischer Schlachtschiffe. Acht 380-mm-Geschütze in zwei vorderen Vierlingstürmen.",
   "faqsEn": [
     {
-      "q": "How do you get Richelieu in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Richelieu in World Conqueror 4?",
+      "a": "Richelieu is unlocked from the Elite Shop for 30 elite items (naval category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Richelieu's maximum stats at level 12?",
+      "a": "At level 12, Richelieu peaks at 127 attack, 46 defense, 835 HP, 12 movement and range 3. Competitive naval profile — a good trade-off between hull and firepower, strong in escort and line duty."
+    },
+    {
+      "q": "Which milestone perks does Richelieu unlock?",
+      "a": "Milestone tiers: level 5 \"Coordinated strike\", level 12 \"Ironbreaker\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading Richelieu to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Richelieu: ~268k industry, ~7.9k tech, 780 elite items, 45 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Richelieu?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Navy-specialty generals (Yamamoto, Nimitz, Dönitz, Cunningham) running Fleet or Naval Supremacy. Hull and naval-attack bonuses stack on the unit's profile."
+    },
+    {
+      "q": "In which scenarios is Richelieu most useful?",
+      "a": "Use it as the backbone of an escort fleet or on the maritime front line. It matches up against stock navals and carries most engagements without costing you an S-tier slot."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Richelieu in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Richelieu in World Conqueror 4 frei?",
+      "a": "Richelieu wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Marine). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Richelieu auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Richelieu 127 Angriff, 46 Verteidigung, 835 HP, 12 Bewegung und Reichweite 3. Konkurrenzfähige Marine-Einheit — guter Kompromiss aus Rumpf und Feuerkraft, stark im Geleit und in der Linie."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Richelieu?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Richelieu frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Koordinierter Schlag“, Stufe 12 „Eisenbrecher“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Richelieu auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Richelieu: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Richelieu?",
+      "a": "Kombinieren Sie sie mit Marine-Spezialisten (Yamamoto, Nimitz, Dönitz, Cunningham) und Flotten- oder Marine-Überlegenheits-Skills. Rumpf- und Marineangriffs-Boni stapeln sich auf das Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist Richelieu am nützlichsten?",
+      "a": "Als Rückgrat einer Eskortflotte oder an der maritimen Frontlinie einsetzen. Sie hält mit Standard-Marineeinheiten Schritt und trägt die meisten Gefechte, ohne einen S-Tier-Slot zu beanspruchen."
     }
   ]
 }

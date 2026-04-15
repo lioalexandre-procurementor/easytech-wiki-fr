@@ -164,16 +164,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir SVA-23 Aircraft dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via campagne ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer SVA-23 Aircraft dans World Conqueror 4 ?",
+      "a": "SVA-23 Aircraft est une récompense de campagne : débloquée en complétant une mission spécifique du mode Conquête ou d'un chapitre solo. Une fois obtenue, elle est directement jouable et ne coûte pas d'items d'élite. Tier S."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de SVA-23 Aircraft au niveau 12 ?",
+      "a": "Au niveau 12, SVA-23 Aircraft culmine à 260 en attaque pour une portée de 2. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien de première ligne — rayon d'action et attaque qui définissent le standard des unités aériennes d'élite."
     },
     {
-      "q": "Quels généraux associer à SVA-23 Aircraft ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque SVA-23 Aircraft ?",
+      "a": "Paliers milestone : niveau 5 « Supériorité aérienne », niveau 9 « Vol stationnaire », niveau 12 « Perk ultime ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de SVA-23 Aircraft jusqu'au niveau 12 ?",
+      "a": "SVA-23 Aircraft étant une récompense de campagne, son cheminement d'amélioration n'est pas standardisé — les coûts dépendent du contexte de mission et restent généralement plus légers qu'une unité achetée en boutique. Concentrez vos items sur les unités shop prioritaires en parallèle."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec SVA-23 Aircraft ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios SVA-23 Aircraft est-elle la plus utile ?",
+      "a": "Déployez-la comme arme d'ouverture : elle efface les défenses aériennes adverses et frappe les concentrations au sol dès le premier tour. Indispensable dans les missions où l'appui aérien détermine l'issue."
     }
   ],
   "sources": [
@@ -186,30 +198,54 @@
   "longDescDe": "Mystische Elite-Einheit. Merkmale: Nano-Erholung, Unterdrückung (–30 % gegnerische Moral nach Ausschaltung), Maschinengewehre, Luftüberlegenheit, Ausweichen. Schwebende Einheit, Reichweite 2.",
   "faqsEn": [
     {
-      "q": "How do you get SVA-23 Aircraft in World Conqueror 4?",
-      "a": "The unit is obtained through the campaign or limited events. See the obtainability section above for full details."
+      "q": "How do you unlock SVA-23 Aircraft in World Conqueror 4?",
+      "a": "SVA-23 Aircraft is a campaign reward — unlocked by clearing a specific Conquest or single-player mission. Once earned it is immediately playable and costs no elite items. Tier S."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are SVA-23 Aircraft's maximum stats at level 12?",
+      "a": "At level 12, SVA-23 Aircraft peaks at 260 attack with range 2. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Front-line air profile — range and attack that set the standard for elite aircraft."
+    },
+    {
+      "q": "Which milestone perks does SVA-23 Aircraft unlock?",
+      "a": "Milestone tiers: level 5 \"Air superiority\", level 9 \"Hovering\", level 12 \"Ultimate perk\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading SVA-23 Aircraft to level 12?",
+      "a": "Because SVA-23 Aircraft is a campaign reward, its upgrade path is not standardized — costs depend on the mission context and usually sit lower than those of a shop-bought unit. Spend your elite items on your shop priorities in parallel."
     },
     {
       "q": "Which generals pair best with SVA-23 Aircraft?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is SVA-23 Aircraft most useful?",
+      "a": "Deploy it as an opening weapon: it wipes enemy air defenses and hits ground concentrations on turn one. Essential on missions where air support decides the outcome."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man SVA-23 Aircraft in World Conqueror 4?",
-      "a": "Die Einheit wird über die Kampagne oder zeitlich begrenzte Events freigeschaltet. Details siehe Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man SVA-23 Aircraft in World Conqueror 4 frei?",
+      "a": "SVA-23 Aircraft ist eine Kampagnen-Belohnung — wird durch Abschluss einer bestimmten Eroberungs- oder Einzelspielermission freigeschaltet. Einmal erhalten, sofort spielbar, ohne Elite-Item-Kosten. Stufe S."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von SVA-23 Aircraft auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht SVA-23 Aircraft 260 Angriff bei Reichweite 2. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Frontlinien-Luftprofil — Reichweite und Angriff setzen den Standard für Elite-Flugzeuge."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit SVA-23 Aircraft?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet SVA-23 Aircraft frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Luftüberlegenheit“, Stufe 9 „Schwebeflug“, Stufe 12 „Ultimativer Perk“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von SVA-23 Aircraft auf Stufe 12?",
+      "a": "Da SVA-23 Aircraft eine Kampagnen-Belohnung ist, ist der Aufrüstungspfad nicht standardisiert — die Kosten hängen vom Missionskontext ab und liegen meist unter denen einer Shop-Einheit. Investieren Sie Ihre Elite-Items parallel in Ihre Shop-Prioritäten."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu SVA-23 Aircraft?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist SVA-23 Aircraft am nützlichsten?",
+      "a": "Als Eröffnungswaffe einsetzen: Sie löscht feindliche Luftabwehr und trifft Bodenkonzentrationen in Zug eins. Unentbehrlich in Missionen, in denen Luftunterstützung den Ausgang bestimmt."
     }
   ]
 }

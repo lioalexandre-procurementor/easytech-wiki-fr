@@ -242,16 +242,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Arleigh Burke dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Arleigh Burke dans World Conqueror 4 ?",
+      "a": "Arleigh Burke se débloque via la boutique d'élite pour 30 items d'élite (navale). Tier S — le palier le plus élevé, réservé aux unités d'élite capables de porter un front à elles seules."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Arleigh Burke au niveau 12 ?",
+      "a": "Au niveau 12, Arleigh Burke culmine à 125 en attaque, 44 en défense, 790 HP, 13 de mouvement et 3 de portée. Profil naval majeur — large stock de HP et attaque supérieure pour dominer les théâtres maritimes."
     },
     {
-      "q": "Quels généraux associer à Arleigh Burke ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Arleigh Burke ?",
+      "a": "Palier milestone principal : niveau 12 « Radar de conduite de tir ». C'est le niveau à cibler en priorité pour Arleigh Burke — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Arleigh Burke jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Arleigh Burke : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Arleigh Burke ?",
+      "a": "Associez-la à des généraux à spécialité Marine (Yamamoto, Nimitz, Dönitz, Cunningham) avec compétences Flotte ou Supériorité navale. Les bonus de coque et d'attaque navale s'empilent sur le profil de l'unité."
+    },
+    {
+      "q": "Dans quels scénarios Arleigh Burke est-elle la plus utile ?",
+      "a": "Elle domine les théâtres maritimes stratégiques (Pacifique, Atlantique, Méditerranée) en conquête moderne. Son profil de HP et d'attaque lui permet de tenir seule un front naval ou de briser un blocus adverse."
     }
   ],
   "sources": [
@@ -391,30 +403,54 @@
   "longDescDe": "Lenkwaffenzerstörer-Klasse der US Navy seit 1991. Aegis-System, Tomahawk- und Standard-Raketen.",
   "faqsEn": [
     {
-      "q": "How do you get Arleigh Burke-class in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Arleigh Burke-class in World Conqueror 4?",
+      "a": "Arleigh Burke-class is unlocked from the Elite Shop for 30 elite items (naval category). It sits at tier S — the top tier, reserved for elite units that can anchor an entire front on their own."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Arleigh Burke-class's maximum stats at level 12?",
+      "a": "At level 12, Arleigh Burke-class peaks at 125 attack, 44 defense, 790 HP, 13 movement and range 3. Major naval profile — wide HP pool and superior attack to dominate maritime theaters."
+    },
+    {
+      "q": "Which milestone perks does Arleigh Burke-class unlock?",
+      "a": "Main milestone tier: level 12 \"Fire-control radar\". That is the level to prioritize for Arleigh Burke-class — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading Arleigh Burke-class to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Arleigh Burke-class: ~268k industry, ~7.9k tech, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Arleigh Burke-class?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Navy-specialty generals (Yamamoto, Nimitz, Dönitz, Cunningham) running Fleet or Naval Supremacy. Hull and naval-attack bonuses stack on the unit's profile."
+    },
+    {
+      "q": "In which scenarios is Arleigh Burke-class most useful?",
+      "a": "It dominates strategic maritime theaters (Pacific, Atlantic, Mediterranean) in modern Conquest. Its HP and attack profile can hold a naval front alone or break an enemy blockade."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Arleigh Burke-class in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Arleigh Burke-class in World Conqueror 4 frei?",
+      "a": "Arleigh Burke-class wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Marine). Stufe S — die höchste Stufe, reserviert für Elite-Einheiten, die eine Front allein tragen können."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Arleigh Burke-class auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Arleigh Burke-class 125 Angriff, 44 Verteidigung, 790 HP, 13 Bewegung und Reichweite 3. Große Marine-Einheit — breiter HP-Pool und überlegener Angriff, dominiert maritime Schauplätze."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Arleigh Burke-class?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Arleigh Burke-class frei?",
+      "a": "Haupt-Meilenstein: Stufe 12 „Feuerleitradar“. Diese Stufe zuerst für Arleigh Burke-class ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Arleigh Burke-class auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Arleigh Burke-class: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Arleigh Burke-class?",
+      "a": "Kombinieren Sie sie mit Marine-Spezialisten (Yamamoto, Nimitz, Dönitz, Cunningham) und Flotten- oder Marine-Überlegenheits-Skills. Rumpf- und Marineangriffs-Boni stapeln sich auf das Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist Arleigh Burke-class am nützlichsten?",
+      "a": "Sie dominiert strategische maritime Schauplätze (Pazifik, Atlantik, Mittelmeer) im modernen Conquest. Ihr HP- und Angriffsprofil hält eine Marinefront allein oder bricht eine feindliche Blockade."
     }
   ]
 }

@@ -194,16 +194,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir HMS Prince of Wales dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer HMS Prince of Wales dans World Conqueror 4 ?",
+      "a": "HMS Prince of Wales se débloque via la boutique d'élite pour 30 items d'élite (navale). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de HMS Prince of Wales au niveau 12 ?",
+      "a": "Au niveau 12, HMS Prince of Wales culmine à 123 en attaque, 50 en défense, 865 HP, 11 de mouvement et 3 de portée. Profil naval compétitif — bon compromis entre coque et puissance de feu, performante en escorte et en ligne."
     },
     {
-      "q": "Quels généraux associer à HMS Prince of Wales ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque HMS Prince of Wales ?",
+      "a": "Palier milestone principal : niveau 5 « Pose de mines ». C'est le niveau à cibler en priorité pour HMS Prince of Wales — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de HMS Prince of Wales jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour HMS Prince of Wales : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec HMS Prince of Wales ?",
+      "a": "Associez-la à des généraux à spécialité Marine (Yamamoto, Nimitz, Dönitz, Cunningham) avec compétences Flotte ou Supériorité navale. Les bonus de coque et d'attaque navale s'empilent sur le profil de l'unité."
+    },
+    {
+      "q": "Dans quels scénarios HMS Prince of Wales est-elle la plus utile ?",
+      "a": "Utilisez-la comme pilier d'une flotte d'escorte ou en ligne de front maritime. Elle tient tête aux unités navales standards et supporte l'essentiel des engagements sans coûter un slot S-tier."
     }
   ],
   "sources": [
@@ -343,30 +355,54 @@
   "longDescDe": "Nahm an der Jagd auf die Bismarck teil, bevor sie 1941 von japanischen Flugzeugen versenkt wurde. 14-Zoll-Geschütze.",
   "faqsEn": [
     {
-      "q": "How do you get HMS Prince of Wales in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock HMS Prince of Wales in World Conqueror 4?",
+      "a": "HMS Prince of Wales is unlocked from the Elite Shop for 30 elite items (naval category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are HMS Prince of Wales's maximum stats at level 12?",
+      "a": "At level 12, HMS Prince of Wales peaks at 123 attack, 50 defense, 865 HP, 11 movement and range 3. Competitive naval profile — a good trade-off between hull and firepower, strong in escort and line duty."
+    },
+    {
+      "q": "Which milestone perks does HMS Prince of Wales unlock?",
+      "a": "Main milestone tier: level 5 \"Mine laying\". That is the level to prioritize for HMS Prince of Wales — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading HMS Prince of Wales to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for HMS Prince of Wales: ~268k industry, ~7.9k tech, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with HMS Prince of Wales?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Navy-specialty generals (Yamamoto, Nimitz, Dönitz, Cunningham) running Fleet or Naval Supremacy. Hull and naval-attack bonuses stack on the unit's profile."
+    },
+    {
+      "q": "In which scenarios is HMS Prince of Wales most useful?",
+      "a": "Use it as the backbone of an escort fleet or on the maritime front line. It matches up against stock navals and carries most engagements without costing you an S-tier slot."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man HMS Prince of Wales in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man HMS Prince of Wales in World Conqueror 4 frei?",
+      "a": "HMS Prince of Wales wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Marine). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von HMS Prince of Wales auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht HMS Prince of Wales 123 Angriff, 50 Verteidigung, 865 HP, 11 Bewegung und Reichweite 3. Konkurrenzfähige Marine-Einheit — guter Kompromiss aus Rumpf und Feuerkraft, stark im Geleit und in der Linie."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit HMS Prince of Wales?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet HMS Prince of Wales frei?",
+      "a": "Haupt-Meilenstein: Stufe 5 „Minenlegung“. Diese Stufe zuerst für HMS Prince of Wales ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von HMS Prince of Wales auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für HMS Prince of Wales: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu HMS Prince of Wales?",
+      "a": "Kombinieren Sie sie mit Marine-Spezialisten (Yamamoto, Nimitz, Dönitz, Cunningham) und Flotten- oder Marine-Überlegenheits-Skills. Rumpf- und Marineangriffs-Boni stapeln sich auf das Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist HMS Prince of Wales am nützlichsten?",
+      "a": "Als Rückgrat einer Eskortflotte oder an der maritimen Frontlinie einsetzen. Sie hält mit Standard-Marineeinheiten Schritt und trägt die meisten Gefechte, ohne einen S-Tier-Slot zu beanspruchen."
     }
   ]
 }

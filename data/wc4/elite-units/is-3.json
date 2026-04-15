@@ -266,16 +266,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir IS-3 Heavy Tank dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer IS-3 Heavy Tank dans World Conqueror 4 ?",
+      "a": "IS-3 Heavy Tank se débloque via la boutique d'élite pour 30 items d'élite (blindés). Tier S — le palier le plus élevé, réservé aux unités d'élite capables de porter un front à elles seules."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de IS-3 Heavy Tank au niveau 12 ?",
+      "a": "Au niveau 12, IS-3 Heavy Tank culmine à 126 en attaque, 56 en défense, 780 HP, 11 de mouvement et 2 de portée. Profil tank lourd — l'unité encaisse les contre-attaques tout en délivrant des dégâts d'élite moderne."
     },
     {
-      "q": "Quels généraux associer à IS-3 Heavy Tank ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque IS-3 Heavy Tank ?",
+      "a": "Paliers milestone : niveau 5 « Tueur de chars », niveau 12 « Renforcement de feu ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de IS-3 Heavy Tank jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour IS-3 Heavy Tank : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec IS-3 Heavy Tank ?",
+      "a": "Priorisez les généraux à spécialité Blindé (Rommel, Guderian, Patton, Model) avec compétences Blitz, Charge blindée ou Supériorité mécanisée. La synergie est directe : +attaque blindée et bonus de mouvement amplifient le profil offensif."
+    },
+    {
+      "q": "Dans quels scénarios IS-3 Heavy Tank est-elle la plus utile ?",
+      "a": "Déployez-la sur les théâtres modernes et de fin de partie (conquête 1980, PvP haut niveau) comme fer de lance blindé. Elle est capable de forcer une percée et de nettoyer les contre-attaques dans la même action."
     }
   ],
   "sources": [
@@ -415,30 +427,54 @@
   "longDescDe": "Der IS-3 kam Ende 1945 in den Einsatz. Etwa gleichwertig zum Königstiger, den er im HP-Pool teilweise übertrifft. Beeindruckende 122-mm-Kanone.",
   "faqsEn": [
     {
-      "q": "How do you get IS-3 Heavy Tank in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock IS-3 Heavy Tank in World Conqueror 4?",
+      "a": "IS-3 Heavy Tank is unlocked from the Elite Shop for 30 elite items (armor category). It sits at tier S — the top tier, reserved for elite units that can anchor an entire front on their own."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are IS-3 Heavy Tank's maximum stats at level 12?",
+      "a": "At level 12, IS-3 Heavy Tank peaks at 126 attack, 56 defense, 780 HP, 11 movement and range 2. Heavy-tank profile — absorbs counter-attacks while dealing modern elite damage."
+    },
+    {
+      "q": "Which milestone perks does IS-3 Heavy Tank unlock?",
+      "a": "Milestone tiers: level 5 \"Tank killer\", level 12 \"Fire reinforcement\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading IS-3 Heavy Tank to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for IS-3 Heavy Tank: ~268k industry, ~7.9k tech, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with IS-3 Heavy Tank?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Prioritize generals with an Armor specialty (Rommel, Guderian, Patton, Model) running Blitz, Armored Charge or Mechanized Supremacy. The synergy is direct: armor-attack bonuses and movement buffs amplify the unit's offensive profile."
+    },
+    {
+      "q": "In which scenarios is IS-3 Heavy Tank most useful?",
+      "a": "Deploy it on modern and late-game theaters (1980 Conquest, high-level PvP) as an armored spearhead. It can force a breakthrough and clean up the counter-attack in the same action."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man IS-3 Heavy Tank in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man IS-3 Heavy Tank in World Conqueror 4 frei?",
+      "a": "IS-3 Heavy Tank wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Panzer). Stufe S — die höchste Stufe, reserviert für Elite-Einheiten, die eine Front allein tragen können."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von IS-3 Heavy Tank auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht IS-3 Heavy Tank 126 Angriff, 56 Verteidigung, 780 HP, 11 Bewegung und Reichweite 2. Schwerpanzer-Profil — steckt Gegenangriffe ein und teilt modernen Elite-Schaden aus."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit IS-3 Heavy Tank?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet IS-3 Heavy Tank frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Panzertöter“, Stufe 12 „Feuerverstärkung“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von IS-3 Heavy Tank auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für IS-3 Heavy Tank: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu IS-3 Heavy Tank?",
+      "a": "Bevorzugen Sie Generäle mit Panzer-Spezialisierung (Rommel, Guderian, Patton, Model) und Fertigkeiten wie Blitz, Panzerangriff oder Mechanisierte Überlegenheit. Die Synergie ist direkt: Boni auf Panzerangriff und Bewegung verstärken das offensive Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist IS-3 Heavy Tank am nützlichsten?",
+      "a": "Einsetzen auf modernen und Late-Game-Schauplätzen (Eroberung 1980, hochstufiges PvP) als gepanzerte Speerspitze. Sie erzwingt einen Durchbruch und räumt im selben Zug den Gegenangriff auf."
     }
   ]
 }

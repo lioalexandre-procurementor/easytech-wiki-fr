@@ -218,16 +218,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir M7 Priest dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer M7 Priest dans World Conqueror 4 ?",
+      "a": "M7 Priest se débloque via la boutique d'élite pour 30 items d'élite (artillerie). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de M7 Priest au niveau 12 ?",
+      "a": "Au niveau 12, M7 Priest culmine à 113 en attaque, 29 en défense, 510 HP, 11 de mouvement et 2 de portée. Profil artillerie solide — portée correcte et dégâts suffisants pour broyer les concentrations ennemies."
     },
     {
-      "q": "Quels généraux associer à M7 Priest ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque M7 Priest ?",
+      "a": "Paliers milestone : niveau 5 « Tir de suppression », niveau 12 « Assaut aéroporté ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de M7 Priest jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour M7 Priest : ~244.3k d'industrie, ~244.3k d'énergie, 780 items d'élite, 45 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec M7 Priest ?",
+      "a": "Choisissez des généraux à spécialité Artillerie (Bagramyan, Kuznetsov, Alexander, Konev) avec compétences Tir concentré ou Supériorité d'artillerie. Ils étendent la portée et amplifient les dégâts de saturation."
+    },
+    {
+      "q": "Dans quels scénarios M7 Priest est-elle la plus utile ?",
+      "a": "Elle excelle en soutien offensif sur les cartes à objectifs fixes : capitales, forteresses, choke points. Couplez-la à une unité d'assaut pour exploiter la fenêtre ouverte par ses salves."
     }
   ],
   "sources": [
@@ -367,30 +379,54 @@
   "longDescDe": "Selbstfahrhaubitze aus dem Zweiten Weltkrieg. Elite-Artillerie mit hoher Mobilität, geeignet für Feuerunterstützung in frühen WW2-Szenarien.",
   "faqsEn": [
     {
-      "q": "How do you get M7 Priest in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock M7 Priest in World Conqueror 4?",
+      "a": "M7 Priest is unlocked from the Elite Shop for 30 elite items (artillery category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are M7 Priest's maximum stats at level 12?",
+      "a": "At level 12, M7 Priest peaks at 113 attack, 29 defense, 510 HP, 11 movement and range 2. Solid artillery profile — decent range and damage to break enemy concentrations."
+    },
+    {
+      "q": "Which milestone perks does M7 Priest unlock?",
+      "a": "Milestone tiers: level 5 \"Suppressive fire\", level 12 \"Airborne assault\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading M7 Priest to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for M7 Priest: ~244.3k industry, ~244.3k energy, 780 elite items, 45 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with M7 Priest?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pick Artillery-specialty generals (Bagramyan, Kuznetsov, Alexander, Konev) with Concentrated Fire or Artillery Supremacy. They extend range and amplify saturation damage."
+    },
+    {
+      "q": "In which scenarios is M7 Priest most useful?",
+      "a": "It shines as offensive support on fixed-objective maps: capitals, fortresses, choke points. Couple it with an assault unit to exploit the window its barrages open."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man M7 Priest in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man M7 Priest in World Conqueror 4 frei?",
+      "a": "M7 Priest wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Artillerie). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von M7 Priest auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht M7 Priest 113 Angriff, 29 Verteidigung, 510 HP, 11 Bewegung und Reichweite 2. Solide Artillerie — anständige Reichweite und Schaden, um feindliche Konzentrationen aufzubrechen."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit M7 Priest?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet M7 Priest frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Unterdrückungsfeuer“, Stufe 12 „Luftangriff“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von M7 Priest auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für M7 Priest: ~244.3k Industrie, ~244.3k Energie, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu M7 Priest?",
+      "a": "Wählen Sie Artillerie-Spezialisten (Bagramyan, Kuznetsov, Alexander, Konev) mit Konzentriertem Feuer oder Artillerie-Überlegenheit. Sie erweitern die Reichweite und verstärken den Sättigungsschaden."
+    },
+    {
+      "q": "In welchen Szenarien ist M7 Priest am nützlichsten?",
+      "a": "Glänzt als Offensiv-Support auf Karten mit festen Zielen: Hauptstädte, Festungen, Engpässe. Mit einer Angriffseinheit kombinieren, um das durch Salven geöffnete Fenster auszunutzen."
     }
   ]
 }

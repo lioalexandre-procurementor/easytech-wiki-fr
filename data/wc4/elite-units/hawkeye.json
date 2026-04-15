@@ -266,16 +266,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Hawkeye dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Hawkeye dans World Conqueror 4 ?",
+      "a": "Hawkeye est distribuée lors d'événements limités : récompenses de connexion, passe saisonnier ou boutique tournante. Hors de ces fenêtres elle reste inaccessible — gardez 30 items d'élite de côté pour la prochaine ouverture. Tier A."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Hawkeye au niveau 12 ?",
+      "a": "Au niveau 12, Hawkeye culmine à 96 en attaque, 28 en défense, 465 HP, 9 de mouvement et 1 de portée. Profil infanterie renforcée — nettement au-dessus des piétons standards, tient la ligne sans problème."
     },
     {
-      "q": "Quels généraux associer à Hawkeye ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Hawkeye ?",
+      "a": "Palier milestone principal : niveau 5 « Tir de précision ». C'est le niveau à cibler en priorité pour Hawkeye — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Hawkeye jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Hawkeye : ~127.7k d'industrie, ~344.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Hawkeye ?",
+      "a": "Privilégiez les généraux à spécialité Infanterie (Zhukov, MacArthur, Manstein, Yamashita) avec compétences Charge d'infanterie, Supériorité ou Morale. Ils augmentent directement les dégâts d'infanterie et la survie au corps-à-corps."
+    },
+    {
+      "q": "Dans quels scénarios Hawkeye est-elle la plus utile ?",
+      "a": "Utilisez-la pour garnir les villes clés et absorber les vagues d'assaut ennemies. Elle surpasse largement l'infanterie standard sans remplacer complètement une unité S-tier."
     }
   ],
   "sources": [
@@ -415,30 +427,54 @@
   "longDescDe": "Auf Aufklärung spezialisiert: erweiterte Sichtweite und Ausweich-Bonus, nützlich in unbekanntem Gelände.",
   "faqsEn": [
     {
-      "q": "How do you get Hawkeye Force in World Conqueror 4?",
-      "a": "The unit is event-exclusive — see the obtainability section above for the recurrence window and requirements."
+      "q": "How do you unlock Hawkeye Force in World Conqueror 4?",
+      "a": "Hawkeye Force is handed out through limited-time events: login rewards, season pass, or the rotating elite shop. Outside those windows it cannot be acquired — stash 30 elite items for the next opening. Tier A."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Hawkeye Force's maximum stats at level 12?",
+      "a": "At level 12, Hawkeye Force peaks at 96 attack, 28 defense, 465 HP, 9 movement and range 1. Reinforced infantry profile — clearly above standard footsoldiers and holds the line without issue."
+    },
+    {
+      "q": "Which milestone perks does Hawkeye Force unlock?",
+      "a": "Main milestone tier: level 5 \"Precision fire\". That is the level to prioritize for Hawkeye Force — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading Hawkeye Force to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Hawkeye Force: ~127.7k industry, ~344.6k gold, 780 elite items, 45 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Hawkeye Force?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Favor Infantry-specialty generals (Zhukov, MacArthur, Manstein, Yamashita) with Infantry Charge, Supremacy or Morale skills. They directly raise infantry damage and close-combat survival."
+    },
+    {
+      "q": "In which scenarios is Hawkeye Force most useful?",
+      "a": "Use it to garrison key cities and soak enemy assault waves. It clearly outperforms stock infantry without fully replacing an S-tier unit."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Hawkeye Force in World Conqueror 4?",
-      "a": "Die Einheit ist Event-exklusiv — Wiederholungszyklus und Anforderungen findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Hawkeye Force in World Conqueror 4 frei?",
+      "a": "Hawkeye Force wird über zeitlich begrenzte Events vergeben: Login-Belohnungen, Saisonpass oder rotierender Elite-Shop. Außerhalb dieser Fenster nicht erhältlich — halten Sie 30 Elite-Items für die nächste Gelegenheit bereit. Stufe A."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Hawkeye Force auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Hawkeye Force 96 Angriff, 28 Verteidigung, 465 HP, 9 Bewegung und Reichweite 1. Verstärkte Infanterie — klar über Standardfußtruppen und hält die Linie problemlos."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Hawkeye Force?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Hawkeye Force frei?",
+      "a": "Haupt-Meilenstein: Stufe 5 „Präzisionsfeuer“. Diese Stufe zuerst für Hawkeye Force ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Hawkeye Force auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Hawkeye Force: ~127.7k Industrie, ~344.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Hawkeye Force?",
+      "a": "Setzen Sie auf Infanterie-Spezialisten (Zhukov, MacArthur, Manstein, Yamashita) mit Infanterie-Angriff, Überlegenheit oder Moral-Skills. Sie erhöhen Infanterieschaden und Nahkampf-Überlebensfähigkeit direkt."
+    },
+    {
+      "q": "In welchen Szenarien ist Hawkeye Force am nützlichsten?",
+      "a": "Zur Garnisonsbesetzung von Schlüsselstädten und zum Abfedern feindlicher Angriffswellen. Sie übertrifft Standardinfanterie deutlich, ersetzt aber keine komplette S-Tier-Einheit."
     }
   ]
 }

@@ -230,16 +230,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Combat Medic dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Combat Medic dans World Conqueror 4 ?",
+      "a": "Combat Medic est distribuée lors d'événements limités : récompenses de connexion, passe saisonnier ou boutique tournante. Hors de ces fenêtres elle reste inaccessible — gardez 30 items d'élite de côté pour la prochaine ouverture. Tier S."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Combat Medic au niveau 12 ?",
+      "a": "Au niveau 12, Combat Medic culmine à 50 en attaque, 28 en défense, 500 HP, 11 de mouvement et 1 de portée. Profil infanterie élite — HP confortable et attaque supérieure au niveau d'une unité de fin de partie."
     },
     {
-      "q": "Quels généraux associer à Combat Medic ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Combat Medic ?",
+      "a": "Paliers milestone : niveau 12 « Soutien logistique », niveau 12 « Protection critique ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Combat Medic jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Combat Medic : ~78k d'industrie, ~199.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Combat Medic ?",
+      "a": "Privilégiez les généraux à spécialité Infanterie (Zhukov, MacArthur, Manstein, Yamashita) avec compétences Charge d'infanterie, Supériorité ou Morale. Ils augmentent directement les dégâts d'infanterie et la survie au corps-à-corps."
+    },
+    {
+      "q": "Dans quels scénarios Combat Medic est-elle la plus utile ?",
+      "a": "Pivotez autour d'elle pour tenir des points de contrôle urbains et les missions PvE à fort volume d'infanterie ennemie. Son HP élevé lui permet d'encaisser plusieurs tours de pression sans être écartée du front."
     }
   ],
   "sources": [
@@ -379,30 +391,54 @@
   "longDescDe": "Wird so früh wie möglich dringend empfohlen. Die einzige Einheit, die den Heilungsmechanismus wirklich aktiviert. Sollte mit Priorität maximiert werden.",
   "faqsEn": [
     {
-      "q": "How do you get Combat Medic in World Conqueror 4?",
-      "a": "The unit is event-exclusive — see the obtainability section above for the recurrence window and requirements."
+      "q": "How do you unlock Combat Medic in World Conqueror 4?",
+      "a": "Combat Medic is handed out through limited-time events: login rewards, season pass, or the rotating elite shop. Outside those windows it cannot be acquired — stash 30 elite items for the next opening. Tier S."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Combat Medic's maximum stats at level 12?",
+      "a": "At level 12, Combat Medic peaks at 50 attack, 28 defense, 500 HP, 11 movement and range 1. Elite infantry profile — comfortable HP and attack at the level of a late-game unit."
+    },
+    {
+      "q": "Which milestone perks does Combat Medic unlock?",
+      "a": "Milestone tiers: level 12 \"Logistical support\", level 12 \"Critical protection\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading Combat Medic to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Combat Medic: ~78k industry, ~199.6k gold, 780 elite items, 45 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Combat Medic?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Favor Infantry-specialty generals (Zhukov, MacArthur, Manstein, Yamashita) with Infantry Charge, Supremacy or Morale skills. They directly raise infantry damage and close-combat survival."
+    },
+    {
+      "q": "In which scenarios is Combat Medic most useful?",
+      "a": "Build around it to hold urban control points and PvE missions swamped with enemy infantry. High HP lets it soak several pressure turns without being pushed off the front."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Combat Medic in World Conqueror 4?",
-      "a": "Die Einheit ist Event-exklusiv — Wiederholungszyklus und Anforderungen findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Combat Medic in World Conqueror 4 frei?",
+      "a": "Combat Medic wird über zeitlich begrenzte Events vergeben: Login-Belohnungen, Saisonpass oder rotierender Elite-Shop. Außerhalb dieser Fenster nicht erhältlich — halten Sie 30 Elite-Items für die nächste Gelegenheit bereit. Stufe S."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Combat Medic auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Combat Medic 50 Angriff, 28 Verteidigung, 500 HP, 11 Bewegung und Reichweite 1. Elite-Infanterie-Profil — bequeme HP und Angriffswert auf Late-Game-Niveau."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Combat Medic?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Combat Medic frei?",
+      "a": "Meilenstein-Stufen: Stufe 12 „Logistische Unterstützung“, Stufe 12 „Kritischer Schutz“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Combat Medic auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Combat Medic: ~78k Industrie, ~199.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Combat Medic?",
+      "a": "Setzen Sie auf Infanterie-Spezialisten (Zhukov, MacArthur, Manstein, Yamashita) mit Infanterie-Angriff, Überlegenheit oder Moral-Skills. Sie erhöhen Infanterieschaden und Nahkampf-Überlebensfähigkeit direkt."
+    },
+    {
+      "q": "In welchen Szenarien ist Combat Medic am nützlichsten?",
+      "a": "Um sie herum aufbauen, um städtische Kontrollpunkte und PvE-Missionen mit viel feindlicher Infanterie zu halten. Hohe HP absorbieren mehrere Druckrunden, ohne die Front zu verlieren."
     }
   ]
 }

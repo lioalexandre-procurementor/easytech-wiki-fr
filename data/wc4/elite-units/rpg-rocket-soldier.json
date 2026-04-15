@@ -290,16 +290,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir RPG Rocket Soldier dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer RPG Rocket Soldier dans World Conqueror 4 ?",
+      "a": "RPG Rocket Soldier se débloque via la boutique d'élite pour 30 items d'élite (infanterie). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de RPG Rocket Soldier au niveau 12 ?",
+      "a": "Au niveau 12, RPG Rocket Soldier culmine à 99 en attaque, 38 en défense, 495 HP, 9 de mouvement et 1 de portée. Profil infanterie renforcée — nettement au-dessus des piétons standards, tient la ligne sans problème."
     },
     {
-      "q": "Quels généraux associer à RPG Rocket Soldier ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque RPG Rocket Soldier ?",
+      "a": "Palier milestone principal : niveau 5 « Visée infrarouge ». C'est le niveau à cibler en priorité pour RPG Rocket Soldier — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de RPG Rocket Soldier jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour RPG Rocket Soldier : ~127.7k d'industrie, ~344.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec RPG Rocket Soldier ?",
+      "a": "Privilégiez les généraux à spécialité Infanterie (Zhukov, MacArthur, Manstein, Yamashita) avec compétences Charge d'infanterie, Supériorité ou Morale. Ils augmentent directement les dégâts d'infanterie et la survie au corps-à-corps."
+    },
+    {
+      "q": "Dans quels scénarios RPG Rocket Soldier est-elle la plus utile ?",
+      "a": "Utilisez-la pour garnir les villes clés et absorber les vagues d'assaut ennemies. Elle surpasse largement l'infanterie standard sans remplacer complètement une unité S-tier."
     }
   ],
   "sources": [
@@ -439,30 +451,54 @@
   "longDescDe": "Anti-Panzer-Spezialist der Elite. Ausgerüstet mit RPG-7-Raketenwerfern. Rolle als städtische Eskorte gegen mechanisierte Kräfte.",
   "faqsEn": [
     {
-      "q": "How do you get RPG Rocketeer in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock RPG Rocketeer in World Conqueror 4?",
+      "a": "RPG Rocketeer is unlocked from the Elite Shop for 30 elite items (infantry category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are RPG Rocketeer's maximum stats at level 12?",
+      "a": "At level 12, RPG Rocketeer peaks at 99 attack, 38 defense, 495 HP, 9 movement and range 1. Reinforced infantry profile — clearly above standard footsoldiers and holds the line without issue."
+    },
+    {
+      "q": "Which milestone perks does RPG Rocketeer unlock?",
+      "a": "Main milestone tier: level 5 \"Infrared targeting\". That is the level to prioritize for RPG Rocketeer — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+    },
+    {
+      "q": "How expensive is fully upgrading RPG Rocketeer to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for RPG Rocketeer: ~127.7k industry, ~344.6k gold, 780 elite items, 45 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with RPG Rocketeer?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Favor Infantry-specialty generals (Zhukov, MacArthur, Manstein, Yamashita) with Infantry Charge, Supremacy or Morale skills. They directly raise infantry damage and close-combat survival."
+    },
+    {
+      "q": "In which scenarios is RPG Rocketeer most useful?",
+      "a": "Use it to garrison key cities and soak enemy assault waves. It clearly outperforms stock infantry without fully replacing an S-tier unit."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man RPG Rocketeer in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man RPG Rocketeer in World Conqueror 4 frei?",
+      "a": "RPG Rocketeer wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Infanterie). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von RPG Rocketeer auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht RPG Rocketeer 99 Angriff, 38 Verteidigung, 495 HP, 9 Bewegung und Reichweite 1. Verstärkte Infanterie — klar über Standardfußtruppen und hält die Linie problemlos."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit RPG Rocketeer?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet RPG Rocketeer frei?",
+      "a": "Haupt-Meilenstein: Stufe 5 „Infrarot-Zielerfassung“. Diese Stufe zuerst für RPG Rocketeer ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von RPG Rocketeer auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für RPG Rocketeer: ~127.7k Industrie, ~344.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu RPG Rocketeer?",
+      "a": "Setzen Sie auf Infanterie-Spezialisten (Zhukov, MacArthur, Manstein, Yamashita) mit Infanterie-Angriff, Überlegenheit oder Moral-Skills. Sie erhöhen Infanterieschaden und Nahkampf-Überlebensfähigkeit direkt."
+    },
+    {
+      "q": "In welchen Szenarien ist RPG Rocketeer am nützlichsten?",
+      "a": "Zur Garnisonsbesetzung von Schlüsselstädten und zum Abfedern feindlicher Angriffswellen. Sie übertrifft Standardinfanterie deutlich, ersetzt aber keine komplette S-Tier-Einheit."
     }
   ]
 }

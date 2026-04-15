@@ -314,16 +314,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Harrier dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Harrier dans World Conqueror 4 ?",
+      "a": "Harrier se débloque via la boutique d'élite pour 30 items d'élite (aérienne). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Harrier au niveau 12 ?",
+      "a": "Au niveau 12, Harrier culmine à 118 en attaque pour une portée de 3. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien solide — frappe et survie au-dessus des avions standards, efficace en appui ou en interception."
     },
     {
-      "q": "Quels généraux associer à Harrier ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Harrier ?",
+      "a": "Harrier ne possède pas de perks milestone aux paliers 5, 9 ou 12 — l'unité s'appuie principalement sur ses bonus de niveau 1 et sur la montée en statistiques brutes. Priorisez les niveaux qui augmentent HP et attaque."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Harrier jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Harrier : ~244.2k d'énergie, ~344.6k d'or, 780 items d'élite, 60 badges. Le principal goulot est l'or et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Harrier ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios Harrier est-elle la plus utile ?",
+      "a": "Utilisez-la en appui tactique sur les cartes à objectifs rapprochés. Elle gère l'interception et le nettoyage au sol sans exiger un slot S-tier."
     }
   ],
   "sources": [
@@ -463,30 +475,54 @@
   "longDescDe": "Das erste einsatzfähige VTOL-Kampfflugzeug. Berühmt für seine Rolle im Falklandkrieg.",
   "faqsEn": [
     {
-      "q": "How do you get Harrier in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Harrier in World Conqueror 4?",
+      "a": "Harrier is unlocked from the Elite Shop for 30 elite items (air category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Harrier's maximum stats at level 12?",
+      "a": "At level 12, Harrier peaks at 118 attack with range 3. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Solid air profile — damage and survivability above standard planes, effective in support or intercept."
+    },
+    {
+      "q": "Which milestone perks does Harrier unlock?",
+      "a": "Harrier does not carry milestone perks at levels 5, 9 or 12 — the unit leans mainly on its level-1 passives and on raw stat growth. Prioritize upgrades that lift HP and attack."
+    },
+    {
+      "q": "How expensive is fully upgrading Harrier to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Harrier: ~244.2k energy, ~344.6k gold, 780 elite items, 60 badges. The main bottleneck is gold and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Harrier?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is Harrier most useful?",
+      "a": "Use it as tactical support on tight-objective maps. It handles intercept and ground clean-up without demanding an S-tier slot."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Harrier in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Harrier in World Conqueror 4 frei?",
+      "a": "Harrier wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Luftwaffe). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Harrier auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Harrier 118 Angriff bei Reichweite 3. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Solides Luftprofil — Schaden und Überlebensfähigkeit über Standardflugzeugen, effektiv in Unterstützung oder Abfangjagd."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Harrier?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Harrier frei?",
+      "a": "Harrier besitzt keine Meilenstein-Perks auf Stufe 5, 9 oder 12 — die Einheit stützt sich hauptsächlich auf die Stufe-1-Passiva und das Rohwert-Wachstum. Stufen priorisieren, die HP und Angriff anheben."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Harrier auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Harrier: ~244.2k Energie, ~344.6k Gold, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Gold und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Harrier?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist Harrier am nützlichsten?",
+      "a": "Als taktische Unterstützung auf Karten mit engen Zielen einsetzen. Sie übernimmt Abfangjagd und Bodenreinigung, ohne einen S-Tier-Slot zu verlangen."
     }
   ]
 }

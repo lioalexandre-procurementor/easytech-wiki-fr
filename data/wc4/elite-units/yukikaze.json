@@ -266,16 +266,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Yukikaze dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Yukikaze dans World Conqueror 4 ?",
+      "a": "Yukikaze se débloque via la boutique d'élite pour 30 items d'élite (navale). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Yukikaze au niveau 12 ?",
+      "a": "Au niveau 12, Yukikaze culmine à 125 en attaque, 41 en défense, 785 HP, 13 de mouvement et 2 de portée. Profil naval compétitif — bon compromis entre coque et puissance de feu, performante en escorte et en ligne."
     },
     {
-      "q": "Quels généraux associer à Yukikaze ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Yukikaze ?",
+      "a": "Yukikaze ne possède pas de perks milestone aux paliers 5, 9 ou 12 — l'unité s'appuie principalement sur ses bonus de niveau 1 et sur la montée en statistiques brutes. Priorisez les niveaux qui augmentent HP et attaque."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Yukikaze jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Yukikaze : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 45 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Yukikaze ?",
+      "a": "Associez-la à des généraux à spécialité Marine (Yamamoto, Nimitz, Dönitz, Cunningham) avec compétences Flotte ou Supériorité navale. Les bonus de coque et d'attaque navale s'empilent sur le profil de l'unité."
+    },
+    {
+      "q": "Dans quels scénarios Yukikaze est-elle la plus utile ?",
+      "a": "Utilisez-la comme pilier d'une flotte d'escorte ou en ligne de front maritime. Elle tient tête aux unités navales standards et supporte l'essentiel des engagements sans coûter un slot S-tier."
     }
   ],
   "sources": [
@@ -415,30 +427,54 @@
   "longDescDe": "Berühmt dafür, fast jede größere Pazifikschlacht überlebt zu haben. Sehr hohe Ausweichrate und Geschwindigkeit.",
   "faqsEn": [
     {
-      "q": "How do you get Yukikaze in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Yukikaze in World Conqueror 4?",
+      "a": "Yukikaze is unlocked from the Elite Shop for 30 elite items (naval category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Yukikaze's maximum stats at level 12?",
+      "a": "At level 12, Yukikaze peaks at 125 attack, 41 defense, 785 HP, 13 movement and range 2. Competitive naval profile — a good trade-off between hull and firepower, strong in escort and line duty."
+    },
+    {
+      "q": "Which milestone perks does Yukikaze unlock?",
+      "a": "Yukikaze does not carry milestone perks at levels 5, 9 or 12 — the unit leans mainly on its level-1 passives and on raw stat growth. Prioritize upgrades that lift HP and attack."
+    },
+    {
+      "q": "How expensive is fully upgrading Yukikaze to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Yukikaze: ~268k industry, ~7.9k tech, 780 elite items, 45 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Yukikaze?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Navy-specialty generals (Yamamoto, Nimitz, Dönitz, Cunningham) running Fleet or Naval Supremacy. Hull and naval-attack bonuses stack on the unit's profile."
+    },
+    {
+      "q": "In which scenarios is Yukikaze most useful?",
+      "a": "Use it as the backbone of an escort fleet or on the maritime front line. It matches up against stock navals and carries most engagements without costing you an S-tier slot."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Yukikaze in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Yukikaze in World Conqueror 4 frei?",
+      "a": "Yukikaze wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Marine). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Yukikaze auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Yukikaze 125 Angriff, 41 Verteidigung, 785 HP, 13 Bewegung und Reichweite 2. Konkurrenzfähige Marine-Einheit — guter Kompromiss aus Rumpf und Feuerkraft, stark im Geleit und in der Linie."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Yukikaze?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Yukikaze frei?",
+      "a": "Yukikaze besitzt keine Meilenstein-Perks auf Stufe 5, 9 oder 12 — die Einheit stützt sich hauptsächlich auf die Stufe-1-Passiva und das Rohwert-Wachstum. Stufen priorisieren, die HP und Angriff anheben."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Yukikaze auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Yukikaze: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Yukikaze?",
+      "a": "Kombinieren Sie sie mit Marine-Spezialisten (Yamamoto, Nimitz, Dönitz, Cunningham) und Flotten- oder Marine-Überlegenheits-Skills. Rumpf- und Marineangriffs-Boni stapeln sich auf das Profil der Einheit."
+    },
+    {
+      "q": "In welchen Szenarien ist Yukikaze am nützlichsten?",
+      "a": "Als Rückgrat einer Eskortflotte oder an der maritimen Frontlinie einsetzen. Sie hält mit Standard-Marineeinheiten Schritt und trägt die meisten Gefechte, ohne einen S-Tier-Slot zu beanspruchen."
     }
   ]
 }

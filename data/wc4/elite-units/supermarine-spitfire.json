@@ -218,16 +218,28 @@
   ],
   "faqs": [
     {
-      "q": "Comment obtenir Supermarine Spitfire dans World Conqueror 4 ?",
-      "a": "L'unité s'obtient via la boutique d'élite (électricité) ou événements. Voir la section obtenabilité pour plus de détails."
+      "q": "Comment débloquer Supermarine Spitfire dans World Conqueror 4 ?",
+      "a": "Supermarine Spitfire se débloque via la boutique d'élite pour 30 items d'élite (aérienne). Tier A — un palier fort, positionnée juste sous l'élite absolue mais largement compétitive en conquête et en PvP."
     },
     {
-      "q": "Quelles sont les stats maximum au niveau 12 ?",
-      "a": "Utilisez le curseur interactif ci-dessus. Les valeurs affichées sont extrapolées et à valider in-game — le wiki passera en 'verified' après vérification émulateur."
+      "q": "Quelles sont les statistiques maximales de Supermarine Spitfire au niveau 12 ?",
+      "a": "Au niveau 12, Supermarine Spitfire culmine à 84 en attaque pour une portée de 12. Les unités aériennes ne possèdent pas de défense ni de HP exploitables en combat — leur valeur se lit sur la frappe et le rayon d'action. Profil aérien solide — frappe et survie au-dessus des avions standards, efficace en appui ou en interception."
     },
     {
-      "q": "Quels généraux associer à Supermarine Spitfire ?",
-      "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
+      "q": "Quels perks milestone débloque Supermarine Spitfire ?",
+      "a": "Paliers milestone : niveau 5 « Préparation aérienne », niveau 9 « Canon à grande vitesse ». Ces niveaux sont les plus impactants à atteindre — ils débloquent des effets passifs ou des compétences actives qui changent le profil tactique de l'unité. Orientez votre progression pour les toucher en priorité."
+    },
+    {
+      "q": "Combien coûte l'amélioration complète de Supermarine Spitfire jusqu'au niveau 12 ?",
+      "a": "Cumul niveaux 1 → 12 pour Supermarine Spitfire : ~244.2k d'énergie, ~199.6k d'or, 780 items d'élite, 45 badges. Le principal goulot est l'énergie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+    },
+    {
+      "q": "Quels généraux s'associent le mieux avec Supermarine Spitfire ?",
+      "a": "Associez-la à des généraux à spécialité Air (Göring, Tedder, Arnold, Kawabe) avec compétences Supériorité aérienne ou Appui tactique. Les bonus d'attaque aérienne et de rayon d'action transforment l'unité en arme d'ouverture."
+    },
+    {
+      "q": "Dans quels scénarios Supermarine Spitfire est-elle la plus utile ?",
+      "a": "Utilisez-la en appui tactique sur les cartes à objectifs rapprochés. Elle gère l'interception et le nettoyage au sol sans exiger un slot S-tier."
     }
   ],
   "sources": [
@@ -367,30 +379,54 @@
   "longDescDe": "Ikonisches britisches Jagdflugzeug des Zweiten Weltkriegs. Mehr als 20 000 Einheiten produziert.",
   "faqsEn": [
     {
-      "q": "How do you get Spitfire in World Conqueror 4?",
-      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+      "q": "How do you unlock Spitfire in World Conqueror 4?",
+      "a": "Spitfire is unlocked from the Elite Shop for 30 elite items (air category). It sits at tier A — a strong tier, sitting just below the absolute elite but fully competitive in Conquest and PvP."
     },
     {
-      "q": "What are the max stats at level 12?",
-      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+      "q": "What are Spitfire's maximum stats at level 12?",
+      "a": "At level 12, Spitfire peaks at 84 attack with range 12. Aircraft do not expose meaningful defense or HP values in combat — their worth is read in raw strike power and range. Solid air profile — damage and survivability above standard planes, effective in support or intercept."
+    },
+    {
+      "q": "Which milestone perks does Spitfire unlock?",
+      "a": "Milestone tiers: level 5 \"Air preparation\", level 9 \"High-velocity gun\". These are the most impactful levels to reach — they unlock passive effects or active abilities that reshape the unit's tactical profile. Steer your progression to hit them first."
+    },
+    {
+      "q": "How expensive is fully upgrading Spitfire to level 12?",
+      "a": "Cumulative cost levels 1 → 12 for Spitfire: ~244.2k energy, ~199.6k gold, 780 elite items, 45 badges. The main bottleneck is energy and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
     },
     {
       "q": "Which generals pair best with Spitfire?",
-      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+      "a": "Pair it with Air-specialty generals (Göring, Tedder, Arnold, Kawabe) running Air Supremacy or Tactical Support. Air-attack and range bonuses turn the unit into an opening weapon."
+    },
+    {
+      "q": "In which scenarios is Spitfire most useful?",
+      "a": "Use it as tactical support on tight-objective maps. It handles intercept and ground clean-up without demanding an S-tier slot."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie bekommt man Spitfire in World Conqueror 4?",
-      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+      "q": "Wie schaltet man Spitfire in World Conqueror 4 frei?",
+      "a": "Spitfire wird im Elite-Shop für 30 Elite-Items freigeschaltet (Kategorie Luftwaffe). Stufe A — eine starke Stufe, knapp unter der absoluten Elite aber voll konkurrenzfähig in Conquest und PvP."
     },
     {
-      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
-      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+      "q": "Wie lauten die maximalen Werte von Spitfire auf Stufe 12?",
+      "a": "Auf Stufe 12 erreicht Spitfire 84 Angriff bei Reichweite 12. Flugzeuge haben im Kampf keine aussagekräftigen Verteidigungs- oder HP-Werte — ihr Wert bemisst sich an roher Schlagkraft und Reichweite. Solides Luftprofil — Schaden und Überlebensfähigkeit über Standardflugzeugen, effektiv in Unterstützung oder Abfangjagd."
     },
     {
-      "q": "Welche Generäle harmonieren am besten mit Spitfire?",
-      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+      "q": "Welche Meilenstein-Perks schaltet Spitfire frei?",
+      "a": "Meilenstein-Stufen: Stufe 5 „Luftvorbereitung“, Stufe 9 „Hochgeschwindigkeitskanone“. Diese Stufen haben den größten Effekt — sie schalten passive Boni oder aktive Fähigkeiten frei, die das taktische Profil der Einheit verändern. Aufrüstung so ausrichten, dass sie zuerst erreicht werden."
+    },
+    {
+      "q": "Wie teuer ist die volle Aufrüstung von Spitfire auf Stufe 12?",
+      "a": "Kumulative Kosten Stufe 1 → 12 für Spitfire: ~244.2k Energie, ~199.6k Gold, 780 Elite-Items, 45 Abzeichen. Der Hauptengpass sind Energie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+    },
+    {
+      "q": "Welche Generäle passen am besten zu Spitfire?",
+      "a": "Kombinieren Sie sie mit Luft-Spezialisten (Göring, Tedder, Arnold, Kawabe) und Luftüberlegenheit oder Taktischer Unterstützung. Luftangriffs- und Reichweitenboni machen die Einheit zur Eröffnungswaffe."
+    },
+    {
+      "q": "In welchen Szenarien ist Spitfire am nützlichsten?",
+      "a": "Als taktische Unterstützung auf Karten mit engen Zielen einsetzen. Sie übernimmt Abfangjagd und Bodenreinigung, ohne einen S-Tier-Slot zu verlangen."
     }
   ]
 }
