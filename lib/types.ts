@@ -379,3 +379,23 @@ export interface TrainedGeneralView {
   /** Human-readable summary of how the trained build differs from base. */
   summary: string;
 }
+
+// ─── COMPARATOR ───────────────────────────────────────────────────────
+
+export type DiffClass = "best" | "worst" | "neutral";
+
+/** One normalized row in a comparator table. */
+export interface ComparableRow {
+  /** Stable identifier for React key + URL param. */
+  id: string;
+  /** Locale-agnostic display name. */
+  name: string;
+  /** Locale-FR display name. */
+  nameFr: string;
+  /** Category / faction / tier for grouping. */
+  category?: string;
+  /** Stats map: label → numeric value, comparable across rows. */
+  stats: Record<string, number | null>;
+  /** Link to the detail page. */
+  href: { fr: string; en: string };
+}
