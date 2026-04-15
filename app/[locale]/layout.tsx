@@ -4,6 +4,7 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from "next-in
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
+import ConsentBanner from "@/components/ConsentBanner";
 import "../globals.css";
 
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
@@ -151,7 +152,10 @@ export default async function LocaleLayout({
         )}
       </head>
       <body>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          {children}
+          <ConsentBanner />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
