@@ -51,7 +51,6 @@ export interface UnitData {
   recommendedGenerals: string[];
   levelingPriority: string[];
   faqs: { q: string; a: string }[];
-  verified: boolean;   // true = sourced from NamuWiki/Fandom; false = extrapolated
   sources?: string[];
   /** Base armyId from the APK (lvl-1 entry). Present when data was backfilled. */
   armyId?: number | null;
@@ -223,7 +222,6 @@ export interface GeneralData {
   acquisition: Acquisition;
   bonuses: { target: string; value: string }[];
   recommendedUnits: string[];
-  verified: boolean;
   sources?: string[];
   // ── Real-data additions (from wc4_export) ──
   /** Canonical English name from game data (EName field in APK). Stable across locales. */

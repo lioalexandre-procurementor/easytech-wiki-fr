@@ -140,21 +140,11 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                 </Tag>
                 <Tag>📊 {isFr ? "Niveaux 1-12" : "Levels 1-12"}</Tag>
                 <Tag>🎁 {obtainabilityLabel(unit.obtainability, isFr)}</Tag>
-                {!unit.verified && <Tag>{t("general.dataUnverified")}</Tag>}
               </div>
               <p className="text-ink text-sm leading-relaxed">{unit.longDesc}</p>
             </div>
           </div>
 
-          {/* UNVERIFIED DISCLAIMER */}
-          {!unit.verified && (
-            <div className="mb-6 p-4 bg-amber-500/10 border border-amber-500/30 rounded-lg text-amber-200 text-sm">
-              ⚠️ <strong>{isFr ? "Données en cours de vérification." : "Data currently being verified."}</strong>{" "}
-              {isFr
-                ? "Les stats et perks de cette fiche sont extrapolés depuis les recherches publiques (NamuWiki, Fandom WC4). Une phase de vérification in-game est en cours — la fiche passera en « verified » après validation à l'émulateur."
-                : "The stats and perks on this entry are extrapolated from public research (NamuWiki, Fandom WC4). An in-game verification pass is in progress — the entry will be marked « verified » after emulator validation."}
-            </div>
-          )}
 
           {/* INTERACTIVE BLOCK */}
           <div id="stats"></div>

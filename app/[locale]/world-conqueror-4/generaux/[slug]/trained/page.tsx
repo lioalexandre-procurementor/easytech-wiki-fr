@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { StatsGrid } from "@/components/general/StatsGrid";
 import { buildTrainedView } from "@/lib/general-trained";
 import { getAllGeneralSlugs, getGeneral, getSkill } from "@/lib/units";
+import { splitGeneralName } from "@/lib/general-name";
 import { locales, type Locale } from "@/src/i18n/config";
 import type { Metadata } from "next";
 
@@ -78,6 +79,7 @@ export default async function TrainedGeneralPage({
   const t = await getTranslations();
   const name = g.nameEn || g.name;
   const isFr = locale === "fr";
+  const { family, given } = splitGeneralName(name);
 
   const nameForSkill = (s: { name: string; nameEn?: string; skillSlug?: string }) => {
     const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
@@ -142,8 +144,10 @@ export default async function TrainedGeneralPage({
             </div>
           )}
           <div>
-            <h1 className="text-2xl font-bold text-gold2">
-              {name} — {t("general.maxedMode")}
+            <h1 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 text-gold2">
+              <span className="text-4xl md:text-5xl font-black uppercase tracking-wide">{family}</span>
+              {given && <span className="text-lg md:text-xl font-semibold text-dim">{given}</span>}
+              <span className="text-lg md:text-xl italic text-dim">— {t("general.maxedMode")}</span>
             </h1>
             <p className="text-muted mt-2">{t("trainedPage.intro", { name })}</p>
             <div className="flex flex-wrap gap-2 mt-4">

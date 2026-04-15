@@ -27,6 +27,7 @@ import type {
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { StatsGrid } from "@/components/general/StatsGrid";
 import { locales } from "@/src/i18n/config";
+import { splitGeneralName } from "@/lib/general-name";
 
 export function generateStaticParams() {
   const slugs = getAllGeneralSlugs();
@@ -131,6 +132,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
 
   const replaceableCount = g.skills.filter((s) => s.replaceable).length;
   const slotRecommendations = buildSlotRecommendationMap(g);
+  const { family, given } = splitGeneralName(g.name);
 
   return (
     <>
@@ -230,7 +232,16 @@ export default async function GeneralPage({ params }: { params: { locale: string
               </div>
             </div>
             <div>
-              <h1 className="text-3xl text-gold2 font-extrabold mb-1">{g.name}</h1>
+              <h1 className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
+                <span className="text-4xl md:text-5xl font-black uppercase tracking-wide text-gold2">
+                  {family}
+                </span>
+                {given && (
+                  <span className="text-lg md:text-xl font-semibold text-dim tracking-wide">
+                    {given}
+                  </span>
+                )}
+              </h1>
               <div className="text-dim text-sm mb-4">{g.shortDesc}</div>
               <div className="flex flex-wrap gap-2 mb-4">
                 <Tag accent>{m.icon} {t("general.generalCategoryTag", { label: m.label })}</Tag>
@@ -247,7 +258,6 @@ export default async function GeneralPage({ params }: { params: { locale: string
                 <Tag scorpion={scorpion}>
                   {scorpion ? "🦂" : "🌍"} {faction.label}
                 </Tag>
-                {!g.verified && <Tag>{t("general.dataUnverified")}</Tag>}
               </div>
               <p className="text-ink text-sm leading-relaxed">{g.longDesc}</p>
             </div>

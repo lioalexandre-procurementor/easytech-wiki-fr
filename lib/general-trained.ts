@@ -46,8 +46,12 @@ export function buildTrainedView(g: GeneralData): TrainedGeneralView {
   if (g.attributes) {
     for (const [key, v] of Object.entries(g.attributes)) {
       const k = key as keyof GeneralAttributes;
-      if (v) attributes[k] = { start: v.max, max: v.max };
-      else attributes[k] = v as null;
+      if (v) {
+        const ceiling = Math.max(v.start, v.max);
+        attributes[k] = { start: ceiling, max: ceiling };
+      } else {
+        attributes[k] = v as null;
+      }
     }
   }
 
@@ -82,8 +86,12 @@ export function buildPremiumTrainingView(g: GeneralData): TrainedGeneralView | n
   if (g.attributes) {
     for (const [key, v] of Object.entries(g.attributes)) {
       const k = key as keyof GeneralAttributes;
-      if (v) attributes[k] = { start: v.max, max: v.max };
-      else attributes[k] = v as null;
+      if (v) {
+        const ceiling = Math.max(v.start, v.max);
+        attributes[k] = { start: ceiling, max: ceiling };
+      } else {
+        attributes[k] = v as null;
+      }
     }
   }
 
