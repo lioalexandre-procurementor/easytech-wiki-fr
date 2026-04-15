@@ -1,7 +1,8 @@
 import { Link } from "@/src/i18n/navigation";
 import type { Tech } from "@/lib/types";
+import type { Locale } from "@/src/i18n/config";
 
-export function TechCard({ tech, locale }: { tech: Tech; locale: "fr" | "en" }) {
+export function TechCard({ tech, locale }: { tech: Tech; locale: Locale }) {
   const name = locale === "fr" ? tech.nameFr || tech.nameEn : tech.nameEn;
   return (
     <Link

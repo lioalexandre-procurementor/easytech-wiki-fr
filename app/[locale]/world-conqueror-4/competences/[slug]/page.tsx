@@ -33,9 +33,12 @@ export async function generateMetadata({
   const isFr = locale === "fr";
   const displayName = (isFr && s.nameFr) || s.name;
   const displayDesc = (isFr && s.descriptionTemplateFr) || s.descriptionTemplate;
-  const title = isFr
-    ? `${displayName} (WC4) — Effet, progression L1→L5 & généraux`
-    : `${displayName} (WC4) — Effect, L1→L5 progression & generals`;
+  const titles: Record<string, string> = {
+    fr: `${displayName} (WC4) — Effet, progression L1→L5 & généraux`,
+    en: `${displayName} (WC4) — Effect, L1→L5 progression & generals`,
+    de: `${displayName} (WC4) — Effekt, Progression L1→L5 & Generäle`,
+  };
+  const title = titles[locale] ?? titles.en;
   const description = `${displayDesc} Maximum level ${s.maxLevel}, series "${s.seriesLabel}".`;
   return {
     title,
@@ -65,6 +68,8 @@ export default async function SkillDetailPage({
   const skill = getSkill(params.slug);
   if (!skill) notFound();
 
+  const tL = (fr: string, en: string, de: string): string =>
+    params.locale === "fr" ? fr : params.locale === "de" ? de : en;
   const isFr = params.locale === "fr";
   const displayName = (isFr && skill.nameFr) || skill.name;
   const displayDesc =

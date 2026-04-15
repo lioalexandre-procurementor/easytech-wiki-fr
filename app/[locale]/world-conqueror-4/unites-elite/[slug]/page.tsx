@@ -22,21 +22,28 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: { params: { locale: string; slug: string } }): Metadata {
   const u = getEliteUnit(params.slug);
   if (!u) return { title: "404" };
-  const isFr = params.locale === "fr";
+  const { locale } = params;
+  const titleByLocale: Record<string, string> = {
+    fr: `${u.name} (WC4) — Stats, perks niveau 1-12 & généraux | Wiki FR`,
+    en: `${u.name} (WC4) — Stats, level 1-12 perks & generals | Wiki`,
+    de: `${u.name} (WC4) — Werte, Stufen 1–12 Boni & Generäle | Wiki DE`,
+  };
+  const descByLocale: Record<string, string> = {
+    fr: `Fiche complète du ${u.name} dans World Conqueror 4 : ${u.shortDesc} Stats détaillées, perks niveau par niveau, généraux recommandés.`,
+    en: `Complete profile of ${u.name} in World Conqueror 4: ${u.shortDesc} Detailed stats, per-level perks, recommended generals.`,
+    de: `Komplettes Profil der ${u.name} in World Conqueror 4: ${u.shortDesc} Detaillierte Werte, Boni pro Stufe, empfohlene Generäle.`,
+  };
   return {
-    title: isFr
-      ? `${u.name} (WC4) — Stats, perks niveau 1-12 & généraux | Wiki FR`
-      : `${u.name} (WC4) — Stats, level 1-12 perks & generals | Wiki`,
-    description: isFr
-      ? `Fiche complète du ${u.name} dans World Conqueror 4 : ${u.shortDesc} Stats détaillées, perks niveau par niveau, généraux recommandés.`
-      : `Complete profile of ${u.name} in World Conqueror 4: ${u.shortDesc} Detailed stats, per-level perks, recommended generals.`,
+    title: titleByLocale[locale] ?? titleByLocale.en,
+    description: descByLocale[locale] ?? descByLocale.en,
   };
 }
 
 export default async function UnitPage({ params }: { params: { locale: string; slug: string } }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
-  const isFr = params.locale === "fr";
+  const tL = (fr: string, en: string, de: string): string =>
+    params.locale === "fr" ? fr : params.locale === "de" ? de : en;
   const unit = getEliteUnit(params.slug);
   if (!unit) notFound();
 
@@ -83,10 +90,10 @@ export default async function UnitPage({ params }: { params: { locale: string; s
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">{t("nav.onThisPage")}</h4>
           <ul className="list-none text-sm">
-            <li><a href="#stats" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{isFr ? "Stats par niveau" : "Per-level stats"}</a></li>
-            <li><a href="#slider" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{isFr ? "Slider niveau 1-12" : "Level 1-12 slider"}</a></li>
-            <li><a href="#perks" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{isFr ? "Perks détaillés" : "Detailed perks"}</a></li>
-            <li><a href="#strategy" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{isFr ? "Stratégie" : "Strategy"}</a></li>
+            <li><a href="#stats" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Stats par niveau", "Per-level stats", "Werte pro Stufe")}</a></li>
+            <li><a href="#slider" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Slider niveau 1-12", "Level 1-12 slider", "Stufen 1–12 Slider")}</a></li>
+            <li><a href="#perks" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Perks détaillés", "Detailed perks", "Detaillierte Boni")}</a></li>
+            <li><a href="#strategy" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Stratégie", "Strategy", "Strategie")}</a></li>
             <li><a href="#faq" className="block px-2 py-1 text-dim no-underline hover:text-gold2">FAQ</a></li>
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
@@ -104,7 +111,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">{t("nav.navigationHeading")}</h4>
           <ul className="list-none text-sm">
-            <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{isFr ? "← Toutes les unités d'élite" : "← All elite units"}</Link></li>
+            <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("← Toutes les unités d'élite", "← All elite units", "← Alle Elite-Einheiten")}</Link></li>
             {isScorpion && (
               <li><Link href="/world-conqueror-4/empire-du-scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 {t("nav.scorpion")}</Link></li>
             )}
@@ -139,8 +146,8 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                 <Tag scorpion={isScorpion}>
                   {isScorpion ? "🦂" : "🌍"} {factionMeta.label}
                 </Tag>
-                <Tag>📊 {isFr ? "Niveaux 1-12" : "Levels 1-12"}</Tag>
-                <Tag>🎁 {obtainabilityLabel(unit.obtainability, isFr)}</Tag>
+                <Tag>📊 {tL("Niveaux 1-12", "Levels 1-12", "Stufen 1–12")}</Tag>
+                <Tag>🎁 {obtainabilityLabel(unit.obtainability, params.locale)}</Tag>
               </div>
               <p className="text-ink text-sm leading-relaxed">{unit.longDesc}</p>
             </div>
@@ -157,11 +164,11 @@ export default async function UnitPage({ params }: { params: { locale: string; s
 
           {/* STRATEGY */}
           <div id="strategy" className="bg-panel border border-border rounded-lg p-6 mb-6">
-            <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">⚔️ {isFr ? "Stratégie et appariements" : "Strategy & pairings"}</h3>
+            <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">⚔️ {tL("Stratégie et appariements", "Strategy & pairings", "Strategie und Paarungen")}</h3>
             <div className="grid md:grid-cols-2 gap-5">
               <div>
-                <h4 className="text-ink font-bold mb-2.5">👨‍✈️ {isFr ? "Généraux recommandés" : "Recommended generals"}</h4>
-                <p className="text-dim text-sm mb-3">{isFr ? "Les généraux les plus efficaces avec cette unité :" : "The most effective generals paired with this unit:"}</p>
+                <h4 className="text-ink font-bold mb-2.5">👨‍✈️ {tL("Généraux recommandés", "Recommended generals", "Empfohlene Generäle")}</h4>
+                <p className="text-dim text-sm mb-3">{tL("Les généraux les plus efficaces avec cette unité :", "The most effective generals paired with this unit:", "Die effektivsten Generäle für diese Einheit:")}</p>
                 <div>
                   {matchedGenerals.length > 0 ? (
                     matchedGenerals.map(g => (
@@ -189,13 +196,13 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                     ))
                   ) : (
                     <Link href="/world-conqueror-4/generaux" className="text-dim text-sm no-underline hover:text-gold2">
-                      {isFr ? "Explorer les généraux du wiki →" : "Browse all generals →"}
+                      {tL("Explorer les généraux du wiki →", "Browse all generals →", "Alle Generäle durchsuchen →")}
                     </Link>
                   )}
                 </div>
               </div>
               <div>
-                <h4 className="text-ink font-bold mb-2.5">📈 {isFr ? "Ordre de leveling recommandé" : "Recommended leveling order"}</h4>
+                <h4 className="text-ink font-bold mb-2.5">📈 {tL("Ordre de leveling recommandé", "Recommended leveling order", "Empfohlene Level-Reihenfolge")}</h4>
                 <ul className="list-none">
                   {unit.levelingPriority.map((step, i) => (
                     <li key={i} className="py-2 border-b border-border last:border-none text-sm text-dim flex gap-2.5">
@@ -211,7 +218,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           {/* RELATED */}
           {sameCat.length > 0 && (
             <>
-              <h2 className="text-xl mb-4 mt-8">{isFr ? `Comparer avec d'autres ${meta.plural.toLowerCase()} d'élite` : `Compare with other elite ${meta.plural.toLowerCase()}`}</h2>
+              <h2 className="text-xl mb-4 mt-8">{tL(`Comparer avec d'autres ${meta.plural.toLowerCase()} d'élite`, `Compare with other elite ${meta.plural.toLowerCase()}`, `Mit anderen Elite-${meta.plural} vergleichen`)}</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {sameCat.map(u => (
                   <Link key={u.slug} href={`/world-conqueror-4/unites-elite/${u.slug}`}
@@ -237,7 +244,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           {/* FAQ */}
           {unit.faqs.length > 0 && (
             <div id="faq" className="bg-panel border border-border rounded-lg p-6 mt-8">
-              <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">❓ {isFr ? "Questions fréquentes" : "Frequently asked questions"}</h3>
+              <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">❓ {tL("Questions fréquentes", "Frequently asked questions", "Häufig gestellte Fragen")}</h3>
               {unit.faqs.map((f, i) => (
                 <div key={i} className="border-b border-border last:border-none py-3.5">
                   <div className="font-bold text-ink mb-1.5 text-sm">{f.q}</div>
@@ -250,7 +257,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           {/* SOURCES */}
           {unit.sources && unit.sources.length > 0 && (
             <div className="text-muted text-xs mt-6">
-              <b>{isFr ? "Sources :" : "Sources:"}</b> {unit.sources.join(" · ")}
+              <b>{tL("Sources :", "Sources:", "Quellen:")}</b> {unit.sources.join(" · ")}
             </div>
           )}
         </main>
@@ -260,17 +267,17 @@ export default async function UnitPage({ params }: { params: { locale: string; s
   );
 }
 
-function obtainabilityLabel(o: string, isFr: boolean): string {
-  if (isFr) {
-    if (o === "free") return "Gratuite";
-    if (o === "event") return "Événement";
-    if (o === "shop") return "Boutique";
-    return "Premium";
-  }
-  if (o === "free") return "Free";
-  if (o === "event") return "Event";
-  if (o === "shop") return "Shop";
-  return "Premium";
+function obtainabilityLabel(o: string, locale: string): string {
+  const labels: Record<string, Record<string, string>> = {
+    fr: { free: "Gratuite", event: "Événement", shop: "Boutique", premium: "Premium" },
+    en: { free: "Free", event: "Event", shop: "Shop", premium: "Premium" },
+    de: { free: "Kostenlos", event: "Event", shop: "Shop", premium: "Premium" },
+  };
+  const dict = labels[locale] ?? labels.en;
+  if (o === "free") return dict.free;
+  if (o === "event") return dict.event;
+  if (o === "shop") return dict.shop;
+  return dict.premium;
 }
 
 function Tag({ children, accent, scorpion }: { children: React.ReactNode; accent?: boolean; scorpion?: boolean }) {

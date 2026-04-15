@@ -8,11 +8,13 @@
   "related": ["getting-started-2026", "first-generals"],
   "title": {
     "fr": "Comment farmer des médailles efficacement",
-    "en": "How to Farm Medals Efficiently"
+    "en": "How to Farm Medals Efficiently",
+    "de": "So farmst du Medaillen effizient"
   },
   "description": {
     "fr": "Guide F2P-friendly pour maximiser le gain de médailles dans WC4 sans dépenser un centime.",
-    "en": "F2P-friendly guide to maximize medal income in WC4 without spending a dime."
+    "en": "F2P-friendly guide to maximize medal income in WC4 without spending a dime.",
+    "de": "F2P-freundlicher Leitfaden, um in WC4 so viele Medaillen wie möglich zu verdienen – ohne einen Cent auszugeben."
   },
   "tldr": {
     "fr": [
@@ -26,11 +28,18 @@
       "Log in daily for the login reward + daily missions.",
       "Participate in seasonal events — best time-to-medal ratio.",
       "Run Conquest mode once a day for the victory bonus."
+    ],
+    "de": [
+      "Schließe jedes Szenario mit S-Rang ab, um die Achievement-Medaillen abzuräumen.",
+      "Logge dich täglich ein für die Login-Belohnung und die Tagesmissionen.",
+      "Nimm an saisonalen Events teil – das beste Zeit-zu-Medaillen-Verhältnis.",
+      "Spiele einmal pro Tag den Eroberungsmodus für den Sieges-Bonus."
     ]
   },
   "body": {
     "fr": "## Sources stables (chaque jour)\n\n- **Connexion quotidienne** : 5 à 50 médailles selon le jour de la série\n- **Missions journalières** : 3 missions = ~30 médailles total\n- **Mode Conquête** : ~50-100 médailles par victoire\n\n## Sources one-shot (à faire une fois)\n\n- **S-rank des scénarios** : ~50 médailles par scénario × 50+ scénarios = jackpot\n- **Achievements de général** : débloquer un général donne 100-300 médailles bonus\n- **Tutoriels** : ~200 médailles total\n\n## Sources événementielles\n\n- **Events saisonniers** (Halloween, Noël, Anniversaire) : 500-2000 médailles cumulables sur la période\n- **Battle Pass** : tier gratuit donne ~600 médailles par saison\n- **Tournois Army Group** : 100-500 médailles selon le classement\n\n## Ce qu'il NE faut PAS faire\n\n- Acheter le pack 100 médailles (mauvais ratio €/médaille)\n- Refaire un scénario S-rank pour gagner des médailles (les médailles d'achievement ne se redonnent pas)\n- Skip les events saisonniers, c'est là que se trouve le vrai farm",
-    "en": "## Stable sources (every day)\n\n- **Daily login**: 5 to 50 medals depending on streak day\n- **Daily missions**: 3 missions = ~30 medals total\n- **Conquest mode**: ~50-100 medals per victory\n\n## One-shot sources (do once)\n\n- **S-rank scenarios**: ~50 medals per scenario × 50+ scenarios = jackpot\n- **General achievements**: unlocking a general gives 100-300 bonus medals\n- **Tutorials**: ~200 medals total\n\n## Event sources\n\n- **Seasonal events** (Halloween, Christmas, Anniversary): 500-2000 cumulative medals over the period\n- **Battle Pass**: free tier gives ~600 medals per season\n- **Army Group tournaments**: 100-500 medals depending on ranking\n\n## What NOT to do\n\n- Buy the 100-medal pack (bad euro/medal ratio)\n- Re-run an S-rank scenario for medals (achievement medals don't regrant)\n- Skip seasonal events — that's where the real farm lives"
+    "en": "## Stable sources (every day)\n\n- **Daily login**: 5 to 50 medals depending on streak day\n- **Daily missions**: 3 missions = ~30 medals total\n- **Conquest mode**: ~50-100 medals per victory\n\n## One-shot sources (do once)\n\n- **S-rank scenarios**: ~50 medals per scenario × 50+ scenarios = jackpot\n- **General achievements**: unlocking a general gives 100-300 bonus medals\n- **Tutorials**: ~200 medals total\n\n## Event sources\n\n- **Seasonal events** (Halloween, Christmas, Anniversary): 500-2000 cumulative medals over the period\n- **Battle Pass**: free tier gives ~600 medals per season\n- **Army Group tournaments**: 100-500 medals depending on ranking\n\n## What NOT to do\n\n- Buy the 100-medal pack (bad euro/medal ratio)\n- Re-run an S-rank scenario for medals (achievement medals don't regrant)\n- Skip seasonal events — that's where the real farm lives",
+    "de": "## Stabile Quellen (jeden Tag)\n\n- **Tägliches Einloggen**: 5 bis 50 Medaillen je nach Login-Streak\n- **Tagesmissionen**: 3 Missionen = ~30 Medaillen insgesamt\n- **Eroberungsmodus**: ~50–100 Medaillen pro Sieg\n\n## Einmalige Quellen (einmal abholen)\n\n- **S-Rang-Szenarien**: ~50 Medaillen pro Szenario × 50+ Szenarien = Jackpot\n- **General-Erfolge**: Einen General freizuschalten bringt 100–300 Bonus-Medaillen\n- **Tutorials**: ~200 Medaillen insgesamt\n\n## Event-Quellen\n\n- **Saisonale Events** (Halloween, Weihnachten, Jubiläum): 500–2000 Medaillen kumulativ pro Event\n- **Battle Pass**: Der kostenlose Tier bringt ~600 Medaillen pro Saison\n- **Army-Group-Turniere**: 100–500 Medaillen je nach Platzierung\n\n## Was du NICHT tun solltest\n\n- Das 100-Medaillen-Pack kaufen (schlechtes Euro/Medaillen-Verhältnis)\n- Ein S-Rang-Szenario nochmal spielen, um Medaillen zu bekommen (Achievement-Medaillen werden nicht erneut vergeben)\n- Saisonale Events überspringen – genau dort liegt das echte Farming"
   },
   "faqs": {
     "fr": [
@@ -43,6 +52,12 @@
       {
         "q": "How many medals can I farm per day playing 30 minutes?",
         "a": "Between 80 and 150 medals with login + missions + 1 conquest. Over a month, that's enough for a Bronze general or half a Silver."
+      }
+    ],
+    "de": [
+      {
+        "q": "Wie viele Medaillen kann ich pro Tag farmen, wenn ich 30 Minuten spiele?",
+        "a": "Zwischen 80 und 150 Medaillen mit Login + Missionen + 1 Eroberung. Über einen Monat reicht das für einen Bronze-General oder die Hälfte eines Silber-Generals."
       }
     ]
   }

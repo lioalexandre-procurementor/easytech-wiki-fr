@@ -354,11 +354,11 @@ export interface UpdateEntry {
   /** Optional source URL (EasyTech announcement, patch notes, etc.). */
   sourceUrl?: string;
   /** Per-locale content. */
-  title: { fr: string; en: string };
+  title: { fr: string; en: string; de: string };
   /** One-line teaser shown on the list page. */
-  summary: { fr: string; en: string };
+  summary: { fr: string; en: string; de: string };
   /** Full markdown body (or plain text with \n\n paragraphs). */
-  body: { fr: string; en: string };
+  body: { fr: string; en: string; de: string };
 }
 
 /**
@@ -464,15 +464,15 @@ export interface Guide {
   readingTimeMinutes: number;
   tags: string[];
   related: string[];
-  /** Both locales in the same file. */
-  title: { fr: string; en: string };
-  description: { fr: string; en: string };
+  /** Per-locale content — all supported site locales. */
+  title: { fr: string; en: string; de: string };
+  description: { fr: string; en: string; de: string };
   /** TL;DR bullets — 3-5. */
-  tldr: { fr: string[]; en: string[] };
+  tldr: { fr: string[]; en: string[]; de: string[] };
   /** Body in minimal markdown (## headings, - lists, > blockquotes, paragraphs). */
-  body: { fr: string; en: string };
+  body: { fr: string; en: string; de: string };
   /** FAQ entries for FAQPage JSON-LD rich snippets. */
-  faqs: { fr: GuideFAQ[]; en: GuideFAQ[] };
+  faqs: { fr: GuideFAQ[]; en: GuideFAQ[]; de: GuideFAQ[] };
 }
 
 /** One normalized row in a comparator table. */
@@ -488,5 +488,5 @@ export interface ComparableRow {
   /** Stats map: label → numeric value, comparable across rows. */
   stats: Record<string, number | null>;
   /** Link to the detail page. */
-  href: { fr: string; en: string };
+  href: { fr: string; en: string; de: string };
 }

@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import GeneralComparatorClient from "@/components/GeneralComparatorClient";
 import { getAllGenerals } from "@/lib/units";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 import type { ComparableRow, GeneralData } from "@/lib/types";
 
@@ -25,10 +26,11 @@ export async function generateMetadata({
       canonical:
         locale === "fr"
           ? "/fr/world-conqueror-4/comparateur/generaux"
-          : "/en/world-conqueror-4/comparator/generals",
+          : `/${locale}/world-conqueror-4/comparator/generals`,
       languages: {
         fr: "/fr/world-conqueror-4/comparateur/generaux",
         en: "/en/world-conqueror-4/comparator/generals",
+        de: "/de/world-conqueror-4/comparator/generals",
         "x-default": "/fr/world-conqueror-4/comparateur/generaux",
       },
     },
@@ -36,7 +38,7 @@ export async function generateMetadata({
       title: t("generalsTitle"),
       description: t("generalsIntro"),
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
     },
     robots: { index: true, follow: true },
   };
@@ -63,6 +65,7 @@ function generalToRow(g: GeneralData): ComparableRow {
     href: {
       fr: `/world-conqueror-4/generaux/${g.slug}`,
       en: `/world-conqueror-4/generals/${g.slug}`,
+      de: `/world-conqueror-4/generals/${g.slug}`,
     },
   };
 }

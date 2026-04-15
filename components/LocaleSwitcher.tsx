@@ -4,8 +4,8 @@ import { usePathname, useRouter } from "@/src/i18n/navigation";
 import { locales, type Locale } from "@/src/i18n/config";
 import { useTransition } from "react";
 
-const FLAG: Record<Locale, string> = { fr: "🇫🇷", en: "🇬🇧" };
-const LABEL: Record<Locale, string> = { fr: "Français", en: "English" };
+const FLAG: Record<Locale, string> = { fr: "🇫🇷", en: "🇬🇧", de: "🇩🇪" };
+const LABEL: Record<Locale, string> = { fr: "Français", en: "English", de: "Deutsch" };
 
 export default function LocaleSwitcher() {
   const t = useTranslations("nav");
@@ -33,8 +33,8 @@ export default function LocaleSwitcher() {
             }}
             className={
               active
-                ? "px-2 py-1 rounded bg-gold/20 text-gold2 cursor-default"
-                : "px-2 py-1 rounded text-dim hover:text-gold2 hover:bg-border/30 transition-colors"
+                ? "px-3 py-2 min-h-[40px] rounded bg-gold/20 text-gold2 cursor-default"
+                : "px-3 py-2 min-h-[40px] rounded text-dim hover:text-gold2 hover:bg-border/30 transition-colors"
             }
             aria-label={LABEL[l]}
             title={LABEL[l]}

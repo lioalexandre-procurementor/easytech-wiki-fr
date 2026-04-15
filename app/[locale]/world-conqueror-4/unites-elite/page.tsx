@@ -13,14 +13,19 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const isFr = locale === "fr";
+  const titleByLocale: Record<string, string> = {
+    fr: "Toutes les unités d'élite de World Conqueror 4 (FR) — Stats & Perks",
+    en: "All Elite Units in World Conqueror 4 — Stats & Perks",
+    de: "Alle Elite-Einheiten in World Conqueror 4 — Werte & Boni",
+  };
+  const descByLocale: Record<string, string> = {
+    fr: "Liste complète des unités d'élite standard de WC4 par catégorie : chars, infanterie, artillerie, marine, aviation. Stats, tier list, perks niveau par niveau.",
+    en: "Full list of WC4 standard elite units by category: armor, infantry, artillery, navy, air force. Stats, tier list, per-level perks.",
+    de: "Komplette Liste der Standard-Elite-Einheiten in WC4 nach Kategorie: Panzer, Infanterie, Artillerie, Marine, Luftwaffe. Werte, Tier-Liste, Boni Stufe für Stufe.",
+  };
   return {
-    title: isFr
-      ? "Toutes les unités d'élite de World Conqueror 4 (FR) — Stats & Perks"
-      : "All Elite Units in World Conqueror 4 — Stats & Perks",
-    description: isFr
-      ? "Liste complète des unités d'élite standard de WC4 par catégorie : chars, infanterie, artillerie, marine, aviation. Stats, tier list, perks niveau par niveau."
-      : "Full list of WC4 standard elite units by category: armor, infantry, artillery, navy, air force. Stats, tier list, per-level perks.",
+    title: titleByLocale[locale] ?? titleByLocale.en,
+    description: descByLocale[locale] ?? descByLocale.en,
   };
 }
 

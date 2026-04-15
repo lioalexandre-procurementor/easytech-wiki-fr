@@ -13,14 +13,19 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const isFr = locale === "fr";
+  const titleByLocale: Record<string, string> = {
+    fr: "World Conqueror 4 — Wiki FR | EasyTech Wiki",
+    en: "World Conqueror 4 — Wiki | EasyTech Wiki",
+    de: "World Conqueror 4 — Wiki DE | EasyTech Wiki",
+  };
+  const descByLocale: Record<string, string> = {
+    fr: "Le guide francophone le plus complet de World Conqueror 4 : unités d'élite, faction Empire du Scorpion, généraux, technologies, scénarios et stratégies.",
+    en: "The most complete English-language guide to World Conqueror 4: elite units, Scorpion Empire faction, generals, technologies, scenarios and strategies.",
+    de: "Der umfassendste deutschsprachige Guide zu World Conqueror 4: Elite-Einheiten, Skorpion-Imperium, Generäle, Technologien, Szenarien und Strategien.",
+  };
   return {
-    title: isFr
-      ? "World Conqueror 4 — Wiki FR | EasyTech Wiki"
-      : "World Conqueror 4 — Wiki | EasyTech Wiki",
-    description: isFr
-      ? "Le guide francophone le plus complet de World Conqueror 4 : unités d'élite, faction Empire du Scorpion, généraux, technologies, scénarios et stratégies."
-      : "The most complete English-language guide to World Conqueror 4: elite units, Scorpion Empire faction, generals, technologies, scenarios and strategies.",
+    title: titleByLocale[locale] ?? titleByLocale.en,
+    description: descByLocale[locale] ?? descByLocale.en,
   };
 }
 

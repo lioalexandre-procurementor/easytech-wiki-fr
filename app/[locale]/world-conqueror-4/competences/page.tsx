@@ -13,14 +13,19 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const isFr = locale === "fr";
+  const titles: Record<string, string> = {
+    fr: "Compétences de World Conqueror 4 — Catalogue complet (FR)",
+    en: "World Conqueror 4 Skills — Complete Catalog",
+    de: "World Conqueror 4 Fähigkeiten — Vollständiger Katalog (DE)",
+  };
+  const descriptions: Record<string, string> = {
+    fr: "Toutes les compétences de WC4 organisées comme en jeu : Tactiques de terrain, Commandement, Logistique, Défense, Offensive, plus toutes les compétences spécifiques aux généraux avec progression L1→L5.",
+    en: "Every WC4 skill organised as in-game: Field Tactics, Command, Logistics, Defense, Offense, plus all general-specific skills with L1→L5 progression.",
+    de: "Alle WC4-Fähigkeiten wie im Spiel gegliedert: Feldtaktik, Kommando, Logistik, Verteidigung, Offensive, sowie alle generalspezifischen Fähigkeiten mit Progression L1→L5.",
+  };
   return {
-    title: isFr
-      ? "Compétences de World Conqueror 4 — Catalogue complet (FR)"
-      : "World Conqueror 4 Skills — Complete Catalog",
-    description: isFr
-      ? "Toutes les compétences de WC4 organisées comme en jeu : Tactiques de terrain, Commandement, Logistique, Défense, Offensive, plus toutes les compétences spécifiques aux généraux avec progression L1→L5."
-      : "Every WC4 skill organised as in-game: Field Tactics, Command, Logistics, Defense, Offense, plus all general-specific skills with L1→L5 progression.",
+    title: titles[locale] ?? titles.en,
+    description: descriptions[locale] ?? descriptions.en,
   };
 }
 
@@ -40,6 +45,8 @@ export default async function SkillsBrowser({
 }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
+  const tL = (fr: string, en: string, de: string): string =>
+    params.locale === "fr" ? fr : params.locale === "de" ? de : en;
   const isFr = params.locale === "fr";
   const index = getSkillIndex();
   const seriesMap = new Map<number, SkillSeriesMeta>();

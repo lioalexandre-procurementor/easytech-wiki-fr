@@ -5,6 +5,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getAllUpdateSlugs, getUpdate } from "@/lib/updates";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -20,7 +21,7 @@ export async function generateMetadata({
   const u = getUpdate(slug);
   if (!u) return { title: "404" };
   const t = await getTranslations({ locale, namespace: "updatesPage" });
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   return {
     title: t("detailSeoTitle", { title: u.title[loc] }),
     description: t("detailSeoDescription", {
@@ -31,10 +32,11 @@ export async function generateMetadata({
       canonical:
         locale === "fr"
           ? `/fr/world-conqueror-4/mises-a-jour/${slug}`
-          : `/en/world-conqueror-4/updates/${slug}`,
+          : `/${locale}/world-conqueror-4/updates/${slug}`,
       languages: {
         fr: `/fr/world-conqueror-4/mises-a-jour/${slug}`,
         en: `/en/world-conqueror-4/updates/${slug}`,
+        de: `/de/world-conqueror-4/updates/${slug}`,
         "x-default": `/fr/world-conqueror-4/mises-a-jour/${slug}`,
       },
     },
@@ -42,7 +44,7 @@ export async function generateMetadata({
       title: t("detailSeoTitle", { title: u.title[loc] }),
       description: u.summary[loc],
       type: "article",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
     },
     robots: { index: true, follow: true },
   };
@@ -114,7 +116,7 @@ export default async function UpdateDetailPage({
   const u = getUpdate(slug);
   if (!u) notFound();
   const t = await getTranslations();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
 
   return (
     <>

@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState, useCallback } from "react";
 import Fuse from "fuse.js";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "@/src/i18n/navigation";
+import type { Locale } from "@/src/i18n/config";
 
 type SearchItem = {
   type: "general" | "unit" | "skill" | "update" | "tech" | "guide";
@@ -15,7 +16,7 @@ type SearchItem = {
   category?: string;
   country?: string;
   tier?: string;
-  path: { fr: string; en: string };
+  path: { fr: string; en: string; de?: string };
 };
 
 type Payload = { version: number; builtAt: string; items: SearchItem[] };
@@ -31,7 +32,9 @@ const TYPE_ICON: Record<SearchItem["type"], string> = {
 
 export default function SearchBar() {
   const t = useTranslations("search");
-  const locale = useLocale() as "fr" | "en";
+  const locale = useLocale() as Locale;
+  // German URL segments mirror English — fall back so search works on /de.
+  const pathLocale: "fr" | "en" = locale === "fr" ? "fr" : "en";
   const router = useRouter();
 
   const [open, setOpen] = useState(false);
@@ -117,7 +120,7 @@ export default function SearchBar() {
         if (pick) {
           setOpen(false);
           setQuery("");
-          router.push(pick.path[locale] as any);
+          router.push((pick.path[pathLocale] ?? pick.path.en) as any);
         }
       }
     };
@@ -143,7 +146,7 @@ export default function SearchBar() {
   const renderItem = (it: SearchItem, globalIndex: number) => {
     const display = locale === "fr" ? it.nameFr || it.name : it.name || it.nameFr;
     const sub = locale === "fr" ? it.descFr || it.desc : it.desc || it.descFr;
-    const href = it.path[locale];
+    const href = it.path[pathLocale] ?? it.path.en;
     const active = globalIndex === selectedIndex;
     return (
       <button

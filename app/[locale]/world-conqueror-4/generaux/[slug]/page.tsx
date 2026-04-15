@@ -28,6 +28,7 @@ import type {
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { StatsGrid } from "@/components/general/StatsGrid";
 import { locales } from "@/src/i18n/config";
+import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import { splitGeneralName } from "@/lib/general-name";
 
 export function generateStaticParams() {
@@ -45,14 +46,18 @@ export async function generateMetadata({
   const g = getGeneral(slug);
   if (!g) return { title: "404" };
   const name = g.nameEn || g.name;
-  const title =
-    locale === "fr"
-      ? `${name} (WC4) — Compétences, attributs & guide`
-      : `${name} (WC4) — Skills, attributes & guide`;
-  const description =
-    locale === "fr"
-      ? `Fiche complète du général ${name} dans World Conqueror 4 : ${g.shortDesc} Attributs, skills, training, unités recommandées.`
-      : `Complete profile of general ${name} in World Conqueror 4: ${g.shortDesc} Attributes, skills, training, recommended units.`;
+  const TITLE_COPY: Record<string, string> = {
+    fr: `${name} (WC4) — Compétences, attributs & guide`,
+    en: `${name} (WC4) — Skills, attributes & guide`,
+    de: `${name} (WC4) — Fähigkeiten, Attribute & Guide`,
+  };
+  const DESC_COPY: Record<string, string> = {
+    fr: `Fiche complète du général ${name} dans World Conqueror 4 : ${g.shortDesc} Attributs, skills, training, unités recommandées.`,
+    en: `Complete profile of general ${name} in World Conqueror 4: ${g.shortDesc} Attributes, skills, training, recommended units.`,
+    de: `Vollständiges Profil des Generals ${name} in World Conqueror 4: ${g.shortDesc} Attribute, Fähigkeiten, Training, empfohlene Einheiten.`,
+  };
+  const title = TITLE_COPY[locale] ?? TITLE_COPY.en;
+  const description = DESC_COPY[locale] ?? DESC_COPY.en;
   return {
     title,
     description,
@@ -61,6 +66,7 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/world-conqueror-4/generaux/${slug}`,
         en: `/en/world-conqueror-4/generals/${slug}`,
+        de: `/de/world-conqueror-4/generals/${slug}`,
         "x-default": `/fr/world-conqueror-4/generaux/${slug}`,
       },
     },
@@ -68,8 +74,8 @@ export async function generateMetadata({
       title,
       description,
       type: "article",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     twitter: {
       card: "summary_large_image",
@@ -529,6 +535,8 @@ function SkillBlock({
   recommended?: string;
   locale: string;
 }) {
+  const tL = (fr: string, en: string, de: string): string =>
+    locale === "fr" ? fr : locale === "de" ? de : en;
   const isFr = locale === "fr";
   const rating = skill.rating;
   const ratingColor =
@@ -578,12 +586,14 @@ function SkillBlock({
       skill.desc;
   const isFreeSlot = skill.name === "Emplacement libre";
   const displayName = isFreeSlot
-    ? isFr ? "Emplacement libre" : "Free slot"
+    ? tL("Emplacement libre", "Free slot", "Freier Platz")
     : rawName;
   const displayDesc = isFreeSlot
-    ? isFr
-      ? "Compétence apprenable — emplacement libre jusqu'au premium training."
-      : "Learnable skill — slot stays open until premium training."
+    ? tL(
+        "Compétence apprenable — emplacement libre jusqu'au premium training.",
+        "Learnable skill — slot stays open until premium training.",
+        "Erlernbare Fähigkeit — der Platz bleibt bis zum Premium-Training frei."
+      )
     : rawDesc;
 
   return (
@@ -635,7 +645,7 @@ function SkillBlock({
               )}
               {skill.replaceable && (
                 <span className="text-[9px] font-extrabold uppercase tracking-widest px-1.5 py-0.5 rounded border bg-gold/15 border-gold/40 text-gold2">
-                  🎓 {isFr ? "Libre" : "Free"}
+                  🎓 {tL("Libre", "Free", "Frei")}
                 </span>
               )}
             </div>
@@ -661,7 +671,11 @@ function SkillBlock({
                 href={skillDetailHref as any}
                 className="text-[11px] text-gold/80 hover:text-gold2 no-underline"
               >
-                {isFr ? "📈 Voir la progression L1 → L5 →" : "📈 View L1 → L5 progression →"}
+                {tL(
+                  "📈 Voir la progression L1 → L5 →",
+                  "📈 View L1 → L5 progression →",
+                  "📈 L1 → L5 Progression ansehen →"
+                )}
               </Link>
             </div>
           )}
@@ -682,11 +696,12 @@ function SkillBlock({
 }
 
 function TrainingStageCard({ stage, locale }: { stage: TrainingStage; locale: string }) {
-  const isFr = locale === "fr";
-  const stageLabel = isFr ? `Étape ${stage.stage}` : `Stage ${stage.stage}`;
-  const effectsLabel = isFr ? "Effets" : "Effects";
-  const costTbd = isFr ? "Coût à vérifier in-game." : "Cost to verify in-game.";
-  const modificationFallback = isFr ? "modification" : "change";
+  const tL = (fr: string, en: string, de: string): string =>
+    locale === "fr" ? fr : locale === "de" ? de : en;
+  const stageLabel = tL(`Étape ${stage.stage}`, `Stage ${stage.stage}`, `Stufe ${stage.stage}`);
+  const effectsLabel = tL("Effets", "Effects", "Effekte");
+  const costTbd = tL("Coût à vérifier in-game.", "Cost to verify in-game.", "Kosten im Spiel zu überprüfen.");
+  const modificationFallback = tL("modification", "change", "Änderung");
   return (
     <div className="border border-gold/30 rounded-lg p-3 bg-bg3">
       <div className="flex items-center justify-between mb-2">

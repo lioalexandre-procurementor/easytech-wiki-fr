@@ -82,7 +82,7 @@ export default async function TechCategoryPage({
             {t("techPage.categoryHeading" as any, { name: catName })}
           </p>
         </header>
-        <TechTreeGrid techs={techs} locale={locale as "fr" | "en"} />
+        <TechTreeGrid techs={techs} locale={locale as Locale} />
       </div>
       <Footer />
     </>

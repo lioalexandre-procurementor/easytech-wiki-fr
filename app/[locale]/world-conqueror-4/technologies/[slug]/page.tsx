@@ -31,6 +31,7 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/world-conqueror-4/technologies/${slug}`,
         en: `/en/world-conqueror-4/technologies/${slug}`,
+        de: `/de/world-conqueror-4/technologies/${slug}`,
         "x-default": `/fr/world-conqueror-4/technologies/${slug}`,
       },
     },
@@ -48,7 +49,7 @@ export default async function TechDetailPage({
   const tech = getTech(slug);
   if (!tech) notFound();
   const t = await getTranslations();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const name = loc === "fr" ? tech.nameFr || tech.nameEn : tech.nameEn;
 
   return (

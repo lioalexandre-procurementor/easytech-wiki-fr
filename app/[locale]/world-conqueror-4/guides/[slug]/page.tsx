@@ -5,6 +5,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getAllGuideSlugs, getGuide } from "@/lib/guides";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -19,7 +20,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const g = getGuide(slug);
   if (!g) return { title: "404" };
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const t = await getTranslations({ locale, namespace: "guidesPage" });
   return {
     title: t("detailSeoTitle", { title: g.title[loc] }),
@@ -29,6 +30,7 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/world-conqueror-4/guides/${slug}`,
         en: `/en/world-conqueror-4/guides/${slug}`,
+        de: `/de/world-conqueror-4/guides/${slug}`,
         "x-default": `/fr/world-conqueror-4/guides/${slug}`,
       },
     },
@@ -36,7 +38,7 @@ export async function generateMetadata({
       title: g.title[loc],
       description: g.description[loc],
       type: "article",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
     },
     robots: { index: true, follow: true },
   };
@@ -112,7 +114,7 @@ export default async function GuideDetailPage({
   unstable_setRequestLocale(locale);
   const guide = getGuide(slug);
   if (!guide) notFound();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const t = await getTranslations();
 
   return (

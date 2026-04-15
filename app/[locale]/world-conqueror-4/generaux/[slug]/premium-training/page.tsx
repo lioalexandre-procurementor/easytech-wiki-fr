@@ -9,6 +9,7 @@ import { buildPremiumTrainingView } from "@/lib/general-trained";
 import { getAllGeneralSlugs, getGeneral, getSkill } from "@/lib/units";
 import { splitGeneralName } from "@/lib/general-name";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
 /**
@@ -50,6 +51,7 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/world-conqueror-4/generaux/${slug}/entrainement-premium`,
         en: `/en/world-conqueror-4/generals/${slug}/premium-training`,
+        de: `/de/world-conqueror-4/generals/${slug}/premium-training`,
         "x-default": `/fr/world-conqueror-4/generaux/${slug}/entrainement-premium`,
       },
     },
@@ -57,8 +59,8 @@ export async function generateMetadata({
       title: t("seoTitle", { name }),
       description: t("seoDesc", { name }),
       type: "article",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     twitter: {
       card: "summary_large_image",
@@ -91,8 +93,19 @@ export default async function PremiumTrainingPage({
   const name = g.nameEn || g.name;
   const { family, given } = splitGeneralName(name);
 
+  const FREE_SLOT_LABEL: Record<string, string> = {
+    fr: "Emplacement libre",
+    en: "Free slot",
+    de: "Freier Slot",
+  };
+  const FREE_SLOT_DESC: Record<string, string> = {
+    fr: "Compétence apprenable — emplacement libre jusqu'au premium training.",
+    en: "Learnable skill — slot stays open until premium training.",
+    de: "Lernbare Fähigkeit — Slot bleibt offen bis zum Premium-Training.",
+  };
+
   const nameForSkill = (s: { name: string; nameEn?: string; skillSlug?: string }) => {
-    if (s.name === "Emplacement libre") return isFr ? "Emplacement libre" : "Free slot";
+    if (s.name === "Emplacement libre") return FREE_SLOT_LABEL[locale] ?? FREE_SLOT_LABEL.en;
     const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
     if (isFr) return cat?.nameFr || s.name;
     return cat?.name || s.nameEn || s.name;
@@ -104,9 +117,7 @@ export default async function PremiumTrainingPage({
     skillLevel?: number;
   }) => {
     if (s.name === "Emplacement libre") {
-      return isFr
-        ? "Compétence apprenable — emplacement libre jusqu'au premium training."
-        : "Learnable skill — slot stays open until premium training.";
+      return FREE_SLOT_DESC[locale] ?? FREE_SLOT_DESC.en;
     }
     const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
     const prog =
@@ -120,6 +131,7 @@ export default async function PremiumTrainingPage({
         s.desc
       );
     }
+    // English/German share the English source data (no per-locale skill descriptions).
     return prog?.renderedDesc || cat?.descriptionTemplate || s.desc;
   };
 

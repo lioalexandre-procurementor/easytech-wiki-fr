@@ -5,6 +5,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getAllGuides } from "@/lib/guides";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -25,6 +26,7 @@ export async function generateMetadata({
       languages: {
         fr: "/fr/world-conqueror-4/guides",
         en: "/en/world-conqueror-4/guides",
+        de: "/de/world-conqueror-4/guides",
         "x-default": "/fr/world-conqueror-4/guides",
       },
     },
@@ -32,7 +34,7 @@ export async function generateMetadata({
       title: t("seoTitle"),
       description: t("seoDescription"),
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
     },
     robots: { index: true, follow: true },
   };
@@ -46,7 +48,7 @@ export default async function GuidesHubPage({
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
   const t = await getTranslations();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const guides = getAllGuides();
 
   return (

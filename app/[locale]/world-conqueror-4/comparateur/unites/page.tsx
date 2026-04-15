@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import UnitComparatorClient from "@/components/UnitComparatorClient";
 import { getAllEliteUnits } from "@/lib/units";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 import type { ComparableRow, UnitData } from "@/lib/types";
 
@@ -25,10 +26,11 @@ export async function generateMetadata({
       canonical:
         locale === "fr"
           ? "/fr/world-conqueror-4/comparateur/unites"
-          : "/en/world-conqueror-4/comparator/units",
+          : `/${locale}/world-conqueror-4/comparator/units`,
       languages: {
         fr: "/fr/world-conqueror-4/comparateur/unites",
         en: "/en/world-conqueror-4/comparator/units",
+        de: "/de/world-conqueror-4/comparator/units",
         "x-default": "/fr/world-conqueror-4/comparateur/unites",
       },
     },
@@ -36,14 +38,14 @@ export async function generateMetadata({
       title: t("seoTitle"),
       description: t("seoDescription"),
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     robots: { index: true, follow: true },
   };
 }
 
-function unitToRow(u: UnitData, locale: "fr" | "en"): ComparableRow {
+function unitToRow(u: UnitData, _locale: Locale): ComparableRow {
   const lastIdx = Math.max(0, u.stats.atk.length - 1);
   return {
     id: u.slug,
@@ -60,6 +62,7 @@ function unitToRow(u: UnitData, locale: "fr" | "en"): ComparableRow {
     href: {
       fr: `/world-conqueror-4/unites-elite/${u.slug}`,
       en: `/world-conqueror-4/elite-units/${u.slug}`,
+      de: `/world-conqueror-4/elite-units/${u.slug}`,
     },
   };
 }
@@ -74,7 +77,7 @@ export default async function UnitComparatorPage({
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
   const t = await getTranslations();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const units = getAllEliteUnits();
   const allRows = units.map((u) => unitToRow(u, loc));
 

@@ -6,6 +6,7 @@ import { ComparatorTable } from "@/components/ComparatorTable";
 import { ComparatorRadar } from "@/components/ComparatorRadar";
 import { getAllEliteUnits, getEliteUnit } from "@/lib/units";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 import type { ComparableRow, UnitData } from "@/lib/types";
 
@@ -26,6 +27,7 @@ function unitToRow(u: UnitData): ComparableRow {
     href: {
       fr: `/world-conqueror-4/unites-elite/${u.slug}`,
       en: `/world-conqueror-4/elite-units/${u.slug}`,
+      de: `/world-conqueror-4/elite-units/${u.slug}`,
     },
   };
 }
@@ -62,7 +64,7 @@ export async function generateMetadata({
   const b = getEliteUnit(slugB);
   if (!a || !b) return { title: "404" };
   const t = await getTranslations({ locale, namespace: "comparatorPage" });
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const aName = loc === "fr" ? a.name : a.nameEn || a.name;
   const bName = loc === "fr" ? b.name : b.nameEn || b.name;
   return {
@@ -73,6 +75,7 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/world-conqueror-4/comparateur/unites/${matchup}`,
         en: `/en/world-conqueror-4/comparator/units/${matchup}`,
+        de: `/de/world-conqueror-4/comparator/units/${matchup}`,
         "x-default": `/fr/world-conqueror-4/comparateur/unites/${matchup}`,
       },
     },
@@ -80,8 +83,8 @@ export async function generateMetadata({
       title: t("matchupTitle", { a: aName, b: bName }),
       description: t("matchupDescription", { a: aName, b: bName }),
       type: "article",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
-      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+      locale: ogLocale(locale),
+      alternateLocale: ogAlternateLocales(locale),
     },
     robots: { index: true, follow: true },
   };
@@ -102,7 +105,7 @@ export default async function UnitMatchupPage({
   if (!a || !b) notFound();
 
   const t = await getTranslations();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const aName = loc === "fr" ? a.name : a.nameEn || a.name;
   const bName = loc === "fr" ? b.name : b.nameEn || b.name;
 

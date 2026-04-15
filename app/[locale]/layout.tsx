@@ -1,13 +1,22 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import "../globals.css";
 
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
 const GSC_TOKEN = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#0a0e13",
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -31,15 +40,16 @@ export async function generateMetadata({
       languages: {
         fr: "/fr",
         en: "/en",
+        de: "/de",
         "x-default": "/fr",
       },
     },
     openGraph: {
       title: t("title"),
       description: t("description"),
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
       type: "website",
-      alternateLocale: locale === "fr" ? ["en_US"] : ["fr_FR"],
+      alternateLocale: ogAlternateLocales(locale),
     },
     twitter: {
       card: "summary_large_image",
@@ -107,6 +117,28 @@ export default async function LocaleLayout({
             src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
             crossOrigin="anonymous"
           />
+        )}
+        {/*
+          Google Analytics 4. Loaded only when NEXT_PUBLIC_GA_ID is set.
+          analytics_storage is "denied" by default (see Consent Mode block
+          above), so GA4 will fire pings in cookieless mode until the user
+          grants consent via Funding Choices. No localStorage, no _ga cookie
+          pre-consent. Google will still give you aggregated traffic data
+          through modelled conversions.
+        */}
+        {GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <Script id="gtag-init" strategy="afterInteractive">
+              {`
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}', { 'anonymize_ip': true });
+              `}
+            </Script>
+          </>
         )}
       </head>
       <body>

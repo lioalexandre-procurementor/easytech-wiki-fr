@@ -5,6 +5,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getTechIndex, TECH_CATEGORIES } from "@/lib/tech";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -25,6 +26,7 @@ export async function generateMetadata({
       languages: {
         fr: "/fr/world-conqueror-4/technologies",
         en: "/en/world-conqueror-4/technologies",
+        de: "/de/world-conqueror-4/technologies",
         "x-default": "/fr/world-conqueror-4/technologies",
       },
     },
@@ -32,7 +34,7 @@ export async function generateMetadata({
       title: t("seoTitle"),
       description: t("seoDescription"),
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
     },
     robots: { index: true, follow: true },
   };

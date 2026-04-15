@@ -5,6 +5,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getAllUpdates } from "@/lib/updates";
 import { locales, type Locale } from "@/src/i18n/config";
+import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -24,10 +25,11 @@ export async function generateMetadata({
       canonical:
         locale === "fr"
           ? "/fr/world-conqueror-4/mises-a-jour"
-          : "/en/world-conqueror-4/updates",
+          : `/${locale}/world-conqueror-4/updates`,
       languages: {
         fr: "/fr/world-conqueror-4/mises-a-jour",
         en: "/en/world-conqueror-4/updates",
+        de: "/de/world-conqueror-4/updates",
         "x-default": "/fr/world-conqueror-4/mises-a-jour",
       },
     },
@@ -35,7 +37,7 @@ export async function generateMetadata({
       title: t("seoTitle"),
       description: t("seoDescription"),
       type: "website",
-      locale: locale === "fr" ? "fr_FR" : "en_US",
+      locale: ogLocale(locale),
     },
     robots: { index: true, follow: true },
   };
@@ -49,7 +51,7 @@ export default async function UpdatesListPage({
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
   const t = await getTranslations();
-  const loc = locale as "fr" | "en";
+  const loc = locale as Locale;
   const updates = getAllUpdates();
 
   return (

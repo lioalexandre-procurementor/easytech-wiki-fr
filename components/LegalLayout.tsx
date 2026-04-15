@@ -16,7 +16,8 @@ type Props = {
  * mentions légales, privacy, cookies, terms, about, contact.
  */
 export function LegalLayout({ locale, title, lastUpdated, breadcrumbLabel, children }: Props) {
-  const homeLabel = locale === "fr" ? "Accueil" : "Home";
+  const homeLabel =
+    locale === "fr" ? "Accueil" : locale === "de" ? "Startseite" : "Home";
   return (
     <>
       <TopBar />
