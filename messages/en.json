@@ -28,7 +28,8 @@
     "onThisPage": "On this page",
     "searchPlaceholder": "Search for a unit or general…",
     "localeSwitcher": "Language",
-    "updates": "Updates"
+    "updates": "Updates",
+    "technologies": "Technologies"
   },
   "footer": {
     "about": "About",
@@ -314,7 +315,8 @@
       "general": "Generals",
       "unit": "Elite units",
       "skill": "Skills",
-      "update": "Updates"
+      "update": "Updates",
+      "tech": "Technologies"
     }
   },
   "comparatorPage": {
@@ -376,5 +378,35 @@
     "sectionContactHeading": "Contact",
     "sectionContactBody": "For any questions related to this feature, please use the site's contact form.",
     "backToGenerals": "← Back to generals"
+  },
+  "techPage": {
+    "hubTitle": "World Conqueror 4 Technologies",
+    "hubIntro": "All research technologies in the game: infantry, armor, artillery, navy, airforce, fortifications, anti-air and missiles. Full stats by level.",
+    "totalLabel": "{count} technologies",
+    "categoryHeading": "Category: {name}",
+    "techDetailIntro": "Full details for the {name} technology, from level 1 to level {max}.",
+    "levelLabel": "Level {level}",
+    "costGold": "Gold",
+    "costIndustry": "Industry",
+    "costEnergy": "Energy",
+    "costTech": "Tech",
+    "needHQ": "Min HQ: {level}",
+    "prerequisites": "Prerequisites",
+    "affects": "Affected units",
+    "noPrerequisites": "No prerequisites",
+    "backToHub": "← Back to technologies",
+    "backToCategory": "← Back to category",
+    "category": {
+      "infantry": "Infantry",
+      "armor": "Armor",
+      "artillery": "Artillery",
+      "navy": "Navy",
+      "airforce": "Airforce",
+      "fortifications": "Fortifications",
+      "antiair": "Anti-air",
+      "missile": "Missile"
+    },
+    "seoTitle": "WC4 Technologies — Complete Research Catalog",
+    "seoDescription": "Exhaustive catalog of all 58 World Conqueror 4 technology chains: costs, levels, effects and affected units."
   }
 }

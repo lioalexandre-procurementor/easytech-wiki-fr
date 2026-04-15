@@ -28,7 +28,8 @@
     "onThisPage": "Sur cette page",
     "searchPlaceholder": "Rechercher une unité, un général…",
     "localeSwitcher": "Langue",
-    "updates": "Mises à jour"
+    "updates": "Mises à jour",
+    "technologies": "Technologies"
   },
   "footer": {
     "about": "À propos",
@@ -314,7 +315,8 @@
       "general": "Généraux",
       "unit": "Unités d'élite",
       "skill": "Compétences",
-      "update": "Mises à jour"
+      "update": "Mises à jour",
+      "tech": "Technologies"
     }
   },
   "comparatorPage": {
@@ -376,5 +378,35 @@
     "sectionContactHeading": "Contact",
     "sectionContactBody": "Pour toute question liée à cette fonctionnalité, utilisez le formulaire de contact du site.",
     "backToGenerals": "← Retour aux généraux"
+  },
+  "techPage": {
+    "hubTitle": "Technologies de World Conqueror 4",
+    "hubIntro": "Toutes les technologies de recherche du jeu : infanterie, blindés, artillerie, marine, aviation, fortifications et missiles. Statistiques complètes par niveau.",
+    "totalLabel": "{count} technologies",
+    "categoryHeading": "Catégorie : {name}",
+    "techDetailIntro": "Détail complet de la technologie {name}, du niveau 1 au niveau {max}.",
+    "levelLabel": "Niveau {level}",
+    "costGold": "Or",
+    "costIndustry": "Industrie",
+    "costEnergy": "Énergie",
+    "costTech": "Tech",
+    "needHQ": "QG min : {level}",
+    "prerequisites": "Prérequis",
+    "affects": "Unités affectées",
+    "noPrerequisites": "Aucun prérequis",
+    "backToHub": "← Retour aux technologies",
+    "backToCategory": "← Retour à la catégorie",
+    "category": {
+      "infantry": "Infanterie",
+      "armor": "Blindés",
+      "artillery": "Artillerie",
+      "navy": "Marine",
+      "airforce": "Aviation",
+      "fortifications": "Fortifications",
+      "antiair": "Anti-aérien",
+      "missile": "Missiles"
+    },
+    "seoTitle": "Technologies WC4 — Catalogue complet de la recherche",
+    "seoDescription": "Catalogue exhaustif des 58 chaînes de technologies de World Conqueror 4 : coûts, niveaux, effets et unités affectées."
   }
 }

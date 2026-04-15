@@ -2,6 +2,7 @@ import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
+import { AdSlot } from "@/components/AdSlot";
 import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, CATEGORY_META } from "@/lib/units";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -56,7 +57,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             <SidebarLink href="/world-conqueror-4/empire-du-scorpion">🦂 {t("nav.scorpion")}</SidebarLink>
             <SidebarLink href="/world-conqueror-4/generaux">👨‍✈️ {t("nav.generals")}</SidebarLink>
             <SidebarLink href="/world-conqueror-4/competences">⚡ {t("nav.skills")}</SidebarLink>
-            <SidebarLink href="#">🔬 {t("nav.techs")}</SidebarLink>
+            <SidebarLink href="/world-conqueror-4/technologies">🔬 {t("nav.techs")}</SidebarLink>
             <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🗺 {t("nav.scenarios")}</SidebarLink>
             <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🌍 {t("nav.conquests")}</SidebarLink>
           </SidebarSection>
@@ -107,7 +108,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             ))}
           </div>
 
-          <div className="ad-slot">{t("ui.adSlot")}</div>
+          <AdSlot label={t("ui.adSlot")} className="my-6" />
 
           <h2 className="text-xl mb-4 mt-8">{t("wc4Hub.mostViewed")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

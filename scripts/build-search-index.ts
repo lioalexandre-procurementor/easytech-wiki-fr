@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-type SearchItemType = "general" | "unit" | "skill" | "update";
+type SearchItemType = "general" | "unit" | "skill" | "update" | "tech";
 
 interface SearchItem {
   type: SearchItemType;
@@ -120,11 +120,28 @@ function buildUpdates(): SearchItem[] {
   });
 }
 
+function buildTechs(): SearchItem[] {
+  return readJsonDir("technologies").map((t) => ({
+    type: "tech" as SearchItemType,
+    slug: t.slug as string,
+    name: (t.nameEn as string) || "",
+    nameFr: (t.nameFr as string) || (t.nameEn as string) || "",
+    desc: "",
+    descFr: "",
+    category: (t.category as string) || "",
+    path: {
+      fr: `/world-conqueror-4/technologies/${t.slug as string}`,
+      en: `/world-conqueror-4/technologies/${t.slug as string}`,
+    },
+  }));
+}
+
 const items: SearchItem[] = [
   ...buildGenerals(),
   ...buildUnits(),
   ...buildSkills(),
   ...buildUpdates(),
+  ...buildTechs(),
 ];
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });

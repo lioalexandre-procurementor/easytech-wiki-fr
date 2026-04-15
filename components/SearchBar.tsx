@@ -6,7 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "@/src/i18n/navigation";
 
 type SearchItem = {
-  type: "general" | "unit" | "skill" | "update";
+  type: "general" | "unit" | "skill" | "update" | "tech";
   slug: string;
   name: string;
   nameFr: string;
@@ -25,6 +25,7 @@ const TYPE_ICON: Record<SearchItem["type"], string> = {
   unit: "🏅",
   skill: "⚡",
   update: "📣",
+  tech: "🔬",
 };
 
 export default function SearchBar() {
@@ -81,12 +82,13 @@ export default function SearchBar() {
       unit: [],
       skill: [],
       update: [],
+      tech: [],
     };
     for (const r of results) g[r.type].push(r);
     return g;
   }, [results]);
 
-  const flat = useMemo(() => [...grouped.general, ...grouped.unit, ...grouped.skill, ...grouped.update], [grouped]);
+  const flat = useMemo(() => [...grouped.general, ...grouped.unit, ...grouped.skill, ...grouped.update, ...grouped.tech], [grouped]);
 
   // Keyboard: global Cmd/Ctrl + K, plus local arrow keys / Enter / Escape.
   useEffect(() => {
@@ -201,7 +203,7 @@ export default function SearchBar() {
           )}
           {!loading && flat.length > 0 && (
             <div className="p-1">
-              {(["general", "unit", "skill", "update"] as const).map((type) => {
+              {(["general", "unit", "skill", "update", "tech"] as const).map((type) => {
                 const group = grouped[type];
                 if (group.length === 0) return null;
                 return (

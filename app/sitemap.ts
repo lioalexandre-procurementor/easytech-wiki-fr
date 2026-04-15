@@ -4,7 +4,7 @@ import path from "node:path";
 import { getAllGeneralSlugs, getAllSlugs as getAllEliteSlugs } from "@/lib/units";
 import { locales } from "@/src/i18n/config";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.vercel.app";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
 
 /**
  * Localized path pair for a given canonical route suffix.
@@ -71,6 +71,16 @@ function updateDetail(slug: string): LocalePair {
 
 function getAllUpdateSlugsFromFs(): string[] {
   const dir = path.join(process.cwd(), "data", "wc4", "updates");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+    .map((f) => f.replace(/\.json$/, ""));
+}
+
+/** Read all tech slugs from data/wc4/technologies/*.json (excluding _index.json). */
+function getAllTechSlugsFromFs(): string[] {
+  const dir = path.join(process.cwd(), "data", "wc4", "technologies");
   if (!fs.existsSync(dir)) return [];
   return fs
     .readdirSync(dir)
@@ -165,6 +175,65 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
+        alternates: alternates(pair),
+      });
+    }
+  }
+
+  // Tech hub
+  const techHubPair: LocalePair = {
+    fr: "/world-conqueror-4/technologies",
+    en: "/world-conqueror-4/technologies",
+  };
+  for (const locale of locales) {
+    entries.push({
+      url: pathFor(locale, techHubPair),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: alternates(techHubPair),
+    });
+  }
+
+  // Tech categories
+  const TECH_CATS = [
+    "infantry",
+    "armor",
+    "artillery",
+    "navy",
+    "airforce",
+    "fortifications",
+    "antiair",
+    "missile",
+  ] as const;
+  for (const cat of TECH_CATS) {
+    const pair: LocalePair = {
+      fr: `/world-conqueror-4/technologies/categorie/${cat}`,
+      en: `/world-conqueror-4/technologies/category/${cat}`,
+    };
+    for (const locale of locales) {
+      entries.push({
+        url: pathFor(locale, pair),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: alternates(pair),
+      });
+    }
+  }
+
+  // Tech detail pages
+  for (const slug of getAllTechSlugsFromFs()) {
+    const pair: LocalePair = {
+      fr: `/world-conqueror-4/technologies/${slug}`,
+      en: `/world-conqueror-4/technologies/${slug}`,
+    };
+    for (const locale of locales) {
+      entries.push({
+        url: pathFor(locale, pair),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.5,
         alternates: alternates(pair),
       });
     }

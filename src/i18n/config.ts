@@ -77,6 +77,18 @@ export const pathnames = {
     fr: "/world-conqueror-4/mises-a-jour/[slug]",
     en: "/world-conqueror-4/updates/[slug]",
   },
+  "/world-conqueror-4/technologies": {
+    fr: "/world-conqueror-4/technologies",
+    en: "/world-conqueror-4/technologies",
+  },
+  "/world-conqueror-4/technologies/categorie/[category]": {
+    fr: "/world-conqueror-4/technologies/categorie/[category]",
+    en: "/world-conqueror-4/technologies/category/[category]",
+  },
+  "/world-conqueror-4/technologies/[slug]": {
+    fr: "/world-conqueror-4/technologies/[slug]",
+    en: "/world-conqueror-4/technologies/[slug]",
+  },
   "/legal/votes": {
     fr: "/legal/votes",
     en: "/legal/votes",

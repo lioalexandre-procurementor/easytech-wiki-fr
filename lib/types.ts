@@ -384,6 +384,69 @@ export interface TrainedGeneralView {
 
 export type DiffClass = "best" | "worst" | "neutral";
 
+// ─── TECHNOLOGIES ───────────────────────────────────────────────────────
+
+export type TechCategory =
+  | "infantry"
+  | "armor"
+  | "artillery"
+  | "navy"
+  | "airforce"
+  | "fortifications"
+  | "antiair"
+  | "missile";
+
+/** One row in a tech chain's progression. */
+export interface TechLevel {
+  apkId: number;
+  level: number;
+  x: number;
+  y: number;
+  costGold: number;
+  costIndustry: number;
+  costEnergy: number;
+  costTech: number;
+  needHQLv?: number;
+  needScenarioId?: number;
+  descEn?: string;
+  descTemplate?: string;
+  techValues?: number[];
+  techDescKeys?: number[];
+  prerequisiteIds?: number[];
+  upgradeToId?: number;
+}
+
+export interface Tech {
+  slug: string;
+  apkTypeId: number;
+  apkCategoryId: number;
+  nameEn: string;
+  nameFr: string;
+  category: TechCategory;
+  effectArmy?: number;
+  maxLevel: number;
+  needHQLv: number;
+  needScenarioId: number;
+  levels: TechLevel[];
+  prerequisites: Array<{ slug: string; level: number }>;
+  affectsArmyIds: number[];
+}
+
+export interface TechIndexEntry {
+  slug: string;
+  nameEn: string;
+  category: TechCategory;
+  maxLevel: number;
+  apkTypeId?: number;
+}
+
+export interface TechIndex {
+  version: number;
+  totalTechs: number;
+  byCategory: Record<TechCategory, number>;
+  techs: TechIndexEntry[];
+}
+
 /** One normalized row in a comparator table. */
 export interface ComparableRow {
   /** Stable identifier for React key + URL param. */
