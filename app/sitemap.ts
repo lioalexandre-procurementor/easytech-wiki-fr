@@ -102,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire" }, priority: 0.6, changeFrequency: "monthly" },
     { pair: { fr: "/world-conqueror-4/mises-a-jour", en: "/world-conqueror-4/updates" }, priority: 0.8, changeFrequency: "weekly" },
     { pair: { fr: "/legal/votes", en: "/legal/votes" }, priority: 0.3, changeFrequency: "yearly" },
+    { pair: { fr: "/legal/mentions-legales", en: "/legal/legal-notice" }, priority: 0.3, changeFrequency: "yearly" },
+    { pair: { fr: "/legal/confidentialite", en: "/legal/privacy" }, priority: 0.3, changeFrequency: "yearly" },
+    { pair: { fr: "/legal/cookies", en: "/legal/cookies" }, priority: 0.3, changeFrequency: "yearly" },
+    { pair: { fr: "/legal/cgu", en: "/legal/terms" }, priority: 0.3, changeFrequency: "yearly" },
+    { pair: { fr: "/legal/a-propos", en: "/legal/about" }, priority: 0.4, changeFrequency: "monthly" },
+    { pair: { fr: "/legal/contact", en: "/legal/contact" }, priority: 0.4, changeFrequency: "yearly" },
   ];
 
   for (const route of staticRoutes) {
