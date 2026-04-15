@@ -208,11 +208,11 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
   return (
     <>
       {/* STATS */}
-      <div className="bg-panel border border-border rounded-lg p-5 mb-6">
-        <h3 className="text-gold2 font-bold uppercase tracking-widest text-base mb-3.5">
+      <div className="bg-panel border border-border rounded-lg p-3.5 md:p-5 mb-6">
+        <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm md:text-base mb-3">
           {L.statsTitle} <span>{lvl}</span>
         </h3>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3">
           <Stat icon="⚔️" name={L.attack}    val={s.atk[i]} base={s.atk[0]}/>
           <Stat icon="🛡️" name={L.defense}   val={s.def[i]} base={s.def[0]}/>
           <Stat icon="❤️" name={L.hp}        val={s.hp[i]}  base={s.hp[0]}/>
@@ -394,11 +394,20 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
 function Stat({ icon, name, val, base }: { icon: string; name: string; val: number; base: number }) {
   const delta = val - base;
   return (
-    <div className="bg-bg3 border border-border rounded-md p-3 text-center relative">
-      <div className="text-lg mb-1">{icon}</div>
-      <div className="text-[11px] text-muted uppercase tracking-widest mb-1">{name}</div>
-      <div className="text-2xl text-gold2 font-extrabold">{val}</div>
-      {delta > 0 && <div className="absolute top-2 right-2 text-[10px] text-ok font-bold">+{delta}</div>}
+    <div className="bg-bg3 border border-border rounded-md p-2 md:p-3 md:text-center relative flex items-center gap-2 md:block">
+      {/* Mobile: icon + label left, value right. md+: stacked, centered. */}
+      <div className="text-base md:text-lg md:mb-1 shrink-0">{icon}</div>
+      <div className="text-[10px] md:text-[11px] text-muted uppercase tracking-wide md:tracking-widest md:mb-1 min-w-0 truncate md:truncate-none flex-1">
+        {name}
+      </div>
+      <div className="text-base md:text-2xl text-gold2 font-extrabold tabular-nums shrink-0">
+        {val}
+      </div>
+      {delta > 0 && (
+        <div className="absolute top-1 right-1 md:top-2 md:right-2 text-[9px] md:text-[10px] text-ok font-bold">
+          +{delta}
+        </div>
+      )}
     </div>
   );
 }

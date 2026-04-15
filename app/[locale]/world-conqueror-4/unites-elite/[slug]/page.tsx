@@ -126,19 +126,19 @@ export default async function UnitPage({ params }: { params: { locale: string; s
 
         <main>
           {/* HEADER */}
-          <div className="grid md:grid-cols-[220px_1fr] gap-7 bg-panel border border-border rounded-lg p-6 mb-6">
-            <div className="rounded-lg border-2 border-gold h-[220px] grid place-items-center relative bg-gradient-to-br from-bg3 to-bg overflow-hidden">
+          <div className="grid md:grid-cols-[220px_1fr] gap-5 md:gap-7 bg-panel border border-border rounded-lg p-4 md:p-6 mb-6">
+            <div className="rounded-lg border-2 border-gold h-[180px] md:h-[220px] w-full max-w-[200px] md:max-w-none mx-auto md:mx-0 grid place-items-center relative bg-gradient-to-br from-bg3 to-bg overflow-hidden">
               {unit.image?.sprite ? (
                 <Image
                   src={unit.image.sprite}
                   alt={unit.name}
                   fill
-                  sizes="220px"
+                  sizes="(max-width: 768px) 200px, 220px"
                   className="object-contain p-4"
                   priority
                 />
               ) : (
-                <UnitIcon category={unit.category} country={unit.country} size={160}/>
+                <UnitIcon category={unit.category} country={unit.country} size={140}/>
               )}
               <div className="absolute top-2.5 right-2.5 z-10"><TierBadge tier={unit.tier} size="md"/></div>
             </div>
