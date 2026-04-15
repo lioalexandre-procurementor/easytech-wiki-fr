@@ -58,7 +58,7 @@
     "statMaxLevels": "Max levels",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki under construction",
-    "underConstructionNote": "stats are extracted directly from the game files (WC4 v1.24.2). Editorial content (descriptions, bonuses, strategy) is being progressively enriched.",
+    "underConstructionNote": "stats are verified against the current game version (WC4 v1.24.2). Editorial content (descriptions, bonuses, strategy) is being progressively enriched.",
     "exploreByCategory": "Explore by category",
     "mostViewed": "Most viewed elite units",
     "unitsCountSuffix": "units"
@@ -76,10 +76,10 @@
   "skillsPage": {
     "h1": "World Conqueror 4 Skills",
     "introBold": "{count} skills",
-    "intro": "extracted directly from the game, organised exactly like the Academy. The 5 learnable series (Field Tactics, Command, Logistics, Defense, Offense) group all skills you can unlock with medals. The section",
+    "intro": "organised exactly like the Academy. The 5 learnable series (Field Tactics, Command, Logistics, Defense, Offense) group all skills you can unlock with medals. The section",
     "introSignature": "General-specific skills",
     "introEnd": "covers every signature or training skill tied to a particular hero (Rokossovsky — Hero, Eisenhower — Super Commander, etc.).",
-    "introFootnote": "Each entry details the full description, the L1→L5 progression, the per-level medal cost and the list of generals who carry it. Descriptions are in English (source: official game files).",
+    "introFootnote": "Each entry details the full description, the L1→L5 progression, the per-level medal cost and the list of generals who carry it. Descriptions are in English.",
     "searchPlaceholder": "🔎 Search for a skill…",
     "searchNoResults": "No skill matches your search.",
     "signatureBadge": "signature"
@@ -106,7 +106,7 @@
     "tableEffective": "Effective description",
     "officialEnVersion": "Official English wording",
     "descFootnoteFr": "French translation under review — the official English wording takes precedence. The « X » placeholder is replaced by the real value at each level (table below).",
-    "descFootnoteEn": "Source: official game files. The « X » placeholder is replaced by the real value at each level (table below).",
+    "descFootnoteEn": "The « X » placeholder is replaced by the real value at each level (table below).",
     "cumulativeCostHint": "🎓 Cumulative cost L1→L{max}:",
     "cumulativeCostMedals": "{count} medals",
     "cumulativeCostNote": ". At the Academy, you can learn this skill to slot it into any free slot of a compatible general.",

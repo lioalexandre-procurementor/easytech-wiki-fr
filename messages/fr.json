@@ -58,7 +58,7 @@
     "statMaxLevels": "Niveaux max",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki en construction",
-    "underConstructionNote": "les statistiques proviennent directement de l'extraction des fichiers du jeu (WC4 v1.24.2). Les fiches éditoriales (descriptions, bonus, stratégie) sont en cours d'enrichissement.",
+    "underConstructionNote": "les statistiques sont vérifiées sur la version actuelle du jeu (WC4 v1.24.2). Les fiches éditoriales (descriptions, bonus, stratégie) sont en cours d'enrichissement.",
     "exploreByCategory": "Explorer par catégorie",
     "mostViewed": "Unités d'élite les plus consultées",
     "unitsCountSuffix": "unités"
@@ -76,10 +76,10 @@
   "skillsPage": {
     "h1": "Compétences de World Conqueror 4",
     "introBold": "{count} compétences",
-    "intro": "extraites directement du jeu, organisées comme dans l'Académie. Les 5 séries apprenables (Tactiques de terrain, Commandement, Logistique, Défense, Offensive) regroupent les compétences que vous pouvez débloquer contre des médailles. La section",
+    "intro": "organisées exactement comme dans l'Académie. Les 5 séries apprenables (Tactiques de terrain, Commandement, Logistique, Défense, Offensive) regroupent les compétences que vous pouvez débloquer contre des médailles. La section",
     "introSignature": "Compétences spécifiques aux généraux",
     "introEnd": "couvre toutes les compétences de signature ou d'entraînement liées à un héros précis (Rokossovsky — Hero, Eisenhower — Super Commander, etc.).",
-    "introFootnote": "Chaque fiche détaille la description complète, la progression L1→L5, le coût en médailles par niveau et la liste des généraux concernés. Descriptions en anglais (source : fichiers de jeu officiels) — traduction française en cours.",
+    "introFootnote": "Chaque fiche détaille la description complète, la progression L1→L5, le coût en médailles par niveau et la liste des généraux concernés. Descriptions en anglais — traduction française en cours.",
     "searchPlaceholder": "🔎 Rechercher une compétence…",
     "searchNoResults": "Aucune compétence ne correspond à votre recherche.",
     "signatureBadge": "signature"
@@ -106,7 +106,7 @@
     "tableEffective": "Description effective",
     "officialEnVersion": "Version anglaise officielle",
     "descFootnoteFr": "Traduction française en cours de révision — le texte anglais officiel fait foi. La valeur « X » est remplacée par la valeur réelle à chaque niveau (tableau ci-dessous).",
-    "descFootnoteEn": "Source : fichiers de jeu officiels. Le marqueur « X » est remplacé par la valeur réelle à chaque niveau (tableau ci-dessous).",
+    "descFootnoteEn": "Le marqueur « X » est remplacé par la valeur réelle à chaque niveau (tableau ci-dessous).",
     "cumulativeCostHint": "🎓 Coût cumulé L1→L{max} :",
     "cumulativeCostMedals": "{count} médailles",
     "cumulativeCostNote": ". À l'Académie, vous pouvez apprendre cette compétence pour la poser dans un slot libre d'un général compatible.",

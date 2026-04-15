@@ -58,7 +58,7 @@
     "statMaxLevels": "Max. Level",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki im Aufbau",
-    "underConstructionNote": "Die Statistiken werden direkt aus den Spieldateien extrahiert (WC4 v1.24.2). Redaktionelle Inhalte (Beschreibungen, Boni, Strategie) werden schrittweise ergänzt.",
+    "underConstructionNote": "Die Statistiken werden mit der aktuellen Spielversion abgeglichen (WC4 v1.24.2). Redaktionelle Inhalte (Beschreibungen, Boni, Strategie) werden schrittweise ergänzt.",
     "exploreByCategory": "Nach Kategorie durchstöbern",
     "mostViewed": "Beliebteste Elite-Einheiten",
     "unitsCountSuffix": "Einheiten"
@@ -76,10 +76,10 @@
   "skillsPage": {
     "h1": "Fähigkeiten in World Conqueror 4",
     "introBold": "{count} Fähigkeiten",
-    "intro": "direkt aus dem Spiel extrahiert und genau wie in der Akademie organisiert. Die 5 lernbaren Reihen (Feldtaktik, Kommando, Logistik, Verteidigung, Offensive) gruppieren alle Fähigkeiten, die du mit Medaillen freischalten kannst. Der Abschnitt",
+    "intro": "genau wie in der Akademie organisiert. Die 5 lernbaren Reihen (Feldtaktik, Kommando, Logistik, Verteidigung, Offensive) gruppieren alle Fähigkeiten, die du mit Medaillen freischalten kannst. Der Abschnitt",
     "introSignature": "Generalsspezifische Fähigkeiten",
     "introEnd": "umfasst alle Signature- oder Trainingsfähigkeiten, die an einen bestimmten Helden gebunden sind (Rokossovsky — Hero, Eisenhower — Super Commander usw.).",
-    "introFootnote": "Jeder Eintrag beschreibt die vollständige Wirkung, den Verlauf L1→L5, die Medaillenkosten pro Stufe und die Liste der Generäle, die ihn tragen. Beschreibungen sind auf Englisch (Quelle: offizielle Spieldateien).",
+    "introFootnote": "Jeder Eintrag beschreibt die vollständige Wirkung, den Verlauf L1→L5, die Medaillenkosten pro Stufe und die Liste der Generäle, die ihn tragen. Beschreibungen sind auf Englisch.",
     "searchPlaceholder": "🔎 Fähigkeit suchen…",
     "searchNoResults": "Keine Fähigkeit entspricht deiner Suche.",
     "signatureBadge": "Signature"
@@ -106,7 +106,7 @@
     "tableEffective": "Effektive Beschreibung",
     "officialEnVersion": "Offizielle englische Bezeichnung",
     "descFootnoteFr": "Deutsche Übersetzung in Prüfung — die offizielle englische Bezeichnung hat Vorrang. Der Platzhalter „X“ wird pro Stufe durch den tatsächlichen Wert ersetzt (Tabelle unten).",
-    "descFootnoteEn": "Quelle: offizielle Spieldateien. Der Platzhalter „X“ wird pro Stufe durch den tatsächlichen Wert ersetzt (Tabelle unten).",
+    "descFootnoteEn": "Der Platzhalter „X“ wird pro Stufe durch den tatsächlichen Wert ersetzt (Tabelle unten).",
     "cumulativeCostHint": "🎓 Kumulative Kosten L1→L{max}:",
     "cumulativeCostMedals": "{count} Medaillen",
     "cumulativeCostNote": ". In der Akademie kannst du diese Fähigkeit erlernen und sie in jeden freien Slot eines kompatiblen Generals einsetzen.",
