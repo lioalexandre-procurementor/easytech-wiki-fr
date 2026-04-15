@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import { useTranslations } from "next-intl";
 import type { LearnableSkill } from "@/lib/types";
 
 type VoteApiResponse = {
@@ -72,6 +73,7 @@ export default function TrainedSkillVote({
   recommended,
   recommendationReason,
 }: Props) {
+  const t = useTranslations("vote");
   const [counts, setCounts] = useState<Record<string, number>>({});
   const [hasVoted, setHasVoted] = useState(false);
   const [disabled, setDisabled] = useState(false);
@@ -152,7 +154,7 @@ export default function TrainedSkillVote({
   const submitVote = async () => {
     if (!selectedSkill) return;
     if (siteKey && !turnstileToken) {
-      setErrorMsg("Merci de compléter la vérification anti-bot.");
+      setErrorMsg(t("errors.captchaMissing"));
       return;
     }
     setSubmitting(true);
@@ -172,10 +174,10 @@ export default function TrainedSkillVote({
       if (!res.ok) {
         setErrorMsg(
           data.error === "already voted"
-            ? "Vous avez déjà voté pour ce slot (valable 30 jours)."
+            ? t("errors.alreadyVoted")
             : data.error === "captcha failed"
-            ? "Vérification anti-bot échouée. Réessayez."
-            : "Erreur lors de l'envoi du vote."
+            ? t("errors.captchaFailed")
+            : t("errors.submitFailed")
         );
         setSubmitting(false);
         return;
@@ -184,7 +186,7 @@ export default function TrainedSkillVote({
       setHasVoted(true);
       setModalOpen(false);
     } catch {
-      setErrorMsg("Connexion perdue. Réessayez dans un instant.");
+      setErrorMsg(t("errors.connectionLost"));
     } finally {
       setSubmitting(false);
     }
@@ -210,11 +212,11 @@ export default function TrainedSkillVote({
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-2">
           <span className="text-gold2 text-[10px] font-extrabold uppercase tracking-widest">
-            🎓 Slot entraînable
+            {t("trainableSlot")}
           </span>
           {currentSkillName && (
             <span className="text-muted text-[10px]">
-              Défaut : « {currentSkillName} »
+              {t("defaultSkill", { name: currentSkillName })}
             </span>
           )}
         </div>
@@ -225,7 +227,7 @@ export default function TrainedSkillVote({
           <div className="flex items-center justify-between gap-2 mb-0.5">
             <div className="flex items-center gap-2 min-w-0">
               <span className="text-gold2 text-[10px] font-extrabold uppercase tracking-widest shrink-0">
-                ⭐ Meta
+                {t("metaBadge")}
               </span>
               <span className="text-gold2 font-bold text-sm truncate">
                 {recommendedCandidate.name}
@@ -247,7 +249,7 @@ export default function TrainedSkillVote({
 
       <div className="mb-3">
         <div className="text-muted text-[10px] uppercase tracking-widest font-bold mb-2">
-          Top 3 votes communauté
+          {t("top3")}
         </div>
         {loading ? (
           <div className="space-y-2">
@@ -260,7 +262,7 @@ export default function TrainedSkillVote({
           </div>
         ) : total === 0 ? (
           <div className="text-muted text-xs italic py-2">
-            Aucun vote pour l'instant — soyez le premier à voter !
+            {t("noVotesYet")}
           </div>
         ) : (
           <ul className="space-y-1.5">
@@ -291,7 +293,7 @@ export default function TrainedSkillVote({
         <>
           {hasVoted ? (
             <div className="text-center text-xs text-gold2 py-2 border border-gold/30 rounded bg-gold/5">
-              ✓ Merci — votre vote est compté (valable 30 jours)
+              {t("thanksVoted")}
             </div>
           ) : (
             <button
@@ -299,17 +301,17 @@ export default function TrainedSkillVote({
               onClick={openVoteModal}
               className="w-full py-2 rounded border border-gold bg-gold/15 text-gold2 text-xs font-extrabold uppercase tracking-widest hover:bg-gold/25 transition-colors"
             >
-              🗳 Voter pour votre préférée
+              {t("voteCta")}
             </button>
           )}
           <div className="text-muted text-[10px] text-center mt-2">
-            {total} vote{total > 1 ? "s" : ""} au total
+            {t("totalVotes", { total })}
           </div>
         </>
       )}
       {disabled && (
         <div className="text-muted text-[11px] italic text-center mt-2">
-          Le vote communautaire n'est pas encore actif sur cette fiche.
+          {t("notActiveYet")}
         </div>
       )}
 
@@ -326,13 +328,13 @@ export default function TrainedSkillVote({
           >
             <div className="p-4 border-b border-border flex items-center justify-between">
               <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm">
-                Slot {slot} — Votre préférence
+                {t("modal.title", { slot })}
               </h3>
               <button
                 type="button"
                 onClick={closeModal}
                 className="text-muted hover:text-gold2 text-xl leading-none"
-                aria-label="Fermer"
+                aria-label={t("modal.close")}
               >
                 ×
               </button>
@@ -371,7 +373,7 @@ export default function TrainedSkillVote({
                               </span>
                             )}
                             <span className="text-muted text-[10px] tabular-nums">
-                              {votes} vote{votes > 1 ? "s" : ""}
+                              {t("voteCount", { count: votes })}
                             </span>
                           </div>
                         </div>
@@ -393,7 +395,7 @@ export default function TrainedSkillVote({
                 />
               ) : (
                 <div className="text-muted text-[11px] italic text-center">
-                  (Turnstile non configuré — vérification désactivée en dev)
+                  {t("modal.turnstileMissing")}
                 </div>
               )}
               {errorMsg && (
@@ -407,7 +409,7 @@ export default function TrainedSkillVote({
                   onClick={closeModal}
                   className="flex-1 py-2 rounded border border-border text-dim text-xs font-bold uppercase tracking-widest hover:border-gold/50"
                 >
-                  Annuler
+                  {t("modal.cancel")}
                 </button>
                 <button
                   type="button"
@@ -415,13 +417,13 @@ export default function TrainedSkillVote({
                   disabled={submitting || !selectedSkill}
                   className="flex-1 py-2 rounded border border-gold bg-gold/20 text-gold2 text-xs font-extrabold uppercase tracking-widest hover:bg-gold/30 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {submitting ? "Envoi..." : "Confirmer"}
+                  {submitting ? t("modal.submitting") : t("modal.confirm")}
                 </button>
               </div>
               <div className="text-muted text-[10px] text-center">
-                Vote anonyme, valable 30 jours ·{" "}
+                {t("modal.anonymousNote")}
                 <a href="/legal/votes" className="underline hover:text-gold2">
-                  Politique
+                  {t("modal.policyLink")}
                 </a>
               </div>
             </div>

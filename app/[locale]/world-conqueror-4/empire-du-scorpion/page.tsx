@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
@@ -11,14 +12,19 @@ import {
 } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
-import { unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
 
-export const metadata: Metadata = {
-  title: "Empire du Scorpion (Black Scorpion / Mystic Forces) — WC4 Wiki FR",
-  description:
-    "Guide complet de l'Empire du Scorpion dans World Conqueror 4 : unités mystiques (Titan Tank, KS-90, Heavenly Beginning Tank, SVA-23), capitaines Osborn, Williams et Colson, lore et stratégies.",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "scorpionPage" });
+  return {
+    title: t("seoTitle"),
+    description: t("seoDescription"),
+  };
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -26,8 +32,9 @@ export function generateStaticParams() {
 
 const CAT_ORDER: Category[] = ["tank", "infantry", "artillery", "navy", "airforce"];
 
-export default function ScorpionHub({ params }: { params: { locale: string } }) {
+export default async function ScorpionHub({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
+  const t = await getTranslations();
   const units = getUnitsByFaction("scorpion");
   const generals = getGeneralsByFaction("scorpion");
   const meta = FACTION_META.scorpion;
@@ -36,29 +43,30 @@ export default function ScorpionHub({ params }: { params: { locale: string } }) 
     <>
       <TopBar />
       <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">Accueil</Link> <span className="mx-2 text-border">›</span>
+        <Link href="/" className="text-dim">{t("nav.home")}</Link>{" "}
+        <span className="mx-2 text-border">›</span>
         <Link href="/world-conqueror-4" className="text-dim">World Conqueror 4</Link>{" "}
         <span className="mx-2 text-border">›</span>
-        <span>Empire du Scorpion</span>
+        <span>{t("scorpionPage.breadcrumbCurrent")}</span>
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
-            Sur cette page
+            {t("nav.onThisPage")}
           </h4>
           <ul className="list-none text-sm">
-            <li><a href="#lore" className="block px-2 py-1 text-dim no-underline hover:text-gold2">📖 Lore & origine</a></li>
-            <li><a href="#generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">👨‍✈️ Les 3 capitaines</a></li>
-            <li><a href="#unites" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🛡 Unités mystiques</a></li>
+            <li><a href="#lore" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("scorpionPage.tocLore")}</a></li>
+            <li><a href="#generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("scorpionPage.tocCaptains")}</a></li>
+            <li><a href="#unites" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("scorpionPage.tocUnits")}</a></li>
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
-            Navigation
+            {t("nav.navigationHeading")}
           </h4>
           <ul className="list-none text-sm">
-            <li><Link href="/world-conqueror-4" className="block px-2 py-1 text-dim no-underline hover:text-gold2">← Retour au hub WC4</Link></li>
-            <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🏅 Unités d'élite standard</Link></li>
-            <li><Link href="/world-conqueror-4/generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">👨‍✈️ Tous les généraux</Link></li>
+            <li><Link href="/world-conqueror-4" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("scorpionPage.navBackToHub")}</Link></li>
+            <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("scorpionPage.navEliteUnits")}</Link></li>
+            <li><Link href="/world-conqueror-4/generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("scorpionPage.navAllGenerals")}</Link></li>
           </ul>
         </aside>
 
@@ -74,52 +82,53 @@ export default function ScorpionHub({ params }: { params: { locale: string } }) 
           >
             <div className="text-5xl mb-3">🦂</div>
             <h1 className="text-4xl font-extrabold mb-2" style={{ color: meta.color }}>
-              Empire du Scorpion
+              {t("scorpionPage.h1")}
             </h1>
             <p className="text-dim text-sm uppercase tracking-widest mb-4">
-              Black Scorpion Empire — Mystic Forces — New World Order
+              {t("scorpionPage.subtitle")}
             </p>
             <p className="text-ink text-base max-w-3xl leading-relaxed mb-5">
-              L'<b>Empire du Scorpion</b> (également appelé <i>Black Scorpion Empire</i> ou <i>Mystic Forces</i>)
-              est la faction antagoniste fictive de World Conqueror 4, apparaissant comme le nouvel ordre mondial
-              à la fin du scénario <b>Modern War</b>. Dirigé par <b>Osborn</b> et ses deux capitaines <b>Williams</b>{" "}
-              et <b>Colson</b>, cet empire déploie des unités mystiques ultra-puissantes aux noms évocateurs :
-              Titan Tank, Heavenly Beginning Tank, KS-90, SVA-23, Mystic Bomber…
+              {t.rich("scorpionPage.heroParagraph", {
+                b: (chunks) => <b>{chunks}</b>,
+                i: (chunks) => <i>{chunks}</i>,
+              })}
             </p>
             <div className="flex flex-wrap gap-7">
-              <Stat n={units.length} l="Unités mystiques" />
-              <Stat n={generals.length} l="Capitaines" />
-              <Stat n="Modern" l="Ère" />
+              <Stat n={units.length} l={t("scorpionPage.statMysticUnits")} />
+              <Stat n={generals.length} l={t("scorpionPage.statCaptains")} />
+              <Stat n={t("scorpionPage.statEraValue")} l={t("scorpionPage.statEra")} />
             </div>
           </section>
 
           {/* LORE */}
           <section id="lore" className="bg-panel border border-border rounded-lg p-6 mb-6">
             <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              📖 Origine & lore
+              {t("scorpionPage.loreHeading")}
             </h2>
             <div className="text-dim text-sm leading-relaxed space-y-3">
               <p>
-                Dans la campagne de World Conqueror 4, l'Empire du Scorpion apparaît comme l'ennemi final après la
-                résolution des conflits mondiaux modernes. Sa base technologique est fondée sur des systèmes
-                mystiques et des armements futuristes, qui surpassent les équivalents du monde réel.
+                {t.rich("scorpionPage.loreP1", {
+                  b: (chunks) => <b>{chunks}</b>,
+                  i: (chunks) => <i>{chunks}</i>,
+                })}
               </p>
               <p>
-                L'origine d'Osborn remonte à un général britannique nommé <b>Alfred</b>, personnage non-recrutable
-                qui apparaît dans la mission <i>Dunkerque</i> de l'événement <i>Origin of the Scorpion Empire</i>.
-                Cette continuité narrative fait d'Osborn le fil rouge secret du jeu, d'abord allié puis chef de l'Empire.
+                {t.rich("scorpionPage.loreP2", {
+                  b: (chunks) => <b>{chunks}</b>,
+                  i: (chunks) => <i>{chunks}</i>,
+                })}
               </p>
               <p className="text-amber-300/80">
-                ⚠️ Ces unités sont exclusives à la campagne. Elles ne sont pas obtenables en Conquête classique
-                et n'ont pas d'équivalent réel — les stats affichées sont des extrapolations en attendant vérification
-                in-game.
+                {t.rich("scorpionPage.loreWarning", {
+                  b: (chunks) => <b>{chunks}</b>,
+                })}
               </p>
             </div>
           </section>
 
           {/* GENERALS */}
           <section id="generaux" className="mb-8">
-            <h2 className="text-2xl mb-4">👨‍✈️ Les trois capitaines de l'Empire</h2>
+            <h2 className="text-2xl mb-4">{t("scorpionPage.captainsHeading")}</h2>
             <div className="grid md:grid-cols-3 gap-4">
               {generals.map((g) => (
                 <Link
@@ -151,11 +160,11 @@ export default function ScorpionHub({ params }: { params: { locale: string } }) 
             </div>
           </section>
 
-          <div className="ad-slot">Emplacement publicitaire</div>
+          <div className="ad-slot">{t("scorpionPage.adSlot")}</div>
 
           {/* UNITS */}
           <section id="unites">
-            <h2 className="text-2xl mb-4 mt-8">🛡 Unités mystiques de l'Empire du Scorpion</h2>
+            <h2 className="text-2xl mb-4 mt-8">{t("scorpionPage.unitsHeading")}</h2>
             {CAT_ORDER.map((cat) => {
               const list = units.filter((u) => u.category === cat);
               if (list.length === 0) return null;
@@ -165,7 +174,7 @@ export default function ScorpionHub({ params }: { params: { locale: string } }) 
                   <h3 className="text-lg mb-3">
                     {cmeta.icon} {cmeta.plural}{" "}
                     <span className="text-muted text-xs uppercase tracking-widest ml-2">
-                      {list.length} unité{list.length > 1 ? "s" : ""}
+                      {t("scorpionPage.unitCountLabel", { count: list.length })}
                     </span>
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
