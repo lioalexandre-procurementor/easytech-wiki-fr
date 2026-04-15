@@ -66,7 +66,7 @@ export default function ComparatorShell({
             key={slot}
             value={id}
             onChange={(e) => setAt(slot, e.target.value)}
-            className="bg-bg3 border border-border rounded-md px-3 py-2 text-sm text-ink"
+            className="bg-bg3 border border-border rounded-md px-3 py-2 min-h-[44px] text-base text-ink"
           >
             {allRows.map((r) => (
               <option key={r.id} value={r.id}>
@@ -79,7 +79,7 @@ export default function ComparatorShell({
           <button
             type="button"
             onClick={addSlot}
-            className="px-3 py-2 border border-border rounded-md text-sm text-gold2 hover:bg-gold/10"
+            className="min-w-[44px] min-h-[44px] px-3 py-2 border border-border rounded-md text-base text-gold2 hover:bg-gold/10 cursor-pointer"
           >
             +
           </button>
@@ -88,7 +88,7 @@ export default function ComparatorShell({
           <button
             type="button"
             onClick={() => removeSlot(ids.length - 1)}
-            className="px-3 py-2 border border-border rounded-md text-sm text-dim hover:text-red-400"
+            className="min-w-[44px] min-h-[44px] px-3 py-2 border border-border rounded-md text-base text-dim hover:text-red-400 cursor-pointer"
           >
             −
           </button>

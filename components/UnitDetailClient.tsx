@@ -176,24 +176,33 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
             <div className="absolute top-0 left-0 h-full rounded-full transition-all duration-200"
                  style={{ width: `${fillPct}%`, background: "linear-gradient(90deg, #d4a44a, #f2c265)" }}/>
           </div>
-          <div className="absolute top-[12px] left-0 right-0 flex justify-between">
+          <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center">
             {Array.from({ length: 12 }, (_, idx) => {
               const n = idx + 1;
               const reached = n <= lvl;
               const isMs = MILESTONES.includes(n);
               const isCurr = n === lvl;
               return (
-                <button key={n} onClick={() => setLvl(n)} aria-label={`Niveau ${n}`}
-                  className="rounded-full grid place-items-center text-[10px] font-bold transition-all cursor-pointer"
-                  style={{
-                    width: 20, height: 20,
-                    background: reached ? (isMs ? "#c8372d" : "#d4a44a") : "#1c2530",
-                    color: reached ? (isMs ? "#fff" : "#0f1419") : "#6b7685",
-                    border: `${isMs ? 3 : 2}px solid ${isMs ? "#c8372d" : reached ? "#d4a44a" : "#2a3544"}`,
-                    transform: isCurr ? "scale(1.4)" : "scale(1)",
-                    boxShadow: isCurr ? "0 0 0 4px rgba(212,164,74,0.3)" : "none",
-                  }}>
-                  {n}
+                <button
+                  key={n}
+                  onClick={() => setLvl(n)}
+                  aria-label={`Niveau ${n}`}
+                  className="relative grid place-items-center cursor-pointer touch-manipulation h-11 w-6 shrink-0"
+                >
+                  <span
+                    className="rounded-full grid place-items-center text-[10px] font-bold transition-all"
+                    style={{
+                      width: 20,
+                      height: 20,
+                      background: reached ? (isMs ? "#c8372d" : "#d4a44a") : "#1c2530",
+                      color: reached ? (isMs ? "#fff" : "#0f1419") : "#6b7685",
+                      border: `${isMs ? 3 : 2}px solid ${isMs ? "#c8372d" : reached ? "#d4a44a" : "#2a3544"}`,
+                      transform: isCurr ? "scale(1.4)" : "scale(1)",
+                      boxShadow: isCurr ? "0 0 0 4px rgba(212,164,74,0.3)" : "none",
+                    }}
+                  >
+                    {n}
+                  </span>
                 </button>
               );
             })}

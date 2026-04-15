@@ -30,7 +30,7 @@ export function ComparatorRadar({ rows, statLabels }: Props) {
     return point;
   });
   return (
-    <div className="w-full h-[340px]">
+    <div className="w-full h-[260px] sm:h-[300px] md:h-[340px]">
       <ResponsiveContainer>
         <RadarChart data={data}>
           <PolarGrid stroke="#3a3a3a" />
