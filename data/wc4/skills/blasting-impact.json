@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 5% damage to enemies around the target."
+      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 5% damage to enemies around the target.",
+      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 5% dégâts aux ennemis around the cible."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 10% damage to enemies around the target."
+      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 10% damage to enemies around the target.",
+      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 10% dégâts aux ennemis around the cible."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 15% damage to enemies around the target."
+      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 15% damage to enemies around the target.",
+      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 15% dégâts aux ennemis around the cible."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 20% damage to enemies around the target."
+      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 20% damage to enemies around the target.",
+      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 20% dégâts aux ennemis around the cible."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 25% damage to enemies around the target."
+      "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 25% damage to enemies around the target.",
+      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 25% dégâts aux ennemis around the cible."
     }
   ],
   "usage": {
@@ -94,5 +99,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Blasting Impact",
+  "descriptionTemplateFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional X% dégâts aux ennemis around the cible."
 }

@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 20% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action."
+      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 20% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger après avoir attaqué, vous avez 20% de chance d'attaquer à nouveau (only once par tour). Chaque élimination ce tour-ci augmente cette chance de 20% (max 100%), améliorant l'effet en action supplémentaire."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 40% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action."
+      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 40% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger après avoir attaqué, vous avez 40% de chance d'attaquer à nouveau (only once par tour). Chaque élimination ce tour-ci augmente cette chance de 20% (max 100%), améliorant l'effet en action supplémentaire."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 60% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action."
+      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 60% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger après avoir attaqué, vous avez 60% de chance d'attaquer à nouveau (only once par tour). Chaque élimination ce tour-ci augmente cette chance de 20% (max 100%), améliorant l'effet en action supplémentaire."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 80% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action."
+      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 80% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger après avoir attaqué, vous avez 80% de chance d'attaquer à nouveau (only once par tour). Chaque élimination ce tour-ci augmente cette chance de 20% (max 100%), améliorant l'effet en action supplémentaire."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 100% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action."
+      "renderedDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 100% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger après avoir attaqué, vous avez 100% de chance d'attaquer à nouveau (only once par tour). Chaque élimination ce tour-ci augmente cette chance de 20% (max 100%), améliorant l'effet en action supplémentaire."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Anéantir le Nord",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger après avoir attaqué, you have a X% chance to attaque again (only once par tour). Chaque élimination ce tour-ci augmente cette chance de 20% (max 100%), améliorant l'effet en action supplémentaire."
 }

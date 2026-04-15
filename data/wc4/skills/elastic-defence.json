@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Fix nearby fortress units: each round HP+4"
+      "renderedDesc": "Fix nearby fortress units: each round HP+4",
+      "renderedDescFr": "Fix nearby fortress unités: each round PV +4"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Fix nearby fortress units: each round HP+8"
+      "renderedDesc": "Fix nearby fortress units: each round HP+8",
+      "renderedDescFr": "Fix nearby fortress unités: each round PV +8"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Fix nearby fortress units: each round HP+12"
+      "renderedDesc": "Fix nearby fortress units: each round HP+12",
+      "renderedDescFr": "Fix nearby fortress unités: each round PV +12"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Fix nearby fortress units: each round HP+16"
+      "renderedDesc": "Fix nearby fortress units: each round HP+16",
+      "renderedDescFr": "Fix nearby fortress unités: each round PV +16"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Fix nearby fortress units: each round HP+20"
+      "renderedDesc": "Fix nearby fortress units: each round HP+20",
+      "renderedDescFr": "Fix nearby fortress unités: each round PV +20"
     }
   ],
   "usage": {
@@ -322,5 +327,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Elastic Defence",
+  "descriptionTemplateFr": "Fix nearby fortress unités: each round PV +X"
 }

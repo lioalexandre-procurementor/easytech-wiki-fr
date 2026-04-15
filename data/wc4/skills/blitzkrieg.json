@@ -14,7 +14,8 @@
       "effect": 0,
       "chance": 12,
       "costMedal": 150,
-      "renderedDesc": "12% chance that the enemy will not fight back when commanding armored units"
+      "renderedDesc": "12% chance that the enemy will not fight back when commanding armored units",
+      "renderedDescFr": "12% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 0,
       "chance": 24,
       "costMedal": 250,
-      "renderedDesc": "24% chance that the enemy will not fight back when commanding armored units"
+      "renderedDesc": "24% chance that the enemy will not fight back when commanding armored units",
+      "renderedDescFr": "24% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 0,
       "chance": 36,
       "costMedal": 350,
-      "renderedDesc": "36% chance that the enemy will not fight back when commanding armored units"
+      "renderedDesc": "36% chance that the enemy will not fight back when commanding armored units",
+      "renderedDescFr": "36% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 0,
       "chance": 48,
       "costMedal": 450,
-      "renderedDesc": "48% chance that the enemy will not fight back when commanding armored units"
+      "renderedDesc": "48% chance that the enemy will not fight back when commanding armored units",
+      "renderedDescFr": "48% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 0,
       "chance": 60,
       "costMedal": 550,
-      "renderedDesc": "60% chance that the enemy will not fight back when commanding armored units"
+      "renderedDesc": "60% chance that the enemy will not fight back when commanding armored units",
+      "renderedDescFr": "60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
     }
   ],
   "usage": {
@@ -530,5 +535,7 @@
       }
     ]
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Guerre éclair",
+  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
 }

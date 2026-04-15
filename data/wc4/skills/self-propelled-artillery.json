@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "When commanding an artillery unit to attack, gain 20% chance of attacking again after annihilating enemy troops"
+      "renderedDesc": "When commanding an artillery unit to attack, gain 20% chance of attacking again after annihilating enemy troops",
+      "renderedDescFr": "When commanding an artillerie unité to attaque, gain 20% chance of attacking again after annihilating ennemi troops"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "When commanding an artillery unit to attack, gain 40% chance of attacking again after annihilating enemy troops"
+      "renderedDesc": "When commanding an artillery unit to attack, gain 40% chance of attacking again after annihilating enemy troops",
+      "renderedDescFr": "When commanding an artillerie unité to attaque, gain 40% chance of attacking again after annihilating ennemi troops"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "When commanding an artillery unit to attack, gain 60% chance of attacking again after annihilating enemy troops"
+      "renderedDesc": "When commanding an artillery unit to attack, gain 60% chance of attacking again after annihilating enemy troops",
+      "renderedDescFr": "When commanding an artillerie unité to attaque, gain 60% chance of attacking again after annihilating ennemi troops"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "When commanding an artillery unit to attack, gain 80% chance of attacking again after annihilating enemy troops"
+      "renderedDesc": "When commanding an artillery unit to attack, gain 80% chance of attacking again after annihilating enemy troops",
+      "renderedDescFr": "When commanding an artillerie unité to attaque, gain 80% chance of attacking again after annihilating ennemi troops"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding an artillery unit to attack, gain 100% chance of attacking again after annihilating enemy troops"
+      "renderedDesc": "When commanding an artillery unit to attack, gain 100% chance of attacking again after annihilating enemy troops",
+      "renderedDescFr": "When commanding an artillerie unité to attaque, gain 100% chance of attacking again after annihilating ennemi troops"
     }
   ],
   "usage": {
@@ -102,5 +107,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Self-propelled artillerie",
+  "descriptionTemplateFr": "When commanding an artillerie unité to attaque, gain X% chance of attacking again after annihilating ennemi troops"
 }

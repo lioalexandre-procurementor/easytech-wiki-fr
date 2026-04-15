@@ -146,5 +146,105 @@
     "head": "/img/wc4/heads/Marshall.webp",
     "photoTrained": null,
     "headTrained": null
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Guerrilla Master",
+      "desc": "Evade 15% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_104.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Guerrilla Master",
+      "skillSlug": "guerrilla-master",
+      "skillType": 104,
+      "skillLevel": 3
+    },
+    {
+      "slot": 2,
+      "name": "Infantry Group Charge",
+      "desc": "40% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_101.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Infantry Group Charge",
+      "skillSlug": "infantry-group-charge",
+      "skillType": 101,
+      "skillLevel": 2
+    },
+    {
+      "slot": 3,
+      "name": "Organisation",
+      "desc": "Recover 3% maximum HP on the next turn when the infantry units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_107.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Organisation",
+      "skillSlug": "organisation",
+      "skillType": 107,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Raider",
+      "desc": "Deal +6% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 1
+    },
+    {
+      "slot": 5,
+      "name": "Infantry Leader",
+      "desc": "16% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 2
+    },
+    {
+      "slot": 6,
+      "name": "Wartime Mobilization",
+      "nameEn": "Wartime Mobilization",
+      "desc": "When commanding infantry units, there is a 100% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_172.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "wartime-mobilization",
+      "skillType": 172,
+      "skillLevel": 5
+    },
+    {
+      "slot": 7,
+      "name": "Marshall Plan",
+      "nameEn": "Marshall Plan",
+      "desc": "When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_173.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "marshall-plan",
+      "skillType": 173,
+      "skillLevel": 5
+    }
+  ]
 }

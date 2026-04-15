@@ -14,7 +14,8 @@
       "effect": 15,
       "chance": 15,
       "costMedal": 150,
-      "renderedDesc": "After attacking, there is 15% to gain \"provocation\" effect"
+      "renderedDesc": "After attacking, there is 15% to gain \"provocation\" effect",
+      "renderedDescFr": "Après avoir attaqué, there is 15% to gain \"provocation\" effect"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 30,
       "chance": 30,
       "costMedal": 250,
-      "renderedDesc": "After attacking, there is 30% to gain \"provocation\" effect"
+      "renderedDesc": "After attacking, there is 30% to gain \"provocation\" effect",
+      "renderedDescFr": "Après avoir attaqué, there is 30% to gain \"provocation\" effect"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 45,
       "chance": 45,
       "costMedal": 350,
-      "renderedDesc": "After attacking, there is 45% to gain \"provocation\" effect"
+      "renderedDesc": "After attacking, there is 45% to gain \"provocation\" effect",
+      "renderedDescFr": "Après avoir attaqué, there is 45% to gain \"provocation\" effect"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 60,
       "chance": 60,
       "costMedal": 450,
-      "renderedDesc": "After attacking, there is 60% to gain \"provocation\" effect"
+      "renderedDesc": "After attacking, there is 60% to gain \"provocation\" effect",
+      "renderedDescFr": "Après avoir attaqué, there is 60% to gain \"provocation\" effect"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 75,
       "chance": 75,
       "costMedal": 550,
-      "renderedDesc": "After attacking, there is 75% to gain \"provocation\" effect"
+      "renderedDesc": "After attacking, there is 75% to gain \"provocation\" effect",
+      "renderedDescFr": "Après avoir attaqué, there is 75% to gain \"provocation\" effect"
     }
   ],
   "usage": {
@@ -84,5 +89,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Provocation",
+  "descriptionTemplateFr": "Après avoir attaqué, there is X% to gain \"provocation\" effect"
 }

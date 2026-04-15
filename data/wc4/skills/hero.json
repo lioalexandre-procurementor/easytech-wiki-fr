@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Morale of armored units under command will not diminish, +3% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn."
+      "renderedDesc": "Morale of armored units under command will not diminish, +3% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +3% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Morale of armored units under command will not diminish, +6% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn."
+      "renderedDesc": "Morale of armored units under command will not diminish, +6% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +6% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Morale of armored units under command will not diminish, +9% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn."
+      "renderedDesc": "Morale of armored units under command will not diminish, +9% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +9% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Morale of armored units under command will not diminish, +12% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn."
+      "renderedDesc": "Morale of armored units under command will not diminish, +12% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +12% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn."
+      "renderedDesc": "Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +15% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Héros",
+  "descriptionTemplateFr": "La moral des unités blindées sous votre commandement ne diminue pas, +X% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
 }

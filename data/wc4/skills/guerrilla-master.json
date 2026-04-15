@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Evade 5% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+      "renderedDesc": "Evade 5% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "renderedDescFr": "Evade 5% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Evade 10% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+      "renderedDesc": "Evade 10% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "renderedDescFr": "Evade 10% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Evade 15% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+      "renderedDesc": "Evade 15% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "renderedDescFr": "Evade 15% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Evade 20% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+      "renderedDesc": "Evade 20% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "renderedDescFr": "Evade 20% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Evade 25% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+      "renderedDesc": "Evade 25% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "renderedDescFr": "Evade 25% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
     }
   ],
   "usage": {
@@ -106,5 +111,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Guerrilla Master",
+  "descriptionTemplateFr": "Evade X% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
 }

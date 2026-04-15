@@ -37,9 +37,14 @@
     "potentialSuffix": "(potential +{delta})",
     "baseMode": "Base build",
     "trainedMode": "Trained build",
+    "maxedMode": "Maxed out",
+    "premiumTrainingMode": "Premium training",
     "baseModeHint": "Stats and skills at purchase (before training)",
     "trainedModeHint": "Stats and skills at max (after full training)",
+    "maxedModeHint": "Attributes at their ceiling + every skill pushed to its max level",
     "viewTrained": "View trained build →",
+    "viewMaxed": "See maxed out general →",
+    "viewPremiumTraining": "View premium training (Swords/Sceptres) →",
     "viewBase": "← View base build",
     "skillSlots": "{count, plural, one {# slot} other {# slots}}",
     "skillSlotsLabel": "Skill slots",
@@ -77,13 +82,24 @@
     "event": "Event"
   },
   "trainedPage": {
-    "intro": "Trained build of {name}: max stats, full training tree and total cost to max this general.",
+    "intro": "Maxed-out view of {name}: every attribute at its ceiling and every skill pushed to its max level from the skill catalog.",
     "totalCost": "Total training cost",
     "swords": "Swords",
     "sceptres": "Sceptres",
     "stageProgression": "Stage progression",
     "backToBase": "← Back to base build",
-    "seoTitle": "{name} Trained Build — Max stats, training cost & final skills | WC4",
-    "seoDesc": "Full guide to training {name} in World Conqueror 4: max stats, sword and sceptre cost, final skills after all promotions."
+    "seoTitle": "{name} Maxed Out — Ceiling stats & max-level skills | WC4",
+    "seoDesc": "At-a-glance view of {name} at full potential in World Conqueror 4: attributes at their ceiling and every skill at max level."
+  },
+  "premiumTrainingPage": {
+    "intro": "Premium training (Swords & Sceptres of Dominance) of {name}: signature skills unlocked at the final stage and total premium resource cost.",
+    "totalCost": "Total premium training cost",
+    "swords": "Swords of Dominance",
+    "sceptres": "Sceptres of Dominance",
+    "finalLoadout": "Final loadout after training",
+    "signatureSkills": "Unlocked signature skills",
+    "backToBase": "← Back to base build",
+    "seoTitle": "{name} Trained (Swords/Sceptres) — Signature skills & premium cost | WC4",
+    "seoDesc": "Full premium training guide for {name} in World Conqueror 4: signature skills, sword and sceptre cost, final post-promotion loadout."
   }
 }

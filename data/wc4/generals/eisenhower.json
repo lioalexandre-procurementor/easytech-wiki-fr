@@ -146,5 +146,105 @@
     "head": "/img/wc4/heads/Eisenhower.webp",
     "photoTrained": null,
     "headTrained": null
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Fleet Leader",
+      "desc": "16% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 2
+    },
+    {
+      "slot": 2,
+      "name": "Carpet Bombing",
+      "desc": "Damage +8% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Depot Ship",
+      "desc": "Fix damaged ship units: each round HP+3",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Depot Ship",
+      "skillSlug": "depot-ship",
+      "skillType": 17,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Sailor",
+      "desc": "Counter attack +12% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 2
+    },
+    {
+      "slot": 5,
+      "name": "Shelter",
+      "desc": "Able to dodge 6% damage from the enemy's missile units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Shelter",
+      "skillSlug": "shelter",
+      "skillType": 31,
+      "skillLevel": 1
+    },
+    {
+      "slot": 6,
+      "name": "Expeditionary Force Commander",
+      "nameEn": "Expeditionary Force Commander",
+      "desc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_166.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "expeditionary-force-commander",
+      "skillType": 166,
+      "skillLevel": 5
+    },
+    {
+      "slot": 7,
+      "name": "Operation Overlord",
+      "nameEn": "Operation Overlord",
+      "desc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a 100% chance to grant an additional attack.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_167.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "operation-overlord",
+      "skillType": 167,
+      "skillLevel": 5
+    }
+  ]
 }

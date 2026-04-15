@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "When commanding armored troops, damage received - 3%."
+      "renderedDesc": "When commanding armored troops, damage received - 3%.",
+      "renderedDescFr": "When commanding armored troops, dégâts received - 3%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding armored troops, damage received - 6%."
+      "renderedDesc": "When commanding armored troops, damage received - 6%.",
+      "renderedDescFr": "When commanding armored troops, dégâts received - 6%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding armored troops, damage received - 9%."
+      "renderedDesc": "When commanding armored troops, damage received - 9%.",
+      "renderedDescFr": "When commanding armored troops, dégâts received - 9%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "When commanding armored troops, damage received - 12%."
+      "renderedDesc": "When commanding armored troops, damage received - 12%.",
+      "renderedDescFr": "When commanding armored troops, dégâts received - 12%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "When commanding armored troops, damage received - 15%."
+      "renderedDesc": "When commanding armored troops, damage received - 15%.",
+      "renderedDescFr": "When commanding armored troops, dégâts received - 15%."
     }
   ],
   "usage": {
@@ -74,5 +79,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Fortification",
+  "descriptionTemplateFr": "When commanding armored troops, dégâts received - X%."
 }

@@ -14,7 +14,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Deal +6% damage to the enemy when commanding armored units"
+      "renderedDesc": "Deal +6% damage to the enemy when commanding armored units",
+      "renderedDescFr": "Inflige +6% de dégâts à l'ennemi lorsque vous commandez des unités blindées"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Deal +12% damage to the enemy when commanding armored units"
+      "renderedDesc": "Deal +12% damage to the enemy when commanding armored units",
+      "renderedDescFr": "Inflige +12% de dégâts à l'ennemi lorsque vous commandez des unités blindées"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 18,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Deal +18% damage to the enemy when commanding armored units"
+      "renderedDesc": "Deal +18% damage to the enemy when commanding armored units",
+      "renderedDescFr": "Inflige +18% de dégâts à l'ennemi lorsque vous commandez des unités blindées"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Deal +24% damage to the enemy when commanding armored units"
+      "renderedDesc": "Deal +24% damage to the enemy when commanding armored units",
+      "renderedDescFr": "Inflige +24% de dégâts à l'ennemi lorsque vous commandez des unités blindées"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Deal +30% damage to the enemy when commanding armored units"
+      "renderedDesc": "Deal +30% damage to the enemy when commanding armored units",
+      "renderedDescFr": "Inflige +30% de dégâts à l'ennemi lorsque vous commandez des unités blindées"
     }
   ],
   "usage": {
@@ -670,5 +675,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Assaut blindé",
+  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités blindées"
 }

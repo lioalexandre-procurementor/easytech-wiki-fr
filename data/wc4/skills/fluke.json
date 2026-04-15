@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "When commanded troop activates dodge, restore 3% based on self's maximum HP (up to 1 time per turn)"
+      "renderedDesc": "When commanded troop activates dodge, restore 3% based on self's maximum HP (up to 1 time per turn)",
+      "renderedDescFr": "When commanded troop activates esquive, restaurer 3% based on self's maximum PV (up to 1 time par tour)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "When commanded troop activates dodge, restore 6% based on self's maximum HP (up to 1 time per turn)"
+      "renderedDesc": "When commanded troop activates dodge, restore 6% based on self's maximum HP (up to 1 time per turn)",
+      "renderedDescFr": "When commanded troop activates esquive, restaurer 6% based on self's maximum PV (up to 1 time par tour)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanded troop activates dodge, restore 9% based on self's maximum HP (up to 1 time per turn)"
+      "renderedDesc": "When commanded troop activates dodge, restore 9% based on self's maximum HP (up to 1 time per turn)",
+      "renderedDescFr": "When commanded troop activates esquive, restaurer 9% based on self's maximum PV (up to 1 time par tour)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanded troop activates dodge, restore 12% based on self's maximum HP (up to 1 time per turn)"
+      "renderedDesc": "When commanded troop activates dodge, restore 12% based on self's maximum HP (up to 1 time per turn)",
+      "renderedDescFr": "When commanded troop activates esquive, restaurer 12% based on self's maximum PV (up to 1 time par tour)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanded troop activates dodge, restore 15% based on self's maximum HP (up to 1 time per turn)"
+      "renderedDesc": "When commanded troop activates dodge, restore 15% based on self's maximum HP (up to 1 time per turn)",
+      "renderedDescFr": "When commanded troop activates esquive, restaurer 15% based on self's maximum PV (up to 1 time par tour)"
     }
   ],
   "usage": {
@@ -66,5 +71,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Coup du sort",
+  "descriptionTemplateFr": "When commanded troop activates esquive, restaurer X% based on self's maximum PV (up to 1 time par tour)"
 }

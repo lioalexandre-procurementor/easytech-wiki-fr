@@ -14,7 +14,8 @@
       "effect": 150,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "20% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+      "renderedDesc": "20% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "renderedDescFr": "20% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 150,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "40% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+      "renderedDesc": "40% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "renderedDescFr": "40% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 150,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "60% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+      "renderedDesc": "60% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "renderedDescFr": "60% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 150,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "80% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+      "renderedDesc": "80% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "renderedDescFr": "80% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 150,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+      "renderedDesc": "100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "renderedDescFr": "100% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
     }
   ],
   "usage": {
@@ -78,5 +83,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Tireur d'élite",
+  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
 }

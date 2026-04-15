@@ -146,5 +146,105 @@
     "head": "/img/wc4/heads/Manstein.webp",
     "photoTrained": null,
     "headTrained": null
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Panzer Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
+    },
+    {
+      "slot": 2,
+      "name": "Blitzkrieg",
+      "desc": "36% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 3
+    },
+    {
+      "slot": 3,
+      "name": "Armored Assault",
+      "desc": "Deal +12% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 2
+    },
+    {
+      "slot": 4,
+      "name": "Tide of Iron",
+      "desc": "Damage to the enemy +15 when the armored units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Tide of Iron",
+      "skillSlug": "tide-of-iron",
+      "skillType": 24,
+      "skillLevel": 3
+    },
+    {
+      "slot": 5,
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +5 when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Plain Fighting",
+      "skillSlug": "plain-fighting",
+      "skillType": 7,
+      "skillLevel": 1
+    },
+    {
+      "slot": 6,
+      "name": "Steel Maneuver",
+      "nameEn": "Steel Maneuver",
+      "desc": "When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_170.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "steel-maneuver",
+      "skillType": 170,
+      "skillLevel": 5
+    },
+    {
+      "slot": 7,
+      "name": "Sickle Cut",
+      "nameEn": "Sickle Cut",
+      "desc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 100% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_171.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "sickle-cut",
+      "skillType": 171,
+      "skillLevel": 5
+    }
+  ]
 }

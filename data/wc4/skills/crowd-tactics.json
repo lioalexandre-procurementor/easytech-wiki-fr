@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Attack of friendly surrounding army units +4"
+      "renderedDesc": "Attack of friendly surrounding army units +4",
+      "renderedDescFr": "Attaque of allié surrounding army unités +4"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Attack of friendly surrounding army units +8"
+      "renderedDesc": "Attack of friendly surrounding army units +8",
+      "renderedDescFr": "Attaque of allié surrounding army unités +8"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Attack of friendly surrounding army units +12"
+      "renderedDesc": "Attack of friendly surrounding army units +12",
+      "renderedDescFr": "Attaque of allié surrounding army unités +12"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Attack of friendly surrounding army units +16"
+      "renderedDesc": "Attack of friendly surrounding army units +16",
+      "renderedDescFr": "Attaque of allié surrounding army unités +16"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Attack of friendly surrounding army units +20"
+      "renderedDesc": "Attack of friendly surrounding army units +20",
+      "renderedDescFr": "Attaque of allié surrounding army unités +20"
     }
   ],
   "usage": {
@@ -229,5 +234,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Crowd Tactics",
+  "descriptionTemplateFr": "Attaque of allié surrounding army unités +X"
 }

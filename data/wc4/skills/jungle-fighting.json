@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Damage to the enemy +5 when fighting in the jungle"
+      "renderedDesc": "Damage to the enemy +5 when fighting in the jungle",
+      "renderedDescFr": "Dégâts infligés +5 when fighting in the jungle"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Damage to the enemy +10 when fighting in the jungle"
+      "renderedDesc": "Damage to the enemy +10 when fighting in the jungle",
+      "renderedDescFr": "Dégâts infligés +10 when fighting in the jungle"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Damage to the enemy +15 when fighting in the jungle"
+      "renderedDesc": "Damage to the enemy +15 when fighting in the jungle",
+      "renderedDescFr": "Dégâts infligés +15 when fighting in the jungle"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Damage to the enemy +20 when fighting in the jungle"
+      "renderedDesc": "Damage to the enemy +20 when fighting in the jungle",
+      "renderedDescFr": "Dégâts infligés +20 when fighting in the jungle"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Damage to the enemy +25 when fighting in the jungle"
+      "renderedDesc": "Damage to the enemy +25 when fighting in the jungle",
+      "renderedDescFr": "Dégâts infligés +25 when fighting in the jungle"
     }
   ],
   "usage": {
@@ -280,5 +285,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Jungle Fighting",
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting in the jungle"
 }

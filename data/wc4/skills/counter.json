@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 5% of that damage.(Each attack only takes effect once)"
+      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 5% of that damage.(Each attack only takes effect once)",
+      "renderedDescFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes 5% of that dégâts.(Each attaque only takes effect once)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 10% of that damage.(Each attack only takes effect once)"
+      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 10% of that damage.(Each attack only takes effect once)",
+      "renderedDescFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes 10% of that dégâts.(Each attaque only takes effect once)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 15% of that damage.(Each attack only takes effect once)"
+      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 15% of that damage.(Each attack only takes effect once)",
+      "renderedDescFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes 15% of that dégâts.(Each attaque only takes effect once)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 20% of that damage.(Each attack only takes effect once)"
+      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 20% of that damage.(Each attack only takes effect once)",
+      "renderedDescFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes 20% of that dégâts.(Each attaque only takes effect once)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)"
+      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)",
+      "renderedDescFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes 25% of that dégâts.(Each attaque only takes effect once)"
     }
   ],
   "usage": {
@@ -78,5 +83,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Counter",
+  "descriptionTemplateFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes X% of that dégâts.(Each attaque only takes effect once)"
 }

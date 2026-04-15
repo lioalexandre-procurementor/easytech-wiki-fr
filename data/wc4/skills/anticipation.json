@@ -14,7 +14,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding troops to move, dealt damage +2% (up to 50%) for each grid moved for 1 turn."
+      "renderedDesc": "When commanding troops to move, dealt damage +2% (up to 50%) for each grid moved for 1 turn.",
+      "renderedDescFr": "When commanding troops to move, dégâts infligés +2% (up to 50%) for each grid moved pendant 1 tour."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding troops to move, dealt damage +4% (up to 50%) for each grid moved for 1 turn."
+      "renderedDesc": "When commanding troops to move, dealt damage +4% (up to 50%) for each grid moved for 1 turn.",
+      "renderedDescFr": "When commanding troops to move, dégâts infligés +4% (up to 50%) for each grid moved pendant 1 tour."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "When commanding troops to move, dealt damage +6% (up to 50%) for each grid moved for 1 turn."
+      "renderedDesc": "When commanding troops to move, dealt damage +6% (up to 50%) for each grid moved for 1 turn.",
+      "renderedDescFr": "When commanding troops to move, dégâts infligés +6% (up to 50%) for each grid moved pendant 1 tour."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "When commanding troops to move, dealt damage +8% (up to 50%) for each grid moved for 1 turn."
+      "renderedDesc": "When commanding troops to move, dealt damage +8% (up to 50%) for each grid moved for 1 turn.",
+      "renderedDescFr": "When commanding troops to move, dégâts infligés +8% (up to 50%) for each grid moved pendant 1 tour."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn."
+      "renderedDesc": "When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.",
+      "renderedDescFr": "When commanding troops to move, dégâts infligés +10% (up to 50%) for each grid moved pendant 1 tour."
     }
   ],
   "usage": {
@@ -82,5 +87,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Anticipation",
+  "descriptionTemplateFr": "When commanding troops to move, dealt dégâts +X% (up to 50%) for each grid moved pendant 1 tour."
 }

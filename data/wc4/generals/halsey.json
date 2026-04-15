@@ -55,17 +55,13 @@
     },
     {
       "slot": 4,
-      "name": "Naval Overlord",
-      "desc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 70% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_141.webp",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Naval Overlord",
-      "skillSlug": "naval-overlord",
-      "skillType": 141,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -139,5 +135,63 @@
     "head": "/img/wc4/heads/Halsey.webp",
     "photoTrained": "/img/wc4/generals/Halsey2.webp",
     "headTrained": "/img/wc4/heads/Halsey2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Fleet Leader",
+      "desc": "8% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Carpet Bombing",
+      "desc": "Damage +16% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 2
+    },
+    {
+      "slot": 3,
+      "name": "Sailor",
+      "desc": "Counter attack +6% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Naval Overlord",
+      "desc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 70% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_141.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Naval Overlord",
+      "skillSlug": "naval-overlord",
+      "skillType": 141,
+      "skillLevel": 5
+    }
+  ]
 }

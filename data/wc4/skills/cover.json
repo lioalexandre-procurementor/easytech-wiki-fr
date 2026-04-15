@@ -14,7 +14,8 @@
       "effect": 18,
       "chance": 12,
       "costMedal": 80,
-      "renderedDesc": "12% chance to dodge 18% damage from the enemy"
+      "renderedDesc": "12% chance to dodge 18% damage from the enemy",
+      "renderedDescFr": "12% chance to esquive 18% dégâts de l'ennemi"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 36,
       "chance": 12,
       "costMedal": 120,
-      "renderedDesc": "12% chance to dodge 36% damage from the enemy"
+      "renderedDesc": "12% chance to dodge 36% damage from the enemy",
+      "renderedDescFr": "12% chance to esquive 36% dégâts de l'ennemi"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 54,
       "chance": 12,
       "costMedal": 180,
-      "renderedDesc": "12% chance to dodge 54% damage from the enemy"
+      "renderedDesc": "12% chance to dodge 54% damage from the enemy",
+      "renderedDescFr": "12% chance to esquive 54% dégâts de l'ennemi"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 72,
       "chance": 12,
       "costMedal": 240,
-      "renderedDesc": "12% chance to dodge 72% damage from the enemy"
+      "renderedDesc": "12% chance to dodge 72% damage from the enemy",
+      "renderedDescFr": "12% chance to esquive 72% dégâts de l'ennemi"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 90,
       "chance": 12,
       "costMedal": 300,
-      "renderedDesc": "12% chance to dodge 90% damage from the enemy"
+      "renderedDesc": "12% chance to dodge 90% damage from the enemy",
+      "renderedDescFr": "12% chance to esquive 90% dégâts de l'ennemi"
     }
   ],
   "usage": {
@@ -382,5 +387,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Cover",
+  "descriptionTemplateFr": "12% chance to esquive X% dégâts de l'ennemi"
 }

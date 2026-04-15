@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Mobility +1% when commanding land units on board"
+      "renderedDesc": "Mobility +1% when commanding land units on board",
+      "renderedDescFr": "Mobility +1% when commanding land unités on board"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Mobility +2% when commanding land units on board"
+      "renderedDesc": "Mobility +2% when commanding land units on board",
+      "renderedDescFr": "Mobility +2% when commanding land unités on board"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Mobility +3% when commanding land units on board"
+      "renderedDesc": "Mobility +3% when commanding land units on board",
+      "renderedDescFr": "Mobility +3% when commanding land unités on board"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Mobility +4% when commanding land units on board"
+      "renderedDesc": "Mobility +4% when commanding land units on board",
+      "renderedDescFr": "Mobility +4% when commanding land unités on board"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Mobility +5% when commanding land units on board"
+      "renderedDesc": "Mobility +5% when commanding land units on board",
+      "renderedDescFr": "Mobility +5% when commanding land unités on board"
     }
   ],
   "usage": {
@@ -62,5 +67,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Guerre amphibie",
+  "descriptionTemplateFr": "Mobility +X% when commanding land unités on board"
 }

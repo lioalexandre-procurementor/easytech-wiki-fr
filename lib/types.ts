@@ -209,7 +209,14 @@ export interface GeneralData {
   countryName: string;
   shortDesc: string;
   longDesc: string;
-  skills: GeneralSkill[];                 // length should match quality (3/4/5)
+  skills: GeneralSkill[];                 // length should match quality (3/4/5) — BASE loadout (untrained)
+  /**
+   * Full skill loadout AFTER premium training (Swords/Sceptres of Dominance).
+   * Only present for the 19 generals with `hasTrainingPath=true` whose
+   * promotion chain carries a final-stage Skills list. Rendered by the
+   * `/premium-training` view. Should NOT pollute the base `skills` array.
+   */
+  trainedSkills?: GeneralSkill[] | null;
   attributes?: GeneralAttributes | null;
   hasTrainingPath: boolean;               // eligible for Sword/Sceptre premium training
   training?: TrainingPath | null;         // full per-stage data (filled after verification)
@@ -267,6 +274,9 @@ export interface SkillProgression {
   costMedal: number;
   /** Template with %d substituted — the in-game player-facing text. */
   renderedDesc: string;
+  /** First-pass FR translation of renderedDesc. May partially contain English
+   *  for phrases not yet covered by the phrase-level translator. */
+  renderedDescFr?: string;
 }
 
 export interface SkillUsageEntry {
@@ -279,10 +289,14 @@ export interface SkillCatalogEntry {
   slug: string;
   type: number;               // APK skill type id
   name: string;               // English canonical name
+  /** Hand-curated FR display name (falls back to `name` when absent). */
+  nameFr?: string;
   series: number;             // 0 = signature, 1..5 = learnable series
   seriesLabel: string;
   /** Template with placeholder rendered as `X` — the generic description. */
   descriptionTemplate: string;
+  /** First-pass FR translation of descriptionTemplate. */
+  descriptionTemplateFr?: string;
   icon: string | null;
   maxLevel: number;
   progression: SkillProgression[];
@@ -297,11 +311,15 @@ export interface SkillIndexItem {
   slug: string;
   type: number;
   name: string;
+  /** Hand-curated FR display name. */
+  nameFr?: string;
   series: number;
   seriesLabel: string;
   seriesSlug: string;
   icon: string | null;
   shortDesc: string;
+  /** First-pass FR translation of shortDesc. */
+  shortDescFr?: string;
   maxLevel: number;
 }
 

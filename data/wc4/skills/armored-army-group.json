@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "20% chance that one of the inactive armored units around will join the attack (Only once per turn)"
+      "renderedDesc": "20% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+      "renderedDescFr": "20% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 1,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "40% chance that one of the inactive armored units around will join the attack (Only once per turn)"
+      "renderedDesc": "40% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+      "renderedDescFr": "40% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 1,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "60% chance that one of the inactive armored units around will join the attack (Only once per turn)"
+      "renderedDesc": "60% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+      "renderedDescFr": "60% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 1,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "80% chance that one of the inactive armored units around will join the attack (Only once per turn)"
+      "renderedDesc": "80% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+      "renderedDescFr": "80% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "100% chance that one of the inactive armored units around will join the attack (Only once per turn)"
+      "renderedDesc": "100% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+      "renderedDescFr": "100% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
     }
   ],
   "usage": {
@@ -94,5 +99,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Armored Army Group",
+  "descriptionTemplateFr": "X% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
 }

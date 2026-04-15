@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 20% for 1 turn."
+      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 20% for 1 turn.",
+      "renderedDescFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 20% pendant 1 tour."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 40% for 1 turn."
+      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 40% for 1 turn.",
+      "renderedDescFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 40% pendant 1 tour."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 60% for 1 turn."
+      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 60% for 1 turn.",
+      "renderedDescFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 60% pendant 1 tour."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 80% for 1 turn."
+      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 80% for 1 turn.",
+      "renderedDescFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 80% pendant 1 tour."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn."
+      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.",
+      "renderedDescFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 100% pendant 1 tour."
     }
   ],
   "usage": {
@@ -98,5 +103,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Inspection",
+  "descriptionTemplateFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of X% pendant 1 tour."
 }

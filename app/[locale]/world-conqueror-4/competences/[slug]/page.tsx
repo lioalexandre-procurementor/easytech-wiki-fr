@@ -30,11 +30,13 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const s = getSkill(slug);
   if (!s) return { title: "404" };
-  const title =
-    locale === "fr"
-      ? `${s.name} (WC4) — Effet, progression L1→L5 & généraux`
-      : `${s.name} (WC4) — Effect, L1→L5 progression & generals`;
-  const description = `${s.descriptionTemplate} Maximum level ${s.maxLevel}, series "${s.seriesLabel}".`;
+  const isFr = locale === "fr";
+  const displayName = (isFr && s.nameFr) || s.name;
+  const displayDesc = (isFr && s.descriptionTemplateFr) || s.descriptionTemplate;
+  const title = isFr
+    ? `${displayName} (WC4) — Effet, progression L1→L5 & généraux`
+    : `${displayName} (WC4) — Effect, L1→L5 progression & generals`;
+  const description = `${displayDesc} Maximum level ${s.maxLevel}, series "${s.seriesLabel}".`;
   return {
     title,
     description,
@@ -61,6 +63,11 @@ export default function SkillDetailPage({
   unstable_setRequestLocale(params.locale);
   const skill = getSkill(params.slug);
   if (!skill) notFound();
+
+  const isFr = params.locale === "fr";
+  const displayName = (isFr && skill.nameFr) || skill.name;
+  const displayDesc =
+    (isFr && skill.descriptionTemplateFr) || skill.descriptionTemplate;
 
   const index = getSkillIndex();
   const seriesMeta = index.series.find((s) => s.series === skill.series);
@@ -121,7 +128,7 @@ export default function SkillDetailPage({
           Compétences
         </Link>{" "}
         <span className="mx-2 text-border">›</span>
-        <span>{skill.name}</span>
+        <span>{displayName}</span>
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
@@ -205,7 +212,7 @@ export default function SkillDetailPage({
               {skill.icon ? (
                 <Image
                   src={skill.icon}
-                  alt={skill.name}
+                  alt={displayName}
                   fill
                   sizes="112px"
                   className="object-contain p-2"
@@ -240,11 +247,14 @@ export default function SkillDetailPage({
                 </span>
               </div>
               <h1 className="text-3xl text-gold2 font-extrabold mb-1">
-                {skill.name}
+                {displayName}
               </h1>
-              <p className="text-dim text-sm leading-relaxed">
-                {skill.descriptionTemplate}
-              </p>
+              {isFr && skill.nameFr && skill.name !== skill.nameFr && (
+                <div className="text-muted text-xs uppercase tracking-widest mb-1">
+                  {skill.name}
+                </div>
+              )}
+              <p className="text-dim text-sm leading-relaxed">{displayDesc}</p>
               <div className="mt-3 text-muted text-[11px] uppercase tracking-widest">
                 Champ variable : {variesLabel} · Max : {maxEffect}
                 {skill.varyingField === "ActivatesChance"
@@ -265,13 +275,16 @@ export default function SkillDetailPage({
             <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-3">
               📖 Description
             </h2>
-            <p className="text-ink text-sm leading-relaxed">
-              {skill.descriptionTemplate}
-            </p>
+            <p className="text-ink text-sm leading-relaxed">{displayDesc}</p>
+            {isFr && skill.descriptionTemplateFr && (
+              <p className="text-muted text-[11px] mt-2 italic">
+                Version anglaise officielle : {skill.descriptionTemplate}
+              </p>
+            )}
             <p className="text-muted text-xs mt-3 italic">
-              Description en anglais, source : fichiers de jeu officiels. La
-              valeur « X » dans le texte est remplacée par la valeur réelle à
-              chaque niveau (tableau ci-dessous).
+              {isFr
+                ? "Traduction française en cours de révision — le texte anglais officiel fait foi. La valeur « X » est remplacée par la valeur réelle à chaque niveau (tableau ci-dessous)."
+                : "Source: official game files. The « X » placeholder is replaced by the real value at each level (table below)."}
             </p>
           </section>
 
@@ -321,7 +334,7 @@ export default function SkillDetailPage({
                         )}
                       </td>
                       <td className="py-3 text-ink leading-relaxed">
-                        {p.renderedDesc}
+                        {(isFr && p.renderedDescFr) || p.renderedDesc}
                       </td>
                     </tr>
                   ))}
@@ -440,14 +453,14 @@ export default function SkillDetailPage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: `${skill.name} — World Conqueror 4`,
+            headline: `${displayName} — World Conqueror 4`,
             about: {
               "@type": "VideoGame",
               name: "World Conqueror 4",
               gamePlatform: ["Android", "iOS"],
               publisher: { "@type": "Organization", name: "EasyTech" },
             },
-            description: skill.descriptionTemplate,
+            description: displayDesc,
             inLanguage: params.locale,
           }),
         }}

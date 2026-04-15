@@ -14,7 +14,8 @@
       "effect": 30,
       "chance": 50,
       "costMedal": 150,
-      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 30% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters."
+      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 30% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "renderedDescFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering 30% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 50,
       "costMedal": 250,
-      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 40% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters."
+      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 40% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "renderedDescFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering 40% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 50,
       "chance": 50,
       "costMedal": 350,
-      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 50% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters."
+      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 50% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "renderedDescFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering 50% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 60,
       "chance": 50,
       "costMedal": 450,
-      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 60% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters."
+      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 60% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "renderedDescFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering 60% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 70,
       "chance": 50,
       "costMedal": 550,
-      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 70% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters."
+      "renderedDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 70% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.",
+      "renderedDescFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering 70% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
     }
   ],
   "usage": {
@@ -76,5 +81,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Naval Overlord",
+  "descriptionTemplateFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering X% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
 }

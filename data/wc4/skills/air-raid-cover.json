@@ -14,7 +14,8 @@
       "effect": 0,
       "chance": 10,
       "costMedal": 160,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 10% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously)."
+      "renderedDesc": "When commanding an airforce unit to attack, there is 10% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "renderedDescFr": "When commanding an aviation unité to attaque, there is 10% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 0,
       "chance": 20,
       "costMedal": 240,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 20% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously)."
+      "renderedDesc": "When commanding an airforce unit to attack, there is 20% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "renderedDescFr": "When commanding an aviation unité to attaque, there is 20% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 0,
       "chance": 30,
       "costMedal": 480,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 30% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously)."
+      "renderedDesc": "When commanding an airforce unit to attack, there is 30% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "renderedDescFr": "When commanding an aviation unité to attaque, there is 30% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 0,
       "chance": 40,
       "costMedal": 640,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 40% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously)."
+      "renderedDesc": "When commanding an airforce unit to attack, there is 40% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "renderedDescFr": "When commanding an aviation unité to attaque, there is 40% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 0,
       "chance": 50,
       "costMedal": 800,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously)."
+      "renderedDesc": "When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "renderedDescFr": "When commanding an aviation unité to attaque, there is 50% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
     }
   ],
   "usage": {
@@ -74,5 +79,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Couverture anti-aérienne",
+  "descriptionTemplateFr": "When commanding an aviation unité to attaque, there is X% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
 }

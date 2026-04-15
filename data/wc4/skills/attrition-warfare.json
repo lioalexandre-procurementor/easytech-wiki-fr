@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 20% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 20% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 20% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 40% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 40% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 40% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 60% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 60% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 60% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 80% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 80% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 80% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 100% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 100% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 100% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
     }
   ],
   "usage": {
@@ -68,5 +73,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Attrition Warfare",
+  "descriptionTemplateFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a X% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
 }

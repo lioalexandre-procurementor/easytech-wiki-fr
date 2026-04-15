@@ -14,7 +14,8 @@
       "effect": 100,
       "chance": 20,
       "costMedal": 150,
-      "renderedDesc": "After annihilating enemy troops, 20% rate to lower the morale of 2 enemies within 1 grid of you."
+      "renderedDesc": "After annihilating enemy troops, 20% rate to lower the morale of 2 enemies within 1 grid of you.",
+      "renderedDescFr": "After annihilating ennemi troops, 20% rate to abaisser the moral of 2 ennemis within 1 grid of you."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 100,
       "chance": 40,
       "costMedal": 250,
-      "renderedDesc": "After annihilating enemy troops, 40% rate to lower the morale of 2 enemies within 1 grid of you."
+      "renderedDesc": "After annihilating enemy troops, 40% rate to lower the morale of 2 enemies within 1 grid of you.",
+      "renderedDescFr": "After annihilating ennemi troops, 40% rate to abaisser the moral of 2 ennemis within 1 grid of you."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 100,
       "chance": 60,
       "costMedal": 350,
-      "renderedDesc": "After annihilating enemy troops, 60% rate to lower the morale of 2 enemies within 1 grid of you."
+      "renderedDesc": "After annihilating enemy troops, 60% rate to lower the morale of 2 enemies within 1 grid of you.",
+      "renderedDescFr": "After annihilating ennemi troops, 60% rate to abaisser the moral of 2 ennemis within 1 grid of you."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 100,
       "chance": 80,
       "costMedal": 450,
-      "renderedDesc": "After annihilating enemy troops, 80% rate to lower the morale of 2 enemies within 1 grid of you."
+      "renderedDesc": "After annihilating enemy troops, 80% rate to lower the morale of 2 enemies within 1 grid of you.",
+      "renderedDescFr": "After annihilating ennemi troops, 80% rate to abaisser the moral of 2 ennemis within 1 grid of you."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "After annihilating enemy troops, 100% rate to lower the morale of 2 enemies within 1 grid of you."
+      "renderedDesc": "After annihilating enemy troops, 100% rate to lower the morale of 2 enemies within 1 grid of you.",
+      "renderedDescFr": "After annihilating ennemi troops, 100% rate to abaisser the moral of 2 ennemis within 1 grid of you."
     }
   ],
   "usage": {
@@ -86,5 +91,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Break The Encirclement",
+  "descriptionTemplateFr": "After annihilating ennemi troops, X% rate to abaisser the moral of 2 ennemis within 1 grid of you."
 }

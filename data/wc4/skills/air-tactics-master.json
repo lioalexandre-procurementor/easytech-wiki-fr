@@ -14,7 +14,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 15% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 15% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+      "renderedDescFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 15% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 30% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 30% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+      "renderedDescFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 30% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 45,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 45% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 45% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+      "renderedDescFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 45% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 60,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 60% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 60% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+      "renderedDescFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 60% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 75,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+      "renderedDescFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 75% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour."
     }
   ],
   "usage": {
@@ -66,5 +71,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Maître des tactiques aériennes",
+  "descriptionTemplateFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore ennemi X% défense and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour."
 }

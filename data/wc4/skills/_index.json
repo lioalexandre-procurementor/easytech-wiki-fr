@@ -59,7 +59,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_56.webp",
       "shortDesc": "When using air and missile attacks, ignore enemy units X% defense",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "As du ciel",
+      "shortDescFr": "Lors d'attaques aériennes ou de missiles, ignore unités ennemies X% défense"
     },
     {
       "slug": "ace-sniper",
@@ -70,7 +72,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_100.webp",
       "shortDesc": "X% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects ",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Tireur d'élite",
+      "shortDescFr": "X% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects"
     },
     {
       "slug": "ace-submarine",
@@ -81,7 +85,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_174.png",
       "shortDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminat",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "As des sous-marins",
+      "shortDescFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; after eliminat"
     },
     {
       "slug": "ace-tank",
@@ -92,7 +98,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_55.webp",
       "shortDesc": "When commanding armored units to attack, ignore enemy units X% defense",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "As des blindés",
+      "shortDescFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies X% défense"
     },
     {
       "slug": "air-raid-cover",
@@ -103,7 +111,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_119.webp",
       "shortDesc": "When commanding an airforce unit to attack, there is X% rate that our inactive units that are 1 grid around the enemy unit under attack will",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Couverture anti-aérienne",
+      "shortDescFr": "When commanding an aviation unité to attaque, there is X% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will"
     },
     {
       "slug": "air-superiority",
@@ -114,7 +124,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_111.webp",
       "shortDesc": "X% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Supériorité aérienne",
+      "shortDescFr": "X% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
     },
     {
       "slug": "air-tactics-master",
@@ -125,7 +137,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_153.png",
       "shortDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Maître des tactiques aériennes",
+      "shortDescFr": "Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” after commanding air force and"
     },
     {
       "slug": "amphibious-warfare",
@@ -136,7 +150,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_103.webp",
       "shortDesc": "Mobility +X% when commanding land units on board",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Guerre amphibie",
+      "shortDescFr": "Mobility +X% when commanding land unités on board"
     },
     {
       "slug": "anticipation",
@@ -147,7 +163,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_118.webp",
       "shortDesc": "When commanding troops to move, dealt damage +X% (up to 50%) for each grid moved for 1 turn.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Anticipation",
+      "shortDescFr": "When commanding troops to move, dealt dégâts +X% (up to 50%) for each grid moved pendant 1 tour."
     },
     {
       "slug": "armed-neutrality",
@@ -158,7 +176,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_159.png",
       "shortDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Neutralité armée",
+      "shortDescFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit by X%."
     },
     {
       "slug": "armored-tactic-expert",
@@ -169,7 +189,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_105.webp",
       "shortDesc": "Recover X% maximum HP on the next turn when the armored units are more than half damaged",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Expert en tactique blindée",
+      "shortDescFr": "Recover X% maximum PV on the next tour lorsque unités blindées sont endommagée à plus de moitié"
     },
     {
       "slug": "artillery-tactic-expert",
@@ -180,7 +202,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_102.webp",
       "shortDesc": "When commanding artillery units to attack, ignore enemy units X% defense",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Artillerie Tactic Expert",
+      "shortDescFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies X% défense"
     },
     {
       "slug": "artillery-training-master",
@@ -191,7 +215,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_136.webp",
       "shortDesc": "Increase the HP recovery converted from dealt damage of X% based on the level of artillery elite force. Critical attack damage of artillery ",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Artillerie Training Master",
+      "shortDescFr": "Augmenter the PV recovery converted from dealt dégâts of X% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie"
     },
     {
       "slug": "artillery-armor",
@@ -202,7 +228,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_60.webp",
       "shortDesc": "Defense +X% when commanding artillery units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Artillerie blindage",
+      "shortDescFr": "Défense +X% lorsque vous commandez des unités d'artillerie"
     },
     {
       "slug": "attack-guideance",
@@ -213,7 +241,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_113.webp",
       "shortDesc": "X% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Attaque Guideance",
+      "shortDescFr": "X% chance that one of the inactive unités d'artillerie around will join the attaque (Only once par tour)"
     },
     {
       "slug": "attrition-warfare",
@@ -224,7 +254,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_155.png",
       "shortDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a X% probability of getting “Fatigue” for ",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Attrition Warfare",
+      "shortDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a X% probability of getting “Fatigue” for"
     },
     {
       "slug": "august-storm",
@@ -235,7 +267,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_164.png",
       "shortDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to lan",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "August Storm",
+      "shortDescFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to lan"
     },
     {
       "slug": "aviation-expert",
@@ -246,7 +280,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_57.webp",
       "shortDesc": "Consumption of resources when attacking with air force -X%",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Aviation Expert",
+      "shortDescFr": "Consumption of resources lors d'une attaque with air force -X%"
     },
     {
       "slug": "battlefield-intuition",
@@ -257,7 +293,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_150.webp",
       "shortDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +X%",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Battlefield Intuition",
+      "shortDescFr": "Commanded unités ignore smoke bomb, phantom status, esquive effect, and EMCON. Dealt dégâts to ennemi below half PV +X%"
     },
     {
       "slug": "blasting-impact",
@@ -268,7 +306,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_129.webp",
       "shortDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional X% damage to enemies around the target.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Blasting Impact",
+      "shortDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional X% dégâts aux ennemis around the cible."
     },
     {
       "slug": "break-the-encirclement",
@@ -279,7 +319,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_117.webp",
       "shortDesc": "After annihilating enemy troops, X% rate to lower the morale of 2 enemies within 1 grid of you.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Break The Encirclement",
+      "shortDescFr": "After annihilating ennemi troops, X% rate to abaisser the moral of 2 ennemis within 1 grid of you."
     },
     {
       "slug": "command-and-coordination",
@@ -290,7 +332,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_158.png",
       "shortDesc": "After commanding a land unit to attack, there is a X% chance to grant \"Coordination\" to nearby allies and yourself for 1 turn. Units with \"C",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Commandement and Coordination",
+      "shortDescFr": "After commanding a land unité to attaque, there is a X% chance to grant \"Coordination\" to nearby allies and yourself pendant 1 tour. Unités with \"C"
     },
     {
       "slug": "coordinated-counterattack",
@@ -301,7 +345,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_147.webp",
       "shortDesc": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit count",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Coordinated Counterattack",
+      "shortDescFr": "Lorsque vous commandez des unités d'artillerie, the unité is not affected by skill effect that disable counterattack. When a surrounding unités alliées count"
     },
     {
       "slug": "counter",
@@ -312,7 +358,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_125.webp",
       "shortDesc": "When the commanding force is attacked and receives damage, the enemy also takes X% of that damage.(Each attack only takes effect once)",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Counter",
+      "shortDescFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes X% of that dégâts.(Each attaque only takes effect once)"
     },
     {
       "slug": "decoy-and-strike",
@@ -323,7 +371,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_127.webp",
       "shortDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to dea",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Decoy and Strike",
+      "shortDescFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to dea"
     },
     {
       "slug": "deep-blue-resolve",
@@ -334,7 +384,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_163.png",
       "shortDesc": "While commanding ship units, there is a X% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Résolution de l'abysse",
+      "shortDescFr": "While commanding unités navales, there is a X% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this"
     },
     {
       "slug": "deep-operation",
@@ -345,7 +397,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_148.webp",
       "shortDesc": "When commanding artillery units, dealt damage +X% to enemies 2 or more hexes away",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Deep Operation",
+      "shortDescFr": "Lorsque vous commandez des unités d'artillerie, dealt dégâts +X% aux ennemis 2 or more hex away"
     },
     {
       "slug": "deterrence",
@@ -356,7 +410,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_106.webp",
       "shortDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by X%, effective for one turn",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Deterrence",
+      "shortDescFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased by X%, effective for one tour"
     },
     {
       "slug": "eagle-fly",
@@ -367,7 +423,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_152.png",
       "shortDesc": "Boosts X% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Eagle Fly",
+      "shortDescFr": "Boosts X% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique"
     },
     {
       "slug": "efficient-bombardment",
@@ -378,7 +436,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_126.webp",
       "shortDesc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Efficient Bombardment",
+      "shortDescFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + X%."
     },
     {
       "slug": "expeditionary-force-commander",
@@ -389,7 +449,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_166.png",
       "shortDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase X% attack ",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Expeditionary Force Commander",
+      "shortDescFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter X% attaque"
     },
     {
       "slug": "fire-fighting-captain",
@@ -400,7 +462,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_169.png",
       "shortDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a X% chance to attack again, which increases by an a",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Fire-Fighting Captain",
+      "shortDescFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a X% chance to attaque again, which augmente by an a"
     },
     {
       "slug": "firepower-blockade",
@@ -411,7 +475,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_140.webp",
       "shortDesc": "When your attack causes the morale of the enemy to be low or diminished, there is X% probability to attack again. When your attack causes th",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Firepower Blockade",
+      "shortDescFr": "When your attaque causes the moral of the ennemi to be low or diminished, there is X% probability to attaque again. When your attaque causes th"
     },
     {
       "slug": "guerrilla-master",
@@ -422,7 +488,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_104.webp",
       "shortDesc": "Evade X% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Guerrilla Master",
+      "shortDescFr": "Evade X% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
     },
     {
       "slug": "hero",
@@ -433,7 +501,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_156.png",
       "shortDesc": "Morale of armored units under command will not diminish, +X% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Héros",
+      "shortDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +X% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gain the \"Hero"
     },
     {
       "slug": "heroic-charge",
@@ -444,7 +514,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_145.webp",
       "shortDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +X% (Maximum 50%). When armored units have high morale, lower da",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Charge héroïque",
+      "shortDescFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dealt dégâts +X% (Maximum 50%). When unités blindées have moral élevé, abaisser da"
     },
     {
       "slug": "hold-fast",
@@ -455,7 +527,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_108.webp",
       "shortDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Hold Fast",
+      "shortDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade X% dégâts dealt by ennemi"
     },
     {
       "slug": "inescapable-net",
@@ -466,7 +540,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_178.png",
       "shortDesc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by X% and also take 20% increased damage from nuclear bombs, sa",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Inescapable Net",
+      "shortDescFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit by X% and also take 20% augmenté dégâts from nuclear bombs, sa"
     },
     {
       "slug": "infantry-group-charge",
@@ -477,7 +553,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_101.webp",
       "shortDesc": "X% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Infanterie Group Charge",
+      "shortDescFr": "X% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)"
     },
     {
       "slug": "infantry-training-master",
@@ -488,7 +566,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_134.webp",
       "shortDesc": "Reduce the damage taken by X% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose att",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Infanterie Training Master",
+      "shortDescFr": "Réduire the dégâts taken by X% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose att"
     },
     {
       "slug": "inspection",
@@ -499,7 +579,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_120.webp",
       "shortDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of X% for 1 turn.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Inspection",
+      "shortDescFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of X% pendant 1 tour."
     },
     {
       "slug": "iron-will",
@@ -510,7 +592,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_137.webp",
       "shortDesc": "When commanding infantry , lower damage received by X%. After being attacked by enemy, increase damage reduction by additional 10%, lasting ",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Iron Will",
+      "shortDescFr": "When commanding infanterie , abaisser dégâts received by X%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting"
     },
     {
       "slug": "joint-offensive",
@@ -521,7 +605,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_144.webp",
       "shortDesc": "After attacking, there is a X% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Target",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Joint Offensive",
+      "shortDescFr": "Après avoir attaqué, there is a X% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Cible"
     },
     {
       "slug": "knight-of-the-sea",
@@ -532,7 +618,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_162.png",
       "shortDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by X%. If a friendly carrier wit",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Chevalier des mers",
+      "shortDescFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmenter dégâts by X%. If a porte-avions allié wit"
     },
     {
       "slug": "leader",
@@ -543,7 +631,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_149.webp",
       "shortDesc": "Dealt damage of commanded units against land units +X%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes ",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Leader",
+      "shortDescFr": "Dealt dégâts of commanded unités against land unités +X%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex"
     },
     {
       "slug": "leadership",
@@ -554,7 +644,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_124.webp",
       "shortDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +X.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Leadership",
+      "shortDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +X."
     },
     {
       "slug": "mareth-line",
@@ -565,7 +657,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_176.png",
       "shortDesc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take X% less damage. When commanding land units, the activation ch",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Mareth Line",
+      "shortDescFr": "While on mountainous or desert terrain, you and allies in a 1-tile radius take X% less dégâts. When commanding land unités, the activation ch"
     },
     {
       "slug": "marshall-plan",
@@ -576,7 +670,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_173.png",
       "shortDesc": "When commanding land units, X% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land uni",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Marshall Plan",
+      "shortDescFr": "When commanding land unités, X% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land uni"
     },
     {
       "slug": "missile-expert",
@@ -587,7 +683,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_58.webp",
       "shortDesc": "Consumption of resources When attacking with missiles -X%",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Missile Expert",
+      "shortDescFr": "Consumption of resources lors d'une attaque with missiles -X%"
     },
     {
       "slug": "modernized-air-force",
@@ -598,7 +696,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_161.png",
       "shortDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Modernized Air Force",
+      "shortDescFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts dealt +X%."
     },
     {
       "slug": "naval-assault",
@@ -609,7 +709,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_112.webp",
       "shortDesc": "Damage +X% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Naval Assault",
+      "shortDescFr": "Dégâts +X% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
     },
     {
       "slug": "naval-overlord",
@@ -620,7 +722,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_141.webp",
       "shortDesc": "After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering X% mobility, lasts for 2 tu",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Naval Overlord",
+      "shortDescFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering X% mobility, lasts for 2 tu"
     },
     {
       "slug": "navigation",
@@ -631,7 +735,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_128.webp",
       "shortDesc": "When commanding a naval unit to attack, there is X% chance that one of the surrounding inactive naval unit will participate in the attack.(O",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Navigation",
+      "shortDescFr": "When commanding a naval unité to attaque, there is X% chance that one of the surrounding inactive naval unité will participate in the attaque.(O"
     },
     {
       "slug": "nuclear-warfare-expert",
@@ -642,7 +748,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_115.webp",
       "shortDesc": "Damage caused by nuclear bombs + X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Nuclear Warfare Expert",
+      "shortDescFr": "Dégâts caused by nuclear bombs + X%."
     },
     {
       "slug": "operation-overlord",
@@ -653,7 +761,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_167.png",
       "shortDesc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abducti",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Operation Overlord",
+      "shortDescFr": "Unités ennemies within a 3 hex receive 35% additional dégâts, and disable the effects of sloped blindage, protective device, provocation, abducti"
     },
     {
       "slug": "organisation",
@@ -664,7 +774,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_107.webp",
       "shortDesc": "Recover X% maximum HP on the next turn when the infantry units are more than half damaged",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Organisation",
+      "shortDescFr": "Recover X% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
     },
     {
       "slug": "positional-warfare",
@@ -675,7 +787,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_143.webp",
       "shortDesc": "When commanding armored units in range of your own or an ally's territory, -X% damage received. When being attacked by enemy generals, addit",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Positional Warfare",
+      "shortDescFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -X% dégâts received. When being attacked by ennemi generals, addit"
     },
     {
       "slug": "provocation",
@@ -686,7 +800,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_138.webp",
       "shortDesc": "After attacking, there is X% to gain \"provocation\" effect",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Provocation",
+      "shortDescFr": "Après avoir attaqué, there is X% to gain \"provocation\" effect"
     },
     {
       "slug": "prudence",
@@ -697,7 +813,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_135.webp",
       "shortDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Prudence",
+      "shortDescFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté by X%."
     },
     {
       "slug": "retaliation",
@@ -708,7 +826,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_122.webp",
       "shortDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +X for 2 turns.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Retaliation",
+      "shortDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +X pendant 2 tours."
     },
     {
       "slug": "rival-contest",
@@ -719,7 +839,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_146.webp",
       "shortDesc": "When commanding armored units, dealt damage to enemy elite force +X%",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Duel de rivaux",
+      "shortDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +X%"
     },
     {
       "slug": "self-propelled-artillery",
@@ -730,7 +852,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_59.webp",
       "shortDesc": "When commanding an artillery unit to attack, gain X% chance of attacking again after annihilating enemy troops",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Self-propelled artillerie",
+      "shortDescFr": "When commanding an artillerie unité to attaque, gain X% chance of attacking again after annihilating ennemi troops"
     },
     {
       "slug": "sickle-cut",
@@ -741,7 +865,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_171.png",
       "shortDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a X% chance the enemy cannot counterattack. After elimin",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Sickle Cut",
+      "shortDescFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a X% chance the ennemi cannot counterattack. After elimin"
     },
     {
       "slug": "soviet-deep-battle",
@@ -752,7 +878,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_168.png",
       "shortDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough C",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Soviet Deep Battle",
+      "shortDescFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gain the “Breakthrough C"
     },
     {
       "slug": "star-fall",
@@ -763,7 +891,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_177.png",
       "shortDesc": "When commanding troops to attack, there is a X% chance to trigger a Level II satellite strike on the target. When commanding air hover units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Star Fall",
+      "shortDescFr": "When commanding troops to attaque, there is a X% chance to trigger a niveau II satellite strike on the cible. When commanding air hover unités"
     },
     {
       "slug": "steel-maneuver",
@@ -774,7 +904,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_170.png",
       "shortDesc": "When commanding armored units, damage dealt is increased by X%. After each attack, the unit restores HP equal to 10% of the damage dealt. Wh",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Steel Maneuver",
+      "shortDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté by X%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Wh"
     },
     {
       "slug": "strategic-attack",
@@ -785,7 +917,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_116.webp",
       "shortDesc": "After commanding a unit to attack, if the target is not annihilated, there is X% chance that a tracking mark will be added to that target. T",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Strategic attaque",
+      "shortDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is X% chance that a tracking mark will be added to that cible. T"
     },
     {
       "slug": "strategic-deployment",
@@ -796,7 +930,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_165.png",
       "shortDesc": "After commanding infantry to attack, recover HP equal to X% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, in",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Strategic Deployment",
+      "shortDescFr": "After commanding infanterie to attaque, recover PV equal to X% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, in"
     },
     {
       "slug": "submergence-evasion",
@@ -807,7 +943,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_175.png",
       "shortDesc": "Submarine units under command receive X% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Submergence Evasion",
+      "shortDescFr": "Submarine unités sous votre commandement receive X% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover"
     },
     {
       "slug": "supply-organization",
@@ -818,7 +956,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_133.webp",
       "shortDesc": "When commanding troops in your territory, economic, industry, and technology output +X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Supply Organization",
+      "shortDescFr": "When commanding troops in your territory, economic, industry, and technology output +X%."
     },
     {
       "slug": "system-of-systems-operations",
@@ -829,7 +969,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_179.png",
       "shortDesc": "When commanding troops to attack and carry out airstrikes, there is a X% chance of dealing a critical attack.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "System-of-Systems Operations",
+      "shortDescFr": "When commanding troops to attaque and carry out airstrikes, there is a X% chance of dealing a attaques critiques."
     },
     {
       "slug": "unyielding-and-self-improving",
@@ -840,7 +982,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_154.png",
       "shortDesc": "Economic and industrial income +X when the commanding force with no enemy troops at 1 square around.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Unyielding And Self-improving",
+      "shortDescFr": "Economic and industrial income +X when the commanding force with no ennemi troops at 1 square around."
     },
     {
       "slug": "veteran-general",
@@ -851,7 +995,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_151.webp",
       "shortDesc": "Maximum HP of commanded units +X%, cannot go into chaos when the unit has above half HP",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Veteran General",
+      "shortDescFr": "Maximum PV of commanded unités +X%, cannot go into chaos when the unité has above half PV"
     },
     {
       "slug": "war-machine",
@@ -862,7 +1008,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_139.webp",
       "shortDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +X%",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "War Machine",
+      "shortDescFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +X%"
     },
     {
       "slug": "wartime-mobilization",
@@ -873,7 +1021,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_172.png",
       "shortDesc": "When commanding infantry units, there is a X% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same ti",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Wartime Mobilization",
+      "shortDescFr": "Lorsque vous commandez des unités d'infanterie, there is a X% chance to deal a attaques critiques and recovers 15% of your maximum PV chaque tour. At the same ti"
     },
     {
       "slug": "wipe-out-the-north",
@@ -884,7 +1034,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_157.png",
       "shortDesc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after a",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Anéantir le Nord",
+      "shortDescFr": "Lorsque vous commandez des unités blindées, inflige +20% de dégâts to unités non-bâtiment hors garnisons de ville. Si vous ne pouvez pas attaquer ou de bouger after a"
     },
     {
       "slug": "armored-army-group",
@@ -895,7 +1047,9 @@
       "seriesSlug": "signature",
       "icon": "/img/wc4/skills/general_skill_114.webp",
       "shortDesc": "X% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Armored Army Group",
+      "shortDescFr": "X% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
     },
     {
       "slug": "artillery-barrage",
@@ -906,7 +1060,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "shortDesc": "Damage to the enemy +X when the artillery units are more than half damaged",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Barrage d'artillerie",
+      "shortDescFr": "Dégâts à l'ennemi +X lorsque unités d'artillerie sont endommagée à plus de moitié"
     },
     {
       "slug": "bayonet-charge",
@@ -917,7 +1073,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_23.webp",
       "shortDesc": "Damage to the enemy +X when the infantry units are more than half damaged",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Bayonet Charge",
+      "shortDescFr": "Dégâts à l'ennemi +X lorsque unités d'infanterie sont endommagée à plus de moitié"
     },
     {
       "slug": "desert-fighting",
@@ -928,7 +1086,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_10.webp",
       "shortDesc": "Damage to the enemy +X when fighting in the desert",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Desert Fighting",
+      "shortDescFr": "Dégâts à l'ennemi +X when fighting in the desert"
     },
     {
       "slug": "dominance",
@@ -939,7 +1099,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_130.webp",
       "shortDesc": "Deals damage +X% to demoralized and chaotic enemies.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Dominance",
+      "shortDescFr": "Deals dégâts +X% to demoralized and chaotic ennemis."
     },
     {
       "slug": "jungle-fighting",
@@ -950,7 +1112,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_9.webp",
       "shortDesc": "Damage to the enemy +X when fighting in the jungle",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Jungle Fighting",
+      "shortDescFr": "Dégâts à l'ennemi +X when fighting in the jungle"
     },
     {
       "slug": "mountain-fighting",
@@ -961,7 +1125,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_8.webp",
       "shortDesc": "Damage to the enemy +X when fighting on the mountain",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Mountain Fighting",
+      "shortDescFr": "Dégâts à l'ennemi +X when fighting on the mountain"
     },
     {
       "slug": "plain-fighting",
@@ -972,7 +1138,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_7.webp",
       "shortDesc": "Damage to the enemy +X when fighting in the plain",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Plain Fighting",
+      "shortDescFr": "Dégâts à l'ennemi +X when fighting in the plain"
     },
     {
       "slug": "street-fighting",
@@ -983,7 +1151,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_6.webp",
       "shortDesc": "Damage to the enemy +X when fighting in the city",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Combat urbain",
+      "shortDescFr": "Dégâts à l'ennemi +X when fighting in the city"
     },
     {
       "slug": "tide-of-iron",
@@ -994,7 +1164,9 @@
       "seriesSlug": "tactiques-de-terrain",
       "icon": "/img/wc4/skills/general_skill_24.webp",
       "shortDesc": "Damage to the enemy +X when the armored units are more than half damaged",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Marée de fer",
+      "shortDescFr": "Dégâts à l'ennemi +X lorsque unités blindées sont endommagée à plus de moitié"
     },
     {
       "slug": "airforce-leader",
@@ -1005,7 +1177,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "shortDesc": "X% chance to give the enemy a critical attack when commanding air units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Commandant de l'armée de l'air",
+      "shortDescFr": "X% chance d'infliger une attaque critique à l'ennemi when commanding air unités"
     },
     {
       "slug": "artillery-leader",
@@ -1016,7 +1190,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "shortDesc": "X% chance to give the enemy a critical attack when commanding artillery units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Commandant d'artillerie",
+      "shortDescFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
     },
     {
       "slug": "crowd-tactics",
@@ -1027,7 +1203,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_26.webp",
       "shortDesc": "Attack of friendly surrounding army units +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Crowd Tactics",
+      "shortDescFr": "Attaque of allié surrounding army unités +X"
     },
     {
       "slug": "elastic-defence",
@@ -1038,7 +1216,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "shortDesc": "Fix nearby fortress units: each round HP+X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Elastic Defence",
+      "shortDescFr": "Fix nearby fortress unités: each round PV +X"
     },
     {
       "slug": "finance",
@@ -1049,7 +1229,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_160.png",
       "shortDesc": "When the economic output of the city where the troops are stationed is at least 100 (or if the general has the skills Unyielding or Military",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Finance",
+      "shortDescFr": "Lorsque economic output of the city where the troops sont stationed is at least 100 (or if the general has the skills Unyielding or Military"
     },
     {
       "slug": "fleet-leader",
@@ -1060,7 +1242,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_21.webp",
       "shortDesc": "X% chance to give the enemy a critical attack when commanding ship units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Commandant de flotte",
+      "shortDescFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
     },
     {
       "slug": "infantry-leader",
@@ -1071,7 +1255,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "shortDesc": "X% chance to give the enemy a critical attack when commanding infantry units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Commandant d'infanterie",
+      "shortDescFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'infanterie"
     },
     {
       "slug": "inferior-victory",
@@ -1082,7 +1268,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_131.webp",
       "shortDesc": "Damage is increased by X% when the number of troop formations under command is 1.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Victoire du faible",
+      "shortDescFr": "Dégâts is augmenté by X% when the number of troop formations sous votre commandement is 1."
     },
     {
       "slug": "panzer-leader",
@@ -1093,7 +1281,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "shortDesc": "X% chance to give the enemy a critical attack when commanding armored units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Commandant Panzer",
+      "shortDescFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités blindées"
     },
     {
       "slug": "wolfpack",
@@ -1104,7 +1294,9 @@
       "seriesSlug": "commandement",
       "icon": "/img/wc4/skills/general_skill_27.webp",
       "shortDesc": "Attack of friendly surrounding ship units +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Wolfpack",
+      "shortDescFr": "Attaque of allié surrounding unités navales +X"
     },
     {
       "slug": "ace-forces",
@@ -1115,7 +1307,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_43.webp",
       "shortDesc": "Experience gained by the army in combat increases by X%",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Forces d'élite",
+      "shortDescFr": "Experience gained by the army in combat augmente by X%"
     },
     {
       "slug": "architecture",
@@ -1126,7 +1320,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_14.webp",
       "shortDesc": "Fix the city: each round City HP +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Architecture",
+      "shortDescFr": "Fix the city: each round City PV +X"
     },
     {
       "slug": "depot-ship",
@@ -1137,7 +1333,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_17.webp",
       "shortDesc": "Fix damaged ship units: each round HP+X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Depot Ship",
+      "shortDescFr": "Fix damaged unités navales: each round PV +X"
     },
     {
       "slug": "economic-expert",
@@ -1148,7 +1346,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_11.webp",
       "shortDesc": "The economic output of the city +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Economic Expert",
+      "shortDescFr": "The economic output of the city +X"
     },
     {
       "slug": "fighting-spirit",
@@ -1159,7 +1359,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_132.webp",
       "shortDesc": "After commanding a troop to counterattack, +X HP to yourself and surrounding friendly troops.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Fighting Spirit",
+      "shortDescFr": "After commanding a troop to counterattack, +X PV to yourself and surrounding allié troops."
     },
     {
       "slug": "fluke",
@@ -1170,7 +1372,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_142.webp",
       "shortDesc": "When commanded troop activates dodge, restore X% based on self's maximum HP (up to 1 time per turn)",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Coup du sort",
+      "shortDescFr": "When commanded troop activates esquive, restaurer X% based on self's maximum PV (up to 1 time par tour)"
     },
     {
       "slug": "industrial-expert",
@@ -1181,7 +1385,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_12.webp",
       "shortDesc": "The industrial output of the city +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Expert industriel",
+      "shortDescFr": "The industrial output of the city +X"
     },
     {
       "slug": "machinist",
@@ -1192,7 +1398,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_16.webp",
       "shortDesc": "Supply to damaged armored units and artillery units: each round HP +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Machinist",
+      "shortDescFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +X"
     },
     {
       "slug": "replacement",
@@ -1203,7 +1411,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_15.webp",
       "shortDesc": "Reinforce damaged infantry units: each round HP +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Replacement",
+      "shortDescFr": "Reinforce damaged unités d'infanterie: each round PV +X"
     },
     {
       "slug": "technology-expert",
@@ -1214,7 +1424,9 @@
       "seriesSlug": "logistique",
       "icon": "/img/wc4/skills/general_skill_13.webp",
       "shortDesc": "The technological output of the city +X",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Technology Expert",
+      "shortDescFr": "The technological output of the city +X"
     },
     {
       "slug": "blitzkrieg",
@@ -1225,7 +1437,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_34.webp",
       "shortDesc": "X% chance that the enemy will not fight back when commanding armored units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Guerre éclair",
+      "shortDescFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
     },
     {
       "slug": "camouflage",
@@ -1236,7 +1450,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_30.webp",
       "shortDesc": "Able to dodge X% damage from the enemy's air units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Camouflage",
+      "shortDescFr": "Able to esquive X% dégâts de l'ennemi's air unités"
     },
     {
       "slug": "cover",
@@ -1247,7 +1463,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_32.webp",
       "shortDesc": "12% chance to dodge X% damage from the enemy",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Cover",
+      "shortDescFr": "12% chance to esquive X% dégâts de l'ennemi"
     },
     {
       "slug": "early-warning",
@@ -1258,7 +1476,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_109.webp",
       "shortDesc": "X% chance to evade 20% damage when commanding ship units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Early Warning",
+      "shortDescFr": "X% chance to evade 20% dégâts lorsque vous commandez des unités navales"
     },
     {
       "slug": "entrenchment",
@@ -1269,7 +1489,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_29.webp",
       "shortDesc": "Able to dodge X% damage from the enemy's artillery units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Entrenchment",
+      "shortDescFr": "Able to esquive X% dégâts de l'ennemi's unités d'artillerie"
     },
     {
       "slug": "fortification",
@@ -1280,7 +1502,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_121.webp",
       "shortDesc": "When commanding armored troops, damage received - X%.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Fortification",
+      "shortDescFr": "When commanding armored troops, dégâts received - X%."
     },
     {
       "slug": "guerrilla",
@@ -1291,7 +1515,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_33.webp",
       "shortDesc": "X% chance that the enemy will not fight back when commanding infantry units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Guerrilla",
+      "shortDescFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
     },
     {
       "slug": "night-raid",
@@ -1302,7 +1528,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_123.webp",
       "shortDesc": "X% chance the enemy will not fight back when commanding ship units.",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Night Raid",
+      "shortDescFr": "X% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
     },
     {
       "slug": "rumor",
@@ -1313,7 +1541,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_42.webp",
       "shortDesc": "X% chance to reduce the morale of the enemy when attacking",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Rumeur",
+      "shortDescFr": "X% chance to réduire the moral of the ennemi lors d'une attaque"
     },
     {
       "slug": "shelter",
@@ -1324,7 +1554,9 @@
       "seriesSlug": "defense-et-camouflage",
       "icon": "/img/wc4/skills/general_skill_31.webp",
       "shortDesc": "Able to dodge X% damage from the enemy's missile units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Abri",
+      "shortDescFr": "Able to esquive X% dégâts de l'ennemi's unités de missiles"
     },
     {
       "slug": "accuracy",
@@ -1335,7 +1567,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "shortDesc": "Deal +X% damage to the enemy when commanding artillery units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Précision",
+      "shortDescFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités d'artillerie"
     },
     {
       "slug": "armored-assault",
@@ -1346,7 +1580,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_36.webp",
       "shortDesc": "Deal +X% damage to the enemy when commanding armored units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Assaut blindé",
+      "shortDescFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités blindées"
     },
     {
       "slug": "carpet-bombing",
@@ -1357,7 +1593,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_41.webp",
       "shortDesc": "Damage +X% to the defending forces in the city when air-raiding",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Bombardement en tapis",
+      "shortDescFr": "Dégâts +X% to the defending forces in the city when air-raiding"
     },
     {
       "slug": "crossfire",
@@ -1368,7 +1606,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "shortDesc": "Counter attack +X% when attacked by the enemy on land",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Crossfire",
+      "shortDescFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi on land"
     },
     {
       "slug": "explosives",
@@ -1379,7 +1619,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "shortDesc": "Damage +X% when attacking the stronghold units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Explosives",
+      "shortDescFr": "Dégâts +X% lors d'une attaque the stronghold unités"
     },
     {
       "slug": "inspiration",
@@ -1390,7 +1632,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_110.webp",
       "shortDesc": "30% chance to boost morale after attacking. Damage +X% when morale is high",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Inspiration",
+      "shortDescFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +X% lorsque le moral est élevé"
     },
     {
       "slug": "raider",
@@ -1401,7 +1645,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "shortDesc": "Deal +X% damage to the enemy when commanding infantry units",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Raider",
+      "shortDescFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités d'infanterie"
     },
     {
       "slug": "sailor",
@@ -1412,7 +1658,9 @@
       "seriesSlug": "offensive",
       "icon": "/img/wc4/skills/general_skill_40.webp",
       "shortDesc": "Counter attack +X% when attacked by the enemy at sea",
-      "maxLevel": 5
+      "maxLevel": 5,
+      "nameFr": "Marin",
+      "shortDescFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi at sea"
     }
   ]
 }

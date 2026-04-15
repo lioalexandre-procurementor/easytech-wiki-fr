@@ -27,6 +27,7 @@ export default function SkillsBrowser({
   params: { locale: string };
 }) {
   unstable_setRequestLocale(params.locale);
+  const isFr = params.locale === "fr";
   const index = getSkillIndex();
   const seriesMap = new Map<number, SkillSeriesMeta>();
   for (const s of index.series) seriesMap.set(s.series, s);
@@ -140,7 +141,12 @@ export default function SkillsBrowser({
                 <p className="text-dim text-sm mb-4 max-w-3xl">{s.summary}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {skills.map((sk) => (
-                    <SkillCard key={sk.slug} skill={sk} signature={s.series === 0} />
+                    <SkillCard
+                      key={sk.slug}
+                      skill={sk}
+                      signature={s.series === 0}
+                      isFr={isFr}
+                    />
                   ))}
                 </div>
               </section>
@@ -156,10 +162,15 @@ export default function SkillsBrowser({
 function SkillCard({
   skill,
   signature,
+  isFr,
 }: {
   skill: SkillIndexItem;
   signature?: boolean;
+  isFr?: boolean;
 }) {
+  const displayName = (isFr && skill.nameFr) || skill.name;
+  const displayShort =
+    (isFr && skill.shortDescFr) || skill.shortDesc || "Description à venir.";
   return (
     <Link
       href={`/world-conqueror-4/competences/${skill.slug}` as any}
@@ -179,7 +190,7 @@ function SkillCard({
           {skill.icon ? (
             <Image
               src={skill.icon}
-              alt={skill.name}
+              alt={displayName}
               fill
               sizes="48px"
               className="object-contain p-1"
@@ -190,8 +201,13 @@ function SkillCard({
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="text-gold2 font-bold text-sm leading-tight mb-0.5 truncate">
-            {skill.name}
+            {displayName}
           </h3>
+          {isFr && skill.nameFr && skill.nameFr !== skill.name && (
+            <div className="text-muted text-[9px] italic truncate">
+              {skill.name}
+            </div>
+          )}
           <div className="text-muted text-[10px] uppercase tracking-widest">
             L1 → L{skill.maxLevel}
             {signature && <span className="text-red-300 ml-1">· signature</span>}
@@ -199,7 +215,7 @@ function SkillCard({
         </div>
       </div>
       <p className="text-dim text-xs leading-relaxed line-clamp-3">
-        {skill.shortDesc || "Description à venir."}
+        {displayShort}
       </p>
     </Link>
   );

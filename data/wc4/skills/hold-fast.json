@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy"
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy",
+      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 4% dégâts dealt by ennemi"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy"
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy",
+      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 8% dégâts dealt by ennemi"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy"
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy",
+      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 12% dégâts dealt by ennemi"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 16% damage dealt by enemy"
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 16% damage dealt by enemy",
+      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 16% dégâts dealt by ennemi"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy"
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy",
+      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 20% dégâts dealt by ennemi"
     }
   ],
   "usage": {
@@ -214,5 +219,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Hold Fast",
+  "descriptionTemplateFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade X% dégâts dealt by ennemi"
 }

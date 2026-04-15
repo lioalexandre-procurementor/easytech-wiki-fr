@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 5%."
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 5%.",
+      "renderedDescFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté de 5%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 10%."
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 10%.",
+      "renderedDescFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté de 10%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 15%."
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 15%.",
+      "renderedDescFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté de 15%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 20%."
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 20%.",
+      "renderedDescFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté de 20%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 25%."
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 25%.",
+      "renderedDescFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté de 25%."
     }
   ],
   "usage": {
@@ -110,5 +115,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Prudence",
+  "descriptionTemplateFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté by X%."
 }

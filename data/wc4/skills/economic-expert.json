@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "The economic output of the city +5"
+      "renderedDesc": "The economic output of the city +5",
+      "renderedDescFr": "The economic output of the city +5"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 200,
-      "renderedDesc": "The economic output of the city +10"
+      "renderedDesc": "The economic output of the city +10",
+      "renderedDescFr": "The economic output of the city +10"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 270,
-      "renderedDesc": "The economic output of the city +15"
+      "renderedDesc": "The economic output of the city +15",
+      "renderedDescFr": "The economic output of the city +15"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "The economic output of the city +20"
+      "renderedDesc": "The economic output of the city +20",
+      "renderedDescFr": "The economic output of the city +20"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "The economic output of the city +25"
+      "renderedDesc": "The economic output of the city +25",
+      "renderedDescFr": "The economic output of the city +25"
     }
   ],
   "usage": {
@@ -282,5 +287,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Economic Expert",
+  "descriptionTemplateFr": "The economic output of the city +X"
 }

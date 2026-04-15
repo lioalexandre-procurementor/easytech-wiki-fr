@@ -132,5 +132,63 @@
     "head": "/img/wc4/heads/Auchinleck.webp",
     "photoTrained": "/img/wc4/generals/Auchinleck2.webp",
     "headTrained": "/img/wc4/heads/Auchinleck2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Panzer Leader",
+      "desc": "8% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Explosives",
+      "desc": "Damage +24% when attacking the stronghold units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 3
+    },
+    {
+      "slot": 3,
+      "name": "Desert Fighting",
+      "desc": "Damage to the enemy +5 when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Desert Fighting",
+      "skillSlug": "desert-fighting",
+      "skillType": 10,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Attrition Warfare",
+      "nameEn": "Attrition Warfare",
+      "desc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 100% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_155.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "attrition-warfare",
+      "skillType": 155,
+      "skillLevel": 5
+    }
+  ]
 }

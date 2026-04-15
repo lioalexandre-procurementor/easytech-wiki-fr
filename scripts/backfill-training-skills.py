@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Auto-fill training-unlocked skill slots from GeneralPromotionSettings.
+Build `trainedSkills` override for generals with a premium training path.
 
 Input
 -----
@@ -9,22 +9,33 @@ Input
 - easytech-wiki/data/wc4/skills/_index.json          (type → slug/name)
 - easytech-wiki/data/wc4/skills/{slug}.json          (per-level rendered text)
 
+Semantics
+---------
+`skills[]` is the BASE (untrained) loadout. It must NEVER be mutated by this
+script. Trained signature skills live in a new top-level `trainedSkills[]`
+array that mirrors the final-stage promotion loadout (5 slots, all filled).
+Both the base page and the "premium training" view read from their own
+field, so we never pollute the base state.
+
 For each general in the promotion table we:
 
 1. Walk the chain (BaseID → AdvanceID → … → final stage with AdvanceID == 0)
    and collect total sword / sceptre / medal / merit costs across stages.
 2. Decode the FINAL stage's `Skills` list (skill-ids → (type, level)).
-3. Compare against the general's current wiki skill slots:
-   - skills already present in base slots (by type) → skipped
-   - skills not present → filled into the first empty "Emplacement libre"
-     slot, marked as NOT replaceable (training-unlocked signature) and
-     linked to the skill catalog.
-4. Set `hasTrainingPath = true` and populate a minimal `training` object
-   with totals, preserving any existing `training.summary` if the JSON
-   already had one.
-
-The script is idempotent: it detects whether a slot is already filled with
-the correct training skill and skips it.
+3. For each final-stage skill, resolve it against the catalog (slug, name,
+   rendered description at that level, icon).
+4. Build a full `trainedSkills` array:
+   - slots that MATCH an existing base skill (by `skillType`) reuse the base
+     entry's position + metadata and just bump the level/desc
+   - slots that DIFFER (new signatures) are emitted as brand-new entries with
+     `replaceable: false` and a training-unlock note
+   - remaining empty base slots stay as placeholders
+5. Populate `training.stages[]` with per-stage sword/sceptre/medal/merit costs
+   and aggregate totals (preserving any existing `training.summary`).
+6. **Reset** any base skill slot that carries the legacy training signature
+   (`replaceableReason == "Compétence débloquée via l'entraînement …"`) back
+   to an empty "Emplacement libre" placeholder. This undoes the pollution
+   from the previous incarnation of this script.
 
 Run:
   python3 scripts/backfill-training-skills.py
@@ -40,6 +51,11 @@ SKILL_SETTINGS = ROOT / "wc4_data_decrypted" / "SkillSettings.json"
 GENERALS_DIR = WIKI / "data" / "wc4" / "generals"
 SKILLS_DIR = WIKI / "data" / "wc4" / "skills"
 SKILLS_INDEX = SKILLS_DIR / "_index.json"
+
+TRAINING_POLLUTION_REASON = (
+    "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination)."
+)
+EMPTY_PLACEHOLDER_NAMES = {"Emplacement libre", "Empty slot", ""}
 
 
 def load_skill_catalog():
@@ -80,7 +96,6 @@ def walk_chain(promotion, base_id):
     advance_targets = {s["AdvanceID"] for s in by_base}
     starts = [s for s in by_base if s["Id"] not in advance_targets]
     if not starts:
-        # Fallback: sort by id
         return sorted(by_base, key=lambda x: x["Id"])
     chain = [starts[0]]
     cur = starts[0]
@@ -93,6 +108,127 @@ def walk_chain(promotion, base_id):
     return chain
 
 
+def make_empty_slot(slot_index: int) -> dict:
+    """Canonical 'empty slot' placeholder used by the base page."""
+    return {
+        "slot": slot_index,
+        "name": "Emplacement libre",
+        "desc": "Emplacement apprenable — à remplir via l'Académie.",
+        "rating": None,
+        "stars": None,
+        "icon": None,
+        "replaceable": True,
+        "replaceableReason": "Emplacement ouvert",
+    }
+
+
+def reset_polluted_base_slots(skills: list) -> bool:
+    """
+    Revert the f6ca99e-era pollution where trained signatures were written
+    into `skills[]`. Any slot whose `replaceableReason` matches the training
+    signature gets reset to an empty placeholder.
+    """
+    changed = False
+    for i, s in enumerate(skills):
+        if s.get("replaceableReason") == TRAINING_POLLUTION_REASON:
+            slot_idx = s.get("slot", i + 1)
+            skills[i] = make_empty_slot(slot_idx)
+            changed = True
+    return changed
+
+
+def build_trained_skills(
+    base_skills: list,
+    final_stage: dict,
+    sk_by_id: dict,
+    catalog: dict,
+) -> list:
+    """
+    Build the full `trainedSkills` array — the post-training loadout.
+
+    Strategy: start from a deep copy of the base (already reset) skills.
+    Then, for every skill-id in the final stage's Skills list, resolve it and
+    either update an existing slot that already holds the same skillType, or
+    fill the first empty slot with it.
+    """
+    final_ids = final_stage.get("Skills", []) or []
+    trained = [dict(s) for s in base_skills]
+
+    # Pre-compute index maps for quick lookup.
+    def find_existing_by_type(ty: int):
+        for idx, s in enumerate(trained):
+            if s.get("skillType") == ty:
+                return idx
+        return None
+
+    def find_first_empty():
+        for idx, s in enumerate(trained):
+            name = (s.get("name") or "").strip()
+            if name in EMPTY_PLACEHOLDER_NAMES and s.get("skillType") is None:
+                return idx
+        return None
+
+    for sid in final_ids:
+        ss = sk_by_id.get(sid)
+        if not ss:
+            continue
+        ty = ss["Type"]
+        lvl = ss["Level"]
+        resolved = resolve_skill(catalog, ty, lvl)
+        if not resolved:
+            continue
+
+        existing_idx = find_existing_by_type(ty)
+        if existing_idx is not None:
+            # Bump the level/desc of the matching base skill.
+            slot = trained[existing_idx]
+            slot["name"] = resolved["name"]
+            slot["nameEn"] = resolved["name"]
+            slot["desc"] = resolved["rendered"]
+            slot["icon"] = resolved["icon"]
+            slot["skillSlug"] = resolved["slug"]
+            slot["skillType"] = resolved["type"]
+            slot["skillLevel"] = resolved["level"]
+            slot["replaceable"] = False
+            slot["replaceableReason"] = None
+            continue
+
+        empty_idx = find_first_empty()
+        if empty_idx is None:
+            # No room — append at the end so we never drop a training skill.
+            slot_idx = len(trained) + 1
+            trained.append({
+                "slot": slot_idx,
+                "name": resolved["name"],
+                "nameEn": resolved["name"],
+                "desc": resolved["rendered"],
+                "rating": None,
+                "stars": None,
+                "icon": resolved["icon"],
+                "replaceable": False,
+                "replaceableReason": TRAINING_POLLUTION_REASON,
+                "skillSlug": resolved["slug"],
+                "skillType": resolved["type"],
+                "skillLevel": resolved["level"],
+            })
+            continue
+
+        slot = trained[empty_idx]
+        slot.update({
+            "name": resolved["name"],
+            "nameEn": resolved["name"],
+            "desc": resolved["rendered"],
+            "icon": resolved["icon"],
+            "replaceable": False,
+            "replaceableReason": TRAINING_POLLUTION_REASON,
+            "skillSlug": resolved["slug"],
+            "skillType": resolved["type"],
+            "skillLevel": resolved["level"],
+        })
+
+    return trained
+
+
 def patch_general(
     wiki_path: Path,
     chain: list,
@@ -102,68 +238,26 @@ def patch_general(
     if not chain:
         return False
     data = json.load(open(wiki_path))
-    current_slots = data.get("skills", [])
 
+    # 1. Revert any legacy pollution in base skills[].
+    base_changed = reset_polluted_base_slots(data.get("skills", []))
+
+    # 2. Build the full `trainedSkills` override from the final promotion stage.
     final_stage = chain[-1]
-    final_skill_ids = final_stage.get("Skills", [])
-
-    # Existing skill types on the wiki general (excluding empty placeholders).
-    existing_types = {
-        s["skillType"]
-        for s in current_slots
-        if s.get("skillType") is not None
-    }
-
-    # Decode final stage skills. Skip any already present by type.
-    training_skills = []
-    for sid in final_skill_ids:
-        ss = sk_by_id.get(sid)
-        if not ss:
-            continue
-        ty = ss["Type"]
-        lvl = ss["Level"]
-        if ty in existing_types:
-            continue
-        resolved = resolve_skill(catalog, ty, lvl)
-        if resolved:
-            training_skills.append(resolved)
-
-    # Fill empty slots with these training skills, in order.
-    changed = False
-    empty_iter = iter(
-        i
-        for i, s in enumerate(current_slots)
-        if (s.get("name") in ("Emplacement libre", "Empty slot")
-            or s.get("name", "").strip() == "")
-        and s.get("skillType") is None
+    trained_skills = build_trained_skills(
+        data.get("skills", []),
+        final_stage,
+        sk_by_id,
+        catalog,
     )
-    for ts in training_skills:
-        try:
-            idx = next(empty_iter)
-        except StopIteration:
-            break
-        slot = current_slots[idx]
-        slot["name"] = ts["name"]
-        slot["nameEn"] = ts["name"]
-        slot["desc"] = ts["rendered"]
-        slot["icon"] = ts["icon"]
-        slot["skillSlug"] = ts["slug"]
-        slot["skillType"] = ts["type"]
-        slot["skillLevel"] = ts["level"]
-        slot["replaceable"] = False
-        slot["replaceableReason"] = (
-            "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination)."
-        )
-        changed = True
 
-    # Training path totals.
+    # 3. Training totals + stage objects.
     total_swords = sum(s.get("CostSword", 0) or 0 for s in chain)
     total_sceptres = sum(s.get("CostSceptre", 0) or 0 for s in chain)
-
-    # Build stage objects, preserving any existing summary.
     existing_training = data.get("training") or {}
-    existing_summary = existing_training.get("summary") if isinstance(existing_training, dict) else None
-
+    existing_summary = (
+        existing_training.get("summary") if isinstance(existing_training, dict) else None
+    )
     stages_out = []
     for i, st in enumerate(chain, start=1):
         stages_out.append({
@@ -181,7 +275,6 @@ def patch_general(
                 f"{st.get('CostMerit', 0)} mérite."
             ),
         })
-
     new_training = {
         "stages": stages_out,
         "totalSwordCost": total_swords,
@@ -190,11 +283,15 @@ def patch_general(
         or "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs.",
     }
 
+    changed = base_changed
     if data.get("hasTrainingPath") is not True:
         data["hasTrainingPath"] = True
         changed = True
     if data.get("training") != new_training:
         data["training"] = new_training
+        changed = True
+    if data.get("trainedSkills") != trained_skills:
+        data["trainedSkills"] = trained_skills
         changed = True
 
     if changed:

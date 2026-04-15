@@ -119,6 +119,66 @@ export function getCandidatesForGeneralSlot(
   });
 }
 
+/**
+ * Build a per-slot editorial recommendation map for a general.
+ *
+ * A general with N replaceable slots must NOT receive the same "⭐ Meta"
+ * recommendation in every slot. We assign distinct meta picks round-robin:
+ * category-specific meta skills first (ranked S+ → A), then universal meta
+ * skills as fallback. If the meta pool is exhausted we keep cycling to
+ * guarantee every slot gets a pick — but the tier ordering ensures the
+ * strongest recommendation lands on the lowest-indexed slot.
+ *
+ * Returns a `Map<slot, skillId>` keyed on slot index. A slot absent from
+ * the map means "no recommendation" (the component then falls back to the
+ * default highlight behaviour).
+ */
+const RATING_ORDER: Record<string, number> = {
+  "S+": 0,
+  S: 1,
+  A: 2,
+  B: 3,
+  C: 4,
+  D: 5,
+  E: 6,
+};
+
+export function buildSlotRecommendationMap(
+  general: GeneralData
+): Map<number, string> {
+  const replaceableSlots = general.skills
+    .filter((s) => s.replaceable)
+    .map((s) => s.slot)
+    .sort((a, b) => a - b);
+  if (replaceableSlots.length === 0) return new Map();
+
+  // Pool of distinct meta candidates eligible for at least one of this
+  // general's slots. We collect once (all replaceable slots share the same
+  // candidate pool under the current `appliesTo` model).
+  const firstSlotPool = getCandidatesForGeneralSlot(general, replaceableSlots[0]);
+  const metaPool = firstSlotPool
+    .filter((c) => c.popularMeta)
+    .sort((a, b) => {
+      // Category-specific first — they're strictly better picks for this general.
+      const aSpec = (a.appliesTo?.length ?? 0) > 0 ? 0 : 1;
+      const bSpec = (b.appliesTo?.length ?? 0) > 0 ? 0 : 1;
+      if (aSpec !== bSpec) return aSpec - bSpec;
+      const ra = a.rating ? RATING_ORDER[a.rating] ?? 99 : 99;
+      const rb = b.rating ? RATING_ORDER[b.rating] ?? 99 : 99;
+      return ra - rb;
+    });
+
+  const map = new Map<number, string>();
+  if (metaPool.length === 0) return map;
+
+  // Round-robin distinct picks.
+  replaceableSlots.forEach((slot, i) => {
+    const pick = metaPool[i % metaPool.length];
+    map.set(slot, pick.id);
+  });
+  return map;
+}
+
 // ========== Skill catalog (APK-extracted) ==========
 
 let _skillIndexCache: SkillIndex | null = null;

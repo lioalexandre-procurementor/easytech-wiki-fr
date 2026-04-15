@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "The technological output of the city +1"
+      "renderedDesc": "The technological output of the city +1",
+      "renderedDescFr": "The technological output of the city +1"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 260,
-      "renderedDesc": "The technological output of the city +2"
+      "renderedDesc": "The technological output of the city +2",
+      "renderedDescFr": "The technological output of the city +2"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 360,
-      "renderedDesc": "The technological output of the city +3"
+      "renderedDesc": "The technological output of the city +3",
+      "renderedDescFr": "The technological output of the city +3"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 470,
-      "renderedDesc": "The technological output of the city +4"
+      "renderedDesc": "The technological output of the city +4",
+      "renderedDescFr": "The technological output of the city +4"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 570,
-      "renderedDesc": "The technological output of the city +5"
+      "renderedDesc": "The technological output of the city +5",
+      "renderedDescFr": "The technological output of the city +5"
     }
   ],
   "usage": {
@@ -98,5 +103,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Technology Expert",
+  "descriptionTemplateFr": "The technological output of the city +X"
 }

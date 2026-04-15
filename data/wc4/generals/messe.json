@@ -132,5 +132,63 @@
     "head": "/img/wc4/heads/Messe.webp",
     "photoTrained": null,
     "headTrained": null
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Armored Assault",
+      "desc": "Deal +6% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Crowd Tactics",
+      "desc": "Attack of friendly surrounding army units +4",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Crowd Tactics",
+      "skillSlug": "crowd-tactics",
+      "skillType": 26,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Rumor",
+      "desc": "15% chance to reduce the morale of the enemy when attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Mareth Line",
+      "nameEn": "Mareth Line",
+      "desc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take 25% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_176.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "mareth-line",
+      "skillType": 176,
+      "skillLevel": 5
+    }
+  ]
 }

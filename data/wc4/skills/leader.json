@@ -14,7 +14,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Dealt damage of commanded units against land units +6%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns"
+      "renderedDesc": "Dealt damage of commanded units against land units +6%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +6%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Dealt damage of commanded units against land units +12%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns"
+      "renderedDesc": "Dealt damage of commanded units against land units +12%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +12%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 18,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Dealt damage of commanded units against land units +18%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns"
+      "renderedDesc": "Dealt damage of commanded units against land units +18%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +18%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Dealt damage of commanded units against land units +24%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns"
+      "renderedDesc": "Dealt damage of commanded units against land units +24%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +24%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns"
+      "renderedDesc": "Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +30%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
     }
   ],
   "usage": {
@@ -66,5 +71,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Leader",
+  "descriptionTemplateFr": "Dealt dégâts of commanded unités against land unités +X%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
 }

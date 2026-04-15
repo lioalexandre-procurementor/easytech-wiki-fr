@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 1% damage bonus is applied, up to 25%."
+      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 1% damage bonus is applied, up to 25%.",
+      "renderedDescFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to land unités (If the unités d'élite's niveau is at least 9, the bonus becomes 15%). For each additional allié unités d'élite within portée, an additional 1% dégâts bonus is applied, up to 25%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 2% damage bonus is applied, up to 25%."
+      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 2% damage bonus is applied, up to 25%.",
+      "renderedDescFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to land unités (If the unités d'élite's niveau is at least 9, the bonus becomes 15%). For each additional allié unités d'élite within portée, an additional 2% dégâts bonus is applied, up to 25%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 3% damage bonus is applied, up to 25%."
+      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 3% damage bonus is applied, up to 25%.",
+      "renderedDescFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to land unités (If the unités d'élite's niveau is at least 9, the bonus becomes 15%). For each additional allié unités d'élite within portée, an additional 3% dégâts bonus is applied, up to 25%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 4% damage bonus is applied, up to 25%."
+      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 4% damage bonus is applied, up to 25%.",
+      "renderedDescFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to land unités (If the unités d'élite's niveau is at least 9, the bonus becomes 15%). For each additional allié unités d'élite within portée, an additional 4% dégâts bonus is applied, up to 25%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 5% damage bonus is applied, up to 25%."
+      "renderedDesc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 5% damage bonus is applied, up to 25%.",
+      "renderedDescFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to land unités (If the unités d'élite's niveau is at least 9, the bonus becomes 15%). For each additional allié unités d'élite within portée, an additional 5% dégâts bonus is applied, up to 25%."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "August Storm",
+  "descriptionTemplateFr": "When commanding an infanterie unités d'élite, unités alliées (including the commanding unité itself) within a 1-hex radius inflige +10% de dégâts to land unités (If the unités d'élite's niveau is at least 9, the bonus becomes 15%). For each additional allié unités d'élite within portée, an additional X% dégâts bonus is applied, up to 25%."
 }

@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "When commanding a naval unit to attack, there is 20% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)"
+      "renderedDesc": "When commanding a naval unit to attack, there is 20% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "renderedDescFr": "When commanding a naval unité to attaque, there is 20% chance that one of the surrounding inactive naval unité will participate in the attaque.(Only once par tour)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 1,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "When commanding a naval unit to attack, there is 40% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)"
+      "renderedDesc": "When commanding a naval unit to attack, there is 40% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "renderedDescFr": "When commanding a naval unité to attaque, there is 40% chance that one of the surrounding inactive naval unité will participate in the attaque.(Only once par tour)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 1,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "When commanding a naval unit to attack, there is 60% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)"
+      "renderedDesc": "When commanding a naval unit to attack, there is 60% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "renderedDescFr": "When commanding a naval unité to attaque, there is 60% chance that one of the surrounding inactive naval unité will participate in the attaque.(Only once par tour)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 1,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "When commanding a naval unit to attack, there is 80% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)"
+      "renderedDesc": "When commanding a naval unit to attack, there is 80% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "renderedDescFr": "When commanding a naval unité to attaque, there is 80% chance that one of the surrounding inactive naval unité will participate in the attaque.(Only once par tour)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding a naval unit to attack, there is 100% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)"
+      "renderedDesc": "When commanding a naval unit to attack, there is 100% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "renderedDescFr": "When commanding a naval unité to attaque, there is 100% chance that one of the surrounding inactive naval unité will participate in the attaque.(Only once par tour)"
     }
   ],
   "usage": {
@@ -66,5 +71,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Navigation",
+  "descriptionTemplateFr": "When commanding a naval unité to attaque, there is X% chance that one of the surrounding inactive naval unité will participate in the attaque.(Only once par tour)"
 }

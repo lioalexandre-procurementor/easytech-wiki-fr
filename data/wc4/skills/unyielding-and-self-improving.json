@@ -14,7 +14,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Economic and industrial income +10 when the commanding force with no enemy troops at 1 square around."
+      "renderedDesc": "Economic and industrial income +10 when the commanding force with no enemy troops at 1 square around.",
+      "renderedDescFr": "Economic and industrial income +10 when the commanding force with no ennemi troops at 1 square around."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Economic and industrial income +20 when the commanding force with no enemy troops at 1 square around."
+      "renderedDesc": "Economic and industrial income +20 when the commanding force with no enemy troops at 1 square around.",
+      "renderedDescFr": "Economic and industrial income +20 when the commanding force with no ennemi troops at 1 square around."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Economic and industrial income +30 when the commanding force with no enemy troops at 1 square around."
+      "renderedDesc": "Economic and industrial income +30 when the commanding force with no enemy troops at 1 square around.",
+      "renderedDescFr": "Economic and industrial income +30 when the commanding force with no ennemi troops at 1 square around."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Economic and industrial income +40 when the commanding force with no enemy troops at 1 square around."
+      "renderedDesc": "Economic and industrial income +40 when the commanding force with no enemy troops at 1 square around.",
+      "renderedDescFr": "Economic and industrial income +40 when the commanding force with no ennemi troops at 1 square around."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 50,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around."
+      "renderedDesc": "Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.",
+      "renderedDescFr": "Economic and industrial income +50 when the commanding force with no ennemi troops at 1 square around."
     }
   ],
   "usage": {
@@ -72,5 +77,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Unyielding And Self-improving",
+  "descriptionTemplateFr": "Economic and industrial income +X when the commanding force with no ennemi troops at 1 square around."
 }

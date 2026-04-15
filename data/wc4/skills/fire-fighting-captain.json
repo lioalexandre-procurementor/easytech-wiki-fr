@@ -14,7 +14,8 @@
       "effect": 14,
       "chance": 14,
       "costMedal": 160,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 14% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 14% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 14% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 28,
       "chance": 28,
       "costMedal": 240,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 28% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 28% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 28% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 42,
       "chance": 42,
       "costMedal": 480,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 42% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 42% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 42% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 56,
       "chance": 56,
       "costMedal": 640,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 56% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 56% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 56% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 70,
       "chance": 70,
       "costMedal": 800,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 70% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
     }
   ],
   "usage": {
@@ -68,5 +73,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Fire-Fighting Captain",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a X% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
 }

@@ -55,31 +55,23 @@
     },
     {
       "slot": 4,
-      "name": "Hero",
-      "desc": "Morale of armored units under command will not diminish, +12% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_156.png",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Hero",
-      "skillSlug": "hero",
-      "skillType": 156,
-      "skillLevel": 4
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Wipe Out The North",
-      "desc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 100% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_157.png",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Wipe Out The North",
-      "skillSlug": "wipe-out-the-north",
-      "skillType": 157,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -162,5 +154,77 @@
     "head": "/img/wc4/heads/Rokossovsky.webp",
     "photoTrained": "/img/wc4/generals/Rokossovsky2.webp",
     "headTrained": "/img/wc4/heads/Rokossovsky2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Panzer Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
+    },
+    {
+      "slot": 2,
+      "name": "Tide of Iron",
+      "desc": "Damage to the enemy +5 when the armored units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Tide of Iron",
+      "skillSlug": "tide-of-iron",
+      "skillType": 24,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Shelter",
+      "desc": "Able to dodge 12% damage from the enemy's missile units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Shelter",
+      "skillSlug": "shelter",
+      "skillType": 31,
+      "skillLevel": 2
+    },
+    {
+      "slot": 4,
+      "name": "Hero",
+      "desc": "Morale of armored units under command will not diminish, +12% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_156.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Hero",
+      "skillSlug": "hero",
+      "skillType": 156,
+      "skillLevel": 4
+    },
+    {
+      "slot": 5,
+      "name": "Wipe Out The North",
+      "desc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 100% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_157.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Wipe Out The North",
+      "skillSlug": "wipe-out-the-north",
+      "skillType": 157,
+      "skillLevel": 5
+    }
+  ]
 }

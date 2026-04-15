@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 1% and stackable up to 42%), which lasts until the end of the stage."
+      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 1% and stackable up to 42%), which lasts until the end of the stage.",
+      "renderedDescFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gagne l'état correspondant (increasing dégâts dealt de 1% and stackable up to 42%), which lasts until the end of the stage."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 1% and stackable up to 42%), which lasts until the end of the stage."
+      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 1% and stackable up to 42%), which lasts until the end of the stage.",
+      "renderedDescFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gagne l'état correspondant (increasing dégâts dealt de 1% and stackable up to 42%), which lasts until the end of the stage."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 2% and stackable up to 42%), which lasts until the end of the stage."
+      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 2% and stackable up to 42%), which lasts until the end of the stage.",
+      "renderedDescFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gagne l'état correspondant (increasing dégâts dealt de 2% and stackable up to 42%), which lasts until the end of the stage."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 2% and stackable up to 42%), which lasts until the end of the stage."
+      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 2% and stackable up to 42%), which lasts until the end of the stage.",
+      "renderedDescFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gagne l'état correspondant (increasing dégâts dealt de 2% and stackable up to 42%), which lasts until the end of the stage."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 3% and stackable up to 42%), which lasts until the end of the stage."
+      "renderedDesc": "While commanding land units, whenever an enemy within a 3-tile radius is eliminated, your morale is boosted and you gain the “Breakthrough Cluster” status (increasing damage dealt by 3% and stackable up to 42%), which lasts until the end of the stage.",
+      "renderedDescFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gagne l'état correspondant (increasing dégâts dealt de 3% and stackable up to 42%), which lasts until the end of the stage."
     }
   ],
   "usage": {
@@ -68,5 +73,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Soviet Deep Battle",
+  "descriptionTemplateFr": "While commanding land unités, whenever an ennemi within a 3-tile radius is eliminated, your moral is boosted and you gagne l'état correspondant (increasing dégâts dealt by X% and stackable up to 42%), which lasts until the end of the stage."
 }

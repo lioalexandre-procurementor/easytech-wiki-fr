@@ -14,7 +14,8 @@
       "effect": 0,
       "chance": 12,
       "costMedal": 120,
-      "renderedDesc": "12% chance the enemy will not fight back when commanding ship units."
+      "renderedDesc": "12% chance the enemy will not fight back when commanding ship units.",
+      "renderedDescFr": "12% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 0,
       "chance": 24,
       "costMedal": 170,
-      "renderedDesc": "24% chance the enemy will not fight back when commanding ship units."
+      "renderedDesc": "24% chance the enemy will not fight back when commanding ship units.",
+      "renderedDescFr": "24% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 0,
       "chance": 36,
       "costMedal": 250,
-      "renderedDesc": "36% chance the enemy will not fight back when commanding ship units."
+      "renderedDesc": "36% chance the enemy will not fight back when commanding ship units.",
+      "renderedDescFr": "36% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 0,
       "chance": 48,
       "costMedal": 350,
-      "renderedDesc": "48% chance the enemy will not fight back when commanding ship units."
+      "renderedDesc": "48% chance the enemy will not fight back when commanding ship units.",
+      "renderedDescFr": "48% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 0,
       "chance": 60,
       "costMedal": 450,
-      "renderedDesc": "60% chance the enemy will not fight back when commanding ship units."
+      "renderedDesc": "60% chance the enemy will not fight back when commanding ship units.",
+      "renderedDescFr": "60% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
     }
   ],
   "usage": {
@@ -82,5 +87,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Night Raid",
+  "descriptionTemplateFr": "X% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
 }

@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 8%."
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 8%.",
+      "renderedDescFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit de 8%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 16%."
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 16%.",
+      "renderedDescFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit de 16%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 24%."
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 24%.",
+      "renderedDescFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit de 24%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 32%."
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 32%.",
+      "renderedDescFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit de 32%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 40%."
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 40%.",
+      "renderedDescFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit de 40%."
     }
   ],
   "usage": {
@@ -58,5 +63,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Neutralité armée",
+  "descriptionTemplateFr": "Attaque +15 while in your own territory; the chance of receiving a attaques critiques is réduit by X%."
 }

@@ -6,9 +6,19 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { StatsGrid } from "@/components/general/StatsGrid";
 import { buildTrainedView } from "@/lib/general-trained";
-import { getAllGeneralSlugs, getGeneral } from "@/lib/units";
+import { getAllGeneralSlugs, getGeneral, getSkill } from "@/lib/units";
 import { locales, type Locale } from "@/src/i18n/config";
 import type { Metadata } from "next";
+
+/**
+ * "Maxed out" variant of the general page.
+ *
+ * Shows the general at their theoretical ceiling: every attribute at `max`
+ * and every skill projected to its catalog `maxLevel`. Applies to ALL 104
+ * generals — NOT the premium training path (that lives under
+ * `/entrainement-premium`). Kept under the legacy `/trained` URL so existing
+ * inbound links keep working.
+ */
 
 export function generateStaticParams() {
   const slugs = getAllGeneralSlugs();
@@ -67,6 +77,32 @@ export default async function TrainedGeneralPage({
   const trained = buildTrainedView(g);
   const t = await getTranslations();
   const name = g.nameEn || g.name;
+  const isFr = locale === "fr";
+
+  const nameForSkill = (s: { name: string; nameEn?: string; skillSlug?: string }) => {
+    const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
+    if (isFr) return cat?.nameFr || s.name;
+    return cat?.name || s.nameEn || s.name;
+  };
+  const descForSkill = (s: {
+    desc: string;
+    skillSlug?: string;
+    skillLevel?: number;
+  }) => {
+    const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
+    const prog =
+      cat && s.skillLevel != null
+        ? cat.progression.find((p) => p.level === s.skillLevel) ?? null
+        : null;
+    if (isFr) {
+      return (
+        prog?.renderedDescFr ||
+        cat?.descriptionTemplateFr ||
+        s.desc
+      );
+    }
+    return prog?.renderedDesc || cat?.descriptionTemplate || s.desc;
+  };
 
   return (
     <>
@@ -85,37 +121,51 @@ export default async function TrainedGeneralPage({
           {name}
         </Link>
         <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <span>{t("general.trainedMode")}</span>
+        <span>{t("general.maxedMode")}</span>
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
         <header className="bg-panel border border-border rounded-lg p-6 mb-6 grid md:grid-cols-[220px_1fr] gap-6">
-          {g.image?.photoTrained && (
+          {(g.image?.photoTrained || g.image?.photo) && (
             <div className="relative h-[220px] rounded-lg border-2 border-gold overflow-hidden bg-[linear-gradient(135deg,#1a2230,#12161e)]">
               <Image
-                src={g.image.photoTrained}
-                alt={`${name} (trained)`}
+                src={(g.image?.photoTrained || g.image?.photo) as string}
+                alt={`${name} (maxed out)`}
                 fill
                 sizes="220px"
                 className="object-contain p-2"
                 priority
               />
               <span className="absolute top-2 right-2 text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded border bg-gold/20 border-gold/40 text-gold2">
-                ⚔ Trained
+                ★ MAX
               </span>
             </div>
           )}
           <div>
             <h1 className="text-2xl font-bold text-gold2">
-              {name} — {t("general.trainedMode")}
+              {name} — {t("general.maxedMode")}
             </h1>
             <p className="text-muted mt-2">{t("trainedPage.intro", { name })}</p>
-            <Link
-              href={`/world-conqueror-4/generaux/${slug}`}
-              className="inline-block mt-4 text-sm text-gold hover:underline"
-            >
-              {t("trainedPage.backToBase")}
-            </Link>
+            <div className="flex flex-wrap gap-2 mt-4">
+              <Link
+                href={`/world-conqueror-4/generaux/${slug}`}
+                className="text-sm text-gold hover:underline"
+              >
+                {t("trainedPage.backToBase")}
+              </Link>
+              {g.hasTrainingPath && g.trainedSkills && g.trainedSkills.length > 0 && (
+                <Link
+                  href={
+                    locale === "fr"
+                      ? `/world-conqueror-4/generaux/${slug}/entrainement-premium`
+                      : `/world-conqueror-4/generals/${slug}/premium-training`
+                  }
+                  className="text-sm text-red-300 hover:underline"
+                >
+                  {t("general.viewPremiumTraining")}
+                </Link>
+              )}
+            </div>
           </div>
         </header>
 
@@ -126,44 +176,32 @@ export default async function TrainedGeneralPage({
           className="bg-panel border border-border rounded-lg p-6 mb-6"
         >
           <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-            ⚡ {t("general.skills")} ({t("general.trainedMode")})
+            ⚡ {t("general.skills")} ({t("general.maxedMode")})
           </h2>
+          <p className="text-muted text-xs mb-4 italic">
+            {t("general.maxedModeHint")}
+          </p>
           <div className="space-y-3">
             {trained.skills.map((s) => (
               <div key={s.slot} className="border border-border rounded p-3 bg-bg3">
-                <div className="font-bold text-gold">
-                  #{s.slot} — {s.nameEn || s.name}
+                <div className="flex items-center gap-2 mb-1">
+                  <span className="text-muted text-[10px] uppercase tracking-widest font-bold">
+                    Slot {s.slot}
+                  </span>
+                  <span className="font-bold text-gold2">
+                    {nameForSkill(s)}
+                  </span>
+                  {s.skillLevel != null && (
+                    <span className="text-[9px] font-bold uppercase tracking-widest px-1.5 py-0.5 rounded bg-gold/15 border border-gold/40 text-gold2">
+                      L{s.skillLevel} MAX
+                    </span>
+                  )}
                 </div>
-                <div className="text-sm text-muted mt-1">{s.desc}</div>
+                <div className="text-sm text-dim mt-1 leading-relaxed">{descForSkill(s)}</div>
               </div>
             ))}
           </div>
         </section>
-
-        {(trained.totalSwordCost != null || trained.totalSceptreCost != null) && (
-          <section className="bg-panel border border-border rounded-lg p-6 mb-6">
-            <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              ⚔ {t("trainedPage.totalCost")}
-            </h2>
-            <dl className="grid grid-cols-2 gap-4">
-              <div>
-                <dt className="text-muted text-sm">{t("trainedPage.swords")}</dt>
-                <dd className="text-xl font-bold text-gold tabular-nums">
-                  {trained.totalSwordCost ?? "—"}
-                </dd>
-              </div>
-              <div>
-                <dt className="text-muted text-sm">{t("trainedPage.sceptres")}</dt>
-                <dd className="text-xl font-bold text-gold tabular-nums">
-                  {trained.totalSceptreCost ?? "—"}
-                </dd>
-              </div>
-            </dl>
-            {trained.summary && (
-              <p className="text-sm text-muted mt-4">{trained.summary}</p>
-            )}
-          </section>
-        )}
       </div>
       <Footer />
       <script

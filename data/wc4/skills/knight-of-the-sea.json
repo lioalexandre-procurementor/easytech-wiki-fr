@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 8%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage."
+      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 8%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "renderedDescFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmente les dégâts de 8%. If a porte-avions allié dans un rayon de 2 hex or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs inflige +30% de dégâts. All porte-avions alliés dans un rayon de 2 hex gain +15% air strike dégâts."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 16%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage."
+      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 16%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "renderedDescFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmente les dégâts de 16%. If a porte-avions allié dans un rayon de 2 hex or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs inflige +30% de dégâts. All porte-avions alliés dans un rayon de 2 hex gain +15% air strike dégâts."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 24%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage."
+      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 24%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "renderedDescFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmente les dégâts de 24%. If a porte-avions allié dans un rayon de 2 hex or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs inflige +30% de dégâts. All porte-avions alliés dans un rayon de 2 hex gain +15% air strike dégâts."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 32%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage."
+      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 32%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "renderedDescFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmente les dégâts de 32%. If a porte-avions allié dans un rayon de 2 hex or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs inflige +30% de dégâts. All porte-avions alliés dans un rayon de 2 hex gain +15% air strike dégâts."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 40%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage."
+      "renderedDesc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 40%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "renderedDescFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmente les dégâts de 40%. If a porte-avions allié dans un rayon de 2 hex or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs inflige +30% de dégâts. All porte-avions alliés dans un rayon de 2 hex gain +15% air strike dégâts."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Chevalier des mers",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités navales, la moral ne diminue pas. When dealing a naval attaques critiques, augmenter dégâts by X%. If a porte-avions allié dans un rayon de 2 hex or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs inflige +30% de dégâts. All porte-avions alliés dans un rayon de 2 hex gain +15% air strike dégâts."
 }

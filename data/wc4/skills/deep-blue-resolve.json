@@ -14,7 +14,8 @@
       "effect": 150,
       "chance": 16,
       "costMedal": 150,
-      "renderedDesc": "While commanding ship units, there is a 16% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+      "renderedDesc": "While commanding ship units, there is a 16% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "renderedDescFr": "While commanding unités navales, there is a 16% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and aviation Leader are inapplicable.)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 150,
       "chance": 32,
       "costMedal": 250,
-      "renderedDesc": "While commanding ship units, there is a 32% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+      "renderedDesc": "While commanding ship units, there is a 32% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "renderedDescFr": "While commanding unités navales, there is a 32% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and aviation Leader are inapplicable.)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 150,
       "chance": 48,
       "costMedal": 350,
-      "renderedDesc": "While commanding ship units, there is a 48% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+      "renderedDesc": "While commanding ship units, there is a 48% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "renderedDescFr": "While commanding unités navales, there is a 48% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and aviation Leader are inapplicable.)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 150,
       "chance": 64,
       "costMedal": 450,
-      "renderedDesc": "While commanding ship units, there is a 64% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+      "renderedDesc": "While commanding ship units, there is a 64% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "renderedDescFr": "While commanding unités navales, there is a 64% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and aviation Leader are inapplicable.)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 150,
       "chance": 80,
       "costMedal": 550,
-      "renderedDesc": "While commanding ship units, there is a 80% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+      "renderedDesc": "While commanding ship units, there is a 80% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "renderedDescFr": "While commanding unités navales, there is a 80% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and aviation Leader are inapplicable.)"
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Résolution de l'abysse",
+  "descriptionTemplateFr": "While commanding unités navales, there is a X% chance to deal a attaques critiques lors d'une attaque or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and aviation Leader are inapplicable.)"
 }

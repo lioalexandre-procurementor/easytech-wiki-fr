@@ -14,7 +14,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Consumption of resources When attacking with missiles -10%"
+      "renderedDesc": "Consumption of resources When attacking with missiles -10%",
+      "renderedDescFr": "Consumption of resources lors d'une attaque with missiles -10%"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Consumption of resources When attacking with missiles -20%"
+      "renderedDesc": "Consumption of resources When attacking with missiles -20%",
+      "renderedDescFr": "Consumption of resources lors d'une attaque with missiles -20%"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Consumption of resources When attacking with missiles -30%"
+      "renderedDesc": "Consumption of resources When attacking with missiles -30%",
+      "renderedDescFr": "Consumption of resources lors d'une attaque with missiles -30%"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Consumption of resources When attacking with missiles -40%"
+      "renderedDesc": "Consumption of resources When attacking with missiles -40%",
+      "renderedDescFr": "Consumption of resources lors d'une attaque with missiles -40%"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 50,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Consumption of resources When attacking with missiles -50%"
+      "renderedDesc": "Consumption of resources When attacking with missiles -50%",
+      "renderedDescFr": "Consumption of resources lors d'une attaque with missiles -50%"
     }
   ],
   "usage": {
@@ -62,5 +67,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Missile Expert",
+  "descriptionTemplateFr": "Consumption of resources lors d'une attaque with missiles -X%"
 }

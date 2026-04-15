@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +4%."
+      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +4%.",
+      "renderedDescFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts infligés +4%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +8%."
+      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +8%.",
+      "renderedDescFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts infligés +8%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +12%."
+      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +12%.",
+      "renderedDescFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts infligés +12%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +16%."
+      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +16%.",
+      "renderedDescFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts infligés +16%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +20%."
+      "renderedDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +20%.",
+      "renderedDescFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts infligés +20%."
     }
   ],
   "usage": {
@@ -58,5 +63,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Modernized Air Force",
+  "descriptionTemplateFr": "When you commandement an airstrike that triggers a fatal blow, the dégâts dealt +X%."
 }

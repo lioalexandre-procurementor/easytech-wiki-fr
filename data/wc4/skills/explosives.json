@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Damage +8% when attacking the stronghold units"
+      "renderedDesc": "Damage +8% when attacking the stronghold units",
+      "renderedDescFr": "Dégâts +8% lors d'une attaque the stronghold unités"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Damage +16% when attacking the stronghold units"
+      "renderedDesc": "Damage +16% when attacking the stronghold units",
+      "renderedDescFr": "Dégâts +16% lors d'une attaque the stronghold unités"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Damage +24% when attacking the stronghold units"
+      "renderedDesc": "Damage +24% when attacking the stronghold units",
+      "renderedDescFr": "Dégâts +24% lors d'une attaque the stronghold unités"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Damage +32% when attacking the stronghold units"
+      "renderedDesc": "Damage +32% when attacking the stronghold units",
+      "renderedDescFr": "Dégâts +32% lors d'une attaque the stronghold unités"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Damage +40% when attacking the stronghold units"
+      "renderedDesc": "Damage +40% when attacking the stronghold units",
+      "renderedDescFr": "Dégâts +40% lors d'une attaque the stronghold unités"
     }
   ],
   "usage": {
@@ -951,5 +956,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Explosives",
+  "descriptionTemplateFr": "Dégâts +X% lors d'une attaque the stronghold unités"
 }

@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +4."
+      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +4.",
+      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +4."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +8."
+      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +8.",
+      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +8."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +12."
+      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +12.",
+      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +12."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +16."
+      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +16.",
+      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +16."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20."
+      "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20.",
+      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +20."
     }
   ],
   "usage": {
@@ -102,5 +107,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Leadership",
+  "descriptionTemplateFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +X."
 }

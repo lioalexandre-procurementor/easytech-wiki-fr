@@ -132,5 +132,77 @@
     "head": "/img/wc4/heads/de_Gaulle.webp",
     "photoTrained": "/img/wc4/generals/de_Gaulle2.webp",
     "headTrained": "/img/wc4/heads/de_Gaulle2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Artillery Barrage",
+      "desc": "Damage to the enemy +10 when the artillery units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_25.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 2
+    },
+    {
+      "slot": 2,
+      "name": "Entrenchment",
+      "desc": "Able to dodge 18% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 3
+    },
+    {
+      "slot": 3,
+      "name": "Rumor",
+      "desc": "15% chance to reduce the morale of the enemy when attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Firepower Blockade",
+      "nameEn": "Firepower Blockade",
+      "desc": "When your attack causes the morale of the enemy to be low or diminished, there is 80% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_140.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "firepower-blockade",
+      "skillType": 140,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Accuracy",
+      "nameEn": "Accuracy",
+      "desc": "Deal +18% damage to the enemy when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 3
+    }
+  ]
 }

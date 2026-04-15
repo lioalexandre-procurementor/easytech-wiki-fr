@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +3% damage (excluding itself)."
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +3% damage (excluding itself).",
+      "renderedDescFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to inflige +3% de dégâts (excluding itself)."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +6% damage (excluding itself)."
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +6% damage (excluding itself).",
+      "renderedDescFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to inflige +6% de dégâts (excluding itself)."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +9% damage (excluding itself)."
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +9% damage (excluding itself).",
+      "renderedDescFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to inflige +9% de dégâts (excluding itself)."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +12% damage (excluding itself)."
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +12% damage (excluding itself).",
+      "renderedDescFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to inflige +12% de dégâts (excluding itself)."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +15% damage (excluding itself)."
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +15% damage (excluding itself).",
+      "renderedDescFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to inflige +15% de dégâts (excluding itself)."
     }
   ],
   "usage": {
@@ -70,5 +75,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Decoy and Strike",
+  "descriptionTemplateFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to deal +X% dégâts (excluding itself)."
 }

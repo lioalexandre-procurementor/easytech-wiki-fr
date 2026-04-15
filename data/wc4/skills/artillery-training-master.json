@@ -14,7 +14,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Increase the HP recovery converted from dealt damage of 1% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%"
+      "renderedDesc": "Increase the HP recovery converted from dealt damage of 1% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "renderedDescFr": "Augmenter the PV recovery converted from dealt dégâts of 1% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 1,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Increase the HP recovery converted from dealt damage of 1% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%"
+      "renderedDesc": "Increase the HP recovery converted from dealt damage of 1% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "renderedDescFr": "Augmenter the PV recovery converted from dealt dégâts of 1% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Increase the HP recovery converted from dealt damage of 2% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%"
+      "renderedDesc": "Increase the HP recovery converted from dealt damage of 2% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "renderedDescFr": "Augmenter the PV recovery converted from dealt dégâts of 2% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Increase the HP recovery converted from dealt damage of 2% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%"
+      "renderedDesc": "Increase the HP recovery converted from dealt damage of 2% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "renderedDescFr": "Augmenter the PV recovery converted from dealt dégâts of 2% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Increase the HP recovery converted from dealt damage of 3% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%"
+      "renderedDesc": "Increase the HP recovery converted from dealt damage of 3% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "renderedDescFr": "Augmenter the PV recovery converted from dealt dégâts of 3% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
     }
   ],
   "usage": {
@@ -74,5 +79,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Artillerie Training Master",
+  "descriptionTemplateFr": "Augmenter the PV recovery converted from dealt dégâts of X% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
 }

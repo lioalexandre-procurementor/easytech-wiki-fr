@@ -29,6 +29,10 @@ export const pathnames = {
     fr: "/world-conqueror-4/generaux/[slug]/entraine",
     en: "/world-conqueror-4/generals/[slug]/trained",
   },
+  "/world-conqueror-4/generaux/[slug]/premium-training": {
+    fr: "/world-conqueror-4/generaux/[slug]/entrainement-premium",
+    en: "/world-conqueror-4/generals/[slug]/premium-training",
+  },
   "/world-conqueror-4/unites-elite": {
     fr: "/world-conqueror-4/unites-elite",
     en: "/world-conqueror-4/elite-units",

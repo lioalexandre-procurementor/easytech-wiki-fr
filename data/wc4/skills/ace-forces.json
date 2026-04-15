@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 80,
-      "renderedDesc": "Experience gained by the army in combat increases by 20%"
+      "renderedDesc": "Experience gained by the army in combat increases by 20%",
+      "renderedDescFr": "Experience gained by the army in combat augmente de 20%"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "Experience gained by the army in combat increases by 40%"
+      "renderedDesc": "Experience gained by the army in combat increases by 40%",
+      "renderedDescFr": "Experience gained by the army in combat augmente de 40%"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 100,
       "costMedal": 180,
-      "renderedDesc": "Experience gained by the army in combat increases by 60%"
+      "renderedDesc": "Experience gained by the army in combat increases by 60%",
+      "renderedDescFr": "Experience gained by the army in combat augmente de 60%"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Experience gained by the army in combat increases by 80%"
+      "renderedDesc": "Experience gained by the army in combat increases by 80%",
+      "renderedDescFr": "Experience gained by the army in combat augmente de 80%"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 300,
-      "renderedDesc": "Experience gained by the army in combat increases by 100%"
+      "renderedDesc": "Experience gained by the army in combat increases by 100%",
+      "renderedDescFr": "Experience gained by the army in combat augmente de 100%"
     }
   ],
   "usage": {
@@ -581,5 +586,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Forces d'élite",
+  "descriptionTemplateFr": "Experience gained by the army in combat augmente by X%"
 }

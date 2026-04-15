@@ -14,7 +14,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -15% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -15% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -15% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -20% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -20% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -20% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -25% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -25% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -25% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -30% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -30% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -30% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 35,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -35% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
     }
   ],
   "usage": {
@@ -80,5 +85,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Positional Warfare",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -X% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
 }

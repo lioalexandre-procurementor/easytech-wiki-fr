@@ -14,7 +14,8 @@
       "effect": 150,
       "chance": 8,
       "costMedal": 100,
-      "renderedDesc": "8% chance to give the enemy a critical attack when commanding ship units"
+      "renderedDesc": "8% chance to give the enemy a critical attack when commanding ship units",
+      "renderedDescFr": "8% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 150,
       "chance": 16,
       "costMedal": 160,
-      "renderedDesc": "16% chance to give the enemy a critical attack when commanding ship units"
+      "renderedDesc": "16% chance to give the enemy a critical attack when commanding ship units",
+      "renderedDescFr": "16% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 150,
       "chance": 24,
       "costMedal": 240,
-      "renderedDesc": "24% chance to give the enemy a critical attack when commanding ship units"
+      "renderedDesc": "24% chance to give the enemy a critical attack when commanding ship units",
+      "renderedDescFr": "24% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 150,
       "chance": 32,
       "costMedal": 320,
-      "renderedDesc": "32% chance to give the enemy a critical attack when commanding ship units"
+      "renderedDesc": "32% chance to give the enemy a critical attack when commanding ship units",
+      "renderedDescFr": "32% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 150,
       "chance": 40,
       "costMedal": 400,
-      "renderedDesc": "40% chance to give the enemy a critical attack when commanding ship units"
+      "renderedDesc": "40% chance to give the enemy a critical attack when commanding ship units",
+      "renderedDescFr": "40% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
     }
   ],
   "usage": {
@@ -757,5 +762,7 @@
       }
     ]
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Commandant de flotte",
+  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités navales"
 }

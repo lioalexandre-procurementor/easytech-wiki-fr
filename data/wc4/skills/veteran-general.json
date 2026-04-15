@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Maximum HP of commanded units +5%, cannot go into chaos when the unit has above half HP"
+      "renderedDesc": "Maximum HP of commanded units +5%, cannot go into chaos when the unit has above half HP",
+      "renderedDescFr": "Maximum PV of commanded unités +5%, cannot go into chaos when the unité has above half PV"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Maximum HP of commanded units +10%, cannot go into chaos when the unit has above half HP"
+      "renderedDesc": "Maximum HP of commanded units +10%, cannot go into chaos when the unit has above half HP",
+      "renderedDescFr": "Maximum PV of commanded unités +10%, cannot go into chaos when the unité has above half PV"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Maximum HP of commanded units +15%, cannot go into chaos when the unit has above half HP"
+      "renderedDesc": "Maximum HP of commanded units +15%, cannot go into chaos when the unit has above half HP",
+      "renderedDescFr": "Maximum PV of commanded unités +15%, cannot go into chaos when the unité has above half PV"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Maximum HP of commanded units +20%, cannot go into chaos when the unit has above half HP"
+      "renderedDesc": "Maximum HP of commanded units +20%, cannot go into chaos when the unit has above half HP",
+      "renderedDescFr": "Maximum PV of commanded unités +20%, cannot go into chaos when the unité has above half PV"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Maximum HP of commanded units +25%, cannot go into chaos when the unit has above half HP"
+      "renderedDesc": "Maximum HP of commanded units +25%, cannot go into chaos when the unit has above half HP",
+      "renderedDescFr": "Maximum PV of commanded unités +25%, cannot go into chaos when the unité has above half PV"
     }
   ],
   "usage": {
@@ -70,5 +75,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Veteran General",
+  "descriptionTemplateFr": "Maximum PV of commanded unités +X%, cannot go into chaos when the unité has above half PV"
 }

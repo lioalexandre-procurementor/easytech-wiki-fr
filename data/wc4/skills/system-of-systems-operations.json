@@ -14,7 +14,8 @@
       "effect": 150,
       "chance": 12,
       "costMedal": 160,
-      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 12% chance of dealing a critical attack."
+      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 12% chance of dealing a critical attack.",
+      "renderedDescFr": "When commanding troops to attaque and carry out airstrikes, there is a 12% chance of dealing a attaques critiques."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 150,
       "chance": 24,
       "costMedal": 240,
-      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 24% chance of dealing a critical attack."
+      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 24% chance of dealing a critical attack.",
+      "renderedDescFr": "When commanding troops to attaque and carry out airstrikes, there is a 24% chance of dealing a attaques critiques."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 150,
       "chance": 36,
       "costMedal": 480,
-      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 36% chance of dealing a critical attack."
+      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 36% chance of dealing a critical attack.",
+      "renderedDescFr": "When commanding troops to attaque and carry out airstrikes, there is a 36% chance of dealing a attaques critiques."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 150,
       "chance": 48,
       "costMedal": 640,
-      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 48% chance of dealing a critical attack."
+      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 48% chance of dealing a critical attack.",
+      "renderedDescFr": "When commanding troops to attaque and carry out airstrikes, there is a 48% chance of dealing a attaques critiques."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 150,
       "chance": 60,
       "costMedal": 800,
-      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 60% chance of dealing a critical attack."
+      "renderedDesc": "When commanding troops to attack and carry out airstrikes, there is a 60% chance of dealing a critical attack.",
+      "renderedDescFr": "When commanding troops to attaque and carry out airstrikes, there is a 60% chance of dealing a attaques critiques."
     }
   ],
   "usage": {
@@ -62,5 +67,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "System-of-Systems Operations",
+  "descriptionTemplateFr": "When commanding troops to attaque and carry out airstrikes, there is a X% chance of dealing a attaques critiques."
 }

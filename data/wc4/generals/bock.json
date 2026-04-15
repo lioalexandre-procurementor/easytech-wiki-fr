@@ -132,5 +132,63 @@
     "head": "/img/wc4/heads/Bock.webp",
     "photoTrained": "/img/wc4/generals/Bock2.webp",
     "headTrained": "/img/wc4/heads/Bock2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Panzer Leader",
+      "desc": "8% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Blitzkrieg",
+      "desc": "12% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +5 when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Plain Fighting",
+      "skillSlug": "plain-fighting",
+      "skillType": 7,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "War Machine",
+      "nameEn": "War Machine",
+      "desc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_139.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "war-machine",
+      "skillType": 139,
+      "skillLevel": 5
+    }
+  ]
 }

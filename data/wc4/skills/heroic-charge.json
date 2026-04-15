@@ -14,7 +14,8 @@
       "effect": 2,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +2% (Maximum 50%). When armored units have high morale, lower damage received by 20%"
+      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +2% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +2% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20%"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +4% (Maximum 50%). When armored units have high morale, lower damage received by 20%"
+      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +4% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +4% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20%"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +6% (Maximum 50%). When armored units have high morale, lower damage received by 20%"
+      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +6% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +6% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20%"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +8% (Maximum 50%). When armored units have high morale, lower damage received by 20%"
+      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +8% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +8% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20%"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%"
+      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +10% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20%"
     }
   ],
   "usage": {
@@ -76,5 +81,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Charge héroïque",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dealt dégâts +X% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20%"
 }

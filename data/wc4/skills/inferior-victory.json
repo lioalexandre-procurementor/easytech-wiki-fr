@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Damage is increased by 4% when the number of troop formations under command is 1."
+      "renderedDesc": "Damage is increased by 4% when the number of troop formations under command is 1.",
+      "renderedDescFr": "Les dégâts sont augmentés de 4% when the number of troop formations sous votre commandement is 1."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Damage is increased by 8% when the number of troop formations under command is 1."
+      "renderedDesc": "Damage is increased by 8% when the number of troop formations under command is 1.",
+      "renderedDescFr": "Les dégâts sont augmentés de 8% when the number of troop formations sous votre commandement is 1."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Damage is increased by 12% when the number of troop formations under command is 1."
+      "renderedDesc": "Damage is increased by 12% when the number of troop formations under command is 1.",
+      "renderedDescFr": "Les dégâts sont augmentés de 12% when the number of troop formations sous votre commandement is 1."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Damage is increased by 16% when the number of troop formations under command is 1."
+      "renderedDesc": "Damage is increased by 16% when the number of troop formations under command is 1.",
+      "renderedDescFr": "Les dégâts sont augmentés de 16% when the number of troop formations sous votre commandement is 1."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Damage is increased by 20% when the number of troop formations under command is 1."
+      "renderedDesc": "Damage is increased by 20% when the number of troop formations under command is 1.",
+      "renderedDescFr": "Les dégâts sont augmentés de 20% when the number of troop formations sous votre commandement is 1."
     }
   ],
   "usage": {
@@ -206,5 +211,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Victoire du faible",
+  "descriptionTemplateFr": "Dégâts is augmenté by X% when the number of troop formations sous votre commandement is 1."
 }

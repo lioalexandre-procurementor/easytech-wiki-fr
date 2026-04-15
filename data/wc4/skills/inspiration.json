@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +3% when morale is high"
+      "renderedDesc": "30% chance to boost morale after attacking. Damage +3% when morale is high",
+      "renderedDescFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +3% lorsque le moral est élevé"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +6% when morale is high"
+      "renderedDesc": "30% chance to boost morale after attacking. Damage +6% when morale is high",
+      "renderedDescFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +6% lorsque le moral est élevé"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +9% when morale is high"
+      "renderedDesc": "30% chance to boost morale after attacking. Damage +9% when morale is high",
+      "renderedDescFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +9% lorsque le moral est élevé"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +12% when morale is high"
+      "renderedDesc": "30% chance to boost morale after attacking. Damage +12% when morale is high",
+      "renderedDescFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +12% lorsque le moral est élevé"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +15% when morale is high"
+      "renderedDesc": "30% chance to boost morale after attacking. Damage +15% when morale is high",
+      "renderedDescFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +15% lorsque le moral est élevé"
     }
   ],
   "usage": {
@@ -230,5 +235,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Inspiration",
+  "descriptionTemplateFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +X% lorsque le moral est élevé"
 }

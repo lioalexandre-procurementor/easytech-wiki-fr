@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Recover 3% maximum HP on the next turn when the infantry units are more than half damaged"
+      "renderedDesc": "Recover 3% maximum HP on the next turn when the infantry units are more than half damaged",
+      "renderedDescFr": "Recover 3% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Recover 6% maximum HP on the next turn when the infantry units are more than half damaged"
+      "renderedDesc": "Recover 6% maximum HP on the next turn when the infantry units are more than half damaged",
+      "renderedDescFr": "Recover 6% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Recover 9% maximum HP on the next turn when the infantry units are more than half damaged"
+      "renderedDesc": "Recover 9% maximum HP on the next turn when the infantry units are more than half damaged",
+      "renderedDescFr": "Recover 9% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Recover 12% maximum HP on the next turn when the infantry units are more than half damaged"
+      "renderedDesc": "Recover 12% maximum HP on the next turn when the infantry units are more than half damaged",
+      "renderedDescFr": "Recover 12% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Recover 15% maximum HP on the next turn when the infantry units are more than half damaged"
+      "renderedDesc": "Recover 15% maximum HP on the next turn when the infantry units are more than half damaged",
+      "renderedDescFr": "Recover 15% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
     }
   ],
   "usage": {
@@ -130,5 +135,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Organisation",
+  "descriptionTemplateFr": "Recover X% maximum PV on the next tour lorsque unités d'infanterie sont endommagée à plus de moitié"
 }

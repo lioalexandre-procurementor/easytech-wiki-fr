@@ -14,7 +14,8 @@
       "effect": 5,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding artillery units, dealt damage +5% to enemies 2 or more hexes away"
+      "renderedDesc": "When commanding artillery units, dealt damage +5% to enemies 2 or more hexes away",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, dégâts infligés +5% aux ennemis 2 or more hex away"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 10,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding artillery units, dealt damage +10% to enemies 2 or more hexes away"
+      "renderedDesc": "When commanding artillery units, dealt damage +10% to enemies 2 or more hexes away",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, dégâts infligés +10% aux ennemis 2 or more hex away"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding artillery units, dealt damage +15% to enemies 2 or more hexes away"
+      "renderedDesc": "When commanding artillery units, dealt damage +15% to enemies 2 or more hexes away",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, dégâts infligés +15% aux ennemis 2 or more hex away"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding artillery units, dealt damage +20% to enemies 2 or more hexes away"
+      "renderedDesc": "When commanding artillery units, dealt damage +20% to enemies 2 or more hexes away",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, dégâts infligés +20% aux ennemis 2 or more hex away"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding artillery units, dealt damage +25% to enemies 2 or more hexes away"
+      "renderedDesc": "When commanding artillery units, dealt damage +25% to enemies 2 or more hexes away",
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, dégâts infligés +25% aux ennemis 2 or more hex away"
     }
   ],
   "usage": {
@@ -76,5 +81,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Deep Operation",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, dealt dégâts +X% aux ennemis 2 or more hex away"
 }

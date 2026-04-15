@@ -14,7 +14,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +6 for 2 turns."
+      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +6 for 2 turns.",
+      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +6 pendant 2 tours."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +12 for 2 turns."
+      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +12 for 2 turns.",
+      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +12 pendant 2 tours."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 18,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +18 for 2 turns."
+      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +18 for 2 turns.",
+      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +18 pendant 2 tours."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +24 for 2 turns."
+      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +24 for 2 turns.",
+      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +24 pendant 2 tours."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns."
+      "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns.",
+      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +30 pendant 2 tours."
     }
   ],
   "usage": {
@@ -110,5 +115,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Retaliation",
+  "descriptionTemplateFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +X pendant 2 tours."
 }

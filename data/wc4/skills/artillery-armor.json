@@ -14,7 +14,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Defense +40% when commanding artillery units"
+      "renderedDesc": "Defense +40% when commanding artillery units",
+      "renderedDescFr": "Défense +40% lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 55,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Defense +55% when commanding artillery units"
+      "renderedDesc": "Defense +55% when commanding artillery units",
+      "renderedDescFr": "Défense +55% lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 70,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Defense +70% when commanding artillery units"
+      "renderedDesc": "Defense +70% when commanding artillery units",
+      "renderedDescFr": "Défense +70% lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 85,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Defense +85% when commanding artillery units"
+      "renderedDesc": "Defense +85% when commanding artillery units",
+      "renderedDescFr": "Défense +85% lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Defense +100% when commanding artillery units"
+      "renderedDesc": "Defense +100% when commanding artillery units",
+      "renderedDescFr": "Défense +100% lorsque vous commandez des unités d'artillerie"
     }
   ],
   "usage": {
@@ -94,5 +99,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Artillerie blindage",
+  "descriptionTemplateFr": "Défense +X% lorsque vous commandez des unités d'artillerie"
 }

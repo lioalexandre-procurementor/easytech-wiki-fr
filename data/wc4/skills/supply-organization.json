@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +4%."
+      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +4%.",
+      "renderedDescFr": "When commanding troops in your territory, economic, industry, and technology output +4%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +8%."
+      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +8%.",
+      "renderedDescFr": "When commanding troops in your territory, economic, industry, and technology output +8%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +12%."
+      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +12%.",
+      "renderedDescFr": "When commanding troops in your territory, economic, industry, and technology output +12%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +16%."
+      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +16%.",
+      "renderedDescFr": "When commanding troops in your territory, economic, industry, and technology output +16%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +20%."
+      "renderedDesc": "When commanding troops in your territory, economic, industry, and technology output +20%.",
+      "renderedDescFr": "When commanding troops in your territory, economic, industry, and technology output +20%."
     }
   ],
   "usage": {
@@ -86,5 +91,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Supply Organization",
+  "descriptionTemplateFr": "When commanding troops in your territory, economic, industry, and technology output +X%."
 }

@@ -55,17 +55,13 @@
     },
     {
       "slot": 4,
-      "name": "Positional Warfare",
-      "desc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_143.webp",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Positional Warfare",
-      "skillSlug": "positional-warfare",
-      "skillType": 143,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -139,5 +135,77 @@
     "head": "/img/wc4/heads/Model.webp",
     "photoTrained": "/img/wc4/generals/Model2.webp",
     "headTrained": "/img/wc4/heads/Model2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Ace Forces",
+      "desc": "Experience gained by the army in combat increases by 40%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_43.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Ace Forces",
+      "skillSlug": "ace-forces",
+      "skillType": 43,
+      "skillLevel": 2
+    },
+    {
+      "slot": 2,
+      "name": "Crossfire",
+      "desc": "Counter attack +6% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Mountain Fighting",
+      "desc": "Damage to the enemy +5 when fighting on the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Mountain Fighting",
+      "skillSlug": "mountain-fighting",
+      "skillType": 8,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Positional Warfare",
+      "desc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_143.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Positional Warfare",
+      "skillSlug": "positional-warfare",
+      "skillType": 143,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Panzer Leader",
+      "nameEn": "Panzer Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
+    }
+  ]
 }

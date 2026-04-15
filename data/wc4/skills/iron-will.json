@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding infantry , lower damage received by 4%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times."
+      "renderedDesc": "When commanding infantry , lower damage received by 4%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "renderedDescFr": "When commanding infanterie , réduit les dégâts reçus de 4%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding infantry , lower damage received by 8%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times."
+      "renderedDesc": "When commanding infantry , lower damage received by 8%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "renderedDescFr": "When commanding infanterie , réduit les dégâts reçus de 8%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding infantry , lower damage received by 12%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times."
+      "renderedDesc": "When commanding infantry , lower damage received by 12%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "renderedDescFr": "When commanding infanterie , réduit les dégâts reçus de 12%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding infantry , lower damage received by 16%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times."
+      "renderedDesc": "When commanding infantry , lower damage received by 16%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "renderedDescFr": "When commanding infanterie , réduit les dégâts reçus de 16%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times."
+      "renderedDesc": "When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "renderedDescFr": "When commanding infanterie , réduit les dégâts reçus de 20%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
     }
   ],
   "usage": {
@@ -76,5 +81,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Iron Will",
+  "descriptionTemplateFr": "When commanding infanterie , abaisser dégâts received by X%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
 }

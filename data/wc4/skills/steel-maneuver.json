@@ -14,7 +14,8 @@
       "effect": 7,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 7%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 7%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 7%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour)."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 14,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 14%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 14%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 14%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour)."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 21,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 21%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 21%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 21%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour)."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 28,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 28%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 28%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 28%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour)."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 35,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 35%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour)."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Steel Maneuver",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dégâts dealt is augmenté by X%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour)."
 }

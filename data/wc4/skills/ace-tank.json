@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 20% defense"
+      "renderedDesc": "When commanding armored units to attack, ignore enemy units 20% defense",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 20% défense"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 40% defense"
+      "renderedDesc": "When commanding armored units to attack, ignore enemy units 40% defense",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 40% défense"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 60% defense"
+      "renderedDesc": "When commanding armored units to attack, ignore enemy units 60% defense",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 60% défense"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 80% defense"
+      "renderedDesc": "When commanding armored units to attack, ignore enemy units 80% defense",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 80% défense"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 100% defense"
+      "renderedDesc": "When commanding armored units to attack, ignore enemy units 100% defense",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 100% défense"
     }
   ],
   "usage": {
@@ -78,5 +83,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "As des blindés",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies X% défense"
 }

@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "When commanding land units, 8% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn)."
+      "renderedDesc": "When commanding land units, 8% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+      "renderedDescFr": "When commanding land unités, 8% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour)."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "When commanding land units, 16% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn)."
+      "renderedDesc": "When commanding land units, 16% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+      "renderedDescFr": "When commanding land unités, 16% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour)."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "When commanding land units, 24% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn)."
+      "renderedDesc": "When commanding land units, 24% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+      "renderedDescFr": "When commanding land unités, 24% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour)."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "When commanding land units, 32% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn)."
+      "renderedDesc": "When commanding land units, 32% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+      "renderedDescFr": "When commanding land unités, 32% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour)."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn)."
+      "renderedDesc": "When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+      "renderedDescFr": "When commanding land unités, 40% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour)."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Marshall Plan",
+  "descriptionTemplateFr": "When commanding land unités, X% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour)."
 }

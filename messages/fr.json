@@ -37,9 +37,14 @@
     "potentialSuffix": "(potentiel +{delta})",
     "baseMode": "Version de base",
     "trainedMode": "Version entraînée",
+    "maxedMode": "Niveau maximum",
+    "premiumTrainingMode": "Entraînement premium",
     "baseModeHint": "Statistiques et compétences à l'achat (avant entraînement)",
     "trainedModeHint": "Statistiques et compétences au max (après tous les entraînements)",
+    "maxedModeHint": "Statistiques au plafond + chaque compétence portée à son niveau maximum",
     "viewTrained": "Voir la version entraînée →",
+    "viewMaxed": "Voir le général au niveau maximum →",
+    "viewPremiumTraining": "Voir l'entraînement premium (Épées/Sceptres) →",
     "viewBase": "← Voir la version de base",
     "skillSlots": "{count, plural, one {# slot} other {# slots}}",
     "skillSlotsLabel": "Emplacements de compétence",
@@ -77,13 +82,24 @@
     "event": "Événement"
   },
   "trainedPage": {
-    "intro": "Version entraînée de {name} : statistiques maximales, arbre d'entraînement complet et coût total pour maxer ce général.",
+    "intro": "Vue « niveau maximum » de {name} : chaque attribut est porté à son plafond et chaque compétence affichée à son niveau maximum selon le catalogue des skills.",
     "totalCost": "Coût total de l'entraînement",
     "swords": "Épées",
     "sceptres": "Sceptres",
     "stageProgression": "Progression par étape",
     "backToBase": "← Fiche de base",
-    "seoTitle": "{name} entraîné — Build max, coût d'entraînement & compétences finales | WC4",
-    "seoDesc": "Guide complet pour entraîner {name} dans World Conqueror 4 : statistiques max, coût en épées et sceptres, compétences après promotions."
+    "seoTitle": "{name} au niveau maximum — Stats plafond & compétences maxées | WC4",
+    "seoDesc": "Aperçu de {name} à plein potentiel dans World Conqueror 4 : attributs au plafond et chaque compétence portée au niveau maximum du catalogue."
+  },
+  "premiumTrainingPage": {
+    "intro": "Entraînement premium (Épées & Sceptres de Domination) de {name} : compétences signature débloquées au stade final et coût total en ressources premium.",
+    "totalCost": "Coût total de l'entraînement premium",
+    "swords": "Épées de Domination",
+    "sceptres": "Sceptres de Domination",
+    "finalLoadout": "Loadout final après entraînement",
+    "signatureSkills": "Compétences signature débloquées",
+    "backToBase": "← Fiche de base",
+    "seoTitle": "{name} entraîné (Épées/Sceptres) — Compétences signature & coût premium | WC4",
+    "seoDesc": "Guide complet de l'entraînement premium de {name} dans World Conqueror 4 : compétences signature, coût en épées et sceptres de Domination."
   }
 }

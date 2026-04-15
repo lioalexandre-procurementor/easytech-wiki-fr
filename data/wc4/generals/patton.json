@@ -55,31 +55,23 @@
     },
     {
       "slot": 4,
-      "name": "Heroic Charge",
-      "desc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_145.webp",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Heroic Charge",
-      "skillSlug": "heroic-charge",
-      "skillType": 145,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Rival Contest",
-      "desc": "When commanding armored units, dealt damage to enemy elite force +16%",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_146.webp",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Rival Contest",
-      "skillSlug": "rival-contest",
-      "skillType": 146,
-      "skillLevel": 4
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -161,5 +153,91 @@
     "head": "/img/wc4/heads/Patton.webp",
     "photoTrained": "/img/wc4/generals/Patton2.webp",
     "headTrained": "/img/wc4/heads/Patton2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Tide of Iron",
+      "desc": "Damage to the enemy +5 when the armored units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Tide of Iron",
+      "skillSlug": "tide-of-iron",
+      "skillType": 24,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Entrenchment",
+      "desc": "Able to dodge 12% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 2
+    },
+    {
+      "slot": 3,
+      "name": "Camouflage",
+      "desc": "Able to dodge 6% damage from the enemy's air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Camouflage",
+      "skillSlug": "camouflage",
+      "skillType": 30,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Heroic Charge",
+      "desc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_145.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Heroic Charge",
+      "skillSlug": "heroic-charge",
+      "skillType": 145,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Rival Contest",
+      "desc": "When commanding armored units, dealt damage to enemy elite force +16%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_146.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Rival Contest",
+      "skillSlug": "rival-contest",
+      "skillType": 146,
+      "skillLevel": 4
+    },
+    {
+      "slot": 6,
+      "name": "Panzer Leader",
+      "nameEn": "Panzer Leader",
+      "desc": "8% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 1
+    }
+  ]
 }

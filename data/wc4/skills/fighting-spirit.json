@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "After commanding a troop to counterattack, +8 HP to yourself and surrounding friendly troops."
+      "renderedDesc": "After commanding a troop to counterattack, +8 HP to yourself and surrounding friendly troops.",
+      "renderedDescFr": "After commanding a troop to counterattack, +8 PV to yourself and surrounding allié troops."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "After commanding a troop to counterattack, +16 HP to yourself and surrounding friendly troops."
+      "renderedDesc": "After commanding a troop to counterattack, +16 HP to yourself and surrounding friendly troops.",
+      "renderedDescFr": "After commanding a troop to counterattack, +16 PV to yourself and surrounding allié troops."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "After commanding a troop to counterattack, +24 HP to yourself and surrounding friendly troops."
+      "renderedDesc": "After commanding a troop to counterattack, +24 HP to yourself and surrounding friendly troops.",
+      "renderedDescFr": "After commanding a troop to counterattack, +24 PV to yourself and surrounding allié troops."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "After commanding a troop to counterattack, +32 HP to yourself and surrounding friendly troops."
+      "renderedDesc": "After commanding a troop to counterattack, +32 HP to yourself and surrounding friendly troops.",
+      "renderedDescFr": "After commanding a troop to counterattack, +32 PV to yourself and surrounding allié troops."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops."
+      "renderedDesc": "After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops.",
+      "renderedDescFr": "After commanding a troop to counterattack, +40 PV to yourself and surrounding allié troops."
     }
   ],
   "usage": {
@@ -118,5 +123,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Fighting Spirit",
+  "descriptionTemplateFr": "After commanding a troop to counterattack, +X PV to yourself and surrounding allié troops."
 }

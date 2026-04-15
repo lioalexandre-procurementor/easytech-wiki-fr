@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +8%"
+      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +8%",
+      "renderedDescFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +8%"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +16%"
+      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +16%",
+      "renderedDescFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +16%"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +24%"
+      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +24%",
+      "renderedDescFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +24%"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +32%"
+      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +32%",
+      "renderedDescFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +32%"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%"
+      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%",
+      "renderedDescFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +40%"
     }
   ],
   "usage": {
@@ -80,5 +85,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "War Machine",
+  "descriptionTemplateFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +X%"
 }

@@ -14,7 +14,8 @@
       "effect": 0,
       "chance": 20,
       "costMedal": 120,
-      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 20% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 20% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 20% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 0,
       "chance": 40,
       "costMedal": 170,
-      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 40% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 40% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 40% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 0,
       "chance": 60,
       "costMedal": 250,
-      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 60% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 60% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 60% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 0,
       "chance": 80,
       "costMedal": 350,
-      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 80% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 80% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 80% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 0,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 100% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
     }
   ],
   "usage": {
@@ -138,5 +143,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Strategic attaque",
+  "descriptionTemplateFr": "After commanding a unité to attaque, if the cible is not annihilated, there is X% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
 }

@@ -55,31 +55,23 @@
     },
     {
       "slot": 4,
-      "name": "Knight of the Sea",
-      "desc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 40%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_162.png",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Knight of the Sea",
-      "skillSlug": "knight-of-the-sea",
-      "skillType": 162,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Deep Blue Resolve",
-      "desc": "While commanding ship units, there is a 64% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_163.png",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Deep Blue Resolve",
-      "skillSlug": "deep-blue-resolve",
-      "skillType": 163,
-      "skillLevel": 4
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -146,5 +138,91 @@
     "head": "/img/wc4/heads/Nimitz.webp",
     "photoTrained": "/img/wc4/generals/Nimitz2.webp",
     "headTrained": "/img/wc4/heads/Nimitz2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Camouflage",
+      "desc": "Able to dodge 6% damage from the enemy's air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Camouflage",
+      "skillSlug": "camouflage",
+      "skillType": 30,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Ace Forces",
+      "desc": "Experience gained by the army in combat increases by 60%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_43.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Ace Forces",
+      "skillSlug": "ace-forces",
+      "skillType": 43,
+      "skillLevel": 3
+    },
+    {
+      "slot": 3,
+      "name": "Fleet Leader",
+      "desc": "16% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 2
+    },
+    {
+      "slot": 4,
+      "name": "Knight of the Sea",
+      "desc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 40%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_162.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Knight of the Sea",
+      "skillSlug": "knight-of-the-sea",
+      "skillType": 162,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Deep Blue Resolve",
+      "desc": "While commanding ship units, there is a 64% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_163.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Deep Blue Resolve",
+      "skillSlug": "deep-blue-resolve",
+      "skillType": 163,
+      "skillLevel": 4
+    },
+    {
+      "slot": 6,
+      "name": "Early Warning",
+      "nameEn": "Early Warning",
+      "desc": "40% chance to evade 20% damage when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_109.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "early-warning",
+      "skillType": 109,
+      "skillLevel": 2
+    }
+  ]
 }

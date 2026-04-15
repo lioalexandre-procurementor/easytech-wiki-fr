@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 100,
-      "renderedDesc": "Deals damage +3% to demoralized and chaotic enemies."
+      "renderedDesc": "Deals damage +3% to demoralized and chaotic enemies.",
+      "renderedDescFr": "Deals dégâts +3% to demoralized and chaotic ennemis."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Deals damage +6% to demoralized and chaotic enemies."
+      "renderedDesc": "Deals damage +6% to demoralized and chaotic enemies.",
+      "renderedDescFr": "Deals dégâts +6% to demoralized and chaotic ennemis."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Deals damage +9% to demoralized and chaotic enemies."
+      "renderedDesc": "Deals damage +9% to demoralized and chaotic enemies.",
+      "renderedDescFr": "Deals dégâts +9% to demoralized and chaotic ennemis."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 320,
-      "renderedDesc": "Deals damage +12% to demoralized and chaotic enemies."
+      "renderedDesc": "Deals damage +12% to demoralized and chaotic enemies.",
+      "renderedDescFr": "Deals dégâts +12% to demoralized and chaotic ennemis."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 400,
-      "renderedDesc": "Deals damage +15% to demoralized and chaotic enemies."
+      "renderedDesc": "Deals damage +15% to demoralized and chaotic enemies.",
+      "renderedDescFr": "Deals dégâts +15% to demoralized and chaotic ennemis."
     }
   ],
   "usage": {
@@ -106,5 +111,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Dominance",
+  "descriptionTemplateFr": "Deals dégâts +X% to demoralized and chaotic ennemis."
 }

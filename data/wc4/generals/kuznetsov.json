@@ -147,5 +147,77 @@
     "head": "/img/wc4/heads/Kuznetsov.webp",
     "photoTrained": "/img/wc4/generals/Kuznetsov2.webp",
     "headTrained": "/img/wc4/heads/Kuznetsov2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Rumor",
+      "desc": "15% chance to reduce the morale of the enemy when attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Fleet Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 3
+    },
+    {
+      "slot": 3,
+      "name": "Sailor",
+      "desc": "Counter attack +6% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Joint Offensive",
+      "nameEn": "Joint Offensive",
+      "desc": "After attacking, there is a 100% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_144.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "joint-offensive",
+      "skillType": 144,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Naval Assault",
+      "nameEn": "Naval Assault",
+      "desc": "Damage +24% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_112.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "naval-assault",
+      "skillType": 112,
+      "skillLevel": 3
+    }
+  ]
 }

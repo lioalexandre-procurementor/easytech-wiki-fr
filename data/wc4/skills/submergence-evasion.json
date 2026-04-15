@@ -14,7 +14,8 @@
       "effect": 7,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "Submarine units under command receive 7% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+      "renderedDesc": "Submarine units under command receive 7% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "renderedDescFr": "Submarine unités sous votre commandement receive 7% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 14,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Submarine units under command receive 14% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+      "renderedDesc": "Submarine units under command receive 14% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "renderedDescFr": "Submarine unités sous votre commandement receive 14% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 21,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Submarine units under command receive 21% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+      "renderedDesc": "Submarine units under command receive 21% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "renderedDescFr": "Submarine unités sous votre commandement receive 21% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 28,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Submarine units under command receive 28% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+      "renderedDesc": "Submarine units under command receive 28% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "renderedDescFr": "Submarine unités sous votre commandement receive 28% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 35,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "Submarine units under command receive 35% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+      "renderedDesc": "Submarine units under command receive 35% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "renderedDescFr": "Submarine unités sous votre commandement receive 35% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
     }
   ],
   "usage": {
@@ -58,5 +63,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Submergence Evasion",
+  "descriptionTemplateFr": "Submarine unités sous votre commandement receive X% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
 }

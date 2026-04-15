@@ -132,5 +132,77 @@
     "head": "/img/wc4/heads/Tito.webp",
     "photoTrained": "/img/wc4/generals/Tito2.webp",
     "headTrained": "/img/wc4/heads/Tito2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Replacement",
+      "desc": "Reinforce damaged infantry units: each round HP +3",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Replacement",
+      "skillSlug": "replacement",
+      "skillType": 15,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Guerrilla",
+      "desc": "12% chance that the enemy will not fight back when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Economic Expert",
+      "desc": "The economic output of the city +5",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Economic Expert",
+      "skillSlug": "economic-expert",
+      "skillType": 11,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Unyielding And Self-improving",
+      "nameEn": "Unyielding And Self-improving",
+      "desc": "Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_154.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "unyielding-and-self-improving",
+      "skillType": 154,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Industrial Expert",
+      "nameEn": "Industrial Expert",
+      "desc": "The industrial output of the city +6",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "industrial-expert",
+      "skillType": 12,
+      "skillLevel": 3
+    }
+  ]
 }

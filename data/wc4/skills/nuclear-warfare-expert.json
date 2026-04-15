@@ -14,7 +14,8 @@
       "effect": 25,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Damage caused by nuclear bombs + 25%."
+      "renderedDesc": "Damage caused by nuclear bombs + 25%.",
+      "renderedDescFr": "Dégâts caused by nuclear bombs + 25%."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 35,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Damage caused by nuclear bombs + 35%."
+      "renderedDesc": "Damage caused by nuclear bombs + 35%.",
+      "renderedDescFr": "Dégâts caused by nuclear bombs + 35%."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 45,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Damage caused by nuclear bombs + 45%."
+      "renderedDesc": "Damage caused by nuclear bombs + 45%.",
+      "renderedDescFr": "Dégâts caused by nuclear bombs + 45%."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 55,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Damage caused by nuclear bombs + 55%."
+      "renderedDesc": "Damage caused by nuclear bombs + 55%.",
+      "renderedDescFr": "Dégâts caused by nuclear bombs + 55%."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 65,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Damage caused by nuclear bombs + 65%."
+      "renderedDesc": "Damage caused by nuclear bombs + 65%.",
+      "renderedDescFr": "Dégâts caused by nuclear bombs + 65%."
     }
   ],
   "usage": {
@@ -66,5 +71,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Nuclear Warfare Expert",
+  "descriptionTemplateFr": "Dégâts caused by nuclear bombs + X%."
 }

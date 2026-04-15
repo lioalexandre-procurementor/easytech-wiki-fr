@@ -14,7 +14,8 @@
       "effect": 4,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +4%"
+      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +4%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +4%"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +8%"
+      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +8%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +8%"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +12%"
+      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +12%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +12%"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +16%"
+      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +16%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +16%"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +20%"
+      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +20%",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +20%"
     }
   ],
   "usage": {
@@ -76,5 +81,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Duel de rivaux",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +X%"
 }

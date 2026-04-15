@@ -10,6 +10,8 @@ import {
   getAllGenerals,
   getEliteUnit,
   getCandidatesForGeneralSlot,
+  buildSlotRecommendationMap,
+  getSkill,
   GENERAL_CATEGORY_META,
   COUNTRY_FLAGS,
   FACTION_META,
@@ -121,6 +123,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
       : `${acqMeta.icon} ${acqMeta.label}`;
 
   const replaceableCount = g.skills.filter((s) => s.replaceable).length;
+  const slotRecommendations = buildSlotRecommendationMap(g);
 
   return (
     <>
@@ -241,8 +244,8 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
           </div>
 
-          {/* CROSS-LINK: trained variant */}
-          <div className="mb-4">
+          {/* CROSS-LINK: maxed-out variant (all generals) + premium training (19 only) */}
+          <div className="mb-4 flex flex-wrap gap-2">
             <Link
               href={
                 params.locale === "fr"
@@ -251,8 +254,20 @@ export default async function GeneralPage({ params }: { params: { locale: string
               }
               className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold/10 border border-gold/30 text-gold2 hover:bg-gold/20 transition-colors"
             >
-              {t("general.viewTrained")}
+              ★ {t("general.viewMaxed")}
             </Link>
+            {g.hasTrainingPath && g.trainedSkills && g.trainedSkills.length > 0 && (
+              <Link
+                href={
+                  params.locale === "fr"
+                    ? `/world-conqueror-4/generaux/${g.slug}/entrainement-premium`
+                    : `/world-conqueror-4/generals/${g.slug}/premium-training`
+                }
+                className="inline-flex items-center gap-2 px-4 py-2 rounded bg-red-500/10 border border-red-500/40 text-red-300 hover:bg-red-500/20 transition-colors"
+              >
+                ⚔ {t("general.viewPremiumTraining")}
+              </Link>
+            )}
           </div>
 
           {/* ATTRIBUTES (6 aptitudes) */}
@@ -270,7 +285,14 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
             <div className="space-y-3">
               {g.skills.map((s) => (
-                <SkillBlock key={s.slot} skill={s} generalSlug={g.slug} category={g.category} />
+                <SkillBlock
+                  key={s.slot}
+                  skill={s}
+                  generalSlug={g.slug}
+                  category={g.category}
+                  recommended={slotRecommendations.get(s.slot)}
+                  locale={params.locale}
+                />
               ))}
             </div>
             {replaceableCount > 0 && (
@@ -481,11 +503,16 @@ function SkillBlock({
   skill,
   generalSlug,
   category,
+  recommended,
+  locale,
 }: {
   skill: GeneralSkill;
   generalSlug: string;
   category: string;
+  recommended?: string;
+  locale: string;
 }) {
+  const isFr = locale === "fr";
   const rating = skill.rating;
   const ratingColor =
     rating === "S+" || rating === "S"
@@ -511,6 +538,28 @@ function SkillBlock({
     ? `/world-conqueror-4/competences/${skill.skillSlug}`
     : null;
 
+  // Resolve locale-aware display name & description. The general JSON often
+  // stores the English canonical name in `skill.name` (backfilled from APK),
+  // so we prefer the skill catalog's `nameFr`/`renderedDescFr` fields when in
+  // FR locale, and the catalog's `name`/`renderedDesc` in EN locale. We fall
+  // back to the general's own `skill.name`/`skill.desc` only when the catalog
+  // lookup fails (empty slots, missing data).
+  const catalog = skill.skillSlug ? getSkill(skill.skillSlug) : null;
+  const progEntry =
+    catalog && skill.skillLevel != null
+      ? catalog.progression.find((p) => p.level === skill.skillLevel) ?? null
+      : null;
+  const displayName = isFr
+    ? catalog?.nameFr || skill.name
+    : catalog?.name || skill.nameEn || skill.name;
+  const displayDesc = isFr
+    ? progEntry?.renderedDescFr ||
+      catalog?.descriptionTemplateFr ||
+      skill.desc
+    : progEntry?.renderedDesc ||
+      catalog?.descriptionTemplate ||
+      skill.desc;
+
   return (
     <div
       className={`border rounded-lg p-4 ${
@@ -524,7 +573,7 @@ function SkillBlock({
           >
             <Image
               src={skill.icon}
-              alt={skill.name}
+              alt={displayName}
               fill
               sizes="48px"
               className="object-contain p-1"
@@ -546,11 +595,11 @@ function SkillBlock({
                   href={skillDetailHref as any}
                   className="text-gold2 font-bold text-sm hover:underline no-underline truncate"
                 >
-                  {skill.name}
+                  {displayName}
                 </Link>
               ) : (
                 <span className="text-gold2 font-bold text-sm truncate">
-                  {skill.name}
+                  {displayName}
                 </span>
               )}
               {skill.skillLevel != null && (
@@ -574,7 +623,7 @@ function SkillBlock({
               )}
             </div>
           </div>
-          <div className="text-dim text-sm leading-relaxed">{skill.desc}</div>
+          <div className="text-dim text-sm leading-relaxed">{displayDesc}</div>
           {skill.replaceableReason && (
             <div className="text-muted text-[10px] italic mt-1">
               {skill.replaceableReason}
@@ -599,6 +648,7 @@ function SkillBlock({
           slot={skill.slot}
           currentSkillName={skill.name}
           candidates={candidates}
+          recommended={recommended}
         />
       )}
     </div>

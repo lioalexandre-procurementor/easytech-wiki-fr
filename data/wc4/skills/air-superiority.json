@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "20% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+      "renderedDesc": "20% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+      "renderedDescFr": "20% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 20,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "40% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+      "renderedDesc": "40% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+      "renderedDescFr": "40% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 20,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "60% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+      "renderedDesc": "60% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+      "renderedDescFr": "60% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 20,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "80% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+      "renderedDesc": "80% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+      "renderedDescFr": "80% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 20,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "100% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+      "renderedDesc": "100% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+      "renderedDescFr": "100% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
     }
   ],
   "usage": {
@@ -94,5 +99,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Supériorité aérienne",
+  "descriptionTemplateFr": "X% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
 }

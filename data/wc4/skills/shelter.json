@@ -14,7 +14,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 80,
-      "renderedDesc": "Able to dodge 6% damage from the enemy's missile units"
+      "renderedDesc": "Able to dodge 6% damage from the enemy's missile units",
+      "renderedDescFr": "Peut esquiver 6% des dégâts des unités missiles ennemies"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "Able to dodge 12% damage from the enemy's missile units"
+      "renderedDesc": "Able to dodge 12% damage from the enemy's missile units",
+      "renderedDescFr": "Peut esquiver 12% des dégâts des unités missiles ennemies"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 18,
       "chance": 100,
       "costMedal": 180,
-      "renderedDesc": "Able to dodge 18% damage from the enemy's missile units"
+      "renderedDesc": "Able to dodge 18% damage from the enemy's missile units",
+      "renderedDescFr": "Peut esquiver 18% des dégâts des unités missiles ennemies"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Able to dodge 24% damage from the enemy's missile units"
+      "renderedDesc": "Able to dodge 24% damage from the enemy's missile units",
+      "renderedDescFr": "Peut esquiver 24% des dégâts des unités missiles ennemies"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 300,
-      "renderedDesc": "Able to dodge 30% damage from the enemy's missile units"
+      "renderedDesc": "Able to dodge 30% damage from the enemy's missile units",
+      "renderedDescFr": "Peut esquiver 30% des dégâts des unités missiles ennemies"
     }
   ],
   "usage": {
@@ -398,5 +403,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Abri",
+  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's unités de missiles"
 }

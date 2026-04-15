@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Boosts 8% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack."
+      "renderedDesc": "Boosts 8% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "renderedDescFr": "Boosts 8% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Boosts 16% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack."
+      "renderedDesc": "Boosts 16% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "renderedDescFr": "Boosts 16% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Boosts 24% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack."
+      "renderedDesc": "Boosts 24% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "renderedDescFr": "Boosts 24% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Boosts 32% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack."
+      "renderedDesc": "Boosts 32% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "renderedDescFr": "Boosts 32% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Boosts 40% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack."
+      "renderedDesc": "Boosts 40% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "renderedDescFr": "Boosts 40% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
     }
   ],
   "usage": {
@@ -62,5 +67,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Eagle Fly",
+  "descriptionTemplateFr": "Boosts X% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
 }

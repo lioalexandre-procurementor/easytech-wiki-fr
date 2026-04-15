@@ -14,7 +14,8 @@
       "effect": 100,
       "chance": 15,
       "costMedal": 120,
-      "renderedDesc": "15% chance to reduce the morale of the enemy when attacking"
+      "renderedDesc": "15% chance to reduce the morale of the enemy when attacking",
+      "renderedDescFr": "15% chance to réduire the moral of the ennemi lors d'une attaque"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 100,
       "chance": 30,
       "costMedal": 170,
-      "renderedDesc": "30% chance to reduce the morale of the enemy when attacking"
+      "renderedDesc": "30% chance to reduce the morale of the enemy when attacking",
+      "renderedDescFr": "30% chance to réduire the moral of the ennemi lors d'une attaque"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 100,
       "chance": 45,
       "costMedal": 250,
-      "renderedDesc": "45% chance to reduce the morale of the enemy when attacking"
+      "renderedDesc": "45% chance to reduce the morale of the enemy when attacking",
+      "renderedDescFr": "45% chance to réduire the moral of the ennemi lors d'une attaque"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 100,
       "chance": 60,
       "costMedal": 350,
-      "renderedDesc": "60% chance to reduce the morale of the enemy when attacking"
+      "renderedDesc": "60% chance to reduce the morale of the enemy when attacking",
+      "renderedDescFr": "60% chance to réduire the moral of the ennemi lors d'une attaque"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 75,
       "costMedal": 450,
-      "renderedDesc": "75% chance to reduce the morale of the enemy when attacking"
+      "renderedDesc": "75% chance to reduce the morale of the enemy when attacking",
+      "renderedDescFr": "75% chance to réduire the moral of the ennemi lors d'une attaque"
     }
   ],
   "usage": {
@@ -575,5 +580,7 @@
       }
     ]
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Rumeur",
+  "descriptionTemplateFr": "X% chance to réduire the moral of the ennemi lors d'une attaque"
 }

@@ -55,31 +55,23 @@
     },
     {
       "slot": 4,
-      "name": "Iron Will",
-      "desc": "When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_137.webp",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Iron Will",
-      "skillSlug": "iron-will",
-      "skillType": 137,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Provocation",
-      "desc": "After attacking, there is 60% to gain \"provocation\" effect",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_138.webp",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Provocation",
-      "skillSlug": "provocation",
-      "skillType": 138,
-      "skillLevel": 4
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -146,5 +138,91 @@
     "head": "/img/wc4/heads/Rundstedt.webp",
     "photoTrained": "/img/wc4/generals/Rundstedt2.webp",
     "headTrained": "/img/wc4/heads/Rundstedt2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Street Fighting",
+      "desc": "Damage to the enemy +5 when fighting in the city",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Street Fighting",
+      "skillSlug": "street-fighting",
+      "skillType": 6,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Guerrilla",
+      "desc": "12% chance that the enemy will not fight back when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+4",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Iron Will",
+      "desc": "When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_137.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Iron Will",
+      "skillSlug": "iron-will",
+      "skillType": 137,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Provocation",
+      "desc": "After attacking, there is 60% to gain \"provocation\" effect",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_138.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Provocation",
+      "skillSlug": "provocation",
+      "skillType": 138,
+      "skillLevel": 4
+    },
+    {
+      "slot": 6,
+      "name": "Infantry Leader",
+      "nameEn": "Infantry Leader",
+      "desc": "8% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 1
+    }
+  ]
 }

@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 8%, effective for one turn"
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 8%, effective for one turn",
+      "renderedDescFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased de 8%, effective for one tour"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 16%, effective for one turn"
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 16%, effective for one turn",
+      "renderedDescFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased de 16%, effective for one tour"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 24%, effective for one turn"
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 24%, effective for one turn",
+      "renderedDescFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased de 24%, effective for one tour"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 32%, effective for one turn"
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 32%, effective for one turn",
+      "renderedDescFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased de 32%, effective for one tour"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 40%, effective for one turn"
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 40%, effective for one turn",
+      "renderedDescFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased de 40%, effective for one tour"
     }
   ],
   "usage": {
@@ -102,5 +107,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Deterrence",
+  "descriptionTemplateFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased by X%, effective for one tour"
 }

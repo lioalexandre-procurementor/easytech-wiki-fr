@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 150,
-      "renderedDesc": "After commanding infantry to attack, recover HP equal to 3% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 3% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.",
+      "renderedDescFr": "After commanding infanterie to attaque, recover PV equal to 3% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "After commanding infantry to attack, recover HP equal to 6% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 6% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.",
+      "renderedDescFr": "After commanding infanterie to attaque, recover PV equal to 6% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "After commanding infantry to attack, recover HP equal to 9% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 9% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.",
+      "renderedDescFr": "After commanding infanterie to attaque, recover PV equal to 9% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "After commanding infantry to attack, recover HP equal to 12% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 12% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.",
+      "renderedDescFr": "After commanding infanterie to attaque, recover PV equal to 12% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "After commanding infantry to attack, recover HP equal to 15% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 15% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.",
+      "renderedDescFr": "After commanding infanterie to attaque, recover PV equal to 15% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
     }
   ],
   "usage": {
@@ -64,5 +69,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Strategic Deployment",
+  "descriptionTemplateFr": "After commanding infanterie to attaque, recover PV equal to X% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
 }

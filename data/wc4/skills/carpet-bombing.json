@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "Damage +8% to the defending forces in the city when air-raiding"
+      "renderedDesc": "Damage +8% to the defending forces in the city when air-raiding",
+      "renderedDescFr": "Dégâts +8% to the defending forces in the city when air-raiding"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "Damage +16% to the defending forces in the city when air-raiding"
+      "renderedDesc": "Damage +16% to the defending forces in the city when air-raiding",
+      "renderedDescFr": "Dégâts +16% to the defending forces in the city when air-raiding"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Damage +24% to the defending forces in the city when air-raiding"
+      "renderedDesc": "Damage +24% to the defending forces in the city when air-raiding",
+      "renderedDescFr": "Dégâts +24% to the defending forces in the city when air-raiding"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Damage +32% to the defending forces in the city when air-raiding"
+      "renderedDesc": "Damage +32% to the defending forces in the city when air-raiding",
+      "renderedDescFr": "Dégâts +32% to the defending forces in the city when air-raiding"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Damage +40% to the defending forces in the city when air-raiding"
+      "renderedDesc": "Damage +40% to the defending forces in the city when air-raiding",
+      "renderedDescFr": "Dégâts +40% to the defending forces in the city when air-raiding"
     }
   ],
   "usage": {
@@ -425,5 +430,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Bombardement en tapis",
+  "descriptionTemplateFr": "Dégâts +X% to the defending forces in the city when air-raiding"
 }

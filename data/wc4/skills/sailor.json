@@ -14,7 +14,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "Counter attack +6% when attacked by the enemy at sea"
+      "renderedDesc": "Counter attack +6% when attacked by the enemy at sea",
+      "renderedDescFr": "Counter attaque +6% lorsqu'elle est attaquée by the ennemi at sea"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "Counter attack +12% when attacked by the enemy at sea"
+      "renderedDesc": "Counter attack +12% when attacked by the enemy at sea",
+      "renderedDescFr": "Counter attaque +12% lorsqu'elle est attaquée by the ennemi at sea"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 18,
       "chance": 100,
       "costMedal": 250,
-      "renderedDesc": "Counter attack +18% when attacked by the enemy at sea"
+      "renderedDesc": "Counter attack +18% when attacked by the enemy at sea",
+      "renderedDescFr": "Counter attaque +18% lorsqu'elle est attaquée by the ennemi at sea"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 350,
-      "renderedDesc": "Counter attack +24% when attacked by the enemy at sea"
+      "renderedDesc": "Counter attack +24% when attacked by the enemy at sea",
+      "renderedDescFr": "Counter attaque +24% lorsqu'elle est attaquée by the ennemi at sea"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 30,
       "chance": 100,
       "costMedal": 450,
-      "renderedDesc": "Counter attack +30% when attacked by the enemy at sea"
+      "renderedDesc": "Counter attack +30% when attacked by the enemy at sea",
+      "renderedDescFr": "Counter attaque +30% lorsqu'elle est attaquée by the ennemi at sea"
     }
   ],
   "usage": {
@@ -662,5 +667,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Marin",
+  "descriptionTemplateFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi at sea"
 }

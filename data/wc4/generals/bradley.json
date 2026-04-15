@@ -55,17 +55,13 @@
     },
     {
       "slot": 4,
-      "name": "Command and Coordination",
-      "desc": "After commanding a land unit to attack, there is a 100% chance to grant \"Coordination\" to nearby allies and yourself for 1 turn. Units with \"Coordination\" gain +15% damage. Nullify the negative status when it is applied to the unit (unless triggered by morale diminish), then clear \"Coordination.\"",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_158.png",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "nameEn": "Command and Coordination",
-      "skillSlug": "command-and-coordination",
-      "skillType": 158,
-      "skillLevel": 5
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
     }
   ],
   "attributes": {
@@ -139,5 +135,77 @@
     "head": "/img/wc4/heads/Bradley.webp",
     "photoTrained": "/img/wc4/generals/Bradley2.webp",
     "headTrained": "/img/wc4/heads/Bradley2.webp"
-  }
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Entrenchment",
+      "desc": "Able to dodge 12% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 2
+    },
+    {
+      "slot": 2,
+      "name": "Mountain Fighting",
+      "desc": "Damage to the enemy +10 when fighting on the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Mountain Fighting",
+      "skillSlug": "mountain-fighting",
+      "skillType": 8,
+      "skillLevel": 2
+    },
+    {
+      "slot": 3,
+      "name": "Accuracy",
+      "desc": "Deal +6% damage to the enemy when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Command and Coordination",
+      "desc": "After commanding a land unit to attack, there is a 100% chance to grant \"Coordination\" to nearby allies and yourself for 1 turn. Units with \"Coordination\" gain +15% damage. Nullify the negative status when it is applied to the unit (unless triggered by morale diminish), then clear \"Coordination.\"",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_158.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Command and Coordination",
+      "skillSlug": "command-and-coordination",
+      "skillType": 158,
+      "skillLevel": 5
+    },
+    {
+      "slot": 5,
+      "name": "Artillery Leader",
+      "nameEn": "Artillery Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 3
+    }
+  ]
 }

@@ -14,7 +14,8 @@
       "effect": 0,
       "chance": 20,
       "costMedal": 160,
-      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 20% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1."
+      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 20% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a 20% chance the ennemi cannot counterattack. Après avoir éliminé un ennemi, gagne l'effet « Reaping » pendant 1 tour (effect augmente les dégâts infligés de 20% and ignore esquive). Tous les 30 points d'attaque of unités blindées sous votre commandement, augmente attaques critiques les dégâts de 5%. If the unité’s attaque reaches at least 180, its portée is augmenté by 1."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 0,
       "chance": 40,
       "costMedal": 240,
-      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 40% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1."
+      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 40% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a 40% chance the ennemi cannot counterattack. Après avoir éliminé un ennemi, gagne l'effet « Reaping » pendant 1 tour (effect augmente les dégâts infligés de 20% and ignore esquive). Tous les 30 points d'attaque of unités blindées sous votre commandement, augmente attaques critiques les dégâts de 5%. If the unité’s attaque reaches at least 180, its portée is augmenté by 1."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 0,
       "chance": 60,
       "costMedal": 480,
-      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 60% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1."
+      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 60% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a 60% chance the ennemi cannot counterattack. Après avoir éliminé un ennemi, gagne l'effet « Reaping » pendant 1 tour (effect augmente les dégâts infligés de 20% and ignore esquive). Tous les 30 points d'attaque of unités blindées sous votre commandement, augmente attaques critiques les dégâts de 5%. If the unité’s attaque reaches at least 180, its portée is augmenté by 1."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 0,
       "chance": 80,
       "costMedal": 640,
-      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 80% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1."
+      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 80% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a 80% chance the ennemi cannot counterattack. Après avoir éliminé un ennemi, gagne l'effet « Reaping » pendant 1 tour (effect augmente les dégâts infligés de 20% and ignore esquive). Tous les 30 points d'attaque of unités blindées sous votre commandement, augmente attaques critiques les dégâts de 5%. If the unité’s attaque reaches at least 180, its portée is augmenté by 1."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 0,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 100% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1."
+      "renderedDesc": "When commanding armored units, its morale cannot diminish. When attacking, there is a 100% chance the enemy cannot counterattack. After eliminating an enemy, gains the \"Reaping\" effect for 1 turn (effect increases damage dealt by 20% and ignores dodge). For every 30 attack of armored units under command, increases critical attack damage by 5%. If the unit’s attack reaches at least 180, its range is increased by 1.",
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a 100% chance the ennemi cannot counterattack. Après avoir éliminé un ennemi, gagne l'effet « Reaping » pendant 1 tour (effect augmente les dégâts infligés de 20% and ignore esquive). Tous les 30 points d'attaque of unités blindées sous votre commandement, augmente attaques critiques les dégâts de 5%. If the unité’s attaque reaches at least 180, its portée is augmenté by 1."
     }
   ],
   "usage": {
@@ -68,5 +73,7 @@
       }
     ]
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "Sickle Cut",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, sa moral ne peut pas diminuer. Lors d'une attaque, there is a X% chance the ennemi cannot counterattack. Après avoir éliminé un ennemi, gagne l'effet « Reaping » pendant 1 tour (effect augmente les dégâts infligés de 20% and ignore esquive). Tous les 30 points d'attaque of unités blindées sous votre commandement, augmente attaques critiques les dégâts de 5%. If the unité’s attaque reaches at least 180, its portée is augmenté by 1."
 }

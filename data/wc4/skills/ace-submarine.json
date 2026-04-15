@@ -14,7 +14,8 @@
       "effect": 0,
       "chance": 15,
       "costMedal": 160,
-      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 15% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 15% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "renderedDescFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; après avoir éliminé un ennemi, there is a 15% chance to attaque again, and the chance can be augmenté by an additional 25% if a attaques critiques is dealt."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 0,
       "chance": 30,
       "costMedal": 240,
-      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 30% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 30% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "renderedDescFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; après avoir éliminé un ennemi, there is a 30% chance to attaque again, and the chance can be augmenté by an additional 25% if a attaques critiques is dealt."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 0,
       "chance": 45,
       "costMedal": 480,
-      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 45% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 45% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "renderedDescFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; après avoir éliminé un ennemi, there is a 45% chance to attaque again, and the chance can be augmenté by an additional 25% if a attaques critiques is dealt."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 0,
       "chance": 60,
       "costMedal": 640,
-      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 60% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 60% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "renderedDescFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; après avoir éliminé un ennemi, there is a 60% chance to attaque again, and the chance can be augmenté by an additional 25% if a attaques critiques is dealt."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 0,
       "chance": 75,
       "costMedal": 800,
-      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 75% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 75% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "renderedDescFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; après avoir éliminé un ennemi, there is a 75% chance to attaque again, and the chance can be augmenté by an additional 25% if a attaques critiques is dealt."
     }
   ],
   "usage": {
@@ -58,5 +63,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "ActivatesChance"
+  "varyingField": "ActivatesChance",
+  "nameFr": "As des sous-marins",
+  "descriptionTemplateFr": "Submarine unités sous votre commandement (excluding nuclear submarines) ignore ennemi défense, and their portée d'attaque is augmenté by 1; après avoir éliminé un ennemi, there is a X% chance to attaque again, and the chance can be augmenté by an additional 25% if a attaques critiques is dealt."
 }

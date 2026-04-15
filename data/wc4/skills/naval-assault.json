@@ -14,7 +14,8 @@
       "effect": 8,
       "chance": 100,
       "costMedal": 160,
-      "renderedDesc": "Damage +8% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+      "renderedDesc": "Damage +8% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "renderedDescFr": "Dégâts +8% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 16,
       "chance": 100,
       "costMedal": 240,
-      "renderedDesc": "Damage +16% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+      "renderedDesc": "Damage +16% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "renderedDescFr": "Dégâts +16% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 24,
       "chance": 100,
       "costMedal": 480,
-      "renderedDesc": "Damage +24% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+      "renderedDesc": "Damage +24% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "renderedDescFr": "Dégâts +24% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 32,
       "chance": 100,
       "costMedal": 640,
-      "renderedDesc": "Damage +32% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+      "renderedDesc": "Damage +32% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "renderedDescFr": "Dégâts +32% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 40,
       "chance": 100,
       "costMedal": 800,
-      "renderedDesc": "Damage +40% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+      "renderedDesc": "Damage +40% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "renderedDescFr": "Dégâts +40% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
     }
   ],
   "usage": {
@@ -124,5 +129,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Naval Assault",
+  "descriptionTemplateFr": "Dégâts +X% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
 }

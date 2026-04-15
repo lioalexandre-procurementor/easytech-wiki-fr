@@ -14,7 +14,8 @@
       "effect": 20,
       "chance": 20,
       "costMedal": 150,
-      "renderedDesc": "After attacking, there is a 20% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+      "renderedDesc": "After attacking, there is a 20% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+      "renderedDescFr": "Après avoir attaqué, there is a 20% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 40,
       "chance": 40,
       "costMedal": 250,
-      "renderedDesc": "After attacking, there is a 40% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+      "renderedDesc": "After attacking, there is a 40% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+      "renderedDescFr": "Après avoir attaqué, there is a 40% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 60,
       "chance": 60,
       "costMedal": 350,
-      "renderedDesc": "After attacking, there is a 60% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+      "renderedDesc": "After attacking, there is a 60% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+      "renderedDescFr": "Après avoir attaqué, there is a 60% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 80,
       "chance": 80,
       "costMedal": 450,
-      "renderedDesc": "After attacking, there is a 80% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+      "renderedDesc": "After attacking, there is a 80% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+      "renderedDescFr": "Après avoir attaqué, there is a 80% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 100,
       "chance": 100,
       "costMedal": 550,
-      "renderedDesc": "After attacking, there is a 100% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+      "renderedDesc": "After attacking, there is a 100% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+      "renderedDescFr": "Après avoir attaqué, there is a 100% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
     }
   ],
   "usage": {
@@ -80,5 +85,7 @@
       }
     ]
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Joint Offensive",
+  "descriptionTemplateFr": "Après avoir attaqué, there is a X% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
 }

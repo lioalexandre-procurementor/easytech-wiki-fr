@@ -14,7 +14,8 @@
       "effect": 3,
       "chance": 100,
       "costMedal": 120,
-      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +3"
+      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +3",
+      "renderedDescFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +3"
     },
     {
       "level": 2,
@@ -22,7 +23,8 @@
       "effect": 6,
       "chance": 100,
       "costMedal": 170,
-      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +6"
+      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +6",
+      "renderedDescFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +6"
     },
     {
       "level": 3,
@@ -30,7 +32,8 @@
       "effect": 9,
       "chance": 100,
       "costMedal": 270,
-      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +9"
+      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +9",
+      "renderedDescFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +9"
     },
     {
       "level": 4,
@@ -38,7 +41,8 @@
       "effect": 12,
       "chance": 100,
       "costMedal": 370,
-      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +12"
+      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +12",
+      "renderedDescFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +12"
     },
     {
       "level": 5,
@@ -46,7 +50,8 @@
       "effect": 15,
       "chance": 100,
       "costMedal": 470,
-      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +15"
+      "renderedDesc": "Supply to damaged armored units and artillery units: each round HP +15",
+      "renderedDescFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +15"
     }
   ],
   "usage": {
@@ -250,5 +255,7 @@
     ],
     "promoted": []
   },
-  "varyingField": "SkillEffect"
+  "varyingField": "SkillEffect",
+  "nameFr": "Machinist",
+  "descriptionTemplateFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +X"
 }
