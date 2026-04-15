@@ -2,7 +2,7 @@ import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitRow } from "@/components/UnitRow";
-import { getUnitsByFaction, CATEGORY_META } from "@/lib/units";
+import { getUnitsByFaction, getCategoryMeta } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -38,6 +38,7 @@ const ORDER: Category[] = ["tank", "infantry", "artillery", "navy", "airforce"];
 export default async function ElitesList({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
+  const CAT = getCategoryMeta(params.locale);
   const all = getUnitsByFaction("standard");
 
   return (
@@ -58,7 +59,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
             <li><a href="#all" className="block px-2 py-1 rounded text-sm text-gold2 font-bold no-underline">{t("elitesPage.allLabel")} ({all.length})</a></li>
             {ORDER.map(c => (
               <li key={c}><a href={`#${c}`} className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">
-                {CATEGORY_META[c].icon} {CATEGORY_META[c].plural} ({all.filter(u => u.category === c).length})
+                {CAT[c].icon} {CAT[c].plural} ({all.filter(u => u.category === c).length})
               </a></li>
             ))}
           </ul>
@@ -93,7 +94,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
           {ORDER.map(cat => {
             const units = all.filter(u => u.category === cat);
             if (units.length === 0) return null;
-            const meta = CATEGORY_META[cat];
+            const meta = CAT[cat];
             return (
               <section key={cat} id={cat} className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
@@ -101,7 +102,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
                   <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">{units.length} {t("elitesPage.unitsCountSuffix")}</span>
                 </div>
                 <div className="grid gap-2.5">
-                  {units.map(u => <UnitRow key={u.slug} unit={u}/>)}
+                  {units.map(u => <UnitRow key={u.slug} unit={u} locale={params.locale}/>)}
                 </div>
               </section>
             );

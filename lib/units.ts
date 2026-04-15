@@ -247,27 +247,138 @@ export function getGeneralByApkId(id: number): GeneralData | null {
 
 // ========== Metadata ==========
 
-export const CATEGORY_META: Record<Category, { label: string; icon: string; plural: string }> = {
-  tank:      { label: "Char",       icon: "🛡️", plural: "Chars" },
-  infantry:  { label: "Infanterie", icon: "🪖", plural: "Infanterie" },
-  artillery: { label: "Artillerie", icon: "🎯", plural: "Artillerie" },
-  navy:      { label: "Marine",     icon: "⚓", plural: "Marine" },
-  airforce:  { label: "Aviation",   icon: "✈️", plural: "Aviation" },
+/**
+ * Locale-aware category/faction metadata.
+ *
+ * The `CATEGORY_META`, `GENERAL_CATEGORY_META` and `FACTION_META` exports
+ * below preserve the legacy FR-only shape for any consumer that has not
+ * been migrated yet. Newer callsites should prefer the locale-aware
+ * helpers `getCategoryMeta(locale)`, `getGeneralCategoryMeta(locale)`,
+ * and `getFactionMeta(locale)`, which pull from the `_LOCALIZED` maps
+ * and return the right labels for `"fr" | "en" | "de"`.
+ */
+
+type L10n = { fr: string; en: string; de: string };
+type CategoryEntry = { label: L10n; icon: string; plural: L10n };
+type GeneralCategoryEntry = { label: L10n; icon: string };
+type FactionEntry = { label: L10n; tagline: L10n; color: string };
+
+const CATEGORY_META_LOCALIZED: Record<Category, CategoryEntry> = {
+  tank: {
+    label:  { fr: "Char",       en: "Tank",       de: "Panzer" },
+    plural: { fr: "Chars",      en: "Tanks",      de: "Panzer" },
+    icon: "🛡️",
+  },
+  infantry: {
+    label:  { fr: "Infanterie", en: "Infantry",   de: "Infanterie" },
+    plural: { fr: "Infanterie", en: "Infantry",   de: "Infanterie" },
+    icon: "🪖",
+  },
+  artillery: {
+    label:  { fr: "Artillerie", en: "Artillery",  de: "Artillerie" },
+    plural: { fr: "Artillerie", en: "Artillery",  de: "Artillerie" },
+    icon: "🎯",
+  },
+  navy: {
+    label:  { fr: "Marine",     en: "Navy",       de: "Marine" },
+    plural: { fr: "Marine",     en: "Navy",       de: "Marine" },
+    icon: "⚓",
+  },
+  airforce: {
+    label:  { fr: "Aviation",   en: "Air Force",  de: "Luftwaffe" },
+    plural: { fr: "Aviation",   en: "Air Force",  de: "Luftwaffe" },
+    icon: "✈️",
+  },
 };
 
-export const GENERAL_CATEGORY_META: Record<GeneralCategory, { label: string; icon: string }> = {
-  tank:      { label: "Blindé",      icon: "🛡️" },
-  infantry:  { label: "Infanterie",  icon: "🪖" },
-  artillery: { label: "Artillerie",  icon: "🎯" },
-  navy:      { label: "Marine",      icon: "⚓" },
-  airforce:  { label: "Aviation",    icon: "✈️" },
-  balanced:  { label: "Polyvalent",  icon: "⭐" },
+const GENERAL_CATEGORY_META_LOCALIZED: Record<GeneralCategory, GeneralCategoryEntry> = {
+  tank:      { label: { fr: "Blindé",     en: "Armor",     de: "Panzer"     }, icon: "🛡️" },
+  infantry:  { label: { fr: "Infanterie", en: "Infantry",  de: "Infanterie" }, icon: "🪖" },
+  artillery: { label: { fr: "Artillerie", en: "Artillery", de: "Artillerie" }, icon: "🎯" },
+  navy:      { label: { fr: "Marine",     en: "Navy",      de: "Marine"     }, icon: "⚓" },
+  airforce:  { label: { fr: "Aviation",   en: "Air Force", de: "Luftwaffe"  }, icon: "✈️" },
+  balanced:  { label: { fr: "Polyvalent", en: "Balanced",  de: "Ausgewogen" }, icon: "⭐" },
 };
 
-export const FACTION_META: Record<Faction, { label: string; tagline: string; color: string }> = {
-  standard: { label: "Standard",              tagline: "Unités inspirées du monde réel", color: "#d4a44a" },
-  scorpion: { label: "Empire du Scorpion",    tagline: "Mystic Forces / Black Scorpion Empire", color: "#c8372d" },
+const FACTION_META_LOCALIZED: Record<Faction, FactionEntry> = {
+  standard: {
+    label:   { fr: "Standard",           en: "Standard",         de: "Standard" },
+    tagline: {
+      fr: "Unités inspirées du monde réel",
+      en: "Real-world inspired units",
+      de: "An der realen Welt orientierte Einheiten",
+    },
+    color: "#d4a44a",
+  },
+  scorpion: {
+    label: {
+      fr: "Empire du Scorpion",
+      en: "Scorpion Empire",
+      de: "Skorpion-Imperium",
+    },
+    tagline: {
+      fr: "Mystic Forces / Black Scorpion Empire",
+      en: "Mystic Forces / Black Scorpion Empire",
+      de: "Mystic Forces / Black Scorpion Empire",
+    },
+    color: "#c8372d",
+  },
 };
+
+type LocaleKey = "fr" | "en" | "de";
+function resolveLocale(locale: string | undefined): LocaleKey {
+  if (locale === "fr" || locale === "en" || locale === "de") return locale;
+  return "fr";
+}
+
+export function getCategoryMeta(locale: string | undefined) {
+  const loc = resolveLocale(locale);
+  return (Object.fromEntries(
+    Object.entries(CATEGORY_META_LOCALIZED).map(([k, v]) => [
+      k,
+      { label: v.label[loc], icon: v.icon, plural: v.plural[loc] },
+    ])
+  ) as unknown) as Record<Category, { label: string; icon: string; plural: string }>;
+}
+
+export function getGeneralCategoryMeta(locale: string | undefined) {
+  const loc = resolveLocale(locale);
+  return (Object.fromEntries(
+    Object.entries(GENERAL_CATEGORY_META_LOCALIZED).map(([k, v]) => [
+      k,
+      { label: v.label[loc], icon: v.icon },
+    ])
+  ) as unknown) as Record<GeneralCategory, { label: string; icon: string }>;
+}
+
+export function getFactionMeta(locale: string | undefined) {
+  const loc = resolveLocale(locale);
+  return (Object.fromEntries(
+    Object.entries(FACTION_META_LOCALIZED).map(([k, v]) => [
+      k,
+      { label: v.label[loc], tagline: v.tagline[loc], color: v.color },
+    ])
+  ) as unknown) as Record<Faction, { label: string; tagline: string; color: string }>;
+}
+
+/**
+ * @deprecated — prefer `getCategoryMeta(locale)`. Kept for backwards
+ * compatibility during the DE rollout; resolves to the French variant.
+ */
+export const CATEGORY_META: Record<Category, { label: string; icon: string; plural: string }> =
+  getCategoryMeta("fr");
+
+/**
+ * @deprecated — prefer `getGeneralCategoryMeta(locale)`. FR fallback.
+ */
+export const GENERAL_CATEGORY_META: Record<GeneralCategory, { label: string; icon: string }> =
+  getGeneralCategoryMeta("fr");
+
+/**
+ * @deprecated — prefer `getFactionMeta(locale)`. FR fallback.
+ */
+export const FACTION_META: Record<Faction, { label: string; tagline: string; color: string }> =
+  getFactionMeta("fr");
 
 export const COUNTRY_FLAGS: Record<string, string> = {
   GB: "🇬🇧", US: "🇺🇸", DE: "🇩🇪", FR: "🇫🇷", RU: "🇷🇺",

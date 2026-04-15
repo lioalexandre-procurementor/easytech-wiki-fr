@@ -3,7 +3,8 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
 import { AdSlot } from "@/components/AdSlot";
-import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, CATEGORY_META } from "@/lib/units";
+import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, getCategoryMeta } from "@/lib/units";
+import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
@@ -41,8 +42,9 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
   const scorpionUnits = getUnitsByFaction("scorpion");
   const generals = getAllGenerals();
   const top = standardUnits.slice(0, 6);
-  const counts = (Object.keys(CATEGORY_META) as Array<keyof typeof CATEGORY_META>)
-    .map(k => ({ key: k, count: standardUnits.filter(u => u.category === k).length, ...CATEGORY_META[k] }));
+  const CAT = getCategoryMeta(params.locale);
+  const counts = (Object.keys(CAT) as Category[])
+    .map(k => ({ key: k, count: standardUnits.filter(u => u.category === k).length, ...CAT[k] }));
 
   return (
     <>
@@ -117,7 +119,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
 
           <h2 className="text-xl mb-4 mt-8">{t("wc4Hub.mostViewed")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {top.map(u => <UnitCard key={u.slug} unit={u}/>)}
+            {top.map(u => <UnitCard key={u.slug} unit={u} locale={params.locale}/>)}
           </div>
         </main>
       </div>

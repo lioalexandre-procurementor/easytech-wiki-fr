@@ -7,7 +7,7 @@ import { TierBadge } from "@/components/TierBadge";
 import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
 import { AdSlot } from "@/components/AdSlot";
-import { getAllSlugs, getEliteUnit, CATEGORY_META, COUNTRY_FLAGS, getUnitsByCategory, FACTION_META, getAllGenerals } from "@/lib/units";
+import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/units";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
@@ -50,8 +50,10 @@ export default async function UnitPage({ params }: { params: { locale: string; s
   const sameCat = getUnitsByCategory(unit.category, unit.faction)
     .filter(u => u.slug !== unit.slug)
     .slice(0, 3);
-  const meta = CATEGORY_META[unit.category];
-  const factionMeta = FACTION_META[unit.faction];
+  const CAT = getCategoryMeta(params.locale);
+  const FACTION = getFactionMeta(params.locale);
+  const meta = CAT[unit.category];
+  const factionMeta = FACTION[unit.faction];
   const isScorpion = unit.faction === "scorpion";
   const sidebarUnits = getUnitsByCategory(unit.category, unit.faction);
 

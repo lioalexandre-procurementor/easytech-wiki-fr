@@ -5,10 +5,12 @@ import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
 import {
   getAllGenerals,
-  GENERAL_CATEGORY_META,
+  getGeneralCategoryMeta,
+  getFactionMeta,
   COUNTRY_FLAGS,
-  FACTION_META,
 } from "@/lib/units";
+import { countryLabel } from "@/lib/countries";
+import { localizedUnitField } from "@/lib/localized-copy";
 import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -87,6 +89,8 @@ export default async function GeneralsList({
   const t = await getTranslations();
   const tL = (fr: string, en: string, de: string): string =>
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
+  const GENERAL_CAT = getGeneralCategoryMeta(params.locale);
+  const FACTION = getFactionMeta(params.locale);
   const all = getAllGenerals();
   const standard = all.filter((g) => g.faction === "standard");
   const scorpion = all.filter((g) => g.faction === "scorpion");
@@ -116,7 +120,7 @@ export default async function GeneralsList({
           </h4>
           <ul className="list-none text-sm">
             {CAT_ORDER.map((c) => {
-              const m = GENERAL_CATEGORY_META[c];
+              const m = GENERAL_CAT[c];
               const count = all.filter((g) => g.category === c).length;
               if (count === 0) return null;
               return (
@@ -189,7 +193,7 @@ export default async function GeneralsList({
             {CAT_ORDER.map((cat) => {
               const list = standard.filter((g) => g.category === cat);
               if (list.length === 0) return null;
-              const m = GENERAL_CATEGORY_META[cat];
+              const m = GENERAL_CAT[cat];
               return (
                 <div key={cat} id={`cat-${cat}`} className="mb-6">
                   <h3 className="text-lg text-gold2 mb-3">
@@ -217,10 +221,10 @@ export default async function GeneralsList({
           {/* SCORPION */}
           <section id="scorpion" className="mb-10">
             <div className="flex items-center gap-3 mb-4 mt-6">
-              <h2 className="text-2xl">🦂 {FACTION_META.scorpion.label}</h2>
+              <h2 className="text-2xl">🦂 {FACTION.scorpion.label}</h2>
               <span
                 className="text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest text-white"
-                style={{ background: FACTION_META.scorpion.color }}
+                style={{ background: FACTION.scorpion.color }}
               >
                 {scorpion.length} {tL("capitaines", "captains", "Hauptmänner")}
               </span>
@@ -278,7 +282,8 @@ function GeneralCard({
   freeSlotLabel: string;
   acqLabels: Record<string, string>;
 }) {
-  const m = GENERAL_CATEGORY_META[g.category];
+  const GENERAL_CAT = getGeneralCategoryMeta(locale);
+  const m = GENERAL_CAT[g.category];
   const q = QUALITY_META[g.quality];
   const replaceableCount = g.skills.filter((s) => s.replaceable).length;
   const isFr = locale === "fr";

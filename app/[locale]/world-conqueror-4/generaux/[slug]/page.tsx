@@ -13,9 +13,9 @@ import {
   getCandidatesForGeneralSlot,
   buildSlotRecommendationMap,
   getSkill,
-  GENERAL_CATEGORY_META,
+  getGeneralCategoryMeta,
   COUNTRY_FLAGS,
-  FACTION_META,
+  getFactionMeta,
 } from "@/lib/units";
 import type {
   Metadata,
@@ -103,9 +103,11 @@ export default async function GeneralPage({ params }: { params: { locale: string
   const g = getGeneral(params.slug);
   if (!g) notFound();
 
-  const m = GENERAL_CATEGORY_META[g.category];
+  const GENERAL_CAT = getGeneralCategoryMeta(params.locale);
+  const FACTION = getFactionMeta(params.locale);
+  const m = GENERAL_CAT[g.category];
   const scorpion = g.faction === "scorpion";
-  const faction = FACTION_META[g.faction];
+  const faction = FACTION[g.faction];
   const quality = QUALITY_META[g.quality];
   const qualityLabel = t(`general.quality.${g.quality}`);
 
