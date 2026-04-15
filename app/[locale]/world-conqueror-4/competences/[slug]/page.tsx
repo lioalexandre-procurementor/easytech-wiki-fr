@@ -10,7 +10,7 @@ import {
   getGeneralByApkId,
 } from "@/lib/units";
 import type { Metadata } from "next";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
 import type {
   SkillCatalogEntry,
@@ -55,12 +55,13 @@ export async function generateMetadata({
   };
 }
 
-export default function SkillDetailPage({
+export default async function SkillDetailPage({
   params,
 }: {
   params: { locale: string; slug: string };
 }) {
   unstable_setRequestLocale(params.locale);
+  const t = await getTranslations();
   const skill = getSkill(params.slug);
   if (!skill) notFound();
 
@@ -109,32 +110,32 @@ export default function SkillDetailPage({
   const maxChance = Math.max(...skill.progression.map((p) => p.chance));
   const variesLabel =
     skill.varyingField === "SkillEffect"
-      ? "Effet"
-      : "Chance d'activation";
+      ? t("skillDetailPage.variableFieldEffect")
+      : t("skillDetailPage.variableFieldChance");
 
   return (
     <>
       <TopBar />
       <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
         <Link href="/" className="text-dim">
-          Accueil
+          {t("nav.home")}
         </Link>{" "}
-        <span className="mx-2 text-border">›</span>
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
         <Link href="/world-conqueror-4" className="text-dim">
-          World Conqueror 4
+          {t("nav.wc4")}
         </Link>{" "}
-        <span className="mx-2 text-border">›</span>
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
         <Link href="/world-conqueror-4/competences" className="text-dim">
-          Compétences
+          {t("nav.skills")}
         </Link>{" "}
-        <span className="mx-2 text-border">›</span>
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
         <span>{displayName}</span>
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
-            Sur cette page
+            {t("nav.onThisPage")}
           </h4>
           <ul className="list-none text-sm">
             <li>
@@ -142,7 +143,7 @@ export default function SkillDetailPage({
                 href="#description"
                 className="block px-2 py-1 text-dim no-underline hover:text-gold2"
               >
-                📖 Description
+                {t("skillDetailPage.onPageDescription")}
               </a>
             </li>
             <li>
@@ -150,7 +151,7 @@ export default function SkillDetailPage({
                 href="#progression"
                 className="block px-2 py-1 text-dim no-underline hover:text-gold2"
               >
-                📈 Progression L1→L{skill.maxLevel}
+                {t("skillDetailPage.onPageProgression", { max: skill.maxLevel })}
               </a>
             </li>
             {resolved.length > 0 && (
@@ -159,13 +160,13 @@ export default function SkillDetailPage({
                   href="#generals"
                   className="block px-2 py-1 text-dim no-underline hover:text-gold2"
                 >
-                  👨‍✈️ Généraux qui l'utilisent
+                  {t("skillDetailPage.onPageGenerals")}
                 </a>
               </li>
             )}
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
-            Navigation
+            {t("nav.navigationHeading")}
           </h4>
           <ul className="list-none text-sm">
             <li>
@@ -173,7 +174,7 @@ export default function SkillDetailPage({
                 href="/world-conqueror-4/competences"
                 className="block px-2 py-1 text-dim no-underline hover:text-gold2"
               >
-                ← Toutes les compétences
+                {t("skillDetailPage.backToAllSkills")}
               </Link>
             </li>
             {seriesMeta && (
@@ -191,7 +192,7 @@ export default function SkillDetailPage({
                 href="/world-conqueror-4/generaux"
                 className="block px-2 py-1 text-dim no-underline hover:text-gold2"
               >
-                👨‍✈️ Généraux
+                👨‍✈️ {t("nav.generals")}
               </Link>
             </li>
           </ul>
@@ -239,11 +240,11 @@ export default function SkillDetailPage({
                       borderColor: "#c8372d",
                     }}
                   >
-                    👑 Signature — non apprenable
+                    {t("skillDetailPage.signatureBadge")}
                   </span>
                 )}
                 <span className="px-2.5 py-1 rounded-xl text-xs font-semibold border bg-bg3 border-border text-dim">
-                  Niveau max : L{skill.maxLevel}
+                  {t("skillDetailPage.maxLevelBadge", { max: skill.maxLevel })}
                 </span>
               </div>
               <h1 className="text-3xl text-gold2 font-extrabold mb-1">
@@ -256,12 +257,12 @@ export default function SkillDetailPage({
               )}
               <p className="text-dim text-sm leading-relaxed">{displayDesc}</p>
               <div className="mt-3 text-muted text-[11px] uppercase tracking-widest">
-                Champ variable : {variesLabel} · Max : {maxEffect}
+                {t("skillDetailPage.variableField")} : {variesLabel} · {t("skillDetailPage.maxLabel")} : {maxEffect}
                 {skill.varyingField === "ActivatesChance"
-                  ? "% de chance"
+                  ? "%"
                   : ""}
                 {skill.varyingField === "SkillEffect" && maxChance < 100 && (
-                  <> · Chance d'activation : {maxChance}%</>
+                  <> · {t("skillDetailPage.chanceLabel")} : {maxChance}%</>
                 )}
               </div>
             </div>
@@ -273,18 +274,18 @@ export default function SkillDetailPage({
             className="bg-panel border border-border rounded-lg p-6 mb-6"
           >
             <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-3">
-              📖 Description
+              {t("skillDetailPage.descriptionHeading")}
             </h2>
             <p className="text-ink text-sm leading-relaxed">{displayDesc}</p>
             {isFr && skill.descriptionTemplateFr && (
               <p className="text-muted text-[11px] mt-2 italic">
-                Version anglaise officielle : {skill.descriptionTemplate}
+                {t("skillDetailPage.officialEnVersion")} : {skill.descriptionTemplate}
               </p>
             )}
             <p className="text-muted text-xs mt-3 italic">
               {isFr
-                ? "Traduction française en cours de révision — le texte anglais officiel fait foi. La valeur « X » est remplacée par la valeur réelle à chaque niveau (tableau ci-dessous)."
-                : "Source: official game files. The « X » placeholder is replaced by the real value at each level (table below)."}
+                ? t("skillDetailPage.descFootnoteFr")
+                : t("skillDetailPage.descFootnoteEn")}
             </p>
           </section>
 
@@ -294,17 +295,17 @@ export default function SkillDetailPage({
             className="bg-panel border border-border rounded-lg p-6 mb-6"
           >
             <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              📈 Progression L1 → L{skill.maxLevel}
+              {t("skillDetailPage.progressionHeading", { max: skill.maxLevel })}
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
                   <tr className="text-muted text-[10px] uppercase tracking-widest border-b border-border">
-                    <th className="text-left py-2 pr-3 w-12">Niv.</th>
-                    <th className="text-left py-2 pr-3 w-20">Effet</th>
-                    <th className="text-left py-2 pr-3 w-20">Chance</th>
-                    <th className="text-left py-2 pr-3 w-24">Coût</th>
-                    <th className="text-left py-2">Description effective</th>
+                    <th className="text-left py-2 pr-3 w-12">{t("skillDetailPage.tableLevel")}</th>
+                    <th className="text-left py-2 pr-3 w-20">{t("skillDetailPage.tableEffect")}</th>
+                    <th className="text-left py-2 pr-3 w-20">{t("skillDetailPage.tableChance")}</th>
+                    <th className="text-left py-2 pr-3 w-24">{t("skillDetailPage.tableCost")}</th>
+                    <th className="text-left py-2">{t("skillDetailPage.tableEffective")}</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -319,9 +320,7 @@ export default function SkillDetailPage({
                         </span>
                       </td>
                       <td className="py-3 pr-3 text-gold2 font-bold tabular-nums">
-                        {skill.varyingField === "SkillEffect"
-                          ? p.effect
-                          : p.effect}
+                        {p.effect}
                       </td>
                       <td className="py-3 pr-3 text-dim tabular-nums">
                         {p.chance}%
@@ -343,19 +342,18 @@ export default function SkillDetailPage({
             </div>
             {!signature && (
               <div className="mt-4 text-muted text-[11px] italic">
-                🎓 Coût cumulé L1→L{skill.maxLevel} :{" "}
+                {t("skillDetailPage.cumulativeCostHint", { max: skill.maxLevel })}{" "}
                 <strong>
-                  {skill.progression.reduce((a, b) => a + b.costMedal, 0)} médailles
+                  {t("skillDetailPage.cumulativeCostMedals", {
+                    count: skill.progression.reduce((a, b) => a + b.costMedal, 0),
+                  })}
                 </strong>
-                . À l'Académie, vous pouvez apprendre cette compétence pour la
-                poser dans un slot libre d'un général compatible.
+                {t("skillDetailPage.cumulativeCostNote")}
               </div>
             )}
             {signature && (
               <div className="mt-4 text-muted text-[11px] italic">
-                👑 Cette compétence n'est pas apprenable via l'Académie : elle
-                est portée directement par les généraux listés ci-dessous (base
-                ou via entraînement Épées/Sceptres).
+                {t("skillDetailPage.signatureExplainer")}
               </div>
             )}
           </section>
@@ -367,7 +365,7 @@ export default function SkillDetailPage({
               className="bg-panel border border-border rounded-lg p-6 mb-6"
             >
               <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-                👨‍✈️ Généraux qui utilisent cette compétence
+                {t("skillDetailPage.generalsHeading")}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {resolved.map(({ general: g, levels, viaPromotion }) => (
@@ -415,7 +413,7 @@ export default function SkillDetailPage({
                           ))}
                         {viaPromotion && (
                           <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-red-500/15 border border-red-500/40 text-red-300">
-                            ⚔ Via entraînement
+                            {t("skillDetailPage.viaTraining")}
                           </span>
                         )}
                       </div>
@@ -425,9 +423,7 @@ export default function SkillDetailPage({
               </div>
               {unresolvedIds.length > 0 && (
                 <div className="mt-4 text-muted text-[11px] italic">
-                  + {unresolvedIds.length} entrée(s) référencent des généraux pas
-                  encore répertoriés dans le wiki (entraînements premium, variantes
-                  non indexées).
+                  + {unresolvedIds.length} {t("skillDetailPage.notIndexedSuffix")}
                 </div>
               )}
             </section>
@@ -436,11 +432,10 @@ export default function SkillDetailPage({
           {resolved.length === 0 && unresolvedIds.length > 0 && (
             <section className="bg-panel border border-border rounded-lg p-6 mb-6">
               <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-2">
-                👨‍✈️ Généraux qui utilisent cette compétence
+                {t("skillDetailPage.generalsHeading")}
               </h2>
               <p className="text-dim text-sm">
-                Cette compétence est portée par {unresolvedIds.length} général(s)
-                pas encore indexés dans le wiki. Fiches en cours de rédaction.
+                {t("skillDetailPage.notIndexedOnly", { count: unresolvedIds.length })}
               </p>
             </section>
           )}

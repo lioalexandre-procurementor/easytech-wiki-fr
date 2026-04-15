@@ -28,7 +28,14 @@ const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3 };
 export function getAllEliteUnits(): UnitData[] {
   const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith(".json") && !f.startsWith("_"));
   const units: UnitData[] = files.map(f => JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), "utf8")));
+  // Game order = APK `armyId` ascending. Each real elite has a base id in the
+  // 301xxx..351xxx range that mirrors the in-game unlock sequence. Units without
+  // an armyId (scorpion/mystic variants not yet in canonical data) sink to the
+  // bottom, sorted by tier + FR name as the historical fallback.
   return units.sort((a, b) => {
+    const aId = a.armyId ?? Number.POSITIVE_INFINITY;
+    const bId = b.armyId ?? Number.POSITIVE_INFINITY;
+    if (aId !== bId) return aId - bId;
     const t = TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
     if (t !== 0) return t;
     return a.name.localeCompare(b.name, "fr");

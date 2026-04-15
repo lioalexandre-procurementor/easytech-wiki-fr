@@ -80,12 +80,12 @@ export async function generateMetadata({
 
 const QUALITY_META: Record<
   GeneralQuality,
-  { label: string; icon: string; color: string; slots: number }
+  { icon: string; color: string; slots: number }
 > = {
-  bronze:  { label: "Bronze",   icon: "🥉", color: "#cd7f32", slots: 3 },
-  silver:  { label: "Argent",   icon: "🥈", color: "#c0c0c0", slots: 4 },
-  gold:    { label: "Or",       icon: "🥇", color: "#d4a44a", slots: 5 },
-  marshal: { label: "Maréchal", icon: "⭐", color: "#ff6b6b", slots: 5 },
+  bronze:  { icon: "🥉", color: "#cd7f32", slots: 3 },
+  silver:  { icon: "🥈", color: "#c0c0c0", slots: 4 },
+  gold:    { icon: "🥇", color: "#d4a44a", slots: 5 },
+  marshal: { icon: "⭐", color: "#ff6b6b", slots: 5 },
 };
 
 
@@ -99,6 +99,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
   const scorpion = g.faction === "scorpion";
   const faction = FACTION_META[g.faction];
   const quality = QUALITY_META[g.quality];
+  const qualityLabel = t(`general.quality.${g.quality}`);
 
   const related = getAllGenerals()
     .filter((x) => x.slug !== g.slug && x.category === g.category)
@@ -108,15 +109,21 @@ export default async function GeneralPage({ params }: { params: { locale: string
     .map((slug) => getEliteUnit(slug))
     .filter((u): u is NonNullable<typeof u> => u !== null);
 
-  const ACQUISITION_LABEL: Record<string, { icon: string; label: string }> = {
-    starter: { icon: "🥇", label: "Initial" },
-    medals: { icon: "🎖", label: "Médailles" },
-    "iron-cross": { icon: "✠", label: "Croix de fer" },
-    coin: { icon: "🪙", label: "Pièces" },
-    campaign: { icon: "🎬", label: "Campagne" },
-    event: { icon: "📅", label: "Événement" },
+  const ACQUISITION_ICON: Record<string, string> = {
+    starter: "🥇",
+    medals: "🎖",
+    "iron-cross": "✠",
+    coin: "🪙",
+    campaign: "🎬",
+    event: "📅",
   };
-  const acqMeta = ACQUISITION_LABEL[g.acquisition.type] || { icon: "🎁", label: g.acquisition.type };
+  const acqIcon = ACQUISITION_ICON[g.acquisition.type] || "🎁";
+  const ACQ_KEYS = ["starter", "medals", "iron-cross", "coin", "campaign", "event"] as const;
+  type AcqKey = typeof ACQ_KEYS[number];
+  const acqLabel = (ACQ_KEYS as readonly string[]).includes(g.acquisition.type)
+    ? t(`acquisitionTypes.${g.acquisition.type as AcqKey}`)
+    : g.acquisition.type;
+  const acqMeta = { icon: acqIcon, label: acqLabel };
   const acqPillText =
     g.acquisition.cost != null
       ? `${acqMeta.icon} ${g.acquisition.cost} ${acqMeta.label.toLowerCase()}`
@@ -141,25 +148,25 @@ export default async function GeneralPage({ params }: { params: { locale: string
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
-            Sur cette page
+            {t("general.onThisPage")}
           </h4>
           <ul className="list-none text-sm">
-            <li><a href="#attributes" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⭐ Attributs</a></li>
-            <li><a href="#skills" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⚡ Compétences</a></li>
+            <li><a href="#attributes" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("general.attributesNav")}</a></li>
+            <li><a href="#skills" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("general.skillsNav")}</a></li>
             {g.hasTrainingPath && (
-              <li><a href="#training" className="block px-2 py-1 text-dim no-underline hover:text-gold2">⚔ Entraînement (Épées/Sceptres)</a></li>
+              <li><a href="#training" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("general.trainingNav")}</a></li>
             )}
-            <li><a href="#bonuses" className="block px-2 py-1 text-dim no-underline hover:text-gold2">📊 Bonus</a></li>
-            <li><a href="#acquisition" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🎁 Obtention</a></li>
-            <li><a href="#units" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🛡 Unités recommandées</a></li>
+            <li><a href="#bonuses" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("general.bonusesNav")}</a></li>
+            <li><a href="#acquisition" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("general.acquisitionNav")}</a></li>
+            <li><a href="#units" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("general.unitsNav")}</a></li>
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
-            Navigation
+            {t("nav.navigationHeading")}
           </h4>
           <ul className="list-none text-sm">
-            <li><Link href="/world-conqueror-4/generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">← Tous les généraux</Link></li>
+            <li><Link href="/world-conqueror-4/generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("nav.allGenerals")}</Link></li>
             {scorpion && (
-              <li><Link href="/world-conqueror-4/empire-du-scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 Empire du Scorpion</Link></li>
+              <li><Link href="/world-conqueror-4/empire-du-scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 {t("nav.scorpion")}</Link></li>
             )}
           </ul>
         </aside>
@@ -218,7 +225,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
                     color: quality.color,
                   }}
                 >
-                  {quality.icon} {quality.label}
+                  {quality.icon} {qualityLabel}
                 </span>
               </div>
             </div>
@@ -226,19 +233,21 @@ export default async function GeneralPage({ params }: { params: { locale: string
               <h1 className="text-3xl text-gold2 font-extrabold mb-1">{g.name}</h1>
               <div className="text-dim text-sm mb-4">{g.shortDesc}</div>
               <div className="flex flex-wrap gap-2 mb-4">
-                <Tag accent>{m.icon} Général {m.label}</Tag>
+                <Tag accent>{m.icon} {t("general.generalCategoryTag", { label: m.label })}</Tag>
                 <Tag>{COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}</Tag>
                 <Tag>🎖 Tier {g.rank}</Tag>
-                <Tag accent>{quality.icon} {quality.label} · {quality.slots} slots</Tag>
+                <Tag accent>{quality.icon} {qualityLabel} · {quality.slots} {t("general.slotsSuffix")}</Tag>
                 <Tag accent>{acqPillText}</Tag>
-                {g.hasTrainingPath && <Tag accent>⚔ Entraînement Épées/Sceptres</Tag>}
+                {g.hasTrainingPath && <Tag accent>{t("general.trainingTag")}</Tag>}
                 {replaceableCount > 0 && (
-                  <Tag accent>🎓 {replaceableCount} slot{replaceableCount > 1 ? "s" : ""} libre{replaceableCount > 1 ? "s" : ""}</Tag>
+                  <Tag accent>{replaceableCount > 1
+                    ? t("general.freeSlotsPlural", { count: replaceableCount })
+                    : t("general.freeSlotsSingular", { count: replaceableCount })}</Tag>
                 )}
                 <Tag scorpion={scorpion}>
                   {scorpion ? "🦂" : "🌍"} {faction.label}
                 </Tag>
-                {!g.verified && <Tag>⚠ Données à vérifier in-game</Tag>}
+                {!g.verified && <Tag>{t("general.dataUnverified")}</Tag>}
               </div>
               <p className="text-ink text-sm leading-relaxed">{g.longDesc}</p>
             </div>
@@ -277,10 +286,10 @@ export default async function GeneralPage({ params }: { params: { locale: string
           <div id="skills" className="bg-panel border border-border rounded-lg p-6 mb-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
-                ⚡ Compétences
+                {t("general.skillsHeading")}
               </h3>
               <span className="text-muted text-[10px] uppercase tracking-widest">
-                {g.skills.length} slot{g.skills.length > 1 ? "s" : ""} · qualité {quality.label}
+                {g.skills.length} {g.skills.length > 1 ? t("general.skillsSlotsSuffixPlural") : t("general.skillsSlotsSuffix")} · {t("general.qualityLabel")} {qualityLabel}
               </span>
             </div>
             <div className="space-y-3">
@@ -296,11 +305,10 @@ export default async function GeneralPage({ params }: { params: { locale: string
               ))}
             </div>
             {replaceableCount > 0 && (
-              <div className="mt-4 text-muted text-[11px] italic">
-                🎓 Les slots marqués « libre » peuvent être remplacés via l'Académie pour
-                {" "}<strong>des médailles</strong>. Vous pouvez voter pour votre préférence —
-                les résultats communautaires apparaissent ci-dessous chaque slot.
-              </div>
+              <div
+                className="mt-4 text-muted text-[11px] italic"
+                dangerouslySetInnerHTML={{ __html: t("general.academyHint") }}
+              />
             )}
           </div>
 
@@ -317,17 +325,17 @@ export default async function GeneralPage({ params }: { params: { locale: string
             >
               <div className="flex items-center justify-between gap-3 mb-4">
                 <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">
-                  ⚔ Entraînement (Épées/Sceptres de Domination)
+                  {t("general.trainingHeading")}
                 </h3>
                 <div className="flex gap-2">
                   {g.training.totalSwordCost != null && (
                     <span className="text-[11px] font-extrabold px-2 py-0.5 rounded border bg-gold/20 border-gold/40 text-gold2">
-                      ⚔ {g.training.totalSwordCost} épées
+                      ⚔ {g.training.totalSwordCost} {t("general.swordsUnit")}
                     </span>
                   )}
                   {g.training.totalSceptreCost != null && (
                     <span className="text-[11px] font-extrabold px-2 py-0.5 rounded border bg-gold/20 border-gold/40 text-gold2">
-                      🪄 {g.training.totalSceptreCost} sceptres
+                      🪄 {g.training.totalSceptreCost} {t("general.sceptresUnit")}
                     </span>
                   )}
                 </div>
@@ -337,13 +345,11 @@ export default async function GeneralPage({ params }: { params: { locale: string
               )}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {g.training.stages.map((stage) => (
-                  <TrainingStageCard key={stage.stage} stage={stage} />
+                  <TrainingStageCard key={stage.stage} stage={stage} locale={params.locale} />
                 ))}
               </div>
               <div className="mt-4 text-muted text-[11px] italic">
-                💡 Les Épées et Sceptres de Domination sont une ressource premium : ~4 épées + 2 sceptres
-                gratuits par mois via la boutique. Seuls les généraux de qualité bronze, silver ou gold
-                peuvent être entraînés — les Maréchaux (IAP) n'ont pas de training path.
+                {t("general.trainingHint")}
               </div>
             </div>
           )}
@@ -351,7 +357,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
           {/* BONUSES */}
           <div id="bonuses" className="bg-panel border border-border rounded-lg p-6 mb-6">
             <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              📊 Bonus appliqués
+              {t("general.bonusesHeading")}
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {g.bonuses.map((b, i) => (
@@ -371,7 +377,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
           {/* ACQUISITION */}
           <div id="acquisition" className="bg-panel border border-border rounded-lg p-6 mb-6">
             <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-              🎁 Comment obtenir {g.name}
+              {t("general.acquisitionHeading", { name: g.name })}
             </h3>
             <div className="grid md:grid-cols-[auto_1fr] gap-5 items-center">
               <div className="border-2 border-gold rounded-lg p-4 text-center min-w-[160px]">
@@ -382,37 +388,37 @@ export default async function GeneralPage({ params }: { params: { locale: string
                     {g.acquisition.cost}
                   </div>
                 ) : (
-                  <div className="text-muted text-[11px] italic">Coût à confirmer</div>
+                  <div className="text-muted text-[11px] italic">{t("general.acquisitionCostTbd")}</div>
                 )}
               </div>
               <div className="text-dim text-sm leading-relaxed">
-                {g.acquisition.notes || "Détails d'obtention à confirmer in-game."}
+                {g.acquisition.notes || t("general.acquisitionNotesFallback")}
                 {g.acquisition.type === "campaign" && (
                   <p className="mt-2 text-amber-200 text-xs">
-                    ⚠ Ce général est débloqué via la campagne (non-obtenable en Conquête libre).
+                    {t("general.acquisitionCampaignNote")}
                   </p>
                 )}
                 {g.acquisition.type === "medals" && (
                   <p className="mt-2 text-muted text-xs">
-                    🎖 Les médailles sont obtenues en complétant des missions de campagne et en gagnant des Conquêtes.
+                    {t("general.acquisitionMedalsNote")}
                   </p>
                 )}
                 {g.acquisition.type === "iron-cross" && (
                   <p className="mt-2 text-amber-200 text-xs">
-                    💰 Ce général Marshal ne peut être obtenu qu'avec des Croix de fer (IAP).
+                    {t("general.acquisitionIronCrossNote")}
                   </p>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="ad-slot">Emplacement publicitaire</div>
+          <div className="ad-slot">{t("ui.adSlot")}</div>
 
           {/* RECOMMENDED UNITS */}
           {recommended.length > 0 && (
             <div id="units" className="bg-panel border border-border rounded-lg p-6 mb-6">
               <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
-                🛡 Unités recommandées avec ce général
+                {t("general.recommendedUnitsHeading")}
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {recommended.map((u) => (
@@ -434,7 +440,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
 
           {g.recommendedUnits.length > recommended.length && (
             <div className="text-muted text-xs mb-6">
-              Unités également mentionnées mais pas encore dans le wiki :{" "}
+              {t("general.alsoMentioned")}{" "}
               {g.recommendedUnits
                 .filter((slug) => !recommended.find((u) => u.slug === slug))
                 .join(", ")}
@@ -445,7 +451,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
           {related.length > 0 && (
             <>
               <h2 className="text-xl mb-4 mt-8">
-                Autres généraux {m.label.toLowerCase()}
+                {t("general.relatedHeading", { label: m.label.toLowerCase() })}
               </h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {related.map((r) => (
@@ -468,7 +474,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
           {/* SOURCES */}
           {g.sources && g.sources.length > 0 && (
             <div className="text-muted text-xs mt-8">
-              <b>Sources :</b> {g.sources.join(" · ")}
+              <b>{t("general.sources")}</b> {g.sources.join(" · ")}
             </div>
           )}
         </main>
@@ -609,7 +615,7 @@ function SkillBlock({
               )}
               {skill.replaceable && (
                 <span className="text-[9px] font-extrabold uppercase tracking-widest px-1.5 py-0.5 rounded border bg-gold/15 border-gold/40 text-gold2">
-                  🎓 Libre
+                  🎓 {isFr ? "Libre" : "Free"}
                 </span>
               )}
             </div>
@@ -635,7 +641,7 @@ function SkillBlock({
                 href={skillDetailHref as any}
                 className="text-[11px] text-gold/80 hover:text-gold2 no-underline"
               >
-                📈 Voir la progression L1 → L5 →
+                {isFr ? "📈 Voir la progression L1 → L5 →" : "📈 View L1 → L5 progression →"}
               </Link>
             </div>
           )}
@@ -655,12 +661,17 @@ function SkillBlock({
   );
 }
 
-function TrainingStageCard({ stage }: { stage: TrainingStage }) {
+function TrainingStageCard({ stage, locale }: { stage: TrainingStage; locale: string }) {
+  const isFr = locale === "fr";
+  const stageLabel = isFr ? `Étape ${stage.stage}` : `Stage ${stage.stage}`;
+  const effectsLabel = isFr ? "Effets" : "Effects";
+  const costTbd = isFr ? "Coût à vérifier in-game." : "Cost to verify in-game.";
+  const modificationFallback = isFr ? "modification" : "change";
   return (
     <div className="border border-gold/30 rounded-lg p-3 bg-bg3">
       <div className="flex items-center justify-between mb-2">
         <span className="text-gold2 font-bold text-xs uppercase tracking-widest">
-          Étape {stage.stage}
+          {stageLabel}
         </span>
         <div className="flex gap-1">
           {stage.swordCost != null && (
@@ -683,12 +694,12 @@ function TrainingStageCard({ stage }: { stage: TrainingStage }) {
       )}
       {(stage.skillChanges?.length ?? 0) > 0 && (
         <div className="mt-2 text-[11px] text-dim">
-          <div className="text-muted uppercase tracking-widest text-[9px] mb-0.5">Effets</div>
+          <div className="text-muted uppercase tracking-widest text-[9px] mb-0.5">{effectsLabel}</div>
           <ul className="list-disc pl-4 space-y-0.5">
             {stage.skillChanges!.map((c, i) => (
               <li key={i}>
                 Slot {c.slot} : {c.kind === "unlock" ? "🆕" : c.kind === "upgrade" ? "⬆" : "♻"}{" "}
-                {c.newName || c.notes || "modification"}
+                {c.newName || c.notes || modificationFallback}
               </li>
             ))}
           </ul>
@@ -696,7 +707,7 @@ function TrainingStageCard({ stage }: { stage: TrainingStage }) {
       )}
       {(!stage.swordCost && !stage.sceptreCost && !stage.notes) && (
         <div className="text-muted text-[11px] italic mt-1">
-          Coût à vérifier in-game.
+          {costTbd}
         </div>
       )}
     </div>

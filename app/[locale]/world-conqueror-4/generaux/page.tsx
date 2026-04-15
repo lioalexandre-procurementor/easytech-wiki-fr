@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import {
@@ -10,14 +10,24 @@ import {
 } from "@/lib/units";
 import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
 import type { Metadata } from "next";
-import { unstable_setRequestLocale } from "next-intl/server";
+import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
 
-export const metadata: Metadata = {
-  title: "Tous les généraux de World Conqueror 4 (FR) — Tier List & Guides",
-  description:
-    "Liste complète des meilleurs généraux de WC4 : Guderian, Rommel, Patton, Rokossovsky, Konev, Zhukov, Dönitz, Montgomery, Osborn et les capitaines de l'Empire du Scorpion. Compétences, bonus et unités recommandées.",
-};
+export async function generateMetadata({
+  params: { locale },
+}: {
+  params: { locale: string };
+}): Promise<Metadata> {
+  const isFr = locale === "fr";
+  return {
+    title: isFr
+      ? "Tous les généraux de World Conqueror 4 (FR) — Tier List & Guides"
+      : "All World Conqueror 4 Generals — Tier List & Guides",
+    description: isFr
+      ? "Liste complète des meilleurs généraux de WC4 : Guderian, Rommel, Patton, Rokossovsky, Konev, Zhukov, Dönitz, Montgomery, Osborn et les capitaines de l'Empire du Scorpion. Compétences, bonus et unités recommandées."
+      : "Full list of the best WC4 generals: Guderian, Rommel, Patton, Rokossovsky, Konev, Zhukov, Dönitz, Montgomery, Osborn and the Scorpion Empire captains. Skills, bonuses and recommended units.",
+  };
+}
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -34,31 +44,27 @@ const CAT_ORDER: GeneralCategory[] = [
 
 const QUALITY_META: Record<
   GeneralQuality,
-  { label: string; icon: string; bg: string; border: string; text: string }
+  { icon: string; bg: string; border: string; text: string }
 > = {
   bronze: {
-    label: "Bronze",
     icon: "🥉",
     bg: "rgba(180,110,60,0.15)",
     border: "rgba(205,127,50,0.5)",
     text: "#e8a574",
   },
   silver: {
-    label: "Argent",
     icon: "🥈",
     bg: "rgba(180,180,190,0.12)",
     border: "rgba(192,192,192,0.5)",
     text: "#d7d7de",
   },
   gold: {
-    label: "Or",
     icon: "🥇",
     bg: "rgba(212,164,74,0.18)",
     border: "rgba(212,164,74,0.6)",
     text: "#e8c678",
   },
   marshal: {
-    label: "Maréchal",
     icon: "👑",
     bg: "rgba(200,55,45,0.15)",
     border: "rgba(200,55,45,0.55)",
@@ -66,8 +72,14 @@ const QUALITY_META: Record<
   },
 };
 
-export default function GeneralsList({ params }: { params: { locale: string } }) {
+export default async function GeneralsList({
+  params,
+}: {
+  params: { locale: string };
+}) {
   unstable_setRequestLocale(params.locale);
+  const t = await getTranslations();
+  const isFr = params.locale === "fr";
   const all = getAllGenerals();
   const standard = all.filter((g) => g.faction === "standard");
   const scorpion = all.filter((g) => g.faction === "scorpion");
@@ -76,23 +88,24 @@ export default function GeneralsList({ params }: { params: { locale: string } })
     <>
       <TopBar />
       <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">Accueil</Link> <span className="mx-2 text-border">›</span>
-        <Link href="/world-conqueror-4" className="text-dim">World Conqueror 4</Link>{" "}
-        <span className="mx-2 text-border">›</span>
-        <span>Généraux</span>
+        <Link href="/" className="text-dim">{t("nav.home")}</Link>{" "}
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
+        <Link href="/world-conqueror-4" className="text-dim">{t("nav.wc4")}</Link>{" "}
+        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
+        <span>{t("nav.generals")}</span>
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
-            Sections
+            {isFr ? "Sections" : "Sections"}
           </h4>
           <ul className="list-none text-sm">
-            <li><a href="#standard" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🌍 Généraux Standard ({standard.length})</a></li>
-            <li><a href="#scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 Empire du Scorpion ({scorpion.length})</a></li>
+            <li><a href="#standard" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🌍 {isFr ? "Généraux Standard" : "Standard generals"} ({standard.length})</a></li>
+            <li><a href="#scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 {t("nav.scorpion")} ({scorpion.length})</a></li>
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
-            Catégories
+            {t("nav.categoriesHeading")}
           </h4>
           <ul className="list-none text-sm">
             {CAT_ORDER.map((c) => {
@@ -112,11 +125,11 @@ export default function GeneralsList({ params }: { params: { locale: string } })
             })}
           </ul>
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">
-            Navigation
+            {t("nav.navigationHeading")}
           </h4>
           <ul className="list-none text-sm">
-            <li><Link href="/world-conqueror-4" className="block px-2 py-1 text-dim no-underline hover:text-gold2">← Retour au hub WC4</Link></li>
-            <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🏅 Unités d'élite</Link></li>
+            <li><Link href="/world-conqueror-4" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{t("nav.backToHubWc4")}</Link></li>
+            <li><Link href="/world-conqueror-4/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🏅 {t("nav.eliteUnits")}</Link></li>
           </ul>
         </aside>
 
@@ -129,23 +142,32 @@ export default function GeneralsList({ params }: { params: { locale: string } })
             }}
           >
             <h1 className="text-3xl text-gold2 font-extrabold mb-2">
-              Généraux de World Conqueror 4
+              {isFr ? "Généraux de World Conqueror 4" : "World Conqueror 4 Generals"}
             </h1>
             <p className="text-dim max-w-3xl">
-              {all.length} commandants répertoriés : les meilleurs généraux du roster standard
-              (Guderian, Rommel, Patton, Rokossovsky, Konev…) et les trois capitaines de l'Empire du Scorpion.
-              Chaque fiche détaille les compétences, bonus et unités à coupler.
+              {isFr ? (
+                <>
+                  {all.length} commandants répertoriés : les meilleurs généraux du roster standard
+                  (Guderian, Rommel, Patton, Rokossovsky, Konev…) et les trois capitaines de l'Empire du Scorpion.
+                  Chaque fiche détaille les compétences, bonus et unités à coupler.
+                </>
+              ) : (
+                <>
+                  {all.length} commanders catalogued: the best generals from the standard roster
+                  (Guderian, Rommel, Patton, Rokossovsky, Konev…) and the three captains of the
+                  Scorpion Empire. Each entry covers skills, bonuses and recommended units.
+                </>
+              )}
             </p>
             <div className="mt-4 p-3 bg-amber-500/10 border border-amber-500/30 rounded text-amber-200 text-xs">
-              ⚠️ Wiki en construction — les skills et bonus affichés sont extrapolés depuis les tier lists
-              communautaires (NamuWiki, Fandom). Vérification in-game en cours.
+              ⚠️ <strong>{t("wc4Hub.underConstruction")}</strong> — {t("wc4Hub.underConstructionNote")}
             </div>
           </section>
 
           {/* STANDARD */}
           <section id="standard" className="mb-10">
             <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-2xl">🌍 Généraux Standard</h2>
+              <h2 className="text-2xl">🌍 {isFr ? "Généraux Standard" : "Standard generals"}</h2>
               <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
                 {standard.length}
               </span>
@@ -162,7 +184,14 @@ export default function GeneralsList({ params }: { params: { locale: string } })
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {list.map((g) => (
-                      <GeneralCard key={g.slug} g={g} />
+                      <GeneralCard key={g.slug} g={g} isFr={isFr} qualityLabel={t(`general.quality.${g.quality}`)} trainingLabel={isFr ? "⚔️ Entraînement" : "⚔️ Training"} freeSlotLabel={isFr ? "libre" : "free"} acqLabels={{
+                        starter: t("acquisitionTypes.starter"),
+                        medals: t("acquisitionTypes.medals"),
+                        "iron-cross": t("acquisitionTypes.iron-cross"),
+                        coin: t("acquisitionTypes.coin"),
+                        campaign: t("acquisitionTypes.campaign"),
+                        event: t("acquisitionTypes.event"),
+                      }} />
                     ))}
                   </div>
                 </div>
@@ -170,7 +199,7 @@ export default function GeneralsList({ params }: { params: { locale: string } })
             })}
           </section>
 
-          <div className="ad-slot">Emplacement publicitaire</div>
+          <div className="ad-slot">{t("ui.adSlot")}</div>
 
           {/* SCORPION */}
           <section id="scorpion" className="mb-10">
@@ -180,15 +209,33 @@ export default function GeneralsList({ params }: { params: { locale: string } })
                 className="text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest text-white"
                 style={{ background: FACTION_META.scorpion.color }}
               >
-                {scorpion.length} capitaines
+                {scorpion.length} {isFr ? "capitaines" : "captains"}
               </span>
             </div>
             <p className="text-dim text-sm mb-4">
-              Les trois capitaines de l'Empire du Scorpion — obtenables via le pack campagne des généraux terroristes.
+              {isFr
+                ? "Les trois capitaines de l'Empire du Scorpion — obtenables via le pack campagne des généraux terroristes."
+                : "The three Scorpion Empire captains — obtainable via the terrorist generals campaign pack."}
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {scorpion.map((g) => (
-                <GeneralCard key={g.slug} g={g} scorpion />
+                <GeneralCard
+                  key={g.slug}
+                  g={g}
+                  scorpion
+                  isFr={isFr}
+                  qualityLabel={t(`general.quality.${g.quality}`)}
+                  trainingLabel={isFr ? "⚔️ Entraînement" : "⚔️ Training"}
+                  freeSlotLabel={isFr ? "libre" : "free"}
+                  acqLabels={{
+                    starter: t("acquisitionTypes.starter"),
+                    medals: t("acquisitionTypes.medals"),
+                    "iron-cross": t("acquisitionTypes.iron-cross"),
+                    coin: t("acquisitionTypes.coin"),
+                    campaign: t("acquisitionTypes.campaign"),
+                    event: t("acquisitionTypes.event"),
+                  }}
+                />
               ))}
             </div>
           </section>
@@ -199,13 +246,29 @@ export default function GeneralsList({ params }: { params: { locale: string } })
   );
 }
 
-function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
+function GeneralCard({
+  g,
+  scorpion,
+  isFr,
+  qualityLabel,
+  trainingLabel,
+  freeSlotLabel,
+  acqLabels,
+}: {
+  g: GeneralData;
+  scorpion?: boolean;
+  isFr: boolean;
+  qualityLabel: string;
+  trainingLabel: string;
+  freeSlotLabel: string;
+  acqLabels: Record<string, string>;
+}) {
   const m = GENERAL_CATEGORY_META[g.category];
   const q = QUALITY_META[g.quality];
   const replaceableCount = g.skills.filter((s) => s.replaceable).length;
   return (
     <Link
-      href={`/world-conqueror-4/generaux/${g.slug}`}
+      href={`/world-conqueror-4/generaux/${g.slug}` as any}
       className={`block bg-panel border rounded-lg p-4 transition-colors no-underline ${
         scorpion ? "hover:border-red-500" : "hover:border-gold"
       }`}
@@ -261,7 +324,7 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
               color: q.text,
             }}
           >
-            {q.icon} {q.label}
+            {q.icon} {qualityLabel}
           </span>
           <span className="text-[10px] text-muted uppercase tracking-widest">
             {COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}
@@ -275,17 +338,17 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
       <p className="text-dim text-xs leading-relaxed line-clamp-2 mb-3">{g.shortDesc}</p>
       <div className="flex flex-wrap gap-1.5 mt-auto">
         <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-bg3 border border-border text-dim">
-          {acqIcon(g.acquisition.type)} {acqShortLabel(g.acquisition.type)}
+          {acqIcon(g.acquisition.type)} {acqLabels[g.acquisition.type] || g.acquisition.type}
           {g.acquisition.cost != null && ` · ${g.acquisition.cost}`}
         </span>
         {g.hasTrainingPath && (
           <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-red-500/10 border border-red-500/40 text-red-300">
-            ⚔️ Entraînement
+            {trainingLabel}
           </span>
         )}
         {replaceableCount > 0 && (
           <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-gold/15 border border-gold/40 text-gold2">
-            🎓 {replaceableCount} slot{replaceableCount > 1 ? "s" : ""} libre{replaceableCount > 1 ? "s" : ""}
+            🎓 {replaceableCount} slot{replaceableCount > 1 ? "s" : ""} {freeSlotLabel}{replaceableCount > 1 && isFr ? "s" : ""}
           </span>
         )}
       </div>
@@ -293,7 +356,7 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
   );
 }
 
-function acqIcon(t: string): string {
+function acqIcon(type: string): string {
   return (
     {
       starter: "🥇",
@@ -302,19 +365,6 @@ function acqIcon(t: string): string {
       coin: "🪙",
       campaign: "🎬",
       event: "📅",
-    }[t] || "🎁"
-  );
-}
-
-function acqShortLabel(t: string): string {
-  return (
-    {
-      starter: "Initial",
-      medals: "Médailles",
-      "iron-cross": "Croix de fer",
-      coin: "Pièces",
-      campaign: "Campagne",
-      event: "Événement",
-    }[t] || t
+    }[type] || "🎁"
   );
 }
