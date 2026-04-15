@@ -13,33 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Plan méthodique",
-      "desc": "Bonus défensif en position retranchée.",
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +5 when fighting in the plain",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Plain Fighting",
+      "skillSlug": "plain-fighting",
+      "skillType": 7,
+      "skillLevel": 1
     },
     {
       "slot": 2,
-      "name": "Huitième Armée",
-      "desc": "Bonus sur infanterie du Commonwealth.",
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+4",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
     },
     {
       "slot": 3,
-      "name": "Commandement terrestre",
-      "desc": "Leadership général — bonus adjacents.",
+      "name": "Crossfire",
+      "desc": "Counter attack +12% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 2
     },
     {
       "slot": 4,

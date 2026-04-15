@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Ace Pilot",
-      "desc": "When using air and missile attacks, ignore enemy units X% defense",
+      "desc": "When using air and missile attacks, ignore enemy units 100% defense",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_56.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Ace Pilot",
+      "skillSlug": "ace-pilot",
+      "skillType": 56,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "32% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 4
     },
     {
       "slot": 3,
       "name": "Carpet Bombing",
-      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "desc": "Damage +24% to the defending forces in the city when air-raiding",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_41.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Camouflage",
-      "desc": "Able to dodge X% damage from the enemy's air units",
+      "desc": "Able to dodge 18% damage from the enemy's air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_30.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Camouflage",
+      "skillSlug": "camouflage",
+      "skillType": 30,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Shelter",
-      "desc": "Able to dodge X% damage from the enemy's missile units",
+      "desc": "Able to dodge 18% damage from the enemy's missile units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_31.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Shelter",
+      "skillSlug": "shelter",
+      "skillType": 31,
+      "skillLevel": 3
     }
   ],
   "attributes": {

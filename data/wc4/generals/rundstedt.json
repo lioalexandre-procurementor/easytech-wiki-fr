@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Street Fighting",
-      "desc": "Damage to the enemy +X when fighting in the city",
+      "desc": "Damage to the enemy +5 when fighting in the city",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_6.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Street Fighting",
+      "skillSlug": "street-fighting",
+      "skillType": 6,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Guerrilla",
-      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "desc": "12% chance that the enemy will not fight back when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_33.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Elastic Defence",
-      "desc": "Fix nearby fortress units: each round HP+X",
+      "desc": "Fix nearby fortress units: each round HP+4",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
     },
     {
       "slot": 4,

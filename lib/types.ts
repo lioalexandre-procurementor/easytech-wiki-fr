@@ -130,6 +130,13 @@ export interface GeneralSkill {
   icon?: string | null;
   replaceable?: boolean;          // true → player can swap via medals; vote UI shows here
   replaceableReason?: string;     // optional tooltip, e.g. "Slot laissé ouvert aux choix communautaires"
+  /** Skill system link — APK skill type id (0..179). Lets us cross-link to the
+   *  skill detail page and pull L1..L5 progression on demand. */
+  skillType?: number;
+  /** Current level of the skill for this general (1..5). */
+  skillLevel?: number;
+  /** Slug in data/wc4/skills/{slug}.json */
+  skillSlug?: string;
 }
 
 // ─── Training (premium tier upgrade via Sword/Sceptre of Dominance) ─────────
@@ -246,6 +253,70 @@ export interface LearnableSkill {
   appliesTo?: GeneralCategory[];         // empty/undefined = all categories
   popularMeta?: boolean;                 // editorial "best practice" flag
   editorialNote?: string;                // short justification for the meta pick
+}
+
+// ─── Skill catalog (full APK dataset) ───────────────────────────────────────
+// Built by scripts/extract-skills.py from SkillSettings.json + stringtable.
+// One JSON file per skill type in data/wc4/skills/{slug}.json plus an index.
+
+export interface SkillProgression {
+  level: number;
+  skillId: number;       // APK SkillSettings.Id
+  effect: number;        // SkillEffect at this level
+  chance: number;        // ActivatesChance at this level
+  costMedal: number;
+  /** Template with %d substituted — the in-game player-facing text. */
+  renderedDesc: string;
+}
+
+export interface SkillUsageEntry {
+  generalId: number;     // APK GeneralSettings.Id
+  level: number;         // Level of the skill for that general
+  promotionId?: number;  // Present when the skill is unlocked via promotion
+}
+
+export interface SkillCatalogEntry {
+  slug: string;
+  type: number;               // APK skill type id
+  name: string;               // English canonical name
+  series: number;             // 0 = signature, 1..5 = learnable series
+  seriesLabel: string;
+  /** Template with placeholder rendered as `X` — the generic description. */
+  descriptionTemplate: string;
+  icon: string | null;
+  maxLevel: number;
+  progression: SkillProgression[];
+  usage: {
+    base: SkillUsageEntry[];        // generals who carry it by default
+    promoted: SkillUsageEntry[];    // generals who unlock it via training
+  };
+  varyingField: "SkillEffect" | "ActivatesChance";
+}
+
+export interface SkillIndexItem {
+  slug: string;
+  type: number;
+  name: string;
+  series: number;
+  seriesLabel: string;
+  seriesSlug: string;
+  icon: string | null;
+  shortDesc: string;
+  maxLevel: number;
+}
+
+export interface SkillSeriesMeta {
+  series: number;
+  slug: string;
+  label: string;
+  summary: string;
+  icon: string;
+  count: number;
+}
+
+export interface SkillIndex {
+  series: SkillSeriesMeta[];
+  skills: SkillIndexItem[];
 }
 
 /**

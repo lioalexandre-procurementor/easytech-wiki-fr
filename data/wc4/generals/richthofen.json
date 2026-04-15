@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Air Raid Cover",
-      "desc": "When commanding an airforce unit to attack, there is X% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "desc": "When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_119.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Air Raid Cover",
+      "skillSlug": "air-raid-cover",
+      "skillType": 119,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "32% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 4
     },
     {
       "slot": 3,
       "name": "Carpet Bombing",
-      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "desc": "Damage +24% to the defending forces in the city when air-raiding",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_41.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Cover",
-      "desc": "12% chance to dodge X% damage from the enemy",
+      "desc": "12% chance to dodge 36% damage from the enemy",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_32.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Cover",
+      "skillSlug": "cover",
+      "skillType": 32,
+      "skillLevel": 2
     },
     {
       "slot": 5,
       "name": "Rumor",
-      "desc": "X% chance to reduce the morale of the enemy when attacking",
+      "desc": "30% chance to reduce the morale of the enemy when attacking",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_42.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 2
     }
   ],
   "attributes": {

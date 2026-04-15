@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Fighting Spirit",
-      "desc": "After commanding a troop to counterattack, +X HP to yourself and surrounding friendly troops.",
+      "desc": "After commanding a troop to counterattack, +16 HP to yourself and surrounding friendly troops.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_132.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fighting Spirit",
+      "skillSlug": "fighting-spirit",
+      "skillType": 132,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "24% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Explosives",
-      "desc": "Damage +X% when attacking the stronghold units",
+      "desc": "Damage +16% when attacking the stronghold units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 2
     },
     {
       "slot": 4,

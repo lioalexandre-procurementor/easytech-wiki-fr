@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Armored Assault",
-      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "desc": "Deal +12% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Blitzkrieg",
-      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "desc": "12% chance that the enemy will not fight back when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_34.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Inspiration",
-      "desc": "30% chance to boost morale after attacking. Damage +X% when morale is high",
+      "desc": "30% chance to boost morale after attacking. Damage +6% when morale is high",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_110.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inspiration",
+      "skillSlug": "inspiration",
+      "skillType": 110,
+      "skillLevel": 2
     },
     {
       "slot": 4,

@@ -1,0 +1,84 @@
+{
+  "slug": "positional-warfare",
+  "type": 143,
+  "name": "Positional Warfare",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding armored units in range of your own or an ally's territory, -X% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+  "icon": "/img/wc4/skills/general_skill_143.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3431,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -15% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+    },
+    {
+      "level": 2,
+      "skillId": 3432,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -20% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+    },
+    {
+      "level": 3,
+      "skillId": 3433,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -25% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+    },
+    {
+      "level": 4,
+      "skillId": 3434,
+      "effect": 30,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -30% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+    },
+    {
+      "level": 5,
+      "skillId": 3435,
+      "effect": 35,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25342,
+        "level": 5
+      },
+      {
+        "generalId": 25379,
+        "level": 1
+      },
+      {
+        "generalId": 25399,
+        "level": 5
+      },
+      {
+        "generalId": 25406,
+        "level": 5
+      },
+      {
+        "generalId": 25454,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1052,
+        "level": 5,
+        "promotionId": 10522
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

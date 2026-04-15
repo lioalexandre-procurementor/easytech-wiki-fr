@@ -1,0 +1,98 @@
+{
+  "slug": "air-superiority",
+  "type": 111,
+  "name": "Air Superiority",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "X% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+  "icon": "/img/wc4/skills/general_skill_111.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3111,
+      "effect": 20,
+      "chance": 20,
+      "costMedal": 160,
+      "renderedDesc": "20% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+    },
+    {
+      "level": 2,
+      "skillId": 3112,
+      "effect": 20,
+      "chance": 40,
+      "costMedal": 240,
+      "renderedDesc": "40% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+    },
+    {
+      "level": 3,
+      "skillId": 3113,
+      "effect": 20,
+      "chance": 60,
+      "costMedal": 480,
+      "renderedDesc": "60% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+    },
+    {
+      "level": 4,
+      "skillId": 3114,
+      "effect": 20,
+      "chance": 80,
+      "costMedal": 640,
+      "renderedDesc": "80% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+    },
+    {
+      "level": 5,
+      "skillId": 3115,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "100% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1073,
+        "level": 3
+      },
+      {
+        "generalId": 22102,
+        "level": 3
+      },
+      {
+        "generalId": 25207,
+        "level": 5
+      },
+      {
+        "generalId": 25241,
+        "level": 5
+      },
+      {
+        "generalId": 25282,
+        "level": 1
+      },
+      {
+        "generalId": 25286,
+        "level": 1
+      },
+      {
+        "generalId": 25358,
+        "level": 1
+      },
+      {
+        "generalId": 25401,
+        "level": 5
+      },
+      {
+        "generalId": 25459,
+        "level": 5
+      },
+      {
+        "generalId": 25471,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

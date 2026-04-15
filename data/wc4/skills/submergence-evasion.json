@@ -1,0 +1,62 @@
+{
+  "slug": "submergence-evasion",
+  "type": 175,
+  "name": "Submergence Evasion",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Submarine units under command receive X% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+  "icon": "/img/wc4/skills/general_skill_175.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3751,
+      "effect": 7,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "Submarine units under command receive 7% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+    },
+    {
+      "level": 2,
+      "skillId": 3752,
+      "effect": 14,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "Submarine units under command receive 14% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+    },
+    {
+      "level": 3,
+      "skillId": 3753,
+      "effect": 21,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "Submarine units under command receive 21% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+    },
+    {
+      "level": 4,
+      "skillId": 3754,
+      "effect": 28,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "Submarine units under command receive 28% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+    },
+    {
+      "level": 5,
+      "skillId": 3755,
+      "effect": 35,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "Submarine units under command receive 35% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1113,
+        "level": 3
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

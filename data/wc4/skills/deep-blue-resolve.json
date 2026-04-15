@@ -1,0 +1,68 @@
+{
+  "slug": "deep-blue-resolve",
+  "type": 163,
+  "name": "Deep Blue Resolve",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "While commanding ship units, there is a X% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
+  "icon": "/img/wc4/skills/general_skill_163.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3631,
+      "effect": 150,
+      "chance": 16,
+      "costMedal": 150,
+      "renderedDesc": "While commanding ship units, there is a 16% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+    },
+    {
+      "level": 2,
+      "skillId": 3632,
+      "effect": 150,
+      "chance": 32,
+      "costMedal": 250,
+      "renderedDesc": "While commanding ship units, there is a 32% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+    },
+    {
+      "level": 3,
+      "skillId": 3633,
+      "effect": 150,
+      "chance": 48,
+      "costMedal": 350,
+      "renderedDesc": "While commanding ship units, there is a 48% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+    },
+    {
+      "level": 4,
+      "skillId": 3634,
+      "effect": 150,
+      "chance": 64,
+      "costMedal": 450,
+      "renderedDesc": "While commanding ship units, there is a 64% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+    },
+    {
+      "level": 5,
+      "skillId": 3635,
+      "effect": 150,
+      "chance": 80,
+      "costMedal": 550,
+      "renderedDesc": "While commanding ship units, there is a 80% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25480,
+        "level": 4
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1032,
+        "level": 4,
+        "promotionId": 10321
+      }
+    ]
+  },
+  "varyingField": "ActivatesChance"
+}

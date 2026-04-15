@@ -1,0 +1,579 @@
+{
+  "slug": "rumor",
+  "type": 42,
+  "name": "Rumor",
+  "series": 4,
+  "seriesLabel": "Défense et camouflage",
+  "descriptionTemplate": "X% chance to reduce the morale of the enemy when attacking",
+  "icon": "/img/wc4/skills/general_skill_42.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1421,
+      "effect": 100,
+      "chance": 15,
+      "costMedal": 120,
+      "renderedDesc": "15% chance to reduce the morale of the enemy when attacking"
+    },
+    {
+      "level": 2,
+      "skillId": 1422,
+      "effect": 100,
+      "chance": 30,
+      "costMedal": 170,
+      "renderedDesc": "30% chance to reduce the morale of the enemy when attacking"
+    },
+    {
+      "level": 3,
+      "skillId": 1423,
+      "effect": 100,
+      "chance": 45,
+      "costMedal": 250,
+      "renderedDesc": "45% chance to reduce the morale of the enemy when attacking"
+    },
+    {
+      "level": 4,
+      "skillId": 1424,
+      "effect": 100,
+      "chance": 60,
+      "costMedal": 350,
+      "renderedDesc": "60% chance to reduce the morale of the enemy when attacking"
+    },
+    {
+      "level": 5,
+      "skillId": 1425,
+      "effect": 100,
+      "chance": 75,
+      "costMedal": 450,
+      "renderedDesc": "75% chance to reduce the morale of the enemy when attacking"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1011,
+        "level": 1
+      },
+      {
+        "generalId": 1017,
+        "level": 1
+      },
+      {
+        "generalId": 1035,
+        "level": 4
+      },
+      {
+        "generalId": 1041,
+        "level": 1
+      },
+      {
+        "generalId": 1044,
+        "level": 1
+      },
+      {
+        "generalId": 1048,
+        "level": 1
+      },
+      {
+        "generalId": 1080,
+        "level": 2
+      },
+      {
+        "generalId": 21033,
+        "level": 1
+      },
+      {
+        "generalId": 21041,
+        "level": 1
+      },
+      {
+        "generalId": 21061,
+        "level": 1
+      },
+      {
+        "generalId": 21072,
+        "level": 1
+      },
+      {
+        "generalId": 21077,
+        "level": 1
+      },
+      {
+        "generalId": 21083,
+        "level": 1
+      },
+      {
+        "generalId": 21091,
+        "level": 1
+      },
+      {
+        "generalId": 21106,
+        "level": 1
+      },
+      {
+        "generalId": 21111,
+        "level": 1
+      },
+      {
+        "generalId": 21127,
+        "level": 4
+      },
+      {
+        "generalId": 20034,
+        "level": 1
+      },
+      {
+        "generalId": 20037,
+        "level": 1
+      },
+      {
+        "generalId": 20039,
+        "level": 1
+      },
+      {
+        "generalId": 20045,
+        "level": 1
+      },
+      {
+        "generalId": 20088,
+        "level": 1
+      },
+      {
+        "generalId": 20112,
+        "level": 1
+      },
+      {
+        "generalId": 20128,
+        "level": 1
+      },
+      {
+        "generalId": 20131,
+        "level": 1
+      },
+      {
+        "generalId": 20211,
+        "level": 1
+      },
+      {
+        "generalId": 20218,
+        "level": 1
+      },
+      {
+        "generalId": 20221,
+        "level": 1
+      },
+      {
+        "generalId": 20285,
+        "level": 1
+      },
+      {
+        "generalId": 20288,
+        "level": 1
+      },
+      {
+        "generalId": 20290,
+        "level": 1
+      },
+      {
+        "generalId": 22001,
+        "level": 1
+      },
+      {
+        "generalId": 22011,
+        "level": 1
+      },
+      {
+        "generalId": 22029,
+        "level": 1
+      },
+      {
+        "generalId": 22035,
+        "level": 1
+      },
+      {
+        "generalId": 22041,
+        "level": 1
+      },
+      {
+        "generalId": 22042,
+        "level": 1
+      },
+      {
+        "generalId": 22044,
+        "level": 1
+      },
+      {
+        "generalId": 22053,
+        "level": 4
+      },
+      {
+        "generalId": 22059,
+        "level": 1
+      },
+      {
+        "generalId": 22062,
+        "level": 1
+      },
+      {
+        "generalId": 22066,
+        "level": 1
+      },
+      {
+        "generalId": 22076,
+        "level": 1
+      },
+      {
+        "generalId": 22081,
+        "level": 1
+      },
+      {
+        "generalId": 22089,
+        "level": 1
+      },
+      {
+        "generalId": 22091,
+        "level": 1
+      },
+      {
+        "generalId": 22093,
+        "level": 1
+      },
+      {
+        "generalId": 22100,
+        "level": 2
+      },
+      {
+        "generalId": 22110,
+        "level": 4
+      },
+      {
+        "generalId": 22111,
+        "level": 4
+      },
+      {
+        "generalId": 22113,
+        "level": 5
+      },
+      {
+        "generalId": 22116,
+        "level": 1
+      },
+      {
+        "generalId": 22117,
+        "level": 1
+      },
+      {
+        "generalId": 22132,
+        "level": 1
+      },
+      {
+        "generalId": 22135,
+        "level": 1
+      },
+      {
+        "generalId": 22136,
+        "level": 1
+      },
+      {
+        "generalId": 29011,
+        "level": 1
+      },
+      {
+        "generalId": 29017,
+        "level": 1
+      },
+      {
+        "generalId": 29035,
+        "level": 4
+      },
+      {
+        "generalId": 29041,
+        "level": 1
+      },
+      {
+        "generalId": 29044,
+        "level": 1
+      },
+      {
+        "generalId": 29048,
+        "level": 1
+      },
+      {
+        "generalId": 29136,
+        "level": 2
+      },
+      {
+        "generalId": 29156,
+        "level": 5
+      },
+      {
+        "generalId": 29157,
+        "level": 5
+      },
+      {
+        "generalId": 29158,
+        "level": 5
+      },
+      {
+        "generalId": 29160,
+        "level": 4
+      },
+      {
+        "generalId": 29161,
+        "level": 4
+      },
+      {
+        "generalId": 29162,
+        "level": 4
+      },
+      {
+        "generalId": 29163,
+        "level": 4
+      },
+      {
+        "generalId": 29164,
+        "level": 4
+      },
+      {
+        "generalId": 29165,
+        "level": 4
+      },
+      {
+        "generalId": 25013,
+        "level": 1
+      },
+      {
+        "generalId": 25039,
+        "level": 1
+      },
+      {
+        "generalId": 25092,
+        "level": 1
+      },
+      {
+        "generalId": 25101,
+        "level": 1
+      },
+      {
+        "generalId": 25116,
+        "level": 1
+      },
+      {
+        "generalId": 25130,
+        "level": 1
+      },
+      {
+        "generalId": 25136,
+        "level": 1
+      },
+      {
+        "generalId": 25153,
+        "level": 4
+      },
+      {
+        "generalId": 25157,
+        "level": 1
+      },
+      {
+        "generalId": 25160,
+        "level": 1
+      },
+      {
+        "generalId": 25164,
+        "level": 1
+      },
+      {
+        "generalId": 25173,
+        "level": 1
+      },
+      {
+        "generalId": 25194,
+        "level": 2
+      },
+      {
+        "generalId": 25229,
+        "level": 5
+      },
+      {
+        "generalId": 25238,
+        "level": 1
+      },
+      {
+        "generalId": 25248,
+        "level": 1
+      },
+      {
+        "generalId": 25253,
+        "level": 4
+      },
+      {
+        "generalId": 25277,
+        "level": 1
+      },
+      {
+        "generalId": 25283,
+        "level": 1
+      },
+      {
+        "generalId": 25284,
+        "level": 1
+      },
+      {
+        "generalId": 25293,
+        "level": 5
+      },
+      {
+        "generalId": 25296,
+        "level": 2
+      },
+      {
+        "generalId": 25297,
+        "level": 1
+      },
+      {
+        "generalId": 25308,
+        "level": 1
+      },
+      {
+        "generalId": 25323,
+        "level": 2
+      },
+      {
+        "generalId": 25327,
+        "level": 1
+      },
+      {
+        "generalId": 25337,
+        "level": 3
+      },
+      {
+        "generalId": 25350,
+        "level": 3
+      },
+      {
+        "generalId": 25362,
+        "level": 1
+      },
+      {
+        "generalId": 25366,
+        "level": 1
+      },
+      {
+        "generalId": 25371,
+        "level": 4
+      },
+      {
+        "generalId": 25374,
+        "level": 4
+      },
+      {
+        "generalId": 25377,
+        "level": 1
+      },
+      {
+        "generalId": 25379,
+        "level": 3
+      },
+      {
+        "generalId": 25395,
+        "level": 3
+      },
+      {
+        "generalId": 25404,
+        "level": 5
+      },
+      {
+        "generalId": 25411,
+        "level": 1
+      },
+      {
+        "generalId": 25412,
+        "level": 1
+      },
+      {
+        "generalId": 25415,
+        "level": 2
+      },
+      {
+        "generalId": 25441,
+        "level": 1
+      },
+      {
+        "generalId": 25447,
+        "level": 1
+      },
+      {
+        "generalId": 25448,
+        "level": 1
+      },
+      {
+        "generalId": 25464,
+        "level": 1
+      },
+      {
+        "generalId": 25465,
+        "level": 1
+      },
+      {
+        "generalId": 25470,
+        "level": 1
+      },
+      {
+        "generalId": 25472,
+        "level": 1
+      },
+      {
+        "generalId": 25481,
+        "level": 1
+      },
+      {
+        "generalId": 25477,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1041,
+        "level": 1,
+        "promotionId": 10411
+      },
+      {
+        "generalId": 1041,
+        "level": 1,
+        "promotionId": 10412
+      },
+      {
+        "generalId": 1041,
+        "level": 1,
+        "promotionId": 10413
+      },
+      {
+        "generalId": 1017,
+        "level": 1,
+        "promotionId": 10171
+      },
+      {
+        "generalId": 1017,
+        "level": 1,
+        "promotionId": 10172
+      },
+      {
+        "generalId": 1011,
+        "level": 1,
+        "promotionId": 10111
+      },
+      {
+        "generalId": 1011,
+        "level": 1,
+        "promotionId": 10112
+      },
+      {
+        "generalId": 1011,
+        "level": 1,
+        "promotionId": 10113
+      }
+    ]
+  },
+  "varyingField": "ActivatesChance"
+}

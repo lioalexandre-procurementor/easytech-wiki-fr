@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Navigation",
-      "desc": "When commanding a naval unit to attack, there is X% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "desc": "When commanding a naval unit to attack, there is 100% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_128.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Navigation",
+      "skillSlug": "navigation",
+      "skillType": 128,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Leadership",
-      "desc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +X.",
+      "desc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +16.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_124.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Leadership",
+      "skillSlug": "leadership",
+      "skillType": 124,
+      "skillLevel": 4
     },
     {
       "slot": 3,
       "name": "Fleet Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "desc": "32% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 4
     },
     {
       "slot": 4,
       "name": "Naval Assault",
-      "desc": "Damage +X% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "desc": "Damage +24% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_112.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Naval Assault",
+      "skillSlug": "naval-assault",
+      "skillType": 112,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Early Warning",
-      "desc": "X% chance to evade 20% damage when commanding ship units",
+      "desc": "60% chance to evade 20% damage when commanding ship units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_109.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Early Warning",
+      "skillSlug": "early-warning",
+      "skillType": 109,
+      "skillLevel": 3
     }
   ],
   "attributes": {

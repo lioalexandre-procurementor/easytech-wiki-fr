@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "24% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Replacement",
-      "desc": "Reinforce damaged infantry units: each round HP +X",
+      "desc": "Reinforce damaged infantry units: each round HP +3",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_15.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Replacement",
+      "skillSlug": "replacement",
+      "skillType": 15,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Guerrilla",
-      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "desc": "24% chance that the enemy will not fight back when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_33.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 2
     }
   ],
   "attributes": {

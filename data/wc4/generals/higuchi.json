@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Counter",
-      "desc": "When the commanding force is attacked and receives damage, the enemy also takes X% of that damage.(Each attack only takes effect once)",
+      "desc": "When the commanding force is attacked and receives damage, the enemy also takes 10% of that damage.(Each attack only takes effect once)",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_125.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Counter",
+      "skillSlug": "counter",
+      "skillType": 125,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "24% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +12% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 2
     },
     {
       "slot": 4,

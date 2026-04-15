@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Star Fall",
-      "desc": "When commanding troops to attack, there is a X% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%.",
+      "desc": "When commanding troops to attack, there is a 60% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_177.webp",
+      "icon": "/img/wc4/skills/general_skill_177.png",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Star Fall",
+      "skillSlug": "star-fall",
+      "skillType": 177,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Inescapable Net",
-      "desc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by X% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
+      "desc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by 30% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_178.webp",
+      "icon": "/img/wc4/skills/general_skill_178.png",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inescapable Net",
+      "skillSlug": "inescapable-net",
+      "skillType": 178,
+      "skillLevel": 5
     },
     {
       "slot": 3,
       "name": "System-of-Systems Operations",
-      "desc": "When commanding troops to attack and carry out airstrikes, there is a X% chance of dealing a critical attack.",
+      "desc": "When commanding troops to attack and carry out airstrikes, there is a 36% chance of dealing a critical attack.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_179.webp",
+      "icon": "/img/wc4/skills/general_skill_179.png",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "System-of-Systems Operations",
+      "skillSlug": "system-of-systems-operations",
+      "skillType": 179,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Strategic Attack",
-      "desc": "After commanding a unit to attack, if the target is not annihilated, there is X% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "desc": "After commanding a unit to attack, if the target is not annihilated, there is 60% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_116.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Strategic Attack",
+      "skillSlug": "strategic-attack",
+      "skillType": 116,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Inferior Victory",
-      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "desc": "Damage is increased by 16% when the number of troop formations under command is 1.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_131.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inferior Victory",
+      "skillSlug": "inferior-victory",
+      "skillType": 131,
+      "skillLevel": 4
     }
   ],
   "attributes": {

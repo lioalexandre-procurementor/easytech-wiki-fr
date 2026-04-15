@@ -1,0 +1,62 @@
+{
+  "slug": "armed-neutrality",
+  "type": 159,
+  "name": "Armed Neutrality",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by X%.",
+  "icon": "/img/wc4/skills/general_skill_159.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3591,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 100,
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 8%."
+    },
+    {
+      "level": 2,
+      "skillId": 3592,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 16%."
+    },
+    {
+      "level": 3,
+      "skillId": 3593,
+      "effect": 24,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 24%."
+    },
+    {
+      "level": 4,
+      "skillId": 3594,
+      "effect": 32,
+      "chance": 100,
+      "costMedal": 320,
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 32%."
+    },
+    {
+      "level": 5,
+      "skillId": 3595,
+      "effect": 40,
+      "chance": 100,
+      "costMedal": 400,
+      "renderedDesc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by 40%."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1112,
+        "level": 3
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

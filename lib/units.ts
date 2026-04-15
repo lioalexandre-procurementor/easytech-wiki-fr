@@ -8,10 +8,14 @@ import type {
   GeneralData,
   GeneralCategory,
   LearnableSkill,
+  SkillCatalogEntry,
+  SkillIndex,
+  SkillIndexItem,
 } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "data", "wc4", "elite-units");
 const GENERALS_DIR = path.join(process.cwd(), "data", "wc4", "generals");
+const SKILLS_DIR = path.join(process.cwd(), "data", "wc4", "skills");
 const LEARNABLE_FILE = path.join(
   process.cwd(),
   "data",
@@ -113,6 +117,65 @@ export function getCandidatesForGeneralSlot(
     if (!ls.appliesTo || ls.appliesTo.length === 0) return true;
     return ls.appliesTo.includes(general.category);
   });
+}
+
+// ========== Skill catalog (APK-extracted) ==========
+
+let _skillIndexCache: SkillIndex | null = null;
+
+export function getSkillIndex(): SkillIndex {
+  if (_skillIndexCache) return _skillIndexCache;
+  const file = path.join(SKILLS_DIR, "_index.json");
+  if (!fs.existsSync(file)) return { series: [], skills: [] };
+  _skillIndexCache = JSON.parse(fs.readFileSync(file, "utf8")) as SkillIndex;
+  return _skillIndexCache;
+}
+
+export function getAllSkillIndexItems(): SkillIndexItem[] {
+  return getSkillIndex().skills;
+}
+
+export function getSkillsBySeries(series: number): SkillIndexItem[] {
+  return getSkillIndex().skills.filter((s) => s.series === series);
+}
+
+export function getSkill(slug: string): SkillCatalogEntry | null {
+  const file = path.join(SKILLS_DIR, `${slug}.json`);
+  if (!fs.existsSync(file)) return null;
+  return JSON.parse(fs.readFileSync(file, "utf8")) as SkillCatalogEntry;
+}
+
+export function getAllSkillSlugs(): string[] {
+  if (!fs.existsSync(SKILLS_DIR)) return [];
+  return fs
+    .readdirSync(SKILLS_DIR)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+    .map((f) => f.replace(/\.json$/, ""));
+}
+
+/** Look up a skill by its APK type id (0..179). */
+export function getSkillByType(type: number): SkillCatalogEntry | null {
+  const item = getSkillIndex().skills.find((s) => s.type === type);
+  if (!item) return null;
+  return getSkill(item.slug);
+}
+
+/**
+ * Build a lookup from every known APK id (apkId or generalIdGame) to the
+ * corresponding GeneralData. Used to resolve skill usage entries back to
+ * pages on the wiki.
+ */
+let _generalByApkIdCache: Map<number, GeneralData> | null = null;
+
+export function getGeneralByApkId(id: number): GeneralData | null {
+  if (!_generalByApkIdCache) {
+    _generalByApkIdCache = new Map();
+    for (const g of getAllGenerals()) {
+      if (g.apkId != null) _generalByApkIdCache.set(g.apkId, g);
+      if (g.generalIdGame != null) _generalByApkIdCache.set(g.generalIdGame, g);
+    }
+  }
+  return _generalByApkIdCache.get(id) ?? null;
 }
 
 // ========== Metadata ==========

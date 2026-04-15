@@ -13,53 +13,73 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Commandant blindé mystique",
-      "desc": "Bonus sur chars Scorpion.",
+      "name": "Aviation Expert",
+      "desc": "Consumption of resources when attacking with air force -50%",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_57.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Aviation Expert",
+      "skillSlug": "aviation-expert",
+      "skillType": 57,
+      "skillLevel": 5
     },
     {
       "slot": 2,
-      "name": "Défense du Scorpion",
-      "desc": "Réduction de dégâts sur unités alliées.",
+      "name": "Missile Expert",
+      "desc": "Consumption of resources When attacking with missiles -50%",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_58.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Missile Expert",
+      "skillSlug": "missile-expert",
+      "skillType": 58,
+      "skillLevel": 5
     },
     {
       "slot": 3,
-      "name": "Assaut mystique",
-      "desc": "Vitesse offensive accrue.",
+      "name": "Fleet Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 3
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Emplacement apprenable — à confirmer.",
+      "name": "Airforce Leader",
+      "desc": "32% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": true,
-      "replaceableReason": "À confirmer"
+      "replaceableReason": "À confirmer",
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 4
     },
     {
       "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "name": "Cover",
+      "desc": "12% chance to dodge 54% damage from the enemy",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_32.webp",
       "replaceable": true,
-      "replaceableReason": "À confirmer"
+      "replaceableReason": "À confirmer",
+      "nameEn": "Cover",
+      "skillSlug": "cover",
+      "skillType": 32,
+      "skillLevel": 3
     }
   ],
   "attributes": {

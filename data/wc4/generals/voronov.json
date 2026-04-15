@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Artillery Training Master",
-      "desc": "Increase the HP recovery converted from dealt damage of X% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "desc": "Increase the HP recovery converted from dealt damage of 3% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_136.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Training Master",
+      "skillSlug": "artillery-training-master",
+      "skillType": 136,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Hold Fast",
-      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_108.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Hold Fast",
+      "skillSlug": "hold-fast",
+      "skillType": 108,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +24% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 4
     },
     {
       "slot": 4,
       "name": "Artillery Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "desc": "24% chance to give the enemy a critical attack when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Leader",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +18% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 3
     }
   ],
   "attributes": {

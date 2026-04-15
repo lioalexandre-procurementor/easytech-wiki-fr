@@ -1,0 +1,76 @@
+{
+  "slug": "unyielding-and-self-improving",
+  "type": 154,
+  "name": "Unyielding And Self-improving",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Economic and industrial income +X when the commanding force with no enemy troops at 1 square around.",
+  "icon": "/img/wc4/skills/general_skill_154.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3541,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Economic and industrial income +10 when the commanding force with no enemy troops at 1 square around."
+    },
+    {
+      "level": 2,
+      "skillId": 3542,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Economic and industrial income +20 when the commanding force with no enemy troops at 1 square around."
+    },
+    {
+      "level": 3,
+      "skillId": 3543,
+      "effect": 30,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "Economic and industrial income +30 when the commanding force with no enemy troops at 1 square around."
+    },
+    {
+      "level": 4,
+      "skillId": 3544,
+      "effect": 40,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "Economic and industrial income +40 when the commanding force with no enemy troops at 1 square around."
+    },
+    {
+      "level": 5,
+      "skillId": 3545,
+      "effect": 50,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25383,
+        "level": 5
+      },
+      {
+        "generalId": 25403,
+        "level": 5
+      },
+      {
+        "generalId": 25443,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1029,
+        "level": 5,
+        "promotionId": 10293
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

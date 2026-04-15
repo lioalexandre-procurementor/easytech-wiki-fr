@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Night Raid",
-      "desc": "X% chance the enemy will not fight back when commanding ship units.",
+      "desc": "24% chance the enemy will not fight back when commanding ship units.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_123.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Night Raid",
+      "skillSlug": "night-raid",
+      "skillType": 123,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Fleet Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "desc": "24% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Wolfpack",
-      "desc": "Attack of friendly surrounding ship units +X",
+      "desc": "Attack of friendly surrounding ship units +12",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_27.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Wolfpack",
+      "skillSlug": "wolfpack",
+      "skillType": 27,
+      "skillLevel": 3
     },
     {
       "slot": 4,

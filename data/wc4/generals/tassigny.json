@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Economic Expert",
-      "desc": "The economic output of the city +X",
+      "desc": "The economic output of the city +10",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_11.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Economic Expert",
+      "skillSlug": "economic-expert",
+      "skillType": 11,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Cover",
-      "desc": "12% chance to dodge X% damage from the enemy",
+      "desc": "12% chance to dodge 18% damage from the enemy",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_32.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Cover",
+      "skillSlug": "cover",
+      "skillType": 32,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Architecture",
-      "desc": "Fix the city: each round City HP +X",
+      "desc": "Fix the city: each round City HP +18",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_14.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Architecture",
+      "skillSlug": "architecture",
+      "skillType": 14,
+      "skillLevel": 3
     }
   ],
   "attributes": {

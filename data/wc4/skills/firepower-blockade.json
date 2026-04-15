@@ -1,0 +1,104 @@
+{
+  "slug": "firepower-blockade",
+  "type": 140,
+  "name": "Firepower Blockade",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When your attack causes the morale of the enemy to be low or diminished, there is X% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)",
+  "icon": "/img/wc4/skills/general_skill_140.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3401,
+      "effect": 16,
+      "chance": 16,
+      "costMedal": 150,
+      "renderedDesc": "When your attack causes the morale of the enemy to be low or diminished, there is 16% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)"
+    },
+    {
+      "level": 2,
+      "skillId": 3402,
+      "effect": 32,
+      "chance": 32,
+      "costMedal": 250,
+      "renderedDesc": "When your attack causes the morale of the enemy to be low or diminished, there is 32% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)"
+    },
+    {
+      "level": 3,
+      "skillId": 3403,
+      "effect": 48,
+      "chance": 48,
+      "costMedal": 350,
+      "renderedDesc": "When your attack causes the morale of the enemy to be low or diminished, there is 48% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)"
+    },
+    {
+      "level": 4,
+      "skillId": 3404,
+      "effect": 64,
+      "chance": 64,
+      "costMedal": 450,
+      "renderedDesc": "When your attack causes the morale of the enemy to be low or diminished, there is 64% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)"
+    },
+    {
+      "level": 5,
+      "skillId": 3405,
+      "effect": 80,
+      "chance": 80,
+      "costMedal": 550,
+      "renderedDesc": "When your attack causes the morale of the enemy to be low or diminished, there is 80% probability to attack again. When your attack causes the morale of the enemy to go into chaos, there is 100% probability to attack again (inactive for enemies already in chaos)"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 22119,
+        "level": 1
+      },
+      {
+        "generalId": 22136,
+        "level": 1
+      },
+      {
+        "generalId": 25337,
+        "level": 4
+      },
+      {
+        "generalId": 25350,
+        "level": 4
+      },
+      {
+        "generalId": 25360,
+        "level": 1
+      },
+      {
+        "generalId": 25362,
+        "level": 1
+      },
+      {
+        "generalId": 25366,
+        "level": 1
+      },
+      {
+        "generalId": 25377,
+        "level": 1
+      },
+      {
+        "generalId": 25441,
+        "level": 1
+      },
+      {
+        "generalId": 25481,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1041,
+        "level": 5,
+        "promotionId": 10413
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

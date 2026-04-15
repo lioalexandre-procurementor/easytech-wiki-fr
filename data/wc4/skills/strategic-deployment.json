@@ -1,0 +1,68 @@
+{
+  "slug": "strategic-deployment",
+  "type": 165,
+  "name": "Strategic Deployment",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "After commanding infantry to attack, recover HP equal to X% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.",
+  "icon": "/img/wc4/skills/general_skill_165.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3651,
+      "effect": 3,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 3% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+    },
+    {
+      "level": 2,
+      "skillId": 3652,
+      "effect": 6,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 6% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+    },
+    {
+      "level": 3,
+      "skillId": 3653,
+      "effect": 9,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 9% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+    },
+    {
+      "level": 4,
+      "skillId": 3654,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 12% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+    },
+    {
+      "level": 5,
+      "skillId": 3655,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "After commanding infantry to attack, recover HP equal to 15% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25475,
+        "level": 4
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1015,
+        "level": 4,
+        "promotionId": 10152
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

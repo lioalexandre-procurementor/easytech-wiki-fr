@@ -1,0 +1,106 @@
+{
+  "slug": "deterrence",
+  "type": 106,
+  "name": "Deterrence",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by X%, effective for one turn",
+  "icon": "/img/wc4/skills/general_skill_106.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3061,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 8%, effective for one turn"
+    },
+    {
+      "level": 2,
+      "skillId": 3062,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 16%, effective for one turn"
+    },
+    {
+      "level": 3,
+      "skillId": 3063,
+      "effect": 24,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 24%, effective for one turn"
+    },
+    {
+      "level": 4,
+      "skillId": 3064,
+      "effect": 32,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 32%, effective for one turn"
+    },
+    {
+      "level": 5,
+      "skillId": 3065,
+      "effect": 40,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 40%, effective for one turn"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1060,
+        "level": 1
+      },
+      {
+        "generalId": 22125,
+        "level": 1
+      },
+      {
+        "generalId": 22129,
+        "level": 1
+      },
+      {
+        "generalId": 22134,
+        "level": 1
+      },
+      {
+        "generalId": 25180,
+        "level": 5
+      },
+      {
+        "generalId": 25230,
+        "level": 5
+      },
+      {
+        "generalId": 25244,
+        "level": 5
+      },
+      {
+        "generalId": 25251,
+        "level": 5
+      },
+      {
+        "generalId": 25303,
+        "level": 1
+      },
+      {
+        "generalId": 25335,
+        "level": 5
+      },
+      {
+        "generalId": 25425,
+        "level": 1
+      },
+      {
+        "generalId": 25431,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

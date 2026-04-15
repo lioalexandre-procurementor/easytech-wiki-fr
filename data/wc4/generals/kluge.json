@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Artillery Tactic Expert",
-      "desc": "When commanding artillery units to attack, ignore enemy units X% defense",
+      "desc": "When commanding artillery units to attack, ignore enemy units 100% defense",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_102.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Tactic Expert",
+      "skillSlug": "artillery-tactic-expert",
+      "skillType": 102,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Hold Fast",
-      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_108.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Hold Fast",
+      "skillSlug": "hold-fast",
+      "skillType": 108,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Artillery Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "desc": "24% chance to give the enemy a critical attack when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Leader",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +18% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Explosives",
-      "desc": "Damage +X% when attacking the stronghold units",
+      "desc": "Damage +24% when attacking the stronghold units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 3
     }
   ],
   "attributes": {

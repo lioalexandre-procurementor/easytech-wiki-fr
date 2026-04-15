@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Strategic Attack",
-      "desc": "After commanding a unit to attack, if the target is not annihilated, there is X% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "desc": "After commanding a unit to attack, if the target is not annihilated, there is 60% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_116.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Strategic Attack",
+      "skillSlug": "strategic-attack",
+      "skillType": 116,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "16% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Guerrilla",
-      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "desc": "36% chance that the enemy will not fight back when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_33.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 3
     },
     {
       "slot": 4,

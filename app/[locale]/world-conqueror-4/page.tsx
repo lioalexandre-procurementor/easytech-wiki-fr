@@ -42,6 +42,7 @@ export default function WC4Hub({ params }: { params: { locale: string } }) {
             <SidebarLink href="/world-conqueror-4/unites-elite">🏅 Unités d'élite</SidebarLink>
             <SidebarLink href="/world-conqueror-4/empire-du-scorpion">🦂 Empire du Scorpion</SidebarLink>
             <SidebarLink href="/world-conqueror-4/generaux">👨‍✈️ Généraux</SidebarLink>
+            <SidebarLink href="/world-conqueror-4/competences">⚡ Compétences</SidebarLink>
             <SidebarLink href="#">🔬 Technologies</SidebarLink>
             <SidebarLink href="#">🗺 Scénarios</SidebarLink>
             <SidebarLink href="#">🌍 Conquêtes</SidebarLink>

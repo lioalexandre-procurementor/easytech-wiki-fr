@@ -1,0 +1,269 @@
+{
+  "slug": "desert-fighting",
+  "type": 10,
+  "name": "Desert Fighting",
+  "series": 1,
+  "seriesLabel": "Tactiques de terrain",
+  "descriptionTemplate": "Damage to the enemy +X when fighting in the desert",
+  "icon": "/img/wc4/skills/general_skill_10.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1101,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 100,
+      "renderedDesc": "Damage to the enemy +5 when fighting in the desert"
+    },
+    {
+      "level": 2,
+      "skillId": 1102,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Damage to the enemy +10 when fighting in the desert"
+    },
+    {
+      "level": 3,
+      "skillId": 1103,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Damage to the enemy +15 when fighting in the desert"
+    },
+    {
+      "level": 4,
+      "skillId": 1104,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 320,
+      "renderedDesc": "Damage to the enemy +20 when fighting in the desert"
+    },
+    {
+      "level": 5,
+      "skillId": 1105,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 400,
+      "renderedDesc": "Damage to the enemy +25 when fighting in the desert"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1010,
+        "level": 1
+      },
+      {
+        "generalId": 1051,
+        "level": 1
+      },
+      {
+        "generalId": 1054,
+        "level": 1
+      },
+      {
+        "generalId": 1055,
+        "level": 3
+      },
+      {
+        "generalId": 1082,
+        "level": 2
+      },
+      {
+        "generalId": 1088,
+        "level": 4
+      },
+      {
+        "generalId": 21036,
+        "level": 1
+      },
+      {
+        "generalId": 21081,
+        "level": 1
+      },
+      {
+        "generalId": 21085,
+        "level": 2
+      },
+      {
+        "generalId": 21143,
+        "level": 2
+      },
+      {
+        "generalId": 20035,
+        "level": 1
+      },
+      {
+        "generalId": 20083,
+        "level": 1
+      },
+      {
+        "generalId": 20814,
+        "level": 1
+      },
+      {
+        "generalId": 20090,
+        "level": 1
+      },
+      {
+        "generalId": 20135,
+        "level": 1
+      },
+      {
+        "generalId": 20241,
+        "level": 3
+      },
+      {
+        "generalId": 20243,
+        "level": 1
+      },
+      {
+        "generalId": 20246,
+        "level": 1
+      },
+      {
+        "generalId": 22023,
+        "level": 2
+      },
+      {
+        "generalId": 22028,
+        "level": 1
+      },
+      {
+        "generalId": 22060,
+        "level": 1
+      },
+      {
+        "generalId": 22069,
+        "level": 1
+      },
+      {
+        "generalId": 22072,
+        "level": 1
+      },
+      {
+        "generalId": 22073,
+        "level": 3
+      },
+      {
+        "generalId": 22084,
+        "level": 2
+      },
+      {
+        "generalId": 29010,
+        "level": 1
+      },
+      {
+        "generalId": 29051,
+        "level": 1
+      },
+      {
+        "generalId": 29054,
+        "level": 1
+      },
+      {
+        "generalId": 29055,
+        "level": 3
+      },
+      {
+        "generalId": 25014,
+        "level": 1
+      },
+      {
+        "generalId": 25123,
+        "level": 1
+      },
+      {
+        "generalId": 25129,
+        "level": 1
+      },
+      {
+        "generalId": 25167,
+        "level": 1
+      },
+      {
+        "generalId": 25169,
+        "level": 3
+      },
+      {
+        "generalId": 25255,
+        "level": 5
+      },
+      {
+        "generalId": 25257,
+        "level": 1
+      },
+      {
+        "generalId": 25266,
+        "level": 3
+      },
+      {
+        "generalId": 25267,
+        "level": 5
+      },
+      {
+        "generalId": 25268,
+        "level": 5
+      },
+      {
+        "generalId": 25269,
+        "level": 2
+      },
+      {
+        "generalId": 25270,
+        "level": 1
+      },
+      {
+        "generalId": 25272,
+        "level": 5
+      },
+      {
+        "generalId": 25273,
+        "level": 1
+      },
+      {
+        "generalId": 25276,
+        "level": 1
+      },
+      {
+        "generalId": 25278,
+        "level": 2
+      },
+      {
+        "generalId": 25316,
+        "level": 1
+      },
+      {
+        "generalId": 25387,
+        "level": 5
+      },
+      {
+        "generalId": 25388,
+        "level": 5
+      },
+      {
+        "generalId": 25458,
+        "level": 1
+      },
+      {
+        "generalId": 25461,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1010,
+        "level": 1,
+        "promotionId": 10101
+      },
+      {
+        "generalId": 1010,
+        "level": 1,
+        "promotionId": 10102
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

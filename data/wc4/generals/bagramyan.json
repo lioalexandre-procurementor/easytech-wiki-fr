@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Elastic Defence",
-      "desc": "Fix nearby fortress units: each round HP+X",
+      "desc": "Fix nearby fortress units: each round HP+4",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Mountain Fighting",
-      "desc": "Damage to the enemy +X when fighting on the mountain",
+      "desc": "Damage to the enemy +5 when fighting on the mountain",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_8.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Mountain Fighting",
+      "skillSlug": "mountain-fighting",
+      "skillType": 8,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +12% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 2
     }
   ],
   "attributes": {

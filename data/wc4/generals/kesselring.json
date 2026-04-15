@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Architecture",
-      "desc": "Fix the city: each round City HP +X",
+      "desc": "Fix the city: each round City HP +24",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_14.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Architecture",
+      "skillSlug": "architecture",
+      "skillType": 14,
+      "skillLevel": 4
     },
     {
       "slot": 2,
       "name": "Explosives",
-      "desc": "Damage +X% when attacking the stronghold units",
+      "desc": "Damage +8% when attacking the stronghold units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "8% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 1
     },
     {
       "slot": 4,

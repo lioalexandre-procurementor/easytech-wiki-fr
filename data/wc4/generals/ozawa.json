@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Fleet Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "desc": "16% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Sailor",
-      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "desc": "Counter attack +12% when attacked by the enemy at sea",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_40.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "16% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 2
     },
     {
       "slot": 4,

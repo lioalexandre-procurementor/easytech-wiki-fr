@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Artillery Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "desc": "8% chance to give the enemy a critical attack when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Leader",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Artillery Barrage",
-      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "desc": "Damage to the enemy +5 when the artillery units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Shelter",
-      "desc": "Able to dodge X% damage from the enemy's missile units",
+      "desc": "Able to dodge 18% damage from the enemy's missile units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_31.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Shelter",
+      "skillSlug": "shelter",
+      "skillType": 31,
+      "skillLevel": 3
     }
   ],
   "attributes": {

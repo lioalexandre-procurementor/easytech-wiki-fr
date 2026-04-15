@@ -1,0 +1,70 @@
+{
+  "slug": "fluke",
+  "type": 142,
+  "name": "Fluke",
+  "series": 3,
+  "seriesLabel": "Logistique",
+  "descriptionTemplate": "When commanded troop activates dodge, restore X% based on self's maximum HP (up to 1 time per turn)",
+  "icon": "/img/wc4/skills/general_skill_142.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3421,
+      "effect": 3,
+      "chance": 100,
+      "costMedal": 120,
+      "renderedDesc": "When commanded troop activates dodge, restore 3% based on self's maximum HP (up to 1 time per turn)"
+    },
+    {
+      "level": 2,
+      "skillId": 3422,
+      "effect": 6,
+      "chance": 100,
+      "costMedal": 170,
+      "renderedDesc": "When commanded troop activates dodge, restore 6% based on self's maximum HP (up to 1 time per turn)"
+    },
+    {
+      "level": 3,
+      "skillId": 3423,
+      "effect": 9,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "When commanded troop activates dodge, restore 9% based on self's maximum HP (up to 1 time per turn)"
+    },
+    {
+      "level": 4,
+      "skillId": 3424,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "When commanded troop activates dodge, restore 12% based on self's maximum HP (up to 1 time per turn)"
+    },
+    {
+      "level": 5,
+      "skillId": 3425,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "When commanded troop activates dodge, restore 15% based on self's maximum HP (up to 1 time per turn)"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1108,
+        "level": 5
+      },
+      {
+        "generalId": 25338,
+        "level": 1
+      },
+      {
+        "generalId": 25370,
+        "level": 4
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +6% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Plain Fighting",
-      "desc": "Damage to the enemy +X when fighting in the plain",
+      "desc": "Damage to the enemy +5 when fighting in the plain",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_7.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Plain Fighting",
+      "skillSlug": "plain-fighting",
+      "skillType": 7,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Jungle Fighting",
-      "desc": "Damage to the enemy +X when fighting in the jungle",
+      "desc": "Damage to the enemy +15 when fighting in the jungle",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_9.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Jungle Fighting",
+      "skillSlug": "jungle-fighting",
+      "skillType": 9,
+      "skillLevel": 3
     },
     {
       "slot": 4,

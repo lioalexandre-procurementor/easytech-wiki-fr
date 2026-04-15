@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Eagle Fly",
-      "desc": "Boosts X% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "desc": "Boosts 40% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_152.webp",
+      "icon": "/img/wc4/skills/general_skill_152.png",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Eagle Fly",
+      "skillSlug": "eagle-fly",
+      "skillType": 152,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "40% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 5
     },
     {
       "slot": 3,
       "name": "Carpet Bombing",
-      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "desc": "Damage +32% to the defending forces in the city when air-raiding",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_41.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 4
     },
     {
       "slot": 4,
       "name": "Fluke",
-      "desc": "When commanded troop activates dodge, restore X% based on self's maximum HP (up to 1 time per turn)",
+      "desc": "When commanded troop activates dodge, restore 15% based on self's maximum HP (up to 1 time per turn)",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_142.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fluke",
+      "skillSlug": "fluke",
+      "skillType": 142,
+      "skillLevel": 5
     },
     {
       "slot": 5,
       "name": "Inferior Victory",
-      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "desc": "Damage is increased by 16% when the number of troop formations under command is 1.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_131.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inferior Victory",
+      "skillSlug": "inferior-victory",
+      "skillType": 131,
+      "skillLevel": 4
     }
   ],
   "attributes": {

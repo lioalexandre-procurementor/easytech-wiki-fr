@@ -13,33 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Meute de loups",
-      "desc": "Sous-marins : attaque coordonnée +40%.",
+      "name": "Fleet Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 3
     },
     {
       "slot": 2,
-      "name": "Guerre sous-marine",
-      "desc": "Furtivité améliorée.",
+      "name": "Wolfpack",
+      "desc": "Attack of friendly surrounding ship units +16",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_27.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Wolfpack",
+      "skillSlug": "wolfpack",
+      "skillType": 27,
+      "skillLevel": 4
     },
     {
       "slot": 3,
-      "name": "Amiral de la Kriegsmarine",
-      "desc": "Bonus sur tous navires allemands.",
+      "name": "Depot Ship",
+      "desc": "Fix damaged ship units: each round HP+6",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_17.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Depot Ship",
+      "skillSlug": "depot-ship",
+      "skillType": 17,
+      "skillLevel": 2
     },
     {
       "slot": 4,

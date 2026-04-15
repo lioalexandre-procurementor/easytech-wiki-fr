@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +12% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Desert Fighting",
-      "desc": "Damage to the enemy +X when fighting in the desert",
+      "desc": "Damage to the enemy +15 when fighting in the desert",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_10.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Desert Fighting",
+      "skillSlug": "desert-fighting",
+      "skillType": 10,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Plain Fighting",
-      "desc": "Damage to the enemy +X when fighting in the plain",
+      "desc": "Damage to the enemy +10 when fighting in the plain",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_7.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Plain Fighting",
+      "skillSlug": "plain-fighting",
+      "skillType": 7,
+      "skillLevel": 2
     }
   ],
   "attributes": {

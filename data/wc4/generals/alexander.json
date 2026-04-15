@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +6% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Artillery Barrage",
-      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "desc": "Damage to the enemy +5 when the artillery units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +6% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 1
     },
     {
       "slot": 4,

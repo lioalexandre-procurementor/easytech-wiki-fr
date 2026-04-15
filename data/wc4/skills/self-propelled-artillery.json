@@ -1,0 +1,106 @@
+{
+  "slug": "self-propelled-artillery",
+  "type": 59,
+  "name": "Self-propelled artillery",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding an artillery unit to attack, gain X% chance of attacking again after annihilating enemy troops",
+  "icon": "/img/wc4/skills/general_skill_59.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1481,
+      "effect": 20,
+      "chance": 20,
+      "costMedal": 160,
+      "renderedDesc": "When commanding an artillery unit to attack, gain 20% chance of attacking again after annihilating enemy troops"
+    },
+    {
+      "level": 2,
+      "skillId": 1482,
+      "effect": 40,
+      "chance": 40,
+      "costMedal": 240,
+      "renderedDesc": "When commanding an artillery unit to attack, gain 40% chance of attacking again after annihilating enemy troops"
+    },
+    {
+      "level": 3,
+      "skillId": 1483,
+      "effect": 60,
+      "chance": 60,
+      "costMedal": 480,
+      "renderedDesc": "When commanding an artillery unit to attack, gain 60% chance of attacking again after annihilating enemy troops"
+    },
+    {
+      "level": 4,
+      "skillId": 1484,
+      "effect": 80,
+      "chance": 80,
+      "costMedal": 640,
+      "renderedDesc": "When commanding an artillery unit to attack, gain 80% chance of attacking again after annihilating enemy troops"
+    },
+    {
+      "level": 5,
+      "skillId": 1485,
+      "effect": 100,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "When commanding an artillery unit to attack, gain 100% chance of attacking again after annihilating enemy troops"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1058,
+        "level": 5
+      },
+      {
+        "generalId": 22120,
+        "level": 5
+      },
+      {
+        "generalId": 22137,
+        "level": 5
+      },
+      {
+        "generalId": 25177,
+        "level": 5
+      },
+      {
+        "generalId": 25190,
+        "level": 5
+      },
+      {
+        "generalId": 25315,
+        "level": 5
+      },
+      {
+        "generalId": 25318,
+        "level": 5
+      },
+      {
+        "generalId": 25352,
+        "level": 1
+      },
+      {
+        "generalId": 25357,
+        "level": 1
+      },
+      {
+        "generalId": 25409,
+        "level": 1
+      },
+      {
+        "generalId": 25441,
+        "level": 5
+      },
+      {
+        "generalId": 25468,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

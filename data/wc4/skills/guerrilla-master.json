@@ -1,0 +1,110 @@
+{
+  "slug": "guerrilla-master",
+  "type": 104,
+  "name": "Guerrilla Master",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Evade X% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+  "icon": "/img/wc4/skills/general_skill_104.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3041,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Evade 5% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+    },
+    {
+      "level": 2,
+      "skillId": 3042,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Evade 10% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+    },
+    {
+      "level": 3,
+      "skillId": 3043,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "Evade 15% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+    },
+    {
+      "level": 4,
+      "skillId": 3044,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "Evade 20% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+    },
+    {
+      "level": 5,
+      "skillId": 3045,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Evade 25% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1062,
+        "level": 3
+      },
+      {
+        "generalId": 22108,
+        "level": 1
+      },
+      {
+        "generalId": 25181,
+        "level": 5
+      },
+      {
+        "generalId": 25228,
+        "level": 5
+      },
+      {
+        "generalId": 25236,
+        "level": 5
+      },
+      {
+        "generalId": 25258,
+        "level": 5
+      },
+      {
+        "generalId": 25266,
+        "level": 5
+      },
+      {
+        "generalId": 25319,
+        "level": 5
+      },
+      {
+        "generalId": 25347,
+        "level": 1
+      },
+      {
+        "generalId": 25367,
+        "level": 1
+      },
+      {
+        "generalId": 25372,
+        "level": 1
+      },
+      {
+        "generalId": 25408,
+        "level": 1
+      },
+      {
+        "generalId": 25436,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -65,40 +65,49 @@ function AttributeBar({ value }: { value: AttributeValue | null }) {
   const MAX_SCALE = 6;
   const start = Math.max(0, Math.min(MAX_SCALE, value.start));
   const max = Math.max(start, Math.min(MAX_SCALE, value.max));
+  // Number of stars to actually draw: ceiling only. If max is 0, show an
+  // explicit "not used" marker rather than 6 empty slots.
+  if (max === 0) {
+    return <div className="text-muted text-[11px] italic">—</div>;
+  }
   return (
     <div className="flex flex-col gap-1">
       <div
-        className="flex gap-0.5 text-base leading-none"
-        aria-label={`${start}/${max} (max ${MAX_SCALE})`}
+        className="flex items-center gap-0.5 text-[15px] leading-none"
+        aria-label={`${start}/${max}`}
       >
-        {Array.from({ length: MAX_SCALE }).map((_, i) => {
+        {Array.from({ length: max }).map((_, i) => {
           const filled = i < start;
-          const potential = i >= start && i < max;
-          const shiny = i === 5 && max >= 6;
+          const shiny = i === 5;
           return (
             <span
               key={i}
               className={
-                shiny
-                  ? "text-amber-300 drop-shadow"
-                  : filled
-                  ? "text-gold"
-                  : potential
-                  ? "text-gold/30"
-                  : "text-border"
+                filled
+                  ? shiny
+                    ? "text-amber-300 drop-shadow"
+                    : "text-gold"
+                  : shiny
+                  ? "text-amber-300/30"
+                  : "text-gold/20"
               }
+              style={{
+                WebkitTextStroke: !filled ? "0.5px currentColor" : undefined,
+              }}
             >
-              ★
+              {filled ? "★" : "☆"}
             </span>
           );
         })}
+        <span className="ml-1.5 text-[10px] font-bold tabular-nums text-gold2">
+          {start}/{max}
+        </span>
       </div>
-      <div className="text-muted text-[10px] tabular-nums">
-        {start}/{max}
-        {max > start && (
-          <span className="text-dim"> {t("general.potentialSuffix", { delta: max - start })}</span>
-        )}
-      </div>
+      {max > start && (
+        <div className="text-dim text-[10px] italic">
+          {t("general.potentialSuffix", { delta: max - start })}
+        </div>
+      )}
     </div>
   );
 }

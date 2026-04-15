@@ -13,53 +13,73 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Commandant suprême",
-      "desc": "Bonus massif sur toutes les unités mystiques.",
+      "name": "Leader",
+      "desc": "Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_149.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Leader",
+      "skillSlug": "leader",
+      "skillType": 149,
+      "skillLevel": 5
     },
     {
       "slot": 2,
-      "name": "Nouveau Monde",
-      "desc": "Activation de capacités spéciales faction Scorpion.",
+      "name": "Panzer Leader",
+      "desc": "32% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 4
     },
     {
       "slot": 3,
-      "name": "Volonté du Scorpion",
-      "desc": "Moral + leadership sur unités alliées.",
+      "name": "Battlefield Intuition",
+      "desc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +15%",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_150.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Battlefield Intuition",
+      "skillSlug": "battlefield-intuition",
+      "skillType": 150,
+      "skillLevel": 3
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Emplacement apprenable — à confirmer si les capitaines Scorpion ont un emplacement libre.",
+      "name": "Supply Organization",
+      "desc": "When commanding troops in your territory, economic, industry, and technology output +20%.",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_133.webp",
       "replaceable": true,
-      "replaceableReason": "À confirmer — Scorpion gold slots"
+      "replaceableReason": "À confirmer — Scorpion gold slots",
+      "nameEn": "Supply Organization",
+      "skillSlug": "supply-organization",
+      "skillType": 133,
+      "skillLevel": 5
     },
     {
       "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "name": "Armored Assault",
+      "desc": "Deal +24% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": true,
-      "replaceableReason": "À confirmer"
+      "replaceableReason": "À confirmer",
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 4
     }
   ],
   "attributes": {

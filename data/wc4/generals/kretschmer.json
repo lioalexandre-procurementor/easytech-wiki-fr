@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Ace Submarine",
-      "desc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a X% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "desc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 75% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_174.webp",
+      "icon": "/img/wc4/skills/general_skill_174.png",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Ace Submarine",
+      "skillSlug": "ace-submarine",
+      "skillType": 174,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Submergence Evasion",
-      "desc": "Submarine units under command receive X% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "desc": "Submarine units under command receive 21% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
       "rating": null,
       "stars": null,
-      "icon": "/img/wc4/skills/general_skill_175.webp",
+      "icon": "/img/wc4/skills/general_skill_175.png",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Submergence Evasion",
+      "skillSlug": "submergence-evasion",
+      "skillType": 175,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Inferior Victory",
-      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "desc": "Damage is increased by 12% when the number of troop formations under command is 1.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_131.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inferior Victory",
+      "skillSlug": "inferior-victory",
+      "skillType": 131,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Fleet Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "desc": "24% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Sailor",
-      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "desc": "Counter attack +18% when attacked by the enemy at sea",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_40.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 3
     }
   ],
   "attributes": {

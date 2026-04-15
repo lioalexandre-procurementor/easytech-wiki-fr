@@ -1,0 +1,68 @@
+{
+  "slug": "operation-overlord",
+  "type": 167,
+  "name": "Operation Overlord",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a X% chance to grant an additional attack.",
+  "icon": "/img/wc4/skills/general_skill_167.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3671,
+      "effect": 20,
+      "chance": 20,
+      "costMedal": 160,
+      "renderedDesc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a 20% chance to grant an additional attack."
+    },
+    {
+      "level": 2,
+      "skillId": 3672,
+      "effect": 40,
+      "chance": 40,
+      "costMedal": 240,
+      "renderedDesc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a 40% chance to grant an additional attack."
+    },
+    {
+      "level": 3,
+      "skillId": 3673,
+      "effect": 60,
+      "chance": 60,
+      "costMedal": 480,
+      "renderedDesc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a 60% chance to grant an additional attack."
+    },
+    {
+      "level": 4,
+      "skillId": 3674,
+      "effect": 80,
+      "chance": 80,
+      "costMedal": 640,
+      "renderedDesc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a 80% chance to grant an additional attack."
+    },
+    {
+      "level": 5,
+      "skillId": 3675,
+      "effect": 100,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Enemy units within a 3 hexes receive 35% additional damage, and disable the effects of sloped armor, protective device, provocation, abduction, and fighting alongside. After commanding ship units to eliminate an enemy, there is a 100% chance to grant an additional attack."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25456,
+        "level": 5
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1031,
+        "level": 5,
+        "promotionId": 10311
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

@@ -1,0 +1,84 @@
+{
+  "slug": "joint-offensive",
+  "type": 144,
+  "name": "Joint Offensive",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "After attacking, there is a X% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.",
+  "icon": "/img/wc4/skills/general_skill_144.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3441,
+      "effect": 20,
+      "chance": 20,
+      "costMedal": 150,
+      "renderedDesc": "After attacking, there is a 20% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+    },
+    {
+      "level": 2,
+      "skillId": 3442,
+      "effect": 40,
+      "chance": 40,
+      "costMedal": 250,
+      "renderedDesc": "After attacking, there is a 40% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+    },
+    {
+      "level": 3,
+      "skillId": 3443,
+      "effect": 60,
+      "chance": 60,
+      "costMedal": 350,
+      "renderedDesc": "After attacking, there is a 60% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+    },
+    {
+      "level": 4,
+      "skillId": 3444,
+      "effect": 80,
+      "chance": 80,
+      "costMedal": 450,
+      "renderedDesc": "After attacking, there is a 80% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+    },
+    {
+      "level": 5,
+      "skillId": 3445,
+      "effect": 100,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "After attacking, there is a 100% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25341,
+        "level": 5
+      },
+      {
+        "generalId": 25349,
+        "level": 5
+      },
+      {
+        "generalId": 25394,
+        "level": 5
+      },
+      {
+        "generalId": 25399,
+        "level": 5
+      },
+      {
+        "generalId": 25455,
+        "level": 5
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1017,
+        "level": 5,
+        "promotionId": 10173
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

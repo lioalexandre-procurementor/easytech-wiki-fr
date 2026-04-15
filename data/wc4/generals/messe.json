@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Armored Assault",
-      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "desc": "Deal +6% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Crowd Tactics",
-      "desc": "Attack of friendly surrounding army units +X",
+      "desc": "Attack of friendly surrounding army units +4",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_26.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crowd Tactics",
+      "skillSlug": "crowd-tactics",
+      "skillType": 26,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Rumor",
-      "desc": "X% chance to reduce the morale of the enemy when attacking",
+      "desc": "15% chance to reduce the morale of the enemy when attacking",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_42.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 1
     }
   ],
   "attributes": {

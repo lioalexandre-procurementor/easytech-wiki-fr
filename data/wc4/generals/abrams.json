@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Break The Encirclement",
-      "desc": "After annihilating enemy troops, X% rate to lower the morale of 2 enemies within 1 grid of you.",
+      "desc": "After annihilating enemy troops, 60% rate to lower the morale of 2 enemies within 1 grid of you.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_117.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Break The Encirclement",
+      "skillSlug": "break-the-encirclement",
+      "skillType": 117,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Anticipation",
-      "desc": "When commanding troops to move, dealt damage +X% (up to 50%) for each grid moved for 1 turn.",
+      "desc": "When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_118.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Anticipation",
+      "skillSlug": "anticipation",
+      "skillType": 118,
+      "skillLevel": 5
     },
     {
       "slot": 3,
       "name": "Panzer Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Armored Assault",
-      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "desc": "Deal +12% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 2
     },
     {
       "slot": 5,
       "name": "Blitzkrieg",
-      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "desc": "36% chance that the enemy will not fight back when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_34.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 3
     }
   ],
   "attributes": {

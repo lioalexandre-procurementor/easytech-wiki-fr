@@ -1,0 +1,90 @@
+{
+  "slug": "break-the-encirclement",
+  "type": 117,
+  "name": "Break The Encirclement",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "After annihilating enemy troops, X% rate to lower the morale of 2 enemies within 1 grid of you.",
+  "icon": "/img/wc4/skills/general_skill_117.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3171,
+      "effect": 100,
+      "chance": 20,
+      "costMedal": 150,
+      "renderedDesc": "After annihilating enemy troops, 20% rate to lower the morale of 2 enemies within 1 grid of you."
+    },
+    {
+      "level": 2,
+      "skillId": 3172,
+      "effect": 100,
+      "chance": 40,
+      "costMedal": 250,
+      "renderedDesc": "After annihilating enemy troops, 40% rate to lower the morale of 2 enemies within 1 grid of you."
+    },
+    {
+      "level": 3,
+      "skillId": 3173,
+      "effect": 100,
+      "chance": 60,
+      "costMedal": 350,
+      "renderedDesc": "After annihilating enemy troops, 60% rate to lower the morale of 2 enemies within 1 grid of you."
+    },
+    {
+      "level": 4,
+      "skillId": 3174,
+      "effect": 100,
+      "chance": 80,
+      "costMedal": 450,
+      "renderedDesc": "After annihilating enemy troops, 80% rate to lower the morale of 2 enemies within 1 grid of you."
+    },
+    {
+      "level": 5,
+      "skillId": 3175,
+      "effect": 100,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "After annihilating enemy troops, 100% rate to lower the morale of 2 enemies within 1 grid of you."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1077,
+        "level": 3
+      },
+      {
+        "generalId": 22114,
+        "level": 1
+      },
+      {
+        "generalId": 22115,
+        "level": 1
+      },
+      {
+        "generalId": 25212,
+        "level": 5
+      },
+      {
+        "generalId": 25321,
+        "level": 5
+      },
+      {
+        "generalId": 25348,
+        "level": 1
+      },
+      {
+        "generalId": 25364,
+        "level": 1
+      },
+      {
+        "generalId": 25405,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

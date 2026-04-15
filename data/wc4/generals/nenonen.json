@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Artillery Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "desc": "24% chance to give the enemy a critical attack when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Leader",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Artillery Barrage",
-      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "desc": "Damage to the enemy +10 when the artillery units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +18% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 3
     },
     {
       "slot": 4,

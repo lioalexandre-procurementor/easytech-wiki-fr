@@ -1,0 +1,74 @@
+{
+  "slug": "veteran-general",
+  "type": 151,
+  "name": "Veteran General",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Maximum HP of commanded units +X%, cannot go into chaos when the unit has above half HP",
+  "icon": "/img/wc4/skills/general_skill_151.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3511,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 100,
+      "renderedDesc": "Maximum HP of commanded units +5%, cannot go into chaos when the unit has above half HP"
+    },
+    {
+      "level": 2,
+      "skillId": 3512,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Maximum HP of commanded units +10%, cannot go into chaos when the unit has above half HP"
+    },
+    {
+      "level": 3,
+      "skillId": 3513,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Maximum HP of commanded units +15%, cannot go into chaos when the unit has above half HP"
+    },
+    {
+      "level": 4,
+      "skillId": 3514,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 320,
+      "renderedDesc": "Maximum HP of commanded units +20%, cannot go into chaos when the unit has above half HP"
+    },
+    {
+      "level": 5,
+      "skillId": 3515,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 400,
+      "renderedDesc": "Maximum HP of commanded units +25%, cannot go into chaos when the unit has above half HP"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1105,
+        "level": 3
+      },
+      {
+        "generalId": 25344,
+        "level": 1
+      },
+      {
+        "generalId": 25360,
+        "level": 1
+      },
+      {
+        "generalId": 25363,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

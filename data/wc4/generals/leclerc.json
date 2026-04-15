@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Street Fighting",
-      "desc": "Damage to the enemy +X when fighting in the city",
+      "desc": "Damage to the enemy +15 when fighting in the city",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_6.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Street Fighting",
+      "skillSlug": "street-fighting",
+      "skillType": 6,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Panzer Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "desc": "8% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Artillery Barrage",
-      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "desc": "Damage to the enemy +5 when the artillery units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 1
     },
     {
       "slot": 4,

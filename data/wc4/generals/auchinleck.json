@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Panzer Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "desc": "8% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Explosives",
-      "desc": "Damage +X% when attacking the stronghold units",
+      "desc": "Damage +24% when attacking the stronghold units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Desert Fighting",
-      "desc": "Damage to the enemy +X when fighting in the desert",
+      "desc": "Damage to the enemy +5 when fighting in the desert",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_10.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Desert Fighting",
+      "skillSlug": "desert-fighting",
+      "skillType": 10,
+      "skillLevel": 1
     }
   ],
   "attributes": {

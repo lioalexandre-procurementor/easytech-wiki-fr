@@ -1,0 +1,62 @@
+{
+  "slug": "ace-submarine",
+  "type": 174,
+  "name": "Ace Submarine",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a X% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+  "icon": "/img/wc4/skills/general_skill_174.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3741,
+      "effect": 0,
+      "chance": 15,
+      "costMedal": 160,
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 15% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+    },
+    {
+      "level": 2,
+      "skillId": 3742,
+      "effect": 0,
+      "chance": 30,
+      "costMedal": 240,
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 30% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+    },
+    {
+      "level": 3,
+      "skillId": 3743,
+      "effect": 0,
+      "chance": 45,
+      "costMedal": 480,
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 45% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+    },
+    {
+      "level": 4,
+      "skillId": 3744,
+      "effect": 0,
+      "chance": 60,
+      "costMedal": 640,
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 60% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+    },
+    {
+      "level": 5,
+      "skillId": 3745,
+      "effect": 0,
+      "chance": 75,
+      "costMedal": 800,
+      "renderedDesc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a 75% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1113,
+        "level": 5
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

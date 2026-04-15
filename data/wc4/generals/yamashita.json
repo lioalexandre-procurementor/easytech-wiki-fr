@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Ace Forces",
-      "desc": "Experience gained by the army in combat increases by X%",
+      "desc": "Experience gained by the army in combat increases by 20%",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_43.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Ace Forces",
+      "skillSlug": "ace-forces",
+      "skillType": 43,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +6% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Bayonet Charge",
-      "desc": "Damage to the enemy +X when the infantry units are more than half damaged",
+      "desc": "Damage to the enemy +10 when the infantry units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_23.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Bayonet Charge",
+      "skillSlug": "bayonet-charge",
+      "skillType": 23,
+      "skillLevel": 2
     },
     {
       "slot": 4,

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Inferior Victory",
-      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "desc": "Damage is increased by 12% when the number of troop formations under command is 1.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_131.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inferior Victory",
+      "skillSlug": "inferior-victory",
+      "skillType": 131,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +18% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Retaliation",
-      "desc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +X for 2 turns.",
+      "desc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +18 for 2 turns.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_122.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Retaliation",
+      "skillSlug": "retaliation",
+      "skillType": 122,
+      "skillLevel": 3
     },
     {
       "slot": 4,

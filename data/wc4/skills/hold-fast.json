@@ -1,0 +1,218 @@
+{
+  "slug": "hold-fast",
+  "type": 108,
+  "name": "Hold Fast",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+  "icon": "/img/wc4/skills/general_skill_108.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3081,
+      "effect": 4,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy"
+    },
+    {
+      "level": 2,
+      "skillId": 3082,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy"
+    },
+    {
+      "level": 3,
+      "skillId": 3083,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy"
+    },
+    {
+      "level": 4,
+      "skillId": 3084,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 16% damage dealt by enemy"
+    },
+    {
+      "level": 5,
+      "skillId": 3085,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1061,
+        "level": 1
+      },
+      {
+        "generalId": 1076,
+        "level": 2
+      },
+      {
+        "generalId": 1103,
+        "level": 3
+      },
+      {
+        "generalId": 22097,
+        "level": 2
+      },
+      {
+        "generalId": 22108,
+        "level": 1
+      },
+      {
+        "generalId": 22109,
+        "level": 1
+      },
+      {
+        "generalId": 22112,
+        "level": 1
+      },
+      {
+        "generalId": 22113,
+        "level": 1
+      },
+      {
+        "generalId": 22133,
+        "level": 1
+      },
+      {
+        "generalId": 25236,
+        "level": 5
+      },
+      {
+        "generalId": 25242,
+        "level": 5
+      },
+      {
+        "generalId": 25245,
+        "level": 5
+      },
+      {
+        "generalId": 25251,
+        "level": 5
+      },
+      {
+        "generalId": 25254,
+        "level": 1
+      },
+      {
+        "generalId": 25258,
+        "level": 5
+      },
+      {
+        "generalId": 25269,
+        "level": 1
+      },
+      {
+        "generalId": 25274,
+        "level": 5
+      },
+      {
+        "generalId": 25287,
+        "level": 1
+      },
+      {
+        "generalId": 25288,
+        "level": 1
+      },
+      {
+        "generalId": 25291,
+        "level": 1
+      },
+      {
+        "generalId": 25310,
+        "level": 1
+      },
+      {
+        "generalId": 25319,
+        "level": 5
+      },
+      {
+        "generalId": 25326,
+        "level": 1
+      },
+      {
+        "generalId": 25340,
+        "level": 2
+      },
+      {
+        "generalId": 25343,
+        "level": 1
+      },
+      {
+        "generalId": 25355,
+        "level": 1
+      },
+      {
+        "generalId": 25356,
+        "level": 1
+      },
+      {
+        "generalId": 25357,
+        "level": 1
+      },
+      {
+        "generalId": 25359,
+        "level": 1
+      },
+      {
+        "generalId": 25369,
+        "level": 1
+      },
+      {
+        "generalId": 25377,
+        "level": 1
+      },
+      {
+        "generalId": 25381,
+        "level": 1
+      },
+      {
+        "generalId": 25385,
+        "level": 1
+      },
+      {
+        "generalId": 25400,
+        "level": 1
+      },
+      {
+        "generalId": 25406,
+        "level": 1
+      },
+      {
+        "generalId": 25409,
+        "level": 1
+      },
+      {
+        "generalId": 25417,
+        "level": 1
+      },
+      {
+        "generalId": 25426,
+        "level": 1
+      },
+      {
+        "generalId": 25438,
+        "level": 5
+      },
+      {
+        "generalId": 25454,
+        "level": 5
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Jungle Fighting",
-      "desc": "Damage to the enemy +X when fighting in the jungle",
+      "desc": "Damage to the enemy +20 when fighting in the jungle",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_9.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Jungle Fighting",
+      "skillSlug": "jungle-fighting",
+      "skillType": 9,
+      "skillLevel": 4
     },
     {
       "slot": 2,
       "name": "Explosives",
-      "desc": "Damage +X% when attacking the stronghold units",
+      "desc": "Damage +8% when attacking the stronghold units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Artillery Barrage",
-      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "desc": "Damage to the enemy +5 when the artillery units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 1
     },
     {
       "slot": 4,

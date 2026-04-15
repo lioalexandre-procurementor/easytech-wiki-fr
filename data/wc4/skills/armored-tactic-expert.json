@@ -1,0 +1,106 @@
+{
+  "slug": "armored-tactic-expert",
+  "type": 105,
+  "name": "Armored Tactic Expert",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Recover X% maximum HP on the next turn when the armored units are more than half damaged",
+  "icon": "/img/wc4/skills/general_skill_105.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3051,
+      "effect": 3,
+      "chance": 100,
+      "costMedal": 100,
+      "renderedDesc": "Recover 3% maximum HP on the next turn when the armored units are more than half damaged"
+    },
+    {
+      "level": 2,
+      "skillId": 3052,
+      "effect": 6,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Recover 6% maximum HP on the next turn when the armored units are more than half damaged"
+    },
+    {
+      "level": 3,
+      "skillId": 3053,
+      "effect": 9,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Recover 9% maximum HP on the next turn when the armored units are more than half damaged"
+    },
+    {
+      "level": 4,
+      "skillId": 3054,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 320,
+      "renderedDesc": "Recover 12% maximum HP on the next turn when the armored units are more than half damaged"
+    },
+    {
+      "level": 5,
+      "skillId": 3055,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 400,
+      "renderedDesc": "Recover 15% maximum HP on the next turn when the armored units are more than half damaged"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1063,
+        "level": 2
+      },
+      {
+        "generalId": 22113,
+        "level": 1
+      },
+      {
+        "generalId": 25182,
+        "level": 5
+      },
+      {
+        "generalId": 25209,
+        "level": 2
+      },
+      {
+        "generalId": 25236,
+        "level": 5
+      },
+      {
+        "generalId": 25255,
+        "level": 5
+      },
+      {
+        "generalId": 25261,
+        "level": 5
+      },
+      {
+        "generalId": 25399,
+        "level": 5
+      },
+      {
+        "generalId": 25417,
+        "level": 1
+      },
+      {
+        "generalId": 25419,
+        "level": 2
+      },
+      {
+        "generalId": 25455,
+        "level": 5
+      },
+      {
+        "generalId": 25464,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

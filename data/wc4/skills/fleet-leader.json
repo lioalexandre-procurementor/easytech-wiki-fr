@@ -1,0 +1,761 @@
+{
+  "slug": "fleet-leader",
+  "type": 21,
+  "name": "Fleet Leader",
+  "series": 2,
+  "seriesLabel": "Commandement",
+  "descriptionTemplate": "X% chance to give the enemy a critical attack when commanding ship units",
+  "icon": "/img/wc4/skills/general_skill_21.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1211,
+      "effect": 150,
+      "chance": 8,
+      "costMedal": 100,
+      "renderedDesc": "8% chance to give the enemy a critical attack when commanding ship units"
+    },
+    {
+      "level": 2,
+      "skillId": 1212,
+      "effect": 150,
+      "chance": 16,
+      "costMedal": 160,
+      "renderedDesc": "16% chance to give the enemy a critical attack when commanding ship units"
+    },
+    {
+      "level": 3,
+      "skillId": 1213,
+      "effect": 150,
+      "chance": 24,
+      "costMedal": 240,
+      "renderedDesc": "24% chance to give the enemy a critical attack when commanding ship units"
+    },
+    {
+      "level": 4,
+      "skillId": 1214,
+      "effect": 150,
+      "chance": 32,
+      "costMedal": 320,
+      "renderedDesc": "32% chance to give the enemy a critical attack when commanding ship units"
+    },
+    {
+      "level": 5,
+      "skillId": 1215,
+      "effect": 150,
+      "chance": 40,
+      "costMedal": 400,
+      "renderedDesc": "40% chance to give the enemy a critical attack when commanding ship units"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1006,
+        "level": 3
+      },
+      {
+        "generalId": 1017,
+        "level": 3
+      },
+      {
+        "generalId": 1026,
+        "level": 2
+      },
+      {
+        "generalId": 1031,
+        "level": 2
+      },
+      {
+        "generalId": 1032,
+        "level": 2
+      },
+      {
+        "generalId": 1033,
+        "level": 1
+      },
+      {
+        "generalId": 1034,
+        "level": 2
+      },
+      {
+        "generalId": 1046,
+        "level": 3
+      },
+      {
+        "generalId": 1057,
+        "level": 3
+      },
+      {
+        "generalId": 1071,
+        "level": 3
+      },
+      {
+        "generalId": 1072,
+        "level": 3
+      },
+      {
+        "generalId": 1081,
+        "level": 3
+      },
+      {
+        "generalId": 1084,
+        "level": 4
+      },
+      {
+        "generalId": 1095,
+        "level": 4
+      },
+      {
+        "generalId": 1111,
+        "level": 2
+      },
+      {
+        "generalId": 1113,
+        "level": 3
+      },
+      {
+        "generalId": 21021,
+        "level": 3
+      },
+      {
+        "generalId": 21043,
+        "level": 3
+      },
+      {
+        "generalId": 21052,
+        "level": 3
+      },
+      {
+        "generalId": 21065,
+        "level": 4
+      },
+      {
+        "generalId": 21122,
+        "level": 2
+      },
+      {
+        "generalId": 21123,
+        "level": 2
+      },
+      {
+        "generalId": 21124,
+        "level": 1
+      },
+      {
+        "generalId": 21125,
+        "level": 2
+      },
+      {
+        "generalId": 21126,
+        "level": 2
+      },
+      {
+        "generalId": 21128,
+        "level": 1
+      },
+      {
+        "generalId": 21131,
+        "level": 2
+      },
+      {
+        "generalId": 21134,
+        "level": 2
+      },
+      {
+        "generalId": 21151,
+        "level": 3
+      },
+      {
+        "generalId": 20016,
+        "level": 3
+      },
+      {
+        "generalId": 20037,
+        "level": 1
+      },
+      {
+        "generalId": 20038,
+        "level": 1
+      },
+      {
+        "generalId": 20041,
+        "level": 2
+      },
+      {
+        "generalId": 20046,
+        "level": 1
+      },
+      {
+        "generalId": 20049,
+        "level": 1
+      },
+      {
+        "generalId": 20081,
+        "level": 2
+      },
+      {
+        "generalId": 20087,
+        "level": 3
+      },
+      {
+        "generalId": 20095,
+        "level": 2
+      },
+      {
+        "generalId": 20097,
+        "level": 1
+      },
+      {
+        "generalId": 20114,
+        "level": 2
+      },
+      {
+        "generalId": 20123,
+        "level": 2
+      },
+      {
+        "generalId": 20124,
+        "level": 2
+      },
+      {
+        "generalId": 20125,
+        "level": 1
+      },
+      {
+        "generalId": 20126,
+        "level": 2
+      },
+      {
+        "generalId": 20127,
+        "level": 2
+      },
+      {
+        "generalId": 20128,
+        "level": 2
+      },
+      {
+        "generalId": 20133,
+        "level": 2
+      },
+      {
+        "generalId": 20136,
+        "level": 3
+      },
+      {
+        "generalId": 20141,
+        "level": 1
+      },
+      {
+        "generalId": 20151,
+        "level": 1
+      },
+      {
+        "generalId": 20171,
+        "level": 1
+      },
+      {
+        "generalId": 20172,
+        "level": 1
+      },
+      {
+        "generalId": 20173,
+        "level": 1
+      },
+      {
+        "generalId": 20174,
+        "level": 1
+      },
+      {
+        "generalId": 20221,
+        "level": 3
+      },
+      {
+        "generalId": 20282,
+        "level": 2
+      },
+      {
+        "generalId": 20290,
+        "level": 3
+      },
+      {
+        "generalId": 22005,
+        "level": 3
+      },
+      {
+        "generalId": 22012,
+        "level": 2
+      },
+      {
+        "generalId": 22024,
+        "level": 3
+      },
+      {
+        "generalId": 22035,
+        "level": 3
+      },
+      {
+        "generalId": 22044,
+        "level": 2
+      },
+      {
+        "generalId": 22049,
+        "level": 2
+      },
+      {
+        "generalId": 22050,
+        "level": 2
+      },
+      {
+        "generalId": 22051,
+        "level": 1
+      },
+      {
+        "generalId": 22052,
+        "level": 2
+      },
+      {
+        "generalId": 22064,
+        "level": 3
+      },
+      {
+        "generalId": 22087,
+        "level": 3
+      },
+      {
+        "generalId": 22089,
+        "level": 2
+      },
+      {
+        "generalId": 22093,
+        "level": 2
+      },
+      {
+        "generalId": 22128,
+        "level": 1
+      },
+      {
+        "generalId": 22129,
+        "level": 1
+      },
+      {
+        "generalId": 29006,
+        "level": 3
+      },
+      {
+        "generalId": 29017,
+        "level": 3
+      },
+      {
+        "generalId": 29026,
+        "level": 2
+      },
+      {
+        "generalId": 29031,
+        "level": 2
+      },
+      {
+        "generalId": 29032,
+        "level": 2
+      },
+      {
+        "generalId": 29033,
+        "level": 1
+      },
+      {
+        "generalId": 29034,
+        "level": 2
+      },
+      {
+        "generalId": 29046,
+        "level": 3
+      },
+      {
+        "generalId": 29058,
+        "level": 3
+      },
+      {
+        "generalId": 29079,
+        "level": 2
+      },
+      {
+        "generalId": 29092,
+        "level": 2
+      },
+      {
+        "generalId": 29096,
+        "level": 3
+      },
+      {
+        "generalId": 29105,
+        "level": 2
+      },
+      {
+        "generalId": 29110,
+        "level": 3
+      },
+      {
+        "generalId": 29112,
+        "level": 2
+      },
+      {
+        "generalId": 29113,
+        "level": 3
+      },
+      {
+        "generalId": 29117,
+        "level": 3
+      },
+      {
+        "generalId": 29124,
+        "level": 2
+      },
+      {
+        "generalId": 29140,
+        "level": 3
+      },
+      {
+        "generalId": 29143,
+        "level": 2
+      },
+      {
+        "generalId": 29158,
+        "level": 5
+      },
+      {
+        "generalId": 29161,
+        "level": 4
+      },
+      {
+        "generalId": 29162,
+        "level": 4
+      },
+      {
+        "generalId": 29164,
+        "level": 4
+      },
+      {
+        "generalId": 25001,
+        "level": 1
+      },
+      {
+        "generalId": 25002,
+        "level": 2
+      },
+      {
+        "generalId": 25015,
+        "level": 3
+      },
+      {
+        "generalId": 25025,
+        "level": 2
+      },
+      {
+        "generalId": 25029,
+        "level": 3
+      },
+      {
+        "generalId": 25043,
+        "level": 2
+      },
+      {
+        "generalId": 25044,
+        "level": 3
+      },
+      {
+        "generalId": 25048,
+        "level": 2
+      },
+      {
+        "generalId": 25049,
+        "level": 3
+      },
+      {
+        "generalId": 25050,
+        "level": 2
+      },
+      {
+        "generalId": 25053,
+        "level": 2
+      },
+      {
+        "generalId": 25055,
+        "level": 3
+      },
+      {
+        "generalId": 25057,
+        "level": 3
+      },
+      {
+        "generalId": 25058,
+        "level": 2
+      },
+      {
+        "generalId": 25059,
+        "level": 1
+      },
+      {
+        "generalId": 25060,
+        "level": 2
+      },
+      {
+        "generalId": 25063,
+        "level": 1
+      },
+      {
+        "generalId": 25074,
+        "level": 3
+      },
+      {
+        "generalId": 25077,
+        "level": 2
+      },
+      {
+        "generalId": 25078,
+        "level": 3
+      },
+      {
+        "generalId": 25080,
+        "level": 3
+      },
+      {
+        "generalId": 25095,
+        "level": 3
+      },
+      {
+        "generalId": 25098,
+        "level": 3
+      },
+      {
+        "generalId": 25125,
+        "level": 3
+      },
+      {
+        "generalId": 25136,
+        "level": 3
+      },
+      {
+        "generalId": 25145,
+        "level": 2
+      },
+      {
+        "generalId": 25149,
+        "level": 2
+      },
+      {
+        "generalId": 25150,
+        "level": 2
+      },
+      {
+        "generalId": 25151,
+        "level": 1
+      },
+      {
+        "generalId": 25152,
+        "level": 2
+      },
+      {
+        "generalId": 25162,
+        "level": 3
+      },
+      {
+        "generalId": 25174,
+        "level": 2
+      },
+      {
+        "generalId": 25175,
+        "level": 3
+      },
+      {
+        "generalId": 25176,
+        "level": 3
+      },
+      {
+        "generalId": 25186,
+        "level": 3
+      },
+      {
+        "generalId": 25188,
+        "level": 3
+      },
+      {
+        "generalId": 25191,
+        "level": 2
+      },
+      {
+        "generalId": 25197,
+        "level": 3
+      },
+      {
+        "generalId": 25205,
+        "level": 3
+      },
+      {
+        "generalId": 25219,
+        "level": 4
+      },
+      {
+        "generalId": 25221,
+        "level": 2
+      },
+      {
+        "generalId": 25240,
+        "level": 3
+      },
+      {
+        "generalId": 25244,
+        "level": 2
+      },
+      {
+        "generalId": 25260,
+        "level": 5
+      },
+      {
+        "generalId": 25281,
+        "level": 1
+      },
+      {
+        "generalId": 25282,
+        "level": 2
+      },
+      {
+        "generalId": 25284,
+        "level": 2
+      },
+      {
+        "generalId": 25285,
+        "level": 3
+      },
+      {
+        "generalId": 25295,
+        "level": 5
+      },
+      {
+        "generalId": 25297,
+        "level": 3
+      },
+      {
+        "generalId": 25304,
+        "level": 1
+      },
+      {
+        "generalId": 25306,
+        "level": 1
+      },
+      {
+        "generalId": 25307,
+        "level": 1
+      },
+      {
+        "generalId": 25341,
+        "level": 3
+      },
+      {
+        "generalId": 25349,
+        "level": 3
+      },
+      {
+        "generalId": 25358,
+        "level": 1
+      },
+      {
+        "generalId": 25365,
+        "level": 1
+      },
+      {
+        "generalId": 25389,
+        "level": 3
+      },
+      {
+        "generalId": 25391,
+        "level": 4
+      },
+      {
+        "generalId": 25393,
+        "level": 1
+      },
+      {
+        "generalId": 25394,
+        "level": 3
+      },
+      {
+        "generalId": 25420,
+        "level": 3
+      },
+      {
+        "generalId": 25421,
+        "level": 2
+      },
+      {
+        "generalId": 25422,
+        "level": 1
+      },
+      {
+        "generalId": 25423,
+        "level": 1
+      },
+      {
+        "generalId": 25424,
+        "level": 3
+      },
+      {
+        "generalId": 25427,
+        "level": 2
+      },
+      {
+        "generalId": 25445,
+        "level": 2
+      },
+      {
+        "generalId": 25446,
+        "level": 3
+      },
+      {
+        "generalId": 25456,
+        "level": 2
+      },
+      {
+        "generalId": 25465,
+        "level": 1
+      },
+      {
+        "generalId": 25470,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1033,
+        "level": 1,
+        "promotionId": 10331
+      },
+      {
+        "generalId": 1033,
+        "level": 1,
+        "promotionId": 10332
+      },
+      {
+        "generalId": 1017,
+        "level": 3,
+        "promotionId": 10171
+      },
+      {
+        "generalId": 1017,
+        "level": 3,
+        "promotionId": 10172
+      },
+      {
+        "generalId": 1017,
+        "level": 3,
+        "promotionId": 10173
+      },
+      {
+        "generalId": 1031,
+        "level": 2,
+        "promotionId": 10311
+      }
+    ]
+  },
+  "varyingField": "ActivatesChance"
+}

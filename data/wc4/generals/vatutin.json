@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Tide of Iron",
-      "desc": "Damage to the enemy +X when the armored units are more than half damaged",
+      "desc": "Damage to the enemy +5 when the armored units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_24.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Tide of Iron",
+      "skillSlug": "tide-of-iron",
+      "skillType": 24,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Plain Fighting",
-      "desc": "Damage to the enemy +X when fighting in the plain",
+      "desc": "Damage to the enemy +5 when fighting in the plain",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_7.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Plain Fighting",
+      "skillSlug": "plain-fighting",
+      "skillType": 7,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Panzer Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
     },
     {
       "slot": 4,

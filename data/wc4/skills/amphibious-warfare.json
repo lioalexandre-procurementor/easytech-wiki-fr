@@ -1,0 +1,66 @@
+{
+  "slug": "amphibious-warfare",
+  "type": 103,
+  "name": "Amphibious Warfare",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Mobility +X% when commanding land units on board",
+  "icon": "/img/wc4/skills/general_skill_103.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3031,
+      "effect": 1,
+      "chance": 100,
+      "costMedal": 100,
+      "renderedDesc": "Mobility +1% when commanding land units on board"
+    },
+    {
+      "level": 2,
+      "skillId": 3032,
+      "effect": 2,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Mobility +2% when commanding land units on board"
+    },
+    {
+      "level": 3,
+      "skillId": 3033,
+      "effect": 3,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Mobility +3% when commanding land units on board"
+    },
+    {
+      "level": 4,
+      "skillId": 3034,
+      "effect": 4,
+      "chance": 100,
+      "costMedal": 320,
+      "renderedDesc": "Mobility +4% when commanding land units on board"
+    },
+    {
+      "level": 5,
+      "skillId": 3035,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 400,
+      "renderedDesc": "Mobility +5% when commanding land units on board"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1067,
+        "level": 2
+      },
+      {
+        "generalId": 1074,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Entrenchment",
-      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "desc": "Able to dodge 12% damage from the enemy's artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_29.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Mountain Fighting",
-      "desc": "Damage to the enemy +X when fighting on the mountain",
+      "desc": "Damage to the enemy +10 when fighting on the mountain",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_8.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Mountain Fighting",
+      "skillSlug": "mountain-fighting",
+      "skillType": 8,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +6% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 1
     },
     {
       "slot": 4,

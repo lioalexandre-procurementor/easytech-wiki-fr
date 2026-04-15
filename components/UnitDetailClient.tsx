@@ -1,9 +1,52 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import type { UnitData } from "@/lib/types";
+import { useEffect, useMemo, useState } from "react";
+import type { Perk, UnitData } from "@/lib/types";
 
 const MILESTONES = [5, 9, 12];
+
+/**
+ * Strip a perk name of the trailing " Niv.N" / " Lv.N" / " Lvl.N" token that
+ * indicates it's an upgrade of a previous perk. Used to group perks into
+ * "families" so we can show only the highest-level version at the active loadout.
+ */
+function perkFamilyKey(name: string): string {
+  return name
+    .replace(/\s+(Niv|Lvl?|Level)\.?\s*\d+\s*$/i, "")
+    .replace(/\s+(Niv|Lvl?|Level)\s*\d+\s*$/i, "")
+    .trim()
+    .toLowerCase();
+}
+
+/**
+ * Given the unit's full perks list and a current level, return the active
+ * loadout — i.e. the highest-level version of every perk family whose base
+ * unlock level is <= current level.
+ */
+function buildActiveLoadout(perks: Perk[], currentLevel: number): Perk[] {
+  const byFamily = new Map<string, Perk>();
+  for (const p of perks) {
+    if (p.lvl > currentLevel) continue;
+    const key = perkFamilyKey(p.name);
+    const existing = byFamily.get(key);
+    if (!existing || p.lvl > existing.lvl) {
+      byFamily.set(key, p);
+    }
+  }
+  // Order: passives first, then active skills, then stats; preserve insertion order inside each bucket.
+  const order: Record<string, number> = {
+    passive: 0,
+    "active-skill": 1,
+    "active-compétence": 1, // fr alias
+    stat: 2,
+  };
+  return Array.from(byFamily.values()).sort((a, b) => {
+    const oa = order[a.type] ?? 3;
+    const ob = order[b.type] ?? 3;
+    if (oa !== ob) return oa - ob;
+    return a.name.localeCompare(b.name, "fr");
+  });
+}
 
 export function UnitDetailClient({ unit }: { unit: UnitData }) {
   const [lvl, setLvl] = useState(1);
@@ -20,6 +63,11 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
   const i = lvl - 1;
   const s = unit.stats;
   const fillPct = ((lvl - 1) / 11) * 100;
+
+  const activeLoadout = useMemo(
+    () => buildActiveLoadout(unit.perks, lvl),
+    [unit.perks, lvl]
+  );
 
   const tierLabel =
     lvl >= 12 ? "Niveau maximum" :
@@ -46,6 +94,67 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
           <Stat icon="❤️" name="HP"         val={s.hp[i]}  base={s.hp[0]}/>
           <Stat icon="🏃" name="Mouvement" val={s.mov[i]} base={s.mov[0]}/>
           <Stat icon="🎯" name="Portée"    val={s.rng[i]} base={s.rng[0]}/>
+        </div>
+      </div>
+
+      {/* ACTIVE LOADOUT AT CURRENT LEVEL */}
+      <div className="bg-panel border border-border rounded-lg p-5 mb-6">
+        <div className="flex items-center justify-between mb-3.5">
+          <h3 className="text-gold2 font-bold uppercase tracking-widest text-base">
+            🎯 Loadout actif — Niveau {lvl}
+          </h3>
+          <span className="text-muted text-[10px] uppercase tracking-widest">
+            {activeLoadout.length} compétence{activeLoadout.length > 1 ? "s" : ""}
+          </span>
+        </div>
+        {activeLoadout.length === 0 ? (
+          <div className="text-muted text-sm italic">
+            Aucune compétence débloquée à ce niveau.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {activeLoadout.map((p, idx) => {
+              const unlockedAt = p.lvl;
+              const justUnlocked = unlockedAt === lvl;
+              return (
+                <div
+                  key={idx}
+                  className={`border rounded-lg p-3 ${
+                    p.milestone
+                      ? "border-red-500/40 bg-red-500/5"
+                      : "border-border bg-bg3"
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-2 mb-1">
+                    <h4 className="text-ink text-sm font-bold flex items-center gap-1.5 min-w-0">
+                      <span className="text-base shrink-0">{p.icon}</span>
+                      <span className="truncate">{p.name}</span>
+                    </h4>
+                    <div className="flex flex-wrap gap-1 shrink-0">
+                      <PerkBadge type={p.type} />
+                      {justUnlocked && (
+                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-gold/20 border border-gold/40 text-gold2 uppercase tracking-widest">
+                          ✨ Nouveau
+                        </span>
+                      )}
+                      {!justUnlocked && unlockedAt > 1 && (
+                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-bg3 border border-border text-muted uppercase tracking-widest">
+                          L{unlockedAt}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <p className="text-dim text-xs leading-relaxed">{p.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        )}
+        <div className="mt-3 text-muted text-[11px] italic">
+          💡 Ce bloc montre l'état réel de l'unité au niveau sélectionné. Les
+          compétences remplacées par une version supérieure (ex. Niv.1 → Niv.2)
+          sont automatiquement masquées. Le journal complet de progression est
+          disponible plus bas.
         </div>
       </div>
 
@@ -109,7 +218,11 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
 
       {/* PERKS TIMELINE */}
       <div className="bg-panel border border-border rounded-lg p-6 mb-6">
-        <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-5">📜 Perks et compétences par niveau</h3>
+        <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-2">📜 Journal de progression (tous les paliers)</h3>
+        <p className="text-muted text-xs mb-4 italic">
+          Liste chronologique complète — inclut les versions remplacées. Pour
+          l'état actuel du loadout, voir le bloc « Loadout actif » plus haut.
+        </p>
         <div className="relative pl-7">
           <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-border"/>
           {unit.perks.map((p, idx) => {

@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Armored Tactic Expert",
-      "desc": "Recover X% maximum HP on the next turn when the armored units are more than half damaged",
+      "desc": "Recover 6% maximum HP on the next turn when the armored units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_105.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Armored Tactic Expert",
+      "skillSlug": "armored-tactic-expert",
+      "skillType": 105,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Organisation",
-      "desc": "Recover X% maximum HP on the next turn when the infantry units are more than half damaged",
+      "desc": "Recover 6% maximum HP on the next turn when the infantry units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_107.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Organisation",
+      "skillSlug": "organisation",
+      "skillType": 107,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Blitzkrieg",
-      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "desc": "12% chance that the enemy will not fight back when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_34.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 1
     },
     {
       "slot": 4,
       "name": "Camouflage",
-      "desc": "Able to dodge X% damage from the enemy's air units",
+      "desc": "Able to dodge 12% damage from the enemy's air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_30.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Camouflage",
+      "skillSlug": "camouflage",
+      "skillType": 30,
+      "skillLevel": 2
     },
     {
       "slot": 5,
       "name": "Elastic Defence",
-      "desc": "Fix nearby fortress units: each round HP+X",
+      "desc": "Fix nearby fortress units: each round HP+4",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
     }
   ],
   "attributes": {

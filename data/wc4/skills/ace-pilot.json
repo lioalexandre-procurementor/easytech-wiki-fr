@@ -1,0 +1,94 @@
+{
+  "slug": "ace-pilot",
+  "type": 56,
+  "name": "Ace Pilot",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When using air and missile attacks, ignore enemy units X% defense",
+  "icon": "/img/wc4/skills/general_skill_56.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1451,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "When using air and missile attacks, ignore enemy units 20% defense"
+    },
+    {
+      "level": 2,
+      "skillId": 1452,
+      "effect": 40,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "When using air and missile attacks, ignore enemy units 40% defense"
+    },
+    {
+      "level": 3,
+      "skillId": 1453,
+      "effect": 60,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "When using air and missile attacks, ignore enemy units 60% defense"
+    },
+    {
+      "level": 4,
+      "skillId": 1454,
+      "effect": 80,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "When using air and missile attacks, ignore enemy units 80% defense"
+    },
+    {
+      "level": 5,
+      "skillId": 1455,
+      "effect": 100,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "When using air and missile attacks, ignore enemy units 100% defense"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1059,
+        "level": 5
+      },
+      {
+        "generalId": 22112,
+        "level": 1
+      },
+      {
+        "generalId": 22126,
+        "level": 1
+      },
+      {
+        "generalId": 22134,
+        "level": 1
+      },
+      {
+        "generalId": 25179,
+        "level": 5
+      },
+      {
+        "generalId": 25198,
+        "level": 3
+      },
+      {
+        "generalId": 25286,
+        "level": 1
+      },
+      {
+        "generalId": 25365,
+        "level": 1
+      },
+      {
+        "generalId": 25433,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -1,0 +1,326 @@
+{
+  "slug": "elastic-defence",
+  "type": 28,
+  "name": "Elastic Defence",
+  "series": 2,
+  "seriesLabel": "Commandement",
+  "descriptionTemplate": "Fix nearby fortress units: each round HP+X",
+  "icon": "/img/wc4/skills/general_skill_28.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1281,
+      "effect": 4,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "Fix nearby fortress units: each round HP+4"
+    },
+    {
+      "level": 2,
+      "skillId": 1282,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "Fix nearby fortress units: each round HP+8"
+    },
+    {
+      "level": 3,
+      "skillId": 1283,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "Fix nearby fortress units: each round HP+12"
+    },
+    {
+      "level": 4,
+      "skillId": 1284,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "Fix nearby fortress units: each round HP+16"
+    },
+    {
+      "level": 5,
+      "skillId": 1285,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "Fix nearby fortress units: each round HP+20"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1009,
+        "level": 1
+      },
+      {
+        "generalId": 1016,
+        "level": 1
+      },
+      {
+        "generalId": 1025,
+        "level": 1
+      },
+      {
+        "generalId": 1039,
+        "level": 1
+      },
+      {
+        "generalId": 1045,
+        "level": 1
+      },
+      {
+        "generalId": 1053,
+        "level": 2
+      },
+      {
+        "generalId": 1063,
+        "level": 1
+      },
+      {
+        "generalId": 21012,
+        "level": 1
+      },
+      {
+        "generalId": 21013,
+        "level": 2
+      },
+      {
+        "generalId": 21042,
+        "level": 1
+      },
+      {
+        "generalId": 21071,
+        "level": 1
+      },
+      {
+        "generalId": 21075,
+        "level": 1
+      },
+      {
+        "generalId": 21076,
+        "level": 1
+      },
+      {
+        "generalId": 21086,
+        "level": 1
+      },
+      {
+        "generalId": 21089,
+        "level": 4
+      },
+      {
+        "generalId": 21092,
+        "level": 3
+      },
+      {
+        "generalId": 21094,
+        "level": 1
+      },
+      {
+        "generalId": 20012,
+        "level": 1
+      },
+      {
+        "generalId": 20013,
+        "level": 1
+      },
+      {
+        "generalId": 20022,
+        "level": 1
+      },
+      {
+        "generalId": 20032,
+        "level": 1
+      },
+      {
+        "generalId": 20043,
+        "level": 1
+      },
+      {
+        "generalId": 20065,
+        "level": 1
+      },
+      {
+        "generalId": 20075,
+        "level": 1
+      },
+      {
+        "generalId": 20082,
+        "level": 1
+      },
+      {
+        "generalId": 20084,
+        "level": 1
+      },
+      {
+        "generalId": 20089,
+        "level": 2
+      },
+      {
+        "generalId": 20101,
+        "level": 1
+      },
+      {
+        "generalId": 20181,
+        "level": 1
+      },
+      {
+        "generalId": 20216,
+        "level": 1
+      },
+      {
+        "generalId": 20242,
+        "level": 2
+      },
+      {
+        "generalId": 22002,
+        "level": 1
+      },
+      {
+        "generalId": 22003,
+        "level": 2
+      },
+      {
+        "generalId": 22016,
+        "level": 1
+      },
+      {
+        "generalId": 22027,
+        "level": 1
+      },
+      {
+        "generalId": 22034,
+        "level": 1
+      },
+      {
+        "generalId": 22043,
+        "level": 1
+      },
+      {
+        "generalId": 22057,
+        "level": 1
+      },
+      {
+        "generalId": 22063,
+        "level": 1
+      },
+      {
+        "generalId": 22071,
+        "level": 2
+      },
+      {
+        "generalId": 22075,
+        "level": 1
+      },
+      {
+        "generalId": 29009,
+        "level": 1
+      },
+      {
+        "generalId": 29016,
+        "level": 1
+      },
+      {
+        "generalId": 29025,
+        "level": 1
+      },
+      {
+        "generalId": 29039,
+        "level": 1
+      },
+      {
+        "generalId": 29045,
+        "level": 1
+      },
+      {
+        "generalId": 29053,
+        "level": 2
+      },
+      {
+        "generalId": 29087,
+        "level": 2
+      },
+      {
+        "generalId": 29154,
+        "level": 3
+      },
+      {
+        "generalId": 29163,
+        "level": 4
+      },
+      {
+        "generalId": 25003,
+        "level": 1
+      },
+      {
+        "generalId": 25012,
+        "level": 2
+      },
+      {
+        "generalId": 25022,
+        "level": 2
+      },
+      {
+        "generalId": 25028,
+        "level": 1
+      },
+      {
+        "generalId": 25099,
+        "level": 1
+      },
+      {
+        "generalId": 25103,
+        "level": 1
+      },
+      {
+        "generalId": 25104,
+        "level": 2
+      },
+      {
+        "generalId": 25128,
+        "level": 1
+      },
+      {
+        "generalId": 25135,
+        "level": 1
+      },
+      {
+        "generalId": 25144,
+        "level": 1
+      },
+      {
+        "generalId": 25161,
+        "level": 1
+      },
+      {
+        "generalId": 25171,
+        "level": 2
+      },
+      {
+        "generalId": 25182,
+        "level": 3
+      },
+      {
+        "generalId": 25236,
+        "level": 3
+      },
+      {
+        "generalId": 25319,
+        "level": 3
+      },
+      {
+        "generalId": 25355,
+        "level": 1
+      },
+      {
+        "generalId": 25375,
+        "level": 3
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

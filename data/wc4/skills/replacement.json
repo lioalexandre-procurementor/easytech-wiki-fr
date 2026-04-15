@@ -1,0 +1,205 @@
+{
+  "slug": "replacement",
+  "type": 15,
+  "name": "Replacement",
+  "series": 3,
+  "seriesLabel": "Logistique",
+  "descriptionTemplate": "Reinforce damaged infantry units: each round HP +X",
+  "icon": "/img/wc4/skills/general_skill_15.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1151,
+      "effect": 3,
+      "chance": 100,
+      "costMedal": 120,
+      "renderedDesc": "Reinforce damaged infantry units: each round HP +3"
+    },
+    {
+      "level": 2,
+      "skillId": 1152,
+      "effect": 6,
+      "chance": 100,
+      "costMedal": 170,
+      "renderedDesc": "Reinforce damaged infantry units: each round HP +6"
+    },
+    {
+      "level": 3,
+      "skillId": 1153,
+      "effect": 9,
+      "chance": 100,
+      "costMedal": 270,
+      "renderedDesc": "Reinforce damaged infantry units: each round HP +9"
+    },
+    {
+      "level": 4,
+      "skillId": 1154,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 370,
+      "renderedDesc": "Reinforce damaged infantry units: each round HP +12"
+    },
+    {
+      "level": 5,
+      "skillId": 1155,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 470,
+      "renderedDesc": "Reinforce damaged infantry units: each round HP +15"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1003,
+        "level": 1
+      },
+      {
+        "generalId": 1029,
+        "level": 1
+      },
+      {
+        "generalId": 21022,
+        "level": 4
+      },
+      {
+        "generalId": 21023,
+        "level": 1
+      },
+      {
+        "generalId": 21064,
+        "level": 4
+      },
+      {
+        "generalId": 21066,
+        "level": 1
+      },
+      {
+        "generalId": 21101,
+        "level": 3
+      },
+      {
+        "generalId": 21142,
+        "level": 1
+      },
+      {
+        "generalId": 20059,
+        "level": 1
+      },
+      {
+        "generalId": 20066,
+        "level": 1
+      },
+      {
+        "generalId": 20079,
+        "level": 1
+      },
+      {
+        "generalId": 20810,
+        "level": 1
+      },
+      {
+        "generalId": 20811,
+        "level": 1
+      },
+      {
+        "generalId": 20817,
+        "level": 1
+      },
+      {
+        "generalId": 20098,
+        "level": 1
+      },
+      {
+        "generalId": 20104,
+        "level": 1
+      },
+      {
+        "generalId": 20106,
+        "level": 1
+      },
+      {
+        "generalId": 20161,
+        "level": 1
+      },
+      {
+        "generalId": 20182,
+        "level": 1
+      },
+      {
+        "generalId": 22021,
+        "level": 1
+      },
+      {
+        "generalId": 22047,
+        "level": 1
+      },
+      {
+        "generalId": 22048,
+        "level": 1
+      },
+      {
+        "generalId": 22078,
+        "level": 1
+      },
+      {
+        "generalId": 29003,
+        "level": 1
+      },
+      {
+        "generalId": 29029,
+        "level": 1
+      },
+      {
+        "generalId": 29077,
+        "level": 2
+      },
+      {
+        "generalId": 25083,
+        "level": 1
+      },
+      {
+        "generalId": 25170,
+        "level": 1
+      },
+      {
+        "generalId": 25245,
+        "level": 1
+      },
+      {
+        "generalId": 25246,
+        "level": 5
+      },
+      {
+        "generalId": 25259,
+        "level": 1
+      },
+      {
+        "generalId": 25264,
+        "level": 5
+      },
+      {
+        "generalId": 25390,
+        "level": 1
+      },
+      {
+        "generalId": 25403,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1029,
+        "level": 1,
+        "promotionId": 10291
+      },
+      {
+        "generalId": 1029,
+        "level": 1,
+        "promotionId": 10292
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "24% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Amphibious Warfare",
-      "desc": "Mobility +X% when commanding land units on board",
+      "desc": "Mobility +2% when commanding land units on board",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_103.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Amphibious Warfare",
+      "skillSlug": "amphibious-warfare",
+      "skillType": 103,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +12% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 2
     },
     {
       "slot": 4,

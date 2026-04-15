@@ -13,33 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Feu Croisé",
-      "desc": "Dégâts supplémentaires en contre-attaque quand attaqué.",
+      "name": "Desert Fighting",
+      "desc": "Damage to the enemy +5 when fighting in the desert",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_10.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Desert Fighting",
+      "skillSlug": "desert-fighting",
+      "skillType": 10,
+      "skillLevel": 1
     },
     {
       "slot": 2,
-      "name": "Assaut Blindé",
-      "desc": "Dégâts +15% pour toutes les attaques blindées.",
+      "name": "Crossfire",
+      "desc": "Counter attack +6% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 1
     },
     {
       "slot": 3,
-      "name": "Commandant du désert",
-      "desc": "Bonus supplémentaire en terrain désertique.",
+      "name": "Armored Assault",
+      "desc": "Deal +12% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 2
     },
     {
       "slot": 4,

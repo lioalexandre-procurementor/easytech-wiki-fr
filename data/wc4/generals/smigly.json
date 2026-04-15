@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Shelter",
-      "desc": "Able to dodge X% damage from the enemy's missile units",
+      "desc": "Able to dodge 6% damage from the enemy's missile units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_31.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Shelter",
+      "skillSlug": "shelter",
+      "skillType": 31,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Architecture",
-      "desc": "Fix the city: each round City HP +X",
+      "desc": "Fix the city: each round City HP +18",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_14.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Architecture",
+      "skillSlug": "architecture",
+      "skillType": 14,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Elastic Defence",
-      "desc": "Fix nearby fortress units: each round HP+X",
+      "desc": "Fix nearby fortress units: each round HP+8",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 2
     },
     {
       "slot": 4,

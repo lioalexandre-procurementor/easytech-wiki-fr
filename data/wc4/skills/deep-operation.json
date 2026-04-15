@@ -1,0 +1,80 @@
+{
+  "slug": "deep-operation",
+  "type": 148,
+  "name": "Deep Operation",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding artillery units, dealt damage +X% to enemies 2 or more hexes away",
+  "icon": "/img/wc4/skills/general_skill_148.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3481,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "When commanding artillery units, dealt damage +5% to enemies 2 or more hexes away"
+    },
+    {
+      "level": 2,
+      "skillId": 3482,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "When commanding artillery units, dealt damage +10% to enemies 2 or more hexes away"
+    },
+    {
+      "level": 3,
+      "skillId": 3483,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "When commanding artillery units, dealt damage +15% to enemies 2 or more hexes away"
+    },
+    {
+      "level": 4,
+      "skillId": 3484,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "When commanding artillery units, dealt damage +20% to enemies 2 or more hexes away"
+    },
+    {
+      "level": 5,
+      "skillId": 3485,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "When commanding artillery units, dealt damage +25% to enemies 2 or more hexes away"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25345,
+        "level": 4
+      },
+      {
+        "generalId": 25352,
+        "level": 4
+      },
+      {
+        "generalId": 25416,
+        "level": 5
+      },
+      {
+        "generalId": 25452,
+        "level": 4
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1020,
+        "level": 4,
+        "promotionId": 10202
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

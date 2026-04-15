@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Artillery Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "desc": "16% chance to give the enemy a critical attack when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Leader",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +18% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +12% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 2
     },
     {
       "slot": 4,

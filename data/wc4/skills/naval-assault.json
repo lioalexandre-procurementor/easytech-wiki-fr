@@ -1,0 +1,128 @@
+{
+  "slug": "naval-assault",
+  "type": 112,
+  "name": "Naval Assault",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Damage +X% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+  "icon": "/img/wc4/skills/general_skill_112.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3121,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Damage +8% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+    },
+    {
+      "level": 2,
+      "skillId": 3122,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Damage +16% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+    },
+    {
+      "level": 3,
+      "skillId": 3123,
+      "effect": 24,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "Damage +24% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+    },
+    {
+      "level": 4,
+      "skillId": 3124,
+      "effect": 32,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "Damage +32% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+    },
+    {
+      "level": 5,
+      "skillId": 3125,
+      "effect": 40,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Damage +40% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1089,
+        "level": 2
+      },
+      {
+        "generalId": 1095,
+        "level": 3
+      },
+      {
+        "generalId": 22116,
+        "level": 1
+      },
+      {
+        "generalId": 22128,
+        "level": 1
+      },
+      {
+        "generalId": 22129,
+        "level": 1
+      },
+      {
+        "generalId": 25188,
+        "level": 3
+      },
+      {
+        "generalId": 25197,
+        "level": 2
+      },
+      {
+        "generalId": 25205,
+        "level": 2
+      },
+      {
+        "generalId": 25240,
+        "level": 3
+      },
+      {
+        "generalId": 25281,
+        "level": 1
+      },
+      {
+        "generalId": 25285,
+        "level": 2
+      },
+      {
+        "generalId": 25349,
+        "level": 1
+      },
+      {
+        "generalId": 25389,
+        "level": 5
+      },
+      {
+        "generalId": 25391,
+        "level": 5
+      },
+      {
+        "generalId": 25420,
+        "level": 2
+      },
+      {
+        "generalId": 25465,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1017,
+        "level": 3,
+        "promotionId": 10173
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

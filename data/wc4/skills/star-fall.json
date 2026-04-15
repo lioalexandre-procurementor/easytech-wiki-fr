@@ -1,0 +1,66 @@
+{
+  "slug": "star-fall",
+  "type": 177,
+  "name": "Star Fall",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding troops to attack, there is a X% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%.",
+  "icon": "/img/wc4/skills/general_skill_177.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3771,
+      "effect": 0,
+      "chance": 20,
+      "costMedal": 160,
+      "renderedDesc": "When commanding troops to attack, there is a 20% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%."
+    },
+    {
+      "level": 2,
+      "skillId": 3772,
+      "effect": 0,
+      "chance": 40,
+      "costMedal": 240,
+      "renderedDesc": "When commanding troops to attack, there is a 40% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%."
+    },
+    {
+      "level": 3,
+      "skillId": 3773,
+      "effect": 0,
+      "chance": 60,
+      "costMedal": 480,
+      "renderedDesc": "When commanding troops to attack, there is a 60% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%."
+    },
+    {
+      "level": 4,
+      "skillId": 3774,
+      "effect": 0,
+      "chance": 80,
+      "costMedal": 640,
+      "renderedDesc": "When commanding troops to attack, there is a 80% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%."
+    },
+    {
+      "level": 5,
+      "skillId": 3775,
+      "effect": 0,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "When commanding troops to attack, there is a 100% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1114,
+        "level": 3
+      },
+      {
+        "generalId": 25476,
+        "level": 3
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

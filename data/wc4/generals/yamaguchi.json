@@ -13,33 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Tactique navale",
-      "desc": "Bonus d'attaque tous types navals.",
+      "name": "Naval Assault",
+      "desc": "Damage +16% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_112.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Naval Assault",
+      "skillSlug": "naval-assault",
+      "skillType": 112,
+      "skillLevel": 2
     },
     {
       "slot": 2,
-      "name": "Aviation embarquée",
-      "desc": "Bonus sur avions lancés depuis carriers.",
+      "name": "Early Warning",
+      "desc": "40% chance to evade 20% damage when commanding ship units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_109.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Early Warning",
+      "skillSlug": "early-warning",
+      "skillType": 109,
+      "skillLevel": 2
     },
     {
       "slot": 3,
-      "name": "Bushidō naval",
-      "desc": "Moral amélioré — réduction des pertes.",
+      "name": "Airforce Leader",
+      "desc": "16% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 2
     },
     {
       "slot": 4,

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Artillery Barrage",
-      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "desc": "Damage to the enemy +10 when the artillery units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_25.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Barrage",
+      "skillSlug": "artillery-barrage",
+      "skillType": 25,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Entrenchment",
-      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "desc": "Able to dodge 18% damage from the enemy's artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_29.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Rumor",
-      "desc": "X% chance to reduce the morale of the enemy when attacking",
+      "desc": "15% chance to reduce the morale of the enemy when attacking",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_42.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 1
     }
   ],
   "attributes": {

@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Efficient Bombardment",
-      "desc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + X%.",
+      "desc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 50%.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_126.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Efficient Bombardment",
+      "skillSlug": "efficient-bombardment",
+      "skillType": 126,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Inspection",
-      "desc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of X% for 1 turn.",
+      "desc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 60% for 1 turn.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_120.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inspection",
+      "skillSlug": "inspection",
+      "skillType": 120,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Airforce Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "desc": "24% chance to give the enemy a critical attack when commanding air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_22.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Sailor",
-      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "desc": "Counter attack +12% when attacked by the enemy at sea",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_40.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 2
     },
     {
       "slot": 5,
       "name": "Carpet Bombing",
-      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "desc": "Damage +24% to the defending forces in the city when air-raiding",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_41.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 3
     }
   ],
   "attributes": {

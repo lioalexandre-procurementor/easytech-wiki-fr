@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Hold Fast",
-      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_108.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Hold Fast",
+      "skillSlug": "hold-fast",
+      "skillType": 108,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Inspiration",
-      "desc": "30% chance to boost morale after attacking. Damage +X% when morale is high",
+      "desc": "30% chance to boost morale after attacking. Damage +6% when morale is high",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_110.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Inspiration",
+      "skillSlug": "inspiration",
+      "skillType": 110,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +12% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 2
     },
     {
       "slot": 4,
       "name": "Artillery Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "desc": "24% chance to give the enemy a critical attack when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_20.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery Leader",
+      "skillSlug": "artillery-leader",
+      "skillType": 20,
+      "skillLevel": 3
     },
     {
       "slot": 5,
       "name": "Accuracy",
-      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "desc": "Deal +6% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 1
     }
   ],
   "attributes": {

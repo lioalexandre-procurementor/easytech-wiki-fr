@@ -1,0 +1,68 @@
+{
+  "slug": "steel-maneuver",
+  "type": 170,
+  "name": "Steel Maneuver",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding armored units, damage dealt is increased by X%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+  "icon": "/img/wc4/skills/general_skill_170.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3701,
+      "effect": 7,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 7%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+    },
+    {
+      "level": 2,
+      "skillId": 3702,
+      "effect": 14,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 14%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+    },
+    {
+      "level": 3,
+      "skillId": 3703,
+      "effect": 21,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 21%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+    },
+    {
+      "level": 4,
+      "skillId": 3704,
+      "effect": 28,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 28%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+    },
+    {
+      "level": 5,
+      "skillId": 3705,
+      "effect": 35,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn)."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25473,
+        "level": 5
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1050,
+        "level": 5,
+        "promotionId": 10501
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

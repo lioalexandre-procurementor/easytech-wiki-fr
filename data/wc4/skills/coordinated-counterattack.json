@@ -1,0 +1,76 @@
+{
+  "slug": "coordinated-counterattack",
+  "type": 147,
+  "name": "Coordinated Counterattack",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is X% chance to join the counterattack",
+  "icon": "/img/wc4/skills/general_skill_147.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3471,
+      "effect": 20,
+      "chance": 20,
+      "costMedal": 160,
+      "renderedDesc": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 20% chance to join the counterattack"
+    },
+    {
+      "level": 2,
+      "skillId": 3472,
+      "effect": 40,
+      "chance": 40,
+      "costMedal": 240,
+      "renderedDesc": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 40% chance to join the counterattack"
+    },
+    {
+      "level": 3,
+      "skillId": 3473,
+      "effect": 60,
+      "chance": 60,
+      "costMedal": 480,
+      "renderedDesc": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 60% chance to join the counterattack"
+    },
+    {
+      "level": 4,
+      "skillId": 3474,
+      "effect": 80,
+      "chance": 80,
+      "costMedal": 640,
+      "renderedDesc": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 80% chance to join the counterattack"
+    },
+    {
+      "level": 5,
+      "skillId": 3475,
+      "effect": 100,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 100% chance to join the counterattack"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25345,
+        "level": 5
+      },
+      {
+        "generalId": 25352,
+        "level": 5
+      },
+      {
+        "generalId": 25452,
+        "level": 5
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1020,
+        "level": 5,
+        "promotionId": 10202
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

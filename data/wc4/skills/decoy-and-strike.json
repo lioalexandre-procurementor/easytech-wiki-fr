@@ -1,0 +1,74 @@
+{
+  "slug": "decoy-and-strike",
+  "type": 127,
+  "name": "Decoy and Strike",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +X% damage (excluding itself).",
+  "icon": "/img/wc4/skills/general_skill_127.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3271,
+      "effect": 3,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +3% damage (excluding itself)."
+    },
+    {
+      "level": 2,
+      "skillId": 3272,
+      "effect": 6,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +6% damage (excluding itself)."
+    },
+    {
+      "level": 3,
+      "skillId": 3273,
+      "effect": 9,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +9% damage (excluding itself)."
+    },
+    {
+      "level": 4,
+      "skillId": 3274,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +12% damage (excluding itself)."
+    },
+    {
+      "level": 5,
+      "skillId": 3275,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +15% damage (excluding itself)."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1090,
+        "level": 4
+      },
+      {
+        "generalId": 22105,
+        "level": 1
+      },
+      {
+        "generalId": 22114,
+        "level": 1
+      },
+      {
+        "generalId": 22133,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

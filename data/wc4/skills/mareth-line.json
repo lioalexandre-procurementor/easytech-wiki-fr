@@ -1,0 +1,68 @@
+{
+  "slug": "mareth-line",
+  "type": 176,
+  "name": "Mareth Line",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "While on mountainous or desert terrain, you and allies in a 1-tile radius take X% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP.",
+  "icon": "/img/wc4/skills/general_skill_176.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3761,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take 5% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP."
+    },
+    {
+      "level": 2,
+      "skillId": 3762,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take 10% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP."
+    },
+    {
+      "level": 3,
+      "skillId": 3763,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take 15% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP."
+    },
+    {
+      "level": 4,
+      "skillId": 3764,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take 20% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP."
+    },
+    {
+      "level": 5,
+      "skillId": 3765,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "While on mountainous or desert terrain, you and allies in a 1-tile radius take 25% less damage. When commanding land units, the activation chance of the \"Rumor\" skill increases by 25%. At the end of the turn, if there are any enemies within 2 tiles with lowered morale or in chaos, you and the allies in a 1-tile radius recover 10% of their maximum HP."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25477,
+        "level": 5
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1011,
+        "level": 5,
+        "promotionId": 10113
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

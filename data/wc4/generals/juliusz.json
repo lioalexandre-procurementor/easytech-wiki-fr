@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Panzer Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +6% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Street Fighting",
-      "desc": "Damage to the enemy +X when fighting in the city",
+      "desc": "Damage to the enemy +10 when fighting in the city",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_6.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Street Fighting",
+      "skillSlug": "street-fighting",
+      "skillType": 6,
+      "skillLevel": 2
     },
     {
       "slot": 4,

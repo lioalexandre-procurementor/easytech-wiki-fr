@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Armored Assault",
-      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "desc": "Deal +12% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Machinist",
-      "desc": "Supply to damaged armored units and artillery units: each round HP +X",
+      "desc": "Supply to damaged armored units and artillery units: each round HP +9",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_16.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Machinist",
+      "skillSlug": "machinist",
+      "skillType": 16,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Tide of Iron",
-      "desc": "Damage to the enemy +X when the armored units are more than half damaged",
+      "desc": "Damage to the enemy +10 when the armored units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_24.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Tide of Iron",
+      "skillSlug": "tide-of-iron",
+      "skillType": 24,
+      "skillLevel": 2
     },
     {
       "slot": 4,

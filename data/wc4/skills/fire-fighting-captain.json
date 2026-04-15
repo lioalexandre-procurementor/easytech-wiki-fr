@@ -1,0 +1,72 @@
+{
+  "slug": "fire-fighting-captain",
+  "type": 169,
+  "name": "Fire-Fighting Captain",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a X% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+  "icon": "/img/wc4/skills/general_skill_169.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3691,
+      "effect": 14,
+      "chance": 14,
+      "costMedal": 160,
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 14% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+    },
+    {
+      "level": 2,
+      "skillId": 3692,
+      "effect": 28,
+      "chance": 28,
+      "costMedal": 240,
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 28% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+    },
+    {
+      "level": 3,
+      "skillId": 3693,
+      "effect": 42,
+      "chance": 42,
+      "costMedal": 480,
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 42% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+    },
+    {
+      "level": 4,
+      "skillId": 3694,
+      "effect": 56,
+      "chance": 56,
+      "costMedal": 640,
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 56% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+    },
+    {
+      "level": 5,
+      "skillId": 3695,
+      "effect": 70,
+      "chance": 70,
+      "costMedal": 800,
+      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25457,
+        "level": 5
+      },
+      {
+        "generalId": 25478,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1018,
+        "level": 5,
+        "promotionId": 10181
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

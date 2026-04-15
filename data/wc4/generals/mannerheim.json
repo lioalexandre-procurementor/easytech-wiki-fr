@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +18% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Elastic Defence",
-      "desc": "Fix nearby fortress units: each round HP+X",
+      "desc": "Fix nearby fortress units: each round HP+4",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Jungle Fighting",
-      "desc": "Damage to the enemy +X when fighting in the jungle",
+      "desc": "Damage to the enemy +15 when fighting in the jungle",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_9.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Jungle Fighting",
+      "skillSlug": "jungle-fighting",
+      "skillType": 9,
+      "skillLevel": 3
     },
     {
       "slot": 4,

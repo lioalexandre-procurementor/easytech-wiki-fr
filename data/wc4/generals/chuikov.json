@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Mountain Fighting",
-      "desc": "Damage to the enemy +X when fighting on the mountain",
+      "desc": "Damage to the enemy +5 when fighting on the mountain",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_8.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Mountain Fighting",
+      "skillSlug": "mountain-fighting",
+      "skillType": 8,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Machinist",
-      "desc": "Supply to damaged armored units and artillery units: each round HP +X",
+      "desc": "Supply to damaged armored units and artillery units: each round HP +3",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_16.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Machinist",
+      "skillSlug": "machinist",
+      "skillType": 16,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Architecture",
-      "desc": "Fix the city: each round City HP +X",
+      "desc": "Fix the city: each round City HP +6",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_14.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Architecture",
+      "skillSlug": "architecture",
+      "skillType": 14,
+      "skillLevel": 1
     },
     {
       "slot": 4,

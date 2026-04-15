@@ -1,0 +1,70 @@
+{
+  "slug": "nuclear-warfare-expert",
+  "type": 115,
+  "name": "Nuclear Warfare Expert",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Damage caused by nuclear bombs + X%.",
+  "icon": "/img/wc4/skills/general_skill_115.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3151,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Damage caused by nuclear bombs + 25%."
+    },
+    {
+      "level": 2,
+      "skillId": 3152,
+      "effect": 35,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Damage caused by nuclear bombs + 35%."
+    },
+    {
+      "level": 3,
+      "skillId": 3153,
+      "effect": 45,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "Damage caused by nuclear bombs + 45%."
+    },
+    {
+      "level": 4,
+      "skillId": 3154,
+      "effect": 55,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "Damage caused by nuclear bombs + 55%."
+    },
+    {
+      "level": 5,
+      "skillId": 3155,
+      "effect": 65,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Damage caused by nuclear bombs + 65%."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1079,
+        "level": 5
+      },
+      {
+        "generalId": 25214,
+        "level": 5
+      },
+      {
+        "generalId": 25301,
+        "level": 5
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

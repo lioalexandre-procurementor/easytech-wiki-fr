@@ -1,0 +1,70 @@
+{
+  "slug": "air-tactics-master",
+  "type": 153,
+  "name": "Air Tactics Master",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy X% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+  "icon": "/img/wc4/skills/general_skill_153.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3531,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 160,
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 15% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+    },
+    {
+      "level": 2,
+      "skillId": 3532,
+      "effect": 30,
+      "chance": 100,
+      "costMedal": 240,
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 30% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+    },
+    {
+      "level": 3,
+      "skillId": 3533,
+      "effect": 45,
+      "chance": 100,
+      "costMedal": 480,
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 45% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+    },
+    {
+      "level": 4,
+      "skillId": 3534,
+      "effect": 60,
+      "chance": 100,
+      "costMedal": 640,
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 60% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+    },
+    {
+      "level": 5,
+      "skillId": 3535,
+      "effect": 75,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1109,
+        "level": 4
+      },
+      {
+        "generalId": 25371,
+        "level": 4
+      },
+      {
+        "generalId": 25374,
+        "level": 4
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Dominance",
-      "desc": "Deals damage +X% to demoralized and chaotic enemies.",
+      "desc": "Deals damage +6% to demoralized and chaotic enemies.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_130.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Dominance",
+      "skillSlug": "dominance",
+      "skillType": 130,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +6% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "16% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 2
     },
     {
       "slot": 4,

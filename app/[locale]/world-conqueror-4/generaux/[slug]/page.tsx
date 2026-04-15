@@ -505,40 +505,93 @@ function SkillBlock({
       : [];
   void category;
 
+  // If the skill has a catalog slug, wrap the header in a link to the detail page
+  // and render its icon.
+  const skillDetailHref = skill.skillSlug
+    ? `/world-conqueror-4/competences/${skill.skillSlug}`
+    : null;
+
   return (
     <div
       className={`border rounded-lg p-4 ${
         skill.replaceable ? "border-gold/40 bg-gold/5" : "bg-bg3 border-border"
       }`}
     >
-      <div className="flex items-center justify-between gap-3 mb-1.5">
-        <div className="flex items-center gap-2">
-          <span className="text-muted text-[10px] uppercase tracking-widest font-bold">
-            Slot {skill.slot}
-          </span>
-          <span className="text-gold2 font-bold text-sm">{skill.name}</span>
-          {skill.replaceable && (
-            <span className="text-[9px] font-extrabold uppercase tracking-widest px-1.5 py-0.5 rounded border bg-gold/15 border-gold/40 text-gold2">
-              🎓 Libre
-            </span>
+      <div className="flex items-start gap-3">
+        {skill.icon ? (
+          <div
+            className="w-12 h-12 rounded-md border border-gold/40 bg-bg3 relative overflow-hidden flex-shrink-0"
+          >
+            <Image
+              src={skill.icon}
+              alt={skill.name}
+              fill
+              sizes="48px"
+              className="object-contain p-1"
+            />
+          </div>
+        ) : (
+          <div className="w-12 h-12 rounded-md border border-border bg-bg3 grid place-items-center flex-shrink-0 text-xl">
+            ⚡
+          </div>
+        )}
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between gap-3 mb-1.5">
+            <div className="flex items-center gap-2 flex-wrap min-w-0">
+              <span className="text-muted text-[10px] uppercase tracking-widest font-bold">
+                Slot {skill.slot}
+              </span>
+              {skillDetailHref ? (
+                <Link
+                  href={skillDetailHref as any}
+                  className="text-gold2 font-bold text-sm hover:underline no-underline truncate"
+                >
+                  {skill.name}
+                </Link>
+              ) : (
+                <span className="text-gold2 font-bold text-sm truncate">
+                  {skill.name}
+                </span>
+              )}
+              {skill.skillLevel != null && (
+                <span className="text-[9px] font-bold uppercase tracking-widest px-1.5 py-0.5 rounded bg-gold/15 border border-gold/40 text-gold2">
+                  L{skill.skillLevel}
+                </span>
+              )}
+              {skill.replaceable && (
+                <span className="text-[9px] font-extrabold uppercase tracking-widest px-1.5 py-0.5 rounded border bg-gold/15 border-gold/40 text-gold2">
+                  🎓 Libre
+                </span>
+              )}
+            </div>
+            <div className="flex items-center gap-2 flex-shrink-0">
+              {rating && (
+                <span
+                  className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded border ${ratingColor}`}
+                >
+                  {rating}
+                </span>
+              )}
+            </div>
+          </div>
+          <div className="text-dim text-sm leading-relaxed">{skill.desc}</div>
+          {skill.replaceableReason && (
+            <div className="text-muted text-[10px] italic mt-1">
+              {skill.replaceableReason}
+            </div>
           )}
-        </div>
-        <div className="flex items-center gap-2">
-          {rating && (
-            <span
-              className={`text-[10px] font-extrabold uppercase px-2 py-0.5 rounded border ${ratingColor}`}
-            >
-              {rating}
-            </span>
+          {skillDetailHref && (
+            <div className="mt-2">
+              <Link
+                href={skillDetailHref as any}
+                className="text-[11px] text-gold/80 hover:text-gold2 no-underline"
+              >
+                📈 Voir la progression L1 → L5 →
+              </Link>
+            </div>
           )}
         </div>
       </div>
-      <div className="text-dim text-sm leading-relaxed">{skill.desc}</div>
-      {skill.replaceableReason && (
-        <div className="text-muted text-[10px] italic mt-1">
-          {skill.replaceableReason}
-        </div>
-      )}
 
       {skill.replaceable && candidates.length > 0 && (
         <TrainedSkillVote

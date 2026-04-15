@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Fighting Spirit",
-      "desc": "After commanding a troop to counterattack, +X HP to yourself and surrounding friendly troops.",
+      "desc": "After commanding a troop to counterattack, +16 HP to yourself and surrounding friendly troops.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_132.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fighting Spirit",
+      "skillSlug": "fighting-spirit",
+      "skillType": 132,
+      "skillLevel": 2
     },
     {
       "slot": 2,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "16% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Crossfire",
-      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "desc": "Counter attack +18% when attacked by the enemy on land",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_39.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Crossfire",
+      "skillSlug": "crossfire",
+      "skillType": 39,
+      "skillLevel": 3
     },
     {
       "slot": 4,

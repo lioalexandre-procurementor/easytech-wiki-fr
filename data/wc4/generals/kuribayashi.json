@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Entrenchment",
-      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "desc": "Able to dodge 6% damage from the enemy's artillery units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_29.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Bayonet Charge",
-      "desc": "Damage to the enemy +X when the infantry units are more than half damaged",
+      "desc": "Damage to the enemy +15 when the infantry units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_23.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Bayonet Charge",
+      "skillSlug": "bayonet-charge",
+      "skillType": 23,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Elastic Defence",
-      "desc": "Fix nearby fortress units: each round HP+X",
+      "desc": "Fix nearby fortress units: each round HP+4",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_28.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Elastic Defence",
+      "skillSlug": "elastic-defence",
+      "skillType": 28,
+      "skillLevel": 1
     }
   ],
   "attributes": {

@@ -1,0 +1,68 @@
+{
+  "slug": "wartime-mobilization",
+  "type": 172,
+  "name": "Wartime Mobilization",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "When commanding infantry units, there is a X% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+  "icon": "/img/wc4/skills/general_skill_172.png",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3721,
+      "effect": 150,
+      "chance": 20,
+      "costMedal": 160,
+      "renderedDesc": "When commanding infantry units, there is a 20% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+    },
+    {
+      "level": 2,
+      "skillId": 3722,
+      "effect": 150,
+      "chance": 40,
+      "costMedal": 240,
+      "renderedDesc": "When commanding infantry units, there is a 40% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+    },
+    {
+      "level": 3,
+      "skillId": 3723,
+      "effect": 150,
+      "chance": 60,
+      "costMedal": 480,
+      "renderedDesc": "When commanding infantry units, there is a 60% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+    },
+    {
+      "level": 4,
+      "skillId": 3724,
+      "effect": 150,
+      "chance": 80,
+      "costMedal": 640,
+      "renderedDesc": "When commanding infantry units, there is a 80% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+    },
+    {
+      "level": 5,
+      "skillId": 3725,
+      "effect": 150,
+      "chance": 100,
+      "costMedal": 800,
+      "renderedDesc": "When commanding infantry units, there is a 100% chance to deal a critical attack and recovers 15% of your maximum HP each turn. At the same time, the commander and all infantry units within a 2-hex radius deal 30% more damage and receive 25% less damage. (If the general has this skill, the effects of Infantry Leader are inapplicable.)"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 25474,
+        "level": 5
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1062,
+        "level": 5,
+        "promotionId": 10621
+      }
+    ]
+  },
+  "varyingField": "ActivatesChance"
+}

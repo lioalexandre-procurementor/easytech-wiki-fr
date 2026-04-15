@@ -1,0 +1,86 @@
+{
+  "slug": "night-raid",
+  "type": 123,
+  "name": "Night Raid",
+  "series": 4,
+  "seriesLabel": "Défense et camouflage",
+  "descriptionTemplate": "X% chance the enemy will not fight back when commanding ship units.",
+  "icon": "/img/wc4/skills/general_skill_123.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3231,
+      "effect": 0,
+      "chance": 12,
+      "costMedal": 120,
+      "renderedDesc": "12% chance the enemy will not fight back when commanding ship units."
+    },
+    {
+      "level": 2,
+      "skillId": 3232,
+      "effect": 0,
+      "chance": 24,
+      "costMedal": 170,
+      "renderedDesc": "24% chance the enemy will not fight back when commanding ship units."
+    },
+    {
+      "level": 3,
+      "skillId": 3233,
+      "effect": 0,
+      "chance": 36,
+      "costMedal": 250,
+      "renderedDesc": "36% chance the enemy will not fight back when commanding ship units."
+    },
+    {
+      "level": 4,
+      "skillId": 3234,
+      "effect": 0,
+      "chance": 48,
+      "costMedal": 350,
+      "renderedDesc": "48% chance the enemy will not fight back when commanding ship units."
+    },
+    {
+      "level": 5,
+      "skillId": 3235,
+      "effect": 0,
+      "chance": 60,
+      "costMedal": 450,
+      "renderedDesc": "60% chance the enemy will not fight back when commanding ship units."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1081,
+        "level": 2
+      },
+      {
+        "generalId": 25285,
+        "level": 1
+      },
+      {
+        "generalId": 25307,
+        "level": 1
+      },
+      {
+        "generalId": 25393,
+        "level": 5
+      },
+      {
+        "generalId": 25420,
+        "level": 1
+      },
+      {
+        "generalId": 25424,
+        "level": 1
+      },
+      {
+        "generalId": 25446,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

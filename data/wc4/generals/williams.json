@@ -13,53 +13,73 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Ingénieur mystique",
-      "desc": "Bonus spécial sur KS-90 et artilleries Scorpion.",
+      "name": "Self-propelled artillery",
+      "desc": "When commanding an artillery unit to attack, gain 100% chance of attacking again after annihilating enemy troops",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_59.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Self-propelled artillery",
+      "skillSlug": "self-propelled-artillery",
+      "skillType": 59,
+      "skillLevel": 5
     },
     {
       "slot": 2,
-      "name": "Nano-technologie",
-      "desc": "Récupération HP 3%/tour pour unités contrôlées.",
+      "name": "Artillery armor",
+      "desc": "Defense +100% when commanding artillery units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_60.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Artillery armor",
+      "skillSlug": "artillery-armor",
+      "skillType": 60,
+      "skillLevel": 5
     },
     {
       "slot": 3,
-      "name": "Concepteur d'élite",
-      "desc": "Vitesse de production des unités spéciales accrue.",
+      "name": "Accuracy",
+      "desc": "Deal +12% damage to the enemy when commanding artillery units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Accuracy",
+      "skillSlug": "accuracy",
+      "skillType": 37,
+      "skillLevel": 2
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Emplacement apprenable — à confirmer.",
+      "name": "Machinist",
+      "desc": "Supply to damaged armored units and artillery units: each round HP +3",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_16.webp",
       "replaceable": true,
-      "replaceableReason": "À confirmer"
+      "replaceableReason": "À confirmer",
+      "nameEn": "Machinist",
+      "skillSlug": "machinist",
+      "skillType": 16,
+      "skillLevel": 1
     },
     {
       "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Deuxième emplacement apprenable — à confirmer.",
+      "name": "Explosives",
+      "desc": "Damage +8% when attacking the stronghold units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": true,
-      "replaceableReason": "À confirmer"
+      "replaceableReason": "À confirmer",
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 1
     }
   ],
   "attributes": {

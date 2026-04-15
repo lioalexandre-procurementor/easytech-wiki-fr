@@ -13,33 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Opération Bagration",
-      "desc": "Bonus offensif massif sur secteur attaqué.",
+      "name": "Panzer Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 3
     },
     {
       "slot": 2,
-      "name": "Commandement ferme",
-      "desc": "Réduit les pertes alliées adjacentes.",
+      "name": "Tide of Iron",
+      "desc": "Damage to the enemy +5 when the armored units are more than half damaged",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_24.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Tide of Iron",
+      "skillSlug": "tide-of-iron",
+      "skillType": 24,
+      "skillLevel": 1
     },
     {
       "slot": 3,
-      "name": "Fer de lance",
-      "desc": "Vitesse accrue en attaque.",
+      "name": "Shelter",
+      "desc": "Able to dodge 12% damage from the enemy's missile units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_31.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Shelter",
+      "skillSlug": "shelter",
+      "skillType": 31,
+      "skillLevel": 2
     },
     {
       "slot": 4,

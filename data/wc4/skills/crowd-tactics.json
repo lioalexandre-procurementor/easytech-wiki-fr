@@ -1,0 +1,233 @@
+{
+  "slug": "crowd-tactics",
+  "type": 26,
+  "name": "Crowd Tactics",
+  "series": 2,
+  "seriesLabel": "Commandement",
+  "descriptionTemplate": "Attack of friendly surrounding army units +X",
+  "icon": "/img/wc4/skills/general_skill_26.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 1261,
+      "effect": 4,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "Attack of friendly surrounding army units +4"
+    },
+    {
+      "level": 2,
+      "skillId": 1262,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "Attack of friendly surrounding army units +8"
+    },
+    {
+      "level": 3,
+      "skillId": 1263,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "Attack of friendly surrounding army units +12"
+    },
+    {
+      "level": 4,
+      "skillId": 1264,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "Attack of friendly surrounding army units +16"
+    },
+    {
+      "level": 5,
+      "skillId": 1265,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "Attack of friendly surrounding army units +20"
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1011,
+        "level": 1
+      },
+      {
+        "generalId": 1023,
+        "level": 1
+      },
+      {
+        "generalId": 1038,
+        "level": 2
+      },
+      {
+        "generalId": 21023,
+        "level": 2
+      },
+      {
+        "generalId": 21061,
+        "level": 1
+      },
+      {
+        "generalId": 21071,
+        "level": 1
+      },
+      {
+        "generalId": 21077,
+        "level": 1
+      },
+      {
+        "generalId": 21083,
+        "level": 1
+      },
+      {
+        "generalId": 21094,
+        "level": 1
+      },
+      {
+        "generalId": 21101,
+        "level": 4
+      },
+      {
+        "generalId": 21106,
+        "level": 1
+      },
+      {
+        "generalId": 20034,
+        "level": 1
+      },
+      {
+        "generalId": 20045,
+        "level": 1
+      },
+      {
+        "generalId": 20048,
+        "level": 3
+      },
+      {
+        "generalId": 20099,
+        "level": 3
+      },
+      {
+        "generalId": 20137,
+        "level": 1
+      },
+      {
+        "generalId": 20211,
+        "level": 1
+      },
+      {
+        "generalId": 20280,
+        "level": 1
+      },
+      {
+        "generalId": 20285,
+        "level": 3
+      },
+      {
+        "generalId": 20287,
+        "level": 3
+      },
+      {
+        "generalId": 22001,
+        "level": 1
+      },
+      {
+        "generalId": 22011,
+        "level": 1
+      },
+      {
+        "generalId": 22029,
+        "level": 1
+      },
+      {
+        "generalId": 22041,
+        "level": 1
+      },
+      {
+        "generalId": 22053,
+        "level": 2
+      },
+      {
+        "generalId": 22055,
+        "level": 3
+      },
+      {
+        "generalId": 22056,
+        "level": 2
+      },
+      {
+        "generalId": 22057,
+        "level": 1
+      },
+      {
+        "generalId": 22110,
+        "level": 4
+      },
+      {
+        "generalId": 29011,
+        "level": 1
+      },
+      {
+        "generalId": 29023,
+        "level": 1
+      },
+      {
+        "generalId": 29038,
+        "level": 2
+      },
+      {
+        "generalId": 29107,
+        "level": 2
+      },
+      {
+        "generalId": 25013,
+        "level": 1
+      },
+      {
+        "generalId": 25071,
+        "level": 2
+      },
+      {
+        "generalId": 25130,
+        "level": 1
+      },
+      {
+        "generalId": 25142,
+        "level": 1
+      },
+      {
+        "generalId": 25172,
+        "level": 1
+      },
+      {
+        "generalId": 25277,
+        "level": 1
+      },
+      {
+        "generalId": 25327,
+        "level": 1
+      },
+      {
+        "generalId": 25408,
+        "level": 1
+      }
+    ],
+    "promoted": [
+      {
+        "generalId": 1011,
+        "level": 1,
+        "promotionId": 10111
+      },
+      {
+        "generalId": 1011,
+        "level": 1,
+        "promotionId": 10112
+      }
+    ]
+  },
+  "varyingField": "SkillEffect"
+}

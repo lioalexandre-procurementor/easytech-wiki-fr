@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Infantry Training Master",
-      "desc": "Reduce the damage taken by X% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+      "desc": "Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_134.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Training Master",
+      "skillSlug": "infantry-training-master",
+      "skillType": 134,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Prudence",
-      "desc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by X%.",
+      "desc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 15%.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_135.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Prudence",
+      "skillSlug": "prudence",
+      "skillType": 135,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "24% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 3
     },
     {
       "slot": 4,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +24% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 4
     },
     {
       "slot": 5,
       "name": "Explosives",
-      "desc": "Damage +X% when attacking the stronghold units",
+      "desc": "Damage +24% when attacking the stronghold units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_38.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Explosives",
+      "skillSlug": "explosives",
+      "skillType": 38,
+      "skillLevel": 3
     }
   ],
   "attributes": {

@@ -1,0 +1,114 @@
+{
+  "slug": "prudence",
+  "type": 135,
+  "name": "Prudence",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by X%.",
+  "icon": "/img/wc4/skills/general_skill_135.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3351,
+      "effect": 5,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 5%."
+    },
+    {
+      "level": 2,
+      "skillId": 3352,
+      "effect": 10,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 10%."
+    },
+    {
+      "level": 3,
+      "skillId": 3353,
+      "effect": 15,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 15%."
+    },
+    {
+      "level": 4,
+      "skillId": 3354,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 20%."
+    },
+    {
+      "level": 5,
+      "skillId": 3355,
+      "effect": 25,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 25%."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1099,
+        "level": 3
+      },
+      {
+        "generalId": 22099,
+        "level": 3
+      },
+      {
+        "generalId": 22104,
+        "level": 1
+      },
+      {
+        "generalId": 22105,
+        "level": 1
+      },
+      {
+        "generalId": 22126,
+        "level": 1
+      },
+      {
+        "generalId": 22127,
+        "level": 1
+      },
+      {
+        "generalId": 22132,
+        "level": 1
+      },
+      {
+        "generalId": 22133,
+        "level": 1
+      },
+      {
+        "generalId": 25361,
+        "level": 1
+      },
+      {
+        "generalId": 25364,
+        "level": 1
+      },
+      {
+        "generalId": 25366,
+        "level": 1
+      },
+      {
+        "generalId": 25368,
+        "level": 1
+      },
+      {
+        "generalId": 25407,
+        "level": 3
+      },
+      {
+        "generalId": 25449,
+        "level": 1
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Guerrilla Master",
-      "desc": "Evade X% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "desc": "Evade 15% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_104.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Guerrilla Master",
+      "skillSlug": "guerrilla-master",
+      "skillType": 104,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Infantry Group Charge",
-      "desc": "X% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
+      "desc": "40% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_101.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Group Charge",
+      "skillSlug": "infantry-group-charge",
+      "skillType": 101,
+      "skillLevel": 2
     },
     {
       "slot": 3,
       "name": "Organisation",
-      "desc": "Recover X% maximum HP on the next turn when the infantry units are more than half damaged",
+      "desc": "Recover 3% maximum HP on the next turn when the infantry units are more than half damaged",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_107.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Organisation",
+      "skillSlug": "organisation",
+      "skillType": 107,
+      "skillLevel": 1
     },
     {
       "slot": 4,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +6% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 1
     },
     {
       "slot": 5,
       "name": "Infantry Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "desc": "16% chance to give the enemy a critical attack when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_18.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 2
     }
   ],
   "attributes": {

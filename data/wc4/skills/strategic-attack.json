@@ -1,0 +1,142 @@
+{
+  "slug": "strategic-attack",
+  "type": 116,
+  "name": "Strategic Attack",
+  "series": 0,
+  "seriesLabel": "Compétences spécifiques aux généraux",
+  "descriptionTemplate": "After commanding a unit to attack, if the target is not annihilated, there is X% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+  "icon": "/img/wc4/skills/general_skill_116.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3161,
+      "effect": 0,
+      "chance": 20,
+      "costMedal": 120,
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 20% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+    },
+    {
+      "level": 2,
+      "skillId": 3162,
+      "effect": 0,
+      "chance": 40,
+      "costMedal": 170,
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 40% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+    },
+    {
+      "level": 3,
+      "skillId": 3163,
+      "effect": 0,
+      "chance": 60,
+      "costMedal": 250,
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 60% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+    },
+    {
+      "level": 4,
+      "skillId": 3164,
+      "effect": 0,
+      "chance": 80,
+      "costMedal": 350,
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 80% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+    },
+    {
+      "level": 5,
+      "skillId": 3165,
+      "effect": 0,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1079,
+        "level": 3
+      },
+      {
+        "generalId": 1100,
+        "level": 3
+      },
+      {
+        "generalId": 1114,
+        "level": 3
+      },
+      {
+        "generalId": 25214,
+        "level": 3
+      },
+      {
+        "generalId": 25229,
+        "level": 5
+      },
+      {
+        "generalId": 25243,
+        "level": 5
+      },
+      {
+        "generalId": 25255,
+        "level": 5
+      },
+      {
+        "generalId": 25265,
+        "level": 3
+      },
+      {
+        "generalId": 25268,
+        "level": 5
+      },
+      {
+        "generalId": 25271,
+        "level": 5
+      },
+      {
+        "generalId": 25273,
+        "level": 5
+      },
+      {
+        "generalId": 25300,
+        "level": 5
+      },
+      {
+        "generalId": 25301,
+        "level": 3
+      },
+      {
+        "generalId": 25303,
+        "level": 5
+      },
+      {
+        "generalId": 25308,
+        "level": 1
+      },
+      {
+        "generalId": 25322,
+        "level": 5
+      },
+      {
+        "generalId": 25333,
+        "level": 5
+      },
+      {
+        "generalId": 25372,
+        "level": 3
+      },
+      {
+        "generalId": 25378,
+        "level": 1
+      },
+      {
+        "generalId": 25437,
+        "level": 5
+      },
+      {
+        "generalId": 25476,
+        "level": 3
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

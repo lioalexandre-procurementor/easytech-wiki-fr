@@ -1,0 +1,210 @@
+{
+  "slug": "inferior-victory",
+  "type": 131,
+  "name": "Inferior Victory",
+  "series": 2,
+  "seriesLabel": "Commandement",
+  "descriptionTemplate": "Damage is increased by X% when the number of troop formations under command is 1.",
+  "icon": "/img/wc4/skills/general_skill_131.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 3311,
+      "effect": 4,
+      "chance": 100,
+      "costMedal": 150,
+      "renderedDesc": "Damage is increased by 4% when the number of troop formations under command is 1."
+    },
+    {
+      "level": 2,
+      "skillId": 3312,
+      "effect": 8,
+      "chance": 100,
+      "costMedal": 250,
+      "renderedDesc": "Damage is increased by 8% when the number of troop formations under command is 1."
+    },
+    {
+      "level": 3,
+      "skillId": 3313,
+      "effect": 12,
+      "chance": 100,
+      "costMedal": 350,
+      "renderedDesc": "Damage is increased by 12% when the number of troop formations under command is 1."
+    },
+    {
+      "level": 4,
+      "skillId": 3314,
+      "effect": 16,
+      "chance": 100,
+      "costMedal": 450,
+      "renderedDesc": "Damage is increased by 16% when the number of troop formations under command is 1."
+    },
+    {
+      "level": 5,
+      "skillId": 3315,
+      "effect": 20,
+      "chance": 100,
+      "costMedal": 550,
+      "renderedDesc": "Damage is increased by 20% when the number of troop formations under command is 1."
+    }
+  ],
+  "usage": {
+    "base": [
+      {
+        "generalId": 1098,
+        "level": 3
+      },
+      {
+        "generalId": 1108,
+        "level": 4
+      },
+      {
+        "generalId": 1113,
+        "level": 3
+      },
+      {
+        "generalId": 1114,
+        "level": 4
+      },
+      {
+        "generalId": 22117,
+        "level": 1
+      },
+      {
+        "generalId": 22119,
+        "level": 1
+      },
+      {
+        "generalId": 22124,
+        "level": 1
+      },
+      {
+        "generalId": 22125,
+        "level": 1
+      },
+      {
+        "generalId": 22135,
+        "level": 1
+      },
+      {
+        "generalId": 22136,
+        "level": 1
+      },
+      {
+        "generalId": 25299,
+        "level": 1
+      },
+      {
+        "generalId": 25314,
+        "level": 3
+      },
+      {
+        "generalId": 25315,
+        "level": 5
+      },
+      {
+        "generalId": 25318,
+        "level": 5
+      },
+      {
+        "generalId": 25321,
+        "level": 3
+      },
+      {
+        "generalId": 25353,
+        "level": 1
+      },
+      {
+        "generalId": 25356,
+        "level": 1
+      },
+      {
+        "generalId": 25361,
+        "level": 1
+      },
+      {
+        "generalId": 25362,
+        "level": 1
+      },
+      {
+        "generalId": 25368,
+        "level": 1
+      },
+      {
+        "generalId": 25369,
+        "level": 1
+      },
+      {
+        "generalId": 25370,
+        "level": 4
+      },
+      {
+        "generalId": 25376,
+        "level": 1
+      },
+      {
+        "generalId": 25386,
+        "level": 5
+      },
+      {
+        "generalId": 25405,
+        "level": 5
+      },
+      {
+        "generalId": 25408,
+        "level": 1
+      },
+      {
+        "generalId": 25414,
+        "level": 1
+      },
+      {
+        "generalId": 25428,
+        "level": 1
+      },
+      {
+        "generalId": 25438,
+        "level": 1
+      },
+      {
+        "generalId": 25456,
+        "level": 1
+      },
+      {
+        "generalId": 25457,
+        "level": 1
+      },
+      {
+        "generalId": 25458,
+        "level": 1
+      },
+      {
+        "generalId": 25468,
+        "level": 1
+      },
+      {
+        "generalId": 25469,
+        "level": 1
+      },
+      {
+        "generalId": 25473,
+        "level": 1
+      },
+      {
+        "generalId": 25479,
+        "level": 1
+      },
+      {
+        "generalId": 25481,
+        "level": 1
+      },
+      {
+        "generalId": 25476,
+        "level": 4
+      }
+    ],
+    "promoted": []
+  },
+  "varyingField": "SkillEffect"
+}

@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Replacement",
-      "desc": "Reinforce damaged infantry units: each round HP +X",
+      "desc": "Reinforce damaged infantry units: each round HP +3",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_15.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Replacement",
+      "skillSlug": "replacement",
+      "skillType": 15,
+      "skillLevel": 1
     },
     {
       "slot": 2,
       "name": "Guerrilla",
-      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "desc": "12% chance that the enemy will not fight back when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_33.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Economic Expert",
-      "desc": "The economic output of the city +X",
+      "desc": "The economic output of the city +5",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_11.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Economic Expert",
+      "skillSlug": "economic-expert",
+      "skillType": 11,
+      "skillLevel": 1
     }
   ],
   "attributes": {

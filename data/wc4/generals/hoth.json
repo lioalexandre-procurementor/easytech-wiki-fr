@@ -14,32 +14,44 @@
     {
       "slot": 1,
       "name": "Dominance",
-      "desc": "Deals damage +X% to demoralized and chaotic enemies.",
+      "desc": "Deals damage +9% to demoralized and chaotic enemies.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_130.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Dominance",
+      "skillSlug": "dominance",
+      "skillType": 130,
+      "skillLevel": 3
     },
     {
       "slot": 2,
       "name": "Blitzkrieg",
-      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "desc": "36% chance that the enemy will not fight back when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_34.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 3
     },
     {
       "slot": 3,
       "name": "Panzer Leader",
-      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "desc": "16% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 2
     },
     {
       "slot": 4,

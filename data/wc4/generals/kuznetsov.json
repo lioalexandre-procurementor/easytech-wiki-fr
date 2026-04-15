@@ -13,33 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Flotte rouge",
-      "desc": "Bonus offensif tous navires soviétiques.",
+      "name": "Rumor",
+      "desc": "15% chance to reduce the morale of the enemy when attacking",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Rumor",
+      "skillSlug": "rumor",
+      "skillType": 42,
+      "skillLevel": 1
     },
     {
       "slot": 2,
-      "name": "Doctrine moderne",
-      "desc": "Bonus supplémentaire sur navires modernes.",
+      "name": "Fleet Leader",
+      "desc": "24% chance to give the enemy a critical attack when commanding ship units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Fleet Leader",
+      "skillSlug": "fleet-leader",
+      "skillType": 21,
+      "skillLevel": 3
     },
     {
       "slot": 3,
-      "name": "Commandant de la Baltique",
-      "desc": "Défense navale améliorée.",
+      "name": "Sailor",
+      "desc": "Counter attack +6% when attacked by the enemy at sea",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Sailor",
+      "skillSlug": "sailor",
+      "skillType": 40,
+      "skillLevel": 1
     }
   ],
   "attributes": {

@@ -13,34 +13,45 @@
   "skills": [
     {
       "slot": 1,
-      "name": "Blitzkrieg",
-      "desc": "Attaques de char +25%, mouvement amélioré.",
+      "name": "Armored Assault",
+      "desc": "Deal +12% damage to the enemy when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
       "replaceable": false,
       "replaceableReason": null,
-      "nameEn": "Blitzkrieg"
+      "nameEn": "Armored Assault",
+      "skillSlug": "armored-assault",
+      "skillType": 36,
+      "skillLevel": 2
     },
     {
       "slot": 2,
-      "name": "Commandant blindé",
-      "desc": "Bonus d'attaque et de défense sur tous les chars adjacents.",
+      "name": "Panzer Leader",
+      "desc": "16% chance to give the enemy a critical attack when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Panzer Leader",
+      "skillSlug": "panzer-leader",
+      "skillType": 19,
+      "skillLevel": 2
     },
     {
       "slot": 3,
-      "name": "Percée mécanisée",
-      "desc": "Unité mécanisée : bonus de pénétration — à vérifier.",
+      "name": "Blitzkrieg",
+      "desc": "36% chance that the enemy will not fight back when commanding armored units",
       "rating": null,
       "stars": null,
-      "icon": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Blitzkrieg",
+      "skillSlug": "blitzkrieg",
+      "skillType": 34,
+      "skillLevel": 3
     },
     {
       "slot": 4,

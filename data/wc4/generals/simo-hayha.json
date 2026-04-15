@@ -14,52 +14,72 @@
     {
       "slot": 1,
       "name": "Ace Sniper",
-      "desc": "X% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "desc": "100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_100.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Ace Sniper",
+      "skillSlug": "ace-sniper",
+      "skillType": 100,
+      "skillLevel": 5
     },
     {
       "slot": 2,
       "name": "Deterrence",
-      "desc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by X%, effective for one turn",
+      "desc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 8%, effective for one turn",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_106.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Deterrence",
+      "skillSlug": "deterrence",
+      "skillType": 106,
+      "skillLevel": 1
     },
     {
       "slot": 3,
       "name": "Guerrilla",
-      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "desc": "24% chance that the enemy will not fight back when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_33.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Guerrilla",
+      "skillSlug": "guerrilla",
+      "skillType": 33,
+      "skillLevel": 2
     },
     {
       "slot": 4,
       "name": "Camouflage",
-      "desc": "Able to dodge X% damage from the enemy's air units",
+      "desc": "Able to dodge 12% damage from the enemy's air units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_30.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Camouflage",
+      "skillSlug": "camouflage",
+      "skillType": 30,
+      "skillLevel": 2
     },
     {
       "slot": 5,
       "name": "Raider",
-      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "desc": "Deal +18% damage to the enemy when commanding infantry units",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_35.webp",
       "replaceable": false,
-      "replaceableReason": null
+      "replaceableReason": null,
+      "nameEn": "Raider",
+      "skillSlug": "raider",
+      "skillType": 35,
+      "skillLevel": 3
     }
   ],
   "attributes": {
