@@ -92,15 +92,22 @@ export default async function PremiumTrainingPage({
   const { family, given } = splitGeneralName(name);
 
   const nameForSkill = (s: { name: string; nameEn?: string; skillSlug?: string }) => {
+    if (s.name === "Emplacement libre") return isFr ? "Emplacement libre" : "Free slot";
     const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
     if (isFr) return cat?.nameFr || s.name;
     return cat?.name || s.nameEn || s.name;
   };
   const descForSkill = (s: {
+    name: string;
     desc: string;
     skillSlug?: string;
     skillLevel?: number;
   }) => {
+    if (s.name === "Emplacement libre") {
+      return isFr
+        ? "Compétence apprenable — emplacement libre jusqu'au premium training."
+        : "Learnable skill — slot stays open until premium training.";
+    }
     const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
     const prog =
       cat && s.skillLevel != null

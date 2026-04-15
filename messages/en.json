@@ -50,7 +50,7 @@
     "statMaxLevels": "Max levels",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki under construction",
-    "underConstructionNote": "stats and perks shown are extrapolated from public research (NamuWiki, Fandom WC4). An in-game verification pass is in progress. Entries marked « verified » have been confirmed through the emulator.",
+    "underConstructionNote": "stats are extracted directly from the game files (WC4 v1.24.2). Editorial content (descriptions, bonuses, strategy) is being progressively enriched.",
     "exploreByCategory": "Explore by category",
     "mostViewed": "Most viewed elite units",
     "unitsCountSuffix": "units"
@@ -174,7 +174,9 @@
     "alsoMentioned": "Units also mentioned but not yet in the wiki:",
     "relatedHeading": "Other {label} generals",
     "sources": "Sources:",
-    "viewProgression": "📈 View L1 → L5 progression →"
+    "viewProgression": "📈 View L1 → L5 progression →",
+    "freeSlot": "Free slot",
+    "freeSlotDesc": "Learnable skill — slot stays open until premium training."
   },
   "attributeKeys": {
     "infantry": "Infantry",

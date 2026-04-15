@@ -565,16 +565,25 @@ function SkillBlock({
     catalog && skill.skillLevel != null
       ? catalog.progression.find((p) => p.level === skill.skillLevel) ?? null
       : null;
-  const displayName = isFr
+  const rawName = isFr
     ? catalog?.nameFr || skill.name
     : catalog?.name || skill.nameEn || skill.name;
-  const displayDesc = isFr
+  const rawDesc = isFr
     ? progEntry?.renderedDescFr ||
       catalog?.descriptionTemplateFr ||
       skill.desc
     : progEntry?.renderedDesc ||
       catalog?.descriptionTemplate ||
       skill.desc;
+  const isFreeSlot = skill.name === "Emplacement libre";
+  const displayName = isFreeSlot
+    ? isFr ? "Emplacement libre" : "Free slot"
+    : rawName;
+  const displayDesc = isFreeSlot
+    ? isFr
+      ? "Compétence apprenable — emplacement libre jusqu'au premium training."
+      : "Learnable skill — slot stays open until premium training."
+    : rawDesc;
 
   return (
     <div

@@ -50,7 +50,7 @@
     "statMaxLevels": "Niveaux max",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki en construction",
-    "underConstructionNote": "les stats et perks affichés sont extrapolés depuis les recherches publiques (NamuWiki, Fandom WC4). Une phase de vérification in-game est en cours. Les fiches marquées « verified » ont été validées à l'émulateur.",
+    "underConstructionNote": "les statistiques proviennent directement de l'extraction des fichiers du jeu (WC4 v1.24.2). Les fiches éditoriales (descriptions, bonus, stratégie) sont en cours d'enrichissement.",
     "exploreByCategory": "Explorer par catégorie",
     "mostViewed": "Unités d'élite les plus consultées",
     "unitsCountSuffix": "unités"
@@ -174,7 +174,9 @@
     "alsoMentioned": "Unités également mentionnées mais pas encore dans le wiki :",
     "relatedHeading": "Autres généraux {label}",
     "sources": "Sources :",
-    "viewProgression": "📈 Voir la progression L1 → L5 →"
+    "viewProgression": "📈 Voir la progression L1 → L5 →",
+    "freeSlot": "Emplacement libre",
+    "freeSlotDesc": "Compétence apprenable — emplacement libre jusqu'au premium training."
   },
   "attributeKeys": {
     "infantry": "Infanterie",
