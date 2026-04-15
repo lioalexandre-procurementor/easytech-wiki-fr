@@ -221,5 +221,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Hold Fast",
-  "descriptionTemplateFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade X% dégâts dealt by ennemi"
+  "descriptionTemplateFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade X% dégâts dealt by ennemi",
+  "longDesc": "Compétence spécifique à un général. « Hold Fast » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 20% dégâts dealt by ennemi ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Hold Fast\" scales up to level 5. At max level (5), the skill applies the following effect: \"Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Hold Fast“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

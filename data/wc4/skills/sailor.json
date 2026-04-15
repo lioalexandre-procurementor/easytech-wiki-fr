@@ -669,5 +669,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Marin",
-  "descriptionTemplateFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi at sea"
+  "descriptionTemplateFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi at sea",
+  "longDesc": "Brique offensive du kit d'un général. « Marin » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Counter attaque +30% lorsqu'elle est attaquée by the ennemi at sea ». À privilégier sur les cartes offensives tier-S afin de casser vite les stacks ennemies.",
+  "longDescEn": "An offensive building block in a general's kit. \"Sailor\" scales up to level 5. At max level (5), the skill applies the following effect: \"Counter attack +30% when attacked by the enemy at sea\". Prefer it on tier-S offensive cards to break enemy stacks quickly.",
+  "longDescDe": "Ein Offensiv-Baustein im Kit eines Generals. „Sailor“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Counter attack +30% when attacked by the enemy at sea“. Auf S-Klasse-Offensivkarten zu bevorzugen, um feindliche Stacks schnell zu brechen."
 }

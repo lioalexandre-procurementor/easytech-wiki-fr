@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général infanterie bronze — Japon.",
-  "longDesc": "Tadamichi Kuribayashi est un général infanterie de qualité bronze — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Japon.",
+  "longDesc": "Tadamichi Kuribayashi dirige la défense d'Iwo Jima en février-mars 1945, transformant l'île en réseau de tunnels qui coûte 26 000 pertes aux Marines. Carte WC4 infanterie B bronze à bonus défense retranchée : pick thématique Iwo Jima.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — Japan.",
-  "shortDescDe": "Bronze Infanterie-General — Japan.",
-  "longDescEn": "Tadamichi Kuribayashi is a bronze-quality infantry general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Tadamichi Kuribayashi ist ein Bronze-Infanterie-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Japan.",
+  "longDescEn": "Tadamichi Kuribayashi led the February–March 1945 defence of Iwo Jima, turning the island into a tunnel network that cost the Marines 26,000 casualties. A WC4 bronze-B infantry card with entrenched-defence bonuses — a thematic Iwo Jima slot.",
+  "longDescDe": "Tadamichi Kuribayashi leitete im Februar/März 1945 die Verteidigung von Iwojima und verwandelte die Insel in ein Tunnelnetz, das die Marines 26.000 Mann kostete. Im WC4 eine Bronze-B-Infanteriekarte mit Stellungsverteidigungs-Boni — thematischer Iwojima-Slot."
 }

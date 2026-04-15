@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général polyvalente or — URSS.",
-  "longDesc": "Mikhaïl Katoukov est un général polyvalente de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré or — URSS.",
+  "longDesc": "Mikhaïl Katoukov commande la 1re armée de chars de la garde de Koursk à Berlin, spécialiste reconnu du combat blindé soviétique. Carte WC4 équilibrée tier-S or : profil armor-lourd avec bonus de moral élevé, pivot d'une stack rouge orientée percée.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold balanced general — USSR.",
-  "shortDescDe": "Gold ausgewogene-General — UdSSR.",
-  "longDescEn": "Mikhaïl Katoukov is a gold-quality balanced general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Mikhaïl Katoukov ist ein Gold-ausgewogene-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Allrounder-General — UdSSR.",
+  "longDescEn": "Mikhail Katukov led the 1st Guards Tank Army from Kursk to Berlin, a recognised Soviet armoured-warfare specialist. A WC4 tier-S gold balanced card with an armor-heavy profile and strong morale bonuses — the anchor of a Soviet breakthrough stack.",
+  "longDescDe": "Michail Katukow führte die 1. Garde-Panzerarmee von Kursk bis Berlin und gilt als anerkannter sowjetischer Panzerkriegs-Spezialist. Im WC4 eine S-Klasse-Gold-Allrounderkarte mit Panzer-Schwerpunkt und starken Moralboni — Angelpunkt einer sowjetischen Durchbruchs-Stack."
 }

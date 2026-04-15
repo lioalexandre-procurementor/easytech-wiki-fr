@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "CN",
   "countryName": "République populaire de Chine",
-  "shortDesc": "Général infanterie argent — République populaire de Chine.",
-  "longDesc": "Peng Dehuai est un général infanterie de qualité argent — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — Chine.",
+  "longDesc": "Peng Dehuai commande la 8e armée de route communiste contre les Japonais à partir de 1937, futur commandant des « Volontaires » chinois en Corée. Carte WC4 infanterie A argent à bonus guérilla : pick thématique communiste.",
   "skills": [
     {
       "slot": 1,
@@ -115,8 +115,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Silver infantry general — People's Republic of China.",
-  "shortDescDe": "Silber Infanterie-General — Volksrepublik China.",
-  "longDescEn": "Peng Dehuai is a silver-quality infantry general — People's Republic of China. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Peng Dehuai ist ein Silber-Infanterie-General — Volksrepublik China. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Silver infantry general — China.",
+  "shortDescDe": "Silber-Infanterie-General — China.",
+  "longDescEn": "Peng Dehuai commanded the communist 8th Route Army against the Japanese from 1937 and later led the Chinese 'Volunteers' in Korea. A WC4 silver-A infantry card with guerrilla-warfare bonuses — a thematic communist pick.",
+  "longDescDe": "Peng Dehuai führte ab 1937 die kommunistische 8. Routenarmee gegen Japan und später die chinesischen „Freiwilligen“ in Korea. Im WC4 eine Silber-A-Infanteriekarte mit Guerilla-Kampfboni — thematische kommunistische Wahl."
 }

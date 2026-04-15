@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "IT",
   "countryName": "Italie",
-  "shortDesc": "Général blindée argent — Italie.",
-  "longDesc": "Ettore Bastico est un général blindée de qualité argent — Italie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — Italie.",
+  "longDesc": "Ettore Bastico est gouverneur général de Libye et supérieur nominal de Rommel en 1941-1943, surnommé « Bombastico » par les Allemands. Carte WC4 blindée A argent à profil désert : second slot italien derrière Graziani.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — Italy.",
-  "shortDescDe": "Silber Panzer-General — Italien.",
-  "longDescEn": "Ettore Bastico is a silver-quality armor general — Italy. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Ettore Bastico ist ein Silber-Panzer-General — Italien. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — Italien.",
+  "longDescEn": "Ettore Bastico was Governor-General of Libya and Rommel's nominal superior in 1941–43, nicknamed 'Bombastico' by the Germans. A WC4 silver-A armor card with a desert profile — Italy's second slot behind Graziani.",
+  "longDescDe": "Ettore Bastico war 1941–43 Generalgouverneur von Libyen und nomineller Vorgesetzter Rommels, von den Deutschen „Bombastico“ genannt. Im WC4 eine Silber-A-Panzerkarte mit Wüstenprofil — Italiens zweiter Slot hinter Graziani."
 }

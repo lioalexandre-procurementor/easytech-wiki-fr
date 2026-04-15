@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général blindée bronze — Royaume-Uni.",
-  "longDesc": "Claude Auchinleck est un général blindée de qualité bronze — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé bronze — Royaume-Uni.",
+  "longDesc": "Claude Auchinleck commande les forces du Moyen-Orient en 1941-1942 ; sa bataille défensive de Première Alamein stoppe Rommel avant que Montgomery ne prenne la relève. Carte WC4 blindée B bronze : dépanneur désert jusqu'à l'or.",
   "skills": [
     {
       "slot": 1,
@@ -191,7 +191,7 @@
     }
   ],
   "shortDescEn": "Bronze armor general — United Kingdom.",
-  "shortDescDe": "Bronze Panzer-General — Vereinigtes Königreich.",
-  "longDescEn": "Claude Auchinleck is a bronze-quality armor general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Claude Auchinleck ist ein Bronze-Panzer-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Panzer-General — Vereinigtes Königreich.",
+  "longDescEn": "Claude Auchinleck commanded Middle East Forces in 1941–42; his defensive First Alamein battle halted Rommel before Montgomery took over. A WC4 bronze-B armor card — a desert-theatre placeholder until gold generals are available.",
+  "longDescDe": "Claude Auchinleck führte 1941/42 die Middle East Forces; seine Verteidigungsschlacht von El Alamein stoppte Rommel, bevor Montgomery übernahm. Im WC4 eine Bronze-B-Panzerkarte — Wüsten-Platzhalter, bis Gold-Generäle verfügbar sind."
 }

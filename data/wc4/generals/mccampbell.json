@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général aérienne or — États-Unis.",
-  "longDesc": "David McCampbell est un général aérienne de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien or — États-Unis.",
+  "longDesc": "As naval américain le plus titré avec 34 victoires confirmées, David McCampbell pilote un F6F Hellcat et remporte la Medal of Honor à Philippine Sea. Carte WC4 aérienne tier-S or à profil chasseur-embarqué : synergique avec les porte-avions de Nimitz.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold air force general — United States.",
-  "shortDescDe": "Gold Luftwaffen-General — Vereinigte Staaten.",
-  "longDescEn": "David McCampbell is a gold-quality air force general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "David McCampbell ist ein Gold-Luftwaffen-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Luftwaffen-General — Vereinigte Staaten.",
+  "longDescEn": "The US Navy's top-scoring ace with 34 confirmed kills, David McCampbell flew an F6F Hellcat and won the Medal of Honor in the Philippine Sea. A WC4 tier-S gold air-force card with a carrier-fighter profile — synergises with Nimitz's carriers.",
+  "longDescDe": "Mit 34 bestätigten Abschüssen ist David McCampbell das erfolgreichste Jagdflieger-Ass der US Navy; er flog eine F6F Hellcat und erhielt in der Philippinensee die Medal of Honor. Im WC4 eine S-Klasse-Gold-Luftwaffenkarte mit Trägerjäger-Profil — synergetisch zu Nimitz' Flugzeugträgern."
 }

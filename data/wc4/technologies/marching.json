@@ -63,5 +63,8 @@
   "prerequisites": [
     301002,
     301004
-  ]
+  ],
+  "longDesc": "Branche infanterie : fantassins et forces spéciales. « Marching » monte jusqu'au niveau 2. Effet maximum : « Consume mobility in a particular terrain -100% ». Accessible dès le début de la recherche. Base indispensable pour toute armée, même orientée blindés.",
+  "longDescEn": "An infantry branch covering riflemen and special forces. \"Marching\" scales up to level 2. Maximum effect: \"Consume mobility in a particular terrain -100%\". Available from the start of research. An indispensable baseline for any army, even an armor-heavy one.",
+  "longDescDe": "Ein Infanteriezweig für Schützen und Spezialkräfte. „Marching“ skaliert bis Stufe 2. Maximaler Effekt: „Consume mobility in a particular terrain -100%“. Ab Forschungsbeginn verfügbar. Unverzichtbare Grundlage jeder Armee, auch mit Panzer-Schwerpunkt."
 }

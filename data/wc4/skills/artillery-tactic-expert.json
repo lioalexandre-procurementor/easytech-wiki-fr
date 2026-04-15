@@ -133,5 +133,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Artillerie Tactic Expert",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies X% défense"
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies X% défense",
+  "longDesc": "Compétence spécifique à un général. « Artillerie Tactic Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 100% défense ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Artillery Tactic Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units to attack, ignore enemy units 100% defense\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery Tactic Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units to attack, ignore enemy units 100% defense“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

@@ -77,5 +77,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Aviation Expert",
-  "descriptionTemplateFr": "Consumption of resources lors d'une attaque with air force -X%"
+  "descriptionTemplateFr": "Consumption of resources lors d'une attaque with air force -X%",
+  "longDesc": "Compétence spécifique à un général. « Aviation Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Consumption of resources lors d'une attaque with air force -50% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Aviation Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Consumption of resources when attacking with air force -50%\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Aviation Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Consumption of resources when attacking with air force -50%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

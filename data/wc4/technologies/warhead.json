@@ -177,5 +177,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Branche missiles : frappes à longue portée et pénétration. « Warhead » monte jusqu'au niveau 7. Effet maximum : « Attack +70 ». Débloquée au niveau de QG 15. Pic de puissance sur les ennemis fortement défendus.",
+  "longDescEn": "A missile branch for long-range strikes and penetration. \"Warhead\" scales up to level 7. Maximum effect: \"Attack +70\". Unlocks at HQ level 15. A power spike against heavily defended enemies.",
+  "longDescDe": "Ein Raketenzweig für Langstreckenschläge und Durchschlag. „Warhead“ skaliert bis Stufe 7. Maximaler Effekt: „Attack +70“. Wird auf HQ-Stufe 15 freigeschaltet. Machtspitze gegen stark verteidigte Gegner."
 }

@@ -63,5 +63,8 @@
   "prerequisites": [
     305002,
     305004
-  ]
+  ],
+  "longDesc": "Arbre technologique aérien : chasseurs, bombardiers et appui. « Air Strike » monte jusqu'au niveau 2. Effet maximum : « Damage to infantry units +50% ». Accessible dès le début de la recherche. Indispensable sur Sea Lion, Barbarossa et Midway.",
+  "longDescEn": "An air-force technology covering fighters, bombers and close support. \"Air Strike\" scales up to level 2. Maximum effect: \"Damage to infantry units +50%\". Available from the start of research. Essential on Sea Lion, Barbarossa and Midway.",
+  "longDescDe": "Eine Luftwaffentechnologie für Jäger, Bomber und Nahunterstützung. „Air Strike“ skaliert bis Stufe 2. Maximaler Effekt: „Damage to infantry units +50%“. Ab Forschungsbeginn verfügbar. Unverzichtbar bei Seelöwe, Barbarossa und Midway."
 }

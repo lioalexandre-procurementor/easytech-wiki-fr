@@ -101,5 +101,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Armored Army Group",
-  "descriptionTemplateFr": "X% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)"
+  "descriptionTemplateFr": "X% chance that one of the inactive unités blindées around will join the attaque (Only once par tour)",
+  "longDesc": "Compétence spécifique à un général. « Armored Army Group » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that one of the inactive unités blindées around will join the attaque (Only once par tour) ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"armored Army Group\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that one of the inactive armored units around will join the attack (Only once per turn)\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „armored Army Group“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that one of the inactive armored units around will join the attack (Only once per turn)“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

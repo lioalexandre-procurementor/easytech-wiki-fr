@@ -372,5 +372,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Mountain Fighting",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting on the mountain"
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting on the mountain",
+  "longDesc": "Compétence spécifique à un général. « Mountain Fighting » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 when fighting on the mountain ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Mountain Fighting\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when fighting on the mountain\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Mountain Fighting“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when fighting on the mountain“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

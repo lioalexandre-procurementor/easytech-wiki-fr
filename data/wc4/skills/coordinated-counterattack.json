@@ -79,5 +79,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Coordinated Counterattack",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, the unité is not affected by skill effect that disable counterattack. When a surrounding unités alliées counterattacks, there is X% chance to join the counterattack"
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, the unité is not affected by skill effect that disable counterattack. When a surrounding unités alliées counterattacks, there is X% chance to join the counterattack",
+  "longDesc": "Compétence spécifique à un général. « Coordinated Counterattack » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie, the unité is not affected by skill effect that disable counterattack. When a surrounding unités alliées counterattacks, there is 100% chance to join the counterattack ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Coordinated Counterattack\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 100% chance to join the counterattack\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Coordinated Counterattack“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units, the unit is not affected by skill effect that disable counterattack. When a surrounding friendly unit counterattacks, there is 100% chance to join the counterattack“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

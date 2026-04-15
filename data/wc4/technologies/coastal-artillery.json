@@ -96,5 +96,8 @@
   ],
   "prerequisites": [
     306012
-  ]
+  ],
+  "longDesc": "Technologie fortifications qui densifie la tenue d'un secteur. « Coastal Artillery » monte jusqu'au niveau 4. Effet maximum : « Attack +16; Defense +6; HP +80 ». Débloquée au niveau de QG 12. À utiliser sur tout scénario de défense — Stalingrad, Leningrad, Berlin.",
+  "longDescEn": "A fortifications technology that hardens the hold of a sector. \"Coastal Artillery\" scales up to level 4. Maximum effect: \"Attack +16; Defense +6; HP +80\". Unlocks at HQ level 12. Use on any defensive scenario — Stalingrad, Leningrad, Berlin.",
+  "longDescDe": "Eine Befestigungstechnologie, die das Halten eines Sektors härtet. „Coastal Artillery“ skaliert bis Stufe 4. Maximaler Effekt: „Attack +16; Defense +6; HP +80“. Wird auf HQ-Stufe 12 freigeschaltet. Auf jedem Defensivszenario einsetzen — Stalingrad, Leningrad, Berlin."
 }

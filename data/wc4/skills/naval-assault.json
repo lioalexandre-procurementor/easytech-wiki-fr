@@ -131,5 +131,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Naval Assault",
-  "descriptionTemplateFr": "Dégâts +X% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)"
+  "descriptionTemplateFr": "Dégâts +X% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour)",
+  "longDesc": "Compétence spécifique à un général. « Naval Assault » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts +40% lorsque vous commandez des unités navales. Après avoir attaqué, restaurer maximum PV de 5% (Only once par tour) ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Naval Assault\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage +40% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Naval Assault“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage +40% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

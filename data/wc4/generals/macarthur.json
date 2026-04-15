@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général infanterie or — États-Unis.",
-  "longDesc": "Douglas MacArthur est un général infanterie de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie or — États-Unis.",
+  "longDesc": "Douglas MacArthur dirige le théâtre du Pacifique Sud-Ouest, promet « I shall return » aux Philippines et accepte la reddition japonaise en septembre 1945. Carte WC4 infanterie tier-S or : bonus débarquement amphibie, à jouer sur Saipan, Leyte et Iwo Jima.",
   "skills": [
     {
       "slot": 1,
@@ -126,7 +126,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold infantry general — United States.",
-  "shortDescDe": "Gold Infanterie-General — Vereinigte Staaten.",
-  "longDescEn": "Douglas MacArthur is a gold-quality infantry general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Douglas MacArthur ist ein Gold-Infanterie-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Infanterie-General — Vereinigte Staaten.",
+  "longDescEn": "Douglas MacArthur commanded the South West Pacific Area, pledged 'I shall return' to the Philippines and accepted the Japanese surrender in September 1945. A WC4 tier-S gold infantry card with amphibious-landing bonuses — a must-have on Saipan, Leyte and Iwo Jima.",
+  "longDescDe": "Douglas MacArthur führte den Südwestpazifik, versprach „I shall return“ auf den Philippinen und nahm im September 1945 die japanische Kapitulation entgegen. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Amphibien-Landungsboni — ein Muss für Saipan, Leyte und Iwojima."
 }

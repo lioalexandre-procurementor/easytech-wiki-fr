@@ -163,5 +163,8 @@
     302032,
     302033,
     302034
-  ]
+  ],
+  "longDesc": "Arbre technologique blindé qui améliore les chars et véhicules de combat. « Main Artillery » monte jusqu'au niveau 6. Effet maximum : « Attack +15 ». Accessible dès le début de la recherche. À maxer en priorité sur les campagnes de conquête rapide.",
+  "longDescEn": "An armor technology that upgrades tanks and combat vehicles. \"Main Artillery\" scales up to level 6. Maximum effect: \"Attack +15\". Available from the start of research. Max this first on fast-conquest campaigns.",
+  "longDescDe": "Eine Panzertechnologie, die Panzer und Kampffahrzeuge verbessert. „Main Artillery“ skaliert bis Stufe 6. Maximaler Effekt: „Attack +15“. Ab Forschungsbeginn verfügbar. In Schnell-Eroberungs-Kampagnen zuerst maxen."
 }

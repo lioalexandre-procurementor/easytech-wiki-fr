@@ -85,5 +85,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "As des blindés",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies X% défense"
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies X% défense",
+  "longDesc": "Compétence spécifique à un général. « As des blindés » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 100% défense ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Ace Tank\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units to attack, ignore enemy units 100% defense\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Tank“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units to attack, ignore enemy units 100% defense“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

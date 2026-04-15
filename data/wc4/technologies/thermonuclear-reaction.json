@@ -85,5 +85,8 @@
   ],
   "prerequisites": [
     308024
-  ]
+  ],
+  "longDesc": "Branche missiles : frappes à longue portée et pénétration. « Thermonuclear reaction » monte jusqu'au niveau 3. Effet maximum : « Attack +200 ». Accessible dès le début de la recherche. Technologie de fin de partie, à prioriser sur les scénarios HQ 20+.",
+  "longDescEn": "A missile branch for long-range strikes and penetration. \"Thermonuclear reaction\" scales up to level 3. Maximum effect: \"Attack +200\". Available from the start of research. A late-game technology to prioritise on HQ 20+ scenarios.",
+  "longDescDe": "Ein Raketenzweig für Langstreckenschläge und Durchschlag. „Thermonuclear reaction“ skaliert bis Stufe 3. Maximaler Effekt: „Attack +200“. Ab Forschungsbeginn verfügbar. Eine Endspiel-Technologie, priorisiert auf Szenarien ab HQ 20."
 }

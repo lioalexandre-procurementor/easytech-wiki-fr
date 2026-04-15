@@ -376,5 +376,33 @@
   "shortDescEn": "Iconic Soviet Cold War MBT, mass-produced.",
   "shortDescDe": "Ikonischer sowjetischer Kampfpanzer des Kalten Krieges, in Serie gefertigt.",
   "longDescEn": "125mm smoothbore gun with autoloader. Modern elite unit available in Cold War and Modern War scenarios.",
-  "longDescDe": "125-mm-Glattrohrkanone mit Ladeautomat. Moderne Elite-Einheit, verfügbar in Cold War- und Modern War-Szenarien."
+  "longDescDe": "125-mm-Glattrohrkanone mit Ladeautomat. Moderne Elite-Einheit, verfügbar in Cold War- und Modern War-Szenarien.",
+  "faqsEn": [
+    {
+      "q": "How do you get T-72 in World Conqueror 4?",
+      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with T-72?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man T-72 in World Conqueror 4?",
+      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit T-72?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

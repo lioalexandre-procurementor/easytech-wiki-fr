@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général blindée or — États-Unis.",
-  "longDesc": "Creighton Abrams est un général blindée de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé or — États-Unis.",
+  "longDesc": "Commandant du 37e bataillon blindé qui débloque Bastogne à la Noël 1944, Creighton Abrams poursuit une carrière jusqu'au commandement au Vietnam ; le char M1 porte son nom. En WC4, carte blindée tier-S or à profil marching élevé, partenaire naturel de Patton.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold armor general — United States.",
-  "shortDescDe": "Gold Panzer-General — Vereinigte Staaten.",
-  "longDescEn": "Creighton Abrams is a gold-quality armor general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Creighton Abrams ist ein Gold-Panzer-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Panzer-General — Vereinigte Staaten.",
+  "longDescEn": "Creighton Abrams commanded the 37th Tank Battalion that broke through to Bastogne at Christmas 1944 and later led US forces in Vietnam; the M1 tank bears his name. In WC4 a tier-S gold armor card with high marching — Patton's natural partner.",
+  "longDescDe": "Creighton Abrams führte das 37. Panzerbataillon, das an Weihnachten 1944 den Durchbruch nach Bastogne schaffte, und später die US-Truppen in Vietnam; der M1-Panzer trägt seinen Namen. Im WC4 eine S-Klasse-Gold-Panzerkarte mit hohem Marschwert — Pattons natürlicher Partner."
 }

@@ -63,5 +63,8 @@
   "prerequisites": [
     301011,
     301013
-  ]
+  ],
+  "longDesc": "Recherche infanterie, base de toute armée terrestre. « Grenade » monte jusqu'au niveau 2. Effet maximum : « Damage to armored units +50% ». Accessible dès le début de la recherche. Bon rendement sur les scénarios de jungle et de montagne où le char recule.",
+  "longDescEn": "Infantry research, the foundation of any land army. \"Grenade\" scales up to level 2. Maximum effect: \"Damage to armored units +50%\". Available from the start of research. Strong return on jungle and mountain scenarios where tanks give ground.",
+  "longDescDe": "Infanterieforschung — Fundament jeder Landarmee. „Grenade“ skaliert bis Stufe 2. Maximaler Effekt: „Damage to armored units +50%“. Ab Forschungsbeginn verfügbar. Guter Ertrag auf Dschungel- und Gebirgsszenarien, in denen Panzer zurückfallen."
 }

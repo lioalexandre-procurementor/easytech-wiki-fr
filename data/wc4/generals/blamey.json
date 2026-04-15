@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "AU",
   "countryName": "Australie",
-  "shortDesc": "Général artillerie bronze — Australie.",
-  "longDesc": "Thomas Blamey est un général artillerie de qualité bronze — Australie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie bronze — Australie.",
+  "longDesc": "Thomas Blamey commande les forces militaires australiennes dans le Pacifique Sud-Ouest sous MacArthur et reprend la Nouvelle-Guinée en 1942-1944. Seul maréchal australien de l'histoire. Carte WC4 artillerie B bronze, slot thématique australien.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze artillery general — Australia.",
-  "shortDescDe": "Bronze Artillerie-General — Australien.",
-  "longDescEn": "Thomas Blamey is a bronze-quality artillery general — Australia. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Thomas Blamey ist ein Bronze-Artillerie-General — Australien. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Artillerie-General — Australien.",
+  "longDescEn": "Thomas Blamey commanded Australian military forces in the South West Pacific under MacArthur and retook New Guinea in 1942–44. The only Australian field marshal in history. A WC4 bronze-B artillery card, a thematic Australian slot.",
+  "longDescDe": "Thomas Blamey führte unter MacArthur die australischen Streitkräfte im Südwestpazifik und eroberte 1942–44 Neuguinea zurück. Er ist der einzige australische Feldmarschall der Geschichte. Im WC4 eine Bronze-B-Artilleriekarte — thematischer australischer Slot."
 }

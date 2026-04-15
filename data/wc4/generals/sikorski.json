@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "PL",
   "countryName": "Pologne",
-  "shortDesc": "Général artillerie argent — Pologne.",
-  "longDesc": "Władysław Sikorski est un général artillerie de qualité argent — Pologne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie argent — Pologne.",
+  "longDesc": "Władysław Sikorski est Premier ministre du gouvernement polonais en exil et commandant en chef des forces armées polonaises jusqu'à sa mort dans le crash de Gibraltar en juillet 1943. Carte WC4 artillerie A argent à profil diplomatique plus que tactique.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver artillery general — Poland.",
-  "shortDescDe": "Silber Artillerie-General — Polen.",
-  "longDescEn": "Władysław Sikorski is a silver-quality artillery general — Poland. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Władysław Sikorski ist ein Silber-Artillerie-General — Polen. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Artillerie-General — Polen.",
+  "longDescEn": "Władysław Sikorski was Prime Minister of the Polish government-in-exile and Commander-in-Chief until his death in the July 1943 Gibraltar air crash. A WC4 silver-A artillery card whose strength is diplomatic rather than tactical.",
+  "longDescDe": "Władysław Sikorski war Premierminister der polnischen Exilregierung und Oberbefehlshaber bis zu seinem Tod beim Flugzeugabsturz vor Gibraltar im Juli 1943. Im WC4 eine Silber-A-Artilleriekarte, deren Stärke eher diplomatisch als taktisch ist."
 }

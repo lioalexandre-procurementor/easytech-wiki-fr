@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général infanterie or — Royaume-Uni.",
-  "longDesc": "Archibald Wavell est un général infanterie de qualité or — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie or — Royaume-Uni.",
+  "longDesc": "Archibald Wavell commande le Middle East Command lors de la campagne d'Éthiopie et du succès Compass contre les Italiens en 1940. En WC4, carte infanterie tier-S or à bonus désert : pick naturel pour l'Afrique du Nord côté allié.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold infantry general — United Kingdom.",
-  "shortDescDe": "Gold Infanterie-General — Vereinigtes Königreich.",
-  "longDescEn": "Archibald Wavell is a gold-quality infantry general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Archibald Wavell ist ein Gold-Infanterie-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Infanterie-General — Vereinigtes Königreich.",
+  "longDescEn": "Archibald Wavell ran Middle East Command during the Ethiopian campaign and the Operation Compass success against the Italians in 1940. In WC4 a tier-S gold infantry card with desert bonuses — the natural Allied pick for North Africa.",
+  "longDescDe": "Archibald Wavell führte während des Äthiopienfeldzugs und bei Operation Compass 1940 gegen die Italiener das Middle East Command. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Wüstenboni — die natürliche alliierte Wahl für Nordafrika."
 }

@@ -69,5 +69,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Star Fall",
-  "descriptionTemplateFr": "When commanding troops to attaque, there is a X% chance to trigger a niveau II satellite strike on the cible. When commanding air hover unités, the dégâts dealt by this satellite strike is augmenté by an extra 30%."
+  "descriptionTemplateFr": "When commanding troops to attaque, there is a X% chance to trigger a niveau II satellite strike on the cible. When commanding air hover unités, the dégâts dealt by this satellite strike is augmenté by an extra 30%.",
+  "longDesc": "Compétence spécifique à un général. « Star Fall » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops to attaque, there is a 100% chance to trigger a niveau II satellite strike on the cible. When commanding air hover unités, the dégâts dealt by this satellite strike is augmenté by an extra 30%. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Star Fall\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops to attack, there is a 100% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Star Fall“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops to attack, there is a 100% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

@@ -51,6 +51,9 @@ export interface UnitData {
   recommendedGenerals: string[];
   levelingPriority: string[];
   faqs: { q: string; a: string }[];
+  /** Locale-specific FAQs, same shape as `faqs`. When present they replace `faqs` for /en and /de pages. */
+  faqsEn?: { q: string; a: string }[];
+  faqsDe?: { q: string; a: string }[];
   sources?: string[];
   /** Base armyId from the game files (lvl-1 entry). Present when data was backfilled. */
   armyId?: number | null;
@@ -303,6 +306,12 @@ export interface SkillCatalogEntry {
     promoted: SkillUsageEntry[];    // generals who unlock it via training
   };
   varyingField: "SkillEffect" | "ActivatesChance";
+  /** Long tactical description (FR). Added by Phase 1b remediation. */
+  longDesc?: string;
+  /** Long tactical description (EN). Added by Phase 1b remediation. */
+  longDescEn?: string;
+  /** Long tactical description (DE). Added by Phase 1b remediation. */
+  longDescDe?: string;
 }
 
 export interface SkillIndexItem {
@@ -430,6 +439,12 @@ export interface Tech {
   levels: TechLevel[];
   prerequisites: Array<{ slug: string; level: number }>;
   affectsArmyIds: number[];
+  /** Long tactical description (FR). Added by Phase 1c remediation. */
+  longDesc?: string;
+  /** Long tactical description (EN). Added by Phase 1c remediation. */
+  longDescEn?: string;
+  /** Long tactical description (DE). Added by Phase 1c remediation. */
+  longDescDe?: string;
 }
 
 export interface TechIndexEntry {

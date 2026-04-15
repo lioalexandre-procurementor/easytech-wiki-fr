@@ -588,5 +588,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Forces d'élite",
-  "descriptionTemplateFr": "Experience gained by the army in combat augmente by X%"
+  "descriptionTemplateFr": "Experience gained by the army in combat augmente by X%",
+  "longDesc": "Compétence logistique de soutien. « Forces d'élite » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Experience gained by the army in combat augmente de 100% ». À maxer sur un général de soutien qui se déplace peu.",
+  "longDescEn": "A logistics support skill. \"Ace Forces\" scales up to level 5. At max level (5), the skill applies the following effect: \"Experience gained by the army in combat increases by 100%\". Max this on a support general that moves little.",
+  "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Ace Forces“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Experience gained by the army in combat increases by 100%“. Auf einem bewegungsarmen Unterstützungs-General maxen."
 }

@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général polyvalente argent — Allemagne.",
-  "longDesc": "Walter Model est un général polyvalente de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — Allemagne.",
+  "longDesc": "Surnommé le « pompier du Führer », Walter Model redresse les fronts Centre et Nord en 1944-1945, puis commande le Groupe d'armées B dans la poche de la Ruhr. Carte WC4 équilibrée A argent : profil défensif polyvalent, à privilégier pour tenir en infériorité numérique.",
   "skills": [
     {
       "slot": 1,
@@ -208,7 +208,7 @@
     }
   ],
   "shortDescEn": "Silver balanced general — Germany.",
-  "shortDescDe": "Silber ausgewogene-General — Deutschland.",
-  "longDescEn": "Walter Model is a silver-quality balanced general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Walter Model ist ein Silber-ausgewogene-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — Deutschland.",
+  "longDescEn": "Nicknamed 'the Führer's fireman', Walter Model stabilised the Centre and North fronts in 1944–45 and then commanded Army Group B in the Ruhr pocket. A WC4 silver-A balanced card with a defensive all-rounder profile — the pick when you need to hold ground while outnumbered.",
+  "longDescDe": "„Hitlers Feuerwehrmann“ Walter Model stabilisierte 1944–45 die Fronten Mitte und Nord und führte danach die Heeresgruppe B im Ruhrkessel. Im WC4 eine Silber-A-Allrounderkarte mit defensivem Profil — die Wahl, wenn du in Unterzahl Stellung halten musst."
 }

@@ -219,5 +219,8 @@
     303005,
     303006,
     303007
-  ]
+  ],
+  "longDesc": "Recherche artillerie, cœur des stratégies de siège. « Rocket Artillery » monte jusqu'au niveau 8. Effet maximum : « Attack of rocket artillery units +18 ». Accessible dès le début de la recherche. Clef du succès sur les scénarios à lignes fortifiées : Koursk, Monte Cassino.",
+  "longDescEn": "Artillery research, the core of siege strategies. \"Rocket Artillery\" scales up to level 8. Maximum effect: \"Attack of rocket artillery units +18\". Available from the start of research. Key on fortified-line scenarios: Kursk, Monte Cassino.",
+  "longDescDe": "Artillerieforschung — Kernstück von Belagerungsstrategien. „Rocket Artillery“ skaliert bis Stufe 8. Maximaler Effekt: „Attack of rocket artillery units +18“. Ab Forschungsbeginn verfügbar. Schlüssel auf Szenarien mit Befestigungslinien: Kursk, Monte Cassino."
 }

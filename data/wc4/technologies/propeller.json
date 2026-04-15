@@ -115,5 +115,8 @@
     304003,
     304005,
     304007
-  ]
+  ],
+  "longDesc": "Recherche navale qui renforce les escadres de surface et sous-marines. « Propeller » monte jusqu'au niveau 4. Effet maximum : « Mobility +4 ». Accessible dès le début de la recherche. À prioriser sur les scénarios Pacifique, Atlantique et Méditerranée.",
+  "longDescEn": "A naval technology that strengthens fleet units across the board. \"Propeller\" scales up to level 4. Maximum effect: \"Mobility +4\". Available from the start of research. Prioritise on Pacific, Atlantic and Mediterranean scenarios.",
+  "longDescDe": "Eine Marinetechnologie, die Flotteneinheiten durchgehend stärkt. „Propeller“ skaliert bis Stufe 4. Maximaler Effekt: „Mobility +4“. Ab Forschungsbeginn verfügbar. Auf Pazifik-, Atlantik- und Mittelmeer-Szenarien priorisieren."
 }

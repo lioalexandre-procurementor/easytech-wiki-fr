@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "FR",
   "countryName": "France",
-  "shortDesc": "Général blindée or — France.",
-  "longDesc": "Maxime Weygand est un général blindée de qualité or — France. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé or — France.",
+  "longDesc": "Maxime Weygand est nommé commandant en chef des forces françaises le 20 mai 1940 après l'échec de Gamelin, tente sans succès la manœuvre « Weygand » pour refermer la poche d'Abbeville. Carte WC4 blindée tier-S or : meilleur général français du jeu, pick obligatoire côté Alliés 1940.",
   "skills": [
     {
       "slot": 1,
@@ -126,7 +126,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold armor general — France.",
-  "shortDescDe": "Gold Panzer-General — Frankreich.",
-  "longDescEn": "Maxime Weygand is a gold-quality armor general — France. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Maxime Weygand ist ein Gold-Panzer-General — Frankreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Panzer-General — Frankreich.",
+  "longDescEn": "Maxime Weygand was appointed French commander-in-chief on 20 May 1940 after Gamelin's failure and attempted the 'Weygand' counter-stroke to close the Abbeville pocket. A WC4 tier-S gold armor card — the best French general in the game and a mandatory Allied pick in 1940.",
+  "longDescDe": "Maxime Weygand wurde am 20. Mai 1940 nach Gamelins Scheitern zum französischen Oberbefehlshaber ernannt und versuchte erfolglos den „Weygand-Gegenstoß“ zur Schließung des Kessels von Abbeville. Im WC4 eine S-Klasse-Gold-Panzerkarte — der beste französische General im Spiel und Pflichtwahl auf alliierter Seite 1940."
 }

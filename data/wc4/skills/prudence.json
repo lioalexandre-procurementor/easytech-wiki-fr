@@ -117,5 +117,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Prudence",
-  "descriptionTemplateFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté by X%."
+  "descriptionTemplateFr": "Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté by X%.",
+  "longDesc": "Compétence spécifique à un général. « Prudence » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Self-moral will not be disrupted. Self and 1 square of allié troops around it will have their counterattack dégâts augmenté de 25%. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Prudence\" scales up to level 5. At max level (5), the skill applies the following effect: \"Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 25%.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Prudence“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by 25%.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

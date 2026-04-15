@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général artillerie argent — Allemagne.",
-  "longDesc": "Walther von Brauchitsch est un général artillerie de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie argent — Allemagne.",
+  "longDesc": "Walther von Brauchitsch est commandant en chef de l'Armée de terre allemande de 1938 à décembre 1941, supervisant Pologne, France et Barbarossa. En WC4, carte artillerie A argent : stats d'artillerie solides pour son rang, utile sur Kharkov et Stalingrad en complément de Kluge.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver artillery general — Germany.",
-  "shortDescDe": "Silber Artillerie-General — Deutschland.",
-  "longDescEn": "Walther von Brauchitsch is a silver-quality artillery general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Walther von Brauchitsch ist ein Silber-Artillerie-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Artillerie-General — Deutschland.",
+  "longDescEn": "Walther von Brauchitsch was Commander-in-Chief of the German Army from 1938 to December 1941, overseeing Poland, France and Barbarossa. In WC4 a silver-A artillery card with solid artillery stats for its rank — useful at Kharkov and Stalingrad as a complement to Kluge.",
+  "longDescDe": "Walther von Brauchitsch war von 1938 bis Dezember 1941 Oberbefehlshaber des Heeres und verantwortete Polen, Frankreich und Barbarossa. Im WC4 eine Silber-A-Artilleriekarte mit für ihr Rang soliden Artilleriewerten — nützlich in Charkow und Stalingrad als Ergänzung zu Kluge."
 }

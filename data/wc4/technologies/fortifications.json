@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     306012
-  ]
+  ],
+  "longDesc": "Branche fortifications : tourelles, bunkers, défenses statiques. « Fortifications » monte jusqu'au niveau 1. Effet maximum : « Construction rounds -1 ». Accessible dès le début de la recherche. Multiplie le rendement d'un général défensif posté derrière les lignes.",
+  "longDescEn": "A fortifications branch for turrets, bunkers and static defences. \"Fortifications\" scales up to level 1. Maximum effect: \"Construction rounds -1\". Available from the start of research. Multiplies the output of a defensive general posted behind the lines.",
+  "longDescDe": "Ein Befestigungs-Zweig für Türme, Bunker und Stellungsverteidigungen. „Fortifications“ skaliert bis Stufe 1. Maximaler Effekt: „Construction rounds -1“. Ab Forschungsbeginn verfügbar. Vervielfacht den Ertrag eines hinter den Linien stationierten Defensivgenerals."
 }

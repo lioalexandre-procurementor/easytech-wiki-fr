@@ -78,6 +78,21 @@ export default async function TechDetailPage({
           </div>
         </header>
 
+        {(() => {
+          const longDesc =
+            loc === "fr"
+              ? tech.longDesc
+              : loc === "de"
+                ? (tech.longDescDe ?? tech.longDescEn ?? tech.longDesc)
+                : (tech.longDescEn ?? tech.longDesc);
+          if (!longDesc) return null;
+          return (
+            <section className="bg-panel border border-border rounded-lg p-6 mb-6">
+              <p className="text-ink text-sm leading-relaxed">{longDesc}</p>
+            </section>
+          );
+        })()}
+
         {tech.levels.length === 0 ? (
           <div className="bg-panel border border-border rounded-lg p-6 text-dim text-sm">
             No levels available.

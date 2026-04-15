@@ -677,5 +677,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Assaut blindé",
-  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités blindées"
+  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités blindées",
+  "longDesc": "Brique offensive du kit d'un général. « Assaut blindé » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Inflige +30% de dégâts à l'ennemi lorsque vous commandez des unités blindées ». À maxer en priorité sur un DPS principal.",
+  "longDescEn": "An offensive building block in a general's kit. \"Armored Assault\" scales up to level 5. At max level (5), the skill applies the following effect: \"Deal +30% damage to the enemy when commanding armored units\". Max this as a priority on a primary DPS general.",
+  "longDescDe": "Ein Offensiv-Baustein im Kit eines Generals. „Armored Assault“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Deal +30% damage to the enemy when commanding armored units“. Auf einem Haupt-DPS-General vorrangig auf Maximum bringen."
 }

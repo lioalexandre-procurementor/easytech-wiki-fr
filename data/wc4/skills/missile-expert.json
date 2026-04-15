@@ -69,5 +69,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Missile Expert",
-  "descriptionTemplateFr": "Consumption of resources lors d'une attaque with missiles -X%"
+  "descriptionTemplateFr": "Consumption of resources lors d'une attaque with missiles -X%",
+  "longDesc": "Compétence spécifique à un général. « Missile Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Consumption of resources lors d'une attaque with missiles -50% ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Missile Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Consumption of resources When attacking with missiles -50%\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Missile Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Consumption of resources When attacking with missiles -50%“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

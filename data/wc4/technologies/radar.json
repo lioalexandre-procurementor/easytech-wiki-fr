@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     307011
-  ]
+  ],
+  "longDesc": "Recherche DCA qui casse les raids et bombardements. « Radar » monte jusqu'au niveau 1. Effet maximum : « Air defense range +1 ». Accessible dès le début de la recherche. Complémentaire à la force aérienne : à prendre en parallèle.",
+  "longDescEn": "Anti-air research that breaks enemy raids and bomber runs. \"Radar\" scales up to level 1. Maximum effect: \"Air defense range +1\". Available from the start of research. Complementary to air-force research — take both in parallel.",
+  "longDescDe": "Flak-Forschung, die feindliche Raids und Bomberläufe bricht. „Radar“ skaliert bis Stufe 1. Maximaler Effekt: „Air defense range +1“. Ab Forschungsbeginn verfügbar. Ergänzung zur Luftwaffenforschung — parallel einplanen."
 }

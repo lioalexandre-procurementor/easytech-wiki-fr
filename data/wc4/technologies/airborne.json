@@ -63,5 +63,8 @@
   "prerequisites": [
     305013,
     305012
-  ]
+  ],
+  "longDesc": "Recherche aérienne qui améliore la portée et la létalité des escadrons. « Airborne » monte jusqu'au niveau 2. Effet maximum : « Able to airborne a mechanized infantry in designated areas ». Accessible dès le début de la recherche. Indispensable sur Sea Lion, Barbarossa et Midway.",
+  "longDescEn": "Air-force research that improves squadron range and lethality. \"Airborne\" scales up to level 2. Maximum effect: \"Able to airborne a mechanized infantry in designated areas\". Available from the start of research. Essential on Sea Lion, Barbarossa and Midway.",
+  "longDescDe": "Luftwaffenforschung, die Reichweite und Wirkung der Staffeln erhöht. „Airborne“ skaliert bis Stufe 2. Maximaler Effekt: „Able to airborne a mechanized infantry in designated areas“. Ab Forschungsbeginn verfügbar. Unverzichtbar bei Seelöwe, Barbarossa und Midway."
 }

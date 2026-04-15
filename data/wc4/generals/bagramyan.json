@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général infanterie bronze — URSS.",
-  "longDesc": "Ivan Bagramyan est un général infanterie de qualité bronze — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — URSS.",
+  "longDesc": "Ivan Bagramyan dirige le 1er Front balte lors de l'offensive de Biélorussie en 1944 et joue un rôle clé à Königsberg. Carte WC4 infanterie B bronze : dépanneur soviétique early-game à remplacer dès les premiers ors.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — USSR.",
-  "shortDescDe": "Bronze Infanterie-General — UdSSR.",
-  "longDescEn": "Ivan Bagramyan is a bronze-quality infantry general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Ivan Bagramyan ist ein Bronze-Infanterie-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — UdSSR.",
+  "longDescEn": "Ivan Bagramyan led the 1st Baltic Front through the 1944 Belorussian offensive and played a key role at Königsberg. A WC4 bronze-B infantry card — an early-game Soviet placeholder to swap out as soon as gold cards arrive.",
+  "longDescDe": "Iwan Bagramjan führte die 1. Baltische Front durch die Weißrussische Offensive 1944 und spielte eine Schlüsselrolle vor Königsberg. Im WC4 eine Bronze-B-Infanteriekarte — sowjetischer Lückenfüller fürs Frühspiel, den du beim ersten Gold ablöst."
 }

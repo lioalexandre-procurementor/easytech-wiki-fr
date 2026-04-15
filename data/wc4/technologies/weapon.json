@@ -115,5 +115,8 @@
     304033,
     304034,
     304035
-  ]
+  ],
+  "longDesc": "Branche de recherche dédiée à la marine. « Weapon » monte jusqu'au niveau 4. Effet maximum : « Attack +16 ». Accessible dès le début de la recherche. À prioriser sur les scénarios Pacifique, Atlantique et Méditerranée.",
+  "longDescEn": "A naval research branch that upgrades surface and submarine squadrons. \"Weapon\" scales up to level 4. Maximum effect: \"Attack +16\". Available from the start of research. Prioritise on Pacific, Atlantic and Mediterranean scenarios.",
+  "longDescDe": "Ein Marine-Forschungszweig, der Überwasser- und U-Boot-Geschwader verstärkt. „Weapon“ skaliert bis Stufe 4. Maximaler Effekt: „Attack +16“. Ab Forschungsbeginn verfügbar. Auf Pazifik-, Atlantik- und Mittelmeer-Szenarien priorisieren."
 }

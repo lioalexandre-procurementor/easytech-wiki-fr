@@ -201,5 +201,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Recherche blindée, pilier des conquêtes terrestres rapides. « Armor » monte jusqu'au niveau 8. Effet maximum : « Defense +12 ». Débloquée au niveau de QG 8. Rendement optimal sur les scénarios à terrain ouvert (steppe, désert).",
+  "longDescEn": "Armor research — the backbone of fast land conquest. \"Armor\" scales up to level 8. Maximum effect: \"Defense +12\". Unlocks at HQ level 8. Best return in open-terrain scenarios (steppe, desert).",
+  "longDescDe": "Panzerforschung — Rückgrat schneller Landeroberungen. „Armor“ skaliert bis Stufe 8. Maximaler Effekt: „Defense +12“. Wird auf HQ-Stufe 8 freigeschaltet. Höchster Ertrag auf offenem Gelände (Steppe, Wüste)."
 }

@@ -87,5 +87,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Joint Offensive",
-  "descriptionTemplateFr": "Après avoir attaqué, there is a X% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour."
+  "descriptionTemplateFr": "Après avoir attaqué, there is a X% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour.",
+  "longDesc": "Compétence spécifique à un général. « Joint Offensive » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Après avoir attaqué, there is a 100% chance that a tracking mark will be added to the cible and other ennemis within 1 grid of the cible. Targets with tracking mark receive 20% more dégâts, lasts pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Joint Offensive\" scales up to level 5. At max level (5), the skill applies the following effect: \"After attacking, there is a 100% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Joint Offensive“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After attacking, there is a 100% chance that a tracking mark will be added to the target and other enemies within 1 grid of the target. Targets with tracking mark receive 20% more damage, lasts for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

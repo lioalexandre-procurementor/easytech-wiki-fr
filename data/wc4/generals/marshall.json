@@ -8,8 +8,8 @@
   "quality": "marshal",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général infanterie maréchal — États-Unis.",
-  "longDesc": "George Marshall est un général infanterie de qualité maréchal — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie maréchal — États-Unis.",
+  "longDesc": "Chef d'état-major de l'US Army tout au long de la guerre, George Marshall devient ensuite secrétaire d'État et donne son nom au Plan Marshall de 1947. Carte WC4 maréchal infanterie : bonus logistique et moral exceptionnels, utile en back-line pour accélérer la production.",
   "skills": [
     {
       "slot": 1,
@@ -246,8 +246,8 @@
       "skillLevel": 5
     }
   ],
-  "shortDescEn": "Marshal infantry general — United States.",
-  "shortDescDe": "Marschall Infanterie-General — Vereinigte Staaten.",
-  "longDescEn": "George Marshall is a marshal-quality infantry general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "George Marshall ist ein Marschall-Infanterie-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Marshal-rank infantry general — United States.",
+  "shortDescDe": "Marschall-Infanterie-General — Vereinigte Staaten.",
+  "longDescEn": "George Marshall served as US Army Chief of Staff throughout the war, later became Secretary of State and gave his name to the 1947 Marshall Plan. A WC4 marshal-rank infantry card with outstanding logistics and morale bonuses — useful in the back line to accelerate production.",
+  "longDescDe": "George Marshall war während des gesamten Krieges Generalstabschef der US Army, später Außenminister und Namensgeber für den Marshallplan von 1947. Im WC4 eine Marschall-Infanteriekarte mit herausragenden Logistik- und Moralboni — stark in der Hinterlinie, um die Produktion zu beschleunigen."
 }

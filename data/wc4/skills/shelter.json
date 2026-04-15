@@ -405,5 +405,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Abri",
-  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's unités de missiles"
+  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's unités de missiles",
+  "longDesc": "Compétence spécifique à un général. « Abri » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Peut esquiver 30% des dégâts des unités missiles ennemies ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Shelter\" scales up to level 5. At max level (5), the skill applies the following effect: \"Able to dodge 30% damage from the enemy's missile units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Shelter“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Able to dodge 30% damage from the enemy's missile units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

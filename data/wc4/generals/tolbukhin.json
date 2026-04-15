@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général blindée or — URSS.",
-  "longDesc": "Fiodor Tolboukhine est un général blindée de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé or — URSS.",
+  "longDesc": "Fiodor Tolboukhine commande le 3e Front ukrainien, libère Belgrade, Budapest et Vienne en 1944-1945. Carte WC4 blindée tier-S or : bonus mobilité en terrain mixte, parfait pour les scénarios de Balkans où alternent plaines et villes.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold armor general — USSR.",
-  "shortDescDe": "Gold Panzer-General — UdSSR.",
-  "longDescEn": "Fiodor Tolboukhine is a gold-quality armor general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Fiodor Tolboukhine ist ein Gold-Panzer-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Panzer-General — UdSSR.",
+  "longDescEn": "Fyodor Tolbukhin commanded the 3rd Ukrainian Front, liberating Belgrade, Budapest and Vienna in 1944–45. A WC4 tier-S gold armor card with mixed-terrain mobility bonuses — perfect for Balkan scenarios alternating between open plains and cities.",
+  "longDescDe": "Fjodor Tolbuchin befehligte die 3. Ukrainische Front und befreite 1944–45 Belgrad, Budapest und Wien. Im WC4 eine S-Klasse-Gold-Panzerkarte mit Mobilitätsboni in Mischgelände — ideal für Balkan-Szenarien, die zwischen Ebenen und Städten wechseln."
 }

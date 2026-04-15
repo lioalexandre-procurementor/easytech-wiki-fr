@@ -465,5 +465,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Marée de fer",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque unités blindées sont endommagée à plus de moitié"
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque unités blindées sont endommagée à plus de moitié",
+  "longDesc": "Compétence spécifique à un général. « Marée de fer » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 lorsque unités blindées sont endommagée à plus de moitié ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Tide of Iron\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when the armored units are more than half damaged\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Tide of Iron“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when the armored units are more than half damaged“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

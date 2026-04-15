@@ -205,5 +205,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Wolfpack",
-  "descriptionTemplateFr": "Attaque of allié surrounding unités navales +X"
+  "descriptionTemplateFr": "Attaque of allié surrounding unités navales +X",
+  "longDesc": "Compétence spécifique à un général. « Wolfpack » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Attaque of allié surrounding unités navales +20 ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Wolfpack\" scales up to level 5. At max level (5), the skill applies the following effect: \"Attack of friendly surrounding ship units +20\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Wolfpack“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Attack of friendly surrounding ship units +20“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

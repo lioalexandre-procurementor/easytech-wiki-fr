@@ -87,5 +87,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "War Machine",
-  "descriptionTemplateFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +X%"
+  "descriptionTemplateFr": "When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +X%",
+  "longDesc": "Compétence spécifique à un général. « War Machine » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +40% ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"War Machine\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „War Machine“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

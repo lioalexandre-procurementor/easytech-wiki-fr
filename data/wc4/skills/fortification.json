@@ -81,5 +81,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Fortification",
-  "descriptionTemplateFr": "When commanding armored troops, dégâts received - X%."
+  "descriptionTemplateFr": "When commanding armored troops, dégâts received - X%.",
+  "longDesc": "Compétence spécifique à un général. « Fortification » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding armored troops, dégâts received - 15%. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Fortification\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored troops, damage received - 15%.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Fortification“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored troops, damage received - 15%.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

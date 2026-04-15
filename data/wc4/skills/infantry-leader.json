@@ -621,5 +621,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Commandant d'infanterie",
-  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'infanterie"
+  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'infanterie",
+  "longDesc": "Compétence spécifique à un général. « Commandant d'infanterie » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 40% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'infanterie ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Infantry Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"40% chance to give the enemy a critical attack when commanding infantry units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Infantry Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „40% chance to give the enemy a critical attack when commanding infantry units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

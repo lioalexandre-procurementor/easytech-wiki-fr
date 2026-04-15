@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général infanterie argent — Allemagne.",
-  "longDesc": "Nikolaus von Falkenhorst est un général infanterie de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — Allemagne.",
+  "longDesc": "Nikolaus von Falkenhorst dirige l'opération Weserübung, invasion conjointe du Danemark et de la Norvège en avril 1940. Carte WC4 infanterie A argent : bonus terrain froid et débarquement, pick thématique sur les scénarios scandinaves où peu de généraux brillent.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver infantry general — Germany.",
-  "shortDescDe": "Silber Infanterie-General — Deutschland.",
-  "longDescEn": "Nikolaus von Falkenhorst is a silver-quality infantry general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Nikolaus von Falkenhorst ist ein Silber-Infanterie-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Infanterie-General — Deutschland.",
+  "longDescEn": "Nikolaus von Falkenhorst commanded Operation Weserübung, the joint April 1940 invasion of Denmark and Norway. In WC4 a silver-A infantry card with cold-terrain and amphibious bonuses — a thematic pick for Scandinavian scenarios where few generals stand out.",
+  "longDescDe": "Nikolaus von Falkenhorst leitete im April 1940 die Operation Weserübung, die gemeinsame Invasion Dänemarks und Norwegens. Im WC4 eine Silber-A-Infanteriekarte mit Kaltgelände- und Landungsboni — ein thematischer Pick für skandinavische Szenarien, bei denen wenige Generäle herausstechen."
 }

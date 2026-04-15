@@ -364,5 +364,33 @@
   "shortDescEn": "American 105mm self-propelled howitzer on an M3 Lee chassis.",
   "shortDescDe": "Amerikanische 105-mm-Selbstfahrlafette auf M3-Lee-Fahrgestell.",
   "longDescEn": "WWII self-propelled howitzer. Elite artillery with high mobility, good for fire support in early WW2 scenarios.",
-  "longDescDe": "Selbstfahrhaubitze aus dem Zweiten Weltkrieg. Elite-Artillerie mit hoher Mobilität, geeignet für Feuerunterstützung in frühen WW2-Szenarien."
+  "longDescDe": "Selbstfahrhaubitze aus dem Zweiten Weltkrieg. Elite-Artillerie mit hoher Mobilität, geeignet für Feuerunterstützung in frühen WW2-Szenarien.",
+  "faqsEn": [
+    {
+      "q": "How do you get M7 Priest in World Conqueror 4?",
+      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with M7 Priest?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man M7 Priest in World Conqueror 4?",
+      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit M7 Priest?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

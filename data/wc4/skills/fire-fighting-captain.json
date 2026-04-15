@@ -75,5 +75,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Fire-Fighting Captain",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a X% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has."
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a X% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has.",
+  "longDesc": "Compétence spécifique à un général. « Fire-Fighting Captain » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 70% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Fire-Fighting Captain\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Fire-Fighting Captain“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

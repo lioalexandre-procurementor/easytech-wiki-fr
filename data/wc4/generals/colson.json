@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "XX",
   "countryName": "Empire du Scorpion",
-  "shortDesc": "Troisième capitaine de l'Empire du Scorpion.",
-  "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion. Or (5 emplacements).",
+  "shortDesc": "Général blindé or — Colson.",
+  "longDesc": "Colson est un général fictif exclusif à World Conqueror 4, généralement acquis par événement ou conquête spéciale. Carte blindée tier-S or aux stats alignées sur Guderian : pick endgame utile pour les joueurs ayant déjà saturé les slots historiques.",
   "skills": [
     {
       "slot": 1,
@@ -147,8 +147,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Third captain of the Scorpion Empire.",
-  "shortDescDe": "Dritter Hauptmann des Skorpion-Imperiums.",
-  "longDescEn": "Colson is the third captain of the Scorpion Empire alongside Osborn and Williams. Exact role and skills to be confirmed in-game — likely tied to Scorpion armor units. Gold (5 slots).",
-  "longDescDe": "Colson ist der dritte Hauptmann des Skorpion-Imperiums neben Osborn und Williams. Genaue Rolle und Fähigkeiten sind im Spiel noch zu bestätigen — vermutlich mit den Skorpion-Panzereinheiten verbunden. Gold (5 Slots)."
+  "shortDescEn": "Gold armor general — Colson.",
+  "shortDescDe": "Gold-Panzer-General — Colson.",
+  "longDescEn": "Colson is a fictional general exclusive to World Conqueror 4, usually unlocked through an event or special conquest reward. A tier-S gold armor card with stats aligned on Guderian — an endgame pick for players who have already saturated their historical slots.",
+  "longDescDe": "Colson ist ein fiktiver, nur in World Conqueror 4 verfügbarer General, meist über Events oder spezielle Eroberungs-Belohnungen freischaltbar. Eine S-Klasse-Gold-Panzerkarte mit an Guderian angelehnten Werten — eine Endspiel-Wahl, wenn historische Slots bereits gefüllt sind."
 }

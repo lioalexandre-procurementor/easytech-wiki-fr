@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "FR",
   "countryName": "France",
-  "shortDesc": "Général polyvalente argent — France.",
-  "longDesc": "Philippe Leclerc est un général polyvalente de qualité argent — France. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — France.",
+  "longDesc": "Philippe Leclerc dirige la 2e division blindée française de Koufra à la libération de Paris et de Strasbourg, tenant son serment de Koufra. Carte WC4 équilibrée A argent : profil blindé-infanterie cohérent, pick d'identité pour toute armée gaulliste.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver balanced general — France.",
-  "shortDescDe": "Silber ausgewogene-General — Frankreich.",
-  "longDescEn": "Philippe Leclerc is a silver-quality balanced general — France. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Philippe Leclerc ist ein Silber-ausgewogene-General — Frankreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — Frankreich.",
+  "longDescEn": "Philippe Leclerc led the Free French 2nd Armoured Division from Kufra to the liberation of Paris and Strasbourg, keeping his Kufra oath. A WC4 silver-A balanced card with a coherent armor-infantry profile — the identity pick for any Gaullist army.",
+  "longDescDe": "Philippe Leclerc führte die 2. französische Panzerdivision von Kufra bis zur Befreiung von Paris und Straßburg und hielt damit seinen Kufra-Eid. Im WC4 eine Silber-A-Allrounderkarte mit stimmigem Panzer-Infanterie-Profil — die Identitätswahl jeder gaullistischen Armee."
 }

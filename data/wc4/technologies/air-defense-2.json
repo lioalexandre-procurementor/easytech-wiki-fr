@@ -77,5 +77,8 @@
   "prerequisites": [
     304033,
     304035
-  ]
+  ],
+  "longDesc": "Recherche navale qui renforce les escadres de surface et sous-marines. « Air-Defense » monte jusqu'au niveau 2. Effet maximum : « Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10% ». Accessible dès le début de la recherche. Incontournable pour les nations maritimes : USA, Japon, Royaume-Uni.",
+  "longDescEn": "A naval technology that strengthens fleet units across the board. \"Air-Defense\" scales up to level 2. Maximum effect: \"Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10%\". Available from the start of research. A must-have for maritime nations: USA, Japan, UK.",
+  "longDescDe": "Eine Marinetechnologie, die Flotteneinheiten durchgehend stärkt. „Air-Defense“ skaliert bis Stufe 2. Maximaler Effekt: „Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10%“. Ab Forschungsbeginn verfügbar. Pflicht für Seemächte: USA, Japan, Vereinigtes Königreich."
 }

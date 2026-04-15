@@ -73,5 +73,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Coup du sort",
-  "descriptionTemplateFr": "When commanded troop activates esquive, restaurer X% based on self's maximum PV (up to 1 time par tour)"
+  "descriptionTemplateFr": "When commanded troop activates esquive, restaurer X% based on self's maximum PV (up to 1 time par tour)",
+  "longDesc": "Compétence logistique, utile sur les campagnes longues. « Coup du sort » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanded troop activates esquive, restaurer 15% based on self's maximum PV (up to 1 time par tour) ». À maxer sur un général de soutien qui se déplace peu.",
+  "longDescEn": "A logistics skill, useful on long campaigns. \"Fluke\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanded troop activates dodge, restore 15% based on self's maximum HP (up to 1 time per turn)\". Max this on a support general that moves little.",
+  "longDescDe": "Eine Logistik-Fähigkeit, hilfreich in langen Kampagnen. „Fluke“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanded troop activates dodge, restore 15% based on self's maximum HP (up to 1 time per turn)“. Auf einem bewegungsarmen Unterstützungs-General maxen."
 }

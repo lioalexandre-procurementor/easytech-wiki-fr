@@ -453,5 +453,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Architecture",
-  "descriptionTemplateFr": "Fix the city: each round City PV +X"
+  "descriptionTemplateFr": "Fix the city: each round City PV +X",
+  "longDesc": "Brique de soutien qui améliore la tenue dans la durée. « Architecture » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Fix the city: each round City PV +30 ». Pertinente sur les longues campagnes où le gain marginal de chaque tour compte.",
+  "longDescEn": "A support building block that improves endurance over time. \"Architecture\" scales up to level 5. At max level (5), the skill applies the following effect: \"Fix the city: each round City HP +30\". Relevant on long campaigns where the marginal gain per turn matters.",
+  "longDescDe": "Ein Unterstützungs-Baustein, der die Ausdauer erhöht. „Architecture“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Fix the city: each round City HP +30“. Lohnend in langen Kampagnen, in denen jeder Rundenbonus zählt."
 }

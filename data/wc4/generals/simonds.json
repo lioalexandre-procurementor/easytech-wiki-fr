@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "CA",
   "countryName": "Canada",
-  "shortDesc": "Général blindée argent — Canada.",
-  "longDesc": "Guy Simonds est un général blindée de qualité argent — Canada. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — Canada.",
+  "longDesc": "Guy Simonds commande le II corps canadien en Normandie et invente le « Kangaroo », véhicule de transport blindé improvisé à partir de châssis de M7 Priest. Carte WC4 blindée A argent à bonus logistique : pick cohérent sur Overlord.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — Canada.",
-  "shortDescDe": "Silber Panzer-General — Kanada.",
-  "longDescEn": "Guy Simonds is a silver-quality armor general — Canada. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Guy Simonds ist ein Silber-Panzer-General — Kanada. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — Kanada.",
+  "longDescEn": "Guy Simonds commanded Canadian II Corps in Normandy and invented the 'Kangaroo', an improvised armoured personnel carrier built on M7 Priest chassis. A WC4 silver-A armor card with logistics bonuses — a coherent pick on Overlord.",
+  "longDescDe": "Guy Simonds führte in der Normandie das kanadische II. Korps und erfand den „Kangaroo“, einen improvisierten Schützenpanzer auf M7-Priest-Fahrgestell. Im WC4 eine Silber-A-Panzerkarte mit Logistikboni — stimmige Wahl für Overlord."
 }

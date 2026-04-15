@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "FI",
   "countryName": "Finlande",
-  "shortDesc": "Général infanterie or — Finlande.",
-  "longDesc": "Simo Häyhä est un général infanterie de qualité or — Finlande. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie or — Finlande.",
+  "longDesc": "Surnommé la « Mort blanche », Simo Häyhä est le tireur d'élite le plus meurtrier de l'histoire avec plus de 500 victoires confirmées en quelques mois de guerre d'Hiver. Carte WC4 infanterie tier-S or à bonus couvert/neige : pick culte finlandais.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold infantry general — Finland.",
-  "shortDescDe": "Gold Infanterie-General — Finnland.",
-  "longDescEn": "Simo Häyhä is a gold-quality infantry general — Finland. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Simo Häyhä ist ein Gold-Infanterie-General — Finnland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Infanterie-General — Finnland.",
+  "longDescEn": "Nicknamed 'the White Death', Simo Häyhä is the deadliest sniper in history, with over 500 confirmed kills in a few months of the Winter War. A WC4 tier-S gold infantry card with cover and snow bonuses — Finland's cult pick.",
+  "longDescDe": "„Der weiße Tod“ Simo Häyhä ist mit über 500 bestätigten Abschüssen in wenigen Monaten des Winterkriegs der tödlichste Scharfschütze der Geschichte. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Deckungs- und Schneeboni — Finnlands Kultwahl."
 }

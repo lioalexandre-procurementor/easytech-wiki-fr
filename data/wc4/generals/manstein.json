@@ -8,8 +8,8 @@
   "quality": "marshal",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général blindée maréchal — Allemagne.",
-  "longDesc": "Erich von Manstein est un général blindée de qualité maréchal — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé maréchal — Allemagne.",
+  "longDesc": "Architecte du Sichelschnitt qui perce dans les Ardennes en 1940, Erich von Manstein commande ensuite le Groupe d'armées Sud sur le front russe, notamment à Kharkov 1943. Carte WC4 de rang maréchal, blindé : les stats maximales en armor + marching en font un slot obligatoire sur les scénarios de conquête offensive Axe.",
   "skills": [
     {
       "slot": 1,
@@ -246,8 +246,8 @@
       "skillLevel": 5
     }
   ],
-  "shortDescEn": "Marshal armor general — Germany.",
-  "shortDescDe": "Marschall Panzer-General — Deutschland.",
-  "longDescEn": "Erich von Manstein is a marshal-quality armor general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Erich von Manstein ist ein Marschall-Panzer-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Marshal-rank armor general — Germany.",
+  "shortDescDe": "Marschall-Panzer-General — Deutschland.",
+  "longDescEn": "Architect of the 1940 Sichelschnitt breakthrough in the Ardennes, Erich von Manstein later commanded Army Group South on the Eastern Front, notably at Kharkov in 1943. A marshal-rank armor card in WC4, his maxed armor + marching stats make him a mandatory slot on Axis-side offensive conquest scenarios.",
+  "longDescDe": "Erich von Manstein entwarf 1940 den Sichelschnitt durch die Ardennen und führte später die Heeresgruppe Süd an der Ostfront, unter anderem bei Charkow 1943. Als Marschall-Panzer-Karte in WC4 ist er dank Maximalwerten in Panzer und Marschieren ein Pflichtslot für offensive Eroberungsszenarien auf Achsenseite."
 }

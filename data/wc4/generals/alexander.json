@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général artillerie argent — Royaume-Uni.",
-  "longDesc": "Harold Alexander est un général artillerie de qualité argent — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie argent — Royaume-Uni.",
+  "longDesc": "Harold Alexander dirige le repli de Dunkerque, puis le théâtre méditerranéen en Tunisie et Italie. Carte WC4 artillerie A argent à bonus polyvalent : pick de rotation derrière Alan Brooke, utile en campagne italienne.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver artillery general — United Kingdom.",
-  "shortDescDe": "Silber Artillerie-General — Vereinigtes Königreich.",
-  "longDescEn": "Harold Alexander is a silver-quality artillery general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Harold Alexander ist ein Silber-Artillerie-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Artillerie-General — Vereinigtes Königreich.",
+  "longDescEn": "Harold Alexander oversaw the Dunkirk withdrawal and later the Mediterranean theatre in Tunisia and Italy. A WC4 silver-A artillery card with all-round bonuses — a rotation pick behind Alan Brooke, useful in the Italian campaign.",
+  "longDescDe": "Harold Alexander leitete den Rückzug aus Dünkirchen und später das Mittelmeer-Theater in Tunesien und Italien. Im WC4 eine Silber-A-Artilleriekarte mit ausgewogenen Boni — Rotationswahl hinter Alan Brooke, nützlich im Italienfeldzug."
 }

@@ -83,5 +83,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Iron Will",
-  "descriptionTemplateFr": "When commanding infanterie , abaisser dégâts received by X%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times."
+  "descriptionTemplateFr": "When commanding infanterie , abaisser dégâts received by X%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times.",
+  "longDesc": "Compétence spécifique à un général. « Iron Will » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding infanterie , réduit les dégâts reçus de 20%. After being attacked by ennemi, augmenter dégâts reduction by additional 10%, lasting pendant 1 tour, stackable up to 3 times. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Iron Will\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Iron Will“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

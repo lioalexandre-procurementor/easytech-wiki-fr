@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "PL",
   "countryName": "Pologne",
-  "shortDesc": "Général blindée argent — Pologne.",
-  "longDesc": "Juliusz Rómmel est un général blindée de qualité argent — Pologne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — Pologne.",
+  "longDesc": "Juliusz Rómmel commande l'armée « Łódź » puis la défense de Varsovie en septembre 1939, face au Fall Weiss allemand. Carte WC4 blindée A argent à bonus défense urbaine : pick thématique pour le scénario de septembre 1939.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — Poland.",
-  "shortDescDe": "Silber Panzer-General — Polen.",
-  "longDescEn": "Juliusz Rómmel is a silver-quality armor general — Poland. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Juliusz Rómmel ist ein Silber-Panzer-General — Polen. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — Polen.",
+  "longDescEn": "Juliusz Rómmel commanded the 'Łódź' Army and then the defence of Warsaw in September 1939 against the German Fall Weiss. A WC4 silver-A armor card with urban-defence bonuses — a thematic pick for the September 1939 scenario.",
+  "longDescDe": "Juliusz Rómmel führte die Armee „Łódź“ und anschließend die Verteidigung Warschaus im September 1939 gegen den deutschen Fall Weiss. Im WC4 eine Silber-A-Panzerkarte mit Stadtverteidigungs-Boni — thematische Wahl für das September-1939-Szenario."
 }

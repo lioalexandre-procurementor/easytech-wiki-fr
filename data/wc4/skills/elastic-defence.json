@@ -329,5 +329,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Elastic Defence",
-  "descriptionTemplateFr": "Fix nearby fortress unités: each round PV +X"
+  "descriptionTemplateFr": "Fix nearby fortress unités: each round PV +X",
+  "longDesc": "Compétence spécifique à un général. « Elastic Defence » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Fix nearby fortress unités: each round PV +20 ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Elastic Defence\" scales up to level 5. At max level (5), the skill applies the following effect: \"Fix nearby fortress units: each round HP+20\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Elastic Defence“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Fix nearby fortress units: each round HP+20“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

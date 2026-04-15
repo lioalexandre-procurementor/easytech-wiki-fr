@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général aérienne or — États-Unis.",
-  "longDesc": "Carl Spaatz est un général aérienne de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien or — États-Unis.",
+  "longDesc": "Carl Spaatz commande la 8e Air Force en Europe puis les forces aériennes stratégiques sur le Japon, signant la reddition japonaise à Tokyo Bay. Carte WC4 aérienne tier-S or : bonus bombardier stratégique maximal, à utiliser sur Ploesti et les raids sur l'Allemagne.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold air force general — United States.",
-  "shortDescDe": "Gold Luftwaffen-General — Vereinigte Staaten.",
-  "longDescEn": "Carl Spaatz is a gold-quality air force general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Carl Spaatz ist ein Gold-Luftwaffen-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Luftwaffen-General — Vereinigte Staaten.",
+  "longDescEn": "Carl Spaatz commanded US 8th Air Force in Europe and then strategic air forces over Japan, co-signing the surrender in Tokyo Bay. A WC4 tier-S gold air-force card with maximum strategic-bomber bonuses — shine him on Ploesti and the strategic raids over Germany.",
+  "longDescDe": "Carl Spaatz führte die 8. US-Luftflotte in Europa und dann die strategischen Luftstreitkräfte über Japan, wo er in der Bucht von Tokio die Kapitulation mitunterzeichnete. Im WC4 eine S-Klasse-Gold-Luftwaffenkarte mit maximalen Strategiebomber-Boni — stark bei Ploiești und den strategischen Angriffen auf Deutschland."
 }

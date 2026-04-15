@@ -208,5 +208,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Replacement",
-  "descriptionTemplateFr": "Reinforce damaged unités d'infanterie: each round PV +X"
+  "descriptionTemplateFr": "Reinforce damaged unités d'infanterie: each round PV +X",
+  "longDesc": "Brique de soutien qui améliore la tenue dans la durée. « Replacement » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Reinforce damaged unités d'infanterie: each round PV +15 ». Utile sur les rushs éclair où l'on économise les ressources pour la prochaine offensive.",
+  "longDescEn": "A support building block that improves endurance over time. \"Replacement\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reinforce damaged infantry units: each round HP +15\". Useful on lightning rushes where you save resources for the next offensive.",
+  "longDescDe": "Ein Unterstützungs-Baustein, der die Ausdauer erhöht. „Replacement“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reinforce damaged infantry units: each round HP +15“. Nützlich bei Blitzoffensiven, um Ressourcen für den nächsten Stoß zu sparen."
 }

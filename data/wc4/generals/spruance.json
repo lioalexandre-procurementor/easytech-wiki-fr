@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général navale or — États-Unis.",
-  "longDesc": "Raymond Spruance est un général navale de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval or — États-Unis.",
+  "longDesc": "Raymond Spruance remporte Midway en juin 1942 à la tête de la Task Force 16 et commande la 5e flotte à Philippine Sea (« Great Marianas Turkey Shoot »). En WC4, carte navale tier-S or duo idéal avec Nimitz pour verrouiller le Pacifique.",
   "skills": [
     {
       "slot": 1,
@@ -133,8 +133,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Gold naval general — United States.",
-  "shortDescDe": "Gold Marine-General — Vereinigte Staaten.",
-  "longDescEn": "Raymond Spruance is a gold-quality naval general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Raymond Spruance ist ein Gold-Marine-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Gold navy general — United States.",
+  "shortDescDe": "Gold-Marine-General — Vereinigte Staaten.",
+  "longDescEn": "Raymond Spruance won Midway in June 1942 leading Task Force 16 and commanded Fifth Fleet at the 'Great Marianas Turkey Shoot'. In WC4 a tier-S gold navy card that pairs perfectly with Nimitz to lock down the Pacific.",
+  "longDescDe": "Raymond Spruance gewann im Juni 1942 als Befehlshaber der Task Force 16 die Schlacht um Midway und führte die 5. Flotte beim „Großen Marianen-Putenschießen“. Im WC4 eine S-Klasse-Gold-Marinekarte, die sich mit Nimitz ideal ergänzt, um den Pazifik zu dominieren."
 }

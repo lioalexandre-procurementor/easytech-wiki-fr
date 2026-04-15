@@ -183,5 +183,33 @@
   "shortDescEn": "Mystic strategic bomber — long-range variant of the Mystic Bomber.",
   "shortDescDe": "Mystischer strategischer Bomber — Langstrecken-Variante des Mystic Bomber.",
   "longDescEn": "Long-range strategic variant of the Mystic Bomber. Area strike, maximum range, very limited usage per match.",
-  "longDescDe": "Strategische Langstreckenvariante des Mystic Bomber. Flächenschlag, maximale Reichweite, sehr begrenzte Einsätze pro Partie."
+  "longDescDe": "Strategische Langstreckenvariante des Mystic Bomber. Flächenschlag, maximale Reichweite, sehr begrenzte Einsätze pro Partie.",
+  "faqsEn": [
+    {
+      "q": "How do you get Mystic Strategic Bomber in World Conqueror 4?",
+      "a": "The unit is obtained through the campaign or limited events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with Mystic Strategic Bomber?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man Mystic Strategic Bomber in World Conqueror 4?",
+      "a": "Die Einheit wird über die Kampagne oder zeitlich begrenzte Events freigeschaltet. Details siehe Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit Mystic Strategic Bomber?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

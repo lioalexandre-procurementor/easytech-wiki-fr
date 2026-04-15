@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général polyvalente argent — Allemagne.",
-  "longDesc": "Helmuth Weidling est un général polyvalente de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — Allemagne.",
+  "longDesc": "Dernier commandant de la garnison de Berlin, Helmuth Weidling signe la reddition de la ville le 2 mai 1945. Carte WC4 équilibrée A argent, bonus défense urbaine : à sortir sur les scénarios de siège où l'on encaisse les assauts soviétiques de la dernière heure.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver balanced general — Germany.",
-  "shortDescDe": "Silber ausgewogene-General — Deutschland.",
-  "longDescEn": "Helmuth Weidling is a silver-quality balanced general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Helmuth Weidling ist ein Silber-ausgewogene-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — Deutschland.",
+  "longDescEn": "The last commander of the Berlin garrison, Helmuth Weidling signed the city's surrender on 2 May 1945. In WC4 a silver-A balanced card with urban-defence bonuses — bring him out on siege scenarios where you absorb last-hour Soviet assaults.",
+  "longDescDe": "Helmuth Weidling war der letzte Kommandant der Berliner Garnison und unterzeichnete am 2. Mai 1945 die Kapitulation der Stadt. Im WC4 eine Silber-A-Allrounderkarte mit Stadtverteidigungs-Boni — die Wahl für Belagerungsszenarien, in denen du sowjetische Spätangriffe abfängst."
 }

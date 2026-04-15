@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général navale or — États-Unis.",
-  "longDesc": "Chester Nimitz est un général navale de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval or — États-Unis.",
+  "longDesc": "Chester Nimitz commande la flotte américaine du Pacifique de décembre 1941 à la fin de la guerre, supervisant Midway, Philippine Sea et Leyte. Carte WC4 navale tier-S or : bonus porte-avions au maximum, carte incontournable du Pacifique côté allié.",
   "skills": [
     {
       "slot": 1,
@@ -224,8 +224,8 @@
       "skillLevel": 2
     }
   ],
-  "shortDescEn": "Gold naval general — United States.",
-  "shortDescDe": "Gold Marine-General — Vereinigte Staaten.",
-  "longDescEn": "Chester Nimitz is a gold-quality naval general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Chester Nimitz ist ein Gold-Marine-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Gold navy general — United States.",
+  "shortDescDe": "Gold-Marine-General — Vereinigte Staaten.",
+  "longDescEn": "Chester Nimitz commanded the US Pacific Fleet from December 1941 to the war's end, overseeing Midway, the Philippine Sea and Leyte. A WC4 tier-S gold navy card with maximum carrier bonuses — the cornerstone Allied pick for the Pacific.",
+  "longDescDe": "Chester Nimitz führte die US-Pazifikflotte von Dezember 1941 bis Kriegsende und leitete Midway, Philippinensee und Leyte. Im WC4 eine S-Klasse-Gold-Marinekarte mit maximalen Flugzeugträger-Boni — Eckpfeiler der alliierten Pazifik-Aufstellung."
 }

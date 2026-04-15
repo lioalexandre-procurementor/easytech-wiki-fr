@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "YU",
   "countryName": "Yougoslavie",
-  "shortDesc": "Général infanterie bronze — Yougoslavie.",
-  "longDesc": "Josip Broz Tito est un général infanterie de qualité bronze — Yougoslavie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Yougoslavie.",
+  "longDesc": "Josip Broz Tito dirige les Partisans yougoslaves contre l'occupation germano-italienne à partir de 1941 et fonde la République fédérative socialiste en 1945. Carte WC4 infanterie B bronze à bonus guérilla : pick thématique sur les scénarios des Balkans.",
   "skills": [
     {
       "slot": 1,
@@ -205,7 +205,7 @@
     }
   ],
   "shortDescEn": "Bronze infantry general — Yugoslavia.",
-  "shortDescDe": "Bronze Infanterie-General — Jugoslawien.",
-  "longDescEn": "Josip Broz Tito is a bronze-quality infantry general — Yugoslavia. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Josip Broz Tito ist ein Bronze-Infanterie-General — Jugoslawien. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Jugoslawien.",
+  "longDescEn": "Josip Broz Tito led the Yugoslav Partisans against the German-Italian occupation from 1941 and founded the Socialist Federal Republic in 1945. A WC4 bronze-B infantry card with guerrilla bonuses — a thematic pick on Balkan scenarios.",
+  "longDescDe": "Josip Broz Tito führte ab 1941 die jugoslawischen Partisanen gegen die deutsch-italienische Besatzung und gründete 1945 die Sozialistische Föderative Republik. Im WC4 eine Bronze-B-Infanteriekarte mit Guerilla-Boni — thematische Wahl für Balkan-Szenarien."
 }

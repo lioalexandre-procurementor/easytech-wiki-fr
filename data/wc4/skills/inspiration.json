@@ -237,5 +237,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Inspiration",
-  "descriptionTemplateFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +X% lorsque le moral est élevé"
+  "descriptionTemplateFr": "30% chance d'augmenter le moral après avoir attaqué. Dégâts +X% lorsque le moral est élevé",
+  "longDesc": "Compétence de pression offensive. « Inspiration » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 30% chance d'augmenter le moral après avoir attaqué. Dégâts +15% lorsque le moral est élevé ». Excellente pour les scénarios de percée où l'on multiplie les combats rapprochés.",
+  "longDescEn": "An offensive-pressure skill. \"Inspiration\" scales up to level 5. At max level (5), the skill applies the following effect: \"30% chance to boost morale after attacking. Damage +15% when morale is high\". Excellent on breakthrough scenarios where close-combat exchanges stack up.",
+  "longDescDe": "Eine Offensivdruck-Fähigkeit. „Inspiration“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „30% chance to boost morale after attacking. Damage +15% when morale is high“. Hervorragend für Durchbruchsszenarien mit vielen Nahkampfkontakten."
 }

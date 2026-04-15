@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général navale or — Royaume-Uni.",
-  "longDesc": "Andrew Cunningham est un général navale de qualité or — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval or — Royaume-Uni.",
+  "longDesc": "Andrew Cunningham commande la flotte britannique de Méditerranée, remporte Tarente en novembre 1940 et le cap Matapan en mars 1941. Carte WC4 navale tier-S or : meilleur amiral allié pour les scénarios de Méditerranée, à coupler avec des porte-avions.",
   "skills": [
     {
       "slot": 1,
@@ -133,8 +133,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Gold naval general — United Kingdom.",
-  "shortDescDe": "Gold Marine-General — Vereinigtes Königreich.",
-  "longDescEn": "Andrew Cunningham is a gold-quality naval general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Andrew Cunningham ist ein Gold-Marine-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Gold navy general — United Kingdom.",
+  "shortDescDe": "Gold-Marine-General — Vereinigtes Königreich.",
+  "longDescEn": "Andrew Cunningham commanded the British Mediterranean Fleet, won Taranto in November 1940 and Cape Matapan in March 1941. A WC4 tier-S gold navy card — the best Allied admiral for Mediterranean scenarios, pair him with carriers.",
+  "longDescDe": "Andrew Cunningham führte die britische Mittelmeerflotte und gewann im November 1940 bei Tarent und im März 1941 am Kap Matapan. Im WC4 eine S-Klasse-Gold-Marinekarte — der beste alliierte Admiral für Mittelmeer-Szenarien, ideal mit Trägern kombiniert."
 }

@@ -69,5 +69,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Eagle Fly",
-  "descriptionTemplateFr": "Boosts X% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque."
+  "descriptionTemplateFr": "Boosts X% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque.",
+  "longDesc": "Compétence spécifique à un général. « Eagle Fly » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Boosts 40% esquive rate and 4 mobility when commanding an air hover unité, and decreases 30% taken dégâts from air forces. Boost frappe critique dégâts 1% based on 1% esquive rate when air hovering unités attaque. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Eagle Fly\" scales up to level 5. At max level (5), the skill applies the following effect: \"Boosts 40% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Eagle Fly“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Boosts 40% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

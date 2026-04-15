@@ -213,5 +213,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Victoire du faible",
-  "descriptionTemplateFr": "Dégâts is augmenté by X% when the number of troop formations sous votre commandement is 1."
+  "descriptionTemplateFr": "Dégâts is augmenté by X% when the number of troop formations sous votre commandement is 1.",
+  "longDesc": "Compétence spécifique à un général. « Victoire du faible » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Les dégâts sont augmentés de 20% when the number of troop formations sous votre commandement is 1. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Inferior Victory\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage is increased by 20% when the number of troop formations under command is 1.\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Inferior Victory“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage is increased by 20% when the number of troop formations under command is 1.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

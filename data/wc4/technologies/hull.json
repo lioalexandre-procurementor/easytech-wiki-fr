@@ -201,5 +201,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Branche de recherche dédiée à la marine. « Hull » monte jusqu'au niveau 8. Effet maximum : « HP +160 ». Débloquée au niveau de QG 5. Pertinente sur toute campagne où plus de 30% des combats ont lieu en mer.",
+  "longDescEn": "A naval research branch that upgrades surface and submarine squadrons. \"Hull\" scales up to level 8. Maximum effect: \"HP +160\". Unlocks at HQ level 5. Relevant on any campaign where more than 30% of combat happens at sea.",
+  "longDescDe": "Ein Marine-Forschungszweig, der Überwasser- und U-Boot-Geschwader verstärkt. „Hull“ skaliert bis Stufe 8. Maximaler Effekt: „HP +160“. Wird auf HQ-Stufe 5 freigeschaltet. Lohnt sich, wenn mehr als 30% der Kämpfe auf See stattfinden."
 }

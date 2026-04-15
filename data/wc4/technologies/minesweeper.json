@@ -63,5 +63,8 @@
   "prerequisites": [
     304021,
     304022
-  ]
+  ],
+  "longDesc": "Arbre technologique des navires et des flottes. « Minesweeper » monte jusqu'au niveau 2. Effet maximum : « Damage from naval mines -90% ». Accessible dès le début de la recherche. Incontournable pour les nations maritimes : USA, Japon, Royaume-Uni.",
+  "longDescEn": "Part of the naval technology tree for ships and fleets. \"Minesweeper\" scales up to level 2. Maximum effect: \"Damage from naval mines -90%\". Available from the start of research. A must-have for maritime nations: USA, Japan, UK.",
+  "longDescDe": "Teil des Marine-Forschungsbaums für Schiffe und Flotten. „Minesweeper“ skaliert bis Stufe 2. Maximaler Effekt: „Damage from naval mines -90%“. Ab Forschungsbeginn verfügbar. Pflicht für Seemächte: USA, Japan, Vereinigtes Königreich."
 }

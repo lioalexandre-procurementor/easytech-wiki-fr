@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général navale argent — Japon.",
-  "longDesc": "Chūichi Nagumo est un général navale de qualité argent — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval argent — Japon.",
+  "longDesc": "Chūichi Nagumo commande la Kidō Butai lors de l'attaque de Pearl Harbor et à Midway, où il perd quatre porte-avions. Carte WC4 navale A argent : second pick naval japonais derrière les gold, utile sur les scénarios Pacifique précoces.",
   "skills": [
     {
       "slot": 1,
@@ -115,8 +115,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Silver naval general — Japan.",
-  "shortDescDe": "Silber Marine-General — Japan.",
-  "longDescEn": "Chūichi Nagumo is a silver-quality naval general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Chūichi Nagumo ist ein Silber-Marine-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Silver navy general — Japan.",
+  "shortDescDe": "Silber-Marine-General — Japan.",
+  "longDescEn": "Chūichi Nagumo commanded the Kidō Butai at Pearl Harbor and Midway, where he lost four fleet carriers. A WC4 silver-A navy card — Japan's second-tier naval pick behind the gold options, useful on early Pacific scenarios.",
+  "longDescDe": "Chūichi Nagumo führte die Kidō Butai bei Pearl Harbor und Midway, wo er vier Flottenträger verlor. Im WC4 eine Silber-A-Marinekarte — Japans zweite Wahl hinter den Goldoptionen, nützlich in frühen Pazifik-Szenarien."
 }

@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     302034
-  ]
+  ],
+  "longDesc": "Arbre technologique blindé qui améliore les chars et véhicules de combat. « Reinforced Vehicle » monte jusqu'au niveau 1. Effet maximum : « Nuclear bomb damage -10% ». Accessible dès le début de la recherche. À maxer en priorité sur les campagnes de conquête rapide.",
+  "longDescEn": "An armor technology that upgrades tanks and combat vehicles. \"Reinforced Vehicle\" scales up to level 1. Maximum effect: \"Nuclear bomb damage -10%\". Available from the start of research. Max this first on fast-conquest campaigns.",
+  "longDescDe": "Eine Panzertechnologie, die Panzer und Kampffahrzeuge verbessert. „Reinforced Vehicle“ skaliert bis Stufe 1. Maximaler Effekt: „Nuclear bomb damage -10%“. Ab Forschungsbeginn verfügbar. In Schnell-Eroberungs-Kampagnen zuerst maxen."
 }

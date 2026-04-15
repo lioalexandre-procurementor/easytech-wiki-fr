@@ -89,5 +89,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Anticipation",
-  "descriptionTemplateFr": "When commanding troops to move, dealt dégâts +X% (up to 50%) for each grid moved pendant 1 tour."
+  "descriptionTemplateFr": "When commanding troops to move, dealt dégâts +X% (up to 50%) for each grid moved pendant 1 tour.",
+  "longDesc": "Compétence spécifique à un général. « Anticipation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops to move, dégâts infligés +10% (up to 50%) for each grid moved pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Anticipation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Anticipation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

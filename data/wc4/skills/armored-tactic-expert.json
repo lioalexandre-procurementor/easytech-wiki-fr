@@ -109,5 +109,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Expert en tactique blindée",
-  "descriptionTemplateFr": "Recover X% maximum PV on the next tour lorsque unités blindées sont endommagée à plus de moitié"
+  "descriptionTemplateFr": "Recover X% maximum PV on the next tour lorsque unités blindées sont endommagée à plus de moitié",
+  "longDesc": "Compétence spécifique à un général. « Expert en tactique blindée » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Recover 15% maximum PV on the next tour lorsque unités blindées sont endommagée à plus de moitié ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Armored Tactic Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Recover 15% maximum HP on the next turn when the armored units are more than half damaged\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Armored Tactic Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Recover 15% maximum HP on the next turn when the armored units are more than half damaged“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

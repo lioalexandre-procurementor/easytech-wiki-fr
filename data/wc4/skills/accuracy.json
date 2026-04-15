@@ -569,5 +569,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Précision",
-  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités d'artillerie"
+  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités d'artillerie",
+  "longDesc": "Compétence d'agression, utilisée pour accélérer le taux de kills. « Précision » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Inflige +30% de dégâts à l'ennemi lorsque vous commandez des unités d'artillerie ». Excellente pour les scénarios de percée où l'on multiplie les combats rapprochés.",
+  "longDescEn": "An aggression skill used to accelerate the kill rate. \"Accuracy\" scales up to level 5. At max level (5), the skill applies the following effect: \"Deal +30% damage to the enemy when commanding artillery units\". Excellent on breakthrough scenarios where close-combat exchanges stack up.",
+  "longDescDe": "Eine Aggressions-Fähigkeit, die die Abschussrate beschleunigt. „Accuracy“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Deal +30% damage to the enemy when commanding artillery units“. Hervorragend für Durchbruchsszenarien mit vielen Nahkampfkontakten."
 }

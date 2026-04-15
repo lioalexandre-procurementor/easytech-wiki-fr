@@ -305,5 +305,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Bayonet Charge",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque unités d'infanterie sont endommagée à plus de moitié"
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque unités d'infanterie sont endommagée à plus de moitié",
+  "longDesc": "Compétence spécifique à un général. « Bayonet Charge » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 lorsque unités d'infanterie sont endommagée à plus de moitié ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Bayonet Charge\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when the infantry units are more than half damaged\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Bayonet Charge“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when the infantry units are more than half damaged“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

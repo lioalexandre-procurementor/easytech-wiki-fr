@@ -73,5 +73,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Nuclear Warfare Expert",
-  "descriptionTemplateFr": "Dégâts caused by nuclear bombs + X%."
+  "descriptionTemplateFr": "Dégâts caused by nuclear bombs + X%.",
+  "longDesc": "Compétence spécifique à un général. « Nuclear Warfare Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts caused by nuclear bombs + 65%. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Nuclear Warfare Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage caused by nuclear bombs + 65%.\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Nuclear Warfare Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage caused by nuclear bombs + 65%.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

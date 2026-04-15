@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général aérienne argent — Royaume-Uni.",
-  "longDesc": "Hugh Dowding est un général aérienne de qualité argent — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien argent — Royaume-Uni.",
+  "longDesc": "Hugh Dowding commande le Fighter Command de la RAF durant la bataille d'Angleterre de l'été 1940, système de défense intégré qui brise l'offensive de la Luftwaffe. Carte WC4 aérienne A argent à profil défensif : pick obligatoire sur Sea Lion.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver air force general — United Kingdom.",
-  "shortDescDe": "Silber Luftwaffen-General — Vereinigtes Königreich.",
-  "longDescEn": "Hugh Dowding is a silver-quality air force general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Hugh Dowding ist ein Silber-Luftwaffen-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Luftwaffen-General — Vereinigtes Königreich.",
+  "longDescEn": "Hugh Dowding commanded RAF Fighter Command during the summer 1940 Battle of Britain, running the integrated defence system that broke the Luftwaffe offensive. A WC4 silver-A air-force card with a defensive profile — a must-pick on the Sea Lion scenario.",
+  "longDescDe": "Hugh Dowding führte im Sommer 1940 während der Luftschlacht um England das RAF Fighter Command und leitete das integrierte Luftverteidigungssystem, das die Luftwaffe zurückwarf. Im WC4 eine Silber-A-Luftwaffenkarte mit defensivem Profil — Pflichtwahl im Seelöwen-Szenario."
 }

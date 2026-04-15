@@ -93,5 +93,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Recherche fortifications, clé des scénarios défensifs statiques. « Bunker » monte jusqu'au niveau 4. Effet maximum : « Attack +12; Defense +4; HP +60 ». Débloquée au niveau de QG 6. Multiplie le rendement d'un général défensif posté derrière les lignes.",
+  "longDescEn": "Fortifications research, key to static defensive scenarios. \"Bunker\" scales up to level 4. Maximum effect: \"Attack +12; Defense +4; HP +60\". Unlocks at HQ level 6. Multiplies the output of a defensive general posted behind the lines.",
+  "longDescDe": "Befestigungs-Forschung — Schlüssel zu statischen Defensivszenarien. „Bunker“ skaliert bis Stufe 4. Maximaler Effekt: „Attack +12; Defense +4; HP +60“. Wird auf HQ-Stufe 6 freigeschaltet. Vervielfacht den Ertrag eines hinter den Linien stationierten Defensivgenerals."
 }

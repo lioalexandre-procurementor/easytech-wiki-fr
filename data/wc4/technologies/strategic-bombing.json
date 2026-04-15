@@ -63,5 +63,8 @@
   "prerequisites": [
     305026,
     305023
-  ]
+  ],
+  "longDesc": "Recherche aérienne qui améliore la portée et la létalité des escadrons. « Strategic Bombing » monte jusqu'au niveau 2. Effet maximum : « Damage to stronghold units +80% ». Accessible dès le début de la recherche. Prérequis pour tirer parti des généraux aériens tier-S.",
+  "longDescEn": "Air-force research that improves squadron range and lethality. \"Strategic Bombing\" scales up to level 2. Maximum effect: \"Damage to stronghold units +80%\". Available from the start of research. A prerequisite to make tier-S air-force generals pay off.",
+  "longDescDe": "Luftwaffenforschung, die Reichweite und Wirkung der Staffeln erhöht. „Strategic Bombing“ skaliert bis Stufe 2. Maximaler Effekt: „Damage to stronghold units +80%“. Ab Forschungsbeginn verfügbar. Voraussetzung, damit S-Klasse-Luftwaffengeneräle ihren Wert entfalten."
 }

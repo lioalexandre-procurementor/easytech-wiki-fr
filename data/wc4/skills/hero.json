@@ -71,5 +71,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Héros",
-  "descriptionTemplateFr": "La moral des unités blindées sous votre commandement ne diminue pas, +X% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
+  "descriptionTemplateFr": "La moral des unités blindées sous votre commandement ne diminue pas, +X% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour.",
+  "longDesc": "Compétence spécifique à un général. « Héros » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « La moral des unités blindées sous votre commandement ne diminue pas, +15% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Hero\" scales up to level 5. At max level (5), the skill applies the following effect: \"Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Hero“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

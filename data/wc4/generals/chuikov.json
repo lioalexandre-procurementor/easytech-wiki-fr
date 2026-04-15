@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général polyvalente argent — URSS.",
-  "longDesc": "Vassili Tchouïkov est un général polyvalente de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — URSS.",
+  "longDesc": "Vassili Tchouïkov défend Stalingrad à la tête de la 62e armée puis achève sa carrière en entrant dans Berlin en 1945. Carte WC4 équilibrée A argent à forte tolérance aux combats urbains : pick thématique pour les scénarios de siège.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver balanced general — USSR.",
-  "shortDescDe": "Silber ausgewogene-General — UdSSR.",
-  "longDescEn": "Vassili Tchouïkov is a silver-quality balanced general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Vassili Tchouïkov ist ein Silber-ausgewogene-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — UdSSR.",
+  "longDescEn": "Vasily Chuikov defended Stalingrad as commander of 62nd Army and ended his war entering Berlin in 1945. A WC4 silver-A balanced card with high urban-combat resilience — a thematic pick for siege scenarios.",
+  "longDescDe": "Wassili Tschuikow verteidigte Stalingrad als Befehlshaber der 62. Armee und beendete den Krieg 1945 beim Einmarsch in Berlin. Im WC4 eine Silber-A-Allrounderkarte mit hoher Stadtkampf-Zähigkeit — ein thematischer Slot für Belagerungsszenarien."
 }

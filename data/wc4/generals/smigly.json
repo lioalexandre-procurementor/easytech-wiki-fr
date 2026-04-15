@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "PL",
   "countryName": "Pologne",
-  "shortDesc": "Général infanterie argent — Pologne.",
-  "longDesc": "Edward Rydz-Śmigły est un général infanterie de qualité argent — Pologne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — Pologne.",
+  "longDesc": "Edward Rydz-Śmigły est le commandant en chef polonais lors de la campagne de septembre 1939, architecte d'une défense désespérée face à la Wehrmacht et à l'Armée rouge. Carte WC4 infanterie A argent à profil défensif, pick patriotique.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver infantry general — Poland.",
-  "shortDescDe": "Silber Infanterie-General — Polen.",
-  "longDescEn": "Edward Rydz-Śmigły is a silver-quality infantry general — Poland. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Edward Rydz-Śmigły ist ein Silber-Infanterie-General — Polen. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Infanterie-General — Polen.",
+  "longDescEn": "Edward Rydz-Śmigły was Poland's Commander-in-Chief during the September 1939 campaign, architect of a desperate defence against the Wehrmacht and the Red Army. A WC4 silver-A infantry card with a defensive profile — a patriotic pick.",
+  "longDescDe": "Edward Rydz-Śmigły war im Feldzug im September 1939 polnischer Oberbefehlshaber und Architekt einer verzweifelten Verteidigung gegen Wehrmacht und Rote Armee. Im WC4 eine Silber-A-Infanteriekarte mit defensivem Profil — eine patriotische Wahl."
 }

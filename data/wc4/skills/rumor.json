@@ -582,5 +582,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Rumeur",
-  "descriptionTemplateFr": "X% chance to réduire the moral of the ennemi lors d'une attaque"
+  "descriptionTemplateFr": "X% chance to réduire the moral of the ennemi lors d'une attaque",
+  "longDesc": "Compétence spécifique à un général. « Rumeur » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 75% chance to réduire the moral of the ennemi lors d'une attaque ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Rumor\" scales up to level 5. At max level (5), the skill applies the following effect: \"75% chance to reduce the morale of the enemy when attacking\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Rumor“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „75% chance to reduce the morale of the enemy when attacking“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

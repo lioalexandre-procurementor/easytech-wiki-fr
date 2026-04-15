@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général infanterie or — Allemagne.",
-  "longDesc": "Gerd von Rundstedt est un général infanterie de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie or — Allemagne.",
+  "longDesc": "Gerd von Rundstedt dirige successivement les Groupes d'armées Sud en Pologne, A en France (1940) et Ouest au débarquement de Normandie. Doyen de l'état-major allemand, il arrive en WC4 comme infanterie tier-S or, utile sur les scénarios défensifs du front Ouest où l'on exploite ses bonus de moral et de défense urbaine.",
   "skills": [
     {
       "slot": 1,
@@ -225,7 +225,7 @@
     }
   ],
   "shortDescEn": "Gold infantry general — Germany.",
-  "shortDescDe": "Gold Infanterie-General — Deutschland.",
-  "longDescEn": "Gerd von Rundstedt is a gold-quality infantry general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Gerd von Rundstedt ist ein Gold-Infanterie-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Infanterie-General — Deutschland.",
+  "longDescEn": "Gerd von Rundstedt commanded Army Group South in Poland, Army Group A in the 1940 French campaign, and OB West during the Normandy landings. The doyen of the German staff, he appears in WC4 as a tier-S gold infantry general — effective on Western Front defensive scenarios that leverage his morale and urban-defence bonuses.",
+  "longDescDe": "Gerd von Rundstedt führte nacheinander die Heeresgruppe Süd in Polen, die Heeresgruppe A im Frankreichfeldzug 1940 und OB West während der Landung in der Normandie. Der dienstälteste deutsche Stabschef taucht in WC4 als S-Klasse-Gold-Infanterist auf — stark auf defensiven West-Szenarien dank seiner Moral- und Stadtverteidigungs-Boni."
 }

@@ -101,5 +101,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Artillerie blindage",
-  "descriptionTemplateFr": "Défense +X% lorsque vous commandez des unités d'artillerie"
+  "descriptionTemplateFr": "Défense +X% lorsque vous commandez des unités d'artillerie",
+  "longDesc": "Compétence spécifique à un général. « Artillerie blindage » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Défense +100% lorsque vous commandez des unités d'artillerie ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Artillery armor\" scales up to level 5. At max level (5), the skill applies the following effect: \"Defense +100% when commanding artillery units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery armor“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Defense +100% when commanding artillery units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

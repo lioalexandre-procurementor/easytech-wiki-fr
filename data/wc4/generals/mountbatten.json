@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général navale argent — Royaume-Uni.",
-  "longDesc": "Louis Mountbatten est un général navale de qualité argent — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval argent — Royaume-Uni.",
+  "longDesc": "Louis Mountbatten dirige les Combined Operations puis le South East Asia Command à partir de 1943. Carte WC4 navale A argent orientée opérations amphibies : second choix derrière Cunningham, utile sur la Birmanie.",
   "skills": [
     {
       "slot": 1,
@@ -115,8 +115,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Silver naval general — United Kingdom.",
-  "shortDescDe": "Silber Marine-General — Vereinigtes Königreich.",
-  "longDescEn": "Louis Mountbatten is a silver-quality naval general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Louis Mountbatten ist ein Silber-Marine-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Silver navy general — United Kingdom.",
+  "shortDescDe": "Silber-Marine-General — Vereinigtes Königreich.",
+  "longDescEn": "Louis Mountbatten commanded Combined Operations and then, from 1943, South East Asia Command. A WC4 silver-A navy card oriented toward amphibious operations — a second choice behind Cunningham, useful on Burma.",
+  "longDescDe": "Louis Mountbatten leitete Combined Operations und ab 1943 das South East Asia Command. Im WC4 eine Silber-A-Marinekarte mit Schwerpunkt auf Amphibienoperationen — Zweitwahl hinter Cunningham, nützlich für das Burma-Szenario."
 }

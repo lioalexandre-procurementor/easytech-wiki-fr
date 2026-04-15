@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "IT",
   "countryName": "Italie",
-  "shortDesc": "Général artillerie bronze — Italie.",
-  "longDesc": "Pietro Badoglio est un général artillerie de qualité bronze — Italie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie bronze — Italie.",
+  "longDesc": "Pietro Badoglio est chef d'état-major italien puis Premier ministre après la chute de Mussolini en juillet 1943 ; il signe l'armistice de Cassibile avec les Alliés. Carte WC4 artillerie B bronze : pick historique à la polarité politique.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze artillery general — Italy.",
-  "shortDescDe": "Bronze Artillerie-General — Italien.",
-  "longDescEn": "Pietro Badoglio is a bronze-quality artillery general — Italy. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Pietro Badoglio ist ein Bronze-Artillerie-General — Italien. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Artillerie-General — Italien.",
+  "longDescEn": "Pietro Badoglio was Italy's Chief of Staff and then Prime Minister after Mussolini's fall in July 1943; he signed the Armistice of Cassibile with the Allies. A WC4 bronze-B artillery card with a politically charged profile.",
+  "longDescDe": "Pietro Badoglio war Generalstabschef und nach Mussolinis Sturz im Juli 1943 italienischer Premier; er unterzeichnete mit den Alliierten den Waffenstillstand von Cassibile. Im WC4 eine Bronze-B-Artilleriekarte mit politisch aufgeladenem Profil."
 }

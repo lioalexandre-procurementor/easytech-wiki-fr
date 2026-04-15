@@ -117,5 +117,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Retaliation",
-  "descriptionTemplateFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +X pendant 2 tours."
+  "descriptionTemplateFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +X pendant 2 tours.",
+  "longDesc": "Compétence spécifique à un général. « Retaliation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +30 pendant 2 tours. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Retaliation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Retaliation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

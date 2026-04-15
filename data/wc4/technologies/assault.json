@@ -63,5 +63,8 @@
   "prerequisites": [
     302042,
     302044
-  ]
+  ],
+  "longDesc": "Recherche blindée, pilier des conquêtes terrestres rapides. « Assault » monte jusqu'au niveau 2. Effet maximum : « 100% chance to attack again after destroying the enemy ». Accessible dès le début de la recherche. À maxer en priorité sur les campagnes de conquête rapide.",
+  "longDescEn": "Armor research — the backbone of fast land conquest. \"Assault\" scales up to level 2. Maximum effect: \"100% chance to attack again after destroying the enemy\". Available from the start of research. Max this first on fast-conquest campaigns.",
+  "longDescDe": "Panzerforschung — Rückgrat schneller Landeroberungen. „Assault“ skaliert bis Stufe 2. Maximaler Effekt: „100% chance to attack again after destroying the enemy“. Ab Forschungsbeginn verfügbar. In Schnell-Eroberungs-Kampagnen zuerst maxen."
 }

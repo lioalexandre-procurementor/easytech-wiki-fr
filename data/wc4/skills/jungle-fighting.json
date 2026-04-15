@@ -287,5 +287,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Jungle Fighting",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting in the jungle"
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting in the jungle",
+  "longDesc": "Compétence spécifique à un général. « Jungle Fighting » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 when fighting in the jungle ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Jungle Fighting\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when fighting in the jungle\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Jungle Fighting“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when fighting in the jungle“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

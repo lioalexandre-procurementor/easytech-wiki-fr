@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général infanterie argent — Japon.",
-  "longDesc": "Kiichirō Higuchi est un général infanterie de qualité argent — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — Japon.",
+  "longDesc": "Kiichirō Higuchi commande les forces japonaises du Nord aux Kouriles et Sakhaline et s'illustre en 1938 par l'accueil de réfugiés juifs à Otpor. Carte WC4 infanterie A argent à bonus terrain froid : slot thématique Nord Pacifique.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver infantry general — Japan.",
-  "shortDescDe": "Silber Infanterie-General — Japan.",
-  "longDescEn": "Kiichirō Higuchi is a silver-quality infantry general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Kiichirō Higuchi ist ein Silber-Infanterie-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Infanterie-General — Japan.",
+  "longDescEn": "Kiichirō Higuchi commanded Japanese Northern forces in the Kurils and Sakhalin and is remembered for sheltering Jewish refugees at Otpor in 1938. A WC4 silver-A infantry card with cold-terrain bonuses — a thematic North-Pacific slot.",
+  "longDescDe": "Kiichirō Higuchi führte die japanischen Nordstreitkräfte auf den Kurilen und Sachalin und ist bekannt dafür, 1938 bei Otpor jüdische Flüchtlinge aufgenommen zu haben. Im WC4 eine Silber-A-Infanteriekarte mit Kaltgelände-Boni — thematischer Nordpazifik-Slot."
 }

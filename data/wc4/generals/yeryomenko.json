@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général polyvalente or — URSS.",
-  "longDesc": "Andreï Eremenko est un général polyvalente de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré or — URSS.",
+  "longDesc": "Andreï Eremenko défend Stalingrad avec le Front du Sud-Est puis mène des offensives sur la Baltique. Carte WC4 équilibrée tier-S or : polyvalence solide et large pool de compétences défensives, pick naturel pour tenir Stalingrad.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold balanced general — USSR.",
-  "shortDescDe": "Gold ausgewogene-General — UdSSR.",
-  "longDescEn": "Andreï Eremenko is a gold-quality balanced general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Andreï Eremenko ist ein Gold-ausgewogene-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Allrounder-General — UdSSR.",
+  "longDescEn": "Andrey Yeryomenko defended Stalingrad with the Southeastern Front and later drove Baltic offensives. A WC4 tier-S gold balanced card with solid versatility and a deep defensive skill pool — the natural pick to hold Stalingrad.",
+  "longDescDe": "Andrei Jerjomenko verteidigte mit der Südostfront Stalingrad und führte später Ostsee-Offensiven. Im WC4 eine S-Klasse-Gold-Allrounderkarte mit solider Vielseitigkeit und tiefem Defensivskill-Pool — die natürliche Wahl, um Stalingrad zu halten."
 }

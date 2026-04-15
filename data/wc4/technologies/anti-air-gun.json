@@ -93,5 +93,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Branche défense anti-aérienne : réduction des dégâts de l'aviation ennemie. « Anti-air Gun » monte jusqu'au niveau 4. Effet maximum : « Air-raiding damage -55%; Bombing damage -50%; Reduce paratroops HP by +25% ». Débloquée au niveau de QG 10. À niveau quand on attend des raids stratégiques sur des villes clés.",
+  "longDescEn": "An anti-air defence branch that reduces incoming bombing damage. \"Anti-air Gun\" scales up to level 4. Maximum effect: \"Air-raiding damage -55%; Bombing damage -50%; Reduce paratroops HP by +25%\". Unlocks at HQ level 10. Level this when you expect strategic raids on key cities.",
+  "longDescDe": "Ein Flugabwehrzweig, der eingehenden Bombenschaden reduziert. „Anti-air Gun“ skaliert bis Stufe 4. Maximaler Effekt: „Air-raiding damage -55%; Bombing damage -50%; Reduce paratroops HP by +25%“. Wird auf HQ-Stufe 10 freigeschaltet. Leveln, wenn strategische Angriffe auf Schlüsselstädte zu erwarten sind."
 }

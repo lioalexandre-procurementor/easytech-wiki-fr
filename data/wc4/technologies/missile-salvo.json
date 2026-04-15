@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     308043
-  ]
+  ],
+  "longDesc": "Technologie missiles qui ouvre les frappes stratégiques ignorant les défenses. « Missile Salvo » monte jusqu'au niveau 1. Effet maximum : « Missiles can be fired in salvos ». Accessible dès le début de la recherche. Pic de puissance sur les ennemis fortement défendus.",
+  "longDescEn": "A missile technology that unlocks strategic strikes ignoring defences. \"Missile Salvo\" scales up to level 1. Maximum effect: \"Missiles can be fired in salvos\". Available from the start of research. A power spike against heavily defended enemies.",
+  "longDescDe": "Eine Raketentechnologie, die strategische Schläge mit Verteidigungs-Ignorierung freischaltet. „Missile Salvo“ skaliert bis Stufe 1. Maximaler Effekt: „Missiles can be fired in salvos“. Ab Forschungsbeginn verfügbar. Machtspitze gegen stark verteidigte Gegner."
 }

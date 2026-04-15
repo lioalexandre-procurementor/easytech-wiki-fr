@@ -77,5 +77,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Decoy and Strike",
-  "descriptionTemplateFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to deal +X% dégâts (excluding itself)."
+  "descriptionTemplateFr": "After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to deal +X% dégâts (excluding itself).",
+  "longDesc": "Compétence spécifique à un général. « Decoy and Strike » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a troop to attaque, it gains the \"ennemi Lure\" status, which lasts pendant 1 tour and causes allié troops within 1 grid to inflige +15% de dégâts (excluding itself). ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Decoy and Strike\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +15% damage (excluding itself).\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Decoy and Strike“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a troop to attack, it gains the \"Enemy Lure\" status, which lasts for 1 turn and causes friendly troops within 1 grid to deal +15% damage (excluding itself).“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

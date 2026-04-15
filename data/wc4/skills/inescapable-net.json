@@ -69,5 +69,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Inescapable Net",
-  "descriptionTemplateFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit by X% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion."
+  "descriptionTemplateFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit by X% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion.",
+  "longDesc": "Compétence spécifique à un général. « Inescapable Net » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 30% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Inescapable Net\" scales up to level 5. At max level (5), the skill applies the following effect: \"Enemy units within 3 tiles of the commanding unit have their defense reduced by 30% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Inescapable Net“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Enemy units within 3 tiles of the commanding unit have their defense reduced by 30% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

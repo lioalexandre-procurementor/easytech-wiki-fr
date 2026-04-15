@@ -115,5 +115,8 @@
     303003,
     303005,
     303007
-  ]
+  ],
+  "longDesc": "Recherche artillerie, cœur des stratégies de siège. « Traction » monte jusqu'au niveau 4. Effet maximum : « Mobility +4 ». Accessible dès le début de la recherche. Multiplie le rendement des généraux artillerie tier-S.",
+  "longDescEn": "Artillery research, the core of siege strategies. \"Traction\" scales up to level 4. Maximum effect: \"Mobility +4\". Available from the start of research. Multiplies the output of tier-S artillery generals.",
+  "longDescDe": "Artillerieforschung — Kernstück von Belagerungsstrategien. „Traction“ skaliert bis Stufe 4. Maximaler Effekt: „Mobility +4“. Ab Forschungsbeginn verfügbar. Vervielfacht den Ertrag von S-Klasse-Artilleriegenerälen."
 }

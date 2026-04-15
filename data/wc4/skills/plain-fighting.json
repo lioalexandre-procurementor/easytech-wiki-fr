@@ -596,5 +596,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Plain Fighting",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting in the plain"
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting in the plain",
+  "longDesc": "Compétence spécifique à un général. « Plain Fighting » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 when fighting in the plain ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Plain Fighting\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when fighting in the plain\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Plain Fighting“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when fighting in the plain“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

@@ -63,5 +63,8 @@
   "prerequisites": [
     304041,
     304042
-  ]
+  ],
+  "longDesc": "Arbre technologique des navires et des flottes. « Torpedo » monte jusqu'au niveau 2. Effet maximum : « Damage +100% when attacking cruisers and aircraft carriers  ». Accessible dès le début de la recherche. Pertinente sur toute campagne où plus de 30% des combats ont lieu en mer.",
+  "longDescEn": "Part of the naval technology tree for ships and fleets. \"Torpedo\" scales up to level 2. Maximum effect: \"Damage +100% when attacking cruisers and aircraft carriers \". Available from the start of research. Relevant on any campaign where more than 30% of combat happens at sea.",
+  "longDescDe": "Teil des Marine-Forschungsbaums für Schiffe und Flotten. „Torpedo“ skaliert bis Stufe 2. Maximaler Effekt: „Damage +100% when attacking cruisers and aircraft carriers “. Ab Forschungsbeginn verfügbar. Lohnt sich, wenn mehr als 30% der Kämpfe auf See stattfinden."
 }

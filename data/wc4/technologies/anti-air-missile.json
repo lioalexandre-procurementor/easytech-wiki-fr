@@ -108,5 +108,8 @@
   ],
   "prerequisites": [
     307012
-  ]
+  ],
+  "longDesc": "Technologie anti-aérienne, bouclier contre l'aviation ennemie. « Anti-air Missile » monte jusqu'au niveau 4. Effet maximum : « Air-raiding damage -65%; Bombing damage -60%; Reduce paratroops HP by +65%; Strategic bombing damage -50%; Missile damage -40% ». Débloquée au niveau de QG 14. À niveau quand on attend des raids stratégiques sur des villes clés.",
+  "longDescEn": "An anti-air technology, a shield against hostile aviation. \"Anti-air Missile\" scales up to level 4. Maximum effect: \"Air-raiding damage -65%; Bombing damage -60%; Reduce paratroops HP by +65%; Strategic bombing damage -50%; Missile damage -40%\". Unlocks at HQ level 14. Level this when you expect strategic raids on key cities.",
+  "longDescDe": "Eine Flugabwehrtechnologie — ein Schild gegen feindliche Luftstreitkräfte. „Anti-air Missile“ skaliert bis Stufe 4. Maximaler Effekt: „Air-raiding damage -65%; Bombing damage -60%; Reduce paratroops HP by +65%; Strategic bombing damage -50%; Missile damage -40%“. Wird auf HQ-Stufe 14 freigeschaltet. Leveln, wenn strategische Angriffe auf Schlüsselstädte zu erwarten sind."
 }

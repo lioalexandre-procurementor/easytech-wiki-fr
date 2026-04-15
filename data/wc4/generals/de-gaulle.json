@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "FR",
   "countryName": "France",
-  "shortDesc": "Général aérienne bronze — France.",
-  "longDesc": "Charles de Gaulle est un général aérienne de qualité bronze — France. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien bronze — France.",
+  "longDesc": "Charles de Gaulle lance l'appel du 18 juin 1940 depuis Londres puis fonde la France libre avant de présider la République. Carte WC4 aérienne B bronze à valeur symbolique : pick de collection côté France libre, mécaniquement faible.",
   "skills": [
     {
       "slot": 1,
@@ -205,7 +205,7 @@
     }
   ],
   "shortDescEn": "Bronze air force general — France.",
-  "shortDescDe": "Bronze Luftwaffen-General — Frankreich.",
-  "longDescEn": "Charles de Gaulle is a bronze-quality air force general — France. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Charles de Gaulle ist ein Bronze-Luftwaffen-General — Frankreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Luftwaffen-General — Frankreich.",
+  "longDescEn": "Charles de Gaulle broadcast his Appeal of 18 June 1940 from London, founded Free France and later became president of the Republic. A WC4 bronze-B air-force card with symbolic value — a collector's Free-France slot that is mechanically weak.",
+  "longDescDe": "Charles de Gaulle verkündete am 18. Juni 1940 aus London seinen Appell, gründete das Freie Frankreich und wurde später Staatspräsident. Im WC4 eine Bronze-B-Luftwaffenkarte mit Symbolwert — ein Sammlerslot für das Freie Frankreich, mechanisch schwach."
 }

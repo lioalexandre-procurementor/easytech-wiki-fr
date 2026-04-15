@@ -389,5 +389,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Cover",
-  "descriptionTemplateFr": "12% chance to esquive X% dégâts de l'ennemi"
+  "descriptionTemplateFr": "12% chance to esquive X% dégâts de l'ennemi",
+  "longDesc": "Compétence spécifique à un général. « Cover » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 12% chance to esquive 90% dégâts de l'ennemi ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Cover\" scales up to level 5. At max level (5), the skill applies the following effect: \"12% chance to dodge 90% damage from the enemy\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Cover“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „12% chance to dodge 90% damage from the enemy“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

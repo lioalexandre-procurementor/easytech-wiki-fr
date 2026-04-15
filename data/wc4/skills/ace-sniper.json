@@ -85,5 +85,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Tireur d'élite",
-  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
+  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)",
+  "longDesc": "Compétence spécifique à un général. « Tireur d'élite » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Ace Sniper\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Sniper“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

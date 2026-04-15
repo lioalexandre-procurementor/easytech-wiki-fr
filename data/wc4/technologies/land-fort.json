@@ -96,5 +96,8 @@
   ],
   "prerequisites": [
     306002
-  ]
+  ],
+  "longDesc": "Recherche fortifications, clé des scénarios défensifs statiques. « Land Fort » monte jusqu'au niveau 4. Effet maximum : « Attack +16; Defense +6; HP +75 ». Débloquée au niveau de QG 10. À combiner avec l'artillerie pour verrouiller une zone clef.",
+  "longDescEn": "Fortifications research, key to static defensive scenarios. \"Land Fort\" scales up to level 4. Maximum effect: \"Attack +16; Defense +6; HP +75\". Unlocks at HQ level 10. Combine with artillery to lock down a key area.",
+  "longDescDe": "Befestigungs-Forschung — Schlüssel zu statischen Defensivszenarien. „Land Fort“ skaliert bis Stufe 4. Maximaler Effekt: „Attack +16; Defense +6; HP +75“. Wird auf HQ-Stufe 10 freigeschaltet. In Kombination mit Artillerie ein Schlüsselgebiet abriegeln."
 }

@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "IT",
   "countryName": "Italie",
-  "shortDesc": "Général blindée or — Italie.",
-  "longDesc": "Rodolfo Graziani est un général blindée de qualité or — Italie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé or — Italie.",
+  "longDesc": "Rodolfo Graziani conquiert l'Éthiopie en 1936 puis commande les forces italiennes de Libye ; après 1943 il rallie la République sociale italienne. Carte WC4 blindée tier-S or : meilleur général italien du jeu, pick obligatoire pour l'Afrique Axe.",
   "skills": [
     {
       "slot": 1,
@@ -126,7 +126,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold armor general — Italy.",
-  "shortDescDe": "Gold Panzer-General — Italien.",
-  "longDescEn": "Rodolfo Graziani is a gold-quality armor general — Italy. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Rodolfo Graziani ist ein Gold-Panzer-General — Italien. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Panzer-General — Italien.",
+  "longDescEn": "Rodolfo Graziani conquered Ethiopia in 1936 and then commanded Italian forces in Libya; after 1943 he joined the Italian Social Republic. A WC4 tier-S gold armor card — Italy's best general and the mandatory Axis pick for North Africa.",
+  "longDescDe": "Rodolfo Graziani eroberte 1936 Äthiopien und führte anschließend die italienischen Streitkräfte in Libyen; nach 1943 schloss er sich der Italienischen Sozialrepublik an. Im WC4 eine S-Klasse-Gold-Panzerkarte — Italiens bester General und Pflichtwahl der Achse in Nordafrika."
 }

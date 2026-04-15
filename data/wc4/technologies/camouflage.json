@@ -163,5 +163,8 @@
     301012,
     301013,
     301014
-  ]
+  ],
+  "longDesc": "Recherche infanterie, base de toute armée terrestre. « Camouflage » monte jusqu'au niveau 6. Effet maximum : « HP +70 ». Accessible dès le début de la recherche. Base indispensable pour toute armée, même orientée blindés.",
+  "longDescEn": "Infantry research, the foundation of any land army. \"Camouflage\" scales up to level 6. Maximum effect: \"HP +70\". Available from the start of research. An indispensable baseline for any army, even an armor-heavy one.",
+  "longDescDe": "Infanterieforschung — Fundament jeder Landarmee. „Camouflage“ skaliert bis Stufe 6. Maximaler Effekt: „HP +70“. Ab Forschungsbeginn verfügbar. Unverzichtbare Grundlage jeder Armee, auch mit Panzer-Schwerpunkt."
 }

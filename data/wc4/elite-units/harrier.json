@@ -460,5 +460,33 @@
   "shortDescEn": "British VTOL combat aircraft (vertical take-off and landing).",
   "shortDescDe": "Britisches VTOL-Kampfflugzeug (Senkrechtstarter).",
   "longDescEn": "The first operational VTOL combat aircraft. Famous for its role in the Falklands War.",
-  "longDescDe": "Das erste einsatzfähige VTOL-Kampfflugzeug. Berühmt für seine Rolle im Falklandkrieg."
+  "longDescDe": "Das erste einsatzfähige VTOL-Kampfflugzeug. Berühmt für seine Rolle im Falklandkrieg.",
+  "faqsEn": [
+    {
+      "q": "How do you get Harrier in World Conqueror 4?",
+      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with Harrier?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man Harrier in World Conqueror 4?",
+      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit Harrier?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

@@ -8,8 +8,8 @@
   "quality": "marshal",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général polyvalente maréchal — États-Unis.",
-  "longDesc": "Dwight Eisenhower est un général polyvalente de qualité maréchal — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré maréchal — États-Unis.",
+  "longDesc": "Commandant suprême du SHAEF, Dwight Eisenhower orchestre Torch, Husky et Overlord avant de devenir le 34e président des États-Unis. Carte WC4 maréchal équilibrée : stats polyvalentes et large pool de compétences, à choisir quand on veut un général « un slot, tous les théâtres ».",
   "skills": [
     {
       "slot": 1,
@@ -246,8 +246,8 @@
       "skillLevel": 5
     }
   ],
-  "shortDescEn": "Marshal balanced general — United States.",
-  "shortDescDe": "Marschall ausgewogene-General — Vereinigte Staaten.",
-  "longDescEn": "Dwight Eisenhower is a marshal-quality balanced general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Dwight Eisenhower ist ein Marschall-ausgewogene-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Marshal-rank balanced general — United States.",
+  "shortDescDe": "Marschall-Allrounder-General — Vereinigte Staaten.",
+  "longDescEn": "Supreme Commander of SHAEF, Dwight Eisenhower orchestrated Operations Torch, Husky and Overlord before becoming the 34th US president. A WC4 marshal-rank balanced card with all-round stats and a deep skill pool — the pick when you want a single slot that handles every theatre.",
+  "longDescDe": "Als Oberster Befehlshaber des SHAEF koordinierte Dwight Eisenhower die Operationen Torch, Husky und Overlord und wurde später 34. US-Präsident. Im WC4 eine ausgeglichene Marschall-Karte mit vielseitigen Werten und tiefem Skillpool — die Wahl, wenn du mit einem Slot jedes Theater abdecken willst."
 }

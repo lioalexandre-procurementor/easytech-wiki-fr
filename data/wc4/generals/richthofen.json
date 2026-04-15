@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général aérienne or — Allemagne.",
-  "longDesc": "Wolfram von Richthofen est un général aérienne de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien or — Allemagne.",
+  "longDesc": "Wolfram von Richthofen, cousin du « Baron rouge », dirige la Legion Condor puis le VIIIe Fliegerkorps, spécialiste de l'appui tactique Stuka. En WC4 carte aérienne tier-S or : bonus bombardier marqués, à associer à une armée blindée pour des pushs air-sol coordonnés.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold air force general — Germany.",
-  "shortDescDe": "Gold Luftwaffen-General — Deutschland.",
-  "longDescEn": "Wolfram von Richthofen is a gold-quality air force general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Wolfram von Richthofen ist ein Gold-Luftwaffen-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Luftwaffen-General — Deutschland.",
+  "longDescEn": "Wolfram von Richthofen, cousin of the 'Red Baron', led the Condor Legion and then VIII. Fliegerkorps, a Stuka close-air-support specialist. In WC4 he's a tier-S gold air-force card with strong bomber bonuses — pair him with an armoured column for coordinated air-ground pushes.",
+  "longDescDe": "Wolfram von Richthofen, Cousin des „Roten Barons“, führte die Legion Condor und dann das VIII. Fliegerkorps — ein Spezialist für Stuka-Nahunterstützung. Als S-Klasse-Gold-Luftwaffenkarte im WC4 mit starken Bomberboni eignet er sich hervorragend für koordinierte Luft-Boden-Stöße mit Panzern."
 }

@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général navale or — Allemagne.",
-  "longDesc": "Otto Kretschmer est un général navale de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval or — Allemagne.",
+  "longDesc": "Commandant du U-99, Otto Kretschmer est l'as des U-Boote avec plus de 270 000 tonnes coulées en 1940-1941. En WC4, carte navale tier-S or à envoyer sur les scénarios Atlantique Nord : bonus de dégâts sous-marins très marqués, idéal pour rompre les convois alliés.",
   "skills": [
     {
       "slot": 1,
@@ -133,8 +133,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Gold naval general — Germany.",
-  "shortDescDe": "Gold Marine-General — Deutschland.",
-  "longDescEn": "Otto Kretschmer is a gold-quality naval general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Otto Kretschmer ist ein Gold-Marine-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Gold navy general — Germany.",
+  "shortDescDe": "Gold-Marine-General — Deutschland.",
+  "longDescEn": "Commander of U-99, Otto Kretschmer is the top-scoring U-boat ace with over 270,000 tons sunk in 1940–41. In WC4 he is a tier-S gold navy card for the North Atlantic scenarios: pronounced submarine damage bonuses that make him ideal for breaking Allied convoys.",
+  "longDescDe": "Otto Kretschmer, Kommandant der U-99, ist mit über 270.000 versenkten Tonnen 1940/41 das erfolgreichste U-Boot-Ass. In WC4 ist er eine S-Klasse-Gold-Marine-Karte für die Nordatlantik-Szenarien: starke U-Boot-Schadensboni machen ihn ideal zum Brechen alliierter Konvois."
 }

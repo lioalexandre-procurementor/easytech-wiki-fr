@@ -155,5 +155,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Early Warning",
-  "descriptionTemplateFr": "X% chance to evade 20% dégâts lorsque vous commandez des unités navales"
+  "descriptionTemplateFr": "X% chance to evade 20% dégâts lorsque vous commandez des unités navales",
+  "longDesc": "Compétence spécifique à un général. « Early Warning » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance to evade 20% dégâts lorsque vous commandez des unités navales ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Early Warning\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance to evade 20% damage when commanding ship units\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Early Warning“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance to evade 20% damage when commanding ship units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

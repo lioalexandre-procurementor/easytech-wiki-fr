@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général aérienne or — Allemagne.",
-  "longDesc": "Erich Hartmann est un général aérienne de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien or — Allemagne.",
+  "longDesc": "As de la chasse le plus titré de l'histoire avec 352 victoires homologuées sur le front de l'Est, Erich Hartmann pilote un Bf 109 du JG 52 de 1942 à 1945. Côté WC4, c'est une carte aérienne tier-S or : bonus critiques sur chasseurs, à monter en priorité pour les scénarios Barbarossa et conquête Russie.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold air force general — Germany.",
-  "shortDescDe": "Gold Luftwaffen-General — Deutschland.",
-  "longDescEn": "Erich Hartmann is a gold-quality air force general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Erich Hartmann ist ein Gold-Luftwaffen-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Luftwaffen-General — Deutschland.",
+  "longDescEn": "The highest-scoring fighter ace in history with 352 confirmed kills on the Eastern Front, Erich Hartmann flew a Bf 109 with JG 52 from 1942 to 1945. In WC4 he is a tier-S gold air-force card: critical-hit bonuses on fighters — a priority levelling target for Barbarossa and Russia-conquest scenarios.",
+  "longDescDe": "Mit 352 bestätigten Luftsiegen an der Ostfront ist Erich Hartmann der erfolgreichste Jagdflieger der Geschichte; er flog von 1942 bis 1945 die Bf 109 im JG 52. In WC4 ist er eine S-Klasse-Gold-Luftwaffenkarte mit Kritischer-Treffer-Boni auf Jäger — ein Leveling-Prio für Barbarossa und das Russland-Szenario."
 }

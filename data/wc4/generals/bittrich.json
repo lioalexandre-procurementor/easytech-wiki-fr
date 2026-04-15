@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général polyvalente argent — Allemagne.",
-  "longDesc": "Wilhelm Bittrich est un général polyvalente de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — Allemagne.",
+  "longDesc": "Wilhelm Bittrich commande le IIe SS-Panzerkorps lors d'Arnhem en septembre 1944, où il écrase l'opération Market Garden. Carte WC4 équilibrée A argent : compétences défensives contre parachutistes, niche utile sur les scénarios de reconquête des têtes de pont alliées.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver balanced general — Germany.",
-  "shortDescDe": "Silber ausgewogene-General — Deutschland.",
-  "longDescEn": "Wilhelm Bittrich is a silver-quality balanced general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Wilhelm Bittrich ist ein Silber-ausgewogene-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — Deutschland.",
+  "longDescEn": "Wilhelm Bittrich commanded II SS-Panzerkorps at Arnhem in September 1944, crushing Operation Market Garden. A WC4 silver-A balanced card with defensive skills against paratroopers — a niche but useful pick on scenarios where you recapture Allied bridgeheads.",
+  "longDescDe": "Wilhelm Bittrich führte im September 1944 das II. SS-Panzerkorps bei Arnheim und zerschlug die Operation Market Garden. Im WC4 eine Silber-A-Allrounderkarte mit defensiven Fähigkeiten gegen Fallschirmjäger — eine nützliche Nischenwahl für Szenarien, in denen du alliierte Brückenköpfe zurückeroberst."
 }

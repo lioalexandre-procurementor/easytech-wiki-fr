@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     305006
-  ]
+  ],
+  "longDesc": "Branche aérienne de la recherche, essentielle à la supériorité aérienne. « Air Force Squadron » monte jusqu'au niveau 1. Effet maximum : « Air Force squadrons can be deployed ». Accessible dès le début de la recherche. Indispensable sur Sea Lion, Barbarossa et Midway.",
+  "longDescEn": "The air-force research branch, essential for establishing air superiority. \"Air Force Squadron\" scales up to level 1. Maximum effect: \"Air Force squadrons can be deployed\". Available from the start of research. Essential on Sea Lion, Barbarossa and Midway.",
+  "longDescDe": "Der Luftwaffen-Forschungszweig, essentiell für die Luftüberlegenheit. „Air Force Squadron“ skaliert bis Stufe 1. Maximaler Effekt: „Air Force squadrons can be deployed“. Ab Forschungsbeginn verfügbar. Unverzichtbar bei Seelöwe, Barbarossa und Midway."
 }

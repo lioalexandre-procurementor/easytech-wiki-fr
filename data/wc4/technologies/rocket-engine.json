@@ -62,5 +62,8 @@
   "prerequisites": [
     308003,
     308007
-  ]
+  ],
+  "longDesc": "Recherche missiles, pivot des doctrines modernes de l'endgame. « Rocket Engine » monte jusqu'au niveau 2. Effet maximum : « Attack range +3 ». Accessible dès le début de la recherche. Technologie de fin de partie, à prioriser sur les scénarios HQ 20+.",
+  "longDescEn": "Missile research, central to late-game modern doctrine. \"Rocket Engine\" scales up to level 2. Maximum effect: \"Attack range +3\". Available from the start of research. A late-game technology to prioritise on HQ 20+ scenarios.",
+  "longDescDe": "Raketenforschung — Drehpunkt moderner Endgame-Doktrinen. „Rocket Engine“ skaliert bis Stufe 2. Maximaler Effekt: „Attack range +3“. Ab Forschungsbeginn verfügbar. Eine Endspiel-Technologie, priorisiert auf Szenarien ab HQ 20."
 }

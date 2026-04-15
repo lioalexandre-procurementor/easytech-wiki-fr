@@ -537,5 +537,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Guerre éclair",
-  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
+  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées",
+  "longDesc": "Compétence spécifique à un général. « Guerre éclair » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Blitzkrieg\" scales up to level 5. At max level (5), the skill applies the following effect: \"60% chance that the enemy will not fight back when commanding armored units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Blitzkrieg“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „60% chance that the enemy will not fight back when commanding armored units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

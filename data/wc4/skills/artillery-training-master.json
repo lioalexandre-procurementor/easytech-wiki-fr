@@ -81,5 +81,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Artillerie Training Master",
-  "descriptionTemplateFr": "Augmenter the PV recovery converted from dealt dégâts of X% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%"
+  "descriptionTemplateFr": "Augmenter the PV recovery converted from dealt dégâts of X% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25%",
+  "longDesc": "Compétence spécifique à un général. « Artillerie Training Master » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Augmenter the PV recovery converted from dealt dégâts of 3% based on the niveau of artillerie unités d'élite. Attaques critiques dégâts of artillerie unités d'élite is augmenté de 25% ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Artillery Training Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Increase the HP recovery converted from dealt damage of 3% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery Training Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Increase the HP recovery converted from dealt damage of 3% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

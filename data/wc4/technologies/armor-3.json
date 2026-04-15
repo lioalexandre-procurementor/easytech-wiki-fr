@@ -163,5 +163,8 @@
     304022,
     304023,
     304024
-  ]
+  ],
+  "longDesc": "Branche de recherche dédiée à la marine. « Armor » monte jusqu'au niveau 6. Effet maximum : « Defense +12 ». Accessible dès le début de la recherche. Pertinente sur toute campagne où plus de 30% des combats ont lieu en mer.",
+  "longDescEn": "A naval research branch that upgrades surface and submarine squadrons. \"Armor\" scales up to level 6. Maximum effect: \"Defense +12\". Available from the start of research. Relevant on any campaign where more than 30% of combat happens at sea.",
+  "longDescDe": "Ein Marine-Forschungszweig, der Überwasser- und U-Boot-Geschwader verstärkt. „Armor“ skaliert bis Stufe 6. Maximaler Effekt: „Defense +12“. Ab Forschungsbeginn verfügbar. Lohnt sich, wenn mehr als 30% der Kämpfe auf See stattfinden."
 }

@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général blindé américain agressif — tier S avec survivabilité.",
-  "longDesc": "Patton est un général blindé top-tier de WC4. Offensive un peu moins pure que Rokossovsky mais bien meilleure survivabilité. Recommandé pour les chars lourds américains (M26 Pershing, M1A1 Abrams). Or, 5 emplacements.",
+  "shortDesc": "Général blindé or — États-Unis.",
+  "longDesc": "Commandant de la 3e armée américaine, George Patton traverse la France à vitesse record après la percée d'Avranches puis débloque Bastogne en décembre 1944. Carte WC4 blindée tier-S or : mobilité au plafond, bonus offensifs élevés, pilier de toute armée alliée.",
   "skills": [
     {
       "slot": 1,
@@ -239,8 +239,8 @@
       "skillLevel": 1
     }
   ],
-  "shortDescEn": "Aggressive American armor general — Tier S with strong survivability.",
-  "shortDescDe": "Aggressiver US-Panzer-General — Tier S mit hoher Überlebensfähigkeit.",
-  "longDescEn": "Patton is a top-tier armor general in WC4. Slightly less pure offensive output than Rokossovsky but much better survivability. Recommended for American heavy tanks (M26 Pershing, M1A1 Abrams). Gold, 5 slots.",
-  "longDescDe": "Patton ist ein erstklassiger Panzergeneral in WC4. Etwas geringere reine Offensivleistung als Rokossowski, aber deutlich bessere Überlebensfähigkeit. Empfohlen für amerikanische schwere Panzer (M26 Pershing, M1A1 Abrams). Gold, 5 Slots."
+  "shortDescEn": "Gold armor general — United States.",
+  "shortDescDe": "Gold-Panzer-General — Vereinigte Staaten.",
+  "longDescEn": "Commanding US Third Army, George Patton raced across France at record speed after the Avranches breakout and relieved Bastogne in December 1944. A WC4 tier-S gold armor card with capped mobility and heavy offensive bonuses — the cornerstone of any Allied-side army.",
+  "longDescDe": "Als Befehlshaber der 3. US-Armee stürmte George Patton nach dem Durchbruch bei Avranches mit Rekordtempo durch Frankreich und entsetzte im Dezember 1944 Bastogne. Im WC4 eine S-Klasse-Gold-Panzerkarte mit Maximal-Mobilität und starken Offensivboni — Eckpfeiler jeder alliierten Armee."
 }

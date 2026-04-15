@@ -105,5 +105,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Technology Expert",
-  "descriptionTemplateFr": "The technological output of the city +X"
+  "descriptionTemplateFr": "The technological output of the city +X",
+  "longDesc": "Compétence logistique de soutien. « Technology Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « The technological output of the city +5 ». À maxer sur un général de soutien qui se déplace peu.",
+  "longDescEn": "A logistics support skill. \"Technology Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"The technological output of the city +5\". Max this on a support general that moves little.",
+  "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Technology Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „The technological output of the city +5“. Auf einem bewegungsarmen Unterstützungs-General maxen."
 }

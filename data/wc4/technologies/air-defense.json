@@ -77,5 +77,8 @@
   "prerequisites": [
     302032,
     302033
-  ]
+  ],
+  "longDesc": "Branche dédiée aux chars : dégâts, défense et mobilité. « Air-Defense » monte jusqu'au niveau 2. Effet maximum : « Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10% ». Accessible dès le début de la recherche. Pilier de toute armée Axe jouant la percée.",
+  "longDescEn": "A branch dedicated to tanks: damage, defence and mobility. \"Air-Defense\" scales up to level 2. Maximum effect: \"Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10%\". Available from the start of research. The pillar of any Axis army playing for breakthrough.",
+  "longDescDe": "Ein Zweig für Panzer: Schaden, Verteidigung und Mobilität. „Air-Defense“ skaliert bis Stufe 2. Maximaler Effekt: „Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10%“. Ab Forschungsbeginn verfügbar. Pfeiler jeder Achsenarmee, die auf Durchbruch spielt."
 }

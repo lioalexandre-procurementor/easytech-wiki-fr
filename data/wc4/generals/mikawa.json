@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général navale argent — Japon.",
-  "longDesc": "Gunichi Mikawa est un général navale de qualité argent — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval argent — Japon.",
+  "longDesc": "Gunichi Mikawa écrase les croiseurs alliés à la bataille de l'île de Savo en août 1942, pire défaite navale des États-Unis. Carte WC4 navale A argent à profil combat de nuit : niche utile contre les flottes alliées.",
   "skills": [
     {
       "slot": 1,
@@ -115,8 +115,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Silver naval general — Japan.",
-  "shortDescDe": "Silber Marine-General — Japan.",
-  "longDescEn": "Gunichi Mikawa is a silver-quality naval general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Gunichi Mikawa ist ein Silber-Marine-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Silver navy general — Japan.",
+  "shortDescDe": "Silber-Marine-General — Japan.",
+  "longDescEn": "Gunichi Mikawa crushed Allied cruisers at the Battle of Savo Island in August 1942, the worst US naval defeat. A WC4 silver-A navy card with a night-combat profile — a niche pick against Allied fleets.",
+  "longDescDe": "Gunichi Mikawa zerschlug im August 1942 bei der Schlacht um Savo Island alliierte Kreuzer — die schlimmste Marineniederlage der USA. Im WC4 eine Silber-A-Marinekarte mit Nachtkampf-Profil — Nischenwahl gegen alliierte Flotten."
 }

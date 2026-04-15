@@ -65,5 +65,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Submergence Evasion",
-  "descriptionTemplateFr": "Submarine unités sous votre commandement receive X% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour."
+  "descriptionTemplateFr": "Submarine unités sous votre commandement receive X% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour.",
+  "longDesc": "Compétence spécifique à un général. « Submergence Evasion » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Submarine unités sous votre commandement receive 35% less dégâts and have a 50% chance to esquive lorsqu'elle est attaquée by airstrike or missile. Submarine recover 5% of its maximum PV chaque tour. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Submergence Evasion\" scales up to level 5. At max level (5), the skill applies the following effect: \"Submarine units under command receive 35% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Submergence Evasion“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Submarine units under command receive 35% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

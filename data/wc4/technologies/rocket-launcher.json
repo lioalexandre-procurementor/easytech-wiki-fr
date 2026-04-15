@@ -96,5 +96,8 @@
   ],
   "prerequisites": [
     306022
-  ]
+  ],
+  "longDesc": "Branche fortifications : tourelles, bunkers, défenses statiques. « Rocket Launcher » monte jusqu'au niveau 4. Effet maximum : « Attack +16; Defense +4; HP +45 ». Débloquée au niveau de QG 16. À utiliser sur tout scénario de défense — Stalingrad, Leningrad, Berlin.",
+  "longDescEn": "A fortifications branch for turrets, bunkers and static defences. \"Rocket Launcher\" scales up to level 4. Maximum effect: \"Attack +16; Defense +4; HP +45\". Unlocks at HQ level 16. Use on any defensive scenario — Stalingrad, Leningrad, Berlin.",
+  "longDescDe": "Ein Befestigungs-Zweig für Türme, Bunker und Stellungsverteidigungen. „Rocket Launcher“ skaliert bis Stufe 4. Maximaler Effekt: „Attack +16; Defense +4; HP +45“. Wird auf HQ-Stufe 16 freigeschaltet. Auf jedem Defensivszenario einsetzen — Stalingrad, Leningrad, Berlin."
 }

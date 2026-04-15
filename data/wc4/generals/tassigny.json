@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "FR",
   "countryName": "France",
-  "shortDesc": "Général infanterie bronze — France.",
-  "longDesc": "Jean de Lattre de Tassigny est un général infanterie de qualité bronze — France. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — France.",
+  "longDesc": "Jean de Lattre de Tassigny commande la 1re armée française de Provence au Rhin, signe l'acte de capitulation allemande à Berlin le 8 mai 1945 pour la France. Carte WC4 infanterie B bronze à valeur historique plus que compétitive.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — France.",
-  "shortDescDe": "Bronze Infanterie-General — Frankreich.",
-  "longDescEn": "Jean de Lattre de Tassigny is a bronze-quality infantry general — France. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Jean de Lattre de Tassigny ist ein Bronze-Infanterie-General — Frankreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Frankreich.",
+  "longDescEn": "Jean de Lattre de Tassigny commanded French 1st Army from Provence to the Rhine and co-signed the German surrender in Berlin on 8 May 1945 for France. A WC4 bronze-B infantry card valued more for historical weight than competitive output.",
+  "longDescDe": "Jean de Lattre de Tassigny führte die französische 1. Armee von der Provence bis zum Rhein und unterzeichnete am 8. Mai 1945 für Frankreich die deutsche Kapitulation in Berlin. Im WC4 eine Bronze-B-Infanteriekarte, deren Wert eher historisch als kompetitiv ist."
 }

@@ -105,5 +105,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Attaque Guideance",
-  "descriptionTemplateFr": "X% chance that one of the inactive unités d'artillerie around will join the attaque (Only once par tour)"
+  "descriptionTemplateFr": "X% chance that one of the inactive unités d'artillerie around will join the attaque (Only once par tour)",
+  "longDesc": "Compétence spécifique à un général. « Attaque Guideance » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that one of the inactive unités d'artillerie around will join the attaque (Only once par tour) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Attack Guideance\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that one of the inactive artillery units around will join the attack (Only once per turn)\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Attack Guideance“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that one of the inactive artillery units around will join the attack (Only once per turn)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

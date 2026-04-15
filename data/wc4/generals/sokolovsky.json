@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général artillerie or — URSS.",
-  "longDesc": "Vassili Sokolovski est un général artillerie de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie or — URSS.",
+  "longDesc": "Vassili Sokolovski dirige l'état-major du Front de l'Ouest puis commande l'offensive finale sur Berlin en 1945. Carte WC4 artillerie tier-S or : meilleure artillerie soviétique disponible, pick obligatoire pour Seelow et Berlin.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold artillery general — USSR.",
-  "shortDescDe": "Gold Artillerie-General — UdSSR.",
-  "longDescEn": "Vassili Sokolovski is a gold-quality artillery general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Vassili Sokolovski ist ein Gold-Artillerie-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Artillerie-General — UdSSR.",
+  "longDescEn": "Vasily Sokolovsky ran the Western Front staff and then directed the final Berlin offensive in 1945. A WC4 tier-S gold artillery card — the strongest Soviet artillery available and a mandatory pick for Seelow and Berlin.",
+  "longDescDe": "Wassili Sokolowski leitete den Stab der Westfront und führte 1945 die Schlussoffensive auf Berlin. Im WC4 eine S-Klasse-Gold-Artilleriekarte — die stärkste verfügbare sowjetische Artillerie und Pflichtwahl für die Seelower Höhen und Berlin."
 }

@@ -115,5 +115,8 @@
     302022,
     302024,
     302026
-  ]
+  ],
+  "longDesc": "Recherche blindée, pilier des conquêtes terrestres rapides. « Engine » monte jusqu'au niveau 4. Effet maximum : « Mobility +4 ». Accessible dès le début de la recherche. À maxer en priorité sur les campagnes de conquête rapide.",
+  "longDescEn": "Armor research — the backbone of fast land conquest. \"Engine\" scales up to level 4. Maximum effect: \"Mobility +4\". Available from the start of research. Max this first on fast-conquest campaigns.",
+  "longDescDe": "Panzerforschung — Rückgrat schneller Landeroberungen. „Engine“ skaliert bis Stufe 4. Maximaler Effekt: „Mobility +4“. Ab Forschungsbeginn verfügbar. In Schnell-Eroberungs-Kampagnen zuerst maxen."
 }

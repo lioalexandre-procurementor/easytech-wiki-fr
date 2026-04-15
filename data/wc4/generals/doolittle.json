@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général aérienne argent — États-Unis.",
-  "longDesc": "James Doolittle est un général aérienne de qualité argent — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien argent — États-Unis.",
+  "longDesc": "James Doolittle mène en avril 1942 le raid sur Tokyo depuis le porte-avions USS Hornet, coup de communication majeur après Pearl Harbor. Carte WC4 aérienne A argent : bonus raids lointains, clin d'œil mécanique au fait historique.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver air force general — United States.",
-  "shortDescDe": "Silber Luftwaffen-General — Vereinigte Staaten.",
-  "longDescEn": "James Doolittle is a silver-quality air force general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "James Doolittle ist ein Silber-Luftwaffen-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Luftwaffen-General — Vereinigte Staaten.",
+  "longDescEn": "James Doolittle led the April 1942 Tokyo raid from USS Hornet — a major morale strike after Pearl Harbor. A WC4 silver-A air-force card with long-range raid bonuses, a mechanical nod to the historical event.",
+  "longDescDe": "James Doolittle führte im April 1942 von der USS Hornet aus den Tokio-Angriff — ein Moralschlag nach Pearl Harbor. Im WC4 eine Silber-A-Luftwaffenkarte mit Langstrecken-Angriffsboni, mechanisch an das historische Ereignis angelehnt."
 }

@@ -282,6 +282,15 @@ export default async function SkillDetailPage({
               {t("skillDetailPage.descriptionHeading")}
             </h2>
             <p className="text-ink text-sm leading-relaxed">{displayDesc}</p>
+            {(() => {
+              const loc = params.locale;
+              const longDesc =
+                loc === "fr" ? skill.longDesc :
+                loc === "de" ? (skill.longDescDe ?? skill.longDescEn ?? skill.longDesc) :
+                (skill.longDescEn ?? skill.longDesc);
+              if (!longDesc) return null;
+              return <p className="text-ink text-sm leading-relaxed mt-3">{longDesc}</p>;
+            })()}
             {isFr && skill.descriptionTemplateFr && (
               <p className="text-muted text-[11px] mt-2 italic">
                 {t("skillDetailPage.officialEnVersion")} : {skill.descriptionTemplate}

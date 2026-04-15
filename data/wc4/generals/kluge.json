@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général artillerie or — Allemagne.",
-  "longDesc": "Günther von Kluge est un général artillerie de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie or — Allemagne.",
+  "longDesc": "Günther von Kluge dirige la 4e armée en France en 1940, puis les Groupes d'armées Centre et B en 1943-1944. Sa carte WC4 artillerie tier-S or se distingue par un ratio dégâts/portée élevé : excellente sur les scénarios Koursk et Ardennes où l'on martèle les concentrations blindées.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold artillery general — Germany.",
-  "shortDescDe": "Gold Artillerie-General — Deutschland.",
-  "longDescEn": "Günther von Kluge is a gold-quality artillery general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Günther von Kluge ist ein Gold-Artillerie-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Artillerie-General — Deutschland.",
+  "longDescEn": "Günther von Kluge commanded the 4th Army in France in 1940, then Army Groups Centre and B in 1943–44. His WC4 tier-S gold artillery card stands out for a high damage-to-range ratio — excellent on the Kursk and Ardennes scenarios for pounding armoured concentrations.",
+  "longDescDe": "Günther von Kluge führte 1940 die 4. Armee in Frankreich, später 1943–44 die Heeresgruppen Mitte und B. Seine WC4-Karte, Gold-Artillerie der S-Klasse, zeichnet sich durch ein hohes Schaden-Reichweite-Verhältnis aus — ideal auf den Szenarien Kursk und Ardennen zum Aufreiben feindlicher Panzerkonzentrationen."
 }

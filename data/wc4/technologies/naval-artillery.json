@@ -63,5 +63,8 @@
   "prerequisites": [
     304043,
     304044
-  ]
+  ],
+  "longDesc": "Arbre technologique des navires et des flottes. « Naval Artillery » monte jusqu'au niveau 2. Effet maximum : « Damage +100% to stronghold units and -50%% to land units ». Accessible dès le début de la recherche. Pertinente sur toute campagne où plus de 30% des combats ont lieu en mer.",
+  "longDescEn": "Part of the naval technology tree for ships and fleets. \"Naval Artillery\" scales up to level 2. Maximum effect: \"Damage +100% to stronghold units and -50%% to land units\". Available from the start of research. Relevant on any campaign where more than 30% of combat happens at sea.",
+  "longDescDe": "Teil des Marine-Forschungsbaums für Schiffe und Flotten. „Naval Artillery“ skaliert bis Stufe 2. Maximaler Effekt: „Damage +100% to stronghold units and -50%% to land units“. Ab Forschungsbeginn verfügbar. Lohnt sich, wenn mehr als 30% der Kämpfe auf See stattfinden."
 }

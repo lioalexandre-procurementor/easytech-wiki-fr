@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général blindée argent — Allemagne.",
-  "longDesc": "Hermann Hoth est un général blindée de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — Allemagne.",
+  "longDesc": "Hermann Hoth dirige le 3e Panzergruppe puis la 4e Panzerarmee, notamment durant l'opération Zitadelle à Koursk. Carte WC4 blindée A argent : rang inférieur à Guderian ou Rommel mais coût médailles modéré, excellent rempliss-slot pour une armée blindée secondaire.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — Germany.",
-  "shortDescDe": "Silber Panzer-General — Deutschland.",
-  "longDescEn": "Hermann Hoth is a silver-quality armor general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Hermann Hoth ist ein Silber-Panzer-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — Deutschland.",
+  "longDescEn": "Hermann Hoth led 3rd Panzer Group and later 4th Panzer Army, notably during Operation Citadel at Kursk. A WC4 silver-A armor card: a tier below Guderian or Rommel but at a moderate medal cost — an excellent filler slot for a secondary armoured force.",
+  "longDescDe": "Hermann Hoth führte die 3. Panzergruppe und später die 4. Panzerarmee, unter anderem bei der Operation Zitadelle in Kursk. Im WC4 eine Silber-A-Panzerkarte: eine Stufe unter Guderian oder Rommel, aber zu moderaten Medaillen-Kosten — ideal als Füllkarte für eine zweite Panzerstreitkraft."
 }

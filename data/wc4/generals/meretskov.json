@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général infanterie argent — URSS.",
-  "longDesc": "Kirill Meretskov est un général infanterie de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — URSS.",
+  "longDesc": "Kirill Meretskov brise le siège de Leningrad en janvier 1943 et dirige ensuite les opérations en Carélie et Mandchourie. Carte WC4 infanterie A argent : bonus en terrain boisé et froid, spécialiste des fronts nord.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver infantry general — USSR.",
-  "shortDescDe": "Silber Infanterie-General — UdSSR.",
-  "longDescEn": "Kirill Meretskov is a silver-quality infantry general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Kirill Meretskov ist ein Silber-Infanterie-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Infanterie-General — UdSSR.",
+  "longDescEn": "Kirill Meretskov broke the Leningrad siege in January 1943 and later ran operations in Karelia and Manchuria. A WC4 silver-A infantry card with forest- and cold-terrain bonuses — a northern-front specialist.",
+  "longDescDe": "Kirill Merezkow brach im Januar 1943 die Belagerung Leningrads und leitete später die Operationen in Karelien und in der Mandschurei. Im WC4 eine Silber-A-Infanteriekarte mit Wald- und Kaltgelände-Boni — ein Nordfront-Spezialist."
 }

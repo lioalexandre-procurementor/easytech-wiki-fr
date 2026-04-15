@@ -83,5 +83,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Naval Overlord",
-  "descriptionTemplateFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering X% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters."
+  "descriptionTemplateFr": "After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering X% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters.",
+  "longDesc": "Compétence spécifique à un général. « Naval Overlord » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a naval troop to attaque, there is 50% chance of applying a \"jolt\" effect à l'ennemi, lowering 70% mobility, lasts pendant 2 tours. When commanding Enterprise, all air force costs -1 except fighters. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Naval Overlord\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 70% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Naval Overlord“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a naval troop to attack, there is 50% chance of applying a \"jolt\" effect to the enemy, lowering 70% mobility, lasts for 2 turns. When commanding Enterprise, all air force costs -1 except fighters.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

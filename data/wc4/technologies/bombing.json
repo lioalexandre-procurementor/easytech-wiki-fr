@@ -63,5 +63,8 @@
   "prerequisites": [
     305025,
     305022
-  ]
+  ],
+  "longDesc": "Recherche aérienne qui améliore la portée et la létalité des escadrons. « Bombing » monte jusqu'au niveau 2. Effet maximum : « Damage to ship units +50% ». Accessible dès le début de la recherche. Prérequis pour tirer parti des généraux aériens tier-S.",
+  "longDescEn": "Air-force research that improves squadron range and lethality. \"Bombing\" scales up to level 2. Maximum effect: \"Damage to ship units +50%\". Available from the start of research. A prerequisite to make tier-S air-force generals pay off.",
+  "longDescDe": "Luftwaffenforschung, die Reichweite und Wirkung der Staffeln erhöht. „Bombing“ skaliert bis Stufe 2. Maximaler Effekt: „Damage to ship units +50%“. Ab Forschungsbeginn verfügbar. Voraussetzung, damit S-Klasse-Luftwaffengeneräle ihren Wert entfalten."
 }

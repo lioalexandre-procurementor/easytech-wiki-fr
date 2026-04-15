@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "CN",
   "countryName": "République populaire de Chine",
-  "shortDesc": "Général polyvalente argent — République populaire de Chine.",
-  "longDesc": "Zhang Zizhong est un général polyvalente de qualité argent — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — Chine.",
+  "longDesc": "Zhang Zizhong meurt au combat en mai 1940 à la bataille de Zaoyang–Yichang, plus haut gradé allié tué lors de la guerre sino-japonaise. Carte WC4 équilibrée A argent à profil défensif : pick d'hommage sur les scénarios centraux de Chine.",
   "skills": [
     {
       "slot": 1,
@@ -115,8 +115,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Silver balanced general — People's Republic of China.",
-  "shortDescDe": "Silber ausgewogene-General — Volksrepublik China.",
-  "longDescEn": "Zhang Zizhong is a silver-quality balanced general — People's Republic of China. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Zhang Zizhong ist ein Silber-ausgewogene-General — Volksrepublik China. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Silver balanced general — China.",
+  "shortDescDe": "Silber-Allrounder-General — China.",
+  "longDescEn": "Zhang Zizhong was killed in action in May 1940 at the Battle of Zaoyang–Yichang, the highest-ranking Allied officer killed during the Second Sino-Japanese War. A WC4 silver-A balanced card with a defensive profile — a tribute pick for central China scenarios.",
+  "longDescDe": "Zhang Zizhong fiel im Mai 1940 in der Schlacht von Zaoyang–Yichang und war der ranghöchste im Zweiten Japanisch-Chinesischen Krieg gefallene alliierte Offizier. Im WC4 eine Silber-A-Allrounderkarte mit defensivem Profil — Hommage-Wahl für zentrale China-Szenarien."
 }

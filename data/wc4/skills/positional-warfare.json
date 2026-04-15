@@ -87,5 +87,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Positional Warfare",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -X% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque"
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -X% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque",
+  "longDesc": "Compétence spécifique à un général. « Positional Warfare » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -35% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Positional Warfare\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Positional Warfare“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

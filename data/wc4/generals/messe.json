@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "IT",
   "countryName": "Italie",
-  "shortDesc": "Général blindée bronze — Italie.",
-  "longDesc": "Giovanni Messe est un général blindée de qualité bronze — Italie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé bronze — Italie.",
+  "longDesc": "Giovanni Messe commande le Corps expéditionnaire italien en Russie puis la 1re armée italienne en Tunisie où il se rend en mai 1943. Carte WC4 blindée B bronze : dépanneur italien utile uniquement en début de partie.",
   "skills": [
     {
       "slot": 1,
@@ -191,7 +191,7 @@
     }
   ],
   "shortDescEn": "Bronze armor general — Italy.",
-  "shortDescDe": "Bronze Panzer-General — Italien.",
-  "longDescEn": "Giovanni Messe is a bronze-quality armor general — Italy. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Giovanni Messe ist ein Bronze-Panzer-General — Italien. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Panzer-General — Italien.",
+  "longDescEn": "Giovanni Messe commanded the Italian Expeditionary Corps in Russia and then the Italian First Army in Tunisia, where he surrendered in May 1943. A WC4 bronze-B armor card — an Italian placeholder useful only in the early game.",
+  "longDescDe": "Giovanni Messe führte das italienische Expeditionskorps in Russland und dann die italienische 1. Armee in Tunesien, wo er im Mai 1943 kapitulierte. Im WC4 eine Bronze-B-Panzerkarte — italienischer Lückenfüller, nur im Frühspiel sinnvoll."
 }

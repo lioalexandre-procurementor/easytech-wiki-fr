@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général blindée bronze — Allemagne.",
-  "longDesc": "Fedor von Bock est un général blindée de qualité bronze — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé bronze — Allemagne.",
+  "longDesc": "Fedor von Bock dirige le Groupe d'armées Centre lors de Barbarossa et la tentative sur Moscou en décembre 1941. Carte WC4 blindée B bronze : dépanneur économique en début de partie, à remplacer dès qu'on a accès aux or.",
   "skills": [
     {
       "slot": 1,
@@ -191,7 +191,7 @@
     }
   ],
   "shortDescEn": "Bronze armor general — Germany.",
-  "shortDescDe": "Bronze Panzer-General — Deutschland.",
-  "longDescEn": "Fedor von Bock is a bronze-quality armor general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Fedor von Bock ist ein Bronze-Panzer-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Panzer-General — Deutschland.",
+  "longDescEn": "Fedor von Bock led Army Group Centre during Barbarossa and the December 1941 drive on Moscow. In WC4 a bronze-B armor card — a cheap early-game placeholder that you should swap out as soon as gold armor generals become available.",
+  "longDescDe": "Fedor von Bock führte bei Barbarossa die Heeresgruppe Mitte und den Vorstoß auf Moskau im Dezember 1941. Im WC4 eine Bronze-B-Panzerkarte — ein günstiger Lückenfüller fürs frühe Spiel, der durch Gold-Panzerkarten abgelöst werden sollte, sobald sie verfügbar sind."
 }

@@ -81,5 +81,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Couverture anti-aérienne",
-  "descriptionTemplateFr": "When commanding an aviation unité to attaque, there is X% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously)."
+  "descriptionTemplateFr": "When commanding an aviation unité to attaque, there is X% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously).",
+  "longDesc": "Compétence spécifique à un général. « Couverture anti-aérienne » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding an aviation unité to attaque, there is 50% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously). ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Air Raid Cover\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Air Raid Cover“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

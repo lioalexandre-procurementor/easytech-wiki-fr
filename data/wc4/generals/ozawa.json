@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général aérienne argent — Japon.",
-  "longDesc": "Jisaburō Ozawa est un général aérienne de qualité argent — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien argent — Japon.",
+  "longDesc": "Jisaburō Ozawa dirige la Force mobile japonaise à la mer des Philippines en juin 1944 et à Leyte, où il sert d'appât sacrifice. Carte WC4 aérienne A argent à profil embarqué : second slot derrière Yamamoto.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver air force general — Japan.",
-  "shortDescDe": "Silber Luftwaffen-General — Japan.",
-  "longDescEn": "Jisaburō Ozawa is a silver-quality air force general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Jisaburō Ozawa ist ein Silber-Luftwaffen-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Luftwaffen-General — Japan.",
+  "longDescEn": "Jisaburō Ozawa led Japan's Mobile Force at the Philippine Sea in June 1944 and at Leyte, where he served as decoy. A WC4 silver-A air-force card with a carrier-based profile — a second slot behind Yamamoto.",
+  "longDescDe": "Jisaburō Ozawa führte im Juni 1944 die japanische Mobilflotte in der Philippinensee und bei Leyte, wo er als Köder diente. Im WC4 eine Silber-A-Luftwaffenkarte mit Trägerprofil — zweiter Slot hinter Yamamoto."
 }

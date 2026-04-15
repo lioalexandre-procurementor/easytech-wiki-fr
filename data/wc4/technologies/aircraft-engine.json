@@ -123,5 +123,8 @@
     305002,
     305004,
     305006
-  ]
+  ],
+  "longDesc": "Arbre technologique aérien : chasseurs, bombardiers et appui. « Aircraft Engine » monte jusqu'au niveau 4. Effet maximum : « Fixed-wing aircraft attack range +4; Helicopter mobility +4 ». Accessible dès le début de la recherche. Prérequis pour tirer parti des généraux aériens tier-S.",
+  "longDescEn": "An air-force technology covering fighters, bombers and close support. \"Aircraft Engine\" scales up to level 4. Maximum effect: \"Fixed-wing aircraft attack range +4; Helicopter mobility +4\". Available from the start of research. A prerequisite to make tier-S air-force generals pay off.",
+  "longDescDe": "Eine Luftwaffentechnologie für Jäger, Bomber und Nahunterstützung. „Aircraft Engine“ skaliert bis Stufe 4. Maximaler Effekt: „Fixed-wing aircraft attack range +4; Helicopter mobility +4“. Ab Forschungsbeginn verfügbar. Voraussetzung, damit S-Klasse-Luftwaffengeneräle ihren Wert entfalten."
 }

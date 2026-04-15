@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "EG",
   "countryName": "Égypte",
-  "shortDesc": "Général infanterie bronze — Égypte.",
-  "longDesc": "Gamal Abdel Nasser est un général infanterie de qualité bronze — Égypte. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Égypte.",
+  "longDesc": "Gamal Abdel Nasser est officier pendant la guerre israélo-arabe de 1948 avant de renverser le roi Farouk en 1952 et de devenir président égyptien. Carte WC4 infanterie B bronze : représente les scénarios post-1945 côté arabe, slot thématique.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — Egypt.",
-  "shortDescDe": "Bronze Infanterie-General — Ägypten.",
-  "longDescEn": "Gamal Abdel Nasser is a bronze-quality infantry general — Egypt. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Gamal Abdel Nasser ist ein Bronze-Infanterie-General — Ägypten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Ägypten.",
+  "longDescEn": "Gamal Abdel Nasser served as an officer in the 1948 Arab–Israeli War before overthrowing King Farouk in 1952 and becoming Egypt's president. A WC4 bronze-B infantry card representing post-1945 Arab scenarios — a thematic slot.",
+  "longDescDe": "Gamal Abdel Nasser diente 1948 im Palästinakrieg, stürzte 1952 König Faruk und wurde Präsident Ägyptens. Im WC4 eine Bronze-B-Infanteriekarte, die die Nachkriegs-Szenarien auf arabischer Seite repräsentiert — ein thematischer Slot."
 }

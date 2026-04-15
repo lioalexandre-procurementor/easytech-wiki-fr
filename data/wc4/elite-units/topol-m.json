@@ -424,5 +424,33 @@
   "shortDescEn": "Russian intercontinental ballistic missile — the ultimate elite unit.",
   "shortDescDe": "Russische interkontinentale Ballistische Rakete — die ultimative Elite-Einheit.",
   "longDescEn": "Russian nuclear-tipped ICBM, in service since 1997. Maximum range, devastating damage, very limited usage.",
-  "longDescDe": "Russische interkontinentale Atomrakete, seit 1997 im Dienst. Maximale Reichweite, verheerender Schaden, sehr begrenzter Einsatz."
+  "longDescDe": "Russische interkontinentale Atomrakete, seit 1997 im Dienst. Maximale Reichweite, verheerender Schaden, sehr begrenzter Einsatz.",
+  "faqsEn": [
+    {
+      "q": "How do you get RT-2PM2 Topol-M in World Conqueror 4?",
+      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with RT-2PM2 Topol-M?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man RT-2PM2 Topol-M in World Conqueror 4?",
+      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit RT-2PM2 Topol-M?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

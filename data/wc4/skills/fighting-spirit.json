@@ -125,5 +125,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Fighting Spirit",
-  "descriptionTemplateFr": "After commanding a troop to counterattack, +X PV to yourself and surrounding allié troops."
+  "descriptionTemplateFr": "After commanding a troop to counterattack, +X PV to yourself and surrounding allié troops.",
+  "longDesc": "Compétence logistique de soutien. « Fighting Spirit » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a troop to counterattack, +40 PV to yourself and surrounding allié troops. ». Pertinente sur les longues campagnes où le gain marginal de chaque tour compte.",
+  "longDescEn": "A logistics support skill. \"Fighting Spirit\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops.\". Relevant on long campaigns where the marginal gain per turn matters.",
+  "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Fighting Spirit“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops.“. Lohnend in langen Kampagnen, in denen jeder Rundenbonus zählt."
 }

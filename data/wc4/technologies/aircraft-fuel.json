@@ -153,5 +153,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Recherche aérienne qui améliore la portée et la létalité des escadrons. « Aircraft Fuel » monte jusqu'au niveau 6. Effet maximum : « Industry costs -30% when building airforce units at the airport ». Débloquée au niveau de QG 12. Prérequis pour tirer parti des généraux aériens tier-S.",
+  "longDescEn": "Air-force research that improves squadron range and lethality. \"Aircraft Fuel\" scales up to level 6. Maximum effect: \"Industry costs -30% when building airforce units at the airport\". Unlocks at HQ level 12. A prerequisite to make tier-S air-force generals pay off.",
+  "longDescDe": "Luftwaffenforschung, die Reichweite und Wirkung der Staffeln erhöht. „Aircraft Fuel“ skaliert bis Stufe 6. Maximaler Effekt: „Industry costs -30% when building airforce units at the airport“. Wird auf HQ-Stufe 12 freigeschaltet. Voraussetzung, damit S-Klasse-Luftwaffengeneräle ihren Wert entfalten."
 }

@@ -201,5 +201,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Recherche artillerie, cœur des stratégies de siège. « Artillery » monte jusqu'au niveau 8. Effet maximum : « Attack of common artillery units +18 ». Débloquée au niveau de QG 3. À privilégier pour fracasser les villes défendues.",
+  "longDescEn": "Artillery research, the core of siege strategies. \"Artillery\" scales up to level 8. Maximum effect: \"Attack of common artillery units +18\". Unlocks at HQ level 3. Prefer it when you need to shatter defended cities.",
+  "longDescDe": "Artillerieforschung — Kernstück von Belagerungsstrategien. „Artillery“ skaliert bis Stufe 8. Maximaler Effekt: „Attack of common artillery units +18“. Wird auf HQ-Stufe 3 freigeschaltet. Bevorzugt, wenn befestigte Städte geschliffen werden müssen."
 }

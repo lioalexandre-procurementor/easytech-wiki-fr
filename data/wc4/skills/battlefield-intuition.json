@@ -73,5 +73,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Battlefield Intuition",
-  "descriptionTemplateFr": "Commanded unités ignore smoke bomb, phantom status, esquive effect, and EMCON. Dealt dégâts to ennemi below half PV +X%"
+  "descriptionTemplateFr": "Commanded unités ignore smoke bomb, phantom status, esquive effect, and EMCON. Dealt dégâts to ennemi below half PV +X%",
+  "longDesc": "Compétence spécifique à un général. « Battlefield Intuition » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Commanded unités ignore smoke bomb, phantom status, esquive effect, and EMCON. Dealt dégâts to ennemi below half PV +25% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Battlefield Intuition\" scales up to level 5. At max level (5), the skill applies the following effect: \"Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Battlefield Intuition“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

@@ -69,5 +69,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Guerre amphibie",
-  "descriptionTemplateFr": "Mobility +X% when commanding land unités on board"
+  "descriptionTemplateFr": "Mobility +X% when commanding land unités on board",
+  "longDesc": "Compétence spécifique à un général. « Guerre amphibie » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Mobility +5% when commanding land unités on board ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Amphibious Warfare\" scales up to level 5. At max level (5), the skill applies the following effect: \"Mobility +5% when commanding land units on board\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Amphibious Warfare“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Mobility +5% when commanding land units on board“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

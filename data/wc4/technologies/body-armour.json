@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     301025
-  ]
+  ],
+  "longDesc": "Recherche infanterie, base de toute armée terrestre. « Body armour » monte jusqu'au niveau 1. Effet maximum : « Defense +4 ». Accessible dès le début de la recherche. Bon rendement sur les scénarios de jungle et de montagne où le char recule.",
+  "longDescEn": "Infantry research, the foundation of any land army. \"Body armour\" scales up to level 1. Maximum effect: \"Defense +4\". Available from the start of research. Strong return on jungle and mountain scenarios where tanks give ground.",
+  "longDescDe": "Infanterieforschung — Fundament jeder Landarmee. „Body armour“ skaliert bis Stufe 1. Maximaler Effekt: „Defense +4“. Ab Forschungsbeginn verfügbar. Guter Ertrag auf Dschungel- und Gebirgsszenarien, in denen Panzer zurückfallen."
 }

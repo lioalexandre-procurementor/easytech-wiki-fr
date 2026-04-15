@@ -101,5 +101,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Supériorité aérienne",
-  "descriptionTemplateFr": "X% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress."
+  "descriptionTemplateFr": "X% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress.",
+  "longDesc": "Compétence spécifique à un général. « Supériorité aérienne » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance to ignore anti-air weapon when commanding air force. Dégâts +20% with Stealth Aircraft and B-52 Stratofortress. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Air Superiority\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Air Superiority“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

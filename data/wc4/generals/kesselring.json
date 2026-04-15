@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général polyvalente argent — Allemagne.",
-  "longDesc": "Albert Kesselring est un général polyvalente de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — Allemagne.",
+  "longDesc": "Albert Kesselring, maréchal Luftwaffe, dirige la campagne d'Italie 1943-1945 et mène une défense en retardement exemplaire sur le Monte Cassino. Carte WC4 équilibrée A argent : polyvalence air/sol appréciable en scénario de montagne où l'on alterne aviation et positions fortifiées.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver balanced general — Germany.",
-  "shortDescDe": "Silber ausgewogene-General — Deutschland.",
-  "longDescEn": "Albert Kesselring is a silver-quality balanced general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Albert Kesselring ist ein Silber-ausgewogene-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — Deutschland.",
+  "longDescEn": "Luftwaffe field marshal Albert Kesselring ran the 1943–45 Italian campaign and conducted a model delay defence at Monte Cassino. In WC4 a silver-A balanced card whose air-ground versatility shines on mountain scenarios where you alternate between air strikes and fortified positions.",
+  "longDescDe": "Der Luftwaffen-Generalfeldmarschall Albert Kesselring leitete 1943–45 den Italienfeldzug und führte am Monte Cassino eine vorbildliche Verzögerungsverteidigung. Im WC4 eine Silber-A-Allrounderkarte, deren Luft-Boden-Flexibilität sich auf Gebirgsszenarien mit Wechsel aus Luftschlägen und Festungsstellungen bezahlt macht."
 }

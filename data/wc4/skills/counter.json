@@ -85,5 +85,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Counter",
-  "descriptionTemplateFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes X% of that dégâts.(Each attaque only takes effect once)"
+  "descriptionTemplateFr": "When the commanding force is attacked and receives dégâts, the ennemi also takes X% of that dégâts.(Each attaque only takes effect once)",
+  "longDesc": "Compétence spécifique à un général. « Counter » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When the commanding force is attacked and receives dégâts, the ennemi also takes 25% of that dégâts.(Each attaque only takes effect once) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Counter\" scales up to level 5. At max level (5), the skill applies the following effect: \"When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Counter“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

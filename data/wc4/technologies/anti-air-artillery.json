@@ -102,5 +102,8 @@
   ],
   "prerequisites": [
     307002
-  ]
+  ],
+  "longDesc": "Branche défense anti-aérienne : réduction des dégâts de l'aviation ennemie. « Anti-air Artillery » monte jusqu'au niveau 4. Effet maximum : « Air-raiding damage -60%; Bombing damage -55%; Reduce paratroops HP by +45%; Strategic bombing damage -40% ». Débloquée au niveau de QG 12. Priorité défensive contre les adversaires qui dominent le ciel.",
+  "longDescEn": "An anti-air defence branch that reduces incoming bombing damage. \"Anti-air Artillery\" scales up to level 4. Maximum effect: \"Air-raiding damage -60%; Bombing damage -55%; Reduce paratroops HP by +45%; Strategic bombing damage -40%\". Unlocks at HQ level 12. A defensive priority against opponents dominating the skies.",
+  "longDescDe": "Ein Flugabwehrzweig, der eingehenden Bombenschaden reduziert. „Anti-air Artillery“ skaliert bis Stufe 4. Maximaler Effekt: „Air-raiding damage -60%; Bombing damage -55%; Reduce paratroops HP by +45%; Strategic bombing damage -40%“. Wird auf HQ-Stufe 12 freigeschaltet. Defensive Priorität gegen Gegner, die die Lufthoheit dominieren."
 }

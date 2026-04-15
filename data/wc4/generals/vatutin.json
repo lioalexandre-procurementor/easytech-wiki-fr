@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général blindée argent — URSS.",
-  "longDesc": "Nikolaï Vatoutine est un général blindée de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — URSS.",
+  "longDesc": "Nikolaï Vatoutine commande le Front du Sud-Ouest lors de la contre-offensive de Stalingrad puis à Koursk. Blessé par un commando UPA en février 1944, il meurt en avril. Carte WC4 blindée A argent à profil offensif, cohérente sur Uranus et Citadelle.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — USSR.",
-  "shortDescDe": "Silber Panzer-General — UdSSR.",
-  "longDescEn": "Nikolaï Vatoutine is a silver-quality armor general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Nikolaï Vatoutine ist ein Silber-Panzer-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — UdSSR.",
+  "longDescEn": "Nikolai Vatutin led the Southwestern Front during the Stalingrad counter-offensive and at Kursk. Wounded by UPA partisans in February 1944, he died in April. A WC4 silver-A armor card with an offensive profile — a coherent pick for Uranus and Citadel.",
+  "longDescDe": "Nikolai Watutin führte während der Stalingrader Gegenoffensive und bei Kursk die Südwestfront. Im Februar 1944 von UPA-Partisanen verwundet, starb er im April. Im WC4 eine Silber-A-Panzerkarte mit offensivem Profil — stimmig für Uranus und Zitadelle."
 }

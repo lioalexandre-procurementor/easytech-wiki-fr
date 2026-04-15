@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général artillerie or — URSS.",
-  "longDesc": "Nikolaï Voronov est un général artillerie de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie or — URSS.",
+  "longDesc": "Premier maréchal d'artillerie de l'Armée rouge, Nikolaï Voronov coordonne le barrage d'artillerie de Stalingrad lors de l'opération Uranus en novembre 1942. Carte WC4 artillerie tier-S or : profil de barrage saturant, complément direct de Sokolovski.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold artillery general — USSR.",
-  "shortDescDe": "Gold Artillerie-General — UdSSR.",
-  "longDescEn": "Nikolaï Voronov is a gold-quality artillery general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Nikolaï Voronov ist ein Gold-Artillerie-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Artillerie-General — UdSSR.",
+  "longDescEn": "The Red Army's first Chief Marshal of Artillery, Nikolai Voronov coordinated the Stalingrad barrage during Operation Uranus in November 1942. A WC4 tier-S gold artillery card with a saturation-fire profile — a direct complement to Sokolovsky.",
+  "longDescDe": "Nikolai Woronow, erster Hauptmarschall der Artillerie der Roten Armee, koordinierte im November 1942 das Stalingrader Artilleriefeuer während der Operation Uranus. Im WC4 eine S-Klasse-Gold-Artilleriekarte mit Sättigungsfeuer-Profil — direkte Ergänzung zu Sokolowski."
 }

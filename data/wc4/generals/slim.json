@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général infanterie bronze — Royaume-Uni.",
-  "longDesc": "William Slim est un général infanterie de qualité bronze — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Royaume-Uni.",
+  "longDesc": "William Slim reconstruit la 14e armée britannique après la retraite birmane de 1942 et la mène à la victoire décisive d'Imphal-Kohima en 1944. Carte WC4 infanterie B bronze à bonus jungle : pick thématique sur Birmanie.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — United Kingdom.",
-  "shortDescDe": "Bronze Infanterie-General — Vereinigtes Königreich.",
-  "longDescEn": "William Slim is a bronze-quality infantry general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "William Slim ist ein Bronze-Infanterie-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Vereinigtes Königreich.",
+  "longDescEn": "William Slim rebuilt Britain's Fourteenth Army after the 1942 retreat from Burma and led it to the decisive 1944 victory at Imphal–Kohima. A WC4 bronze-B infantry card with jungle-combat bonuses — a thematic Burma-scenario pick.",
+  "longDescDe": "William Slim baute nach dem Rückzug aus Burma 1942 die britische 14. Armee neu auf und führte sie 1944 zum Entscheidungssieg bei Imphal–Kohima. Im WC4 eine Bronze-B-Infanteriekarte mit Dschungelkampf-Boni — thematische Wahl fürs Burma-Szenario."
 }

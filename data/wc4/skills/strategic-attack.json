@@ -145,5 +145,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Strategic attaque",
-  "descriptionTemplateFr": "After commanding a unité to attaque, if the cible is not annihilated, there is X% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
+  "descriptionTemplateFr": "After commanding a unité to attaque, if the cible is not annihilated, there is X% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours.",
+  "longDesc": "Compétence spécifique à un général. « Strategic attaque » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a unité to attaque, if the cible is not annihilated, there is 100% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Strategic Attack\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Strategic Attack“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

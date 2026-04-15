@@ -508,5 +508,33 @@
   "shortDescEn": "Russian Flanker multirole fighter — 4.5G air superiority.",
   "shortDescDe": "Russischer Flanker-Mehrzweckjäger — Luftüberlegenheit der 4,5. Generation.",
   "longDescEn": "4.5-generation multirole fighter derived from the Su-27 Flanker. Thrust vectoring, powerful radar, R-77 missiles.",
-  "longDescDe": "Mehrzweck-Kampfflugzeug der 4,5. Generation, vom Su-27 Flanker abgeleitet. Schubvektorsteuerung, leistungsstarkes Radar, R-77-Raketen."
+  "longDescDe": "Mehrzweck-Kampfflugzeug der 4,5. Generation, vom Su-27 Flanker abgeleitet. Schubvektorsteuerung, leistungsstarkes Radar, R-77-Raketen.",
+  "faqsEn": [
+    {
+      "q": "How do you get Sukhoi Su-30V in World Conqueror 4?",
+      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with Sukhoi Su-30V?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man Sukhoi Su-30V in World Conqueror 4?",
+      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit Sukhoi Su-30V?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

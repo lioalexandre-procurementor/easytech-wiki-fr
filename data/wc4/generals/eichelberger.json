@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général artillerie or — États-Unis.",
-  "longDesc": "Robert Eichelberger est un général artillerie de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie or — États-Unis.",
+  "longDesc": "Robert Eichelberger dirige la 8e armée américaine dans la jungle néo-guinéenne puis aux Philippines, réputé pour ses opérations combinées. Carte WC4 artillerie tier-S or : meilleure artillerie US disponible, pick par défaut pour les scénarios du Pacifique côté allié.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold artillery general — United States.",
-  "shortDescDe": "Gold Artillerie-General — Vereinigte Staaten.",
-  "longDescEn": "Robert Eichelberger is a gold-quality artillery general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Robert Eichelberger ist ein Gold-Artillerie-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Artillerie-General — Vereinigte Staaten.",
+  "longDescEn": "Robert Eichelberger commanded US Eighth Army through the New Guinea jungle and then the Philippines, known for joint-operations skill. In WC4 he is a tier-S gold artillery card — the best US artillery available and the default pick for Allied Pacific scenarios.",
+  "longDescDe": "Robert Eichelberger führte die 8. US-Armee durch den Dschungel Neuguineas und dann auf den Philippinen und war für seine Verbundoperationen bekannt. Im WC4 eine S-Klasse-Gold-Artilleriekarte — die beste US-Artillerie und Standardwahl für alliierte Pazifik-Szenarien."
 }

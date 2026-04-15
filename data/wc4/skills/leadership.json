@@ -109,5 +109,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Leadership",
-  "descriptionTemplateFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +X."
+  "descriptionTemplateFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +X.",
+  "longDesc": "Compétence spécifique à un général. « Leadership » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +20. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Leadership\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Leadership“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

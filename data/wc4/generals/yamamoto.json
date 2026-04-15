@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général aérienne or — Japon.",
-  "longDesc": "Isoroku Yamamoto est un général aérienne de qualité or — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien or — Japon.",
+  "longDesc": "Commandant en chef de la Flotte combinée japonaise, Isoroku Yamamoto planifie l'attaque de Pearl Harbor et Midway avant d'être abattu au-dessus de Bougainville en avril 1943. Carte WC4 aérienne tier-S or : meilleur pick aérien nippon, bonus porte-avions élevés.",
   "skills": [
     {
       "slot": 1,
@@ -126,7 +126,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold air force general — Japan.",
-  "shortDescDe": "Gold Luftwaffen-General — Japan.",
-  "longDescEn": "Isoroku Yamamoto is a gold-quality air force general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Isoroku Yamamoto ist ein Gold-Luftwaffen-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Luftwaffen-General — Japan.",
+  "longDescEn": "Commander-in-Chief of Japan's Combined Fleet, Isoroku Yamamoto planned Pearl Harbor and Midway before being shot down over Bougainville in April 1943. A WC4 tier-S gold air-force card — Japan's best air pick, with strong carrier-based bonuses.",
+  "longDescDe": "Als Oberbefehlshaber der Vereinigten Flotte plante Isoroku Yamamoto Pearl Harbor und Midway und wurde im April 1943 über Bougainville abgeschossen. Im WC4 eine S-Klasse-Gold-Luftwaffenkarte — Japans beste Luftkarte mit starken Trägerboni."
 }

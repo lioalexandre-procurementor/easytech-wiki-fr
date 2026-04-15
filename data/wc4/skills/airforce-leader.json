@@ -509,5 +509,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Commandant de l'armée de l'air",
-  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi when commanding air unités"
+  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi when commanding air unités",
+  "longDesc": "Compétence spécifique à un général. « Commandant de l'armée de l'air » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 40% chance d'infliger une attaque critique à l'ennemi when commanding air unités ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Airforce Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"40% chance to give the enemy a critical attack when commanding air units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Airforce Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „40% chance to give the enemy a critical attack when commanding air units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

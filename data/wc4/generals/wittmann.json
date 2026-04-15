@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général blindée or — Allemagne.",
-  "longDesc": "Michael Wittmann est un général blindée de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé or — Allemagne.",
+  "longDesc": "Chef de char Tiger I du SS-Panzer-Bataillon 101, Michael Wittmann devient célèbre pour l'embuscade de Villers-Bocage en juin 1944 où il détruit une colonne blindée britannique. En WC4, carte blindée tier-S or de type brawler : bonus critiques en combat rapproché, à jouer en fer de lance.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold armor general — Germany.",
-  "shortDescDe": "Gold Panzer-General — Deutschland.",
-  "longDescEn": "Michael Wittmann is a gold-quality armor general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Michael Wittmann ist ein Gold-Panzer-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Panzer-General — Deutschland.",
+  "longDescEn": "Tiger I commander with SS-Panzer-Abteilung 101, Michael Wittmann became famous for the June 1944 Villers-Bocage ambush where he destroyed a British armoured column. In WC4 he is a tier-S gold brawler-type armor card with short-range critical bonuses — play him as the tip of your spearhead.",
+  "longDescDe": "Als Tiger-I-Kommandant der SS-Panzer-Abteilung 101 wurde Michael Wittmann durch den Hinterhalt von Villers-Bocage im Juni 1944 bekannt, bei dem er eine britische Panzerkolonne ausschaltete. Im WC4 ist er eine S-Klasse-Gold-Panzerkarte vom Brawler-Typ mit Kritischer-Treffer-Boni im Nahkampf — ideal als Speerspitze."
 }

@@ -704,5 +704,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Crossfire",
-  "descriptionTemplateFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi on land"
+  "descriptionTemplateFr": "Counter attaque +X% lorsqu'elle est attaquée by the ennemi on land",
+  "longDesc": "Compétence de pression offensive. « Crossfire » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Counter attaque +30% lorsqu'elle est attaquée by the ennemi on land ». À maxer en priorité sur un DPS principal.",
+  "longDescEn": "An offensive-pressure skill. \"Crossfire\" scales up to level 5. At max level (5), the skill applies the following effect: \"Counter attack +30% when attacked by the enemy on land\". Max this as a priority on a primary DPS general.",
+  "longDescDe": "Eine Offensivdruck-Fähigkeit. „Crossfire“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Counter attack +30% when attacked by the enemy on land“. Auf einem Haupt-DPS-General vorrangig auf Maximum bringen."
 }

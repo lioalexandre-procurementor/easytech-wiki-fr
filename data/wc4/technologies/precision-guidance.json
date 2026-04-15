@@ -85,5 +85,8 @@
   ],
   "prerequisites": [
     308004
-  ]
+  ],
+  "longDesc": "Branche missiles : frappes à longue portée et pénétration. « Precision guidance » monte jusqu'au niveau 3. Effet maximum : « Ignore target defense 15 ». Accessible dès le début de la recherche. Complémentaire à l'artillerie : pics endgame contre les bastions.",
+  "longDescEn": "A missile branch for long-range strikes and penetration. \"Precision guidance\" scales up to level 3. Maximum effect: \"Ignore target defense 15\". Available from the start of research. Complementary to artillery: an endgame spike against strongholds.",
+  "longDescDe": "Ein Raketenzweig für Langstreckenschläge und Durchschlag. „Precision guidance“ skaliert bis Stufe 3. Maximaler Effekt: „Ignore target defense 15“. Ab Forschungsbeginn verfügbar. Ergänzung zur Artillerie: Endgame-Spitze gegen Festungen."
 }

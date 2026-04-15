@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général blindée argent — Allemagne.",
-  "longDesc": "Wilhelm List est un général blindée de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — Allemagne.",
+  "longDesc": "Wilhelm List commande la 14e armée en Pologne, la 12e armée dans les Balkans en 1941, puis le Groupe d'armées A au Caucase en 1942. Carte WC4 blindée A argent avec un profil marching élevé : convient aux scénarios de grande profondeur comme Fall Blau.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — Germany.",
-  "shortDescDe": "Silber Panzer-General — Deutschland.",
-  "longDescEn": "Wilhelm List is a silver-quality armor general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Wilhelm List ist ein Silber-Panzer-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — Deutschland.",
+  "longDescEn": "Wilhelm List commanded the 14th Army in Poland, the 12th Army in the 1941 Balkans campaign and Army Group A in the 1942 Caucasus push. A WC4 silver-A armor card with a strong marching profile — suited to deep-penetration scenarios like Fall Blau.",
+  "longDescDe": "Wilhelm List führte die 14. Armee in Polen, 1941 die 12. Armee auf dem Balkan und 1942 die Heeresgruppe A im Kaukasus. Im WC4 eine Silber-A-Panzerkarte mit hohem Marschier-Profil — ideal für tiefgestaffelte Durchbruchsszenarien wie Fall Blau."
 }

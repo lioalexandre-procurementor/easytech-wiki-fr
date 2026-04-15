@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Commandant britannique, guerre d'infanterie méthodique.",
-  "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier. Argent (4 emplacements, 2 étapes d'entraînement).",
+  "shortDesc": "Général d'infanterie argent — Royaume-Uni.",
+  "longDesc": "Bernard Montgomery remporte El Alamein en octobre 1942 à la tête de la 8e armée, puis dirige le 21e groupe d'armées de Normandie à l'Elbe. Carte WC4 infanterie A argent (rang modéré in-game) : bon double pick aux côtés de Wavell pour l'Afrique.",
   "skills": [
     {
       "slot": 1,
@@ -139,8 +139,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "British commander, methodical infantry warfare.",
-  "shortDescDe": "Britischer Kommandant, methodische Infanteriekriegsführung.",
-  "longDescEn": "Montgomery is the British general who led the Eighth Army at El Alamein. In WC4 he is an A-tier infantry/balanced general. Silver (4 slots, 2 training stages).",
-  "longDescDe": "Montgomery ist der britische General, der die Achte Armee bei El Alamein führte. In WC4 ist er ein A-Tier-Infanterie-/Allrounder-General. Silber (4 Slots, 2 Trainingsstufen)."
+  "shortDescEn": "Silver infantry general — United Kingdom.",
+  "shortDescDe": "Silber-Infanterie-General — Vereinigtes Königreich.",
+  "longDescEn": "Bernard Montgomery won El Alamein in October 1942 commanding Eighth Army, then led 21st Army Group from Normandy to the Elbe. A WC4 silver-A infantry card whose in-game rank is moderate — a good second pick next to Wavell for Africa.",
+  "longDescDe": "Bernard Montgomery gewann im Oktober 1942 mit der 8. Armee El Alamein und führte später die 21. Heeresgruppe von der Normandie bis zur Elbe. Im WC4 eine Silber-A-Infanteriekarte mit moderatem Ingame-Rang — gute Zweitwahl neben Wavell für Afrika."
 }

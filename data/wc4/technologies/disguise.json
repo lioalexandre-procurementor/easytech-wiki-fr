@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     303034
-  ]
+  ],
+  "longDesc": "Technologie artillerie qui amplifie les barrages de feu indirect. « Disguise » monte jusqu'au niveau 1. Effet maximum : « HP +60 ». Accessible dès le début de la recherche. À privilégier pour fracasser les villes défendues.",
+  "longDescEn": "An artillery technology that amplifies indirect-fire barrages. \"Disguise\" scales up to level 1. Maximum effect: \"HP +60\". Available from the start of research. Prefer it when you need to shatter defended cities.",
+  "longDescDe": "Eine Artillerietechnologie, die indirekte Feuersperren verstärkt. „Disguise“ skaliert bis Stufe 1. Maximaler Effekt: „HP +60“. Ab Forschungsbeginn verfügbar. Bevorzugt, wenn befestigte Städte geschliffen werden müssen."
 }

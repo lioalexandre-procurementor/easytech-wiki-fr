@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "CN",
   "countryName": "République populaire de Chine",
-  "shortDesc": "Général aérienne or — République populaire de Chine.",
-  "longDesc": "Wu Peifu est un général aérienne de qualité or — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien or — Chine.",
+  "longDesc": "Wu Peifu, « Maréchal du jade », est un des principaux seigneurs de la guerre du Beiyang dans les années 1920, réputé pour son refus de collaborer avec le Japon. Carte WC4 aérienne tier-S or : seul général chinois tier-S, pick obligatoire pour toute armée chinoise.",
   "skills": [
     {
       "slot": 1,
@@ -133,8 +133,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Gold air force general — People's Republic of China.",
-  "shortDescDe": "Gold Luftwaffen-General — Volksrepublik China.",
-  "longDescEn": "Wu Peifu is a gold-quality air force general — People's Republic of China. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Wu Peifu ist ein Gold-Luftwaffen-General — Volksrepublik China. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Gold air force general — China.",
+  "shortDescDe": "Gold-Luftwaffen-General — China.",
+  "longDescEn": "Wu Peifu, the 'Jade Marshal', was a leading Beiyang warlord in the 1920s, known for his refusal to collaborate with Japan. A WC4 tier-S gold air-force card — the only Chinese tier-S general and a mandatory pick for any Chinese army.",
+  "longDescDe": "Wu Peifu, der „Jade-Marschall“, war in den 1920er Jahren einer der führenden Beiyang-Warlords und bekannt für seine Weigerung, mit Japan zu kollaborieren. Im WC4 eine S-Klasse-Gold-Luftwaffenkarte — der einzige chinesische S-Klasse-General und Pflichtwahl für jede chinesische Armee."
 }

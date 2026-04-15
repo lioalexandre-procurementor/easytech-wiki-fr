@@ -83,5 +83,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Deep Operation",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, dealt dégâts +X% aux ennemis 2 or more hex away"
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, dealt dégâts +X% aux ennemis 2 or more hex away",
+  "longDesc": "Compétence spécifique à un général. « Deep Operation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie, dégâts infligés +25% aux ennemis 2 or more hex away ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Deep Operation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units, dealt damage +25% to enemies 2 or more hexes away\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Deep Operation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units, dealt damage +25% to enemies 2 or more hexes away“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

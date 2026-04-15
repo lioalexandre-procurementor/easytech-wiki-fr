@@ -63,5 +63,8 @@
   "prerequisites": [
     301012,
     301014
-  ]
+  ],
+  "longDesc": "Technologie d'infanterie qui améliore la survie au contact. « Mortar » monte jusqu'au niveau 2. Effet maximum : « Damage to stronghold units +70% ». Accessible dès le début de la recherche. Base indispensable pour toute armée, même orientée blindés.",
+  "longDescEn": "An infantry technology that improves close-combat survivability. \"Mortar\" scales up to level 2. Maximum effect: \"Damage to stronghold units +70%\". Available from the start of research. An indispensable baseline for any army, even an armor-heavy one.",
+  "longDescDe": "Eine Infanterietechnologie, die die Nahkampf-Überlebensfähigkeit verbessert. „Mortar“ skaliert bis Stufe 2. Maximaler Effekt: „Damage to stronghold units +70%“. Ab Forschungsbeginn verfügbar. Unverzichtbare Grundlage jeder Armee, auch mit Panzer-Schwerpunkt."
 }

@@ -91,5 +91,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Provocation",
-  "descriptionTemplateFr": "Après avoir attaqué, there is X% to gain \"provocation\" effect"
+  "descriptionTemplateFr": "Après avoir attaqué, there is X% to gain \"provocation\" effect",
+  "longDesc": "Compétence spécifique à un général. « Provocation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Après avoir attaqué, there is 75% to gain \"provocation\" effect ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Provocation\" scales up to level 5. At max level (5), the skill applies the following effect: \"After attacking, there is 75% to gain \"provocation\" effect\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Provocation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After attacking, there is 75% to gain \"provocation\" effect“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

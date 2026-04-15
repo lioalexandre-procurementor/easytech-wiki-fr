@@ -257,5 +257,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Machinist",
-  "descriptionTemplateFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +X"
+  "descriptionTemplateFr": "Supply to damaged unités blindées and unités d'artillerie: each round PV +X",
+  "longDesc": "Compétence logistique, utile sur les campagnes longues. « Machinist » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Supply to damaged unités blindées and unités d'artillerie: each round PV +15 ». Utile sur les rushs éclair où l'on économise les ressources pour la prochaine offensive.",
+  "longDescEn": "A logistics skill, useful on long campaigns. \"Machinist\" scales up to level 5. At max level (5), the skill applies the following effect: \"Supply to damaged armored units and artillery units: each round HP +15\". Useful on lightning rushes where you save resources for the next offensive.",
+  "longDescDe": "Eine Logistik-Fähigkeit, hilfreich in langen Kampagnen. „Machinist“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Supply to damaged armored units and artillery units: each round HP +15“. Nützlich bei Blitzoffensiven, um Ressourcen für den nächsten Stoß zu sparen."
 }

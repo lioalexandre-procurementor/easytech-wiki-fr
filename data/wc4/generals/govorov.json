@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général artillerie argent — URSS.",
-  "longDesc": "Leonid Govorov est un général artillerie de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie argent — URSS.",
+  "longDesc": "Leonid Govorov défend Leningrad avec le Front de Leningrad de 1942 à 1944, orchestrant les barrages d'artillerie qui tiennent la ville. Carte WC4 artillerie A argent : bonus défense statique, valeur sûre à Leningrad.",
   "skills": [
     {
       "slot": 1,
@@ -222,7 +222,7 @@
     }
   ],
   "shortDescEn": "Silver artillery general — USSR.",
-  "shortDescDe": "Silber Artillerie-General — UdSSR.",
-  "longDescEn": "Leonid Govorov is a silver-quality artillery general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Leonid Govorov ist ein Silber-Artillerie-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Artillerie-General — UdSSR.",
+  "longDescEn": "Leonid Govorov defended Leningrad with the Leningrad Front from 1942 to 1944, orchestrating the barrages that held the city. A WC4 silver-A artillery card with static-defence bonuses — the safe pick on the Leningrad scenario.",
+  "longDescDe": "Leonid Goworow verteidigte mit der Leningrader Front von 1942 bis 1944 die Stadt und orchestrierte die Artilleriesperren, die sie hielten. Im WC4 eine Silber-A-Artilleriekarte mit Stellungsverteidigungs-Boni — die sichere Wahl im Leningrad-Szenario."
 }

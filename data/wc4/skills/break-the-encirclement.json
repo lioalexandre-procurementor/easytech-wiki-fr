@@ -93,5 +93,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Break The Encirclement",
-  "descriptionTemplateFr": "After annihilating ennemi troops, X% rate to abaisser the moral of 2 ennemis within 1 grid of you."
+  "descriptionTemplateFr": "After annihilating ennemi troops, X% rate to abaisser the moral of 2 ennemis within 1 grid of you.",
+  "longDesc": "Compétence spécifique à un général. « Break The Encirclement » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After annihilating ennemi troops, 100% rate to abaisser the moral of 2 ennemis within 1 grid of you. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Break The Encirclement\" scales up to level 5. At max level (5), the skill applies the following effect: \"After annihilating enemy troops, 100% rate to lower the morale of 2 enemies within 1 grid of you.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Break The Encirclement“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After annihilating enemy troops, 100% rate to lower the morale of 2 enemies within 1 grid of you.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

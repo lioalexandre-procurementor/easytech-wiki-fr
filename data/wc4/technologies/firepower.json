@@ -63,5 +63,8 @@
   "prerequisites": [
     303003,
     303006
-  ]
+  ],
+  "longDesc": "Branche artillerie : portée, dégâts, pénétration. « Firepower » monte jusqu'au niveau 2. Effet maximum : « 80% chance to disable the enemy from fighting back ». Accessible dès le début de la recherche. Clef du succès sur les scénarios à lignes fortifiées : Koursk, Monte Cassino.",
+  "longDescEn": "An artillery branch covering range, damage and penetration. \"Firepower\" scales up to level 2. Maximum effect: \"80% chance to disable the enemy from fighting back\". Available from the start of research. Key on fortified-line scenarios: Kursk, Monte Cassino.",
+  "longDescDe": "Ein Artilleriezweig für Reichweite, Schaden und Durchschlag. „Firepower“ skaliert bis Stufe 2. Maximaler Effekt: „80% chance to disable the enemy from fighting back“. Ab Forschungsbeginn verfügbar. Schlüssel auf Szenarien mit Befestigungslinien: Kursk, Monte Cassino."
 }

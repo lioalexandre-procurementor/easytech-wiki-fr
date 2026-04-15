@@ -105,5 +105,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Inspection",
-  "descriptionTemplateFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of X% pendant 1 tour."
+  "descriptionTemplateFr": "After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of X% pendant 1 tour.",
+  "longDesc": "Compétence spécifique à un général. « Inspection » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 100% pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Inspection\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Inspection“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

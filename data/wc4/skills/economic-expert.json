@@ -289,5 +289,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Economic Expert",
-  "descriptionTemplateFr": "The economic output of the city +X"
+  "descriptionTemplateFr": "The economic output of the city +X",
+  "longDesc": "Compétence logistique de soutien. « Economic Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « The economic output of the city +25 ». À maxer sur un général de soutien qui se déplace peu.",
+  "longDescEn": "A logistics support skill. \"Economic Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"The economic output of the city +25\". Max this on a support general that moves little.",
+  "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Economic Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „The economic output of the city +25“. Auf einem bewegungsarmen Unterstützungs-General maxen."
 }

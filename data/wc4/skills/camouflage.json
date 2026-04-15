@@ -457,5 +457,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Camouflage",
-  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's air unités"
+  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's air unités",
+  "longDesc": "Compétence spécifique à un général. « Camouflage » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Peut esquiver 30% des dégâts de l'ennemi's air unités ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Camouflage\" scales up to level 5. At max level (5), the skill applies the following effect: \"Able to dodge 30% damage from the enemy's air units\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Camouflage“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Able to dodge 30% damage from the enemy's air units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

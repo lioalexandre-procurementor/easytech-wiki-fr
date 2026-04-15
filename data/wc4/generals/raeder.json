@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général navale or — Allemagne.",
-  "longDesc": "Erich Raeder est un général navale de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval or — Allemagne.",
+  "longDesc": "Commandant en chef de la Kriegsmarine jusqu'en 1943, Erich Raeder conçoit le Plan Z et engage les cuirassés Bismarck et Tirpitz. Carte WC4 navale tier-S or : bonus généraux sur grands bâtiments plutôt que sur sous-marins, préférable à Kretschmer quand on joue une flotte de surface.",
   "skills": [
     {
       "slot": 1,
@@ -125,8 +125,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Gold naval general — Germany.",
-  "shortDescDe": "Gold Marine-General — Deutschland.",
-  "longDescEn": "Erich Raeder is a gold-quality naval general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Erich Raeder ist ein Gold-Marine-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Gold navy general — Germany.",
+  "shortDescDe": "Gold-Marine-General — Deutschland.",
+  "longDescEn": "Erich Raeder commanded the Kriegsmarine until 1943, designed Plan Z and committed the battleships Bismarck and Tirpitz. In WC4, a tier-S gold navy card whose bonuses target capital ships rather than submarines — pick him over Kretschmer when you field a surface-ship fleet.",
+  "longDescDe": "Erich Raeder war bis 1943 Oberbefehlshaber der Kriegsmarine, entwarf den Plan Z und setzte die Schlachtschiffe Bismarck und Tirpitz ein. Seine WC4-Karte (Gold-Marine, S-Klasse) verstärkt Großkampfschiffe statt U-Boote — die bessere Wahl gegenüber Kretschmer für eine Überwasserflotte."
 }

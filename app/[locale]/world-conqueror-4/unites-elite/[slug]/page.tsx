@@ -250,17 +250,26 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           )}
 
           {/* FAQ */}
-          {unit.faqs.length > 0 && (
-            <div id="faq" className="bg-panel border border-border rounded-lg p-6 mt-8">
-              <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">❓ {tL("Questions fréquentes", "Frequently asked questions", "Häufig gestellte Fragen")}</h3>
-              {unit.faqs.map((f, i) => (
-                <div key={i} className="border-b border-border last:border-none py-3.5">
-                  <div className="font-bold text-ink mb-1.5 text-sm">{f.q}</div>
-                  <div className="text-dim text-sm leading-relaxed">{f.a}</div>
-                </div>
-              ))}
-            </div>
-          )}
+          {(() => {
+            // Pick the locale-specific FAQ list when available. Fallback chain: de → en → fr.
+            const locale = params.locale;
+            const localizedFaqs =
+              locale === "fr" ? unit.faqs :
+              locale === "de" ? (unit.faqsDe ?? unit.faqsEn ?? unit.faqs) :
+              (unit.faqsEn ?? unit.faqs);
+            if (!localizedFaqs || localizedFaqs.length === 0) return null;
+            return (
+              <div id="faq" className="bg-panel border border-border rounded-lg p-6 mt-8">
+                <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">❓ {tL("Questions fréquentes", "Frequently asked questions", "Häufig gestellte Fragen")}</h3>
+                {localizedFaqs.map((f, i) => (
+                  <div key={i} className="border-b border-border last:border-none py-3.5">
+                    <div className="font-bold text-ink mb-1.5 text-sm">{f.q}</div>
+                    <div className="text-dim text-sm leading-relaxed">{f.a}</div>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
 
           {/* SOURCES */}
           {unit.sources && unit.sources.length > 0 && (

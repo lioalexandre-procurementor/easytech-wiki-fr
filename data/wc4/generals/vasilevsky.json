@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général infanterie argent — URSS.",
-  "longDesc": "Aleksandr Vassilievski est un général infanterie de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — URSS.",
+  "longDesc": "Chef d'état-major général de l'Armée rouge, Aleksandr Vassilievski planifie Uranus, Bagration et l'invasion de la Mandchourie en août 1945. Carte WC4 infanterie A argent : bonus opérationnels plutôt que tactiques, meilleur joué en back-line.",
   "skills": [
     {
       "slot": 1,
@@ -208,7 +208,7 @@
     }
   ],
   "shortDescEn": "Silver infantry general — USSR.",
-  "shortDescDe": "Silber Infanterie-General — UdSSR.",
-  "longDescEn": "Aleksandr Vassilievski is a silver-quality infantry general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Aleksandr Vassilievski ist ein Silber-Infanterie-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Infanterie-General — UdSSR.",
+  "longDescEn": "Chief of the Red Army General Staff, Aleksandr Vasilevsky planned Uranus, Bagration and the August 1945 invasion of Manchuria. A WC4 silver-A infantry card with operational rather than tactical bonuses — best deployed in the back line.",
+  "longDescDe": "Aleksandr Wassilewski, Generalstabschef der Roten Armee, plante Uranus, Bagration und im August 1945 die Invasion der Mandschurei. Im WC4 eine Silber-A-Infanteriekarte mit eher operativen als taktischen Boni — am besten in der Hinterlinie."
 }

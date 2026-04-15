@@ -179,5 +179,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Expert industriel",
-  "descriptionTemplateFr": "The industrial output of the city +X"
+  "descriptionTemplateFr": "The industrial output of the city +X",
+  "longDesc": "Compétence logistique, utile sur les campagnes longues. « Expert industriel » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « The industrial output of the city +10 ». Pertinente sur les longues campagnes où le gain marginal de chaque tour compte.",
+  "longDescEn": "A logistics skill, useful on long campaigns. \"Industrial Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"The industrial output of the city +10\". Relevant on long campaigns where the marginal gain per turn matters.",
+  "longDescDe": "Eine Logistik-Fähigkeit, hilfreich in langen Kampagnen. „Industrial Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „The industrial output of the city +10“. Lohnend in langen Kampagnen, in denen jeder Rundenbonus zählt."
 }

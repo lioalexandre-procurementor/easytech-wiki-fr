@@ -115,5 +115,8 @@
     303022,
     303023,
     303024
-  ]
+  ],
+  "longDesc": "Branche artillerie : portée, dégâts, pénétration. « Armor » monte jusqu'au niveau 4. Effet maximum : « Defense +5 ». Accessible dès le début de la recherche. Clef du succès sur les scénarios à lignes fortifiées : Koursk, Monte Cassino.",
+  "longDescEn": "An artillery branch covering range, damage and penetration. \"Armor\" scales up to level 4. Maximum effect: \"Defense +5\". Available from the start of research. Key on fortified-line scenarios: Kursk, Monte Cassino.",
+  "longDescDe": "Ein Artilleriezweig für Reichweite, Schaden und Durchschlag. „Armor“ skaliert bis Stufe 4. Maximaler Effekt: „Defense +5“. Ab Forschungsbeginn verfügbar. Schlüssel auf Szenarien mit Befestigungslinien: Kursk, Monte Cassino."
 }

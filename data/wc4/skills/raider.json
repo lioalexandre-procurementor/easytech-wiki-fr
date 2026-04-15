@@ -629,5 +629,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Raider",
-  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités d'infanterie"
+  "descriptionTemplateFr": "Deal +X% dégâts à l'ennemi lorsque vous commandez des unités d'infanterie",
+  "longDesc": "Compétence de pression offensive. « Raider » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Inflige +30% de dégâts à l'ennemi lorsque vous commandez des unités d'infanterie ». Excellente pour les scénarios de percée où l'on multiplie les combats rapprochés.",
+  "longDescEn": "An offensive-pressure skill. \"Raider\" scales up to level 5. At max level (5), the skill applies the following effect: \"Deal +30% damage to the enemy when commanding infantry units\". Excellent on breakthrough scenarios where close-combat exchanges stack up.",
+  "longDescDe": "Eine Offensivdruck-Fähigkeit. „Raider“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Deal +30% damage to the enemy when commanding infantry units“. Hervorragend für Durchbruchsszenarien mit vielen Nahkampfkontakten."
 }

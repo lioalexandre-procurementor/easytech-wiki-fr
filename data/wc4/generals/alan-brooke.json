@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "GB",
   "countryName": "Royaume-Uni",
-  "shortDesc": "Général artillerie or — Royaume-Uni.",
-  "longDesc": "Alan Brooke est un général artillerie de qualité or — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie or — Royaume-Uni.",
+  "longDesc": "Chef de l'état-major impérial britannique, Alan Brooke est le principal conseiller militaire de Churchill et architecte stratégique de la victoire alliée en Europe. Carte WC4 artillerie tier-S or : bonus planification et portée, meilleure artillerie britannique du jeu.",
   "skills": [
     {
       "slot": 1,
@@ -126,7 +126,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold artillery general — United Kingdom.",
-  "shortDescDe": "Gold Artillerie-General — Vereinigtes Königreich.",
-  "longDescEn": "Alan Brooke is a gold-quality artillery general — United Kingdom. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Alan Brooke ist ein Gold-Artillerie-General — Vereinigtes Königreich. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Artillerie-General — Vereinigtes Königreich.",
+  "longDescEn": "Chief of the Imperial General Staff, Alan Brooke was Churchill's principal military adviser and strategic architect of the Allied victory in Europe. A WC4 tier-S gold artillery card with planning and range bonuses — the best British artillery in the game.",
+  "longDescDe": "Alan Brooke, Chief of the Imperial General Staff, war Churchills wichtigster militärischer Berater und strategischer Architekt des alliierten Sieges in Europa. Im WC4 eine S-Klasse-Gold-Artilleriekarte mit Planungs- und Reichweitenboni — die beste britische Artillerie im Spiel."
 }

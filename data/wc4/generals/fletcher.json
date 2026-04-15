@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général navale bronze — États-Unis.",
-  "longDesc": "Frank Fletcher est un général navale de qualité bronze — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général naval bronze — États-Unis.",
+  "longDesc": "Frank Fletcher commande la Task Force 17 à la mer de Corail et à Midway en 1942, premiers affrontements de porte-avions de l'histoire. Carte WC4 naval B bronze : début de partie uniquement, à remplacer vite par Nimitz ou Spruance.",
   "skills": [
     {
       "slot": 1,
@@ -105,8 +105,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Bronze naval general — United States.",
-  "shortDescDe": "Bronze Marine-General — Vereinigte Staaten.",
-  "longDescEn": "Frank Fletcher is a bronze-quality naval general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Frank Fletcher ist ein Bronze-Marine-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Bronze navy general — United States.",
+  "shortDescDe": "Bronze-Marine-General — Vereinigte Staaten.",
+  "longDescEn": "Frank Fletcher commanded Task Force 17 at Coral Sea and Midway in 1942 — the first carrier battles in history. A WC4 bronze-B navy card for the opening of a run only; swap him out for Nimitz or Spruance as soon as possible.",
+  "longDescDe": "Frank Fletcher führte 1942 die Task Force 17 im Korallenmeer und bei Midway — die ersten Flugzeugträger-Schlachten der Geschichte. Im WC4 eine Bronze-B-Marinekarte nur für den Spielstart; ersetze ihn so schnell wie möglich durch Nimitz oder Spruance."
 }

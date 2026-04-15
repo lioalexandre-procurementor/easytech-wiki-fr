@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général aérienne argent — États-Unis.",
-  "longDesc": "Henry Arnold est un général aérienne de qualité argent — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général aérien argent — États-Unis.",
+  "longDesc": "Henry « Hap » Arnold est le commandant de l'USAAF durant toute la guerre, artisan du bombardement stratégique et premier général cinq étoiles de l'US Air Force. Carte WC4 aérienne A argent : pick de transition vers Spaatz, utile early game.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver air force general — United States.",
-  "shortDescDe": "Silber Luftwaffen-General — Vereinigte Staaten.",
-  "longDescEn": "Henry Arnold is a silver-quality air force general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Henry Arnold ist ein Silber-Luftwaffen-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Luftwaffen-General — Vereinigte Staaten.",
+  "longDescEn": "Henry 'Hap' Arnold commanded the USAAF throughout the war, drove strategic bombing doctrine and became the US Air Force's first five-star general. A WC4 silver-A air-force card — a transition pick on the way to Spaatz, useful in the early game.",
+  "longDescDe": "Henry „Hap“ Arnold führte die USAAF während des gesamten Krieges, trieb die strategische Bomberdoktrin voran und wurde erster Fünf-Sterne-General der US Air Force. Im WC4 eine Silber-A-Luftwaffenkarte — Übergangswahl auf dem Weg zu Spaatz, nützlich im Frühspiel."
 }

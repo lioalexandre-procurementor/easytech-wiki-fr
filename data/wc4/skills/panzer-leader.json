@@ -1008,5 +1008,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Commandant Panzer",
-  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités blindées"
+  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités blindées",
+  "longDesc": "Compétence spécifique à un général. « Commandant Panzer » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 40% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités blindées ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Panzer Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"40% chance to give the enemy a critical attack when commanding armored units\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Panzer Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „40% chance to give the enemy a critical attack when commanding armored units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

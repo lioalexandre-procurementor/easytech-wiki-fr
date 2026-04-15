@@ -211,5 +211,8 @@
     305012,
     305013,
     305014
-  ]
+  ],
+  "longDesc": "Arbre technologique aérien : chasseurs, bombardiers et appui. « Aircraft Bomb » monte jusqu'au niveau 8. Effet maximum : « Attack +16 ». Accessible dès le début de la recherche. À maxer dès qu'on vise la supériorité aérienne sur un théâtre donné.",
+  "longDescEn": "An air-force technology covering fighters, bombers and close support. \"Aircraft Bomb\" scales up to level 8. Maximum effect: \"Attack +16\". Available from the start of research. Max this as soon as you aim for air superiority on a given theatre.",
+  "longDescDe": "Eine Luftwaffentechnologie für Jäger, Bomber und Nahunterstützung. „Aircraft Bomb“ skaliert bis Stufe 8. Maximaler Effekt: „Attack +16“. Ab Forschungsbeginn verfügbar. Maxen, sobald du Luftüberlegenheit auf einem Theater anstrebst."
 }

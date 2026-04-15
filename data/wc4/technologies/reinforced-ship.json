@@ -37,5 +37,8 @@
   ],
   "prerequisites": [
     304007
-  ]
+  ],
+  "longDesc": "Branche de recherche dédiée à la marine. « Reinforced Ship » monte jusqu'au niveau 1. Effet maximum : « HP +10% ». Accessible dès le début de la recherche. Pertinente sur toute campagne où plus de 30% des combats ont lieu en mer.",
+  "longDescEn": "A naval research branch that upgrades surface and submarine squadrons. \"Reinforced Ship\" scales up to level 1. Maximum effect: \"HP +10%\". Available from the start of research. Relevant on any campaign where more than 30% of combat happens at sea.",
+  "longDescDe": "Ein Marine-Forschungszweig, der Überwasser- und U-Boot-Geschwader verstärkt. „Reinforced Ship“ skaliert bis Stufe 1. Maximaler Effekt: „HP +10%“. Ab Forschungsbeginn verfügbar. Lohnt sich, wenn mehr als 30% der Kämpfe auf See stattfinden."
 }

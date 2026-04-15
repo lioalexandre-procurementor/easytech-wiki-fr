@@ -364,5 +364,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Guerrilla",
-  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
+  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie",
+  "longDesc": "Compétence spécifique à un général. « Guerrilla » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Guerrilla\" scales up to level 5. At max level (5), the skill applies the following effect: \"60% chance that the enemy will not fight back when commanding infantry units\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Guerrilla“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „60% chance that the enemy will not fight back when commanding infantry units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

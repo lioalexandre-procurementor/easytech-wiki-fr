@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général infanterie or — Japon.",
-  "longDesc": "Tomoyuki Yamashita est un général infanterie de qualité or — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie or — Japon.",
+  "longDesc": "Surnommé le « Tigre de Malaisie », Tomoyuki Yamashita conquiert Singapour en février 1942 avec une force numériquement inférieure. Carte WC4 infanterie tier-S or : bonus jungle et vitesse d'avance, carte-clé pour les scénarios d'Asie du Sud-Est.",
   "skills": [
     {
       "slot": 1,
@@ -126,7 +126,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold infantry general — Japan.",
-  "shortDescDe": "Gold Infanterie-General — Japan.",
-  "longDescEn": "Tomoyuki Yamashita is a gold-quality infantry general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Tomoyuki Yamashita ist ein Gold-Infanterie-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Infanterie-General — Japan.",
+  "longDescEn": "Nicknamed the 'Tiger of Malaya', Tomoyuki Yamashita captured Singapore in February 1942 against a numerically superior force. A WC4 tier-S gold infantry card with jungle and advance-speed bonuses — a key pick for South-East Asian scenarios.",
+  "longDescDe": "Der „Tiger von Malaya“ Tomoyuki Yamashita eroberte im Februar 1942 Singapur gegen eine zahlenmäßig überlegene Streitmacht. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Dschungel- und Vorstoßboni — Schlüsselwahl für südostasiatische Szenarien."
 }

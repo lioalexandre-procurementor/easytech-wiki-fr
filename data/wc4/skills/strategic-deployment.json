@@ -71,5 +71,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Strategic Deployment",
-  "descriptionTemplateFr": "After commanding infanterie to attaque, recover PV equal to X% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1."
+  "descriptionTemplateFr": "After commanding infanterie to attaque, recover PV equal to X% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1.",
+  "longDesc": "Compétence spécifique à un général. « Strategic Deployment » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding infanterie to attaque, recover PV equal to 15% of the dégâts dealt. If a allié armored unité or artillerie is within 1 hex, infanterie unité’s attaque and counterportée d'attaque +1. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Strategic Deployment\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding infantry to attack, recover HP equal to 15% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Strategic Deployment“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding infantry to attack, recover HP equal to 15% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry unit’s attack and counterattack range +1.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

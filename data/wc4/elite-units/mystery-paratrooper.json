@@ -183,5 +183,33 @@
   "shortDescEn": "Mystic paratrooper — infiltration behind enemy lines.",
   "shortDescDe": "Mystischer Fallschirmjäger — Infiltration hinter den feindlichen Linien.",
   "longDescEn": "Mystic Forces elite infantry unit. Can be paratroop-dropped behind enemy lines. Signature abilities tied to infiltration.",
-  "longDescDe": "Elite-Infanterie der Mystic Forces. Kann per Fallschirm hinter den feindlichen Linien abgesetzt werden. Signature-Fähigkeiten rund um Infiltration."
+  "longDescDe": "Elite-Infanterie der Mystic Forces. Kann per Fallschirm hinter den feindlichen Linien abgesetzt werden. Signature-Fähigkeiten rund um Infiltration.",
+  "faqsEn": [
+    {
+      "q": "How do you get Mystery Paratrooper in World Conqueror 4?",
+      "a": "The unit is obtained through the campaign or limited events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with Mystery Paratrooper?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man Mystery Paratrooper in World Conqueror 4?",
+      "a": "Die Einheit wird über die Kampagne oder zeitlich begrenzte Events freigeschaltet. Details siehe Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit Mystery Paratrooper?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

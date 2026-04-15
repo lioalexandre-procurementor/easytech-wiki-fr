@@ -79,5 +79,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Unyielding And Self-improving",
-  "descriptionTemplateFr": "Economic and industrial income +X when the commanding force with no ennemi troops at 1 square around."
+  "descriptionTemplateFr": "Economic and industrial income +X when the commanding force with no ennemi troops at 1 square around.",
+  "longDesc": "Compétence spécifique à un général. « Unyielding And Self-improving » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Economic and industrial income +50 when the commanding force with no ennemi troops at 1 square around. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Unyielding And Self-improving\" scales up to level 5. At max level (5), the skill applies the following effect: \"Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Unyielding And Self-improving“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

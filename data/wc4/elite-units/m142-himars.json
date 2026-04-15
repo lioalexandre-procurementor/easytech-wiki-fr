@@ -448,5 +448,33 @@
   "shortDescEn": "GPS-guided American rocket launcher, shoot-and-scoot mobility.",
   "shortDescDe": "GPS-gesteuerter amerikanischer Raketenwerfer, Shoot-and-Scoot-Mobilität.",
   "longDescEn": "Modern high-precision rocket launcher (GMLRS GPS, ATACMS). Unmissable S-tier for late campaign.",
-  "longDescDe": "Moderner hochpräziser Raketenwerfer (GMLRS GPS, ATACMS). Unverzichtbarer S-Tier für die späte Kampagne."
+  "longDescDe": "Moderner hochpräziser Raketenwerfer (GMLRS GPS, ATACMS). Unverzichtbarer S-Tier für die späte Kampagne.",
+  "faqsEn": [
+    {
+      "q": "How do you get M142 HIMARS in World Conqueror 4?",
+      "a": "The unit is obtained via the Elite Shop (electricity) or in-game events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with M142 HIMARS?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man M142 HIMARS in World Conqueror 4?",
+      "a": "Die Einheit ist über den Elite-Shop (Strom) oder Events erhältlich. Weitere Details findest du im Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit M142 HIMARS?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

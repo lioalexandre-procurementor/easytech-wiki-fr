@@ -183,5 +183,33 @@
   "shortDescEn": "Terror super tank — the only stackable super tank in the game.",
   "shortDescDe": "Terror-Superpanzer — der einzige stapelbare Superpanzer des Spiels.",
   "longDescEn": "Armor unit introduced in the Modern War scenario, exclusive to the terrorist forces. The only stackable super tank in the game and especially durable. Powerful but weaker than the most advanced Elite Forces armor.",
-  "longDescDe": "Im Modern-War-Szenario eingeführte Panzereinheit, exklusiv für die Terror-Kräfte. Der einzige stapelbare Superpanzer des Spiels und besonders widerstandsfähig. Mächtig, aber schwächer als die fortschrittlichsten Panzer der Elite Forces."
+  "longDescDe": "Im Modern-War-Szenario eingeführte Panzereinheit, exklusiv für die Terror-Kräfte. Der einzige stapelbare Superpanzer des Spiels und besonders widerstandsfähig. Mächtig, aber schwächer als die fortschrittlichsten Panzer der Elite Forces.",
+  "faqsEn": [
+    {
+      "q": "How do you get Titan Tank in World Conqueror 4?",
+      "a": "The unit is obtained through the campaign or limited events. See the obtainability section above for full details."
+    },
+    {
+      "q": "What are the max stats at level 12?",
+      "a": "Use the interactive slider above to project stats to level 12. Values are extrapolated from game data and will be marked 'verified' once confirmed by emulator read-outs."
+    },
+    {
+      "q": "Which generals pair best with Titan Tank?",
+      "a": "See the 'Recommended generals' section above. Optimal synergy depends on the scenario you're playing and the slots available in your current roster."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man Titan Tank in World Conqueror 4?",
+      "a": "Die Einheit wird über die Kampagne oder zeitlich begrenzte Events freigeschaltet. Details siehe Abschnitt „Verfügbarkeit“ oben."
+    },
+    {
+      "q": "Wie hoch sind die maximalen Werte auf Stufe 12?",
+      "a": "Nutze den interaktiven Slider oben, um die Werte auf Stufe 12 hochzurechnen. Die angezeigten Werte sind aus den Spieldaten extrapoliert und werden nach Emulator-Abgleich als ‚verifiziert‘ markiert."
+    },
+    {
+      "q": "Welche Generäle harmonieren am besten mit Titan Tank?",
+      "a": "Siehe Abschnitt „Empfohlene Generäle“ oben. Die optimale Synergie hängt vom gespielten Szenario und den verfügbaren Slots in deiner aktuellen Aufstellung ab."
+    }
+  ]
 }

@@ -83,5 +83,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Duel de rivaux",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +X%"
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +X%",
+  "longDesc": "Compétence spécifique à un général. « Duel de rivaux » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +20% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Rival Contest\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, dealt damage to enemy elite force +20%\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Rival Contest“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, dealt damage to enemy elite force +20%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

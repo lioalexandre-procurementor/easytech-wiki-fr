@@ -93,5 +93,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Supply Organization",
-  "descriptionTemplateFr": "When commanding troops in your territory, economic, industry, and technology output +X%."
+  "descriptionTemplateFr": "When commanding troops in your territory, economic, industry, and technology output +X%.",
+  "longDesc": "Compétence spécifique à un général. « Supply Organization » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops in your territory, economic, industry, and technology output +20%. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Supply Organization\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops in your territory, economic, industry, and technology output +20%.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Supply Organization“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops in your territory, economic, industry, and technology output +20%.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

@@ -63,5 +63,8 @@
   "prerequisites": [
     302021,
     302023
-  ]
+  ],
+  "longDesc": "Recherche blindée, pilier des conquêtes terrestres rapides. « Machine Gun » monte jusqu'au niveau 2. Effet maximum : « Damage to infantry units +55% ». Accessible dès le début de la recherche. Pilier de toute armée Axe jouant la percée.",
+  "longDescEn": "Armor research — the backbone of fast land conquest. \"Machine Gun\" scales up to level 2. Maximum effect: \"Damage to infantry units +55%\". Available from the start of research. The pillar of any Axis army playing for breakthrough.",
+  "longDescDe": "Panzerforschung — Rückgrat schneller Landeroberungen. „Machine Gun“ skaliert bis Stufe 2. Maximaler Effekt: „Damage to infantry units +55%“. Ab Forschungsbeginn verfügbar. Pfeiler jeder Achsenarmee, die auf Durchbruch spielt."
 }

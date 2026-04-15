@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général artillerie argent — Allemagne.",
-  "longDesc": "Wilhelm von Leeb est un général artillerie de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie argent — Allemagne.",
+  "longDesc": "Wilhelm von Leeb conduit le Groupe d'armées Nord vers Leningrad en 1941 avant d'être relevé de son commandement début 1942. En WC4, carte artillerie A argent avec un léger bonus défensif : convient au scénario Leningrad où l'on tient la périphérie sous feu d'artillerie.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver artillery general — Germany.",
-  "shortDescDe": "Silber Artillerie-General — Deutschland.",
-  "longDescEn": "Wilhelm von Leeb is a silver-quality artillery general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Wilhelm von Leeb ist ein Silber-Artillerie-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Artillerie-General — Deutschland.",
+  "longDescEn": "Wilhelm von Leeb led Army Group North towards Leningrad in 1941 before being relieved of command in early 1942. In WC4 a silver-A artillery card with a mild defensive bonus — a natural fit for the Leningrad scenario where you hold the perimeter under long-range fire.",
+  "longDescDe": "Wilhelm von Leeb führte 1941 die Heeresgruppe Nord nach Leningrad, bevor er Anfang 1942 seines Kommandos enthoben wurde. Im WC4 eine Silber-A-Artilleriekarte mit leichtem Defensivbonus — passend zum Leningrad-Szenario, wo du den Außenring unter Artilleriefeuer hältst."
 }

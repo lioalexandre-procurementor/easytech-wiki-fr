@@ -115,5 +115,8 @@
     301003,
     301004,
     301005
-  ]
+  ],
+  "longDesc": "Branche infanterie : fantassins et forces spéciales. « Gun » monte jusqu'au niveau 4. Effet maximum : « Attack +9 ». Accessible dès le début de la recherche. Universelle — pertinente sur chaque scénario terrestre.",
+  "longDescEn": "An infantry branch covering riflemen and special forces. \"Gun\" scales up to level 4. Maximum effect: \"Attack +9\". Available from the start of research. Universal — relevant on every land scenario.",
+  "longDescDe": "Ein Infanteriezweig für Schützen und Spezialkräfte. „Gun“ skaliert bis Stufe 4. Maximaler Effekt: „Attack +9“. Ab Forschungsbeginn verfügbar. Universell — in jedem Landszenario relevant."
 }

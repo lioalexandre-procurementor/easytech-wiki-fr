@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général blindée or — URSS.",
-  "longDesc": "Ivan Tchernyakhovski est un général blindée de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé or — URSS.",
+  "longDesc": "Ivan Tchernyakhovski, plus jeune commandant de Front soviétique, dirige le 3e Front biélorusse lors de l'opération Bagration avant d'être tué en Prusse orientale en février 1945. En WC4, carte blindée tier-S or : excellent choix offensif pour Bagration.",
   "skills": [
     {
       "slot": 1,
@@ -134,7 +134,7 @@
     "headTrained": null
   },
   "shortDescEn": "Gold armor general — USSR.",
-  "shortDescDe": "Gold Panzer-General — UdSSR.",
-  "longDescEn": "Ivan Tchernyakhovski is a gold-quality armor general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Ivan Tchernyakhovski ist ein Gold-Panzer-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Gold-Panzer-General — UdSSR.",
+  "longDescEn": "Ivan Chernyakhovsky, the youngest Soviet Front commander, led the 3rd Belorussian Front through Operation Bagration before being killed in East Prussia in February 1945. In WC4 a tier-S gold armor card — an excellent offensive choice for the Bagration scenario.",
+  "longDescDe": "Iwan Tschernjachowski, der jüngste Frontbefehlshaber der Roten Armee, führte bei Bagration die 3. Weißrussische Front und fiel im Februar 1945 in Ostpreußen. Im WC4 eine S-Klasse-Gold-Panzerkarte — eine exzellente Offensivwahl für das Bagration-Szenario."
 }

@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Général blindée argent — URSS.",
-  "longDesc": "Semion Timochenko est un général blindée de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général blindé argent — URSS.",
+  "longDesc": "Semion Timochenko dirige les réformes de l'Armée rouge après la guerre d'Hiver et commande plusieurs Fronts entre 1941 et 1943. Carte WC4 blindée A argent : solide remplissage blindé soviétique en attendant les cartes tier-S.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver armor general — USSR.",
-  "shortDescDe": "Silber Panzer-General — UdSSR.",
-  "longDescEn": "Semion Timochenko is a silver-quality armor general — USSR. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Semion Timochenko ist ein Silber-Panzer-General — UdSSR. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Panzer-General — UdSSR.",
+  "longDescEn": "Semyon Timoshenko drove Red Army reforms after the Winter War and commanded several Fronts between 1941 and 1943. A WC4 silver-A armor card — a solid Soviet armored filler while you work toward tier-S cards.",
+  "longDescDe": "Semjon Timoschenko trieb nach dem Winterkrieg die Reformen der Roten Armee voran und führte zwischen 1941 und 1943 mehrere Fronten. Im WC4 eine Silber-A-Panzerkarte — solider sowjetischer Panzer-Füller, bis du S-Klasse-Karten freischaltest."
 }

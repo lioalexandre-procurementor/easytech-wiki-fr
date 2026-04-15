@@ -429,5 +429,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Barrage d'artillerie",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque unités d'artillerie sont endommagée à plus de moitié"
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque unités d'artillerie sont endommagée à plus de moitié",
+  "longDesc": "Compétence spécifique à un général. « Barrage d'artillerie » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 lorsque unités d'artillerie sont endommagée à plus de moitié ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Artillery Barrage\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when the artillery units are more than half damaged\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery Barrage“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when the artillery units are more than half damaged“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

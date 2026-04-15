@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "FI",
   "countryName": "Finlande",
-  "shortDesc": "Général infanterie argent — Finlande.",
-  "longDesc": "Carl Gustaf Mannerheim est un général infanterie de qualité argent — Finlande. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie argent — Finlande.",
+  "longDesc": "Carl Gustaf Mannerheim commande les forces finlandaises pendant la guerre d'Hiver (1939-40) puis la guerre de Continuation, avant de devenir président de la République. Carte WC4 infanterie A argent à bonus terrain gelé : pick identitaire finlandais.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver infantry general — Finland.",
-  "shortDescDe": "Silber Infanterie-General — Finnland.",
-  "longDescEn": "Carl Gustaf Mannerheim is a silver-quality infantry general — Finland. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Carl Gustaf Mannerheim ist ein Silber-Infanterie-General — Finnland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Infanterie-General — Finnland.",
+  "longDescEn": "Carl Gustaf Mannerheim led Finnish forces through the Winter War (1939–40) and the Continuation War before becoming President of the Republic. A WC4 silver-A infantry card with frozen-terrain bonuses — Finland's identity pick.",
+  "longDescDe": "Carl Gustaf Mannerheim führte die finnischen Streitkräfte im Winterkrieg (1939–40) und im Fortsetzungskrieg und wurde anschließend Präsident der Republik. Im WC4 eine Silber-A-Infanteriekarte mit Boni im gefrorenen Gelände — Finnlands Identitätswahl."
 }

@@ -71,5 +71,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Expeditionary Force Commander",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter X% attaque and counterattack dégâts for every 3 mobility."
+  "descriptionTemplateFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter X% attaque and counterattack dégâts for every 3 mobility.",
+  "longDesc": "Compétence spécifique à un général. « Expeditionary Force Commander » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 5% attaque and counterattack dégâts for every 3 mobility. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Expeditionary Force Commander\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Expeditionary Force Commander“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

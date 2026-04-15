@@ -177,5 +177,8 @@
       ]
     }
   ],
-  "prerequisites": []
+  "prerequisites": [],
+  "longDesc": "Technologie missiles qui ouvre les frappes stratégiques ignorant les défenses. « Break Defense » monte jusqu'au niveau 7. Effet maximum : « Ignore target defense 30 ». Débloquée au niveau de QG 20. Technologie de fin de partie, à prioriser sur les scénarios HQ 20+.",
+  "longDescEn": "A missile technology that unlocks strategic strikes ignoring defences. \"Break Defense\" scales up to level 7. Maximum effect: \"Ignore target defense 30\". Unlocks at HQ level 20. A late-game technology to prioritise on HQ 20+ scenarios.",
+  "longDescDe": "Eine Raketentechnologie, die strategische Schläge mit Verteidigungs-Ignorierung freischaltet. „Break Defense“ skaliert bis Stufe 7. Maximaler Effekt: „Ignore target defense 30“. Wird auf HQ-Stufe 20 freigeschaltet. Eine Endspiel-Technologie, priorisiert auf Szenarien ab HQ 20."
 }

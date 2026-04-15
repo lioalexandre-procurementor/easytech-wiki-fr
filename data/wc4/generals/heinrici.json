@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "DE",
   "countryName": "Allemagne",
-  "shortDesc": "Général infanterie bronze — Allemagne.",
-  "longDesc": "Gotthard Heinrici est un général infanterie de qualité bronze — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Allemagne.",
+  "longDesc": "Gotthard Heinrici, spécialiste reconnu de la défense élastique, mène la bataille des hauteurs de Seelow en avril 1945. Carte WC4 infanterie B bronze avec un léger bonus de défense en retranchement : un slot thématique plus qu'une option compétitive.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — Germany.",
-  "shortDescDe": "Bronze Infanterie-General — Deutschland.",
-  "longDescEn": "Gotthard Heinrici is a bronze-quality infantry general — Germany. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Gotthard Heinrici ist ein Bronze-Infanterie-General — Deutschland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Deutschland.",
+  "longDescEn": "A recognised master of elastic defence, Gotthard Heinrici fought the Battle of the Seelow Heights in April 1945. In WC4 a bronze-B infantry card with a small entrenchment-defence bonus — a thematic slot rather than a competitive pick.",
+  "longDescDe": "Gotthard Heinrici, anerkannter Meister der elastischen Verteidigung, führte im April 1945 die Schlacht um die Seelower Höhen. Im WC4 eine Bronze-B-Infanteriekarte mit kleinem Stellungsverteidigungs-Bonus — ein thematischer Slot, keine kompetitive Wahl."
 }

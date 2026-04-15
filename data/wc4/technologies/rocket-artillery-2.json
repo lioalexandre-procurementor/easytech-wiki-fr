@@ -63,5 +63,8 @@
   "prerequisites": [
     303016,
     303013
-  ]
+  ],
+  "longDesc": "Branche artillerie : portée, dégâts, pénétration. « Rocket Artillery » monte jusqu'au niveau 2. Effet maximum : « Able to attack multiple enemy forces and have 100% chance to  disable the enemy from fighting back ». Accessible dès le début de la recherche. À privilégier pour fracasser les villes défendues.",
+  "longDescEn": "An artillery branch covering range, damage and penetration. \"Rocket Artillery\" scales up to level 2. Maximum effect: \"Able to attack multiple enemy forces and have 100% chance to  disable the enemy from fighting back\". Available from the start of research. Prefer it when you need to shatter defended cities.",
+  "longDescDe": "Ein Artilleriezweig für Reichweite, Schaden und Durchschlag. „Rocket Artillery“ skaliert bis Stufe 2. Maximaler Effekt: „Able to attack multiple enemy forces and have 100% chance to  disable the enemy from fighting back“. Ab Forschungsbeginn verfügbar. Bevorzugt, wenn befestigte Städte geschliffen werden müssen."
 }

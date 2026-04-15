@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "JP",
   "countryName": "Japon",
-  "shortDesc": "Général artillerie bronze — Japon.",
-  "longDesc": "Hisaichi Terauchi est un général artillerie de qualité bronze — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie bronze — Japon.",
+  "longDesc": "Hisaichi Terauchi commande le Groupe d'armées expéditionnaire du Sud à partir de 1941, couvrant Malaisie, Indonésie et Philippines. Carte WC4 artillerie B bronze : dépanneur japonais économique à réserver au début de campagne.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze artillery general — Japan.",
-  "shortDescDe": "Bronze Artillerie-General — Japan.",
-  "longDescEn": "Hisaichi Terauchi is a bronze-quality artillery general — Japan. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Hisaichi Terauchi ist ein Bronze-Artillerie-General — Japan. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Artillerie-General — Japan.",
+  "longDescEn": "Hisaichi Terauchi commanded Japan's Southern Expeditionary Army Group from 1941, covering Malaya, Indonesia and the Philippines. A WC4 bronze-B artillery card — an economical Japanese placeholder for the start of a campaign.",
+  "longDescDe": "Hisaichi Terauchi führte ab 1941 die japanische Südarmeegruppe und war für Malaya, Indonesien und die Philippinen zuständig. Im WC4 eine Bronze-B-Artilleriekarte — günstiger japanischer Lückenfüller für den Kampagnenstart."
 }

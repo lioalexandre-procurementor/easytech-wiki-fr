@@ -62,5 +62,8 @@
   "prerequisites": [
     308027,
     308023
-  ]
+  ],
+  "longDesc": "Branche missiles : frappes à longue portée et pénétration. « Nuclear Fusion » monte jusqu'au niveau 2. Effet maximum : « Construction rounds -2 ». Accessible dès le début de la recherche. Technologie de fin de partie, à prioriser sur les scénarios HQ 20+.",
+  "longDescEn": "A missile branch for long-range strikes and penetration. \"Nuclear Fusion\" scales up to level 2. Maximum effect: \"Construction rounds -2\". Available from the start of research. A late-game technology to prioritise on HQ 20+ scenarios.",
+  "longDescDe": "Ein Raketenzweig für Langstreckenschläge und Durchschlag. „Nuclear Fusion“ skaliert bis Stufe 2. Maximaler Effekt: „Construction rounds -2“. Ab Forschungsbeginn verfügbar. Eine Endspiel-Technologie, priorisiert auf Szenarien ab HQ 20."
 }

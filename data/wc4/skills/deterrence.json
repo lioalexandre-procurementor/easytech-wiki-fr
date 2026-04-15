@@ -109,5 +109,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Deterrence",
-  "descriptionTemplateFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased by X%, effective for one tour"
+  "descriptionTemplateFr": "After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased by X%, effective for one tour",
+  "longDesc": "Compétence spécifique à un général. « Deterrence » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After dealing a attaques critiques to ennemi, the unités ennemies's attaque will be decreased de 40%, effective for one tour ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+  "longDescEn": "A general-specific skill. \"Deterrence\" scales up to level 5. At max level (5), the skill applies the following effect: \"After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 40%, effective for one turn\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Deterrence“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After dealing a critical attack to enemy, the enemy unit's attack will be decreased by 40%, effective for one turn“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
 }

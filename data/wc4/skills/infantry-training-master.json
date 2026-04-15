@@ -89,5 +89,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Infanterie Training Master",
-  "descriptionTemplateFr": "Réduire the dégâts taken by X% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit."
+  "descriptionTemplateFr": "Réduire the dégâts taken by X% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit.",
+  "longDesc": "Compétence spécifique à un général. « Infanterie Training Master » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Réduire the dégâts taken de 4% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"Infantry Training Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Infantry Training Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

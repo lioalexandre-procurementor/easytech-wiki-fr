@@ -69,5 +69,8 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "System-of-Systems Operations",
-  "descriptionTemplateFr": "When commanding troops to attaque and carry out airstrikes, there is a X% chance of dealing a attaques critiques."
+  "descriptionTemplateFr": "When commanding troops to attaque and carry out airstrikes, there is a X% chance of dealing a attaques critiques.",
+  "longDesc": "Compétence spécifique à un général. « System-of-Systems Operations » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops to attaque and carry out airstrikes, there is a 60% chance of dealing a attaques critiques. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+  "longDescEn": "A general-specific skill. \"System-of-Systems Operations\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops to attack and carry out airstrikes, there is a 60% chance of dealing a critical attack.\". A general-specific signature: its max level drives the card's overall value.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „System-of-Systems Operations“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops to attack and carry out airstrikes, there is a 60% chance of dealing a critical attack.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
 }

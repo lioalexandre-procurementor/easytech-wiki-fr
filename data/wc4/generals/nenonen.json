@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "FI",
   "countryName": "Finlande",
-  "shortDesc": "Général artillerie argent — Finlande.",
-  "longDesc": "Vilho Nenonen est un général artillerie de qualité argent — Finlande. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'artillerie argent — Finlande.",
+  "longDesc": "Vilho Nenonen est l'architecte de l'artillerie finlandaise moderne et de sa doctrine de tir corrigé qui fait saigner l'Armée rouge en 1939-1940. Carte WC4 artillerie A argent à bonus précision : pick naturel pour les scénarios d'hiver finlandais.",
   "skills": [
     {
       "slot": 1,
@@ -116,7 +116,7 @@
     "headTrained": null
   },
   "shortDescEn": "Silver artillery general — Finland.",
-  "shortDescDe": "Silber Artillerie-General — Finnland.",
-  "longDescEn": "Vilho Nenonen is a silver-quality artillery general — Finland. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Vilho Nenonen ist ein Silber-Artillerie-General — Finnland. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Artillerie-General — Finnland.",
+  "longDescEn": "Vilho Nenonen was the architect of modern Finnish artillery and its corrected-fire doctrine that bled the Red Army in 1939–40. A WC4 silver-A artillery card with accuracy bonuses — the natural pick for Finnish winter scenarios.",
+  "longDescDe": "Vilho Nenonen war der Architekt der modernen finnischen Artillerie und ihrer Schießverfahrenslehre, die 1939/40 die Rote Armee ausbluten ließ. Im WC4 eine Silber-A-Artilleriekarte mit Trefferboni — die natürliche Wahl für finnische Winterszenarien."
 }

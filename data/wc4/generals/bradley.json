@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général polyvalente argent — États-Unis.",
-  "longDesc": "Omar Bradley est un général polyvalente de qualité argent — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général équilibré argent — États-Unis.",
+  "longDesc": "Omar Bradley commande le 12e groupe d'armées américain, soit plus d'un million de soldats lors de la campagne d'Europe 1944-1945. Carte WC4 équilibrée A argent : stats homogènes toutes branches confondues, excellente seconde ligne derrière Patton et Eisenhower.",
   "skills": [
     {
       "slot": 1,
@@ -208,7 +208,7 @@
     }
   ],
   "shortDescEn": "Silver balanced general — United States.",
-  "shortDescDe": "Silber ausgewogene-General — Vereinigte Staaten.",
-  "longDescEn": "Omar Bradley is a silver-quality balanced general — United States. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Omar Bradley ist ein Silber-ausgewogene-General — Vereinigte Staaten. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Silber-Allrounder-General — Vereinigte Staaten.",
+  "longDescEn": "Omar Bradley commanded US 12th Army Group — over a million men — during the 1944–45 European campaign. A WC4 silver-A balanced card with uniform stats across all branches, making him a strong second-line pick behind Patton and Eisenhower.",
+  "longDescDe": "Omar Bradley befehligte während des Europa-Feldzugs 1944–45 die 12. US-Heeresgruppe mit über einer Million Soldaten. Im WC4 eine Silber-A-Allrounderkarte mit gleichmäßigen Werten über alle Waffengattungen — eine starke zweite Reihe hinter Patton und Eisenhower."
 }

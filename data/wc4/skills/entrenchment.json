@@ -454,5 +454,8 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Entrenchment",
-  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's unités d'artillerie"
+  "descriptionTemplateFr": "Able to esquive X% dégâts de l'ennemi's unités d'artillerie",
+  "longDesc": "Compétence spécifique à un général. « Entrenchment » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Peut esquiver 30% des dégâts de l'ennemi's unités d'artillerie ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+  "longDescEn": "A general-specific skill. \"Entrenchment\" scales up to level 5. At max level (5), the skill applies the following effect: \"Able to dodge 30% damage from the enemy's artillery units\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+  "longDescDe": "Eine generalspezifische Fähigkeit. „Entrenchment“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Able to dodge 30% damage from the enemy's artillery units“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
 }

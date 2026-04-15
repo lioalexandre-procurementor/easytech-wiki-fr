@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "CN",
   "countryName": "République populaire de Chine",
-  "shortDesc": "Général infanterie bronze — République populaire de Chine.",
-  "longDesc": "Zhu De est un général infanterie de qualité bronze — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Chine.",
+  "longDesc": "Zhu De est commandant en chef de l'Armée rouge chinoise puis cofonde l'Armée populaire de libération aux côtés de Mao Zedong. Carte WC4 infanterie B bronze à valeur historique : pick d'ouverture côté chinois, à remplacer rapidement.",
   "skills": [
     {
       "slot": 1,
@@ -105,8 +105,8 @@
     "photoTrained": null,
     "headTrained": null
   },
-  "shortDescEn": "Bronze infantry general — People's Republic of China.",
-  "shortDescDe": "Bronze Infanterie-General — Volksrepublik China.",
-  "longDescEn": "Zhu De is a bronze-quality infantry general — People's Republic of China. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Zhu De ist ein Bronze-Infanterie-General — Volksrepublik China. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescEn": "Bronze infantry general — China.",
+  "shortDescDe": "Bronze-Infanterie-General — China.",
+  "longDescEn": "Zhu De was commander-in-chief of the Chinese Red Army and co-founded the People's Liberation Army alongside Mao Zedong. A WC4 bronze-B infantry card with historical weight — an opening Chinese pick you will replace quickly.",
+  "longDescDe": "Zhu De war Oberbefehlshaber der Chinesischen Roten Armee und gründete mit Mao Zedong die Volksbefreiungsarmee mit. Im WC4 eine Bronze-B-Infanteriekarte mit historischem Gewicht — chinesische Eröffnungswahl, die schnell ersetzt werden sollte."
 }

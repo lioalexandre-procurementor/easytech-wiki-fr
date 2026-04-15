@@ -8,8 +8,8 @@
   "quality": "bronze",
   "country": "CA",
   "countryName": "Canada",
-  "shortDesc": "Général infanterie bronze — Canada.",
-  "longDesc": "Henry Crerar est un général infanterie de qualité bronze — Canada. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "shortDesc": "Général d'infanterie bronze — Canada.",
+  "longDesc": "Henry Crerar dirige la 1re armée canadienne du jour J à la libération des Pays-Bas. Carte WC4 infanterie B bronze : slot canadien thématique plus que compétitif, à associer à Simonds pour une stack Commonwealth.",
   "skills": [
     {
       "slot": 1,
@@ -106,7 +106,7 @@
     "headTrained": null
   },
   "shortDescEn": "Bronze infantry general — Canada.",
-  "shortDescDe": "Bronze Infanterie-General — Kanada.",
-  "longDescEn": "Henry Crerar is a bronze-quality infantry general — Canada. Data extracted from the game — descriptions and tactical notes to be confirmed.",
-  "longDescDe": "Henry Crerar ist ein Bronze-Infanterie-General — Kanada. Daten aus dem Spiel extrahiert — Beschreibungen und taktische Hinweise noch zu bestätigen."
+  "shortDescDe": "Bronze-Infanterie-General — Kanada.",
+  "longDescEn": "Henry Crerar led Canadian First Army from D-Day through the liberation of the Netherlands. A WC4 bronze-B infantry card — a thematic Canadian slot rather than a competitive pick, best paired with Simonds in a Commonwealth stack.",
+  "longDescDe": "Henry Crerar führte vom D-Day bis zur Befreiung der Niederlande die 1. kanadische Armee. Im WC4 eine Bronze-B-Infanteriekarte — eher thematischer kanadischer Slot als kompetitive Wahl; am besten mit Simonds in einer Commonwealth-Aufstellung kombiniert."
 }
