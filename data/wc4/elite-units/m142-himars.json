@@ -130,7 +130,7 @@
       "type": "passive",
       "icon": "⭐",
       "name": "Roquettes",
-      "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
+      "desc": "Frappe plusieurs ennemis à la fois. Probabilité d'empêcher la riposte : 60% (tier I) → 80% (tier II) → 100% (tier III). Progression automatique avec les promotions de l'unité.",
       "milestone": true
     },
     {

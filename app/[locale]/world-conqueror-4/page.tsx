@@ -57,8 +57,8 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             <SidebarLink href="/world-conqueror-4/generaux">👨‍✈️ {t("nav.generals")}</SidebarLink>
             <SidebarLink href="/world-conqueror-4/competences">⚡ {t("nav.skills")}</SidebarLink>
             <SidebarLink href="#">🔬 {t("nav.techs")}</SidebarLink>
-            <SidebarLink href="#">🗺 {t("nav.scenarios")}</SidebarLink>
-            <SidebarLink href="#">🌍 {t("nav.conquests")}</SidebarLink>
+            <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🗺 {t("nav.scenarios")}</SidebarLink>
+            <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🌍 {t("nav.conquests")}</SidebarLink>
           </SidebarSection>
           <SidebarSection title={t("nav.tools")}>
             <SidebarLink href="#">🏆 {t("nav.leaderboards")}</SidebarLink>
@@ -137,7 +137,36 @@ function SidebarSection({ title, children }: { title: string; children: React.Re
     </div>
   );
 }
-function SidebarLink({ href, children, active }: { href: string; children: React.ReactNode; active?: boolean }) {
+function SidebarLink({
+  href,
+  children,
+  active,
+  disabled,
+  soonLabel,
+  soonTooltip,
+}: {
+  href: string;
+  children: React.ReactNode;
+  active?: boolean;
+  disabled?: boolean;
+  soonLabel?: string;
+  soonTooltip?: string;
+}) {
+  if (disabled) {
+    return (
+      <li>
+        <span
+          className="block px-2 py-1 rounded text-sm text-dim opacity-40 cursor-not-allowed select-none"
+          title={soonTooltip}
+        >
+          {children}{" "}
+          <span className="text-[10px] uppercase tracking-widest ml-1 text-muted">
+            · {soonLabel ?? "soon"}
+          </span>
+        </span>
+      </li>
+    );
+  }
   return (
     <li><Link href={href as any}
       className={`block px-2 py-1 rounded text-sm no-underline ${active ? "bg-gold/10 text-gold2 font-bold border-l-2 border-gold pl-2.5" : "text-dim hover:bg-gold/10 hover:text-gold2"}`}>

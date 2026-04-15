@@ -177,7 +177,9 @@
     "sources": "Sources :",
     "viewProgression": "📈 Voir la progression L1 → L5 →",
     "freeSlot": "Emplacement libre",
-    "freeSlotDesc": "Compétence apprenable — emplacement libre jusqu'au premium training."
+    "freeSlotDesc": "Compétence apprenable — emplacement libre jusqu'au premium training.",
+    "trainingLabel": "⚔️ Entraînement",
+    "freeSlotShort": "libre"
   },
   "attributeKeys": {
     "infantry": "Infanterie",
@@ -204,7 +206,9 @@
     "event": "Événement"
   },
   "ui": {
-    "adSlot": "Emplacement publicitaire"
+    "adSlot": "Emplacement publicitaire",
+    "soonLabel": "à venir",
+    "soonTooltip": "Bientôt disponible"
   },
   "trainedPage": {
     "intro": "Vue « niveau maximum » de {name} : chaque attribut est porté à son plafond et chaque compétence affichée à son niveau maximum selon le catalogue des skills.",

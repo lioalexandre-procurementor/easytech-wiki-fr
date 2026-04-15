@@ -177,7 +177,9 @@
     "sources": "Sources:",
     "viewProgression": "📈 View L1 → L5 progression →",
     "freeSlot": "Free slot",
-    "freeSlotDesc": "Learnable skill — slot stays open until premium training."
+    "freeSlotDesc": "Learnable skill — slot stays open until premium training.",
+    "trainingLabel": "⚔️ Training",
+    "freeSlotShort": "free"
   },
   "attributeKeys": {
     "infantry": "Infantry",
@@ -204,7 +206,9 @@
     "event": "Event"
   },
   "ui": {
-    "adSlot": "Ad placement"
+    "adSlot": "Ad placement",
+    "soonLabel": "soon",
+    "soonTooltip": "Coming soon"
   },
   "trainedPage": {
     "intro": "Maxed-out view of {name}: every attribute at its ceiling and every skill pushed to its max level from the skill catalog.",

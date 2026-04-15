@@ -184,7 +184,7 @@ export default async function GeneralsList({
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {list.map((g) => (
-                      <GeneralCard key={g.slug} g={g} isFr={isFr} qualityLabel={t(`general.quality.${g.quality}`)} trainingLabel={isFr ? "⚔️ Entraînement" : "⚔️ Training"} freeSlotLabel={isFr ? "libre" : "free"} acqLabels={{
+                      <GeneralCard key={g.slug} g={g} isFr={isFr} qualityLabel={t(`general.quality.${g.quality}`)} trainingLabel={t("general.trainingLabel")} freeSlotLabel={t("general.freeSlotShort")} acqLabels={{
                         starter: t("acquisitionTypes.starter"),
                         medals: t("acquisitionTypes.medals"),
                         "iron-cross": t("acquisitionTypes.iron-cross"),
@@ -225,8 +225,8 @@ export default async function GeneralsList({
                   scorpion
                   isFr={isFr}
                   qualityLabel={t(`general.quality.${g.quality}`)}
-                  trainingLabel={isFr ? "⚔️ Entraînement" : "⚔️ Training"}
-                  freeSlotLabel={isFr ? "libre" : "free"}
+                  trainingLabel={t("general.trainingLabel")}
+                  freeSlotLabel={t("general.freeSlotShort")}
                   acqLabels={{
                     starter: t("acquisitionTypes.starter"),
                     medals: t("acquisitionTypes.medals"),
