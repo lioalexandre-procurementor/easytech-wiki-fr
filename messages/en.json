@@ -32,10 +32,14 @@
   },
   "footer": {
     "about": "About",
-    "legal": "Legal",
+    "legal": "Legal Notice",
     "gdpr": "Privacy",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "terms": "Terms",
     "votes": "Community Votes",
-    "contact": "Contact"
+    "contact": "Contact",
+    "unofficialDisclaimer": "Independent unofficial wiki. Not affiliated with, endorsed by, authorized by, or sponsored by EasyTech Studio. World Conqueror, European War and other trademarks mentioned belong to their respective owners."
   },
   "breadcrumb": {
     "separator": "›"
@@ -312,6 +316,39 @@
       "skill": "Skills",
       "update": "Updates"
     }
+  },
+  "comparatorPage": {
+    "hubTitle": "Comparator",
+    "hubIntro": "Compare units and generals side by side.",
+    "unitsTitle": "Elite Unit Comparator",
+    "unitsIntro": "Pick 2 to 4 units and compare their max stats side by side. Green = best value, red = worst.",
+    "generalsTitle": "General Comparator",
+    "generalsIntro": "Compare up to 4 generals across their 6 trained-max attributes, medal cost, military rank and skill slot count.",
+    "pickPrompt": "Pick a {type}",
+    "statsHeading": "Stat comparison",
+    "radarHeading": "Capability radar",
+    "matchupTitle": "{a} vs {b} — WC4 Comparison",
+    "matchupDescription": "Detailed side-by-side comparison of {a} and {b} in World Conqueror 4: max stats, cost, category and visual radar.",
+    "seoTitle": "WC4 Comparator — Compare generals and elite units",
+    "seoDescription": "Side-by-side comparison tool for World Conqueror 4 elite units and generals. Max stats, cost, visual radar and build diffs.",
+    "stat": {
+      "atk": "Max Attack",
+      "def": "Max Defence",
+      "hp": "Max HP",
+      "mov": "Mobility",
+      "rng": "Range",
+      "costMedal": "Medal Cost",
+      "skillSlots": "Skill Slots",
+      "militaryRank": "Military Rank",
+      "infantry": "Infantry",
+      "artillery": "Artillery",
+      "armor": "Armor",
+      "navy": "Navy",
+      "airforce": "Air Force",
+      "marching": "March"
+    },
+    "pickUnit": "Pick a unit",
+    "pickGeneral": "Pick a general"
   },
   "votesLegalPage": {
     "seoTitle": "Community Voting Policy",

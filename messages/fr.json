@@ -34,8 +34,12 @@
     "about": "À propos",
     "legal": "Mentions légales",
     "gdpr": "RGPD",
+    "privacy": "Confidentialité",
+    "cookies": "Cookies",
+    "terms": "CGU",
     "votes": "Votes communautaires",
-    "contact": "Contact"
+    "contact": "Contact",
+    "unofficialDisclaimer": "Wiki non-officiel et indépendant. Non affilié, associé, autorisé ni sponsorisé par EasyTech Studio. World Conqueror, European War et les autres marques citées appartiennent à leurs détenteurs respectifs."
   },
   "breadcrumb": {
     "separator": "›"
@@ -312,6 +316,39 @@
       "skill": "Compétences",
       "update": "Mises à jour"
     }
+  },
+  "comparatorPage": {
+    "hubTitle": "Comparateur",
+    "hubIntro": "Comparez unités et généraux côte à côte.",
+    "unitsTitle": "Comparateur d'unités d'élite",
+    "unitsIntro": "Sélectionnez 2 à 4 unités et visualisez leurs statistiques max côte à côte. Colonne verte = meilleure valeur, rouge = pire.",
+    "generalsTitle": "Comparateur de généraux",
+    "generalsIntro": "Comparez jusqu'à 4 généraux sur leurs 6 attributs au plafond (entraînement maximum), coût en médailles, rang militaire et nombre d'emplacements de compétence.",
+    "pickPrompt": "Choisir une {type}",
+    "statsHeading": "Statistiques comparées",
+    "radarHeading": "Radar des capacités",
+    "matchupTitle": "{a} vs {b} — Comparaison WC4",
+    "matchupDescription": "Comparaison détaillée entre {a} et {b} dans World Conqueror 4 : statistiques max, coût, catégorie et radar.",
+    "seoTitle": "Comparateur WC4 — Comparer généraux et unités d'élite",
+    "seoDescription": "Outil de comparaison côte à côte pour les unités d'élite et généraux de World Conqueror 4. Stats max, coût, radar visuel et différence entre builds.",
+    "stat": {
+      "atk": "Attaque max",
+      "def": "Défense max",
+      "hp": "PV max",
+      "mov": "Mobilité",
+      "rng": "Portée",
+      "costMedal": "Coût médailles",
+      "skillSlots": "Emplacements",
+      "militaryRank": "Rang militaire",
+      "infantry": "Infanterie",
+      "artillery": "Artillerie",
+      "armor": "Blindé",
+      "navy": "Marine",
+      "airforce": "Aviation",
+      "marching": "Marche"
+    },
+    "pickUnit": "Choisir une unité",
+    "pickGeneral": "Choisir un général"
   },
   "votesLegalPage": {
     "seoTitle": "Politique de vote communautaire",

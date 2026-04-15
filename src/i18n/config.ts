@@ -33,6 +33,22 @@ export const pathnames = {
     fr: "/world-conqueror-4/generaux/[slug]/entrainement-premium",
     en: "/world-conqueror-4/generals/[slug]/premium-training",
   },
+  "/world-conqueror-4/comparateur": {
+    fr: "/world-conqueror-4/comparateur",
+    en: "/world-conqueror-4/comparator",
+  },
+  "/world-conqueror-4/comparateur/unites": {
+    fr: "/world-conqueror-4/comparateur/unites",
+    en: "/world-conqueror-4/comparator/units",
+  },
+  "/world-conqueror-4/comparateur/unites/[matchup]": {
+    fr: "/world-conqueror-4/comparateur/unites/[matchup]",
+    en: "/world-conqueror-4/comparator/units/[matchup]",
+  },
+  "/world-conqueror-4/comparateur/generaux": {
+    fr: "/world-conqueror-4/comparateur/generaux",
+    en: "/world-conqueror-4/comparator/generals",
+  },
   "/world-conqueror-4/unites-elite": {
     fr: "/world-conqueror-4/unites-elite",
     en: "/world-conqueror-4/elite-units",
@@ -64,6 +80,30 @@ export const pathnames = {
   "/legal/votes": {
     fr: "/legal/votes",
     en: "/legal/votes",
+  },
+  "/legal/mentions-legales": {
+    fr: "/legal/mentions-legales",
+    en: "/legal/legal-notice",
+  },
+  "/legal/confidentialite": {
+    fr: "/legal/confidentialite",
+    en: "/legal/privacy",
+  },
+  "/legal/cookies": {
+    fr: "/legal/cookies",
+    en: "/legal/cookies",
+  },
+  "/legal/cgu": {
+    fr: "/legal/cgu",
+    en: "/legal/terms",
+  },
+  "/legal/a-propos": {
+    fr: "/legal/a-propos",
+    en: "/legal/about",
+  },
+  "/legal/contact": {
+    fr: "/legal/contact",
+    en: "/legal/contact",
   },
 } satisfies Pathnames<typeof locales>;
 
