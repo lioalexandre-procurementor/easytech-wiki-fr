@@ -1,0 +1,41 @@
+{
+  "slug": "missile-salvo",
+  "apkTypeId": 57,
+  "apkCategoryId": 7,
+  "nameEn": "Missile Salvo",
+  "nameFr": "Missile Salvo",
+  "category": "missile",
+  "effectArmy": 6,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 311001,
+      "x": 1,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 26500,
+      "costEnergy": 0,
+      "costTech": 580,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308043
+      ],
+      "upgradeToId": 0,
+      "descEn": "Missiles can be fired in salvos",
+      "descTemplate": "Missiles can be fired in salvos",
+      "techDescKeys": [
+        43
+      ],
+      "techValues": [
+        0
+      ]
+    }
+  ],
+  "prerequisites": [
+    308043
+  ]
+}

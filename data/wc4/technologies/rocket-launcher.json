@@ -1,0 +1,100 @@
+{
+  "slug": "rocket-launcher",
+  "apkTypeId": 43,
+  "apkCategoryId": 5,
+  "nameEn": "Rocket Launcher",
+  "nameFr": "Rocket Launcher",
+  "category": "fortifications",
+  "effectArmy": 8,
+  "maxLevel": 4,
+  "needHQLv": 16,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 2,
+      "apkId": 306031,
+      "x": 4,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 11000,
+      "costEnergy": 2200,
+      "costTech": 0,
+      "needHQLv": 16,
+      "needScenarioId": 2,
+      "prerequisiteIds": [],
+      "upgradeToId": 306032,
+      "descEn": "Attack +8; Defense +2; HP +20",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        8,
+        2,
+        20
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 306032,
+      "x": 4,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 22000,
+      "costEnergy": 4400,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        306031,
+        306022
+      ],
+      "upgradeToId": 306033,
+      "descEn": "Attack +12; Defense +3; HP +30",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        12,
+        3,
+        30
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 306033,
+      "x": 4,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 42500,
+      "costEnergy": 8500,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        306032
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack +16; Defense +4; HP +45",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        16,
+        4,
+        45
+      ]
+    }
+  ],
+  "prerequisites": [
+    306022
+  ]
+}

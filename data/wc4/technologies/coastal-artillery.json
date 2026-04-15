@@ -1,0 +1,100 @@
+{
+  "slug": "coastal-artillery",
+  "apkTypeId": 42,
+  "apkCategoryId": 5,
+  "nameEn": "Coastal Artillery",
+  "nameFr": "Coastal Artillery",
+  "category": "fortifications",
+  "effectArmy": 8,
+  "maxLevel": 4,
+  "needHQLv": 12,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 2,
+      "apkId": 306021,
+      "x": 3,
+      "y": 3,
+      "costGold": 33750,
+      "costIndustry": 0,
+      "costEnergy": 1350,
+      "costTech": 0,
+      "needHQLv": 12,
+      "needScenarioId": 2,
+      "prerequisiteIds": [],
+      "upgradeToId": 306022,
+      "descEn": "Attack +8; Defense +3; HP +40",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        8,
+        3,
+        40
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 306022,
+      "x": 3,
+      "y": 4,
+      "costGold": 75000,
+      "costIndustry": 0,
+      "costEnergy": 3000,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        306021,
+        306012
+      ],
+      "upgradeToId": 306023,
+      "descEn": "Attack +12; Defense +4; HP +60",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        12,
+        4,
+        60
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 306023,
+      "x": 3,
+      "y": 5,
+      "costGold": 155000,
+      "costIndustry": 0,
+      "costEnergy": 6200,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        306022
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack +16; Defense +6; HP +80",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        16,
+        6,
+        80
+      ]
+    }
+  ],
+  "prerequisites": [
+    306012
+  ]
+}

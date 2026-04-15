@@ -1,0 +1,67 @@
+{
+  "slug": "torpedo",
+  "apkTypeId": 28,
+  "apkCategoryId": 3,
+  "nameEn": "Torpedo",
+  "nameFr": "Torpedo",
+  "category": "navy",
+  "effectArmy": 4,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 304061,
+      "x": 4,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 4750,
+      "costEnergy": 0,
+      "costTech": 95,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        304041
+      ],
+      "upgradeToId": 304062,
+      "descEn": "Damage +80% when attacking cruisers and aircraft carriers ",
+      "descTemplate": "Damage +%d%% when attacking cruisers and aircraft carriers ",
+      "techDescKeys": [
+        26
+      ],
+      "techValues": [
+        80
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 304062,
+      "x": 4,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 22000,
+      "costEnergy": 0,
+      "costTech": 440,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304061,
+        304042
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage +100% when attacking cruisers and aircraft carriers ",
+      "descTemplate": "Damage +%d%% when attacking cruisers and aircraft carriers ",
+      "techDescKeys": [
+        26
+      ],
+      "techValues": [
+        100
+      ]
+    }
+  ],
+  "prerequisites": [
+    304041,
+    304042
+  ]
+}

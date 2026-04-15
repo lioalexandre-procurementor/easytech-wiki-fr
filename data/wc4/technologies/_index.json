@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "totalTechs": 58,
+  "byCategory": {
+    "airforce": 10,
+    "antiair": 4,
+    "armor": 8,
+    "artillery": 7,
+    "fortifications": 5,
+    "infantry": 8,
+    "missile": 7,
+    "navy": 9
+  },
+  "techs": [
+    {
+      "slug": "air-force-squadron",
+      "nameEn": "Air Force Squadron",
+      "category": "airforce",
+      "maxLevel": 1,
+      "apkTypeId": 55
+    },
+    {
+      "slug": "air-strike",
+      "nameEn": "Air Strike",
+      "category": "airforce",
+      "maxLevel": 2,
+      "apkTypeId": 35
+    },
+    {
+      "slug": "airborne",
+      "nameEn": "Airborne",
+      "category": "airforce",
+      "maxLevel": 2,
+      "apkTypeId": 38
+    },
+    {
+      "slug": "airborne-squad",
+      "nameEn": "Airborne Squad",
+      "category": "airforce",
+      "maxLevel": 1,
+      "apkTypeId": 56
+    },
+    {
+      "slug": "aircraft-bomb",
+      "nameEn": "Aircraft Bomb",
+      "category": "airforce",
+      "maxLevel": 8,
+      "apkTypeId": 34
+    },
+    {
+      "slug": "aircraft-engine",
+      "nameEn": "Aircraft Engine",
+      "category": "airforce",
+      "maxLevel": 4,
+      "apkTypeId": 33
+    },
+    {
+      "slug": "aircraft-fuel",
+      "nameEn": "Aircraft Fuel",
+      "category": "airforce",
+      "maxLevel": 6,
+      "apkTypeId": 32
+    },
+    {
+      "slug": "bombing",
+      "nameEn": "Bombing",
+      "category": "airforce",
+      "maxLevel": 2,
+      "apkTypeId": 36
+    },
+    {
+      "slug": "jet-engine",
+      "nameEn": "Jet Engine",
+      "category": "airforce",
+      "maxLevel": 1,
+      "apkTypeId": 39
+    },
+    {
+      "slug": "strategic-bombing",
+      "nameEn": "Strategic Bombing",
+      "category": "airforce",
+      "maxLevel": 2,
+      "apkTypeId": 37
+    },
+    {
+      "slug": "anti-air-artillery",
+      "nameEn": "Anti-air Artillery",
+      "category": "antiair",
+      "maxLevel": 4,
+      "apkTypeId": 46
+    },
+    {
+      "slug": "anti-air-gun",
+      "nameEn": "Anti-air Gun",
+      "category": "antiair",
+      "maxLevel": 4,
+      "apkTypeId": 45
+    },
+    {
+      "slug": "anti-air-missile",
+      "nameEn": "Anti-air Missile",
+      "category": "antiair",
+      "maxLevel": 4,
+      "apkTypeId": 47
+    },
+    {
+      "slug": "radar",
+      "nameEn": "Radar",
+      "category": "antiair",
+      "maxLevel": 1,
+      "apkTypeId": 48
+    },
+    {
+      "slug": "air-defense",
+      "nameEn": "Air-Defense",
+      "category": "armor",
+      "maxLevel": 2,
+      "apkTypeId": 14
+    },
+    {
+      "slug": "armor",
+      "nameEn": "Armor",
+      "category": "armor",
+      "maxLevel": 8,
+      "apkTypeId": 8
+    },
+    {
+      "slug": "assault",
+      "nameEn": "Assault",
+      "category": "armor",
+      "maxLevel": 2,
+      "apkTypeId": 13
+    },
+    {
+      "slug": "engine",
+      "nameEn": "Engine",
+      "category": "armor",
+      "maxLevel": 4,
+      "apkTypeId": 11
+    },
+    {
+      "slug": "machine-gun",
+      "nameEn": "Machine Gun",
+      "category": "armor",
+      "maxLevel": 2,
+      "apkTypeId": 12
+    },
+    {
+      "slug": "main-artillery",
+      "nameEn": "Main Artillery",
+      "category": "armor",
+      "maxLevel": 6,
+      "apkTypeId": 9
+    },
+    {
+      "slug": "reinforced-vehicle",
+      "nameEn": "Reinforced Vehicle",
+      "category": "armor",
+      "maxLevel": 1,
+      "apkTypeId": 15
+    },
+    {
+      "slug": "vehicle",
+      "nameEn": "Vehicle",
+      "category": "armor",
+      "maxLevel": 4,
+      "apkTypeId": 10
+    },
+    {
+      "slug": "armor-2",
+      "nameEn": "Armor",
+      "category": "artillery",
+      "maxLevel": 4,
+      "apkTypeId": 19
+    },
+    {
+      "slug": "artillery",
+      "nameEn": "Artillery",
+      "category": "artillery",
+      "maxLevel": 8,
+      "apkTypeId": 16
+    },
+    {
+      "slug": "disguise",
+      "nameEn": "Disguise",
+      "category": "artillery",
+      "maxLevel": 1,
+      "apkTypeId": 22
+    },
+    {
+      "slug": "firepower",
+      "nameEn": "Firepower",
+      "category": "artillery",
+      "maxLevel": 2,
+      "apkTypeId": 20
+    },
+    {
+      "slug": "rocket-artillery",
+      "nameEn": "Rocket Artillery",
+      "category": "artillery",
+      "maxLevel": 8,
+      "apkTypeId": 17
+    },
+    {
+      "slug": "rocket-artillery-2",
+      "nameEn": "Rocket Artillery",
+      "category": "artillery",
+      "maxLevel": 2,
+      "apkTypeId": 21
+    },
+    {
+      "slug": "traction",
+      "nameEn": "Traction",
+      "category": "artillery",
+      "maxLevel": 4,
+      "apkTypeId": 18
+    },
+    {
+      "slug": "bunker",
+      "nameEn": "Bunker",
+      "category": "fortifications",
+      "maxLevel": 4,
+      "apkTypeId": 40
+    },
+    {
+      "slug": "coastal-artillery",
+      "nameEn": "Coastal Artillery",
+      "category": "fortifications",
+      "maxLevel": 4,
+      "apkTypeId": 42
+    },
+    {
+      "slug": "fortifications",
+      "nameEn": "Fortifications",
+      "category": "fortifications",
+      "maxLevel": 1,
+      "apkTypeId": 44
+    },
+    {
+      "slug": "land-fort",
+      "nameEn": "Land Fort",
+      "category": "fortifications",
+      "maxLevel": 4,
+      "apkTypeId": 41
+    },
+    {
+      "slug": "rocket-launcher",
+      "nameEn": "Rocket Launcher",
+      "category": "fortifications",
+      "maxLevel": 4,
+      "apkTypeId": 43
+    },
+    {
+      "slug": "body-armour",
+      "nameEn": "Body armour",
+      "category": "infantry",
+      "maxLevel": 1,
+      "apkTypeId": 7
+    },
+    {
+      "slug": "camouflage",
+      "nameEn": "Camouflage",
+      "category": "infantry",
+      "maxLevel": 6,
+      "apkTypeId": 2
+    },
+    {
+      "slug": "grenade",
+      "nameEn": "Grenade",
+      "category": "infantry",
+      "maxLevel": 2,
+      "apkTypeId": 4
+    },
+    {
+      "slug": "gun",
+      "nameEn": "Gun",
+      "category": "infantry",
+      "maxLevel": 4,
+      "apkTypeId": 1
+    },
+    {
+      "slug": "marching",
+      "nameEn": "Marching",
+      "category": "infantry",
+      "maxLevel": 2,
+      "apkTypeId": 6
+    },
+    {
+      "slug": "mobility",
+      "nameEn": "Mobility",
+      "category": "infantry",
+      "maxLevel": 6,
+      "apkTypeId": 0
+    },
+    {
+      "slug": "mortar",
+      "nameEn": "Mortar",
+      "category": "infantry",
+      "maxLevel": 2,
+      "apkTypeId": 5
+    },
+    {
+      "slug": "sapper",
+      "nameEn": "Sapper",
+      "category": "infantry",
+      "maxLevel": 2,
+      "apkTypeId": 3
+    },
+    {
+      "slug": "break-defense",
+      "nameEn": "Break Defense",
+      "category": "missile",
+      "maxLevel": 7,
+      "apkTypeId": 51
+    },
+    {
+      "slug": "missile-salvo",
+      "nameEn": "Missile Salvo",
+      "category": "missile",
+      "maxLevel": 1,
+      "apkTypeId": 57
+    },
+    {
+      "slug": "nuclear-fusion",
+      "nameEn": "Nuclear Fusion",
+      "category": "missile",
+      "maxLevel": 2,
+      "apkTypeId": 52
+    },
+    {
+      "slug": "precision-guidance",
+      "nameEn": "Precision guidance",
+      "category": "missile",
+      "maxLevel": 3,
+      "apkTypeId": 53
+    },
+    {
+      "slug": "rocket-engine",
+      "nameEn": "Rocket Engine",
+      "category": "missile",
+      "maxLevel": 2,
+      "apkTypeId": 50
+    },
+    {
+      "slug": "thermonuclear-reaction",
+      "nameEn": "Thermonuclear reaction",
+      "category": "missile",
+      "maxLevel": 3,
+      "apkTypeId": 54
+    },
+    {
+      "slug": "warhead",
+      "nameEn": "Warhead",
+      "category": "missile",
+      "maxLevel": 7,
+      "apkTypeId": 49
+    },
+    {
+      "slug": "air-defense-2",
+      "nameEn": "Air-Defense",
+      "category": "navy",
+      "maxLevel": 2,
+      "apkTypeId": 30
+    },
+    {
+      "slug": "armor-3",
+      "nameEn": "Armor",
+      "category": "navy",
+      "maxLevel": 6,
+      "apkTypeId": 25
+    },
+    {
+      "slug": "hull",
+      "nameEn": "Hull",
+      "category": "navy",
+      "maxLevel": 8,
+      "apkTypeId": 23
+    },
+    {
+      "slug": "minesweeper",
+      "nameEn": "Minesweeper",
+      "category": "navy",
+      "maxLevel": 2,
+      "apkTypeId": 29
+    },
+    {
+      "slug": "naval-artillery",
+      "nameEn": "Naval Artillery",
+      "category": "navy",
+      "maxLevel": 2,
+      "apkTypeId": 27
+    },
+    {
+      "slug": "propeller",
+      "nameEn": "Propeller",
+      "category": "navy",
+      "maxLevel": 4,
+      "apkTypeId": 24
+    },
+    {
+      "slug": "reinforced-ship",
+      "nameEn": "Reinforced Ship",
+      "category": "navy",
+      "maxLevel": 1,
+      "apkTypeId": 31
+    },
+    {
+      "slug": "torpedo",
+      "nameEn": "Torpedo",
+      "category": "navy",
+      "maxLevel": 2,
+      "apkTypeId": 28
+    },
+    {
+      "slug": "weapon",
+      "nameEn": "Weapon",
+      "category": "navy",
+      "maxLevel": 4,
+      "apkTypeId": 26
+    }
+  ]
+}

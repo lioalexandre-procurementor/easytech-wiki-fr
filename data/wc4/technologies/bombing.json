@@ -1,0 +1,67 @@
+{
+  "slug": "bombing",
+  "apkTypeId": 36,
+  "apkCategoryId": 4,
+  "nameEn": "Bombing",
+  "nameFr": "Bombing",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305041,
+      "x": 3,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 3250,
+      "costEnergy": 0,
+      "costTech": 65,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305022
+      ],
+      "upgradeToId": 305042,
+      "descEn": "Damage to ship units +40%",
+      "descTemplate": "Damage to ship units +%d%%",
+      "techDescKeys": [
+        35
+      ],
+      "techValues": [
+        40
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 305042,
+      "x": 3,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 8250,
+      "costEnergy": 0,
+      "costTech": 165,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305041,
+        305025
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage to ship units +50%",
+      "descTemplate": "Damage to ship units +%d%%",
+      "techDescKeys": [
+        35
+      ],
+      "techValues": [
+        50
+      ]
+    }
+  ],
+  "prerequisites": [
+    305025,
+    305022
+  ]
+}

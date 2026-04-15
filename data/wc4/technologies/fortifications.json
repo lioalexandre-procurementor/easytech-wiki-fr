@@ -1,0 +1,41 @@
+{
+  "slug": "fortifications",
+  "apkTypeId": 44,
+  "apkCategoryId": 5,
+  "nameEn": "Fortifications",
+  "nameFr": "Fortifications",
+  "category": "fortifications",
+  "effectArmy": 8,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 306041,
+      "x": 2,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 3800,
+      "costTech": 380,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        306012
+      ],
+      "upgradeToId": 0,
+      "descEn": "Construction rounds -1",
+      "descTemplate": "Construction rounds -%d",
+      "techDescKeys": [
+        7
+      ],
+      "techValues": [
+        1
+      ]
+    }
+  ],
+  "prerequisites": [
+    306012
+  ]
+}

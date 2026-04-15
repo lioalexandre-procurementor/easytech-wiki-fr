@@ -1,0 +1,67 @@
+{
+  "slug": "firepower",
+  "apkTypeId": 20,
+  "apkCategoryId": 2,
+  "nameEn": "Firepower",
+  "nameFr": "Firepower",
+  "category": "artillery",
+  "effectArmy": 3,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 303041,
+      "x": 2,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 750,
+      "costTech": 75,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        303003
+      ],
+      "upgradeToId": 303042,
+      "descEn": "65% chance to disable the enemy from fighting back",
+      "descTemplate": "%d%% chance to disable the enemy from fighting back",
+      "techDescKeys": [
+        23
+      ],
+      "techValues": [
+        65
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 303042,
+      "x": 2,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 4400,
+      "costTech": 440,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        303041,
+        303006
+      ],
+      "upgradeToId": 0,
+      "descEn": "80% chance to disable the enemy from fighting back",
+      "descTemplate": "%d%% chance to disable the enemy from fighting back",
+      "techDescKeys": [
+        23
+      ],
+      "techValues": [
+        80
+      ]
+    }
+  ],
+  "prerequisites": [
+    303003,
+    303006
+  ]
+}

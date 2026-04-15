@@ -1,0 +1,67 @@
+{
+  "slug": "grenade",
+  "apkTypeId": 4,
+  "apkCategoryId": 0,
+  "nameEn": "Grenade",
+  "nameFr": "Grenade",
+  "category": "infantry",
+  "effectArmy": 1,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 301041,
+      "x": 2,
+      "y": 2,
+      "costGold": 0,
+      "costIndustry": 1000,
+      "costEnergy": 200,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301011
+      ],
+      "upgradeToId": 301042,
+      "descEn": "Damage to armored units +40%",
+      "descTemplate": "Damage to armored units +%d%%",
+      "techDescKeys": [
+        37
+      ],
+      "techValues": [
+        40
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 301042,
+      "x": 2,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 4750,
+      "costEnergy": 950,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        301041,
+        301013
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage to armored units +50%",
+      "descTemplate": "Damage to armored units +%d%%",
+      "techDescKeys": [
+        37
+      ],
+      "techValues": [
+        50
+      ]
+    }
+  ],
+  "prerequisites": [
+    301011,
+    301013
+  ]
+}

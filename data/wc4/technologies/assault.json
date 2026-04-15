@@ -1,0 +1,67 @@
+{
+  "slug": "assault",
+  "apkTypeId": 13,
+  "apkCategoryId": 1,
+  "nameEn": "Assault",
+  "nameFr": "Assault",
+  "category": "armor",
+  "effectArmy": 2,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 302061,
+      "x": 4,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 6750,
+      "costEnergy": 0,
+      "costTech": 135,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        302042
+      ],
+      "upgradeToId": 302062,
+      "descEn": "75% chance to attack again after destroying the enemy",
+      "descTemplate": "%d%% chance to attack again after destroying the enemy",
+      "techDescKeys": [
+        17
+      ],
+      "techValues": [
+        75
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 302062,
+      "x": 4,
+      "y": 10,
+      "costGold": 0,
+      "costIndustry": 23500,
+      "costEnergy": 0,
+      "costTech": 470,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302061,
+        302044
+      ],
+      "upgradeToId": 0,
+      "descEn": "100% chance to attack again after destroying the enemy",
+      "descTemplate": "%d%% chance to attack again after destroying the enemy",
+      "techDescKeys": [
+        17
+      ],
+      "techValues": [
+        100
+      ]
+    }
+  ],
+  "prerequisites": [
+    302042,
+    302044
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "slug": "thermonuclear-reaction",
+  "apkTypeId": 54,
+  "apkCategoryId": 7,
+  "nameEn": "Thermonuclear reaction",
+  "nameFr": "Thermonuclear reaction",
+  "category": "missile",
+  "effectArmy": 7,
+  "maxLevel": 3,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 308051,
+      "x": 4,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 26500,
+      "costEnergy": 0,
+      "costTech": 580,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308024
+      ],
+      "upgradeToId": 308052,
+      "descEn": "Attack +100",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        100
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 308052,
+      "x": 4,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 37500,
+      "costEnergy": 0,
+      "costTech": 780,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308051
+      ],
+      "upgradeToId": 308053,
+      "descEn": "Attack +150",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        150
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 308053,
+      "x": 4,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 68500,
+      "costEnergy": 0,
+      "costTech": 980,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308052
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack +200",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        200
+      ]
+    }
+  ],
+  "prerequisites": [
+    308024
+  ]
+}

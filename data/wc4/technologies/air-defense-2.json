@@ -1,0 +1,81 @@
+{
+  "slug": "air-defense-2",
+  "apkTypeId": 30,
+  "apkCategoryId": 3,
+  "nameEn": "Air-Defense",
+  "nameFr": "Air-Defense",
+  "category": "navy",
+  "effectArmy": 4,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 304081,
+      "x": 3,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 2000,
+      "costEnergy": 0,
+      "costTech": 40,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        304033
+      ],
+      "upgradeToId": 304082,
+      "descEn": "Air-raiding damage -30%; Bombing damage -25%; Reduce paratroops HP by +30%; Strategic bombing damage -10%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%; Strategic bombing damage -%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "techValues": [
+        30,
+        25,
+        30,
+        10
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 304082,
+      "x": 3,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 7500,
+      "costEnergy": 0,
+      "costTech": 150,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304081,
+        304035
+      ],
+      "upgradeToId": 0,
+      "descEn": "Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +50%; Strategic bombing damage -20%; Missile damage -10%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%; Strategic bombing damage -%d%%; Missile damage -%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "techValues": [
+        35,
+        30,
+        50,
+        20,
+        10
+      ]
+    }
+  ],
+  "prerequisites": [
+    304033,
+    304035
+  ]
+}

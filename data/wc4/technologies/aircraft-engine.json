@@ -1,0 +1,127 @@
+{
+  "slug": "aircraft-engine",
+  "apkTypeId": 33,
+  "apkCategoryId": 4,
+  "nameEn": "Aircraft Engine",
+  "nameFr": "Aircraft Engine",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 4,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305011,
+      "x": 2,
+      "y": 2,
+      "costGold": 2500,
+      "costIndustry": 0,
+      "costEnergy": 100,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        305001
+      ],
+      "upgradeToId": 305012,
+      "descEn": "Fixed-wing aircraft attack range +1; Helicopter mobility +1",
+      "descTemplate": "Fixed-wing aircraft attack range +%d; Helicopter mobility +%d",
+      "techDescKeys": [
+        40,
+        39
+      ],
+      "techValues": [
+        1,
+        1
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 305012,
+      "x": 2,
+      "y": 4,
+      "costGold": 8750,
+      "costIndustry": 0,
+      "costEnergy": 350,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305011,
+        305002
+      ],
+      "upgradeToId": 305013,
+      "descEn": "Fixed-wing aircraft attack range +2; Helicopter mobility +2",
+      "descTemplate": "Fixed-wing aircraft attack range +%d; Helicopter mobility +%d",
+      "techDescKeys": [
+        40,
+        39
+      ],
+      "techValues": [
+        2,
+        2
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 305013,
+      "x": 2,
+      "y": 6,
+      "costGold": 21250,
+      "costIndustry": 0,
+      "costEnergy": 850,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305012,
+        305004
+      ],
+      "upgradeToId": 305014,
+      "descEn": "Fixed-wing aircraft attack range +3; Helicopter mobility +3",
+      "descTemplate": "Fixed-wing aircraft attack range +%d; Helicopter mobility +%d",
+      "techDescKeys": [
+        40,
+        39
+      ],
+      "techValues": [
+        3,
+        3
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 305014,
+      "x": 2,
+      "y": 8,
+      "costGold": 65000,
+      "costIndustry": 0,
+      "costEnergy": 2600,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305013,
+        305006
+      ],
+      "upgradeToId": 0,
+      "descEn": "Fixed-wing aircraft attack range +4; Helicopter mobility +4",
+      "descTemplate": "Fixed-wing aircraft attack range +%d; Helicopter mobility +%d",
+      "techDescKeys": [
+        40,
+        39
+      ],
+      "techValues": [
+        4,
+        4
+      ]
+    }
+  ],
+  "prerequisites": [
+    305001,
+    305002,
+    305004,
+    305006
+  ]
+}

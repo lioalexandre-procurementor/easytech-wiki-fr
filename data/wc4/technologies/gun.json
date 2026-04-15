@@ -1,0 +1,119 @@
+{
+  "slug": "gun",
+  "apkTypeId": 1,
+  "apkCategoryId": 0,
+  "nameEn": "Gun",
+  "nameFr": "Gun",
+  "category": "infantry",
+  "effectArmy": 1,
+  "maxLevel": 4,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 301011,
+      "x": 2,
+      "y": 2,
+      "costGold": 1250,
+      "costIndustry": 250,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301001
+      ],
+      "upgradeToId": 301012,
+      "descEn": "Attack +2",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        2
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 301012,
+      "x": 2,
+      "y": 4,
+      "costGold": 3000,
+      "costIndustry": 600,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301011,
+        301003
+      ],
+      "upgradeToId": 301013,
+      "descEn": "Attack +4",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        4
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 301013,
+      "x": 2,
+      "y": 6,
+      "costGold": 11250,
+      "costIndustry": 2250,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        301012,
+        301004
+      ],
+      "upgradeToId": 301014,
+      "descEn": "Attack +6",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        6
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 301014,
+      "x": 2,
+      "y": 8,
+      "costGold": 60000,
+      "costIndustry": 12000,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        301013,
+        301005
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack +9",
+      "descTemplate": "Attack +%d",
+      "techDescKeys": [
+        2
+      ],
+      "techValues": [
+        9
+      ]
+    }
+  ],
+  "prerequisites": [
+    301001,
+    301003,
+    301004,
+    301005
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "slug": "vehicle",
+  "apkTypeId": 10,
+  "apkCategoryId": 1,
+  "nameEn": "Vehicle",
+  "nameFr": "Vehicle",
+  "category": "armor",
+  "effectArmy": 2,
+  "maxLevel": 4,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 302031,
+      "x": 2,
+      "y": 2,
+      "costGold": 2500,
+      "costIndustry": 0,
+      "costEnergy": 100,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        302001
+      ],
+      "upgradeToId": 302032,
+      "descEn": "HP +20",
+      "descTemplate": "HP +%d",
+      "techDescKeys": [
+        3
+      ],
+      "techValues": [
+        20
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 302032,
+      "x": 2,
+      "y": 4,
+      "costGold": 11250,
+      "costIndustry": 0,
+      "costEnergy": 450,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        302031,
+        302003
+      ],
+      "upgradeToId": 302033,
+      "descEn": "HP +40",
+      "descTemplate": "HP +%d",
+      "techDescKeys": [
+        3
+      ],
+      "techValues": [
+        40
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 302033,
+      "x": 2,
+      "y": 6,
+      "costGold": 55000,
+      "costIndustry": 0,
+      "costEnergy": 2200,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302032,
+        302005
+      ],
+      "upgradeToId": 302034,
+      "descEn": "HP +65",
+      "descTemplate": "HP +%d",
+      "techDescKeys": [
+        3
+      ],
+      "techValues": [
+        65
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 302034,
+      "x": 2,
+      "y": 8,
+      "costGold": 125000,
+      "costIndustry": 0,
+      "costEnergy": 5000,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302033,
+        302007
+      ],
+      "upgradeToId": 0,
+      "descEn": "HP +90",
+      "descTemplate": "HP +%d",
+      "techDescKeys": [
+        3
+      ],
+      "techValues": [
+        90
+      ]
+    }
+  ],
+  "prerequisites": [
+    302001,
+    302003,
+    302005,
+    302007
+  ]
+}

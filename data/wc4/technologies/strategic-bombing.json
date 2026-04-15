@@ -1,0 +1,67 @@
+{
+  "slug": "strategic-bombing",
+  "apkTypeId": 37,
+  "apkCategoryId": 4,
+  "nameEn": "Strategic Bombing",
+  "nameFr": "Strategic Bombing",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305051,
+      "x": 3,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 4750,
+      "costEnergy": 0,
+      "costTech": 95,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305023
+      ],
+      "upgradeToId": 305052,
+      "descEn": "Damage to stronghold units +65%",
+      "descTemplate": "Damage to stronghold units +%d%%",
+      "techDescKeys": [
+        36
+      ],
+      "techValues": [
+        65
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 305052,
+      "x": 3,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 17500,
+      "costEnergy": 0,
+      "costTech": 350,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305051,
+        305026
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage to stronghold units +80%",
+      "descTemplate": "Damage to stronghold units +%d%%",
+      "techDescKeys": [
+        36
+      ],
+      "techValues": [
+        80
+      ]
+    }
+  ],
+  "prerequisites": [
+    305026,
+    305023
+  ]
+}

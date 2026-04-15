@@ -1,0 +1,66 @@
+{
+  "slug": "rocket-engine",
+  "apkTypeId": 50,
+  "apkCategoryId": 7,
+  "nameEn": "Rocket Engine",
+  "nameFr": "Rocket Engine",
+  "category": "missile",
+  "effectArmy": 6,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 308011,
+      "x": 2,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 47500,
+      "costEnergy": 0,
+      "costTech": 950,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308003
+      ],
+      "upgradeToId": 308012,
+      "descEn": "Attack range +2",
+      "descTemplate": "Attack range +%d",
+      "techDescKeys": [
+        6
+      ],
+      "techValues": [
+        2
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 308012,
+      "x": 2,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 87500,
+      "costEnergy": 0,
+      "costTech": 1350,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308007
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack range +3",
+      "descTemplate": "Attack range +%d",
+      "techDescKeys": [
+        6
+      ],
+      "techValues": [
+        3
+      ]
+    }
+  ],
+  "prerequisites": [
+    308003,
+    308007
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "bunker",
+  "apkTypeId": 40,
+  "apkCategoryId": 5,
+  "nameEn": "Bunker",
+  "nameFr": "Bunker",
+  "category": "fortifications",
+  "effectArmy": 8,
+  "maxLevel": 4,
+  "needHQLv": 6,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 2,
+      "apkId": 306001,
+      "x": 1,
+      "y": 1,
+      "costGold": 7500,
+      "costIndustry": 0,
+      "costEnergy": 300,
+      "costTech": 0,
+      "needHQLv": 6,
+      "needScenarioId": 1,
+      "prerequisiteIds": [],
+      "upgradeToId": 306002,
+      "descEn": "Attack +6; Defense +2; HP +30",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        6,
+        2,
+        30
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 306002,
+      "x": 1,
+      "y": 2,
+      "costGold": 26250,
+      "costIndustry": 0,
+      "costEnergy": 1050,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        306001
+      ],
+      "upgradeToId": 306003,
+      "descEn": "Attack +9; Defense +3; HP +45",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        9,
+        3,
+        45
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 306003,
+      "x": 1,
+      "y": 3,
+      "costGold": 75000,
+      "costIndustry": 0,
+      "costEnergy": 3000,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        306002
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack +12; Defense +4; HP +60",
+      "descTemplate": "Attack +%d; Defense +%d; HP +%d",
+      "techDescKeys": [
+        2,
+        5,
+        3
+      ],
+      "techValues": [
+        12,
+        4,
+        60
+      ]
+    }
+  ],
+  "prerequisites": []
+}

@@ -1,0 +1,67 @@
+{
+  "slug": "machine-gun",
+  "apkTypeId": 12,
+  "apkCategoryId": 1,
+  "nameEn": "Machine Gun",
+  "nameFr": "Machine Gun",
+  "category": "armor",
+  "effectArmy": 2,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 302051,
+      "x": 3,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 2000,
+      "costEnergy": 0,
+      "costTech": 40,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        302021
+      ],
+      "upgradeToId": 302052,
+      "descEn": "Damage to infantry units +45%",
+      "descTemplate": "Damage to infantry units +%d%%",
+      "techDescKeys": [
+        34
+      ],
+      "techValues": [
+        45
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 302052,
+      "x": 3,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 8250,
+      "costEnergy": 0,
+      "costTech": 165,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302051,
+        302023
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage to infantry units +55%",
+      "descTemplate": "Damage to infantry units +%d%%",
+      "techDescKeys": [
+        34
+      ],
+      "techValues": [
+        55
+      ]
+    }
+  ],
+  "prerequisites": [
+    302021,
+    302023
+  ]
+}

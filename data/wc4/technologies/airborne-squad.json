@@ -1,0 +1,43 @@
+{
+  "slug": "airborne-squad",
+  "apkTypeId": 56,
+  "apkCategoryId": 4,
+  "nameEn": "Airborne Squad",
+  "nameFr": "Airborne Squad",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 310001,
+      "x": 1,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 15000,
+      "costEnergy": 0,
+      "costTech": 250,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305062,
+        309001
+      ],
+      "upgradeToId": 0,
+      "descEn": "Ability to deploy a two-squad motorized infantry by airborne in the designated area",
+      "descTemplate": "Ability to deploy a two-squad motorized infantry by airborne in the designated area",
+      "techDescKeys": [
+        42
+      ],
+      "techValues": [
+        0
+      ]
+    }
+  ],
+  "prerequisites": [
+    309001,
+    305062
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "slug": "engine",
+  "apkTypeId": 11,
+  "apkCategoryId": 1,
+  "nameEn": "Engine",
+  "nameFr": "Engine",
+  "category": "armor",
+  "effectArmy": 2,
+  "maxLevel": 4,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 302041,
+      "x": 4,
+      "y": 4,
+      "costGold": 4000,
+      "costIndustry": 0,
+      "costEnergy": 160,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        302021
+      ],
+      "upgradeToId": 302042,
+      "descEn": "Mobility +1",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        1
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 302042,
+      "x": 4,
+      "y": 6,
+      "costGold": 21250,
+      "costIndustry": 0,
+      "costEnergy": 850,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        302041,
+        302022
+      ],
+      "upgradeToId": 302043,
+      "descEn": "Mobility +2",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        2
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 302043,
+      "x": 4,
+      "y": 8,
+      "costGold": 70000,
+      "costIndustry": 0,
+      "costEnergy": 2800,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302042,
+        302024
+      ],
+      "upgradeToId": 302044,
+      "descEn": "Mobility +3",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        3
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 302044,
+      "x": 4,
+      "y": 10,
+      "costGold": 155000,
+      "costIndustry": 0,
+      "costEnergy": 6200,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302043,
+        302026
+      ],
+      "upgradeToId": 0,
+      "descEn": "Mobility +4",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        4
+      ]
+    }
+  ],
+  "prerequisites": [
+    302021,
+    302022,
+    302024,
+    302026
+  ]
+}

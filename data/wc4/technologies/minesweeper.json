@@ -1,0 +1,67 @@
+{
+  "slug": "minesweeper",
+  "apkTypeId": 29,
+  "apkCategoryId": 3,
+  "nameEn": "Minesweeper",
+  "nameFr": "Minesweeper",
+  "category": "navy",
+  "effectArmy": 4,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 304071,
+      "x": 2,
+      "y": 2,
+      "costGold": 0,
+      "costIndustry": 6750,
+      "costEnergy": 0,
+      "costTech": 135,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        304021
+      ],
+      "upgradeToId": 304072,
+      "descEn": "Damage from naval mines -75%",
+      "descTemplate": "Damage from naval mines -%d%%",
+      "techDescKeys": [
+        27
+      ],
+      "techValues": [
+        75
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 304072,
+      "x": 2,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 25000,
+      "costEnergy": 0,
+      "costTech": 500,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304071,
+        304022
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage from naval mines -90%",
+      "descTemplate": "Damage from naval mines -%d%%",
+      "techDescKeys": [
+        27
+      ],
+      "techValues": [
+        90
+      ]
+    }
+  ],
+  "prerequisites": [
+    304021,
+    304022
+  ]
+}

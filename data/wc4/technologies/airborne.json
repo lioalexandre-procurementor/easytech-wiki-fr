@@ -1,0 +1,67 @@
+{
+  "slug": "airborne",
+  "apkTypeId": 38,
+  "apkCategoryId": 4,
+  "nameEn": "Airborne",
+  "nameFr": "Airborne",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305061,
+      "x": 2,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 800,
+      "costEnergy": 0,
+      "costTech": 16,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305012
+      ],
+      "upgradeToId": 305062,
+      "descEn": "Able to airborne a motorized infantry in designated areas",
+      "descTemplate": "Able to airborne a motorized infantry in designated areas",
+      "techDescKeys": [
+        32
+      ],
+      "techValues": [
+        0
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 305062,
+      "x": 2,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 9000,
+      "costEnergy": 0,
+      "costTech": 180,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305061,
+        305013
+      ],
+      "upgradeToId": 305063,
+      "descEn": "Able to airborne a mechanized infantry in designated areas",
+      "descTemplate": "Able to airborne a mechanized infantry in designated areas",
+      "techDescKeys": [
+        33
+      ],
+      "techValues": [
+        0
+      ]
+    }
+  ],
+  "prerequisites": [
+    305013,
+    305012
+  ]
+}

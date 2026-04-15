@@ -1,0 +1,181 @@
+{
+  "slug": "break-defense",
+  "apkTypeId": 51,
+  "apkCategoryId": 7,
+  "nameEn": "Break Defense",
+  "nameFr": "Break Defense",
+  "category": "missile",
+  "effectArmy": 7,
+  "maxLevel": 7,
+  "needHQLv": 20,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 308021,
+      "x": 3,
+      "y": 1,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 650,
+      "costTech": 65,
+      "needHQLv": 20,
+      "needScenarioId": 2,
+      "prerequisiteIds": [],
+      "upgradeToId": 308022,
+      "descEn": "Ignore target defense 3",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        3
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 308022,
+      "x": 3,
+      "y": 2,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 1350,
+      "costTech": 135,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        308021
+      ],
+      "upgradeToId": 308023,
+      "descEn": "Ignore target defense 6",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        6
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 308023,
+      "x": 3,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 2800,
+      "costTech": 280,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308022
+      ],
+      "upgradeToId": 308024,
+      "descEn": "Ignore target defense 10",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        10
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 308024,
+      "x": 3,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 5400,
+      "costTech": 540,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308023
+      ],
+      "upgradeToId": 308025,
+      "descEn": "Ignore target defense 15",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        15
+      ]
+    },
+    {
+      "level": 5,
+      "apkId": 308025,
+      "x": 3,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 6600,
+      "costTech": 660,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308024
+      ],
+      "upgradeToId": 308026,
+      "descEn": "Ignore target defense 20",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        20
+      ]
+    },
+    {
+      "level": 6,
+      "apkId": 308026,
+      "x": 3,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 7900,
+      "costTech": 790,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308025
+      ],
+      "upgradeToId": 308027,
+      "descEn": "Ignore target defense 25",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        25
+      ]
+    },
+    {
+      "level": 7,
+      "apkId": 308027,
+      "x": 3,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 9100,
+      "costTech": 910,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308026
+      ],
+      "upgradeToId": 0,
+      "descEn": "Ignore target defense 30",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        30
+      ]
+    }
+  ],
+  "prerequisites": []
+}

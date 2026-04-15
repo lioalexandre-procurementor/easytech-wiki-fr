@@ -1,0 +1,97 @@
+{
+  "slug": "anti-air-gun",
+  "apkTypeId": 45,
+  "apkCategoryId": 6,
+  "nameEn": "Anti-air Gun",
+  "nameFr": "Anti-air Gun",
+  "category": "antiair",
+  "effectArmy": 0,
+  "maxLevel": 4,
+  "needHQLv": 10,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 2,
+      "apkId": 307001,
+      "x": 1,
+      "y": 1,
+      "costGold": 2500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 10,
+      "needHQLv": 10,
+      "needScenarioId": 1,
+      "prerequisiteIds": [],
+      "upgradeToId": 307002,
+      "descEn": "Air-raiding damage -35%; Bombing damage -30%; Reduce paratroops HP by +15%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11
+      ],
+      "techValues": [
+        35,
+        30,
+        15
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 307002,
+      "x": 1,
+      "y": 2,
+      "costGold": 7500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 30,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        307001
+      ],
+      "upgradeToId": 307003,
+      "descEn": "Air-raiding damage -45%; Bombing damage -40%; Reduce paratroops HP by +20%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11
+      ],
+      "techValues": [
+        45,
+        40,
+        20
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 307003,
+      "x": 1,
+      "y": 3,
+      "costGold": 18750,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 75,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        307002
+      ],
+      "upgradeToId": 0,
+      "descEn": "Air-raiding damage -55%; Bombing damage -50%; Reduce paratroops HP by +25%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11
+      ],
+      "techValues": [
+        55,
+        50,
+        25
+      ]
+    }
+  ],
+  "prerequisites": []
+}

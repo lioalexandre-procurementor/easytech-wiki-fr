@@ -1,0 +1,67 @@
+{
+  "slug": "marching",
+  "apkTypeId": 6,
+  "apkCategoryId": 0,
+  "nameEn": "Marching",
+  "nameFr": "Marching",
+  "category": "infantry",
+  "effectArmy": 1,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 301061,
+      "x": 1,
+      "y": 2,
+      "costGold": 0,
+      "costIndustry": 300,
+      "costEnergy": 60,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301002
+      ],
+      "upgradeToId": 301062,
+      "descEn": "Consume mobility in a particular terrain -70%",
+      "descTemplate": "Consume mobility in a particular terrain -%d%%",
+      "techDescKeys": [
+        16
+      ],
+      "techValues": [
+        70
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 301062,
+      "x": 1,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 2500,
+      "costEnergy": 500,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        301061,
+        301004
+      ],
+      "upgradeToId": 0,
+      "descEn": "Consume mobility in a particular terrain -100%",
+      "descTemplate": "Consume mobility in a particular terrain -%d%%",
+      "techDescKeys": [
+        16
+      ],
+      "techValues": [
+        100
+      ]
+    }
+  ],
+  "prerequisites": [
+    301002,
+    301004
+  ]
+}

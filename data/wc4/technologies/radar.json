@@ -1,0 +1,41 @@
+{
+  "slug": "radar",
+  "apkTypeId": 48,
+  "apkCategoryId": 6,
+  "nameEn": "Radar",
+  "nameFr": "Radar",
+  "category": "antiair",
+  "effectArmy": 0,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 307031,
+      "x": 2,
+      "y": 2,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 1800,
+      "costTech": 180,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        307011
+      ],
+      "upgradeToId": 0,
+      "descEn": "Air defense range +1",
+      "descTemplate": "Air defense range +%d",
+      "techDescKeys": [
+        14
+      ],
+      "techValues": [
+        1
+      ]
+    }
+  ],
+  "prerequisites": [
+    307011
+  ]
+}

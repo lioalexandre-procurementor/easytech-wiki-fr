@@ -1,0 +1,157 @@
+{
+  "slug": "mobility",
+  "apkTypeId": 0,
+  "apkCategoryId": 0,
+  "nameEn": "Mobility",
+  "nameFr": "Mobility",
+  "category": "infantry",
+  "effectArmy": 1,
+  "maxLevel": 6,
+  "needHQLv": 1,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 301001,
+      "x": 1,
+      "y": 1,
+      "costGold": 500,
+      "costIndustry": 100,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 1,
+      "needScenarioId": 1,
+      "prerequisiteIds": [],
+      "upgradeToId": 301002,
+      "descEn": "Mobility +1",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        1
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 301002,
+      "x": 1,
+      "y": 2,
+      "costGold": 1000,
+      "costIndustry": 200,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301001
+      ],
+      "upgradeToId": 301003,
+      "descEn": "Mobility +2",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        2
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 301003,
+      "x": 1,
+      "y": 3,
+      "costGold": 2500,
+      "costIndustry": 500,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301002
+      ],
+      "upgradeToId": 301004,
+      "descEn": "Mobility +3",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        3
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 301004,
+      "x": 1,
+      "y": 4,
+      "costGold": 8750,
+      "costIndustry": 1750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        301003
+      ],
+      "upgradeToId": 301005,
+      "descEn": "Mobility +4",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        4
+      ]
+    },
+    {
+      "level": 5,
+      "apkId": 301005,
+      "x": 1,
+      "y": 6,
+      "costGold": 33750,
+      "costIndustry": 6750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        301004
+      ],
+      "upgradeToId": 301006,
+      "descEn": "Mobility +5",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        5
+      ]
+    },
+    {
+      "level": 6,
+      "apkId": 301006,
+      "x": 1,
+      "y": 8,
+      "costGold": 87500,
+      "costIndustry": 17500,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        301005
+      ],
+      "upgradeToId": 0,
+      "descEn": "Mobility +6",
+      "descTemplate": "Mobility +%d",
+      "techDescKeys": [
+        1
+      ],
+      "techValues": [
+        6
+      ]
+    }
+  ],
+  "prerequisites": []
+}

@@ -1,0 +1,167 @@
+{
+  "slug": "armor-3",
+  "apkTypeId": 25,
+  "apkCategoryId": 3,
+  "nameEn": "Armor",
+  "nameFr": "Armor",
+  "category": "navy",
+  "effectArmy": 4,
+  "maxLevel": 6,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 304031,
+      "x": 3,
+      "y": 3,
+      "costGold": 4000,
+      "costIndustry": 800,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        304021
+      ],
+      "upgradeToId": 304032,
+      "descEn": "Defense +2",
+      "descTemplate": "Defense +%d",
+      "techDescKeys": [
+        5
+      ],
+      "techValues": [
+        2
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 304032,
+      "x": 3,
+      "y": 5,
+      "costGold": 10000,
+      "costIndustry": 2000,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        304031,
+        304022
+      ],
+      "upgradeToId": 304033,
+      "descEn": "Defense +4",
+      "descTemplate": "Defense +%d",
+      "techDescKeys": [
+        5
+      ],
+      "techValues": [
+        4
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 304033,
+      "x": 3,
+      "y": 6,
+      "costGold": 21250,
+      "costIndustry": 4250,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        304032
+      ],
+      "upgradeToId": 304034,
+      "descEn": "Defense +6",
+      "descTemplate": "Defense +%d",
+      "techDescKeys": [
+        5
+      ],
+      "techValues": [
+        6
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 304034,
+      "x": 3,
+      "y": 7,
+      "costGold": 41250,
+      "costIndustry": 8250,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304033,
+        304023
+      ],
+      "upgradeToId": 304035,
+      "descEn": "Defense +8",
+      "descTemplate": "Defense +%d",
+      "techDescKeys": [
+        5
+      ],
+      "techValues": [
+        8
+      ]
+    },
+    {
+      "level": 5,
+      "apkId": 304035,
+      "x": 3,
+      "y": 8,
+      "costGold": 87500,
+      "costIndustry": 17500,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304034
+      ],
+      "upgradeToId": 304036,
+      "descEn": "Defense +10",
+      "descTemplate": "Defense +%d",
+      "techDescKeys": [
+        5
+      ],
+      "techValues": [
+        10
+      ]
+    },
+    {
+      "level": 6,
+      "apkId": 304036,
+      "x": 3,
+      "y": 9,
+      "costGold": 155000,
+      "costIndustry": 31000,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304035,
+        304024
+      ],
+      "upgradeToId": 0,
+      "descEn": "Defense +12",
+      "descTemplate": "Defense +%d",
+      "techDescKeys": [
+        5
+      ],
+      "techValues": [
+        12
+      ]
+    }
+  ],
+  "prerequisites": [
+    304021,
+    304022,
+    304023,
+    304024
+  ]
+}

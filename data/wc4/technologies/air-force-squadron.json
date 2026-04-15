@@ -1,0 +1,41 @@
+{
+  "slug": "air-force-squadron",
+  "apkTypeId": 55,
+  "apkCategoryId": 4,
+  "nameEn": "Air Force Squadron",
+  "nameFr": "Air Force Squadron",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 309001,
+      "x": 1,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 26500,
+      "costEnergy": 0,
+      "costTech": 580,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305006
+      ],
+      "upgradeToId": 0,
+      "descEn": "Air Force squadrons can be deployed",
+      "descTemplate": "Air Force squadrons can be deployed",
+      "techDescKeys": [
+        41
+      ],
+      "techValues": [
+        0
+      ]
+    }
+  ],
+  "prerequisites": [
+    305006
+  ]
+}

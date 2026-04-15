@@ -1,0 +1,223 @@
+{
+  "slug": "rocket-artillery",
+  "apkTypeId": 17,
+  "apkCategoryId": 2,
+  "nameEn": "Rocket Artillery",
+  "nameFr": "Rocket Artillery",
+  "category": "artillery",
+  "effectArmy": 3,
+  "maxLevel": 8,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 303011,
+      "x": 1,
+      "y": 2,
+      "costGold": 1500,
+      "costIndustry": 300,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        303001
+      ],
+      "upgradeToId": 303012,
+      "descEn": "Attack of rocket artillery units +3",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        3
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 303012,
+      "x": 1,
+      "y": 3,
+      "costGold": 3500,
+      "costIndustry": 700,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        303011,
+        303002
+      ],
+      "upgradeToId": 303013,
+      "descEn": "Attack of rocket artillery units +5",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        5
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 303013,
+      "x": 1,
+      "y": 4,
+      "costGold": 10000,
+      "costIndustry": 2000,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        303012,
+        303003
+      ],
+      "upgradeToId": 303014,
+      "descEn": "Attack of rocket artillery units +7",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        7
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 303014,
+      "x": 1,
+      "y": 5,
+      "costGold": 21250,
+      "costIndustry": 4250,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        303013,
+        303004
+      ],
+      "upgradeToId": 303015,
+      "descEn": "Attack of rocket artillery units +9",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        9
+      ]
+    },
+    {
+      "level": 5,
+      "apkId": 303015,
+      "x": 1,
+      "y": 6,
+      "costGold": 41250,
+      "costIndustry": 8250,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        303014,
+        303005
+      ],
+      "upgradeToId": 303016,
+      "descEn": "Attack of rocket artillery units +11",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        11
+      ]
+    },
+    {
+      "level": 6,
+      "apkId": 303016,
+      "x": 1,
+      "y": 7,
+      "costGold": 87500,
+      "costIndustry": 17500,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        303015,
+        303006
+      ],
+      "upgradeToId": 303017,
+      "descEn": "Attack of rocket artillery units +13",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        13
+      ]
+    },
+    {
+      "level": 7,
+      "apkId": 303017,
+      "x": 1,
+      "y": 8,
+      "costGold": 145000,
+      "costIndustry": 29000,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        303016,
+        303007
+      ],
+      "upgradeToId": 303018,
+      "descEn": "Attack of rocket artillery units +15",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        15
+      ]
+    },
+    {
+      "level": 8,
+      "apkId": 303018,
+      "x": 1,
+      "y": 9,
+      "costGold": 225000,
+      "costIndustry": 45000,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        303017,
+        303008
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack of rocket artillery units +18",
+      "descTemplate": "Attack of rocket artillery units +%d",
+      "techDescKeys": [
+        20
+      ],
+      "techValues": [
+        18
+      ]
+    }
+  ],
+  "prerequisites": [
+    303008,
+    303001,
+    303002,
+    303003,
+    303004,
+    303005,
+    303006,
+    303007
+  ]
+}

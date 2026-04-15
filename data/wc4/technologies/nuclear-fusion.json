@@ -1,0 +1,66 @@
+{
+  "slug": "nuclear-fusion",
+  "apkTypeId": 52,
+  "apkCategoryId": 7,
+  "nameEn": "Nuclear Fusion",
+  "nameFr": "Nuclear Fusion",
+  "category": "missile",
+  "effectArmy": 7,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 308031,
+      "x": 3,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 10000,
+      "costTech": 1000,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308023
+      ],
+      "upgradeToId": 308032,
+      "descEn": "Construction rounds -1",
+      "descTemplate": "Construction rounds -%d",
+      "techDescKeys": [
+        7
+      ],
+      "techValues": [
+        1
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 308032,
+      "x": 3,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 15000,
+      "costTech": 1500,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308027
+      ],
+      "upgradeToId": 0,
+      "descEn": "Construction rounds -2",
+      "descTemplate": "Construction rounds -%d",
+      "techDescKeys": [
+        7
+      ],
+      "techValues": [
+        2
+      ]
+    }
+  ],
+  "prerequisites": [
+    308027,
+    308023
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "aircraft-fuel",
+  "apkTypeId": 32,
+  "apkCategoryId": 4,
+  "nameEn": "Aircraft Fuel",
+  "nameFr": "Aircraft Fuel",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 6,
+  "needHQLv": 12,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305001,
+      "x": 1,
+      "y": 1,
+      "costGold": 1500,
+      "costIndustry": 0,
+      "costEnergy": 60,
+      "costTech": 0,
+      "needHQLv": 12,
+      "needScenarioId": 1,
+      "prerequisiteIds": [],
+      "upgradeToId": 305002,
+      "descEn": "Gold costs -5% when building airforce units at the airport",
+      "descTemplate": "Gold costs -%d%% when building airforce units at the airport",
+      "techDescKeys": [
+        28
+      ],
+      "techValues": [
+        5
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 305002,
+      "x": 1,
+      "y": 3,
+      "costGold": 4000,
+      "costIndustry": 0,
+      "costEnergy": 160,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305001
+      ],
+      "upgradeToId": 305003,
+      "descEn": "Industry costs -10% when building airforce units at the airport",
+      "descTemplate": "Industry costs -%d%% when building airforce units at the airport",
+      "techDescKeys": [
+        29
+      ],
+      "techValues": [
+        10
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 305003,
+      "x": 1,
+      "y": 4,
+      "costGold": 11250,
+      "costIndustry": 0,
+      "costEnergy": 450,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305002
+      ],
+      "upgradeToId": 305004,
+      "descEn": "Gold costs -10% when building airforce units at the airport",
+      "descTemplate": "Gold costs -%d%% when building airforce units at the airport",
+      "techDescKeys": [
+        28
+      ],
+      "techValues": [
+        10
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 305004,
+      "x": 1,
+      "y": 5,
+      "costGold": 23750,
+      "costIndustry": 0,
+      "costEnergy": 950,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305003
+      ],
+      "upgradeToId": 305005,
+      "descEn": "Industry costs -20% when building airforce units at the airport",
+      "descTemplate": "Industry costs -%d%% when building airforce units at the airport",
+      "techDescKeys": [
+        29
+      ],
+      "techValues": [
+        20
+      ]
+    },
+    {
+      "level": 5,
+      "apkId": 305005,
+      "x": 1,
+      "y": 6,
+      "costGold": 55000,
+      "costIndustry": 0,
+      "costEnergy": 2200,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305004
+      ],
+      "upgradeToId": 305006,
+      "descEn": "Gold costs -15% when building airforce units at the airport",
+      "descTemplate": "Gold costs -%d%% when building airforce units at the airport",
+      "techDescKeys": [
+        28
+      ],
+      "techValues": [
+        15
+      ]
+    },
+    {
+      "level": 6,
+      "apkId": 305006,
+      "x": 1,
+      "y": 7,
+      "costGold": 110000,
+      "costIndustry": 0,
+      "costEnergy": 4400,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305005
+      ],
+      "upgradeToId": 0,
+      "descEn": "Industry costs -30% when building airforce units at the airport",
+      "descTemplate": "Industry costs -%d%% when building airforce units at the airport",
+      "techDescKeys": [
+        29
+      ],
+      "techValues": [
+        30
+      ]
+    }
+  ],
+  "prerequisites": []
+}

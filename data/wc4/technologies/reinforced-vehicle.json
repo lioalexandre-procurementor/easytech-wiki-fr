@@ -1,0 +1,41 @@
+{
+  "slug": "reinforced-vehicle",
+  "apkTypeId": 15,
+  "apkCategoryId": 1,
+  "nameEn": "Reinforced Vehicle",
+  "nameFr": "Reinforced Vehicle",
+  "category": "armor",
+  "effectArmy": 2,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 302081,
+      "x": 2,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 8000,
+      "costTech": 800,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        302034
+      ],
+      "upgradeToId": 0,
+      "descEn": "Nuclear bomb damage -10%",
+      "descTemplate": "Nuclear bomb damage -%d%%",
+      "techDescKeys": [
+        18
+      ],
+      "techValues": [
+        10
+      ]
+    }
+  ],
+  "prerequisites": [
+    302034
+  ]
+}

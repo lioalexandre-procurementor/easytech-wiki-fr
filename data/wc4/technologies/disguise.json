@@ -1,0 +1,41 @@
+{
+  "slug": "disguise",
+  "apkTypeId": 22,
+  "apkCategoryId": 2,
+  "nameEn": "Disguise",
+  "nameFr": "Disguise",
+  "category": "artillery",
+  "effectArmy": 3,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 303061,
+      "x": 4,
+      "y": 9,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 8500,
+      "costTech": 850,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        303034
+      ],
+      "upgradeToId": 0,
+      "descEn": "HP +60",
+      "descTemplate": "HP +%d",
+      "techDescKeys": [
+        3
+      ],
+      "techValues": [
+        60
+      ]
+    }
+  ],
+  "prerequisites": [
+    303034
+  ]
+}

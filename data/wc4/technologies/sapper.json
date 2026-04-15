@@ -1,0 +1,67 @@
+{
+  "slug": "sapper",
+  "apkTypeId": 3,
+  "apkCategoryId": 0,
+  "nameEn": "Sapper",
+  "nameFr": "Sapper",
+  "category": "infantry",
+  "effectArmy": 1,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 301031,
+      "x": 3,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 1500,
+      "costEnergy": 300,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        301022
+      ],
+      "upgradeToId": 301032,
+      "descEn": "Damage from land mines -75%",
+      "descTemplate": "Damage from land mines -%d%%",
+      "techDescKeys": [
+        15
+      ],
+      "techValues": [
+        75
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 301032,
+      "x": 3,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 9000,
+      "costEnergy": 1800,
+      "costTech": 0,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        301031,
+        301024
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage from land mines -90%",
+      "descTemplate": "Damage from land mines -%d%%",
+      "techDescKeys": [
+        15
+      ],
+      "techValues": [
+        90
+      ]
+    }
+  ],
+  "prerequisites": [
+    301024,
+    301022
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "reinforced-ship",
+  "apkTypeId": 31,
+  "apkCategoryId": 3,
+  "nameEn": "Reinforced Ship",
+  "nameFr": "Reinforced Ship",
+  "category": "navy",
+  "effectArmy": 4,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 304091,
+      "x": 1,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 3000,
+      "costTech": 300,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        304007
+      ],
+      "upgradeToId": 0,
+      "descEn": "HP +10%",
+      "descTemplate": "HP +%d%%",
+      "techDescKeys": [
+        4
+      ],
+      "techValues": [
+        10
+      ]
+    }
+  ],
+  "prerequisites": [
+    304007
+  ]
+}

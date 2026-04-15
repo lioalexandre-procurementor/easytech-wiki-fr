@@ -1,0 +1,67 @@
+{
+  "slug": "air-strike",
+  "apkTypeId": 35,
+  "apkCategoryId": 4,
+  "nameEn": "Air Strike",
+  "nameFr": "Air Strike",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 2,
+  "needHQLv": 0,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305031,
+      "x": 1,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 2250,
+      "costEnergy": 0,
+      "costTech": 45,
+      "needHQLv": 0,
+      "needScenarioId": 1,
+      "prerequisiteIds": [
+        305002
+      ],
+      "upgradeToId": 305032,
+      "descEn": "Damage to infantry units +40%",
+      "descTemplate": "Damage to infantry units +%d%%",
+      "techDescKeys": [
+        34
+      ],
+      "techValues": [
+        40
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 305032,
+      "x": 1,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 7500,
+      "costEnergy": 0,
+      "costTech": 150,
+      "needHQLv": 0,
+      "needScenarioId": 2,
+      "prerequisiteIds": [
+        305031,
+        305004
+      ],
+      "upgradeToId": 0,
+      "descEn": "Damage to infantry units +50%",
+      "descTemplate": "Damage to infantry units +%d%%",
+      "techDescKeys": [
+        34
+      ],
+      "techValues": [
+        50
+      ]
+    }
+  ],
+  "prerequisites": [
+    305002,
+    305004
+  ]
+}

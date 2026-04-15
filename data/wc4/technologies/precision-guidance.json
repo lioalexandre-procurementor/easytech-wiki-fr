@@ -1,0 +1,89 @@
+{
+  "slug": "precision-guidance",
+  "apkTypeId": 53,
+  "apkCategoryId": 7,
+  "nameEn": "Precision guidance",
+  "nameFr": "Precision guidance",
+  "category": "missile",
+  "effectArmy": 6,
+  "maxLevel": 3,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 308041,
+      "x": 1,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 6600,
+      "costTech": 660,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308004
+      ],
+      "upgradeToId": 308042,
+      "descEn": "Ignore target defense 5",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        5
+      ]
+    },
+    {
+      "level": 2,
+      "apkId": 308042,
+      "x": 1,
+      "y": 6,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 7900,
+      "costTech": 790,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308041
+      ],
+      "upgradeToId": 308043,
+      "descEn": "Ignore target defense 10",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        10
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 308043,
+      "x": 1,
+      "y": 7,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 9100,
+      "costTech": 910,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        308042
+      ],
+      "upgradeToId": 0,
+      "descEn": "Ignore target defense 15",
+      "descTemplate": "Ignore target defense %d",
+      "techDescKeys": [
+        30
+      ],
+      "techValues": [
+        15
+      ]
+    }
+  ],
+  "prerequisites": [
+    308004
+  ]
+}

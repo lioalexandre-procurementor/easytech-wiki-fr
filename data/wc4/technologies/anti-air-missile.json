@@ -1,0 +1,112 @@
+{
+  "slug": "anti-air-missile",
+  "apkTypeId": 47,
+  "apkCategoryId": 6,
+  "nameEn": "Anti-air Missile",
+  "nameFr": "Anti-air Missile",
+  "category": "antiair",
+  "effectArmy": 0,
+  "maxLevel": 4,
+  "needHQLv": 14,
+  "needScenarioId": 2,
+  "levels": [
+    {
+      "level": 2,
+      "apkId": 307021,
+      "x": 3,
+      "y": 3,
+      "costGold": 0,
+      "costIndustry": 6750,
+      "costEnergy": 0,
+      "costTech": 135,
+      "needHQLv": 14,
+      "needScenarioId": 2,
+      "prerequisiteIds": [],
+      "upgradeToId": 307022,
+      "descEn": "Air-raiding damage -45%; Bombing damage -40%; Reduce paratroops HP by +55%; Strategic bombing damage -30%; Missile damage -20%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%; Strategic bombing damage -%d%%; Missile damage -%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "techValues": [
+        45,
+        40,
+        55,
+        30,
+        20
+      ]
+    },
+    {
+      "level": 3,
+      "apkId": 307022,
+      "x": 3,
+      "y": 4,
+      "costGold": 0,
+      "costIndustry": 15000,
+      "costEnergy": 0,
+      "costTech": 300,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        307021,
+        307012
+      ],
+      "upgradeToId": 307023,
+      "descEn": "Air-raiding damage -55%; Bombing damage -50%; Reduce paratroops HP by +60%; Strategic bombing damage -40%; Missile damage -30%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%; Strategic bombing damage -%d%%; Missile damage -%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "techValues": [
+        55,
+        50,
+        60,
+        40,
+        30
+      ]
+    },
+    {
+      "level": 4,
+      "apkId": 307023,
+      "x": 3,
+      "y": 5,
+      "costGold": 0,
+      "costIndustry": 29000,
+      "costEnergy": 0,
+      "costTech": 580,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        307022
+      ],
+      "upgradeToId": 0,
+      "descEn": "Air-raiding damage -65%; Bombing damage -60%; Reduce paratroops HP by +65%; Strategic bombing damage -50%; Missile damage -40%",
+      "descTemplate": "Air-raiding damage -%d%%; Bombing damage -%d%%; Reduce paratroops HP by +%d%%; Strategic bombing damage -%d%%; Missile damage -%d%%",
+      "techDescKeys": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "techValues": [
+        65,
+        60,
+        65,
+        50,
+        40
+      ]
+    }
+  ],
+  "prerequisites": [
+    307012
+  ]
+}

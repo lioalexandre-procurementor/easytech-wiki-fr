@@ -1,0 +1,41 @@
+{
+  "slug": "jet-engine",
+  "apkTypeId": 39,
+  "apkCategoryId": 4,
+  "nameEn": "Jet Engine",
+  "nameFr": "Jet Engine",
+  "category": "airforce",
+  "effectArmy": 5,
+  "maxLevel": 1,
+  "needHQLv": 0,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "level": 1,
+      "apkId": 305071,
+      "x": 2,
+      "y": 8,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 4100,
+      "costTech": 410,
+      "needHQLv": 0,
+      "needScenarioId": 3,
+      "prerequisiteIds": [
+        305014
+      ],
+      "upgradeToId": 0,
+      "descEn": "Attack range +2",
+      "descTemplate": "Attack range +%d",
+      "techDescKeys": [
+        6
+      ],
+      "techValues": [
+        2
+      ]
+    }
+  ],
+  "prerequisites": [
+    305014
+  ]
+}
