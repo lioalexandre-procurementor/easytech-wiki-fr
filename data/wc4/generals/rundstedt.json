@@ -55,23 +55,31 @@
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "Iron Will",
+      "desc": "When commanding infantry , lower damage received by 20%. After being attacked by enemy, increase damage reduction by additional 10%, lasting for 1 turn, stackable up to 3 times.",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_137.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Iron Will",
+      "skillSlug": "iron-will",
+      "skillType": 137,
+      "skillLevel": 5
     },
     {
       "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "Provocation",
+      "desc": "After attacking, there is 60% to gain \"provocation\" effect",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_138.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Provocation",
+      "skillSlug": "provocation",
+      "skillType": 138,
+      "skillLevel": 4
     }
   ],
   "attributes": {
@@ -101,7 +109,20 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 0,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 2300,

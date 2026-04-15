@@ -55,23 +55,31 @@
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "Knight of the Sea",
+      "desc": "When commanding ship units, morale will not diminish. When dealing a naval critical attack, increase damage by 40%. If a friendly carrier within 2 hexes or if the commander is deployed on a carrier, air strikes, missiles, and nuclear bombs deals +30% damage. All friendly aircraft carriers within 2 hexes gain +15% air strike damage.",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_162.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Knight of the Sea",
+      "skillSlug": "knight-of-the-sea",
+      "skillType": 162,
+      "skillLevel": 5
     },
     {
       "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "Deep Blue Resolve",
+      "desc": "While commanding ship units, there is a 64% chance to deal a critical attack when attacking or launching airstrikes. (If the general has this skill, the effects of Fleet Leader and Airforce Leader are inapplicable.)",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_163.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Deep Blue Resolve",
+      "skillSlug": "deep-blue-resolve",
+      "skillType": 163,
+      "skillLevel": 4
     }
   ],
   "attributes": {
@@ -101,7 +109,20 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 0,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 2945,

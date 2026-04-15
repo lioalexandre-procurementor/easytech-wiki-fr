@@ -85,61 +85,29 @@
     "stages": [
       {
         "stage": 1,
-        "label": "Bronze → Argent",
+        "label": "Niveau d'entraînement 1",
         "swordCost": 8,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [
-          {
-            "key": "artillery",
-            "maxDelta": 2
-          },
-          {
-            "key": "navy",
-            "maxDelta": 1
-          }
-        ]
+        "sceptreCost": 0,
+        "notes": "Slots max : 4. Coût additionnel : 300 médailles, 40 mérite."
       },
       {
         "stage": 2,
-        "label": "Argent → Or",
+        "label": "Niveau d'entraînement 2",
         "swordCost": 16,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [
-          {
-            "key": "marching",
-            "maxDelta": 1
-          }
-        ]
+        "sceptreCost": 0,
+        "notes": "Slots max : 5. Coût additionnel : 500 médailles, 60 mérite."
       },
       {
         "stage": 3,
-        "label": "Or → Promotion finale",
-        "swordCost": null,
+        "label": "Entraînement final",
+        "swordCost": 0,
         "sceptreCost": 8,
-        "skillChanges": [
-          {
-            "slot": 1,
-            "kind": "replace",
-            "newName": "Offensive conjointe"
-          },
-          {
-            "slot": 3,
-            "kind": "replace",
-            "newName": "Assaut naval"
-          }
-        ],
-        "attributeDeltas": [
-          {
-            "key": "navy",
-            "maxDelta": 1
-          }
-        ]
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
       }
     ],
     "totalSwordCost": 24,
-    "totalSceptreCost": 8
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
   },
   "acquisition": {
     "type": "medals",

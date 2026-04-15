@@ -55,13 +55,17 @@
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "August Storm",
+      "desc": "When commanding an infantry elite force, friendly units (including the commanding unit itself) within a 1-hex radius deal +10% damage to land units (If the elite force's level is at least 9, the bonus becomes 15%). For each additional friendly elite force within range, an additional 5% damage bonus is applied, up to 25%.",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_164.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "August Storm",
+      "skillSlug": "august-storm",
+      "skillType": 164,
+      "skillLevel": 5
     }
   ],
   "attributes": {
@@ -91,7 +95,27 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Niveau d'entraînement 1",
+        "swordCost": 16,
+        "sceptreCost": 0,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 60 mérite."
+      },
+      {
+        "stage": 2,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 16,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 1800,

@@ -55,13 +55,17 @@
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "Command and Coordination",
+      "desc": "After commanding a land unit to attack, there is a 100% chance to grant \"Coordination\" to nearby allies and yourself for 1 turn. Units with \"Coordination\" gain +15% damage. Nullify the negative status when it is applied to the unit (unless triggered by morale diminish), then clear \"Coordination.\"",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_158.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Command and Coordination",
+      "skillSlug": "command-and-coordination",
+      "skillType": 158,
+      "skillLevel": 5
     }
   ],
   "attributes": {
@@ -91,7 +95,27 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Niveau d'entraînement 1",
+        "swordCost": 16,
+        "sceptreCost": 0,
+        "notes": "Slots max : 5. Coût additionnel : 500 médailles, 60 mérite."
+      },
+      {
+        "stage": 2,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 16,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 2235,

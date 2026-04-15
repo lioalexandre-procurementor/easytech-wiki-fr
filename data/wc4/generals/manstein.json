@@ -108,8 +108,21 @@
       "max": 6
     }
   },
-  "hasTrainingPath": false,
-  "training": null,
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 0,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "iron-cross",
     "cost": 6985,

@@ -55,13 +55,17 @@
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "name": "Positional Warfare",
+      "desc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_143.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Positional Warfare",
+      "skillSlug": "positional-warfare",
+      "skillType": 143,
+      "skillLevel": 5
     }
   ],
   "attributes": {
@@ -91,7 +95,27 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Niveau d'entraînement 1",
+        "swordCost": 16,
+        "sceptreCost": 0,
+        "notes": "Slots max : 5. Coût additionnel : 500 médailles, 60 mérite."
+      },
+      {
+        "stage": 2,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 16,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 1580,

@@ -113,36 +113,15 @@
     "stages": [
       {
         "stage": 1,
-        "label": "Or → Promotion finale",
-        "swordCost": null,
+        "label": "Entraînement final",
+        "swordCost": 0,
         "sceptreCost": 8,
-        "skillChanges": [
-          {
-            "slot": 1,
-            "kind": "replace",
-            "newName": "Bataille en profondeur soviétique"
-          },
-          {
-            "slot": 2,
-            "kind": "replace",
-            "newName": "Tacticien du feu"
-          },
-          {
-            "slot": 3,
-            "kind": "replace",
-            "newName": "Meneur d'artillerie"
-          }
-        ],
-        "attributeDeltas": [
-          {
-            "key": "marching",
-            "maxDelta": 1
-          }
-        ]
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
       }
     ],
-    "totalSwordCost": null,
-    "totalSceptreCost": 8
+    "totalSwordCost": 0,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
   },
   "acquisition": {
     "type": "iron-cross",

@@ -81,7 +81,34 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Niveau d'entraînement 1",
+        "swordCost": 8,
+        "sceptreCost": 0,
+        "notes": "Slots max : 4. Coût additionnel : 300 médailles, 40 mérite."
+      },
+      {
+        "stage": 2,
+        "label": "Niveau d'entraînement 2",
+        "swordCost": 16,
+        "sceptreCost": 0,
+        "notes": "Slots max : 5. Coût additionnel : 500 médailles, 60 mérite."
+      },
+      {
+        "stage": 3,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite."
+      }
+    ],
+    "totalSwordCost": 24,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 550,

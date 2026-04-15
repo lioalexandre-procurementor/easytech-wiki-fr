@@ -55,23 +55,31 @@
     },
     {
       "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Emplacement apprenable — à remplir via l'Académie.",
+      "name": "Hero",
+      "desc": "Morale of armored units under command will not diminish, +12% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "icon": "/img/wc4/skills/general_skill_156.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Hero",
+      "skillSlug": "hero",
+      "skillType": 156,
+      "skillLevel": 4
     },
     {
       "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — débloqué via entraînement (5e emplacement Or).",
+      "name": "Wipe Out The North",
+      "desc": "When commanding armored units, deal +20% damage to non-building units other than city garrisons. If you are unable to attack or move after attacking, you have a 100% chance to attack again (only once per turn). Each kill this turn increases this chance by 20% (max 100%), upgrading the effect to an extra action.",
       "rating": null,
       "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement apprenable (Or) — pool défini par l'Académie"
+      "icon": "/img/wc4/skills/general_skill_157.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Wipe Out The North",
+      "skillSlug": "wipe-out-the-north",
+      "skillType": 157,
+      "skillLevel": 5
     }
   ],
   "attributes": {
@@ -105,40 +113,15 @@
     "stages": [
       {
         "stage": 1,
-        "label": "Or → Promotion finale",
-        "swordCost": null,
+        "label": "Entraînement final",
+        "swordCost": 0,
         "sceptreCost": 10,
-        "skillChanges": [
-          {
-            "slot": 1,
-            "kind": "replace",
-            "newName": "Héros"
-          },
-          {
-            "slot": 2,
-            "kind": "replace",
-            "newName": "Anéantir le Nord"
-          },
-          {
-            "slot": 3,
-            "kind": "replace",
-            "newName": "Meneur de Panzers"
-          }
-        ],
-        "attributeDeltas": [
-          {
-            "key": "artillery",
-            "maxDelta": 2
-          },
-          {
-            "key": "marching",
-            "maxDelta": 1
-          }
-        ]
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 200 mérite."
       }
     ],
-    "totalSwordCost": null,
-    "totalSceptreCost": 10
+    "totalSwordCost": 0,
+    "totalSceptreCost": 10,
+    "summary": "Entraînement premium débloquant des compétences signature et augmentant les plafonds d'attributs."
   },
   "acquisition": {
     "type": "medals",
