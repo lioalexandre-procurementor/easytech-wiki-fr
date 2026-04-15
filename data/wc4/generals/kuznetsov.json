@@ -61,7 +61,7 @@
     },
     "artillery": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "armor": {
       "start": 0,
@@ -129,7 +129,6 @@
     "typhoon-submarine",
     "arleigh-burke"
   ],
-  "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
     "https://world-conqueror-4.fandom.com/wiki/Skills",

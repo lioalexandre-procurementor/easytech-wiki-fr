@@ -81,7 +81,7 @@
     },
     "artillery": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "armor": {
       "start": 6,
@@ -89,7 +89,7 @@
     },
     "navy": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "airforce": {
       "start": 3,
@@ -135,7 +135,6 @@
     "m26-pershing",
     "m1a1-abrams"
   ],
-  "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
     "https://world-conqueror-4.fandom.com/wiki/Skills",

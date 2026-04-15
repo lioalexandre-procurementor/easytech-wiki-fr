@@ -81,7 +81,7 @@
     },
     "artillery": {
       "start": 3,
-      "max": 0
+      "max": 3
     },
     "armor": {
       "start": 5,
@@ -93,7 +93,7 @@
     },
     "airforce": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "marching": {
       "start": 1,
@@ -110,7 +110,6 @@
   },
   "bonuses": [],
   "recommendedUnits": [],
-  "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
     "Données extraites de l'APK World Conqueror 4"

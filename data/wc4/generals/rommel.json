@@ -77,7 +77,7 @@
   "attributes": {
     "infantry": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "artillery": {
       "start": 3,
@@ -93,7 +93,7 @@
     },
     "airforce": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "marching": {
       "start": 3,
@@ -123,7 +123,6 @@
     "m26-pershing",
     "centurion"
   ],
-  "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
     "https://world-conqueror-4.fandom.com/wiki/Skills",

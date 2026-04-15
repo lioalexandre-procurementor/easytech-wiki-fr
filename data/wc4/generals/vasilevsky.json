@@ -71,11 +71,11 @@
     },
     "artillery": {
       "start": 3,
-      "max": 0
+      "max": 3
     },
     "armor": {
       "start": 2,
-      "max": 0
+      "max": 2
     },
     "navy": {
       "start": 0,
@@ -120,7 +120,6 @@
   },
   "bonuses": [],
   "recommendedUnits": [],
-  "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
     "Données extraites de l'APK World Conqueror 4"

@@ -168,18 +168,6 @@
     "acquisition": "medals"
   },
   {
-    "slug": "hirohito",
-    "name": "Empereur Hirohito",
-    "faction": "standard",
-    "category": "tank",
-    "rank": "S",
-    "quality": "gold",
-    "country": "JP",
-    "hasTrainingPath": true,
-    "hasReplaceableSkills": false,
-    "acquisition": "medals"
-  },
-  {
     "slug": "hartmann",
     "name": "Erich Hartmann",
     "faction": "standard",

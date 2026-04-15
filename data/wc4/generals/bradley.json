@@ -79,7 +79,7 @@
     },
     "navy": {
       "start": 4,
-      "max": 0
+      "max": 4
     },
     "airforce": {
       "start": 0,
@@ -120,7 +120,6 @@
   },
   "bonuses": [],
   "recommendedUnits": [],
-  "verified": false,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
     "Données extraites de l'APK World Conqueror 4"
