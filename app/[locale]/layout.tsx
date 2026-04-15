@@ -95,26 +95,29 @@ export default async function LocaleLayout({
             gtag('set', 'url_passthrough', true);
           `}
         </Script>
+        {/*
+          AdSense loader. Placed as a raw <script> in <head> so that it
+          appears in the server-rendered HTML exactly as Google requires
+          for site verification. Consent Mode (above) runs first and
+          ensures no ad cookies are dropped before user interaction.
+        */}
+        {ADSENSE_CLIENT && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+          />
+        )}
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
 
         {/*
-          Google AdSense + Funding Choices (CMP).
-          Only loaded when NEXT_PUBLIC_ADSENSE_CLIENT is set, i.e. once the
-          AdSense publisher account is approved. Until then no third-party
-          script is loaded and no ad cookie is dropped — the site stays
-          RGPD-clean in its pre-launch state.
+          Funding Choices (CMP). The AdSense loader itself lives in <head>
+          above so the verification crawler finds it in the raw HTML.
         */}
         {ADSENSE_CLIENT && (
           <>
-            <Script
-              id="adsense-lib"
-              async
-              strategy="afterInteractive"
-              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-              crossOrigin="anonymous"
-            />
             <Script
               id="funding-choices"
               async
