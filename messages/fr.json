@@ -27,7 +27,8 @@
     "categoriesHeading": "Catégories",
     "onThisPage": "Sur cette page",
     "searchPlaceholder": "Rechercher une unité, un général…",
-    "localeSwitcher": "Langue"
+    "localeSwitcher": "Langue",
+    "updates": "Mises à jour"
   },
   "footer": {
     "about": "À propos",
@@ -280,6 +281,22 @@
     "adSlot": "Emplacement publicitaire",
     "unitsHeading": "🛡 Unités mystiques de l'Empire du Scorpion",
     "unitCountLabel": "{count, plural, one {# unité} other {# unités}}"
+  },
+  "updatesPage": {
+    "seoTitle": "Mises à jour WC4 — Journal des patches EasyTech",
+    "seoDescription": "Historique des mises à jour officielles de World Conqueror 4 : nouveaux généraux, équilibrage, événements saisonniers et contenus.",
+    "h1": "Mises à jour World Conqueror 4",
+    "intro": "Historique des mises à jour officielles EasyTech. Chaque entrée retranscrit le contenu du patch note officiel : nouveaux généraux, rééquilibrages, événements et corrections de bugs.",
+    "breadcrumbCurrent": "Mises à jour",
+    "emptyState": "Aucune mise à jour publiée pour le moment.",
+    "readMore": "Lire la suite →",
+    "backToList": "← Toutes les mises à jour",
+    "publishedOn": "Publié le",
+    "versionLabel": "Version",
+    "tagsLabel": "Catégories",
+    "sourceLabel": "Source officielle",
+    "detailSeoTitle": "{title} — Mises à jour WC4",
+    "detailSeoDescription": "Détails de la mise à jour {version} de World Conqueror 4 : {summary}"
   },
   "votesLegalPage": {
     "seoTitle": "Politique de vote communautaire",

@@ -62,6 +62,22 @@ function skillBase(slug: string): LocalePair {
   };
 }
 
+function updateDetail(slug: string): LocalePair {
+  return {
+    fr: `/world-conqueror-4/mises-a-jour/${slug}`,
+    en: `/world-conqueror-4/updates/${slug}`,
+  };
+}
+
+function getAllUpdateSlugsFromFs(): string[] {
+  const dir = path.join(process.cwd(), "data", "wc4", "updates");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+    .map((f) => f.replace(/\.json$/, ""));
+}
+
 /** Read all skill slugs from data/wc4/skills/*.json (excluding _index.json). */
 function getAllSkillSlugs(): string[] {
   const dir = path.join(process.cwd(), "data", "wc4", "skills");
@@ -84,6 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { pair: { fr: "/world-conqueror-4/unites-elite", en: "/world-conqueror-4/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
     { pair: { fr: "/world-conqueror-4/competences", en: "/world-conqueror-4/skills" }, priority: 0.8, changeFrequency: "weekly" },
     { pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire" }, priority: 0.6, changeFrequency: "monthly" },
+    { pair: { fr: "/world-conqueror-4/mises-a-jour", en: "/world-conqueror-4/updates" }, priority: 0.8, changeFrequency: "weekly" },
     { pair: { fr: "/legal/votes", en: "/legal/votes" }, priority: 0.3, changeFrequency: "yearly" },
   ];
 
@@ -142,6 +159,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.6,
+        alternates: alternates(pair),
+      });
+    }
+  }
+
+  // Updates detail pages
+  for (const slug of getAllUpdateSlugsFromFs()) {
+    const pair = updateDetail(slug);
+    for (const locale of locales) {
+      entries.push({
+        url: pathFor(locale, pair),
+        lastModified: now,
+        changeFrequency: "yearly",
+        priority: 0.5,
         alternates: alternates(pair),
       });
     }

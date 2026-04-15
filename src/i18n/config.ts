@@ -53,6 +53,14 @@ export const pathnames = {
     fr: "/world-conqueror-4/competences/[slug]",
     en: "/world-conqueror-4/skills/[slug]",
   },
+  "/world-conqueror-4/mises-a-jour": {
+    fr: "/world-conqueror-4/mises-a-jour",
+    en: "/world-conqueror-4/updates",
+  },
+  "/world-conqueror-4/mises-a-jour/[slug]": {
+    fr: "/world-conqueror-4/mises-a-jour/[slug]",
+    en: "/world-conqueror-4/updates/[slug]",
+  },
   "/legal/votes": {
     fr: "/legal/votes",
     en: "/legal/votes",

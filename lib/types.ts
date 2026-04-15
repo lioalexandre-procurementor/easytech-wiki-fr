@@ -335,6 +335,32 @@ export interface SkillIndex {
   skills: SkillIndexItem[];
 }
 
+// ─── UPDATES / CHANGELOG ──────────────────────────────────────────────
+
+/**
+ * One EasyTech update entry. Stored as a single JSON file at
+ * data/wc4/updates/{slug}.json with both locales in the same file so
+ * a new update = one file, not two.
+ */
+export interface UpdateEntry {
+  /** URL slug, e.g. "1-24-2-april-2026". */
+  slug: string;
+  /** Semantic version string as printed in-game, e.g. "1.24.2". */
+  version: string;
+  /** ISO date (YYYY-MM-DD) when EasyTech shipped the update. */
+  date: string;
+  /** Optional tags for filtering/categorization. */
+  tags?: string[];
+  /** Optional source URL (EasyTech announcement, patch notes, etc.). */
+  sourceUrl?: string;
+  /** Per-locale content. */
+  title: { fr: string; en: string };
+  /** One-line teaser shown on the list page. */
+  summary: { fr: string; en: string };
+  /** Full markdown body (or plain text with \n\n paragraphs). */
+  body: { fr: string; en: string };
+}
+
 /**
  * "Trained" projection of a general: everything promoted to its ceiling.
  * Used by the `/trained` route variant. A GeneralData may carry a partial

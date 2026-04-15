@@ -27,7 +27,8 @@
     "categoriesHeading": "Categories",
     "onThisPage": "On this page",
     "searchPlaceholder": "Search for a unit or general…",
-    "localeSwitcher": "Language"
+    "localeSwitcher": "Language",
+    "updates": "Updates"
   },
   "footer": {
     "about": "About",
@@ -280,6 +281,22 @@
     "adSlot": "Advertisement slot",
     "unitsHeading": "🛡 Mystic units of the Scorpion Empire",
     "unitCountLabel": "{count, plural, one {# unit} other {# units}}"
+  },
+  "updatesPage": {
+    "seoTitle": "WC4 Updates — EasyTech patch log",
+    "seoDescription": "History of official World Conqueror 4 updates: new generals, balance changes, seasonal events and content drops.",
+    "h1": "World Conqueror 4 Updates",
+    "intro": "Log of official EasyTech updates. Each entry transcribes the official patch notes: new generals, balance changes, events, and bug fixes.",
+    "breadcrumbCurrent": "Updates",
+    "emptyState": "No updates published yet.",
+    "readMore": "Read more →",
+    "backToList": "← All updates",
+    "publishedOn": "Published on",
+    "versionLabel": "Version",
+    "tagsLabel": "Categories",
+    "sourceLabel": "Official source",
+    "detailSeoTitle": "{title} — WC4 Updates",
+    "detailSeoDescription": "Details of World Conqueror 4 update {version}: {summary}"
   },
   "votesLegalPage": {
     "seoTitle": "Community Voting Policy",
