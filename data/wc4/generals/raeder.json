@@ -106,19 +106,19 @@
     "type": "medals",
     "cost": 2165,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Raeder",
   "skillSlots": 5,
   "unlockHQLv": 14,
   "militaryRank": 6,
-  "apkId": 1071,
+  "gameId": 1071,
   "image": {
     "photo": "/img/wc4/generals/Raeder.webp",
     "head": "/img/wc4/heads/Raeder.webp",

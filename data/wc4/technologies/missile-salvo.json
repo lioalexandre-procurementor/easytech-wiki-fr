@@ -1,7 +1,7 @@
 {
   "slug": "missile-salvo",
-  "apkTypeId": 57,
-  "apkCategoryId": 7,
+  "gameTypeId": 57,
+  "gameCategoryId": 7,
   "nameEn": "Missile Salvo",
   "nameFr": "Missile Salvo",
   "category": "missile",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 311001,
+      "gameId": 311001,
       "x": 1,
       "y": 8,
       "costGold": 0,

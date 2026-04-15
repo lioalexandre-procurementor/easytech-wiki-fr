@@ -1,7 +1,7 @@
 {
   "slug": "airborne",
-  "apkTypeId": 38,
-  "apkCategoryId": 4,
+  "gameTypeId": 38,
+  "gameCategoryId": 4,
   "nameEn": "Airborne",
   "nameFr": "Airborne",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 305061,
+      "gameId": 305061,
       "x": 2,
       "y": 4,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 305062,
+      "gameId": 305062,
       "x": 2,
       "y": 6,
       "costGold": 0,

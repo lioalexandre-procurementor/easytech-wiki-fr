@@ -28,7 +28,7 @@ const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3 };
 export function getAllEliteUnits(): UnitData[] {
   const files = fs.readdirSync(DATA_DIR).filter(f => f.endsWith(".json") && !f.startsWith("_"));
   const units: UnitData[] = files.map(f => JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), "utf8")));
-  // Game order = APK `armyId` ascending. Each real elite has a base id in the
+  // Game order = game-data `armyId` ascending. Each real elite has a base id in the
   // 301xxx..351xxx range that mirrors the in-game unlock sequence. Units without
   // an armyId (scorpion/mystic variants not yet in canonical data) sink to the
   // bottom, sorted by tier + FR name as the historical fallback.
@@ -186,7 +186,7 @@ export function buildSlotRecommendationMap(
   return map;
 }
 
-// ========== Skill catalog (APK-extracted) ==========
+// ========== Skill catalog (game-data-extracted) ==========
 
 let _skillIndexCache: SkillIndex | null = null;
 
@@ -220,7 +220,7 @@ export function getAllSkillSlugs(): string[] {
     .map((f) => f.replace(/\.json$/, ""));
 }
 
-/** Look up a skill by its APK type id (0..179). */
+/** Look up a skill by its game-data type id (0..179). */
 export function getSkillByType(type: number): SkillCatalogEntry | null {
   const item = getSkillIndex().skills.find((s) => s.type === type);
   if (!item) return null;
@@ -228,7 +228,7 @@ export function getSkillByType(type: number): SkillCatalogEntry | null {
 }
 
 /**
- * Build a lookup from every known APK id (apkId or generalIdGame) to the
+ * Build a lookup from every known game id (gameId or generalIdGame) to the
  * corresponding GeneralData. Used to resolve skill usage entries back to
  * pages on the wiki.
  */
@@ -238,7 +238,7 @@ export function getGeneralByApkId(id: number): GeneralData | null {
   if (!_generalByApkIdCache) {
     _generalByApkIdCache = new Map();
     for (const g of getAllGenerals()) {
-      if (g.apkId != null) _generalByApkIdCache.set(g.apkId, g);
+      if (g.gameId != null) _generalByApkIdCache.set(g.gameId, g);
       if (g.generalIdGame != null) _generalByApkIdCache.set(g.generalIdGame, g);
     }
   }

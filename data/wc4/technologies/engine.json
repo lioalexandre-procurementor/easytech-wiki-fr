@@ -1,7 +1,7 @@
 {
   "slug": "engine",
-  "apkTypeId": 11,
-  "apkCategoryId": 1,
+  "gameTypeId": 11,
+  "gameCategoryId": 1,
   "nameEn": "Engine",
   "nameFr": "Engine",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302041,
+      "gameId": 302041,
       "x": 4,
       "y": 4,
       "costGold": 4000,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 302042,
+      "gameId": 302042,
       "x": 4,
       "y": 6,
       "costGold": 21250,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 302043,
+      "gameId": 302043,
       "x": 4,
       "y": 8,
       "costGold": 70000,
@@ -86,7 +86,7 @@
     },
     {
       "level": 4,
-      "apkId": 302044,
+      "gameId": 302044,
       "x": 4,
       "y": 10,
       "costGold": 155000,

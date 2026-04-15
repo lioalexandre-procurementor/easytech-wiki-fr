@@ -127,19 +127,19 @@
     "type": "iron-cross",
     "cost": 5930,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Eisenhower",
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 11,
-  "apkId": 1031,
+  "gameId": 1031,
   "image": {
     "photo": "/img/wc4/generals/Eisenhower.webp",
     "head": "/img/wc4/heads/Eisenhower.webp",

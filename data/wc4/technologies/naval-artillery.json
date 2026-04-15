@@ -1,7 +1,7 @@
 {
   "slug": "naval-artillery",
-  "apkTypeId": 27,
-  "apkCategoryId": 3,
+  "gameTypeId": 27,
+  "gameCategoryId": 3,
   "nameEn": "Naval Artillery",
   "nameFr": "Naval Artillery",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304051,
+      "gameId": 304051,
       "x": 4,
       "y": 8,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 304052,
+      "gameId": 304052,
       "x": 4,
       "y": 9,
       "costGold": 0,

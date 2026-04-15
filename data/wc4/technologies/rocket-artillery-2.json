@@ -1,7 +1,7 @@
 {
   "slug": "rocket-artillery-2",
-  "apkTypeId": 21,
-  "apkCategoryId": 2,
+  "gameTypeId": 21,
+  "gameCategoryId": 2,
   "nameEn": "Rocket Artillery",
   "nameFr": "Rocket Artillery",
   "category": "artillery",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 303051,
+      "gameId": 303051,
       "x": 1,
       "y": 4,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 303052,
+      "gameId": 303052,
       "x": 1,
       "y": 7,
       "costGold": 0,

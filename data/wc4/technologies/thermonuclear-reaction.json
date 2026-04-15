@@ -1,7 +1,7 @@
 {
   "slug": "thermonuclear-reaction",
-  "apkTypeId": 54,
-  "apkCategoryId": 7,
+  "gameTypeId": 54,
+  "gameCategoryId": 7,
   "nameEn": "Thermonuclear reaction",
   "nameFr": "Thermonuclear reaction",
   "category": "missile",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 308051,
+      "gameId": 308051,
       "x": 4,
       "y": 5,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 308052,
+      "gameId": 308052,
       "x": 4,
       "y": 6,
       "costGold": 0,
@@ -60,7 +60,7 @@
     },
     {
       "level": 3,
-      "apkId": 308053,
+      "gameId": 308053,
       "x": 4,
       "y": 7,
       "costGold": 0,

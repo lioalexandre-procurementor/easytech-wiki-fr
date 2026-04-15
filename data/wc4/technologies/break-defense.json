@@ -1,7 +1,7 @@
 {
   "slug": "break-defense",
-  "apkTypeId": 51,
-  "apkCategoryId": 7,
+  "gameTypeId": 51,
+  "gameCategoryId": 7,
   "nameEn": "Break Defense",
   "nameFr": "Break Defense",
   "category": "missile",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 308021,
+      "gameId": 308021,
       "x": 3,
       "y": 1,
       "costGold": 0,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 308022,
+      "gameId": 308022,
       "x": 3,
       "y": 2,
       "costGold": 0,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 308023,
+      "gameId": 308023,
       "x": 3,
       "y": 3,
       "costGold": 0,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 308024,
+      "gameId": 308024,
       "x": 3,
       "y": 4,
       "costGold": 0,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 308025,
+      "gameId": 308025,
       "x": 3,
       "y": 5,
       "costGold": 0,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 308026,
+      "gameId": 308026,
       "x": 3,
       "y": 6,
       "costGold": 0,
@@ -154,7 +154,7 @@
     },
     {
       "level": 7,
-      "apkId": 308027,
+      "gameId": 308027,
       "x": 3,
       "y": 7,
       "costGold": 0,

@@ -3,12 +3,12 @@ import type { Locale } from "@/src/i18n/config";
 import { TechCard } from "./TechCard";
 
 /**
- * Lay out techs in a grid using their APK Position[x,y]. Each tech's
+ * Lay out techs in a grid using their game Position[x,y]. Each tech's
  * canonical position comes from level 1 (or the first available level).
  *
  * Falls back to a flat alphabetical grid when positions are missing.
- * On mobile (<lg), the wide APK-position grid would overflow horizontally,
- * so we render a simple responsive grid sorted by APK row then column.
+ * On mobile (<lg), the wide game-position grid would overflow horizontally,
+ * so we render a simple responsive grid sorted by game-data row then column.
  */
 export function TechTreeGrid({
   techs,
@@ -46,14 +46,14 @@ export function TechTreeGrid({
 
   return (
     <>
-      {/* Mobile / tablet: simple responsive grid, APK positions ignored */}
+      {/* Mobile / tablet: simple responsive grid, game-data positions ignored */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:hidden">
         {sortedForMobile.map((t) => (
           <TechCard key={t.slug} tech={t} locale={locale} />
         ))}
       </div>
 
-      {/* Desktop: APK-position grid */}
+      {/* Desktop: game-position grid */}
       <div
         className="hidden lg:grid gap-3"
         style={{

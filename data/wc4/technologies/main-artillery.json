@@ -1,7 +1,7 @@
 {
   "slug": "main-artillery",
-  "apkTypeId": 9,
-  "apkCategoryId": 1,
+  "gameTypeId": 9,
+  "gameCategoryId": 1,
   "nameEn": "Main Artillery",
   "nameFr": "Main Artillery",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302021,
+      "gameId": 302021,
       "x": 3,
       "y": 3,
       "costGold": 3500,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 302022,
+      "gameId": 302022,
       "x": 3,
       "y": 5,
       "costGold": 8750,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 302023,
+      "gameId": 302023,
       "x": 3,
       "y": 6,
       "costGold": 16250,
@@ -85,7 +85,7 @@
     },
     {
       "level": 4,
-      "apkId": 302024,
+      "gameId": 302024,
       "x": 3,
       "y": 7,
       "costGold": 26250,
@@ -110,7 +110,7 @@
     },
     {
       "level": 5,
-      "apkId": 302025,
+      "gameId": 302025,
       "x": 3,
       "y": 8,
       "costGold": 45000,
@@ -134,7 +134,7 @@
     },
     {
       "level": 6,
-      "apkId": 302026,
+      "gameId": 302026,
       "x": 3,
       "y": 9,
       "costGold": 102500,

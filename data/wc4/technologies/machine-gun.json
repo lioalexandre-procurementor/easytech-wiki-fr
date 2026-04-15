@@ -1,7 +1,7 @@
 {
   "slug": "machine-gun",
-  "apkTypeId": 12,
-  "apkCategoryId": 1,
+  "gameTypeId": 12,
+  "gameCategoryId": 1,
   "nameEn": "Machine Gun",
   "nameFr": "Machine Gun",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302051,
+      "gameId": 302051,
       "x": 3,
       "y": 3,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 302052,
+      "gameId": 302052,
       "x": 3,
       "y": 6,
       "costGold": 0,

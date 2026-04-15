@@ -1,7 +1,7 @@
 {
   "slug": "torpedo",
-  "apkTypeId": 28,
-  "apkCategoryId": 3,
+  "gameTypeId": 28,
+  "gameCategoryId": 3,
   "nameEn": "Torpedo",
   "nameFr": "Torpedo",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304061,
+      "gameId": 304061,
       "x": 4,
       "y": 6,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 304062,
+      "gameId": 304062,
       "x": 4,
       "y": 7,
       "costGold": 0,

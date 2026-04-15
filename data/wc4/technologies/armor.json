@@ -1,7 +1,7 @@
 {
   "slug": "armor",
-  "apkTypeId": 8,
-  "apkCategoryId": 1,
+  "gameTypeId": 8,
+  "gameCategoryId": 1,
   "nameEn": "Armor",
   "nameFr": "Armor",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302001,
+      "gameId": 302001,
       "x": 1,
       "y": 1,
       "costGold": 1250,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 302002,
+      "gameId": 302002,
       "x": 1,
       "y": 2,
       "costGold": 3000,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 302003,
+      "gameId": 302003,
       "x": 1,
       "y": 3,
       "costGold": 7500,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 302004,
+      "gameId": 302004,
       "x": 1,
       "y": 4,
       "costGold": 18750,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 302005,
+      "gameId": 302005,
       "x": 1,
       "y": 5,
       "costGold": 37500,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 302006,
+      "gameId": 302006,
       "x": 1,
       "y": 6,
       "costGold": 65000,
@@ -154,7 +154,7 @@
     },
     {
       "level": 7,
-      "apkId": 302007,
+      "gameId": 302007,
       "x": 1,
       "y": 7,
       "costGold": 110000,
@@ -178,7 +178,7 @@
     },
     {
       "level": 8,
-      "apkId": 302008,
+      "gameId": 302008,
       "x": 1,
       "y": 8,
       "costGold": 187500,

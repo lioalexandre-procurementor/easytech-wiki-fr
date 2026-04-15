@@ -1,7 +1,7 @@
 {
   "slug": "body-armour",
-  "apkTypeId": 7,
-  "apkCategoryId": 0,
+  "gameTypeId": 7,
+  "gameCategoryId": 0,
   "nameEn": "Body armour",
   "nameFr": "Body armour",
   "category": "infantry",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 301071,
+      "gameId": 301071,
       "x": 3,
       "y": 8,
       "costGold": 0,

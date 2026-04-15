@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Split each general detail page into a "base" and "trained" variant (separate URLs for SEO), add French + English locales via next-intl with localized pathnames, and backfill the 13 existing wiki generals with real data extracted from the WC4 APK.
+**Goal:** Split each general detail page into a "base" and "trained" variant (separate URLs for SEO), add French + English locales via next-intl with localized pathnames, and backfill the 13 existing wiki generals with real data extracted from the WC4 game files.
 
 **Architecture:**
 - **Separate-page strategy** for base vs trained: two routes per general, canonical tag points trained → base to avoid duplicate-content risk, but each page carries substantively different content (training costs, skill progression, upgrade path) so it ranks for its own long-tail intent.
@@ -70,16 +70,16 @@ Open `lib/types.ts`. Find the `GeneralData` interface (bottom of file). Add thes
 
 ```typescript
   // ── Real-data additions (from wc4_export) ──
-  /** Canonical English name from game data (EName field in APK). Stable across locales. */
+  /** Canonical English name from game data (EName field in game files). Stable across locales. */
   nameCanonical?: string;
-  /** Number of skill slots — authoritative count from APK. */
+  /** Number of skill slots — authoritative count from game files. */
   skillSlots?: number;
   /** Required HQ level to unlock in shop. */
   unlockHQLv?: number | null;
-  /** Military rank enum (1..6) from APK. */
+  /** Military rank enum (1..6) from game files. */
   militaryRank?: number | null;
-  /** Raw APK id for traceability. */
-  apkId?: number;
+  /** Raw game id for traceability. */
+  gameId?: number;
 ```
 
 - [ ] **Step 2: Add `TrainedGeneralView` helper type at bottom of file**
@@ -140,12 +140,12 @@ Create `easytech-wiki/scripts/backfill-generals.py`:
 
 For each JSON in data/wc4/generals/*.json (excluding _index.json), match
 to wc4_export/generals_canonical.json by last-name fallback (wiki uses
-French display names like "Heinz Guderian", APK uses "Guderian"), then
+French display names like "Heinz Guderian", game-data uses "Guderian"), then
 update:
 
   - attributes.{infantry,artillery,armor,navy,airforce,marching} = {start, max}
   - acquisition.cost (if currently null)
-  - nameCanonical, skillSlots, unlockHQLv, militaryRank, apkId
+  - nameCanonical, skillSlots, unlockHQLv, militaryRank, gameId
   - skills[].nameEn (new field, leaves existing FR `name` untouched)
 
 Existing human-curated fields (longDesc, shortDesc, recommendedUnits,
@@ -218,7 +218,7 @@ def merge(wiki: dict, canon: dict) -> tuple[dict, list[str]]:
         ("skillSlots", "skillSlots"),
         ("unlockHQLv", "unlockHQLv"),
         ("militaryRank", "militaryRank"),
-        ("apkId", "id"),
+        ("gameId", "id"),
     ]:
         cval = canon.get(canon_key)
         if cval is not None and out.get(wiki_key) != cval:
@@ -344,7 +344,7 @@ import json
 g = json.load(open('data/wc4/generals/guderian.json'))
 print('nameCanonical:', g.get('nameCanonical'))
 print('skillSlots:', g.get('skillSlots'))
-print('apkId:', g.get('apkId'))
+print('gameId:', g.get('gameId'))
 print('acquisition.cost:', g['acquisition']['cost'])
 for k,v in (g.get('attributes') or {}).items():
     print(f'  {k}:', v)
@@ -353,7 +353,7 @@ for s in g['skills']:
 "
 ```
 
-Expected: Guderian shows `nameCanonical: Guderian`, `skillSlots: 5`, `apkId: 1049`, `acquisition.cost: 2935`, attributes populated, skills have both `name` (FR) and `nameEn`.
+Expected: Guderian shows `nameCanonical: Guderian`, `skillSlots: 5`, `gameId: 1049`, `acquisition.cost: 2935`, attributes populated, skills have both `name` (FR) and `nameEn`.
 
 - [ ] **Step 5: Type-check to make sure schemas still compile**
 
@@ -376,7 +376,7 @@ Expected: PASS — all 13 general pages regenerate with new data.
 ```bash
 cd easytech-wiki
 git add scripts/backfill-generals.py data/wc4/generals/*.json
-git commit -m "feat(data): backfill 13 wiki generals from WC4 APK export
+git commit -m "feat(data): backfill 13 wiki generals from WC4 game data export
 
 Real stats (base + max), skill slots, medal costs, canonical English names,
 and per-skill nameEn fields populated from wc4_export/generals_canonical.json.
@@ -396,7 +396,7 @@ The validator caught three wiki errors: Kuznetsov has 4 slot entries but game ha
 
 - [ ] **Step 1: Kuznetsov — remove one phantom skill**
 
-Open `data/wc4/generals/kuznetsov.json`. `skillSlots` is now `3`. Count the entries in `skills[]`: you'll find 4. Delete the last replaceable "Slot libre" entry (the one with the highest `slot` number where `replaceable: true`). Keep the 3 canonical skills (Rumor / Fleet Leader / Sailor per the APK).
+Open `data/wc4/generals/kuznetsov.json`. `skillSlots` is now `3`. Count the entries in `skills[]`: you'll find 4. Delete the last replaceable "Slot libre" entry (the one with the highest `slot` number where `replaceable: true`). Keep the 3 canonical skills (Rumor / Fleet Leader / Sailor per the game files).
 
 - [ ] **Step 2: Montgomery — add one missing slot**
 
@@ -450,7 +450,7 @@ Expected: PASS.
 ```bash
 cd easytech-wiki
 git add data/wc4/generals/kuznetsov.json data/wc4/generals/montgomery.json data/wc4/generals/rokossovsky.json
-git commit -m "fix(data): reconcile skill slot counts with APK (Kuznetsov/Montgomery/Rokossovsky)"
+git commit -m "fix(data): reconcile skill slot counts with game-data (Kuznetsov/Montgomery/Rokossovsky)"
 ```
 
 ---

@@ -1,7 +1,7 @@
 {
   "slug": "strategic-bombing",
-  "apkTypeId": 37,
-  "apkCategoryId": 4,
+  "gameTypeId": 37,
+  "gameCategoryId": 4,
   "nameEn": "Strategic Bombing",
   "nameFr": "Strategic Bombing",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 305051,
+      "gameId": 305051,
       "x": 3,
       "y": 5,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 305052,
+      "gameId": 305052,
       "x": 3,
       "y": 8,
       "costGold": 0,

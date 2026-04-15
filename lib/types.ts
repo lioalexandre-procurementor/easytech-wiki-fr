@@ -18,9 +18,9 @@ export interface UnitStats {
   hp: number[];
   mov: number[];
   rng: number[];
-  atkMin?: number[];   // lvl 1..12 — real min attack from APK
-  atkMax?: number[];   // lvl 1..12 — real max attack from APK
-  rngMin?: number[];   // lvl 1..12 — min range from APK
+  atkMin?: number[];   // lvl 1..12 — real min attack from game files
+  atkMax?: number[];   // lvl 1..12 — real max attack from game files
+  rngMin?: number[];   // lvl 1..12 — min range from game files
 }
 
 export interface UnitTierCost {
@@ -52,11 +52,11 @@ export interface UnitData {
   levelingPriority: string[];
   faqs: { q: string; a: string }[];
   sources?: string[];
-  /** Base armyId from the APK (lvl-1 entry). Present when data was backfilled. */
+  /** Base armyId from the game files (lvl-1 entry). Present when data was backfilled. */
   armyId?: number | null;
   /** Per-level unlock costs (HQ level, gold, industry, energy, tech, item). */
   tierCosts?: UnitTierCost[];
-  /** Image paths extracted from the APK. */
+  /** Image paths extracted from the game files. */
   image?: {
     sprite?: string | null;   // /img/wc4/elites/<armyId>.webp
     lvl12?: string | null;    // /img/wc4/elites/<armyId_lvl12>.webp if different
@@ -121,7 +121,7 @@ export type GeneralAttributes = {
 export interface GeneralSkill {
   slot: number;                   // 1-based slot index (1..5)
   name: string;                   // display name FR
-  /** Canonical English skill name from WC4 APK string tables. */
+  /** Canonical English skill name from WC4 game string tables. */
   nameEn?: string;
   desc: string;                   // description FR
   rating?: SkillRating | null;    // in-game letter grade if visible
@@ -129,7 +129,7 @@ export interface GeneralSkill {
   icon?: string | null;
   replaceable?: boolean;          // true → player can swap via medals; vote UI shows here
   replaceableReason?: string;     // optional tooltip, e.g. "Slot laissé ouvert aux choix communautaires"
-  /** Skill system link — APK skill type id (0..179). Lets us cross-link to the
+  /** Skill system link — game skill type id (0..179). Lets us cross-link to the
    *  skill detail page and pull L1..L5 progression on demand. */
   skillType?: number;
   /** Current level of the skill for this general (1..5). */
@@ -224,19 +224,19 @@ export interface GeneralData {
   recommendedUnits: string[];
   sources?: string[];
   // ── Real-data additions (from wc4_export) ──
-  /** Canonical English name from game data (EName field in APK). Stable across locales. */
+  /** Canonical English name from game data (EName field in game files). Stable across locales. */
   nameCanonical?: string;
-  /** Number of skill slots — authoritative count from APK. */
+  /** Number of skill slots — authoritative count from game files. */
   skillSlots?: number;
   /** Required HQ level to unlock in shop. */
   unlockHQLv?: number | null;
-  /** Military rank enum (1..6) from APK. */
+  /** Military rank enum (1..6) from game files. */
   militaryRank?: number | null;
-  /** Raw APK id for traceability. */
-  apkId?: number;
+  /** Raw game id for traceability. */
+  gameId?: number;
   /** In-game promotion BaseID, present when the general has a training path. */
   generalIdGame?: number | null;
-  /** Image paths extracted from the APK. */
+  /** Image paths extracted from the game files. */
   image?: {
     photo: string;              // /img/wc4/generals/<Photo>.webp
     head: string;               // /img/wc4/heads/<Photo>.webp
@@ -260,13 +260,13 @@ export interface LearnableSkill {
   editorialNote?: string;                // short justification for the meta pick
 }
 
-// ─── Skill catalog (full APK dataset) ───────────────────────────────────────
+// ─── Skill catalog (full game-data dataset) ───────────────────────────────────────
 // Built by scripts/extract-skills.py from SkillSettings.json + stringtable.
 // One JSON file per skill type in data/wc4/skills/{slug}.json plus an index.
 
 export interface SkillProgression {
   level: number;
-  skillId: number;       // APK SkillSettings.Id
+  skillId: number;       // game SkillSettings.Id
   effect: number;        // SkillEffect at this level
   chance: number;        // ActivatesChance at this level
   costMedal: number;
@@ -278,14 +278,14 @@ export interface SkillProgression {
 }
 
 export interface SkillUsageEntry {
-  generalId: number;     // APK GeneralSettings.Id
+  generalId: number;     // game GeneralSettings.Id
   level: number;         // Level of the skill for that general
   promotionId?: number;  // Present when the skill is unlocked via promotion
 }
 
 export interface SkillCatalogEntry {
   slug: string;
-  type: number;               // APK skill type id
+  type: number;               // game skill type id
   name: string;               // English canonical name
   /** Hand-curated FR display name (falls back to `name` when absent). */
   nameFr?: string;
@@ -398,7 +398,7 @@ export type TechCategory =
 
 /** One row in a tech chain's progression. */
 export interface TechLevel {
-  apkId: number;
+  gameId: number;
   level: number;
   x: number;
   y: number;
@@ -418,8 +418,8 @@ export interface TechLevel {
 
 export interface Tech {
   slug: string;
-  apkTypeId: number;
-  apkCategoryId: number;
+  gameTypeId: number;
+  gameCategoryId: number;
   nameEn: string;
   nameFr: string;
   category: TechCategory;
@@ -437,7 +437,7 @@ export interface TechIndexEntry {
   nameEn: string;
   category: TechCategory;
   maxLevel: number;
-  apkTypeId?: number;
+  gameTypeId?: number;
 }
 
 export interface TechIndex {

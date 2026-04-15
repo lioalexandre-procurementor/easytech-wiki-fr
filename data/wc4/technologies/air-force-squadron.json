@@ -1,7 +1,7 @@
 {
   "slug": "air-force-squadron",
-  "apkTypeId": 55,
-  "apkCategoryId": 4,
+  "gameTypeId": 55,
+  "gameCategoryId": 4,
   "nameEn": "Air Force Squadron",
   "nameFr": "Air Force Squadron",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 309001,
+      "gameId": 309001,
       "x": 1,
       "y": 8,
       "costGold": 0,

@@ -1,7 +1,7 @@
 {
   "slug": "precision-guidance",
-  "apkTypeId": 53,
-  "apkCategoryId": 7,
+  "gameTypeId": 53,
+  "gameCategoryId": 7,
   "nameEn": "Precision guidance",
   "nameFr": "Precision guidance",
   "category": "missile",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 308041,
+      "gameId": 308041,
       "x": 1,
       "y": 5,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 308042,
+      "gameId": 308042,
       "x": 1,
       "y": 6,
       "costGold": 0,
@@ -60,7 +60,7 @@
     },
     {
       "level": 3,
-      "apkId": 308043,
+      "gameId": 308043,
       "x": 1,
       "y": 7,
       "costGold": 0,

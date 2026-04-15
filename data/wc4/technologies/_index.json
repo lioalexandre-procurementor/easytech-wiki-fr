@@ -17,406 +17,406 @@
       "nameEn": "Air Force Squadron",
       "category": "airforce",
       "maxLevel": 1,
-      "apkTypeId": 55
+      "gameTypeId": 55
     },
     {
       "slug": "air-strike",
       "nameEn": "Air Strike",
       "category": "airforce",
       "maxLevel": 2,
-      "apkTypeId": 35
+      "gameTypeId": 35
     },
     {
       "slug": "airborne",
       "nameEn": "Airborne",
       "category": "airforce",
       "maxLevel": 2,
-      "apkTypeId": 38
+      "gameTypeId": 38
     },
     {
       "slug": "airborne-squad",
       "nameEn": "Airborne Squad",
       "category": "airforce",
       "maxLevel": 1,
-      "apkTypeId": 56
+      "gameTypeId": 56
     },
     {
       "slug": "aircraft-bomb",
       "nameEn": "Aircraft Bomb",
       "category": "airforce",
       "maxLevel": 8,
-      "apkTypeId": 34
+      "gameTypeId": 34
     },
     {
       "slug": "aircraft-engine",
       "nameEn": "Aircraft Engine",
       "category": "airforce",
       "maxLevel": 4,
-      "apkTypeId": 33
+      "gameTypeId": 33
     },
     {
       "slug": "aircraft-fuel",
       "nameEn": "Aircraft Fuel",
       "category": "airforce",
       "maxLevel": 6,
-      "apkTypeId": 32
+      "gameTypeId": 32
     },
     {
       "slug": "bombing",
       "nameEn": "Bombing",
       "category": "airforce",
       "maxLevel": 2,
-      "apkTypeId": 36
+      "gameTypeId": 36
     },
     {
       "slug": "jet-engine",
       "nameEn": "Jet Engine",
       "category": "airforce",
       "maxLevel": 1,
-      "apkTypeId": 39
+      "gameTypeId": 39
     },
     {
       "slug": "strategic-bombing",
       "nameEn": "Strategic Bombing",
       "category": "airforce",
       "maxLevel": 2,
-      "apkTypeId": 37
+      "gameTypeId": 37
     },
     {
       "slug": "anti-air-artillery",
       "nameEn": "Anti-air Artillery",
       "category": "antiair",
       "maxLevel": 4,
-      "apkTypeId": 46
+      "gameTypeId": 46
     },
     {
       "slug": "anti-air-gun",
       "nameEn": "Anti-air Gun",
       "category": "antiair",
       "maxLevel": 4,
-      "apkTypeId": 45
+      "gameTypeId": 45
     },
     {
       "slug": "anti-air-missile",
       "nameEn": "Anti-air Missile",
       "category": "antiair",
       "maxLevel": 4,
-      "apkTypeId": 47
+      "gameTypeId": 47
     },
     {
       "slug": "radar",
       "nameEn": "Radar",
       "category": "antiair",
       "maxLevel": 1,
-      "apkTypeId": 48
+      "gameTypeId": 48
     },
     {
       "slug": "air-defense",
       "nameEn": "Air-Defense",
       "category": "armor",
       "maxLevel": 2,
-      "apkTypeId": 14
+      "gameTypeId": 14
     },
     {
       "slug": "armor",
       "nameEn": "Armor",
       "category": "armor",
       "maxLevel": 8,
-      "apkTypeId": 8
+      "gameTypeId": 8
     },
     {
       "slug": "assault",
       "nameEn": "Assault",
       "category": "armor",
       "maxLevel": 2,
-      "apkTypeId": 13
+      "gameTypeId": 13
     },
     {
       "slug": "engine",
       "nameEn": "Engine",
       "category": "armor",
       "maxLevel": 4,
-      "apkTypeId": 11
+      "gameTypeId": 11
     },
     {
       "slug": "machine-gun",
       "nameEn": "Machine Gun",
       "category": "armor",
       "maxLevel": 2,
-      "apkTypeId": 12
+      "gameTypeId": 12
     },
     {
       "slug": "main-artillery",
       "nameEn": "Main Artillery",
       "category": "armor",
       "maxLevel": 6,
-      "apkTypeId": 9
+      "gameTypeId": 9
     },
     {
       "slug": "reinforced-vehicle",
       "nameEn": "Reinforced Vehicle",
       "category": "armor",
       "maxLevel": 1,
-      "apkTypeId": 15
+      "gameTypeId": 15
     },
     {
       "slug": "vehicle",
       "nameEn": "Vehicle",
       "category": "armor",
       "maxLevel": 4,
-      "apkTypeId": 10
+      "gameTypeId": 10
     },
     {
       "slug": "armor-2",
       "nameEn": "Armor",
       "category": "artillery",
       "maxLevel": 4,
-      "apkTypeId": 19
+      "gameTypeId": 19
     },
     {
       "slug": "artillery",
       "nameEn": "Artillery",
       "category": "artillery",
       "maxLevel": 8,
-      "apkTypeId": 16
+      "gameTypeId": 16
     },
     {
       "slug": "disguise",
       "nameEn": "Disguise",
       "category": "artillery",
       "maxLevel": 1,
-      "apkTypeId": 22
+      "gameTypeId": 22
     },
     {
       "slug": "firepower",
       "nameEn": "Firepower",
       "category": "artillery",
       "maxLevel": 2,
-      "apkTypeId": 20
+      "gameTypeId": 20
     },
     {
       "slug": "rocket-artillery",
       "nameEn": "Rocket Artillery",
       "category": "artillery",
       "maxLevel": 8,
-      "apkTypeId": 17
+      "gameTypeId": 17
     },
     {
       "slug": "rocket-artillery-2",
       "nameEn": "Rocket Artillery",
       "category": "artillery",
       "maxLevel": 2,
-      "apkTypeId": 21
+      "gameTypeId": 21
     },
     {
       "slug": "traction",
       "nameEn": "Traction",
       "category": "artillery",
       "maxLevel": 4,
-      "apkTypeId": 18
+      "gameTypeId": 18
     },
     {
       "slug": "bunker",
       "nameEn": "Bunker",
       "category": "fortifications",
       "maxLevel": 4,
-      "apkTypeId": 40
+      "gameTypeId": 40
     },
     {
       "slug": "coastal-artillery",
       "nameEn": "Coastal Artillery",
       "category": "fortifications",
       "maxLevel": 4,
-      "apkTypeId": 42
+      "gameTypeId": 42
     },
     {
       "slug": "fortifications",
       "nameEn": "Fortifications",
       "category": "fortifications",
       "maxLevel": 1,
-      "apkTypeId": 44
+      "gameTypeId": 44
     },
     {
       "slug": "land-fort",
       "nameEn": "Land Fort",
       "category": "fortifications",
       "maxLevel": 4,
-      "apkTypeId": 41
+      "gameTypeId": 41
     },
     {
       "slug": "rocket-launcher",
       "nameEn": "Rocket Launcher",
       "category": "fortifications",
       "maxLevel": 4,
-      "apkTypeId": 43
+      "gameTypeId": 43
     },
     {
       "slug": "body-armour",
       "nameEn": "Body armour",
       "category": "infantry",
       "maxLevel": 1,
-      "apkTypeId": 7
+      "gameTypeId": 7
     },
     {
       "slug": "camouflage",
       "nameEn": "Camouflage",
       "category": "infantry",
       "maxLevel": 6,
-      "apkTypeId": 2
+      "gameTypeId": 2
     },
     {
       "slug": "grenade",
       "nameEn": "Grenade",
       "category": "infantry",
       "maxLevel": 2,
-      "apkTypeId": 4
+      "gameTypeId": 4
     },
     {
       "slug": "gun",
       "nameEn": "Gun",
       "category": "infantry",
       "maxLevel": 4,
-      "apkTypeId": 1
+      "gameTypeId": 1
     },
     {
       "slug": "marching",
       "nameEn": "Marching",
       "category": "infantry",
       "maxLevel": 2,
-      "apkTypeId": 6
+      "gameTypeId": 6
     },
     {
       "slug": "mobility",
       "nameEn": "Mobility",
       "category": "infantry",
       "maxLevel": 6,
-      "apkTypeId": 0
+      "gameTypeId": 0
     },
     {
       "slug": "mortar",
       "nameEn": "Mortar",
       "category": "infantry",
       "maxLevel": 2,
-      "apkTypeId": 5
+      "gameTypeId": 5
     },
     {
       "slug": "sapper",
       "nameEn": "Sapper",
       "category": "infantry",
       "maxLevel": 2,
-      "apkTypeId": 3
+      "gameTypeId": 3
     },
     {
       "slug": "break-defense",
       "nameEn": "Break Defense",
       "category": "missile",
       "maxLevel": 7,
-      "apkTypeId": 51
+      "gameTypeId": 51
     },
     {
       "slug": "missile-salvo",
       "nameEn": "Missile Salvo",
       "category": "missile",
       "maxLevel": 1,
-      "apkTypeId": 57
+      "gameTypeId": 57
     },
     {
       "slug": "nuclear-fusion",
       "nameEn": "Nuclear Fusion",
       "category": "missile",
       "maxLevel": 2,
-      "apkTypeId": 52
+      "gameTypeId": 52
     },
     {
       "slug": "precision-guidance",
       "nameEn": "Precision guidance",
       "category": "missile",
       "maxLevel": 3,
-      "apkTypeId": 53
+      "gameTypeId": 53
     },
     {
       "slug": "rocket-engine",
       "nameEn": "Rocket Engine",
       "category": "missile",
       "maxLevel": 2,
-      "apkTypeId": 50
+      "gameTypeId": 50
     },
     {
       "slug": "thermonuclear-reaction",
       "nameEn": "Thermonuclear reaction",
       "category": "missile",
       "maxLevel": 3,
-      "apkTypeId": 54
+      "gameTypeId": 54
     },
     {
       "slug": "warhead",
       "nameEn": "Warhead",
       "category": "missile",
       "maxLevel": 7,
-      "apkTypeId": 49
+      "gameTypeId": 49
     },
     {
       "slug": "air-defense-2",
       "nameEn": "Air-Defense",
       "category": "navy",
       "maxLevel": 2,
-      "apkTypeId": 30
+      "gameTypeId": 30
     },
     {
       "slug": "armor-3",
       "nameEn": "Armor",
       "category": "navy",
       "maxLevel": 6,
-      "apkTypeId": 25
+      "gameTypeId": 25
     },
     {
       "slug": "hull",
       "nameEn": "Hull",
       "category": "navy",
       "maxLevel": 8,
-      "apkTypeId": 23
+      "gameTypeId": 23
     },
     {
       "slug": "minesweeper",
       "nameEn": "Minesweeper",
       "category": "navy",
       "maxLevel": 2,
-      "apkTypeId": 29
+      "gameTypeId": 29
     },
     {
       "slug": "naval-artillery",
       "nameEn": "Naval Artillery",
       "category": "navy",
       "maxLevel": 2,
-      "apkTypeId": 27
+      "gameTypeId": 27
     },
     {
       "slug": "propeller",
       "nameEn": "Propeller",
       "category": "navy",
       "maxLevel": 4,
-      "apkTypeId": 24
+      "gameTypeId": 24
     },
     {
       "slug": "reinforced-ship",
       "nameEn": "Reinforced Ship",
       "category": "navy",
       "maxLevel": 1,
-      "apkTypeId": 31
+      "gameTypeId": 31
     },
     {
       "slug": "torpedo",
       "nameEn": "Torpedo",
       "category": "navy",
       "maxLevel": 2,
-      "apkTypeId": 28
+      "gameTypeId": 28
     },
     {
       "slug": "weapon",
       "nameEn": "Weapon",
       "category": "navy",
       "maxLevel": 4,
-      "apkTypeId": 26
+      "gameTypeId": 26
     }
   ]
 }

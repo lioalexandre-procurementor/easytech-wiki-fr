@@ -1,7 +1,7 @@
 {
   "slug": "armor-3",
-  "apkTypeId": 25,
-  "apkCategoryId": 3,
+  "gameTypeId": 25,
+  "gameCategoryId": 3,
   "nameEn": "Armor",
   "nameFr": "Armor",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304031,
+      "gameId": 304031,
       "x": 3,
       "y": 3,
       "costGold": 4000,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 304032,
+      "gameId": 304032,
       "x": 3,
       "y": 5,
       "costGold": 10000,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 304033,
+      "gameId": 304033,
       "x": 3,
       "y": 6,
       "costGold": 21250,
@@ -85,7 +85,7 @@
     },
     {
       "level": 4,
-      "apkId": 304034,
+      "gameId": 304034,
       "x": 3,
       "y": 7,
       "costGold": 41250,
@@ -110,7 +110,7 @@
     },
     {
       "level": 5,
-      "apkId": 304035,
+      "gameId": 304035,
       "x": 3,
       "y": 8,
       "costGold": 87500,
@@ -134,7 +134,7 @@
     },
     {
       "level": 6,
-      "apkId": 304036,
+      "gameId": 304036,
       "x": 3,
       "y": 9,
       "costGold": 155000,

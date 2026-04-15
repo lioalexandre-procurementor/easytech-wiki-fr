@@ -1,7 +1,7 @@
 {
   "slug": "assault",
-  "apkTypeId": 13,
-  "apkCategoryId": 1,
+  "gameTypeId": 13,
+  "gameCategoryId": 1,
   "nameEn": "Assault",
   "nameFr": "Assault",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302061,
+      "gameId": 302061,
       "x": 4,
       "y": 6,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 302062,
+      "gameId": 302062,
       "x": 4,
       "y": 10,
       "costGold": 0,

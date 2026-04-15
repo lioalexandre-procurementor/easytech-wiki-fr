@@ -1,7 +1,7 @@
 {
   "slug": "aircraft-engine",
-  "apkTypeId": 33,
-  "apkCategoryId": 4,
+  "gameTypeId": 33,
+  "gameCategoryId": 4,
   "nameEn": "Aircraft Engine",
   "nameFr": "Aircraft Engine",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 305011,
+      "gameId": 305011,
       "x": 2,
       "y": 2,
       "costGold": 2500,
@@ -38,7 +38,7 @@
     },
     {
       "level": 2,
-      "apkId": 305012,
+      "gameId": 305012,
       "x": 2,
       "y": 4,
       "costGold": 8750,
@@ -65,7 +65,7 @@
     },
     {
       "level": 3,
-      "apkId": 305013,
+      "gameId": 305013,
       "x": 2,
       "y": 6,
       "costGold": 21250,
@@ -92,7 +92,7 @@
     },
     {
       "level": 4,
-      "apkId": 305014,
+      "gameId": 305014,
       "x": 2,
       "y": 8,
       "costGold": 65000,

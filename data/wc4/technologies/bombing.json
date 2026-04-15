@@ -1,7 +1,7 @@
 {
   "slug": "bombing",
-  "apkTypeId": 36,
-  "apkCategoryId": 4,
+  "gameTypeId": 36,
+  "gameCategoryId": 4,
   "nameEn": "Bombing",
   "nameFr": "Bombing",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 305041,
+      "gameId": 305041,
       "x": 3,
       "y": 4,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 305042,
+      "gameId": 305042,
       "x": 3,
       "y": 7,
       "costGold": 0,

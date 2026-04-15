@@ -119,19 +119,19 @@
     "type": "medals",
     "cost": 2300,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Rundstedt",
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 8,
-  "apkId": 1045,
+  "gameId": 1045,
   "image": {
     "photo": "/img/wc4/generals/Rundstedt.webp",
     "head": "/img/wc4/heads/Rundstedt.webp",

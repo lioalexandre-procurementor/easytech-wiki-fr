@@ -1,7 +1,7 @@
 {
   "slug": "air-defense",
-  "apkTypeId": 14,
-  "apkCategoryId": 1,
+  "gameTypeId": 14,
+  "gameCategoryId": 1,
   "nameEn": "Air-Defense",
   "nameFr": "Air-Defense",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302071,
+      "gameId": 302071,
       "x": 2,
       "y": 4,
       "costGold": 0,
@@ -42,7 +42,7 @@
     },
     {
       "level": 2,
-      "apkId": 302072,
+      "gameId": 302072,
       "x": 2,
       "y": 6,
       "costGold": 0,

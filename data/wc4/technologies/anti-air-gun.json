@@ -1,7 +1,7 @@
 {
   "slug": "anti-air-gun",
-  "apkTypeId": 45,
-  "apkCategoryId": 6,
+  "gameTypeId": 45,
+  "gameCategoryId": 6,
   "nameEn": "Anti-air Gun",
   "nameFr": "Anti-air Gun",
   "category": "antiair",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 2,
-      "apkId": 307001,
+      "gameId": 307001,
       "x": 1,
       "y": 1,
       "costGold": 2500,
@@ -38,7 +38,7 @@
     },
     {
       "level": 3,
-      "apkId": 307002,
+      "gameId": 307002,
       "x": 1,
       "y": 2,
       "costGold": 7500,
@@ -66,7 +66,7 @@
     },
     {
       "level": 4,
-      "apkId": 307003,
+      "gameId": 307003,
       "x": 1,
       "y": 3,
       "costGold": 18750,

@@ -1,7 +1,7 @@
 {
   "slug": "marching",
-  "apkTypeId": 6,
-  "apkCategoryId": 0,
+  "gameTypeId": 6,
+  "gameCategoryId": 0,
   "nameEn": "Marching",
   "nameFr": "Marching",
   "category": "infantry",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 301061,
+      "gameId": 301061,
       "x": 1,
       "y": 2,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 301062,
+      "gameId": 301062,
       "x": 1,
       "y": 4,
       "costGold": 0,

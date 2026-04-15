@@ -10,7 +10,7 @@ import { localizedUnitField } from "@/lib/localized-copy";
 /**
  * Card used on the WC4 hub and elite-units listing.
  *
- * Prefers the APK-extracted sprite (/img/wc4/elites/<armyId>.webp) when the
+ * Prefers the game-data-extracted sprite (/img/wc4/elites/<armyId>.webp) when the
  * unit carries one. Falls back to the category SVG silhouette for scorpion /
  * mystic units that don't yet have an image mapping.
  */

@@ -96,19 +96,19 @@
     "type": "medals",
     "cost": 1475,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Sun.L.R",
   "skillSlots": 4,
   "unlockHQLv": 6,
   "militaryRank": 4,
-  "apkId": 1002,
+  "gameId": 1002,
   "image": {
     "photo": "/img/wc4/generals/Sun.L.R.webp",
     "head": "/img/wc4/heads/Sun.L.R.webp",

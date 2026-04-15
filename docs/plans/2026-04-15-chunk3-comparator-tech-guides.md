@@ -6,7 +6,7 @@
 
 **Architecture:**
 - **Comparator:** single canonical route per type (`/comparateur/unites`, `/comparateur/generaux`) with URL-persisted state (`?left=X&right=Y&third=Z`), plus prerendered matchup pages (`/comparateur/unites/[matchup]`) for SEO long-tail. Client component for the picker, server component for the matchup page.
-- **Technologies:** new data pipeline extracts `TechnologySettings.json` + `TechResearchSettings.json` to `data/wc4/technologies/*.json` mirroring the existing generals/skills shape. Three routes: hub (category grid), category page (tree view using APK `Position[x,y]`), detail page. Full i18n + JSON-LD.
+- **Technologies:** new data pipeline extracts `TechnologySettings.json` + `TechResearchSettings.json` to `data/wc4/technologies/*.json` mirroring the existing generals/skills shape. Three routes: hub (category grid), category page (tree view using game-data `Position[x,y]`), detail page. Full i18n + JSON-LD.
 - **Guides:** MDX-based content directory at `content/guides/wc4/*.mdx` with front-matter; `lib/guides.ts` reads front-matter at build time; routes `/guides` (hub) + `/guides/[slug]` (article). FAQPage JSON-LD for rich snippets. Ship 3 starter guides in this chunk.
 
 **Tech Stack:** Existing (Next.js 14 App Router, TypeScript strict, Tailwind, next-intl) + new deps `recharts` (comparator radar), `@next/mdx` + `remark-gfm` + `rehype-slug` + `rehype-autolink-headings` (guides), `gray-matter` (front-matter parsing).
@@ -666,7 +666,7 @@ It emits one JSON per tech, with the following shape:
 ```json
 {
   "slug": "tank-armor",
-  "apkId": 17,
+  "gameId": 17,
   "nameEn": "Tank Armor",
   "nameFr": "Blindage des tanks",
   "category": "armor",
@@ -696,7 +696,7 @@ Expected: ~191 JSON files written.
 - [ ] **Step 3: Commit**
 
 ```bash
-git commit -m "feat(tech): extract 191 technologies from APK with full L1→L5 progression"
+git commit -m "feat(tech): extract 191 technologies from game-data with full L1→L5 progression"
 ```
 
 ### Task C2: Tech loader + type definitions
@@ -727,7 +727,7 @@ export interface TechLevel {
 
 export interface Tech {
   slug: string;
-  apkId: number;
+  gameId: number;
   nameEn: string;
   nameFr: string;
   category: TechCategory;
@@ -751,7 +751,7 @@ Loader exports: `getAllTech()`, `getTechByCategory(cat)`, `getTechBySlug(slug)`,
 - Modify: `src/i18n/config.ts` (add `technologies` pathnames)
 - Modify: `messages/{fr,en}.json` (add `techPage` namespace + `nav.technologies`)
 
-Tech tree rendering uses the APK `Position[x,y]` directly in a CSS Grid layout. Each node is a `TechCard` positioned via `gridColumn` / `gridRow` based on `positions[0].x` and `positions[0].y`. Prerequisites are drawn as SVG lines via a `<TechArrows />` overlay. Keep it simple — no drag/drop, no interactivity beyond hover tooltip.
+Tech tree rendering uses the game files `Position[x,y]` directly in a CSS Grid layout. Each node is a `TechCard` positioned via `gridColumn` / `gridRow` based on `positions[0].x` and `positions[0].y`. Prerequisites are drawn as SVG lines via a `<TechArrows />` overlay. Keep it simple — no drag/drop, no interactivity beyond hover tooltip.
 
 ### Task C4: Update sidebar + nav + sitemap + search index
 
@@ -955,7 +955,7 @@ Then verify the Vercel deployment and live URLs.
 ## Risk callouts
 
 1. **Matchup static pages scale** — 2450 possible unit matchups × 2 locales = 4900 pages. Capped to tier-S pairs in Phase A Task A3 Step 6 to keep build time reasonable.
-2. **Tech tree layout** — the APK `Position[x,y]` is a single-level grid; multi-level techs share position coordinates. The tree renderer must handle overlap (e.g., by inflating the cell with `Level 1 → 5` pills).
+2. **Tech tree layout** — the game files `Position[x,y]` is a single-level grid; multi-level techs share position coordinates. The tree renderer must handle overlap (e.g., by inflating the cell with `Level 1 → 5` pills).
 3. **Guide content quality** — shipping 3 skeletons is intentionally the minimum to validate the infra. The 2-4h/guide writing effort from `PLAN-next-sections.md` is separate editorial work, out of code scope.
 4. **Search index size** — adding ~191 techs + ~3 guides grows the index from 279 to ~473 items (~150 KB uncompressed). Still tiny for a client fetch, but worth monitoring.
 

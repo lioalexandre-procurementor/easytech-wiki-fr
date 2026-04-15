@@ -1,7 +1,7 @@
 {
   "slug": "aircraft-fuel",
-  "apkTypeId": 32,
-  "apkCategoryId": 4,
+  "gameTypeId": 32,
+  "gameCategoryId": 4,
   "nameEn": "Aircraft Fuel",
   "nameFr": "Aircraft Fuel",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 305001,
+      "gameId": 305001,
       "x": 1,
       "y": 1,
       "costGold": 1500,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 305002,
+      "gameId": 305002,
       "x": 1,
       "y": 3,
       "costGold": 4000,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 305003,
+      "gameId": 305003,
       "x": 1,
       "y": 4,
       "costGold": 11250,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 305004,
+      "gameId": 305004,
       "x": 1,
       "y": 5,
       "costGold": 23750,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 305005,
+      "gameId": 305005,
       "x": 1,
       "y": 6,
       "costGold": 55000,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 305006,
+      "gameId": 305006,
       "x": 1,
       "y": 7,
       "costGold": 110000,

@@ -1,7 +1,7 @@
 {
   "slug": "rocket-launcher",
-  "apkTypeId": 43,
-  "apkCategoryId": 5,
+  "gameTypeId": 43,
+  "gameCategoryId": 5,
   "nameEn": "Rocket Launcher",
   "nameFr": "Rocket Launcher",
   "category": "fortifications",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 2,
-      "apkId": 306031,
+      "gameId": 306031,
       "x": 4,
       "y": 4,
       "costGold": 0,
@@ -38,7 +38,7 @@
     },
     {
       "level": 3,
-      "apkId": 306032,
+      "gameId": 306032,
       "x": 4,
       "y": 5,
       "costGold": 0,
@@ -67,7 +67,7 @@
     },
     {
       "level": 4,
-      "apkId": 306033,
+      "gameId": 306033,
       "x": 4,
       "y": 6,
       "costGold": 0,

@@ -1,7 +1,7 @@
 {
   "slug": "mortar",
-  "apkTypeId": 5,
-  "apkCategoryId": 0,
+  "gameTypeId": 5,
+  "gameCategoryId": 0,
   "nameEn": "Mortar",
   "nameFr": "Mortar",
   "category": "infantry",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 301051,
+      "gameId": 301051,
       "x": 2,
       "y": 4,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 301052,
+      "gameId": 301052,
       "x": 2,
       "y": 8,
       "costGold": 0,

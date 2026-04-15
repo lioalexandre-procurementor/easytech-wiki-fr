@@ -96,19 +96,19 @@
     "type": "medals",
     "cost": 1680,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Zhang.Z.Z",
   "skillSlots": 4,
   "unlockHQLv": 15,
   "militaryRank": 5,
-  "apkId": 1001,
+  "gameId": 1001,
   "image": {
     "photo": "/img/wc4/generals/Zhang.Z.Z.webp",
     "head": "/img/wc4/heads/Zhang.Z.Z.webp",

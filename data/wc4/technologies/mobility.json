@@ -1,7 +1,7 @@
 {
   "slug": "mobility",
-  "apkTypeId": 0,
-  "apkCategoryId": 0,
+  "gameTypeId": 0,
+  "gameCategoryId": 0,
   "nameEn": "Mobility",
   "nameFr": "Mobility",
   "category": "infantry",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 301001,
+      "gameId": 301001,
       "x": 1,
       "y": 1,
       "costGold": 500,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 301002,
+      "gameId": 301002,
       "x": 1,
       "y": 2,
       "costGold": 1000,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 301003,
+      "gameId": 301003,
       "x": 1,
       "y": 3,
       "costGold": 2500,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 301004,
+      "gameId": 301004,
       "x": 1,
       "y": 4,
       "costGold": 8750,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 301005,
+      "gameId": 301005,
       "x": 1,
       "y": 6,
       "costGold": 33750,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 301006,
+      "gameId": 301006,
       "x": 1,
       "y": 8,
       "costGold": 87500,

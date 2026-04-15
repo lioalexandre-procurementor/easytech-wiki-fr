@@ -1,7 +1,7 @@
 {
   "slug": "hull",
-  "apkTypeId": 23,
-  "apkCategoryId": 3,
+  "gameTypeId": 23,
+  "gameCategoryId": 3,
   "nameEn": "Hull",
   "nameFr": "Hull",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304001,
+      "gameId": 304001,
       "x": 1,
       "y": 1,
       "costGold": 1250,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 304002,
+      "gameId": 304002,
       "x": 1,
       "y": 2,
       "costGold": 3000,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 304003,
+      "gameId": 304003,
       "x": 1,
       "y": 3,
       "costGold": 5000,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 304004,
+      "gameId": 304004,
       "x": 1,
       "y": 4,
       "costGold": 11250,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 304005,
+      "gameId": 304005,
       "x": 1,
       "y": 5,
       "costGold": 23750,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 304006,
+      "gameId": 304006,
       "x": 1,
       "y": 6,
       "costGold": 45000,
@@ -154,7 +154,7 @@
     },
     {
       "level": 7,
-      "apkId": 304007,
+      "gameId": 304007,
       "x": 1,
       "y": 7,
       "costGold": 95000,
@@ -178,7 +178,7 @@
     },
     {
       "level": 8,
-      "apkId": 304008,
+      "gameId": 304008,
       "x": 1,
       "y": 8,
       "costGold": 165000,

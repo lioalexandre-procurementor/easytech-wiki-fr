@@ -113,19 +113,19 @@
     "type": "medals",
     "cost": 325,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Tito",
   "skillSlots": 3,
   "unlockHQLv": 1,
   "militaryRank": 3,
-  "apkId": 1029,
+  "gameId": 1029,
   "image": {
     "photo": "/img/wc4/generals/Tito.webp",
     "head": "/img/wc4/heads/Tito.webp",

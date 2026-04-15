@@ -1,7 +1,7 @@
 {
   "slug": "artillery",
-  "apkTypeId": 16,
-  "apkCategoryId": 2,
+  "gameTypeId": 16,
+  "gameCategoryId": 2,
   "nameEn": "Artillery",
   "nameFr": "Artillery",
   "category": "artillery",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 303001,
+      "gameId": 303001,
       "x": 2,
       "y": 1,
       "costGold": 1000,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 303002,
+      "gameId": 303002,
       "x": 2,
       "y": 2,
       "costGold": 3000,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 303003,
+      "gameId": 303003,
       "x": 2,
       "y": 3,
       "costGold": 7500,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 303004,
+      "gameId": 303004,
       "x": 2,
       "y": 4,
       "costGold": 12500,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 303005,
+      "gameId": 303005,
       "x": 2,
       "y": 5,
       "costGold": 26250,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 303006,
+      "gameId": 303006,
       "x": 2,
       "y": 6,
       "costGold": 55000,
@@ -154,7 +154,7 @@
     },
     {
       "level": 7,
-      "apkId": 303007,
+      "gameId": 303007,
       "x": 2,
       "y": 7,
       "costGold": 102500,
@@ -178,7 +178,7 @@
     },
     {
       "level": 8,
-      "apkId": 303008,
+      "gameId": 303008,
       "x": 2,
       "y": 8,
       "costGold": 187500,

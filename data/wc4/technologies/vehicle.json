@@ -1,7 +1,7 @@
 {
   "slug": "vehicle",
-  "apkTypeId": 10,
-  "apkCategoryId": 1,
+  "gameTypeId": 10,
+  "gameCategoryId": 1,
   "nameEn": "Vehicle",
   "nameFr": "Vehicle",
   "category": "armor",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 302031,
+      "gameId": 302031,
       "x": 2,
       "y": 2,
       "costGold": 2500,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 302032,
+      "gameId": 302032,
       "x": 2,
       "y": 4,
       "costGold": 11250,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 302033,
+      "gameId": 302033,
       "x": 2,
       "y": 6,
       "costGold": 55000,
@@ -86,7 +86,7 @@
     },
     {
       "level": 4,
-      "apkId": 302034,
+      "gameId": 302034,
       "x": 2,
       "y": 8,
       "costGold": 125000,

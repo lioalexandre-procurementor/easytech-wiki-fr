@@ -113,19 +113,19 @@
     "type": "medals",
     "cost": 1150,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "de Gaulle",
   "skillSlots": 3,
   "unlockHQLv": 9,
   "militaryRank": 7,
-  "apkId": 1041,
+  "gameId": 1041,
   "image": {
     "photo": "/img/wc4/generals/de_Gaulle.webp",
     "head": "/img/wc4/heads/de_Gaulle.webp",

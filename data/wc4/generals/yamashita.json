@@ -106,19 +106,19 @@
     "type": "medals",
     "cost": 2315,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Yamashita",
   "skillSlots": 5,
   "unlockHQLv": 8,
   "militaryRank": 7,
-  "apkId": 1024,
+  "gameId": 1024,
   "image": {
     "photo": "/img/wc4/generals/Yamashita.webp",
     "head": "/img/wc4/heads/Yamashita.webp",

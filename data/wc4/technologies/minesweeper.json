@@ -1,7 +1,7 @@
 {
   "slug": "minesweeper",
-  "apkTypeId": 29,
-  "apkCategoryId": 3,
+  "gameTypeId": 29,
+  "gameCategoryId": 3,
   "nameEn": "Minesweeper",
   "nameFr": "Minesweeper",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304071,
+      "gameId": 304071,
       "x": 2,
       "y": 2,
       "costGold": 0,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 304072,
+      "gameId": 304072,
       "x": 2,
       "y": 4,
       "costGold": 0,

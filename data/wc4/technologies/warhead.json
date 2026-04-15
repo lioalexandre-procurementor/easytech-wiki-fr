@@ -1,7 +1,7 @@
 {
   "slug": "warhead",
-  "apkTypeId": 49,
-  "apkCategoryId": 7,
+  "gameTypeId": 49,
+  "gameCategoryId": 7,
   "nameEn": "Warhead",
   "nameFr": "Warhead",
   "category": "missile",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 308001,
+      "gameId": 308001,
       "x": 2,
       "y": 1,
       "costGold": 0,
@@ -34,7 +34,7 @@
     },
     {
       "level": 2,
-      "apkId": 308002,
+      "gameId": 308002,
       "x": 2,
       "y": 2,
       "costGold": 0,
@@ -58,7 +58,7 @@
     },
     {
       "level": 3,
-      "apkId": 308003,
+      "gameId": 308003,
       "x": 2,
       "y": 3,
       "costGold": 0,
@@ -82,7 +82,7 @@
     },
     {
       "level": 4,
-      "apkId": 308004,
+      "gameId": 308004,
       "x": 2,
       "y": 4,
       "costGold": 0,
@@ -106,7 +106,7 @@
     },
     {
       "level": 5,
-      "apkId": 308005,
+      "gameId": 308005,
       "x": 2,
       "y": 5,
       "costGold": 0,
@@ -130,7 +130,7 @@
     },
     {
       "level": 6,
-      "apkId": 308006,
+      "gameId": 308006,
       "x": 2,
       "y": 6,
       "costGold": 0,
@@ -154,7 +154,7 @@
     },
     {
       "level": 7,
-      "apkId": 308007,
+      "gameId": 308007,
       "x": 2,
       "y": 7,
       "costGold": 0,

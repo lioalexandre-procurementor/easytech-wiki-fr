@@ -132,7 +132,7 @@
   "skillSlots": 5,
   "unlockHQLv": 12,
   "militaryRank": 8,
-  "apkId": 1009,
+  "gameId": 1009,
   "image": {
     "photo": "/img/wc4/generals/Montgomery.webp",
     "head": "/img/wc4/heads/Montgomery.webp",

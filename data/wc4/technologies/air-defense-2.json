@@ -1,7 +1,7 @@
 {
   "slug": "air-defense-2",
-  "apkTypeId": 30,
-  "apkCategoryId": 3,
+  "gameTypeId": 30,
+  "gameCategoryId": 3,
   "nameEn": "Air-Defense",
   "nameFr": "Air-Defense",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304081,
+      "gameId": 304081,
       "x": 3,
       "y": 6,
       "costGold": 0,
@@ -42,7 +42,7 @@
     },
     {
       "level": 2,
-      "apkId": 304082,
+      "gameId": 304082,
       "x": 3,
       "y": 8,
       "costGold": 0,

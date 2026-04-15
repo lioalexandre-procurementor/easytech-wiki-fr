@@ -1,7 +1,7 @@
 {
   "slug": "gun",
-  "apkTypeId": 1,
-  "apkCategoryId": 0,
+  "gameTypeId": 1,
+  "gameCategoryId": 0,
   "nameEn": "Gun",
   "nameFr": "Gun",
   "category": "infantry",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 301011,
+      "gameId": 301011,
       "x": 2,
       "y": 2,
       "costGold": 1250,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 301012,
+      "gameId": 301012,
       "x": 2,
       "y": 4,
       "costGold": 3000,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 301013,
+      "gameId": 301013,
       "x": 2,
       "y": 6,
       "costGold": 11250,
@@ -86,7 +86,7 @@
     },
     {
       "level": 4,
-      "apkId": 301014,
+      "gameId": 301014,
       "x": 2,
       "y": 8,
       "costGold": 60000,

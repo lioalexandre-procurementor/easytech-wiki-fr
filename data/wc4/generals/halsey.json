@@ -116,19 +116,19 @@
     "type": "medals",
     "cost": 1420,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Halsey",
   "skillSlots": 4,
   "unlockHQLv": 4,
   "militaryRank": 4,
-  "apkId": 1033,
+  "gameId": 1033,
   "image": {
     "photo": "/img/wc4/generals/Halsey.webp",
     "head": "/img/wc4/heads/Halsey.webp",

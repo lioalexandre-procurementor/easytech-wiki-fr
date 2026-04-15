@@ -96,19 +96,19 @@
     "type": "medals",
     "cost": 1765,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Mountbatten",
   "skillSlots": 4,
   "unlockHQLv": 12,
   "militaryRank": 6,
-  "apkId": 1006,
+  "gameId": 1006,
   "image": {
     "photo": "/img/wc4/generals/Mountbatten.webp",
     "head": "/img/wc4/heads/Mountbatten.webp",

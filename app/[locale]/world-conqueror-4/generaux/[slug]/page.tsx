@@ -572,7 +572,7 @@ function SkillBlock({
     : null;
 
   // Resolve locale-aware display name & description. The general JSON often
-  // stores the English canonical name in `skill.name` (backfilled from APK),
+  // stores the English canonical name in `skill.name` (backfilled from game files),
   // so we prefer the skill catalog's `nameFr`/`renderedDescFr` fields when in
   // FR locale, and the catalog's `name`/`renderedDesc` in EN locale. We fall
   // back to the general's own `skill.name`/`skill.desc` only when the catalog

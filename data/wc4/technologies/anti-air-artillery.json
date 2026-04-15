@@ -1,7 +1,7 @@
 {
   "slug": "anti-air-artillery",
-  "apkTypeId": 46,
-  "apkCategoryId": 6,
+  "gameTypeId": 46,
+  "gameCategoryId": 6,
   "nameEn": "Anti-air Artillery",
   "nameFr": "Anti-air Artillery",
   "category": "antiair",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 2,
-      "apkId": 307011,
+      "gameId": 307011,
       "x": 2,
       "y": 2,
       "costGold": 10000,
@@ -40,7 +40,7 @@
     },
     {
       "level": 3,
-      "apkId": 307012,
+      "gameId": 307012,
       "x": 2,
       "y": 3,
       "costGold": 23750,
@@ -71,7 +71,7 @@
     },
     {
       "level": 4,
-      "apkId": 307013,
+      "gameId": 307013,
       "x": 2,
       "y": 4,
       "costGold": 65000,

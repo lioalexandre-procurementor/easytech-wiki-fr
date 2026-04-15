@@ -96,19 +96,19 @@
     "type": "medals",
     "cost": 1565,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Peng.D.H",
   "skillSlots": 4,
   "unlockHQLv": 16,
   "militaryRank": 6,
-  "apkId": 1004,
+  "gameId": 1004,
   "image": {
     "photo": "/img/wc4/generals/Peng.D.H.webp",
     "head": "/img/wc4/heads/Peng.D.H.webp",

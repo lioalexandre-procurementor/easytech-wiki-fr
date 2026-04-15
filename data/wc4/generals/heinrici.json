@@ -86,19 +86,19 @@
     "type": "medals",
     "cost": 855,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Heinrici",
   "skillSlots": 3,
   "unlockHQLv": 6,
   "militaryRank": 4,
-  "apkId": 1044,
+  "gameId": 1044,
   "image": {
     "photo": "/img/wc4/generals/Heinrici.webp",
     "head": "/img/wc4/heads/Heinrici.webp",

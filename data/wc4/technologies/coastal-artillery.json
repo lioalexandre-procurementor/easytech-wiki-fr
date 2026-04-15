@@ -1,7 +1,7 @@
 {
   "slug": "coastal-artillery",
-  "apkTypeId": 42,
-  "apkCategoryId": 5,
+  "gameTypeId": 42,
+  "gameCategoryId": 5,
   "nameEn": "Coastal Artillery",
   "nameFr": "Coastal Artillery",
   "category": "fortifications",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 2,
-      "apkId": 306021,
+      "gameId": 306021,
       "x": 3,
       "y": 3,
       "costGold": 33750,
@@ -38,7 +38,7 @@
     },
     {
       "level": 3,
-      "apkId": 306022,
+      "gameId": 306022,
       "x": 3,
       "y": 4,
       "costGold": 75000,
@@ -67,7 +67,7 @@
     },
     {
       "level": 4,
-      "apkId": 306023,
+      "gameId": 306023,
       "x": 3,
       "y": 5,
       "costGold": 155000,

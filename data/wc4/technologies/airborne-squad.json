@@ -1,7 +1,7 @@
 {
   "slug": "airborne-squad",
-  "apkTypeId": 56,
-  "apkCategoryId": 4,
+  "gameTypeId": 56,
+  "gameCategoryId": 4,
   "nameEn": "Airborne Squad",
   "nameFr": "Airborne Squad",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 310001,
+      "gameId": 310001,
       "x": 1,
       "y": 8,
       "costGold": 0,

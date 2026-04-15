@@ -1,7 +1,7 @@
 {
   "slug": "propeller",
-  "apkTypeId": 24,
-  "apkCategoryId": 3,
+  "gameTypeId": 24,
+  "gameCategoryId": 3,
   "nameEn": "Propeller",
   "nameFr": "Propeller",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304021,
+      "gameId": 304021,
       "x": 2,
       "y": 2,
       "costGold": 3500,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 304022,
+      "gameId": 304022,
       "x": 2,
       "y": 4,
       "costGold": 7500,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 304023,
+      "gameId": 304023,
       "x": 2,
       "y": 6,
       "costGold": 30000,
@@ -86,7 +86,7 @@
     },
     {
       "level": 4,
-      "apkId": 304024,
+      "gameId": 304024,
       "x": 2,
       "y": 8,
       "costGold": 125000,

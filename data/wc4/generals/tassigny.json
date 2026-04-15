@@ -86,19 +86,19 @@
     "type": "medals",
     "cost": 750,
     "currency": "medals",
-    "notes": "Données APK — à vérifier"
+    "notes": "Données de jeu — à vérifier"
   },
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites de l'APK World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "Tassigny",
   "skillSlots": 3,
   "unlockHQLv": 9,
   "militaryRank": 4,
-  "apkId": 1040,
+  "gameId": 1040,
   "image": {
     "photo": "/img/wc4/generals/Tassigny.webp",
     "head": "/img/wc4/heads/Tassigny.webp",

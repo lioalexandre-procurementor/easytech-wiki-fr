@@ -1,7 +1,7 @@
 {
   "slug": "aircraft-bomb",
-  "apkTypeId": 34,
-  "apkCategoryId": 4,
+  "gameTypeId": 34,
+  "gameCategoryId": 4,
   "nameEn": "Aircraft Bomb",
   "nameFr": "Aircraft Bomb",
   "category": "airforce",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 305021,
+      "gameId": 305021,
       "x": 3,
       "y": 3,
       "costGold": 3500,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 305022,
+      "gameId": 305022,
       "x": 3,
       "y": 4,
       "costGold": 7500,
@@ -60,7 +60,7 @@
     },
     {
       "level": 3,
-      "apkId": 305023,
+      "gameId": 305023,
       "x": 3,
       "y": 5,
       "costGold": 10000,
@@ -85,7 +85,7 @@
     },
     {
       "level": 4,
-      "apkId": 305024,
+      "gameId": 305024,
       "x": 3,
       "y": 6,
       "costGold": 18750,
@@ -109,7 +109,7 @@
     },
     {
       "level": 5,
-      "apkId": 305025,
+      "gameId": 305025,
       "x": 3,
       "y": 7,
       "costGold": 30000,
@@ -134,7 +134,7 @@
     },
     {
       "level": 6,
-      "apkId": 305026,
+      "gameId": 305026,
       "x": 3,
       "y": 8,
       "costGold": 55000,
@@ -158,7 +158,7 @@
     },
     {
       "level": 7,
-      "apkId": 305027,
+      "gameId": 305027,
       "x": 3,
       "y": 9,
       "costGold": 95000,
@@ -183,7 +183,7 @@
     },
     {
       "level": 8,
-      "apkId": 305028,
+      "gameId": 305028,
       "x": 3,
       "y": 10,
       "costGold": 155000,

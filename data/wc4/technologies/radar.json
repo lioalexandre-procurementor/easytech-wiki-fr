@@ -1,7 +1,7 @@
 {
   "slug": "radar",
-  "apkTypeId": 48,
-  "apkCategoryId": 6,
+  "gameTypeId": 48,
+  "gameCategoryId": 6,
   "nameEn": "Radar",
   "nameFr": "Radar",
   "category": "antiair",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 307031,
+      "gameId": 307031,
       "x": 2,
       "y": 2,
       "costGold": 0,

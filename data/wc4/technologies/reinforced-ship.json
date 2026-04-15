@@ -1,7 +1,7 @@
 {
   "slug": "reinforced-ship",
-  "apkTypeId": 31,
-  "apkCategoryId": 3,
+  "gameTypeId": 31,
+  "gameCategoryId": 3,
   "nameEn": "Reinforced Ship",
   "nameFr": "Reinforced Ship",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304091,
+      "gameId": 304091,
       "x": 1,
       "y": 7,
       "costGold": 0,

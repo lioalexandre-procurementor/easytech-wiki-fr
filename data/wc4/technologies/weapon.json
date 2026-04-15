@@ -1,7 +1,7 @@
 {
   "slug": "weapon",
-  "apkTypeId": 26,
-  "apkCategoryId": 3,
+  "gameTypeId": 26,
+  "gameCategoryId": 3,
   "nameEn": "Weapon",
   "nameFr": "Weapon",
   "category": "navy",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 304041,
+      "gameId": 304041,
       "x": 4,
       "y": 6,
       "costGold": 12500,
@@ -36,7 +36,7 @@
     },
     {
       "level": 2,
-      "apkId": 304042,
+      "gameId": 304042,
       "x": 4,
       "y": 7,
       "costGold": 33750,
@@ -61,7 +61,7 @@
     },
     {
       "level": 3,
-      "apkId": 304043,
+      "gameId": 304043,
       "x": 4,
       "y": 8,
       "costGold": 70000,
@@ -86,7 +86,7 @@
     },
     {
       "level": 4,
-      "apkId": 304044,
+      "gameId": 304044,
       "x": 4,
       "y": 9,
       "costGold": 135000,

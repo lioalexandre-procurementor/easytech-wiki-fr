@@ -1,7 +1,7 @@
 {
   "slug": "disguise",
-  "apkTypeId": 22,
-  "apkCategoryId": 2,
+  "gameTypeId": 22,
+  "gameCategoryId": 2,
   "nameEn": "Disguise",
   "nameFr": "Disguise",
   "category": "artillery",
@@ -12,7 +12,7 @@
   "levels": [
     {
       "level": 1,
-      "apkId": 303061,
+      "gameId": 303061,
       "x": 4,
       "y": 9,
       "costGold": 0,
