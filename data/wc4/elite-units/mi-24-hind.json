@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🦅",
       "name": "Supériorité aérienne",
       "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air superiority",
+      "nameDe": "Luftüberlegenheit",
+      "descEn": "Can take off within 1 tile of an aircraft carrier. Ignores all terrain effects on mobility and all mines. The enemy cannot counter-attack. Combat effectiveness does not decrease when HP drops.",
+      "descDe": "Kann im Umkreis von 1 Feld um einen Flugzeugträger starten. Ignoriert alle Geländeeffekte auf die Mobilität und alle Minen. Der Feind kann nicht kontern. Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen."
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Mitraillage",
       "desc": "Trace une ligne droite jusqu'à 4 cases (case d'arrivée dégagée, bloquée par les unités en vol), infligeant des dégâts de mitraillage sur le trajet. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Strafing",
+      "nameDe": "Beschuss",
+      "descEn": "Traces a straight line up to 4 tiles (destination tile clear, blocked by flying units), dealing strafing damage along the path. Recovery in 2 turns.",
+      "descDe": "Zieht eine gerade Linie bis zu 4 Felder (Zielfeld frei, blockiert durch fliegende Einheiten) und verursacht dabei Beschussschaden entlang des Pfades. Erholung in 2 Runden."
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Manœuvres d'évasion",
       "desc": "40% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Evasive maneuvers",
+      "nameDe": "Ausweichmanöver",
+      "descEn": "40% chance to evade damage dealt by ground or naval units",
+      "descDe": "40 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Mitraillage Niv.2",
       "desc": "Trace une ligne droite jusqu'à 6 cases (case d'arrivée dégagée, bloquée par les unités en vol), infligeant des dégâts de mitraillage sur le trajet. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Strafing Lv.2",
+      "nameDe": "Beschuss Stufe 2",
+      "descEn": "Traces a straight line up to 6 tiles (destination tile clear, blocked by flying units), dealing strafing damage along the path. Recovery in 2 turns.",
+      "descDe": "Zieht eine gerade Linie bis zu 6 Felder (Zielfeld frei, blockiert durch fliegende Einheiten) und verursacht dabei Beschussschaden entlang des Pfades. Erholung in 2 Runden."
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Manœuvres d'évasion Niv.2",
       "desc": "65% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Evasive maneuvers Lv.2",
+      "nameDe": "Ausweichmanöver Stufe 2",
+      "descEn": "65% chance to evade damage dealt by ground or naval units",
+      "descDe": "65 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Mitraillage Niv.3",
       "desc": "Trace une ligne droite jusqu'à 8 cases (case d'arrivée dégagée, bloquée par les unités en vol), infligeant des dégâts de mitraillage sur le trajet. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Strafing Lv.3",
+      "nameDe": "Beschuss Stufe 3",
+      "descEn": "Traces a straight line up to 8 tiles (destination tile clear, blocked by flying units), dealing strafing damage along the path. Recovery in 2 turns.",
+      "descDe": "Zieht eine gerade Linie bis zu 8 Felder (Zielfeld frei, blockiert durch fliegende Einheiten) und verursacht dabei Beschussschaden entlang des Pfades. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Manœuvres d'évasion Niv.3",
       "desc": "90% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Evasive maneuvers Lv.3",
+      "nameDe": "Ausweichmanöver Stufe 3",
+      "descEn": "90% chance to evade damage dealt by ground or naval units",
+      "descDe": "90 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen"
     },
     {
       "lvl": 10,
@@ -195,7 +227,11 @@
       "icon": "🎯",
       "name": "Canon à grande vitesse",
       "desc": "Ignore 25% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "High-velocity gun",
+      "nameDe": "Hochgeschwindigkeitskanone",
+      "descEn": "Ignores 25% of enemy defense",
+      "descDe": "Ignoriert 25 % der feindlichen Verteidigung"
     },
     {
       "lvl": 11,
@@ -203,7 +239,11 @@
       "icon": "🎯",
       "name": "Canon à grande vitesse Niv.2",
       "desc": "Ignore 50% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "High-velocity gun Lv.2",
+      "nameDe": "Hochgeschwindigkeitskanone Stufe 2",
+      "descEn": "Ignores 50% of enemy defense",
+      "descDe": "Ignoriert 50 % der feindlichen Verteidigung"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "🎯",
       "name": "Canon à grande vitesse Niv.3",
       "desc": "Ignore 75% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "High-velocity gun Lv.3",
+      "nameDe": "Hochgeschwindigkeitskanone Stufe 3",
+      "descEn": "Ignores 75% of enemy defense",
+      "descDe": "Ignoriert 75 % der feindlichen Verteidigung"
     }
   ],
   "recommendedGenerals": [],

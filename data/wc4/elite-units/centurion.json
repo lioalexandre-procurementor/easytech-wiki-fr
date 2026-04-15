@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "💨",
       "name": "Fumigène",
       "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Smoke screen",
+      "nameDe": "Nebelgranate",
+      "descEn": "Hides behind a smoke screen; cannot be actively targeted by ground units for 1 turn. Recovery in 3 turns.",
+      "descDe": "Versteckt sich hinter einem Rauchschleier; kann für 1 Runde nicht aktiv von Bodeneinheiten angegriffen werden. Erholung in 3 Runden."
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Obus HEAT",
       "desc": "Sous effet de fumigène, ignore 10% de la défense ennemie",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "HEAT shell",
+      "nameDe": "HEAT-Granate",
+      "descEn": "Under smoke effect, ignores 10% of enemy defense",
+      "descDe": "Unter Nebeleffekt werden 10 % der feindlichen Verteidigung ignoriert"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Obus HEAT Niv.2",
       "desc": "Sous effet de fumigène, ignore 20% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "HEAT shell Lv.2",
+      "nameDe": "HEAT-Granate Stufe 2",
+      "descEn": "Under smoke effect, ignores 20% of enemy defense",
+      "descDe": "Unter Nebeleffekt werden 20 % der feindlichen Verteidigung ignoriert"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Obus HEAT Niv.3",
       "desc": "Sous effet de fumigène, ignore 30% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "HEAT shell Lv.3",
+      "nameDe": "HEAT-Granate Stufe 3",
+      "descEn": "Under smoke effect, ignores 30% of enemy defense",
+      "descDe": "Unter Nebeleffekt werden 30 % der feindlichen Verteidigung ignoriert"
     },
     {
       "lvl": 11,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Obus HEAT Niv.4",
       "desc": "Sous effet de fumigène, ignore 40% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "HEAT shell Lv.4",
+      "nameDe": "HEAT-Granate Stufe 4",
+      "descEn": "Under smoke effect, ignores 40% of enemy defense",
+      "descDe": "Unter Nebeleffekt werden 40 % der feindlichen Verteidigung ignoriert"
     },
     {
       "lvl": 12,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Interférence visuelle",
       "desc": "Sous fumigène, la portée des ennemis dans 2 cases est ramenée à 1 (annulé si l'effet fumigène est ignoré)",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Visual interference",
+      "nameDe": "Visuelle Störung",
+      "descEn": "Under smoke, the range of enemies within 2 tiles is reduced to 1 (cancelled if the smoke effect is ignored)",
+      "descDe": "Unter Nebel wird die Reichweite von Feinden im Umkreis von 2 Feldern auf 1 reduziert (aufgehoben, wenn der Nebeleffekt ignoriert wird)"
     }
   ],
   "recommendedGenerals": [],

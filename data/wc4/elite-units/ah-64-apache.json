@@ -131,7 +131,11 @@
       "icon": "🦅",
       "name": "Supériorité aérienne",
       "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air superiority",
+      "nameDe": "Luftüberlegenheit",
+      "descEn": "Can take off within 1 tile of an aircraft carrier. Ignores all terrain effects on mobility and all mines. The enemy cannot counter-attack. Combat effectiveness does not decrease when HP drops.",
+      "descDe": "Kann im Umkreis von 1 Feld um einen Flugzeugträger starten. Ignoriert alle Geländeeffekte auf die Mobilität und alle Minen. Der Feind kann nicht kontern. Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen."
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Manœuvres d'évasion",
       "desc": "40% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Evasive maneuvers",
+      "nameDe": "Ausweichmanöver",
+      "descEn": "40% chance to evade damage dealt by ground or naval units",
+      "descDe": "40 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Feu d'enfer",
       "desc": "Inflige +25% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Hellfire",
+      "nameDe": "Höllenfeuer",
+      "descEn": "Deals +25% damage to targets within 1 tile around the main target this turn. Recovery in 2 turns.",
+      "descDe": "Verursacht +25 % Schaden an Zielen im Umkreis von 1 Feld um das Hauptziel diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⚔️",
       "name": "Assaut à basse altitude",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +15%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Low-altitude assault",
+      "nameDe": "Tiefflugangriff",
+      "descEn": "Can strike several enemies — damage to tanks and artillery +15%",
+      "descDe": "Kann mehrere Feinde treffen — Schaden gegen Panzer und Artillerie +15 %"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Manœuvres d'évasion Niv.2",
       "desc": "65% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Evasive maneuvers Lv.2",
+      "nameDe": "Ausweichmanöver Stufe 2",
+      "descEn": "65% chance to evade damage dealt by ground or naval units",
+      "descDe": "65 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Feu d'enfer Niv.2",
       "desc": "Inflige +50% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Hellfire Lv.2",
+      "nameDe": "Höllenfeuer Stufe 2",
+      "descEn": "Deals +50% damage to targets within 1 tile around the main target this turn. Recovery in 2 turns.",
+      "descDe": "Verursacht +50 % Schaden an Zielen im Umkreis von 1 Feld um das Hauptziel diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⚔️",
       "name": "Assaut à basse altitude Niv.2",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Low-altitude assault Lv.2",
+      "nameDe": "Tiefflugangriff Stufe 2",
+      "descEn": "Can strike several enemies — damage to tanks and artillery +30%",
+      "descDe": "Kann mehrere Feinde treffen — Schaden gegen Panzer und Artillerie +30 %"
     },
     {
       "lvl": 5,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Impulsion électromagnétique",
       "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Electromagnetic pulse",
+      "nameDe": "Elektromagnetischer Impuls",
+      "descEn": "Cancels most buffs of enemies within 1 tile around. Recovery in 3 turns.",
+      "descDe": "Hebt die meisten Buffs von Feinden im Umkreis von 1 Feld auf. Erholung in 3 Runden."
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Manœuvres d'évasion Niv.3",
       "desc": "90% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Evasive maneuvers Lv.3",
+      "nameDe": "Ausweichmanöver Stufe 3",
+      "descEn": "90% chance to evade damage dealt by ground or naval units",
+      "descDe": "90 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen"
     },
     {
       "lvl": 9,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Feu d'enfer Niv.3",
       "desc": "Inflige +80% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Hellfire Lv.3",
+      "nameDe": "Höllenfeuer Stufe 3",
+      "descEn": "Deals +80% damage to targets within 1 tile around the main target this turn. Recovery in 2 turns.",
+      "descDe": "Verursacht +80 % Schaden an Zielen im Umkreis von 1 Feld um das Hauptziel diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -211,7 +251,11 @@
       "icon": "⚔️",
       "name": "Assaut à basse altitude Niv.3",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Low-altitude assault Lv.3",
+      "nameDe": "Tiefflugangriff Stufe 3",
+      "descEn": "Can strike several enemies — damage to tanks and artillery +50%",
+      "descDe": "Kann mehrere Feinde treffen — Schaden gegen Panzer und Artillerie +50 %"
     },
     {
       "lvl": 10,
@@ -219,7 +263,11 @@
       "icon": "⚔️",
       "name": "Assaut à basse altitude Niv.4",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +80%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Low-altitude assault Lv.4",
+      "nameDe": "Tiefflugangriff Stufe 4",
+      "descEn": "Can strike several enemies — damage to tanks and artillery +80%",
+      "descDe": "Kann mehrere Feinde treffen — Schaden gegen Panzer und Artillerie +80 %"
     },
     {
       "lvl": 12,
@@ -227,7 +275,11 @@
       "icon": "⭐",
       "name": "Feu d'enfer Niv.4",
       "desc": "Inflige +100% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Hellfire Lv.4",
+      "nameDe": "Höllenfeuer Stufe 4",
+      "descEn": "Deals +100% damage to targets within 1 tile around the main target this turn. Recovery in 2 turns.",
+      "descDe": "Verursacht +100 % Schaden an Zielen im Umkreis von 1 Feld um das Hauptziel diese Runde. Erholung in 2 Runden."
     }
   ],
   "recommendedGenerals": [],

@@ -131,7 +131,11 @@
       "icon": "🚫",
       "name": "Anti-char",
       "desc": "Dégâts aux unités blindées +65%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Anti-tank",
+      "nameDe": "Panzerabwehr",
+      "descEn": "Damage to armor units +65%",
+      "descDe": "Schaden gegen Panzereinheiten +65 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Attaque à la roquette",
       "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 60% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Rocket attack",
+      "nameDe": "Raketenangriff",
+      "descEn": "Range reduced to 2, strikes several enemies, 60% chance that enemies cannot counter-attack for 1 turn. Recovery in 2 turns.",
+      "descDe": "Reichweite auf 2 reduziert, trifft mehrere Feinde, 60 % Chance, dass Feinde für 1 Runde nicht kontern können. Erholung in 2 Runden."
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Gilet pare-éclats",
       "desc": "Dégâts subis des unités blindées -15%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Flak jacket",
+      "nameDe": "Splitterschutzweste",
+      "descEn": "Damage taken from armor units -15%",
+      "descDe": "Erlittener Schaden von Panzereinheiten -15 %"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Attaque à la roquette Niv.2",
       "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 80% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Rocket attack Lv.2",
+      "nameDe": "Raketenangriff Stufe 2",
+      "descEn": "Range reduced to 2, strikes several enemies, 80% chance that enemies cannot counter-attack for 1 turn. Recovery in 2 turns.",
+      "descDe": "Reichweite auf 2 reduziert, trifft mehrere Feinde, 80 % Chance, dass Feinde für 1 Runde nicht kontern können. Erholung in 2 Runden."
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Gilet pare-éclats Niv.2",
       "desc": "Dégâts subis des unités blindées -30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Flak jacket Lv.2",
+      "nameDe": "Splitterschutzweste Stufe 2",
+      "descEn": "Damage taken from armor units -30%",
+      "descDe": "Erlittener Schaden von Panzereinheiten -30 %"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Visée infrarouge",
       "desc": "Ignore l'esquive et les fumigènes, et inflige +35% de dégâts aux défenses de ville",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Infrared targeting",
+      "nameDe": "Infrarot-Zielerfassung",
+      "descEn": "Ignores evasion and smoke screens, and deals +35% damage to city defenses",
+      "descDe": "Ignoriert Ausweichen und Nebelgranaten und verursacht +35 % Schaden an Stadtverteidigungen"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Attaque à la roquette Niv.3",
       "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 100% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Rocket attack Lv.3",
+      "nameDe": "Raketenangriff Stufe 3",
+      "descEn": "Range reduced to 2, strikes several enemies, 100% chance that enemies cannot counter-attack for 1 turn. Recovery in 2 turns.",
+      "descDe": "Reichweite auf 2 reduziert, trifft mehrere Feinde, 100 % Chance, dass Feinde für 1 Runde nicht kontern können. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Gilet pare-éclats Niv.3",
       "desc": "Dégâts subis des unités blindées -50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Flak jacket Lv.3",
+      "nameDe": "Splitterschutzweste Stufe 3",
+      "descEn": "Damage taken from armor units -50%",
+      "descDe": "Erlittener Schaden von Panzereinheiten -50 %"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Visée infrarouge Niv.2",
       "desc": "Ignore l'esquive et les fumigènes, et inflige +70% de dégâts aux défenses de ville",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Infrared targeting Lv.2",
+      "nameDe": "Infrarot-Zielerfassung Stufe 2",
+      "descEn": "Ignores evasion and smoke screens, and deals +70% damage to city defenses",
+      "descDe": "Ignoriert Ausweichen und Nebelgranaten und verursacht +70 % Schaden an Stadtverteidigungen"
     },
     {
       "lvl": 10,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Visée infrarouge Niv.3",
       "desc": "Ignore l'esquive et les fumigènes, et inflige +100% de dégâts aux défenses de ville",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Infrared targeting Lv.3",
+      "nameDe": "Infrarot-Zielerfassung Stufe 3",
+      "descEn": "Ignores evasion and smoke screens, and deals +100% damage to city defenses",
+      "descDe": "Ignoriert Ausweichen und Nebelgranaten und verursacht +100 % Schaden an Stadtverteidigungen"
     },
     {
       "lvl": 10,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Attaque critique",
       "desc": "Probabilité de coup critique +15%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack",
+      "nameDe": "Kritischer Angriff",
+      "descEn": "Critical hit chance +15%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +15 %"
     },
     {
       "lvl": 11,
@@ -219,7 +263,11 @@
       "icon": "⭐",
       "name": "Attaque critique Niv.3",
       "desc": "Probabilité de coup critique +20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack Lv.3",
+      "nameDe": "Kritischer Angriff Stufe 3",
+      "descEn": "Critical hit chance +20%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +20 %"
     },
     {
       "lvl": 12,
@@ -227,7 +275,11 @@
       "icon": "⭐",
       "name": "Attaque critique Niv.4",
       "desc": "Probabilité de coup critique +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack Lv.4",
+      "nameDe": "Kritischer Angriff Stufe 4",
+      "descEn": "Critical hit chance +30%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +30 %"
     }
   ],
   "recommendedGenerals": [],

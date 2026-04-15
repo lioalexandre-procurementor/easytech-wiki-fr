@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "🛡️",
       "name": "Blindage en coin",
       "desc": "Dégâts de riposte +10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Wedge armor",
+      "nameDe": "Keilpanzerung",
+      "descEn": "Counter-attack damage +10%",
+      "descDe": "Gegenangriffsschaden +10 %"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "🛡️",
       "name": "Blindage en coin Niv.2",
       "desc": "Dégâts de riposte +20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Wedge armor Lv.2",
+      "nameDe": "Keilpanzerung Stufe 2",
+      "descEn": "Counter-attack damage +20%",
+      "descDe": "Gegenangriffsschaden +20 %"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⚔️",
       "name": "Tueur de chars",
       "desc": "Dégâts aux unités blindées +25% ce tour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Tank killer",
+      "nameDe": "Panzertöter",
+      "descEn": "Damage to armor units +25% this turn. Recovery in 2 turns.",
+      "descDe": "Schaden gegen Panzereinheiten +25 % diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "🛡️",
       "name": "Blindage en coin Niv.3",
       "desc": "Dégâts de riposte +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Wedge armor Lv.3",
+      "nameDe": "Keilpanzerung Stufe 3",
+      "descEn": "Counter-attack damage +30%",
+      "descDe": "Gegenangriffsschaden +30 %"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⚔️",
       "name": "Tueur de chars Niv.2",
       "desc": "Dégâts aux unités blindées +45% ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Tank killer Lv.2",
+      "nameDe": "Panzertöter Stufe 2",
+      "descEn": "Damage to armor units +45% this turn. Recovery in 2 turns.",
+      "descDe": "Schaden gegen Panzereinheiten +45 % diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 10,
@@ -195,7 +227,11 @@
       "icon": "🛡️",
       "name": "Blindage en coin Niv.4",
       "desc": "Dégâts de riposte +40%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Wedge armor Lv.4",
+      "nameDe": "Keilpanzerung Stufe 4",
+      "descEn": "Counter-attack damage +40%",
+      "descDe": "Gegenangriffsschaden +40 %"
     },
     {
       "lvl": 11,
@@ -203,7 +239,11 @@
       "icon": "⚔️",
       "name": "Tueur de chars Niv.3",
       "desc": "Dégâts aux unités blindées +65% ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Tank killer Lv.3",
+      "nameDe": "Panzertöter Stufe 3",
+      "descEn": "Damage to armor units +65% this turn. Recovery in 2 turns.",
+      "descDe": "Schaden gegen Panzereinheiten +65 % diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Renforcement de feu",
       "desc": "Attaque +10% pour chaque unité détruite — cumulable jusqu'à 3 fois, durée 2 tours",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Fire reinforcement",
+      "nameDe": "Feuerverstärkung",
+      "descEn": "Attack +10% for each unit destroyed — stackable up to 3 times, duration 2 turns",
+      "descDe": "Angriff +10 % für jede zerstörte Einheit — bis zu 3-mal stapelbar, Dauer 2 Runden"
     }
   ],
   "recommendedGenerals": [],

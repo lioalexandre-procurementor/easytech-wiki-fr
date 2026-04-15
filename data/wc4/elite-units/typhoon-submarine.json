@@ -131,7 +131,11 @@
       "icon": "🚀",
       "name": "Attaque au missile",
       "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Missile attack",
+      "nameDe": "Raketenangriff",
+      "descEn": "Can fire short-range ballistic missiles up to 2 times per turn — replaces normal attack",
+      "descDe": "Kann Kurzstrecken-Ballistikraketen bis zu 2 Mal pro Runde abfeuern — ersetzt den normalen Angriff"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "☢️",
       "name": "Dissuasion nucléaire stratégique",
       "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 4 tour(s), maximum 4",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Strategic nuclear deterrence",
+      "nameDe": "Strategische nukleare Abschreckung",
+      "descEn": "Missiles can be loaded with atomic warheads: 2 initially, +1 every 4 turn(s), maximum 4",
+      "descDe": "Raketen können mit atomaren Sprengköpfen geladen werden: 2 zu Beginn, +1 alle 4 Runde(n), maximal 4"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Navigation en eaux profondes",
       "desc": "Ne peut pas être ciblé par les unités terrestres ; dégâts subis des unités aériennes -10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Deep-water navigation",
+      "nameDe": "Tiefseenavigation",
+      "descEn": "Cannot be targeted by ground units; damage taken from air units -10%",
+      "descDe": "Kann nicht von Bodeneinheiten angegriffen werden; erlittener Schaden von Lufteinheiten -10 %"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "☢️",
       "name": "Dissuasion nucléaire stratégique Niv.2",
       "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 3 tour(s), maximum 4",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Strategic nuclear deterrence Lv.2",
+      "nameDe": "Strategische nukleare Abschreckung Stufe 2",
+      "descEn": "Missiles can be loaded with atomic warheads: 2 initially, +1 every 3 turn(s), maximum 4",
+      "descDe": "Raketen können mit atomaren Sprengköpfen geladen werden: 2 zu Beginn, +1 alle 3 Runde(n), maximal 4"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Navigation en eaux profondes Niv.2",
       "desc": "Ne peut pas être ciblé par les unités terrestres ; dégâts subis des unités aériennes -30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Deep-water navigation Lv.2",
+      "nameDe": "Tiefseenavigation Stufe 2",
+      "descEn": "Cannot be targeted by ground units; damage taken from air units -30%",
+      "descDe": "Kann nicht von Bodeneinheiten angegriffen werden; erlittener Schaden von Lufteinheiten -30 %"
     },
     {
       "lvl": 9,
@@ -171,7 +191,11 @@
       "icon": "☢️",
       "name": "Dissuasion nucléaire stratégique Niv.3",
       "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 2 tour(s), maximum 4",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Strategic nuclear deterrence Lv.3",
+      "nameDe": "Strategische nukleare Abschreckung Stufe 3",
+      "descEn": "Missiles can be loaded with atomic warheads: 2 initially, +1 every 2 turn(s), maximum 4",
+      "descDe": "Raketen können mit atomaren Sprengköpfen geladen werden: 2 zu Beginn, +1 alle 2 Runde(n), maximal 4"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Navigation en eaux profondes Niv.3",
       "desc": "Ne peut pas être ciblé par les unités terrestres ; dégâts subis des unités aériennes -50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Deep-water navigation Lv.3",
+      "nameDe": "Tiefseenavigation Stufe 3",
+      "descEn": "Cannot be targeted by ground units; damage taken from air units -50%",
+      "descDe": "Kann nicht von Bodeneinheiten angegriffen werden; erlittener Schaden von Lufteinheiten -50 %"
     },
     {
       "lvl": 10,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Navigation en eaux profondes Niv.4",
       "desc": "Ne peut pas être ciblé par les unités terrestres ; dégâts subis des unités aériennes -70%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Deep-water navigation Lv.4",
+      "nameDe": "Tiefseenavigation Stufe 4",
+      "descEn": "Cannot be targeted by ground units; damage taken from air units -70%",
+      "descDe": "Kann nicht von Bodeneinheiten angegriffen werden; erlittener Schaden von Lufteinheiten -70 %"
     }
   ],
   "recommendedGenerals": [],

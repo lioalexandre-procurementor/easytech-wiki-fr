@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Puissance de feu",
       "desc": "50% de chances d'empêcher l'ennemi de riposter",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Firepower",
+      "nameDe": "Feuerkraft",
+      "descEn": "50% chance to prevent the enemy from counter-attacking",
+      "descDe": "50 % Chance, den Gegenangriff des Feindes zu verhindern"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Perforation",
       "desc": "Dégâts aux cibles terrestres à PV maximum +15%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Penetration",
+      "nameDe": "Durchschlag",
+      "descEn": "Damage to ground targets at max HP +15%",
+      "descDe": "Schaden gegen Bodenziele mit maximalen TP +15 %"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Tir de suppression",
       "desc": "La prochaine attaque touche 1 ennemi supplémentaire adjacent (dégâts secondaires -50%). Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Suppressive fire",
+      "nameDe": "Unterdrückungsfeuer",
+      "descEn": "The next attack hits 1 additional adjacent enemy (secondary damage -50%). Recovery in 2 turns.",
+      "descDe": "Der nächste Angriff trifft 1 zusätzlichen angrenzenden Feind (Sekundärschaden -50 %). Erholung in 2 Runden."
     },
     {
       "lvl": 6,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Perforation Niv.2",
       "desc": "Dégâts aux cibles terrestres à PV maximum +45%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Penetration Lv.2",
+      "nameDe": "Durchschlag Stufe 2",
+      "descEn": "Damage to ground targets at max HP +45%",
+      "descDe": "Schaden gegen Bodenziele mit maximalen TP +45 %"
     },
     {
       "lvl": 10,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Perforation Niv.3",
       "desc": "Dégâts aux cibles terrestres à PV maximum +60%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Penetration Lv.3",
+      "nameDe": "Durchschlag Stufe 3",
+      "descEn": "Damage to ground targets at max HP +60%",
+      "descDe": "Schaden gegen Bodenziele mit maximalen TP +60 %"
     },
     {
       "lvl": 12,
@@ -179,7 +203,11 @@
       "icon": "⚔️",
       "name": "Assaut aéroporté",
       "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Airborne assault",
+      "nameDe": "Luftangriff",
+      "descEn": "+100% damage dealt on the turn following an airborne jump",
+      "descDe": "+100 % Schaden auf der Runde nach einem Fallschirmsprung"
     }
   ],
   "recommendedGenerals": [],

@@ -89,7 +89,11 @@
       "icon": "⚙",
       "name": "Stats de base",
       "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Base stats",
+      "nameDe": "Basiswerte",
+      "descEn": "Starting stats of the elite unit.",
+      "descDe": "Startwerte der Elite-Einheit."
     },
     {
       "lvl": 3,
@@ -97,7 +101,11 @@
       "icon": "🎖",
       "name": "Bonus moral",
       "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Morale bonus",
+      "nameDe": "Moralbonus",
+      "descEn": "+5% morale to adjacent allied units.",
+      "descDe": "+5 % Moral für angrenzende verbündete Einheiten."
     },
     {
       "lvl": 5,
@@ -105,7 +113,11 @@
       "icon": "🌲",
       "name": "Embuscade",
       "desc": "+20% dégâts en terrain forestier ou urbain.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ambush",
+      "nameDe": "Hinterhalt",
+      "descEn": "+20% damage in forest or urban terrain.",
+      "descDe": "+20 % Schaden in Wald- oder Stadtgelände."
     },
     {
       "lvl": 7,
@@ -113,7 +125,11 @@
       "icon": "🎯",
       "name": "Capacité signature",
       "desc": "Compétence propre à l'infanterie d'élite (voir jeu).",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Signature ability",
+      "nameDe": "Signaturfähigkeit",
+      "descEn": "Skill specific to elite infantry (see game).",
+      "descDe": "Fähigkeit spezifisch für Elite-Infanterie (siehe Spiel)."
     },
     {
       "lvl": 9,
@@ -121,7 +137,11 @@
       "icon": "🛡",
       "name": "Vétérance",
       "desc": "+10% esquive permanent.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Veterancy",
+      "nameDe": "Veteranenstatus",
+      "descEn": "+10% permanent evasion.",
+      "descDe": "+10 % dauerhaftes Ausweichen."
     },
     {
       "lvl": 12,
@@ -129,7 +149,11 @@
       "icon": "⭐",
       "name": "Perk ultime",
       "desc": "Compétence final à valider in-game.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ultimate perk",
+      "nameDe": "Ultimativer Perk",
+      "descEn": "Final skill to be validated in-game.",
+      "descDe": "Abschlussfähigkeit muss im Spiel bestätigt werden."
     }
   ],
   "recommendedGenerals": [],

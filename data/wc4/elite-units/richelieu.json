@@ -131,7 +131,11 @@
       "icon": "💥",
       "name": "Artillerie navale",
       "desc": "Dégâts aux fortifications +60% et aux unités terrestres -50%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Naval artillery",
+      "nameDe": "Marineartillerie",
+      "descEn": "Damage to fortifications +60% and to ground units -50%",
+      "descDe": "Schaden gegen Befestigungen +60 % und gegen Bodeneinheiten -50 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les navires de guerre",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on warships",
+      "descDe": "Flugabwehrsystem ausgerüstet an Kriegsschiffen"
     },
     {
       "lvl": 5,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Frappe coordonnée",
       "desc": "Quand un allié dans 1 case attaque, 80% de chances de participer à l'attaque",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Coordinated strike",
+      "nameDe": "Koordinierter Schlag",
+      "descEn": "When an ally within 1 tile attacks, 80% chance to join the attack",
+      "descDe": "Wenn ein Verbündeter im Umkreis von 1 Feld angreift, 80 % Chance, am Angriff teilzunehmen"
     },
     {
       "lvl": 9,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Frappe coordonnée Niv.2",
       "desc": "Quand un allié dans 1 case attaque, 100% de chances de participer à l'attaque",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Coordinated strike Lv.2",
+      "nameDe": "Koordinierter Schlag Stufe 2",
+      "descEn": "When an ally within 1 tile attacks, 100% chance to join the attack",
+      "descDe": "Wenn ein Verbündeter im Umkreis von 1 Feld angreift, 100 % Chance, am Angriff teilzunehmen"
     },
     {
       "lvl": 11,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Forteresse d'acier",
       "desc": "Récupère 5% de PV en fin de tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Steel fortress",
+      "nameDe": "Stahlfestung",
+      "descEn": "Recovers 5% HP at the end of the turn",
+      "descDe": "Erholt 5 % TP am Ende der Runde"
     },
     {
       "lvl": 12,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Brise-fer",
       "desc": "Pour chaque 5 point de défense de la cible, dégâts infligés +1%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ironbreaker",
+      "nameDe": "Eisenbrecher",
+      "descEn": "For every 5 points of target defense, damage dealt +1%",
+      "descDe": "Für je 5 Verteidigungspunkte des Ziels, verursachter Schaden +1 %"
     }
   ],
   "recommendedGenerals": [],

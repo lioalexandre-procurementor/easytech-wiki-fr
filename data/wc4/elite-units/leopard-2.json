@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Sabot perforant",
       "desc": "Sur un coup critique, 50% de chances d'infliger +15% de dégâts supplémentaires",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Armor-piercing sabot",
+      "nameDe": "Wuchtgeschoss",
+      "descEn": "On a critical hit, 50% chance to deal +15% additional damage",
+      "descDe": "Bei einem kritischen Treffer besteht 50 % Chance, +15 % zusätzlichen Schaden zu verursachen"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Sabot perforant Niv.2",
       "desc": "Sur un coup critique, 50% de chances d'infliger +30% de dégâts supplémentaires",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Armor-piercing sabot Lv.2",
+      "nameDe": "Wuchtgeschoss Stufe 2",
+      "descEn": "On a critical hit, 50% chance to deal +30% additional damage",
+      "descDe": "Bei einem kritischen Treffer besteht 50 % Chance, +30 % zusätzlichen Schaden zu verursachen"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Calibration dynamique",
       "desc": "Après avoir éliminé 3 unité(s) ce tour, portée +1 pendant 1 tour",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Dynamic calibration",
+      "nameDe": "Dynamische Kalibrierung",
+      "descEn": "After eliminating 3 unit(s) this turn, range +1 for 1 turn",
+      "descDe": "Nach dem Ausschalten von 3 Einheit(en) diese Runde, Reichweite +1 für 1 Runde"
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⚔️",
       "name": "Assaut tactique",
       "desc": "Entre en état Assaut : dégâts +10% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Tactical assault",
+      "nameDe": "Taktischer Angriff",
+      "descEn": "Enters Assault state: damage +10% this turn and ignores terrain effects on mobility. Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Tritt in den Sturmzustand: Schaden +10 % diese Runde und ignoriert Geländeeffekte auf die Mobilität. Dauer 1 Runde. Erholung in 3 Runden."
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Sabot perforant Niv.3",
       "desc": "Sur un coup critique, 100% de chances d'infliger +45% de dégâts supplémentaires",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Armor-piercing sabot Lv.3",
+      "nameDe": "Wuchtgeschoss Stufe 3",
+      "descEn": "On a critical hit, 100% chance to deal +45% additional damage",
+      "descDe": "Bei einem kritischen Treffer besteht 100 % Chance, +45 % zusätzlichen Schaden zu verursachen"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Calibration dynamique Niv.2",
       "desc": "Après avoir éliminé 2 unité(s) ce tour, portée +1 pendant 1 tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Dynamic calibration Lv.2",
+      "nameDe": "Dynamische Kalibrierung Stufe 2",
+      "descEn": "After eliminating 2 unit(s) this turn, range +1 for 1 turn",
+      "descDe": "Nach dem Ausschalten von 2 Einheit(en) diese Runde, Reichweite +1 für 1 Runde"
     },
     {
       "lvl": 9,
@@ -203,7 +239,11 @@
       "icon": "⚔️",
       "name": "Assaut tactique Niv.2",
       "desc": "Entre en état Assaut : dégâts +20% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Tactical assault Lv.2",
+      "nameDe": "Taktischer Angriff Stufe 2",
+      "descEn": "Enters Assault state: damage +20% this turn and ignores terrain effects on mobility. Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Tritt in den Sturmzustand: Schaden +20 % diese Runde und ignoriert Geländeeffekte auf die Mobilität. Dauer 1 Runde. Erholung in 3 Runden."
     },
     {
       "lvl": 11,
@@ -211,7 +251,11 @@
       "icon": "⚔️",
       "name": "Assaut tactique Niv.3",
       "desc": "Entre en état Assaut : dégâts +30% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Tactical assault Lv.3",
+      "nameDe": "Taktischer Angriff Stufe 3",
+      "descEn": "Enters Assault state: damage +30% this turn and ignores terrain effects on mobility. Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Tritt in den Sturmzustand: Schaden +30 % diese Runde und ignoriert Geländeeffekte auf die Mobilität. Dauer 1 Runde. Erholung in 3 Runden."
     },
     {
       "lvl": 12,
@@ -219,7 +263,11 @@
       "icon": "⭐",
       "name": "Sabot perforant Niv.4",
       "desc": "Sur un coup critique, 100% de chances d'infliger +60% de dégâts supplémentaires",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Armor-piercing sabot Lv.4",
+      "nameDe": "Wuchtgeschoss Stufe 4",
+      "descEn": "On a critical hit, 100% chance to deal +60% additional damage",
+      "descDe": "Bei einem kritischen Treffer besteht 100 % Chance, +60 % zusätzlichen Schaden zu verursachen"
     },
     {
       "lvl": 12,
@@ -227,7 +275,11 @@
       "icon": "⭐",
       "name": "Calibration dynamique Niv.3",
       "desc": "Après avoir éliminé 1 unité(s) ce tour, portée +1 pendant 1 tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Dynamic calibration Lv.3",
+      "nameDe": "Dynamische Kalibrierung Stufe 3",
+      "descEn": "After eliminating 1 unit(s) this turn, range +1 for 1 turn",
+      "descDe": "Nach dem Ausschalten von 1 Einheit(en) diese Runde, Reichweite +1 für 1 Runde"
     }
   ],
   "recommendedGenerals": [],

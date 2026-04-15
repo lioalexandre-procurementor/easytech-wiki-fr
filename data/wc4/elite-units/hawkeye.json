@@ -131,7 +131,11 @@
       "icon": "⭐",
       "name": "Commando de forêt",
       "desc": "Dégâts à l'ennemi +75% en combat en jungle",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Forest commando",
+      "nameDe": "Waldkommando",
+      "descEn": "Damage to enemy +75% in jungle combat",
+      "descDe": "Schaden am Feind +75 % im Dschungelkampf"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🎯",
       "name": "Tireur d'élite",
       "desc": "Dégâts aux unités d'infanterie +75%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Sniper",
+      "nameDe": "Scharfschütze",
+      "descEn": "Damage to infantry units +75%",
+      "descDe": "Schaden gegen Infanterieeinheiten +75 %"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques",
       "desc": "Dégâts des coups critiques +20%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Critical damage",
+      "nameDe": "Kritischer Schaden",
+      "descEn": "Critical hit damage +20%",
+      "descDe": "Schaden kritischer Treffer +20 %"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.2",
       "desc": "Dégâts des coups critiques +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.2",
+      "nameDe": "Kritischer Schaden Stufe 2",
+      "descEn": "Critical hit damage +30%",
+      "descDe": "Schaden kritischer Treffer +30 %"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Tir de précision",
       "desc": "Probabilité de coup critique +40% pendant 1 tour — récupération en 2 tours",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Precision fire",
+      "nameDe": "Präzisionsfeuer",
+      "descEn": "Critical hit chance +40% for 1 turn — recovery in 2 turns",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +40 % für 1 Runde — Erholung in 2 Runden"
     },
     {
       "lvl": 6,
@@ -171,7 +191,11 @@
       "icon": "🎯",
       "name": "Frappe au dépourvu",
       "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 2% de critique en excès, +1% de dégâts",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Unaware strike",
+      "nameDe": "Überraschender Schlag",
+      "descEn": "Excess critical rate becomes bonus damage: for each 2% of excess critical, +1% damage",
+      "descDe": "Die überschüssige Kritische-Trefferrate wird zu Bonusschaden: für jedes 2 % überschüssiger Kritischer, +1 % Schaden"
     },
     {
       "lvl": 7,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.3",
       "desc": "Dégâts des coups critiques +40%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.3",
+      "nameDe": "Kritischer Schaden Stufe 3",
+      "descEn": "Critical hit damage +40%",
+      "descDe": "Schaden kritischer Treffer +40 %"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Tir de précision Niv.2",
       "desc": "Probabilité de coup critique +70% pendant 1 tour — récupération en 2 tours",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Precision fire Lv.2",
+      "nameDe": "Präzisionsfeuer Stufe 2",
+      "descEn": "Critical hit chance +70% for 1 turn — recovery in 2 turns",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +70 % für 1 Runde — Erholung in 2 Runden"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "🎯",
       "name": "Frappe au dépourvu Niv.2",
       "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Unaware strike Lv.2",
+      "nameDe": "Überraschender Schlag Stufe 2",
+      "descEn": "Excess critical rate becomes bonus damage: for each 1% of excess critical, +1% damage",
+      "descDe": "Die überschüssige Kritische-Trefferrate wird zu Bonusschaden: für jedes 1 % überschüssiger Kritischer, +1 % Schaden"
     },
     {
       "lvl": 10,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.4",
       "desc": "Dégâts des coups critiques +50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.4",
+      "nameDe": "Kritischer Schaden Stufe 4",
+      "descEn": "Critical hit damage +50%",
+      "descDe": "Schaden kritischer Treffer +50 %"
     },
     {
       "lvl": 11,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Tir de précision Niv.3",
       "desc": "Probabilité de coup critique +90% pendant 1 tour — récupération en 2 tours",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Precision fire Lv.3",
+      "nameDe": "Präzisionsfeuer Stufe 3",
+      "descEn": "Critical hit chance +90% for 1 turn — recovery in 2 turns",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +90 % für 1 Runde — Erholung in 2 Runden"
     }
   ],
   "recommendedGenerals": [],

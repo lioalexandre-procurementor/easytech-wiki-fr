@@ -210,14 +210,14 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
       {/* STATS */}
       <div className="bg-panel border border-border rounded-lg p-5 mb-6">
         <h3 className="text-gold2 font-bold uppercase tracking-widest text-base mb-3.5">
-          Statistiques — Niveau <span>{lvl}</span>
+          {L.statsTitle} <span>{lvl}</span>
         </h3>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
-          <Stat icon="⚔️" name="Attaque"   val={s.atk[i]} base={s.atk[0]}/>
-          <Stat icon="🛡️" name="Défense"   val={s.def[i]} base={s.def[0]}/>
-          <Stat icon="❤️" name="HP"         val={s.hp[i]}  base={s.hp[0]}/>
-          <Stat icon="🏃" name="Mouvement" val={s.mov[i]} base={s.mov[0]}/>
-          <Stat icon="🎯" name="Portée"    val={s.rng[i]} base={s.rng[0]}/>
+          <Stat icon="⚔️" name={L.attack}    val={s.atk[i]} base={s.atk[0]}/>
+          <Stat icon="🛡️" name={L.defense}   val={s.def[i]} base={s.def[0]}/>
+          <Stat icon="❤️" name={L.hp}        val={s.hp[i]}  base={s.hp[0]}/>
+          <Stat icon="🏃" name={L.movement}  val={s.mov[i]} base={s.mov[0]}/>
+          <Stat icon="🎯" name={L.range}     val={s.rng[i]} base={s.rng[0]}/>
         </div>
       </div>
 
@@ -225,15 +225,15 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
       <div className="bg-panel border border-border rounded-lg p-5 mb-6">
         <div className="flex items-center justify-between mb-3.5">
           <h3 className="text-gold2 font-bold uppercase tracking-widest text-base">
-            🎯 Loadout actif — Niveau {lvl}
+            {L.activeLoadout} {lvl}
           </h3>
           <span className="text-muted text-[10px] uppercase tracking-widest">
-            {activeLoadout.length} compétence{activeLoadout.length > 1 ? "s" : ""}
+            {L.skillCount(activeLoadout.length)}
           </span>
         </div>
         {activeLoadout.length === 0 ? (
           <div className="text-muted text-sm italic">
-            Aucune compétence débloquée à ce niveau.
+            {L.noneUnlocked}
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -252,13 +252,13 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
                   <div className="flex items-start justify-between gap-2 mb-1">
                     <h4 className="text-ink text-sm font-bold flex items-center gap-1.5 min-w-0">
                       <span className="text-base shrink-0">{p.icon}</span>
-                      <span className="truncate">{p.name}</span>
+                      <span className="truncate">{perkName(p)}</span>
                     </h4>
                     <div className="flex flex-wrap gap-1 shrink-0">
-                      <PerkBadge type={p.type} />
+                      <PerkBadge type={p.type} locale={locale} />
                       {justUnlocked && (
                         <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-gold/20 border border-gold/40 text-gold2 uppercase tracking-widest">
-                          ✨ Nouveau
+                          {L.newBadge}
                         </span>
                       )}
                       {!justUnlocked && unlockedAt > 1 && (
@@ -268,28 +268,25 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
                       )}
                     </div>
                   </div>
-                  <p className="text-dim text-xs leading-relaxed">{p.desc}</p>
+                  <p className="text-dim text-xs leading-relaxed">{perkDesc(p)}</p>
                 </div>
               );
             })}
           </div>
         )}
         <div className="mt-3 text-muted text-[11px] italic">
-          💡 Ce bloc montre l'état réel de l'unité au niveau sélectionné. Les
-          compétences remplacées par une version supérieure (ex. Niv.1 → Niv.2)
-          sont automatiquement masquées. Le journal complet de progression est
-          disponible plus bas.
+          {L.loadoutHint}
         </div>
       </div>
 
       {/* SLIDER */}
       <div className="bg-panel border border-border rounded-lg p-6 mb-6">
         <div className="flex justify-between items-center mb-5">
-          <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">🎚 Évolution niveau 1 → 12</h3>
+          <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">{L.evolutionTitle}</h3>
           <div className="flex items-center gap-3">
             <div className="text-gold2 text-4xl font-black font-serif leading-none">{lvl}</div>
             <div>
-              <div className="text-muted text-xs uppercase tracking-widest">Niveau actuel</div>
+              <div className="text-muted text-xs uppercase tracking-widest">{L.currentLevel}</div>
               <div className="text-dim text-sm">{tierLabel}</div>
             </div>
           </div>
@@ -310,7 +307,7 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
                 <button
                   key={n}
                   onClick={() => setLvl(n)}
-                  aria-label={`Niveau ${n}`}
+                  aria-label={L.levelAria(n)}
                   className="relative grid place-items-center cursor-pointer touch-manipulation h-11 w-6 shrink-0"
                 >
                   <span
@@ -345,17 +342,18 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
         )}
 
         <div className="mt-3.5 text-xs text-muted text-center">
-          💡 Cliquez sur un niveau ou utilisez les flèches ←→ du clavier
+          {locale === "fr"
+            ? "💡 Cliquez sur un niveau ou utilisez les flèches ←→ du clavier"
+            : locale === "de"
+            ? "💡 Klicke auf eine Stufe oder verwende die Pfeiltasten ←→"
+            : "💡 Click a level or use the ←→ arrow keys"}
         </div>
       </div>
 
       {/* PERKS TIMELINE */}
       <div className="bg-panel border border-border rounded-lg p-6 mb-6">
-        <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-2">📜 Journal de progression (tous les paliers)</h3>
-        <p className="text-muted text-xs mb-4 italic">
-          Liste chronologique complète — inclut les versions remplacées. Pour
-          l'état actuel du loadout, voir le bloc « Loadout actif » plus haut.
-        </p>
+        <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-2">{L.chronHeading}</h3>
+        <p className="text-muted text-xs mb-4 italic">{L.chronBody}</p>
         <div className="relative pl-7">
           <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-border"/>
           {unit.perks.map((p, idx) => {
@@ -377,11 +375,11 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
                      style={{ color: unlocked ? "#f2c265" : "#6b7685" }}>{p.lvl}</div>
                 <div>
                   <h4 className="text-base text-ink mb-1 flex items-center gap-2">
-                    <span className="text-lg">{p.icon}</span> {p.name}
+                    <span className="text-lg">{p.icon}</span> {perkName(p)}
                   </h4>
                   <div>
-                    <PerkBadge type={p.type}/>
-                    <span className="text-sm text-dim leading-relaxed">{p.desc}</span>
+                    <PerkBadge type={p.type} locale={locale}/>
+                    <span className="text-sm text-dim leading-relaxed">{perkDesc(p)}</span>
                   </div>
                 </div>
               </div>
@@ -405,12 +403,25 @@ function Stat({ icon, name, val, base }: { icon: string; name: string; val: numb
   );
 }
 
-function PerkBadge({ type }: { type: string }) {
-  const map: Record<string, { label: string; cls: string }> = {
-    "active-skill": { label: "Compétence active", cls: "bg-accent/15 border-accent text-accent" },
-    "passive":      { label: "Passif",            cls: "bg-ok/15 border-ok text-ok" },
-    "stat":         { label: "Stat",              cls: "bg-gold/15 border-gold text-gold2" },
+function PerkBadge({ type, locale = "en" }: { type: string; locale?: string }) {
+  const BY_LOCALE: Record<string, Record<string, { label: string; cls: string }>> = {
+    fr: {
+      "active-skill": { label: "Compétence active", cls: "bg-accent/15 border-accent text-accent" },
+      "passive":      { label: "Passif",            cls: "bg-ok/15 border-ok text-ok" },
+      "stat":         { label: "Stat",              cls: "bg-gold/15 border-gold text-gold2" },
+    },
+    en: {
+      "active-skill": { label: "Active skill", cls: "bg-accent/15 border-accent text-accent" },
+      "passive":      { label: "Passive",      cls: "bg-ok/15 border-ok text-ok" },
+      "stat":         { label: "Stat",         cls: "bg-gold/15 border-gold text-gold2" },
+    },
+    de: {
+      "active-skill": { label: "Aktive Fähigkeit", cls: "bg-accent/15 border-accent text-accent" },
+      "passive":      { label: "Passiv",           cls: "bg-ok/15 border-ok text-ok" },
+      "stat":         { label: "Statuswert",       cls: "bg-gold/15 border-gold text-gold2" },
+    },
   };
+  const map = BY_LOCALE[locale] ?? BY_LOCALE.en;
   const m = map[type] ?? map.passive;
   return (
     <span className={`inline-block text-[10px] border rounded px-2 py-0.5 mr-1.5 uppercase tracking-widest font-semibold ${m.cls}`}>

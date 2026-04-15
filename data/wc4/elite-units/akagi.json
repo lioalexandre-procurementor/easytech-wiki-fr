@@ -131,7 +131,11 @@
       "icon": "💣",
       "name": "Bombardement",
       "desc": "Dégâts des bombardiers aux unités navales +30%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Bombardment",
+      "nameDe": "Bombardement",
+      "descEn": "Bomber damage to naval units +30%",
+      "descDe": "Bomberschaden gegen Marineeinheiten +30 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les navires de guerre",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on warships",
+      "descDe": "Flugabwehrsystem ausgerüstet an Kriegsschiffen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⚓",
       "name": "Porte-avions",
       "desc": "Peut attaquer via ses aéronefs embarqués",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Aircraft carrier",
+      "nameDe": "Flugzeugträger",
+      "descEn": "Can attack via its carrier-based aircraft",
+      "descDe": "Kann über seine trägergestützten Flugzeuge angreifen"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Regroupement",
       "desc": "Peut effectuer 1 attaque(s) supplémentaire(s)",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Regrouping",
+      "nameDe": "Sammlung",
+      "descEn": "Can perform 1 additional attack(s)",
+      "descDe": "Kann 1 zusätzliche(n) Angriff(e) ausführen"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Regroupement Niv.2",
       "desc": "Peut effectuer 2 attaque(s) supplémentaire(s)",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Regrouping Lv.2",
+      "nameDe": "Sammlung Stufe 2",
+      "descEn": "Can perform 2 additional attack(s)",
+      "descDe": "Kann 2 zusätzliche(n) Angriff(e) ausführen"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Raid aérien intensif",
       "desc": "En attaquant, inflige 50% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Intensive air raid",
+      "nameDe": "Intensiver Luftangriff",
+      "descEn": "When attacking, deals 50% additional damage to targets within 1 tile around. Recovery in 2 turns.",
+      "descDe": "Beim Angriff werden 50 % zusätzlicher Schaden an Zielen im Umkreis von 1 Feld verursacht. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Regroupement Niv.3",
       "desc": "Peut effectuer 3 attaque(s) supplémentaire(s)",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Regrouping Lv.3",
+      "nameDe": "Sammlung Stufe 3",
+      "descEn": "Can perform 3 additional attack(s)",
+      "descDe": "Kann 3 zusätzliche(n) Angriff(e) ausführen"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Raid aérien intensif Niv.2",
       "desc": "En attaquant, inflige 80% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Intensive air raid Lv.2",
+      "nameDe": "Intensiver Luftangriff Stufe 2",
+      "descEn": "When attacking, deals 80% additional damage to targets within 1 tile around. Recovery in 2 turns.",
+      "descDe": "Beim Angriff werden 80 % zusätzlicher Schaden an Zielen im Umkreis von 1 Feld verursacht. Erholung in 2 Runden."
     },
     {
       "lvl": 11,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Raid aérien intensif Niv.3",
       "desc": "En attaquant, inflige 100% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Intensive air raid Lv.3",
+      "nameDe": "Intensiver Luftangriff Stufe 3",
+      "descEn": "When attacking, deals 100% additional damage to targets within 1 tile around. Recovery in 2 turns.",
+      "descDe": "Beim Angriff werden 100 % zusätzlicher Schaden an Zielen im Umkreis von 1 Feld verursacht. Erholung in 2 Runden."
     }
   ],
   "recommendedGenerals": [],

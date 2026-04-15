@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse lourde",
       "desc": "Dégâts à l'infanterie +30%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Heavy machine gun",
+      "nameDe": "Schweres Maschinengewehr",
+      "descEn": "Damage to infantry +30%",
+      "descDe": "Schaden gegen Infanterie +30 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🛸",
       "name": "Déploiement de drones",
       "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Drone deployment",
+      "nameDe": "Drohneneinsatz",
+      "descEn": "Deploys a drone within 1 tile; the drone acts independently, attacks only once per turn, lasts 1 turn. Recovery in 1 turn.",
+      "descDe": "Setzt eine Drohne im Umkreis von 1 Feld ein; die Drohne handelt unabhängig, greift nur einmal pro Runde an, hält 1 Runde. Erholung in 1 Runde."
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "EMCON",
       "desc": "Récupère 25 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "EMCON",
+      "nameDe": "EMCON",
+      "descEn": "Recovers 25 HP and enters EMCON state: cannot be actively targeted by armor, artillery or naval units for 1 turn. EMCON ends on attack. Recovery in 2 turns.",
+      "descDe": "Erholt 25 TP und tritt in den EMCON-Zustand: kann für 1 Runde nicht aktiv von Panzer-, Artillerie- oder Marineeinheiten angegriffen werden. EMCON endet beim Angriff. Erholung in 2 Runden."
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.2",
       "desc": "Dégâts à l'infanterie +45%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Heavy machine gun Lv.2",
+      "nameDe": "Schweres Maschinengewehr Stufe 2",
+      "descEn": "Damage to infantry +45%",
+      "descDe": "Schaden gegen Infanterie +45 %"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "EMCON Niv.2",
       "desc": "Récupère 50 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "EMCON Lv.2",
+      "nameDe": "EMCON Stufe 2",
+      "descEn": "Recovers 50 HP and enters EMCON state: cannot be actively targeted by armor, artillery or naval units for 1 turn. EMCON ends on attack. Recovery in 2 turns.",
+      "descDe": "Erholt 50 TP und tritt in den EMCON-Zustand: kann für 1 Runde nicht aktiv von Panzer-, Artillerie- oder Marineeinheiten angegriffen werden. EMCON endet beim Angriff. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -171,7 +191,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.3",
       "desc": "Dégâts à l'infanterie +60%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Heavy machine gun Lv.3",
+      "nameDe": "Schweres Maschinengewehr Stufe 3",
+      "descEn": "Damage to infantry +60%",
+      "descDe": "Schaden gegen Infanterie +60 %"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Forced march",
+      "nameDe": "Gewaltmarsch",
+      "descEn": "Mobility consumption on difficult terrain -35%",
+      "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
     },
     {
       "lvl": 10,
@@ -187,7 +215,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.4",
       "desc": "Dégâts à l'infanterie +75%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Heavy machine gun Lv.4",
+      "nameDe": "Schweres Maschinengewehr Stufe 4",
+      "descEn": "Damage to infantry +75%",
+      "descDe": "Schaden gegen Infanterie +75 %"
     },
     {
       "lvl": 11,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "EMCON Niv.4",
       "desc": "Récupère 75 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "EMCON Lv.4",
+      "nameDe": "EMCON Stufe 4",
+      "descEn": "Recovers 75 HP and enters EMCON state: cannot be actively targeted by armor, artillery or naval units for 1 turn. EMCON ends on attack. Recovery in 2 turns.",
+      "descDe": "Erholt 75 TP und tritt in den EMCON-Zustand: kann für 1 Runde nicht aktiv von Panzer-, Artillerie- oder Marineeinheiten angegriffen werden. EMCON endet beim Angriff. Erholung in 2 Runden."
     }
   ],
   "recommendedGenerals": [],

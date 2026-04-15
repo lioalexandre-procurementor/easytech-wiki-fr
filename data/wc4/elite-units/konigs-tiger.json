@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "🎯",
       "name": "Chasseur de chars",
       "desc": "Dégâts aux unités blindées et d'artillerie +25% pendant 1 tour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Tank hunter",
+      "nameDe": "Panzerjäger",
+      "descEn": "Damage to armor and artillery units +25% for 1 turn. Recovery in 2 turns.",
+      "descDe": "Schaden gegen Panzer- und Artillerieeinheiten +25 % für 1 Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 6,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques",
       "desc": "Dégâts des coups critiques +20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage",
+      "nameDe": "Kritischer Schaden",
+      "descEn": "Critical hit damage +20%",
+      "descDe": "Schaden kritischer Treffer +20 %"
     },
     {
       "lvl": 9,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.2",
       "desc": "Dégâts des coups critiques +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.2",
+      "nameDe": "Kritischer Schaden Stufe 2",
+      "descEn": "Critical hit damage +30%",
+      "descDe": "Schaden kritischer Treffer +30 %"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "🎯",
       "name": "Chasseur de chars Niv.2",
       "desc": "Dégâts aux unités blindées et d'artillerie +40% pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Tank hunter Lv.2",
+      "nameDe": "Panzerjäger Stufe 2",
+      "descEn": "Damage to armor and artillery units +40% for 1 turn. Recovery in 2 turns.",
+      "descDe": "Schaden gegen Panzer- und Artillerieeinheiten +40 % für 1 Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 10,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.3",
       "desc": "Dégâts des coups critiques +40%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.3",
+      "nameDe": "Kritischer Schaden Stufe 3",
+      "descEn": "Critical hit damage +40%",
+      "descDe": "Schaden kritischer Treffer +40 %"
     },
     {
       "lvl": 11,
@@ -195,7 +227,11 @@
       "icon": "🎯",
       "name": "Chasseur de chars Niv.3",
       "desc": "Dégâts aux unités blindées et d'artillerie +55% pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Tank hunter Lv.3",
+      "nameDe": "Panzerjäger Stufe 3",
+      "descEn": "Damage to armor and artillery units +55% for 1 turn. Recovery in 2 turns.",
+      "descDe": "Schaden gegen Panzer- und Artillerieeinheiten +55 % für 1 Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 12,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.4",
       "desc": "Dégâts des coups critiques +50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.4",
+      "nameDe": "Kritischer Schaden Stufe 4",
+      "descEn": "Critical hit damage +50%",
+      "descDe": "Schaden kritischer Treffer +50 %"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Brise-fer",
       "desc": "Pour chaque 5 point de défense de la cible, dégâts infligés +1%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ironbreaker",
+      "nameDe": "Eisenbrecher",
+      "descEn": "For every 5 points of target defense, damage dealt +1%",
+      "descDe": "Für je 5 Verteidigungspunkte des Ziels, verursachter Schaden +1 %"
     }
   ],
   "recommendedGenerals": [],

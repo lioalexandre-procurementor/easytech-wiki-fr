@@ -131,7 +131,11 @@
       "icon": "💣",
       "name": "Bombardement stratégique",
       "desc": "Dégâts de bombardement massif aux fortifications +50%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Strategic bombing",
+      "nameDe": "Strategisches Bombardement",
+      "descEn": "Massive bombardment damage to fortifications +50%",
+      "descDe": "Massiver Bombardementschaden gegen Befestigungen +50 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "💣",
       "name": "Bombardement à haute altitude",
       "desc": "Les armes anti-aériennes ne peuvent pas intercepter le bombardement à haute altitude",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "High-altitude bombing",
+      "nameDe": "Hochhöhenbombardement",
+      "descEn": "Anti-aircraft weapons cannot intercept high-altitude bombing",
+      "descDe": "Flugabwehrwaffen können Bombardements in großer Höhe nicht abfangen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Charge excessive",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +20% de dégâts dans la zone ciblée",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Overcharge",
+      "nameDe": "Überladung",
+      "descEn": "Cannot serve as a carrier-based aircraft. Each attack deals +20% damage in the targeted area",
+      "descDe": "Kann nicht als trägergestütztes Flugzeug dienen. Jeder Angriff verursacht +20 % Schaden im Zielgebiet"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "☢️",
       "name": "Frappe atomique",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Atomic strike",
+      "nameDe": "Atomschlag",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 10%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 10 % erhöht"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Charge excessive Niv.2",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +40% de dégâts dans la zone ciblée",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Overcharge Lv.2",
+      "nameDe": "Überladung Stufe 2",
+      "descEn": "Cannot serve as a carrier-based aircraft. Each attack deals +40% damage in the targeted area",
+      "descDe": "Kann nicht als trägergestütztes Flugzeug dienen. Jeder Angriff verursacht +40 % Schaden im Zielgebiet"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "☢️",
       "name": "Frappe atomique Niv.2",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Atomic strike Lv.2",
+      "nameDe": "Atomschlag Stufe 2",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 20%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 20 % erhöht"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Charge excessive Niv.3",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +70% de dégâts dans la zone ciblée",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Overcharge Lv.3",
+      "nameDe": "Überladung Stufe 3",
+      "descEn": "Cannot serve as a carrier-based aircraft. Each attack deals +70% damage in the targeted area",
+      "descDe": "Kann nicht als trägergestütztes Flugzeug dienen. Jeder Angriff verursacht +70 % Schaden im Zielgebiet"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "☢️",
       "name": "Frappe atomique Niv.3",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 35%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Atomic strike Lv.3",
+      "nameDe": "Atomschlag Stufe 3",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 35%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 35 % erhöht"
     },
     {
       "lvl": 10,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Charge excessive Niv.4",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +100% de dégâts dans la zone ciblée",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Overcharge Lv.4",
+      "nameDe": "Überladung Stufe 4",
+      "descEn": "Cannot serve as a carrier-based aircraft. Each attack deals +100% damage in the targeted area",
+      "descDe": "Kann nicht als trägergestütztes Flugzeug dienen. Jeder Angriff verursacht +100 % Schaden im Zielgebiet"
     },
     {
       "lvl": 11,
@@ -203,7 +239,11 @@
       "icon": "☢️",
       "name": "Frappe atomique Niv.4",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Atomic strike Lv.4",
+      "nameDe": "Atomschlag Stufe 4",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 50%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 50 % erhöht"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Suppression aérienne",
       "desc": "En bombardant une cible, ignore 50% de sa défense",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air suppression",
+      "nameDe": "Luftunterdrückung",
+      "descEn": "When bombing a target, ignores 50% of its defense",
+      "descDe": "Beim Bombardieren eines Ziels werden 50 % seiner Verteidigung ignoriert"
     }
   ],
   "recommendedGenerals": [],

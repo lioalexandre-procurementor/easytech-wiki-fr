@@ -131,7 +131,11 @@
       "icon": "🦅",
       "name": "Supériorité aérienne",
       "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air superiority",
+      "nameDe": "Luftüberlegenheit",
+      "descEn": "Can take off within 1 tile of an aircraft carrier. Ignores all terrain effects on mobility and all mines. The enemy cannot counter-attack. Combat effectiveness does not decrease when HP drops.",
+      "descDe": "Kann im Umkreis von 1 Feld um einen Flugzeugträger starten. Ignoriert alle Geländeeffekte auf die Mobilität und alle Minen. Der Feind kann nicht kontern. Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen."
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Vectorisation de poussée",
       "desc": "40% de chances d'esquiver les dégâts des unités terrestres ou navales, 10% pour les frappes aériennes (hors missiles et bombes nucléaires)",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Thrust vectoring",
+      "nameDe": "Schubvektorsteuerung",
+      "descEn": "40% chance to evade damage from ground or naval units, 10% for air strikes (excluding missiles and nuclear bombs)",
+      "descDe": "40 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen, 10 % bei Luftangriffen (ausgenommen Raketen und Atombomben)"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes",
       "desc": "Dégâts +10% contre les hélicoptères. Après déplacement, mobilité du tour suivant -12 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air countermeasures",
+      "nameDe": "Luftabwehrmaßnahmen",
+      "descEn": "Damage +10% against helicopters. After moving, next turn's mobility -12 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +10 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -12 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "🎯",
       "name": "Canon à grande vitesse",
       "desc": "Ignore 25% de la défense ennemie",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "High-velocity gun",
+      "nameDe": "Hochgeschwindigkeitskanone",
+      "descEn": "Ignores 25% of enemy defense",
+      "descDe": "Ignoriert 25 % der feindlichen Verteidigung"
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Attaque en chaîne",
       "desc": "Dégâts aux blindés et artillerie +20%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -30% chaque fois, jusqu'à 1 fois par tour.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Chain attack",
+      "nameDe": "Kettenangriff",
+      "descEn": "Damage to armor and artillery +20%. If the target survives, it receives the Hinder effect for 1 turn. If it is wiped out, immediate new attack with damage -30% each time, up to 1 time per turn.",
+      "descDe": "Schaden gegen Panzer und Artillerie +20 %. Überlebt das Ziel, erhält es den Hemmungseffekt für 1 Runde. Wird es vernichtet, erfolgt sofort ein neuer Angriff mit jedes Mal -30 % Schaden, bis zu 1 Mal pro Runde."
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.2",
       "desc": "65% de chances d'esquiver les dégâts des unités terrestres ou navales, 20% pour les frappes aériennes (hors missiles et bombes nucléaires)",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Thrust vectoring Lv.2",
+      "nameDe": "Schubvektorsteuerung Stufe 2",
+      "descEn": "65% chance to evade damage from ground or naval units, 20% for air strikes (excluding missiles and nuclear bombs)",
+      "descDe": "65 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen, 20 % bei Luftangriffen (ausgenommen Raketen und Atombomben)"
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.2",
       "desc": "Dégâts +20% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Air countermeasures Lv.2",
+      "nameDe": "Luftabwehrmaßnahmen Stufe 2",
+      "descEn": "Damage +20% against helicopters. After moving, next turn's mobility -9 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +20 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -9 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 5,
@@ -187,7 +215,11 @@
       "icon": "🎯",
       "name": "Canon à grande vitesse Niv.2",
       "desc": "Ignore 50% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "High-velocity gun Lv.2",
+      "nameDe": "Hochgeschwindigkeitskanone Stufe 2",
+      "descEn": "Ignores 50% of enemy defense",
+      "descDe": "Ignoriert 50 % der feindlichen Verteidigung"
     },
     {
       "lvl": 5,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Attaque en chaîne Niv.2",
       "desc": "Dégâts aux blindés et artillerie +30%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -30% chaque fois, jusqu'à 2 fois par tour.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Chain attack Lv.2",
+      "nameDe": "Kettenangriff Stufe 2",
+      "descEn": "Damage to armor and artillery +30%. If the target survives, it receives the Hinder effect for 1 turn. If it is wiped out, immediate new attack with damage -30% each time, up to 2 times per turn.",
+      "descDe": "Schaden gegen Panzer und Artillerie +30 %. Überlebt das Ziel, erhält es den Hemmungseffekt für 1 Runde. Wird es vernichtet, erfolgt sofort ein neuer Angriff mit jedes Mal -30 % Schaden, bis zu 2 Mal pro Runde."
     },
     {
       "lvl": 9,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.3",
       "desc": "90% de chances d'esquiver les dégâts des unités terrestres ou navales, 30% pour les frappes aériennes (hors missiles et bombes nucléaires)",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Thrust vectoring Lv.3",
+      "nameDe": "Schubvektorsteuerung Stufe 3",
+      "descEn": "90% chance to evade damage from ground or naval units, 30% for air strikes (excluding missiles and nuclear bombs)",
+      "descDe": "90 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen, 30 % bei Luftangriffen (ausgenommen Raketen und Atombomben)"
     },
     {
       "lvl": 9,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.3",
       "desc": "Dégâts +30% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Air countermeasures Lv.3",
+      "nameDe": "Luftabwehrmaßnahmen Stufe 3",
+      "descEn": "Damage +30% against helicopters. After moving, next turn's mobility -9 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +30 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -9 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 9,
@@ -219,7 +263,11 @@
       "icon": "🎯",
       "name": "Canon à grande vitesse Niv.3",
       "desc": "Ignore 75% de la défense ennemie",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "High-velocity gun Lv.3",
+      "nameDe": "Hochgeschwindigkeitskanone Stufe 3",
+      "descEn": "Ignores 75% of enemy defense",
+      "descDe": "Ignoriert 75 % der feindlichen Verteidigung"
     },
     {
       "lvl": 9,
@@ -227,7 +275,11 @@
       "icon": "⭐",
       "name": "Attaque en chaîne Niv.3",
       "desc": "Dégâts aux blindés et artillerie +40%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -20% chaque fois, jusqu'à 2 fois par tour.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Chain attack Lv.3",
+      "nameDe": "Kettenangriff Stufe 3",
+      "descEn": "Damage to armor and artillery +40%. If the target survives, it receives the Hinder effect for 1 turn. If it is wiped out, immediate new attack with damage -20% each time, up to 2 times per turn.",
+      "descDe": "Schaden gegen Panzer und Artillerie +40 %. Überlebt das Ziel, erhält es den Hemmungseffekt für 1 Runde. Wird es vernichtet, erfolgt sofort ein neuer Angriff mit jedes Mal -20 % Schaden, bis zu 2 Mal pro Runde."
     },
     {
       "lvl": 11,
@@ -235,7 +287,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.4",
       "desc": "Dégâts +40% contre les hélicoptères. Après déplacement, mobilité du tour suivant -6 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Air countermeasures Lv.4",
+      "nameDe": "Luftabwehrmaßnahmen Stufe 4",
+      "descEn": "Damage +40% against helicopters. After moving, next turn's mobility -6 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +40 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -6 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 12,
@@ -243,7 +299,11 @@
       "icon": "⭐",
       "name": "Attaque en chaîne Niv.4",
       "desc": "Dégâts aux blindés et artillerie +50%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -20% chaque fois, jusqu'à 3 fois par tour.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Chain attack Lv.4",
+      "nameDe": "Kettenangriff Stufe 4",
+      "descEn": "Damage to armor and artillery +50%. If the target survives, it receives the Hinder effect for 1 turn. If it is wiped out, immediate new attack with damage -20% each time, up to 3 times per turn.",
+      "descDe": "Schaden gegen Panzer und Artillerie +50 %. Überlebt das Ziel, erhält es den Hemmungseffekt für 1 Runde. Wird es vernichtet, erfolgt sofort ein neuer Angriff mit jedes Mal -20 % Schaden, bis zu 3 Mal pro Runde."
     }
   ],
   "recommendedGenerals": [],

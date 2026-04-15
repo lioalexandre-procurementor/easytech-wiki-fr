@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Roquettes",
       "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Rockets",
+      "nameDe": "Raketen",
+      "descEn": "Strikes several enemies at once and 60% chance to prevent them from counter-attacking",
+      "descDe": "Trifft mehrere Feinde gleichzeitig und 60 % Chance, sie am Gegenangriff zu hindern"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Poursuite",
       "desc": "Après une attaque, si l'adversaire est anéanti, 40% de chances d'agir à nouveau — maximum 1 fois",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Pursuit",
+      "nameDe": "Verfolgung",
+      "descEn": "After an attack, if the opponent is wiped out, 40% chance to act again — maximum 1 time",
+      "descDe": "Nach einem Angriff, wenn der Gegner vernichtet ist, 40 % Chance erneut zu handeln — maximal 1 Mal"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Poursuite Niv.2",
       "desc": "Après une attaque, si l'adversaire est anéanti, 70% de chances d'agir à nouveau — maximum 2 fois",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Pursuit Lv.2",
+      "nameDe": "Verfolgung Stufe 2",
+      "descEn": "After an attack, if the opponent is wiped out, 70% chance to act again — maximum 2 times",
+      "descDe": "Nach einem Angriff, wenn der Gegner vernichtet ist, 70 % Chance erneut zu handeln — maximal 2 Mal"
     },
     {
       "lvl": 9,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Poursuite Niv.3",
       "desc": "Après une attaque, si l'adversaire est anéanti, 100% de chances d'agir à nouveau — maximum 3 fois",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Pursuit Lv.3",
+      "nameDe": "Verfolgung Stufe 3",
+      "descEn": "After an attack, if the opponent is wiped out, 100% chance to act again — maximum 3 times",
+      "descDe": "Nach einem Angriff, wenn der Gegner vernichtet ist, 100 % Chance erneut zu handeln — maximal 3 Mal"
     },
     {
       "lvl": 10,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Poursuite Niv.4",
       "desc": "Après une attaque, si l'adversaire est anéanti, 100% de chances d'agir à nouveau — maximum 4 fois",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Pursuit Lv.4",
+      "nameDe": "Verfolgung Stufe 4",
+      "descEn": "After an attack, if the opponent is wiped out, 100% chance to act again — maximum 4 times",
+      "descDe": "Nach einem Angriff, wenn der Gegner vernichtet ist, 100 % Chance erneut zu handeln — maximal 4 Mal"
     },
     {
       "lvl": 12,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Renforcement de feu",
       "desc": "Attaque +10% pour chaque unité détruite — cumulable jusqu'à 3 fois, durée 2 tours",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Fire reinforcement",
+      "nameDe": "Feuerverstärkung",
+      "descEn": "Attack +10% for each unit destroyed — stackable up to 3 times, duration 2 turns",
+      "descDe": "Angriff +10 % für jede zerstörte Einheit — bis zu 3-mal stapelbar, Dauer 2 Runden"
     }
   ],
   "recommendedGenerals": [],

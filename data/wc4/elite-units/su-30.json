@@ -131,7 +131,11 @@
       "icon": "🦅",
       "name": "Supériorité aérienne",
       "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air superiority",
+      "nameDe": "Luftüberlegenheit",
+      "descEn": "Can take off within 1 tile of an aircraft carrier. Ignores all terrain effects on mobility and all mines. The enemy cannot counter-attack. Combat effectiveness does not decrease when HP drops.",
+      "descDe": "Kann im Umkreis von 1 Feld um einen Flugzeugträger starten. Ignoriert alle Geländeeffekte auf die Mobilität und alle Minen. Der Feind kann nicht kontern. Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen."
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Vectorisation de poussée",
       "desc": "40% de chances d'esquiver les dégâts des unités terrestres ou navales, 10% pour les frappes aériennes (hors missiles et bombes nucléaires)",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Thrust vectoring",
+      "nameDe": "Schubvektorsteuerung",
+      "descEn": "40% chance to evade damage from ground or naval units, 10% for air strikes (excluding missiles and nuclear bombs)",
+      "descDe": "40 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen, 10 % bei Luftangriffen (ausgenommen Raketen und Atombomben)"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes",
       "desc": "Dégâts +10% contre les hélicoptères. Après déplacement, mobilité du tour suivant -12 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air countermeasures",
+      "nameDe": "Luftabwehrmaßnahmen",
+      "descEn": "Damage +10% against helicopters. After moving, next turn's mobility -12 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +10 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -12 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Verrouillage BVR",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "BVR lock",
+      "nameDe": "BVR-Zielerfassung",
+      "descEn": "Damage to armor, artillery and naval units +10%",
+      "descDe": "Schaden gegen Panzer-, Artillerie- und Marineeinheiten +10 %"
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "🚀",
       "name": "Missile à sous-munitions",
       "desc": "Ce tour, en touchant une cible, inflige aussi 20% de dégâts à 3 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Cluster missile",
+      "nameDe": "Streumunitionsrakete",
+      "descEn": "This turn, when hitting a target, also deals 20% damage to 3 unit(s) within 1 tile (non-infantry targets prioritized). Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Diese Runde: Beim Treffen eines Ziels werden zusätzlich 20 % Schaden an 3 Einheit(en) im Umkreis von 1 Feld verursacht (Nicht-Infanterie-Ziele bevorzugt). Dauer 1 Runde. Erholung in 3 Runden."
     },
     {
       "lvl": 1,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Offensive implacable",
       "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 1 fois.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Relentless offensive",
+      "nameDe": "Unerbittliche Offensive",
+      "descEn": "After an attack, one additional attack. Can trigger 1 time.",
+      "descDe": "Nach einem Angriff ein zusätzlicher Angriff. Kann 1 Mal ausgelöst werden."
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.2",
       "desc": "65% de chances d'esquiver les dégâts des unités terrestres ou navales, 20% pour les frappes aériennes (hors missiles et bombes nucléaires)",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Thrust vectoring Lv.2",
+      "nameDe": "Schubvektorsteuerung Stufe 2",
+      "descEn": "65% chance to evade damage from ground or naval units, 20% for air strikes (excluding missiles and nuclear bombs)",
+      "descDe": "65 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen, 20 % bei Luftangriffen (ausgenommen Raketen und Atombomben)"
     },
     {
       "lvl": 5,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.2",
       "desc": "Dégâts +20% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Air countermeasures Lv.2",
+      "nameDe": "Luftabwehrmaßnahmen Stufe 2",
+      "descEn": "Damage +20% against helicopters. After moving, next turn's mobility -9 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +20 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -9 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 5,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Verrouillage BVR Niv.2",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "BVR lock Lv.2",
+      "nameDe": "BVR-Zielerfassung Stufe 2",
+      "descEn": "Damage to armor, artillery and naval units +20%",
+      "descDe": "Schaden gegen Panzer-, Artillerie- und Marineeinheiten +20 %"
     },
     {
       "lvl": 5,
@@ -203,7 +239,11 @@
       "icon": "🚀",
       "name": "Missile à sous-munitions Niv.2",
       "desc": "Ce tour, en touchant une cible, inflige aussi 30% de dégâts à 4 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Cluster missile Lv.2",
+      "nameDe": "Streumunitionsrakete Stufe 2",
+      "descEn": "This turn, when hitting a target, also deals 30% damage to 4 unit(s) within 1 tile (non-infantry targets prioritized). Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Diese Runde: Beim Treffen eines Ziels werden zusätzlich 30 % Schaden an 4 Einheit(en) im Umkreis von 1 Feld verursacht (Nicht-Infanterie-Ziele bevorzugt). Dauer 1 Runde. Erholung in 3 Runden."
     },
     {
       "lvl": 5,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Offensive implacable Niv.2",
       "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 2 fois.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Relentless offensive Lv.2",
+      "nameDe": "Unerbittliche Offensive Stufe 2",
+      "descEn": "After an attack, one additional attack. Can trigger 2 times.",
+      "descDe": "Nach einem Angriff ein zusätzlicher Angriff. Kann 2 Mal ausgelöst werden."
     },
     {
       "lvl": 9,
@@ -219,7 +263,11 @@
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.3",
       "desc": "90% de chances d'esquiver les dégâts des unités terrestres ou navales, 30% pour les frappes aériennes (hors missiles et bombes nucléaires)",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Thrust vectoring Lv.3",
+      "nameDe": "Schubvektorsteuerung Stufe 3",
+      "descEn": "90% chance to evade damage from ground or naval units, 30% for air strikes (excluding missiles and nuclear bombs)",
+      "descDe": "90 % Chance, Schaden von Boden- oder Marineeinheiten auszuweichen, 30 % bei Luftangriffen (ausgenommen Raketen und Atombomben)"
     },
     {
       "lvl": 9,
@@ -227,7 +275,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.3",
       "desc": "Dégâts +30% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Air countermeasures Lv.3",
+      "nameDe": "Luftabwehrmaßnahmen Stufe 3",
+      "descEn": "Damage +30% against helicopters. After moving, next turn's mobility -9 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +30 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -9 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 9,
@@ -235,7 +287,11 @@
       "icon": "⭐",
       "name": "Verrouillage BVR Niv.3",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "BVR lock Lv.3",
+      "nameDe": "BVR-Zielerfassung Stufe 3",
+      "descEn": "Damage to armor, artillery and naval units +30%",
+      "descDe": "Schaden gegen Panzer-, Artillerie- und Marineeinheiten +30 %"
     },
     {
       "lvl": 9,
@@ -243,7 +299,11 @@
       "icon": "🚀",
       "name": "Missile à sous-munitions Niv.3",
       "desc": "Ce tour, en touchant une cible, inflige aussi 40% de dégâts à 5 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Cluster missile Lv.3",
+      "nameDe": "Streumunitionsrakete Stufe 3",
+      "descEn": "This turn, when hitting a target, also deals 40% damage to 5 unit(s) within 1 tile (non-infantry targets prioritized). Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Diese Runde: Beim Treffen eines Ziels werden zusätzlich 40 % Schaden an 5 Einheit(en) im Umkreis von 1 Feld verursacht (Nicht-Infanterie-Ziele bevorzugt). Dauer 1 Runde. Erholung in 3 Runden."
     },
     {
       "lvl": 9,
@@ -251,7 +311,11 @@
       "icon": "⭐",
       "name": "Offensive implacable Niv.3",
       "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 3 fois.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Relentless offensive Lv.3",
+      "nameDe": "Unerbittliche Offensive Stufe 3",
+      "descEn": "After an attack, one additional attack. Can trigger 3 times.",
+      "descDe": "Nach einem Angriff ein zusätzlicher Angriff. Kann 3 Mal ausgelöst werden."
     },
     {
       "lvl": 10,
@@ -259,7 +323,11 @@
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.4",
       "desc": "Dégâts +40% contre les hélicoptères. Après déplacement, mobilité du tour suivant -6 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Air countermeasures Lv.4",
+      "nameDe": "Luftabwehrmaßnahmen Stufe 4",
+      "descEn": "Damage +40% against helicopters. After moving, next turn's mobility -6 (minimum 2 tiles). Mobility restored after one turn of rest within 1 tile of a city or allied engineer unit.",
+      "descDe": "Schaden +40 % gegen Hubschrauber. Nach Bewegung Mobilität der nächsten Runde -6 (mindestens 2 Felder). Mobilität wird nach einer Runde Rast im Umkreis von 1 Feld um eine Stadt oder eine verbündete Pioniereinheit wiederhergestellt."
     },
     {
       "lvl": 11,
@@ -267,7 +335,11 @@
       "icon": "⭐",
       "name": "Verrouillage BVR Niv.4",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +40%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "BVR lock Lv.4",
+      "nameDe": "BVR-Zielerfassung Stufe 4",
+      "descEn": "Damage to armor, artillery and naval units +40%",
+      "descDe": "Schaden gegen Panzer-, Artillerie- und Marineeinheiten +40 %"
     },
     {
       "lvl": 11,
@@ -275,7 +347,11 @@
       "icon": "🚀",
       "name": "Missile à sous-munitions Niv.4",
       "desc": "Ce tour, en touchant une cible, inflige aussi 50% de dégâts à 6 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Cluster missile Lv.4",
+      "nameDe": "Streumunitionsrakete Stufe 4",
+      "descEn": "This turn, when hitting a target, also deals 50% damage to 6 unit(s) within 1 tile (non-infantry targets prioritized). Duration 1 turn. Recovery in 3 turns.",
+      "descDe": "Diese Runde: Beim Treffen eines Ziels werden zusätzlich 50 % Schaden an 6 Einheit(en) im Umkreis von 1 Feld verursacht (Nicht-Infanterie-Ziele bevorzugt). Dauer 1 Runde. Erholung in 3 Runden."
     }
   ],
   "recommendedGenerals": [],

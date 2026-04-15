@@ -131,7 +131,11 @@
       "icon": "⭐",
       "name": "Roquettes",
       "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Rockets",
+      "nameDe": "Raketen",
+      "descEn": "Strikes several enemies at once and 60% chance to prevent them from counter-attacking",
+      "descDe": "Trifft mehrere Feinde gleichzeitig und 60 % Chance, sie am Gegenangriff zu hindern"
     },
     {
       "lvl": 5,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Salve",
       "desc": "Frappe plusieurs ennemis à la fois sans réduction de dégâts sur les cibles secondaires",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Salvo",
+      "nameDe": "Salve",
+      "descEn": "Strikes several enemies at once with no damage reduction on secondary targets",
+      "descDe": "Trifft mehrere Feinde gleichzeitig ohne Schadensreduktion bei Sekundärzielen"
     },
     {
       "lvl": 6,
@@ -147,7 +155,11 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Forced march",
+      "nameDe": "Gewaltmarsch",
+      "descEn": "Mobility consumption on difficult terrain -35%",
+      "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
     },
     {
       "lvl": 10,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Attaque critique",
       "desc": "Probabilité de coup critique +15%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack",
+      "nameDe": "Kritischer Angriff",
+      "descEn": "Critical hit chance +15%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +15 %"
     },
     {
       "lvl": 10,
@@ -163,7 +179,11 @@
       "icon": "🎯",
       "name": "Frappe au dépourvu",
       "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 2% de critique en excès, +1% de dégâts",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Unaware strike",
+      "nameDe": "Überraschender Schlag",
+      "descEn": "Excess critical rate becomes bonus damage: for each 2% of excess critical, +1% damage",
+      "descDe": "Die überschüssige Kritische-Trefferrate wird zu Bonusschaden: für jedes 2 % überschüssiger Kritischer, +1 % Schaden"
     },
     {
       "lvl": 11,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Attaque critique Niv.3",
       "desc": "Probabilité de coup critique +20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack Lv.3",
+      "nameDe": "Kritischer Angriff Stufe 3",
+      "descEn": "Critical hit chance +20%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +20 %"
     },
     {
       "lvl": 11,
@@ -179,7 +203,11 @@
       "icon": "🎯",
       "name": "Frappe au dépourvu Niv.2",
       "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Unaware strike Lv.2",
+      "nameDe": "Überraschender Schlag Stufe 2",
+      "descEn": "Excess critical rate becomes bonus damage: for each 1% of excess critical, +1% damage",
+      "descDe": "Die überschüssige Kritische-Trefferrate wird zu Bonusschaden: für jedes 1 % überschüssiger Kritischer, +1 % Schaden"
     },
     {
       "lvl": 12,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Attaque critique Niv.4",
       "desc": "Probabilité de coup critique +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack Lv.4",
+      "nameDe": "Kritischer Angriff Stufe 4",
+      "descEn": "Critical hit chance +30%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +30 %"
     }
   ],
   "recommendedGenerals": [],

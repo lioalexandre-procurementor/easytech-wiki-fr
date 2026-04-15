@@ -131,7 +131,11 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Forced march",
+      "nameDe": "Gewaltmarsch",
+      "descEn": "Mobility consumption on difficult terrain -35%",
+      "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 5,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Blindage incliné",
       "desc": "60% de chances de réduire les dégâts reçus de 50% pendant 1 tour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Sloped armor",
+      "nameDe": "Schräge Panzerung",
+      "descEn": "60% chance to reduce incoming damage by 50% for 1 turn. Recovery in 2 turns.",
+      "descDe": "60 % Chance, den erlittenen Schaden für 1 Runde um 50 % zu reduzieren. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -155,7 +167,11 @@
       "icon": "🛡️",
       "name": "Blindage incliné Niv.2",
       "desc": "80% de chances de réduire les dégâts reçus de 80% pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Sloped armor Lv.2",
+      "nameDe": "Schräge Panzerung Stufe 2",
+      "descEn": "80% chance to reduce incoming damage by 80% for 1 turn. Recovery in 2 turns.",
+      "descDe": "80 % Chance, den erlittenen Schaden für 1 Runde um 80 % zu reduzieren. Erholung in 2 Runden."
     },
     {
       "lvl": 10,
@@ -163,7 +179,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 11,
@@ -171,7 +191,11 @@
       "icon": "🛡️",
       "name": "Blindage incliné Niv.3",
       "desc": "100% de chances de réduire les dégâts reçus de 100% pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Sloped armor Lv.3",
+      "nameDe": "Schräge Panzerung Stufe 3",
+      "descEn": "100% chance to reduce incoming damage by 100% for 1 turn. Recovery in 2 turns.",
+      "descDe": "100 % Chance, den erlittenen Schaden für 1 Runde um 100 % zu reduzieren. Erholung in 2 Runden."
     },
     {
       "lvl": 12,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Déviation balistique",
       "desc": "En subissant des dégâts d'une unité terrestre, 50% de chances de transférer ces dégâts à une cible dans 1 case (hors unité attaquante)",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ballistic deflection",
+      "nameDe": "Ballistische Ablenkung",
+      "descEn": "When taking damage from a ground unit, 50% chance to transfer that damage to a target within 1 tile (excluding the attacking unit)",
+      "descDe": "Beim Erleiden von Schaden durch eine Bodeneinheit besteht 50 % Chance, diesen Schaden auf ein Ziel im Umkreis von 1 Feld zu übertragen (ausgenommen die angreifende Einheit)"
     }
   ],
   "recommendedGenerals": [],

@@ -131,7 +131,11 @@
       "icon": "⛏️",
       "name": "Sapeur",
       "desc": "Dégâts subis des mines terrestres -60%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Sapper",
+      "nameDe": "Pionier",
+      "descEn": "Damage taken from land mines -60%",
+      "descDe": "Erlittener Schaden durch Landminen -60 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Forced march",
+      "nameDe": "Gewaltmarsch",
+      "descEn": "Mobility consumption on difficult terrain -35%",
+      "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "💥",
       "name": "Pose de mines terrestres",
       "desc": "Dépose une mine dans 1 case — 115 points de dégâts. Récupération en 1 tour.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Land mine laying",
+      "nameDe": "Landminenlegung",
+      "descEn": "Drops a mine within 1 tile — 115 damage points. Recovery in 1 turn.",
+      "descDe": "Legt eine Mine im Umkreis von 1 Feld — 115 Schadenspunkte. Erholung in 1 Runde."
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Maintenance",
       "desc": "Les bâtiments dans 1 case autour récupèrent 40 point de PV une fois par tour",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Maintenance",
+      "nameDe": "Wartung",
+      "descEn": "Buildings within 1 tile around recover 40 HP once per turn",
+      "descDe": "Gebäude im Umkreis von 1 Feld erholen sich einmal pro Runde um 40 TP"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "💥",
       "name": "Pose de mines terrestres Niv.2",
       "desc": "Dépose une mine dans 1 case — 160 points de dégâts. Récupération en 1 tour.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Land mine laying Lv.2",
+      "nameDe": "Landminenlegung Stufe 2",
+      "descEn": "Drops a mine within 1 tile — 160 damage points. Recovery in 1 turn.",
+      "descDe": "Legt eine Mine im Umkreis von 1 Feld — 160 Schadenspunkte. Erholung in 1 Runde."
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Maintenance Niv.2",
       "desc": "Les bâtiments dans 1 case autour récupèrent 80 point de PV une fois par tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Maintenance Lv.2",
+      "nameDe": "Wartung Stufe 2",
+      "descEn": "Buildings within 1 tile around recover 80 HP once per turn",
+      "descDe": "Gebäude im Umkreis von 1 Feld erholen sich einmal pro Runde um 80 TP"
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Creusement de tunnel",
       "desc": "Creuse un tunnel jusqu'à 4 cases (hors montagne et océan) : infanterie, chars légers/moyens, roquettes, véhicules blindés, artillerie de campagne et obusiers peuvent y passer. Actions bonus après passage, maximum 3 fois par tunnel. Un nouveau tunnel efface le précédent. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Tunnel digging",
+      "nameDe": "Tunnelgrabung",
+      "descEn": "Digs a tunnel up to 4 tiles (excluding mountain and ocean): infantry, light/medium tanks, rockets, armored vehicles, field artillery and howitzers can pass through. Bonus actions after passing, maximum 3 times per tunnel. A new tunnel erases the previous one. Recovery in 2 turns.",
+      "descDe": "Gräbt einen Tunnel bis zu 4 Felder (ausgenommen Berg und Ozean): Infanterie, leichte/mittlere Panzer, Raketen, gepanzerte Fahrzeuge, Feldartillerie und Haubitzen können hindurch. Bonusaktionen nach dem Durchgang, maximal 3 Mal pro Tunnel. Ein neuer Tunnel löscht den vorherigen. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "💥",
       "name": "Pose de mines terrestres Niv.3",
       "desc": "Dépose une mine dans 1 case — 205 points de dégâts. Récupération en 1 tour.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Land mine laying Lv.3",
+      "nameDe": "Landminenlegung Stufe 3",
+      "descEn": "Drops a mine within 1 tile — 205 damage points. Recovery in 1 turn.",
+      "descDe": "Legt eine Mine im Umkreis von 1 Feld — 205 Schadenspunkte. Erholung in 1 Runde."
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Maintenance Niv.3",
       "desc": "Les bâtiments dans 1 case autour récupèrent 120 point de PV une fois par tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Maintenance Lv.3",
+      "nameDe": "Wartung Stufe 3",
+      "descEn": "Buildings within 1 tile around recover 120 HP once per turn",
+      "descDe": "Gebäude im Umkreis von 1 Feld erholen sich einmal pro Runde um 120 TP"
     },
     {
       "lvl": 11,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Maintenance Niv.4",
       "desc": "Les bâtiments dans 1 case autour récupèrent 200 point de PV une fois par tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Maintenance Lv.4",
+      "nameDe": "Wartung Stufe 4",
+      "descEn": "Buildings within 1 tile around recover 200 HP once per turn",
+      "descDe": "Gebäude im Umkreis von 1 Feld erholen sich einmal pro Runde um 200 TP"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Protection tactique",
       "desc": "Défense +20% aux alliés dans 2 cases autour",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Tactical protection",
+      "nameDe": "Taktischer Schutz",
+      "descEn": "Defense +20% to allies within 2 tiles around",
+      "descDe": "Verteidigung +20 % für Verbündete im Umkreis von 2 Feldern"
     }
   ],
   "recommendedGenerals": [],

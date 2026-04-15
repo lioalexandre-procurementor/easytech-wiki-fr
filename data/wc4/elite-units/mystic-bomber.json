@@ -89,7 +89,11 @@
       "icon": "⚙",
       "name": "Stats de base",
       "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Base stats",
+      "nameDe": "Basiswerte",
+      "descEn": "Starting stats of the elite unit.",
+      "descDe": "Startwerte der Elite-Einheit."
     },
     {
       "lvl": 3,
@@ -97,7 +101,11 @@
       "icon": "🎖",
       "name": "Bonus moral",
       "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Morale bonus",
+      "nameDe": "Moralbonus",
+      "descEn": "+5% morale to adjacent allied units.",
+      "descDe": "+5 % Moral für angrenzende verbündete Einheiten."
     },
     {
       "lvl": 5,
@@ -105,7 +113,11 @@
       "icon": "✈",
       "name": "Supériorité aérienne",
       "desc": "+15% dégâts contre autres unités aériennes.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air superiority",
+      "nameDe": "Luftüberlegenheit",
+      "descEn": "+15% damage against other air units.",
+      "descDe": "+15 % Schaden gegen andere Lufteinheiten."
     },
     {
       "lvl": 7,
@@ -113,7 +125,11 @@
       "icon": "💥",
       "name": "Frappe surprise",
       "desc": "Première attaque non subie.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Surprise strike",
+      "nameDe": "Überraschungsschlag",
+      "descEn": "First attack not taken.",
+      "descDe": "Erster Angriff wird nicht erlitten."
     },
     {
       "lvl": 9,
@@ -121,7 +137,11 @@
       "icon": "🪂",
       "name": "Vol stationnaire",
       "desc": "Aucun coût de mouvement pour rester en place.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Hovering",
+      "nameDe": "Schwebeflug",
+      "descEn": "No movement cost to stay in place.",
+      "descDe": "Keine Bewegungskosten, um stehen zu bleiben."
     },
     {
       "lvl": 12,
@@ -129,7 +149,11 @@
       "icon": "⭐",
       "name": "Perk ultime",
       "desc": "Compétence final à valider in-game.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ultimate perk",
+      "nameDe": "Ultimativer Perk",
+      "descEn": "Final skill to be validated in-game.",
+      "descDe": "Abschlussfähigkeit muss im Spiel bestätigt werden."
     }
   ],
   "recommendedGenerals": [],

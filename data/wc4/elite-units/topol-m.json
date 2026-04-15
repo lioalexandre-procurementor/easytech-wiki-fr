@@ -131,7 +131,11 @@
       "icon": "🚀",
       "name": "Attaque au missile",
       "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Missile attack",
+      "nameDe": "Raketenangriff",
+      "descEn": "Can fire short-range ballistic missiles up to 2 times per turn — replaces normal attack",
+      "descDe": "Kann Kurzstrecken-Ballistikraketen bis zu 2 Mal pro Runde abfeuern — ersetzt den normalen Angriff"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "☢️",
       "name": "Dissuasion nucléaire stratégique",
       "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 4 tour(s), maximum 4",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Strategic nuclear deterrence",
+      "nameDe": "Strategische nukleare Abschreckung",
+      "descEn": "Missiles can be loaded with atomic warheads: 2 initially, +1 every 4 turn(s), maximum 4",
+      "descDe": "Raketen können mit atomaren Sprengköpfen geladen werden: 2 zu Beginn, +1 alle 4 Runde(n), maximal 4"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🫥",
       "name": "Camouflage",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Camouflage",
+      "nameDe": "Tarnung",
+      "descEn": "In mountain or forest terrain, damage taken -10%",
+      "descDe": "In Berg- oder Waldgelände, erlittener Schaden -10 %"
     },
     {
       "lvl": 5,
@@ -155,7 +167,11 @@
       "icon": "☢️",
       "name": "Dissuasion nucléaire stratégique Niv.2",
       "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 3 tour(s), maximum 4",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Strategic nuclear deterrence Lv.2",
+      "nameDe": "Strategische nukleare Abschreckung Stufe 2",
+      "descEn": "Missiles can be loaded with atomic warheads: 2 initially, +1 every 3 turn(s), maximum 4",
+      "descDe": "Raketen können mit atomaren Sprengköpfen geladen werden: 2 zu Beginn, +1 alle 3 Runde(n), maximal 4"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "🫥",
       "name": "Camouflage Niv.2",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Camouflage Lv.2",
+      "nameDe": "Tarnung Stufe 2",
+      "descEn": "In mountain or forest terrain, damage taken -20%",
+      "descDe": "In Berg- oder Waldgelände, erlittener Schaden -20 %"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "☢️",
       "name": "Frappe atomique",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Atomic strike",
+      "nameDe": "Atomschlag",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 10%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 10 % erhöht"
     },
     {
       "lvl": 8,
@@ -179,7 +203,11 @@
       "icon": "🫥",
       "name": "Camouflage Niv.3",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Camouflage Lv.3",
+      "nameDe": "Tarnung Stufe 3",
+      "descEn": "In mountain or forest terrain, damage taken -30%",
+      "descDe": "In Berg- oder Waldgelände, erlittener Schaden -30 %"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "☢️",
       "name": "Dissuasion nucléaire stratégique Niv.3",
       "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 2 tour(s), maximum 4",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Strategic nuclear deterrence Lv.3",
+      "nameDe": "Strategische nukleare Abschreckung Stufe 3",
+      "descEn": "Missiles can be loaded with atomic warheads: 2 initially, +1 every 2 turn(s), maximum 4",
+      "descDe": "Raketen können mit atomaren Sprengköpfen geladen werden: 2 zu Beginn, +1 alle 2 Runde(n), maximal 4"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "☢️",
       "name": "Frappe atomique Niv.2",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Atomic strike Lv.2",
+      "nameDe": "Atomschlag Stufe 2",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 20%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 20 % erhöht"
     },
     {
       "lvl": 10,
@@ -203,7 +239,11 @@
       "icon": "🫥",
       "name": "Camouflage Niv.4",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Camouflage Lv.4",
+      "nameDe": "Tarnung Stufe 4",
+      "descEn": "In mountain or forest terrain, damage taken -50%",
+      "descDe": "In Berg- oder Waldgelände, erlittener Schaden -50 %"
     },
     {
       "lvl": 10,
@@ -211,7 +251,11 @@
       "icon": "☢️",
       "name": "Frappe atomique Niv.3",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 35%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Atomic strike Lv.3",
+      "nameDe": "Atomschlag Stufe 3",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 35%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 35 % erhöht"
     },
     {
       "lvl": 12,
@@ -219,7 +263,11 @@
       "icon": "☢️",
       "name": "Frappe atomique Niv.4",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Atomic strike Lv.4",
+      "nameDe": "Atomschlag Stufe 4",
+      "descEn": "When attacking with a nuclear bomb, nuclear damage is increased by 50%",
+      "descDe": "Beim Angriff mit einer Atombombe wird der Nuklearschaden um 50 % erhöht"
     }
   ],
   "recommendedGenerals": [],

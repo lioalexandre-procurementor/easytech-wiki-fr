@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Puissance de feu",
       "desc": "50% de chances d'empêcher l'ennemi de riposter",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Firepower",
+      "nameDe": "Feuerkraft",
+      "descEn": "50% chance to prevent the enemy from counter-attacking",
+      "descDe": "50 % Chance, den Gegenangriff des Feindes zu verhindern"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Frappe vengeresse",
       "desc": "Attaque +5 pour chaque 50 points de PV perdus",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Vengeful strike",
+      "nameDe": "Racheschlag",
+      "descEn": "Attack +5 for every 50 HP lost",
+      "descDe": "Angriff +5 für je 50 verlorene TP"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Dispositif de protection",
       "desc": "L'efficacité au combat ne baisse pas quand les PV diminuent. Seuil de survie : les PV ne peuvent descendre sous 1 point pendant 2 tours. Récupération en 7 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Protection device",
+      "nameDe": "Schutzvorrichtung",
+      "descEn": "Combat effectiveness does not decrease when HP drops. Survival threshold: HP cannot drop below 1 point for 2 turns. Recovery in 7 turns.",
+      "descDe": "Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen. Überlebensschwelle: TP können für 2 Runden nicht unter 1 Punkt fallen. Erholung in 7 Runden."
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Frappe vengeresse Niv.2",
       "desc": "Attaque +8 pour chaque 50 points de PV perdus",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Vengeful strike Lv.2",
+      "nameDe": "Racheschlag Stufe 2",
+      "descEn": "Attack +8 for every 50 HP lost",
+      "descDe": "Angriff +8 für je 50 verlorene TP"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Dispositif de protection Niv.2",
       "desc": "L'efficacité au combat ne baisse pas quand les PV diminuent. Seuil de survie : les PV ne peuvent descendre sous 1 point pendant 2 tours. Récupération en 6 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Protection device Lv.2",
+      "nameDe": "Schutzvorrichtung Stufe 2",
+      "descEn": "Combat effectiveness does not decrease when HP drops. Survival threshold: HP cannot drop below 1 point for 2 turns. Recovery in 6 turns.",
+      "descDe": "Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen. Überlebensschwelle: TP können für 2 Runden nicht unter 1 Punkt fallen. Erholung in 6 Runden."
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Frappe vengeresse Niv.3",
       "desc": "Attaque +12 pour chaque 50 points de PV perdus",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Vengeful strike Lv.3",
+      "nameDe": "Racheschlag Stufe 3",
+      "descEn": "Attack +12 for every 50 HP lost",
+      "descDe": "Angriff +12 für je 50 verlorene TP"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Dispositif de protection Niv.3",
       "desc": "L'efficacité au combat ne baisse pas quand les PV diminuent. Seuil de survie : les PV ne peuvent descendre sous 1 point pendant 2 tours. Récupération en 5 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Protection device Lv.3",
+      "nameDe": "Schutzvorrichtung Stufe 3",
+      "descEn": "Combat effectiveness does not decrease when HP drops. Survival threshold: HP cannot drop below 1 point for 2 turns. Recovery in 5 turns.",
+      "descDe": "Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen. Überlebensschwelle: TP können für 2 Runden nicht unter 1 Punkt fallen. Erholung in 5 Runden."
     },
     {
       "lvl": 10,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Attaque critique",
       "desc": "Probabilité de coup critique +15%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack",
+      "nameDe": "Kritischer Angriff",
+      "descEn": "Critical hit chance +15%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +15 %"
     },
     {
       "lvl": 11,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Attaque critique Niv.3",
       "desc": "Probabilité de coup critique +20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack Lv.3",
+      "nameDe": "Kritischer Angriff Stufe 3",
+      "descEn": "Critical hit chance +20%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +20 %"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Frappe vengeresse Niv.4",
       "desc": "Attaque +15 pour chaque 50 points de PV perdus",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Vengeful strike Lv.4",
+      "nameDe": "Racheschlag Stufe 4",
+      "descEn": "Attack +15 for every 50 HP lost",
+      "descDe": "Angriff +15 für je 50 verlorene TP"
     },
     {
       "lvl": 12,
@@ -219,7 +263,11 @@
       "icon": "⭐",
       "name": "Attaque critique Niv.4",
       "desc": "Probabilité de coup critique +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical attack Lv.4",
+      "nameDe": "Kritischer Angriff Stufe 4",
+      "descEn": "Critical hit chance +30%",
+      "descDe": "Wahrscheinlichkeit kritischer Treffer +30 %"
     }
   ],
   "recommendedGenerals": [],

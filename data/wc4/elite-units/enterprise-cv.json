@@ -131,7 +131,11 @@
       "icon": "💣",
       "name": "Bombardement",
       "desc": "Dégâts des bombardiers aux unités navales +30%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Bombardment",
+      "nameDe": "Bombardement",
+      "descEn": "Bomber damage to naval units +30%",
+      "descDe": "Bomberschaden gegen Marineeinheiten +30 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les navires de guerre",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on warships",
+      "descDe": "Flugabwehrsystem ausgerüstet an Kriegsschiffen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⚓",
       "name": "Porte-avions",
       "desc": "Peut attaquer via ses aéronefs embarqués",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Aircraft carrier",
+      "nameDe": "Flugzeugträger",
+      "descEn": "Can attack via its carrier-based aircraft",
+      "descDe": "Kann über seine trägergestützten Flugzeuge angreifen"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Port aérien maritime",
       "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 5 points d'aéronefs",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Maritime airport",
+      "nameDe": "Seeflughafen",
+      "descEn": "Can use all standard aircraft from the airport, maximum 5 aircraft points",
+      "descDe": "Kann alle Standard-Flugzeuge des Flughafens nutzen, maximal 5 Flugzeugpunkte"
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Obus explosif",
       "desc": "Dégâts normaux contre les chars +15%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Explosive shell",
+      "nameDe": "Sprenggranate",
+      "descEn": "Normal damage against tanks +15%",
+      "descDe": "Normaler Schaden gegen Panzer +15 %"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Port aérien maritime Niv.2",
       "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 8 points d'aéronefs",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Maritime airport Lv.2",
+      "nameDe": "Seeflughafen Stufe 2",
+      "descEn": "Can use all standard aircraft from the airport, maximum 8 aircraft points",
+      "descDe": "Kann alle Standard-Flugzeuge des Flughafens nutzen, maximal 8 Flugzeugpunkte"
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Obus explosif Niv.2",
       "desc": "Dégâts normaux contre les chars +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Explosive shell Lv.2",
+      "nameDe": "Sprenggranate Stufe 2",
+      "descEn": "Normal damage against tanks +30%",
+      "descDe": "Normaler Schaden gegen Panzer +30 %"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Port aérien maritime Niv.3",
       "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 12 points d'aéronefs",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Maritime airport Lv.3",
+      "nameDe": "Seeflughafen Stufe 3",
+      "descEn": "Can use all standard aircraft from the airport, maximum 12 aircraft points",
+      "descDe": "Kann alle Standard-Flugzeuge des Flughafens nutzen, maximal 12 Flugzeugpunkte"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Obus explosif Niv.3",
       "desc": "Dégâts normaux contre les chars +50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Explosive shell Lv.3",
+      "nameDe": "Sprenggranate Stufe 3",
+      "descEn": "Normal damage against tanks +50%",
+      "descDe": "Normaler Schaden gegen Panzer +50 %"
     },
     {
       "lvl": 11,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Obus explosif Niv.4",
       "desc": "Dégâts normaux contre les chars +80%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Explosive shell Lv.4",
+      "nameDe": "Sprenggranate Stufe 4",
+      "descEn": "Normal damage against tanks +80%",
+      "descDe": "Normaler Schaden gegen Panzer +80 %"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Port aérien maritime Niv.4",
       "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 16 points d'aéronefs",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Maritime airport Lv.4",
+      "nameDe": "Seeflughafen Stufe 4",
+      "descEn": "Can use all standard aircraft from the airport, maximum 16 aircraft points",
+      "descDe": "Kann alle Standard-Flugzeuge des Flughafens nutzen, maximal 16 Flugzeugpunkte"
     }
   ],
   "recommendedGenerals": [],

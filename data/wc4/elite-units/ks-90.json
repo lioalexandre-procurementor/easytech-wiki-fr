@@ -89,7 +89,11 @@
       "icon": "⚙",
       "name": "Stats de base",
       "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Base stats",
+      "nameDe": "Basiswerte",
+      "descEn": "Starting stats of the elite unit.",
+      "descDe": "Startwerte der Elite-Einheit."
     },
     {
       "lvl": 3,
@@ -97,7 +101,11 @@
       "icon": "🎖",
       "name": "Bonus moral",
       "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Morale bonus",
+      "nameDe": "Moralbonus",
+      "descEn": "+5% morale to adjacent allied units.",
+      "descDe": "+5 % Moral für angrenzende verbündete Einheiten."
     },
     {
       "lvl": 5,
@@ -105,7 +113,11 @@
       "icon": "🎯",
       "name": "Portée étendue",
       "desc": "+1 portée de tir.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Extended range",
+      "nameDe": "Erweiterte Reichweite",
+      "descEn": "+1 firing range.",
+      "descDe": "+1 Schussreichweite."
     },
     {
       "lvl": 7,
@@ -113,7 +125,11 @@
       "icon": "💥",
       "name": "Tir précis",
       "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Accurate shot",
+      "nameDe": "Gezielter Schuss",
+      "descEn": "Ignores 50% of enemy defense for 1 turn.",
+      "descDe": "Ignoriert 50 % der feindlichen Verteidigung für 1 Runde."
     },
     {
       "lvl": 9,
@@ -121,7 +137,11 @@
       "icon": "🔥",
       "name": "Saturation",
       "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Saturation",
+      "nameDe": "Sättigung",
+      "descEn": "Area damage on adjacent tile.",
+      "descDe": "Flächenschaden auf angrenzendem Feld."
     },
     {
       "lvl": 12,
@@ -129,7 +149,11 @@
       "icon": "⭐",
       "name": "Perk ultime",
       "desc": "Compétence final à valider in-game.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ultimate perk",
+      "nameDe": "Ultimativer Perk",
+      "descEn": "Final skill to be validated in-game.",
+      "descDe": "Abschlussfähigkeit muss im Spiel bestätigt werden."
     }
   ],
   "recommendedGenerals": [],

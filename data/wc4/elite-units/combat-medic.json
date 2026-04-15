@@ -131,7 +131,11 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Forced march",
+      "nameDe": "Gewaltmarsch",
+      "descEn": "Mobility consumption on difficult terrain -35%",
+      "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "💉",
       "name": "Secours d'urgence",
       "desc": "Restaure 60 PV à un allié ciblé — récupération en 1 tour",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Emergency rescue",
+      "nameDe": "Notrettung",
+      "descEn": "Restores 60 HP to a targeted ally — recovery in 1 turn",
+      "descDe": "Stellt einem anvisierten Verbündeten 60 TP wieder her — Erholung in 1 Runde"
     },
     {
       "lvl": 5,
@@ -147,7 +155,11 @@
       "icon": "💉",
       "name": "Secours d'urgence Niv.2",
       "desc": "Restaure 120 PV à un allié ciblé — récupération en 1 tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Emergency rescue Lv.2",
+      "nameDe": "Notrettung Stufe 2",
+      "descEn": "Restores 120 HP to a targeted ally — recovery in 1 turn",
+      "descDe": "Stellt einem anvisierten Verbündeten 120 TP wieder her — Erholung in 1 Runde"
     },
     {
       "lvl": 7,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Milice",
       "desc": "Ravitaillement +50% dans la ville",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Militia",
+      "nameDe": "Miliz",
+      "descEn": "Resupply +50% in the city",
+      "descDe": "Nachschub +50 % in der Stadt"
     },
     {
       "lvl": 9,
@@ -163,7 +179,11 @@
       "icon": "💉",
       "name": "Secours d'urgence Niv.3",
       "desc": "Restaure 150 PV à un allié ciblé — récupération en 1 tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Emergency rescue Lv.3",
+      "nameDe": "Notrettung Stufe 3",
+      "descEn": "Restores 150 HP to a targeted ally — recovery in 1 turn",
+      "descDe": "Stellt einem anvisierten Verbündeten 150 TP wieder her — Erholung in 1 Runde"
     },
     {
       "lvl": 10,
@@ -171,7 +191,11 @@
       "icon": "💉",
       "name": "Secours d'urgence Niv.4",
       "desc": "Restaure 200 PV à un allié ciblé — récupération en 1 tour",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Emergency rescue Lv.4",
+      "nameDe": "Notrettung Stufe 4",
+      "descEn": "Restores 200 HP to a targeted ally — recovery in 1 turn",
+      "descDe": "Stellt einem anvisierten Verbündeten 200 TP wieder her — Erholung in 1 Runde"
     },
     {
       "lvl": 12,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Soutien logistique",
       "desc": "Les alliés dans 2 cases récupèrent 50 PV après avoir subi des dégâts directs",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Logistical support",
+      "nameDe": "Logistische Unterstützung",
+      "descEn": "Allies within 2 tiles recover 50 HP after taking direct damage",
+      "descDe": "Verbündete im Umkreis von 2 Feldern erholen sich um 50 TP, nachdem sie direkten Schaden erlitten haben"
     },
     {
       "lvl": 12,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Protection critique",
       "desc": "Pour chaque 1% de PV perdus, dégâts reçus -1% (plafond 25%). Dégâts reçus plafonnés à 300 (hors bombes nucléaires).",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Critical protection",
+      "nameDe": "Kritischer Schutz",
+      "descEn": "For every 1% HP lost, damage taken -1% (cap 25%). Damage taken capped at 300 (excluding nuclear bombs).",
+      "descDe": "Für jedes 1 % verlorene TP, erlittener Schaden -1 % (Obergrenze 25 %). Erlittener Schaden bei 300 gedeckelt (ausgenommen Atombomben)."
     }
   ],
   "recommendedGenerals": [],

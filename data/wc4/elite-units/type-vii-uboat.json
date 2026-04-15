@@ -131,7 +131,11 @@
       "icon": "🌊",
       "name": "Torpille",
       "desc": "Dégâts +60% contre les croiseurs et porte-avions",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Torpedo",
+      "nameDe": "Torpedo",
+      "descEn": "Damage +60% against cruisers and aircraft carriers",
+      "descDe": "Schaden +60 % gegen Kreuzer und Flugzeugträger"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Immersion",
       "desc": "L'ennemi ne peut pas riposter lors de l'attaque ; immunité aux unités terrestres hormis l'artillerie côtière",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Submersion",
+      "nameDe": "Tauchgang",
+      "descEn": "The enemy cannot counter-attack when attacked; immunity to ground units except coastal artillery",
+      "descDe": "Der Feind kann beim Angriff nicht kontern; Immunität gegen Bodeneinheiten außer Küstenartillerie"
     },
     {
       "lvl": 5,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Tactique de la meute",
       "desc": "Dégâts +50% en attaquant des navires de transport",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Pack tactics",
+      "nameDe": "Rudeltaktik",
+      "descEn": "Damage +50% when attacking transport ships",
+      "descDe": "Schaden +50 % beim Angriff auf Transportschiffe"
     },
     {
       "lvl": 9,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Tactique de la meute Niv.2",
       "desc": "Dégâts +70% en attaquant des navires de transport",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Pack tactics Lv.2",
+      "nameDe": "Rudeltaktik Stufe 2",
+      "descEn": "Damage +70% when attacking transport ships",
+      "descDe": "Schaden +70 % beim Angriff auf Transportschiffe"
     },
     {
       "lvl": 10,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Tactique de la meute Niv.3",
       "desc": "Dégâts +100% en attaquant des navires de transport",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Pack tactics Lv.3",
+      "nameDe": "Rudeltaktik Stufe 3",
+      "descEn": "Damage +100% when attacking transport ships",
+      "descDe": "Schaden +100 % beim Angriff auf Transportschiffe"
     },
     {
       "lvl": 12,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Frappe multiple",
       "desc": "Dans un rayon de 2 cases, peut tirer des torpilles sur 4 cible(s). Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Multi-strike",
+      "nameDe": "Mehrfachschlag",
+      "descEn": "Within a 2-tile radius, can fire torpedoes at 4 target(s). Recovery in 2 turns.",
+      "descDe": "In einem Radius von 2 Feldern können Torpedos auf 4 Ziel(e) abgefeuert werden. Erholung in 2 Runden."
     }
   ],
   "recommendedGenerals": [],

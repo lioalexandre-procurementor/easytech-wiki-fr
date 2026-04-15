@@ -131,7 +131,11 @@
       "icon": "⭐",
       "name": "Roquettes",
       "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Rockets",
+      "nameDe": "Raketen",
+      "descEn": "Strikes several enemies at once and 60% chance to prevent them from counter-attacking",
+      "descDe": "Trifft mehrere Feinde gleichzeitig und 60 % Chance, sie am Gegenangriff zu hindern"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques",
       "desc": "Dégâts des coups critiques +20%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Critical damage",
+      "nameDe": "Kritischer Schaden",
+      "descEn": "Critical hit damage +20%",
+      "descDe": "Schaden kritischer Treffer +20 %"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Guidage céleste",
       "desc": "Dans un rayon de 3 cases, choisit 2 cible(s) et lance des missiles : inflige des dégâts et -15% de défense pendant 2 tours. Récupération en 3 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Celestial guidance",
+      "nameDe": "Himmelsnavigation",
+      "descEn": "Within a 3-tile radius, selects 2 target(s) and launches missiles: deals damage and -15% defense for 2 turns. Recovery in 3 turns.",
+      "descDe": "In einem Radius von 3 Feldern werden 2 Ziel(e) ausgewählt und Raketen gestartet: verursacht Schaden und -15 % Verteidigung für 2 Runden. Erholung in 3 Runden."
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Frappe dévastatrice",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 100%, cette attaque est un critique garanti",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Devastating strike",
+      "nameDe": "Verheerender Schlag",
+      "descEn": "If target's HP is greater than or equal to 100%, this attack is a guaranteed critical",
+      "descDe": "Wenn die TP des Ziels größer oder gleich 100 % sind, ist dieser Angriff ein garantierter kritischer Treffer"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.2",
       "desc": "Dégâts des coups critiques +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.2",
+      "nameDe": "Kritischer Schaden Stufe 2",
+      "descEn": "Critical hit damage +30%",
+      "descDe": "Schaden kritischer Treffer +30 %"
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Guidage céleste Niv.2",
       "desc": "Dans un rayon de 3 cases, choisit 4 cible(s) et lance des missiles : inflige des dégâts et -30% de défense pendant 2 tours. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Celestial guidance Lv.2",
+      "nameDe": "Himmelsnavigation Stufe 2",
+      "descEn": "Within a 3-tile radius, selects 4 target(s) and launches missiles: deals damage and -30% defense for 2 turns. Recovery in 3 turns.",
+      "descDe": "In einem Radius von 3 Feldern werden 4 Ziel(e) ausgewählt und Raketen gestartet: verursacht Schaden und -30 % Verteidigung für 2 Runden. Erholung in 3 Runden."
     },
     {
       "lvl": 5,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Frappe dévastatrice Niv.2",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 80%, cette attaque est un critique garanti",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Devastating strike Lv.2",
+      "nameDe": "Verheerender Schlag Stufe 2",
+      "descEn": "If target's HP is greater than or equal to 80%, this attack is a guaranteed critical",
+      "descDe": "Wenn die TP des Ziels größer oder gleich 80 % sind, ist dieser Angriff ein garantierter kritischer Treffer"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.3",
       "desc": "Dégâts des coups critiques +40%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.3",
+      "nameDe": "Kritischer Schaden Stufe 3",
+      "descEn": "Critical hit damage +40%",
+      "descDe": "Schaden kritischer Treffer +40 %"
     },
     {
       "lvl": 9,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Guidage céleste Niv.3",
       "desc": "Dans un rayon de 3 cases, choisit 6 cible(s) et lance des missiles : inflige des dégâts et -50% de défense pendant 2 tours. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Celestial guidance Lv.3",
+      "nameDe": "Himmelsnavigation Stufe 3",
+      "descEn": "Within a 3-tile radius, selects 6 target(s) and launches missiles: deals damage and -50% defense for 2 turns. Recovery in 3 turns.",
+      "descDe": "In einem Radius von 3 Feldern werden 6 Ziel(e) ausgewählt und Raketen gestartet: verursacht Schaden und -50 % Verteidigung für 2 Runden. Erholung in 3 Runden."
     },
     {
       "lvl": 9,
@@ -211,7 +251,11 @@
       "icon": "⭐",
       "name": "Frappe dévastatrice Niv.3",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 50%, cette attaque est un critique garanti",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Devastating strike Lv.3",
+      "nameDe": "Verheerender Schlag Stufe 3",
+      "descEn": "If target's HP is greater than or equal to 50%, this attack is a guaranteed critical",
+      "descDe": "Wenn die TP des Ziels größer oder gleich 50 % sind, ist dieser Angriff ein garantierter kritischer Treffer"
     },
     {
       "lvl": 10,
@@ -219,7 +263,11 @@
       "icon": "⭐",
       "name": "Dégâts critiques Niv.4",
       "desc": "Dégâts des coups critiques +50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Critical damage Lv.4",
+      "nameDe": "Kritischer Schaden Stufe 4",
+      "descEn": "Critical hit damage +50%",
+      "descDe": "Schaden kritischer Treffer +50 %"
     },
     {
       "lvl": 11,
@@ -227,7 +275,11 @@
       "icon": "⭐",
       "name": "Frappe dévastatrice Niv.4",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 0%, cette attaque est un critique garanti",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Devastating strike Lv.4",
+      "nameDe": "Verheerender Schlag Stufe 4",
+      "descEn": "If target's HP is greater than or equal to 0%, this attack is a guaranteed critical",
+      "descDe": "Wenn die TP des Ziels größer oder gleich 0 % sind, ist dieser Angriff ein garantierter kritischer Treffer"
     },
     {
       "lvl": 12,
@@ -235,7 +287,11 @@
       "icon": "⭐",
       "name": "Châssis léger",
       "desc": "Peut être aérotransporté",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Light chassis",
+      "nameDe": "Leichtes Fahrgestell",
+      "descEn": "Can be airlifted",
+      "descDe": "Kann per Lufttransport befördert werden"
     }
   ],
   "recommendedGenerals": [],

@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "☢️",
       "name": "Munition à uranium appauvri",
       "desc": "Probabilité de critique +20% et ignore 30% de la défense de la cible ce tour. Récupération en 2 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Depleted uranium ammunition",
+      "nameDe": "Munition aus abgereichertem Uran",
+      "descEn": "Critical chance +20% and ignores 30% of target's defense this turn. Recovery in 2 turns.",
+      "descDe": "Kritische Trefferchance +20 % und ignoriert 30 % der Verteidigung des Ziels diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "☢️",
       "name": "Blindage à uranium appauvri",
       "desc": "Défense +30%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Depleted uranium armor",
+      "nameDe": "Panzerung aus abgereichertem Uran",
+      "descEn": "Defense +30%",
+      "descDe": "Verteidigung +30 %"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "☢️",
       "name": "Munition à uranium appauvri Niv.2",
       "desc": "Probabilité de critique +30% et ignore 45% de la défense de la cible ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Depleted uranium ammunition Lv.2",
+      "nameDe": "Munition aus abgereichertem Uran Stufe 2",
+      "descEn": "Critical chance +30% and ignores 45% of target's defense this turn. Recovery in 2 turns.",
+      "descDe": "Kritische Trefferchance +30 % und ignoriert 45 % der Verteidigung des Ziels diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 5,
@@ -179,7 +203,11 @@
       "icon": "☢️",
       "name": "Blindage à uranium appauvri Niv.2",
       "desc": "Défense +60%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Depleted uranium armor Lv.2",
+      "nameDe": "Panzerung aus abgereichertem Uran Stufe 2",
+      "descEn": "Defense +60%",
+      "descDe": "Verteidigung +60 %"
     },
     {
       "lvl": 5,
@@ -187,7 +215,11 @@
       "icon": "🎯",
       "name": "Frappe au dépourvu",
       "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 2% de critique en excès, +1% de dégâts",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Unaware strike",
+      "nameDe": "Überraschender Schlag",
+      "descEn": "Excess critical rate becomes bonus damage: for each 2% of excess critical, +1% damage",
+      "descDe": "Die überschüssige Kritische-Trefferrate wird zu Bonusschaden: für jedes 2 % überschüssiger Kritischer, +1 % Schaden"
     },
     {
       "lvl": 9,
@@ -195,7 +227,11 @@
       "icon": "☢️",
       "name": "Munition à uranium appauvri Niv.3",
       "desc": "Probabilité de critique +40% et ignore 60% de la défense de la cible ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Depleted uranium ammunition Lv.3",
+      "nameDe": "Munition aus abgereichertem Uran Stufe 3",
+      "descEn": "Critical chance +40% and ignores 60% of target's defense this turn. Recovery in 2 turns.",
+      "descDe": "Kritische Trefferchance +40 % und ignoriert 60 % der Verteidigung des Ziels diese Runde. Erholung in 2 Runden."
     },
     {
       "lvl": 9,
@@ -203,7 +239,11 @@
       "icon": "☢️",
       "name": "Blindage à uranium appauvri Niv.3",
       "desc": "Défense +100%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Depleted uranium armor Lv.3",
+      "nameDe": "Panzerung aus abgereichertem Uran Stufe 3",
+      "descEn": "Defense +100%",
+      "descDe": "Verteidigung +100 %"
     },
     {
       "lvl": 9,
@@ -211,7 +251,11 @@
       "icon": "🎯",
       "name": "Frappe au dépourvu Niv.2",
       "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Unaware strike Lv.2",
+      "nameDe": "Überraschender Schlag Stufe 2",
+      "descEn": "Excess critical rate becomes bonus damage: for each 1% of excess critical, +1% damage",
+      "descDe": "Die überschüssige Kritische-Trefferrate wird zu Bonusschaden: für jedes 1 % überschüssiger Kritischer, +1 % Schaden"
     },
     {
       "lvl": 12,
@@ -219,7 +263,11 @@
       "icon": "☢️",
       "name": "Munition à uranium appauvri Niv.4",
       "desc": "Probabilité de critique +50% et ignore 70% de la défense de la cible ce tour. Récupération en 2 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Depleted uranium ammunition Lv.4",
+      "nameDe": "Munition aus abgereichertem Uran Stufe 4",
+      "descEn": "Critical chance +50% and ignores 70% of target's defense this turn. Recovery in 2 turns.",
+      "descDe": "Kritische Trefferchance +50 % und ignoriert 70 % der Verteidigung des Ziels diese Runde. Erholung in 2 Runden."
     }
   ],
   "recommendedGenerals": [],

@@ -131,7 +131,11 @@
       "icon": "⭐",
       "name": "Puissance de feu",
       "desc": "50% de chances d'empêcher l'ennemi de riposter",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Firepower",
+      "nameDe": "Feuerkraft",
+      "descEn": "50% chance to prevent the enemy from counter-attacking",
+      "descDe": "50 % Chance, den Gegenangriff des Feindes zu verhindern"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⭐",
       "name": "Garde d'acier",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -35% ; dégâts subis en terrain désertique -10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Steel guard",
+      "nameDe": "Stahlwache",
+      "descEn": "Damage taken from air units and hovercraft -35%; damage taken in desert terrain -10%",
+      "descDe": "Erlittener Schaden von Lufteinheiten und Luftkissenfahrzeugen -35 %; erlittener Schaden in Wüstengelände -10 %"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "⭐",
       "name": "Suppression à longue portée",
       "desc": "Dégâts -40% contre les ennemis à 1 case ; dégâts +40% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Long-range suppression",
+      "nameDe": "Unterdrückung auf große Entfernung",
+      "descEn": "Damage -40% against enemies at 1 tile; damage +40% against tanks, artillery or hovercraft at 2 tiles or more",
+      "descDe": "Schaden -40 % gegen Feinde auf 1 Feld; Schaden +40 % gegen Panzer, Artillerie oder Luftkissenfahrzeuge auf 2 Feldern oder mehr"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Verrouillage visuel",
       "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Visual lock",
+      "nameDe": "Visuelle Zielerfassung",
+      "descEn": "In attack as in counter-attack, ignores evasion and smoke screens",
+      "descDe": "Sowohl beim Angriff als auch beim Gegenangriff werden Ausweichen und Nebelgranaten ignoriert"
     },
     {
       "lvl": 5,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Garde d'acier Niv.2",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -50% ; dégâts subis en terrain désertique -20%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Steel guard Lv.2",
+      "nameDe": "Stahlwache Stufe 2",
+      "descEn": "Damage taken from air units and hovercraft -50%; damage taken in desert terrain -20%",
+      "descDe": "Erlittener Schaden von Lufteinheiten und Luftkissenfahrzeugen -50 %; erlittener Schaden in Wüstengelände -20 %"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Suppression à longue portée Niv.2",
       "desc": "Dégâts -30% contre les ennemis à 1 case ; dégâts +50% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Long-range suppression Lv.2",
+      "nameDe": "Unterdrückung auf große Entfernung Stufe 2",
+      "descEn": "Damage -30% against enemies at 1 tile; damage +50% against tanks, artillery or hovercraft at 2 tiles or more",
+      "descDe": "Schaden -30 % gegen Feinde auf 1 Feld; Schaden +50 % gegen Panzer, Artillerie oder Luftkissenfahrzeuge auf 2 Feldern oder mehr"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Garde d'acier Niv.3",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -65% ; dégâts subis en terrain désertique -30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Steel guard Lv.3",
+      "nameDe": "Stahlwache Stufe 3",
+      "descEn": "Damage taken from air units and hovercraft -65%; damage taken in desert terrain -30%",
+      "descDe": "Erlittener Schaden von Lufteinheiten und Luftkissenfahrzeugen -65 %; erlittener Schaden in Wüstengelände -30 %"
     },
     {
       "lvl": 9,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Suppression à longue portée Niv.3",
       "desc": "Dégâts -20% contre les ennemis à 1 case ; dégâts +60% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Long-range suppression Lv.3",
+      "nameDe": "Unterdrückung auf große Entfernung Stufe 3",
+      "descEn": "Damage -20% against enemies at 1 tile; damage +60% against tanks, artillery or hovercraft at 2 tiles or more",
+      "descDe": "Schaden -20 % gegen Feinde auf 1 Feld; Schaden +60 % gegen Panzer, Artillerie oder Luftkissenfahrzeuge auf 2 Feldern oder mehr"
     },
     {
       "lvl": 11,
@@ -195,7 +227,11 @@
       "icon": "⭐",
       "name": "Garde d'acier Niv.4",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -80% ; dégâts subis en terrain désertique -40%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Steel guard Lv.4",
+      "nameDe": "Stahlwache Stufe 4",
+      "descEn": "Damage taken from air units and hovercraft -80%; damage taken in desert terrain -40%",
+      "descDe": "Erlittener Schaden von Lufteinheiten und Luftkissenfahrzeugen -80 %; erlittener Schaden in Wüstengelände -40 %"
     },
     {
       "lvl": 12,
@@ -203,7 +239,11 @@
       "icon": "⭐",
       "name": "Suppression à longue portée Niv.4",
       "desc": "Dégâts -10% contre les ennemis à 1 case ; dégâts +70% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Long-range suppression Lv.4",
+      "nameDe": "Unterdrückung auf große Entfernung Stufe 4",
+      "descEn": "Damage -10% against enemies at 1 tile; damage +70% against tanks, artillery or hovercraft at 2 tiles or more",
+      "descDe": "Schaden -10 % gegen Feinde auf 1 Feld; Schaden +70 % gegen Panzer, Artillerie oder Luftkissenfahrzeuge auf 2 Feldern oder mehr"
     },
     {
       "lvl": 12,
@@ -211,7 +251,11 @@
       "icon": "⚔️",
       "name": "Assaut aéroporté",
       "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Airborne assault",
+      "nameDe": "Luftangriff",
+      "descEn": "+100% damage dealt on the turn following an airborne jump",
+      "descDe": "+100 % Schaden auf der Runde nach einem Fallschirmsprung"
     }
   ],
   "recommendedGenerals": [],

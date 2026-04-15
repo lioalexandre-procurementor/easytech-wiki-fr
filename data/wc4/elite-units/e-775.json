@@ -89,7 +89,11 @@
       "icon": "⚙",
       "name": "Stats de base",
       "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Base stats",
+      "nameDe": "Basiswerte",
+      "descEn": "Starting stats of the elite unit.",
+      "descDe": "Startwerte der Elite-Einheit."
     },
     {
       "lvl": 3,
@@ -97,7 +101,11 @@
       "icon": "🎖",
       "name": "Bonus moral",
       "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Morale bonus",
+      "nameDe": "Moralbonus",
+      "descEn": "+5% morale to adjacent allied units.",
+      "descDe": "+5 % Moral für angrenzende verbündete Einheiten."
     },
     {
       "lvl": 5,
@@ -105,7 +113,11 @@
       "icon": "🛡",
       "name": "Blindage renforcé",
       "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Reinforced armor",
+      "nameDe": "Verstärkte Panzerung",
+      "descEn": "Reduces incoming damage by 30% for 1 turn.",
+      "descDe": "Reduziert den erlittenen Schaden für 1 Runde um 30 %."
     },
     {
       "lvl": 7,
@@ -113,7 +125,11 @@
       "icon": "⚙",
       "name": "Cible prioritaire",
       "desc": "+15% dégâts contre les unités d'infanterie.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Priority target",
+      "nameDe": "Vorrangiges Ziel",
+      "descEn": "+15% damage against infantry units.",
+      "descDe": "+15 % Schaden gegen Infanterieeinheiten."
     },
     {
       "lvl": 9,
@@ -121,7 +137,11 @@
       "icon": "⚔",
       "name": "Charge blindée",
       "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Armored charge",
+      "nameDe": "Panzerangriff",
+      "descEn": "Additional attack after eliminating a unit.",
+      "descDe": "Zusätzlicher Angriff nach dem Ausschalten einer Einheit."
     },
     {
       "lvl": 12,
@@ -129,7 +149,11 @@
       "icon": "⭐",
       "name": "Perk ultime",
       "desc": "Compétence final à valider in-game (capacité signature).",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Ultimate perk",
+      "nameDe": "Ultimativer Perk",
+      "descEn": "Final skill to be validated in-game (signature ability).",
+      "descDe": "Abschlussfähigkeit muss im Spiel bestätigt werden (Signaturfähigkeit)."
     }
   ],
   "recommendedGenerals": [],

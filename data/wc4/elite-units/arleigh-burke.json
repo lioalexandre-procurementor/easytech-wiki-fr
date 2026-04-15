@@ -131,7 +131,11 @@
       "icon": "💥",
       "name": "Artillerie navale",
       "desc": "Dégâts aux fortifications +60% et aux unités terrestres -50%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Naval artillery",
+      "nameDe": "Marineartillerie",
+      "descEn": "Damage to fortifications +60% and to ground units -50%",
+      "descDe": "Schaden gegen Befestigungen +60 % und gegen Bodeneinheiten -50 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "💥",
       "name": "Dragueur de mines",
       "desc": "Dégâts subis des mines navales -60%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Minesweeper",
+      "nameDe": "Minenräumer",
+      "descEn": "Damage taken from naval mines -60%",
+      "descDe": "Erlittener Schaden durch Seeminen -60 %"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "💥",
       "name": "Grenade sous-marine",
       "desc": "Dégâts aux sous-marins +40%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Depth charge",
+      "nameDe": "Wasserbombe",
+      "descEn": "Damage to submarines +40%",
+      "descDe": "Schaden gegen U-Boote +40 %"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les navires de guerre",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on warships",
+      "descDe": "Flugabwehrsystem ausgerüstet an Kriegsschiffen"
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Attaque saturante",
       "desc": "Tire plusieurs missiles balistiques courte portée : 150% des dégâts à la cible et 80% aux ennemis adjacents. Récupération en 3 tours.",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Saturation attack",
+      "nameDe": "Sättigungsangriff",
+      "descEn": "Fires several short-range ballistic missiles: 150% damage to the target and 80% to adjacent enemies. Recovery in 3 turns.",
+      "descDe": "Feuert mehrere Kurzstrecken-Ballistikraketen ab: 150 % Schaden am Ziel und 80 % an angrenzenden Feinden. Erholung in 3 Runden."
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Attaque saturante Niv.2",
       "desc": "Tire plusieurs missiles balistiques courte portée : 200% des dégâts à la cible et 100% aux ennemis adjacents. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Saturation attack Lv.2",
+      "nameDe": "Sättigungsangriff Stufe 2",
+      "descEn": "Fires several short-range ballistic missiles: 200% damage to the target and 100% to adjacent enemies. Recovery in 3 turns.",
+      "descDe": "Feuert mehrere Kurzstrecken-Ballistikraketen ab: 200 % Schaden am Ziel und 100 % an angrenzenden Feinden. Erholung in 3 Runden."
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Attaque saturante Niv.3",
       "desc": "Tire plusieurs missiles balistiques courte portée : 200% des dégâts à la cible et 120% aux ennemis adjacents. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Saturation attack Lv.3",
+      "nameDe": "Sättigungsangriff Stufe 3",
+      "descEn": "Fires several short-range ballistic missiles: 200% damage to the target and 120% to adjacent enemies. Recovery in 3 turns.",
+      "descDe": "Feuert mehrere Kurzstrecken-Ballistikraketen ab: 200 % Schaden am Ziel und 120 % an angrenzenden Feinden. Erholung in 3 Runden."
     },
     {
       "lvl": 11,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Attaque saturante Niv.4",
       "desc": "Tire plusieurs missiles balistiques courte portée : 300% des dégâts à la cible et 150% aux ennemis adjacents. Récupération en 3 tours.",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Saturation attack Lv.4",
+      "nameDe": "Sättigungsangriff Stufe 4",
+      "descEn": "Fires several short-range ballistic missiles: 300% damage to the target and 150% to adjacent enemies. Recovery in 3 turns.",
+      "descDe": "Feuert mehrere Kurzstrecken-Ballistikraketen ab: 300 % Schaden am Ziel und 150 % an angrenzenden Feinden. Erholung in 3 Runden."
     },
     {
       "lvl": 12,
@@ -195,7 +227,11 @@
       "icon": "📡",
       "name": "Radar de conduite de tir",
       "desc": "Ignore l'esquive, les fumigènes, l'état fantôme et l'EMCON",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Fire-control radar",
+      "nameDe": "Feuerleitradar",
+      "descEn": "Ignores evasion, smoke screens, ghost state and EMCON",
+      "descDe": "Ignoriert Ausweichen, Nebelgranaten, Geisterzustand und EMCON"
     }
   ],
   "recommendedGenerals": [],

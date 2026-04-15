@@ -131,7 +131,11 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Forced march",
+      "nameDe": "Gewaltmarsch",
+      "descEn": "Mobility consumption on difficult terrain -35%",
+      "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "🗡️",
       "name": "Samouraï",
       "desc": "Volonté du guerrier : l'efficacité au combat ne baisse pas quand les PV diminuent",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Samurai",
+      "nameDe": "Samurai",
+      "descEn": "Warrior's will: combat effectiveness does not decrease when HP drops",
+      "descDe": "Kriegerwille: Die Kampfeffektivität sinkt nicht, wenn die TP abnehmen"
     },
     {
       "lvl": 5,
@@ -147,7 +155,11 @@
       "icon": "🏃",
       "name": "Marche rapide",
       "desc": "Peut agir à nouveau après une action — récupération en 1 tour",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Rapid march",
+      "nameDe": "Eilmarsch",
+      "descEn": "Can act again after an action — recovery in 1 turn",
+      "descDe": "Kann nach einer Aktion erneut handeln — Erholung in 1 Runde"
     },
     {
       "lvl": 12,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Incitation au courage",
       "desc": "En prenant une ville ennemie, booste le moral des alliés dans 3 cases autour pendant 2 tours",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Courage incitement",
+      "nameDe": "Mutanstachelung",
+      "descEn": "When capturing an enemy city, boosts the morale of allies within 3 tiles around for 2 turns",
+      "descDe": "Beim Einnehmen einer feindlichen Stadt wird die Moral der Verbündeten im Umkreis von 3 Feldern für 2 Runden gesteigert"
     }
   ],
   "recommendedGenerals": [],

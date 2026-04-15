@@ -131,7 +131,11 @@
       "icon": "🔫",
       "name": "Mitrailleuse",
       "desc": "Dégâts aux unités d'infanterie +35%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Machine gun",
+      "nameDe": "Maschinengewehr",
+      "descEn": "Damage to infantry units +35%",
+      "descDe": "Schaden gegen Infanterieeinheiten +35 %"
     },
     {
       "lvl": 1,
@@ -139,7 +143,11 @@
       "icon": "⚔️",
       "name": "Assaut",
       "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Assault",
+      "nameDe": "Angriff",
+      "descEn": "50% chance to attack again after destroying an enemy",
+      "descDe": "50 % Chance, nach dem Zerstören eines Feindes erneut anzugreifen"
     },
     {
       "lvl": 1,
@@ -147,7 +155,11 @@
       "icon": "🛡️",
       "name": "Défense aérienne",
       "desc": "Système anti-aérien équipé sur les forces blindées",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Air defense",
+      "nameDe": "Luftabwehr",
+      "descEn": "Anti-aircraft system equipped on armored forces",
+      "descDe": "Flugabwehrsystem ausgerüstet an Panzerverbänden"
     },
     {
       "lvl": 1,
@@ -155,7 +167,11 @@
       "icon": "⭐",
       "name": "Avantage local",
       "desc": "Sur votre territoire ou celui d'un allié, dégâts infligés +10%",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Local advantage",
+      "nameDe": "Lokaler Vorteil",
+      "descEn": "On your territory or that of an ally, damage dealt +10%",
+      "descDe": "Auf eigenem oder verbündetem Territorium, verursachter Schaden +10 %"
     },
     {
       "lvl": 1,
@@ -163,7 +179,11 @@
       "icon": "⭐",
       "name": "Passe-partout",
       "desc": "Ignore les réductions de dégâts liées au terrain en attaque comme en riposte",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Master key",
+      "nameDe": "Generalschlüssel",
+      "descEn": "Ignores terrain-related damage reductions in attack as in counter-attack",
+      "descDe": "Ignoriert geländebedingte Schadensreduktionen sowohl beim Angriff als auch beim Gegenangriff"
     },
     {
       "lvl": 5,
@@ -171,7 +191,11 @@
       "icon": "⭐",
       "name": "Avantage local Niv.2",
       "desc": "Sur votre territoire ou celui d'un allié, dégâts infligés +30%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Local advantage Lv.2",
+      "nameDe": "Lokaler Vorteil Stufe 2",
+      "descEn": "On your territory or that of an ally, damage dealt +30%",
+      "descDe": "Auf eigenem oder verbündetem Territorium, verursachter Schaden +30 %"
     },
     {
       "lvl": 9,
@@ -179,7 +203,11 @@
       "icon": "⭐",
       "name": "Avantage local Niv.3",
       "desc": "Sur votre territoire ou celui d'un allié, dégâts infligés +50%",
-      "milestone": false
+      "milestone": false,
+      "nameEn": "Local advantage Lv.3",
+      "nameDe": "Lokaler Vorteil Stufe 3",
+      "descEn": "On your territory or that of an ally, damage dealt +50%",
+      "descDe": "Auf eigenem oder verbündetem Territorium, verursachter Schaden +50 %"
     },
     {
       "lvl": 12,
@@ -187,7 +215,11 @@
       "icon": "⭐",
       "name": "Déploiement rapide",
       "desc": "Sur votre territoire ou celui d'un allié, mobilité +5",
-      "milestone": true
+      "milestone": true,
+      "nameEn": "Rapid deployment",
+      "nameDe": "Schneller Einsatz",
+      "descEn": "On your territory or that of an ally, mobility +5",
+      "descDe": "Auf eigenem oder verbündetem Territorium, Mobilität +5"
     }
   ],
   "recommendedGenerals": [],
