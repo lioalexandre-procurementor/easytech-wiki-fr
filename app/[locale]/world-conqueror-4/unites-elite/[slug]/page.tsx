@@ -165,7 +165,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <div id="perks"></div>
           <UnitDetailClient unit={unit}/>
 
-          <AdSlot label={t("ui.adSlot")} className="my-6" />
+          <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
 
           {/* STRATEGY */}
           <div id="strategy" className="bg-panel border border-border rounded-lg p-6 mb-6">
@@ -219,6 +219,9 @@ export default async function UnitPage({ params }: { params: { locale: string; s
               </div>
             </div>
           </div>
+
+          {/* IN-ARTICLE MID AD — between Strategy and Related */}
+          <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
 
           {/* RELATED */}
           {sameCat.length > 0 && (

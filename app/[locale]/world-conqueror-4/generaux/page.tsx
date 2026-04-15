@@ -216,7 +216,7 @@ export default async function GeneralsList({
             })}
           </section>
 
-          <AdSlot label={t("ui.adSlot")} className="my-6" />
+          <AdSlot name="listingBottom" label={t("ui.adSlot")} className="my-6" />
 
           {/* SCORPION */}
           <section id="scorpion" className="mb-10">

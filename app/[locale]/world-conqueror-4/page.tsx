@@ -115,7 +115,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             ))}
           </div>
 
-          <AdSlot label={t("ui.adSlot")} className="my-6" />
+          <AdSlot name="listingBottom" label={t("ui.adSlot")} className="my-6" />
 
           <h2 className="text-xl mb-4 mt-8">{t("wc4Hub.mostViewed")}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

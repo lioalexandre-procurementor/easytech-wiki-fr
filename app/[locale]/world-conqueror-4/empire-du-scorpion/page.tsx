@@ -177,7 +177,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
             </div>
           </section>
 
-          <AdSlot label={t("scorpionPage.adSlot")} className="my-6" />
+          <AdSlot name="listingBottom" label={t("scorpionPage.adSlot")} className="my-6" />
 
           {/* UNITS */}
           <section id="unites">

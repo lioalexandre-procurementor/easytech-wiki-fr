@@ -301,6 +301,9 @@ export default async function GeneralPage({ params }: { params: { locale: string
             )}
           </div>
 
+          {/* IN-ARTICLE TOP AD — between hero/cross-links and the stats block */}
+          <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+
           {/* ATTRIBUTES (6 aptitudes) */}
           <StatsGrid attributes={g.attributes} mode="base" />
 
@@ -434,7 +437,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
           </div>
 
-          <AdSlot label={t("ui.adSlot")} className="my-6" />
+          <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
 
           {/* RECOMMENDED UNITS */}
           {recommended.length > 0 && (
