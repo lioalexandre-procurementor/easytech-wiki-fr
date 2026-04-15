@@ -1,91 +1,148 @@
 import type { MetadataRoute } from "next";
+import fs from "node:fs";
+import path from "node:path";
 import { getAllGeneralSlugs, getAllSlugs as getAllEliteSlugs } from "@/lib/units";
 import { locales } from "@/src/i18n/config";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.example";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.vercel.app";
 
-function alternates(pathFr: string, pathEn: string) {
+/**
+ * Localized path pair for a given canonical route suffix.
+ * The keys mirror the locale → external URL rewrites defined in
+ * src/i18n/config.ts. If a route is added there, mirror it here.
+ */
+type LocalePair = { fr: string; en: string };
+
+function alternates(pair: LocalePair) {
   return {
     languages: {
-      fr: `${BASE_URL}/fr${pathFr}`,
-      en: `${BASE_URL}/en${pathEn}`,
-      "x-default": `${BASE_URL}/fr${pathFr}`,
+      fr: `${BASE_URL}/fr${pair.fr}`,
+      en: `${BASE_URL}/en${pair.en}`,
+      "x-default": `${BASE_URL}/fr${pair.fr}`,
     },
   };
+}
+
+function pathFor(locale: "fr" | "en", pair: LocalePair): string {
+  return `${BASE_URL}/${locale}${pair[locale]}`;
+}
+
+function generalBase(slug: string): LocalePair {
+  return {
+    fr: `/world-conqueror-4/generaux/${slug}`,
+    en: `/world-conqueror-4/generals/${slug}`,
+  };
+}
+
+function generalTrained(slug: string): LocalePair {
+  return {
+    fr: `/world-conqueror-4/generaux/${slug}/entraine`,
+    en: `/world-conqueror-4/generals/${slug}/trained`,
+  };
+}
+
+function generalPremiumTraining(slug: string): LocalePair {
+  return {
+    fr: `/world-conqueror-4/generaux/${slug}/entrainement-premium`,
+    en: `/world-conqueror-4/generals/${slug}/premium-training`,
+  };
+}
+
+function eliteBase(slug: string): LocalePair {
+  return {
+    fr: `/world-conqueror-4/unites-elite/${slug}`,
+    en: `/world-conqueror-4/elite-units/${slug}`,
+  };
+}
+
+function skillBase(slug: string): LocalePair {
+  return {
+    fr: `/world-conqueror-4/competences/${slug}`,
+    en: `/world-conqueror-4/skills/${slug}`,
+  };
+}
+
+/** Read all skill slugs from data/wc4/skills/*.json (excluding _index.json). */
+function getAllSkillSlugs(): string[] {
+  const dir = path.join(process.cwd(), "data", "wc4", "skills");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+    .map((f) => f.replace(/\.json$/, ""));
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
-  // Static roots: home + WC4 hub per locale
-  for (const locale of locales) {
-    entries.push({
-      url: `${BASE_URL}/${locale}`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 1,
-      alternates: alternates("", ""),
-    });
-    entries.push({
-      url: `${BASE_URL}/${locale}/world-conqueror-4`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.9,
-      alternates: alternates("/world-conqueror-4", "/world-conqueror-4"),
-    });
-  }
+  // Static roots
+  const staticRoutes: { pair: LocalePair; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+    { pair: { fr: "", en: "" }, priority: 1, changeFrequency: "weekly" },
+    { pair: { fr: "/world-conqueror-4", en: "/world-conqueror-4" }, priority: 0.9, changeFrequency: "weekly" },
+    { pair: { fr: "/world-conqueror-4/generaux", en: "/world-conqueror-4/generals" }, priority: 0.9, changeFrequency: "weekly" },
+    { pair: { fr: "/world-conqueror-4/unites-elite", en: "/world-conqueror-4/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
+    { pair: { fr: "/world-conqueror-4/competences", en: "/world-conqueror-4/skills" }, priority: 0.8, changeFrequency: "weekly" },
+    { pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire" }, priority: 0.6, changeFrequency: "monthly" },
+    { pair: { fr: "/legal/votes", en: "/legal/votes" }, priority: 0.3, changeFrequency: "yearly" },
+  ];
 
-  // Generals: base + trained variants per locale
-  for (const slug of getAllGeneralSlugs()) {
+  for (const route of staticRoutes) {
     for (const locale of locales) {
-      const basePath =
-        locale === "fr"
-          ? `/world-conqueror-4/generaux/${slug}`
-          : `/world-conqueror-4/generals/${slug}`;
-      const trainedPath =
-        locale === "fr"
-          ? `/world-conqueror-4/generaux/${slug}/entraine`
-          : `/world-conqueror-4/generals/${slug}/trained`;
       entries.push({
-        url: `${BASE_URL}/${locale}${basePath}`,
+        url: pathFor(locale, route.pair),
         lastModified: now,
-        changeFrequency: "monthly",
-        priority: 0.8,
-        alternates: alternates(
-          `/world-conqueror-4/generaux/${slug}`,
-          `/world-conqueror-4/generals/${slug}`,
-        ),
-      });
-      entries.push({
-        url: `${BASE_URL}/${locale}${trainedPath}`,
-        lastModified: now,
-        changeFrequency: "monthly",
-        priority: 0.7,
-        alternates: alternates(
-          `/world-conqueror-4/generaux/${slug}/entraine`,
-          `/world-conqueror-4/generals/${slug}/trained`,
-        ),
+        changeFrequency: route.changeFrequency,
+        priority: route.priority,
+        alternates: alternates(route.pair),
       });
     }
   }
 
-  // Elite units (base only — trained variant is out of scope for Chunk 1)
+  // Generals: base + trained + premium-training variants per locale
+  for (const slug of getAllGeneralSlugs()) {
+    const variants: { pair: LocalePair; priority: number }[] = [
+      { pair: generalBase(slug), priority: 0.8 },
+      { pair: generalTrained(slug), priority: 0.7 },
+      { pair: generalPremiumTraining(slug), priority: 0.7 },
+    ];
+    for (const v of variants) {
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, v.pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: v.priority,
+          alternates: alternates(v.pair),
+        });
+      }
+    }
+  }
+
+  // Elite units
   for (const slug of getAllEliteSlugs()) {
+    const pair = eliteBase(slug);
     for (const locale of locales) {
-      const path =
-        locale === "fr"
-          ? `/world-conqueror-4/unites-elite/${slug}`
-          : `/world-conqueror-4/elite-units/${slug}`;
       entries.push({
-        url: `${BASE_URL}/${locale}${path}`,
+        url: pathFor(locale, pair),
         lastModified: now,
         changeFrequency: "monthly",
         priority: 0.8,
-        alternates: alternates(
-          `/world-conqueror-4/unites-elite/${slug}`,
-          `/world-conqueror-4/elite-units/${slug}`,
-        ),
+        alternates: alternates(pair),
+      });
+    }
+  }
+
+  // Skill catalog detail pages
+  for (const slug of getAllSkillSlugs()) {
+    const pair = skillBase(slug);
+    for (const locale of locales) {
+      entries.push({
+        url: pathFor(locale, pair),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: alternates(pair),
       });
     }
   }
