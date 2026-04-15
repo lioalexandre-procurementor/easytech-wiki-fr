@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { legalConfig } from "@/lib/legal-config";
 import ManageCookiesLink from "./ManageCookiesLink";
+import ReportMistakeLink from "./ReportMistakeLink";
 
 export async function Footer() {
   const t = await getTranslations();
@@ -37,6 +38,8 @@ export async function Footer() {
         <Link href="/legal/contact" className="hover:text-gold2">
           {t("footer.contact")}
         </Link>
+        <span className="text-border">·</span>
+        <ReportMistakeLink className="hover:text-gold2 cursor-pointer underline-offset-2" />
       </nav>
       <p className="text-[11px] text-dim max-w-3xl mx-auto leading-relaxed">
         © {year} {legalConfig.site.name} —{" "}
