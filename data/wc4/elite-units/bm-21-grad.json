@@ -340,5 +340,9 @@
   "image": {
     "sprite": "/img/wc4/elites/306001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Soviet 122mm multiple rocket launcher, 40 tubes.",
+  "shortDescDe": "Sowjetischer 122-mm-Mehrfachraketenwerfer, 40 Rohre.",
+  "longDescEn": "122mm multiple rocket launcher mounted on a Ural-375D truck. Devastating rate of fire and area damage.",
+  "longDescDe": "122-mm-Mehrfachraketenwerfer auf einem Ural-375D-Lkw. Verheerende Feuerrate, Flächenschaden."
 }

@@ -340,5 +340,9 @@
   "image": {
     "sprite": "/img/wc4/elites/333001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Iconic Soviet Cold War MBT, mass-produced.",
+  "shortDescDe": "Ikonischer sowjetischer Kampfpanzer des Kalten Krieges, in Serie gefertigt.",
+  "longDescEn": "125mm smoothbore gun with autoloader. Modern elite unit available in Cold War and Modern War scenarios.",
+  "longDescDe": "125-mm-Glattrohrkanone mit Ladeautomat. Moderne Elite-Einheit, verfügbar in Cold War- und Modern War-Szenarien."
 }

@@ -155,5 +155,9 @@
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "shortDescEn": "Scorpion armored vehicle — identified by 4 wheels and a marking on the hull.",
+  "shortDescDe": "Gepanzertes Skorpion-Fahrzeug — erkennbar an 4 Rädern und Rumpfzeichen.",
+  "longDescEn": "Mystic Forces armored vehicle. 4-wheel configuration, black scorpion marking on the body only (not on the guns, unlike the KS-90).",
+  "longDescDe": "Gepanzertes Fahrzeug der Mystic Forces. 4-Rad-Konfiguration, schwarzes Skorpion-Emblem nur am Rumpf (nicht an den Geschützen, anders als beim KS-90)."
 }

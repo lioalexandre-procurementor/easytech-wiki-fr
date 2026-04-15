@@ -316,5 +316,9 @@
   "image": {
     "sprite": "/img/wc4/elites/316001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Italian alpine troops, experts on mountainous terrain.",
+  "shortDescDe": "Italienische Alpini, Experten für Gebirgsgelände.",
+  "longDescEn": "Italian mountain troops. Significant bonuses on mountainous terrain and improved mobility on hills.",
+  "longDescDe": "Italienische Gebirgstruppen. Erhebliche Boni in Gebirgsgelände und verbesserte Mobilität auf Hügeln."
 }

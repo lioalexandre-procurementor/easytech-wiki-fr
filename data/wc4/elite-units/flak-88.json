@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/346001.png",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "German 88mm anti-aircraft gun, also a formidable anti-tank weapon.",
+  "shortDescDe": "Deutsche 88-mm-Flak, zugleich eine gefürchtete Panzerabwehrwaffe.",
+  "longDescEn": "One of the most versatile guns of WWII. Dual-role anti-aircraft / anti-armor.",
+  "longDescDe": "Eine der vielseitigsten Kanonen des Zweiten Weltkriegs. Doppelrolle als Flak und Panzerabwehr."
 }

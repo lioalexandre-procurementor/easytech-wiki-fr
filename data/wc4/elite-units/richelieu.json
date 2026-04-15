@@ -324,5 +324,9 @@
   "image": {
     "sprite": "/img/wc4/elites/320001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "French Richelieu-class battleship, eight 380mm guns.",
+  "shortDescDe": "Französisches Schlachtschiff der Richelieu-Klasse, acht 380-mm-Geschütze.",
+  "longDescEn": "Lead ship of the last class of French battleships. Eight 380mm guns in two forward quadruple turrets.",
+  "longDescDe": "Typschiff der letzten Klasse französischer Schlachtschiffe. Acht 380-mm-Geschütze in zwei vorderen Vierlingstürmen."
 }

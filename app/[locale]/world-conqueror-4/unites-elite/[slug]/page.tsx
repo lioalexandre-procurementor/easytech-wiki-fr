@@ -8,6 +8,8 @@ import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
 import { AdSlot } from "@/components/AdSlot";
 import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/units";
+import { countryLabel } from "@/lib/countries";
+import { localizedUnitField } from "@/lib/localized-copy";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
@@ -28,10 +30,11 @@ export function generateMetadata({ params }: { params: { locale: string; slug: s
     en: `${u.name} (WC4) — Stats, level 1-12 perks & generals | Wiki`,
     de: `${u.name} (WC4) — Werte, Stufen 1–12 Boni & Generäle | Wiki DE`,
   };
+  const shortDescLocalized = localizedUnitField(u as unknown as Record<string, unknown>, "shortDesc", locale);
   const descByLocale: Record<string, string> = {
-    fr: `Fiche complète du ${u.name} dans World Conqueror 4 : ${u.shortDesc} Stats détaillées, perks niveau par niveau, généraux recommandés.`,
-    en: `Complete profile of ${u.name} in World Conqueror 4: ${u.shortDesc} Detailed stats, per-level perks, recommended generals.`,
-    de: `Komplettes Profil der ${u.name} in World Conqueror 4: ${u.shortDesc} Detaillierte Werte, Boni pro Stufe, empfohlene Generäle.`,
+    fr: `Fiche complète du ${u.name} dans World Conqueror 4 : ${shortDescLocalized} Stats détaillées, perks niveau par niveau, généraux recommandés.`,
+    en: `Complete profile of ${u.nameEn || u.name} in World Conqueror 4: ${shortDescLocalized} Detailed stats, per-level perks, recommended generals.`,
+    de: `Komplettes Profil der ${u.nameEn || u.name} in World Conqueror 4: ${shortDescLocalized} Detaillierte Werte, Boni pro Stufe, empfohlene Generäle.`,
   };
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
@@ -140,18 +143,18 @@ export default async function UnitPage({ params }: { params: { locale: string; s
               <div className="absolute top-2.5 right-2.5 z-10"><TierBadge tier={unit.tier} size="md"/></div>
             </div>
             <div>
-              <h1 className="text-3xl text-gold2 font-extrabold mb-1">{unit.name}</h1>
-              <div className="text-dim text-sm mb-4">{unit.longDesc.split(".")[0]}.</div>
+              <h1 className="text-3xl text-gold2 font-extrabold mb-1">{params.locale === "fr" ? unit.name : unit.nameEn || unit.name}</h1>
+              <div className="text-dim text-sm mb-4">{localizedUnitField(unit as unknown as Record<string, unknown>, "longDesc", params.locale).split(".")[0]}.</div>
               <div className="flex flex-wrap gap-2 mb-4">
                 <Tag accent>{meta.icon} {meta.label} {t("elitesPage.sectionSuffix")}</Tag>
-                <Tag>{COUNTRY_FLAGS[unit.country]} {unit.countryName}</Tag>
+                <Tag>{COUNTRY_FLAGS[unit.country]} {countryLabel(unit.country, params.locale)}</Tag>
                 <Tag scorpion={isScorpion}>
                   {isScorpion ? "🦂" : "🌍"} {factionMeta.label}
                 </Tag>
                 <Tag>📊 {tL("Niveaux 1-12", "Levels 1-12", "Stufen 1–12")}</Tag>
                 <Tag>🎁 {obtainabilityLabel(unit.obtainability, params.locale)}</Tag>
               </div>
-              <p className="text-ink text-sm leading-relaxed">{unit.longDesc}</p>
+              <p className="text-ink text-sm leading-relaxed">{localizedUnitField(unit as unknown as Record<string, unknown>, "longDesc", params.locale)}</p>
             </div>
           </div>
 
@@ -235,8 +238,8 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                       )}
                       <TierBadge tier={u.tier} size="sm"/>
                     </div>
-                    <h3 className="text-gold2 font-bold text-base mb-1">{u.name}</h3>
-                    <p className="text-dim text-xs">{u.shortDesc}</p>
+                    <h3 className="text-gold2 font-bold text-base mb-1">{params.locale === "fr" ? u.name : u.nameEn || u.name}</h3>
+                    <p className="text-dim text-xs">{localizedUnitField(u as unknown as Record<string, unknown>, "shortDesc", params.locale)}</p>
                   </Link>
                 ))}
               </div>

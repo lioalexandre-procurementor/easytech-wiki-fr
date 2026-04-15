@@ -17,7 +17,7 @@ import { localizedUnitField } from "@/lib/localized-copy";
 export function UnitCard({ unit, locale }: { unit: UnitData; locale?: string }) {
   const sprite = unit.image?.sprite ?? null;
   const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
-  const displayShortDesc = localizedUnitField(unit, "shortDesc", locale);
+  const displayShortDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", locale);
   return (
     <Link
       href={`/world-conqueror-4/unites-elite/${unit.slug}`}

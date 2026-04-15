@@ -340,5 +340,9 @@
   "image": {
     "sprite": "/img/wc4/elites/303001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Combat medic — the only in-game healing source, essential early on.",
+  "shortDescDe": "Sanitätssoldat — einzige Heilquelle im Spiel, früh unverzichtbar.",
+  "longDescEn": "Strongly recommended as early as possible. The only unit that truly activates the healing mechanic. Prioritize maxing it.",
+  "longDescDe": "Wird so früh wie möglich dringend empfohlen. Die einzige Einheit, die den Heilungsmechanismus wirklich aktiviert. Sollte mit Priorität maximiert werden."
 }

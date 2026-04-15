@@ -348,5 +348,9 @@
   "image": {
     "sprite": "/img/wc4/elites/327001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "The first British MBT, bridging WWII and the modern era.",
+  "shortDescDe": "Der erste britische Kampfpanzer, Brücke zwischen Zweitem Weltkrieg und Moderne.",
+  "longDescEn": "The Centurion (A41) is the world's first main battle tank. Balanced elite unit: mobility, armor, 20-pdr/105mm gun.",
+  "longDescDe": "Der Centurion (A41) ist der erste Kampfpanzer der Welt. Ausgewogene Elite-Einheit: Mobilität, Panzerung, 20-Pfünder-/105-mm-Kanone."
 }

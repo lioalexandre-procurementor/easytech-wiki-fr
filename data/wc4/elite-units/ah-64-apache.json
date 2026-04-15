@@ -380,5 +380,9 @@
   "image": {
     "sprite": "/img/wc4/elites/338001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Modern American attack helicopter — precision anti-tank.",
+  "shortDescDe": "Moderner amerikanischer Kampfhubschrauber — Präzisions-Panzerabwehr.",
+  "longDescEn": "Primary US Army attack helicopter since 1986. Hellfire missiles, 30mm cannon, advanced targeting systems.",
+  "longDescDe": "Haupt-Kampfhubschrauber der US Army seit 1986. Hellfire-Raketen, 30-mm-Kanone, moderne Zielerfassung."
 }

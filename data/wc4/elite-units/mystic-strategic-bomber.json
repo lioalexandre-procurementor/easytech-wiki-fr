@@ -155,5 +155,9 @@
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "shortDescEn": "Mystic strategic bomber — long-range variant of the Mystic Bomber.",
+  "shortDescDe": "Mystischer strategischer Bomber — Langstrecken-Variante des Mystic Bomber.",
+  "longDescEn": "Long-range strategic variant of the Mystic Bomber. Area strike, maximum range, very limited usage per match.",
+  "longDescDe": "Strategische Langstreckenvariante des Mystic Bomber. Flächenschlag, maximale Reichweite, sehr begrenzte Einsätze pro Partie."
 }

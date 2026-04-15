@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/329001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Soviet attack helicopter — \"the flying tank\".",
+  "shortDescDe": "Sowjetischer Kampfhubschrauber — „der fliegende Panzer“.",
+  "longDescEn": "Soviet assault helicopter, nicknamed \"the flying tank\". Unique in its category: attack + light transport.",
+  "longDescDe": "Sowjetischer Angriffshubschrauber, Spitzname „fliegender Panzer“. Einzigartig in seiner Kategorie: Angriff + leichter Transport."
 }

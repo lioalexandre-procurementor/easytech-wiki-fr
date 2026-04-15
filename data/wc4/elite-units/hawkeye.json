@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/302001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Elite reconnaissance with vision and evasion bonuses.",
+  "shortDescDe": "Elite-Aufklärung mit Sicht- und Ausweich-Boni.",
+  "longDescEn": "Specialized in reconnaissance: extended vision range and evasion bonus, useful in unknown terrain.",
+  "longDescDe": "Auf Aufklärung spezialisiert: erweiterte Sichtweite und Ausweich-Bonus, nützlich in unbekanntem Gelände."
 }

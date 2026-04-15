@@ -380,5 +380,9 @@
   "image": {
     "sprite": "/img/wc4/elites/349001.png",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Modern German MBT, Rheinmetall 120mm smoothbore gun.",
+  "shortDescDe": "Moderner deutscher Kampfpanzer, Rheinmetall-120-mm-Glattrohrkanone.",
+  "longDescEn": "Entered service in 1979 and remains one of the best MBTs in the world. S-tier for modern scenarios.",
+  "longDescDe": "1979 in Dienst gestellt und nach wie vor einer der besten Kampfpanzer der Welt. S-Tier für moderne Szenarien."
 }

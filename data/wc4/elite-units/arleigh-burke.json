@@ -348,5 +348,9 @@
   "image": {
     "sprite": "/img/wc4/elites/340001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "American guided-missile destroyer — modern NATO standard.",
+  "shortDescDe": "Amerikanischer Lenkwaffenzerstörer — moderner NATO-Standard.",
+  "longDescEn": "US Navy guided-missile destroyer class in service since 1991. Aegis system, Tomahawk and Standard missiles.",
+  "longDescDe": "Lenkwaffenzerstörer-Klasse der US Navy seit 1991. Aegis-System, Tomahawk- und Standard-Raketen."
 }

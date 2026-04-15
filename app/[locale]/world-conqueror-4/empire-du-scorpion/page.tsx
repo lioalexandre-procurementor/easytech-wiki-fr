@@ -12,6 +12,7 @@ import {
   getGeneralCategoryMeta,
   getFactionMeta,
 } from "@/lib/units";
+import { localizedUnitField } from "@/lib/localized-copy";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { locales } from "@/src/i18n/config";
@@ -170,7 +171,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
                   <div className="text-muted text-[10px] uppercase tracking-widest mb-2">
                     {GENERAL_CAT[g.category].icon} {GENERAL_CAT[g.category].label}
                   </div>
-                  <p className="text-dim text-xs leading-relaxed line-clamp-3">{g.shortDesc}</p>
+                  <p className="text-dim text-xs leading-relaxed line-clamp-3">{localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", params.locale)}</p>
                 </Link>
               ))}
             </div>

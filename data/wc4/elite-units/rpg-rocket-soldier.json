@@ -380,5 +380,9 @@
   "image": {
     "sprite": "/img/wc4/elites/326001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Anti-tank infantry equipped with RPG rocket launchers.",
+  "shortDescDe": "Panzerabwehr-Infanterie mit RPG-Raketenwerfern.",
+  "longDescEn": "Elite anti-armor specialist soldier. Equipped with RPG-7 rocket launchers. Urban escort role against mechanized forces.",
+  "longDescDe": "Anti-Panzer-Spezialist der Elite. Ausgerüstet mit RPG-7-Raketenwerfern. Rolle als städtische Eskorte gegen mechanisierte Kräfte."
 }

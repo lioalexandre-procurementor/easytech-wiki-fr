@@ -404,5 +404,9 @@
   "image": {
     "sprite": "/img/wc4/elites/335001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Ghost force — stealthy elite unit with high lethality.",
+  "shortDescDe": "Geistertruppe — getarnte Elite-Einheit mit hoher Letalität.",
+  "longDescEn": "Among the best infantry units in the game. High attack, strong evasion, infiltration ability.",
+  "longDescDe": "Zählt zu den besten Infanterieeinheiten des Spiels. Hoher Angriff, starke Ausweichrate, Infiltrationsfähigkeit."
 }

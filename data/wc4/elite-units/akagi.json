@@ -348,5 +348,9 @@
   "image": {
     "sprite": "/img/wc4/elites/321001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Japanese aircraft carrier, flagship of the attack on Pearl Harbor.",
+  "shortDescDe": "Japanischer Flugzeugträger, Flaggschiff des Angriffs auf Pearl Harbor.",
+  "longDescEn": "Heavy Japanese aircraft carrier, flagship of the Kido Butai at Pearl Harbor in 1941. Capable of launching air raids.",
+  "longDescDe": "Schwerer japanischer Flugzeugträger, Flaggschiff der Kido Butai bei Pearl Harbor 1941. Kann Luftangriffe starten."
 }

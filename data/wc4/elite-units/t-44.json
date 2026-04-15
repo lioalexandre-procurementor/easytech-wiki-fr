@@ -332,5 +332,9 @@
   "image": {
     "sprite": "/img/wc4/elites/307001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Late-war Soviet medium tank, forerunner of the T-54.",
+  "shortDescDe": "Sowjetischer mittlerer Panzer der späten Kriegsjahre, Vorläufer des T-54.",
+  "longDescEn": "Developed in 1944 to replace the T-34, the T-44 is a WC4 elite unit classified as an advanced medium tank. Combines mobility and armor.",
+  "longDescDe": "1944 als Ersatz für den T-34 entwickelt, ist der T-44 eine WC4-Elite-Einheit, eingestuft als fortgeschrittener mittlerer Panzer. Kombiniert Mobilität und Panzerung."
 }

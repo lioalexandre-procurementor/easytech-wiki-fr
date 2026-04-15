@@ -372,5 +372,9 @@
   "image": {
     "sprite": "/img/wc4/elites/339001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Russian intercontinental ballistic missile — the ultimate elite unit.",
+  "shortDescDe": "Russische interkontinentale Ballistische Rakete — die ultimative Elite-Einheit.",
+  "longDescEn": "Russian nuclear-tipped ICBM, in service since 1997. Maximum range, devastating damage, very limited usage.",
+  "longDescDe": "Russische interkontinentale Atomrakete, seit 1997 im Dienst. Maximale Reichweite, verheerender Schaden, sehr begrenzter Einsatz."
 }

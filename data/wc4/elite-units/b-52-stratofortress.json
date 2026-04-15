@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/337001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "American strategic heavy bomber — in service since 1955.",
+  "shortDescDe": "Amerikanischer strategischer Schwerbomber — im Dienst seit 1955.",
+  "longDescEn": "Eight-engine heavy bomber, in USAF service since 1955. 31-ton payload capacity. Long-range strategic strike.",
+  "longDescDe": "Achtstrahliger schwerer Bomber, seit 1955 bei der USAF im Einsatz. 31 Tonnen Zuladung. Strategischer Langstreckeneinsatz."
 }

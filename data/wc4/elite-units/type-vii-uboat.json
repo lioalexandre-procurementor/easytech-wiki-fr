@@ -324,5 +324,9 @@
   "image": {
     "sprite": "/img/wc4/elites/313001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "German WWII attack submarine, backbone of the Kriegsmarine.",
+  "shortDescDe": "Deutsches Angriffs-U-Boot des Zweiten Weltkriegs, Rückgrat der Kriegsmarine.",
+  "longDescEn": "The most-produced submarine in history (~700 built). Backbone of the Battle of the Atlantic. High stealth and torpedo damage.",
+  "longDescDe": "Das meistgebaute U-Boot der Geschichte (~700 Einheiten). Rückgrat der Atlantikschlacht. Hohe Tarnung und hoher Torpedoschaden."
 }

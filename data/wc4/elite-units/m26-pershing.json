@@ -332,5 +332,9 @@
   "image": {
     "sprite": "/img/wc4/elites/309001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Late-WWII American heavy tank, balanced attack/defense.",
+  "shortDescDe": "US-Schwerpanzer aus dem späten Zweiten Weltkrieg, ausgewogen in Angriff/Verteidigung.",
+  "longDescEn": "Entered service in early 1945 to counter the Tiger and Panther. Balanced elite unit, a good compromise between offense and durability.",
+  "longDescDe": "Anfang 1945 in Dienst gestellt, um Tiger und Panther zu begegnen. Ausgewogene Elite-Einheit, guter Kompromiss zwischen Offensive und Haltbarkeit."
 }

@@ -17,6 +17,8 @@ import {
   COUNTRY_FLAGS,
   getFactionMeta,
 } from "@/lib/units";
+import { countryLabel } from "@/lib/countries";
+import { localizedUnitField } from "@/lib/localized-copy";
 import type {
   Metadata,
 } from "next";
@@ -46,15 +48,16 @@ export async function generateMetadata({
   const g = getGeneral(slug);
   if (!g) return { title: "404" };
   const name = g.nameEn || g.name;
+  const shortDescLocalized = localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", locale);
   const TITLE_COPY: Record<string, string> = {
     fr: `${name} (WC4) — Compétences, attributs & guide`,
     en: `${name} (WC4) — Skills, attributes & guide`,
     de: `${name} (WC4) — Fähigkeiten, Attribute & Guide`,
   };
   const DESC_COPY: Record<string, string> = {
-    fr: `Fiche complète du général ${name} dans World Conqueror 4 : ${g.shortDesc} Attributs, skills, training, unités recommandées.`,
-    en: `Complete profile of general ${name} in World Conqueror 4: ${g.shortDesc} Attributes, skills, training, recommended units.`,
-    de: `Vollständiges Profil des Generals ${name} in World Conqueror 4: ${g.shortDesc} Attribute, Fähigkeiten, Training, empfohlene Einheiten.`,
+    fr: `Fiche complète du général ${name} dans World Conqueror 4 : ${shortDescLocalized} Attributs, skills, training, unités recommandées.`,
+    en: `Complete profile of general ${name} in World Conqueror 4: ${shortDescLocalized} Attributes, skills, training, recommended units.`,
+    de: `Vollständiges Profil des Generals ${name} in World Conqueror 4: ${shortDescLocalized} Attribute, Fähigkeiten, Training, empfohlene Einheiten.`,
   };
   const title = TITLE_COPY[locale] ?? TITLE_COPY.en;
   const description = DESC_COPY[locale] ?? DESC_COPY.en;
@@ -479,8 +482,8 @@ export default async function GeneralPage({ params }: { params: { locale: string
                     href={`/world-conqueror-4/generaux/${r.slug}`}
                     className="block bg-panel border border-border rounded-lg p-4 hover:border-gold transition-colors no-underline"
                   >
-                    <h3 className="text-gold2 font-bold text-base mb-1">{r.name}</h3>
-                    <p className="text-dim text-xs line-clamp-2">{r.shortDesc}</p>
+                    <h3 className="text-gold2 font-bold text-base mb-1">{params.locale === "fr" ? r.name : r.nameEn || r.name}</h3>
+                    <p className="text-dim text-xs line-clamp-2">{localizedUnitField(r as unknown as Record<string, unknown>, "shortDesc", params.locale)}</p>
                     <div className="text-muted text-[10px] uppercase tracking-widest mt-2">
                       {COUNTRY_FLAGS[r.country]} · Tier {r.rank}
                     </div>
@@ -514,7 +517,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
             },
             author: { "@type": "Organization", name: "EasyTech Wiki" },
             inLanguage: params.locale,
-            description: g.shortDesc,
+            description: localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", params.locale),
           }),
         }}
       />

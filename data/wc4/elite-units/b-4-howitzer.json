@@ -356,5 +356,9 @@
   "image": {
     "sprite": "/img/wc4/elites/317001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Soviet 203mm howitzer — one of the largest WWII calibers.",
+  "shortDescDe": "Sowjetische 203-mm-Haubitze — eines der größten Kaliber des Zweiten Weltkriegs.",
+  "longDescEn": "203mm Red Army howitzer in service from 1934. Used against fortifications and entrenched positions.",
+  "longDescDe": "203-mm-Haubitze der Roten Armee ab 1934. Eingesetzt gegen Befestigungen und eingegrabene Stellungen."
 }

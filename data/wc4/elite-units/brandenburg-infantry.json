@@ -308,5 +308,9 @@
   "image": {
     "sprite": "/img/wc4/elites/301001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "German WWII special forces — sabotage and infiltration.",
+  "shortDescDe": "Deutsche Spezialkräfte des Zweiten Weltkriegs — Sabotage und Infiltration.",
+  "longDescEn": "Represents the Brandenburg Division, German WWII special forces specialized in infiltration. Bonuses on varied terrain.",
+  "longDescDe": "Vertritt die Division Brandenburg, eine auf Infiltration spezialisierte deutsche Spezialeinheit des Zweiten Weltkriegs. Boni in wechselndem Gelände."
 }

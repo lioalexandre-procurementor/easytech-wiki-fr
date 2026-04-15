@@ -372,5 +372,9 @@
   "image": {
     "sprite": "/img/wc4/elites/336001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "American MBT — the benchmark for modern tanks.",
+  "shortDescDe": "Amerikanischer Kampfpanzer — Maßstab moderner Panzer.",
+  "longDescEn": "Gas turbine, 120mm smoothbore gun, Chobham composite armor. Benchmark elite unit for modern scenarios.",
+  "longDescDe": "Gasturbine, 120-mm-Glattrohrkanone, Chobham-Verbundpanzerung. Maßstäbe setzende Elite-Einheit in modernen Szenarien."
 }

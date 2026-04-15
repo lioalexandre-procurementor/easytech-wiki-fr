@@ -308,5 +308,9 @@
   "image": {
     "sprite": "/img/wc4/elites/312001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "American transport aircraft, paratrooper drops.",
+  "shortDescDe": "US-Transportflugzeug, Fallschirmjäger-Absetzung.",
+  "longDescEn": "Iconic Allied transport aircraft. Support unit: allows paratrooper drops behind enemy lines.",
+  "longDescDe": "Ikonisches alliiertes Transportflugzeug. Unterstützungseinheit: ermöglicht den Absprung von Fallschirmjägern hinter den feindlichen Linien."
 }

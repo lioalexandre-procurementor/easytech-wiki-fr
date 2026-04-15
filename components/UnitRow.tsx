@@ -10,7 +10,7 @@ import { localizedUnitField } from "@/lib/localized-copy";
 export function UnitRow({ unit, locale }: { unit: UnitData; locale?: string }) {
   const i = unit.stats.atk.length - 1;
   const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
-  const displayShortDesc = localizedUnitField(unit, "shortDesc", locale);
+  const displayShortDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", locale);
   return (
     <Link href={`/world-conqueror-4/unites-elite/${unit.slug}`}
       className="bg-panel border border-border rounded-lg p-3 px-4 grid items-center gap-4 hover:border-gold transition-colors no-underline"

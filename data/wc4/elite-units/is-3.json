@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/318001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Soviet heavy tank with an ogival turret — one of the best armor units.",
+  "shortDescDe": "Sowjetischer schwerer Panzer mit ogivalem Turm — eine der besten Panzereinheiten.",
+  "longDescEn": "The IS-3 appeared in late 1945. Roughly the equivalent of the King Tiger, which it sometimes surpasses in HP pool. Formidable 122mm gun.",
+  "longDescDe": "Der IS-3 kam Ende 1945 in den Einsatz. Etwa gleichwertig zum Königstiger, den er im HP-Pool teilweise übertrifft. Beeindruckende 122-mm-Kanone."
 }

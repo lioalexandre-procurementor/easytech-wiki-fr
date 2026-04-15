@@ -340,5 +340,9 @@
   "image": {
     "sprite": "/img/wc4/elites/328001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Soviet Typhoon-class ballistic-missile submarine — the largest submarine ever built.",
+  "shortDescDe": "Sowjetisches Atom-U-Boot der Typhoon-Klasse — das größte je gebaute U-Boot.",
+  "longDescEn": "Project 941 Akula (NATO reporting name Typhoon). Soviet nuclear ballistic-missile submarine. Strategic strike capability.",
+  "longDescDe": "Projekt 941 Akula (NATO-Codename Typhoon). Sowjetisches atomgetriebenes Raketen-U-Boot. Strategische Schlagkraft."
 }

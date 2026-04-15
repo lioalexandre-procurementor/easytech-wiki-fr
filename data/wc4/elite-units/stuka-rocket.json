@@ -332,5 +332,9 @@
   "image": {
     "sprite": "/img/wc4/elites/319001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Stuka zu Fuß — German 280/320mm rocket launcher, not to be confused with the aircraft.",
+  "shortDescDe": "Stuka zu Fuß — deutscher 280/320-mm-Raketenwerfer, nicht mit dem Flugzeug zu verwechseln.",
+  "longDescEn": "WWII rocket launcher mounted on an Sd.Kfz.251 half-track. Elite artillery with explosive damage.",
+  "longDescDe": "Raketenwerfer des Zweiten Weltkriegs auf einem Sd.Kfz.251-Halbkettenfahrzeug. Elite-Artillerie mit Explosivschaden."
 }

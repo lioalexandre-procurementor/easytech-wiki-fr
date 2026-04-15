@@ -1,13 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLocale } from "next-intl";
 import { Link } from "@/src/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 type NavItem = { href: string; label: string; disabled?: boolean };
 
+const DRAWER_LABELS: Record<string, {
+  open: string;
+  close: string;
+  nav: string;
+  menu: string;
+  language: string;
+}> = {
+  fr: { open: "Ouvrir le menu",  close: "Fermer le menu",  nav: "Menu de navigation", menu: "Menu", language: "Langue" },
+  en: { open: "Open menu",       close: "Close menu",      nav: "Navigation menu",    menu: "Menu", language: "Language" },
+  de: { open: "Menü öffnen",     close: "Menü schließen",  nav: "Navigationsmenü",    menu: "Menü", language: "Sprache" },
+};
+
 export default function MobileNavDrawer({ navItems }: { navItems: NavItem[] }) {
   const [open, setOpen] = useState(false);
+  const locale = useLocale();
+  const labels = DRAWER_LABELS[locale] ?? DRAWER_LABELS.en;
 
   useEffect(() => {
     if (!open) return;
@@ -28,7 +43,7 @@ export default function MobileNavDrawer({ navItems }: { navItems: NavItem[] }) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        aria-label="Ouvrir le menu"
+        aria-label={labels.open}
         aria-expanded={open}
         className="grid place-items-center w-11 h-11 rounded-md border border-border text-gold2 hover:bg-gold/10 cursor-pointer"
       >
@@ -53,7 +68,7 @@ export default function MobileNavDrawer({ navItems }: { navItems: NavItem[] }) {
         <div
           role="dialog"
           aria-modal="true"
-          aria-label="Menu de navigation"
+          aria-label={labels.nav}
           className="fixed inset-0 z-[60] flex"
           onClick={() => setOpen(false)}
         >
@@ -64,12 +79,12 @@ export default function MobileNavDrawer({ navItems }: { navItems: NavItem[] }) {
           >
             <div className="flex items-center justify-between px-4 py-3 border-b border-border">
               <span className="text-gold2 font-bold uppercase tracking-widest text-sm">
-                Menu
+                {labels.menu}
               </span>
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                aria-label="Fermer le menu"
+                aria-label={labels.close}
                 className="grid place-items-center w-11 h-11 rounded-md text-muted hover:text-gold2 hover:bg-gold/10 cursor-pointer text-2xl leading-none"
               >
                 ×
@@ -100,7 +115,7 @@ export default function MobileNavDrawer({ navItems }: { navItems: NavItem[] }) {
 
             <div className="mt-auto px-4 py-4 border-t border-border">
               <div className="text-muted text-[11px] font-semibold uppercase tracking-widest mb-2">
-                Langue
+                {labels.language}
               </div>
               <LocaleSwitcher />
             </div>

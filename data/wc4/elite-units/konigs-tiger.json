@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/308001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "German super heavy tank, one of the most powerful armor units in the game.",
+  "shortDescDe": "Deutscher Superschwerpanzer, eine der stärksten Panzereinheiten des Spiels.",
+  "longDescEn": "The King Tiger (Tiger II) is an Elite Force recruitable once per battle. On par with the IS-3, with formidable armor and an 88mm L/71 gun.",
+  "longDescDe": "Der Königstiger (Tiger II) ist eine Elite-Einheit, die einmal pro Schlacht rekrutiert werden kann. Auf Augenhöhe mit dem IS-3, mit beeindruckender Panzerung und 88-mm-L/71-Kanone."
 }

@@ -1,9 +1,129 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useLocale } from "next-intl";
 import type { Perk, UnitData } from "@/lib/types";
+import { localizedField } from "@/lib/localized-copy";
 
 const MILESTONES = [5, 9, 12];
+
+type UILabels = {
+  statsTitle: string;
+  attack: string;
+  defense: string;
+  hp: string;
+  movement: string;
+  range: string;
+  activeLoadout: string;
+  level: string;
+  skillCount: (n: number) => string;
+  noneUnlocked: string;
+  maxLevel: string;
+  veteran: string;
+  experienced: string;
+  trained: string;
+  novice: string;
+  currentLevel: string;
+  evolutionTitle: string;
+  milestone5: string;
+  milestone9: string;
+  milestone12: string;
+  loadoutHint: string;
+  chronHeading: string;
+  chronBody: string;
+  newBadge: string;
+  levelAria: (n: number) => string;
+};
+
+const LABELS: Record<string, UILabels> = {
+  fr: {
+    statsTitle: "Statistiques — Niveau",
+    attack: "Attaque",
+    defense: "Défense",
+    hp: "HP",
+    movement: "Mouvement",
+    range: "Portée",
+    activeLoadout: "🎯 Loadout actif — Niveau",
+    level: "Niveau",
+    skillCount: (n) => `${n} compétence${n > 1 ? "s" : ""}`,
+    noneUnlocked: "Aucune compétence débloquée à ce niveau.",
+    maxLevel: "Niveau maximum",
+    veteran: "Vétéran",
+    experienced: "Expérimenté",
+    trained: "Formé",
+    novice: "Débutant",
+    currentLevel: "Niveau actuel",
+    evolutionTitle: "🎚 Évolution niveau 1 → 12",
+    milestone5: `⭐ <b>Milestone niveau 5</b> : première compétence majeure débloquée. Premier gros power spike de l'unité.`,
+    milestone9: `⭐ <b>Milestone niveau 9</b> : la communauté NamuWiki recommande de prioriser ce palier pour la plupart des unités d'élite.`,
+    milestone12: `⭐ <b>Niveau maximum (12)</b> : pleine puissance, perks emblématiques actifs.`,
+    loadoutHint:
+      "💡 Ce bloc montre l'état réel de l'unité au niveau sélectionné. Les compétences remplacées par une version supérieure (ex. Niv.1 → Niv.2) sont automatiquement masquées. Le journal complet de progression est disponible plus bas.",
+    chronHeading: "📜 Historique complet des perks",
+    chronBody:
+      "Liste chronologique complète — inclut les versions remplacées. Pour l'état actuel du loadout, voir le bloc « Loadout actif » plus haut.",
+    newBadge: "✨ Nouveau",
+    levelAria: (n) => `Niveau ${n}`,
+  },
+  en: {
+    statsTitle: "Stats — Level",
+    attack: "Attack",
+    defense: "Defense",
+    hp: "HP",
+    movement: "Movement",
+    range: "Range",
+    activeLoadout: "🎯 Active loadout — Level",
+    level: "Level",
+    skillCount: (n) => `${n} skill${n > 1 ? "s" : ""}`,
+    noneUnlocked: "No skills unlocked at this level.",
+    maxLevel: "Max level",
+    veteran: "Veteran",
+    experienced: "Experienced",
+    trained: "Trained",
+    novice: "Novice",
+    currentLevel: "Current level",
+    evolutionTitle: "🎚 Level 1 → 12 progression",
+    milestone5: `⭐ <b>Level 5 milestone</b>: first major perk unlocked. First big power spike for the unit.`,
+    milestone9: `⭐ <b>Level 9 milestone</b>: the NamuWiki community recommends prioritizing this breakpoint for most elite units.`,
+    milestone12: `⭐ <b>Max level (12)</b>: full power, iconic perks active.`,
+    loadoutHint:
+      "💡 This block shows the unit's actual state at the selected level. Perks superseded by a higher version (e.g. Lv.1 → Lv.2) are automatically hidden. The full progression log is available further down.",
+    chronHeading: "📜 Full perk history",
+    chronBody:
+      "Full chronological list — includes superseded versions. For the current loadout state, see the \"Active loadout\" block above.",
+    newBadge: "✨ New",
+    levelAria: (n) => `Level ${n}`,
+  },
+  de: {
+    statsTitle: "Werte — Stufe",
+    attack: "Angriff",
+    defense: "Verteidigung",
+    hp: "HP",
+    movement: "Bewegung",
+    range: "Reichweite",
+    activeLoadout: "🎯 Aktive Ausrüstung — Stufe",
+    level: "Stufe",
+    skillCount: (n) => `${n} ${n > 1 ? "Fähigkeiten" : "Fähigkeit"}`,
+    noneUnlocked: "Auf dieser Stufe sind keine Fähigkeiten freigeschaltet.",
+    maxLevel: "Maximalstufe",
+    veteran: "Veteran",
+    experienced: "Erfahren",
+    trained: "Ausgebildet",
+    novice: "Anfänger",
+    currentLevel: "Aktuelle Stufe",
+    evolutionTitle: "🎚 Entwicklung Stufe 1 → 12",
+    milestone5: `⭐ <b>Meilenstein Stufe 5</b>: Erste große Fähigkeit freigeschaltet. Erster großer Power-Spike der Einheit.`,
+    milestone9: `⭐ <b>Meilenstein Stufe 9</b>: Die NamuWiki-Community empfiehlt, diesen Breakpoint für die meisten Elite-Einheiten zu priorisieren.`,
+    milestone12: `⭐ <b>Maximalstufe (12)</b>: volle Kraft, ikonische Boni aktiv.`,
+    loadoutHint:
+      "💡 Dieser Block zeigt den tatsächlichen Zustand der Einheit auf der gewählten Stufe. Fähigkeiten, die durch eine höhere Version ersetzt wurden (z. B. Stufe 1 → Stufe 2), werden automatisch ausgeblendet. Das vollständige Entwicklungsprotokoll findest du weiter unten.",
+    chronHeading: "📜 Vollständige Boni-Historie",
+    chronBody:
+      "Chronologische Gesamtliste — einschließlich überholter Versionen. Den aktuellen Loadout-Zustand findest du im Block „Aktive Ausrüstung“ oben.",
+    newBadge: "✨ Neu",
+    levelAria: (n) => `Stufe ${n}`,
+  },
+};
 
 /**
  * Strip a perk name of the trailing " Niv.N" / " Lv.N" / " Lvl.N" token that
@@ -50,6 +170,10 @@ function buildActiveLoadout(perks: Perk[], currentLevel: number): Perk[] {
 
 export function UnitDetailClient({ unit }: { unit: UnitData }) {
   const [lvl, setLvl] = useState(1);
+  const locale = useLocale();
+  const L = LABELS[locale] ?? LABELS.en;
+  const perkName = (p: Perk) => localizedField(p as unknown as Record<string, unknown>, "name", locale) || p.name;
+  const perkDesc = (p: Perk) => localizedField(p as unknown as Record<string, unknown>, "desc", locale) || p.desc;
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -70,15 +194,15 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
   );
 
   const tierLabel =
-    lvl >= 12 ? "Niveau maximum" :
-    lvl >= 9  ? "Vétéran" :
-    lvl >= 5  ? "Expérimenté" :
-    lvl >= 3  ? "Formé" : "Débutant";
+    lvl >= 12 ? L.maxLevel :
+    lvl >= 9  ? L.veteran :
+    lvl >= 5  ? L.experienced :
+    lvl >= 3  ? L.trained : L.novice;
 
   const milestoneNotes: Record<number, string> = {
-    5:  `⭐ <b>Milestone niveau 5</b> : première compétence majeure débloquée. Premier gros power spike de l'unité.`,
-    9:  `⭐ <b>Milestone niveau 9</b> : la communauté NamuWiki recommande de prioriser ce palier pour la plupart des unités d'élite.`,
-    12: `⭐ <b>Niveau maximum (12)</b> : pleine puissance, perks emblématiques actifs.`,
+    5:  L.milestone5,
+    9:  L.milestone9,
+    12: L.milestone12,
   };
 
   return (

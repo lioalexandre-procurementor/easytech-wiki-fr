@@ -316,5 +316,9 @@
   "image": {
     "sprite": "/img/wc4/elites/314001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "British King George V-class battleship, 356mm guns.",
+  "shortDescDe": "Britisches Schlachtschiff der King-George-V-Klasse, 356-mm-Geschütze.",
+  "longDescEn": "Took part in the hunt for the Bismarck before being sunk by Japanese aircraft in 1941. 14-inch guns.",
+  "longDescDe": "Nahm an der Jagd auf die Bismarck teil, bevor sie 1941 von japanischen Flugzeugen versenkt wurde. 14-Zoll-Geschütze."
 }

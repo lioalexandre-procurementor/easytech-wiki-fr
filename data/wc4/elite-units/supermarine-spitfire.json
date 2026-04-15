@@ -332,5 +332,9 @@
   "image": {
     "sprite": "/img/wc4/elites/310001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Legendary British fighter of the Battle of Britain.",
+  "shortDescDe": "Legendäres britisches Jagdflugzeug der Luftschlacht um England.",
+  "longDescEn": "Iconic British WWII fighter. More than 20,000 units produced.",
+  "longDescDe": "Ikonisches britisches Jagdflugzeug des Zweiten Weltkriegs. Mehr als 20 000 Einheiten produziert."
 }

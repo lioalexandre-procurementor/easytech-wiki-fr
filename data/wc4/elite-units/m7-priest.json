@@ -332,5 +332,9 @@
   "image": {
     "sprite": "/img/wc4/elites/304001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "American 105mm self-propelled howitzer on an M3 Lee chassis.",
+  "shortDescDe": "Amerikanische 105-mm-Selbstfahrlafette auf M3-Lee-Fahrgestell.",
+  "longDescEn": "WWII self-propelled howitzer. Elite artillery with high mobility, good for fire support in early WW2 scenarios.",
+  "longDescDe": "Selbstfahrhaubitze aus dem Zweiten Weltkrieg. Elite-Artillerie mit hoher Mobilität, geeignet für Feuerunterstützung in frühen WW2-Szenarien."
 }

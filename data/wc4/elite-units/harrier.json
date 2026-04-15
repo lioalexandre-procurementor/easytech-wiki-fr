@@ -396,5 +396,9 @@
   "image": {
     "sprite": "/img/wc4/elites/350001.png",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "British VTOL combat aircraft (vertical take-off and landing).",
+  "shortDescDe": "Britisches VTOL-Kampfflugzeug (Senkrechtstarter).",
+  "longDescEn": "The first operational VTOL combat aircraft. Famous for its role in the Falklands War.",
+  "longDescDe": "Das erste einsatzfähige VTOL-Kampfflugzeug. Berühmt für seine Rolle im Falklandkrieg."
 }

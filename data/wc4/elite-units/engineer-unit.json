@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/331001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Engineer unit — construction, repair, and mine clearing.",
+  "shortDescDe": "Pioniereinheit — Bau, Reparatur und Minenräumung.",
+  "longDescEn": "Builds fortifications, repairs friendly units, crosses minefields. Indispensable in siege operations.",
+  "longDescDe": "Errichtet Befestigungen, repariert befreundete Einheiten, überquert Minenfelder. Unverzichtbar bei Belagerungen."
 }

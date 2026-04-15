@@ -1,11 +1,26 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import SearchBar from "./SearchBar";
 import MobileNavDrawer from "./MobileNavDrawer";
 
+const BRAND_TAGLINE: Record<string, string> = {
+  fr: "La référence FR",
+  en: "The EN reference",
+  de: "Das DE Referenzwiki",
+};
+
+const LEADERBOARDS_LABEL: Record<string, string> = {
+  fr: "Classements",
+  en: "Leaderboards",
+  de: "Bestenlisten",
+};
+
 export async function TopBar() {
   const t = await getTranslations();
+  const locale = await getLocale();
+  const tagline = BRAND_TAGLINE[locale] ?? BRAND_TAGLINE.en;
+  const leaderboardsLabel = LEADERBOARDS_LABEL[locale] ?? LEADERBOARDS_LABEL.en;
 
   const navItems: Array<{ href: string; label: string; disabled?: boolean }> = [
     { href: "/world-conqueror-4", label: t("nav.wc4") },
@@ -13,7 +28,7 @@ export async function TopBar() {
     { href: "#", label: "Great Conqueror Rome", disabled: true },
     { href: "/world-conqueror-4/mises-a-jour", label: t("nav.updates") },
     { href: "/world-conqueror-4/guides", label: t("nav.guides") },
-    { href: "#", label: "Classements", disabled: true },
+    { href: "#", label: leaderboardsLabel, disabled: true },
   ];
 
   return (
@@ -32,7 +47,7 @@ export async function TopBar() {
           <div className="hidden sm:block">
             <div className="text-gold2 leading-none">{t("site.shortTitle")}</div>
             <div className="text-muted text-[11px] font-semibold uppercase tracking-widest mt-0.5">
-              La référence FR
+              {tagline}
             </div>
           </div>
         </Link>

@@ -428,5 +428,9 @@
   "image": {
     "sprite": "/img/wc4/elites/351001.png",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Russian Flanker multirole fighter — 4.5G air superiority.",
+  "shortDescDe": "Russischer Flanker-Mehrzweckjäger — Luftüberlegenheit der 4,5. Generation.",
+  "longDescEn": "4.5-generation multirole fighter derived from the Su-27 Flanker. Thrust vectoring, powerful radar, R-77 missiles.",
+  "longDescDe": "Mehrzweck-Kampfflugzeug der 4,5. Generation, vom Su-27 Flanker abgeleitet. Schubvektorsteuerung, leistungsstarkes Radar, R-77-Raketen."
 }

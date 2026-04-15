@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/334001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Japanese Kagero-class destroyer — \"the lucky destroyer\".",
+  "shortDescDe": "Japanischer Zerstörer der Kagero-Klasse — „der glückliche Zerstörer“.",
+  "longDescEn": "Famous for surviving almost every major Pacific battle. Very high evasion and speed.",
+  "longDescDe": "Berühmt dafür, fast jede größere Pazifikschlacht überlebt zu haben. Sehr hohe Ausweichrate und Geschwindigkeit."
 }

@@ -8,6 +8,7 @@ import { StatsGrid } from "@/components/general/StatsGrid";
 import { buildPremiumTrainingView } from "@/lib/general-trained";
 import { getAllGeneralSlugs, getGeneral, getSkill } from "@/lib/units";
 import { splitGeneralName } from "@/lib/general-name";
+import { localizedUnitField } from "@/lib/localized-copy";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
@@ -407,7 +408,7 @@ export default async function PremiumTrainingPage({
             },
             author: { "@type": "Organization", name: "EasyTech Wiki" },
             inLanguage: locale,
-            description: g.shortDesc,
+            description: localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", locale),
           }),
         }}
       />

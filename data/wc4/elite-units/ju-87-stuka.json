@@ -316,5 +316,9 @@
   "image": {
     "sprite": "/img/wc4/elites/311001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "German dive bomber — the siren that terrorized Europe.",
+  "shortDescDe": "Deutscher Sturzkampfbomber — die Sirene, die Europa in Angst versetzte.",
+  "longDescEn": "German dive bomber recognizable by its inverted gull wings and Jericho siren. Bonus damage against ground units. Not to be confused with the Stuka zu Fuß rocket artillery.",
+  "longDescDe": "Deutscher Sturzkampfbomber, erkennbar an seinen Knickflügeln und der Jericho-Sirene. Bonus-Schaden gegen Bodeneinheiten. Nicht zu verwechseln mit der Raketenartillerie Stuka zu Fuß."
 }

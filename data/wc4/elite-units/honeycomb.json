@@ -348,5 +348,9 @@
   "image": {
     "sprite": "/img/wc4/elites/347001.png",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "Secondary elite tank unlocked through an event — details to verify in-game.",
+  "shortDescDe": "Sekundärer Elite-Panzer, per Event freigeschaltet — Details im Spiel zu prüfen.",
+  "longDescEn": "Listed on NamuWiki's WC4 elite tanks. Exact origin and stats to be confirmed in-game.",
+  "longDescDe": "Auf NamuWikis Liste der WC4-Elite-Panzer aufgeführt. Genaue Herkunft und Werte im Spiel noch zu bestätigen."
 }

@@ -372,5 +372,9 @@
   "image": {
     "sprite": "/img/wc4/elites/332001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "French 155mm self-propelled gun on an AMX-30 chassis.",
+  "shortDescDe": "Französische 155-mm-Selbstfahrlafette auf AMX-30-Fahrgestell.",
+  "longDescEn": "GCT AuF1: 155mm self-propelled howitzer developed in the 1970s. Good mobility and range.",
+  "longDescDe": "GCT AuF1: 155-mm-Selbstfahrhaubitze, entwickelt in den 1970er Jahren. Gute Mobilität und Reichweite."
 }

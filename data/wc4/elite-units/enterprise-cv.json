@@ -364,5 +364,9 @@
   "image": {
     "sprite": "/img/wc4/elites/323001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "The most decorated American aircraft carrier of WWII.",
+  "shortDescDe": "Der am höchsten dekorierte amerikanische Flugzeugträger des Zweiten Weltkriegs.",
+  "longDescEn": "Yorktown-class aircraft carrier, \"The Big E\". Most decorated US Navy ship of WWII (20 Battle Stars).",
+  "longDescDe": "Flugzeugträger der Yorktown-Klasse, „The Big E“. Am höchsten dekoriertes US-Navy-Schiff des Zweiten Weltkriegs (20 Battle Stars)."
 }

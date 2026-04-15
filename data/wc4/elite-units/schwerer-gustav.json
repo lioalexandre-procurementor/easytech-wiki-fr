@@ -348,5 +348,9 @@
   "image": {
     "sprite": "/img/wc4/elites/305001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "The largest railway gun ever built — the ultimate siege artillery.",
+  "shortDescDe": "Das größte jemals gebaute Eisenbahngeschütz — die ultimative Belagerungsartillerie.",
+  "longDescEn": "800mm railway gun. Devastating damage but near-zero mobility. Siege use only.",
+  "longDescDe": "800-mm-Eisenbahngeschütz. Verheerender Schaden, aber kaum Mobilität. Nur im Belagerungseinsatz."
 }

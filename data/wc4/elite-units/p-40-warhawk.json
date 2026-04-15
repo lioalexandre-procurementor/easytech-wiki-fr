@@ -324,5 +324,9 @@
   "image": {
     "sprite": "/img/wc4/elites/325001.webp",
     "lvl12": null
-  }
+  },
+  "shortDescEn": "American fighter made famous by the Flying Tigers in China.",
+  "shortDescDe": "Amerikanisches Jagdflugzeug, berühmt durch die Flying Tigers in China.",
+  "longDescEn": "Early-WWII American fighter. Famous for the shark-mouth nose art of the Flying Tigers (AVG).",
+  "longDescDe": "Amerikanisches Jagdflugzeug des frühen Zweiten Weltkriegs. Berühmt für das Haifischmaul-Nose-Art der Flying Tigers (AVG)."
 }
