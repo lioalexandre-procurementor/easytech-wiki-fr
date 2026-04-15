@@ -87,58 +87,48 @@ export default async function LocaleLayout({
           update them via gtag('consent', 'update', ...) based on the user's
           choice (accept / reject / customise).
         */}
-        <Script id="gtag-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            window.gtag = gtag;
-            gtag('consent', 'default', {
-              'ad_storage': 'denied',
-              'ad_user_data': 'denied',
-              'ad_personalization': 'denied',
-              'analytics_storage': 'denied',
-              'functionality_storage': 'granted',
-              'security_storage': 'granted',
-              'wait_for_update': 500
-            });
-            gtag('set', 'ads_data_redaction', true);
-            gtag('set', 'url_passthrough', true);
-          `}
-        </Script>
         {/*
-          AdSense loader. Placed as a raw <script> in <head> so that it
-          appears in the server-rendered HTML exactly as Google requires
-          for site verification. Consent Mode (above) runs first and
-          ensures no ad cookies are dropped before user interaction.
+          Google Consent Mode v2 + GA4 + AdSense.
+
+          Rendered as raw <script> tags (not next/script) so they are
+          inlined into the initial server HTML in strict order and execute
+          before any React hydration. next/script with beforeInteractive
+          serializes children into self.__next_s which is flushed by the
+          Next.js runtime — that created a race with the async gtm.js loader
+          and caused GA4 config to fire unreliably.
+
+          Order matters:
+            1. Consent defaults (dataLayer + gtag() stub + denied state)
+            2. GA loader tag (async fetch)
+            3. gtag('config', ...) page_view — pushed to dataLayer, processed
+               by gtm.js as soon as it finishes loading
+            4. AdSense loader (independent, needs head placement for Google
+               site verification)
         */}
-        {ADSENSE_CLIENT && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
-            crossOrigin="anonymous"
-          />
-        )}
-        {/*
-          Google Analytics 4. Loaded only when NEXT_PUBLIC_GA_ID is set.
-          analytics_storage is "denied" by default (see Consent Mode block
-          above), so GA4 will fire pings in cookieless mode until the user
-          grants consent via Funding Choices. No localStorage, no _ga cookie
-          pre-consent. Google will still give you aggregated traffic data
-          through modelled conversions.
-        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}window.gtag = gtag;gtag('consent', 'default', {'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied','functionality_storage':'granted','security_storage':'granted','wait_for_update':500});gtag('set','ads_data_redaction',true);gtag('set','url_passthrough',true);`,
+          }}
+        />
         {GA_ID && (
           <>
             <script
               async
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
             />
-            <Script id="gtag-init" strategy="afterInteractive">
-              {`
-                gtag('js', new Date());
-                gtag('config', '${GA_ID}', { 'anonymize_ip': true });
-              `}
-            </Script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `gtag('js', new Date());gtag('config', '${GA_ID}', {'anonymize_ip':true});`,
+              }}
+            />
           </>
+        )}
+        {ADSENSE_CLIENT && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+          />
         )}
       </head>
       <body>
