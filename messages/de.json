@@ -59,7 +59,7 @@
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki im Aufbau",
     "underConstructionNote": "Die Statistiken werden mit der aktuellen Spielversion abgeglichen (WC4 v1.24.2). Redaktionelle Inhalte (Beschreibungen, Boni, Strategie) werden schrittweise ergänzt.",
-    "exploreByCategory": "Nach Kategorie durchstöbern",
+    "exploreByCategory": "Elite-Einheiten nach Kategorie durchstöbern",
     "mostViewed": "Beliebteste Elite-Einheiten",
     "unitsCountSuffix": "Einheiten"
   },
@@ -265,6 +265,41 @@
       "captchaFailed": "Anti-Bot-Verifizierung fehlgeschlagen. Bitte erneut versuchen.",
       "submitFailed": "Fehler beim Übermitteln deiner Stimme.",
       "connectionLost": "Verbindung verloren. Bitte gleich erneut versuchen."
+    }
+  },
+  "bestGeneralVote": {
+    "heading": "🗳 Bester WC4-General",
+    "tagline": "Stimme für deinen Lieblingsgeneral. Eine Stimme pro Besucher, 30 Tage gültig, per Cloudflare Turnstile verifiziert.",
+    "voteCta": "Jetzt abstimmen",
+    "thanksVoted": "✓ Danke — deine Stimme wurde gezählt",
+    "placeholderBadge": "Platzhalter",
+    "placeholderFooter": "Vorläufiges Podium bis {threshold} Stimmen · {total, plural, one {# Stimme} other {# Stimmen}} bisher",
+    "totalVotes": "{total, plural, one {# Stimme insgesamt} other {# Stimmen insgesamt}}",
+    "voteCount": "{count, plural, one {# Stimme} other {# Stimmen}}",
+    "notActiveYet": "Die Abstimmung ist noch nicht aktiv.",
+    "modal": {
+      "title": "Dein Lieblingsgeneral",
+      "close": "Schließen",
+      "searchPlaceholder": "🔎 General suchen…",
+      "noResults": "Kein General gefunden.",
+      "turnstileMissing": "(Turnstile nicht konfiguriert — Verifizierung im Dev-Modus deaktiviert)",
+      "cancel": "Abbrechen",
+      "submitting": "Wird gesendet...",
+      "confirm": "Stimme bestätigen",
+      "anonymousNote": "Anonyme Stimme, 30 Tage gültig · ",
+      "policyLink": "Richtlinie"
+    },
+    "errors": {
+      "captchaMissing": "Bitte schließe die Anti-Bot-Verifizierung ab.",
+      "alreadyVoted": "Du hast bereits für den besten General abgestimmt (30 Tage gültig).",
+      "captchaFailed": "Anti-Bot-Verifizierung fehlgeschlagen. Bitte erneut versuchen.",
+      "submitFailed": "Fehler beim Übermitteln deiner Stimme.",
+      "connectionLost": "Verbindung verloren. Bitte gleich erneut versuchen."
+    },
+    "landingTeaser": {
+      "heading": "🗳 Stimme für deinen Lieblingsgeneral!",
+      "body": "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Wer verdient den ersten Platz? Mach beim Community-Ranking mit.",
+      "cta": "Jetzt abstimmen →"
     }
   },
   "scorpionPage": {

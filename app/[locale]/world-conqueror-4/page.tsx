@@ -3,11 +3,20 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
 import { AdSlot } from "@/components/AdSlot";
+import BestGeneralVote from "@/components/BestGeneralVote";
 import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, getCategoryMeta } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+
+const BEST_GENERAL_PLACEHOLDER: string[] = [
+  "manstein",
+  "guderian",
+  "rokossovsky",
+  "simo-hayha",
+  "de-gaulle",
+];
 
 export async function generateMetadata({
   params: { locale },
@@ -106,13 +115,26 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
           <h2 className="text-xl mb-4 mt-8">{t("wc4Hub.exploreByCategory")}</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {counts.map(c => (
-              <Link key={c.key} href={`/world-conqueror-4/unites-elite?cat=${c.key}` as any}
+              <Link key={c.key} href={`/world-conqueror-4/unites-elite#${c.key}` as any}
                 className="bg-panel border border-border rounded-lg p-4 hover:border-gold transition-colors no-underline block">
                 <div className="text-2xl mb-2">{c.icon}</div>
                 <h3 className="text-gold2 font-bold text-base mb-1">{c.plural}</h3>
                 <div className="text-muted text-[11px] uppercase tracking-widest">{c.count} {t("wc4Hub.unitsCountSuffix")}</div>
               </Link>
             ))}
+          </div>
+
+          <div className="mt-8">
+            <BestGeneralVote
+              generals={generals.map((g) => ({
+                slug: g.slug,
+                name: g.name,
+                nameEn: g.nameEn,
+                rank: g.rank ?? null,
+                country: g.country ?? null,
+              }))}
+              placeholderTop5={BEST_GENERAL_PLACEHOLDER}
+            />
           </div>
 
           <AdSlot name="listingBottom" label={t("ui.adSlot")} className="my-6" />

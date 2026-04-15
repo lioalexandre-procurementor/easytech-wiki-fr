@@ -17,6 +17,9 @@ type HomeCopy = {
   available: string;
   soon: string;
   explore: string;
+  voteHeading: string;
+  voteBody: string;
+  voteCta: string;
 };
 
 const COPY: Record<string, HomeCopy> = {
@@ -29,6 +32,10 @@ const COPY: Record<string, HomeCopy> = {
     available: "● Disponible",
     soon: "○ Bientôt",
     explore: "Explorer →",
+    voteHeading: "🗳 Votez pour votre général préféré !",
+    voteBody:
+      "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Qui mérite la première place ? Participez au classement communautaire.",
+    voteCta: "Voter maintenant →",
   },
   en: {
     h1: "The English Wiki for EasyTech Games",
@@ -39,6 +46,10 @@ const COPY: Record<string, HomeCopy> = {
     available: "● Available",
     soon: "○ Soon",
     explore: "Explore →",
+    voteHeading: "🗳 Vote for your favorite general!",
+    voteBody:
+      "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Who deserves the top spot? Join the community ranking.",
+    voteCta: "Vote now →",
   },
   de: {
     h1: "Das deutsche Wiki für EasyTech-Spiele",
@@ -49,6 +60,10 @@ const COPY: Record<string, HomeCopy> = {
     available: "● Verfügbar",
     soon: "○ Bald",
     explore: "Entdecken →",
+    voteHeading: "🗳 Stimme für deinen Lieblingsgeneral!",
+    voteBody:
+      "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Wer verdient den ersten Platz? Mach beim Community-Ranking mit.",
+    voteCta: "Jetzt abstimmen →",
   },
 };
 
@@ -70,6 +85,24 @@ export default function Home({ params }: { params: { locale: string } }) {
             {c.cta}
           </Link>
         </section>
+
+        <Link
+          href={`/${params.locale}/world-conqueror-4#best-general-vote`}
+          className="block bg-panel border rounded-lg p-5 mb-8 no-underline transition-colors hover:border-gold"
+          style={{ borderColor: "rgba(212,164,74,0.4)" }}
+        >
+          <div className="flex items-center justify-between gap-4 flex-wrap">
+            <div className="min-w-0">
+              <h3 className="text-gold2 font-extrabold text-base mb-1">
+                {c.voteHeading}
+              </h3>
+              <p className="text-dim text-sm max-w-2xl">{c.voteBody}</p>
+            </div>
+            <span className="text-gold2 font-bold text-sm shrink-0 whitespace-nowrap">
+              {c.voteCta}
+            </span>
+          </div>
+        </Link>
 
         <h2 className="text-xl mb-4">{c.gamesHeading}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">

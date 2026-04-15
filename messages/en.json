@@ -59,7 +59,7 @@
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki under construction",
     "underConstructionNote": "stats are verified against the current game version (WC4 v1.24.2). Editorial content (descriptions, bonuses, strategy) is being progressively enriched.",
-    "exploreByCategory": "Explore by category",
+    "exploreByCategory": "Explore elite units by category",
     "mostViewed": "Most viewed elite units",
     "unitsCountSuffix": "units"
   },
@@ -265,6 +265,41 @@
       "captchaFailed": "Anti-bot verification failed. Please try again.",
       "submitFailed": "Error submitting your vote.",
       "connectionLost": "Connection lost. Please try again in a moment."
+    }
+  },
+  "bestGeneralVote": {
+    "heading": "🗳 Best WC4 General",
+    "tagline": "Vote for your favorite general. One vote per visitor, valid 30 days, verified via Cloudflare Turnstile.",
+    "voteCta": "Vote now",
+    "thanksVoted": "✓ Thanks — your vote is counted",
+    "placeholderBadge": "Placeholder",
+    "placeholderFooter": "Interim podium until {threshold} votes · {total, plural, one {# vote} other {# votes}} received",
+    "totalVotes": "{total, plural, one {# vote total} other {# votes total}}",
+    "voteCount": "{count, plural, one {# vote} other {# votes}}",
+    "notActiveYet": "Voting is not active yet.",
+    "modal": {
+      "title": "Your favorite general",
+      "close": "Close",
+      "searchPlaceholder": "🔎 Search for a general…",
+      "noResults": "No general matches.",
+      "turnstileMissing": "(Turnstile not configured — verification disabled in dev)",
+      "cancel": "Cancel",
+      "submitting": "Submitting...",
+      "confirm": "Confirm my vote",
+      "anonymousNote": "Anonymous vote, valid 30 days · ",
+      "policyLink": "Policy"
+    },
+    "errors": {
+      "captchaMissing": "Please complete the anti-bot verification.",
+      "alreadyVoted": "You have already voted for the best general (valid 30 days).",
+      "captchaFailed": "Anti-bot verification failed. Please try again.",
+      "submitFailed": "Error submitting your vote.",
+      "connectionLost": "Connection lost. Please try again in a moment."
+    },
+    "landingTeaser": {
+      "heading": "🗳 Vote for your favorite general!",
+      "body": "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Who deserves the top spot? Join the community ranking.",
+      "cta": "Vote now →"
     }
   },
   "scorpionPage": {

@@ -59,7 +59,7 @@
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki en construction",
     "underConstructionNote": "les statistiques sont vérifiées sur la version actuelle du jeu (WC4 v1.24.2). Les fiches éditoriales (descriptions, bonus, stratégie) sont en cours d'enrichissement.",
-    "exploreByCategory": "Explorer par catégorie",
+    "exploreByCategory": "Explorer les unités d'élite par catégorie",
     "mostViewed": "Unités d'élite les plus consultées",
     "unitsCountSuffix": "unités"
   },
@@ -265,6 +265,41 @@
       "captchaFailed": "Vérification anti-bot échouée. Réessayez.",
       "submitFailed": "Erreur lors de l'envoi du vote.",
       "connectionLost": "Connexion perdue. Réessayez dans un instant."
+    }
+  },
+  "bestGeneralVote": {
+    "heading": "🗳 Le meilleur général de WC4",
+    "tagline": "Votez pour votre général préféré. Un vote par personne, valable 30 jours, vérifié par Cloudflare Turnstile.",
+    "voteCta": "Voter maintenant",
+    "thanksVoted": "✓ Merci — votre vote est compté",
+    "placeholderBadge": "Placeholder",
+    "placeholderFooter": "Podium provisoire jusqu''à {threshold} votes · {total, plural, one {# vote} other {# votes}} reçu(s)",
+    "totalVotes": "{total, plural, one {# vote au total} other {# votes au total}}",
+    "voteCount": "{count, plural, one {# vote} other {# votes}}",
+    "notActiveYet": "Le vote n'est pas encore actif.",
+    "modal": {
+      "title": "Votre général préféré",
+      "close": "Fermer",
+      "searchPlaceholder": "🔎 Rechercher un général…",
+      "noResults": "Aucun général ne correspond.",
+      "turnstileMissing": "(Turnstile non configuré — vérification désactivée en dev)",
+      "cancel": "Annuler",
+      "submitting": "Envoi...",
+      "confirm": "Confirmer mon vote",
+      "anonymousNote": "Vote anonyme, valable 30 jours · ",
+      "policyLink": "Politique"
+    },
+    "errors": {
+      "captchaMissing": "Merci de compléter la vérification anti-bot.",
+      "alreadyVoted": "Vous avez déjà voté pour le meilleur général (valable 30 jours).",
+      "captchaFailed": "Vérification anti-bot échouée. Réessayez.",
+      "submitFailed": "Erreur lors de l'envoi du vote.",
+      "connectionLost": "Connexion perdue. Réessayez dans un instant."
+    },
+    "landingTeaser": {
+      "heading": "🗳 Votez pour votre général préféré !",
+      "body": "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Qui mérite la première place ? Participez au classement communautaire.",
+      "cta": "Voter maintenant →"
     }
   },
   "scorpionPage": {
