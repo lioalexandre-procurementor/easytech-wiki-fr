@@ -1,7 +1,7 @@
 {
   "slug": "hawkeye",
   "name": "Hawkeye",
-  "nameEn": null,
+  "nameEn": "Hawkeye Force",
   "category": "infantry",
   "faction": "standard",
   "country": "US",
@@ -12,62 +12,104 @@
   "longDesc": "Spécialisée dans la reconnaissance : portée de vision étendue et bonus d'esquive, utile en terrain inconnu.",
   "stats": {
     "atk": [
-      40,
-      45,
-      49,
-      54,
-      58,
-      63,
-      67,
+      52,
+      52,
+      60,
+      60,
       72,
-      76,
-      81,
-      85,
-      90
+      72,
+      79,
+      79,
+      89,
+      89,
+      89,
+      96
     ],
     "def": [
-      40,
-      45,
-      49,
-      54,
-      58,
-      63,
-      67,
-      72,
-      76,
-      81,
-      85,
-      90
+      8,
+      16,
+      16,
+      16,
+      16,
+      23,
+      23,
+      23,
+      23,
+      28,
+      28,
+      28
     ],
     "hp": [
-      100,
-      110,
-      120,
-      130,
-      140,
-      150,
-      160,
-      170,
-      180,
-      190,
-      200,
-      210
+      195,
+      195,
+      195,
+      285,
+      285,
+      285,
+      285,
+      375,
+      375,
+      375,
+      465,
+      465
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "atkMin": [
+      46,
+      46,
+      54,
+      54,
+      66,
+      66,
+      73,
+      73,
+      83,
+      83,
+      83,
+      90
+    ],
+    "atkMax": [
+      52,
+      52,
+      60,
+      60,
+      72,
+      72,
+      79,
+      79,
+      89,
+      89,
+      89,
+      96
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,99 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Commando de forêt",
+      "desc": "Dégâts à l'ennemi +75% en combat en jungle",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "🎯",
+      "name": "Tireur d'élite",
+      "desc": "Dégâts aux unités d'infanterie +75%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques",
+      "desc": "Dégâts des coups critiques +20%",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.2",
+      "desc": "Dégâts des coups critiques +30%",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🌲",
-      "name": "Embuscade",
-      "desc": "+20% dégâts en terrain forestier ou urbain.",
+      "icon": "⭐",
+      "name": "Tir de précision",
+      "desc": "Probabilité de coup critique +40% pendant 1 tour — récupération en 2 tours",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
+      "lvl": 6,
+      "type": "passive",
       "icon": "🎯",
-      "name": "Capacité signature",
-      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
+      "name": "Frappe au dépourvu",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 2% de critique en excès, +1% de dégâts",
+      "milestone": false
+    },
+    {
+      "lvl": 7,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.3",
+      "desc": "Dégâts des coups critiques +40%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🛡",
-      "name": "Vétérance",
-      "desc": "+10% esquive permanent.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Tir de précision Niv.2",
+      "desc": "Probabilité de coup critique +70% pendant 1 tour — récupération en 2 tours",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu Niv.2",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.4",
+      "desc": "Dégâts des coups critiques +50%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Tir de précision Niv.3",
+      "desc": "Probabilité de coup critique +90% pendant 1 tour — récupération en 2 tours",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu Niv.3",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +242,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 302001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 2650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 7150,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 15750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 18900,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 22680,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 27200,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 32650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/302001.webp",
+    "lvl12": null
+  }
 }

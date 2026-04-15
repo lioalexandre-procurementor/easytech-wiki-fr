@@ -101,7 +101,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "🛡",
       "name": "Blindage renforcé",
       "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
@@ -117,7 +117,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⚔",
       "name": "Charge blindée",
       "desc": "Attaque supplémentaire après avoir éliminé une unité.",
@@ -125,10 +125,10 @@
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
       "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
+      "desc": "Compétence final à valider in-game (capacité signature).",
       "milestone": true
     }
   ],

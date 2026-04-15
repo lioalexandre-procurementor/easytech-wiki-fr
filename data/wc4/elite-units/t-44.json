@@ -1,7 +1,7 @@
 {
   "slug": "t-44",
   "name": "T-44",
-  "nameEn": null,
+  "nameEn": "T-44",
   "category": "tank",
   "faction": "standard",
   "country": "RU",
@@ -12,62 +12,104 @@
   "longDesc": "Développé en 1944 pour remplacer le T-34, le T-44 est une unité d'élite WC4 classée char médian avancé. Combine mobilité et blindage.",
   "stats": {
     "atk": [
-      60,
-      66,
-      73,
-      79,
-      85,
-      92,
-      98,
-      105,
-      111,
-      117,
-      124,
-      130
+      58,
+      58,
+      67,
+      67,
+      76,
+      76,
+      84,
+      84,
+      93,
+      93,
+      93,
+      102
     ],
     "def": [
-      50,
-      56,
-      63,
-      69,
-      75,
-      82,
-      88,
-      95,
-      101,
-      107,
-      114,
-      120
+      12,
+      21,
+      21,
+      21,
+      21,
+      29,
+      29,
+      29,
+      29,
+      37,
+      37,
+      37
     ],
     "hp": [
-      120,
-      131,
-      142,
-      153,
-      164,
-      175,
-      185,
-      196,
-      207,
-      218,
-      229,
-      240
+      375,
+      375,
+      375,
+      465,
+      465,
+      465,
+      465,
+      555,
+      555,
+      555,
+      645,
+      645
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      44,
+      44,
+      53,
+      53,
+      62,
+      62,
+      70,
+      70,
+      79,
+      79,
+      79,
+      88
+    ],
+    "atkMax": [
+      58,
+      58,
+      67,
+      67,
+      76,
+      76,
+      84,
+      84,
+      93,
+      93,
+      93,
+      102
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,58 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche forcée",
+      "desc": "Consommation de mobilité sur terrain difficile -35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
+      "milestone": true
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
-      "milestone": false
+      "icon": "🛡️",
+      "name": "Blindage incliné",
+      "desc": "60% de chances de réduire les dégâts reçus de 50% pendant 1 tour. Récupération en 2 tours.",
+      "milestone": true
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage incliné Niv.2",
+      "desc": "80% de chances de réduire les dégâts reçus de 80% pendant 1 tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage incliné Niv.3",
+      "desc": "100% de chances de réduire les dégâts reçus de 100% pendant 1 tour. Récupération en 2 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
+      "name": "Déviation balistique",
+      "desc": "En subissant des dégâts d'une unité terrestre, 50% de chances de transférer ces dégâts à une cible dans 1 case (hors unité attaquante)",
       "milestone": true
     }
   ],
@@ -152,9 +202,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 307001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1500,
+      "costEnergy": 0,
+      "costTech": 60,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7150,
+      "costEnergy": 0,
+      "costTech": 180,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 12400,
+      "costEnergy": 0,
+      "costTech": 340,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 30000,
+      "costEnergy": 0,
+      "costTech": 650,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 36000,
+      "costEnergy": 0,
+      "costTech": 780,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 43200,
+      "costEnergy": 0,
+      "costTech": 930,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 51840,
+      "costEnergy": 0,
+      "costTech": 1120,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 62200,
+      "costEnergy": 0,
+      "costTech": 1340,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/307001.webp",
+    "lvl12": null
+  }
 }

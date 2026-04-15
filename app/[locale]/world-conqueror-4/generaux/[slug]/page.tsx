@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
@@ -79,10 +80,10 @@ const QUALITY_META: Record<
   GeneralQuality,
   { label: string; icon: string; color: string; slots: number }
 > = {
-  bronze:  { label: "Bronze",  icon: "🥉", color: "#cd7f32", slots: 3 },
-  silver:  { label: "Silver",  icon: "🥈", color: "#c0c0c0", slots: 4 },
-  gold:    { label: "Gold",    icon: "🥇", color: "#d4a44a", slots: 5 },
-  marshal: { label: "Marshal", icon: "⭐", color: "#ff6b6b", slots: 5 },
+  bronze:  { label: "Bronze",   icon: "🥉", color: "#cd7f32", slots: 3 },
+  silver:  { label: "Argent",   icon: "🥈", color: "#c0c0c0", slots: 4 },
+  gold:    { label: "Or",       icon: "🥇", color: "#d4a44a", slots: 5 },
+  marshal: { label: "Maréchal", icon: "⭐", color: "#ff6b6b", slots: 5 },
 };
 
 
@@ -106,7 +107,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
     .filter((u): u is NonNullable<typeof u> => u !== null);
 
   const ACQUISITION_LABEL: Record<string, { icon: string; label: string }> = {
-    starter: { icon: "🥇", label: "Starter" },
+    starter: { icon: "🥇", label: "Initial" },
     medals: { icon: "🎖", label: "Médailles" },
     "iron-cross": { icon: "✠", label: "Croix de fer" },
     coin: { icon: "🪙", label: "Pièces" },
@@ -164,7 +165,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
           {/* HEADER */}
           <div className="grid md:grid-cols-[220px_1fr] gap-7 bg-panel border border-border rounded-lg p-6 mb-6">
             <div
-              className="rounded-lg border-2 h-[220px] grid place-items-center relative"
+              className="rounded-lg border-2 h-[220px] grid place-items-center relative overflow-hidden"
               style={{
                 borderColor: scorpion ? "#c8372d" : quality.color,
                 background: scorpion
@@ -172,17 +173,28 @@ export default async function GeneralPage({ params }: { params: { locale: string
                   : "linear-gradient(135deg, #1a2230, #12161e)",
               }}
             >
-              <div
-                className="w-28 h-28 rounded-full grid place-items-center text-4xl font-extrabold"
-                style={{
-                  background: scorpion
-                    ? "linear-gradient(135deg, #4a0f12, #c8372d)"
-                    : `linear-gradient(135deg, #8b7d4a, ${quality.color})`,
-                  color: scorpion ? "#fff" : "#0f1419",
-                }}
-              >
-                {scorpion ? "🦂" : g.name.split(" ").map((s) => s[0]).slice(0, 2).join("")}
-              </div>
+              {g.image?.photo ? (
+                <Image
+                  src={g.image.photo}
+                  alt={g.name}
+                  fill
+                  sizes="220px"
+                  className="object-contain p-2"
+                  priority
+                />
+              ) : (
+                <div
+                  className="w-28 h-28 rounded-full grid place-items-center text-4xl font-extrabold"
+                  style={{
+                    background: scorpion
+                      ? "linear-gradient(135deg, #4a0f12, #c8372d)"
+                      : `linear-gradient(135deg, #8b7d4a, ${quality.color})`,
+                    color: scorpion ? "#fff" : "#0f1419",
+                  }}
+                >
+                  {scorpion ? "🦂" : g.name.split(" ").map((s) => s[0]).slice(0, 2).join("")}
+                </div>
+              )}
               <div className="absolute top-2.5 right-2.5">
                 <span
                   className={`text-xs font-extrabold uppercase tracking-widest px-2.5 py-1 rounded ${
@@ -216,7 +228,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
                 <Tag>🎖 Tier {g.rank}</Tag>
                 <Tag accent>{quality.icon} {quality.label} · {quality.slots} slots</Tag>
                 <Tag accent>{acqPillText}</Tag>
-                {g.hasTrainingPath && <Tag accent>⚔ Training Épées/Sceptres</Tag>}
+                {g.hasTrainingPath && <Tag accent>⚔ Entraînement Épées/Sceptres</Tag>}
                 {replaceableCount > 0 && (
                   <Tag accent>🎓 {replaceableCount} slot{replaceableCount > 1 ? "s" : ""} libre{replaceableCount > 1 ? "s" : ""}</Tag>
                 )}

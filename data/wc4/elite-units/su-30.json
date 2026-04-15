@@ -1,7 +1,7 @@
 {
   "slug": "su-30",
   "name": "Sukhoi Su-30",
-  "nameEn": null,
+  "nameEn": "Sukhoi Su-30V",
   "category": "airforce",
   "faction": "standard",
   "country": "RU",
@@ -12,62 +12,104 @@
   "longDesc": "Chasseur multirôle génération 4.5 dérivé du Su-27 Flanker. Poussée vectorielle, radar puissant, missiles R-77.",
   "stats": {
     "atk": [
-      115,
-      128,
-      140,
-      153,
-      166,
-      179,
-      191,
-      204,
-      217,
-      230,
-      242,
-      255
+      77,
+      77,
+      86,
+      86,
+      95,
+      95,
+      103,
+      103,
+      112,
+      112,
+      112,
+      121
     ],
     "def": [
-      50,
-      55,
-      60,
-      65,
-      70,
-      75,
-      80,
-      85,
-      90,
-      95,
-      100,
-      105
+      14,
+      19,
+      19,
+      19,
+      19,
+      26,
+      26,
+      26,
+      26,
+      35,
+      35,
+      35
     ],
     "hp": [
-      120,
-      133,
-      145,
-      158,
-      171,
-      184,
-      196,
-      209,
-      222,
-      235,
-      247,
-      260
+      415,
+      415,
+      415,
+      515,
+      515,
+      515,
+      515,
+      595,
+      595,
+      595,
+      665,
+      665
     ],
     "mov": [
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6
+      16,
+      17,
+      17,
+      17,
+      17,
+      18,
+      18,
+      18,
+      18,
+      19,
+      19,
+      19
     ],
     "rng": [
+      3,
+      3,
+      3,
+      3,
+      4,
+      4,
+      4,
+      4,
+      5,
+      5,
+      5,
+      5
+    ],
+    "atkMin": [
+      59,
+      59,
+      68,
+      68,
+      77,
+      77,
+      85,
+      85,
+      94,
+      94,
+      94,
+      103
+    ],
+    "atkMax": [
+      77,
+      77,
+      86,
+      86,
+      95,
+      95,
+      103,
+      103,
+      112,
+      112,
+      112,
+      121
+    ],
+    "rngMin": [
       2,
       2,
       2,
@@ -85,51 +127,171 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🦅",
+      "name": "Supériorité aérienne",
+      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
+      "milestone": true
     },
     {
-      "lvl": 3,
-      "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Vectorisation de poussée",
+      "desc": "40% de chances d'esquiver les dégâts des unités terrestres ou navales, 10% pour les frappes aériennes (hors missiles et bombes nucléaires)",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Contre-mesures aériennes",
+      "desc": "Dégâts +10% contre les hélicoptères. Après déplacement, mobilité du tour suivant -12 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage BVR",
+      "desc": "Dégâts aux unités blindées, d'artillerie et navales +10%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "🚀",
+      "name": "Missile à sous-munitions",
+      "desc": "Ce tour, en touchant une cible, inflige aussi 20% de dégâts à 3 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Offensive implacable",
+      "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 1 fois.",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Vectorisation de poussée Niv.2",
+      "desc": "65% de chances d'esquiver les dégâts des unités terrestres ou navales, 20% pour les frappes aériennes (hors missiles et bombes nucléaires)",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "passive",
-      "icon": "✈",
-      "name": "Supériorité aérienne",
-      "desc": "+15% dégâts contre autres unités aériennes.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Contre-mesures aériennes Niv.2",
+      "desc": "Dégâts +20% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
+      "milestone": false
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe surprise",
-      "desc": "Première attaque non subie.",
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage BVR Niv.2",
+      "desc": "Dégâts aux unités blindées, d'artillerie et navales +20%",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "🚀",
+      "name": "Missile à sous-munitions Niv.2",
+      "desc": "Ce tour, en touchant une cible, inflige aussi 30% de dégâts à 4 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Offensive implacable Niv.2",
+      "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 2 fois.",
       "milestone": false
     },
     {
       "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Vectorisation de poussée Niv.3",
+      "desc": "90% de chances d'esquiver les dégâts des unités terrestres ou navales, 30% pour les frappes aériennes (hors missiles et bombes nucléaires)",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Contre-mesures aériennes Niv.3",
+      "desc": "Dégâts +30% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage BVR Niv.3",
+      "desc": "Dégâts aux unités blindées, d'artillerie et navales +30%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "🚀",
+      "name": "Missile à sous-munitions Niv.3",
+      "desc": "Ce tour, en touchant une cible, inflige aussi 40% de dégâts à 5 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Offensive implacable Niv.3",
+      "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 3 fois.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
       "type": "passive",
-      "icon": "🪂",
-      "name": "Vol stationnaire",
-      "desc": "Aucun coût de mouvement pour rester en place.",
-      "milestone": true
+      "icon": "🦅",
+      "name": "Supériorité aérienne Niv.2",
+      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Contre-mesures aériennes Niv.4",
+      "desc": "Dégâts +40% contre les hélicoptères. Après déplacement, mobilité du tour suivant -6 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage BVR Niv.4",
+      "desc": "Dégâts aux unités blindées, d'artillerie et navales +40%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "🚀",
+      "name": "Missile à sous-munitions Niv.4",
+      "desc": "Ce tour, en touchant une cible, inflige aussi 50% de dégâts à 6 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Offensive implacable Niv.4",
+      "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 3 fois.",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +314,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 351001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 0,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 0,
+      "costEnergy": 7125,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 0,
+      "costEnergy": 12375,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 0,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 0,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 0,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 0,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 0,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/351001.webp",
+    "lvl12": null
+  }
 }

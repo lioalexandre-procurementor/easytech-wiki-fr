@@ -1,7 +1,7 @@
 {
   "slug": "yukikaze",
   "name": "Yukikaze",
-  "nameEn": null,
+  "nameEn": "Yukikaze",
   "category": "navy",
   "faction": "standard",
   "country": "JP",
@@ -12,64 +12,64 @@
   "longDesc": "Célèbre pour avoir survécu à presque toutes les batailles majeures du Pacifique. Très forte esquive et vitesse.",
   "stats": {
     "atk": [
-      85,
-      95,
-      104,
-      114,
-      123,
-      133,
-      142,
-      152,
-      161,
-      171,
-      180,
-      190
+      74,
+      74,
+      84,
+      84,
+      96,
+      96,
+      105,
+      105,
+      115,
+      115,
+      115,
+      125
     ],
     "def": [
-      45,
-      50,
-      54,
-      59,
-      63,
-      68,
-      72,
-      77,
-      81,
-      86,
-      90,
-      95
+      14,
+      23,
+      23,
+      23,
+      23,
+      34,
+      34,
+      34,
+      34,
+      41,
+      41,
+      41
     ],
     "hp": [
-      110,
-      121,
-      132,
-      143,
-      154,
-      165,
-      175,
-      186,
-      197,
-      208,
-      219,
-      230
+      465,
+      465,
+      465,
+      565,
+      565,
+      565,
+      565,
+      675,
+      675,
+      675,
+      785,
+      785
     ],
     "mov": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      8,
+      10,
+      10,
+      10,
+      10,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13
     ],
     "rng": [
-      2,
-      2,
+      1,
+      1,
       2,
       2,
       2,
@@ -80,56 +80,138 @@
       2,
       2,
       2
+    ],
+    "atkMin": [
+      62,
+      62,
+      72,
+      72,
+      84,
+      84,
+      93,
+      93,
+      103,
+      103,
+      103,
+      113
+    ],
+    "atkMax": [
+      74,
+      74,
+      84,
+      84,
+      96,
+      96,
+      105,
+      105,
+      115,
+      115,
+      115,
+      125
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "💥",
+      "name": "Artillerie navale",
+      "desc": "Dégâts aux fortifications +60% et aux unités terrestres -50%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "💥",
+      "name": "Dragueur de mines",
+      "desc": "Dégâts subis des mines navales -60%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Grenade sous-marine",
+      "desc": "Dégâts aux sous-marins +40%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Combat côte à côte",
+      "desc": "Les dégâts directs sont partagés avec les alliés adjacents ; pour chaque 20 point de dégât partagé ou esquivé, +2 d'attaque de base (plafond +100%). Durée 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Esquive rapide",
+      "desc": "20% de chances d'esquiver les dégâts des frappes aériennes",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Combat côte à côte Niv.2",
+      "desc": "Les dégâts directs sont partagés avec les alliés adjacents ; pour chaque 20 point de dégât partagé ou esquivé, +4 d'attaque de base (plafond +100%). Durée 2 tours.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "⚓",
-      "name": "Tir de barrage",
-      "desc": "Attaque multi-cibles sur les navires adjacents.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Coque renforcée",
-      "desc": "+20% HP en mer profonde.",
+      "icon": "⭐",
+      "name": "Esquive rapide Niv.2",
+      "desc": "40% de chances d'esquiver les dégâts des frappes aériennes",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "✈",
-      "name": "Défense AA",
-      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
-      "milestone": true
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Combat côte à côte Niv.3",
+      "desc": "Les dégâts directs sont partagés avec les alliés adjacents ; pour chaque 20 point de dégât partagé ou esquivé, +6 d'attaque de base (plafond +100%). Durée 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Esquive rapide Niv.3",
+      "desc": "60% de chances d'esquiver les dégâts des frappes aériennes",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Esquive rapide Niv.4",
+      "desc": "80% de chances d'esquiver les dégâts des frappes aériennes",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Combat côte à côte Niv.4",
+      "desc": "Les dégâts directs sont partagés avec les alliés adjacents ; pour chaque 20 point de dégât partagé ou esquivé, +10 d'attaque de base (plafond +100%). Durée 2 tours.",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +234,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 334001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/334001.webp",
+    "lvl12": null
+  }
 }

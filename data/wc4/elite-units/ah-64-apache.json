@@ -1,7 +1,7 @@
 {
   "slug": "ah-64-apache",
   "name": "AH-64 Apache",
-  "nameEn": null,
+  "nameEn": "AH-64 Apache",
   "category": "airforce",
   "faction": "standard",
   "country": "US",
@@ -12,62 +12,104 @@
   "longDesc": "Hélicoptère d'attaque principal US Army depuis 1986. Missiles Hellfire, canon 30mm, systèmes de visée avancés.",
   "stats": {
     "atk": [
-      120,
-      133,
-      145,
-      158,
-      171,
-      184,
-      196,
-      209,
-      222,
-      235,
-      247,
-      260
-    ],
-    "def": [
-      50,
-      55,
-      61,
       66,
-      72,
-      77,
-      83,
-      88,
-      94,
-      99,
-      105,
+      66,
+      75,
+      75,
+      84,
+      84,
+      92,
+      92,
+      101,
+      101,
+      101,
       110
     ],
+    "def": [
+      14,
+      23,
+      23,
+      23,
+      23,
+      31,
+      31,
+      31,
+      31,
+      39,
+      39,
+      39
+    ],
     "hp": [
-      130,
-      144,
-      157,
-      171,
-      185,
-      198,
-      212,
-      225,
-      239,
-      253,
-      266,
-      280
+      375,
+      375,
+      375,
+      475,
+      475,
+      475,
+      475,
+      575,
+      575,
+      575,
+      675,
+      675
     ],
     "mov": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13
     ],
     "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      52,
+      52,
+      61,
+      61,
+      70,
+      70,
+      78,
+      78,
+      87,
+      87,
+      87,
+      96
+    ],
+    "atkMax": [
+      66,
+      66,
+      75,
+      75,
+      84,
+      84,
+      92,
+      92,
+      101,
+      101,
+      101,
+      110
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,131 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🦅",
+      "name": "Supériorité aérienne",
+      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "⭐",
+      "name": "Manœuvres d'évasion",
+      "desc": "40% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Feu d'enfer",
+      "desc": "Inflige +25% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut à basse altitude",
+      "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +15%",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "✈",
-      "name": "Supériorité aérienne",
-      "desc": "+15% dégâts contre autres unités aériennes.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Manœuvres d'évasion Niv.2",
+      "desc": "65% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
+      "milestone": false
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe surprise",
-      "desc": "Première attaque non subie.",
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Feu d'enfer Niv.2",
+      "desc": "Inflige +50% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
       "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut à basse altitude Niv.2",
+      "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +30%",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Impulsion électromagnétique",
+      "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
+      "milestone": true
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🪂",
-      "name": "Vol stationnaire",
-      "desc": "Aucun coût de mouvement pour rester en place.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Manœuvres d'évasion Niv.3",
+      "desc": "90% de chances d'esquiver les dégâts infligés par les unités terrestres ou navales",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Feu d'enfer Niv.3",
+      "desc": "Inflige +80% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut à basse altitude Niv.3",
+      "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +50%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Impulsion électromagnétique Niv.2",
+      "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut à basse altitude Niv.4",
+      "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +80%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "🦅",
+      "name": "Supériorité aérienne Niv.2",
+      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Feu d'enfer Niv.4",
+      "desc": "Inflige +100% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Impulsion électromagnétique Niv.3",
+      "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +274,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 338001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 0,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 0,
+      "costEnergy": 7125,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 0,
+      "costEnergy": 12375,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 0,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 0,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 0,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 0,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 0,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/338001.webp",
+    "lvl12": null
+  }
 }

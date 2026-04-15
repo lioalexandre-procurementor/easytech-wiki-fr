@@ -8,8 +8,8 @@
   "quality": "silver",
   "country": "RU",
   "countryName": "URSS",
-  "shortDesc": "Meilleur général F2P après entraînement — débloque « Wipe Out the North ».",
-  "longDesc": "Après entraînement, Rokossovsky est l'un des meilleurs généraux blindés F2P du jeu : la communauté le considère comme le meilleur choix free-to-play, avec Excellency Medal et le skill « Wipe Out the North » post-training. Silver (4 slots).",
+  "shortDesc": "Meilleur général F2P après entraînement — débloque « Anéantir le Nord ».",
+  "longDesc": "Après entraînement, Rokossovsky est l'un des meilleurs généraux blindés F2P du jeu : la communauté le considère comme le meilleur choix free-to-play, avec la Médaille d'Excellence et la compétence « Anéantir le Nord » après entraînement. Argent (4 emplacements).",
   "skills": [
     {
       "slot": 1,
@@ -43,23 +43,23 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert"
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Slot libre",
-      "desc": "Compétence apprenable — débloqué via training (5e slot Gold).",
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — débloqué via entraînement (5e emplacement Or).",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot apprenable Gold — pool défini par l'Académie"
+      "replaceableReason": "Emplacement apprenable (Or) — pool défini par l'Académie"
     }
   ],
   "attributes": {
@@ -93,26 +93,40 @@
     "stages": [
       {
         "stage": 1,
-        "label": "Silver → 1er palier",
+        "label": "Or → Promotion finale",
         "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": "Skills initiaux renforcés"
-      },
-      {
-        "stage": 2,
-        "label": "2e palier",
-        "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": "Débloque « Wipe Out the North » (à vérifier au bon palier)"
+        "sceptreCost": 10,
+        "skillChanges": [
+          {
+            "slot": 1,
+            "kind": "replace",
+            "newName": "Héros"
+          },
+          {
+            "slot": 2,
+            "kind": "replace",
+            "newName": "Anéantir le Nord"
+          },
+          {
+            "slot": 3,
+            "kind": "replace",
+            "newName": "Meneur de Panzers"
+          }
+        ],
+        "attributeDeltas": [
+          {
+            "key": "artillery",
+            "maxDelta": 2
+          },
+          {
+            "key": "marching",
+            "maxDelta": 1
+          }
+        ]
       }
     ],
-    "totalSwordCost": 200,
-    "totalSceptreCost": 10,
-    "summary": "Silver = 2 étapes de training. Une fois Rokossovsky entièrement entraîné, il devient le meilleur général F2P du jeu d'après la communauté."
+    "totalSwordCost": null,
+    "totalSceptreCost": 10
   },
   "acquisition": {
     "type": "medals",
@@ -146,5 +160,12 @@
   "skillSlots": 5,
   "unlockHQLv": 20,
   "militaryRank": 8,
-  "apkId": 1021
+  "apkId": 1021,
+  "generalIdGame": 1021,
+  "image": {
+    "photo": "/img/wc4/generals/Rokossovsky.webp",
+    "head": "/img/wc4/heads/Rokossovsky.webp",
+    "photoTrained": "/img/wc4/generals/Rokossovsky2.webp",
+    "headTrained": "/img/wc4/heads/Rokossovsky2.webp"
+  }
 }

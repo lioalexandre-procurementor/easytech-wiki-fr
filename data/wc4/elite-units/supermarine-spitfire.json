@@ -1,7 +1,7 @@
 {
   "slug": "supermarine-spitfire",
   "name": "Supermarine Spitfire",
-  "nameEn": null,
+  "nameEn": "Spitfire",
   "category": "airforce",
   "faction": "standard",
   "country": "GB",
@@ -12,62 +12,104 @@
   "longDesc": "Chasseur britannique emblématique de la WWII. Plus de 20 000 unités produites.",
   "stats": {
     "atk": [
-      80,
-      89,
-      98,
-      107,
-      116,
-      125,
-      135,
-      144,
-      153,
-      162,
-      171,
-      180
+      35,
+      35,
+      46,
+      46,
+      60,
+      60,
+      67,
+      67,
+      75,
+      75,
+      75,
+      84
     ],
     "def": [
-      40,
-      44,
-      48,
-      52,
-      56,
-      60,
-      65,
-      69,
-      73,
-      77,
-      81,
-      85
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "hp": [
-      95,
-      105,
-      114,
-      124,
-      133,
-      143,
-      152,
-      162,
-      171,
-      181,
-      190,
-      200
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "mov": [
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "rng": [
+      8,
+      8,
+      8,
+      8,
+      10,
+      10,
+      10,
+      11,
+      11,
+      12,
+      12,
+      12
+    ],
+    "atkMin": [
+      29,
+      29,
+      40,
+      40,
+      54,
+      54,
+      61,
+      61,
+      69,
+      69,
+      69,
+      78
+    ],
+    "atkMax": [
+      35,
+      35,
+      46,
+      46,
+      60,
+      60,
+      67,
+      67,
+      75,
+      75,
+      75,
+      84
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,59 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
-    },
-    {
-      "lvl": 3,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "✈️",
+      "name": "Frappe aérienne",
+      "desc": "Dégâts des mitrailleuses lourdes de chasseur aux unités d'infanterie +30%",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "✈",
-      "name": "Supériorité aérienne",
-      "desc": "+15% dégâts contre autres unités aériennes.",
+      "icon": "⭐",
+      "name": "Préparation aérienne",
+      "desc": "Coût de construction des unités aériennes -10%",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe surprise",
-      "desc": "Première attaque non subie.",
+      "lvl": 6,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Préparation aérienne Niv.2",
+      "desc": "Coût de construction des unités aériennes -20%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🪂",
-      "name": "Vol stationnaire",
-      "desc": "Aucun coût de mouvement pour rester en place.",
+      "icon": "🎯",
+      "name": "Canon à grande vitesse",
+      "desc": "Ignore 25% de la défense ennemie",
       "milestone": true
     },
     {
-      "lvl": 12,
-      "type": "active-skill",
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Canon à grande vitesse Niv.2",
+      "desc": "Ignore 50% de la défense ennemie",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Préparation aérienne Niv.3",
+      "desc": "Coût de construction des unités aériennes -30%",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Canon à grande vitesse Niv.3",
+      "desc": "Ignore 75% de la défense ennemie",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +202,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 310001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3000,
+      "costIndustry": 0,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 6000,
+      "costIndustry": 0,
+      "costEnergy": 7125,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 12000,
+      "costIndustry": 0,
+      "costEnergy": 12375,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 24000,
+      "costIndustry": 0,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 28800,
+      "costIndustry": 0,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 34560,
+      "costIndustry": 0,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 41450,
+      "costIndustry": 0,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 49750,
+      "costIndustry": 0,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/310001.webp",
+    "lvl12": null
+  }
 }

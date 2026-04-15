@@ -1,7 +1,7 @@
 {
   "slug": "m1a1-abrams",
   "name": "M1A1 Abrams",
-  "nameEn": null,
+  "nameEn": "M1A1 Abrams",
   "category": "tank",
   "faction": "standard",
   "country": "US",
@@ -12,62 +12,104 @@
   "longDesc": "Turbine à gaz, canon 120mm lisse, blindage composite Chobham. Unité d'élite de référence dans les scénarios modernes.",
   "stats": {
     "atk": [
-      100,
-      111,
+      78,
+      78,
+      89,
+      89,
+      103,
+      103,
+      112,
+      112,
       122,
-      133,
-      144,
-      155,
-      165,
-      176,
-      187,
-      198,
-      209,
-      220
+      122,
+      122,
+      132
     ],
     "def": [
-      90,
-      100,
-      110,
-      120,
-      130,
-      140,
-      150,
-      160,
-      170,
-      180,
-      190,
-      200
+      17,
+      31,
+      31,
+      31,
+      31,
+      39,
+      39,
+      39,
+      39,
+      48,
+      48,
+      48
     ],
     "hp": [
-      170,
-      186,
-      203,
-      219,
-      235,
-      252,
-      268,
-      285,
-      301,
-      317,
-      334,
-      350
+      475,
+      475,
+      475,
+      575,
+      575,
+      575,
+      575,
+      675,
+      675,
+      675,
+      775,
+      775
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12
     ],
     "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      66,
+      66,
+      77,
+      77,
+      91,
+      91,
+      100,
+      100,
+      110,
+      110,
+      110,
+      120
+    ],
+    "atkMax": [
+      78,
+      78,
+      89,
+      89,
+      103,
+      103,
+      112,
+      112,
+      122,
+      122,
+      122,
+      132
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,115 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les forces blindées",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Munition à uranium appauvri",
+      "desc": "Probabilité de critique +20% et ignore 30% de la défense de la cible ce tour. Récupération en 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Blindage à uranium appauvri",
+      "desc": "Défense +30%",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Munition à uranium appauvri Niv.2",
+      "desc": "Probabilité de critique +30% et ignore 45% de la défense de la cible ce tour. Récupération en 2 tours.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Blindage à uranium appauvri Niv.2",
+      "desc": "Défense +60%",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 2% de critique en excès, +1% de dégâts",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Munition à uranium appauvri Niv.3",
+      "desc": "Probabilité de critique +40% et ignore 60% de la défense de la cible ce tour. Récupération en 2 tours.",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Blindage à uranium appauvri Niv.3",
+      "desc": "Défense +100%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu Niv.2",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Blindage à uranium appauvri Niv.4",
+      "desc": "Défense +100%",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Munition à uranium appauvri Niv.4",
+      "desc": "Probabilité de critique +50% et ignore 70% de la défense de la cible ce tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu Niv.3",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +258,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 336001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1368,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1642,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/336001.webp",
+    "lvl12": null
+  }
 }

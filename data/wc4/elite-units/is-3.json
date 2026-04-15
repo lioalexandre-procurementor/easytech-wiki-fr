@@ -1,7 +1,7 @@
 {
   "slug": "is-3",
   "name": "IS-3 Heavy Tank",
-  "nameEn": null,
+  "nameEn": "IS-3 Heavy Tank",
   "category": "tank",
   "faction": "standard",
   "country": "RU",
@@ -12,48 +12,62 @@
   "longDesc": "L'IS-3 est apparu fin 1945. Équivalent du King Tiger, qu'il surpasse parfois en pool de PV. Canon 122mm redoutable.",
   "stats": {
     "atk": [
-      80,
-      89,
-      98,
-      107,
-      116,
-      125,
-      135,
-      144,
-      153,
-      162,
-      171,
-      180
+      73,
+      73,
+      85,
+      85,
+      100,
+      100,
+      108,
+      108,
+      117,
+      117,
+      117,
+      126
     ],
     "def": [
-      80,
-      90,
-      99,
-      109,
-      118,
-      128,
-      137,
-      147,
-      156,
-      166,
-      175,
-      185
+      20,
+      36,
+      36,
+      36,
+      36,
+      47,
+      47,
+      47,
+      47,
+      56,
+      56,
+      56
     ],
     "hp": [
-      160,
-      176,
-      193,
-      209,
-      225,
-      242,
-      258,
-      275,
-      291,
-      307,
-      324,
-      340
+      475,
+      475,
+      475,
+      580,
+      580,
+      580,
+      580,
+      680,
+      680,
+      680,
+      780,
+      780
     ],
     "mov": [
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11
+    ],
+    "rng": [
       2,
       2,
       2,
@@ -67,7 +81,35 @@
       2,
       2
     ],
-    "rng": [
+    "atkMin": [
+      61,
+      61,
+      73,
+      73,
+      88,
+      88,
+      96,
+      96,
+      105,
+      105,
+      105,
+      114
+    ],
+    "atkMax": [
+      73,
+      73,
+      85,
+      85,
+      100,
+      100,
+      108,
+      108,
+      117,
+      117,
+      117,
+      126
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,90 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les forces blindées",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage en coin",
+      "desc": "Dégâts de riposte +10%",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage en coin Niv.2",
+      "desc": "Dégâts de riposte +20%",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
+      "type": "passive",
+      "icon": "⚔️",
+      "name": "Tueur de chars",
+      "desc": "Dégâts aux unités blindées +25% ce tour. Récupération en 2 tours.",
       "milestone": true
     },
     {
-      "lvl": 7,
+      "lvl": 9,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "icon": "🛡️",
+      "name": "Blindage en coin Niv.3",
+      "desc": "Dégâts de riposte +30%",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "type": "passive",
+      "icon": "⚔️",
+      "name": "Tueur de chars Niv.2",
+      "desc": "Dégâts aux unités blindées +45% ce tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Blindage en coin Niv.4",
+      "desc": "Dégâts de riposte +40%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⚔️",
+      "name": "Tueur de chars Niv.3",
+      "desc": "Dégâts aux unités blindées +65% ce tour. Récupération en 2 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
+      "name": "Renforcement de feu",
+      "desc": "Attaque +10% pour chaque unité détruite — cumulable jusqu'à 3 fois, durée 2 tours",
       "milestone": true
     }
   ],
@@ -152,9 +234,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 318001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1368,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1642,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/318001.webp",
+    "lvl12": null
+  }
 }

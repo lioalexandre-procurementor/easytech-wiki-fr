@@ -1,7 +1,7 @@
 {
   "slug": "leopard-2",
   "name": "Leopard 2",
-  "nameEn": null,
+  "nameEn": "Leopard 2",
   "category": "tank",
   "faction": "standard",
   "country": "DE",
@@ -12,62 +12,104 @@
   "longDesc": "Entre en service en 1979 et reste l'un des meilleurs MBT au monde. S-tier pour les scénarios modernes.",
   "stats": {
     "atk": [
-      100,
-      111,
-      122,
-      133,
-      144,
-      155,
-      165,
-      176,
-      187,
-      198,
-      209,
-      220
+      81,
+      81,
+      92,
+      92,
+      106,
+      106,
+      115,
+      115,
+      125,
+      125,
+      125,
+      135
     ],
     "def": [
-      95,
-      105,
-      116,
-      126,
-      137,
-      147,
-      158,
-      168,
-      179,
-      189,
-      200,
-      210
+      23,
+      37,
+      37,
+      37,
+      37,
+      45,
+      45,
+      45,
+      45,
+      54,
+      54,
+      54
     ],
     "hp": [
-      170,
-      186,
-      203,
-      219,
-      235,
-      252,
-      268,
-      285,
-      301,
-      317,
-      334,
-      350
+      515,
+      515,
+      515,
+      615,
+      615,
+      615,
+      615,
+      715,
+      715,
+      715,
+      815,
+      815
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13
     ],
     "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      71,
+      71,
+      82,
+      82,
+      96,
+      96,
+      105,
+      105,
+      115,
+      115,
+      115,
+      125
+    ],
+    "atkMax": [
+      81,
+      81,
+      92,
+      92,
+      106,
+      106,
+      115,
+      115,
+      125,
+      125,
+      125,
+      135
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,107 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les forces blindées",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Sabot perforant",
+      "desc": "Sur un coup critique, 50% de chances d'infliger +15% de dégâts supplémentaires",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Sabot perforant Niv.2",
+      "desc": "Sur un coup critique, 50% de chances d'infliger +30% de dégâts supplémentaires",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Calibration dynamique",
+      "desc": "Après avoir éliminé 3 unité(s) ce tour, portée +1 pendant 1 tour",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut tactique",
+      "desc": "Entre en état Assaut : dégâts +10% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Sabot perforant Niv.3",
+      "desc": "Sur un coup critique, 100% de chances d'infliger +45% de dégâts supplémentaires",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Calibration dynamique Niv.2",
+      "desc": "Après avoir éliminé 2 unité(s) ce tour, portée +1 pendant 1 tour",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut tactique Niv.2",
+      "desc": "Entre en état Assaut : dégâts +20% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut tactique Niv.3",
+      "desc": "Entre en état Assaut : dégâts +30% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
-      "milestone": true
+      "name": "Sabot perforant Niv.4",
+      "desc": "Sur un coup critique, 100% de chances d'infliger +60% de dégâts supplémentaires",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Calibration dynamique Niv.3",
+      "desc": "Après avoir éliminé 1 unité(s) ce tour, portée +1 pendant 1 tour",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +250,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 349001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1368,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1642,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/349001.webp",
+    "lvl12": null
+  }
 }

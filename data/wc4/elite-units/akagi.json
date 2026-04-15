@@ -1,7 +1,7 @@
 {
   "slug": "akagi",
   "name": "Akagi",
-  "nameEn": null,
+  "nameEn": "Akagi",
   "category": "navy",
   "faction": "standard",
   "country": "JP",
@@ -12,124 +12,198 @@
   "longDesc": "Porte-avions lourd japonais, navire amiral de la Kido Butai à Pearl Harbor en 1941. Capacité de lancer des raids aériens.",
   "stats": {
     "atk": [
-      130,
-      144,
-      157,
-      171,
-      185,
-      198,
-      212,
-      225,
-      239,
-      253,
-      266,
-      280
+      52,
+      52,
+      57,
+      57,
+      62,
+      62,
+      67,
+      67,
+      72,
+      72,
+      72,
+      78
     ],
     "def": [
-      50,
-      55,
-      61,
-      66,
-      72,
-      77,
-      83,
-      88,
-      94,
-      99,
-      105,
-      110
+      21,
+      27,
+      27,
+      27,
+      27,
+      38,
+      38,
+      38,
+      38,
+      45,
+      45,
+      45
     ],
     "hp": [
-      170,
-      187,
-      205,
-      222,
-      239,
-      256,
-      274,
-      291,
-      308,
-      325,
-      343,
-      360
+      525,
+      525,
+      525,
+      615,
+      615,
+      615,
+      615,
+      715,
+      715,
+      715,
+      815,
+      815
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      6,
+      7,
+      7,
+      7,
+      7,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
     ],
     "rng": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      32,
+      32,
+      37,
+      37,
+      42,
+      42,
+      47,
+      47,
+      52,
+      52,
+      52,
+      58
+    ],
+    "atkMax": [
+      52,
+      52,
+      57,
+      57,
+      62,
+      62,
+      67,
+      67,
+      72,
+      72,
+      72,
+      78
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "💣",
+      "name": "Bombardement",
+      "desc": "Dégâts des bombardiers aux unités navales +30%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les navires de guerre",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⚓",
+      "name": "Porte-avions",
+      "desc": "Peut attaquer via ses aéronefs embarqués",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Regroupement",
+      "desc": "Peut effectuer 1 attaque(s) supplémentaire(s)",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Regroupement Niv.2",
+      "desc": "Peut effectuer 2 attaque(s) supplémentaire(s)",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "⚓",
-      "name": "Tir de barrage",
-      "desc": "Attaque multi-cibles sur les navires adjacents.",
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Raid aérien intensif",
+      "desc": "En attaquant, inflige 50% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
       "milestone": true
     },
     {
-      "lvl": 7,
+      "lvl": 9,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Coque renforcée",
-      "desc": "+20% HP en mer profonde.",
+      "icon": "⭐",
+      "name": "Regroupement Niv.3",
+      "desc": "Peut effectuer 3 attaque(s) supplémentaire(s)",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "✈",
-      "name": "Défense AA",
-      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
-      "milestone": true
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Raid aérien intensif Niv.2",
+      "desc": "En attaquant, inflige 80% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Raid aérien intensif Niv.3",
+      "desc": "En attaquant, inflige 100% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Regroupement Niv.4",
+      "desc": "Peut effectuer 3 attaque(s) supplémentaire(s)",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +226,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 321001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/321001.webp",
+    "lvl12": null
+  }
 }

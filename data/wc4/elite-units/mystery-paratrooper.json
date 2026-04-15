@@ -109,10 +109,10 @@
     },
     {
       "lvl": 7,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "🎯",
       "name": "Capacité signature",
-      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
+      "desc": "Compétence propre à l'infanterie d'élite (voir jeu).",
       "milestone": false
     },
     {
@@ -125,10 +125,10 @@
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
       "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "desc": "Compétence final à valider in-game.",
       "milestone": true
     }
   ],

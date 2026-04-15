@@ -9,7 +9,7 @@
   "country": "RU",
   "countryName": "URSS",
   "shortDesc": "Maréchal IAP polyvalent — au niveau de Konev en appui-feu.",
-  "longDesc": "Joukov est un maréchal (IAP, achat réel uniquement) polyvalent de premier rang, au niveau de Konev en appui-feu. Marshal (5 slots).",
+  "longDesc": "Joukov est un maréchal (IAP, achat réel uniquement) polyvalent de premier rang, au niveau de Konev en appui-feu. Maréchal (5 emplacements).",
   "skills": [
     {
       "slot": 1,
@@ -53,13 +53,13 @@
     },
     {
       "slot": 5,
-      "name": "Slot libre",
-      "desc": "Emplacement apprenable — à confirmer si Marshal a un slot libre.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à confirmer si les Maréchaux ont un emplacement libre.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "À confirmer : les Marshals IAP ont-ils un slot libre ?"
+      "replaceableReason": "À confirmer : les Maréchaux IAP ont-ils un emplacement libre ?"
     }
   ],
   "attributes": {
@@ -88,13 +88,47 @@
       "max": 5
     }
   },
-  "hasTrainingPath": false,
-  "training": null,
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Or → Promotion finale",
+        "swordCost": null,
+        "sceptreCost": 8,
+        "skillChanges": [
+          {
+            "slot": 1,
+            "kind": "replace",
+            "newName": "Bataille en profondeur soviétique"
+          },
+          {
+            "slot": 2,
+            "kind": "replace",
+            "newName": "Tacticien du feu"
+          },
+          {
+            "slot": 3,
+            "kind": "replace",
+            "newName": "Meneur d'artillerie"
+          }
+        ],
+        "attributeDeltas": [
+          {
+            "key": "marching",
+            "maxDelta": 1
+          }
+        ]
+      }
+    ],
+    "totalSwordCost": null,
+    "totalSceptreCost": 8
+  },
   "acquisition": {
     "type": "iron-cross",
     "cost": 5890,
     "currency": "medals",
-    "notes": "Marshal IAP — achat réel uniquement"
+    "notes": "Maréchal IAP — achat réel uniquement"
   },
   "bonuses": [
     {
@@ -122,5 +156,12 @@
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 11,
-  "apkId": 1018
+  "apkId": 1018,
+  "generalIdGame": 1018,
+  "image": {
+    "photo": "/img/wc4/generals/Zhukov.webp",
+    "head": "/img/wc4/heads/Zhukov.webp",
+    "photoTrained": "/img/wc4/generals/Zhukov2.webp",
+    "headTrained": "/img/wc4/heads/Zhukov2.webp"
+  }
 }

@@ -9,7 +9,7 @@
   "country": "XX",
   "countryName": "Empire du Scorpion",
   "shortDesc": "Capitaine de l'Empire du Scorpion, concepteur du KS-90.",
-  "longDesc": "Williams est l'un des trois capitaines de l'Empire du Scorpion, avec Osborn et Colson. Selon le lore, il a conçu et produit le KS-90, l'artillerie automotrice d'élite mystique. Gold (5 slots).",
+  "longDesc": "Williams est l'un des trois capitaines de l'Empire du Scorpion, avec Osborn et Colson. Selon le lore, il a conçu et produit le KS-90, l'artillerie automotrice d'élite mystique. Or (5 emplacements).",
   "skills": [
     {
       "slot": 1,
@@ -43,7 +43,7 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -53,7 +53,7 @@
     },
     {
       "slot": 5,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Deuxième emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -121,5 +121,11 @@
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 9,
-  "apkId": 1058
+  "apkId": 1058,
+  "image": {
+    "photo": "/img/wc4/generals/General.webp",
+    "head": "/img/wc4/heads/General.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }

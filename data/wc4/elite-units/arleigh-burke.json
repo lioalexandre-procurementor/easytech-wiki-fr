@@ -1,7 +1,7 @@
 {
   "slug": "arleigh-burke",
   "name": "Arleigh Burke",
-  "nameEn": null,
+  "nameEn": "Arleigh Burke-class",
   "category": "navy",
   "faction": "standard",
   "country": "US",
@@ -12,123 +12,189 @@
   "longDesc": "Classe de destroyers lance-missiles de l'US Navy depuis 1991. Système Aegis, Tomahawk et Standard.",
   "stats": {
     "atk": [
-      130,
-      145,
-      159,
-      174,
-      188,
-      203,
-      217,
-      232,
-      246,
-      261,
-      275,
-      290
+      74,
+      74,
+      84,
+      84,
+      96,
+      96,
+      105,
+      105,
+      115,
+      115,
+      115,
+      125
     ],
     "def": [
-      55,
-      61,
-      67,
-      73,
-      79,
-      85,
-      90,
-      96,
-      102,
-      108,
-      114,
-      120
+      14,
+      23,
+      23,
+      23,
+      23,
+      34,
+      34,
+      34,
+      34,
+      44,
+      44,
+      44
     ],
     "hp": [
-      150,
-      165,
-      181,
-      196,
-      212,
-      227,
-      243,
-      258,
-      274,
-      289,
-      305,
-      320
+      470,
+      470,
+      470,
+      570,
+      570,
+      570,
+      570,
+      680,
+      680,
+      680,
+      790,
+      790
     ],
     "mov": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      8,
+      10,
+      10,
+      10,
+      10,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13
     ],
     "rng": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
       3,
       3
+    ],
+    "atkMin": [
+      62,
+      62,
+      72,
+      72,
+      84,
+      84,
+      93,
+      93,
+      103,
+      103,
+      103,
+      113
+    ],
+    "atkMax": [
+      74,
+      74,
+      84,
+      84,
+      96,
+      96,
+      105,
+      105,
+      115,
+      115,
+      115,
+      125
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
-    },
-    {
-      "lvl": 3,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
-    },
-    {
-      "lvl": 5,
-      "type": "active-skill",
-      "icon": "⚓",
-      "name": "Tir de barrage",
-      "desc": "Attaque multi-cibles sur les navires adjacents.",
+      "icon": "💥",
+      "name": "Artillerie navale",
+      "desc": "Dégâts aux fortifications +60% et aux unités terrestres -50%",
       "milestone": true
     },
     {
-      "lvl": 7,
+      "lvl": 1,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Coque renforcée",
-      "desc": "+20% HP en mer profonde.",
+      "icon": "💥",
+      "name": "Dragueur de mines",
+      "desc": "Dégâts subis des mines navales -60%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Grenade sous-marine",
+      "desc": "Dégâts aux sous-marins +40%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les navires de guerre",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Attaque saturante",
+      "desc": "Tire plusieurs missiles balistiques courte portée : 150% des dégâts à la cible et 80% aux ennemis adjacents. Récupération en 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Attaque saturante Niv.2",
+      "desc": "Tire plusieurs missiles balistiques courte portée : 200% des dégâts à la cible et 100% aux ennemis adjacents. Récupération en 3 tours.",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "✈",
-      "name": "Défense AA",
-      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Attaque saturante Niv.3",
+      "desc": "Tire plusieurs missiles balistiques courte portée : 200% des dégâts à la cible et 120% aux ennemis adjacents. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Attaque saturante Niv.4",
+      "desc": "Tire plusieurs missiles balistiques courte portée : 300% des dégâts à la cible et 150% aux ennemis adjacents. Récupération en 3 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "type": "active-compétence",
+      "icon": "📡",
+      "name": "Radar de conduite de tir",
+      "desc": "Ignore l'esquive, les fumigènes, l'état fantôme et l'EMCON",
       "milestone": true
     }
   ],
@@ -152,9 +218,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 340001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/340001.webp",
+    "lvl12": null
+  }
 }

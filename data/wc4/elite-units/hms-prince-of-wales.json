@@ -1,7 +1,7 @@
 {
   "slug": "hms-prince-of-wales",
   "name": "HMS Prince of Wales",
-  "nameEn": null,
+  "nameEn": "HMS Prince of Wales",
   "category": "navy",
   "faction": "standard",
   "country": "GB",
@@ -12,124 +12,174 @@
   "longDesc": "A participé à la chasse au Bismarck avant d'être coulé par l'aviation japonaise en 1941. Canons 14 pouces.",
   "stats": {
     "atk": [
-      105,
-      116,
-      128,
-      139,
-      150,
-      162,
-      173,
-      185,
-      196,
-      207,
-      219,
-      230
+      72,
+      72,
+      82,
+      82,
+      94,
+      94,
+      103,
+      103,
+      113,
+      113,
+      113,
+      123
     ],
     "def": [
-      60,
-      66,
-      72,
-      78,
-      84,
-      90,
-      95,
-      101,
-      107,
-      113,
-      119,
-      125
+      23,
+      32,
+      32,
+      32,
+      32,
+      41,
+      41,
+      41,
+      41,
+      50,
+      50,
+      50
     ],
     "hp": [
-      155,
-      171,
-      187,
-      203,
-      219,
-      235,
-      250,
-      266,
-      282,
-      298,
-      314,
-      330
+      565,
+      565,
+      565,
+      705,
+      705,
+      705,
+      705,
+      785,
+      785,
+      785,
+      865,
+      865
     ],
     "mov": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      7,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11
     ],
     "rng": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
       3,
       3
+    ],
+    "atkMin": [
+      60,
+      60,
+      70,
+      70,
+      82,
+      82,
+      91,
+      91,
+      101,
+      101,
+      101,
+      111
+    ],
+    "atkMax": [
+      72,
+      72,
+      82,
+      82,
+      94,
+      94,
+      103,
+      103,
+      113,
+      113,
+      113,
+      123
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
-    },
-    {
-      "lvl": 3,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
-    },
-    {
-      "lvl": 5,
-      "type": "active-skill",
-      "icon": "⚓",
-      "name": "Tir de barrage",
-      "desc": "Attaque multi-cibles sur les navires adjacents.",
+      "icon": "💥",
+      "name": "Artillerie navale lourde",
+      "desc": "Dégâts aux forteresses +100% et aux unités terrestres +25%",
       "milestone": true
     },
     {
-      "lvl": 7,
+      "lvl": 1,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Coque renforcée",
-      "desc": "+20% HP en mer profonde.",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les navires de guerre",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Pose de mines",
+      "desc": "Dépose des mines navales de contact dans un rayon d'1 case — récupération en 1 tour",
+      "milestone": true
+    },
+    {
+      "lvl": 8,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Pose de mines Niv.2",
+      "desc": "Dépose des mines navales de contact dans un rayon d'1 case — récupération en 1 tour",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "✈",
-      "name": "Défense AA",
-      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
-      "milestone": true
+      "type": "passive",
+      "icon": "💥",
+      "name": "Artillerie navale lourde Niv.2",
+      "desc": "Dégâts aux forteresses +120% et aux unités terrestres +50%",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Pose de mines Niv.3",
+      "desc": "Dépose des mines navales de contact dans un rayon d'1 case — récupération en 1 tour",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "type": "passive",
+      "icon": "💥",
+      "name": "Artillerie navale lourde Niv.3",
+      "desc": "Dégâts aux forteresses +150% et aux unités terrestres +70%",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +202,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 314001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/314001.webp",
+    "lvl12": null
+  }
 }

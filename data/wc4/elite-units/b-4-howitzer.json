@@ -1,7 +1,7 @@
 {
   "slug": "b-4-howitzer",
   "name": "B-4 Howitzer",
-  "nameEn": null,
+  "nameEn": "B-4 Howitzer",
   "category": "artillery",
   "faction": "standard",
   "country": "RU",
@@ -12,123 +12,197 @@
   "longDesc": "Obusier 203mm de l'Armée Rouge dès 1934. Utilisé contre fortifications et positions enterrées.",
   "stats": {
     "atk": [
-      120,
-      134,
-      147,
-      161,
-      175,
-      188,
-      202,
-      215,
-      229,
-      243,
-      256,
-      270
-    ],
-    "def": [
-      25,
-      28,
-      30,
-      33,
-      36,
-      39,
-      41,
-      44,
-      47,
-      50,
-      52,
-      55
-    ],
-    "hp": [
-      95,
+      77,
+      77,
+      85,
+      85,
+      97,
+      97,
+      105,
       105,
       114,
-      124,
-      133,
-      143,
-      152,
-      162,
-      171,
-      181,
-      190,
-      200
+      114,
+      114,
+      123
+    ],
+    "def": [
+      11,
+      20,
+      20,
+      20,
+      20,
+      26,
+      26,
+      26,
+      26,
+      35,
+      35,
+      35
+    ],
+    "hp": [
+      285,
+      285,
+      285,
+      385,
+      385,
+      385,
+      385,
+      470,
+      470,
+      470,
+      555,
+      555
     ],
     "mov": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
     ],
     "rng": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
       3,
       3
+    ],
+    "atkMin": [
+      49,
+      49,
+      57,
+      57,
+      69,
+      69,
+      77,
+      77,
+      86,
+      86,
+      86,
+      95
+    ],
+    "atkMax": [
+      77,
+      77,
+      85,
+      85,
+      97,
+      97,
+      105,
+      105,
+      114,
+      114,
+      114,
+      123
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Puissance de feu",
+      "desc": "50% de chances d'empêcher l'ennemi de riposter",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⭐",
+      "name": "Dégâts critiques",
+      "desc": "Dégâts des coups critiques +20%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "Dégâts à la défense de ville +15% pendant 2 tours. Récupération en 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.2",
+      "desc": "Dégâts des coups critiques +30%",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🎯",
-      "name": "Portée étendue",
-      "desc": "+1 portée de tir.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Tir précis",
-      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "icon": "⚔️",
+      "name": "Assaut Niv.2",
+      "desc": "Dégâts à la défense de ville +30% pendant 2 tours. Récupération en 3 tours.",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🔥",
-      "name": "Saturation",
-      "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "icon": "⚔️",
+      "name": "Assaut Niv.3",
+      "desc": "Dégâts à la défense de ville +45% pendant 2 tours. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.3",
+      "desc": "Dégâts des coups critiques +40%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⚔️",
+      "name": "Assaut Niv.4",
+      "desc": "Dégâts à la défense de ville +60% pendant 2 tours. Récupération en 3 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Dégâts critiques Niv.4",
+      "desc": "Dégâts des coups critiques +50%",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut aéroporté",
+      "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",
       "milestone": true
     }
   ],
@@ -152,9 +226,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 317001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 1800,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 7200,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 13500,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 33000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 39600,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 47520,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 57000,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 68400,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/317001.webp",
+    "lvl12": null
+  }
 }

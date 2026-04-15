@@ -1,7 +1,7 @@
 {
   "slug": "alpini",
   "name": "Alpini",
-  "nameEn": null,
+  "nameEn": "Alpini",
   "category": "infantry",
   "faction": "standard",
   "country": "IT",
@@ -12,62 +12,104 @@
   "longDesc": "Troupes de montagne italiennes. Bonus significatifs en terrain montagneux et mobilité améliorée sur collines.",
   "stats": {
     "atk": [
-      45,
-      50,
-      55,
-      60,
-      65,
-      70,
-      75,
-      80,
-      85,
-      90,
-      95,
-      100
+      48,
+      48,
+      56,
+      56,
+      66,
+      66,
+      73,
+      73,
+      82,
+      82,
+      82,
+      92
     ],
     "def": [
-      45,
-      50,
-      55,
-      60,
-      65,
-      70,
-      75,
-      80,
-      85,
-      90,
-      95,
-      100
+      10,
+      19,
+      19,
+      19,
+      19,
+      24,
+      24,
+      24,
+      24,
+      31,
+      31,
+      31
     ],
     "hp": [
-      105,
-      115,
-      124,
-      134,
-      143,
-      153,
-      162,
-      172,
-      181,
-      191,
-      200,
-      210
+      235,
+      235,
+      235,
+      325,
+      325,
+      325,
+      325,
+      425,
+      425,
+      425,
+      525,
+      525
     ],
     "mov": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "atkMin": [
+      40,
+      40,
+      48,
+      48,
+      58,
+      58,
+      65,
+      65,
+      74,
+      74,
+      74,
+      84
+    ],
+    "atkMax": [
+      48,
+      48,
+      56,
+      56,
+      66,
+      66,
+      73,
+      73,
+      82,
+      82,
+      82,
+      92
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,58 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche forcée",
+      "desc": "Consommation de mobilité sur terrain difficile -35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "⭐",
+      "name": "Commando de montagne",
+      "desc": "Dégâts à l'ennemi +75% en combat en montagne",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🌲",
-      "name": "Embuscade",
-      "desc": "+20% dégâts en terrain forestier ou urbain.",
+      "icon": "⭐",
+      "name": "Entrave",
+      "desc": "Immobilise les ennemis dans un rayon d'1 case pendant 1 tour. Récupération 3 tours — ramenée à 1 tour si 3 cibles ou plus.",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "🎯",
-      "name": "Capacité signature",
-      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
+      "lvl": 6,
+      "type": "passive",
+      "icon": "⛏️",
+      "name": "Sapeur",
+      "desc": "Dégâts subis des mines terrestres -60%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🛡",
-      "name": "Vétérance",
-      "desc": "+10% esquive permanent.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Entrave Niv.2",
+      "desc": "Immobilise les ennemis dans un rayon d'1 case pendant 1 tour. Récupération 3 tours — ramenée à 1 tour si 3 cibles ou plus.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Entrave Niv.3",
+      "desc": "Immobilise les ennemis dans un rayon d'1 case pendant 1 tour. Récupération 3 tours — ramenée à 1 tour si 3 cibles ou plus.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Partage de dégâts",
+      "desc": "Propage 50% des dégâts directs reçus aux ennemis dans 1 case",
       "milestone": true
     }
   ],
@@ -152,9 +202,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 316001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 2650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 7150,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 15750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 18900,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 22680,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 27200,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 32650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/316001.webp",
+    "lvl12": null
+  }
 }

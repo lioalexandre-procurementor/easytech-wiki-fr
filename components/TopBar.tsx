@@ -20,7 +20,7 @@ export async function TopBar() {
           <NavLink href="#" disabled>European War 7</NavLink>
           <NavLink href="#" disabled>Great Conqueror Rome</NavLink>
           <NavLink href="#" disabled>Guides</NavLink>
-          <NavLink href="#" disabled>Tier Lists</NavLink>
+          <NavLink href="#" disabled>Classements</NavLink>
         </nav>
         <div className="flex items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5 w-[260px]">
           <span>🔍</span>

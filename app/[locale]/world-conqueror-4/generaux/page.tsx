@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import {
@@ -211,17 +212,37 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
       style={scorpion ? { borderColor: "#3a1f26" } : undefined}
     >
       <div className="flex items-start justify-between mb-3">
-        <div
-          className="w-14 h-14 rounded-full grid place-items-center text-xl font-extrabold text-white"
-          style={{
-            background: scorpion
-              ? "linear-gradient(135deg, #4a0f12, #c8372d)"
-              : "linear-gradient(135deg, #8b7d4a, #d4a44a)",
-            color: scorpion ? "#fff" : "#0f1419",
-          }}
-        >
-          {scorpion ? "🦂" : g.name.split(" ").map((s) => s[0]).slice(0, 2).join("")}
-        </div>
+        {g.image?.head ? (
+          <div
+            className="w-14 h-14 rounded-full overflow-hidden relative border"
+            style={{
+              borderColor: scorpion ? "#c8372d" : "#d4a44a",
+              background: scorpion
+                ? "linear-gradient(135deg, #4a0f12, #c8372d)"
+                : "linear-gradient(135deg, #8b7d4a, #d4a44a)",
+            }}
+          >
+            <Image
+              src={g.image.head}
+              alt={g.name}
+              fill
+              sizes="56px"
+              className="object-cover"
+            />
+          </div>
+        ) : (
+          <div
+            className="w-14 h-14 rounded-full grid place-items-center text-xl font-extrabold text-white"
+            style={{
+              background: scorpion
+                ? "linear-gradient(135deg, #4a0f12, #c8372d)"
+                : "linear-gradient(135deg, #8b7d4a, #d4a44a)",
+              color: scorpion ? "#fff" : "#0f1419",
+            }}
+          >
+            {scorpion ? "🦂" : g.name.split(" ").map((s) => s[0]).slice(0, 2).join("")}
+          </div>
+        )}
         <div className="flex flex-col items-end gap-1">
           <span
             className={`text-[11px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded ${
@@ -259,7 +280,7 @@ function GeneralCard({ g, scorpion }: { g: GeneralData; scorpion?: boolean }) {
         </span>
         {g.hasTrainingPath && (
           <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-red-500/10 border border-red-500/40 text-red-300">
-            ⚔️ Training
+            ⚔️ Entraînement
           </span>
         )}
         {replaceableCount > 0 && (
@@ -288,7 +309,7 @@ function acqIcon(t: string): string {
 function acqShortLabel(t: string): string {
   return (
     {
-      starter: "Starter",
+      starter: "Initial",
       medals: "Médailles",
       "iron-cross": "Croix de fer",
       coin: "Pièces",

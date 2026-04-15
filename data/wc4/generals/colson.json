@@ -9,7 +9,7 @@
   "country": "XX",
   "countryName": "Empire du Scorpion",
   "shortDesc": "Troisième capitaine de l'Empire du Scorpion.",
-  "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion. Gold (5 slots).",
+  "longDesc": "Colson est le troisième capitaine de l'Empire du Scorpion, aux côtés d'Osborn et Williams. Rôle exact et skills à confirmer in-game — probablement associé aux unités blindées Scorpion. Or (5 emplacements).",
   "skills": [
     {
       "slot": 1,
@@ -43,7 +43,7 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -53,7 +53,7 @@
     },
     {
       "slot": 5,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Deuxième emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -121,5 +121,11 @@
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 9,
-  "apkId": 1057
+  "apkId": 1057,
+  "image": {
+    "photo": "/img/wc4/generals/Minister.webp",
+    "head": "/img/wc4/heads/Minister.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }

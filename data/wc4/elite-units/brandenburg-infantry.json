@@ -1,7 +1,7 @@
 {
   "slug": "brandenburg-infantry",
   "name": "Brandenburg Infantry",
-  "nameEn": null,
+  "nameEn": "Brandenburgers",
   "category": "infantry",
   "faction": "standard",
   "country": "DE",
@@ -12,62 +12,104 @@
   "longDesc": "Représente la Division Brandenburg, forces spéciales allemandes WWII spécialisées dans l'infiltration. Bonus en terrain varié.",
   "stats": {
     "atk": [
-      50,
-      55,
-      61,
-      66,
-      72,
+      41,
+      41,
+      49,
+      49,
+      60,
+      60,
+      68,
+      68,
       77,
-      83,
-      88,
-      94,
-      99,
-      105,
-      110
+      77,
+      77,
+      86
     ],
     "def": [
-      45,
-      50,
-      54,
-      59,
-      63,
-      68,
-      72,
-      77,
-      81,
-      86,
-      90,
-      95
+      11,
+      21,
+      21,
+      21,
+      21,
+      28,
+      28,
+      28,
+      28,
+      35,
+      35,
+      35
     ],
     "hp": [
-      110,
-      120,
-      130,
-      140,
-      150,
-      160,
-      170,
-      180,
-      190,
-      200,
-      210,
-      220
+      255,
+      255,
+      255,
+      345,
+      345,
+      345,
+      345,
+      435,
+      435,
+      435,
+      525,
+      525
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "atkMin": [
+      37,
+      37,
+      45,
+      45,
+      56,
+      56,
+      64,
+      64,
+      73,
+      73,
+      73,
+      82
+    ],
+    "atkMax": [
+      41,
+      41,
+      49,
+      49,
+      60,
+      60,
+      68,
+      68,
+      77,
+      77,
+      77,
+      86
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,50 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche forcée",
+      "desc": "Consommation de mobilité sur terrain difficile -35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "🗡️",
+      "name": "Samouraï",
+      "desc": "Volonté du guerrier : l'efficacité au combat ne baisse pas quand les PV diminuent",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🌲",
-      "name": "Embuscade",
-      "desc": "+20% dégâts en terrain forestier ou urbain.",
+      "icon": "🏃",
+      "name": "Marche rapide",
+      "desc": "Peut agir à nouveau après une action — récupération en 1 tour",
       "milestone": true
-    },
-    {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "🎯",
-      "name": "Capacité signature",
-      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
-      "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🛡",
-      "name": "Vétérance",
-      "desc": "+10% esquive permanent.",
-      "milestone": true
+      "icon": "🏃",
+      "name": "Marche rapide Niv.2",
+      "desc": "Peut agir à nouveau après une action — récupération en 1 tour",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche rapide Niv.3",
+      "desc": "Peut agir à nouveau après une action — récupération en 1 tour",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Incitation au courage",
+      "desc": "En prenant une ville ennemie, booste le moral des alliés dans 3 cases autour pendant 2 tours",
       "milestone": true
     }
   ],
@@ -152,9 +194,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 301001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 2650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 7150,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 15750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 18900,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 22680,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 27200,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 32650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/301001.webp",
+    "lvl12": null
+  }
 }

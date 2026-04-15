@@ -1,7 +1,7 @@
 {
   "slug": "ju-87-stuka",
   "name": "Ju 87 Stuka",
-  "nameEn": null,
+  "nameEn": "Stuka",
   "category": "airforce",
   "faction": "standard",
   "country": "DE",
@@ -12,62 +12,104 @@
   "longDesc": "Bombardier en piqué allemand reconnaissable à ses ailes inversées et à sa sirène Jericho. Dégâts bonus contre unités au sol. À ne pas confondre avec l'artillerie Stuka zu Fuss.",
   "stats": {
     "atk": [
-      90,
-      100,
-      110,
-      120,
-      130,
-      140,
-      150,
-      160,
-      170,
-      180,
-      190,
-      200
+      45,
+      45,
+      57,
+      57,
+      70,
+      70,
+      78,
+      78,
+      88,
+      88,
+      88,
+      98
     ],
     "def": [
-      35,
-      39,
-      42,
-      46,
-      50,
-      53,
-      57,
-      60,
-      64,
-      68,
-      71,
-      75
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "hp": [
-      95,
-      105,
-      114,
-      124,
-      133,
-      143,
-      152,
-      162,
-      171,
-      181,
-      190,
-      200
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "mov": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "rng": [
+      7,
+      7,
+      7,
+      7,
+      9,
+      9,
+      9,
+      10,
+      10,
+      11,
+      11,
+      11
+    ],
+    "atkMin": [
+      33,
+      33,
+      45,
+      45,
+      58,
+      58,
+      66,
+      66,
+      76,
+      76,
+      76,
+      86
+    ],
+    "atkMax": [
+      45,
+      45,
+      57,
+      57,
+      70,
+      70,
+      78,
+      78,
+      88,
+      88,
+      88,
+      98
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,42 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
-    },
-    {
-      "lvl": 3,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "💣",
+      "name": "Bombardement",
+      "desc": "Dégâts des bombardiers aux unités navales +30%",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "✈",
-      "name": "Supériorité aérienne",
-      "desc": "+15% dégâts contre autres unités aériennes.",
+      "icon": "⭐",
+      "name": "Piqué hurlant",
+      "desc": "50% de chances de baisser le moral de l'ennemi et la même chance d'embraser la case",
       "milestone": true
-    },
-    {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe surprise",
-      "desc": "Première attaque non subie.",
-      "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🪂",
-      "name": "Vol stationnaire",
-      "desc": "Aucun coût de mouvement pour rester en place.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Piqué hurlant Niv.2",
+      "desc": "80% de chances de baisser le moral de l'ennemi et la même chance d'embraser la case",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Piqué hurlant Niv.3",
+      "desc": "100% de chances de baisser le moral de l'ennemi et la même chance d'embraser la case",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "type": "active-compétence",
+      "icon": "💣",
+      "name": "Bombardement tactique",
+      "desc": "Dégâts infligés à la cible +30%",
       "milestone": true
     }
   ],
@@ -152,9 +186,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 311001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3000,
+      "costIndustry": 0,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 6000,
+      "costIndustry": 0,
+      "costEnergy": 7125,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 12000,
+      "costIndustry": 0,
+      "costEnergy": 12375,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 24000,
+      "costIndustry": 0,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 28800,
+      "costIndustry": 0,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 34560,
+      "costIndustry": 0,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 41450,
+      "costIndustry": 0,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 49750,
+      "costIndustry": 0,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/311001.webp",
+    "lvl12": null
+  }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "combat-medic",
   "name": "Combat Medic",
-  "nameEn": null,
+  "nameEn": "Combat Medic",
   "category": "infantry",
   "faction": "standard",
   "country": "XX",
@@ -12,62 +12,104 @@
   "longDesc": "Fortement recommandé dès que possible. Seule unité qui active véritablement le mécanisme de guérison. À maxer en priorité.",
   "stats": {
     "atk": [
-      30,
-      34,
-      37,
-      41,
-      45,
-      48,
-      52,
-      55,
-      59,
-      63,
-      66,
-      70
+      17,
+      17,
+      21,
+      21,
+      26,
+      26,
+      32,
+      32,
+      40,
+      40,
+      40,
+      50
     ],
     "def": [
-      40,
-      45,
-      49,
-      54,
-      58,
-      63,
-      67,
-      72,
-      76,
-      81,
-      85,
-      90
+      7,
+      14,
+      14,
+      14,
+      14,
+      20,
+      20,
+      20,
+      20,
+      28,
+      28,
+      28
     ],
     "hp": [
-      100,
-      109,
-      118,
-      127,
-      136,
-      145,
-      155,
-      164,
-      173,
-      182,
-      191,
-      200
+      225,
+      225,
+      225,
+      320,
+      320,
+      320,
+      320,
+      410,
+      410,
+      410,
+      500,
+      500
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "atkMin": [
+      14,
+      14,
+      18,
+      18,
+      23,
+      23,
+      29,
+      29,
+      37,
+      37,
+      37,
+      47
+    ],
+    "atkMax": [
+      17,
+      17,
+      21,
+      21,
+      26,
+      26,
+      32,
+      32,
+      40,
+      40,
+      40,
+      50
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,66 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche forcée",
+      "desc": "Consommation de mobilité sur terrain difficile -35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "💉",
+      "name": "Secours d'urgence",
+      "desc": "Restaure 60 PV à un allié ciblé — récupération en 1 tour",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🌲",
-      "name": "Embuscade",
-      "desc": "+20% dégâts en terrain forestier ou urbain.",
-      "milestone": true
+      "icon": "💉",
+      "name": "Secours d'urgence Niv.2",
+      "desc": "Restaure 120 PV à un allié ciblé — récupération en 1 tour",
+      "milestone": false
     },
     {
       "lvl": 7,
-      "type": "active-skill",
-      "icon": "🎯",
-      "name": "Capacité signature",
-      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Milice",
+      "desc": "Ravitaillement +50% dans la ville",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🛡",
-      "name": "Vétérance",
-      "desc": "+10% esquive permanent.",
+      "icon": "💉",
+      "name": "Secours d'urgence Niv.3",
+      "desc": "Restaure 150 PV à un allié ciblé — récupération en 1 tour",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "💉",
+      "name": "Secours d'urgence Niv.4",
+      "desc": "Restaure 200 PV à un allié ciblé — récupération en 1 tour",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Soutien logistique",
+      "desc": "Les alliés dans 2 cases récupèrent 50 PV après avoir subi des dégâts directs",
       "milestone": true
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Protection critique",
+      "desc": "Pour chaque 1% de PV perdus, dégâts reçus -1% (plafond 25%). Dégâts reçus plafonnés à 300 (hors bombes nucléaires).",
       "milestone": true
     }
   ],
@@ -152,9 +210,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 303001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3000,
+      "costIndustry": 750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 6000,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 12000,
+      "costIndustry": 4750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 24000,
+      "costIndustry": 9500,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 28800,
+      "costIndustry": 11400,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 34560,
+      "costIndustry": 13680,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 41450,
+      "costIndustry": 16400,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 49750,
+      "costIndustry": 19700,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/303001.webp",
+    "lvl12": null
+  }
 }

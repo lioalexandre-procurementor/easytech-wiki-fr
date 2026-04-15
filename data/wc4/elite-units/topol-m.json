@@ -1,7 +1,7 @@
 {
   "slug": "topol-m",
   "name": "RT-2PM2 Topol-M",
-  "nameEn": null,
+  "nameEn": "RT-2PM2 Topol-M",
   "category": "artillery",
   "faction": "standard",
   "country": "RU",
@@ -12,124 +12,246 @@
   "longDesc": "ICBM russe à tête nucléaire, service 1997. Portée maximale, dégâts dévastateurs, usage très limité.",
   "stats": {
     "atk": [
-      200,
-      223,
-      245,
-      268,
-      291,
-      314,
-      336,
-      359,
-      382,
-      405,
-      427,
-      450
+      70,
+      70,
+      85,
+      85,
+      85,
+      85,
+      100,
+      100,
+      100,
+      100,
+      100,
+      115
     ],
     "def": [
-      20,
-      22,
-      24,
-      25,
-      27,
-      29,
+      10,
+      18,
+      18,
+      18,
+      18,
+      23,
+      23,
+      23,
+      23,
       31,
-      33,
-      35,
-      36,
-      38,
-      40
+      31,
+      31
     ],
     "hp": [
-      80,
-      89,
-      98,
-      107,
-      116,
-      125,
-      135,
-      144,
-      153,
-      162,
-      171,
-      180
+      305,
+      305,
+      305,
+      405,
+      405,
+      405,
+      405,
+      490,
+      490,
+      490,
+      580,
+      580
     ],
     "mov": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12,
+      12,
+      13,
+      13,
+      13
     ],
     "rng": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
+      12,
+      12,
+      14,
+      14,
+      16,
+      16,
+      20,
+      20,
+      20,
+      20,
+      20,
+      24
+    ],
+    "atkMin": [
+      50,
+      50,
+      60,
+      60,
+      60,
+      60,
+      70,
+      70,
+      70,
+      70,
+      70,
+      80
+    ],
+    "atkMax": [
+      70,
+      70,
+      85,
+      85,
+      85,
+      85,
+      100,
+      100,
+      100,
+      100,
+      100,
+      115
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🚀",
+      "name": "Attaque au missile",
+      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "☢️",
+      "name": "Dissuasion nucléaire stratégique",
+      "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 4 tour(s), maximum 4",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "🫥",
+      "name": "Camouflage",
+      "desc": "En terrain de montagne ou de forêt, dégâts subis -10%",
+      "milestone": true
     },
     {
       "lvl": 3,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "🚀",
+      "name": "Attaque au missile Niv.2",
+      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🎯",
-      "name": "Portée étendue",
-      "desc": "+1 portée de tir.",
+      "icon": "☢️",
+      "name": "Dissuasion nucléaire stratégique Niv.2",
+      "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 3 tour(s), maximum 4",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "🫥",
+      "name": "Camouflage Niv.2",
+      "desc": "En terrain de montagne ou de forêt, dégâts subis -20%",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 10%",
       "milestone": true
     },
     {
       "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Tir précis",
-      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "type": "passive",
+      "icon": "🚀",
+      "name": "Attaque au missile Niv.3",
+      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
+      "milestone": false
+    },
+    {
+      "lvl": 8,
+      "type": "active-compétence",
+      "icon": "🫥",
+      "name": "Camouflage Niv.3",
+      "desc": "En terrain de montagne ou de forêt, dégâts subis -30%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🔥",
-      "name": "Saturation",
-      "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "icon": "☢️",
+      "name": "Dissuasion nucléaire stratégique Niv.3",
+      "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 2 tour(s), maximum 4",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique Niv.2",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 20%",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "🫥",
+      "name": "Camouflage Niv.4",
+      "desc": "En terrain de montagne ou de forêt, dégâts subis -50%",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique Niv.3",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 35%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "☢️",
+      "name": "Dissuasion nucléaire stratégique Niv.4",
+      "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 2 tour(s), maximum 4",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "type": "passive",
+      "icon": "🚀",
+      "name": "Attaque au missile Niv.4",
+      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique Niv.4",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 50%",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +274,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 339001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 1800,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 7200,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 13500,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 33000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 39600,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 47520,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 57000,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 68400,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/339001.webp",
+    "lvl12": null
+  }
 }

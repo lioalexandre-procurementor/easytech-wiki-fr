@@ -9,7 +9,7 @@
   "country": "DE",
   "countryName": "Allemagne",
   "shortDesc": "Le Renard du Désert — général blindé offensif-défensif.",
-  "longDesc": "Rommel est un général tank de haute volée. Ses skills Feu Croisé et Assaut Blindé donnent des dégâts de contre-attaque supplémentaires et des bonus offensifs. Excellent sur Königs Tiger ou M26 Pershing. 5 slots de compétences (Gold).",
+  "longDesc": "Rommel est un général tank de haute volée. Ses compétences Feu Croisé et Assaut Blindé donnent des dégâts de contre-attaque supplémentaires et des bonus offensifs. Excellent sur Königs Tiger ou M26 Pershing. 5 emplacements de compétences (Or).",
   "skills": [
     {
       "slot": 1,
@@ -43,23 +43,23 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert, pool learnable-skills"
+      "replaceableReason": "Emplacement ouvert, pool compétences apprenables"
     },
     {
       "slot": 5,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Deuxième emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "À confirmer : 4 ou 5 slots au total"
+      "replaceableReason": "À confirmer : 4 ou 5 emplacements au total"
     }
   ],
   "attributes": {
@@ -88,23 +88,8 @@
       "max": 3
     }
   },
-  "hasTrainingPath": true,
-  "training": {
-    "stages": [
-      {
-        "stage": 1,
-        "label": "Étape 1/1 — Gold unique",
-        "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": null
-      }
-    ],
-    "totalSwordCost": null,
-    "totalSceptreCost": null,
-    "summary": "Coût training à confirmer."
-  },
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
     "type": "medals",
     "cost": 2785,
@@ -137,5 +122,11 @@
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 7,
-  "apkId": 1051
+  "apkId": 1051,
+  "image": {
+    "photo": "/img/wc4/generals/Rommel.webp",
+    "head": "/img/wc4/heads/Rommel.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }

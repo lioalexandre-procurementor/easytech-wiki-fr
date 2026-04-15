@@ -109,7 +109,7 @@
     },
     {
       "lvl": 7,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "💥",
       "name": "Frappe surprise",
       "desc": "Première attaque non subie.",
@@ -125,10 +125,10 @@
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
       "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "desc": "Compétence final à valider in-game.",
       "milestone": true
     }
   ],

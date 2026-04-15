@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { UnitData } from "@/lib/types";
 import { TierBadge } from "./TierBadge";
 import { UnitIcon } from "./UnitIcon";
@@ -10,7 +11,15 @@ export function UnitRow({ unit }: { unit: UnitData }) {
     <Link href={`/world-conqueror-4/unites-elite/${unit.slug}`}
       className="bg-panel border border-border rounded-lg p-3 px-4 grid items-center gap-4 hover:border-gold transition-colors no-underline"
       style={{ gridTemplateColumns: "60px 1fr auto auto auto" }}>
-      <div className="w-15"><UnitIcon category={unit.category} country={unit.country} size={60}/></div>
+      <div className="w-15">
+        {unit.image?.sprite ? (
+          <div className="relative w-[60px] h-[60px]">
+            <Image src={unit.image.sprite} alt={unit.name} fill sizes="60px" className="object-contain"/>
+          </div>
+        ) : (
+          <UnitIcon category={unit.category} country={unit.country} size={60}/>
+        )}
+      </div>
       <div>
         <h4 className="text-gold2 font-bold text-base">{unit.name}</h4>
         <div className="text-dim text-sm">

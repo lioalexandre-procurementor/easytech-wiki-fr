@@ -7,3 +7,4 @@ out/
 .vercel
 tsconfig.tsbuildinfo
 .next-broken-*
+scripts/__pycache__/

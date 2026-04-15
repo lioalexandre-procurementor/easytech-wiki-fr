@@ -1,7 +1,7 @@
 {
   "slug": "rpg-rocket-soldier",
   "name": "RPG Rocket Soldier",
-  "nameEn": null,
+  "nameEn": "RPG Rocketeer",
   "category": "infantry",
   "faction": "standard",
   "country": "RU",
@@ -12,62 +12,104 @@
   "longDesc": "Soldat d'élite spécialisé anti-blindé. Équipé de lance-roquettes RPG-7. Rôle escorte urbaine contre mécanisés.",
   "stats": {
     "atk": [
+      52,
+      52,
       60,
-      66,
-      73,
+      60,
+      72,
+      72,
       79,
-      85,
-      92,
-      98,
-      105,
-      111,
-      117,
-      124,
-      130
+      79,
+      89,
+      89,
+      89,
+      99
     ],
     "def": [
-      40,
-      44,
-      48,
-      52,
-      56,
-      60,
-      65,
-      69,
-      73,
-      77,
-      81,
-      85
+      11,
+      20,
+      20,
+      20,
+      20,
+      31,
+      31,
+      31,
+      31,
+      38,
+      38,
+      38
     ],
     "hp": [
-      100,
-      109,
-      118,
-      127,
-      136,
-      145,
-      155,
-      164,
-      173,
-      182,
-      191,
-      200
+      245,
+      245,
+      245,
+      335,
+      335,
+      335,
+      335,
+      415,
+      415,
+      415,
+      495,
+      495
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8,
+      8,
+      9,
+      9,
+      9
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "atkMin": [
+      47,
+      47,
+      55,
+      55,
+      67,
+      67,
+      74,
+      74,
+      84,
+      84,
+      84,
+      94
+    ],
+    "atkMax": [
+      52,
+      52,
+      60,
+      60,
+      72,
+      72,
+      79,
+      79,
+      89,
+      89,
+      89,
+      99
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,115 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🚫",
+      "name": "Anti-char",
+      "desc": "Dégâts aux unités blindées +65%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⭐",
+      "name": "Attaque à la roquette",
+      "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 60% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Gilet pare-éclats",
+      "desc": "Dégâts subis des unités blindées -15%",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque à la roquette Niv.2",
+      "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 80% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🌲",
-      "name": "Embuscade",
-      "desc": "+20% dégâts en terrain forestier ou urbain.",
+      "icon": "⭐",
+      "name": "Gilet pare-éclats Niv.2",
+      "desc": "Dégâts subis des unités blindées -30%",
+      "milestone": false
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Visée infrarouge",
+      "desc": "Ignore l'esquive et les fumigènes, et inflige +35% de dégâts aux défenses de ville",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "🎯",
-      "name": "Capacité signature",
-      "desc": "Skill propre à l'infanterie d'élite (voir jeu).",
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque à la roquette Niv.3",
+      "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 100% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🛡",
-      "name": "Vétérance",
-      "desc": "+10% esquive permanent.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Gilet pare-éclats Niv.3",
+      "desc": "Dégâts subis des unités blindées -50%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Visée infrarouge Niv.2",
+      "desc": "Ignore l'esquive et les fumigènes, et inflige +70% de dégâts aux défenses de ville",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Visée infrarouge Niv.3",
+      "desc": "Ignore l'esquive et les fumigènes, et inflige +100% de dégâts aux défenses de ville",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque critique",
+      "desc": "Probabilité de coup critique +15%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque à la roquette Niv.4",
+      "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 100% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque critique Niv.3",
+      "desc": "Probabilité de coup critique +20%",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Attaque critique Niv.4",
+      "desc": "Probabilité de coup critique +30%",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +258,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 326001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 2650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 7150,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 15750,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 18900,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 22680,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 27200,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 32650,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/326001.webp",
+    "lvl12": null
+  }
 }

@@ -1,7 +1,7 @@
 {
   "slug": "richelieu",
   "name": "Richelieu",
-  "nameEn": null,
+  "nameEn": "Richelieu",
   "category": "navy",
   "faction": "standard",
   "country": "FR",
@@ -12,123 +12,173 @@
   "longDesc": "Navire de tête de la dernière classe de cuirassés français. Huit canons 380mm en deux tourelles quadruples avant.",
   "stats": {
     "atk": [
-      110,
-      122,
-      134,
-      145,
-      157,
-      169,
-      181,
-      193,
-      205,
-      216,
-      228,
-      240
+      75,
+      75,
+      84,
+      84,
+      98,
+      98,
+      107,
+      107,
+      117,
+      117,
+      117,
+      127
     ],
     "def": [
-      60,
-      66,
-      73,
-      79,
-      85,
-      92,
-      98,
-      105,
-      111,
-      117,
-      124,
-      130
+      22,
+      29,
+      29,
+      29,
+      29,
+      37,
+      37,
+      37,
+      37,
+      46,
+      46,
+      46
     ],
     "hp": [
-      160,
-      176,
-      193,
-      209,
-      225,
-      242,
-      258,
-      275,
-      291,
-      307,
-      324,
-      340
+      525,
+      525,
+      525,
+      625,
+      625,
+      625,
+      625,
+      735,
+      735,
+      735,
+      835,
+      835
     ],
     "mov": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      8,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12
     ],
     "rng": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
       3,
       3
+    ],
+    "atkMin": [
+      61,
+      61,
+      70,
+      70,
+      80,
+      80,
+      89,
+      89,
+      99,
+      99,
+      99,
+      109
+    ],
+    "atkMax": [
+      75,
+      75,
+      84,
+      84,
+      98,
+      98,
+      107,
+      107,
+      117,
+      117,
+      117,
+      127
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "💥",
+      "name": "Artillerie navale",
+      "desc": "Dégâts aux fortifications +60% et aux unités terrestres -50%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les navires de guerre",
+      "milestone": true
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "⚓",
-      "name": "Tir de barrage",
-      "desc": "Attaque multi-cibles sur les navires adjacents.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Coque renforcée",
-      "desc": "+20% HP en mer profonde.",
-      "milestone": false
+      "icon": "⭐",
+      "name": "Frappe coordonnée",
+      "desc": "Quand un allié dans 1 case attaque, 80% de chances de participer à l'attaque",
+      "milestone": true
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "✈",
-      "name": "Défense AA",
-      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
-      "milestone": true
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Frappe coordonnée Niv.2",
+      "desc": "Quand un allié dans 1 case attaque, 100% de chances de participer à l'attaque",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Frappe coordonnée Niv.3",
+      "desc": "Quand un allié dans 1 case attaque, 100% de chances de participer à l'attaque",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Forteresse d'acier",
+      "desc": "Récupère 5% de PV en fin de tour",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Brise-fer",
+      "desc": "Pour chaque 5 point de défense de la cible, dégâts infligés +1%",
       "milestone": true
     }
   ],
@@ -152,9 +202,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 320001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/320001.webp",
+    "lvl12": null
+  }
 }

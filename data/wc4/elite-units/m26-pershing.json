@@ -1,7 +1,7 @@
 {
   "slug": "m26-pershing",
   "name": "M26 Pershing",
-  "nameEn": null,
+  "nameEn": "M26 Pershing",
   "category": "tank",
   "faction": "standard",
   "country": "US",
@@ -12,62 +12,104 @@
   "longDesc": "Entre en service début 1945 pour contrer les Tiger et Panther. Unité d'élite polyvalente, bon compromis entre offensive et durabilité.",
   "stats": {
     "atk": [
-      70,
-      78,
-      86,
-      95,
-      103,
-      111,
-      119,
-      127,
-      135,
-      144,
-      152,
-      160
+      67,
+      67,
+      76,
+      76,
+      88,
+      88,
+      96,
+      96,
+      106,
+      106,
+      106,
+      115
     ],
     "def": [
-      70,
-      78,
-      86,
-      95,
-      103,
-      111,
-      119,
-      127,
-      135,
-      144,
-      152,
-      160
+      19,
+      29,
+      29,
+      29,
+      29,
+      36,
+      36,
+      36,
+      36,
+      45,
+      45,
+      45
     ],
     "hp": [
-      140,
-      154,
-      167,
-      181,
-      195,
-      208,
-      222,
-      235,
-      249,
-      263,
-      276,
-      290
+      395,
+      395,
+      395,
+      495,
+      495,
+      495,
+      495,
+      585,
+      585,
+      585,
+      675,
+      675
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11
     ],
     "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      57,
+      57,
+      66,
+      66,
+      78,
+      78,
+      86,
+      86,
+      96,
+      96,
+      96,
+      105
+    ],
+    "atkMax": [
+      67,
+      67,
+      76,
+      76,
+      88,
+      88,
+      96,
+      96,
+      106,
+      106,
+      106,
+      115
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,58 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les forces blindées",
+      "milestone": true
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
-      "milestone": false
+      "icon": "💥",
+      "name": "Tueur d'artillerie",
+      "desc": "Dégâts aux unités d'artillerie +25% pendant 1 tour. Récupération en 2 tours.",
+      "milestone": true
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "type": "passive",
+      "icon": "💥",
+      "name": "Tueur d'artillerie Niv.2",
+      "desc": "Dégâts aux unités d'artillerie +45% pendant 1 tour. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Tueur d'artillerie Niv.3",
+      "desc": "Dégâts aux unités d'artillerie +65% pendant 1 tour. Récupération en 2 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
+      "name": "Suppression continue",
+      "desc": "Applique un effet réduisant les PV de la cible de 10% par tour pendant 2 tours",
       "milestone": true
     }
   ],
@@ -152,9 +202,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 309001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/309001.webp",
+    "lvl12": null
+  }
 }

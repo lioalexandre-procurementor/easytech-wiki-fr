@@ -1,7 +1,7 @@
 {
   "slug": "bm-21-grad",
   "name": "BM-21 Grad",
-  "nameEn": null,
+  "nameEn": "BM-21",
   "category": "artillery",
   "faction": "standard",
   "country": "RU",
@@ -12,124 +12,206 @@
   "longDesc": "Lance-roquettes multiples 122mm monté sur camion Ural-375D. Cadence de tir dévastatrice, dégâts de zone.",
   "stats": {
     "atk": [
-      100,
-      111,
-      122,
-      133,
-      144,
-      155,
-      165,
-      176,
-      187,
-      198,
-      209,
-      220
+      77,
+      77,
+      85,
+      85,
+      95,
+      95,
+      103,
+      103,
+      113,
+      113,
+      113,
+      120
     ],
     "def": [
-      30,
-      33,
-      35,
-      38,
-      41,
-      44,
-      46,
-      49,
-      52,
-      55,
-      57,
-      60
+      10,
+      19,
+      19,
+      19,
+      19,
+      27,
+      27,
+      27,
+      27,
+      36,
+      36,
+      36
     ],
     "hp": [
-      100,
-      109,
-      118,
-      127,
-      136,
-      145,
-      155,
-      164,
-      173,
-      182,
-      191,
-      200
+      215,
+      215,
+      215,
+      315,
+      315,
+      315,
+      315,
+      405,
+      405,
+      405,
+      495,
+      495
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
       3,
       3
     ],
-    "rng": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+    "atkMin": [
+      52,
+      52,
+      60,
+      60,
+      70,
+      70,
+      78,
+      78,
+      88,
+      88,
+      88,
+      97
+    ],
+    "atkMax": [
+      77,
+      77,
+      85,
+      85,
+      95,
+      95,
+      103,
+      103,
+      113,
+      113,
+      113,
+      120
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
-    },
-    {
-      "lvl": 3,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "⭐",
+      "name": "Roquettes",
+      "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🎯",
-      "name": "Portée étendue",
-      "desc": "+1 portée de tir.",
+      "icon": "⭐",
+      "name": "Salve",
+      "desc": "Frappe plusieurs ennemis à la fois sans réduction de dégâts sur les cibles secondaires",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Tir précis",
-      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "lvl": 6,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche forcée",
+      "desc": "Consommation de mobilité sur terrain difficile -35%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🔥",
-      "name": "Saturation",
-      "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Salve Niv.2",
+      "desc": "Frappe plusieurs ennemis à la fois sans réduction de dégâts sur les cibles secondaires",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque critique",
+      "desc": "Probabilité de coup critique +15%",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 2% de critique en excès, +1% de dégâts",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque critique Niv.3",
+      "desc": "Probabilité de coup critique +20%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu Niv.2",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Salve Niv.3",
+      "desc": "Frappe plusieurs ennemis à la fois sans réduction de dégâts sur les cibles secondaires",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Attaque critique Niv.4",
+      "desc": "Probabilité de coup critique +30%",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Frappe au dépourvu Niv.3",
+      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +234,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 306001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 1800,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 7200,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 13500,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 33000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 39600,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 47520,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 57000,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 68400,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/306001.webp",
+    "lvl12": null
+  }
 }

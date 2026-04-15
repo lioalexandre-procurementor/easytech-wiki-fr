@@ -9,7 +9,7 @@
   "country": "XX",
   "countryName": "Empire du Scorpion",
   "shortDesc": "Leader de l'Empire du Scorpion — ancien général britannique Alfred.",
-  "longDesc": "Osborn est le chef de l'Empire du Scorpion (New World Order). Son identité originelle était Alfred, un général britannique non-recrutable qui apparaît dans la mission Dunkerque de l'événement Origin of the Scorpion Empire. Disponible dans le pack des trois généraux terroristes. Gold (5 slots).",
+  "longDesc": "Osborn est le chef de l'Empire du Scorpion (New World Order). Son identité originelle était Alfred, un général britannique non-recrutable qui apparaît dans la mission Dunkerque de l'événement Origin of the Scorpion Empire. Disponible dans le pack des trois généraux terroristes. Or (5 emplacements).",
   "skills": [
     {
       "slot": 1,
@@ -43,8 +43,8 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
-      "desc": "Emplacement apprenable — à confirmer si les capitaines Scorpion ont un slot libre.",
+      "name": "Emplacement libre",
+      "desc": "Emplacement apprenable — à confirmer si les capitaines Scorpion ont un emplacement libre.",
       "rating": null,
       "stars": null,
       "icon": null,
@@ -53,7 +53,7 @@
     },
     {
       "slot": 5,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Deuxième emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -122,5 +122,11 @@
   "skillSlots": 5,
   "unlockHQLv": 1,
   "militaryRank": 9,
-  "apkId": 1104
+  "apkId": 1104,
+  "image": {
+    "photo": "/img/wc4/generals/Emperor.webp",
+    "head": "/img/wc4/heads/Emperor.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }

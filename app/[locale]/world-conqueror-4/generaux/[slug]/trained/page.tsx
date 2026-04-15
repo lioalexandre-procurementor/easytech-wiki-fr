@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
@@ -88,17 +89,34 @@ export default async function TrainedGeneralPage({
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
-        <header className="bg-panel border border-border rounded-lg p-6 mb-6">
-          <h1 className="text-2xl font-bold text-gold2">
-            {name} — {t("general.trainedMode")}
-          </h1>
-          <p className="text-muted mt-2">{t("trainedPage.intro", { name })}</p>
-          <Link
-            href={`/world-conqueror-4/generaux/${slug}`}
-            className="inline-block mt-4 text-sm text-gold hover:underline"
-          >
-            {t("trainedPage.backToBase")}
-          </Link>
+        <header className="bg-panel border border-border rounded-lg p-6 mb-6 grid md:grid-cols-[220px_1fr] gap-6">
+          {g.image?.photoTrained && (
+            <div className="relative h-[220px] rounded-lg border-2 border-gold overflow-hidden bg-[linear-gradient(135deg,#1a2230,#12161e)]">
+              <Image
+                src={g.image.photoTrained}
+                alt={`${name} (trained)`}
+                fill
+                sizes="220px"
+                className="object-contain p-2"
+                priority
+              />
+              <span className="absolute top-2 right-2 text-[10px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded border bg-gold/20 border-gold/40 text-gold2">
+                ⚔ Trained
+              </span>
+            </div>
+          )}
+          <div>
+            <h1 className="text-2xl font-bold text-gold2">
+              {name} — {t("general.trainedMode")}
+            </h1>
+            <p className="text-muted mt-2">{t("trainedPage.intro", { name })}</p>
+            <Link
+              href={`/world-conqueror-4/generaux/${slug}`}
+              className="inline-block mt-4 text-sm text-gold hover:underline"
+            >
+              {t("trainedPage.backToBase")}
+            </Link>
+          </div>
         </header>
 
         <StatsGrid attributes={trained.attributes} mode="trained" />

@@ -9,7 +9,7 @@
   "country": "US",
   "countryName": "États-Unis",
   "shortDesc": "Général blindé américain agressif — tier S avec survivabilité.",
-  "longDesc": "Patton est un général blindé top-tier de WC4. Offensive un peu moins pure que Rokossovsky mais bien meilleure survivabilité. Recommandé pour les chars lourds américains (M26 Pershing, M1A1 Abrams). Gold, 5 slots.",
+  "longDesc": "Patton est un général blindé top-tier de WC4. Offensive un peu moins pure que Rokossovsky mais bien meilleure survivabilité. Recommandé pour les chars lourds américains (M26 Pershing, M1A1 Abrams). Or, 5 emplacements.",
   "skills": [
     {
       "slot": 1,
@@ -43,17 +43,17 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable — à remplir via l'Académie.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert"
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Deuxième emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -93,17 +93,44 @@
     "stages": [
       {
         "stage": 1,
-        "label": "Étape 1/1 — Gold",
-        "swordCost": 200,
+        "label": "Or → Promotion finale",
+        "swordCost": null,
         "sceptreCost": 10,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": null
+        "skillChanges": [
+          {
+            "slot": 1,
+            "kind": "replace",
+            "newName": "Charge héroïque"
+          },
+          {
+            "slot": 2,
+            "kind": "replace",
+            "newName": "Duel de rivaux"
+          },
+          {
+            "slot": 3,
+            "kind": "replace",
+            "newName": "Meneur de Panzers"
+          }
+        ],
+        "attributeDeltas": [
+          {
+            "key": "artillery",
+            "maxDelta": 2
+          },
+          {
+            "key": "navy",
+            "maxDelta": 2
+          },
+          {
+            "key": "marching",
+            "maxDelta": 1
+          }
+        ]
       }
     ],
-    "totalSwordCost": 200,
-    "totalSceptreCost": 10,
-    "summary": "Patton : ~200 épées + 10 sceptres selon la communauté (à vérifier in-game)."
+    "totalSwordCost": null,
+    "totalSceptreCost": 10
   },
   "acquisition": {
     "type": "medals",
@@ -136,5 +163,12 @@
   "skillSlots": 5,
   "unlockHQLv": 10,
   "militaryRank": 8,
-  "apkId": 1037
+  "apkId": 1037,
+  "generalIdGame": 1037,
+  "image": {
+    "photo": "/img/wc4/generals/Patton.webp",
+    "head": "/img/wc4/heads/Patton.webp",
+    "photoTrained": "/img/wc4/generals/Patton2.webp",
+    "headTrained": "/img/wc4/heads/Patton2.webp"
+  }
 }

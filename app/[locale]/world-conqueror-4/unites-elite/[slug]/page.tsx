@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
@@ -103,9 +104,20 @@ export default function UnitPage({ params }: { params: { locale: string; slug: s
         <main>
           {/* HEADER */}
           <div className="grid md:grid-cols-[220px_1fr] gap-7 bg-panel border border-border rounded-lg p-6 mb-6">
-            <div className="rounded-lg border-2 border-gold h-[220px] grid place-items-center relative bg-gradient-to-br from-bg3 to-bg">
-              <UnitIcon category={unit.category} country={unit.country} size={160}/>
-              <div className="absolute top-2.5 right-2.5"><TierBadge tier={unit.tier} size="md"/></div>
+            <div className="rounded-lg border-2 border-gold h-[220px] grid place-items-center relative bg-gradient-to-br from-bg3 to-bg overflow-hidden">
+              {unit.image?.sprite ? (
+                <Image
+                  src={unit.image.sprite}
+                  alt={unit.name}
+                  fill
+                  sizes="220px"
+                  className="object-contain p-4"
+                  priority
+                />
+              ) : (
+                <UnitIcon category={unit.category} country={unit.country} size={160}/>
+              )}
+              <div className="absolute top-2.5 right-2.5 z-10"><TierBadge tier={unit.tier} size="md"/></div>
             </div>
             <div>
               <h1 className="text-3xl text-gold2 font-extrabold mb-1">{unit.name}</h1>
@@ -201,7 +213,13 @@ export default function UnitPage({ params }: { params: { locale: string; slug: s
                   <Link key={u.slug} href={`/world-conqueror-4/unites-elite/${u.slug}`}
                     className="block bg-panel border border-border rounded-lg p-4 hover:border-gold transition-all no-underline">
                     <div className="flex justify-between items-start mb-2">
-                      <UnitIcon category={u.category} country={u.country} size={48}/>
+                      {u.image?.sprite ? (
+                        <div className="relative w-12 h-12">
+                          <Image src={u.image.sprite} alt={u.name} fill sizes="48px" className="object-contain"/>
+                        </div>
+                      ) : (
+                        <UnitIcon category={u.category} country={u.country} size={48}/>
+                      )}
                       <TierBadge tier={u.tier} size="sm"/>
                     </div>
                     <h3 className="text-gold2 font-bold text-base mb-1">{u.name}</h3>

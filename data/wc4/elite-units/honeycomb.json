@@ -1,7 +1,7 @@
 {
   "slug": "honeycomb",
   "name": "Honeycomb",
-  "nameEn": null,
+  "nameEn": "Hive Tactical Vehicle",
   "category": "tank",
   "faction": "standard",
   "country": "XX",
@@ -12,62 +12,104 @@
   "longDesc": "Mentionné dans la liste NamuWiki des tanks d'élite WC4. Origines et stats exactes à confirmer in-game.",
   "stats": {
     "atk": [
-      70,
-      78,
+      53,
+      53,
+      61,
+      61,
+      69,
+      69,
+      77,
+      77,
       86,
-      95,
-      103,
-      111,
-      119,
-      127,
-      135,
-      144,
-      152,
-      160
+      86,
+      86,
+      96
     ],
     "def": [
-      70,
-      79,
-      88,
-      97,
-      106,
-      115,
-      125,
-      134,
-      143,
-      152,
-      161,
-      170
+      11,
+      20,
+      20,
+      20,
+      20,
+      26,
+      26,
+      26,
+      26,
+      35,
+      35,
+      35
     ],
     "hp": [
-      140,
-      155,
-      169,
-      184,
-      198,
-      213,
-      227,
-      242,
-      256,
-      271,
-      285,
-      300
+      255,
+      255,
+      255,
+      355,
+      355,
+      355,
+      355,
+      455,
+      455,
+      455,
+      555,
+      555
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12
     ],
     "rng": [
+      1,
+      1,
+      1,
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      36,
+      36,
+      44,
+      44,
+      52,
+      52,
+      61,
+      61,
+      70,
+      70,
+      70,
+      80
+    ],
+    "atkMax": [
+      53,
+      53,
+      61,
+      61,
+      69,
+      69,
+      77,
+      77,
+      86,
+      86,
+      86,
+      96
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,107 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "active-compétence",
+      "icon": "🔫",
+      "name": "Mitrailleuse lourde",
+      "desc": "Dégâts à l'infanterie +30%",
+      "milestone": true
     },
     {
-      "lvl": 3,
-      "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "🛸",
+      "name": "Déploiement de drones",
+      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "EMCON",
+      "desc": "Récupère 25 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "🔫",
+      "name": "Mitrailleuse lourde Niv.2",
+      "desc": "Dégâts à l'infanterie +45%",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "🛸",
+      "name": "Déploiement de drones Niv.2",
+      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
+      "milestone": false
     },
     {
-      "lvl": 7,
-      "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "EMCON Niv.2",
+      "desc": "Récupère 50 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
+      "type": "active-compétence",
+      "icon": "🔫",
+      "name": "Mitrailleuse lourde Niv.3",
+      "desc": "Dégâts à l'infanterie +60%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "🛸",
+      "name": "Déploiement de drones Niv.3",
+      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "EMCON Niv.3",
+      "desc": "Récupère 50 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🏃",
+      "name": "Marche forcée",
+      "desc": "Consommation de mobilité sur terrain difficile -35%",
       "milestone": true
     },
     {
-      "lvl": 12,
-      "type": "active-skill",
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "🔫",
+      "name": "Mitrailleuse lourde Niv.4",
+      "desc": "Dégâts à l'infanterie +75%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
-      "milestone": true
+      "name": "EMCON Niv.4",
+      "desc": "Récupère 75 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "🛸",
+      "name": "Déploiement de drones Niv.4",
+      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +250,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 347001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1368,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1642,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/347001.webp",
+    "lvl12": null
+  }
 }

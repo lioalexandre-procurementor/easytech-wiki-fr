@@ -13,11 +13,25 @@ export interface Perk {
 }
 
 export interface UnitStats {
-  atk: number[];   // 12 values, lvl 1..12
+  atk: number[];       // 12 values, lvl 1..12 — display attack (derived from max)
   def: number[];
   hp: number[];
   mov: number[];
   rng: number[];
+  atkMin?: number[];   // lvl 1..12 — real min attack from APK
+  atkMax?: number[];   // lvl 1..12 — real max attack from APK
+  rngMin?: number[];   // lvl 1..12 — min range from APK
+}
+
+export interface UnitTierCost {
+  level: number;
+  needHQLv: number;
+  costGold: number;
+  costIndustry: number;
+  costEnergy: number;
+  costTech: number;
+  costItem: number;
+  costBadge: number;
 }
 
 export interface UnitData {
@@ -39,6 +53,15 @@ export interface UnitData {
   faqs: { q: string; a: string }[];
   verified: boolean;   // true = sourced from NamuWiki/Fandom; false = extrapolated
   sources?: string[];
+  /** Base armyId from the APK (lvl-1 entry). Present when data was backfilled. */
+  armyId?: number | null;
+  /** Per-level unlock costs (HQ level, gold, industry, energy, tech, item). */
+  tierCosts?: UnitTierCost[];
+  /** Image paths extracted from the APK. */
+  image?: {
+    sprite?: string | null;   // /img/wc4/elites/<armyId>.webp
+    lvl12?: string | null;    // /img/wc4/elites/<armyId_lvl12>.webp if different
+  };
 }
 
 export interface GameMeta {
@@ -199,6 +222,15 @@ export interface GeneralData {
   militaryRank?: number | null;
   /** Raw APK id for traceability. */
   apkId?: number;
+  /** In-game promotion BaseID, present when the general has a training path. */
+  generalIdGame?: number | null;
+  /** Image paths extracted from the APK. */
+  image?: {
+    photo: string;              // /img/wc4/generals/<Photo>.webp
+    head: string;               // /img/wc4/heads/<Photo>.webp
+    photoTrained?: string | null;
+    headTrained?: string | null;
+  };
 }
 
 // ─── Universal learnable-skill catalog (vote feature) ───────────────────────

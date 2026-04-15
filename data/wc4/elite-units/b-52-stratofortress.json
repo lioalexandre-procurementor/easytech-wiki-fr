@@ -1,7 +1,7 @@
 {
   "slug": "b-52-stratofortress",
   "name": "B-52 Stratofortress",
-  "nameEn": null,
+  "nameEn": "B-52 Stratofortress",
   "category": "airforce",
   "faction": "standard",
   "country": "US",
@@ -12,123 +12,205 @@
   "longDesc": "Bombardier lourd à 8 réacteurs, USAF depuis 1955. Capacité d'emport 31 tonnes. Frappe longue portée stratégique.",
   "stats": {
     "atk": [
-      150,
-      166,
-      183,
-      199,
-      215,
-      232,
-      248,
-      265,
-      281,
-      297,
-      314,
-      330
+      45,
+      45,
+      56,
+      56,
+      71,
+      71,
+      80,
+      80,
+      88,
+      88,
+      88,
+      97
     ],
     "def": [
-      35,
-      39,
-      42,
-      46,
-      50,
-      53,
-      57,
-      60,
-      64,
-      68,
-      71,
-      75
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "hp": [
-      140,
-      155,
-      169,
-      184,
-      198,
-      213,
-      227,
-      242,
-      256,
-      271,
-      285,
-      300
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "mov": [
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5,
-      5
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "rng": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      11,
+      11,
+      11,
+      11,
+      13,
+      13,
+      15,
+      15,
+      15,
+      16,
+      16,
+      16
+    ],
+    "atkMin": [
+      34,
+      34,
+      45,
+      45,
+      60,
+      60,
+      69,
+      69,
+      77,
+      77,
+      77,
+      86
+    ],
+    "atkMax": [
+      45,
+      45,
+      56,
+      56,
+      71,
+      71,
+      80,
+      80,
+      88,
+      88,
+      88,
+      97
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "💣",
+      "name": "Bombardement stratégique",
+      "desc": "Dégâts de bombardement massif aux fortifications +50%",
+      "milestone": true
     },
     {
-      "lvl": 3,
-      "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "💣",
+      "name": "Bombardement à haute altitude",
+      "desc": "Les armes anti-aériennes ne peuvent pas intercepter le bombardement à haute altitude",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Charge excessive",
+      "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +20% de dégâts dans la zone ciblée",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 10%",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Charge excessive Niv.2",
+      "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +40% de dégâts dans la zone ciblée",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "passive",
-      "icon": "✈",
-      "name": "Supériorité aérienne",
-      "desc": "+15% dégâts contre autres unités aériennes.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe surprise",
-      "desc": "Première attaque non subie.",
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique Niv.2",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 20%",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "passive",
-      "icon": "🪂",
-      "name": "Vol stationnaire",
-      "desc": "Aucun coût de mouvement pour rester en place.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Charge excessive Niv.3",
+      "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +70% de dégâts dans la zone ciblée",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique Niv.3",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 35%",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Charge excessive Niv.4",
+      "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +100% de dégâts dans la zone ciblée",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "☢️",
+      "name": "Frappe atomique Niv.4",
+      "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 50%",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Suppression aérienne",
+      "desc": "En bombardant une cible, ignore 50% de sa défense",
       "milestone": true
     }
   ],
@@ -152,9 +234,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 337001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3750,
+      "costIndustry": 0,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 13200,
+      "costIndustry": 0,
+      "costEnergy": 7125,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 20700,
+      "costIndustry": 0,
+      "costEnergy": 12375,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 41250,
+      "costIndustry": 0,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 49500,
+      "costIndustry": 0,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 59400,
+      "costIndustry": 0,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 71280,
+      "costIndustry": 0,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 85550,
+      "costIndustry": 0,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/337001.webp",
+    "lvl12": null
+  }
 }

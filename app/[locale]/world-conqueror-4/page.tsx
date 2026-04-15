@@ -47,7 +47,7 @@ export default function WC4Hub({ params }: { params: { locale: string } }) {
             <SidebarLink href="#">🌍 Conquêtes</SidebarLink>
           </SidebarSection>
           <SidebarSection title="Outils">
-            <SidebarLink href="#">🏆 Tier Lists</SidebarLink>
+            <SidebarLink href="#">🏆 Classements</SidebarLink>
             <SidebarLink href="#">⚖️ Comparateur</SidebarLink>
             <SidebarLink href="#">🧮 Calculateur XP</SidebarLink>
           </SidebarSection>

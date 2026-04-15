@@ -1,7 +1,7 @@
 {
   "slug": "centurion",
   "name": "Centurion",
-  "nameEn": null,
+  "nameEn": "A41 Centurion",
   "category": "tank",
   "faction": "standard",
   "country": "GB",
@@ -13,61 +13,103 @@
   "stats": {
     "atk": [
       70,
-      78,
-      86,
-      95,
-      103,
-      111,
-      119,
-      127,
-      135,
-      144,
-      152,
-      160
-    ],
-    "def": [
       70,
       79,
-      87,
-      96,
-      105,
-      113,
-      122,
-      130,
-      139,
-      148,
-      156,
-      165
+      79,
+      91,
+      91,
+      99,
+      99,
+      109,
+      109,
+      109,
+      119
+    ],
+    "def": [
+      21,
+      31,
+      31,
+      31,
+      31,
+      39,
+      39,
+      39,
+      39,
+      47,
+      47,
+      47
     ],
     "hp": [
-      140,
-      154,
-      167,
-      181,
-      195,
-      208,
-      222,
-      235,
-      249,
-      263,
-      276,
-      290
+      445,
+      445,
+      445,
+      545,
+      545,
+      545,
+      545,
+      635,
+      635,
+      635,
+      725,
+      725
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11
     ],
     "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      60,
+      60,
+      69,
+      69,
+      81,
+      81,
+      89,
+      89,
+      99,
+      99,
+      99,
+      109
+    ],
+    "atkMax": [
+      70,
+      70,
+      79,
+      79,
+      91,
+      91,
+      99,
+      99,
+      109,
+      109,
+      109,
+      119
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,50 +127,98 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⚔️",
+      "name": "Assaut",
+      "desc": "50% de chances d'attaquer à nouveau après avoir détruit un ennemi",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les forces blindées",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "💨",
+      "name": "Fumigène",
+      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Obus HEAT",
+      "desc": "Sous effet de fumigène, ignore 10% de la défense ennemie",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "💨",
+      "name": "Fumigène Niv.2",
+      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "🛡",
-      "name": "Blindage renforcé",
-      "desc": "Réduit de 30% les dégâts reçus pendant 1 tour.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Cible prioritaire",
-      "desc": "+15% dégâts contre les unités d'infanterie.",
+      "icon": "⭐",
+      "name": "Obus HEAT Niv.2",
+      "desc": "Sous effet de fumigène, ignore 20% de la défense ennemie",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚔",
-      "name": "Charge blindée",
-      "desc": "Attaque supplémentaire après avoir éliminé une unité.",
-      "milestone": true
+      "type": "passive",
+      "icon": "💨",
+      "name": "Fumigène Niv.3",
+      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Obus HEAT Niv.3",
+      "desc": "Sous effet de fumigène, ignore 30% de la défense ennemie",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "💨",
+      "name": "Fumigène Niv.4",
+      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Obus HEAT Niv.4",
+      "desc": "Sous effet de fumigène, ignore 40% de la défense ennemie",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game (capacité signature).",
+      "name": "Interférence visuelle",
+      "desc": "Sous fumigène, la portée des ennemis dans 2 cases est ramenée à 1 (annulé si l'effet fumigène est ignoré)",
       "milestone": true
     }
   ],
@@ -152,9 +242,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 327001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1368,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1642,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/327001.webp",
+    "lvl12": null
+  }
 }

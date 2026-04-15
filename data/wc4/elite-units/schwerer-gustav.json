@@ -1,7 +1,7 @@
 {
   "slug": "schwerer-gustav",
   "name": "Schwerer Gustav",
-  "nameEn": null,
+  "nameEn": "Heavy Gustav",
   "category": "artillery",
   "faction": "standard",
   "country": "DE",
@@ -12,48 +12,104 @@
   "longDesc": "Canon ferroviaire de 800mm. Dégâts dévastateurs mais mobilité quasi-nulle. Usage siège uniquement.",
   "stats": {
     "atk": [
-      150,
-      168,
-      186,
-      205,
-      223,
-      241,
-      259,
-      277,
-      295,
-      314,
-      332,
-      350
+      88,
+      88,
+      99,
+      99,
+      112,
+      112,
+      120,
+      120,
+      129,
+      129,
+      129,
+      138
     ],
     "def": [
-      20,
-      23,
-      25,
-      28,
-      31,
+      14,
+      24,
+      24,
+      24,
+      24,
       34,
-      36,
-      39,
+      34,
+      34,
+      34,
       42,
-      45,
-      47,
-      50
+      42,
+      42
     ],
     "hp": [
-      100,
-      111,
-      122,
-      133,
-      144,
-      155,
-      165,
-      176,
-      187,
-      198,
-      209,
-      220
+      415,
+      415,
+      415,
+      515,
+      515,
+      515,
+      515,
+      600,
+      600,
+      600,
+      690,
+      690
     ],
     "mov": [
+      5,
+      6,
+      6,
+      6,
+      6,
+      7,
+      7,
+      7,
+      7,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      3,
+      3
+    ],
+    "atkMin": [
+      78,
+      78,
+      89,
+      89,
+      102,
+      102,
+      110,
+      110,
+      119,
+      119,
+      119,
+      128
+    ],
+    "atkMax": [
+      88,
+      88,
+      99,
+      99,
+      112,
+      112,
+      120,
+      120,
+      129,
+      129,
+      129,
+      138
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -66,69 +122,87 @@
       1,
       1,
       1
-    ],
-    "rng": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Puissance de feu",
+      "desc": "50% de chances d'empêcher l'ennemi de riposter",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les forces blindées",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🎯",
-      "name": "Portée étendue",
-      "desc": "+1 portée de tir.",
+      "icon": "💥",
+      "name": "Artillerie géante",
+      "desc": "Portée +2, dégâts majorés : -40% PV de la ville/forteresse ciblée (max 1200), -20% PV de la garnison (max 500). Récupération en 3 tours.",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Tir précis",
-      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "lvl": 6,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques",
+      "desc": "Dégâts des coups critiques +20%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🔥",
-      "name": "Saturation",
-      "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.2",
+      "desc": "Dégâts des coups critiques +30%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "💥",
+      "name": "Artillerie géante Niv.2",
+      "desc": "Portée +2, dégâts majorés : -60% PV de la ville/forteresse ciblée (max 1200), -30% PV de la garnison (max 500). Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.3",
+      "desc": "Dégâts des coups critiques +40%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Dégâts critiques Niv.4",
+      "desc": "Dégâts des coups critiques +50%",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
+      "icon": "💥",
+      "name": "Artillerie géante Niv.3",
+      "desc": "Portée +2, dégâts majorés : -60% PV de la ville/forteresse ciblée (max 1200), -30% PV de la garnison (max 500). Récupération en 3 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Construction de voies",
+      "desc": "Si aucune action n'est effectuée durant un tour, mobilité du tour suivant +9",
       "milestone": true
     }
   ],
@@ -152,9 +226,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 305001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 1800,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 7200,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 13500,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 33000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 39600,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 47520,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 57000,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 68400,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/305001.webp",
+    "lvl12": null
+  }
 }

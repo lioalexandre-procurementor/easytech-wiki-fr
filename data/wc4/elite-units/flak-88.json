@@ -1,7 +1,7 @@
 {
   "slug": "flak-88",
   "name": "8.8 cm Flak",
-  "nameEn": null,
+  "nameEn": "8.8 cm Flak 36",
   "category": "artillery",
   "faction": "standard",
   "country": "DE",
@@ -12,60 +12,60 @@
   "longDesc": "L'un des canons les plus polyvalents de la WWII. Double usage AA / anti-blindé.",
   "stats": {
     "atk": [
-      90,
-      100,
-      110,
-      120,
-      130,
-      140,
-      150,
-      160,
-      170,
-      180,
-      190,
-      200
+      79,
+      79,
+      87,
+      87,
+      99,
+      99,
+      107,
+      107,
+      116,
+      116,
+      116,
+      125
     ],
     "def": [
-      40,
-      44,
-      48,
-      52,
-      56,
-      60,
-      65,
-      69,
-      73,
-      77,
-      81,
-      85
+      10,
+      18,
+      18,
+      18,
+      18,
+      23,
+      23,
+      23,
+      23,
+      28,
+      28,
+      28
     ],
     "hp": [
-      95,
-      105,
-      114,
-      124,
-      133,
-      143,
-      152,
-      162,
-      171,
-      181,
-      190,
-      200
+      295,
+      295,
+      295,
+      395,
+      395,
+      395,
+      395,
+      480,
+      480,
+      480,
+      565,
+      565
     ],
     "mov": [
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      2
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12
     ],
     "rng": [
       3,
@@ -80,55 +80,153 @@
       3,
       3,
       3
+    ],
+    "atkMin": [
+      51,
+      51,
+      59,
+      59,
+      71,
+      71,
+      79,
+      79,
+      88,
+      88,
+      88,
+      97
+    ],
+    "atkMax": [
+      79,
+      79,
+      87,
+      87,
+      99,
+      99,
+      107,
+      107,
+      116,
+      116,
+      116,
+      125
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Puissance de feu",
+      "desc": "50% de chances d'empêcher l'ennemi de riposter",
+      "milestone": true
     },
     {
-      "lvl": 3,
-      "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Garde d'acier",
+      "desc": "Dégâts subis des unités aériennes et aéroglisseurs -35% ; dégâts subis en terrain désertique -10%",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Suppression à longue portée",
+      "desc": "Dégâts -40% contre les ennemis à 1 case ; dégâts +40% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage visuel",
+      "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Garde d'acier Niv.2",
+      "desc": "Dégâts subis des unités aériennes et aéroglisseurs -50% ; dégâts subis en terrain désertique -20%",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "passive",
-      "icon": "🎯",
-      "name": "Portée étendue",
-      "desc": "+1 portée de tir.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Suppression à longue portée Niv.2",
+      "desc": "Dégâts -30% contre les ennemis à 1 case ; dégâts +50% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
+      "milestone": false
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Tir précis",
-      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "lvl": 5,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage visuel Niv.2",
+      "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "passive",
-      "icon": "🔥",
-      "name": "Saturation",
-      "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Garde d'acier Niv.3",
+      "desc": "Dégâts subis des unités aériennes et aéroglisseurs -65% ; dégâts subis en terrain désertique -30%",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Suppression à longue portée Niv.3",
+      "desc": "Dégâts -20% contre les ennemis à 1 case ; dégâts +60% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Verrouillage visuel Niv.3",
+      "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "active-compétence",
+      "icon": "⭐",
+      "name": "Garde d'acier Niv.4",
+      "desc": "Dégâts subis des unités aériennes et aéroglisseurs -80% ; dégâts subis en terrain désertique -40%",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "active-compétence",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "name": "Suppression à longue portée Niv.4",
+      "desc": "Dégâts -10% contre les ennemis à 1 case ; dégâts +70% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut aéroporté",
+      "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",
       "milestone": true
     }
   ],
@@ -152,9 +250,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 346001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 1800,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 7200,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 13500,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 33000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 39600,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 47520,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 57000,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 68400,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/346001.webp",
+    "lvl12": null
+  }
 }

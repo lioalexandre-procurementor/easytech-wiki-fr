@@ -1,7 +1,7 @@
 {
   "slug": "enterprise-cv",
   "name": "USS Enterprise (CV-6)",
-  "nameEn": null,
+  "nameEn": "Enterprise",
   "category": "navy",
   "faction": "standard",
   "country": "US",
@@ -12,124 +12,206 @@
   "longDesc": "Porte-avions classe Yorktown, « The Big E ». Navire le plus décoré de l'US Navy pendant la WWII (20 Battle Stars).",
   "stats": {
     "atk": [
-      130,
-      145,
-      159,
-      174,
-      188,
-      203,
-      217,
-      232,
-      246,
-      261,
-      275,
-      290
+      49,
+      49,
+      54,
+      54,
+      59,
+      59,
+      64,
+      64,
+      69,
+      69,
+      69,
+      74
     ],
     "def": [
-      55,
-      60,
-      66,
-      71,
-      77,
-      82,
-      88,
-      93,
-      99,
-      104,
-      110,
-      115
+      24,
+      32,
+      32,
+      32,
+      32,
+      44,
+      44,
+      44,
+      44,
+      52,
+      52,
+      52
     ],
     "hp": [
-      170,
-      187,
-      205,
-      222,
-      239,
-      256,
-      274,
-      291,
-      308,
-      325,
-      343,
-      360
+      545,
+      545,
+      545,
+      645,
+      645,
+      645,
+      645,
+      765,
+      765,
+      765,
+      885,
+      885
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      6,
+      7,
+      7,
+      7,
+      7,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10
     ],
     "rng": [
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4,
-      4
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      28,
+      28,
+      33,
+      33,
+      38,
+      38,
+      43,
+      43,
+      48,
+      48,
+      48,
+      53
+    ],
+    "atkMax": [
+      49,
+      49,
+      54,
+      54,
+      59,
+      59,
+      64,
+      64,
+      69,
+      69,
+      69,
+      74
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "💣",
+      "name": "Bombardement",
+      "desc": "Dégâts des bombardiers aux unités navales +30%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "🛡️",
+      "name": "Défense aérienne",
+      "desc": "Système anti-aérien équipé sur les navires de guerre",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⚓",
+      "name": "Porte-avions",
+      "desc": "Peut attaquer via ses aéronefs embarqués",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Port aérien maritime",
+      "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 5 points d'aéronefs",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Obus explosif",
+      "desc": "Dégâts normaux contre les chars +15%",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Port aérien maritime Niv.2",
+      "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 8 points d'aéronefs",
       "milestone": false
     },
     {
       "lvl": 5,
-      "type": "active-skill",
-      "icon": "⚓",
-      "name": "Tir de barrage",
-      "desc": "Attaque multi-cibles sur les navires adjacents.",
-      "milestone": true
-    },
-    {
-      "lvl": 7,
       "type": "passive",
-      "icon": "⚙",
-      "name": "Coque renforcée",
-      "desc": "+20% HP en mer profonde.",
+      "icon": "⭐",
+      "name": "Obus explosif Niv.2",
+      "desc": "Dégâts normaux contre les chars +30%",
       "milestone": false
     },
     {
       "lvl": 9,
-      "type": "active-skill",
-      "icon": "✈",
-      "name": "Défense AA",
-      "desc": "Réduit les dégâts aériens de 40% pendant 1 tour.",
-      "milestone": true
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Port aérien maritime Niv.3",
+      "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 12 points d'aéronefs",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Obus explosif Niv.3",
+      "desc": "Dégâts normaux contre les chars +50%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Obus explosif Niv.4",
+      "desc": "Dégâts normaux contre les chars +80%",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Port aérien maritime Niv.4",
+      "desc": "Peut utiliser tous les aéronefs classiques de l'aéroport, maximum 16 points d'aéronefs",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +234,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 323001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1800,
+      "costEnergy": 0,
+      "costTech": 90,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7200,
+      "costEnergy": 0,
+      "costTech": 270,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 13500,
+      "costEnergy": 0,
+      "costTech": 500,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 33000,
+      "costEnergy": 0,
+      "costTech": 950,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 39600,
+      "costEnergy": 0,
+      "costTech": 1140,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 47520,
+      "costEnergy": 0,
+      "costTech": 1370,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 57000,
+      "costEnergy": 0,
+      "costTech": 1640,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 68400,
+      "costEnergy": 0,
+      "costTech": 1970,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 10
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 20
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 30
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/323001.webp",
+    "lvl12": null
+  }
 }

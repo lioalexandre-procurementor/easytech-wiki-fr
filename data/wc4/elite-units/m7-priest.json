@@ -1,7 +1,7 @@
 {
   "slug": "m7-priest",
   "name": "M7 Priest",
-  "nameEn": null,
+  "nameEn": "M7 Priest",
   "category": "artillery",
   "faction": "standard",
   "country": "US",
@@ -12,123 +12,189 @@
   "longDesc": "Obusier automoteur WWII. Artillerie d'élite à mobilité élevée, bonne pour l'appui-feu dans les premiers scénarios WW2.",
   "stats": {
     "atk": [
-      80,
-      89,
-      98,
-      107,
-      116,
-      125,
-      135,
-      144,
-      153,
-      162,
-      171,
-      180
+      68,
+      68,
+      77,
+      77,
+      87,
+      87,
+      95,
+      95,
+      104,
+      104,
+      104,
+      113
     ],
     "def": [
-      30,
-      34,
-      37,
-      41,
-      45,
-      48,
-      52,
-      55,
-      59,
-      63,
-      66,
-      70
+      9,
+      16,
+      16,
+      16,
+      16,
+      23,
+      23,
+      23,
+      23,
+      29,
+      29,
+      29
     ],
     "hp": [
-      90,
-      99,
-      108,
-      117,
-      126,
-      135,
-      145,
-      154,
-      163,
-      172,
-      181,
-      190
+      235,
+      235,
+      235,
+      330,
+      330,
+      330,
+      330,
+      420,
+      420,
+      420,
+      510,
+      510
     ],
     "mov": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      8,
+      9,
+      9,
+      9,
+      9,
+      10,
+      10,
+      10,
+      10,
+      11,
+      11,
+      11
     ],
     "rng": [
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "atkMin": [
+      54,
+      54,
+      63,
+      63,
+      73,
+      73,
+      81,
+      81,
+      90,
+      90,
+      90,
+      99
+    ],
+    "atkMax": [
+      68,
+      68,
+      77,
+      77,
+      87,
+      87,
+      95,
+      95,
+      104,
+      104,
+      104,
+      113
+    ],
+    "rngMin": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
     ]
   },
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts aux unités d'infanterie +35%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
-      "milestone": false
+      "icon": "⭐",
+      "name": "Puissance de feu",
+      "desc": "50% de chances d'empêcher l'ennemi de riposter",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Perforation",
+      "desc": "Dégâts aux cibles terrestres à PV maximum +15%",
+      "milestone": true
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "🎯",
-      "name": "Portée étendue",
-      "desc": "+1 portée de tir.",
+      "icon": "⭐",
+      "name": "Tir de suppression",
+      "desc": "La prochaine attaque touche 1 ennemi supplémentaire adjacent (dégâts secondaires -50%). Récupération en 2 tours.",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Tir précis",
-      "desc": "Ignore 50% de la défense ennemie pendant 1 tour.",
+      "lvl": 6,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Perforation Niv.2",
+      "desc": "Dégâts aux cibles terrestres à PV maximum +45%",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🔥",
-      "name": "Saturation",
-      "desc": "Dégâts de zone sur tuile adjacente.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Tir de suppression Niv.2",
+      "desc": "La prochaine attaque touche 1 ennemi supplémentaire adjacent (dégâts secondaires -50%). Récupération en 2 tours.",
+      "milestone": false
+    },
+    {
+      "lvl": 10,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Perforation Niv.3",
+      "desc": "Dégâts aux cibles terrestres à PV maximum +60%",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Tir de suppression Niv.3",
+      "desc": "La prochaine attaque touche 1 ennemi supplémentaire adjacent (dégâts secondaires -50%). Récupération en 2 tours.",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
-      "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
+      "type": "active-compétence",
+      "icon": "⚔️",
+      "name": "Assaut aéroporté",
+      "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",
       "milestone": true
     }
   ],
@@ -152,9 +218,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 304001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 1500,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 7150,
+      "costEnergy": 7150,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 12400,
+      "costEnergy": 12400,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 30000,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 36000,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 43200,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 51840,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 62200,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/304001.webp",
+    "lvl12": null
+  }
 }

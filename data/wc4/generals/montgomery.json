@@ -9,7 +9,7 @@
   "country": "GB",
   "countryName": "Royaume-Uni",
   "shortDesc": "Commandant britannique, guerre d'infanterie méthodique.",
-  "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier. Silver (4 slots, 2 étapes de training).",
+  "longDesc": "Montgomery est le général britannique qui a mené la Huitième Armée à El Alamein. Dans WC4 c'est un général infanterie/polyvalent A-tier. Argent (4 emplacements, 2 étapes d'entraînement).",
   "skills": [
     {
       "slot": 1,
@@ -43,23 +43,23 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert"
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Slot libre",
-      "desc": "Compétence apprenable — débloqué via training (5e slot Gold).",
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — débloqué via entraînement (5e emplacement Or).",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot apprenable Gold — pool défini par l'Académie"
+      "replaceableReason": "Emplacement apprenable (Or) — pool défini par l'Académie"
     }
   ],
   "attributes": {
@@ -88,32 +88,8 @@
       "max": 4
     }
   },
-  "hasTrainingPath": true,
-  "training": {
-    "stages": [
-      {
-        "stage": 1,
-        "label": "Silver → 1er palier",
-        "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": null
-      },
-      {
-        "stage": 2,
-        "label": "2e palier (forme finale)",
-        "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": null
-      }
-    ],
-    "totalSwordCost": null,
-    "totalSceptreCost": null,
-    "summary": "2 étapes (silver)."
-  },
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
     "type": "medals",
     "cost": 2610,
@@ -145,5 +121,11 @@
   "skillSlots": 5,
   "unlockHQLv": 12,
   "militaryRank": 8,
-  "apkId": 1009
+  "apkId": 1009,
+  "image": {
+    "photo": "/img/wc4/generals/Montgomery.webp",
+    "head": "/img/wc4/heads/Montgomery.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }

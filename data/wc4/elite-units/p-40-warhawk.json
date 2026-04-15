@@ -1,7 +1,7 @@
 {
   "slug": "p-40-warhawk",
   "name": "P-40 Warhawk",
-  "nameEn": null,
+  "nameEn": "P-40 Fighter",
   "category": "airforce",
   "faction": "standard",
   "country": "US",
@@ -12,62 +12,104 @@
   "longDesc": "Chasseur américain début WWII. Célèbre pour ses décorations de gueule de requin chez les Flying Tigers (AVG).",
   "stats": {
     "atk": [
-      75,
-      84,
-      92,
-      101,
-      110,
-      118,
-      127,
-      135,
-      144,
-      153,
-      161,
-      170
+      34,
+      34,
+      45,
+      45,
+      60,
+      60,
+      69,
+      69,
+      77,
+      77,
+      77,
+      85
     ],
     "def": [
-      40,
-      44,
-      47,
-      51,
-      55,
-      58,
-      62,
-      65,
-      69,
-      73,
-      76,
-      80
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "hp": [
-      95,
-      105,
-      114,
-      124,
-      133,
-      143,
-      152,
-      162,
-      171,
-      181,
-      190,
-      200
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "mov": [
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "rng": [
+      8,
+      8,
+      8,
+      8,
+      10,
+      10,
+      10,
+      11,
+      11,
+      12,
+      12,
+      12
+    ],
+    "atkMin": [
+      28,
+      28,
+      39,
+      39,
+      54,
+      54,
+      63,
+      63,
+      71,
+      71,
+      71,
+      79
+    ],
+    "atkMax": [
+      34,
+      34,
+      45,
+      45,
+      60,
+      60,
+      69,
+      69,
+      77,
+      77,
+      77,
+      85
+    ],
+    "rngMin": [
       1,
       1,
       1,
@@ -85,51 +127,67 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "stat",
-      "icon": "⚙",
-      "name": "Stats de base",
-      "desc": "Statistiques de départ de l'unité d'élite.",
-      "milestone": false
+      "type": "passive",
+      "icon": "✈️",
+      "name": "Frappe aérienne",
+      "desc": "Dégâts des mitrailleuses lourdes de chasseur aux unités d'infanterie +30%",
+      "milestone": true
     },
     {
-      "lvl": 3,
+      "lvl": 1,
       "type": "passive",
-      "icon": "🎖",
-      "name": "Bonus moral",
-      "desc": "+5% moral aux unités alliées adjacentes.",
+      "icon": "⭐",
+      "name": "Neutralisation des défenses",
+      "desc": "25% de chances de détruire les défenses anti-aériennes de la ville",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Neutralisation des défenses Niv.2",
+      "desc": "50% de chances de détruire les défenses anti-aériennes de la ville",
       "milestone": false
     },
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "✈",
-      "name": "Supériorité aérienne",
-      "desc": "+15% dégâts contre autres unités aériennes.",
+      "icon": "⭐",
+      "name": "Attaque des Flying Tigers",
+      "desc": "Booste le moral d'un allié aléatoire dans 1 case autour de la cible attaquée",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "active-skill",
-      "icon": "💥",
-      "name": "Frappe surprise",
-      "desc": "Première attaque non subie.",
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Neutralisation des défenses Niv.3",
+      "desc": "75% de chances de détruire les défenses anti-aériennes de la ville",
       "milestone": false
     },
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "🪂",
-      "name": "Vol stationnaire",
-      "desc": "Aucun coût de mouvement pour rester en place.",
-      "milestone": true
+      "icon": "⭐",
+      "name": "Attaque des Flying Tigers Niv.2",
+      "desc": "Booste le moral d'un allié aléatoire dans 1 case autour de la cible attaquée",
+      "milestone": false
+    },
+    {
+      "lvl": 11,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Neutralisation des défenses Niv.4",
+      "desc": "100% de chances de détruire les défenses anti-aériennes de la ville",
+      "milestone": false
     },
     {
       "lvl": 12,
-      "type": "active-skill",
+      "type": "passive",
       "icon": "⭐",
-      "name": "Perk ultime",
-      "desc": "Skill final à valider in-game.",
-      "milestone": true
+      "name": "Attaque des Flying Tigers Niv.3",
+      "desc": "Booste le moral d'un allié aléatoire dans 1 case autour de la cible attaquée",
+      "milestone": false
     }
   ],
   "recommendedGenerals": [],
@@ -152,9 +210,136 @@
       "a": "Voir la section Généraux recommandés. La synergie optimale dépend du scénario joué."
     }
   ],
-  "verified": false,
+  "verified": true,
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
     "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
-  ]
+  ],
+  "armyId": 325001,
+  "tierCosts": [
+    {
+      "level": 1,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 2,
+      "needHQLv": 0,
+      "costGold": 3000,
+      "costIndustry": 0,
+      "costEnergy": 1500,
+      "costTech": 0,
+      "costItem": 5,
+      "costBadge": 0
+    },
+    {
+      "level": 3,
+      "needHQLv": 0,
+      "costGold": 6000,
+      "costIndustry": 0,
+      "costEnergy": 7125,
+      "costTech": 0,
+      "costItem": 15,
+      "costBadge": 0
+    },
+    {
+      "level": 4,
+      "needHQLv": 0,
+      "costGold": 12000,
+      "costIndustry": 0,
+      "costEnergy": 12375,
+      "costTech": 0,
+      "costItem": 30,
+      "costBadge": 0
+    },
+    {
+      "level": 5,
+      "needHQLv": 0,
+      "costGold": 24000,
+      "costIndustry": 0,
+      "costEnergy": 30000,
+      "costTech": 0,
+      "costItem": 60,
+      "costBadge": 0
+    },
+    {
+      "level": 6,
+      "needHQLv": 0,
+      "costGold": 28800,
+      "costIndustry": 0,
+      "costEnergy": 36000,
+      "costTech": 0,
+      "costItem": 70,
+      "costBadge": 0
+    },
+    {
+      "level": 7,
+      "needHQLv": 0,
+      "costGold": 34560,
+      "costIndustry": 0,
+      "costEnergy": 43200,
+      "costTech": 0,
+      "costItem": 80,
+      "costBadge": 0
+    },
+    {
+      "level": 8,
+      "needHQLv": 0,
+      "costGold": 41450,
+      "costIndustry": 0,
+      "costEnergy": 51840,
+      "costTech": 0,
+      "costItem": 90,
+      "costBadge": 0
+    },
+    {
+      "level": 9,
+      "needHQLv": 0,
+      "costGold": 49750,
+      "costIndustry": 0,
+      "costEnergy": 62200,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 0
+    },
+    {
+      "level": 10,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 5
+    },
+    {
+      "level": 11,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 15
+    },
+    {
+      "level": 12,
+      "needHQLv": 0,
+      "costGold": 0,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "costItem": 100,
+      "costBadge": 25
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/325001.webp",
+    "lvl12": null
+  }
 }

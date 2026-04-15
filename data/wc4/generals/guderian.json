@@ -9,7 +9,7 @@
   "country": "DE",
   "countryName": "Allemagne",
   "shortDesc": "Père de la Blitzkrieg et meilleur général blindé du jeu.",
-  "longDesc": "Considéré comme le meilleur commandant de World Conqueror 4. Théoricien de la Blitzkrieg, il possède les trois meilleurs skills blindés du jeu. En tant que général Gold, il dispose de 5 slots de compétences. À placer sur un King Tiger, IS-3 ou M1A1 Abrams pour un effet maximal.",
+  "longDesc": "Considéré comme le meilleur commandant de World Conqueror 4. Théoricien de la Blitzkrieg, il possède les trois meilleures compétences blindés du jeu. En tant que général Or, il dispose de 5 slots de compétences. À placer sur un King Tiger, IS-3 ou M1A1 Abrams pour un effet maximal.",
   "skills": [
     {
       "slot": 1,
@@ -44,23 +44,23 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
-      "desc": "Compétence apprenable — fille l'emplacement avec la skill de ton choix (Machiniste, Rumeur, etc.).",
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — remplit l'emplacement avec la compétence de ton choix (Machiniste, Rumeur, etc.).",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert — pool de skills apprenables via médailles à l'Académie"
+      "replaceableReason": "Emplacement ouvert — pool de skills apprenables via médailles à l'Académie"
     },
     {
       "slot": 5,
-      "name": "Slot libre",
-      "desc": "Deuxième emplacement apprenable — à confirmer in-game (5 slots pour Gold).",
+      "name": "Emplacement libre",
+      "desc": "Deuxième emplacement apprenable — à confirmer in-game (5 emplacements pour les généraux Or).",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert — à confirmer in-game si 4 ou 5 slots au total"
+      "replaceableReason": "Emplacement ouvert — à confirmer in-game si 4 ou 5 emplacements au total"
     }
   ],
   "attributes": {
@@ -89,23 +89,8 @@
       "max": 5
     }
   },
-  "hasTrainingPath": true,
-  "training": {
-    "stages": [
-      {
-        "stage": 1,
-        "label": "Étape 1/1 — Gold unique",
-        "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": null
-      }
-    ],
-    "totalSwordCost": null,
-    "totalSceptreCost": null,
-    "summary": "Guderian est Gold : une seule étape de training, coût à confirmer (élevé, ~10 sceptres + 200 épées selon communauté)."
-  },
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
     "type": "medals",
     "cost": 2935,
@@ -139,5 +124,11 @@
   "skillSlots": 5,
   "unlockHQLv": 16,
   "militaryRank": 6,
-  "apkId": 1049
+  "apkId": 1049,
+  "image": {
+    "photo": "/img/wc4/generals/Guderian.webp",
+    "head": "/img/wc4/heads/Guderian.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }

@@ -37,8 +37,8 @@
     "potentialSuffix": "(potentiel +{delta})",
     "baseMode": "Version de base",
     "trainedMode": "Version entraînée",
-    "baseModeHint": "Statistiques et compétences à l'achat (avant training)",
-    "trainedModeHint": "Statistiques et compétences au max (après tous les trainings)",
+    "baseModeHint": "Statistiques et compétences à l'achat (avant entraînement)",
+    "trainedModeHint": "Statistiques et compétences au max (après tous les entraînements)",
     "viewTrained": "Voir la version entraînée →",
     "viewBase": "← Voir la version de base",
     "skillSlots": "{count, plural, one {# slot} other {# slots}}",
@@ -69,7 +69,7 @@
     "balanced": "Polyvalent"
   },
   "acquisitionTypes": {
-    "starter": "Starter",
+    "starter": "Initial",
     "medals": "Médailles",
     "iron-cross": "Croix de fer",
     "coin": "Pièces",
@@ -77,13 +77,13 @@
     "event": "Événement"
   },
   "trainedPage": {
-    "intro": "Version entraînée de {name} : statistiques maximales, arbre de training complet et coût total pour maxer ce général.",
-    "totalCost": "Coût total du training",
+    "intro": "Version entraînée de {name} : statistiques maximales, arbre d'entraînement complet et coût total pour maxer ce général.",
+    "totalCost": "Coût total de l'entraînement",
     "swords": "Épées",
     "sceptres": "Sceptres",
     "stageProgression": "Progression par étape",
     "backToBase": "← Fiche de base",
-    "seoTitle": "{name} entraîné — Build max, coût training & compétences finales | WC4",
+    "seoTitle": "{name} entraîné — Build max, coût d'entraînement & compétences finales | WC4",
     "seoDesc": "Guide complet pour entraîner {name} dans World Conqueror 4 : statistiques max, coût en épées et sceptres, compétences après promotions."
   }
 }

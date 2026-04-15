@@ -9,7 +9,7 @@
   "country": "JP",
   "countryName": "Japon",
   "shortDesc": "Amiral japonais polyvalent — aussi excellent en aviation.",
-  "longDesc": "Yamaguchi est l'un des meilleurs amiraux du jeu et fonctionne également très bien comme général aviation (double usage). Gold (5 slots).",
+  "longDesc": "Yamaguchi est l'un des meilleurs amiraux du jeu et fonctionne également très bien comme général aviation (double usage). Or (5 emplacements).",
   "skills": [
     {
       "slot": 1,
@@ -43,17 +43,17 @@
     },
     {
       "slot": 4,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Emplacement apprenable.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Slot ouvert"
+      "replaceableReason": "Emplacement ouvert"
     },
     {
       "slot": 5,
-      "name": "Slot libre",
+      "name": "Emplacement libre",
       "desc": "Deuxième emplacement apprenable — à confirmer.",
       "rating": null,
       "stars": null,
@@ -88,23 +88,8 @@
       "max": 4
     }
   },
-  "hasTrainingPath": true,
-  "training": {
-    "stages": [
-      {
-        "stage": 1,
-        "label": "Étape 1/1 — Gold",
-        "swordCost": null,
-        "sceptreCost": null,
-        "skillChanges": [],
-        "attributeDeltas": [],
-        "notes": null
-      }
-    ],
-    "totalSwordCost": null,
-    "totalSceptreCost": null,
-    "summary": "Coût à confirmer."
-  },
+  "hasTrainingPath": false,
+  "training": null,
   "acquisition": {
     "type": "medals",
     "cost": 2255,
@@ -137,5 +122,11 @@
   "skillSlots": 5,
   "unlockHQLv": 16,
   "militaryRank": 8,
-  "apkId": 1089
+  "apkId": 1089,
+  "image": {
+    "photo": "/img/wc4/generals/Yamaguchi.webp",
+    "head": "/img/wc4/heads/Yamaguchi.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
 }
