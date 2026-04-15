@@ -167,7 +167,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Frappe multiple",
       "desc": "Dans un rayon de 2 cases, peut tirer des torpilles sur 4 cible(s). Récupération en 2 tours.",

@@ -159,15 +159,7 @@
     },
     {
       "lvl": 11,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Frappe coordonnée Niv.3",
-      "desc": "Quand un allié dans 1 case attaque, 100% de chances de participer à l'attaque",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Forteresse d'acier",
       "desc": "Récupère 5% de PV en fin de tour",
@@ -175,7 +167,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Brise-fer",
       "desc": "Pour chaque 5 point de défense de la cible, dégâts infligés +1%",

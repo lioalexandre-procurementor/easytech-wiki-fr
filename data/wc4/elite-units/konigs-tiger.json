@@ -207,7 +207,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Brise-fer",
       "desc": "Pour chaque 5 point de défense de la cible, dégâts infligés +1%",

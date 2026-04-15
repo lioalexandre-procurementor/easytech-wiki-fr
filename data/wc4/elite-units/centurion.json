@@ -168,14 +168,6 @@
     {
       "lvl": 5,
       "type": "passive",
-      "icon": "💨",
-      "name": "Fumigène Niv.2",
-      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 5,
-      "type": "passive",
       "icon": "⭐",
       "name": "Obus HEAT Niv.2",
       "desc": "Sous effet de fumigène, ignore 20% de la défense ennemie",
@@ -184,25 +176,9 @@
     {
       "lvl": 9,
       "type": "passive",
-      "icon": "💨",
-      "name": "Fumigène Niv.3",
-      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 9,
-      "type": "passive",
       "icon": "⭐",
       "name": "Obus HEAT Niv.3",
       "desc": "Sous effet de fumigène, ignore 30% de la défense ennemie",
-      "milestone": false
-    },
-    {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "💨",
-      "name": "Fumigène Niv.4",
-      "desc": "Se cache derrière un écran de fumée ; ne peut être ciblé activement par les unités terrestres pendant 1 tour. Récupération en 3 tours.",
       "milestone": false
     },
     {
@@ -215,7 +191,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Interférence visuelle",
       "desc": "Sous fumigène, la portée des ennemis dans 2 cases est ramenée à 1 (annulé si l'effet fumigène est ignoré)",

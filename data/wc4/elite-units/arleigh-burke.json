@@ -159,7 +159,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque saturante",
       "desc": "Tire plusieurs missiles balistiques courte portée : 150% des dégâts à la cible et 80% aux ennemis adjacents. Récupération en 3 tours.",
@@ -167,7 +167,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque saturante Niv.2",
       "desc": "Tire plusieurs missiles balistiques courte portée : 200% des dégâts à la cible et 100% aux ennemis adjacents. Récupération en 3 tours.",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque saturante Niv.3",
       "desc": "Tire plusieurs missiles balistiques courte portée : 200% des dégâts à la cible et 120% aux ennemis adjacents. Récupération en 3 tours.",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque saturante Niv.4",
       "desc": "Tire plusieurs missiles balistiques courte portée : 300% des dégâts à la cible et 150% aux ennemis adjacents. Récupération en 3 tours.",
@@ -191,7 +191,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "📡",
       "name": "Radar de conduite de tir",
       "desc": "Ignore l'esquive, les fumigènes, l'état fantôme et l'EMCON",

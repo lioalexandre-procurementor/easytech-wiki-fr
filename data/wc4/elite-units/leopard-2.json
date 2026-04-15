@@ -151,7 +151,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Sabot perforant",
       "desc": "Sur un coup critique, 50% de chances d'infliger +15% de dégâts supplémentaires",
@@ -159,7 +159,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Sabot perforant Niv.2",
       "desc": "Sur un coup critique, 50% de chances d'infliger +30% de dégâts supplémentaires",
@@ -167,7 +167,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Calibration dynamique",
       "desc": "Après avoir éliminé 3 unité(s) ce tour, portée +1 pendant 1 tour",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut tactique",
       "desc": "Entre en état Assaut : dégâts +10% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Sabot perforant Niv.3",
       "desc": "Sur un coup critique, 100% de chances d'infliger +45% de dégâts supplémentaires",
@@ -191,7 +191,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Calibration dynamique Niv.2",
       "desc": "Après avoir éliminé 2 unité(s) ce tour, portée +1 pendant 1 tour",
@@ -199,7 +199,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut tactique Niv.2",
       "desc": "Entre en état Assaut : dégâts +20% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
@@ -207,7 +207,7 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut tactique Niv.3",
       "desc": "Entre en état Assaut : dégâts +30% ce tour et ignore les effets du terrain sur la mobilité. Durée 1 tour. Récupération en 3 tours.",
@@ -215,7 +215,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Sabot perforant Niv.4",
       "desc": "Sur un coup critique, 100% de chances d'infliger +60% de dégâts supplémentaires",
@@ -223,7 +223,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Calibration dynamique Niv.3",
       "desc": "Après avoir éliminé 1 unité(s) ce tour, portée +1 pendant 1 tour",

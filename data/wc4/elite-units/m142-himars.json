@@ -130,7 +130,7 @@
       "type": "passive",
       "icon": "⭐",
       "name": "Roquettes",
-      "desc": "Frappe plusieurs ennemis à la fois. Probabilité d'empêcher la riposte : 60% (tier I) → 80% (tier II) → 100% (tier III). Progression automatique avec les promotions de l'unité.",
+      "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
       "milestone": true
     },
     {
@@ -151,7 +151,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Guidage céleste",
       "desc": "Dans un rayon de 3 cases, choisit 2 cible(s) et lance des missiles : inflige des dégâts et -15% de défense pendant 2 tours. Récupération en 3 tours.",
@@ -159,7 +159,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Frappe dévastatrice",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 100%, cette attaque est un critique garanti",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Guidage céleste Niv.2",
       "desc": "Dans un rayon de 3 cases, choisit 4 cible(s) et lance des missiles : inflige des dégâts et -30% de défense pendant 2 tours. Récupération en 3 tours.",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Frappe dévastatrice Niv.2",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 80%, cette attaque est un critique garanti",
@@ -199,7 +199,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Guidage céleste Niv.3",
       "desc": "Dans un rayon de 3 cases, choisit 6 cible(s) et lance des missiles : inflige des dégâts et -50% de défense pendant 2 tours. Récupération en 3 tours.",
@@ -207,7 +207,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Frappe dévastatrice Niv.3",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 50%, cette attaque est un critique garanti",
@@ -223,7 +223,7 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Frappe dévastatrice Niv.4",
       "desc": "Si les PV de la cible sont supérieurs ou égaux à 0%, cette attaque est un critique garanti",
@@ -231,7 +231,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Châssis léger",
       "desc": "Peut être aérotransporté",

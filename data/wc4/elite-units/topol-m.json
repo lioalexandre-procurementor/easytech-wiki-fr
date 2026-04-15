@@ -143,19 +143,11 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🫥",
       "name": "Camouflage",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -10%",
       "milestone": true
-    },
-    {
-      "lvl": 3,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Attaque au missile Niv.2",
-      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": false
     },
     {
       "lvl": 5,
@@ -167,7 +159,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🫥",
       "name": "Camouflage Niv.2",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -20%",
@@ -175,23 +167,15 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 10%",
       "milestone": true
     },
     {
-      "lvl": 7,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Attaque au missile Niv.3",
-      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": false
-    },
-    {
       "lvl": 8,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🫥",
       "name": "Camouflage Niv.3",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -30%",
@@ -207,7 +191,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique Niv.2",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 20%",
@@ -215,7 +199,7 @@
     },
     {
       "lvl": 10,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🫥",
       "name": "Camouflage Niv.4",
       "desc": "En terrain de montagne ou de forêt, dégâts subis -50%",
@@ -223,31 +207,15 @@
     },
     {
       "lvl": 10,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique Niv.3",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 35%",
       "milestone": false
     },
     {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "☢️",
-      "name": "Dissuasion nucléaire stratégique Niv.4",
-      "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 2 tour(s), maximum 4",
-      "milestone": false
-    },
-    {
       "lvl": 12,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Attaque au missile Niv.4",
-      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique Niv.4",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 50%",

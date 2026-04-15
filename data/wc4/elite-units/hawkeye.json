@@ -212,14 +212,6 @@
       "name": "Tir de précision Niv.3",
       "desc": "Probabilité de coup critique +90% pendant 1 tour — récupération en 2 tours",
       "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "🎯",
-      "name": "Frappe au dépourvu Niv.3",
-      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
-      "milestone": false
     }
   ],
   "recommendedGenerals": [],

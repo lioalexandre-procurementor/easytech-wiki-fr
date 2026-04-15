@@ -56,11 +56,14 @@ export default async function TechDetailPage({
     <>
       <TopBar />
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
-        <div className="text-xs text-muted mb-3 mt-3">
-          <Link href={"/world-conqueror-4/technologies" as any}>
+        <nav className="mt-4 mb-5">
+          <Link
+            href={"/world-conqueror-4/technologies" as any}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-panel hover:border-gold hover:bg-gold/5 text-dim hover:text-gold2 text-sm font-semibold transition-colors no-underline"
+          >
             {t("techPage.backToHub" as any)}
           </Link>
-        </div>
+        </nav>
 
         <header className="mb-6">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gold2 mb-2">

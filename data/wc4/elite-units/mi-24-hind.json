@@ -200,25 +200,9 @@
     {
       "lvl": 11,
       "type": "passive",
-      "icon": "🦅",
-      "name": "Supériorité aérienne Niv.2",
-      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "passive",
       "icon": "🎯",
       "name": "Canon à grande vitesse Niv.2",
       "desc": "Ignore 50% de la défense ennemie",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Mitraillage Niv.4",
-      "desc": "Trace une ligne droite jusqu'à 8 cases (case d'arrivée dégagée, bloquée par les unités en vol), infligeant des dégâts de mitraillage sur le trajet. Récupération en 2 tours.",
       "milestone": false
     },
     {

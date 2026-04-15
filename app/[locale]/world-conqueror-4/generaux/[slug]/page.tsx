@@ -251,10 +251,10 @@ export default async function GeneralPage({ params }: { params: { locale: string
                   </span>
                 )}
               </h1>
-              <div className="text-dim text-sm mb-4">{g.shortDesc}</div>
+              <div className="text-dim text-sm mb-4">{localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", params.locale)}</div>
               <div className="flex flex-wrap gap-2 mb-4">
                 <Tag accent>{m.icon} {t("general.generalCategoryTag", { label: m.label })}</Tag>
-                <Tag>{COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}</Tag>
+                <Tag>{COUNTRY_FLAGS[g.country] || "🏳"} {countryLabel(g.country, params.locale)}</Tag>
                 <Tag>🎖 Tier {g.rank}</Tag>
                 <Tag accent>{quality.icon} {qualityLabel} · {quality.slots} {t("general.slotsSuffix")}</Tag>
                 <Tag accent>{acqPillText}</Tag>
@@ -268,7 +268,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
                   {scorpion ? "🦂" : "🌍"} {faction.label}
                 </Tag>
               </div>
-              <p className="text-ink text-sm leading-relaxed">{g.longDesc}</p>
+              <p className="text-ink text-sm leading-relaxed">{localizedUnitField(g as unknown as Record<string, unknown>, "longDesc", params.locale)}</p>
             </div>
           </div>
 
@@ -446,10 +446,10 @@ export default async function GeneralPage({ params }: { params: { locale: string
                     href={`/world-conqueror-4/unites-elite/${u.slug}`}
                     className="block bg-bg3 border border-border rounded-lg p-4 hover:border-gold transition-colors no-underline"
                   >
-                    <div className="text-gold2 font-bold text-sm mb-1">{u.name}</div>
-                    <div className="text-dim text-xs line-clamp-2">{u.shortDesc}</div>
+                    <div className="text-gold2 font-bold text-sm mb-1">{params.locale === "fr" ? u.name : u.nameEn || u.name}</div>
+                    <div className="text-dim text-xs line-clamp-2">{localizedUnitField(u as unknown as Record<string, unknown>, "shortDesc", params.locale)}</div>
                     <div className="text-muted text-[10px] uppercase tracking-widest mt-2">
-                      {COUNTRY_FLAGS[u.country]} {u.countryName} · Tier {u.tier}
+                      {COUNTRY_FLAGS[u.country]} {countryLabel(u.country, params.locale)} · Tier {u.tier}
                     </div>
                   </Link>
                 ))}

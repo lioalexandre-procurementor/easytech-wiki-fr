@@ -348,15 +348,15 @@ function GeneralCard({
             {q.icon} {qualityLabel}
           </span>
           <span className="text-[10px] text-muted uppercase tracking-widest">
-            {COUNTRY_FLAGS[g.country] || "🏳"} {g.countryName}
+            {COUNTRY_FLAGS[g.country] || "🏳"} {countryLabel(g.country, locale)}
           </span>
         </div>
       </div>
-      <h3 className="text-gold2 font-bold text-base mb-1">{g.name}</h3>
+      <h3 className="text-gold2 font-bold text-base mb-1">{locale === "fr" ? g.name : g.nameEn || g.name}</h3>
       <div className="text-muted text-[10px] uppercase tracking-widest mb-2">
         {m.icon} {m.label}
       </div>
-      <p className="text-dim text-xs leading-relaxed line-clamp-2 mb-3">{g.shortDesc}</p>
+      <p className="text-dim text-xs leading-relaxed line-clamp-2 mb-3">{localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", locale)}</p>
       <div className="flex flex-wrap gap-1.5 mt-auto">
         <span className="text-[10px] font-semibold px-2 py-0.5 rounded bg-bg3 border border-border text-dim">
           {acqIcon(g.acquisition.type)} {acqLabels[g.acquisition.type] || g.acquisition.type}

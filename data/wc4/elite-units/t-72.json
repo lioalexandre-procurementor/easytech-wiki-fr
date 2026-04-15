@@ -174,14 +174,6 @@
       "milestone": false
     },
     {
-      "lvl": 5,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Passe-partout Niv.2",
-      "desc": "Ignore les réductions de dégâts liées au terrain en attaque comme en riposte",
-      "milestone": false
-    },
-    {
       "lvl": 9,
       "type": "passive",
       "icon": "⭐",
@@ -190,32 +182,8 @@
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Passe-partout Niv.3",
-      "desc": "Ignore les réductions de dégâts liées au terrain en attaque comme en riposte",
-      "milestone": false
-    },
-    {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Passe-partout Niv.4",
-      "desc": "Ignore les réductions de dégâts liées au terrain en attaque comme en riposte",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Avantage local Niv.4",
-      "desc": "Sur votre territoire ou celui d'un allié, dégâts infligés +50%",
-      "milestone": false
-    },
-    {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Déploiement rapide",
       "desc": "Sur votre territoire ou celui d'un allié, mobilité +5",

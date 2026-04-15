@@ -199,7 +199,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut aéroporté",
       "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",

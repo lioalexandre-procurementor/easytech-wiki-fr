@@ -4,9 +4,13 @@ import type { UnitData } from "@/lib/types";
 import { TierBadge } from "./TierBadge";
 import { UnitIcon } from "./UnitIcon";
 import { COUNTRY_FLAGS } from "@/lib/units";
+import { countryLabel } from "@/lib/countries";
+import { localizedUnitField } from "@/lib/localized-copy";
 
-export function UnitRow({ unit }: { unit: UnitData }) {
+export function UnitRow({ unit, locale }: { unit: UnitData; locale?: string }) {
   const i = unit.stats.atk.length - 1;
+  const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
+  const displayShortDesc = localizedUnitField(unit, "shortDesc", locale);
   return (
     <Link href={`/world-conqueror-4/unites-elite/${unit.slug}`}
       className="bg-panel border border-border rounded-lg p-3 px-4 grid items-center gap-4 hover:border-gold transition-colors no-underline"
@@ -14,17 +18,17 @@ export function UnitRow({ unit }: { unit: UnitData }) {
       <div className="w-15">
         {unit.image?.sprite ? (
           <div className="relative w-[60px] h-[60px]">
-            <Image src={unit.image.sprite} alt={unit.name} fill sizes="60px" className="object-contain"/>
+            <Image src={unit.image.sprite} alt={displayName} fill sizes="60px" className="object-contain"/>
           </div>
         ) : (
           <UnitIcon category={unit.category} country={unit.country} size={60}/>
         )}
       </div>
       <div>
-        <h4 className="text-gold2 font-bold text-base">{unit.name}</h4>
+        <h4 className="text-gold2 font-bold text-base">{displayName}</h4>
         <div className="text-dim text-sm">
-          <span className="text-muted text-xs uppercase tracking-widest mr-1.5">{COUNTRY_FLAGS[unit.country]} {unit.countryName}</span>
-          {unit.shortDesc}
+          <span className="text-muted text-xs uppercase tracking-widest mr-1.5">{COUNTRY_FLAGS[unit.country]} {countryLabel(unit.country, locale)}</span>
+          {displayShortDesc}
         </div>
       </div>
       <TierBadge tier={unit.tier} size="md"/>

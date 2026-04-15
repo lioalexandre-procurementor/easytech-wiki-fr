@@ -201,14 +201,6 @@
       "lvl": 11,
       "type": "passive",
       "icon": "⭐",
-      "name": "Dispositif de protection Niv.4",
-      "desc": "L'efficacité au combat ne baisse pas quand les PV diminuent. Seuil de survie : les PV ne peuvent descendre sous 1 point pendant 2 tours. Récupération en 5 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "⭐",
       "name": "Attaque critique Niv.3",
       "desc": "Probabilité de coup critique +20%",
       "milestone": false

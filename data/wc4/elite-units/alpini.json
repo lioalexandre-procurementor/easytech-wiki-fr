@@ -158,24 +158,8 @@
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Entrave Niv.2",
-      "desc": "Immobilise les ennemis dans un rayon d'1 case pendant 1 tour. Récupération 3 tours — ramenée à 1 tour si 3 cibles ou plus.",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Entrave Niv.3",
-      "desc": "Immobilise les ennemis dans un rayon d'1 case pendant 1 tour. Récupération 3 tours — ramenée à 1 tour si 3 cibles ou plus.",
-      "milestone": false
-    },
-    {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Partage de dégâts",
       "desc": "Propage 50% des dégâts directs reçus aux ennemis dans 1 case",

@@ -143,7 +143,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Feu d'enfer",
       "desc": "Inflige +25% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
@@ -151,7 +151,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut à basse altitude",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +15%",
@@ -167,7 +167,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Feu d'enfer Niv.2",
       "desc": "Inflige +50% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut à basse altitude Niv.2",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +30%",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Impulsion électromagnétique",
       "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
@@ -199,7 +199,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Feu d'enfer Niv.3",
       "desc": "Inflige +80% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
@@ -207,50 +207,26 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut à basse altitude Niv.3",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +50%",
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "active-compétence",
-      "icon": "⭐",
-      "name": "Impulsion électromagnétique Niv.2",
-      "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
-      "milestone": false
-    },
-    {
       "lvl": 10,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut à basse altitude Niv.4",
       "desc": "Peut frapper plusieurs ennemis — dégâts aux chars et à l'artillerie +80%",
       "milestone": false
     },
     {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "🦅",
-      "name": "Supériorité aérienne Niv.2",
-      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": false
-    },
-    {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Feu d'enfer Niv.4",
       "desc": "Inflige +100% de dégâts aux cibles dans 1 case autour de la cible principale ce tour. Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "active-compétence",
-      "icon": "⭐",
-      "name": "Impulsion électromagnétique Niv.3",
-      "desc": "Annule la plupart des buffs des ennemis dans 1 case autour. Récupération en 3 tours.",
       "milestone": false
     }
   ],

@@ -130,7 +130,7 @@
       "type": "passive",
       "icon": "⭐",
       "name": "Roquettes",
-      "desc": "Frappe plusieurs ennemis à la fois. Probabilité d'empêcher la riposte : 60% (tier I) → 80% (tier II) → 100% (tier III). Progression automatique avec les promotions de l'unité.",
+      "desc": "Frappe plusieurs ennemis à la fois et 60% de chances de les empêcher de riposter",
       "milestone": true
     },
     {
@@ -147,14 +147,6 @@
       "icon": "🏃",
       "name": "Marche forcée",
       "desc": "Consommation de mobilité sur terrain difficile -35%",
-      "milestone": false
-    },
-    {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Salve Niv.2",
-      "desc": "Frappe plusieurs ennemis à la fois sans réduction de dégâts sur les cibles secondaires",
       "milestone": false
     },
     {
@@ -193,24 +185,8 @@
       "lvl": 12,
       "type": "passive",
       "icon": "⭐",
-      "name": "Salve Niv.3",
-      "desc": "Frappe plusieurs ennemis à la fois sans réduction de dégâts sur les cibles secondaires",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "⭐",
       "name": "Attaque critique Niv.4",
       "desc": "Probabilité de coup critique +30%",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "🎯",
-      "name": "Frappe au dépourvu Niv.3",
-      "desc": "Le taux de critique excédentaire devient dégâts bonus : pour chaque 1% de critique en excès, +1% de dégâts",
       "milestone": false
     }
   ],

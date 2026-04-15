@@ -207,7 +207,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Renforcement de feu",
       "desc": "Attaque +10% pour chaque unité détruite — cumulable jusqu'à 3 fois, durée 2 tours",

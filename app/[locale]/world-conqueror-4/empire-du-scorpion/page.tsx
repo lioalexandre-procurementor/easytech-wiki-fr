@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
@@ -7,9 +8,9 @@ import { AdSlot } from "@/components/AdSlot";
 import {
   getUnitsByFaction,
   getGeneralsByFaction,
-  CATEGORY_META,
-  GENERAL_CATEGORY_META,
-  FACTION_META,
+  getCategoryMeta,
+  getGeneralCategoryMeta,
+  getFactionMeta,
 } from "@/lib/units";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
@@ -38,7 +39,10 @@ export default async function ScorpionHub({ params }: { params: { locale: string
   const t = await getTranslations();
   const units = getUnitsByFaction("scorpion");
   const generals = getGeneralsByFaction("scorpion");
-  const meta = FACTION_META.scorpion;
+  const CAT = getCategoryMeta(params.locale);
+  const GENERAL_CAT = getGeneralCategoryMeta(params.locale);
+  const FACTION = getFactionMeta(params.locale);
+  const meta = FACTION.scorpion;
 
   return (
     <>
@@ -140,12 +144,23 @@ export default async function ScorpionHub({ params }: { params: { locale: string
                 >
                   <div className="flex items-center justify-between mb-3">
                     <div
-                      className="w-14 h-14 rounded-full grid place-items-center text-2xl font-extrabold text-white"
+                      className="w-14 h-14 rounded-full grid place-items-center text-2xl font-extrabold text-white overflow-hidden relative"
                       style={{
                         background: "linear-gradient(135deg, #4a0f12, #c8372d)",
+                        border: "2px solid rgba(200,55,45,0.6)",
                       }}
                     >
-                      🦂
+                      {g.image?.head ? (
+                        <Image
+                          src={g.image.head}
+                          alt={g.name}
+                          width={56}
+                          height={56}
+                          className="object-cover w-full h-full"
+                        />
+                      ) : (
+                        <span aria-hidden="true">🦂</span>
+                      )}
                     </div>
                     <span className="bg-red-500/20 border border-red-500/40 text-red-300 text-[11px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded">
                       {g.rank}
@@ -153,7 +168,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
                   </div>
                   <h3 className="text-gold2 font-bold text-lg mb-1">{g.name}</h3>
                   <div className="text-muted text-[10px] uppercase tracking-widest mb-2">
-                    {GENERAL_CATEGORY_META[g.category].icon} {GENERAL_CATEGORY_META[g.category].label}
+                    {GENERAL_CAT[g.category].icon} {GENERAL_CAT[g.category].label}
                   </div>
                   <p className="text-dim text-xs leading-relaxed line-clamp-3">{g.shortDesc}</p>
                 </Link>
@@ -169,7 +184,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
             {CAT_ORDER.map((cat) => {
               const list = units.filter((u) => u.category === cat);
               if (list.length === 0) return null;
-              const cmeta = CATEGORY_META[cat];
+              const cmeta = CAT[cat];
               return (
                 <div key={cat} className="mb-7">
                   <h3 className="text-lg mb-3">
@@ -180,7 +195,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {list.map((u) => (
-                      <UnitCard key={u.slug} unit={u} />
+                      <UnitCard key={u.slug} unit={u} locale={params.locale} />
                     ))}
                   </div>
                 </div>

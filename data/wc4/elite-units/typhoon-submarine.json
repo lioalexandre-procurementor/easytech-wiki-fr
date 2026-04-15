@@ -150,14 +150,6 @@
       "milestone": true
     },
     {
-      "lvl": 3,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Attaque au missile Niv.2",
-      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": false
-    },
-    {
       "lvl": 5,
       "type": "passive",
       "icon": "☢️",
@@ -171,14 +163,6 @@
       "icon": "⭐",
       "name": "Navigation en eaux profondes Niv.2",
       "desc": "Ne peut pas être ciblé par les unités terrestres ; dégâts subis des unités aériennes -30%",
-      "milestone": false
-    },
-    {
-      "lvl": 7,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Attaque au missile Niv.3",
-      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
       "milestone": false
     },
     {
@@ -203,22 +187,6 @@
       "icon": "⭐",
       "name": "Navigation en eaux profondes Niv.4",
       "desc": "Ne peut pas être ciblé par les unités terrestres ; dégâts subis des unités aériennes -70%",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "🚀",
-      "name": "Attaque au missile Niv.4",
-      "desc": "Peut tirer des missiles balistiques à courte portée jusqu'à 2 fois par tour — remplace l'attaque normale",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "☢️",
-      "name": "Dissuasion nucléaire stratégique Niv.4",
-      "desc": "Les missiles peuvent charger des ogives atomiques : 2 initialement, +1 toutes les 2 tour(s), maximum 4",
       "milestone": false
     }
   ],

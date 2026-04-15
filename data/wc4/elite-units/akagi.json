@@ -196,14 +196,6 @@
       "name": "Raid aérien intensif Niv.3",
       "desc": "En attaquant, inflige 100% de dégâts supplémentaires aux cibles dans 1 case autour. Récupération en 2 tours.",
       "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Regroupement Niv.4",
-      "desc": "Peut effectuer 3 attaque(s) supplémentaire(s)",
-      "milestone": false
     }
   ],
   "recommendedGenerals": [],

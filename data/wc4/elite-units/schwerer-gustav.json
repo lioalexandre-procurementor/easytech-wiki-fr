@@ -191,15 +191,7 @@
     },
     {
       "lvl": 12,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Artillerie géante Niv.3",
-      "desc": "Portée +2, dégâts majorés : -60% PV de la ville/forteresse ciblée (max 1200), -30% PV de la garnison (max 500). Récupération en 3 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Construction de voies",
       "desc": "Si aucune action n'est effectuée durant un tour, mobilité du tour suivant +9",

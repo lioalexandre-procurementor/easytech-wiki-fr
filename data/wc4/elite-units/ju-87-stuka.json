@@ -159,7 +159,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "💣",
       "name": "Bombardement tactique",
       "desc": "Dégâts infligés à la cible +30%",

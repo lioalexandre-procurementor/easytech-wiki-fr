@@ -166,14 +166,6 @@
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Tir de suppression Niv.2",
-      "desc": "La prochaine attaque touche 1 ennemi supplémentaire adjacent (dégâts secondaires -50%). Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
       "lvl": 10,
       "type": "passive",
       "icon": "⭐",
@@ -182,16 +174,8 @@
       "milestone": false
     },
     {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Tir de suppression Niv.3",
-      "desc": "La prochaine attaque touche 1 ennemi supplémentaire adjacent (dégâts secondaires -50%). Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut aéroporté",
       "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",

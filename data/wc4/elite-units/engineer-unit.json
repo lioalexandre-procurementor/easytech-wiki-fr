@@ -198,14 +198,6 @@
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Creusement de tunnel Niv.2",
-      "desc": "Creuse un tunnel jusqu'à 4 cases (hors montagne et océan) : infanterie, chars légers/moyens, roquettes, véhicules blindés, artillerie de campagne et obusiers peuvent y passer. Actions bonus après passage, maximum 3 fois par tunnel. Un nouveau tunnel efface le précédent. Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
       "lvl": 11,
       "type": "passive",
       "icon": "⭐",
@@ -215,15 +207,7 @@
     },
     {
       "lvl": 12,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Creusement de tunnel Niv.3",
-      "desc": "Creuse un tunnel jusqu'à 4 cases (hors montagne et océan) : infanterie, chars légers/moyens, roquettes, véhicules blindés, artillerie de campagne et obusiers peuvent y passer. Actions bonus après passage, maximum 3 fois par tunnel. Un nouveau tunnel efface le précédent. Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Protection tactique",
       "desc": "Défense +20% aux alliés dans 2 cases autour",

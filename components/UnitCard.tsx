@@ -4,6 +4,8 @@ import type { UnitData } from "@/lib/types";
 import { TierBadge } from "./TierBadge";
 import { UnitIcon } from "./UnitIcon";
 import { COUNTRY_FLAGS } from "@/lib/units";
+import { countryLabel } from "@/lib/countries";
+import { localizedUnitField } from "@/lib/localized-copy";
 
 /**
  * Card used on the WC4 hub and elite-units listing.
@@ -12,8 +14,10 @@ import { COUNTRY_FLAGS } from "@/lib/units";
  * unit carries one. Falls back to the category SVG silhouette for scorpion /
  * mystic units that don't yet have an image mapping.
  */
-export function UnitCard({ unit }: { unit: UnitData }) {
+export function UnitCard({ unit, locale }: { unit: UnitData; locale?: string }) {
   const sprite = unit.image?.sprite ?? null;
+  const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
+  const displayShortDesc = localizedUnitField(unit, "shortDesc", locale);
   return (
     <Link
       href={`/world-conqueror-4/unites-elite/${unit.slug}`}
@@ -24,7 +28,7 @@ export function UnitCard({ unit }: { unit: UnitData }) {
           <div className="relative w-14 h-14 rounded-md border border-gold/40 bg-bg3 overflow-hidden">
             <Image
               src={sprite}
-              alt={unit.nameEn || unit.name}
+              alt={displayName}
               fill
               sizes="56px"
               className="object-contain p-1"
@@ -35,11 +39,11 @@ export function UnitCard({ unit }: { unit: UnitData }) {
         )}
         <TierBadge tier={unit.tier} size="sm" />
       </div>
-      <h3 className="text-gold2 font-bold text-base mb-1">{unit.name}</h3>
-      <p className="text-dim text-xs leading-relaxed line-clamp-2">{unit.shortDesc}</p>
+      <h3 className="text-gold2 font-bold text-base mb-1">{displayName}</h3>
+      <p className="text-dim text-xs leading-relaxed line-clamp-2">{displayShortDesc}</p>
       <div className="text-muted text-[10px] uppercase tracking-widest mt-2 flex items-center gap-2">
         <span>{COUNTRY_FLAGS[unit.country] || "🏳"}</span>
-        <span>{unit.countryName}</span>
+        <span>{countryLabel(unit.country, locale)}</span>
       </div>
     </Link>
   );

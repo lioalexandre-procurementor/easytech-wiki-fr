@@ -135,7 +135,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "💣",
       "name": "Bombardement à haute altitude",
       "desc": "Les armes anti-aériennes ne peuvent pas intercepter le bombardement à haute altitude",
@@ -143,7 +143,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Charge excessive",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +20% de dégâts dans la zone ciblée",
@@ -151,7 +151,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 10%",
@@ -159,7 +159,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Charge excessive Niv.2",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +40% de dégâts dans la zone ciblée",
@@ -167,7 +167,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique Niv.2",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 20%",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Charge excessive Niv.3",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +70% de dégâts dans la zone ciblée",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique Niv.3",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 35%",
@@ -191,7 +191,7 @@
     },
     {
       "lvl": 10,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Charge excessive Niv.4",
       "desc": "Ne peut pas servir d'aéronef embarqué. Chaque attaque inflige +100% de dégâts dans la zone ciblée",
@@ -199,7 +199,7 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "☢️",
       "name": "Frappe atomique Niv.4",
       "desc": "En attaquant avec une bombe nucléaire, les dégâts nucléaires sont augmentés de 50%",
@@ -207,7 +207,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Suppression aérienne",
       "desc": "En bombardant une cible, ignore 50% de sa défense",

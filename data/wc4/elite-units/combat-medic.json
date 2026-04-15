@@ -175,7 +175,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Soutien logistique",
       "desc": "Les alliés dans 2 cases récupèrent 50 PV après avoir subi des dégâts directs",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Protection critique",
       "desc": "Pour chaque 1% de PV perdus, dégâts reçus -1% (plafond 25%). Dégâts reçus plafonnés à 300 (hors bombes nucléaires).",

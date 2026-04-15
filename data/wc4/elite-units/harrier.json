@@ -135,7 +135,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Vectorisation de poussée",
       "desc": "40% de chances d'esquiver les dégâts des unités terrestres ou navales, 10% pour les frappes aériennes (hors missiles et bombes nucléaires)",
@@ -143,7 +143,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes",
       "desc": "Dégâts +10% contre les hélicoptères. Après déplacement, mobilité du tour suivant -12 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -159,7 +159,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque en chaîne",
       "desc": "Dégâts aux blindés et artillerie +20%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -30% chaque fois, jusqu'à 1 fois par tour.",
@@ -167,7 +167,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.2",
       "desc": "65% de chances d'esquiver les dégâts des unités terrestres ou navales, 20% pour les frappes aériennes (hors missiles et bombes nucléaires)",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.2",
       "desc": "Dégâts +20% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -191,7 +191,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque en chaîne Niv.2",
       "desc": "Dégâts aux blindés et artillerie +30%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -30% chaque fois, jusqu'à 2 fois par tour.",
@@ -199,7 +199,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.3",
       "desc": "90% de chances d'esquiver les dégâts des unités terrestres ou navales, 30% pour les frappes aériennes (hors missiles et bombes nucléaires)",
@@ -207,7 +207,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.3",
       "desc": "Dégâts +30% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -223,23 +223,15 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque en chaîne Niv.3",
       "desc": "Dégâts aux blindés et artillerie +40%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -20% chaque fois, jusqu'à 2 fois par tour.",
       "milestone": false
     },
     {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "🦅",
-      "name": "Supériorité aérienne Niv.2",
-      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": false
-    },
-    {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.4",
       "desc": "Dégâts +40% contre les hélicoptères. Après déplacement, mobilité du tour suivant -6 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -247,7 +239,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Attaque en chaîne Niv.4",
       "desc": "Dégâts aux blindés et artillerie +50%. Si la cible survit, elle reçoit l'effet Entrave pendant 1 tour. Si elle est anéantie, nouvelle attaque immédiate avec dégâts -20% chaque fois, jusqu'à 3 fois par tour.",

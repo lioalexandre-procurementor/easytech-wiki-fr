@@ -135,7 +135,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Vectorisation de poussée",
       "desc": "40% de chances d'esquiver les dégâts des unités terrestres ou navales, 10% pour les frappes aériennes (hors missiles et bombes nucléaires)",
@@ -143,7 +143,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes",
       "desc": "Dégâts +10% contre les hélicoptères. Après déplacement, mobilité du tour suivant -12 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -151,7 +151,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Verrouillage BVR",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +10%",
@@ -159,7 +159,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🚀",
       "name": "Missile à sous-munitions",
       "desc": "Ce tour, en touchant une cible, inflige aussi 20% de dégâts à 3 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
@@ -167,7 +167,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Offensive implacable",
       "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 1 fois.",
@@ -175,7 +175,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.2",
       "desc": "65% de chances d'esquiver les dégâts des unités terrestres ou navales, 20% pour les frappes aériennes (hors missiles et bombes nucléaires)",
@@ -183,7 +183,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.2",
       "desc": "Dégâts +20% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -191,7 +191,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Verrouillage BVR Niv.2",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +20%",
@@ -199,7 +199,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🚀",
       "name": "Missile à sous-munitions Niv.2",
       "desc": "Ce tour, en touchant une cible, inflige aussi 30% de dégâts à 4 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
@@ -207,7 +207,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Offensive implacable Niv.2",
       "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 2 fois.",
@@ -215,7 +215,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Vectorisation de poussée Niv.3",
       "desc": "90% de chances d'esquiver les dégâts des unités terrestres ou navales, 30% pour les frappes aériennes (hors missiles et bombes nucléaires)",
@@ -223,7 +223,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.3",
       "desc": "Dégâts +30% contre les hélicoptères. Après déplacement, mobilité du tour suivant -9 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -231,7 +231,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Verrouillage BVR Niv.3",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +30%",
@@ -239,7 +239,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🚀",
       "name": "Missile à sous-munitions Niv.3",
       "desc": "Ce tour, en touchant une cible, inflige aussi 40% de dégâts à 5 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
@@ -247,7 +247,7 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Offensive implacable Niv.3",
       "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 3 fois.",
@@ -255,15 +255,7 @@
     },
     {
       "lvl": 10,
-      "type": "passive",
-      "icon": "🦅",
-      "name": "Supériorité aérienne Niv.2",
-      "desc": "Peut décoller à 1 case d'un porte-avions. Ignore tous les effets de terrain sur la mobilité et toutes les mines. L'ennemi ne peut pas riposter. L'efficacité au combat ne baisse pas quand les PV diminuent.",
-      "milestone": false
-    },
-    {
-      "lvl": 10,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Contre-mesures aériennes Niv.4",
       "desc": "Dégâts +40% contre les hélicoptères. Après déplacement, mobilité du tour suivant -6 (minimum 2 cases). Mobilité restaurée après un tour de repos à 1 case d'une ville ou d'une unité du génie alliée.",
@@ -271,7 +263,7 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Verrouillage BVR Niv.4",
       "desc": "Dégâts aux unités blindées, d'artillerie et navales +40%",
@@ -279,18 +271,10 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🚀",
       "name": "Missile à sous-munitions Niv.4",
       "desc": "Ce tour, en touchant une cible, inflige aussi 50% de dégâts à 6 unité(s) dans 1 case (cibles non-infanterie en priorité). Durée 1 tour. Récupération en 3 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "active-compétence",
-      "icon": "⭐",
-      "name": "Offensive implacable Niv.4",
-      "desc": "Après une attaque, une attaque supplémentaire. Peut se déclencher 3 fois.",
       "milestone": false
     }
   ],

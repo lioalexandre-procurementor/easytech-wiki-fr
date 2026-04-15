@@ -173,9 +173,17 @@ def classify(feat_type):
 
 
 def build_perks_for_unit(base_id, army_by_id, feat_idx):
-    """Return list of Perk dicts derived from diff across levels."""
+    """Return list of Perk dicts derived from diff across levels.
+
+    Invariant: we NEVER emit two consecutive perks for the same feature type
+    with identical rendered descriptions. Many WC4 features have static
+    template text ("Capable of attacking multiple enemies...") with hidden
+    numeric upgrades that don't surface in the template — without this guard
+    the wiki ends up showing the same sentence twice under Niv.1/Niv.2/Niv.3.
+    """
     perks = []
-    prev_levels = {}  # type → level assigned at previous unit level
+    prev_levels = {}       # feature type → level at previous unit level
+    last_rendered = {}     # feature type → last description actually emitted
 
     for unit_lvl in range(1, 13):
         entry = army_by_id.get(base_id + unit_lvl - 1)
@@ -189,25 +197,25 @@ def build_perks_for_unit(base_id, army_by_id, feat_idx):
             meta = feat_idx.get((ftype, flevel))
             if meta is None:
                 continue
+            rendered = (meta.get("desc") or "").strip()
             prev = prev_levels.get(ftype)
-            if prev is None:
-                perks.append({
-                    "lvl": unit_lvl,
-                    "type": classify(ftype),
-                    "icon": pick_icon(meta["name"]),
-                    "name": meta["name"],
-                    "desc": meta["desc"],
-                    "milestone": unit_lvl in (1, 5, 9, 12),
-                })
-            elif flevel > prev:
-                perks.append({
-                    "lvl": unit_lvl,
-                    "type": classify(ftype),
-                    "icon": pick_icon(meta["name"]),
-                    "name": f"{meta['name']} Niv.{flevel}",
-                    "desc": meta["desc"],
-                    "milestone": False,
-                })
+            is_first = prev is None
+            is_upgrade = (prev is not None) and (flevel > prev)
+            if not (is_first or is_upgrade):
+                continue
+            # Skip if the rendered text is identical to the last emitted
+            # entry for this feature (static template, hidden upgrade).
+            if last_rendered.get(ftype) == rendered and rendered:
+                continue
+            perks.append({
+                "lvl": unit_lvl,
+                "type": classify(ftype),
+                "icon": pick_icon(meta["name"]),
+                "name": meta["name"] if is_first else f"{meta['name']} Niv.{flevel}",
+                "desc": meta["desc"],
+                "milestone": unit_lvl in (1, 5, 9, 12) if is_first else False,
+            })
+            last_rendered[ftype] = rendered
         prev_levels = current
 
     return perks

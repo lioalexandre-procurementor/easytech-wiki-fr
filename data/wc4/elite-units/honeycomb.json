@@ -127,7 +127,7 @@
   "perks": [
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🔫",
       "name": "Mitrailleuse lourde",
       "desc": "Dégâts à l'infanterie +30%",
@@ -135,7 +135,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🛸",
       "name": "Déploiement de drones",
       "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
@@ -143,7 +143,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "EMCON",
       "desc": "Récupère 25 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
@@ -151,7 +151,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.2",
       "desc": "Dégâts à l'infanterie +45%",
@@ -159,15 +159,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
-      "icon": "🛸",
-      "name": "Déploiement de drones Niv.2",
-      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
-      "milestone": false
-    },
-    {
-      "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "EMCON Niv.2",
       "desc": "Récupère 50 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
@@ -175,26 +167,10 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.3",
       "desc": "Dégâts à l'infanterie +60%",
-      "milestone": false
-    },
-    {
-      "lvl": 9,
-      "type": "active-compétence",
-      "icon": "🛸",
-      "name": "Déploiement de drones Niv.3",
-      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
-      "milestone": false
-    },
-    {
-      "lvl": 9,
-      "type": "active-compétence",
-      "icon": "⭐",
-      "name": "EMCON Niv.3",
-      "desc": "Récupère 50 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
       "milestone": false
     },
     {
@@ -207,7 +183,7 @@
     },
     {
       "lvl": 10,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.4",
       "desc": "Dégâts à l'infanterie +75%",
@@ -215,18 +191,10 @@
     },
     {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "EMCON Niv.4",
       "desc": "Récupère 75 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. L'EMCON prend fin à l'attaque. Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "active-compétence",
-      "icon": "🛸",
-      "name": "Déploiement de drones Niv.4",
-      "desc": "Déploie un drone dans 1 case ; le drone agit indépendamment, n'attaque qu'une fois par tour, dure 1 tour. Récupération en 1 tour.",
       "milestone": false
     }
   ],

@@ -135,7 +135,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Garde d'acier",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -35% ; dégâts subis en terrain désertique -10%",
@@ -143,7 +143,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Suppression à longue portée",
       "desc": "Dégâts -40% contre les ennemis à 1 case ; dégâts +40% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
@@ -151,7 +151,7 @@
     },
     {
       "lvl": 1,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Verrouillage visuel",
       "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
@@ -159,7 +159,7 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Garde d'acier Niv.2",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -50% ; dégâts subis en terrain désertique -20%",
@@ -167,23 +167,15 @@
     },
     {
       "lvl": 5,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Suppression à longue portée Niv.2",
       "desc": "Dégâts -30% contre les ennemis à 1 case ; dégâts +50% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
       "milestone": false
     },
     {
-      "lvl": 5,
-      "type": "active-compétence",
-      "icon": "⭐",
-      "name": "Verrouillage visuel Niv.2",
-      "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
-      "milestone": false
-    },
-    {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Garde d'acier Niv.3",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -65% ; dégâts subis en terrain désertique -30%",
@@ -191,23 +183,15 @@
     },
     {
       "lvl": 9,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Suppression à longue portée Niv.3",
       "desc": "Dégâts -20% contre les ennemis à 1 case ; dégâts +60% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "active-compétence",
-      "icon": "⭐",
-      "name": "Verrouillage visuel Niv.3",
-      "desc": "En attaque comme en riposte, ignore l'esquive et les fumigènes",
-      "milestone": false
-    },
-    {
       "lvl": 11,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Garde d'acier Niv.4",
       "desc": "Dégâts subis des unités aériennes et aéroglisseurs -80% ; dégâts subis en terrain désertique -40%",
@@ -215,7 +199,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Suppression à longue portée Niv.4",
       "desc": "Dégâts -10% contre les ennemis à 1 case ; dégâts +70% contre les chars, artillerie ou aéroglisseurs à 2 cases ou plus",
@@ -223,7 +207,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⚔️",
       "name": "Assaut aéroporté",
       "desc": "+100% de dégâts infligés le tour suivant un saut aéroporté",

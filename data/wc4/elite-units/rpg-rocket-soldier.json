@@ -217,14 +217,6 @@
       "lvl": 11,
       "type": "passive",
       "icon": "⭐",
-      "name": "Attaque à la roquette Niv.4",
-      "desc": "Portée ramenée à 2, frappe plusieurs ennemis, 100% de chances que les ennemis ne puissent pas riposter pendant 1 tour. Récupération en 2 tours.",
-      "milestone": false
-    },
-    {
-      "lvl": 11,
-      "type": "passive",
-      "icon": "⭐",
       "name": "Attaque critique Niv.3",
       "desc": "Probabilité de coup critique +20%",
       "milestone": false

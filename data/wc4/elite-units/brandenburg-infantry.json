@@ -150,24 +150,8 @@
       "milestone": true
     },
     {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "🏃",
-      "name": "Marche rapide Niv.2",
-      "desc": "Peut agir à nouveau après une action — récupération en 1 tour",
-      "milestone": false
-    },
-    {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "🏃",
-      "name": "Marche rapide Niv.3",
-      "desc": "Peut agir à nouveau après une action — récupération en 1 tour",
-      "milestone": false
-    },
-    {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Incitation au courage",
       "desc": "En prenant une ville ennemie, booste le moral des alliés dans 3 cases autour pendant 2 tours",

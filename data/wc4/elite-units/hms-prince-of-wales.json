@@ -150,27 +150,11 @@
       "milestone": true
     },
     {
-      "lvl": 8,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Pose de mines Niv.2",
-      "desc": "Dépose des mines navales de contact dans un rayon d'1 case — récupération en 1 tour",
-      "milestone": false
-    },
-    {
       "lvl": 9,
       "type": "passive",
       "icon": "💥",
       "name": "Artillerie navale lourde Niv.2",
       "desc": "Dégâts aux forteresses +120% et aux unités terrestres +50%",
-      "milestone": false
-    },
-    {
-      "lvl": 10,
-      "type": "passive",
-      "icon": "💥",
-      "name": "Pose de mines Niv.3",
-      "desc": "Dépose des mines navales de contact dans un rayon d'1 case — récupération en 1 tour",
       "milestone": false
     },
     {

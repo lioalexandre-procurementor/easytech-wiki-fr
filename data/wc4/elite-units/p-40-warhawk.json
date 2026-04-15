@@ -166,27 +166,11 @@
       "milestone": false
     },
     {
-      "lvl": 9,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Attaque des Flying Tigers Niv.2",
-      "desc": "Booste le moral d'un allié aléatoire dans 1 case autour de la cible attaquée",
-      "milestone": false
-    },
-    {
       "lvl": 11,
       "type": "passive",
       "icon": "⭐",
       "name": "Neutralisation des défenses Niv.4",
       "desc": "100% de chances de détruire les défenses anti-aériennes de la ville",
-      "milestone": false
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "⭐",
-      "name": "Attaque des Flying Tigers Niv.3",
-      "desc": "Booste le moral d'un allié aléatoire dans 1 case autour de la cible attaquée",
       "milestone": false
     }
   ],

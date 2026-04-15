@@ -175,7 +175,7 @@
     },
     {
       "lvl": 12,
-      "type": "active-compétence",
+      "type": "active-skill",
       "icon": "⭐",
       "name": "Déviation balistique",
       "desc": "En subissant des dégâts d'une unité terrestre, 50% de chances de transférer ces dégâts à une cible dans 1 case (hors unité attaquante)",
