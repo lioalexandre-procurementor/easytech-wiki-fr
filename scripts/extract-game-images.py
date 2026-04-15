@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Extract only the APK image files the wiki actually needs:
+Extract only the game image files the wiki actually needs:
 
 - For each wiki general: base portrait + circle head (+ promoted *2 variant
   when trainable).

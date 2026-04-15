@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate wiki JSONs for every canonical APK general not already present.
+Generate wiki JSONs for every canonical general not already present.
 
 Reads:
   - wc4_export/generals_canonical.json (104 generals)
@@ -10,8 +10,8 @@ Reads:
 Writes one easytech-wiki/data/wc4/generals/<slug>.json per missing general,
 preserving the 13 existing hand-curated entries untouched.
 
-Image paths are NOT set here — run extract-apk-images.py afterwards to pull
-portraits/heads from the APK and backfill the `image` block.
+Image paths are NOT set here — run extract-game-images.py afterwards to pull
+portraits/heads from the game data and backfill the `image` block.
 """
 import json
 import re
