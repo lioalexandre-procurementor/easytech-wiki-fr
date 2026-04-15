@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
+import SearchBar from "./SearchBar";
 
 export async function TopBar() {
   const t = await getTranslations();
@@ -22,10 +23,7 @@ export async function TopBar() {
           <NavLink href="/world-conqueror-4/mises-a-jour">{t("nav.updates")}</NavLink>
           <NavLink href="#" disabled>Classements</NavLink>
         </nav>
-        <div className="flex items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5 w-[260px]">
-          <span>🔍</span>
-          <input className="bg-transparent outline-none flex-1 text-sm placeholder:text-muted text-ink" placeholder={t("nav.searchPlaceholder")} />
-        </div>
+        <SearchBar />
         <LocaleSwitcher />
       </div>
     </div>

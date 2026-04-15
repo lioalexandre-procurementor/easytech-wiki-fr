@@ -302,6 +302,17 @@
     "detailSeoTitle": "{title} — WC4 Updates",
     "detailSeoDescription": "Details of World Conqueror 4 update {version}: {summary}"
   },
+  "search": {
+    "placeholder": "Search for a general, unit, skill…",
+    "loading": "Loading index…",
+    "noResults": "No results",
+    "group": {
+      "general": "Generals",
+      "unit": "Elite units",
+      "skill": "Skills",
+      "update": "Updates"
+    }
+  },
   "votesLegalPage": {
     "seoTitle": "Community Voting Policy",
     "seoDescription": "How community voting works for generals' trainable skills: anonymity, safeguards, vote duration.",

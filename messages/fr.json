@@ -302,6 +302,17 @@
     "detailSeoTitle": "{title} — Mises à jour WC4",
     "detailSeoDescription": "Détails de la mise à jour {version} de World Conqueror 4 : {summary}"
   },
+  "search": {
+    "placeholder": "Rechercher un général, une unité, une compétence…",
+    "loading": "Chargement de l'index…",
+    "noResults": "Aucun résultat",
+    "group": {
+      "general": "Généraux",
+      "unit": "Unités d'élite",
+      "skill": "Compétences",
+      "update": "Mises à jour"
+    }
+  },
   "votesLegalPage": {
     "seoTitle": "Politique de vote communautaire",
     "seoDescription": "Comment fonctionne le vote communautaire sur les compétences entraînées des généraux : anonymat, garde-fous, durée de vote.",
