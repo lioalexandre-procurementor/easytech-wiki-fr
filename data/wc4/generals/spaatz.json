@@ -1,0 +1,117 @@
+{
+  "slug": "spaatz",
+  "name": "Carl Spaatz",
+  "nameEn": "Spaatz",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "S",
+  "quality": "gold",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général aérienne or — États-Unis.",
+  "longDesc": "Carl Spaatz est un général aérienne de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Air Superiority",
+      "desc": "X% chance to ignore anti-air weapon when commanding air force. Damage +20% with Stealth Aircraft and B-52 Stratofortress.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_111.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Explosives",
+      "desc": "Damage +X% when attacking the stronghold units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Airforce Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Industrial Expert",
+      "desc": "The industrial output of the city +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 3
+    },
+    "artillery": {
+      "start": 2,
+      "max": 4
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 1,
+      "max": 1
+    },
+    "airforce": {
+      "start": 5,
+      "max": 6
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Spaatz",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 5,
+  "apkId": 1073,
+  "image": {
+    "photo": "/img/wc4/generals/Spaatz.webp",
+    "head": "/img/wc4/heads/Spaatz.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

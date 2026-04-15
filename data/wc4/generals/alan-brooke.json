@@ -1,0 +1,117 @@
+{
+  "slug": "alan-brooke",
+  "name": "Alan Brooke",
+  "nameEn": "Alan Brooke",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "gold",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "shortDesc": "Général artillerie or — Royaume-Uni.",
+  "longDesc": "Alan Brooke est un général artillerie de qualité or — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Inferior Victory",
+      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_131.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Accuracy",
+      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Retaliation",
+      "desc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +X for 2 turns.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_122.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "artillery": {
+      "start": 5,
+      "max": 6
+    },
+    "armor": {
+      "start": 2,
+      "max": 2
+    },
+    "navy": {
+      "start": 2,
+      "max": 2
+    },
+    "airforce": {
+      "start": 3,
+      "max": 4
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2500,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Alan Brooke",
+  "skillSlots": 5,
+  "unlockHQLv": 16,
+  "militaryRank": 8,
+  "apkId": 1098,
+  "image": {
+    "photo": "/img/wc4/generals/Alan_Brooke.webp",
+    "head": "/img/wc4/heads/Alan_Brooke.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

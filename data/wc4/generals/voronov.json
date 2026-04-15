@@ -1,0 +1,117 @@
+{
+  "slug": "voronov",
+  "name": "Nikolaï Voronov",
+  "nameEn": "Voronov",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général artillerie or — URSS.",
+  "longDesc": "Nikolaï Voronov est un général artillerie de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Artillery Training Master",
+      "desc": "Increase the HP recovery converted from dealt damage of X% based on the level of artillery elite force. Critical attack damage of artillery elite force is increased by 25%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_136.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Hold Fast",
+      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_108.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Artillery Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Accuracy",
+      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 3
+    },
+    "artillery": {
+      "start": 6,
+      "max": 6
+    },
+    "armor": {
+      "start": 3,
+      "max": 3
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Voronov",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1103,
+  "image": {
+    "photo": "/img/wc4/generals/Voronov.webp",
+    "head": "/img/wc4/heads/Voronov.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

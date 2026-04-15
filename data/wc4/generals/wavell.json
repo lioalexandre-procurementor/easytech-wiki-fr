@@ -1,0 +1,117 @@
+{
+  "slug": "wavell",
+  "name": "Archibald Wavell",
+  "nameEn": "Wavell",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "gold",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "shortDesc": "Général infanterie or — Royaume-Uni.",
+  "longDesc": "Archibald Wavell est un général infanterie de qualité or — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Infantry Training Master",
+      "desc": "Reduce the damage taken by X% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_134.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Prudence",
+      "desc": "Self-morale will not be disrupted. Self and 1 square of friendly troops around it will have their counterattack damage increased by X%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_135.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Explosives",
+      "desc": "Damage +X% when attacking the stronghold units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 6
+    },
+    "artillery": {
+      "start": 4,
+      "max": 4
+    },
+    "armor": {
+      "start": 5,
+      "max": 5
+    },
+    "navy": {
+      "start": 2,
+      "max": 2
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Wavell",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1099,
+  "image": {
+    "photo": "/img/wc4/generals/Wavell.webp",
+    "head": "/img/wc4/heads/Wavell.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

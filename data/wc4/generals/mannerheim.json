@@ -1,0 +1,107 @@
+{
+  "slug": "mannerheim",
+  "name": "Carl Gustaf Mannerheim",
+  "nameEn": "Mannerheim",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "FI",
+  "countryName": "Finlande",
+  "shortDesc": "Général infanterie argent — Finlande.",
+  "longDesc": "Carl Gustaf Mannerheim est un général infanterie de qualité argent — Finlande. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Jungle Fighting",
+      "desc": "Damage to the enemy +X when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 6
+    },
+    "artillery": {
+      "start": 2,
+      "max": 4
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 1,
+      "max": 0
+    },
+    "airforce": {
+      "start": 1,
+      "max": 0
+    },
+    "marching": {
+      "start": 2,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1655,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Mannerheim",
+  "skillSlots": 4,
+  "unlockHQLv": 16,
+  "militaryRank": 7,
+  "apkId": 1039,
+  "image": {
+    "photo": "/img/wc4/generals/Mannerheim.webp",
+    "head": "/img/wc4/heads/Mannerheim.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

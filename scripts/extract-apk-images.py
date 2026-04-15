@@ -30,7 +30,8 @@ def main():
     OUT_HEADS.mkdir(parents=True, exist_ok=True)
 
     canonical = json.load(open(CANONICAL))
-    by_name_lc = {g["nameEn"].lower().replace(" ", ""): g for g in canonical}
+    by_id = {g["id"]: g for g in canonical}
+    by_name_lc = {g["nameEnRaw"].lower().replace(" ", ""): g for g in canonical}
 
     wanted = []  # (apk_path, out_path)
     updates = []  # (json_path, photo, trainable)
@@ -39,75 +40,72 @@ def main():
         if fp.name.startswith("_"):
             continue
         gen = json.load(open(fp))
-        name_canon = (gen.get("nameCanonical") or "").lower().replace(" ", "")
-        match = by_name_lc.get(name_canon)
+        match = by_id.get(gen.get("apkId"))
         if not match:
-            for nm, g in by_name_lc.items():
-                if name_canon and (name_canon == nm or name_canon in nm):
-                    match = g
-                    break
+            name_canon = (gen.get("nameCanonical") or "").lower().replace(" ", "")
+            match = by_name_lc.get(name_canon)
+            if not match:
+                for nm, g in by_name_lc.items():
+                    if name_canon and (name_canon == nm or name_canon in nm):
+                        match = g
+                        break
         if not match:
             print(f"  [skip] {fp.name} — no canonical match")
             continue
 
         photo = match["photo"]
+        safe = photo.replace(" ", "_")
         trainable = bool(gen.get("hasTrainingPath"))
 
         base_list = [
             (
                 f"assets/image/generalphoto/general_{photo}.webp",
-                OUT_GENERALS / f"{photo}.webp",
+                OUT_GENERALS / f"{safe}.webp",
             ),
             (
                 f"assets/image/heads/general_circle_{photo}.webp",
-                OUT_HEADS / f"{photo}.webp",
+                OUT_HEADS / f"{safe}.webp",
             ),
         ]
         if trainable:
             base_list += [
                 (
                     f"assets/image/generalphoto/general_{photo}2.webp",
-                    OUT_GENERALS / f"{photo}2.webp",
+                    OUT_GENERALS / f"{safe}2.webp",
                 ),
                 (
                     f"assets/image/heads/general_circle_{photo}2.webp",
-                    OUT_HEADS / f"{photo}2.webp",
+                    OUT_HEADS / f"{safe}2.webp",
                 ),
             ]
         wanted.extend(base_list)
-        updates.append((fp, photo, trainable))
+        updates.append((fp, safe, trainable))
 
     # Extract from APK
+    extracted_set = set()
     with zipfile.ZipFile(APK) as zf:
         names = set(zf.namelist())
         extracted = 0
-        missing = []
         for apk_path, out_path in wanted:
             if apk_path not in names:
-                missing.append(apk_path)
                 continue
             with zf.open(apk_path) as src, open(out_path, "wb") as dst:
                 shutil.copyfileobj(src, dst)
             extracted += 1
+            extracted_set.add(out_path.name)
 
     print(f"Extracted {extracted}/{len(wanted)} files")
-    if missing:
-        print("Missing:")
-        for m in missing:
-            print(" ", m)
 
-    # Backfill JSON with image paths
+    # Backfill JSON with image paths — only set fields whose file actually exists
     for fp, photo, trainable in updates:
         gen = json.load(open(fp))
+        def _path(folder, fname):
+            return f"/img/wc4/{folder}/{fname}" if fname in extracted_set else None
         gen["image"] = {
-            "photo": f"/img/wc4/generals/{photo}.webp",
-            "head": f"/img/wc4/heads/{photo}.webp",
-            "photoTrained": (
-                f"/img/wc4/generals/{photo}2.webp" if trainable else None
-            ),
-            "headTrained": (
-                f"/img/wc4/heads/{photo}2.webp" if trainable else None
-            ),
+            "photo": _path("generals", f"{photo}.webp"),
+            "head": _path("heads", f"{photo}.webp"),
+            "photoTrained": _path("generals", f"{photo}2.webp") if trainable else None,
+            "headTrained": _path("heads", f"{photo}2.webp") if trainable else None,
         }
         with open(fp, "w") as f:
             json.dump(gen, f, indent=2, ensure_ascii=False)

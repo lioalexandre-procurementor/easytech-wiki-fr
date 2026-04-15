@@ -1,0 +1,117 @@
+{
+  "slug": "weygand",
+  "name": "Maxime Weygand",
+  "nameEn": "Weygand",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général blindée or — France.",
+  "longDesc": "Maxime Weygand est un général blindée de qualité or — France. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Veteran General",
+      "desc": "Maximum HP of commanded units +X%, cannot go into chaos when the unit has above half HP",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_151.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 4
+    },
+    "artillery": {
+      "start": 2,
+      "max": 5
+    },
+    "armor": {
+      "start": 5,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2350,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Weygand",
+  "skillSlots": 5,
+  "unlockHQLv": 12,
+  "militaryRank": 7,
+  "apkId": 1105,
+  "image": {
+    "photo": "/img/wc4/generals/Weygand.webp",
+    "head": "/img/wc4/heads/Weygand.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

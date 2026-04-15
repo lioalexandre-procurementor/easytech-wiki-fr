@@ -1,0 +1,107 @@
+{
+  "slug": "simonds",
+  "name": "Guy Simonds",
+  "nameEn": "Simonds",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "CA",
+  "countryName": "Canada",
+  "shortDesc": "Général blindée argent — Canada.",
+  "longDesc": "Guy Simonds est un général blindée de qualité argent — Canada. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Machinist",
+      "desc": "Supply to damaged armored units and artillery units: each round HP +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Ace Forces",
+      "desc": "Experience gained by the army in combat increases by X%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_43.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 2
+    },
+    "artillery": {
+      "start": 1,
+      "max": 1
+    },
+    "armor": {
+      "start": 3,
+      "max": 5
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 2,
+      "max": 2
+    },
+    "marching": {
+      "start": 2,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1705,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Simonds",
+  "skillSlots": 4,
+  "unlockHQLv": 12,
+  "militaryRank": 5,
+  "apkId": 1069,
+  "image": {
+    "photo": "/img/wc4/generals/Simonds.webp",
+    "head": "/img/wc4/heads/Simonds.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

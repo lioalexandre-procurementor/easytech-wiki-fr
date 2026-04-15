@@ -1,0 +1,97 @@
+{
+  "slug": "tito",
+  "name": "Josip Broz Tito",
+  "nameEn": "Tito",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "YU",
+  "countryName": "Yougoslavie",
+  "shortDesc": "Général infanterie bronze — Yougoslavie.",
+  "longDesc": "Josip Broz Tito est un général infanterie de qualité bronze — Yougoslavie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Replacement",
+      "desc": "Reinforce damaged infantry units: each round HP +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Guerrilla",
+      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Economic Expert",
+      "desc": "The economic output of the city +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 3
+    },
+    "armor": {
+      "start": 0,
+      "max": 3
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 2,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 325,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Tito",
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 3,
+  "apkId": 1029,
+  "image": {
+    "photo": "/img/wc4/generals/Tito.webp",
+    "head": "/img/wc4/heads/Tito.webp",
+    "photoTrained": "/img/wc4/generals/Tito2.webp",
+    "headTrained": "/img/wc4/heads/Tito2.webp"
+  }
+}

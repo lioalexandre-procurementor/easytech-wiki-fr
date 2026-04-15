@@ -1,0 +1,97 @@
+{
+  "slug": "zhu-de",
+  "name": "Zhu De",
+  "nameEn": "Zhu.D",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "CN",
+  "countryName": "République populaire de Chine",
+  "shortDesc": "Général infanterie bronze — République populaire de Chine.",
+  "longDesc": "Zhu De est un général infanterie de qualité bronze — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Replacement",
+      "desc": "Reinforce damaged infantry units: each round HP +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Guerrilla",
+      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 4
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 3
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 1,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1125,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Zhu.D",
+  "skillSlots": 3,
+  "unlockHQLv": 10,
+  "militaryRank": 8,
+  "apkId": 1003,
+  "image": {
+    "photo": "/img/wc4/generals/Zhu.D.webp",
+    "head": "/img/wc4/heads/Zhu.D.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

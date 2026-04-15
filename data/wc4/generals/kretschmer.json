@@ -1,0 +1,117 @@
+{
+  "slug": "kretschmer",
+  "name": "Otto Kretschmer",
+  "nameEn": "Kretschmer",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "quality": "gold",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général navale or — Allemagne.",
+  "longDesc": "Otto Kretschmer est un général navale de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Ace Submarine",
+      "desc": "Submarine units under command (excluding nuclear submarines) ignores enemy defense, and their attack range is increased by 1; after eliminating an enemy, there is a X% chance to attack again, and the chance can be increased by an additional 25% if a critical attack is dealt.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_174.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Submergence Evasion",
+      "desc": "Submarine units under command receive X% less damage and have a 50% chance to dodge when attacked by airstrike or missile. Submarine recover 5% of its maximum HP each turn.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_175.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Inferior Victory",
+      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_131.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Fleet Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Sailor",
+      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "artillery": {
+      "start": 1,
+      "max": 1
+    },
+    "armor": {
+      "start": 1,
+      "max": 1
+    },
+    "navy": {
+      "start": 6,
+      "max": 6
+    },
+    "airforce": {
+      "start": 0,
+      "max": 3
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Kretschmer",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 9,
+  "apkId": 1113,
+  "image": {
+    "photo": "/img/wc4/generals/Kretschmer.webp",
+    "head": "/img/wc4/heads/Kretschmer.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

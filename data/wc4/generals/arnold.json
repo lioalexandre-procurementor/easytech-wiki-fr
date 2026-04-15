@@ -1,0 +1,107 @@
+{
+  "slug": "arnold",
+  "name": "Henry Arnold",
+  "nameEn": "Arnold",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "A",
+  "quality": "silver",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général aérienne argent — États-Unis.",
+  "longDesc": "Henry Arnold est un général aérienne de qualité argent — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Airforce Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Rumor",
+      "desc": "X% chance to reduce the morale of the enemy when attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 3
+    },
+    "artillery": {
+      "start": 1,
+      "max": 0
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 1,
+      "max": 0
+    },
+    "airforce": {
+      "start": 6,
+      "max": 6
+    },
+    "marching": {
+      "start": 4,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1485,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Arnold",
+  "skillSlots": 4,
+  "unlockHQLv": 18,
+  "militaryRank": 8,
+  "apkId": 1035,
+  "image": {
+    "photo": "/img/wc4/generals/Arnold.webp",
+    "head": "/img/wc4/heads/Arnold.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

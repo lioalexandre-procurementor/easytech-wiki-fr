@@ -1,0 +1,107 @@
+{
+  "slug": "smigly",
+  "name": "Edward Rydz-Śmigły",
+  "nameEn": "Smigly",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "PL",
+  "countryName": "Pologne",
+  "shortDesc": "Général infanterie argent — Pologne.",
+  "longDesc": "Edward Rydz-Śmigły est un général infanterie de qualité argent — Pologne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Shelter",
+      "desc": "Able to dodge X% damage from the enemy's missile units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Architecture",
+      "desc": "Fix the city: each round City HP +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 4
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 3
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 5,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1455,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Smigly",
+  "skillSlots": 4,
+  "unlockHQLv": 14,
+  "militaryRank": 3,
+  "apkId": 1053,
+  "image": {
+    "photo": "/img/wc4/generals/Smigly.webp",
+    "head": "/img/wc4/heads/Smigly.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "katukov",
+  "name": "Mikhaïl Katoukov",
+  "nameEn": "Katukov",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "S",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général polyvalente or — URSS.",
+  "longDesc": "Mikhaïl Katoukov est un général polyvalente de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Armored Tactic Expert",
+      "desc": "Recover X% maximum HP on the next turn when the armored units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_105.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Organisation",
+      "desc": "Recover X% maximum HP on the next turn when the infantry units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_107.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Blitzkrieg",
+      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Camouflage",
+      "desc": "Able to dodge X% damage from the enemy's air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "artillery": {
+      "start": 3,
+      "max": 3
+    },
+    "armor": {
+      "start": 4,
+      "max": 5
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Katukov",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 6,
+  "apkId": 1063,
+  "image": {
+    "photo": "/img/wc4/generals/Katukov.webp",
+    "head": "/img/wc4/heads/Katukov.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "sun-liren",
+  "name": "Sun Liren",
+  "nameEn": "Sun.L.R",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "CN",
+  "countryName": "République populaire de Chine",
+  "shortDesc": "Général blindée argent — République populaire de Chine.",
+  "longDesc": "Sun Liren est un général blindée de qualité argent — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +X when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Jungle Fighting",
+      "desc": "Damage to the enemy +X when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 4
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 4,
+      "max": 5
+    },
+    "navy": {
+      "start": 0,
+      "max": 3
+    },
+    "airforce": {
+      "start": 2,
+      "max": 0
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1475,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Sun.L.R",
+  "skillSlots": 4,
+  "unlockHQLv": 6,
+  "militaryRank": 4,
+  "apkId": 1002,
+  "image": {
+    "photo": "/img/wc4/generals/Sun.L.R.webp",
+    "head": "/img/wc4/heads/Sun.L.R.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

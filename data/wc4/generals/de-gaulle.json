@@ -1,0 +1,97 @@
+{
+  "slug": "de-gaulle",
+  "name": "Charles de Gaulle",
+  "nameEn": "de Gaulle",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général aérienne bronze — France.",
+  "longDesc": "Charles de Gaulle est un général aérienne de qualité bronze — France. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Artillery Barrage",
+      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_25.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Entrenchment",
+      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Rumor",
+      "desc": "X% chance to reduce the morale of the enemy when attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 0
+    },
+    "artillery": {
+      "start": 4,
+      "max": 4
+    },
+    "armor": {
+      "start": 2,
+      "max": 0
+    },
+    "navy": {
+      "start": 1,
+      "max": 3
+    },
+    "airforce": {
+      "start": 3,
+      "max": 5
+    },
+    "marching": {
+      "start": 1,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1150,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "de Gaulle",
+  "skillSlots": 3,
+  "unlockHQLv": 9,
+  "militaryRank": 7,
+  "apkId": 1041,
+  "image": {
+    "photo": "/img/wc4/generals/de_Gaulle.webp",
+    "head": "/img/wc4/heads/de_Gaulle.webp",
+    "photoTrained": "/img/wc4/generals/de_Gaulle2.webp",
+    "headTrained": "/img/wc4/heads/de_Gaulle2.webp"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "wittmann",
+  "name": "Michael Wittmann",
+  "nameEn": "Wittmann",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "quality": "gold",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général blindée or — Allemagne.",
+  "longDesc": "Michael Wittmann est un général blindée de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Ace Tank",
+      "desc": "When commanding armored units to attack, ignore enemy units X% defense",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_55.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Blitzkrieg",
+      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Armored Assault",
+      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Tide of Iron",
+      "desc": "Damage to the enemy +X when the armored units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 2
+    },
+    "artillery": {
+      "start": 2,
+      "max": 4
+    },
+    "armor": {
+      "start": 6,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 1
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Wittmann",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1056,
+  "image": {
+    "photo": "/img/wc4/generals/Wittmann.webp",
+    "head": "/img/wc4/heads/Wittmann.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

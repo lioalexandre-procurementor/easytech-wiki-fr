@@ -1,0 +1,117 @@
+{
+  "slug": "spruance",
+  "name": "Raymond Spruance",
+  "nameEn": "Spruance",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "quality": "gold",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général navale or — États-Unis.",
+  "longDesc": "Raymond Spruance est un général navale de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Efficient Bombardment",
+      "desc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + X%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_126.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Inspection",
+      "desc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of X% for 1 turn.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_120.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Airforce Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Sailor",
+      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "artillery": {
+      "start": 1,
+      "max": 1
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 6,
+      "max": 6
+    },
+    "airforce": {
+      "start": 4,
+      "max": 5
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Spruance",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 7,
+  "apkId": 1078,
+  "image": {
+    "photo": "/img/wc4/generals/Spruance.webp",
+    "head": "/img/wc4/heads/Spruance.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

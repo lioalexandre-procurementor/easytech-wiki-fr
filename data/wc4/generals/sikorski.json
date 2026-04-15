@@ -1,0 +1,107 @@
+{
+  "slug": "sikorski",
+  "name": "Władysław Sikorski",
+  "nameEn": "Sikorski",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "A",
+  "quality": "silver",
+  "country": "PL",
+  "countryName": "Pologne",
+  "shortDesc": "Général artillerie argent — Pologne.",
+  "longDesc": "Władysław Sikorski est un général artillerie de qualité argent — Pologne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Artillery Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Street Fighting",
+      "desc": "Damage to the enemy +X when fighting in the city",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Economic Expert",
+      "desc": "The economic output of the city +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "artillery": {
+      "start": 4,
+      "max": 5
+    },
+    "armor": {
+      "start": 3,
+      "max": 3
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 4,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1500,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Sikorski",
+  "skillSlots": 4,
+  "unlockHQLv": 2,
+  "militaryRank": 6,
+  "apkId": 1106,
+  "image": {
+    "photo": "/img/wc4/generals/Sikorski.webp",
+    "head": "/img/wc4/heads/Sikorski.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

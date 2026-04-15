@@ -1,0 +1,117 @@
+{
+  "slug": "richthofen",
+  "name": "Wolfram von Richthofen",
+  "nameEn": "Richthofen",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "S",
+  "quality": "gold",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général aérienne or — Allemagne.",
+  "longDesc": "Wolfram von Richthofen est un général aérienne de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Air Raid Cover",
+      "desc": "When commanding an airforce unit to attack, there is X% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_119.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Airforce Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Cover",
+      "desc": "12% chance to dodge X% damage from the enemy",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_32.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Rumor",
+      "desc": "X% chance to reduce the morale of the enemy when attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_42.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "artillery": {
+      "start": 1,
+      "max": 3
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 6,
+      "max": 6
+    },
+    "marching": {
+      "start": 4,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Richthofen",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1080,
+  "image": {
+    "photo": "/img/wc4/generals/Richthofen.webp",
+    "head": "/img/wc4/heads/Richthofen.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

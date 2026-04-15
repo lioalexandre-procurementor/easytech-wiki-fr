@@ -1,0 +1,107 @@
+{
+  "slug": "timoshenko",
+  "name": "Semion Timochenko",
+  "nameEn": "Timoshenko",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général blindée argent — URSS.",
+  "longDesc": "Semion Timochenko est un général blindée de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Crowd Tactics",
+      "desc": "Attack of friendly surrounding army units +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +X when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Camouflage",
+      "desc": "Able to dodge X% damage from the enemy's air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 3
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 4,
+      "max": 4
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 1,
+      "max": 0
+    },
+    "marching": {
+      "start": 6,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1650,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Timoshenko",
+  "skillSlots": 4,
+  "unlockHQLv": 10,
+  "militaryRank": 7,
+  "apkId": 1023,
+  "image": {
+    "photo": "/img/wc4/generals/Timoshenko.webp",
+    "head": "/img/wc4/heads/Timoshenko.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

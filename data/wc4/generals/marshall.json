@@ -1,0 +1,117 @@
+{
+  "slug": "marshall",
+  "name": "George Marshall",
+  "nameEn": "Marshall",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "marshal",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général infanterie maréchal — États-Unis.",
+  "longDesc": "George Marshall est un général infanterie de qualité maréchal — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Guerrilla Master",
+      "desc": "Evade X% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_104.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Infantry Group Charge",
+      "desc": "X% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_101.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Organisation",
+      "desc": "Recover X% maximum HP on the next turn when the infantry units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_107.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 6
+    },
+    "artillery": {
+      "start": 3,
+      "max": 5
+    },
+    "armor": {
+      "start": 3,
+      "max": 4
+    },
+    "navy": {
+      "start": 2,
+      "max": 4
+    },
+    "airforce": {
+      "start": 2,
+      "max": 4
+    },
+    "marching": {
+      "start": 6,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "iron-cross",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Marshall",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 11,
+  "apkId": 1062,
+  "image": {
+    "photo": "/img/wc4/generals/Marshall.webp",
+    "head": "/img/wc4/heads/Marshall.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

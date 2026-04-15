@@ -1,0 +1,107 @@
+{
+  "slug": "inonu",
+  "name": "İsmet İnönü",
+  "nameEn": "Inonu",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "TR",
+  "countryName": "Turquie",
+  "shortDesc": "Général infanterie argent — Turquie.",
+  "longDesc": "İsmet İnönü est un général infanterie de qualité argent — Turquie. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Armed Neutrality",
+      "desc": "Attack +15 while in your own territory; the chance of receiving a critical attack is reduced by X%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_159.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Guerrilla",
+      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 3,
+      "max": 3
+    },
+    "armor": {
+      "start": 2,
+      "max": 2
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 3
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1200,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Inonu",
+  "skillSlots": 4,
+  "unlockHQLv": 2,
+  "militaryRank": 5,
+  "apkId": 1112,
+  "image": {
+    "photo": "/img/wc4/generals/Inonu.webp",
+    "head": "/img/wc4/heads/Inonu.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "simo-hayha",
+  "name": "Simo Häyhä",
+  "nameEn": "Simo Hayha",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "gold",
+  "country": "FI",
+  "countryName": "Finlande",
+  "shortDesc": "Général infanterie or — Finlande.",
+  "longDesc": "Simo Häyhä est un général infanterie de qualité or — Finlande. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Ace Sniper",
+      "desc": "X% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_100.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Deterrence",
+      "desc": "After dealing a critical attack to enemy, the enemy unit's attack will be decreased by X%, effective for one turn",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_106.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Guerrilla",
+      "desc": "X% chance that the enemy will not fight back when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Camouflage",
+      "desc": "Able to dodge X% damage from the enemy's air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 6
+    },
+    "artillery": {
+      "start": 2,
+      "max": 3
+    },
+    "armor": {
+      "start": 1,
+      "max": 2
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Simo Hayha",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 7,
+  "apkId": 1060,
+  "image": {
+    "photo": "/img/wc4/generals/Simo_Hayha.webp",
+    "head": "/img/wc4/heads/Simo_Hayha.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "higuchi",
+  "name": "Kiichirō Higuchi",
+  "nameEn": "Higuchi",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "JP",
+  "countryName": "Japon",
+  "shortDesc": "Général infanterie argent — Japon.",
+  "longDesc": "Kiichirō Higuchi est un général infanterie de qualité argent — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Counter",
+      "desc": "When the commanding force is attacked and receives damage, the enemy also takes X% of that damage.(Each attack only takes effect once)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_125.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 1,
+      "max": 3
+    },
+    "armor": {
+      "start": 1,
+      "max": 2
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1485,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Higuchi",
+  "skillSlots": 4,
+  "unlockHQLv": 15,
+  "militaryRank": 6,
+  "apkId": 1085,
+  "image": {
+    "photo": "/img/wc4/generals/Higuchi.webp",
+    "head": "/img/wc4/heads/Higuchi.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

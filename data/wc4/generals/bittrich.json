@@ -1,0 +1,107 @@
+{
+  "slug": "bittrich",
+  "name": "Wilhelm Bittrich",
+  "nameEn": "Bitrich",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "silver",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général polyvalente argent — Allemagne.",
+  "longDesc": "Wilhelm Bittrich est un général polyvalente de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Armored Assault",
+      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Blitzkrieg",
+      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Inspiration",
+      "desc": "30% chance to boost morale after attacking. Damage +X% when morale is high",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_110.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 2
+    },
+    "armor": {
+      "start": 5,
+      "max": 5
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 1,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1400,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Bitrich",
+  "skillSlots": 4,
+  "unlockHQLv": 10,
+  "militaryRank": 6,
+  "apkId": 1110,
+  "image": {
+    "photo": "/img/wc4/generals/Bitrich.webp",
+    "head": "/img/wc4/heads/Bitrich.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "slug": "bagramyan",
+  "name": "Ivan Bagramyan",
+  "nameEn": "Bagramyan",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général infanterie bronze — URSS.",
+  "longDesc": "Ivan Bagramyan est un général infanterie de qualité bronze — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Mountain Fighting",
+      "desc": "Damage to the enemy +X when fighting on the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 3,
+      "max": 4
+    },
+    "navy": {
+      "start": 0,
+      "max": 3
+    },
+    "airforce": {
+      "start": 2,
+      "max": 0
+    },
+    "marching": {
+      "start": 2,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 635,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Bagramyan",
+  "skillSlots": 3,
+  "unlockHQLv": 2,
+  "militaryRank": 5,
+  "apkId": 1016,
+  "image": {
+    "photo": "/img/wc4/generals/Bagramyan.webp",
+    "head": "/img/wc4/heads/Bagramyan.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

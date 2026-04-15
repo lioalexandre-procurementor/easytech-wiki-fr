@@ -1,0 +1,107 @@
+{
+  "slug": "clark",
+  "name": "Mark Clark",
+  "nameEn": "Clark",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "silver",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général polyvalente argent — États-Unis.",
+  "longDesc": "Mark Clark est un général polyvalente de qualité argent — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Amphibious Warfare",
+      "desc": "Mobility +X% when commanding land units on board",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_103.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 1,
+      "max": 2
+    },
+    "armor": {
+      "start": 2,
+      "max": 2
+    },
+    "navy": {
+      "start": 3,
+      "max": 5
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1965,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Clark",
+  "skillSlots": 4,
+  "unlockHQLv": 10,
+  "militaryRank": 5,
+  "apkId": 1067,
+  "image": {
+    "photo": "/img/wc4/generals/Clark.webp",
+    "head": "/img/wc4/heads/Clark.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "slug": "list",
+  "name": "Wilhelm List",
+  "nameEn": "List",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général blindée argent — Allemagne.",
+  "longDesc": "Wilhelm List est un général blindée de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Armored Assault",
+      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Explosives",
+      "desc": "Damage +X% when attacking the stronghold units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Blitzkrieg",
+      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 3
+    },
+    "artillery": {
+      "start": 1,
+      "max": 3
+    },
+    "armor": {
+      "start": 3,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1865,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "List",
+  "skillSlots": 4,
+  "unlockHQLv": 11,
+  "militaryRank": 6,
+  "apkId": 1068,
+  "image": {
+    "photo": "/img/wc4/generals/List.webp",
+    "head": "/img/wc4/heads/List.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

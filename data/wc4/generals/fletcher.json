@@ -1,0 +1,97 @@
+{
+  "slug": "fletcher",
+  "name": "Frank Fletcher",
+  "nameEn": "Fletcher",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général navale bronze — États-Unis.",
+  "longDesc": "Frank Fletcher est un général navale de qualité bronze — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Sailor",
+      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Fleet Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "artillery": {
+      "start": 1,
+      "max": 3
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 5,
+      "max": 5
+    },
+    "airforce": {
+      "start": 4,
+      "max": 4
+    },
+    "marching": {
+      "start": 1,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1265,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Fletcher",
+  "skillSlots": 3,
+  "unlockHQLv": 7,
+  "militaryRank": 4,
+  "apkId": 1034,
+  "image": {
+    "photo": "/img/wc4/generals/Fletcher.webp",
+    "head": "/img/wc4/heads/Fletcher.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

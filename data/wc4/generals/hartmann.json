@@ -1,0 +1,117 @@
+{
+  "slug": "hartmann",
+  "name": "Erich Hartmann",
+  "nameEn": "Hartmann",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "S",
+  "quality": "gold",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général aérienne or — Allemagne.",
+  "longDesc": "Erich Hartmann est un général aérienne de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Eagle Fly",
+      "desc": "Boosts X% dodge rate and 4 mobility when commanding an air hover unit, and decreases 30% taken damage from air forces. Boost critical strike damage 1% based on 1% dodge rate when air hovering units attack.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_152.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Airforce Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Fluke",
+      "desc": "When commanded troop activates dodge, restore X% based on self's maximum HP (up to 1 time per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_142.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Inferior Victory",
+      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_131.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "artillery": {
+      "start": 3,
+      "max": 3
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 6,
+      "max": 6
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Hartmann",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 7,
+  "apkId": 1108,
+  "image": {
+    "photo": "/img/wc4/generals/Hartmann.webp",
+    "head": "/img/wc4/heads/Hartmann.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

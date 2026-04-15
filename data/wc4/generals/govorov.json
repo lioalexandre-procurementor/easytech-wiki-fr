@@ -1,0 +1,107 @@
+{
+  "slug": "govorov",
+  "name": "Leonid Govorov",
+  "nameEn": "Govorov",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "A",
+  "quality": "silver",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général artillerie argent — URSS.",
+  "longDesc": "Leonid Govorov est un général artillerie de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Jungle Fighting",
+      "desc": "Damage to the enemy +X when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Explosives",
+      "desc": "Damage +X% when attacking the stronghold units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Artillery Barrage",
+      "desc": "Damage to the enemy +X when the artillery units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_25.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 4
+    },
+    "artillery": {
+      "start": 6,
+      "max": 6
+    },
+    "armor": {
+      "start": 1,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 1,
+      "max": 3
+    },
+    "marching": {
+      "start": 2,
+      "max": 0
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2135,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Govorov",
+  "skillSlots": 4,
+  "unlockHQLv": 8,
+  "militaryRank": 4,
+  "apkId": 1020,
+  "image": {
+    "photo": "/img/wc4/generals/Govorov.webp",
+    "head": "/img/wc4/heads/Govorov.webp",
+    "photoTrained": "/img/wc4/generals/Govorov2.webp",
+    "headTrained": "/img/wc4/heads/Govorov2.webp"
+  }
+}

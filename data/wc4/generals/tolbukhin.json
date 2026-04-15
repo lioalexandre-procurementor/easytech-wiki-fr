@@ -1,0 +1,117 @@
+{
+  "slug": "tolbukhin",
+  "name": "Fiodor Tolboukhine",
+  "nameEn": "Tolbukhin",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général blindée or — URSS.",
+  "longDesc": "Fiodor Tolboukhine est un général blindée de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "armored Army Group",
+      "desc": "X% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_114.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Inspiration",
+      "desc": "30% chance to boost morale after attacking. Damage +X% when morale is high",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_110.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Armored Assault",
+      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +X when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "artillery": {
+      "start": 3,
+      "max": 4
+    },
+    "armor": {
+      "start": 5,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 2,
+      "max": 2
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Tolbukhin",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 5,
+  "apkId": 1075,
+  "image": {
+    "photo": "/img/wc4/generals/Tolbukhin.webp",
+    "head": "/img/wc4/heads/Tolbukhin.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

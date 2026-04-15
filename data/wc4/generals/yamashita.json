@@ -1,0 +1,117 @@
+{
+  "slug": "yamashita",
+  "name": "Tomoyuki Yamashita",
+  "nameEn": "Yamashita",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "gold",
+  "country": "JP",
+  "countryName": "Japon",
+  "shortDesc": "Général infanterie or — Japon.",
+  "longDesc": "Tomoyuki Yamashita est un général infanterie de qualité or — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Ace Forces",
+      "desc": "Experience gained by the army in combat increases by X%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_43.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Bayonet Charge",
+      "desc": "Damage to the enemy +X when the infantry units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 6
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 3,
+      "max": 4
+    },
+    "navy": {
+      "start": 2,
+      "max": 0
+    },
+    "airforce": {
+      "start": 2,
+      "max": 3
+    },
+    "marching": {
+      "start": 5,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2315,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Yamashita",
+  "skillSlots": 5,
+  "unlockHQLv": 8,
+  "militaryRank": 7,
+  "apkId": 1024,
+  "image": {
+    "photo": "/img/wc4/generals/Yamashita.webp",
+    "head": "/img/wc4/heads/Yamashita.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

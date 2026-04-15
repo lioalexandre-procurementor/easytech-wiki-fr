@@ -1,0 +1,107 @@
+{
+  "slug": "falkenhorst",
+  "name": "Nikolaus von Falkenhorst",
+  "nameEn": "Falkenhorst",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général infanterie argent — Allemagne.",
+  "longDesc": "Nikolaus von Falkenhorst est un général infanterie de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Dominance",
+      "desc": "Deals damage +X% to demoralized and chaotic enemies.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_130.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Raider",
+      "desc": "Deal +X% damage to the enemy when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 2
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 2
+    },
+    "airforce": {
+      "start": 0,
+      "max": 3
+    },
+    "marching": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1400,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Falkenhorst",
+  "skillSlots": 4,
+  "unlockHQLv": 11,
+  "militaryRank": 6,
+  "apkId": 1107,
+  "image": {
+    "photo": "/img/wc4/generals/Falkenhorst.webp",
+    "head": "/img/wc4/heads/Falkenhorst.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

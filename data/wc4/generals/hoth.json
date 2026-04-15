@@ -1,0 +1,107 @@
+{
+  "slug": "hoth",
+  "name": "Hermann Hoth",
+  "nameEn": "Hermann Hoth",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général blindée argent — Allemagne.",
+  "longDesc": "Hermann Hoth est un général blindée de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Dominance",
+      "desc": "Deals damage +X% to demoralized and chaotic enemies.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_130.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Blitzkrieg",
+      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 4
+    },
+    "artillery": {
+      "start": 2,
+      "max": 3
+    },
+    "armor": {
+      "start": 5,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 0
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1700,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Hermann Hoth",
+  "skillSlots": 4,
+  "unlockHQLv": 10,
+  "militaryRank": 6,
+  "apkId": 1097,
+  "image": {
+    "photo": "/img/wc4/generals/Hermann_Hoth.webp",
+    "head": "/img/wc4/heads/Hermann_Hoth.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

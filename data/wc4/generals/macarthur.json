@@ -1,0 +1,117 @@
+{
+  "slug": "macarthur",
+  "name": "Douglas MacArthur",
+  "nameEn": "MacArthur",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "gold",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général infanterie or — États-Unis.",
+  "longDesc": "Douglas MacArthur est un général infanterie de qualité or — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Street Fighting",
+      "desc": "Damage to the enemy +X when fighting in the city",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Entrenchment",
+      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 3,
+      "max": 0
+    },
+    "navy": {
+      "start": 3,
+      "max": 4
+    },
+    "airforce": {
+      "start": 2,
+      "max": 3
+    },
+    "marching": {
+      "start": 6,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2425,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "MacArthur",
+  "skillSlots": 5,
+  "unlockHQLv": 18,
+  "militaryRank": 8,
+  "apkId": 1030,
+  "image": {
+    "photo": "/img/wc4/generals/MacArthur.webp",
+    "head": "/img/wc4/heads/MacArthur.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

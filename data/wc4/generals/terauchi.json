@@ -1,0 +1,97 @@
+{
+  "slug": "terauchi",
+  "name": "Hisaichi Terauchi",
+  "nameEn": "Terauchi",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "JP",
+  "countryName": "Japon",
+  "shortDesc": "Général artillerie bronze — Japon.",
+  "longDesc": "Hisaichi Terauchi est un général artillerie de qualité bronze — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Machinist",
+      "desc": "Supply to damaged armored units and artillery units: each round HP +X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Shelter",
+      "desc": "Able to dodge X% damage from the enemy's missile units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Accuracy",
+      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 4
+    },
+    "artillery": {
+      "start": 4,
+      "max": 5
+    },
+    "armor": {
+      "start": 1,
+      "max": 0
+    },
+    "navy": {
+      "start": 2,
+      "max": 3
+    },
+    "airforce": {
+      "start": 2,
+      "max": 0
+    },
+    "marching": {
+      "start": 2,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 925,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Terauchi",
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 4,
+  "apkId": 1028,
+  "image": {
+    "photo": "/img/wc4/generals/Terauchi.webp",
+    "head": "/img/wc4/heads/Terauchi.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

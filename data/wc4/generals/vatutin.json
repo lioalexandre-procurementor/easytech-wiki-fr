@@ -1,0 +1,107 @@
+{
+  "slug": "vatutin",
+  "name": "Nikolaï Vatoutine",
+  "nameEn": "Vatutin",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général blindée argent — URSS.",
+  "longDesc": "Nikolaï Vatoutine est un général blindée de qualité argent — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Tide of Iron",
+      "desc": "Damage to the enemy +X when the armored units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Plain Fighting",
+      "desc": "Damage to the enemy +X when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 4
+    },
+    "artillery": {
+      "start": 1,
+      "max": 0
+    },
+    "armor": {
+      "start": 6,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 3
+    },
+    "marching": {
+      "start": 1,
+      "max": 0
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1800,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Vatutin",
+  "skillSlots": 4,
+  "unlockHQLv": 4,
+  "militaryRank": 4,
+  "apkId": 1022,
+  "image": {
+    "photo": "/img/wc4/generals/Vatutin.webp",
+    "head": "/img/wc4/heads/Vatutin.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

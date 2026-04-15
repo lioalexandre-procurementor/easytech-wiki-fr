@@ -1,0 +1,117 @@
+{
+  "slug": "wu",
+  "name": "Wu Peifu",
+  "nameEn": "Wu",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "S",
+  "quality": "gold",
+  "country": "CN",
+  "countryName": "République populaire de Chine",
+  "shortDesc": "Général aérienne or — République populaire de Chine.",
+  "longDesc": "Wu Peifu est un général aérienne de qualité or — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Star Fall",
+      "desc": "When commanding troops to attack, there is a X% chance to trigger a Level II satellite strike on the target. When commanding air hover units, the damage dealt by this satellite strike is increased by an extra 30%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_177.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Inescapable Net",
+      "desc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by X% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_178.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "System-of-Systems Operations",
+      "desc": "When commanding troops to attack and carry out airstrikes, there is a X% chance of dealing a critical attack.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_179.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Strategic Attack",
+      "desc": "After commanding a unit to attack, if the target is not annihilated, there is X% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_116.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Inferior Victory",
+      "desc": "Damage is increased by X% when the number of troop formations under command is 1.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_131.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 3,
+      "max": 3
+    },
+    "armor": {
+      "start": 3,
+      "max": 5
+    },
+    "navy": {
+      "start": 4,
+      "max": 4
+    },
+    "airforce": {
+      "start": 6,
+      "max": 6
+    },
+    "marching": {
+      "start": 4,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Wu",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1114,
+  "image": {
+    "photo": null,
+    "head": null,
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

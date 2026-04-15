@@ -1,0 +1,107 @@
+{
+  "slug": "peng-dehuai",
+  "name": "Peng Dehuai",
+  "nameEn": "Peng.D.H",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "CN",
+  "countryName": "République populaire de Chine",
+  "shortDesc": "Général infanterie argent — République populaire de Chine.",
+  "longDesc": "Peng Dehuai est un général infanterie de qualité argent — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Infantry Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Camouflage",
+      "desc": "Able to dodge X% damage from the enemy's air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Entrenchment",
+      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 1,
+      "max": 0
+    },
+    "armor": {
+      "start": 2,
+      "max": 3
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 2,
+      "max": 4
+    },
+    "marching": {
+      "start": 5,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1565,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Peng.D.H",
+  "skillSlots": 4,
+  "unlockHQLv": 16,
+  "militaryRank": 6,
+  "apkId": 1004,
+  "image": {
+    "photo": "/img/wc4/generals/Peng.D.H.webp",
+    "head": "/img/wc4/heads/Peng.D.H.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

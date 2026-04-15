@@ -1,0 +1,97 @@
+{
+  "slug": "kuribayashi",
+  "name": "Tadamichi Kuribayashi",
+  "nameEn": "Kuribayashi",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "JP",
+  "countryName": "Japon",
+  "shortDesc": "Général infanterie bronze — Japon.",
+  "longDesc": "Tadamichi Kuribayashi est un général infanterie de qualité bronze — Japon. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Entrenchment",
+      "desc": "Able to dodge X% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Bayonet Charge",
+      "desc": "Damage to the enemy +X when the infantry units are more than half damaged",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Elastic Defence",
+      "desc": "Fix nearby fortress units: each round HP+X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 3
+    },
+    "armor": {
+      "start": 1,
+      "max": 0
+    },
+    "navy": {
+      "start": 2,
+      "max": 4
+    },
+    "airforce": {
+      "start": 1,
+      "max": 3
+    },
+    "marching": {
+      "start": 1,
+      "max": 0
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 875,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Kuribayashi",
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 4,
+  "apkId": 1025,
+  "image": {
+    "photo": "/img/wc4/generals/Kuribayashi.webp",
+    "head": "/img/wc4/heads/Kuribayashi.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

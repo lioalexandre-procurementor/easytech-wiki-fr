@@ -1,0 +1,107 @@
+{
+  "slug": "halsey",
+  "name": "William Halsey",
+  "nameEn": "Halsey",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "silver",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général polyvalente argent — États-Unis.",
+  "longDesc": "William Halsey est un général polyvalente de qualité argent — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Fleet Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Sailor",
+      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 0
+    },
+    "artillery": {
+      "start": 1,
+      "max": 3
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 4,
+      "max": 5
+    },
+    "airforce": {
+      "start": 5,
+      "max": 5
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1420,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Halsey",
+  "skillSlots": 4,
+  "unlockHQLv": 4,
+  "militaryRank": 4,
+  "apkId": 1033,
+  "image": {
+    "photo": "/img/wc4/generals/Halsey.webp",
+    "head": "/img/wc4/heads/Halsey.webp",
+    "photoTrained": "/img/wc4/generals/Halsey2.webp",
+    "headTrained": "/img/wc4/heads/Halsey2.webp"
+  }
+}

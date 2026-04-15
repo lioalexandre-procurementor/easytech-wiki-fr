@@ -142,5 +142,10 @@ export const FACTION_META: Record<Faction, { label: string; tagline: string; col
 export const COUNTRY_FLAGS: Record<string, string> = {
   GB: "🇬🇧", US: "🇺🇸", DE: "🇩🇪", FR: "🇫🇷", RU: "🇷🇺",
   JP: "🇯🇵", IT: "🇮🇹", CN: "🇨🇳", IL: "🇮🇱", PL: "🇵🇱",
+  CA: "🇨🇦", AU: "🇦🇺", FI: "🇫🇮", YU: "🇷🇸", TR: "🇹🇷",
+  EG: "🇪🇬", NO: "🇳🇴", SE: "🇸🇪", DK: "🇩🇰", NL: "🇳🇱",
+  BE: "🇧🇪", ES: "🇪🇸", PT: "🇵🇹", HU: "🇭🇺", RO: "🇷🇴",
+  BG: "🇧🇬", CH: "🇨🇭", GR: "🇬🇷", CZ: "🇨🇿", IN: "🇮🇳",
+  TH: "🇹🇭", MX: "🇲🇽", BR: "🇧🇷", AR: "🇦🇷", KR: "🇰🇷",
   XX: "🦂",
 };

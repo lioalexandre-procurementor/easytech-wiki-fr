@@ -1,0 +1,117 @@
+{
+  "slug": "kluge",
+  "name": "Günther von Kluge",
+  "nameEn": "Kluge",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "gold",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général artillerie or — Allemagne.",
+  "longDesc": "Günther von Kluge est un général artillerie de qualité or — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Artillery Tactic Expert",
+      "desc": "When commanding artillery units to attack, ignore enemy units X% defense",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_102.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Hold Fast",
+      "desc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_108.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Artillery Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Accuracy",
+      "desc": "Deal +X% damage to the enemy when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_37.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Explosives",
+      "desc": "Damage +X% when attacking the stronghold units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_38.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 3
+    },
+    "artillery": {
+      "start": 6,
+      "max": 6
+    },
+    "armor": {
+      "start": 2,
+      "max": 3
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Kluge",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1061,
+  "image": {
+    "photo": "/img/wc4/generals/Kluge.webp",
+    "head": "/img/wc4/heads/Kluge.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

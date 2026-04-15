@@ -1,0 +1,107 @@
+{
+  "slug": "juliusz",
+  "name": "Juliusz Rómmel",
+  "nameEn": "Juliusz",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "A",
+  "quality": "silver",
+  "country": "PL",
+  "countryName": "Pologne",
+  "shortDesc": "Général blindée argent — Pologne.",
+  "longDesc": "Juliusz Rómmel est un général blindée de qualité argent — Pologne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Street Fighting",
+      "desc": "Damage to the enemy +X when fighting in the city",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 3
+    },
+    "artillery": {
+      "start": 1,
+      "max": 1
+    },
+    "armor": {
+      "start": 4,
+      "max": 5
+    },
+    "navy": {
+      "start": 0,
+      "max": 2
+    },
+    "airforce": {
+      "start": 0,
+      "max": 1
+    },
+    "marching": {
+      "start": 4,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1575,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Juliusz",
+  "skillSlots": 4,
+  "unlockHQLv": 8,
+  "militaryRank": 5,
+  "apkId": 1066,
+  "image": {
+    "photo": "/img/wc4/generals/Juliusz.webp",
+    "head": "/img/wc4/heads/Juliusz.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

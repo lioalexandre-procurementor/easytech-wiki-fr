@@ -1,0 +1,107 @@
+{
+  "slug": "model",
+  "name": "Walter Model",
+  "nameEn": "Model",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "silver",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "shortDesc": "Général polyvalente argent — Allemagne.",
+  "longDesc": "Walter Model est un général polyvalente de qualité argent — Allemagne. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Ace Forces",
+      "desc": "Experience gained by the army in combat increases by X%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_43.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Mountain Fighting",
+      "desc": "Damage to the enemy +X when fighting on the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 0
+    },
+    "armor": {
+      "start": 5,
+      "max": 5
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 2,
+      "max": 3
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1580,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Model",
+  "skillSlots": 4,
+  "unlockHQLv": 12,
+  "militaryRank": 5,
+  "apkId": 1052,
+  "image": {
+    "photo": "/img/wc4/generals/Model.webp",
+    "head": "/img/wc4/heads/Model.webp",
+    "photoTrained": "/img/wc4/generals/Model2.webp",
+    "headTrained": "/img/wc4/heads/Model2.webp"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "chernyakhovsky",
+  "name": "Ivan Tchernyakhovski",
+  "nameEn": "Chernyakhovsky",
+  "faction": "standard",
+  "category": "tank",
+  "rank": "S",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "URSS",
+  "shortDesc": "Général blindée or — URSS.",
+  "longDesc": "Ivan Tchernyakhovski est un général blindée de qualité or — URSS. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Blasting Impact",
+      "desc": "After commanding an armored unit to annihilate an enemy troop, deal an additional X% damage to enemies around the target.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_129.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Inspiration",
+      "desc": "30% chance to boost morale after attacking. Damage +X% when morale is high",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_110.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Panzer Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Blitzkrieg",
+      "desc": "X% chance that the enemy will not fight back when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Armored Assault",
+      "desc": "Deal +X% damage to the enemy when commanding armored units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_36.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 3
+    },
+    "artillery": {
+      "start": 3,
+      "max": 5
+    },
+    "armor": {
+      "start": 6,
+      "max": 6
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 0,
+      "max": 2
+    },
+    "marching": {
+      "start": 4,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Chernyakhovsky",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 8,
+  "apkId": 1094,
+  "image": {
+    "photo": "/img/wc4/generals/Chernyakhovsky.webp",
+    "head": "/img/wc4/heads/Chernyakhovsky.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

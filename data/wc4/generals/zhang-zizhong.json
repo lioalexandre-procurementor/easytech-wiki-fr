@@ -1,0 +1,107 @@
+{
+  "slug": "zhang-zizhong",
+  "name": "Zhang Zizhong",
+  "nameEn": "Zhang.Z.Z",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "silver",
+  "country": "CN",
+  "countryName": "République populaire de Chine",
+  "shortDesc": "Général polyvalente argent — République populaire de Chine.",
+  "longDesc": "Zhang Zizhong est un général polyvalente de qualité argent — République populaire de Chine. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Ace Forces",
+      "desc": "Experience gained by the army in combat increases by X%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_43.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Artillery Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Crossfire",
+      "desc": "Counter attack +X% when attacked by the enemy on land",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_39.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "artillery": {
+      "start": 5,
+      "max": 5
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 0,
+      "max": 0
+    },
+    "airforce": {
+      "start": 1,
+      "max": 3
+    },
+    "marching": {
+      "start": 3,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1680,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Zhang.Z.Z",
+  "skillSlots": 4,
+  "unlockHQLv": 15,
+  "militaryRank": 5,
+  "apkId": 1001,
+  "image": {
+    "photo": "/img/wc4/generals/Zhang.Z.Z.webp",
+    "head": "/img/wc4/heads/Zhang.Z.Z.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

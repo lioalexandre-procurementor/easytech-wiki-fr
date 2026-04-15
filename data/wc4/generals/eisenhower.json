@@ -1,0 +1,117 @@
+{
+  "slug": "eisenhower",
+  "name": "Dwight Eisenhower",
+  "nameEn": "Eisenhower",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "S",
+  "quality": "marshal",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général polyvalente maréchal — États-Unis.",
+  "longDesc": "Dwight Eisenhower est un général polyvalente de qualité maréchal — États-Unis. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Fleet Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Carpet Bombing",
+      "desc": "Damage +X% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Depot Ship",
+      "desc": "Fix damaged ship units: each round HP+X",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Sailor",
+      "desc": "Counter attack +X% when attacked by the enemy at sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_40.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Shelter",
+      "desc": "Able to dodge X% damage from the enemy's missile units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "artillery": {
+      "start": 3,
+      "max": 4
+    },
+    "armor": {
+      "start": 3,
+      "max": 4
+    },
+    "navy": {
+      "start": 6,
+      "max": 6
+    },
+    "airforce": {
+      "start": 6,
+      "max": 6
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "iron-cross",
+    "cost": 5930,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Eisenhower",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 11,
+  "apkId": 1031,
+  "image": {
+    "photo": "/img/wc4/generals/Eisenhower.webp",
+    "head": "/img/wc4/heads/Eisenhower.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}

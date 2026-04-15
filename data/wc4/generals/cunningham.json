@@ -1,0 +1,117 @@
+{
+  "slug": "cunningham",
+  "name": "Andrew Cunningham",
+  "nameEn": "Cunningham",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "quality": "gold",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "shortDesc": "Général navale or — Royaume-Uni.",
+  "longDesc": "Andrew Cunningham est un général navale de qualité or — Royaume-Uni. Données extraites du jeu — descriptions et conseils tactiques à confirmer.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Navigation",
+      "desc": "When commanding a naval unit to attack, there is X% chance that one of the surrounding inactive naval unit will participate in the attack.(Only once per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_128.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 2,
+      "name": "Leadership",
+      "desc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +X.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_124.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 3,
+      "name": "Fleet Leader",
+      "desc": "X% chance to give the enemy a critical attack when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 4,
+      "name": "Naval Assault",
+      "desc": "Damage +X% when commanding ship units. After attacking, restore maximum HP by 5% (Only once per turn)",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_112.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    },
+    {
+      "slot": 5,
+      "name": "Early Warning",
+      "desc": "X% chance to evade 20% damage when commanding ship units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_109.webp",
+      "replaceable": false,
+      "replaceableReason": null
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "artillery": {
+      "start": 1,
+      "max": 1
+    },
+    "armor": {
+      "start": 0,
+      "max": 0
+    },
+    "navy": {
+      "start": 6,
+      "max": 6
+    },
+    "airforce": {
+      "start": 4,
+      "max": 4
+    },
+    "marching": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": true,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 6985,
+    "currency": "medals",
+    "notes": "Données APK — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "verified": false,
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "Données extraites de l'APK World Conqueror 4"
+  ],
+  "nameCanonical": "Cunningham",
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 9,
+  "apkId": 1095,
+  "image": {
+    "photo": "/img/wc4/generals/Cunningham.webp",
+    "head": "/img/wc4/heads/Cunningham.webp",
+    "photoTrained": null,
+    "headTrained": null
+  }
+}
