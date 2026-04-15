@@ -29,7 +29,8 @@
     "searchPlaceholder": "Rechercher une unité, un général…",
     "localeSwitcher": "Langue",
     "updates": "Mises à jour",
-    "technologies": "Technologies"
+    "technologies": "Technologies",
+    "guides": "Guides"
   },
   "footer": {
     "about": "À propos",
@@ -316,7 +317,8 @@
       "unit": "Unités d'élite",
       "skill": "Compétences",
       "update": "Mises à jour",
-      "tech": "Technologies"
+      "tech": "Technologies",
+      "guide": "Guides"
     }
   },
   "comparatorPage": {
@@ -408,5 +410,28 @@
     },
     "seoTitle": "Technologies WC4 — Catalogue complet de la recherche",
     "seoDescription": "Catalogue exhaustif des 58 chaînes de technologies de World Conqueror 4 : coûts, niveaux, effets et unités affectées."
+  },
+  "guidesPage": {
+    "hubTitle": "Guides World Conqueror 4",
+    "hubIntro": "Guides détaillés pour bien démarrer sur WC4, comprendre les mécaniques avancées, et progresser efficacement en free-to-play comme en payant.",
+    "categoriesHeading": "Catégories",
+    "category": {
+      "starter": "Démarrage",
+      "systems": "Systèmes de jeu",
+      "strategy": "Stratégie",
+      "meta": "Méta-joueurs"
+    },
+    "tldrLabel": "TL;DR",
+    "publishedOn": "Publié le",
+    "lastReviewed": "Dernière revue",
+    "readingTime": "{minutes} min de lecture",
+    "tagsLabel": "Tags",
+    "relatedGuides": "Guides liés",
+    "faqHeading": "Questions fréquentes",
+    "backToList": "← Tous les guides",
+    "seoTitle": "Guides WC4 — Tutoriels et stratégies",
+    "seoDescription": "Tous les guides pour World Conqueror 4 : tutoriels débutants, mécaniques de jeu, stratégies avancées et conseils méta.",
+    "detailSeoTitle": "{title} | Guides WC4",
+    "detailSeoDescription": "{description}"
   }
 }

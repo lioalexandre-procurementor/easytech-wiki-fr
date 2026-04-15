@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
 import { getAllGeneralSlugs, getAllSlugs as getAllEliteSlugs } from "@/lib/units";
+import { getAllGuideSlugs } from "@/lib/guides";
 import { locales } from "@/src/i18n/config";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
@@ -248,6 +249,38 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "yearly",
         priority: 0.5,
+        alternates: alternates(pair),
+      });
+    }
+  }
+
+  // Guides hub
+  const guidesHubPair: LocalePair = {
+    fr: "/world-conqueror-4/guides",
+    en: "/world-conqueror-4/guides",
+  };
+  for (const locale of locales) {
+    entries.push({
+      url: pathFor(locale, guidesHubPair),
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+      alternates: alternates(guidesHubPair),
+    });
+  }
+
+  // Guide detail pages
+  for (const slug of getAllGuideSlugs()) {
+    const pair: LocalePair = {
+      fr: `/world-conqueror-4/guides/${slug}`,
+      en: `/world-conqueror-4/guides/${slug}`,
+    };
+    for (const locale of locales) {
+      entries.push({
+        url: pathFor(locale, pair),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
         alternates: alternates(pair),
       });
     }

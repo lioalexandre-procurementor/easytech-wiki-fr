@@ -1,0 +1,57 @@
+{
+  "slug": "first-generals",
+  "category": "starter",
+  "publishedAt": "2026-04-15",
+  "lastReviewed": "2026-04-15",
+  "readingTimeMinutes": 5,
+  "tags": ["generals", "early-game", "shop"],
+  "related": ["getting-started-2026", "farm-medals"],
+  "title": {
+    "fr": "Premiers généraux à recruter sur WC4",
+    "en": "First Generals to Recruit on WC4"
+  },
+  "description": {
+    "fr": "Top 5 généraux Bronze et Silver pour bien commencer dans World Conqueror 4 sans gaspiller ses médailles.",
+    "en": "Top 5 Bronze and Silver generals to start strong in World Conqueror 4 without wasting medals."
+  },
+  "tldr": {
+    "fr": [
+      "Visez d'abord un général Bronze polyvalent (3 slots, ~600-900 médailles).",
+      "Évitez les généraux Bronze ultra-spécialisés tant que vous n'avez pas leur unité d'élite.",
+      "Patton ou Eisenhower débloqués via campagne sont gratuits et corrects.",
+      "Ne dépensez les médailles sur un général Gold qu'après avoir 5+ généraux fonctionnels."
+    ],
+    "en": [
+      "Target a versatile Bronze general first (3 slots, ~600-900 medals).",
+      "Avoid hyper-specialized Bronze generals until you have their matching elite unit.",
+      "Patton or Eisenhower unlocked via campaign are free and solid.",
+      "Only spend medals on a Gold general after you have 5+ functional generals."
+    ]
+  },
+  "body": {
+    "fr": "## Pourquoi être patient ?\n\nLes premières médailles que vous gagnez sont les plus précieuses : à HQ bas, vous n'avez pas accès aux meilleurs slots ni aux unités d'élite Tier S, donc un général Gold à 6985 médailles est gâché tant que vous n'avez pas un King Tiger ou un IS-3 à lui confier.\n\n## Top 5 Bronze et Silver pour démarrer\n\n- **Auchinleck** (Bronze, ~825 médailles) — Polyvalent infanterie/blindé, débloqué tôt, parfait pour le frontline early game.\n- **Slim** (Bronze, ~855 médailles) — Excellent en jungle et en infanterie, très utile dans les scénarios Pacific.\n- **Bock** (Bronze, ~1150 médailles) — Tank-focus avec mobility correcte, pont vers le mid-game.\n- **Heinrici** (Bronze, ~855 médailles) — Le meilleur défenseur Bronze, indispensable en scénarios de tenue.\n- **Crerar** (Bronze, ~375 médailles) — Le moins cher de la liste, infanterie polyvalente, très bon rapport qualité/prix.\n\n## Quand passer aux Silver / Gold\n\n- **Silver (4 slots)** : à partir de HQ niveau 8-10, quand vous avez débloqué quelques unités d'élite et que votre roster bronze suffit pour les scénarios secondaires.\n- **Gold (5 slots)** : seulement après HQ 12+, quand vous avez un vrai pool d'unités Tier S à combiner.\n\n## Pièges courants\n\n- Acheter Guderian sans avoir de King Tiger ou IS-3\n- Empiler les généraux artillerie sans avoir d'auto-canons d'élite\n- Vendre Patton après l'avoir débloqué (il est très solide)",
+    "en": "## Why be patient?\n\nThe first medals you earn are the most valuable: at low HQ, you don't have access to the best slots or Tier S elite units, so a 6985-medal Gold general is wasted until you have a King Tiger or IS-3 to give him.\n\n## Top 5 Bronze and Silver to start\n\n- **Auchinleck** (Bronze, ~825 medals) — Versatile infantry/armor, unlocked early, perfect for the early-game frontline.\n- **Slim** (Bronze, ~855 medals) — Excellent in jungle and infantry, very useful in Pacific scenarios.\n- **Bock** (Bronze, ~1150 medals) — Tank-focused with decent mobility, a bridge into mid-game.\n- **Heinrici** (Bronze, ~855 medals) — The best Bronze defender, essential for hold scenarios.\n- **Crerar** (Bronze, ~375 medals) — The cheapest on the list, versatile infantry, excellent value.\n\n## When to upgrade to Silver / Gold\n\n- **Silver (4 slots)**: starting at HQ 8-10, once you've unlocked some elite units and your Bronze roster handles the side scenarios.\n- **Gold (5 slots)**: only after HQ 12+, when you have a real pool of Tier S units to combine.\n\n## Common traps\n\n- Buying Guderian without owning a King Tiger or IS-3\n- Stacking artillery generals without elite SPGs\n- Selling Patton after unlocking him (he's very solid)"
+  },
+  "faqs": {
+    "fr": [
+      {
+        "q": "Combien de généraux faut-il avoir pour finir la campagne ?",
+        "a": "Entre 8 et 12 généraux fonctionnels. Vous pouvez survivre avec moins, mais certains scénarios à objectifs multiples deviennent très tendus."
+      },
+      {
+        "q": "Faut-il acheter Guderian dès que je peux me le permettre ?",
+        "a": "Non. Guderian est exceptionnel mais nécessite des chars d'élite Tier S (King Tiger, IS-3, M1A1) pour briller. Achetez-le quand vous avez déjà ces unités, pas avant."
+      }
+    ],
+    "en": [
+      {
+        "q": "How many generals do I need to finish the campaign?",
+        "a": "Between 8 and 12 functional generals. You can survive with fewer, but multi-objective scenarios become very tight."
+      },
+      {
+        "q": "Should I buy Guderian as soon as I can afford him?",
+        "a": "No. Guderian is exceptional but needs Tier S elite tanks (King Tiger, IS-3, M1A1) to shine. Buy him when you already have those units, not before."
+      }
+    ]
+  }
+}

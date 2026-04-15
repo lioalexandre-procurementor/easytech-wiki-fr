@@ -1,0 +1,65 @@
+{
+  "slug": "getting-started-2026",
+  "category": "starter",
+  "publishedAt": "2026-04-15",
+  "lastReviewed": "2026-04-15",
+  "readingTimeMinutes": 6,
+  "tags": ["beginner", "tutorial", "scenarios"],
+  "related": ["first-generals", "farm-medals"],
+  "title": {
+    "fr": "Démarrer sur World Conqueror 4 en 2026",
+    "en": "Getting Started with World Conqueror 4 in 2026"
+  },
+  "description": {
+    "fr": "Tout ce qu'il faut savoir pour bien commencer sur WC4 : installation, premiers scénarios, ressources, choix de général de départ.",
+    "en": "Everything you need to know to start playing WC4 the right way: installation, first scenarios, resources, picking your starter general."
+  },
+  "tldr": {
+    "fr": [
+      "Téléchargez WC4 depuis le Play Store ou l'App Store officiel.",
+      "Faites les 3-4 premiers scénarios Allies pour apprendre les mécaniques de base.",
+      "Économisez vos médailles pour un général Bronze ou Silver utile, pas le premier qui passe.",
+      "Comprenez les 3 ressources : or (recrutement), industrie (unités lourdes), énergie (carburant)."
+    ],
+    "en": [
+      "Download WC4 from the official Play Store or App Store.",
+      "Play the first 3-4 Allies scenarios to learn the core mechanics.",
+      "Save your medals for a useful Bronze or Silver general — don't impulse-buy.",
+      "Understand the 3 resources: gold (recruiting), industry (heavy units), energy (fuel)."
+    ]
+  },
+  "body": {
+    "fr": "## Installation\n\nWC4 est gratuit sur Android et iOS. Pas besoin d'APK modifié — la version officielle marche très bien et toutes les mécaniques détaillées sur ce wiki proviennent du fichier APK officiel décrypté.\n\n## Premiers scénarios\n\nLe jeu propose 3 grandes campagnes : Axis, Allies, et Modern. Pour un débutant, **commencez par Allies** : les premières missions sont mieux équilibrées et les généraux unlocks (Eisenhower, Bradley, Patton) sont plus faciles à comprendre que ceux de l'Axis.\n\n## Ressources\n\nWC4 utilise trois ressources principales :\n\n- **Or** — recrute des unités d'infanterie, artillerie, marine et aviation\n- **Industrie** — débloque les chars et les unités lourdes\n- **Énergie** — carburant pour avions et marine\n\nNe gaspillez pas l'industrie au début, vous en aurez besoin pour les chars du milieu de campagne.\n\n## Premier général\n\nNe dépensez PAS vos premières médailles sur un général Bronze au hasard. Faites les 5-6 premiers scénarios pour comprendre quel rôle vous plaît (chars, infanterie, marine ?), puis investissez dans un général qui correspond.\n\n> Voir le guide « Premiers généraux à recruter » pour les recommandations détaillées par budget.\n\n## Erreurs à éviter\n\n- Ne pas finir les scénarios pour les médailles d'achievement\n- Acheter le premier général proposé en boutique\n- Négliger les technologies de QG\n- Vendre les unités d'élite (elles se débloquent pour toute la partie)",
+    "en": "## Installation\n\nWC4 is free on Android and iOS. You don't need a modified APK — the official version works perfectly and all the mechanics detailed on this wiki come from the official decrypted APK files.\n\n## First scenarios\n\nThe game has 3 major campaigns: Axis, Allies, and Modern. For a beginner, **start with Allies**: the early missions are better balanced and the unlock generals (Eisenhower, Bradley, Patton) are easier to understand than the Axis ones.\n\n## Resources\n\nWC4 uses three main resources:\n\n- **Gold** — recruits infantry, artillery, navy, and air units\n- **Industry** — unlocks tanks and heavy units\n- **Energy** — fuel for aircraft and navy\n\nDon't waste industry early — you'll need it for mid-campaign tanks.\n\n## First general\n\nDo NOT spend your first medals on a random Bronze general. Play the first 5-6 scenarios to figure out what role you enjoy (tanks, infantry, navy?), then invest in a general that matches.\n\n> See the \"First generals to recruit\" guide for detailed budget recommendations.\n\n## Mistakes to avoid\n\n- Skipping scenarios for achievement medals\n- Buying the first general the shop offers you\n- Neglecting HQ technologies\n- Selling elite units (they unlock for the entire game)"
+  },
+  "faqs": {
+    "fr": [
+      {
+        "q": "Faut-il payer pour bien progresser sur WC4 ?",
+        "a": "Non. Le jeu est entièrement faisable en free-to-play. Les achats accélèrent la progression mais ne débloquent pas de mécaniques exclusives. Concentrez-vous sur les médailles d'achievement et les events saisonniers."
+      },
+      {
+        "q": "Combien de temps pour finir un scénario en moyenne ?",
+        "a": "Entre 15 minutes (early game) et 60 minutes (late game). Les scénarios Modern peuvent dépasser 90 minutes."
+      },
+      {
+        "q": "Quel est le meilleur scénario pour commencer ?",
+        "a": "Le premier scénario Allies (Battle of France) est le tutoriel naturel : il enseigne mouvement, combat, capture de ville et utilisation de général sans risque."
+      }
+    ],
+    "en": [
+      {
+        "q": "Do I need to pay to progress in WC4?",
+        "a": "No. The game is fully F2P-friendly. Purchases speed things up but don't unlock exclusive mechanics. Focus on achievement medals and seasonal events."
+      },
+      {
+        "q": "How long does an average scenario take?",
+        "a": "Between 15 minutes (early game) and 60 minutes (late game). Modern scenarios can exceed 90 minutes."
+      },
+      {
+        "q": "Which scenario should I start with?",
+        "a": "The first Allies scenario (Battle of France) is the natural tutorial: it teaches movement, combat, city capture, and general usage with no risk."
+      }
+    ]
+  }
+}

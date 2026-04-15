@@ -21,6 +21,7 @@ export async function TopBar() {
           <NavLink href="#" disabled>European War 7</NavLink>
           <NavLink href="#" disabled>Great Conqueror Rome</NavLink>
           <NavLink href="/world-conqueror-4/mises-a-jour">{t("nav.updates")}</NavLink>
+          <NavLink href="/world-conqueror-4/guides">{t("nav.guides")}</NavLink>
           <NavLink href="#" disabled>Classements</NavLink>
         </nav>
         <SearchBar />

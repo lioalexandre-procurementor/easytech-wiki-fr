@@ -447,6 +447,34 @@ export interface TechIndex {
   techs: TechIndexEntry[];
 }
 
+// ─── GUIDES ────────────────────────────────────────────────────────────
+
+export type GuideCategory = "starter" | "systems" | "strategy" | "meta";
+
+export interface GuideFAQ {
+  q: string;
+  a: string;
+}
+
+export interface Guide {
+  slug: string;
+  category: GuideCategory;
+  publishedAt: string;
+  lastReviewed: string;
+  readingTimeMinutes: number;
+  tags: string[];
+  related: string[];
+  /** Both locales in the same file. */
+  title: { fr: string; en: string };
+  description: { fr: string; en: string };
+  /** TL;DR bullets — 3-5. */
+  tldr: { fr: string[]; en: string[] };
+  /** Body in minimal markdown (## headings, - lists, > blockquotes, paragraphs). */
+  body: { fr: string; en: string };
+  /** FAQ entries for FAQPage JSON-LD rich snippets. */
+  faqs: { fr: GuideFAQ[]; en: GuideFAQ[] };
+}
+
 /** One normalized row in a comparator table. */
 export interface ComparableRow {
   /** Stable identifier for React key + URL param. */

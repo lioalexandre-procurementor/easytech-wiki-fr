@@ -117,6 +117,14 @@ export const pathnames = {
     fr: "/legal/contact",
     en: "/legal/contact",
   },
+  "/world-conqueror-4/guides": {
+    fr: "/world-conqueror-4/guides",
+    en: "/world-conqueror-4/guides",
+  },
+  "/world-conqueror-4/guides/[slug]": {
+    fr: "/world-conqueror-4/guides/[slug]",
+    en: "/world-conqueror-4/guides/[slug]",
+  },
 } satisfies Pathnames<typeof locales>;
 
 export const localePrefix = "always" as const;

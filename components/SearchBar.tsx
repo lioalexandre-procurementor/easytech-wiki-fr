@@ -6,7 +6,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "@/src/i18n/navigation";
 
 type SearchItem = {
-  type: "general" | "unit" | "skill" | "update" | "tech";
+  type: "general" | "unit" | "skill" | "update" | "tech" | "guide";
   slug: string;
   name: string;
   nameFr: string;
@@ -26,6 +26,7 @@ const TYPE_ICON: Record<SearchItem["type"], string> = {
   skill: "⚡",
   update: "📣",
   tech: "🔬",
+  guide: "📘",
 };
 
 export default function SearchBar() {
@@ -83,12 +84,13 @@ export default function SearchBar() {
       skill: [],
       update: [],
       tech: [],
+      guide: [],
     };
     for (const r of results) g[r.type].push(r);
     return g;
   }, [results]);
 
-  const flat = useMemo(() => [...grouped.general, ...grouped.unit, ...grouped.skill, ...grouped.update, ...grouped.tech], [grouped]);
+  const flat = useMemo(() => [...grouped.general, ...grouped.unit, ...grouped.skill, ...grouped.update, ...grouped.tech, ...grouped.guide], [grouped]);
 
   // Keyboard: global Cmd/Ctrl + K, plus local arrow keys / Enter / Escape.
   useEffect(() => {
@@ -203,7 +205,7 @@ export default function SearchBar() {
           )}
           {!loading && flat.length > 0 && (
             <div className="p-1">
-              {(["general", "unit", "skill", "update", "tech"] as const).map((type) => {
+              {(["general", "unit", "skill", "update", "tech", "guide"] as const).map((type) => {
                 const group = grouped[type];
                 if (group.length === 0) return null;
                 return (

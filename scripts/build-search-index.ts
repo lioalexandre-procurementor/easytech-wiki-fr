@@ -12,7 +12,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-type SearchItemType = "general" | "unit" | "skill" | "update" | "tech";
+type SearchItemType = "general" | "unit" | "skill" | "update" | "tech" | "guide";
 
 interface SearchItem {
   type: SearchItemType;
@@ -136,12 +136,42 @@ function buildTechs(): SearchItem[] {
   }));
 }
 
+function readGuidesDir(): Array<Record<string, unknown>> {
+  const dir = path.join(ROOT, "content", "guides", "wc4");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+    .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")) as Record<string, unknown>);
+}
+
+function buildGuides(): SearchItem[] {
+  return readGuidesDir().map((g) => {
+    const title = (g.title as { fr: string; en: string }) || { fr: "", en: "" };
+    const desc = (g.description as { fr: string; en: string }) || { fr: "", en: "" };
+    return {
+      type: "guide" as SearchItemType,
+      slug: g.slug as string,
+      name: title.en || title.fr || (g.slug as string),
+      nameFr: title.fr || title.en || (g.slug as string),
+      desc: desc.en,
+      descFr: desc.fr,
+      category: (g.category as string) || "",
+      path: {
+        fr: `/world-conqueror-4/guides/${g.slug as string}`,
+        en: `/world-conqueror-4/guides/${g.slug as string}`,
+      },
+    };
+  });
+}
+
 const items: SearchItem[] = [
   ...buildGenerals(),
   ...buildUnits(),
   ...buildSkills(),
   ...buildUpdates(),
   ...buildTechs(),
+  ...buildGuides(),
 ];
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
