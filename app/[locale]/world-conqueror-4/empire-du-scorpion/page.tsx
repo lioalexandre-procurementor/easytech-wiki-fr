@@ -3,6 +3,7 @@ import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
+import { AdSlot } from "@/components/AdSlot";
 import {
   getUnitsByFaction,
   getGeneralsByFaction,
@@ -160,7 +161,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
             </div>
           </section>
 
-          <div className="ad-slot">{t("scorpionPage.adSlot")}</div>
+          <AdSlot label={t("scorpionPage.adSlot")} className="my-6" />
 
           {/* UNITS */}
           <section id="unites">

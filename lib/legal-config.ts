@@ -55,18 +55,19 @@ export const legalConfig = {
 
   // --- Analytics & third-party services used ---
   analytics: {
-    // Plausible = cookieless, RGPD-compliant, no consent banner needed
-    provider: "Plausible Analytics",
-    cookieless: true,
-    dataLocation: "EU (Germany)",
+    // Google AdSense drops advertising cookies — a consent banner IS required.
+    // Consent is collected via Google Funding Choices (IAB TCF v2.2 + Google Consent Mode v2).
+    provider: "Google AdSense + Funding Choices",
+    cookieless: false,
+    dataLocation: "USA / EU (Google)",
   },
 
   // --- Domain info ---
   site: {
-    name: "EasyTech Wiki FR",
+    name: "EasyTech Wiki",
     shortName: "EasyTech Wiki",
-    domain: "[TO FILL IN — example: easytechwiki.fr]",
-    url: "https://[TO FILL IN — domain]",
+    domain: "easytech-wiki.com",
+    url: "https://easytech-wiki.com",
     launchYear: 2026,
   },
 

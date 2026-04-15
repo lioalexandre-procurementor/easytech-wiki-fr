@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
+import { AdSlot } from "@/components/AdSlot";
 import {
   getAllGenerals,
   GENERAL_CATEGORY_META,
@@ -199,7 +200,7 @@ export default async function GeneralsList({
             })}
           </section>
 
-          <div className="ad-slot">{t("ui.adSlot")}</div>
+          <AdSlot label={t("ui.adSlot")} className="my-6" />
 
           {/* SCORPION */}
           <section id="scorpion" className="mb-10">

@@ -1,0 +1,10 @@
+# ads.txt — EasyTech Wiki
+# Authorized digital sellers for advertising on easytech-wiki.com.
+# Spec: https://iabtechlab.com/ads-txt/
+#
+# ⚠️ Replace pub-0000000000000000 below with your real Google AdSense
+# publisher ID once the AdSense account is approved. Until then this file
+# only contains a comment — leave it as-is so AdSense can fetch it.
+#
+# After approval, uncomment the line below and set your publisher ID:
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

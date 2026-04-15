@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
+import { AdSlot } from "@/components/AdSlot";
 import TrainedSkillVote from "@/components/TrainedSkillVote";
 import {
   getAllGeneralSlugs,
@@ -422,7 +423,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
           </div>
 
-          <div className="ad-slot">{t("ui.adSlot")}</div>
+          <AdSlot label={t("ui.adSlot")} className="my-6" />
 
           {/* RECOMMENDED UNITS */}
           {recommended.length > 0 && (

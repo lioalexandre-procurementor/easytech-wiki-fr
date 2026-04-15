@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { TierBadge } from "@/components/TierBadge";
 import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
+import { AdSlot } from "@/components/AdSlot";
 import { getAllSlugs, getEliteUnit, CATEGORY_META, COUNTRY_FLAGS, getUnitsByCategory, FACTION_META, getAllGenerals } from "@/lib/units";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -152,7 +153,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <div id="perks"></div>
           <UnitDetailClient unit={unit}/>
 
-          <div className="ad-slot">{t("ui.adSlot")}</div>
+          <AdSlot label={t("ui.adSlot")} className="my-6" />
 
           {/* STRATEGY */}
           <div id="strategy" className="bg-panel border border-border rounded-lg p-6 mb-6">

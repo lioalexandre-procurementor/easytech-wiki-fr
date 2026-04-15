@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/src/i18n/config";
 import "../globals.css";
+
+const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
+const GSC_TOKEN = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -46,6 +50,7 @@ export async function generateMetadata({
       index: true,
       follow: true,
     },
+    verification: GSC_TOKEN ? { google: GSC_TOKEN } : undefined,
   };
 }
 
@@ -62,8 +67,65 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <head>
+        {/*
+          Google Consent Mode v2 — default state.
+          This MUST run before any Google tag (AdSense, Analytics, Funding
+          Choices) so that gtag() calls are queued and no cookie is dropped
+          until the user interacts with the Funding Choices banner.
+          All ad/analytics signals start as "denied". Funding Choices will
+          update them via gtag('consent', 'update', ...) based on the user's
+          choice (accept / reject / customise).
+        */}
+        <Script id="gtag-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'denied',
+              'functionality_storage': 'granted',
+              'security_storage': 'granted',
+              'wait_for_update': 500
+            });
+            gtag('set', 'ads_data_redaction', true);
+            gtag('set', 'url_passthrough', true);
+          `}
+        </Script>
+      </head>
       <body>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
+
+        {/*
+          Google AdSense + Funding Choices (CMP).
+          Only loaded when NEXT_PUBLIC_ADSENSE_CLIENT is set, i.e. once the
+          AdSense publisher account is approved. Until then no third-party
+          script is loaded and no ad cookie is dropped — the site stays
+          RGPD-clean in its pre-launch state.
+        */}
+        {ADSENSE_CLIENT && (
+          <>
+            <Script
+              id="adsense-lib"
+              async
+              strategy="afterInteractive"
+              src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+              crossOrigin="anonymous"
+            />
+            <Script
+              id="funding-choices"
+              async
+              strategy="afterInteractive"
+              src={`https://fundingchoicesmessages.google.com/i/${ADSENSE_CLIENT}?ers=1`}
+            />
+            <Script id="funding-choices-present" strategy="afterInteractive">
+              {`(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}} signalGooglefcPresent();})();`}
+            </Script>
+          </>
+        )}
       </body>
     </html>
   );
