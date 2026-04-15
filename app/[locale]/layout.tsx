@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -130,27 +129,29 @@ export default async function LocaleLayout({
             crossOrigin="anonymous"
           />
         )}
-      </head>
-      <body>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
-
         {/*
-          Funding Choices (CMP). The AdSense loader itself lives in <head>
-          above so the verification crawler finds it in the raw HTML.
+          Funding Choices (CMP). Placed in <head> as raw <script> tags to
+          match Google's canonical snippet exactly. The signalGooglefcPresent
+          IIFE creates the diagnostic iframe the FC runtime looks for to
+          confirm correct implementation; it polls until document.body
+          exists so head placement is safe.
         */}
         {ADSENSE_CLIENT && (
           <>
-            <Script
-              id="funding-choices"
+            <script
               async
-              strategy="afterInteractive"
               src={`https://fundingchoicesmessages.google.com/i/${ADSENSE_CLIENT}?ers=1`}
             />
-            <Script id="funding-choices-present" strategy="afterInteractive">
-              {`(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}} signalGooglefcPresent();})();`}
-            </Script>
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `(function(){function signalGooglefcPresent(){if(!window.frames['googlefcPresent']){if(document.body){var iframe=document.createElement('iframe');iframe.style='width:0;height:0;border:none;z-index:-1000;left:-1000px;top:-1000px;';iframe.style.display='none';iframe.name='googlefcPresent';document.body.appendChild(iframe);}else{setTimeout(signalGooglefcPresent,0);}}}signalGooglefcPresent();})();`,
+              }}
+            />
           </>
         )}
+      </head>
+      <body>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   );
