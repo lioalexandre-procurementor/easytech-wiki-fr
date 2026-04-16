@@ -20,7 +20,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "步兵生命1"
+      "nameCn": "1"
     },
     {
       "gameId": 2,
@@ -33,7 +33,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "步兵生命2"
+      "nameCn": "2"
     },
     {
       "gameId": 3,
@@ -46,7 +46,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "步兵生命3"
+      "nameCn": "3"
     },
     {
       "gameId": 4,
@@ -59,7 +59,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "步兵生命4"
+      "nameCn": "4"
     },
     {
       "gameId": 5,
@@ -72,7 +72,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "步兵生命5"
+      "nameCn": "5"
     },
     {
       "gameId": 6,
@@ -85,7 +85,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "步兵生命6"
+      "nameCn": "6"
     }
   ],
   "prerequisites": [],

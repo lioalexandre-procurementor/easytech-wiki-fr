@@ -13,8 +13,8 @@
   "longDesc": "Hannibal — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "骑兵指挥3",
-      "nameEn": "骑兵指挥3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "冲锋4",
-      "nameEn": "冲锋4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +41,8 @@
       "slot": 2
     },
     {
-      "name": "游击4",
-      "nameEn": "游击4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -55,8 +55,8 @@
       "slot": 3
     },
     {
-      "name": "突击3",
-      "nameEn": "突击3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,

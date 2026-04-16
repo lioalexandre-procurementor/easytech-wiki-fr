@@ -20,7 +20,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵生命1"
+      "nameCn": "1"
     },
     {
       "gameId": 26,
@@ -33,7 +33,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵生命2"
+      "nameCn": "2"
     },
     {
       "gameId": 27,
@@ -46,7 +46,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵生命3"
+      "nameCn": "3"
     }
   ],
   "prerequisites": [],

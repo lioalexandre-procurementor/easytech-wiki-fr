@@ -13,8 +13,8 @@
   "longDesc": "Caesar — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "优势4",
-      "nameEn": "优势4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "包围4",
-      "nameEn": "包围4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +41,8 @@
       "slot": 2
     },
     {
-      "name": "平原战3",
-      "nameEn": "平原战3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -55,8 +55,8 @@
       "slot": 3
     },
     {
-      "name": "弓兵指挥3",
-      "nameEn": "弓兵指挥3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,

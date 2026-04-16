@@ -20,7 +20,7 @@
       "addAttack": 4,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵攻击1"
+      "nameCn": "1"
     },
     {
       "gameId": 29,
@@ -33,7 +33,7 @@
       "addAttack": 8,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵攻击2"
+      "nameCn": "2"
     },
     {
       "gameId": 30,
@@ -46,7 +46,7 @@
       "addAttack": 12,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵攻击3"
+      "nameCn": "3"
     },
     {
       "gameId": 31,
@@ -59,7 +59,7 @@
       "addAttack": 16,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵攻击4"
+      "nameCn": "4"
     },
     {
       "gameId": 32,
@@ -72,7 +72,7 @@
       "addAttack": 20,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵攻击5"
+      "nameCn": "5"
     },
     {
       "gameId": 33,
@@ -85,7 +85,7 @@
       "addAttack": 24,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "弓兵攻击6"
+      "nameCn": "6"
     }
   ],
   "prerequisites": [],

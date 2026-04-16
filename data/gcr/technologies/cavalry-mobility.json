@@ -20,7 +20,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 1,
-      "nameCn": "骑兵行动1"
+      "nameCn": "1"
     },
     {
       "gameId": 24,
@@ -33,7 +33,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 2,
-      "nameCn": "骑兵行动2"
+      "nameCn": "2"
     }
   ],
   "prerequisites": [],

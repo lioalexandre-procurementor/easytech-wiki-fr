@@ -24,6 +24,7 @@ import type {
   Metadata,
 } from "next";
 import type {
+  GeneralData,
   GeneralQuality,
   GeneralSkill,
   TrainingStage,
@@ -39,6 +40,19 @@ export function generateStaticParams() {
   return locales.flatMap((locale) =>
     slugs.map((slug) => ({ locale, slug }))
   );
+}
+
+/**
+ * Placeholder detection — GCR generals auto-generated from decrypted game
+ * files carry a boilerplate longDesc ending "à enrichir". Those pages are
+ * not yet editorial quality (thin content for AdSense, low SEO value), so
+ * we noindex them and skip ad rendering until the longDesc is humanised.
+ * See EasyTech-Wiki-SEO-Ads-Strategy-Assessment-2026-04-16.md (Plan A).
+ */
+function isPlaceholderGeneral(g: GeneralData | null): boolean {
+  if (!g) return false;
+  const long = (g.longDesc ?? "") as string;
+  return /à enrichir|Fiche générée automatiquement/i.test(long);
 }
 
 export async function generateMetadata({
@@ -86,7 +100,12 @@ export async function generateMetadata({
       title,
       description,
     },
-    robots: { index: true, follow: true },
+    // Placeholder pages stay crawlable (follow) but out of the index until
+    // editorial longDesc is written. Flip back to index:true in the JSON
+    // by removing "à enrichir" / "Fiche générée automatiquement".
+    robots: isPlaceholderGeneral(g)
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
   };
 }
 
@@ -106,6 +125,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
   const t = await getTranslations();
   const g = await loadGeneral(params.slug);
   if (!g) notFound();
+  const placeholder = isPlaceholderGeneral(g);
 
   const GENERAL_CAT = getGeneralCategoryMeta(params.locale);
   const FACTION = getFactionMeta(params.locale);
@@ -301,8 +321,11 @@ export default async function GeneralPage({ params }: { params: { locale: string
             )}
           </div>
 
-          {/* IN-ARTICLE TOP AD — between hero/cross-links and the stats block */}
-          <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          {/* IN-ARTICLE TOP AD — between hero/cross-links and the stats block.
+              Hidden on placeholder pages (thin content = AdSense policy risk). */}
+          {!placeholder && (
+            <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* ATTRIBUTES (4 aptitudes for GCR: infantry/cavalry/archer/navy) */}
           <StatsGrid attributes={g.attributes} mode="base" />
@@ -432,7 +455,9 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
           </div>
 
-          <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          {!placeholder && (
+            <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* RECOMMENDED UNITS */}
           {recommended.length > 0 && (

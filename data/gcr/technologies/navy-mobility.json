@@ -20,7 +20,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 1,
-      "nameCn": "海军行动1"
+      "nameCn": "1"
     },
     {
       "gameId": 44,
@@ -33,7 +33,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 2,
-      "nameCn": "海军行动2"
+      "nameCn": "2"
     },
     {
       "gameId": 45,
@@ -46,7 +46,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 3,
-      "nameCn": "海军行动3"
+      "nameCn": "3"
     },
     {
       "gameId": 46,
@@ -59,7 +59,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 4,
-      "nameCn": "海军行动4"
+      "nameCn": "4"
     },
     {
       "gameId": 47,
@@ -72,7 +72,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 5,
-      "nameCn": "海军行动5"
+      "nameCn": "5"
     },
     {
       "gameId": 48,
@@ -85,7 +85,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 6,
-      "nameCn": "海军行动6"
+      "nameCn": "6"
     }
   ],
   "prerequisites": [],

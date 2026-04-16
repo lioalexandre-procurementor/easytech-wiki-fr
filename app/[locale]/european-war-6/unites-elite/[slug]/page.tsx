@@ -10,7 +10,18 @@ import { AdSlot } from "@/components/AdSlot";
 import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/ew6";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
-import { loadEliteUnit } from "@/lib/content-editable";
+import type { UnitData } from "@/lib/types";
+
+/**
+ * Placeholder detection — EW6 entities auto-generated from decrypted game
+ * files carry a boilerplate longDesc ending "à enrichir". Those pages are
+ * not yet editorial quality (thin content for AdSense), so we noindex them
+ * and skip ad rendering. See EasyTech-Wiki-SEO-Ads-Strategy-Assessment-2026-04-16.md.
+ */
+function isPlaceholderUnit(u: UnitData | null): boolean {
+  if (!u) return false;
+  return /à enrichir|Fiche générée automatiquement/i.test((u.longDesc ?? "") as string);
+}
 import {
   getEligibleGeneralsForUnit,
   UNIT_VOTE_THRESHOLD,
@@ -28,23 +39,26 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: { params: { locale: string; slug: string } }): Promise<Metadata> {
-  const u = await loadEliteUnit(params.slug);
+  const u = getEliteUnit(params.slug);
   if (!u) return { title: "404" };
   const { locale } = params;
   const titleByLocale: Record<string, string> = {
-    fr: `${u.name} (GCR) — Stats, perks niveau 1-12 & généraux | Wiki FR`,
-    en: `${u.name} (GCR) — Stats, level 1-12 perks & generals | Wiki`,
-    de: `${u.name} (GCR) — Werte, Stufen 1–12 Boni & Generäle | Wiki DE`,
+    fr: `${u.name} (EW6) — Stats, perks niveau 1-12 & généraux | Wiki FR`,
+    en: `${u.name} (EW6) — Stats, level 1-12 perks & generals | Wiki`,
+    de: `${u.name} (EW6) — Werte, Stufen 1–12 Boni & Generäle | Wiki DE`,
   };
   const shortDescLocalized = localizedUnitField(u as unknown as Record<string, unknown>, "shortDesc", locale);
   const descByLocale: Record<string, string> = {
-    fr: `Fiche complète du ${u.name} dans Great Conqueror Rome : ${shortDescLocalized} Stats détaillées, perks niveau par niveau, généraux recommandés.`,
-    en: `Complete profile of ${u.nameEn || u.name} in Great Conqueror Rome: ${shortDescLocalized} Detailed stats, per-level perks, recommended generals.`,
-    de: `Komplettes Profil der ${u.nameEn || u.name} in Great Conqueror Rome: ${shortDescLocalized} Detaillierte Werte, Boni pro Stufe, empfohlene Generäle.`,
+    fr: `Fiche complète de ${u.name} dans European War 6 : ${shortDescLocalized} Stats détaillées, perks niveau par niveau, généraux recommandés.`,
+    en: `Complete profile of ${u.nameEn || u.name} in European War 6: ${shortDescLocalized} Detailed stats, per-level perks, recommended generals.`,
+    de: `Komplettes Profil von ${u.nameEn || u.name} in European War 6: ${shortDescLocalized} Detaillierte Werte, Boni pro Stufe, empfohlene Generäle.`,
   };
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    robots: isPlaceholderUnit(u as unknown as UnitData)
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
   };
 }
 
@@ -53,8 +67,9 @@ export default async function UnitPage({ params }: { params: { locale: string; s
   const t = await getTranslations();
   const tL = (fr: string, en: string, de: string): string =>
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
-  const unit = await loadEliteUnit(params.slug);
+  const unit = getEliteUnit(params.slug);
   if (!unit) notFound();
+  const placeholder = isPlaceholderUnit(unit as unknown as UnitData);
 
   const sameCat = getUnitsByCategory(unit.category, unit.faction)
     .filter(u => u.slug !== unit.slug)
@@ -187,7 +202,9 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <div id="perks"></div>
           <UnitDetailClient unit={unit}/>
 
-          <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          {!placeholder && (
+            <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* STRATEGY */}
           <div id="strategy" className="bg-panel border border-border rounded-lg p-6 mb-6">
@@ -267,7 +284,9 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           </div>
 
           {/* IN-ARTICLE MID AD — between Strategy and Related */}
-          <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          {!placeholder && (
+            <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* RELATED */}
           {sameCat.length > 0 && (

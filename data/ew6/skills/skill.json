@@ -1,8 +1,8 @@
 {
   "slug": "skill",
   "type": 0,
-  "name": "凯旋门",
-  "nameFr": "凯旋门",
+  "name": "",
+  "nameFr": "",
   "series": 2,
   "seriesLabel": "Generic learnable skill (series 2)",
   "descriptionTemplate": "",
