@@ -125,6 +125,22 @@ export default async function UnitPage({ params }: { params: { locale: string; s
         </aside>
 
         <main>
+          {unit.preliminary && (
+            <div className="mb-4 p-3 rounded border border-amber-500/40 bg-amber-500/10 text-amber-200 text-xs leading-relaxed">
+              ⚠️ <strong>{tL(
+                "Données en cours de vérification",
+                "Data being verified",
+                "Daten werden überprüft"
+              )}</strong>{" "}
+              —{" "}
+              {tL(
+                "Cette fiche a été publiée dès la sortie du patch d'avril 2026. Seules les valeurs de niveau 1 et les compétences confirmées par captures d'écran en jeu sont fiables. Les niveaux 2 à 12 affichent des valeurs provisoires en attendant la progression complète. Toute erreur repérée peut être signalée via le lien « Signaler une erreur » en bas de page.",
+                "This page was shipped as soon as the April 2026 patch dropped. Only Lv.1 values and perks confirmed from in-game screenshots are reliable. Levels 2–12 show placeholder values pending the full progression capture. Any mistake can be flagged via the \"Report a mistake\" link in the footer.",
+                "Diese Seite wurde direkt mit dem April-2026-Patch veröffentlicht. Nur die Stufe-1-Werte und die durch Screenshots bestätigten Perks sind zuverlässig. Stufen 2–12 zeigen Platzhalterwerte, bis die vollständige Progression erfasst ist. Fehler können über den Link „Fehler melden“ im Footer gemeldet werden."
+              )}
+            </div>
+          )}
+
           {/* HEADER */}
           <div className="grid md:grid-cols-[220px_1fr] gap-5 md:gap-7 bg-panel border border-border rounded-lg p-4 md:p-6 mb-6">
             <div className="rounded-lg border-2 border-gold h-[180px] md:h-[220px] w-full max-w-[200px] md:max-w-none mx-auto md:mx-0 grid place-items-center relative bg-gradient-to-br from-bg3 to-bg overflow-hidden">

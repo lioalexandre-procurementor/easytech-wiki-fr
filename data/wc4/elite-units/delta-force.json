@@ -1,0 +1,99 @@
+{
+  "slug": "delta-force",
+  "name": "Delta Force",
+  "nameEn": "Delta Force",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "S",
+  "obtainability": "event",
+  "preliminary": true,
+  "shortDesc": "Infanterie spéciale assassin — immunité aux actifs, frappe chirurgicale anti-général.",
+  "shortDescEn": "Tier-one assassin infantry — immune to active skills, precision anti-general striker.",
+  "shortDescDe": "Tier-Eins-Assassinen-Infanterie — immun gegen aktive Skills, Präzisions-Anti-General-Striker.",
+  "longDesc": "Unité d'élite des forces spéciales américaines ajoutée avec le patch d'avril 2026. Spécialisée dans la neutralisation de cibles à haute valeur : Camouflage Cover la rend immune aux compétences actives à dégâts directs et à tous les débuffs, tandis que Decapitation Strike ignore esquive, fumigène et stealth pour décapiter les piles adverses.",
+  "longDescEn": "US special operations elite infantry added in the April 2026 patch. Specializes in neutralizing high-value targets: Camouflage Cover makes her immune to direct-damage active skills and all debuffs, while Decapitation Strike ignores dodge, smoke and stealth to kill the opponent's highest-value stacks.",
+  "longDescDe": "US-Spezialkräfte-Elite-Infanterie, eingeführt mit dem April-2026-Patch. Spezialisiert auf die Ausschaltung hochwertiger Ziele: Camouflage Cover macht sie immun gegen direkte aktive Schadensskills und alle Debuffs, während Decapitation Strike Ausweichen, Rauch und Stealth ignoriert und die wertvollsten gegnerischen Stacks ausschaltet.",
+  "stats": {
+    "atk": [72, 72, 72, 72, 72, 72, 72, 72, 72, 72, 72, 72],
+    "def": [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20],
+    "hp":  [585, 585, 585, 585, 585, 585, 585, 585, 585, 585, 585, 585],
+    "mov": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+    "rng": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🥷",
+      "name": "Camouflage Cover",
+      "desc": "Ne peut pas être choisie comme cible des compétences actives à dégâts directs. Immune à tous les débuffs. Réduit les dégâts subis de 30 % contre attaques à 1 case et de 15 % à 2–3 cases.",
+      "nameEn": "Camouflage Cover",
+      "descEn": "Cannot be chosen as the target of direct-damage active skills. Immune to all debuffs. Damage taken reduced by 30% when attacked from 1 tile away and by 15% when attacked from 2–3 tiles away.",
+      "nameDe": "Camouflage Cover",
+      "descDe": "Kann nicht als Ziel direkter aktiver Schadensskills gewählt werden. Immun gegen alle Debuffs. Erlittener Schaden um 30 % reduziert bei Angriffen aus 1 Feld und um 15 % aus 2–3 Feldern Entfernung.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "🎯",
+      "name": "Decapitation Strike",
+      "desc": "Marque 1 cible dans un rayon de 2 cases ; ignore esquive, fumigène et stealth. Les dégâts contre chaque cible marquée sont augmentés de 60 % pendant un tour, cooldown 2 tours. Si une cible marquée est tuée, une attaque supplémentaire est déclenchée avec +20 % de dégâts.",
+      "nameEn": "Decapitation Strike",
+      "descEn": "Mark 1 target within a 2-tile range and ignore their dodge, smoke bomb, or stealth effects. Damage dealt to each marked target is increased by 60% for one turn, with a cooldown of two turns. If a marked target is killed, an additional attack can be made, and damage for that attack is increased by an extra 20%.",
+      "nameDe": "Decapitation Strike",
+      "descDe": "Markiere 1 Ziel in 2 Feldern Umkreis; ignoriere Ausweichen, Rauch und Stealth. Schaden gegen markierte Ziele +60 % für eine Runde, Cooldown 2 Runden. Wird ein markiertes Ziel getötet, folgt ein Extra-Angriff mit +20 % Schaden.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": ["eisenhower", "patton", "bradley"],
+  "levelingPriority": [
+    "Priorité absolue : maximiser Delta Force dès que possible — son kit est déjà complet à Lv.1, chaque niveau améliore l'enveloppe de stats.",
+    "À stocker sur tous les fronts PvE où l'adversaire empile un général à haute valeur.",
+    "Ne pas déployer en duo avec des unités d'infanterie classiques — sa vraie valeur vient de sa capacité à ouvrir seule contre un général-clé."
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer Delta Force ?",
+      "a": "Delta Force est introduite avec le patch d'avril 2026, coût de déblocage : 30 fragments. Elle se recrute une fois par bataille (limite standard des Elite Forces infanterie)."
+    },
+    {
+      "q": "Quel est le rôle de Delta Force ?",
+      "a": "Assassin infanterie tier-un. Camouflage Cover la rend immune aux compétences actives qui tuent normalement l'infanterie (Hawkeye Force, Combat Medic…) ; Decapitation Strike ignore toutes les défenses esquive/smoke/stealth pour viser le général à plus haute valeur de l'adversaire."
+    },
+    {
+      "q": "Les statistiques Lv.2 à Lv.12 sont-elles exactes ?",
+      "a": "Non — seules les valeurs Lv.1 (Attaque 72, Défense 20, HP 585) sont confirmées à partir du panneau d'aperçu en jeu. Les valeurs affichées pour les niveaux 2 à 12 sont des placeholders en attendant la capture de la progression complète. Le bandeau en haut de cette fiche indique ce qui reste à vérifier."
+    }
+  ],
+  "faqsEn": [
+    {
+      "q": "How do you unlock Delta Force?",
+      "a": "Delta Force is introduced with the April 2026 patch. Unlock cost: 30 fragments. Recruit limit: one per battle (standard for infantry Elite Forces)."
+    },
+    {
+      "q": "What is Delta Force's role?",
+      "a": "Tier-one assassin infantry. Camouflage Cover makes her immune to the active skills that normally kill infantry (Hawkeye Force, Combat Medic…); Decapitation Strike ignores dodge, smoke and stealth to kill the opponent's highest-value general stack."
+    },
+    {
+      "q": "Are the Lv.2–Lv.12 stats accurate?",
+      "a": "No — only the Lv.1 values (Attack 72, Defense 20, HP 585) are confirmed from the in-game preview panel. The numbers shown for levels 2 through 12 are placeholders pending a full capture of the progression. The banner at the top of this page lists what remains to verify."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie schaltet man Delta Force frei?",
+      "a": "Delta Force wird mit dem April-2026-Patch eingeführt. Freischaltkosten: 30 Fragmente. Rekrutierungslimit: einmal pro Schlacht (Standard für Infanterie-Elite-Einheiten)."
+    },
+    {
+      "q": "Welche Rolle spielt Delta Force?",
+      "a": "Tier-Eins-Assassinen-Infanterie. Camouflage Cover macht sie immun gegen aktive Skills, die normalerweise Infanterie killen (Hawkeye Force, Combat Medic…); Decapitation Strike ignoriert Ausweichen, Rauch und Stealth, um den hochwertigsten General-Stack des Gegners auszuschalten."
+    },
+    {
+      "q": "Sind die Werte Stufe 2 bis 12 korrekt?",
+      "a": "Nein — nur die Stufe-1-Werte (Angriff 72, Verteidigung 20, HP 585) sind aus dem In-Game-Vorschau-Panel bestätigt. Die angezeigten Werte für Stufe 2 bis 12 sind Platzhalter, bis die vollständige Progression erfasst ist. Das Banner oben auf dieser Seite listet auf, was noch überprüft werden muss."
+    }
+  ]
+}

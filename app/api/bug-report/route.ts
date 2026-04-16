@@ -85,6 +85,9 @@ export async function POST(req: NextRequest) {
   const record = {
     id,
     createdAt,
+    source: "user" as const,
+    kind: "bug" as const,
+    title: description.slice(0, 80),
     description,
     pageUrl,
     pageTitle,
@@ -99,6 +102,7 @@ export async function POST(req: NextRequest) {
   await redis.zadd(REDIS_INDEX, { score: createdAt, member: id });
   await redis.hincrby(REDIS_COUNTS, "total", 1);
   await redis.hincrby(REDIS_COUNTS, "open", 1);
+  await redis.hincrby("bug-reports:kinds", "bug", 1);
 
   cookieJar.set(RATE_COOKIE, String(createdAt), {
     httpOnly: true,

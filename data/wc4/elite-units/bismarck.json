@@ -1,0 +1,111 @@
+{
+  "slug": "bismarck",
+  "name": "Cuirassé Bismarck",
+  "nameEn": "Battleship Bismarck",
+  "category": "navy",
+  "faction": "standard",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "tier": "S",
+  "obtainability": "event",
+  "preliminary": true,
+  "shortDesc": "Cuirassé loup solitaire — crits garantis, bonus en isolation, récupération sur kill.",
+  "shortDescEn": "Lone-wolf battleship — guaranteed crits, solo-attack bonus, heal on kill.",
+  "shortDescDe": "Einzelgänger-Schlachtschiff — garantierte Krits, Solobonus, Heilung bei Kill.",
+  "longDesc": "Cuirassé d'élite allemand ajouté avec le patch d'avril 2026. Conçu pour opérer détaché de la flotte principale : Broadside Volley garantit des coups critiques, Solitary Surge +30 % d'attaque quand aucune unité navale alliée à 3 cases (au prix de +30 % de dégâts subis), Indomitable Will récupère 2 % des PV max à chaque élimination. Doctrine opposée à Prince of Wales ou Yamato qui récompensent la cohésion de flotte.",
+  "longDescEn": "German elite battleship added in the April 2026 patch. Designed to operate detached from the main fleet: Broadside Volley guarantees critical hits, Solitary Surge +30% attack when no allied naval units are within 3 tiles (at the cost of +30% incoming damage), Indomitable Will recovers 2% max HP on each kill. Opposite doctrine to Prince of Wales or Yamato, which reward fleet cohesion.",
+  "longDescDe": "Deutsches Elite-Schlachtschiff, eingeführt mit dem April-2026-Patch. Konzipiert für den Einsatz getrennt von der Hauptflotte: Broadside Volley garantiert kritische Treffer, Solitary Surge +30 % Angriff, wenn keine verbündeten Marineeinheiten innerhalb von 3 Feldern stehen (zum Preis von +30 % erlittenem Schaden), Indomitable Will stellt bei jedem Kill 2 % Max-TP wieder her. Entgegengesetzte Doktrin zu Prince of Wales oder Yamato, die Flottenkohäsion belohnen.",
+  "stats": {
+    "atk": [86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86],
+    "def": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "hp":  [685, 685, 685, 685, 685, 685, 685, 685, 685, 685, 685, 685],
+    "mov": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+    "rng": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "💥",
+      "name": "Broadside Volley",
+      "desc": "Les attaques sont garanties critiques et +30 % de dégâts critiques pendant 1 tour. Cooldown 2 tours.",
+      "nameEn": "Broadside Volley",
+      "descEn": "Attacks are guaranteed to be critical and increase critical attack damage by 30%, lasting for 1 turn, with a cooldown of 2 turns.",
+      "nameDe": "Broadside Volley",
+      "descDe": "Angriffe sind garantiert kritische Treffer mit +30 % Krit-Schaden für 1 Runde, Cooldown 2 Runden.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🌊",
+      "name": "Solitary Surge",
+      "desc": "Si aucune unité navale alliée dans un rayon de 3 cases, +30 % d'attaque mais +30 % de dégâts subis.",
+      "nameEn": "Solitary Surge",
+      "descEn": "If there are no allied naval units within 3 tiles, this unit's attack increases by 30%, but the damage it receives also increases by 30%.",
+      "nameDe": "Solitary Surge",
+      "descDe": "Wenn keine verbündeten Marineeinheiten innerhalb von 3 Feldern stehen, steigt der Angriff um 30 %, der erlittene Schaden aber ebenfalls um 30 %.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "❤️‍🔥",
+      "name": "Indomitable Will",
+      "desc": "À chaque élimination d'une cible, récupère 2 % de ses PV max.",
+      "nameEn": "Indomitable Will",
+      "descEn": "Upon eliminating a target, recover 2% of your maximum HP.",
+      "nameDe": "Indomitable Will",
+      "descDe": "Bei jeder Eliminierung eines Ziels werden 2 % der maximalen HP wiederhergestellt.",
+      "milestone": true
+    }
+  ],
+  "recommendedGenerals": ["raeder", "donitz", "yamamoto"],
+  "levelingPriority": [
+    "Détacher Bismarck de la flotte principale — son bonus Solitary Surge dépend de l'isolation.",
+    "Cibler toujours le plus gros HP à portée avec Broadside Volley : chaque troisième tour, coup critique garanti.",
+    "Jamais empiler avec des porte-avions — vous perdriez le bonus d'attaque."
+  ],
+  "faqs": [
+    {
+      "q": "Comment débloquer le Cuirassé Bismarck ?",
+      "a": "Bismarck est introduite avec le patch d'avril 2026, coût de déblocage : 30 fragments. Recrutement limité à une par bataille (standard pour les Elite Forces navales)."
+    },
+    {
+      "q": "Faut-il la grouper avec la flotte principale ?",
+      "a": "Non — Solitary Surge donne +30 % d'attaque uniquement quand aucune unité navale alliée n'est à moins de 3 cases. La doctrine est inverse à Prince of Wales ou Yamato. Envoyez-la chasser seule dans les couloirs adverses et les villes côtières."
+    },
+    {
+      "q": "Les statistiques Lv.2 à Lv.12 sont-elles exactes ?",
+      "a": "Non — seules les valeurs Lv.1 (Attaque 86, HP 685) sont confirmées à partir du panneau d'aperçu en jeu. Défense, mouvement et portée manquent encore, et les valeurs affichées aux niveaux suivants sont des placeholders. Le bandeau en haut de cette fiche liste ce qui reste à vérifier."
+    }
+  ],
+  "faqsEn": [
+    {
+      "q": "How do you unlock Battleship Bismarck?",
+      "a": "Bismarck is introduced with the April 2026 patch. Unlock cost: 30 fragments. Recruit limit: one per battle (standard for naval Elite Forces)."
+    },
+    {
+      "q": "Should I group her with the main fleet?",
+      "a": "No — Solitary Surge gives +30% attack only when no allied naval unit is within 3 tiles. This is the opposite doctrine from Prince of Wales or Yamato. Send her hunting alone through enemy naval lanes and coastal cities."
+    },
+    {
+      "q": "Are the Lv.2–Lv.12 stats accurate?",
+      "a": "No — only the Lv.1 values (Attack 86, HP 685) are confirmed from the in-game preview panel. Defense, movement and range are still missing, and the values shown for later levels are placeholders. The banner at the top of this page lists what remains to verify."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie schaltet man das Schlachtschiff Bismarck frei?",
+      "a": "Bismarck wird mit dem April-2026-Patch eingeführt. Freischaltkosten: 30 Fragmente. Rekrutierungslimit: einmal pro Schlacht (Standard für Marine-Elite-Einheiten)."
+    },
+    {
+      "q": "Soll ich sie mit der Hauptflotte gruppieren?",
+      "a": "Nein — Solitary Surge gibt +30 % Angriff nur, wenn keine verbündete Marineeinheit innerhalb von 3 Feldern steht. Das ist die entgegengesetzte Doktrin zu Prince of Wales oder Yamato. Schick sie allein auf die Jagd durch feindliche Seewege und Küstenstädte."
+    },
+    {
+      "q": "Sind die Werte Stufe 2 bis 12 korrekt?",
+      "a": "Nein — nur die Stufe-1-Werte (Angriff 86, HP 685) sind aus dem In-Game-Vorschau-Panel bestätigt. Verteidigung, Bewegung und Reichweite fehlen noch, und die Werte für spätere Stufen sind Platzhalter. Das Banner oben auf dieser Seite listet auf, was noch überprüft werden muss."
+    }
+  ]
+}

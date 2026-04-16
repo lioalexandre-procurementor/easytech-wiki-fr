@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "notes": "Seed list of verification tickets created by the admin panel 'Seed' action. Each entry's seedSlug is unique and used for idempotency — re-running 'Seed' will skip slugs that already exist in Redis.",
+  "tickets": [
+    {
+      "seedSlug": "delta-force-movement-range",
+      "title": "Verify Delta Force: movement + range stats",
+      "description": "The detail page currently lists Lv.1 Atk 72 / Def 20 / HP 585 (read directly from the in-game Elite Force panel). Movement and range values are missing from the April 2026 preview panel. Confirm in-game once the unit is recruitable.",
+      "pageUrl": "/fr/world-conqueror-4/unites-elite/delta-force",
+      "context": "elite-units/delta-force"
+    },
+    {
+      "seedSlug": "delta-force-per-level-stats",
+      "title": "Verify Delta Force: per-level stat curve Lv.2–12",
+      "description": "Only Lv.1 values are confirmed. Capture the full Lv.1→Lv.12 progression for Attack / Defense / HP / Movement / Range. HP (Lv.3) of 345 was read from a locked-tier tooltip and needs in-context verification.",
+      "pageUrl": "/fr/world-conqueror-4/unites-elite/delta-force",
+      "context": "elite-units/delta-force"
+    },
+    {
+      "seedSlug": "delta-force-perks-3-and-4",
+      "title": "Verify Delta Force: 3rd and 4th perk slots",
+      "description": "The unit panel shows 4 perk hex icons (2 gold + 2 bronze). Only Camouflage Cover and Decapitation Strike are confirmed from screenshots. Capture and transcribe tooltips for the remaining 2 perks.",
+      "pageUrl": "/fr/world-conqueror-4/unites-elite/delta-force",
+      "context": "elite-units/delta-force"
+    },
+    {
+      "seedSlug": "bismarck-defense-movement-range",
+      "title": "Verify Battleship Bismarck: defense + movement + range",
+      "description": "Lv.1 Atk 86 and HP 685 are confirmed from the Elite Force panel. Defense, movement and range are missing. Confirm in-game once recruitable.",
+      "pageUrl": "/fr/world-conqueror-4/unites-elite/bismarck",
+      "context": "elite-units/bismarck"
+    },
+    {
+      "seedSlug": "bismarck-per-level-stats",
+      "title": "Verify Bismarck: per-level stat curve Lv.2–12",
+      "description": "Only Lv.1 values are confirmed. HP (Lv.2) of 630 was read from a locked-tier tooltip and needs verification in-context. Capture the full Lv.1→Lv.12 progression.",
+      "pageUrl": "/fr/world-conqueror-4/unites-elite/bismarck",
+      "context": "elite-units/bismarck"
+    },
+    {
+      "seedSlug": "bismarck-perk-4",
+      "title": "Verify Bismarck: 4th perk slot",
+      "description": "The unit panel shows 4 perk hex icons. Three tooltips are confirmed (Broadside Volley, Solitary Surge, Indomitable Will). Capture and transcribe the 4th perk tooltip.",
+      "pageUrl": "/fr/world-conqueror-4/unites-elite/bismarck",
+      "context": "elite-units/bismarck"
+    },
+    {
+      "seedSlug": "dowding-trained-attributes",
+      "title": "Verify Dowding (trained): attribute stars in Marshal form",
+      "description": "Community-wiki attributes (Inf 0/6, Arty 3/6, Tank 0/6, Air 6/6, Navy 0/6, March 1/6) are for the pre-training Silver form. With HP bonus climbing to 205% in the Marshal form, these very likely uplift. Capture a clean screenshot of the trained attribute grid and update.",
+      "pageUrl": "/fr/world-conqueror-4/generaux/dowding/entraine",
+      "context": "generals/dowding:trained"
+    },
+    {
+      "seedSlug": "dowding-third-signature-skill",
+      "title": "Verify Dowding: 3rd signature skill tooltip",
+      "description": "Preview panel shows three skill badges (Lv 5 / Lv 4 / Lv 1) but only two tooltips are captured: The Britannic Eagle and Dowding System. Capture the 3rd tooltip and add it to the skill slots.",
+      "pageUrl": "/fr/world-conqueror-4/generaux/dowding/entraine",
+      "context": "generals/dowding:trained"
+    },
+    {
+      "seedSlug": "dowding-training-stages",
+      "title": "Verify Dowding: Sword + Sceptre training stage costs",
+      "description": "Add per-stage training cost breakdown (swords/sceptres/medals/merit) to data/wc4/generals/dowding.json under training.stages. Cross-reference other trained generals for format. Stages 1-4 for Sword, 5-8 for Sceptre is typical.",
+      "pageUrl": "/fr/world-conqueror-4/generaux/dowding/entrainement-premium",
+      "context": "generals/dowding:training"
+    },
+    {
+      "seedSlug": "grossdeutschland-numerical-buff",
+      "title": "Verify Großdeutschland legend: numerical buff delta",
+      "description": "Easytech's preview confirmed the legend's existence, target (Wehrmacht armor / mechanized infantry) and radial adjacency mechanic, but did not publish the exact numerical buff values (attack / defense / HP modifiers). Capture once in-game.",
+      "pageUrl": "/fr/world-conqueror-4/guides/april-2026-update",
+      "context": "legends/grossdeutschland"
+    },
+    {
+      "seedSlug": "fourth-guards-tank-numerical-buff",
+      "title": "Verify 4th Guards Tank (Kantemirovskaya) legend: numerical buff delta",
+      "description": "Like Großdeutschland — confirmed target (Red Army armor) and radial mechanic, but numerical buff delta needs to be captured from the in-game legend preview.",
+      "pageUrl": "/fr/world-conqueror-4/guides/april-2026-update",
+      "context": "legends/fourth-guards-tank"
+    },
+    {
+      "seedSlug": "aerial-countermeasures-rework-delta",
+      "title": "Verify Aerial Countermeasures perk rework",
+      "description": "Easytech flagged the perk as 'optimized' in the April 2026 patch but did not publish the numerical delta. Compare the current in-game tooltip against the pre-patch wording documented in the tech notes, and update any general/unit entries that carry this perk.",
+      "pageUrl": "/fr/world-conqueror-4/competences",
+      "context": "skills/aerial-countermeasures"
+    },
+    {
+      "seedSlug": "battle-of-berlin-event-rewards",
+      "title": "Verify Battle of Berlin event: reward tiers per round",
+      "description": "Confirmed: Defense type, 29 max survival rounds, 7-day rotation, April 17 debut. Still missing: the reward tier table (what you get at round 5 / 10 / 20 / 29). Populate once the event is live.",
+      "pageUrl": "/fr/world-conqueror-4/guides/april-2026-update",
+      "context": "events/battle-of-berlin"
+    }
+  ]
+}

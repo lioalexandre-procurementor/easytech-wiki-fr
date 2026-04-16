@@ -91,12 +91,90 @@
     }
   },
   "hasTrainingPath": true,
-  "training": null,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Tier Épée (or)",
+        "swordCost": 0,
+        "sceptreCost": 0,
+        "notes": "Débloque 2 slots supplémentaires et passe Dowding en rang Maréchal (HP 205%). Coûts exacts en épées + médailles + mérite à confirmer en jeu."
+      },
+      {
+        "stage": 2,
+        "label": "Tier Sceptre (orange)",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Coût orange ~8 sceptres — non recommandé en priorité selon le guide d'avril 2026. Coûts détaillés à compléter."
+      }
+    ],
+    "totalSwordCost": 0,
+    "totalSceptreCost": 8,
+    "summary": "Entraînement premium ajouté par le patch d'avril 2026. Rebâtit Dowding en commandant aérien défensif Maréchal (HP 205%, coût médailles 1341 au discount complet). Valeurs détaillées à vérifier — voir les tickets de vérification dans le panneau admin."
+  },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "The Britannic Eagle",
+      "desc": "While commanding units in a city, after commanding Spitfire to annihilate enemy units, there is a 100% chance to restore 1 dispatch count. When conducting airstrikes on enemy hovering units (except for nuclear bombs), damage is increased by 20%.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": "Compétence signature débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "The Britannic Eagle",
+      "skillLevel": 5
+    },
+    {
+      "slot": 2,
+      "name": "Dowding System",
+      "desc": "While commanding units in your own territory, gain 10 Technology each turn, ignore enemy dodge effects, and enemy anti-air weapons are nullified within your territory.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": "Compétence signature débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "nameEn": "Dowding System",
+      "skillLevel": 4
+    },
+    {
+      "slot": 3,
+      "name": "Troisième compétence signature",
+      "desc": "L'aperçu en jeu montre un troisième badge de compétence (niveau 1) mais le tooltip n'a pas encore été capturé — voir le ticket de vérification dans le panneau admin.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": false,
+      "replaceableReason": "Compétence signature — description à capturer en jeu.",
+      "nameEn": "Third signature skill (pending)",
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement apprenable",
+      "desc": "Slot libre débloqué par l'entraînement. Picks recommandés : Industrial Expert ou Technology Expert (s'empilent avec Economic Expert + Dowding System pour un hybride air/économie).",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot libre — à configurer via l'Académie."
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement apprenable",
+      "desc": "Slot libre débloqué par l'entraînement. Picks recommandés : Industrial Expert ou Technology Expert.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Slot libre — à configurer via l'Académie."
+    }
+  ],
   "acquisition": {
     "type": "medals",
     "cost": 2235,
     "currency": "medals",
-    "notes": "Données de jeu — à vérifier"
+    "notes": "Coût de base 2235 médailles ; 1788 au discount standard ; 1341 au discount complet (confirmé par le guide d'avril 2026)."
   },
   "bonuses": [],
   "recommendedUnits": [],
