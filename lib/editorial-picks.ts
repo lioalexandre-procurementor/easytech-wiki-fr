@@ -13,30 +13,154 @@
  * are small, stable, and benefit from being code-reviewable alongside
  * UI changes. The admin override system remains the source of truth
  * for per-entity overrides (see lib/overrides.ts).
+ *
+ * Picks are based on game-synergy logic:
+ *   - Country match first (e.g., DE unit → DE general)
+ *   - Category match (air general for airforce unit, etc.)
+ *   - Named-skill synergy (De Gaulle rumor → Stuka dive-bombers;
+ *     Simo Häyhä crit → sniper/recon units)
+ *   - Fallback: best-tier general of matching theme.
  */
 import type { Game } from "./types";
 
 export const UNIT_EDITORIAL_PICKS: Record<Game, Record<string, string>> = {
   wc4: {
-    // TODO: populate with curated picks in Task 3. Left empty here so
-    // the module is importable and the verifier runs.
+    // Airforce
+    "ah-64-apache": "doolittle",
+    "b-52-stratofortress": "spaatz",
+    "c-47-skytrain": "eisenhower",
+    "harrier": "dowding",
+    "ju-87-stuka": "de-gaulle",            // rumor-skill synergy with dive bombers
+    "mi-24-hind": "bagramyan",
+    "mystic-bomber": "de-gaulle",
+    "mystic-strategic-bomber": "spaatz",
+    "p-40-warhawk": "doolittle",
+    "su-30": "bagramyan",
+    "supermarine-spitfire": "dowding",     // Battle of Britain classic
+    "sva-23": "richthofen",
+    // Navy
+    "akagi": "yamamoto",
+    "arleigh-burke": "nimitz",
+    "bismarck": "raeder",
+    "enterprise-cv": "halsey",
+    "hms-prince-of-wales": "cunningham",
+    "richelieu": "de-gaulle",              // FR naval (limited FR naval roster)
+    "type-vii-uboat": "donitz",
+    "typhoon-submarine": "kuznetsov",
+    "yukikaze": "yamamoto",
+    // Tank
+    "centurion": "montgomery",
+    "e-775": "guderian",
+    "heavenly-beginning-tank": "guderian",
+    "honeycomb": "rommel",
+    "is-3": "zhukov",
+    "konigs-tiger": "guderian",            // DE Panzer doctrine
+    "leopard-2": "manstein",
+    "m1a1-abrams": "abrams",               // namesake
+    "m26-pershing": "patton",
+    "t-44": "rokossovsky",
+    "t-72": "zhukov",
+    "titan-tank": "guderian",
+    // Artillery
+    "auf1-spg": "de-gaulle",               // FR artillery
+    "b-4-howitzer": "voronov",
+    "bm-21-grad": "bagramyan",
+    "flak-88": "heinrici",
+    "ks-90": "bagramyan",
+    "m142-himars": "marshall",
+    "m7-priest": "marshall",
+    "schwerer-gustav": "rundstedt",
+    "stuka-rocket": "de-gaulle",           // rocket-artillery rumor synergy
+    "topol-m": "voronov",
+    // Infantry
+    "alpini": "messe",                     // IT mountain infantry
+    "brandenburg-infantry": "manstein",    // DE special forces
+    "combat-medic": "eisenhower",
+    "delta-force": "patton",
+    "engineer-unit": "marshall",
+    "ghost-troop": "simo-hayha",           // stealth/sniper archetype
+    "hawkeye": "simo-hayha",               // crit/recon synergy
+    "mystery-paratrooper": "manstein",
+    "rpg-rocket-soldier": "chuikov",       // RU urban combat
   },
   gcr: {
-    // TODO: populate with curated picks in Task 3.
+    // Infantry
+    "anubis": "cleopatra",                 // Egyptian theme
+    "auxiliary-infantry": "caesar",
+    "axeman": "arminius",
+    "elite-guard": "octavian",
+    "elite-pirate": "sextus-pompey",
+    "gallic-swordsman": "vercingetorix",
+    "gladiator": "spartacus",              // gladiator revolt
+    "goblin": "attila",
+    "heavy-infantry": "caesar",
+    "legionary": "caesar",
+    "light-infantry": "caesar",
+    "minotaur": "hannibal",
+    "orc-hammerer": "attila",
+    "pirate": "sextus-pompey",
+    "royal-guard": "octavian",
+    "swordsman": "caesar",
+    "warrior": "arminius",
+    "woad-raider": "vercingetorix",
+    // Archer
+    "bowman": "scipio",
+    "celtic-slinger": "vercingetorix",
+    "crossbow-man": "caesar",
+    "cyclops": "scipio",
+    "elite-archer": "scipio",
+    "horse-archer": "surena",              // Parthian classic
+    "hunter": "commius",
+    "javelineer": "scipio",
+    "marksman": "crassus",
+    "orc-spearwielder": "attila",
+    "slave-archer": "spartacus",           // slave rebellion
+    "slinger": "hannibal",                 // Balearic slingers
+    "syrian-archer": "cleopatra",
+    "terracotta-warrior": "huo",           // Chinese theme
+    // Cavalry
+    "behemoth": "hannibal",
+    "cataphract": "surena",                // Parthian cataphract
+    "chieftain-cavalry": "vercingetorix",
+    "griffin": "hannibal",
+    "heavy-cavalry": "hannibal",
+    "imperial-guard": "octavian",
+    "light-cavalry": "agrippa",
+    "mammoth": "hannibal",                 // pachyderm synergy
+    "noble-cavalry": "pompey",
+    "pillager": "attila",
+    "raider": "antony",
+    "scout": "labienus",                   // Caesar's recon
+    "tribal-cavalry": "ariovistus",
+    "war-chariot": "vercingetorix",        // Celtic chariot
+    "war-elephant": "hannibal",            // elephant classic
   },
 };
 
 export const BEST_GENERAL_PLACEHOLDER: Record<Game, string[]> = {
   wc4: [
-    // TODO: extend to 10 in Task 3. Current 5 from world-conqueror-4/page.tsx:13.
     "manstein",
     "guderian",
     "rokossovsky",
     "simo-hayha",
     "de-gaulle",
+    "zhukov",
+    "patton",
+    "yamamoto",
+    "montgomery",
+    "rommel",
   ],
   gcr: [
-    // TODO: populate with 10 GCR generals in Task 3.
+    "caesar",
+    "hannibal",
+    "scipio",
+    "octavian",
+    "cleopatra",
+    "vercingetorix",
+    "spartacus",
+    "pompey",
+    "attila",
+    "antony",
   ],
 };
 
