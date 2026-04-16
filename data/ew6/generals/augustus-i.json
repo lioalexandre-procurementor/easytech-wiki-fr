@@ -1,0 +1,91 @@
+{
+  "slug": "augustus-i",
+  "name": "Augustus I",
+  "nameEn": "Augustus I",
+  "nameCanonical": "Augustus I",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "RHI",
+  "countryName": "Rhin",
+  "shortDesc": "Général infantry — Rhin.",
+  "longDesc": "Augustus I — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 2,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 2
+    },
+    {
+      "name": "Plain Fighting",
+      "nameEn": "Plain Fighting",
+      "desc": "Increase attack by 0% when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 1,
+      "skillSlug": "plain-fighting",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 440,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 4,
+  "militaryRank": 4,
+  "gameId": 1119,
+  "image": {
+    "photo": "/img/ew6/generals/Augustus I.webp",
+    "head": "/img/ew6/heads/Augustus I.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

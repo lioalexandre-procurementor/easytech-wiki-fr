@@ -1,0 +1,98 @@
+{
+  "slug": "hungarian-hussar",
+  "name": "Hungarian Hussar",
+  "nameEn": "Hungarian Hussar",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "HRE",
+  "countryName": "Holy Roman Empire",
+  "tier": "C",
+  "obtainability": "event",
+  "shortDesc": "Unité cavalry — HRE.",
+  "longDesc": "Light cavalry composed with Hungarians called Perfect Knights. They have excellent horsemanship and are courageous. It belongs to light cavalry.",
+  "stats": {
+    "atk": [
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
+    "def": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "hp": [
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 20002,
+  "image": {
+    "sprite": "/img/ew6/armies/20002.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

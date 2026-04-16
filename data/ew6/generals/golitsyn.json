@@ -1,0 +1,77 @@
+{
+  "slug": "golitsyn",
+  "name": "Golitsyn",
+  "nameEn": "Golitsyn",
+  "nameCanonical": "Golitsyn",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général cavalry — Russie.",
+  "longDesc": "Golitsyn — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Edge",
+      "nameEn": "Edge",
+      "desc": "0 additional damage when cavalry attack infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "edge",
+      "slot": 1
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "tactic-master",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 0,
+      "max": 0
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 245,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 3,
+  "militaryRank": 3,
+  "gameId": 1059,
+  "image": {
+    "photo": "/img/ew6/generals/Golitsyn.webp",
+    "head": "/img/ew6/heads/Golitsyn.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

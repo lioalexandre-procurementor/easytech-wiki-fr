@@ -1,0 +1,91 @@
+{
+  "slug": "napoleon-iii",
+  "name": "Napoleon III",
+  "nameEn": "Napoleon III",
+  "nameCanonical": "Napoleon III",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général artillery — France.",
+  "longDesc": "Napoleon III — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 2,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Artillery Master",
+      "nameEn": "Artillery Master",
+      "desc": "Increase critical strike by 0% when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 3,
+      "skillSlug": "artillery-master",
+      "slot": 2
+    },
+    {
+      "name": "Land Fort",
+      "nameEn": "Land Fort",
+      "desc": "Increase attack by 0% when artillery fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 2,
+      "skillSlug": "land-fort",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 0,
+      "max": 2
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1065,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 12,
+  "militaryRank": 12,
+  "gameId": 1031,
+  "image": {
+    "photo": "/img/ew6/generals/Napoleon III.webp",
+    "head": "/img/ew6/heads/Napoleon III.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

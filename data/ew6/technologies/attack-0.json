@@ -1,0 +1,116 @@
+{
+  "slug": "attack-0",
+  "gameTypeId": 0,
+  "gameCategoryId": 0,
+  "nameEn": "Attack",
+  "nameFr": "Attack",
+  "category": "infantry",
+  "effectArmy": [
+    1,
+    2,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "maxLevel": 4,
+  "needHQLv": 1,
+  "needScenarioId": 1,
+  "levels": [
+    {
+      "gameId": 101011,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 1750,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 1,
+      "descEn": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "descTemplate": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "techValues": [
+        1
+      ],
+      "techDescKeys": [
+        1
+      ],
+      "prerequisiteIds": [],
+      "upgradeToId": 101012
+    },
+    {
+      "gameId": 101012,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 5250,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "descTemplate": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "techValues": [
+        2
+      ],
+      "techDescKeys": [
+        1
+      ],
+      "prerequisiteIds": [],
+      "upgradeToId": 101013
+    },
+    {
+      "gameId": 101013,
+      "level": 3,
+      "x": 0,
+      "y": 0,
+      "costGold": 17500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 5,
+      "descEn": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "descTemplate": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "techValues": [
+        3
+      ],
+      "techDescKeys": [
+        1
+      ],
+      "prerequisiteIds": [],
+      "upgradeToId": 101014
+    },
+    {
+      "gameId": 101014,
+      "level": 4,
+      "x": 0,
+      "y": 0,
+      "costGold": 35000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "descTemplate": "Militia\\nDominion Militia \\nRifleman\\nGrenadier\\nOld Guard\\nElite Light Infantry\\nRedshirt\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    1,
+    2,
+    6,
+    7,
+    8,
+    9,
+    10
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "joubert",
+  "name": "Joubert",
+  "nameEn": "Joubert",
+  "nameCanonical": "Joubert",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "B",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Joubert — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Intercept",
+      "nameEn": "Intercept",
+      "desc": "0 additional damage when infantry attack cavalry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 15,
+      "skillLevel": 2,
+      "skillSlug": "intercept",
+      "slot": 1
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "ambush",
+      "slot": 2
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "tactic-master",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 505,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 5,
+  "militaryRank": 5,
+  "gameId": 1023,
+  "image": {
+    "photo": "/img/ew6/generals/Joubert.webp",
+    "head": "/img/ew6/heads/Joubert.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

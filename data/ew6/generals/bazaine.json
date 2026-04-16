@@ -1,0 +1,91 @@
+{
+  "slug": "bazaine",
+  "name": "Bazaine",
+  "nameEn": "Bazaine",
+  "nameCanonical": "Bazaine",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "B",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général cavalry — France.",
+  "longDesc": "Bazaine — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Riding Master",
+      "nameEn": "Riding Master",
+      "desc": "Increase critical strike by 0% when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "riding-master",
+      "slot": 1
+    },
+    {
+      "name": "Maneuver",
+      "nameEn": "Maneuver",
+      "desc": "0% chance to ignore the effect of barriers when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "maneuver",
+      "slot": 2
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 2,
+      "skillSlug": "jungle-fighting",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 0,
+      "max": 1
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 710,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 5,
+  "militaryRank": 5,
+  "gameId": 1029,
+  "image": {
+    "photo": "/img/ew6/generals/Bazaine.webp",
+    "head": "/img/ew6/heads/Bazaine.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "population-7",
+  "gameTypeId": 7,
+  "gameCategoryId": 0,
+  "nameEn": "Population",
+  "nameFr": "Population",
+  "category": "infantry",
+  "effectArmy": [
+    2,
+    4,
+    5,
+    8,
+    10,
+    12
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 103003,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 2500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "Dominion Militia \\nHighlander\\nPatriotic Army\\nOld Guard\\nRedshirt\\nMaxim Gunner\\n\\n",
+      "descTemplate": "Dominion Militia \\nHighlander\\nPatriotic Army\\nOld Guard\\nRedshirt\\nMaxim Gunner\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 103004
+    },
+    {
+      "gameId": 103004,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 25000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "Dominion Militia \\nHighlander\\nPatriotic Army\\nOld Guard\\nRedshirt\\nMaxim Gunner\\n\\n",
+      "descTemplate": "Dominion Militia \\nHighlander\\nPatriotic Army\\nOld Guard\\nRedshirt\\nMaxim Gunner\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    2,
+    4,
+    5,
+    8,
+    10,
+    12
+  ]
+}

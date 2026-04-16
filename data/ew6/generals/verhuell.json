@@ -1,0 +1,77 @@
+{
+  "slug": "verhuell",
+  "name": "Verhuell",
+  "nameEn": "Verhuell",
+  "nameCanonical": "Verhuell",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "NL",
+  "countryName": "Pays-Bas",
+  "shortDesc": "Général navy — Pays-Bas.",
+  "longDesc": "Verhuell — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Escorting",
+      "nameEn": "Escorting",
+      "desc": "Increase 0 ship defence in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 34,
+      "skillLevel": 1,
+      "skillSlug": "escorting",
+      "slot": 1
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "tactic-master",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 0,
+      "max": 0
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 370,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 1121,
+  "image": {
+    "photo": "/img/ew6/generals/Verhuell.webp",
+    "head": "/img/ew6/heads/Verhuell.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

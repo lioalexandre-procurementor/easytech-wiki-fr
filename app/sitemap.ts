@@ -9,6 +9,12 @@ import {
   getAllSkillSlugs as getAllGcrSkillSlugs,
   getAllTechSlugs as getAllGcrTechSlugs,
 } from "@/lib/gcr";
+import {
+  getAllGeneralSlugs as getAllEw6GeneralSlugs,
+  getAllSlugs as getAllEw6EliteSlugs,
+  getAllSkillSlugs as getAllEw6SkillSlugs,
+  getAllTechSlugs as getAllEw6TechSlugs,
+} from "@/lib/ew6";
 import { getGame } from "@/lib/games";
 import { locales } from "@/src/i18n/config";
 
@@ -399,6 +405,104 @@ export default function sitemap(): MetadataRoute.Sitemap {
         fr: `/great-conqueror-rome/technologies/${slug}`,
         en: `/great-conqueror-rome/technologies/${slug}`,
         de: `/great-conqueror-rome/technologies/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.5,
+          alternates: alternates(pair),
+        });
+      }
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // European War 6: 1914 — only emitted when the game is marked available
+  // in lib/games.ts. Keeps crawlers out of scaffolded routes until launch.
+  // ---------------------------------------------------------------------
+  const ew6Game = getGame("european-war-6");
+  if (ew6Game?.available) {
+    const ew6StaticRoutes: { pair: LocalePair; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+      { pair: { fr: "/european-war-6", en: "/european-war-6", de: "/european-war-6" }, priority: 0.9, changeFrequency: "weekly" },
+      { pair: { fr: "/european-war-6/generaux", en: "/european-war-6/generals", de: "/european-war-6/generals" }, priority: 0.9, changeFrequency: "weekly" },
+      { pair: { fr: "/european-war-6/unites-elite", en: "/european-war-6/elite-units", de: "/european-war-6/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
+      { pair: { fr: "/european-war-6/competences", en: "/european-war-6/skills", de: "/european-war-6/skills" }, priority: 0.8, changeFrequency: "weekly" },
+      { pair: { fr: "/european-war-6/technologies", en: "/european-war-6/technologies", de: "/european-war-6/technologies" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/european-war-6/comparateur/generaux", en: "/european-war-6/comparator/generals", de: "/european-war-6/comparator/generals" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/european-war-6/comparateur/unites", en: "/european-war-6/comparator/units", de: "/european-war-6/comparator/units" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/european-war-6/guides", en: "/european-war-6/guides", de: "/european-war-6/guides" }, priority: 0.7, changeFrequency: "weekly" },
+      { pair: { fr: "/european-war-6/mises-a-jour", en: "/european-war-6/updates", de: "/european-war-6/updates" }, priority: 0.7, changeFrequency: "weekly" },
+    ];
+    for (const route of ew6StaticRoutes) {
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, route.pair),
+          lastModified: now,
+          changeFrequency: route.changeFrequency,
+          priority: route.priority,
+          alternates: alternates(route.pair),
+        });
+      }
+    }
+
+    for (const slug of getAllEw6GeneralSlugs()) {
+      const pair: LocalePair = {
+        fr: `/european-war-6/generaux/${slug}`,
+        en: `/european-war-6/generals/${slug}`,
+        de: `/european-war-6/generals/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.8,
+          alternates: alternates(pair),
+        });
+      }
+    }
+
+    for (const slug of getAllEw6EliteSlugs()) {
+      const pair: LocalePair = {
+        fr: `/european-war-6/unites-elite/${slug}`,
+        en: `/european-war-6/elite-units/${slug}`,
+        de: `/european-war-6/elite-units/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.8,
+          alternates: alternates(pair),
+        });
+      }
+    }
+
+    for (const slug of getAllEw6SkillSlugs()) {
+      const pair: LocalePair = {
+        fr: `/european-war-6/competences/${slug}`,
+        en: `/european-war-6/skills/${slug}`,
+        de: `/european-war-6/skills/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.6,
+          alternates: alternates(pair),
+        });
+      }
+    }
+
+    for (const slug of getAllEw6TechSlugs()) {
+      const pair: LocalePair = {
+        fr: `/european-war-6/technologies/${slug}`,
+        en: `/european-war-6/technologies/${slug}`,
+        de: `/european-war-6/technologies/${slug}`,
       };
       for (const locale of locales) {
         entries.push({

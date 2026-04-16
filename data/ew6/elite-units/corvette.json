@@ -1,0 +1,98 @@
+{
+  "slug": "corvette",
+  "name": "Corvette",
+  "nameEn": "Corvette",
+  "category": "navy",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "B",
+  "obtainability": "free",
+  "shortDesc": "Unité navy — XX.",
+  "longDesc": "It has good defence and attack. It is usually in charge of maritime escort and can strike a long distance attack against the enemy. It belongs to small ship.",
+  "stats": {
+    "atk": [
+      44,
+      44,
+      44,
+      44,
+      44,
+      44,
+      44,
+      44,
+      44,
+      44,
+      44,
+      44
+    ],
+    "def": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "hp": [
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180,
+      180
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 40101,
+  "image": {
+    "sprite": "/img/ew6/armies/40101.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

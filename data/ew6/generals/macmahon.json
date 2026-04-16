@@ -1,0 +1,105 @@
+{
+  "slug": "macmahon",
+  "name": "Macmahon",
+  "nameEn": "Macmahon",
+  "nameCanonical": "Macmahon",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "silver",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général artillery — France.",
+  "longDesc": "Macmahon — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 2,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Land Fort",
+      "nameEn": "Land Fort",
+      "desc": "Increase attack by 0% when artillery fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 1,
+      "skillSlug": "land-fort",
+      "slot": 2
+    },
+    {
+      "name": "Alert",
+      "nameEn": "Alert",
+      "desc": "Decrease damage by 0% when attacked from far away",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 6,
+      "skillLevel": 2,
+      "skillSlug": "alert",
+      "slot": 3
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 3,
+      "skillSlug": "counterattack",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 1,
+      "max": 2
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1405,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 11,
+  "militaryRank": 11,
+  "gameId": 1028,
+  "image": {
+    "photo": "/img/ew6/generals/Macmahon.webp",
+    "head": "/img/ew6/heads/Macmahon.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

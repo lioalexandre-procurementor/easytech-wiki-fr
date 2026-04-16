@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "totalTechs": 39,
+  "byCategory": {
+    "infantry": 24,
+    "cavalry": 15
+  },
+  "techs": [
+    {
+      "slug": "attack-0",
+      "nameEn": "Attack",
+      "category": "infantry",
+      "maxLevel": 4,
+      "gameTypeId": 0
+    },
+    {
+      "slug": "defense-1",
+      "nameEn": "Defense",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 1
+    },
+    {
+      "slug": "hp-2",
+      "nameEn": "HP",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 2
+    },
+    {
+      "slug": "attack-3",
+      "nameEn": "Attack",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 3
+    },
+    {
+      "slug": "defense-4",
+      "nameEn": "Defense",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 4
+    },
+    {
+      "slug": "hp-5",
+      "nameEn": "HP",
+      "category": "infantry",
+      "maxLevel": 8,
+      "gameTypeId": 5
+    },
+    {
+      "slug": "mobility-6",
+      "nameEn": "Mobility",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 6
+    },
+    {
+      "slug": "population-7",
+      "nameEn": "Population",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 7
+    },
+    {
+      "slug": "attack-8",
+      "nameEn": "Attack",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 8
+    },
+    {
+      "slug": "defense-9",
+      "nameEn": "Defense",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 9
+    },
+    {
+      "slug": "hp-10",
+      "nameEn": "HP",
+      "category": "infantry",
+      "maxLevel": 4,
+      "gameTypeId": 10
+    },
+    {
+      "slug": "attack-11",
+      "nameEn": "Attack",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 11
+    },
+    {
+      "slug": "defense-12",
+      "nameEn": "Defense",
+      "category": "infantry",
+      "maxLevel": 8,
+      "gameTypeId": 12
+    },
+    {
+      "slug": "hp-13",
+      "nameEn": "HP",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 13
+    },
+    {
+      "slug": "mobility-14",
+      "nameEn": "Mobility",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 14
+    },
+    {
+      "slug": "population-15",
+      "nameEn": "Population",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 15
+    },
+    {
+      "slug": "attack-16",
+      "nameEn": "Attack",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 16
+    },
+    {
+      "slug": "defense-17",
+      "nameEn": "Defense",
+      "category": "infantry",
+      "maxLevel": 4,
+      "gameTypeId": 17
+    },
+    {
+      "slug": "hp-18",
+      "nameEn": "HP",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 18
+    },
+    {
+      "slug": "attack-19",
+      "nameEn": "Attack",
+      "category": "infantry",
+      "maxLevel": 8,
+      "gameTypeId": 19
+    },
+    {
+      "slug": "defense-20",
+      "nameEn": "Defense",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 20
+    },
+    {
+      "slug": "hp-21",
+      "nameEn": "HP",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 21
+    },
+    {
+      "slug": "mobility-22",
+      "nameEn": "Mobility",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 22
+    },
+    {
+      "slug": "population-23",
+      "nameEn": "Population",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 23
+    },
+    {
+      "slug": "attack-24",
+      "nameEn": "Attack",
+      "category": "cavalry",
+      "maxLevel": 6,
+      "gameTypeId": 24
+    },
+    {
+      "slug": "defense-25",
+      "nameEn": "Defense",
+      "category": "cavalry",
+      "maxLevel": 6,
+      "gameTypeId": 25
+    },
+    {
+      "slug": "hp-26",
+      "nameEn": "HP",
+      "category": "cavalry",
+      "maxLevel": 4,
+      "gameTypeId": 26
+    },
+    {
+      "slug": "attack-27",
+      "nameEn": "Attack",
+      "category": "cavalry",
+      "maxLevel": 8,
+      "gameTypeId": 27
+    },
+    {
+      "slug": "defense-28",
+      "nameEn": "Defense",
+      "category": "cavalry",
+      "maxLevel": 6,
+      "gameTypeId": 28
+    },
+    {
+      "slug": "hp-29",
+      "nameEn": "HP",
+      "category": "cavalry",
+      "maxLevel": 2,
+      "gameTypeId": 29
+    },
+    {
+      "slug": "mobility-30",
+      "nameEn": "Mobility",
+      "category": "cavalry",
+      "maxLevel": 2,
+      "gameTypeId": 30
+    },
+    {
+      "slug": "population-31",
+      "nameEn": "Population",
+      "category": "cavalry",
+      "maxLevel": 2,
+      "gameTypeId": 31
+    },
+    {
+      "slug": "defense-32",
+      "nameEn": "Defense",
+      "category": "cavalry",
+      "maxLevel": 4,
+      "gameTypeId": 32
+    },
+    {
+      "slug": "hp-33",
+      "nameEn": "HP",
+      "category": "cavalry",
+      "maxLevel": 6,
+      "gameTypeId": 33
+    },
+    {
+      "slug": "attack-34",
+      "nameEn": "Attack",
+      "category": "cavalry",
+      "maxLevel": 5,
+      "gameTypeId": 34
+    },
+    {
+      "slug": "barrier-35",
+      "nameEn": "Barrier",
+      "category": "cavalry",
+      "maxLevel": 4,
+      "gameTypeId": 35
+    },
+    {
+      "slug": "trench-36",
+      "nameEn": "Trench",
+      "category": "cavalry",
+      "maxLevel": 4,
+      "gameTypeId": 36
+    },
+    {
+      "slug": "coast-gun-37",
+      "nameEn": "Coast Gun",
+      "category": "cavalry",
+      "maxLevel": 4,
+      "gameTypeId": 37
+    },
+    {
+      "slug": "bunker-38",
+      "nameEn": "Bunker",
+      "category": "cavalry",
+      "maxLevel": 4,
+      "gameTypeId": 38
+    }
+  ]
+}

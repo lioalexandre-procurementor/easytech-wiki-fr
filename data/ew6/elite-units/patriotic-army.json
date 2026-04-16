@@ -1,0 +1,98 @@
+{
+  "slug": "patriotic-army",
+  "name": "Patriotic Army",
+  "nameEn": "Patriotic Army",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "COL",
+  "countryName": "Gran Colombia",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Unité infantry — COL.",
+  "longDesc": "A troop composed of South Americans fighting for independence and against western colonial rule. They have a strong will to fight and belongs to heavy infantry.",
+  "stats": {
+    "atk": [
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42
+    ],
+    "def": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "hp": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10103,
+  "image": {
+    "sprite": "/img/ew6/armies/10103.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

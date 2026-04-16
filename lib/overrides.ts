@@ -34,7 +34,15 @@ export type EntityType =
   | "gcr-guide"
   | "gcr-update"
   | "gcr-skill"
-  | "gcr-technology";
+  | "gcr-technology"
+  // European War 6: 1914 — same pattern as GCR. Separate namespace lets
+  // the admin edit EW6 entities independently of WC4/GCR.
+  | "ew6-elite-unit"
+  | "ew6-general"
+  | "ew6-guide"
+  | "ew6-update"
+  | "ew6-skill"
+  | "ew6-technology";
 
 export type OverrideRecord = {
   patch: unknown;

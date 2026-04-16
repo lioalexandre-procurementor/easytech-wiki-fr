@@ -1,0 +1,77 @@
+{
+  "slug": "wurmb",
+  "name": "Wurmb",
+  "nameEn": "Wurmb",
+  "nameCanonical": "Wurmb",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "marshal",
+  "country": "RHI",
+  "countryName": "Rhin",
+  "shortDesc": "Général infantry — Rhin.",
+  "longDesc": "Wurmb — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 1,
+      "skillSlug": "formation-master",
+      "slot": 1
+    },
+    {
+      "name": "Battle Array",
+      "nameEn": "Battle Array",
+      "desc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 2,
+      "skillSlug": "battle-array",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 305,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 8,
+  "militaryRank": 8,
+  "gameId": 1118,
+  "image": {
+    "photo": "/img/ew6/generals/Wurmb.webp",
+    "head": "/img/ew6/heads/Wurmb.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

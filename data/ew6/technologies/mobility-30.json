@@ -1,0 +1,68 @@
+{
+  "slug": "mobility-30",
+  "gameTypeId": 30,
+  "gameCategoryId": 3,
+  "nameEn": "Mobility",
+  "nameFr": "Mobility",
+  "category": "cavalry",
+  "effectArmy": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 403001,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 2500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "\\n\\n\\nAll Ships\\n\\n",
+      "descTemplate": "\\n\\n\\nAll Ships\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 403002
+    },
+    {
+      "gameId": 403002,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 25000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "\\n\\n\\nAll Ships\\n\\n",
+      "descTemplate": "\\n\\n\\nAll Ships\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 403003
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37
+  ]
+}

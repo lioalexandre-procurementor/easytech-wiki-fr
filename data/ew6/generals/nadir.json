@@ -1,0 +1,105 @@
+{
+  "slug": "nadir",
+  "name": "Nadir",
+  "nameEn": "Nadir",
+  "nameCanonical": "Nadir",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "gold",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général cavalry — Empire ottoman.",
+  "longDesc": "Nadir — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Station",
+      "nameEn": "Station",
+      "desc": "Increase attack by 0% when cavalry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 22,
+      "skillLevel": 1,
+      "skillSlug": "station",
+      "slot": 1
+    },
+    {
+      "name": "Sailor",
+      "nameEn": "Sailor",
+      "desc": "Increase the damage of army units by 0% when fighting in the sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "sailor",
+      "slot": 2
+    },
+    {
+      "name": "Precision Strike",
+      "nameEn": "Precision Strike",
+      "desc": "0 additional damage when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 1,
+      "skillSlug": "precision-strike",
+      "slot": 3
+    },
+    {
+      "name": "Maneuver",
+      "nameEn": "Maneuver",
+      "desc": "0% chance to ignore the effect of barriers when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "maneuver",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 1,
+      "max": 2
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2042,
+  "image": {
+    "photo": "/img/ew6/generals/MidEast2.webp",
+    "head": "/img/ew6/heads/MidEast2.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

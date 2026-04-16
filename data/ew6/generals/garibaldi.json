@@ -1,0 +1,119 @@
+{
+  "slug": "garibaldi",
+  "name": "Garibaldi",
+  "nameEn": "Garibaldi",
+  "nameCanonical": "Garibaldi",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "IT",
+  "countryName": "Italie",
+  "shortDesc": "Général infantry — Italie.",
+  "longDesc": "Garibaldi — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "ambush",
+      "slot": 2
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 3
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "mountain-fighting",
+      "slot": 4
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "tactic-master",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1250,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 8,
+  "militaryRank": 8,
+  "gameId": 1128,
+  "image": {
+    "photo": "/img/ew6/generals/Garibaldi.webp",
+    "head": "/img/ew6/heads/Garibaldi.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

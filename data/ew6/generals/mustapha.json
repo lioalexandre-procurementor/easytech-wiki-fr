@@ -1,0 +1,91 @@
+{
+  "slug": "mustapha",
+  "name": "Mustapha",
+  "nameEn": "Mustapha",
+  "nameCanonical": "Mustapha",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "RHI",
+  "countryName": "Rhin",
+  "shortDesc": "Général cavalry — Rhin.",
+  "longDesc": "Mustapha — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Riding Master",
+      "nameEn": "Riding Master",
+      "desc": "Increase critical strike by 0% when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "riding-master",
+      "slot": 1
+    },
+    {
+      "name": "Surprise Attack",
+      "nameEn": "Surprise Attack",
+      "desc": "The farther cavalry move, the higher damage cavalry deal",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 2,
+      "skillSlug": "surprise-attack",
+      "slot": 2
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 0,
+      "max": 2
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2014,
+  "image": {
+    "photo": "/img/ew6/generals/Hurshid.webp",
+    "head": "/img/ew6/heads/Hurshid.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

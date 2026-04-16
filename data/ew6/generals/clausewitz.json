@@ -1,0 +1,91 @@
+{
+  "slug": "clausewitz",
+  "name": "Clausewitz",
+  "nameEn": "Clausewitz",
+  "nameCanonical": "Clausewitz",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "PR",
+  "countryName": "Prusse",
+  "shortDesc": "Général infantry — Prusse.",
+  "longDesc": "Clausewitz — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 3,
+      "skillSlug": "formation-master",
+      "slot": 1
+    },
+    {
+      "name": "Inspiration",
+      "nameEn": "Inspiration",
+      "desc": "0% chance of morale rise after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "inspiration",
+      "slot": 2
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 2,
+      "skillSlug": "ambush",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2021,
+  "image": {
+    "photo": "/img/ew6/generals/Europe1.webp",
+    "head": "/img/ew6/heads/Europe1.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

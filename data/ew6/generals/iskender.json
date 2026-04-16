@@ -1,0 +1,105 @@
+{
+  "slug": "iskender",
+  "name": "Iskender",
+  "nameEn": "Iskender",
+  "nameCanonical": "Iskender",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général cavalry — Empire ottoman.",
+  "longDesc": "Iskender — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Riding Master",
+      "nameEn": "Riding Master",
+      "desc": "Increase critical strike by 0% when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "riding-master",
+      "slot": 1
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "mountain-fighting",
+      "slot": 2
+    },
+    {
+      "name": "Station",
+      "nameEn": "Station",
+      "desc": "Increase attack by 0% when cavalry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 22,
+      "skillLevel": 1,
+      "skillSlug": "station",
+      "slot": 3
+    },
+    {
+      "name": "Edge",
+      "nameEn": "Edge",
+      "desc": "0 additional damage when cavalry attack infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "edge",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 2,
+      "max": 2
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2041,
+  "image": {
+    "photo": "/img/ew6/generals/MidEast1.webp",
+    "head": "/img/ew6/heads/MidEast1.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "senyavin",
+  "name": "Senyavin",
+  "nameEn": "Senyavin",
+  "nameCanonical": "Senyavin",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "C",
+  "quality": "silver",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général navy — Russie.",
+  "longDesc": "Senyavin — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Line of Battle",
+      "nameEn": "Line of Battle",
+      "desc": "0 additional damage when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_32.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 32,
+      "skillLevel": 1,
+      "skillSlug": "line-of-battle",
+      "slot": 1
+    },
+    {
+      "name": "Escorting",
+      "nameEn": "Escorting",
+      "desc": "Increase 0 ship defence in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 34,
+      "skillLevel": 1,
+      "skillSlug": "escorting",
+      "slot": 2
+    },
+    {
+      "name": "Helmsman",
+      "nameEn": "Helmsman",
+      "desc": "In sea operations there is 0% chance of reducing damage by 0%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 35,
+      "skillLevel": 1,
+      "skillSlug": "helmsman",
+      "slot": 3
+    },
+    {
+      "name": "Inspiration",
+      "nameEn": "Inspiration",
+      "desc": "0% chance of morale rise after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "inspiration",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 0,
+      "max": 3
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 915,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 3,
+  "militaryRank": 3,
+  "gameId": 1063,
+  "image": {
+    "photo": "/img/ew6/generals/Senyavin.webp",
+    "head": "/img/ew6/heads/Senyavin.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

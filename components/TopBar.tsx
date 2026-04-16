@@ -25,7 +25,7 @@ export async function TopBar() {
   const navItems: Array<{ href: string; label: string; disabled?: boolean }> = [
     { href: "/world-conqueror-4", label: t("nav.wc4") },
     { href: "/great-conqueror-rome", label: "Great Conqueror Rome" },
-    { href: "#", label: "European War 7", disabled: true },
+    { href: "/european-war-6", label: "European War 6" },
     { href: "/world-conqueror-4/mises-a-jour", label: t("nav.updates") },
     { href: "/world-conqueror-4/guides", label: t("nav.guides") },
     { href: "/leaderboards", label: leaderboardsLabel },

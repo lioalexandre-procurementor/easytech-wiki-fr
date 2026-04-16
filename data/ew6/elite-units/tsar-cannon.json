@@ -1,0 +1,98 @@
+{
+  "slug": "tsar-cannon",
+  "name": "Tsar Cannon",
+  "nameEn": "Tsar Cannon",
+  "category": "artillery",
+  "faction": "standard",
+  "country": "RU",
+  "countryName": "Russian",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Unité artillery — RU.",
+  "longDesc": "A giant smoothbore gun especially designed to defend the gate of the Kremlin. Because it is carved with the image of Tsar Fyodor I riding, it is also known as Tsar Cannon. It belongs to large artillery.",
+  "stats": {
+    "atk": [
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70
+    ],
+    "def": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "hp": [
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195
+    ],
+    "mov": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 30102,
+  "image": {
+    "sprite": "/img/ew6/armies/30102.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

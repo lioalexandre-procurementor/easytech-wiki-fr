@@ -1,0 +1,119 @@
+{
+  "slug": "suchet",
+  "name": "Suchet",
+  "nameEn": "Suchet",
+  "nameCanonical": "Suchet",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "bronze",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Suchet — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Battle Array",
+      "nameEn": "Battle Array",
+      "desc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 3,
+      "skillSlug": "battle-array",
+      "slot": 2
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "ambush",
+      "slot": 3
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 2,
+      "skillSlug": "mountain-fighting",
+      "slot": 4
+    },
+    {
+      "name": "Cover",
+      "nameEn": "Cover",
+      "desc": "In land operations there is 0% chance of reducing damage by 0%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 2,
+      "skillSlug": "cover",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1820,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 14,
+  "militaryRank": 14,
+  "gameId": 1005,
+  "image": {
+    "photo": "/img/ew6/generals/Suchet.webp",
+    "head": "/img/ew6/heads/Suchet.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "belsford",
+  "name": "Belsford",
+  "nameEn": "Belsford",
+  "nameCanonical": "Belsford",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "C",
+  "quality": "gold",
+  "country": "GB",
+  "countryName": "Grande-Bretagne",
+  "shortDesc": "Général artillery — Grande-Bretagne.",
+  "longDesc": "Belsford — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Explosives",
+      "nameEn": "Explosives",
+      "desc": "0% chance to ignore the effect of bunkers when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 1,
+      "skillSlug": "explosives",
+      "slot": 1
+    },
+    {
+      "name": "Land Fort",
+      "nameEn": "Land Fort",
+      "desc": "Increase attack by 0% when artillery fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 1,
+      "skillSlug": "land-fort",
+      "slot": 2
+    },
+    {
+      "name": "Sailor",
+      "nameEn": "Sailor",
+      "desc": "Increase the damage of army units by 0% when fighting in the sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "sailor",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 2,
+      "max": 1
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 975,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 3,
+  "militaryRank": 3,
+  "gameId": 1040,
+  "image": {
+    "photo": "/img/ew6/generals/Belsford.webp",
+    "head": "/img/ew6/heads/Belsford.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "augereau",
+  "name": "Augereau",
+  "nameEn": "Augereau",
+  "nameCanonical": "Augereau",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général cavalry — France.",
+  "longDesc": "Augereau — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Precision Strike",
+      "nameEn": "Precision Strike",
+      "desc": "0 additional damage when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 2,
+      "skillSlug": "precision-strike",
+      "slot": 1
+    },
+    {
+      "name": "Inspiration",
+      "nameEn": "Inspiration",
+      "desc": "0% chance of morale rise after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "inspiration",
+      "slot": 2
+    },
+    {
+      "name": "Station",
+      "nameEn": "Station",
+      "desc": "Increase attack by 0% when cavalry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 22,
+      "skillLevel": 1,
+      "skillSlug": "station",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 1,
+      "max": 1
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2020,
+  "image": {
+    "photo": "/img/ew6/generals/Europe3.webp",
+    "head": "/img/ew6/heads/Europe3.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

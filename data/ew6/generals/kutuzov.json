@@ -1,0 +1,119 @@
+{
+  "slug": "kutuzov",
+  "name": "Kutuzov",
+  "nameEn": "Kutuzov",
+  "nameCanonical": "Kutuzov",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "bronze",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général artillery — Russie.",
+  "longDesc": "Kutuzov — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 1,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Explosives",
+      "nameEn": "Explosives",
+      "desc": "0% chance to ignore the effect of bunkers when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 1,
+      "skillSlug": "explosives",
+      "slot": 2
+    },
+    {
+      "name": "Land Fort",
+      "nameEn": "Land Fort",
+      "desc": "Increase attack by 0% when artillery fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 2,
+      "skillSlug": "land-fort",
+      "slot": 3
+    },
+    {
+      "name": "Plain Fighting",
+      "nameEn": "Plain Fighting",
+      "desc": "Increase attack by 0% when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 3,
+      "skillSlug": "plain-fighting",
+      "slot": 4
+    },
+    {
+      "name": "Cover",
+      "nameEn": "Cover",
+      "desc": "In land operations there is 0% chance of reducing damage by 0%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 2,
+      "skillSlug": "cover",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 2,
+      "max": 2
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2030,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 15,
+  "militaryRank": 15,
+  "gameId": 1050,
+  "image": {
+    "photo": "/img/ew6/generals/Kutuzov.webp",
+    "head": "/img/ew6/heads/Kutuzov.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

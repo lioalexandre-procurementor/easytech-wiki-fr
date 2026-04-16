@@ -1,0 +1,105 @@
+{
+  "slug": "muravyov",
+  "name": "Muravyov",
+  "nameEn": "Muravyov",
+  "nameCanonical": "Muravyov",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général infantry — Russie.",
+  "longDesc": "Muravyov — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Infantry Master",
+      "nameEn": "Infantry Master",
+      "desc": "Increase 0 infantry attack in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 18,
+      "skillLevel": 1,
+      "skillSlug": "infantry-master",
+      "slot": 1
+    },
+    {
+      "name": "Alert",
+      "nameEn": "Alert",
+      "desc": "Decrease damage by 0% when attacked from far away",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 6,
+      "skillLevel": 1,
+      "skillSlug": "alert",
+      "slot": 2
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "mountain-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 1,
+      "skillSlug": "formation-master",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 3
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2028,
+  "image": {
+    "photo": "/img/ew6/generals/Sebastiani.webp",
+    "head": "/img/ew6/heads/Sebastiani.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

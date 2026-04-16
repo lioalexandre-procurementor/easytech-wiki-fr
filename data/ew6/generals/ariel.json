@@ -1,0 +1,119 @@
+{
+  "slug": "ariel",
+  "name": "Ariel",
+  "nameEn": "Ariel",
+  "nameCanonical": "Ariel",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "silver",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Ariel — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 3,
+      "skillSlug": "ambush",
+      "slot": 1
+    },
+    {
+      "name": "Sailor",
+      "nameEn": "Sailor",
+      "desc": "Increase the damage of army units by 0% when fighting in the sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 4,
+      "skillSlug": "sailor",
+      "slot": 2
+    },
+    {
+      "name": "Alert",
+      "nameEn": "Alert",
+      "desc": "Decrease damage by 0% when attacked from far away",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 6,
+      "skillLevel": 1,
+      "skillSlug": "alert",
+      "slot": 3
+    },
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 2,
+      "skillSlug": "assault",
+      "slot": 4
+    },
+    {
+      "name": "Cover",
+      "nameEn": "Cover",
+      "desc": "In land operations there is 0% chance of reducing damage by 0%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 3,
+      "skillSlug": "cover",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 850,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 12,
+  "militaryRank": 12,
+  "gameId": 9108,
+  "image": {
+    "photo": "/img/ew6/generals/Ariel.webp",
+    "head": "/img/ew6/heads/Ariel.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

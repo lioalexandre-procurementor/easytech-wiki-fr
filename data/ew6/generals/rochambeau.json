@@ -1,0 +1,91 @@
+{
+  "slug": "rochambeau",
+  "name": "Rochambeau",
+  "nameEn": "Rochambeau",
+  "nameCanonical": "Rochambeau",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général cavalry — France.",
+  "longDesc": "Rochambeau — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Precision Strike",
+      "nameEn": "Precision Strike",
+      "desc": "0 additional damage when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 1,
+      "skillSlug": "precision-strike",
+      "slot": 1
+    },
+    {
+      "name": "Cavalry Commander",
+      "nameEn": "Cavalry Commander",
+      "desc": "Increase 0 cavalry attack in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_25.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 25,
+      "skillLevel": 1,
+      "skillSlug": "cavalry-commander",
+      "slot": 2
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "tactic-master",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 1,
+      "max": 2
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 3000,
+  "image": {
+    "photo": "/img/ew6/generals/Europe1.webp",
+    "head": "/img/ew6/heads/Europe1.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

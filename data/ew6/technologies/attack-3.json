@@ -1,0 +1,64 @@
+{
+  "slug": "attack-3",
+  "gameTypeId": 3,
+  "gameCategoryId": 0,
+  "nameEn": "Attack",
+  "nameFr": "Attack",
+  "category": "infantry",
+  "effectArmy": [
+    3,
+    4,
+    5,
+    11,
+    12
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 102011,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 5250,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "\\nLine Infantry\\nHighlander\\nPatriotic Army\\nAssault Infantry\\nMaxim Gunner\\n\\n",
+      "descTemplate": "\\nLine Infantry\\nHighlander\\nPatriotic Army\\nAssault Infantry\\nMaxim Gunner\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 102012
+    },
+    {
+      "gameId": 102012,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 35000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "\\nLine Infantry\\nHighlander\\nPatriotic Army\\nAssault Infantry\\nMaxim Gunner\\n\\n",
+      "descTemplate": "\\nLine Infantry\\nHighlander\\nPatriotic Army\\nAssault Infantry\\nMaxim Gunner\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    3,
+    4,
+    5,
+    11,
+    12
+  ]
+}

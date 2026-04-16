@@ -1,0 +1,77 @@
+{
+  "slug": "desnouettes",
+  "name": "Desnouettes",
+  "nameEn": "Desnouettes",
+  "nameCanonical": "Desnouettes",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "B",
+  "quality": "marshal",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général cavalry — France.",
+  "longDesc": "Desnouettes — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Riding Master",
+      "nameEn": "Riding Master",
+      "desc": "Increase critical strike by 0% when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 2,
+      "skillSlug": "riding-master",
+      "slot": 1
+    },
+    {
+      "name": "Edge",
+      "nameEn": "Edge",
+      "desc": "0 additional damage when cavalry attack infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "edge",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 0,
+      "max": 1
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 6,
+  "militaryRank": 6,
+  "gameId": 7033,
+  "image": {
+    "photo": "/img/ew6/generals/Jerome.webp",
+    "head": "/img/ew6/heads/Jerome.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

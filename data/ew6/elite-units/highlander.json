@@ -1,0 +1,98 @@
+{
+  "slug": "highlander",
+  "name": "Highlander",
+  "nameEn": "Highlander",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "GB",
+  "countryName": "Great Britain",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Unité infantry — GB.",
+  "longDesc": "The troop is famous for wearing characteristic Scotland square skirt and good at dealing with cavalry. It is the absolute backbone of the British army and belongs to heavy infantry.",
+  "stats": {
+    "atk": [
+      46,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46,
+      46
+    ],
+    "def": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "hp": [
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10102,
+  "image": {
+    "sprite": "/img/ew6/armies/10102.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

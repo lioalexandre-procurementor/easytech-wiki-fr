@@ -1,0 +1,105 @@
+{
+  "slug": "theodoros",
+  "name": "Theodoros",
+  "nameEn": "Theodoros",
+  "nameCanonical": "Theodoros",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "silver",
+  "country": "GR",
+  "countryName": "Grèce",
+  "shortDesc": "Général infantry — Grèce.",
+  "longDesc": "Theodoros — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 2,
+      "skillSlug": "formation-master",
+      "slot": 1
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 2,
+      "skillSlug": "ambush",
+      "slot": 2
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 2,
+      "skillSlug": "mountain-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 2,
+      "skillSlug": "counterattack",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 900,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 10,
+  "militaryRank": 10,
+  "gameId": 1131,
+  "image": {
+    "photo": "/img/ew6/generals/Theodoros.webp",
+    "head": "/img/ew6/heads/Theodoros.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

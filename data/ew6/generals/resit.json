@@ -1,0 +1,77 @@
+{
+  "slug": "resit",
+  "name": "Resit",
+  "nameEn": "Resit",
+  "nameCanonical": "Resit",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général infantry — Empire ottoman.",
+  "longDesc": "Resit — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 1
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 1,
+      "skillSlug": "counterattack",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 250,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 3,
+  "militaryRank": 3,
+  "gameId": 1106,
+  "image": {
+    "photo": "/img/ew6/generals/Resit.webp",
+    "head": "/img/ew6/heads/Resit.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

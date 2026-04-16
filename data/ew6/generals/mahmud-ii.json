@@ -1,0 +1,105 @@
+{
+  "slug": "mahmud-ii",
+  "name": "Mahmud II",
+  "nameEn": "Mahmud II",
+  "nameCanonical": "Mahmud II",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "silver",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général artillery — Empire ottoman.",
+  "longDesc": "Mahmud II — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 2,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Artillery Master",
+      "nameEn": "Artillery Master",
+      "desc": "Increase critical strike by 0% when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 1,
+      "skillSlug": "artillery-master",
+      "slot": 2
+    },
+    {
+      "name": "Artillery Expert",
+      "nameEn": "Artillery Expert",
+      "desc": "Increase 0 artillery attack in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 31,
+      "skillLevel": 2,
+      "skillSlug": "artillery-expert",
+      "slot": 3
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 0,
+      "max": 3
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1560,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 12,
+  "militaryRank": 12,
+  "gameId": 1102,
+  "image": {
+    "photo": "/img/ew6/generals/Mahmud II.webp",
+    "head": "/img/ew6/heads/Mahmud II.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

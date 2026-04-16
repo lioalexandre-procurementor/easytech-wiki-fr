@@ -1,0 +1,119 @@
+{
+  "slug": "kleber",
+  "name": "Kleber",
+  "nameEn": "Kleber",
+  "nameCanonical": "Kleber",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "bronze",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Kleber — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 3,
+      "skillSlug": "formation-master",
+      "slot": 2
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 3
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 4
+    },
+    {
+      "name": "Cover",
+      "nameEn": "Cover",
+      "desc": "In land operations there is 0% chance of reducing damage by 0%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 2,
+      "skillSlug": "cover",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2000,
+  "image": {
+    "photo": "/img/ew6/generals/Tolstoy.webp",
+    "head": "/img/ew6/heads/Tolstoy.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

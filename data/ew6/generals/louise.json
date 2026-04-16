@@ -1,0 +1,119 @@
+{
+  "slug": "louise",
+  "name": "Louise",
+  "nameEn": "Louise",
+  "nameCanonical": "Louise",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "silver",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Louise — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "tactic-master",
+      "slot": 1
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 3,
+      "skillSlug": "counterattack",
+      "slot": 2
+    },
+    {
+      "name": "Intercept",
+      "nameEn": "Intercept",
+      "desc": "0 additional damage when infantry attack cavalry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 15,
+      "skillLevel": 3,
+      "skillSlug": "intercept",
+      "slot": 3
+    },
+    {
+      "name": "Defense Formation",
+      "nameEn": "Defense Formation",
+      "desc": "Increase attack by 0% when infantry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 3,
+      "skillSlug": "defense-formation",
+      "slot": 4
+    },
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 3,
+      "skillSlug": "formation-master",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 900,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 12,
+  "militaryRank": 12,
+  "gameId": 9104,
+  "image": {
+    "photo": "/img/ew6/generals/Louise.webp",
+    "head": "/img/ew6/heads/Louise.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

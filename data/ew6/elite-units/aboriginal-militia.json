@@ -1,0 +1,98 @@
+{
+  "slug": "aboriginal-militia",
+  "name": "Aboriginal Militia",
+  "nameEn": "Aboriginal Militia",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "TRB",
+  "countryName": "Tribal Union",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — TRB.",
+  "longDesc": "A troop composed of ordinary civilians with weak attack. It belongs to light infantry.",
+  "stats": {
+    "atk": [
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25,
+      25
+    ],
+    "def": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "hp": [
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155
+    ],
+    "mov": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10003,
+  "image": {
+    "sprite": "/img/ew6/armies/10003.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

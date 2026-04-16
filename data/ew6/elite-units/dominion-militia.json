@@ -1,0 +1,98 @@
+{
+  "slug": "dominion-militia",
+  "name": "Dominion Militia",
+  "nameEn": "Dominion Militia",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "CA",
+  "countryName": "Dominion of Canada",
+  "tier": "C",
+  "obtainability": "event",
+  "shortDesc": "Unité infantry — CA.",
+  "longDesc": "A troop of volunteers from autonomous region in Canada. It has certain capacity for combat. It belongs to light infantry.",
+  "stats": {
+    "atk": [
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35
+    ],
+    "def": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "hp": [
+      165,
+      165,
+      165,
+      165,
+      165,
+      165,
+      165,
+      165,
+      165,
+      165,
+      165,
+      165
+    ],
+    "mov": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10002,
+  "image": {
+    "sprite": "/img/ew6/armies/10002.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

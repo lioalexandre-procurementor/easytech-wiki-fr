@@ -1,0 +1,91 @@
+{
+  "slug": "grouchy",
+  "name": "Grouchy",
+  "nameEn": "Grouchy",
+  "nameCanonical": "Grouchy",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "A",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général cavalry — France.",
+  "longDesc": "Grouchy — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Maneuver",
+      "nameEn": "Maneuver",
+      "desc": "0% chance to ignore the effect of barriers when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "maneuver",
+      "slot": 1
+    },
+    {
+      "name": "Station",
+      "nameEn": "Station",
+      "desc": "Increase attack by 0% when cavalry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 22,
+      "skillLevel": 1,
+      "skillSlug": "station",
+      "slot": 2
+    },
+    {
+      "name": "Surprise Attack",
+      "nameEn": "Surprise Attack",
+      "desc": "The farther cavalry move, the higher damage cavalry deal",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 1,
+      "skillSlug": "surprise-attack",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 2,
+      "max": 1
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1075,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 9,
+  "militaryRank": 9,
+  "gameId": 1013,
+  "image": {
+    "photo": "/img/ew6/generals/Grouchy.webp",
+    "head": "/img/ew6/heads/Grouchy.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

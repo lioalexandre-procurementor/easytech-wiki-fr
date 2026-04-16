@@ -1,0 +1,98 @@
+{
+  "slug": "ironclad",
+  "name": "Ironclad",
+  "nameEn": "Ironclad",
+  "category": "navy",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité navy — XX.",
+  "longDesc": "A heavily armored warship with large-caliber artillery. It is the hegemony in the naval battle. It belongs to large ship.",
+  "stats": {
+    "atk": [
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "def": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "hp": [
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 40401,
+  "image": {
+    "sprite": "/img/ew6/armies/40401.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

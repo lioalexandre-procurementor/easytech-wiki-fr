@@ -1,0 +1,105 @@
+{
+  "slug": "dramali",
+  "name": "Dramali",
+  "nameEn": "Dramali",
+  "nameCanonical": "Dramali",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général cavalry — Empire ottoman.",
+  "longDesc": "Dramali — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Maneuver",
+      "nameEn": "Maneuver",
+      "desc": "0% chance to ignore the effect of barriers when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "maneuver",
+      "slot": 1
+    },
+    {
+      "name": "Edge",
+      "nameEn": "Edge",
+      "desc": "0 additional damage when cavalry attack infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "edge",
+      "slot": 2
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 2,
+      "skillSlug": "tactic-master",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 1,
+      "max": 2
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 2,
+  "militaryRank": 2,
+  "gameId": 6003,
+  "image": {
+    "photo": "/img/ew6/generals/Dramali.webp",
+    "head": "/img/ew6/heads/Dramali.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

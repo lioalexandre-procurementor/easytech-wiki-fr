@@ -1,0 +1,91 @@
+{
+  "slug": "smith",
+  "name": "Smith",
+  "nameEn": "Smith",
+  "nameCanonical": "Smith",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "A",
+  "quality": "gold",
+  "country": "GB",
+  "countryName": "Grande-Bretagne",
+  "shortDesc": "Général navy — Grande-Bretagne.",
+  "longDesc": "Smith — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Position",
+      "nameEn": "Position",
+      "desc": "Increase critical strike by 0% when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 33,
+      "skillLevel": 1,
+      "skillSlug": "position",
+      "slot": 1
+    },
+    {
+      "name": "Alert",
+      "nameEn": "Alert",
+      "desc": "Decrease damage by 0% when attacked from far away",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 6,
+      "skillLevel": 2,
+      "skillSlug": "alert",
+      "slot": 2
+    },
+    {
+      "name": "Inspiration",
+      "nameEn": "Inspiration",
+      "desc": "0% chance of morale rise after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 2,
+      "skillSlug": "inspiration",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 1,
+      "max": 1
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 865,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 8,
+  "militaryRank": 8,
+  "gameId": 1039,
+  "image": {
+    "photo": "/img/ew6/generals/Smith.webp",
+    "head": "/img/ew6/heads/Smith.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "maxim-gunner",
+  "name": "Maxim Gunner",
+  "nameEn": "Maxim Gunner",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "US",
+  "countryName": "United States",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Unité infantry — US.",
+  "longDesc": "A troop specialized in Maxim heavy machine guns. Such new weapon has terrifying speed and firepower and is the nightmare of any enemies, but with poor mobility. It belongs to heavy infantry.",
+  "stats": {
+    "atk": [
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "def": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "hp": [
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225,
+      225
+    ],
+    "mov": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10502,
+  "image": {
+    "sprite": "/img/ew6/armies/10502.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

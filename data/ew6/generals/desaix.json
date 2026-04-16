@@ -1,0 +1,119 @@
+{
+  "slug": "desaix",
+  "name": "Desaix",
+  "nameEn": "Desaix",
+  "nameCanonical": "Desaix",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "bronze",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général cavalry — France.",
+  "longDesc": "Desaix — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Precision Strike",
+      "nameEn": "Precision Strike",
+      "desc": "0 additional damage when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 2,
+      "skillSlug": "precision-strike",
+      "slot": 1
+    },
+    {
+      "name": "Maneuver",
+      "nameEn": "Maneuver",
+      "desc": "0% chance to ignore the effect of barriers when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 3,
+      "skillSlug": "maneuver",
+      "slot": 2
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 1,
+      "skillSlug": "desert-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 2,
+      "skillSlug": "counterattack",
+      "slot": 4
+    },
+    {
+      "name": "Surprise Attack",
+      "nameEn": "Surprise Attack",
+      "desc": "The farther cavalry move, the higher damage cavalry deal",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 1,
+      "skillSlug": "surprise-attack",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 2,
+      "max": 2
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2005,
+  "image": {
+    "photo": "/img/ew6/generals/Wurmb.webp",
+    "head": "/img/ew6/heads/Wurmb.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

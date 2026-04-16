@@ -1,0 +1,98 @@
+{
+  "slug": "mamluk-cavalry",
+  "name": "Mamluk Cavalry",
+  "nameEn": "Mamluk Cavalry",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "OT",
+  "countryName": "Ottoman",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Unité cavalry — OT.",
+  "longDesc": "An ancient military group originating in the Arabian Empire in the middle ages. It represents the most powerful cavalry in the Islamic world. It belongs to heavy cavalry.",
+  "stats": {
+    "atk": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "def": [
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38,
+      38
+    ],
+    "hp": [
+      230,
+      230,
+      230,
+      230,
+      230,
+      230,
+      230,
+      230,
+      230,
+      230,
+      230,
+      230
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 20103,
+  "image": {
+    "sprite": "/img/ew6/armies/20103.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

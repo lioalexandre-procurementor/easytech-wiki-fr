@@ -1,0 +1,91 @@
+{
+  "slug": "junot",
+  "name": "Junot",
+  "nameEn": "Junot",
+  "nameCanonical": "Junot",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Junot — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 3,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Battle Array",
+      "nameEn": "Battle Array",
+      "desc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 1,
+      "skillSlug": "battle-array",
+      "slot": 2
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 10,
+  "militaryRank": 10,
+  "gameId": 7037,
+  "image": {
+    "photo": "/img/ew6/generals/Salaberry.webp",
+    "head": "/img/ew6/heads/Salaberry.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

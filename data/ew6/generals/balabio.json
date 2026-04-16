@@ -1,0 +1,77 @@
+{
+  "slug": "balabio",
+  "name": "Balabio",
+  "nameEn": "Balabio",
+  "nameCanonical": "Balabio",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "IT",
+  "countryName": "Italie",
+  "shortDesc": "Général cavalry — Italie.",
+  "longDesc": "Balabio — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Edge",
+      "nameEn": "Edge",
+      "desc": "0 additional damage when cavalry attack infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 2,
+      "skillSlug": "edge",
+      "slot": 1
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 1,
+      "skillSlug": "counterattack",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 0,
+      "max": 1
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 3007,
+  "image": {
+    "photo": "/img/ew6/generals/Europe2.webp",
+    "head": "/img/ew6/heads/Europe2.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

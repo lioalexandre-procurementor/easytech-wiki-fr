@@ -1,0 +1,98 @@
+{
+  "slug": "horse-grenadier-guard",
+  "name": "Horse Grenadier Guard",
+  "nameEn": "Horse Grenadier Guard",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "FR",
+  "countryName": "France",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Unité cavalry — FR.",
+  "longDesc": "Handpicked by Napoleon, imperial guard cavalry are made up of experienced handsome tall veterans. They have strong attack and can throw bombs on fixed targets on the battlefield. It belongs to light cavalry.",
+  "stats": {
+    "atk": [
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65,
+      65
+    ],
+    "def": [
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32,
+      32
+    ],
+    "hp": [
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 20302,
+  "image": {
+    "sprite": "/img/ew6/armies/20302.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

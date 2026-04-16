@@ -1,0 +1,77 @@
+{
+  "slug": "trochu",
+  "name": "Trochu",
+  "nameEn": "Trochu",
+  "nameCanonical": "Trochu",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "marshal",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général infantry — France.",
+  "longDesc": "Trochu — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 2,
+      "skillSlug": "ambush",
+      "slot": 1
+    },
+    {
+      "name": "Plain Fighting",
+      "nameEn": "Plain Fighting",
+      "desc": "Increase attack by 0% when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 3,
+      "skillSlug": "plain-fighting",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 650,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 14,
+  "militaryRank": 14,
+  "gameId": 1030,
+  "image": {
+    "photo": "/img/ew6/generals/Trochu.webp",
+    "head": "/img/ew6/heads/Trochu.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

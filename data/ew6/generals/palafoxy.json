@@ -1,0 +1,105 @@
+{
+  "slug": "palafoxy",
+  "name": "Palafoxy",
+  "nameEn": "Palafoxy",
+  "nameCanonical": "Palafoxy",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "ES",
+  "countryName": "Espagne",
+  "shortDesc": "Général infantry — Espagne.",
+  "longDesc": "Palafoxy — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 2,
+      "skillSlug": "formation-master",
+      "slot": 2
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "mountain-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 2,
+      "skillSlug": "jungle-fighting",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 2,
+  "militaryRank": 2,
+  "gameId": 6007,
+  "image": {
+    "photo": "/img/ew6/generals/Palafoxy.webp",
+    "head": "/img/ew6/heads/Palafoxy.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

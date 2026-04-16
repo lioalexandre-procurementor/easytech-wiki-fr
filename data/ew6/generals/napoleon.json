@@ -1,0 +1,119 @@
+{
+  "slug": "napoleon",
+  "name": "Napoleon",
+  "nameEn": "Napoleon",
+  "nameCanonical": "Napoleon",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "bronze",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général artillery — France.",
+  "longDesc": "Napoleon — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 3,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Artillery Master",
+      "nameEn": "Artillery Master",
+      "desc": "Increase critical strike by 0% when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 2,
+      "skillSlug": "artillery-master",
+      "slot": 2
+    },
+    {
+      "name": "Storm Fortifications",
+      "nameEn": "Storm Fortifications",
+      "desc": "0 additional damage when artillery attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 30,
+      "skillLevel": 3,
+      "skillSlug": "storm-fortifications",
+      "slot": 3
+    },
+    {
+      "name": "Artillery Expert",
+      "nameEn": "Artillery Expert",
+      "desc": "Increase 0 artillery attack in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_31.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 31,
+      "skillLevel": 2,
+      "skillSlug": "artillery-expert",
+      "slot": 4
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 2,
+      "skillSlug": "counterattack",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 3,
+      "max": 3
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2760,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 19,
+  "militaryRank": 19,
+  "gameId": 1001,
+  "image": {
+    "photo": "/img/ew6/generals/Napoleon.webp",
+    "head": "/img/ew6/heads/Napoleon.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

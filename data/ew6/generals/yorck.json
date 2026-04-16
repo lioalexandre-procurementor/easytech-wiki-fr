@@ -1,0 +1,91 @@
+{
+  "slug": "yorck",
+  "name": "Yorck",
+  "nameEn": "Yorck",
+  "nameCanonical": "Yorck",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "gold",
+  "country": "PR",
+  "countryName": "Prusse",
+  "shortDesc": "Général infantry — Prusse.",
+  "longDesc": "Yorck — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 2
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 2,
+      "skillSlug": "jungle-fighting",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 710,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 9,
+  "militaryRank": 9,
+  "gameId": 1068,
+  "image": {
+    "photo": "/img/ew6/generals/Yorck.webp",
+    "head": "/img/ew6/heads/Yorck.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

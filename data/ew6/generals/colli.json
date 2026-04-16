@@ -1,0 +1,91 @@
+{
+  "slug": "colli",
+  "name": "Colli",
+  "nameEn": "Colli",
+  "nameCanonical": "Colli",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "gold",
+  "country": "NAP",
+  "countryName": "Naples",
+  "shortDesc": "Général infantry — Naples.",
+  "longDesc": "Colli — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 3,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Defense Formation",
+      "nameEn": "Defense Formation",
+      "desc": "Increase attack by 0% when infantry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 2,
+      "skillSlug": "defense-formation",
+      "slot": 2
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 2,
+      "skillSlug": "tunnel",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 7004,
+  "image": {
+    "photo": "/img/ew6/generals/Randy.webp",
+    "head": "/img/ew6/heads/Randy.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

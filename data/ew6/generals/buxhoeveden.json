@@ -1,0 +1,91 @@
+{
+  "slug": "buxhoeveden",
+  "name": "Buxhoeveden",
+  "nameEn": "Buxhoeveden",
+  "nameCanonical": "Buxhoeveden",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général infantry — Russie.",
+  "longDesc": "Buxhoeveden — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Battle Array",
+      "nameEn": "Battle Array",
+      "desc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 2,
+      "skillSlug": "battle-array",
+      "slot": 1
+    },
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 2
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 2,
+      "skillSlug": "mountain-fighting",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2022,
+  "image": {
+    "photo": "/img/ew6/generals/Diebitsch.webp",
+    "head": "/img/ew6/heads/Diebitsch.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

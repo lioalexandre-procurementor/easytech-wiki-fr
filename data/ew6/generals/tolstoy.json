@@ -1,0 +1,91 @@
+{
+  "slug": "tolstoy",
+  "name": "Tolstoy",
+  "nameEn": "Tolstoy",
+  "nameCanonical": "Tolstoy",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "B",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général infantry — Russie.",
+  "longDesc": "Tolstoy — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 1,
+      "skillSlug": "formation-master",
+      "slot": 1
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "ambush",
+      "slot": 2
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 2,
+      "skillSlug": "jungle-fighting",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 745,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 5,
+  "militaryRank": 5,
+  "gameId": 1060,
+  "image": {
+    "photo": "/img/ew6/generals/Tolstoy.webp",
+    "head": "/img/ew6/heads/Tolstoy.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "hurshid",
+  "name": "Hurshid",
+  "nameEn": "Hurshid",
+  "nameCanonical": "Hurshid",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "gold",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général infantry — Empire ottoman.",
+  "longDesc": "Hurshid — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Tunnel",
+      "nameEn": "Tunnel",
+      "desc": "0 additional damage when infantry attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "tunnel",
+      "slot": 1
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 1,
+      "skillSlug": "desert-fighting",
+      "slot": 2
+    },
+    {
+      "name": "Inspiration",
+      "nameEn": "Inspiration",
+      "desc": "0% chance of morale rise after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "inspiration",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 2,
+  "militaryRank": 2,
+  "gameId": 6004,
+  "image": {
+    "photo": "/img/ew6/generals/Hurshid.webp",
+    "head": "/img/ew6/heads/Hurshid.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

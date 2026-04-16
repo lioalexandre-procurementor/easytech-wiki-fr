@@ -1,0 +1,98 @@
+{
+  "slug": "siege-artillery",
+  "name": "Siege Artillery",
+  "nameEn": "Siege Artillery",
+  "category": "artillery",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "A",
+  "obtainability": "free",
+  "shortDesc": "Unité artillery — XX.",
+  "longDesc": "It has a strong fire and a long range. It can easily check the enemy with strong fire. It belongs to large artillery.",
+  "stats": {
+    "atk": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "def": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "hp": [
+      190,
+      190,
+      190,
+      190,
+      190,
+      190,
+      190,
+      190,
+      190,
+      190,
+      190,
+      190
+    ],
+    "mov": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 30201,
+  "image": {
+    "sprite": "/img/ew6/armies/30201.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

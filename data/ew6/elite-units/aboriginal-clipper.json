@@ -1,0 +1,98 @@
+{
+  "slug": "aboriginal-clipper",
+  "name": "Aboriginal Clipper",
+  "nameEn": "Aboriginal Clipper",
+  "category": "navy",
+  "faction": "standard",
+  "country": "TRB",
+  "countryName": "Tribal Union",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité navy — TRB.",
+  "longDesc": "A simple fragile wooden sailing boat with high mobility. It belongs to small ship.",
+  "stats": {
+    "atk": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "def": [
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15,
+      15
+    ],
+    "hp": [
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 40002,
+  "image": {
+    "sprite": "/img/ew6/armies/40002.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

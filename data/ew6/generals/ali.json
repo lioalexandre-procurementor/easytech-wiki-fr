@@ -1,0 +1,91 @@
+{
+  "slug": "ali",
+  "name": "Ali",
+  "nameEn": "Ali",
+  "nameCanonical": "Ali",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "gold",
+  "country": "EG",
+  "countryName": "Égypte",
+  "shortDesc": "Général infantry — Égypte.",
+  "longDesc": "Ali — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 1
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 1,
+      "skillSlug": "jungle-fighting",
+      "slot": 2
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 1,
+      "skillSlug": "counterattack",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 520,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 8,
+  "militaryRank": 8,
+  "gameId": 1140,
+  "image": {
+    "photo": "/img/ew6/generals/Ali.webp",
+    "head": "/img/ew6/heads/Ali.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

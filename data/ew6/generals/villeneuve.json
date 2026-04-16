@@ -1,0 +1,91 @@
+{
+  "slug": "villeneuve",
+  "name": "Villeneuve",
+  "nameEn": "Villeneuve",
+  "nameCanonical": "Villeneuve",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "B",
+  "quality": "gold",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général navy — France.",
+  "longDesc": "Villeneuve — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Line of Battle",
+      "nameEn": "Line of Battle",
+      "desc": "0 additional damage when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_32.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 32,
+      "skillLevel": 1,
+      "skillSlug": "line-of-battle",
+      "slot": 1
+    },
+    {
+      "name": "Position",
+      "nameEn": "Position",
+      "desc": "Increase critical strike by 0% when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 33,
+      "skillLevel": 2,
+      "skillSlug": "position",
+      "slot": 2
+    },
+    {
+      "name": "Counterattack",
+      "nameEn": "Counterattack",
+      "desc": "0 additional damage when fighting back",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 2,
+      "skillSlug": "counterattack",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 0,
+      "max": 2
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 770,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 5,
+  "militaryRank": 5,
+  "gameId": 1017,
+  "image": {
+    "photo": "/img/ew6/generals/Villeneuve.webp",
+    "head": "/img/ew6/heads/Villeneuve.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

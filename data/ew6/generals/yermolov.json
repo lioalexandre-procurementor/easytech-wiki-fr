@@ -1,0 +1,91 @@
+{
+  "slug": "yermolov",
+  "name": "Yermolov",
+  "nameEn": "Yermolov",
+  "nameCanonical": "Yermolov",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "A",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général artillery — Russie.",
+  "longDesc": "Yermolov — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 2,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Explosives",
+      "nameEn": "Explosives",
+      "desc": "0% chance to ignore the effect of bunkers when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 2,
+      "skillSlug": "explosives",
+      "slot": 2
+    },
+    {
+      "name": "Sailor",
+      "nameEn": "Sailor",
+      "desc": "Increase the damage of army units by 0% when fighting in the sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "sailor",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 0,
+      "max": 2
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 750,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 8,
+  "militaryRank": 8,
+  "gameId": 1061,
+  "image": {
+    "photo": "/img/ew6/generals/Yermolov.webp",
+    "head": "/img/ew6/heads/Yermolov.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -26,7 +26,7 @@ const COPY: Record<string, HomeCopy> = {
   fr: {
     h1: "Le Wiki FR des jeux EasyTech",
     lede:
-      "Stratégies, unités d'élite, généraux et guides pour World Conqueror 4, European War 7, Great Conqueror Rome et tous les jeux du studio EasyTech — entièrement en français.",
+      "Stratégies, unités d'élite, généraux et guides pour World Conqueror 4, Great Conqueror Rome, European War 6 et tous les jeux du studio EasyTech — entièrement en français.",
     cta: "🏅 Explorer World Conqueror 4",
     gamesHeading: "Jeux couverts",
     available: "● Disponible",
@@ -40,7 +40,7 @@ const COPY: Record<string, HomeCopy> = {
   en: {
     h1: "The English Wiki for EasyTech Games",
     lede:
-      "Strategies, elite units, generals and guides for World Conqueror 4, European War 7, Great Conqueror Rome and all EasyTech studio games — entirely in English.",
+      "Strategies, elite units, generals and guides for World Conqueror 4, Great Conqueror Rome, European War 6 and all EasyTech studio games — entirely in English.",
     cta: "🏅 Explore World Conqueror 4",
     gamesHeading: "Games covered",
     available: "● Available",
@@ -54,7 +54,7 @@ const COPY: Record<string, HomeCopy> = {
   de: {
     h1: "Das deutsche Wiki für EasyTech-Spiele",
     lede:
-      "Strategien, Elite-Einheiten, Generäle und Guides zu World Conqueror 4, European War 7, Great Conqueror Rome und allen Spielen des EasyTech-Studios — vollständig auf Deutsch.",
+      "Strategien, Elite-Einheiten, Generäle und Guides zu World Conqueror 4, Great Conqueror Rome, European War 6 und allen Spielen des EasyTech-Studios — vollständig auf Deutsch.",
     cta: "🏅 World Conqueror 4 entdecken",
     gamesHeading: "Abgedeckte Spiele",
     available: "● Verfügbar",

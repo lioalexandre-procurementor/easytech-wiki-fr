@@ -1,0 +1,64 @@
+{
+  "slug": "storm-fortifications",
+  "type": 30,
+  "name": "Storm Fortifications",
+  "nameFr": "Storm Fortifications",
+  "series": 1,
+  "seriesLabel": "Generic learnable skill (series 1)",
+  "descriptionTemplate": "X additional damage when artillery attack city defence",
+  "descriptionTemplateFr": "X additional damage when artillery attack city defence",
+  "icon": "/img/ew6/skills/skill_30.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 13001,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "0 additional damage when artillery attack city defence",
+      "renderedDescFr": "0 additional damage when artillery attack city defence"
+    },
+    {
+      "level": 2,
+      "skillId": 13002,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 60,
+      "renderedDesc": "0 additional damage when artillery attack city defence",
+      "renderedDescFr": "0 additional damage when artillery attack city defence"
+    },
+    {
+      "level": 3,
+      "skillId": 13003,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 105,
+      "renderedDesc": "0 additional damage when artillery attack city defence",
+      "renderedDescFr": "0 additional damage when artillery attack city defence"
+    },
+    {
+      "level": 4,
+      "skillId": 13004,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 150,
+      "renderedDesc": "0 additional damage when artillery attack city defence",
+      "renderedDescFr": "0 additional damage when artillery attack city defence"
+    },
+    {
+      "level": 5,
+      "skillId": 13005,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 210,
+      "renderedDesc": "0 additional damage when artillery attack city defence",
+      "renderedDescFr": "0 additional damage when artillery attack city defence"
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

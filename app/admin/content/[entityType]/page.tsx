@@ -6,6 +6,10 @@ import {
   getAllEliteUnits as getAllGcrEliteUnits,
   getAllGenerals as getAllGcrGenerals,
 } from "@/lib/gcr";
+import {
+  getAllEliteUnits as getAllEw6EliteUnits,
+  getAllGenerals as getAllEw6Generals,
+} from "@/lib/ew6";
 import { getAllGuides } from "@/lib/guides";
 import { getAllUpdates } from "@/lib/updates";
 import fs from "node:fs";
@@ -31,10 +35,14 @@ const LABEL_BY_TYPE: Partial<Record<EntityType, string>> = {
   "gcr-general": "Generals (GCR)",
   "gcr-guide": "Guides (GCR)",
   "gcr-update": "Update entries (GCR)",
+  "ew6-elite-unit": "Elite units (EW6)",
+  "ew6-general": "Generals (EW6)",
+  "ew6-guide": "Guides (EW6)",
+  "ew6-update": "Update entries (EW6)",
 };
 
 /** Read slugs from a `data/<game>/<dir>/*.json` folder, skipping `_index`. */
-function listSlugsFromDataDir(game: "wc4" | "gcr", subdir: string): string[] {
+function listSlugsFromDataDir(game: "wc4" | "gcr" | "ew6", subdir: string): string[] {
   const dir = path.join(process.cwd(), "data", game, subdir);
   if (!fs.existsSync(dir)) return [];
   return fs
@@ -96,6 +104,31 @@ function collect(entityType: EntityType): Row[] {
         slug,
         title: slug,
         subtitle: "update · gcr",
+      }));
+    case "ew6-elite-unit":
+      return getAllEw6EliteUnits().map((u) => ({
+        slug: u.slug,
+        title: u.name,
+        subtitle: `${u.category} · ${u.country} · ${u.tier}`,
+        preliminary: u.preliminary,
+      }));
+    case "ew6-general":
+      return getAllEw6Generals().map((g) => ({
+        slug: g.slug,
+        title: g.name,
+        subtitle: `${g.quality} · ${g.category} · ${g.country}`,
+      }));
+    case "ew6-guide":
+      return listSlugsFromDataDir("ew6", "guides").map((slug) => ({
+        slug,
+        title: slug,
+        subtitle: "guide · ew6",
+      }));
+    case "ew6-update":
+      return listSlugsFromDataDir("ew6", "updates").map((slug) => ({
+        slug,
+        title: slug,
+        subtitle: "update · ew6",
       }));
     default:
       return [];

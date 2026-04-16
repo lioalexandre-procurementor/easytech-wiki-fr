@@ -28,6 +28,15 @@ const ENTITY_GROUPS: EntityTypeGroup[] = [
       { slug: "gcr-update", label: "GCR — Update entries", description: "GCR patch log entries — /great-conqueror-rome/mises-a-jour." },
     ],
   },
+  {
+    heading: "European War 6: 1914",
+    items: [
+      { slug: "ew6-general", label: "EW6 — Generals", description: "1800-1914 commanders (Napoleon, Wellington, Kutuzov…) under /european-war-6/generaux." },
+      { slug: "ew6-elite-unit", label: "EW6 — Elite units", description: "Line infantry, cavalry, artillery and ships under /european-war-6/unites-elite." },
+      { slug: "ew6-guide", label: "EW6 — Guides", description: "European War 6 guides hub (empty until editorial content lands)." },
+      { slug: "ew6-update", label: "EW6 — Update entries", description: "EW6 patch log entries — /european-war-6/mises-a-jour." },
+    ],
+  },
 ];
 
 function ts(n?: number): string {

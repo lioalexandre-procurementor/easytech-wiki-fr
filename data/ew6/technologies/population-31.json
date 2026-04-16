@@ -1,0 +1,56 @@
+{
+  "slug": "population-31",
+  "gameTypeId": 31,
+  "gameCategoryId": 3,
+  "nameEn": "Population",
+  "nameFr": "Population",
+  "category": "cavalry",
+  "effectArmy": [
+    36
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 403003,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 4500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "\\n\\n\\nIronclad\\n\\n",
+      "descTemplate": "\\n\\n\\nIronclad\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 403004
+    },
+    {
+      "gameId": 403004,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 30000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "\\n\\n\\nIronclad\\n\\n",
+      "descTemplate": "\\n\\n\\nIronclad\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    36
+  ]
+}

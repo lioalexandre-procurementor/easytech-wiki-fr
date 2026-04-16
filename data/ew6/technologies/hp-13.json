@@ -1,0 +1,66 @@
+{
+  "slug": "hp-13",
+  "gameTypeId": 13,
+  "gameCategoryId": 1,
+  "nameEn": "HP",
+  "nameFr": "HP",
+  "category": "infantry",
+  "effectArmy": [
+    16,
+    17,
+    18,
+    19,
+    22,
+    23
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 202031,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 3400,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "Lancer\\nCossack\\nMamluk Cavalry\\nHeavy Cavalry\\nArmored Car\\nTank\\n\\n",
+      "descTemplate": "Lancer\\nCossack\\nMamluk Cavalry\\nHeavy Cavalry\\nArmored Car\\nTank\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 202032
+    },
+    {
+      "gameId": 202032,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 22500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "Lancer\\nCossack\\nMamluk Cavalry\\nHeavy Cavalry\\nArmored Car\\nTank\\n\\n",
+      "descTemplate": "Lancer\\nCossack\\nMamluk Cavalry\\nHeavy Cavalry\\nArmored Car\\nTank\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    16,
+    17,
+    18,
+    19,
+    22,
+    23
+  ]
+}

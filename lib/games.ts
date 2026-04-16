@@ -41,9 +41,15 @@ export const GAMES: GameMeta[] = [
     slug: "european-war-6",
     name: "European War 6: 1914",
     shortName: "EW6",
-    era: "WW1",
-    tagline: "La Grande Guerre",
-    available: false,
+    era: "Napoléonien & WW1",
+    tagline: "De Napoléon à la Grande Guerre",
+    available: true,
+    attributeKeys: ["infantry", "cavalry", "artillery", "navy"],
+    generalCategories: ["infantry", "cavalry", "artillery", "navy", "balanced"],
+    unitCategories: ["infantry", "cavalry", "artillery", "navy"],
+    factions: ["standard"],
+    dataDir: "ew6",
+    imageDir: "ew6",
   },
 ];
 

@@ -1,0 +1,98 @@
+{
+  "slug": "old-guard",
+  "name": "Old Guard",
+  "nameEn": "Old Guard",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "FR",
+  "countryName": "France",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Unité infantry — FR.",
+  "longDesc": "Imperial guards made of the elite veterans of the French army. They have rich operational experience and strong attack and defence. They can throw bombs on fixed targets on the battlefield and belong to heavy infantry.",
+  "stats": {
+    "atk": [
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42,
+      42
+    ],
+    "def": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24
+    ],
+    "hp": [
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240,
+      240
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10302,
+  "image": {
+    "sprite": "/img/ew6/armies/10302.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

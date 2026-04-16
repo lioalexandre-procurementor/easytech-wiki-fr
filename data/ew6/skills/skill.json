@@ -1,0 +1,577 @@
+{
+  "slug": "skill",
+  "type": 0,
+  "name": "凯旋门",
+  "nameFr": "凯旋门",
+  "series": 2,
+  "seriesLabel": "Generic learnable skill (series 2)",
+  "descriptionTemplate": "",
+  "descriptionTemplateFr": "",
+  "icon": "/img/ew6/skills/skill_0.webp",
+  "maxLevel": 0,
+  "progression": [
+    {
+      "level": 0,
+      "skillId": 20101,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20201,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20301,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20401,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20501,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20601,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20701,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20801,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 20901,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 21001,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 21101,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 21201,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30101,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30102,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30103,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30104,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30105,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30201,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30202,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30203,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30204,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30205,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30301,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30302,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30303,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30304,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30305,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30401,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30402,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30403,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30404,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30405,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30501,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30502,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30503,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30504,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30505,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30601,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30602,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30603,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30604,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30605,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30701,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30702,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30703,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30704,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30705,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30801,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30802,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30803,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30804,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30805,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30901,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30902,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30903,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30904,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 30905,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 31001,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 31002,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 31003,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 31004,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    },
+    {
+      "level": 0,
+      "skillId": 31005,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "",
+      "renderedDescFr": ""
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

@@ -1,0 +1,398 @@
+[
+  {
+    "slug": "frigate",
+    "name": "Frigate",
+    "category": "navy",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 40201
+  },
+  {
+    "slug": "heavy-cavalry",
+    "name": "Heavy Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 20201
+  },
+  {
+    "slug": "imperial-fort",
+    "name": "Imperial Fort",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 50201
+  },
+  {
+    "slug": "rifleman",
+    "name": "Rifleman",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 10201
+  },
+  {
+    "slug": "siege-artillery",
+    "name": "Siege Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 30201
+  },
+  {
+    "slug": "corvette",
+    "name": "Corvette",
+    "category": "navy",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 40101
+  },
+  {
+    "slug": "cossack",
+    "name": "Cossack",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "RU",
+    "tier": "B",
+    "armyId": 20102
+  },
+  {
+    "slug": "heavy-artillery",
+    "name": "Heavy Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 30101
+  },
+  {
+    "slug": "highlander",
+    "name": "Highlander",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "GB",
+    "tier": "B",
+    "armyId": 10102
+  },
+  {
+    "slug": "lancer",
+    "name": "Lancer",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 20101
+  },
+  {
+    "slug": "large-fort",
+    "name": "Large Fort",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 50101
+  },
+  {
+    "slug": "line-infantry",
+    "name": "Line Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 10101
+  },
+  {
+    "slug": "mamluk-cavalry",
+    "name": "Mamluk Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "OT",
+    "tier": "B",
+    "armyId": 20103
+  },
+  {
+    "slug": "patriotic-army",
+    "name": "Patriotic Army",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "COL",
+    "tier": "B",
+    "armyId": 10103
+  },
+  {
+    "slug": "privateer",
+    "name": "Privateer",
+    "category": "navy",
+    "faction": "standard",
+    "country": "US",
+    "tier": "B",
+    "armyId": 40102
+  },
+  {
+    "slug": "tsar-cannon",
+    "name": "Tsar Cannon",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "RU",
+    "tier": "B",
+    "armyId": 30102
+  },
+  {
+    "slug": "aboriginal-artillery",
+    "name": "Aboriginal Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "TRB",
+    "tier": "C",
+    "armyId": 30002
+  },
+  {
+    "slug": "aboriginal-cavalry",
+    "name": "Aboriginal Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "TRB",
+    "tier": "C",
+    "armyId": 20004
+  },
+  {
+    "slug": "aboriginal-clipper",
+    "name": "Aboriginal Clipper",
+    "category": "navy",
+    "faction": "standard",
+    "country": "TRB",
+    "tier": "C",
+    "armyId": 40002
+  },
+  {
+    "slug": "aboriginal-militia",
+    "name": "Aboriginal Militia",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "TRB",
+    "tier": "C",
+    "armyId": 10003
+  },
+  {
+    "slug": "carrier",
+    "name": "Carrier",
+    "category": "navy",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 40501
+  },
+  {
+    "slug": "clipper",
+    "name": "Clipper",
+    "category": "navy",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 40001
+  },
+  {
+    "slug": "death-s-head-hussar",
+    "name": "Death's Head Hussar",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "PR",
+    "tier": "C",
+    "armyId": 20003
+  },
+  {
+    "slug": "dominion-militia",
+    "name": "Dominion Militia",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "CA",
+    "tier": "C",
+    "armyId": 10002
+  },
+  {
+    "slug": "fort",
+    "name": "Fort",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 50001
+  },
+  {
+    "slug": "hungarian-hussar",
+    "name": "Hungarian Hussar",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "HRE",
+    "tier": "C",
+    "armyId": 20002
+  },
+  {
+    "slug": "light-artillery",
+    "name": "Light Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 30001
+  },
+  {
+    "slug": "light-cavalry",
+    "name": "Light Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 20001
+  },
+  {
+    "slug": "militia",
+    "name": "Militia",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 10001
+  },
+  {
+    "slug": "armored-car",
+    "name": "Armored Car",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 20401
+  },
+  {
+    "slug": "assault-infantry",
+    "name": "Assault Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 10501
+  },
+  {
+    "slug": "elite-light-infantry",
+    "name": "Elite Light Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 10401
+  },
+  {
+    "slug": "field-artillery",
+    "name": "Field Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 30401
+  },
+  {
+    "slug": "grenadier",
+    "name": "Grenadier",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 10301
+  },
+  {
+    "slug": "horse-grenadier-guard",
+    "name": "Horse Grenadier Guard",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "FR",
+    "tier": "S",
+    "armyId": 20302
+  },
+  {
+    "slug": "ironclad",
+    "name": "Ironclad",
+    "category": "navy",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 40401
+  },
+  {
+    "slug": "krupp-cannon",
+    "name": "Krupp Cannon",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "PR",
+    "tier": "S",
+    "armyId": 30402
+  },
+  {
+    "slug": "maxim-gunner",
+    "name": "Maxim Gunner",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "US",
+    "tier": "S",
+    "armyId": 10502
+  },
+  {
+    "slug": "musket-cavalry",
+    "name": "Musket Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 20301
+  },
+  {
+    "slug": "old-guard",
+    "name": "Old Guard",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "FR",
+    "tier": "S",
+    "armyId": 10302
+  },
+  {
+    "slug": "redshirt",
+    "name": "Redshirt",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "SAR",
+    "tier": "S",
+    "armyId": 10402
+  },
+  {
+    "slug": "rocket-artillery",
+    "name": "Rocket Artillery",
+    "category": "artillery",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 30301
+  },
+  {
+    "slug": "ship-of-the-line",
+    "name": "Ship of the Line",
+    "category": "navy",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 40301
+  },
+  {
+    "slug": "tank",
+    "name": "Tank",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "GB",
+    "tier": "S",
+    "armyId": 20402
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "slug": "population-23",
+  "gameTypeId": 23,
+  "gameCategoryId": 2,
+  "nameEn": "Population",
+  "nameFr": "Population",
+  "category": "infantry",
+  "effectArmy": [
+    26,
+    30
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 303003,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 3500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "\\n\\nTsar Cannon\\n\\nKrupp Cannon\\n\\n",
+      "descTemplate": "\\n\\nTsar Cannon\\n\\nKrupp Cannon\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 303004
+    },
+    {
+      "gameId": 303004,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 30000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "\\n\\nTsar Cannon\\n\\nKrupp Cannon\\n\\n",
+      "descTemplate": "\\n\\nTsar Cannon\\n\\nKrupp Cannon\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    26,
+    30
+  ]
+}

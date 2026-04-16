@@ -1,0 +1,73 @@
+{
+  "slug": "sailor",
+  "type": 1,
+  "name": "Sailor",
+  "nameFr": "Sailor",
+  "series": 1,
+  "seriesLabel": "Generic learnable skill (series 1)",
+  "descriptionTemplate": "Increase the damage of army units by X% when fighting in the sea",
+  "descriptionTemplateFr": "Increase the damage of army units by X% when fighting in the sea",
+  "icon": "/img/ew6/skills/skill_1.webp",
+  "maxLevel": 6,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 10101,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "Increase the damage of army units by 0% when fighting in the sea",
+      "renderedDescFr": "Increase the damage of army units by 0% when fighting in the sea"
+    },
+    {
+      "level": 2,
+      "skillId": 10102,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 60,
+      "renderedDesc": "Increase the damage of army units by 0% when fighting in the sea",
+      "renderedDescFr": "Increase the damage of army units by 0% when fighting in the sea"
+    },
+    {
+      "level": 3,
+      "skillId": 10103,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 105,
+      "renderedDesc": "Increase the damage of army units by 0% when fighting in the sea",
+      "renderedDescFr": "Increase the damage of army units by 0% when fighting in the sea"
+    },
+    {
+      "level": 4,
+      "skillId": 10104,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 150,
+      "renderedDesc": "Increase the damage of army units by 0% when fighting in the sea",
+      "renderedDescFr": "Increase the damage of army units by 0% when fighting in the sea"
+    },
+    {
+      "level": 5,
+      "skillId": 10105,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 210,
+      "renderedDesc": "Increase the damage of army units by 0% when fighting in the sea",
+      "renderedDescFr": "Increase the damage of army units by 0% when fighting in the sea"
+    },
+    {
+      "level": 6,
+      "skillId": 10106,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "Increase the damage of army units by 0% when fighting in the sea",
+      "renderedDescFr": "Increase the damage of army units by 0% when fighting in the sea"
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

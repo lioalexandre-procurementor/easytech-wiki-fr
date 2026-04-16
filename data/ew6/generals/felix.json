@@ -1,0 +1,91 @@
+{
+  "slug": "felix",
+  "name": "Felix",
+  "nameEn": "Felix",
+  "nameCanonical": "Felix",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "gold",
+  "country": "TRB",
+  "countryName": "Union tribale",
+  "shortDesc": "Général infantry — Union tribale.",
+  "longDesc": "Felix — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 1
+    },
+    {
+      "name": "Cover",
+      "nameEn": "Cover",
+      "desc": "In land operations there is 0% chance of reducing damage by 0%.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 1,
+      "skillSlug": "cover",
+      "slot": 2
+    },
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "assault",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 9004,
+  "image": {
+    "photo": "/img/ew6/generals/Africa.webp",
+    "head": "/img/ew6/heads/Africa.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

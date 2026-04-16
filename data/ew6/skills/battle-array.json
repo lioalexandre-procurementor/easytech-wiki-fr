@@ -1,0 +1,64 @@
+{
+  "slug": "battle-array",
+  "type": 13,
+  "name": "Battle Array",
+  "nameFr": "Battle Array",
+  "series": 1,
+  "seriesLabel": "Generic learnable skill (series 1)",
+  "descriptionTemplate": "Y% chance to ignore the effect of trenches when using infantry to attack",
+  "descriptionTemplateFr": "Y% chance to ignore the effect of trenches when using infantry to attack",
+  "icon": "/img/ew6/skills/skill_13.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 11301,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "renderedDescFr": "0% chance to ignore the effect of trenches when using infantry to attack"
+    },
+    {
+      "level": 2,
+      "skillId": 11302,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 60,
+      "renderedDesc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "renderedDescFr": "0% chance to ignore the effect of trenches when using infantry to attack"
+    },
+    {
+      "level": 3,
+      "skillId": 11303,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 105,
+      "renderedDesc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "renderedDescFr": "0% chance to ignore the effect of trenches when using infantry to attack"
+    },
+    {
+      "level": 4,
+      "skillId": 11304,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 150,
+      "renderedDesc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "renderedDescFr": "0% chance to ignore the effect of trenches when using infantry to attack"
+    },
+    {
+      "level": 5,
+      "skillId": 11305,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 210,
+      "renderedDesc": "0% chance to ignore the effect of trenches when using infantry to attack",
+      "renderedDescFr": "0% chance to ignore the effect of trenches when using infantry to attack"
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

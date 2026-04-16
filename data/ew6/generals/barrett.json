@@ -1,0 +1,77 @@
+{
+  "slug": "barrett",
+  "name": "Barrett",
+  "nameEn": "Barrett",
+  "nameCanonical": "Barrett",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général infantry — États-Unis.",
+  "longDesc": "Barrett — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 2,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Plain Fighting",
+      "nameEn": "Plain Fighting",
+      "desc": "Increase attack by 0% when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 1,
+      "skillSlug": "plain-fighting",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 1
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 3006,
+  "image": {
+    "photo": "/img/ew6/generals/Europe1.webp",
+    "head": "/img/ew6/heads/Europe1.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

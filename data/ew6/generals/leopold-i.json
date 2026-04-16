@@ -1,0 +1,77 @@
+{
+  "slug": "leopold-i",
+  "name": "Leopold I",
+  "nameEn": "Leopold I",
+  "nameCanonical": "Leopold I",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "BE",
+  "countryName": "Belgique",
+  "shortDesc": "Général infantry — Belgique.",
+  "longDesc": "Leopold I — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Intercept",
+      "nameEn": "Intercept",
+      "desc": "0 additional damage when infantry attack cavalry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 15,
+      "skillLevel": 1,
+      "skillSlug": "intercept",
+      "slot": 1
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "mountain-fighting",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 175,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 1116,
+  "image": {
+    "photo": "/img/ew6/generals/Leopold I.webp",
+    "head": "/img/ew6/heads/Leopold I.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

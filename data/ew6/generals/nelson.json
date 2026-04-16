@@ -1,0 +1,119 @@
+{
+  "slug": "nelson",
+  "name": "Nelson",
+  "nameEn": "Nelson",
+  "nameCanonical": "Nelson",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "quality": "bronze",
+  "country": "GB",
+  "countryName": "Grande-Bretagne",
+  "shortDesc": "Général navy — Grande-Bretagne.",
+  "longDesc": "Nelson — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Line of Battle",
+      "nameEn": "Line of Battle",
+      "desc": "0 additional damage when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_32.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 32,
+      "skillLevel": 1,
+      "skillSlug": "line-of-battle",
+      "slot": 1
+    },
+    {
+      "name": "Position",
+      "nameEn": "Position",
+      "desc": "Increase critical strike by 0% when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 33,
+      "skillLevel": 2,
+      "skillSlug": "position",
+      "slot": 2
+    },
+    {
+      "name": "Escorting",
+      "nameEn": "Escorting",
+      "desc": "Increase 0 ship defence in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 34,
+      "skillLevel": 3,
+      "skillSlug": "escorting",
+      "slot": 3
+    },
+    {
+      "name": "Helmsman",
+      "nameEn": "Helmsman",
+      "desc": "In sea operations there is 0% chance of reducing damage by 0%",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_35.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 35,
+      "skillLevel": 2,
+      "skillSlug": "helmsman",
+      "slot": 4
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 3,
+      "skillSlug": "tactic-master",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 1,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 2340,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 12,
+  "militaryRank": 12,
+  "gameId": 1033,
+  "image": {
+    "photo": "/img/ew6/generals/Nelson.webp",
+    "head": "/img/ew6/heads/Nelson.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "ship-of-the-line",
+  "name": "Ship of the Line",
+  "nameEn": "Ship of the Line",
+  "category": "navy",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité navy — XX.",
+  "longDesc": "The main warship in the naval war. Its huge hull is equipped with large-caliber artillery, which can cause a fatal blow to the enemy. It belongs to large ship.",
+  "stats": {
+    "atk": [
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58,
+      58
+    ],
+    "def": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "hp": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 40301,
+  "image": {
+    "sprite": "/img/ew6/armies/40301.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "land-fort",
+  "type": 29,
+  "name": "Land Fort",
+  "nameFr": "Land Fort",
+  "series": 1,
+  "seriesLabel": "Generic learnable skill (series 1)",
+  "descriptionTemplate": "Increase attack by X% when artillery fight in city facilities",
+  "descriptionTemplateFr": "Increase attack by X% when artillery fight in city facilities",
+  "icon": "/img/ew6/skills/skill_29.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 12901,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "Increase attack by 0% when artillery fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when artillery fight in city facilities"
+    },
+    {
+      "level": 2,
+      "skillId": 12902,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 30,
+      "renderedDesc": "Increase attack by 0% when artillery fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when artillery fight in city facilities"
+    },
+    {
+      "level": 3,
+      "skillId": 12903,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 75,
+      "renderedDesc": "Increase attack by 0% when artillery fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when artillery fight in city facilities"
+    },
+    {
+      "level": 4,
+      "skillId": 12904,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 120,
+      "renderedDesc": "Increase attack by 0% when artillery fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when artillery fight in city facilities"
+    },
+    {
+      "level": 5,
+      "skillId": 12905,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 180,
+      "renderedDesc": "Increase attack by 0% when artillery fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when artillery fight in city facilities"
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

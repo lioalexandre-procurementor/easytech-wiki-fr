@@ -1,0 +1,73 @@
+{
+  "slug": "plain-fighting",
+  "type": 5,
+  "name": "Plain Fighting",
+  "nameFr": "Plain Fighting",
+  "series": 1,
+  "seriesLabel": "Generic learnable skill (series 1)",
+  "descriptionTemplate": "Increase attack by X% when fighting in the plain",
+  "descriptionTemplateFr": "Increase attack by X% when fighting in the plain",
+  "icon": "/img/ew6/skills/skill_5.webp",
+  "maxLevel": 6,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 10501,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "Increase attack by 0% when fighting in the plain",
+      "renderedDescFr": "Increase attack by 0% when fighting in the plain"
+    },
+    {
+      "level": 2,
+      "skillId": 10502,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 90,
+      "renderedDesc": "Increase attack by 0% when fighting in the plain",
+      "renderedDescFr": "Increase attack by 0% when fighting in the plain"
+    },
+    {
+      "level": 3,
+      "skillId": 10503,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 135,
+      "renderedDesc": "Increase attack by 0% when fighting in the plain",
+      "renderedDescFr": "Increase attack by 0% when fighting in the plain"
+    },
+    {
+      "level": 4,
+      "skillId": 10504,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 180,
+      "renderedDesc": "Increase attack by 0% when fighting in the plain",
+      "renderedDescFr": "Increase attack by 0% when fighting in the plain"
+    },
+    {
+      "level": 5,
+      "skillId": 10505,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 240,
+      "renderedDesc": "Increase attack by 0% when fighting in the plain",
+      "renderedDescFr": "Increase attack by 0% when fighting in the plain"
+    },
+    {
+      "level": 6,
+      "skillId": 10506,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "Increase attack by 0% when fighting in the plain",
+      "renderedDescFr": "Increase attack by 0% when fighting in the plain"
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

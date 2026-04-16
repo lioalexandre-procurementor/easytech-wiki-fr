@@ -1,0 +1,91 @@
+{
+  "slug": "f-smith",
+  "name": "F Smith",
+  "nameEn": "F Smith",
+  "nameCanonical": "F Smith",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "GB",
+  "countryName": "Grande-Bretagne",
+  "shortDesc": "Général artillery — Grande-Bretagne.",
+  "longDesc": "F Smith — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Explosives",
+      "nameEn": "Explosives",
+      "desc": "0% chance to ignore the effect of bunkers when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 1,
+      "skillSlug": "explosives",
+      "slot": 1
+    },
+    {
+      "name": "Storm Fortifications",
+      "nameEn": "Storm Fortifications",
+      "desc": "0 additional damage when artillery attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 30,
+      "skillLevel": 2,
+      "skillSlug": "storm-fortifications",
+      "slot": 2
+    },
+    {
+      "name": "Artillery Master",
+      "nameEn": "Artillery Master",
+      "desc": "Increase critical strike by 0% when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 1,
+      "skillSlug": "artillery-master",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 1,
+      "max": 1
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 3003,
+  "image": {
+    "photo": "/img/ew6/generals/Europe5.webp",
+    "head": "/img/ew6/heads/Europe5.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "defense-20",
+  "gameTypeId": 20,
+  "gameCategoryId": 2,
+  "nameEn": "Defense",
+  "nameFr": "Defense",
+  "category": "infantry",
+  "effectArmy": [
+    25,
+    26,
+    27,
+    29,
+    30
+  ],
+  "maxLevel": 2,
+  "needHQLv": 1,
+  "needScenarioId": 3,
+  "levels": [
+    {
+      "gameId": 302021,
+      "level": 1,
+      "x": 0,
+      "y": 0,
+      "costGold": 4500,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 3,
+      "descEn": "\\nHeavy Artillery\\nTsar Cannon\\nSiege Artillery \\nField Artillery\\nKrupp Cannon\\n\\n",
+      "descTemplate": "\\nHeavy Artillery\\nTsar Cannon\\nSiege Artillery \\nField Artillery\\nKrupp Cannon\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 302022
+    },
+    {
+      "gameId": 302022,
+      "level": 2,
+      "x": 0,
+      "y": 0,
+      "costGold": 30000,
+      "costIndustry": 0,
+      "costEnergy": 0,
+      "costTech": 0,
+      "needHQLv": null,
+      "needScenarioId": 7,
+      "descEn": "\\nHeavy Artillery\\nTsar Cannon\\nSiege Artillery \\nField Artillery\\nKrupp Cannon\\n\\n",
+      "descTemplate": "\\nHeavy Artillery\\nTsar Cannon\\nSiege Artillery \\nField Artillery\\nKrupp Cannon\\n\\n",
+      "techValues": [],
+      "techDescKeys": [],
+      "prerequisiteIds": [],
+      "upgradeToId": 0
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": [
+    25,
+    26,
+    27,
+    29,
+    30
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "o-donoju",
+  "name": "O'Donoju",
+  "nameEn": "O'Donoju",
+  "nameCanonical": "O'Donoju",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "silver",
+  "country": "ES",
+  "countryName": "Espagne",
+  "shortDesc": "Général infantry — Espagne.",
+  "longDesc": "O'Donoju — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 3,
+      "skillSlug": "formation-master",
+      "slot": 1
+    },
+    {
+      "name": "Ambush",
+      "nameEn": "Ambush",
+      "desc": "0% chance to avoid enemy's attack when commanding infantry",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "ambush",
+      "slot": 2
+    },
+    {
+      "name": "Infantry Master",
+      "nameEn": "Infantry Master",
+      "desc": "Increase 0 infantry attack in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 18,
+      "skillLevel": 2,
+      "skillSlug": "infantry-master",
+      "slot": 3
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 1,
+      "skillSlug": "jungle-fighting",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 2,
+  "militaryRank": 2,
+  "gameId": 6008,
+  "image": {
+    "photo": "/img/ew6/generals/O'Donoju.webp",
+    "head": "/img/ew6/heads/O'Donoju.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

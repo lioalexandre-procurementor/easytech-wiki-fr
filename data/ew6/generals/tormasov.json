@@ -1,0 +1,77 @@
+{
+  "slug": "tormasov",
+  "name": "Tormasov",
+  "nameEn": "Tormasov",
+  "nameCanonical": "Tormasov",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "A",
+  "quality": "marshal",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général cavalry — Russie.",
+  "longDesc": "Tormasov — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Riding Master",
+      "nameEn": "Riding Master",
+      "desc": "Increase critical strike by 0% when using cavalry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "riding-master",
+      "slot": 1
+    },
+    {
+      "name": "Surprise Attack",
+      "nameEn": "Surprise Attack",
+      "desc": "The farther cavalry move, the higher damage cavalry deal",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 2,
+      "skillSlug": "surprise-attack",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": {
+      "start": 0,
+      "max": 1
+    },
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 435,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 8,
+  "militaryRank": 8,
+  "gameId": 1064,
+  "image": {
+    "photo": "/img/ew6/generals/Tormasov.webp",
+    "head": "/img/ew6/heads/Tormasov.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

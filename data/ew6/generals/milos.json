@@ -1,0 +1,105 @@
+{
+  "slug": "milos",
+  "name": "Milos",
+  "nameEn": "Milos",
+  "nameCanonical": "Milos",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "silver",
+  "country": "RS",
+  "countryName": "Serbie",
+  "shortDesc": "Général infantry — Serbie.",
+  "longDesc": "Milos — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 2,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Formation Master",
+      "nameEn": "Formation Master",
+      "desc": "Increase critical strike by 0% when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 2,
+      "skillSlug": "formation-master",
+      "slot": 2
+    },
+    {
+      "name": "Defense Formation",
+      "nameEn": "Defense Formation",
+      "desc": "Increase attack by 0% when infantry fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 2,
+      "skillSlug": "defense-formation",
+      "slot": 3
+    },
+    {
+      "name": "Sailor",
+      "nameEn": "Sailor",
+      "desc": "Increase the damage of army units by 0% when fighting in the sea",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 2,
+      "skillSlug": "sailor",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 2
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 885,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 9,
+  "militaryRank": 9,
+  "gameId": 1130,
+  "image": {
+    "photo": "/img/ew6/generals/Milos.webp",
+    "head": "/img/ew6/heads/Milos.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

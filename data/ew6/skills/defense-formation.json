@@ -1,0 +1,64 @@
+{
+  "slug": "defense-formation",
+  "type": 14,
+  "name": "Defense Formation",
+  "nameFr": "Defense Formation",
+  "series": 1,
+  "seriesLabel": "Generic learnable skill (series 1)",
+  "descriptionTemplate": "Increase attack by X% when infantry fight in city facilities",
+  "descriptionTemplateFr": "Increase attack by X% when infantry fight in city facilities",
+  "icon": "/img/ew6/skills/skill_14.webp",
+  "maxLevel": 5,
+  "progression": [
+    {
+      "level": 1,
+      "skillId": 11401,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 0,
+      "renderedDesc": "Increase attack by 0% when infantry fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when infantry fight in city facilities"
+    },
+    {
+      "level": 2,
+      "skillId": 11402,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 30,
+      "renderedDesc": "Increase attack by 0% when infantry fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when infantry fight in city facilities"
+    },
+    {
+      "level": 3,
+      "skillId": 11403,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 75,
+      "renderedDesc": "Increase attack by 0% when infantry fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when infantry fight in city facilities"
+    },
+    {
+      "level": 4,
+      "skillId": 11404,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 120,
+      "renderedDesc": "Increase attack by 0% when infantry fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when infantry fight in city facilities"
+    },
+    {
+      "level": 5,
+      "skillId": 11405,
+      "effect": 0,
+      "chance": 0,
+      "costMedal": 180,
+      "renderedDesc": "Increase attack by 0% when infantry fight in city facilities",
+      "renderedDescFr": "Increase attack by 0% when infantry fight in city facilities"
+    }
+  ],
+  "usage": {
+    "base": [],
+    "promoted": []
+  },
+  "varyingField": "ActivatesChance"
+}

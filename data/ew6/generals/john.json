@@ -1,0 +1,105 @@
+{
+  "slug": "john",
+  "name": "John",
+  "nameEn": "John",
+  "nameCanonical": "John",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "B",
+  "quality": "silver",
+  "country": "AT",
+  "countryName": "Autriche",
+  "shortDesc": "Général artillery — Autriche.",
+  "longDesc": "John — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 2,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Storm Fortifications",
+      "nameEn": "Storm Fortifications",
+      "desc": "0 additional damage when artillery attack city defence",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 30,
+      "skillLevel": 2,
+      "skillSlug": "storm-fortifications",
+      "slot": 2
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 2,
+      "skillSlug": "jungle-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 2,
+      "skillSlug": "mountain-fighting",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 1,
+      "max": 2
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 1755,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 7,
+  "militaryRank": 7,
+  "gameId": 1083,
+  "image": {
+    "photo": "/img/ew6/generals/John.webp",
+    "head": "/img/ew6/heads/John.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

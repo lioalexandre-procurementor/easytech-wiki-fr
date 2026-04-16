@@ -1,0 +1,91 @@
+{
+  "slug": "rowland",
+  "name": "Rowland",
+  "nameEn": "Rowland",
+  "nameCanonical": "Rowland",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "gold",
+  "country": "GB",
+  "countryName": "Grande-Bretagne",
+  "shortDesc": "Général artillery — Grande-Bretagne.",
+  "longDesc": "Rowland — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Salvo",
+      "nameEn": "Salvo",
+      "desc": "0 additional damage when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 1,
+      "skillSlug": "salvo",
+      "slot": 1
+    },
+    {
+      "name": "Explosives",
+      "nameEn": "Explosives",
+      "desc": "0% chance to ignore the effect of bunkers when using artillery to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 3,
+      "skillSlug": "explosives",
+      "slot": 2
+    },
+    {
+      "name": "Inspiration",
+      "nameEn": "Inspiration",
+      "desc": "0% chance of morale rise after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "inspiration",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 0,
+      "max": 2
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 11,
+  "militaryRank": 11,
+  "gameId": 7035,
+  "image": {
+    "photo": "/img/ew6/generals/Europe3.webp",
+    "head": "/img/ew6/heads/Europe3.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

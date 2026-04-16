@@ -254,6 +254,93 @@ export const pathnames = {
     en: "/great-conqueror-rome/updates/[slug]",
     de: "/great-conqueror-rome/updates/[slug]",
   },
+
+  // ---------------------------------------------------------------------
+  // European War 6: 1914 (EW6)
+  // URL segments share the WC4/GCR FR convention — French keeps the
+  // historical French slugs, EN and DE mirror English slugs. Content is
+  // localized; URL structure follows the same v1 trade-off as WC4/GCR.
+  // ---------------------------------------------------------------------
+  "/european-war-6": {
+    fr: "/european-war-6",
+    en: "/european-war-6",
+    de: "/european-war-6",
+  },
+  "/european-war-6/generaux": {
+    fr: "/european-war-6/generaux",
+    en: "/european-war-6/generals",
+    de: "/european-war-6/generals",
+  },
+  "/european-war-6/generaux/[slug]": {
+    fr: "/european-war-6/generaux/[slug]",
+    en: "/european-war-6/generals/[slug]",
+    de: "/european-war-6/generals/[slug]",
+  },
+  "/european-war-6/competences": {
+    fr: "/european-war-6/competences",
+    en: "/european-war-6/skills",
+    de: "/european-war-6/skills",
+  },
+  "/european-war-6/competences/[slug]": {
+    fr: "/european-war-6/competences/[slug]",
+    en: "/european-war-6/skills/[slug]",
+    de: "/european-war-6/skills/[slug]",
+  },
+  "/european-war-6/unites-elite": {
+    fr: "/european-war-6/unites-elite",
+    en: "/european-war-6/elite-units",
+    de: "/european-war-6/elite-units",
+  },
+  "/european-war-6/unites-elite/[slug]": {
+    fr: "/european-war-6/unites-elite/[slug]",
+    en: "/european-war-6/elite-units/[slug]",
+    de: "/european-war-6/elite-units/[slug]",
+  },
+  "/european-war-6/technologies": {
+    fr: "/european-war-6/technologies",
+    en: "/european-war-6/technologies",
+    de: "/european-war-6/technologies",
+  },
+  "/european-war-6/technologies/[slug]": {
+    fr: "/european-war-6/technologies/[slug]",
+    en: "/european-war-6/technologies/[slug]",
+    de: "/european-war-6/technologies/[slug]",
+  },
+  "/european-war-6/comparateur/generaux": {
+    fr: "/european-war-6/comparateur/generaux",
+    en: "/european-war-6/comparator/generals",
+    de: "/european-war-6/comparator/generals",
+  },
+  "/european-war-6/comparateur/unites": {
+    fr: "/european-war-6/comparateur/unites",
+    en: "/european-war-6/comparator/units",
+    de: "/european-war-6/comparator/units",
+  },
+  "/european-war-6/comparateur/unites/[matchup]": {
+    fr: "/european-war-6/comparateur/unites/[matchup]",
+    en: "/european-war-6/comparator/units/[matchup]",
+    de: "/european-war-6/comparator/units/[matchup]",
+  },
+  "/european-war-6/guides": {
+    fr: "/european-war-6/guides",
+    en: "/european-war-6/guides",
+    de: "/european-war-6/guides",
+  },
+  "/european-war-6/guides/[slug]": {
+    fr: "/european-war-6/guides/[slug]",
+    en: "/european-war-6/guides/[slug]",
+    de: "/european-war-6/guides/[slug]",
+  },
+  "/european-war-6/mises-a-jour": {
+    fr: "/european-war-6/mises-a-jour",
+    en: "/european-war-6/updates",
+    de: "/european-war-6/updates",
+  },
+  "/european-war-6/mises-a-jour/[slug]": {
+    fr: "/european-war-6/mises-a-jour/[slug]",
+    en: "/european-war-6/updates/[slug]",
+    de: "/european-war-6/updates/[slug]",
+  },
 } satisfies Pathnames<typeof locales>;
 
 export const localePrefix = "always" as const;

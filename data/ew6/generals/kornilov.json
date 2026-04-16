@@ -1,0 +1,105 @@
+{
+  "slug": "kornilov",
+  "name": "Kornilov",
+  "nameEn": "Kornilov",
+  "nameCanonical": "Kornilov",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "C",
+  "quality": "gold",
+  "country": "RU",
+  "countryName": "Russie",
+  "shortDesc": "Général navy — Russie.",
+  "longDesc": "Kornilov — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Line of Battle",
+      "nameEn": "Line of Battle",
+      "desc": "0 additional damage when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_32.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 32,
+      "skillLevel": 1,
+      "skillSlug": "line-of-battle",
+      "slot": 1
+    },
+    {
+      "name": "Position",
+      "nameEn": "Position",
+      "desc": "Increase critical strike by 0% when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 33,
+      "skillLevel": 1,
+      "skillSlug": "position",
+      "slot": 2
+    },
+    {
+      "name": "Escorting",
+      "nameEn": "Escorting",
+      "desc": "Increase 0 ship defence in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 34,
+      "skillLevel": 1,
+      "skillSlug": "escorting",
+      "slot": 3
+    },
+    {
+      "name": "Alert",
+      "nameEn": "Alert",
+      "desc": "Decrease damage by 0% when attacked from far away",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 6,
+      "skillLevel": 1,
+      "skillSlug": "alert",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 2,
+      "max": 1
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 2037,
+  "image": {
+    "photo": "/img/ew6/generals/Nollendorf.webp",
+    "head": "/img/ew6/heads/Nollendorf.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

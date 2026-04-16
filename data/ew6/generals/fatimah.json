@@ -1,0 +1,119 @@
+{
+  "slug": "fatimah",
+  "name": "Fatimah",
+  "nameEn": "Fatimah",
+  "nameCanonical": "Fatimah",
+  "faction": "standard",
+  "category": "artillery",
+  "rank": "S",
+  "quality": "silver",
+  "country": "FR",
+  "countryName": "France",
+  "shortDesc": "Général artillery — France.",
+  "longDesc": "Fatimah — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Land Fort",
+      "nameEn": "Land Fort",
+      "desc": "Increase attack by 0% when artillery fight in city facilities",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 4,
+      "skillSlug": "land-fort",
+      "slot": 1
+    },
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 3,
+      "skillSlug": "jungle-fighting",
+      "slot": 2
+    },
+    {
+      "name": "Plain Fighting",
+      "nameEn": "Plain Fighting",
+      "desc": "Increase attack by 0% when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 1,
+      "skillSlug": "plain-fighting",
+      "slot": 3
+    },
+    {
+      "name": "Mountain Fighting",
+      "nameEn": "Mountain Fighting",
+      "desc": "Increase attack by 0% when fighting in the mountain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 2,
+      "skillSlug": "mountain-fighting",
+      "slot": 4
+    },
+    {
+      "name": "Desert Fighting",
+      "nameEn": "Desert Fighting",
+      "desc": "Increase attack by 0% when fighting in the desert",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 2,
+      "skillSlug": "desert-fighting",
+      "slot": 5
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": {
+      "start": 2,
+      "max": 1
+    },
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 950,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 5,
+  "unlockHQLv": 12,
+  "militaryRank": 12,
+  "gameId": 9106,
+  "image": {
+    "photo": "/img/ew6/generals/Fatimah.webp",
+    "head": "/img/ew6/heads/Fatimah.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

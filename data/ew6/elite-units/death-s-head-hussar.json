@@ -1,0 +1,98 @@
+{
+  "slug": "death-s-head-hussar",
+  "name": "Death's Head Hussar",
+  "nameEn": "Death's Head Hussar",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "PR",
+  "countryName": "Prussia",
+  "tier": "C",
+  "obtainability": "event",
+  "shortDesc": "Unité cavalry — PR.",
+  "longDesc": "It is known for skull signs embroidered on the hat. Since founded by Frederick the Great, they had been the most valiant Prussian cavalry. It belongs to light cavalry.",
+  "stats": {
+    "atk": [
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "def": [
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "hp": [
+      185,
+      185,
+      185,
+      185,
+      185,
+      185,
+      185,
+      185,
+      185,
+      185,
+      185,
+      185
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 20003,
+  "image": {
+    "sprite": "/img/ew6/armies/20003.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

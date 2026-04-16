@@ -1,0 +1,98 @@
+{
+  "slug": "cossack",
+  "name": "Cossack",
+  "nameEn": "Cossack",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "RU",
+  "countryName": "Russian",
+  "tier": "B",
+  "obtainability": "event",
+  "shortDesc": "Unité cavalry — RU.",
+  "longDesc": "Heroic cavalry composed of Nomadic Cossacks of Eastern European prairie. It is one of the most important Russian military forces. It belongs to heavy cavalry.",
+  "stats": {
+    "atk": [
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56,
+      56
+    ],
+    "def": [
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30,
+      30
+    ],
+    "hp": [
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175,
+      175
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 20102,
+  "image": {
+    "sprite": "/img/ew6/armies/20102.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

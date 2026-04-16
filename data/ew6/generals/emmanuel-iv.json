@@ -1,0 +1,77 @@
+{
+  "slug": "emmanuel-iv",
+  "name": "Emmanuel IV",
+  "nameEn": "Emmanuel IV",
+  "nameCanonical": "Emmanuel IV",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "S",
+  "quality": "marshal",
+  "country": "SAR",
+  "countryName": "Sardaigne",
+  "shortDesc": "Général infantry — Sardaigne.",
+  "longDesc": "Emmanuel IV — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Jungle Fighting",
+      "nameEn": "Jungle Fighting",
+      "desc": "Increase attack by 0% when fighting in the jungle",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 2,
+      "skillSlug": "jungle-fighting",
+      "slot": 1
+    },
+    {
+      "name": "Tactic Master",
+      "nameEn": "Tactic Master",
+      "desc": "0% chance of a second attack after attacking",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 3,
+      "skillSlug": "tactic-master",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 0,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 575,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 10,
+  "militaryRank": 10,
+  "gameId": 1126,
+  "image": {
+    "photo": "/img/ew6/generals/Emmanuel IV.webp",
+    "head": "/img/ew6/heads/Emmanuel IV.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

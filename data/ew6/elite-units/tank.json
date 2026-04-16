@@ -1,0 +1,98 @@
+{
+  "slug": "tank",
+  "name": "Tank",
+  "nameEn": "Tank",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "GB",
+  "countryName": "Great Britain",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Unité cavalry — GB.",
+  "longDesc": "A new armored chariot wrapped in steel and equipped with a howitzer. It can easily destroy the enemy's line of defense. It belongs to heavy cavalry.",
+  "stats": {
+    "atk": [
+      75,
+      75,
+      75,
+      75,
+      75,
+      75,
+      75,
+      75,
+      75,
+      75,
+      75,
+      75
+    ],
+    "def": [
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "hp": [
+      245,
+      245,
+      245,
+      245,
+      245,
+      245,
+      245,
+      245,
+      245,
+      245,
+      245,
+      245
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 20402,
+  "image": {
+    "sprite": "/img/ew6/armies/20402.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

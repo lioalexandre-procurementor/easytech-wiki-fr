@@ -1,0 +1,77 @@
+{
+  "slug": "nuri",
+  "name": "Nuri",
+  "nameEn": "Nuri",
+  "nameCanonical": "Nuri",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "A",
+  "quality": "marshal",
+  "country": "OT",
+  "countryName": "Empire ottoman",
+  "shortDesc": "Général infantry — Empire ottoman.",
+  "longDesc": "Nuri — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Assault",
+      "nameEn": "Assault",
+      "desc": "0 additional damage when using infantry to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 2,
+      "skillSlug": "assault",
+      "slot": 1
+    },
+    {
+      "name": "Plain Fighting",
+      "nameEn": "Plain Fighting",
+      "desc": "Increase attack by 0% when fighting in the plain",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 2,
+      "skillSlug": "plain-fighting",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 0
+    },
+    "cavalry": null,
+    "artillery": null,
+    "navy": null
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 445,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 9,
+  "militaryRank": 9,
+  "gameId": 1105,
+  "image": {
+    "photo": "/img/ew6/generals/Nuri.webp",
+    "head": "/img/ew6/heads/Nuri.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

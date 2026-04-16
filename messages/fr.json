@@ -35,7 +35,10 @@
     "gcrHome": "Accueil GCR",
     "gcrCampaign": "Conquête romaine",
     "backToHubGcr": "← Retour au hub GCR",
-    "barbarian": "Barbares"
+    "barbarian": "Barbares",
+    "ew6": "European War 6",
+    "ew6Home": "Accueil EW6",
+    "backToHubEw6": "← Retour au hub EW6"
   },
   "footer": {
     "about": "À propos",
@@ -543,5 +546,19 @@
     "topPick": "Choix communautaire",
     "appearsOn": "Apparaît sur",
     "totalVotes": "{total, plural, one {# vote} other {# votes}}"
+  },
+  "ew6Hub": {
+    "h1": "European War 6: 1914 — Wiki Francophone",
+    "tagline": "Le guide francophone de European War 6: 1914 d'EasyTech. Généraux, unités, technologies et stratégies — de l'ère napoléonienne à la Grande Guerre.",
+    "ctaExplore": "👨‍✈️ Explorer les généraux",
+    "ctaBeginner": "📘 Guide débutant",
+    "statGenerals": "Généraux",
+    "statEliteUnits": "Unités d'élite",
+    "statMaxLevels": "Niveaux max",
+    "statMaxLevelsValue": "12",
+    "underConstruction": "Wiki en construction",
+    "underConstructionNote": "les données sont extraites des fichiers de jeu European War 6: 1914. Les fiches éditoriales sont en cours d'enrichissement.",
+    "exploreByCategory": "Explorer les unités par catégorie",
+    "unitsCountSuffix": "unités"
   }
 }

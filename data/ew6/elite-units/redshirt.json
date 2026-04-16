@@ -1,0 +1,98 @@
+{
+  "slug": "redshirt",
+  "name": "Redshirt",
+  "nameEn": "Redshirt",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "SAR",
+  "countryName": "Sardinia",
+  "tier": "S",
+  "obtainability": "event",
+  "shortDesc": "Unité infantry — SAR.",
+  "longDesc": "A well-trained volunteer troop during the Italy national revival movement. They were called the Red Shirt Army because of distinctive red military uniforms. It belongs to light infantry.",
+  "stats": {
+    "atk": [
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60,
+      60
+    ],
+    "def": [
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22,
+      22
+    ],
+    "hp": [
+      220,
+      220,
+      220,
+      220,
+      220,
+      220,
+      220,
+      220,
+      220,
+      220,
+      220,
+      220
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10402,
+  "image": {
+    "sprite": "/img/ew6/armies/10402.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

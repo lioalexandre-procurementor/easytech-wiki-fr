@@ -1,0 +1,98 @@
+{
+  "slug": "elite-light-infantry",
+  "name": "Elite Light Infantry",
+  "nameEn": "Elite Light Infantry",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — XX.",
+  "longDesc": "A troop that maintains high mobility in complex terrains with high shooting accuracy but low HP. It belongs to light infantry.",
+  "stats": {
+    "atk": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "def": [
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "hp": [
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205,
+      205
+    ],
+    "mov": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "armyId": 10401,
+  "image": {
+    "sprite": "/img/ew6/armies/10401.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

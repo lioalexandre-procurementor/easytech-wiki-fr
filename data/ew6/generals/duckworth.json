@@ -1,0 +1,77 @@
+{
+  "slug": "duckworth",
+  "name": "Duckworth",
+  "nameEn": "Duckworth",
+  "nameCanonical": "Duckworth",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "C",
+  "quality": "marshal",
+  "country": "GB",
+  "countryName": "Grande-Bretagne",
+  "shortDesc": "Général navy — Grande-Bretagne.",
+  "longDesc": "Duckworth — commandant de l'ère 1800-1914 dans European War 6. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "Position",
+      "nameEn": "Position",
+      "desc": "Increase critical strike by 0% when using ships to attack",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_33.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 33,
+      "skillLevel": 1,
+      "skillSlug": "position",
+      "slot": 1
+    },
+    {
+      "name": "Escorting",
+      "nameEn": "Escorting",
+      "desc": "Increase 0 ship defence in the nearby 3 grids",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/ew6/skills/skill_34.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 34,
+      "skillLevel": 1,
+      "skillSlug": "escorting",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": null,
+    "cavalry": null,
+    "artillery": null,
+    "navy": {
+      "start": 0,
+      "max": 1
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 450,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu European War 6: 1914"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 2,
+  "militaryRank": 2,
+  "gameId": 1043,
+  "image": {
+    "photo": "/img/ew6/generals/Duckworth.webp",
+    "head": "/img/ew6/heads/Duckworth.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}
