@@ -21,10 +21,22 @@ import type { UnitData, GeneralData, Guide, UpdateEntry } from "./types";
 /** Per-entity ISR freshness window. Tag invalidation cuts through this. */
 const DEFAULT_REVALIDATE_SEC = 60 * 60;
 
+/**
+ * During `next build` (static prerender of 2000+ pages), every prerender
+ * would otherwise do a Redis round-trip to check for overrides — which
+ * blows past Vercel's 45-min build budget on this repo. At build time we
+ * return pure base JSON: any existing override will propagate the next
+ * time the page is revalidated at runtime (either via ISR window or an
+ * explicit revalidateTag from an admin save). Admin saves always call
+ * revalidateTag, so overrides become visible within seconds after build.
+ */
+const IS_BUILD_PHASE = process.env.NEXT_PHASE === "phase-production-build";
+
 type Loader<T> = (slug: string) => T | null;
 
 function wrap<T>(entityType: EntityType, loader: Loader<T>) {
   return async (slug: string): Promise<T | null> => {
+    if (IS_BUILD_PHASE) return loader(slug);
     return unstable_cache(
       async () => {
         const base = loader(slug);
