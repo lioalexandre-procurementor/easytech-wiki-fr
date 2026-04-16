@@ -1,0 +1,114 @@
+{
+  "slug": "antony",
+  "name": "Antony",
+  "nameEn": "Antony",
+  "nameCanonical": "Antony",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Antony — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "骑兵指挥3",
+      "nameEn": "骑兵指挥3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 22,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 1
+    },
+    {
+      "name": "行军3",
+      "nameEn": "行军3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 2
+    },
+    {
+      "name": "冲锋3",
+      "nameEn": "冲锋3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 3
+    },
+    {
+      "name": "突破3",
+      "nameEn": "突破3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 6,
+      "max": 8
+    },
+    "archer": {
+      "start": 4,
+      "max": 6
+    },
+    "navy": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 628,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 17,
+  "militaryRank": 6,
+  "gameId": 1012,
+  "image": {
+    "photo": "/img/gcr/generals/Antony.webp",
+    "head": "/img/gcr/heads/Antony.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

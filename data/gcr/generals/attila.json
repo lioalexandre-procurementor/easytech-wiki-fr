@@ -1,0 +1,114 @@
+{
+  "slug": "attila",
+  "name": "Attila",
+  "nameEn": "Attila",
+  "nameCanonical": "Attila",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "S",
+  "quality": "bronze",
+  "country": "EGY",
+  "countryName": "Égypte",
+  "shortDesc": "Général balanced — Égypte.",
+  "longDesc": "Attila — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "弓兵指挥4",
+      "nameEn": "弓兵指挥4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 1
+    },
+    {
+      "name": "精准4",
+      "nameEn": "精准4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 2
+    },
+    {
+      "name": "优势4",
+      "nameEn": "优势4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 3
+    },
+    {
+      "name": "行军3",
+      "nameEn": "行军3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 6,
+      "max": 9
+    },
+    "archer": {
+      "start": 7,
+      "max": 9
+    },
+    "navy": {
+      "start": 5,
+      "max": 7
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 24,
+  "militaryRank": 8,
+  "gameId": 1062,
+  "image": {
+    "photo": "/img/gcr/generals/Attila.webp",
+    "head": "/img/gcr/heads/Attila.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

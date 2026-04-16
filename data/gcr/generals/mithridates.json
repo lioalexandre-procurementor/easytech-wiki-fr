@@ -1,0 +1,114 @@
+{
+  "slug": "mithridates",
+  "name": "Mithridates",
+  "nameEn": "Mithridates",
+  "nameCanonical": "Mithridates",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "EGY",
+  "countryName": "Égypte",
+  "shortDesc": "Général balanced — Égypte.",
+  "longDesc": "Mithridates — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "优势3",
+      "nameEn": "优势3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 1
+    },
+    {
+      "name": "弓兵指挥2",
+      "nameEn": "弓兵指挥2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "丛林战3",
+      "nameEn": "丛林战3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 3
+    },
+    {
+      "name": "包围3",
+      "nameEn": "包围3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 6
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 6
+    },
+    "archer": {
+      "start": 7,
+      "max": 9
+    },
+    "navy": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 605,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 20,
+  "militaryRank": 6,
+  "gameId": 1039,
+  "image": {
+    "photo": "/img/gcr/generals/Mithridates.webp",
+    "head": "/img/gcr/heads/Mithridates.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

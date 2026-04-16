@@ -1,0 +1,98 @@
+{
+  "slug": "raider",
+  "name": "Raider",
+  "nameEn": "Raider",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "ROM",
+  "countryName": "ROM",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — ROM.",
+  "longDesc": "Raider — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+    ],
+    "def": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "hp": [
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145,
+      145
+    ],
+    "mov": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 202,
+  "image": {
+    "sprite": "/img/gcr/armies/202.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

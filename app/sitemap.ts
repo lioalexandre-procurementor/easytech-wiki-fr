@@ -3,6 +3,13 @@ import fs from "node:fs";
 import path from "node:path";
 import { getAllGeneralSlugs, getAllSlugs as getAllEliteSlugs } from "@/lib/units";
 import { getAllGuideSlugs } from "@/lib/guides";
+import {
+  getAllGeneralSlugs as getAllGcrGeneralSlugs,
+  getAllSlugs as getAllGcrEliteSlugs,
+  getAllSkillSlugs as getAllGcrSkillSlugs,
+  getAllTechSlugs as getAllGcrTechSlugs,
+} from "@/lib/gcr";
+import { getGame } from "@/lib/games";
 import { locales } from "@/src/i18n/config";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
@@ -298,6 +305,110 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
         alternates: alternates(pair),
       });
+    }
+  }
+
+  // ---------------------------------------------------------------------
+  // Great Conqueror: Rome — only emitted when the game is marked
+  // available in lib/games.ts. Keeps crawlers out of the scaffolded routes
+  // until the game launches.
+  // ---------------------------------------------------------------------
+  const gcrGame = getGame("great-conqueror-rome");
+  if (gcrGame?.available) {
+    const gcrStaticRoutes: { pair: LocalePair; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+      { pair: { fr: "/great-conqueror-rome", en: "/great-conqueror-rome", de: "/great-conqueror-rome" }, priority: 0.9, changeFrequency: "weekly" },
+      { pair: { fr: "/great-conqueror-rome/generaux", en: "/great-conqueror-rome/generals", de: "/great-conqueror-rome/generals" }, priority: 0.9, changeFrequency: "weekly" },
+      { pair: { fr: "/great-conqueror-rome/unites-elite", en: "/great-conqueror-rome/elite-units", de: "/great-conqueror-rome/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
+      { pair: { fr: "/great-conqueror-rome/competences", en: "/great-conqueror-rome/skills", de: "/great-conqueror-rome/skills" }, priority: 0.8, changeFrequency: "weekly" },
+      { pair: { fr: "/great-conqueror-rome/technologies", en: "/great-conqueror-rome/technologies", de: "/great-conqueror-rome/technologies" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/great-conqueror-rome/conquete-romaine", en: "/great-conqueror-rome/roman-conquest", de: "/great-conqueror-rome/roman-conquest" }, priority: 0.6, changeFrequency: "monthly" },
+      { pair: { fr: "/great-conqueror-rome/comparateur/generaux", en: "/great-conqueror-rome/comparator/generals", de: "/great-conqueror-rome/comparator/generals" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/great-conqueror-rome/comparateur/unites", en: "/great-conqueror-rome/comparator/units", de: "/great-conqueror-rome/comparator/units" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/great-conqueror-rome/guides", en: "/great-conqueror-rome/guides", de: "/great-conqueror-rome/guides" }, priority: 0.7, changeFrequency: "weekly" },
+      { pair: { fr: "/great-conqueror-rome/mises-a-jour", en: "/great-conqueror-rome/updates", de: "/great-conqueror-rome/updates" }, priority: 0.7, changeFrequency: "weekly" },
+    ];
+    for (const route of gcrStaticRoutes) {
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, route.pair),
+          lastModified: now,
+          changeFrequency: route.changeFrequency,
+          priority: route.priority,
+          alternates: alternates(route.pair),
+        });
+      }
+    }
+
+    // GCR generals
+    for (const slug of getAllGcrGeneralSlugs()) {
+      const pair: LocalePair = {
+        fr: `/great-conqueror-rome/generaux/${slug}`,
+        en: `/great-conqueror-rome/generals/${slug}`,
+        de: `/great-conqueror-rome/generals/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.8,
+          alternates: alternates(pair),
+        });
+      }
+    }
+
+    // GCR elite units
+    for (const slug of getAllGcrEliteSlugs()) {
+      const pair: LocalePair = {
+        fr: `/great-conqueror-rome/unites-elite/${slug}`,
+        en: `/great-conqueror-rome/elite-units/${slug}`,
+        de: `/great-conqueror-rome/elite-units/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.8,
+          alternates: alternates(pair),
+        });
+      }
+    }
+
+    // GCR skills
+    for (const slug of getAllGcrSkillSlugs()) {
+      const pair: LocalePair = {
+        fr: `/great-conqueror-rome/competences/${slug}`,
+        en: `/great-conqueror-rome/skills/${slug}`,
+        de: `/great-conqueror-rome/skills/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.6,
+          alternates: alternates(pair),
+        });
+      }
+    }
+
+    // GCR tech detail pages
+    for (const slug of getAllGcrTechSlugs()) {
+      const pair: LocalePair = {
+        fr: `/great-conqueror-rome/technologies/${slug}`,
+        en: `/great-conqueror-rome/technologies/${slug}`,
+        de: `/great-conqueror-rome/technologies/${slug}`,
+      };
+      for (const locale of locales) {
+        entries.push({
+          url: pathFor(locale, pair),
+          lastModified: now,
+          changeFrequency: "monthly",
+          priority: 0.5,
+          alternates: alternates(pair),
+        });
+      }
     }
   }
 

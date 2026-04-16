@@ -25,7 +25,16 @@ export type EntityType =
   | "guide"
   | "update"
   | "skill"
-  | "technology";
+  | "technology"
+  // Great Conqueror: Rome — separate namespace so overrides keyed on
+  // `gcr-general:agrippa` never collide with a hypothetical WC4 general
+  // sharing the same slug, and the admin can list them as a distinct game.
+  | "gcr-elite-unit"
+  | "gcr-general"
+  | "gcr-guide"
+  | "gcr-update"
+  | "gcr-skill"
+  | "gcr-technology";
 
 export type OverrideRecord = {
   patch: unknown;

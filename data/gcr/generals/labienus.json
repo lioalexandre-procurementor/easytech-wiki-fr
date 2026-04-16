@@ -1,0 +1,100 @@
+{
+  "slug": "labienus",
+  "name": "Labienus",
+  "nameEn": "Labienus",
+  "nameCanonical": "Labienus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Labienus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "步兵指挥3",
+      "nameEn": "步兵指挥3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 15,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 1
+    },
+    {
+      "name": "拦截2",
+      "nameEn": "拦截2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "平原战2",
+      "nameEn": "平原战2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 8
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 7
+    },
+    "archer": {
+      "start": 2,
+      "max": 5
+    },
+    "navy": {
+      "start": 3,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 486,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 15,
+  "militaryRank": 5,
+  "gameId": 1018,
+  "image": {
+    "photo": "/img/gcr/generals/Labienus.webp",
+    "head": "/img/gcr/heads/Labienus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

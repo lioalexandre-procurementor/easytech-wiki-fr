@@ -1,0 +1,114 @@
+{
+  "slug": "sertorius",
+  "name": "Sertorius",
+  "nameEn": "Sertorius",
+  "nameCanonical": "Sertorius",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Sertorius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "攻城1",
+      "nameEn": "攻城1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "反击2",
+      "nameEn": "反击2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "阵型3",
+      "nameEn": "阵型3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 3
+    },
+    {
+      "name": "拦截3",
+      "nameEn": "拦截3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 8
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 7
+    },
+    "archer": {
+      "start": 4,
+      "max": 6
+    },
+    "navy": {
+      "start": 3,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 488,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 17,
+  "militaryRank": 5,
+  "gameId": 1009,
+  "image": {
+    "photo": "/img/gcr/generals/Sertorius.webp",
+    "head": "/img/gcr/heads/Sertorius.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

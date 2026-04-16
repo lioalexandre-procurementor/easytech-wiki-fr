@@ -1,0 +1,100 @@
+{
+  "slug": "tigranes",
+  "name": "Tigranes",
+  "nameEn": "Tigranes",
+  "nameCanonical": "Tigranes",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "EGY",
+  "countryName": "Égypte",
+  "shortDesc": "Général balanced — Égypte.",
+  "longDesc": "Tigranes — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "神射2",
+      "nameEn": "神射2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_25.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 25,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "精准1",
+      "nameEn": "精准1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 2
+    },
+    {
+      "name": "行军1",
+      "nameEn": "行军1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 7
+    },
+    "archer": {
+      "start": 4,
+      "max": 7
+    },
+    "navy": {
+      "start": 2,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 416,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 12,
+  "militaryRank": 5,
+  "gameId": 1040,
+  "image": {
+    "photo": "/img/gcr/generals/Tigranes.webp",
+    "head": "/img/gcr/heads/Tigranes.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

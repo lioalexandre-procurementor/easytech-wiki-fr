@@ -1,0 +1,98 @@
+{
+  "slug": "terracotta-warrior",
+  "name": "Terracotta Warrior",
+  "nameEn": "Terracotta Warrior",
+  "category": "archer",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité archer — XX.",
+  "longDesc": "Terracotta Warrior — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "def": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "hp": [
+      260,
+      260,
+      260,
+      260,
+      260,
+      260,
+      260,
+      260,
+      260,
+      260,
+      260,
+      260
+    ],
+    "mov": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 316,
+  "image": {
+    "sprite": "/img/gcr/armies/316.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

@@ -1,0 +1,114 @@
+{
+  "slug": "caesar",
+  "name": "Caesar",
+  "nameEn": "Caesar",
+  "nameCanonical": "Caesar",
+  "faction": "standard",
+  "category": "navy",
+  "rank": "S",
+  "quality": "bronze",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général navy — Rome.",
+  "longDesc": "Caesar — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "优势4",
+      "nameEn": "优势4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_24.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 24,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 1
+    },
+    {
+      "name": "包围4",
+      "nameEn": "包围4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 2
+    },
+    {
+      "name": "平原战3",
+      "nameEn": "平原战3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_5.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 5,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 3
+    },
+    {
+      "name": "弓兵指挥3",
+      "nameEn": "弓兵指挥3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 5,
+      "max": 8
+    },
+    "archer": {
+      "start": 7,
+      "max": 9
+    },
+    "navy": {
+      "start": 5,
+      "max": 7
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 20,
+  "militaryRank": 8,
+  "gameId": 1001,
+  "image": {
+    "photo": "/img/gcr/generals/Caesar.webp",
+    "head": "/img/gcr/heads/Caesar.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

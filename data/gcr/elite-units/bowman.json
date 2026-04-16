@@ -1,0 +1,98 @@
+{
+  "slug": "bowman",
+  "name": "Bowman",
+  "nameEn": "Bowman",
+  "category": "archer",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "A",
+  "obtainability": "free",
+  "shortDesc": "Unité archer — XX.",
+  "longDesc": "Bowman — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62
+    ],
+    "def": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "hp": [
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120,
+      120
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 303,
+  "image": {
+    "sprite": "/img/gcr/armies/303.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "minotaur",
+  "name": "Minotaur",
+  "nameEn": "Minotaur",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "B",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — XX.",
+  "longDesc": "Minotaur — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104,
+      104
+    ],
+    "def": [
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19,
+      19
+    ],
+    "hp": [
+      345,
+      345,
+      345,
+      345,
+      345,
+      345,
+      345,
+      345,
+      345,
+      345,
+      345,
+      345
+    ],
+    "mov": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 124,
+  "image": {
+    "sprite": "/img/gcr/armies/124.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

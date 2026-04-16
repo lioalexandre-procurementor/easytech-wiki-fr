@@ -131,6 +131,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
                 nameEn: g.nameEn,
                 rank: g.rank ?? null,
                 country: g.country ?? null,
+                portrait: g.image?.head ?? null,
               }))}
               placeholderTop5={BEST_GENERAL_PLACEHOLDER}
             />

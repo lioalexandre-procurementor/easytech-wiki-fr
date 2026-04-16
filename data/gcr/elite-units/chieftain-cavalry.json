@@ -1,0 +1,98 @@
+{
+  "slug": "chieftain-cavalry",
+  "name": "Chieftain Cavalry",
+  "nameEn": "Chieftain Cavalry",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "A",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — XX.",
+  "longDesc": "Chieftain Cavalry — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66,
+      66
+    ],
+    "def": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "hp": [
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 204,
+  "image": {
+    "sprite": "/img/gcr/armies/204.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

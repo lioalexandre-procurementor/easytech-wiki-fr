@@ -1,0 +1,98 @@
+{
+  "slug": "auxiliary-infantry",
+  "name": "Auxiliary Infantry",
+  "nameEn": "Auxiliary Infantry",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — XX.",
+  "longDesc": "Auxiliary Infantry — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      40
+    ],
+    "def": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hp": [
+      124,
+      124,
+      124,
+      124,
+      124,
+      124,
+      124,
+      124,
+      124,
+      124,
+      124,
+      124
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 101,
+  "image": {
+    "sprite": "/img/gcr/armies/101.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

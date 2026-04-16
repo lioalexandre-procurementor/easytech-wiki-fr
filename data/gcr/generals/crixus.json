@@ -1,0 +1,86 @@
+{
+  "slug": "crixus",
+  "name": "Crixus",
+  "nameEn": "Crixus",
+  "nameCanonical": "Crixus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "gold",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Crixus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "冲锋2",
+      "nameEn": "冲锋2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "破坏2",
+      "nameEn": "破坏2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 5
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 7
+    },
+    "archer": {
+      "start": 2,
+      "max": 4
+    },
+    "navy": {
+      "start": 1,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 272,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 6,
+  "militaryRank": 4,
+  "gameId": 1029,
+  "image": {
+    "photo": "/img/gcr/generals/Crixus.webp",
+    "head": "/img/gcr/heads/Crixus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

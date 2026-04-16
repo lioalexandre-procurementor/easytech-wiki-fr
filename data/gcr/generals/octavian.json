@@ -1,0 +1,114 @@
+{
+  "slug": "octavian",
+  "name": "Octavian",
+  "nameEn": "Octavian",
+  "nameCanonical": "Octavian",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Octavian — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "精准2",
+      "nameEn": "精准2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_26.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 26,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "反击3",
+      "nameEn": "反击3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 2
+    },
+    {
+      "name": "弓兵指挥2",
+      "nameEn": "弓兵指挥2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_27.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 27,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 3
+    },
+    {
+      "name": "包围4",
+      "nameEn": "包围4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 29,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 7
+    },
+    "archer": {
+      "start": 5,
+      "max": 8
+    },
+    "navy": {
+      "start": 4,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 645,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 18,
+  "militaryRank": 6,
+  "gameId": 1013,
+  "image": {
+    "photo": "/img/gcr/generals/Octavian.webp",
+    "head": "/img/gcr/heads/Octavian.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

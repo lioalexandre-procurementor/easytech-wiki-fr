@@ -4,15 +4,30 @@ import { listOverrides } from "@/lib/overrides";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-const ENTITY_TYPES: Array<{
-  slug: string;
-  label: string;
-  description: string;
-}> = [
-  { slug: "elite-unit", label: "Elite units", description: "All 50+ unit cards under /unites-elite — Delta Force, Bismarck, everything." },
-  { slug: "general", label: "Generals", description: "All 104 generals, plus their trained (/entraine) and premium-training (/entrainement-premium) variants." },
-  { slug: "guide", label: "Guides", description: "The /guides hub content — April 2026 patch, tier lists, beginner guide, etc." },
-  { slug: "update", label: "Update entries", description: "The /mises-a-jour patch log." },
+type EntityTypeGroup = {
+  heading: string;
+  items: Array<{ slug: string; label: string; description: string }>;
+};
+
+const ENTITY_GROUPS: EntityTypeGroup[] = [
+  {
+    heading: "World Conqueror 4",
+    items: [
+      { slug: "elite-unit", label: "Elite units", description: "All 50+ unit cards under /unites-elite — Delta Force, Bismarck, everything." },
+      { slug: "general", label: "Generals", description: "All 104 generals, plus their trained (/entraine) and premium-training (/entrainement-premium) variants." },
+      { slug: "guide", label: "Guides", description: "The /guides hub content — April 2026 patch, tier lists, beginner guide, etc." },
+      { slug: "update", label: "Update entries", description: "The /mises-a-jour patch log." },
+    ],
+  },
+  {
+    heading: "Great Conqueror: Rome",
+    items: [
+      { slug: "gcr-general", label: "GCR — Generals", description: "Ancient-era generals (Agrippa, Scipio, Vercingetorix…) under /great-conqueror-rome/generaux." },
+      { slug: "gcr-elite-unit", label: "GCR — Elite units", description: "Antiquity elite units (Legionary, Praetorian…) under /great-conqueror-rome/unites-elite." },
+      { slug: "gcr-guide", label: "GCR — Guides", description: "Great Conqueror: Rome guides hub (empty until editorial content lands)." },
+      { slug: "gcr-update", label: "GCR — Update entries", description: "GCR patch log entries — /great-conqueror-rome/mises-a-jour." },
+    ],
+  },
 ];
 
 function ts(n?: number): string {
@@ -32,28 +47,44 @@ export default async function ContentHub() {
         entity reverts to its base file.
       </p>
 
-      <div style={{ display: "grid", gap: 12, marginBottom: 28 }}>
-        {ENTITY_TYPES.map((t) => (
-          <Link
-            key={t.slug}
-            href={`/admin/content/${t.slug}`}
+      {ENTITY_GROUPS.map((group) => (
+        <div key={group.heading} style={{ marginBottom: 22 }}>
+          <h3
             style={{
-              display: "block",
-              padding: "14px 18px",
-              background: "#131924",
-              border: "1px solid #2a3344",
-              borderRadius: 8,
-              color: "#e7ecf2",
-              textDecoration: "none",
+              margin: "0 0 8px",
+              fontSize: 11,
+              letterSpacing: 2,
+              textTransform: "uppercase",
+              color: "#9aa5b4",
+              fontWeight: 700,
             }}
           >
-            <div style={{ color: "#d4a44a", fontSize: 15, fontWeight: 800, marginBottom: 2 }}>
-              {t.label} →
-            </div>
-            <div style={{ color: "#9aa5b4", fontSize: 12 }}>{t.description}</div>
-          </Link>
-        ))}
-      </div>
+            {group.heading}
+          </h3>
+          <div style={{ display: "grid", gap: 12 }}>
+            {group.items.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/admin/content/${t.slug}`}
+                style={{
+                  display: "block",
+                  padding: "14px 18px",
+                  background: "#131924",
+                  border: "1px solid #2a3344",
+                  borderRadius: 8,
+                  color: "#e7ecf2",
+                  textDecoration: "none",
+                }}
+              >
+                <div style={{ color: "#d4a44a", fontSize: 15, fontWeight: 800, marginBottom: 2 }}>
+                  {t.label} →
+                </div>
+                <div style={{ color: "#9aa5b4", fontSize: 12 }}>{t.description}</div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))}
 
       <h3 style={{ margin: "0 0 10px", fontSize: 14, fontWeight: 700, textTransform: "uppercase", letterSpacing: 2, color: "#9aa5b4" }}>
         Recent overrides

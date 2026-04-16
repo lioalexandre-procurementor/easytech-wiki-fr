@@ -1,0 +1,98 @@
+{
+  "slug": "griffin",
+  "name": "Griffin",
+  "nameEn": "Griffin",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "A",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — XX.",
+  "longDesc": "Griffin — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96,
+      96
+    ],
+    "def": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "hp": [
+      290,
+      290,
+      290,
+      290,
+      290,
+      290,
+      290,
+      290,
+      290,
+      290,
+      290,
+      290
+    ],
+    "mov": [
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21,
+      21
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 222,
+  "image": {
+    "sprite": "/img/gcr/armies/222.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

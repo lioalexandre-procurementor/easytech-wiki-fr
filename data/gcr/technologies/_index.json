@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "totalTechs": 14,
+  "byCategory": {
+    "infantry": 14
+  },
+  "techs": [
+    {
+      "slug": "1",
+      "nameEn": "步兵生命1",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 0
+    },
+    {
+      "slug": "1",
+      "nameEn": "步兵攻击1",
+      "category": "infantry",
+      "maxLevel": 1,
+      "gameTypeId": 1
+    },
+    {
+      "slug": "1",
+      "nameEn": "步兵防御1",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 2
+    },
+    {
+      "slug": "1",
+      "nameEn": "步兵行动1",
+      "category": "infantry",
+      "maxLevel": 3,
+      "gameTypeId": 3
+    },
+    {
+      "slug": "1",
+      "nameEn": "骑兵生命1",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 4
+    },
+    {
+      "slug": "1",
+      "nameEn": "骑兵攻击1",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 5
+    },
+    {
+      "slug": "1",
+      "nameEn": "骑兵防御1",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 6
+    },
+    {
+      "slug": "1",
+      "nameEn": "骑兵行动1",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 7
+    },
+    {
+      "slug": "1",
+      "nameEn": "弓兵生命1",
+      "category": "infantry",
+      "maxLevel": 3,
+      "gameTypeId": 8
+    },
+    {
+      "slug": "1",
+      "nameEn": "弓兵攻击1",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 9
+    },
+    {
+      "slug": "1",
+      "nameEn": "弓兵防御1",
+      "category": "infantry",
+      "maxLevel": 2,
+      "gameTypeId": 10
+    },
+    {
+      "slug": "1",
+      "nameEn": "弓兵行动1",
+      "category": "infantry",
+      "maxLevel": 1,
+      "gameTypeId": 11
+    },
+    {
+      "slug": "1",
+      "nameEn": "海军防御1",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 12
+    },
+    {
+      "slug": "1",
+      "nameEn": "海军行动1",
+      "category": "infantry",
+      "maxLevel": 6,
+      "gameTypeId": 13
+    }
+  ]
+}

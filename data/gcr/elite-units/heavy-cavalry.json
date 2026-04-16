@@ -1,0 +1,98 @@
+{
+  "slug": "heavy-cavalry",
+  "name": "Heavy Cavalry",
+  "nameEn": "Heavy Cavalry",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — XX.",
+  "longDesc": "Heavy Cavalry — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70,
+      70
+    ],
+    "def": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "hp": [
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195,
+      195
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 205,
+  "image": {
+    "sprite": "/img/gcr/armies/205.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

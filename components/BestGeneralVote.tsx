@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
@@ -274,11 +275,13 @@ export default function BestGeneralVote({
       </div>
 
       {loading ? (
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 gap-3 items-end">
           {[0, 1, 2].map((i) => (
             <div
               key={i}
-              className="h-28 rounded bg-border/30 animate-pulse"
+              className={`${
+                i === 1 ? "h-44" : i === 0 ? "h-40" : "h-36"
+              } rounded bg-border/30 animate-pulse`}
             />
           ))}
         </div>
@@ -290,24 +293,63 @@ export default function BestGeneralVote({
               // Podium visual order: silver - gold - bronze (2,1,3)
               const entry = ranked[visualIdx];
               if (!entry) {
-                return <div key={visualIdx} className="h-24" />;
+                return <div key={visualIdx} className="h-40" />;
               }
-              const rank = visualIdx + 1;
               const medal = ["🥇", "🥈", "🥉"][visualIdx];
-              const height = visualIdx === 0 ? "h-32" : visualIdx === 1 ? "h-28" : "h-24";
+              const height =
+                visualIdx === 0 ? "h-44" : visualIdx === 1 ? "h-40" : "h-36";
+              const imgSize =
+                visualIdx === 0 ? "w-20 h-20" : "w-16 h-16";
+              const imgSizeAttr = visualIdx === 0 ? "80px" : "64px";
+              const ringStyle =
+                visualIdx === 0
+                  ? {
+                      boxShadow:
+                        "0 0 0 2px rgba(212,164,74,0.9), 0 0 18px rgba(212,164,74,0.35)",
+                    }
+                  : visualIdx === 1
+                  ? { boxShadow: "0 0 0 2px rgba(203,213,225,0.7)" }
+                  : { boxShadow: "0 0 0 2px rgba(180,120,60,0.7)" };
+              const displayLabel = displayName(entry.general, locale);
               return (
                 <div
                   key={entry.slug}
-                  className={`${height} rounded-lg border border-border bg-bg3 p-3 flex flex-col items-center justify-between text-center`}
+                  className={`${height} rounded-lg border border-border bg-bg3 px-2 py-3 flex flex-col items-center justify-between text-center`}
                   style={
                     visualIdx === 0
-                      ? { borderColor: "rgba(212,164,74,0.6)", background: "rgba(212,164,74,0.1)" }
+                      ? {
+                          borderColor: "rgba(212,164,74,0.6)",
+                          background: "rgba(212,164,74,0.1)",
+                        }
                       : undefined
                   }
                 >
-                  <div className="text-2xl leading-none">{medal}</div>
-                  <div className="text-gold2 font-bold text-xs leading-tight">
-                    {displayName(entry.general, locale)}
+                  <div
+                    className={`relative ${imgSize} rounded-full overflow-hidden bg-bg2`}
+                    style={ringStyle}
+                  >
+                    {entry.general.portrait ? (
+                      <Image
+                        src={entry.general.portrait}
+                        alt={displayLabel}
+                        fill
+                        sizes={imgSizeAttr}
+                        className="object-cover"
+                      />
+                    ) : (
+                      <div className="w-full h-full grid place-items-center text-2xl">
+                        {medal}
+                      </div>
+                    )}
+                    <span
+                      className="absolute -bottom-1 -right-1 text-lg leading-none drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]"
+                      aria-hidden
+                    >
+                      {medal}
+                    </span>
+                  </div>
+                  <div className="text-gold2 font-bold text-xs leading-tight line-clamp-2 w-full">
+                    {displayLabel}
                   </div>
                   <div className="text-muted text-[10px] tabular-nums">
                     {showPlaceholder
@@ -322,24 +364,36 @@ export default function BestGeneralVote({
           {/* Ranks 4-5 */}
           {ranked.length > 3 && (
             <ul className="space-y-1.5 mb-3">
-              {ranked.slice(3, 5).map((entry, i) => (
-                <li
-                  key={entry.slug}
-                  className="flex items-center gap-2 text-sm border border-border rounded px-3 py-1.5 bg-bg3"
-                >
-                  <span className="text-muted text-xs font-bold w-6 text-center tabular-nums">
-                    #{i + 4}
-                  </span>
-                  <span className="flex-1 text-ink truncate">
-                    {displayName(entry.general, locale)}
-                  </span>
-                  <span className="text-muted text-[10px] tabular-nums">
-                    {showPlaceholder
-                      ? t("placeholderBadge")
-                      : t("voteCount", { count: entry.votes })}
-                  </span>
-                </li>
-              ))}
+              {ranked.slice(3, 5).map((entry, i) => {
+                const label = displayName(entry.general, locale);
+                return (
+                  <li
+                    key={entry.slug}
+                    className="flex items-center gap-2.5 text-sm border border-border rounded px-3 py-1.5 bg-bg3"
+                  >
+                    <span className="text-muted text-xs font-bold w-6 text-center tabular-nums shrink-0">
+                      #{i + 4}
+                    </span>
+                    <div className="relative w-8 h-8 rounded-full overflow-hidden bg-bg2 border border-gold/30 shrink-0">
+                      {entry.general.portrait ? (
+                        <Image
+                          src={entry.general.portrait}
+                          alt={label}
+                          fill
+                          sizes="32px"
+                          className="object-cover"
+                        />
+                      ) : null}
+                    </div>
+                    <span className="flex-1 text-ink truncate">{label}</span>
+                    <span className="text-muted text-[10px] tabular-nums">
+                      {showPlaceholder
+                        ? t("placeholderBadge")
+                        : t("voteCount", { count: entry.votes })}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           )}
 

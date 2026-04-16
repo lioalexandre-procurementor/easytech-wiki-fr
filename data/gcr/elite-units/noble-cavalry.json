@@ -1,0 +1,98 @@
+{
+  "slug": "noble-cavalry",
+  "name": "Noble Cavalry",
+  "nameEn": "Noble Cavalry",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "A",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — XX.",
+  "longDesc": "Noble Cavalry — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62,
+      62
+    ],
+    "def": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "hp": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 212,
+  "image": {
+    "sprite": "/img/gcr/armies/212.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

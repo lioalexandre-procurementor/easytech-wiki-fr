@@ -1,0 +1,98 @@
+{
+  "slug": "war-elephant",
+  "name": "War Elephant",
+  "nameEn": "War Elephant",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "HUN",
+  "countryName": "HUN",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — HUN.",
+  "longDesc": "War Elephant — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+    ],
+    "def": [
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14,
+      14
+    ],
+    "hp": [
+      270,
+      270,
+      270,
+      270,
+      270,
+      270,
+      270,
+      270,
+      270,
+      270,
+      270,
+      270
+    ],
+    "mov": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 208,
+  "image": {
+    "sprite": "/img/gcr/armies/208.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

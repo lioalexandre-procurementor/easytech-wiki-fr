@@ -1,0 +1,98 @@
+{
+  "slug": "axeman",
+  "name": "Axeman",
+  "nameEn": "Axeman",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "B",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — XX.",
+  "longDesc": "Axeman — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52,
+      52
+    ],
+    "def": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hp": [
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155,
+      155
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 104,
+  "image": {
+    "sprite": "/img/gcr/armies/104.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

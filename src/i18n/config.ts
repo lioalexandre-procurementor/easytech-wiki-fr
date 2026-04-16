@@ -160,6 +160,100 @@ export const pathnames = {
     en: "/world-conqueror-4/guides/[slug]",
     de: "/world-conqueror-4/guides/[slug]",
   },
+
+  // ---------------------------------------------------------------------
+  // Great Conqueror: Rome (GCR)
+  // URL segments share the WC4 FR convention — French keeps the historical
+  // French slugs (generaux / competences / unites-elite / mises-a-jour /
+  // comparateur / conquete-romaine = the barbarian faction hub), EN and DE
+  // mirror English slugs. Content is localized; URL structure follows the
+  // same v1 trade-off as WC4.
+  // ---------------------------------------------------------------------
+  "/great-conqueror-rome": {
+    fr: "/great-conqueror-rome",
+    en: "/great-conqueror-rome",
+    de: "/great-conqueror-rome",
+  },
+  "/great-conqueror-rome/generaux": {
+    fr: "/great-conqueror-rome/generaux",
+    en: "/great-conqueror-rome/generals",
+    de: "/great-conqueror-rome/generals",
+  },
+  "/great-conqueror-rome/generaux/[slug]": {
+    fr: "/great-conqueror-rome/generaux/[slug]",
+    en: "/great-conqueror-rome/generals/[slug]",
+    de: "/great-conqueror-rome/generals/[slug]",
+  },
+  "/great-conqueror-rome/competences": {
+    fr: "/great-conqueror-rome/competences",
+    en: "/great-conqueror-rome/skills",
+    de: "/great-conqueror-rome/skills",
+  },
+  "/great-conqueror-rome/competences/[slug]": {
+    fr: "/great-conqueror-rome/competences/[slug]",
+    en: "/great-conqueror-rome/skills/[slug]",
+    de: "/great-conqueror-rome/skills/[slug]",
+  },
+  "/great-conqueror-rome/unites-elite": {
+    fr: "/great-conqueror-rome/unites-elite",
+    en: "/great-conqueror-rome/elite-units",
+    de: "/great-conqueror-rome/elite-units",
+  },
+  "/great-conqueror-rome/unites-elite/[slug]": {
+    fr: "/great-conqueror-rome/unites-elite/[slug]",
+    en: "/great-conqueror-rome/elite-units/[slug]",
+    de: "/great-conqueror-rome/elite-units/[slug]",
+  },
+  "/great-conqueror-rome/technologies": {
+    fr: "/great-conqueror-rome/technologies",
+    en: "/great-conqueror-rome/technologies",
+    de: "/great-conqueror-rome/technologies",
+  },
+  "/great-conqueror-rome/technologies/[slug]": {
+    fr: "/great-conqueror-rome/technologies/[slug]",
+    en: "/great-conqueror-rome/technologies/[slug]",
+    de: "/great-conqueror-rome/technologies/[slug]",
+  },
+  "/great-conqueror-rome/conquete-romaine": {
+    fr: "/great-conqueror-rome/conquete-romaine",
+    en: "/great-conqueror-rome/roman-conquest",
+    de: "/great-conqueror-rome/roman-conquest",
+  },
+  "/great-conqueror-rome/comparateur/generaux": {
+    fr: "/great-conqueror-rome/comparateur/generaux",
+    en: "/great-conqueror-rome/comparator/generals",
+    de: "/great-conqueror-rome/comparator/generals",
+  },
+  "/great-conqueror-rome/comparateur/unites": {
+    fr: "/great-conqueror-rome/comparateur/unites",
+    en: "/great-conqueror-rome/comparator/units",
+    de: "/great-conqueror-rome/comparator/units",
+  },
+  "/great-conqueror-rome/comparateur/unites/[matchup]": {
+    fr: "/great-conqueror-rome/comparateur/unites/[matchup]",
+    en: "/great-conqueror-rome/comparator/units/[matchup]",
+    de: "/great-conqueror-rome/comparator/units/[matchup]",
+  },
+  "/great-conqueror-rome/guides": {
+    fr: "/great-conqueror-rome/guides",
+    en: "/great-conqueror-rome/guides",
+    de: "/great-conqueror-rome/guides",
+  },
+  "/great-conqueror-rome/guides/[slug]": {
+    fr: "/great-conqueror-rome/guides/[slug]",
+    en: "/great-conqueror-rome/guides/[slug]",
+    de: "/great-conqueror-rome/guides/[slug]",
+  },
+  "/great-conqueror-rome/mises-a-jour": {
+    fr: "/great-conqueror-rome/mises-a-jour",
+    en: "/great-conqueror-rome/updates",
+    de: "/great-conqueror-rome/updates",
+  },
+  "/great-conqueror-rome/mises-a-jour/[slug]": {
+    fr: "/great-conqueror-rome/mises-a-jour/[slug]",
+    en: "/great-conqueror-rome/updates/[slug]",
+    de: "/great-conqueror-rome/updates/[slug]",
+  },
 } satisfies Pathnames<typeof locales>;
 
 export const localePrefix = "always" as const;

@@ -1,0 +1,98 @@
+{
+  "slug": "light-infantry",
+  "name": "Light Infantry",
+  "nameEn": "Light Infantry",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "B",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — XX.",
+  "longDesc": "Light Infantry — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48,
+      48
+    ],
+    "def": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "hp": [
+      143,
+      143,
+      143,
+      143,
+      143,
+      143,
+      143,
+      143,
+      143,
+      143,
+      143,
+      143
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 103,
+  "image": {
+    "sprite": "/img/gcr/armies/103.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

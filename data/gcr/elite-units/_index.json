@@ -1,0 +1,713 @@
+[
+  {
+    "slug": "anubis",
+    "name": "Anubis",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 125
+  },
+  {
+    "slug": "anubis",
+    "name": "Anubis",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 126
+  },
+  {
+    "slug": "anubis",
+    "name": "Anubis",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 127
+  },
+  {
+    "slug": "anubis",
+    "name": "Anubis",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 128
+  },
+  {
+    "slug": "anubis",
+    "name": "Anubis",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 129
+  },
+  {
+    "slug": "bowman",
+    "name": "Bowman",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 303
+  },
+  {
+    "slug": "chieftain-cavalry",
+    "name": "Chieftain Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 204
+  },
+  {
+    "slug": "cyclops",
+    "name": "Cyclops",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 317
+  },
+  {
+    "slug": "cyclops",
+    "name": "Cyclops",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 318
+  },
+  {
+    "slug": "cyclops",
+    "name": "Cyclops",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 319
+  },
+  {
+    "slug": "cyclops",
+    "name": "Cyclops",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 320
+  },
+  {
+    "slug": "cyclops",
+    "name": "Cyclops",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 321
+  },
+  {
+    "slug": "elite-pirate",
+    "name": "Elite Pirate",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 113
+  },
+  {
+    "slug": "gallic-swordsman",
+    "name": "Gallic Swordsman",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 106
+  },
+  {
+    "slug": "griffin",
+    "name": "Griffin",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 218
+  },
+  {
+    "slug": "griffin",
+    "name": "Griffin",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 219
+  },
+  {
+    "slug": "griffin",
+    "name": "Griffin",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 220
+  },
+  {
+    "slug": "griffin",
+    "name": "Griffin",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 221
+  },
+  {
+    "slug": "griffin",
+    "name": "Griffin",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 222
+  },
+  {
+    "slug": "light-cavalry",
+    "name": "Light Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 203
+  },
+  {
+    "slug": "noble-cavalry",
+    "name": "Noble Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 212
+  },
+  {
+    "slug": "orc-hammerer",
+    "name": "Orc Hammerer",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 130
+  },
+  {
+    "slug": "orc-spearwielder",
+    "name": "Orc Spearwielder",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 322
+  },
+  {
+    "slug": "swordsman",
+    "name": "Swordsman",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "A",
+    "armyId": 105
+  },
+  {
+    "slug": "syrian-archer",
+    "name": "Syrian Archer",
+    "category": "archer",
+    "faction": "standard",
+    "country": "EGY",
+    "tier": "A",
+    "armyId": 304
+  },
+  {
+    "slug": "axeman",
+    "name": "Axeman",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 104
+  },
+  {
+    "slug": "light-infantry",
+    "name": "Light Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 103
+  },
+  {
+    "slug": "minotaur",
+    "name": "Minotaur",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 120
+  },
+  {
+    "slug": "minotaur",
+    "name": "Minotaur",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 121
+  },
+  {
+    "slug": "minotaur",
+    "name": "Minotaur",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 122
+  },
+  {
+    "slug": "minotaur",
+    "name": "Minotaur",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 123
+  },
+  {
+    "slug": "minotaur",
+    "name": "Minotaur",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "B",
+    "armyId": 124
+  },
+  {
+    "slug": "auxiliary-infantry",
+    "name": "Auxiliary Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 101
+  },
+  {
+    "slug": "celtic-slinger",
+    "name": "Celtic Slinger",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 302
+  },
+  {
+    "slug": "gladiator",
+    "name": "Gladiator",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "DAC",
+    "tier": "C",
+    "armyId": 102
+  },
+  {
+    "slug": "goblin",
+    "name": "Goblin",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 115
+  },
+  {
+    "slug": "goblin",
+    "name": "Goblin",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 116
+  },
+  {
+    "slug": "goblin",
+    "name": "Goblin",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 117
+  },
+  {
+    "slug": "goblin",
+    "name": "Goblin",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 118
+  },
+  {
+    "slug": "goblin",
+    "name": "Goblin",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 119
+  },
+  {
+    "slug": "hunter",
+    "name": "Hunter",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 311
+  },
+  {
+    "slug": "mammoth",
+    "name": "Mammoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 213
+  },
+  {
+    "slug": "mammoth",
+    "name": "Mammoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 214
+  },
+  {
+    "slug": "mammoth",
+    "name": "Mammoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 215
+  },
+  {
+    "slug": "mammoth",
+    "name": "Mammoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 216
+  },
+  {
+    "slug": "mammoth",
+    "name": "Mammoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 217
+  },
+  {
+    "slug": "pillager",
+    "name": "Pillager",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 210
+  },
+  {
+    "slug": "pirate",
+    "name": "Pirate",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 112
+  },
+  {
+    "slug": "raider",
+    "name": "Raider",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "ROM",
+    "tier": "C",
+    "armyId": 202
+  },
+  {
+    "slug": "scout",
+    "name": "Scout",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 201
+  },
+  {
+    "slug": "slave-archer",
+    "name": "Slave Archer",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 310
+  },
+  {
+    "slug": "slinger",
+    "name": "Slinger",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 301
+  },
+  {
+    "slug": "terracotta-warrior",
+    "name": "Terracotta Warrior",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 312
+  },
+  {
+    "slug": "terracotta-warrior",
+    "name": "Terracotta Warrior",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 313
+  },
+  {
+    "slug": "terracotta-warrior",
+    "name": "Terracotta Warrior",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 314
+  },
+  {
+    "slug": "terracotta-warrior",
+    "name": "Terracotta Warrior",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 315
+  },
+  {
+    "slug": "terracotta-warrior",
+    "name": "Terracotta Warrior",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 316
+  },
+  {
+    "slug": "tribal-cavalry",
+    "name": "Tribal Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 211
+  },
+  {
+    "slug": "warrior",
+    "name": "Warrior",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "C",
+    "armyId": 114
+  },
+  {
+    "slug": "behemoth",
+    "name": "Behemoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 223
+  },
+  {
+    "slug": "behemoth",
+    "name": "Behemoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 224
+  },
+  {
+    "slug": "behemoth",
+    "name": "Behemoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 225
+  },
+  {
+    "slug": "behemoth",
+    "name": "Behemoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 226
+  },
+  {
+    "slug": "behemoth",
+    "name": "Behemoth",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 227
+  },
+  {
+    "slug": "cataphract",
+    "name": "Cataphract",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 206
+  },
+  {
+    "slug": "crossbow-man",
+    "name": "Crossbow Man",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 309
+  },
+  {
+    "slug": "elite-archer",
+    "name": "Elite Archer",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 306
+  },
+  {
+    "slug": "elite-guard",
+    "name": "Elite Guard",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 111
+  },
+  {
+    "slug": "heavy-cavalry",
+    "name": "Heavy Cavalry",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 205
+  },
+  {
+    "slug": "heavy-infantry",
+    "name": "Heavy Infantry",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 107
+  },
+  {
+    "slug": "horse-archer",
+    "name": "Horse Archer",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 308
+  },
+  {
+    "slug": "imperial-guard",
+    "name": "Imperial Guard",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 207
+  },
+  {
+    "slug": "javelineer",
+    "name": "Javelineer",
+    "category": "archer",
+    "faction": "standard",
+    "country": "ROM",
+    "tier": "S",
+    "armyId": 307
+  },
+  {
+    "slug": "legionary",
+    "name": "Legionary",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "ROM",
+    "tier": "S",
+    "armyId": 109
+  },
+  {
+    "slug": "marksman",
+    "name": "Marksman",
+    "category": "archer",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 305
+  },
+  {
+    "slug": "royal-guard",
+    "name": "Royal Guard",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 108
+  },
+  {
+    "slug": "war-chariot",
+    "name": "War Chariot",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 209
+  },
+  {
+    "slug": "war-elephant",
+    "name": "War Elephant",
+    "category": "cavalry",
+    "faction": "standard",
+    "country": "HUN",
+    "tier": "S",
+    "armyId": 208
+  },
+  {
+    "slug": "woad-raider",
+    "name": "Woad Raider",
+    "category": "infantry",
+    "faction": "standard",
+    "country": "XX",
+    "tier": "S",
+    "armyId": 110
+  }
+]

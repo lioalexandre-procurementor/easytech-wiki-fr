@@ -1,0 +1,100 @@
+{
+  "slug": "lucullus",
+  "name": "Lucullus",
+  "nameEn": "Lucullus",
+  "nameCanonical": "Lucullus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Lucullus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "伏击2",
+      "nameEn": "伏击2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "阵型2",
+      "nameEn": "阵型2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_12.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 12,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "水手1",
+      "nameEn": "水手1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 30,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 5
+    },
+    "archer": {
+      "start": 2,
+      "max": 4
+    },
+    "navy": {
+      "start": 3,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 394,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 11,
+  "militaryRank": 5,
+  "gameId": 1010,
+  "image": {
+    "photo": "/img/gcr/generals/Lucullus.webp",
+    "head": "/img/gcr/heads/Lucullus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

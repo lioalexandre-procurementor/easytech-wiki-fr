@@ -1,0 +1,86 @@
+{
+  "slug": "hasdrubal",
+  "name": "Hasdrubal",
+  "nameEn": "Hasdrubal",
+  "nameCanonical": "Hasdrubal",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "gold",
+  "country": "GRE",
+  "countryName": "Grèce",
+  "shortDesc": "Général balanced — Grèce.",
+  "longDesc": "Hasdrubal — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "冲锋1",
+      "nameEn": "冲锋1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "突破1",
+      "nameEn": "突破1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 6
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 7
+    },
+    "archer": {
+      "start": 2,
+      "max": 4
+    },
+    "navy": {
+      "start": 1,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 251,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 8,
+  "militaryRank": 4,
+  "gameId": 1028,
+  "image": {
+    "photo": "/img/gcr/generals/Hasdrubal.webp",
+    "head": "/img/gcr/heads/Hasdrubal.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

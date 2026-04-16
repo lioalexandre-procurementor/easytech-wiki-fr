@@ -1,6 +1,17 @@
 export type Tier = "S" | "A" | "B" | "C";
-export type Category = "tank" | "infantry" | "artillery" | "navy" | "airforce";
-export type Faction = "standard" | "scorpion";
+// WC4 unit categories (tank/airforce) + GCR unit categories (cavalry/archer).
+// Games share the same Category union so components can render across both;
+// the per-game axis list lives in GameMeta.unitCategories.
+export type Category =
+  | "tank"
+  | "infantry"
+  | "artillery"
+  | "navy"
+  | "airforce"
+  | "cavalry"
+  | "archer";
+// WC4 factions + GCR factions. Per-game faction list lives in GameMeta.factions.
+export type Faction = "standard" | "scorpion" | "barbarian";
 export type PerkType = "active-skill" | "passive" | "stat";
 
 export interface Perk {
@@ -85,17 +96,46 @@ export interface GameMeta {
   era: string;
   tagline: string;
   available: boolean;
+  /**
+   * Ordered list of general attribute axes relevant to this game.
+   * WC4 → 6 axes. GCR → 4 axes. Components iterate this list instead of
+   * hard-coding AttributeKey values.
+   */
+  attributeKeys?: AttributeKey[];
+  /**
+   * Ordered list of general category ids relevant to this game (used by the
+   * generals list grouping). Defaults to the WC4 order.
+   */
+  generalCategories?: GeneralCategory[];
+  /**
+   * Ordered list of unit category ids relevant to this game (used by the
+   * elite-units list grouping).
+   */
+  unitCategories?: Category[];
+  /**
+   * Factions rendered in tabs / sections on this game's generals page.
+   */
+  factions?: Faction[];
+  /** Filesystem subfolder under `data/` (e.g. "wc4", "gcr"). */
+  dataDir?: string;
+  /** Public-asset image subfolder under `public/img/` (e.g. "wc4", "gcr"). */
+  imageDir?: string;
 }
 
 // ─── GENERALS ───────────────────────────────────────────────────────────────
 
+// WC4 general categories (tank/airforce/artillery) + GCR ones (cavalry/archer).
+// Some categories are game-specific — components read GameMeta.generalCategories
+// for the ordered list to render per game.
 export type GeneralCategory =
   | "tank"
   | "infantry"
   | "artillery"
   | "navy"
   | "airforce"
-  | "balanced";
+  | "balanced"
+  | "cavalry"
+  | "archer";
 export type GeneralRank = "S" | "A" | "B" | "C";
 
 // WC4 lettered skill rating visible in-game (E → S+).
@@ -110,13 +150,18 @@ export type GeneralQuality = "bronze" | "silver" | "gold" | "marshal";
 // and a max star level (filled + empty = ceiling reachable via promotions/training).
 // The normal scale is 0..5. A 6th "shiny" star exists as a bonus for maxed aptitudes.
 
+// WC4 uses 6 axes (infantry/artillery/armor/navy/airforce/marching).
+// GCR uses 4 axes (infantry/cavalry/archer/navy).
+// Per-game ordered axis list lives in GameMeta.attributeKeys.
 export type AttributeKey =
   | "infantry"
   | "artillery"
   | "armor"
   | "navy"
   | "airforce"
-  | "marching";
+  | "marching"
+  | "cavalry"
+  | "archer";
 
 export interface AttributeValue {
   start: number;   // 0..6 — current filled stars (as acquired)
@@ -407,6 +452,9 @@ export type DiffClass = "best" | "worst" | "neutral";
 
 // ─── TECHNOLOGIES ───────────────────────────────────────────────────────
 
+// WC4 has 8 tech categories (WW2 roster). GCR has a smaller ancient-era set
+// but reuses the same TechCategory union — per-game category lists are
+// exposed via GameMeta.techCategories in lib/games.ts.
 export type TechCategory =
   | "infantry"
   | "armor"
@@ -415,7 +463,11 @@ export type TechCategory =
   | "airforce"
   | "fortifications"
   | "antiair"
-  | "missile";
+  | "missile"
+  | "cavalry"
+  | "archer"
+  | "siege"
+  | "wargear";
 
 /** One row in a tech chain's progression. */
 export interface TechLevel {

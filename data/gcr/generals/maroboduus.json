@@ -1,0 +1,100 @@
+{
+  "slug": "maroboduus",
+  "name": "Maroboduus",
+  "nameEn": "Maroboduus",
+  "nameCanonical": "Maroboduus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Maroboduus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "攻城2",
+      "nameEn": "攻城2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "箭雨2",
+      "nameEn": "箭雨2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "破坏1",
+      "nameEn": "破坏1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 6
+    },
+    "cavalry": {
+      "start": 2,
+      "max": 5
+    },
+    "archer": {
+      "start": 4,
+      "max": 7
+    },
+    "navy": {
+      "start": 2,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 386,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 11,
+  "militaryRank": 4,
+  "gameId": 1051,
+  "image": {
+    "photo": "/img/gcr/generals/Maroboduus.webp",
+    "head": "/img/gcr/heads/Maroboduus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

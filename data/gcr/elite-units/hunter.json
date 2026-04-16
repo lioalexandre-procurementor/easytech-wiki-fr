@@ -1,0 +1,98 @@
+{
+  "slug": "hunter",
+  "name": "Hunter",
+  "nameEn": "Hunter",
+  "category": "archer",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité archer — XX.",
+  "longDesc": "Hunter — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+    ],
+    "def": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hp": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mov": [
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 311,
+  "image": {
+    "sprite": "/img/gcr/armies/311.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

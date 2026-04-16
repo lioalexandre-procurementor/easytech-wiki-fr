@@ -1,0 +1,86 @@
+{
+  "slug": "pacorus",
+  "name": "Pacorus",
+  "nameEn": "Pacorus",
+  "nameCanonical": "Pacorus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "C",
+  "quality": "gold",
+  "country": "EGY",
+  "countryName": "Égypte",
+  "shortDesc": "Général balanced — Égypte.",
+  "longDesc": "Pacorus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "奇袭1",
+      "nameEn": "奇袭1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "游击1",
+      "nameEn": "游击1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 5
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 7
+    },
+    "archer": {
+      "start": 2,
+      "max": 4
+    },
+    "navy": {
+      "start": 1,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 98,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 8,
+  "militaryRank": 3,
+  "gameId": 1044,
+  "image": {
+    "photo": "/img/gcr/generals/Pacorus.webp",
+    "head": "/img/gcr/heads/Pacorus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

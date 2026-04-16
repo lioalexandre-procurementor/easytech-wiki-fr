@@ -1,0 +1,98 @@
+{
+  "slug": "pirate",
+  "name": "Pirate",
+  "nameEn": "Pirate",
+  "category": "infantry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité infantry — XX.",
+  "longDesc": "Pirate — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "def": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "hp": [
+      135,
+      135,
+      135,
+      135,
+      135,
+      135,
+      135,
+      135,
+      135,
+      135,
+      135,
+      135
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 112,
+  "image": {
+    "sprite": "/img/gcr/armies/112.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

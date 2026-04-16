@@ -1,0 +1,114 @@
+{
+  "slug": "burebista",
+  "name": "Burebista",
+  "nameEn": "Burebista",
+  "nameCanonical": "Burebista",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "bronze",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Burebista — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "山地战2",
+      "nameEn": "山地战2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "战吼3",
+      "nameEn": "战吼3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 2
+    },
+    {
+      "name": "隐蔽1",
+      "nameEn": "隐蔽1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_8.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 8,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    },
+    {
+      "name": "拦截3",
+      "nameEn": "拦截3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 8
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 6
+    },
+    "archer": {
+      "start": 4,
+      "max": 7
+    },
+    "navy": {
+      "start": 2,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 546,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 18,
+  "militaryRank": 5,
+  "gameId": 1056,
+  "image": {
+    "photo": "/img/gcr/generals/Burebista.webp",
+    "head": "/img/gcr/heads/Burebista.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

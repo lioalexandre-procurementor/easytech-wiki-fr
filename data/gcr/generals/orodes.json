@@ -1,0 +1,100 @@
+{
+  "slug": "orodes",
+  "name": "Orodes",
+  "nameEn": "Orodes",
+  "nameCanonical": "Orodes",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "EGY",
+  "countryName": "Égypte",
+  "shortDesc": "Général balanced — Égypte.",
+  "longDesc": "Orodes — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "突击1",
+      "nameEn": "突击1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 18,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "街巷战2",
+      "nameEn": "街巷战2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "破坏1",
+      "nameEn": "破坏1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_7.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 7,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 6
+    },
+    "archer": {
+      "start": 3,
+      "max": 6
+    },
+    "navy": {
+      "start": 2,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 387,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 12,
+  "militaryRank": 5,
+  "gameId": 1042,
+  "image": {
+    "photo": "/img/gcr/generals/Orodes.webp",
+    "head": "/img/gcr/heads/Orodes.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

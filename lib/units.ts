@@ -263,7 +263,7 @@ type CategoryEntry = { label: L10n; icon: string; plural: L10n };
 type GeneralCategoryEntry = { label: L10n; icon: string };
 type FactionEntry = { label: L10n; tagline: L10n; color: string };
 
-const CATEGORY_META_LOCALIZED: Record<Category, CategoryEntry> = {
+const CATEGORY_META_LOCALIZED: Partial<Record<Category, CategoryEntry>> = {
   tank: {
     label:  { fr: "Char",       en: "Tank",       de: "Panzer" },
     plural: { fr: "Chars",      en: "Tanks",      de: "Panzer" },
@@ -291,7 +291,7 @@ const CATEGORY_META_LOCALIZED: Record<Category, CategoryEntry> = {
   },
 };
 
-const GENERAL_CATEGORY_META_LOCALIZED: Record<GeneralCategory, GeneralCategoryEntry> = {
+const GENERAL_CATEGORY_META_LOCALIZED: Partial<Record<GeneralCategory, GeneralCategoryEntry>> = {
   tank:      { label: { fr: "Blindé",     en: "Armor",     de: "Panzer"     }, icon: "🛡️" },
   infantry:  { label: { fr: "Infanterie", en: "Infantry",  de: "Infanterie" }, icon: "🪖" },
   artillery: { label: { fr: "Artillerie", en: "Artillery", de: "Artillerie" }, icon: "🎯" },
@@ -300,7 +300,7 @@ const GENERAL_CATEGORY_META_LOCALIZED: Record<GeneralCategory, GeneralCategoryEn
   balanced:  { label: { fr: "Polyvalent", en: "Balanced",  de: "Ausgewogen" }, icon: "⭐" },
 };
 
-const FACTION_META_LOCALIZED: Record<Faction, FactionEntry> = {
+const FACTION_META_LOCALIZED: Partial<Record<Faction, FactionEntry>> = {
   standard: {
     label:   { fr: "Standard",           en: "Standard",         de: "Standard" },
     tagline: {
@@ -336,7 +336,7 @@ export function getCategoryMeta(locale: string | undefined) {
   return (Object.fromEntries(
     Object.entries(CATEGORY_META_LOCALIZED).map(([k, v]) => [
       k,
-      { label: v.label[loc], icon: v.icon, plural: v.plural[loc] },
+      { label: v!.label[loc], icon: v!.icon, plural: v!.plural[loc] },
     ])
   ) as unknown) as Record<Category, { label: string; icon: string; plural: string }>;
 }
@@ -346,7 +346,7 @@ export function getGeneralCategoryMeta(locale: string | undefined) {
   return (Object.fromEntries(
     Object.entries(GENERAL_CATEGORY_META_LOCALIZED).map(([k, v]) => [
       k,
-      { label: v.label[loc], icon: v.icon },
+      { label: v!.label[loc], icon: v!.icon },
     ])
   ) as unknown) as Record<GeneralCategory, { label: string; icon: string }>;
 }
@@ -356,7 +356,7 @@ export function getFactionMeta(locale: string | undefined) {
   return (Object.fromEntries(
     Object.entries(FACTION_META_LOCALIZED).map(([k, v]) => [
       k,
-      { label: v.label[loc], tagline: v.tagline[loc], color: v.color },
+      { label: v!.label[loc], tagline: v!.tagline[loc], color: v!.color },
     ])
   ) as unknown) as Record<Faction, { label: string; tagline: string; color: string }>;
 }

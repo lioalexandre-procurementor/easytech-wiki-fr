@@ -1,0 +1,98 @@
+{
+  "slug": "slinger",
+  "name": "Slinger",
+  "nameEn": "Slinger",
+  "category": "archer",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "C",
+  "obtainability": "free",
+  "shortDesc": "Unité archer — XX.",
+  "longDesc": "Slinger — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50,
+      50
+    ],
+    "def": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ],
+    "hp": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 301,
+  "image": {
+    "sprite": "/img/gcr/armies/301.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

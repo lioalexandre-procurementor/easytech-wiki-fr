@@ -1,0 +1,100 @@
+{
+  "slug": "commius",
+  "name": "Commius",
+  "nameEn": "Commius",
+  "nameCanonical": "Commius",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Commius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "游击1",
+      "nameEn": "游击1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "奇袭1",
+      "nameEn": "奇袭1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 2
+    },
+    {
+      "name": "攻城2",
+      "nameEn": "攻城2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_9.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 9,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 6
+    },
+    "cavalry": {
+      "start": 6,
+      "max": 8
+    },
+    "archer": {
+      "start": 2,
+      "max": 5
+    },
+    "navy": {
+      "start": 2,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 398,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 10,
+  "militaryRank": 4,
+  "gameId": 1032,
+  "image": {
+    "photo": "/img/gcr/generals/Commius.webp",
+    "head": "/img/gcr/heads/Commius.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

@@ -13,12 +13,14 @@ import type { GeneralCategory, Category, GeneralData } from "./types";
  *  - Scorpion generals are only eligible for scorpion units.
  *  - Orders by rank (S > A > B > C) then name for stable listing.
  */
-const UNIT_CATEGORY_TO_GENERAL_CATEGORIES: Record<Category, GeneralCategory[]> = {
+const UNIT_CATEGORY_TO_GENERAL_CATEGORIES: Partial<Record<Category, GeneralCategory[]>> = {
   tank:      ["tank", "balanced"],
   infantry:  ["infantry", "balanced"],
   artillery: ["artillery", "balanced"],
   navy:      ["navy", "balanced"],
   airforce:  ["airforce", "balanced"],
+  cavalry:   ["cavalry", "balanced"],
+  archer:    ["archer", "balanced"],
 };
 
 const RANK_ORDER: Record<string, number> = { S: 0, A: 1, B: 2, C: 3 };

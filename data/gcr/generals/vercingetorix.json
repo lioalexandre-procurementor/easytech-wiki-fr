@@ -1,0 +1,114 @@
+{
+  "slug": "vercingetorix",
+  "name": "Vercingetorix",
+  "nameEn": "Vercingetorix",
+  "nameCanonical": "Vercingetorix",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Vercingetorix — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "丛林战2",
+      "nameEn": "丛林战2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "战吼4",
+      "nameEn": "战吼4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 2
+    },
+    {
+      "name": "盾墙3",
+      "nameEn": "盾墙3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 3
+    },
+    {
+      "name": "伏击2",
+      "nameEn": "伏击2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 6,
+      "max": 9
+    },
+    "cavalry": {
+      "start": 4,
+      "max": 6
+    },
+    "archer": {
+      "start": 4,
+      "max": 6
+    },
+    "navy": {
+      "start": 3,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 590,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 18,
+  "militaryRank": 6,
+  "gameId": 1031,
+  "image": {
+    "photo": "/img/gcr/generals/Vercingetorix.webp",
+    "head": "/img/gcr/heads/Vercingetorix.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

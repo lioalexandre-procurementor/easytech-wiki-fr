@@ -1,0 +1,98 @@
+{
+  "slug": "crossbow-man",
+  "name": "Crossbow Man",
+  "nameEn": "Crossbow Man",
+  "category": "archer",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité archer — XX.",
+  "longDesc": "Crossbow Man — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90,
+      90
+    ],
+    "def": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "hp": [
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160,
+      160
+    ],
+    "mov": [
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 309,
+  "image": {
+    "sprite": "/img/gcr/armies/309.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

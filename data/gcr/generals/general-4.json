@@ -1,0 +1,57 @@
+{
+  "slug": "general-4",
+  "name": "General",
+  "nameEn": "General",
+  "nameCanonical": "General",
+  "faction": "standard",
+  "category": "infantry",
+  "rank": "C",
+  "quality": "bronze",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général infantry — Rome.",
+  "longDesc": "General — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [],
+  "attributes": {
+    "infantry": {
+      "start": 1,
+      "max": 9
+    },
+    "cavalry": {
+      "start": 1,
+      "max": 9
+    },
+    "archer": {
+      "start": 1,
+      "max": 9
+    },
+    "navy": {
+      "start": 1,
+      "max": 9
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "iron-cross",
+    "cost": 2100,
+    "currency": "iron-cross",
+    "notes": "Donnée brute extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 0,
+  "unlockHQLv": 1,
+  "militaryRank": 1,
+  "gameId": 1094,
+  "image": {
+    "photo": "/img/gcr/generals/Commander94.webp",
+    "head": "/img/gcr/heads/Commander94.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

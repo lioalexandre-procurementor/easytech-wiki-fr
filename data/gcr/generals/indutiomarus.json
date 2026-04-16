@@ -1,0 +1,86 @@
+{
+  "slug": "indutiomarus",
+  "name": "Indutiomarus",
+  "nameEn": "Indutiomarus",
+  "nameCanonical": "Indutiomarus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "gold",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Indutiomarus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "突破1",
+      "nameEn": "突破1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_19.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 19,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "游击1",
+      "nameEn": "游击1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 2,
+      "max": 5
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 6
+    },
+    "archer": {
+      "start": 2,
+      "max": 4
+    },
+    "navy": {
+      "start": 1,
+      "max": 4
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 178,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 8,
+  "militaryRank": 4,
+  "gameId": 1034,
+  "image": {
+    "photo": "/img/gcr/generals/Indutiomarus.webp",
+    "head": "/img/gcr/heads/Indutiomarus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

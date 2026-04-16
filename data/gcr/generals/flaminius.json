@@ -1,0 +1,86 @@
+{
+  "slug": "flaminius",
+  "name": "Flaminius",
+  "nameEn": "Flaminius",
+  "nameCanonical": "Flaminius",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "gold",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Flaminius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "坑道1",
+      "nameEn": "坑道1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_16.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 16,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 1
+    },
+    {
+      "name": "步兵指挥2",
+      "nameEn": "步兵指挥2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 15,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 2,
+      "max": 4
+    },
+    "archer": {
+      "start": 1,
+      "max": 4
+    },
+    "navy": {
+      "start": 1,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 268,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 2,
+  "unlockHQLv": 8,
+  "militaryRank": 5,
+  "gameId": 1005,
+  "image": {
+    "photo": "/img/gcr/generals/Flaminius.webp",
+    "head": "/img/gcr/heads/Flaminius.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

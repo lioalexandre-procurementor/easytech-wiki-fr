@@ -1,0 +1,114 @@
+{
+  "slug": "scipio",
+  "name": "Scipio",
+  "nameEn": "Scipio",
+  "nameCanonical": "Scipio",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Scipio — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "冲锋2",
+      "nameEn": "冲锋2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "街巷战2",
+      "nameEn": "街巷战2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_2.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 2,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "奇袭2",
+      "nameEn": "奇袭2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_23.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 23,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 3
+    },
+    {
+      "name": "反击3",
+      "nameEn": "反击3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 6,
+      "max": 8
+    },
+    "archer": {
+      "start": 3,
+      "max": 6
+    },
+    "navy": {
+      "start": 2,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 548,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 20,
+  "militaryRank": 6,
+  "gameId": 1006,
+  "image": {
+    "photo": "/img/gcr/generals/Scipio.webp",
+    "head": "/img/gcr/heads/Scipio.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

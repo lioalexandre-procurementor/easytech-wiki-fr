@@ -1,0 +1,114 @@
+{
+  "slug": "spartacus",
+  "name": "Spartacus",
+  "nameEn": "Spartacus",
+  "nameCanonical": "Spartacus",
+  "faction": "standard",
+  "category": "cavalry",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général cavalry — Gaule.",
+  "longDesc": "Spartacus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "战吼4",
+      "nameEn": "战吼4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_11.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 11,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 1
+    },
+    {
+      "name": "步兵指挥3",
+      "nameEn": "步兵指挥3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_15.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 15,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 2
+    },
+    {
+      "name": "盾墙4",
+      "nameEn": "盾墙4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 3
+    },
+    {
+      "name": "拦截3",
+      "nameEn": "拦截3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_14.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 14,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 7,
+      "max": 9
+    },
+    "cavalry": {
+      "start": 5,
+      "max": 7
+    },
+    "archer": {
+      "start": 4,
+      "max": 7
+    },
+    "navy": {
+      "start": 4,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 14,
+  "militaryRank": 6,
+  "gameId": 1003,
+  "image": {
+    "photo": "/img/gcr/generals/Spartacus.webp",
+    "head": "/img/gcr/heads/Spartacus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

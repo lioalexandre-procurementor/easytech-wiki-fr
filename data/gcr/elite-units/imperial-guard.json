@@ -1,0 +1,98 @@
+{
+  "slug": "imperial-guard",
+  "name": "Imperial Guard",
+  "nameEn": "Imperial Guard",
+  "category": "cavalry",
+  "faction": "standard",
+  "country": "XX",
+  "countryName": "XX",
+  "tier": "S",
+  "obtainability": "free",
+  "shortDesc": "Unité cavalry — XX.",
+  "longDesc": "Imperial Guard — unité antique de Great Conqueror: Rome. Fiche générée automatiquement ; à enrichir.",
+  "stats": {
+    "atk": [
+      85,
+      85,
+      85,
+      85,
+      85,
+      85,
+      85,
+      85,
+      85,
+      85,
+      85,
+      85
+    ],
+    "def": [
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "hp": [
+      235,
+      235,
+      235,
+      235,
+      235,
+      235,
+      235,
+      235,
+      235,
+      235,
+      235,
+      235
+    ],
+    "mov": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "rng": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "perks": [],
+  "recommendedGenerals": [],
+  "levelingPriority": [],
+  "faqs": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "armyId": 207,
+  "image": {
+    "sprite": "/img/gcr/armies/207.webp",
+    "lvl12": null
+  },
+  "preliminary": true
+}

@@ -1,0 +1,100 @@
+{
+  "slug": "cassivellaunus",
+  "name": "Cassivellaunus",
+  "nameEn": "Cassivellaunus",
+  "nameCanonical": "Cassivellaunus",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Cassivellaunus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "反击2",
+      "nameEn": "反击2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_10.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 10,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "箭雨2",
+      "nameEn": "箭雨2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_28.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 28,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "水手1",
+      "nameEn": "水手1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_30.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 30,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 3,
+      "max": 5
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 5
+    },
+    "archer": {
+      "start": 3,
+      "max": 7
+    },
+    "navy": {
+      "start": 2,
+      "max": 7
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 372,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 10,
+  "militaryRank": 4,
+  "gameId": 1037,
+  "image": {
+    "photo": "/img/gcr/generals/Cassivellaunus.webp",
+    "head": "/img/gcr/heads/Cassivellaunus.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

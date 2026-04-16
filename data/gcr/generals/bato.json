@@ -1,0 +1,100 @@
+{
+  "slug": "bato",
+  "name": "Bato",
+  "nameEn": "Bato",
+  "nameCanonical": "Bato",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "GAU",
+  "countryName": "Gaule",
+  "shortDesc": "Général balanced — Gaule.",
+  "longDesc": "Bato — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "伏击3",
+      "nameEn": "伏击3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_13.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 13,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 1
+    },
+    {
+      "name": "盾墙3",
+      "nameEn": "盾墙3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 2
+    },
+    {
+      "name": "行军1",
+      "nameEn": "行军1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 8
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 6
+    },
+    "archer": {
+      "start": 3,
+      "max": 6
+    },
+    "navy": {
+      "start": 2,
+      "max": 5
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 470,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 15,
+  "militaryRank": 5,
+  "gameId": 1053,
+  "image": {
+    "photo": "/img/gcr/generals/Bato.webp",
+    "head": "/img/gcr/heads/Bato.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

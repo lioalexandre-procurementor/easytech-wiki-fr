@@ -2,8 +2,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { EntityType } from "@/lib/overrides";
 import { getAllEliteUnits, getAllGenerals } from "@/lib/units";
+import {
+  getAllEliteUnits as getAllGcrEliteUnits,
+  getAllGenerals as getAllGcrGenerals,
+} from "@/lib/gcr";
 import { getAllGuides } from "@/lib/guides";
 import { getAllUpdates } from "@/lib/updates";
+import fs from "node:fs";
+import path from "node:path";
 import EntityListSearch from "@/components/admin/EntityListSearch";
 
 export const dynamic = "force-dynamic";
@@ -17,11 +23,25 @@ type Row = {
 };
 
 const LABEL_BY_TYPE: Partial<Record<EntityType, string>> = {
-  "elite-unit": "Elite units",
-  general: "Generals",
-  guide: "Guides",
-  update: "Update entries",
+  "elite-unit": "Elite units (WC4)",
+  general: "Generals (WC4)",
+  guide: "Guides (WC4)",
+  update: "Update entries (WC4)",
+  "gcr-elite-unit": "Elite units (GCR)",
+  "gcr-general": "Generals (GCR)",
+  "gcr-guide": "Guides (GCR)",
+  "gcr-update": "Update entries (GCR)",
 };
+
+/** Read slugs from a `data/<game>/<dir>/*.json` folder, skipping `_index`. */
+function listSlugsFromDataDir(game: "wc4" | "gcr", subdir: string): string[] {
+  const dir = path.join(process.cwd(), "data", game, subdir);
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+    .map((f) => f.replace(/\.json$/, ""));
+}
 
 function collect(entityType: EntityType): Row[] {
   switch (entityType) {
@@ -49,6 +69,33 @@ function collect(entityType: EntityType): Row[] {
         slug: u.slug,
         title: u.title?.fr ?? u.slug,
         subtitle: `${u.version ?? ""} · ${u.date ?? ""}`,
+      }));
+    case "gcr-elite-unit":
+      return getAllGcrEliteUnits().map((u) => ({
+        slug: u.slug,
+        title: u.name,
+        subtitle: `${u.category} · ${u.country} · ${u.tier}${u.faction === "barbarian" ? " · barbarian" : ""}`,
+        preliminary: u.preliminary,
+      }));
+    case "gcr-general":
+      return getAllGcrGenerals().map((g) => ({
+        slug: g.slug,
+        title: g.name,
+        subtitle: `${g.quality} · ${g.category} · ${g.country}${g.faction === "barbarian" ? " · barbarian" : ""}`,
+      }));
+    case "gcr-guide":
+      // Directory reads only — typed guide lib is WC4-scoped for now.
+      // Editorial content for GCR hasn't landed; list is typically empty.
+      return listSlugsFromDataDir("gcr", "guides").map((slug) => ({
+        slug,
+        title: slug,
+        subtitle: "guide · gcr",
+      }));
+    case "gcr-update":
+      return listSlugsFromDataDir("gcr", "updates").map((slug) => ({
+        slug,
+        title: slug,
+        subtitle: "update · gcr",
       }));
     default:
       return [];

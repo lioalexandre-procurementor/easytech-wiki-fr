@@ -1,0 +1,114 @@
+{
+  "slug": "hannibal",
+  "name": "Hannibal",
+  "nameEn": "Hannibal",
+  "nameCanonical": "Hannibal",
+  "faction": "standard",
+  "category": "archer",
+  "rank": "A",
+  "quality": "bronze",
+  "country": "GRE",
+  "countryName": "Grèce",
+  "shortDesc": "Général archer — Grèce.",
+  "longDesc": "Hannibal — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "骑兵指挥3",
+      "nameEn": "骑兵指挥3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 22,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 1
+    },
+    {
+      "name": "冲锋4",
+      "nameEn": "冲锋4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_21.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 21,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 2
+    },
+    {
+      "name": "游击4",
+      "nameEn": "游击4",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_20.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 20,
+      "skillLevel": 1,
+      "skillSlug": "4",
+      "slot": 3
+    },
+    {
+      "name": "突击3",
+      "nameEn": "突击3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 18,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 4
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 5,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 7,
+      "max": 9
+    },
+    "archer": {
+      "start": 4,
+      "max": 7
+    },
+    "navy": {
+      "start": 4,
+      "max": 7
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "coin",
+    "cost": null,
+    "currency": "coin",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 4,
+  "unlockHQLv": 17,
+  "militaryRank": 7,
+  "gameId": 1002,
+  "image": {
+    "photo": "/img/gcr/generals/Hannibal.webp",
+    "head": "/img/gcr/heads/Hannibal.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

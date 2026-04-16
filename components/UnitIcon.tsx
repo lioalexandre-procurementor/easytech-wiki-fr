@@ -6,7 +6,7 @@ interface Props {
   size?: number;
 }
 
-const PALETTE: Record<Category, { fg: string; bg1: string; bg2: string }> = {
+const PALETTE: Partial<Record<Category, { fg: string; bg1: string; bg2: string }>> = {
   tank:      { fg: "#d4a44a", bg1: "#3a4a2c", bg2: "#1c2530" },
   infantry:  { fg: "#9bb19f", bg1: "#2c4a35", bg2: "#1a2a20" },
   artillery: { fg: "#c8372d", bg1: "#4a2c2c", bg2: "#2a1c1c" },
@@ -14,7 +14,7 @@ const PALETTE: Record<Category, { fg: string; bg1: string; bg2: string }> = {
   airforce:  { fg: "#a8b4c5", bg1: "#3a4555", bg2: "#1c2535" },
 };
 
-const SHAPES: Record<Category, (fg: string) => JSX.Element> = {
+const SHAPES: Partial<Record<Category, (fg: string) => JSX.Element>> = {
   tank: (fg) => (
     <g fill={fg} stroke={fg} strokeWidth="2">
       <rect x="14" y="42" width="52" height="14" rx="2"/>
@@ -62,7 +62,8 @@ const SHAPES: Record<Category, (fg: string) => JSX.Element> = {
 };
 
 export function UnitIcon({ category, country, size = 80 }: Props) {
-  const p = PALETTE[category];
+  const p = PALETTE[category] ?? { fg: "#999", bg1: "#333", bg2: "#222" };
+  const shape = SHAPES[category];
   const id = `g-${category}`;
   return (
     <svg width={size} height={size} viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" className="block">
@@ -74,7 +75,7 @@ export function UnitIcon({ category, country, size = 80 }: Props) {
       </defs>
       <rect width="80" height="80" rx="8" fill={`url(#${id})`}/>
       <rect x="0.5" y="0.5" width="79" height="79" rx="7.5" fill="none" stroke={p.fg} strokeOpacity="0.4"/>
-      {SHAPES[category](p.fg)}
+      {shape?.(p.fg)}
       {country && (
         <text x="6" y="74" fontSize="9" fontWeight="800" fill={p.fg} fontFamily="sans-serif" letterSpacing="1">
           {country}

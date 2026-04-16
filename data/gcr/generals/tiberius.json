@@ -1,0 +1,100 @@
+{
+  "slug": "tiberius",
+  "name": "Tiberius",
+  "nameEn": "Tiberius",
+  "nameCanonical": "Tiberius",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "ROM",
+  "countryName": "Rome",
+  "shortDesc": "Général balanced — Rome.",
+  "longDesc": "Tiberius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "丛林战3",
+      "nameEn": "丛林战3",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_4.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 4,
+      "skillLevel": 1,
+      "skillSlug": "3",
+      "slot": 1
+    },
+    {
+      "name": "突击2",
+      "nameEn": "突击2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 18,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 2
+    },
+    {
+      "name": "行军2",
+      "nameEn": "行军2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_1.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 1,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 5,
+      "max": 8
+    },
+    "archer": {
+      "start": 3,
+      "max": 5
+    },
+    "navy": {
+      "start": 4,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 495,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 14,
+  "militaryRank": 5,
+  "gameId": 1026,
+  "image": {
+    "photo": "/img/gcr/generals/Tiberius.webp",
+    "head": "/img/gcr/heads/Tiberius.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}

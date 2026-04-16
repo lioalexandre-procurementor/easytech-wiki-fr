@@ -1,0 +1,100 @@
+{
+  "slug": "phraates",
+  "name": "Phraates",
+  "nameEn": "Phraates",
+  "nameCanonical": "Phraates",
+  "faction": "standard",
+  "category": "balanced",
+  "rank": "B",
+  "quality": "silver",
+  "country": "EGY",
+  "countryName": "Égypte",
+  "shortDesc": "Général balanced — Égypte.",
+  "longDesc": "Phraates — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "skills": [
+    {
+      "name": "火炬2",
+      "nameEn": "火炬2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 6,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 1
+    },
+    {
+      "name": "山地战1",
+      "nameEn": "山地战1",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_3.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 3,
+      "skillLevel": 1,
+      "skillSlug": "1",
+      "slot": 2
+    },
+    {
+      "name": "盾墙2",
+      "nameEn": "盾墙2",
+      "desc": "",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/gcr/skills/skill_17.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "skillType": 17,
+      "skillLevel": 1,
+      "skillSlug": "2",
+      "slot": 3
+    }
+  ],
+  "attributes": {
+    "infantry": {
+      "start": 4,
+      "max": 7
+    },
+    "cavalry": {
+      "start": 3,
+      "max": 6
+    },
+    "archer": {
+      "start": 2,
+      "max": 4
+    },
+    "navy": {
+      "start": 3,
+      "max": 6
+    }
+  },
+  "hasTrainingPath": false,
+  "training": null,
+  "acquisition": {
+    "type": "medals",
+    "cost": 366,
+    "currency": "medals",
+    "notes": "Donnée extraite de GeneralSettings — à vérifier"
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "Données extraites des fichiers de jeu Great Conqueror: Rome"
+  ],
+  "skillSlots": 3,
+  "unlockHQLv": 16,
+  "militaryRank": 4,
+  "gameId": 1045,
+  "image": {
+    "photo": "/img/gcr/generals/Phraates.webp",
+    "head": "/img/gcr/heads/Phraates.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "trainedSkills": null
+}
