@@ -1,0 +1,54 @@
+{
+  "slug": "archer-health",
+  "gameBranch": 3,
+  "gameTypeId": 8,
+  "nameEn": "Archer Tactics — Health",
+  "nameFr": "Tactiques Archer — PV",
+  "category": "archer",
+  "effect": "AddHP",
+  "maxLevel": 3,
+  "totalLevels": 3,
+  "levels": [
+    {
+      "gameId": 25,
+      "level": 1,
+      "costGold": 800,
+      "costIndustry": 0,
+      "upgradeId": 26,
+      "armyType": 3,
+      "addHP": 8,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "弓兵生命1"
+    },
+    {
+      "gameId": 26,
+      "level": 2,
+      "costGold": 1600,
+      "costIndustry": 0,
+      "upgradeId": 27,
+      "armyType": 3,
+      "addHP": 16,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "弓兵生命2"
+    },
+    {
+      "gameId": 27,
+      "level": 3,
+      "costGold": 2400,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 3,
+      "addHP": 24,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "弓兵生命3"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

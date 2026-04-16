@@ -3,13 +3,13 @@
   "name": "Arminius",
   "nameEn": "Arminius",
   "nameCanonical": "Arminius",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "cavalry",
   "rank": "A",
   "quality": "bronze",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général balanced — Gaule.",
+  "shortDesc": "Général cavalry — Gaule.",
   "longDesc": "Arminius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

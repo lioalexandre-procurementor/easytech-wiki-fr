@@ -1,0 +1,28 @@
+{
+  "slug": "archer-mobility",
+  "gameBranch": 3,
+  "gameTypeId": 11,
+  "nameEn": "Archer Tactics — Mobility",
+  "nameFr": "Tactiques Archer — Mobilité",
+  "category": "archer",
+  "effect": "AddMobility",
+  "maxLevel": 1,
+  "totalLevels": 1,
+  "levels": [
+    {
+      "gameId": 36,
+      "level": 1,
+      "costGold": 800,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 3,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 1,
+      "nameCn": "弓兵行动1"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

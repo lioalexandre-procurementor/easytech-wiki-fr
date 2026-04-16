@@ -1,0 +1,54 @@
+{
+  "slug": "infantry-mobility",
+  "gameBranch": 1,
+  "gameTypeId": 3,
+  "nameEn": "Infantry Tactics — Mobility",
+  "nameFr": "Tactiques Infanterie — Mobilité",
+  "category": "infantry",
+  "effect": "AddMobility",
+  "maxLevel": 3,
+  "totalLevels": 3,
+  "levels": [
+    {
+      "gameId": 10,
+      "level": 1,
+      "costGold": 700,
+      "costIndustry": 0,
+      "upgradeId": 11,
+      "armyType": 1,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 1,
+      "nameCn": "步兵行动1"
+    },
+    {
+      "gameId": 11,
+      "level": 2,
+      "costGold": 1400,
+      "costIndustry": 0,
+      "upgradeId": 12,
+      "armyType": 1,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 2,
+      "nameCn": "步兵行动2"
+    },
+    {
+      "gameId": 12,
+      "level": 3,
+      "costGold": 2100,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 1,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 3,
+      "nameCn": "步兵行动3"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

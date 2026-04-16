@@ -1,0 +1,41 @@
+{
+  "slug": "archer-defense",
+  "gameBranch": 3,
+  "gameTypeId": 10,
+  "nameEn": "Archer Tactics — Defense",
+  "nameFr": "Tactiques Archer — Défense",
+  "category": "archer",
+  "effect": "AddDefense",
+  "maxLevel": 2,
+  "totalLevels": 2,
+  "levels": [
+    {
+      "gameId": 34,
+      "level": 1,
+      "costGold": 800,
+      "costIndustry": 0,
+      "upgradeId": 35,
+      "armyType": 3,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 2,
+      "addMobility": 0,
+      "nameCn": "弓兵防御1"
+    },
+    {
+      "gameId": 35,
+      "level": 2,
+      "costGold": 1600,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 3,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 4,
+      "addMobility": 0,
+      "nameCn": "弓兵防御2"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

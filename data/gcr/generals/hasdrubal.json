@@ -4,12 +4,12 @@
   "nameEn": "Hasdrubal",
   "nameCanonical": "Hasdrubal",
   "faction": "standard",
-  "category": "balanced",
+  "category": "cavalry",
   "rank": "B",
   "quality": "gold",
   "country": "GRE",
   "countryName": "Grèce",
-  "shortDesc": "Général balanced — Grèce.",
+  "shortDesc": "Général cavalry — Grèce.",
   "longDesc": "Hasdrubal — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

@@ -4,12 +4,12 @@
   "nameEn": "Pinarius",
   "nameCanonical": "Pinarius",
   "faction": "standard",
-  "category": "balanced",
+  "category": "infantry",
   "rank": "C",
   "quality": "gold",
   "country": "ROM",
   "countryName": "Rome",
-  "shortDesc": "Général balanced — Rome.",
+  "shortDesc": "Général infantry — Rome.",
   "longDesc": "Pinarius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

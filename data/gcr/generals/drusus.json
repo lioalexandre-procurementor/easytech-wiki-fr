@@ -4,12 +4,12 @@
   "nameEn": "Drusus",
   "nameCanonical": "Drusus",
   "faction": "standard",
-  "category": "balanced",
+  "category": "archer",
   "rank": "A",
   "quality": "silver",
   "country": "ROM",
   "countryName": "Rome",
-  "shortDesc": "Général balanced — Rome.",
+  "shortDesc": "Général archer — Rome.",
   "longDesc": "Drusus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

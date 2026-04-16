@@ -4,12 +4,12 @@
   "nameEn": "Varus",
   "nameCanonical": "Varus",
   "faction": "standard",
-  "category": "balanced",
+  "category": "cavalry",
   "rank": "B",
   "quality": "gold",
   "country": "ROM",
   "countryName": "Rome",
-  "shortDesc": "Général balanced — Rome.",
+  "shortDesc": "Général cavalry — Rome.",
   "longDesc": "Varus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

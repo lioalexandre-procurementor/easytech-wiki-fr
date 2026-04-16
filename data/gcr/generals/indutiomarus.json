@@ -3,13 +3,13 @@
   "name": "Indutiomarus",
   "nameEn": "Indutiomarus",
   "nameCanonical": "Indutiomarus",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "cavalry",
   "rank": "B",
   "quality": "gold",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général balanced — Gaule.",
+  "shortDesc": "Général cavalry — Gaule.",
   "longDesc": "Indutiomarus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

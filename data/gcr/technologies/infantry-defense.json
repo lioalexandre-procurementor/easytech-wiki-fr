@@ -1,0 +1,41 @@
+{
+  "slug": "infantry-defense",
+  "gameBranch": 1,
+  "gameTypeId": 2,
+  "nameEn": "Infantry Tactics — Defense",
+  "nameFr": "Tactiques Infanterie — Défense",
+  "category": "infantry",
+  "effect": "AddDefense",
+  "maxLevel": 2,
+  "totalLevels": 2,
+  "levels": [
+    {
+      "gameId": 8,
+      "level": 1,
+      "costGold": 1400,
+      "costIndustry": 0,
+      "upgradeId": 9,
+      "armyType": 1,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 2,
+      "addMobility": 0,
+      "nameCn": "步兵防御1"
+    },
+    {
+      "gameId": 9,
+      "level": 2,
+      "costGold": 2100,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 1,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 4,
+      "addMobility": 0,
+      "nameCn": "步兵防御2"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

@@ -4,12 +4,12 @@
   "nameEn": "Labienus",
   "nameCanonical": "Labienus",
   "faction": "standard",
-  "category": "balanced",
+  "category": "infantry",
   "rank": "B",
   "quality": "silver",
   "country": "ROM",
   "countryName": "Rome",
-  "shortDesc": "Général balanced — Rome.",
+  "shortDesc": "Général infantry — Rome.",
   "longDesc": "Labienus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

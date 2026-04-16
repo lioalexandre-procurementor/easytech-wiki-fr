@@ -4,12 +4,12 @@
   "nameEn": "Belisarius",
   "nameCanonical": "Belisarius",
   "faction": "standard",
-  "category": "balanced",
+  "category": "cavalry",
   "rank": "A",
   "quality": "bronze",
   "country": "CAR",
   "countryName": "Carthage",
-  "shortDesc": "Général balanced — Carthage.",
+  "shortDesc": "Général cavalry — Carthage.",
   "longDesc": "Belisarius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

@@ -100,7 +100,13 @@
     "adSlot": "Publicité",
     "navBackToHub": "← Retour au hub GCR",
     "navAllGenerals": "👨‍✈️ Tous les généraux",
-    "navEliteUnits": "🏅 Unités d'élite"
+    "navEliteUnits": "🏅 Unités d'élite",
+    "seoTitle": "Barbares — Great Conqueror: Rome | EasyTech Wiki",
+    "seoDescription": "Gaulois, Germains, Huns, Daces — découvrez les généraux et unités d'élite des peuples barbares qui ont affronté Rome dans Great Conqueror: Rome.",
+    "heroParagraph": "Les peuples libres des marges de l'Empire — Gaulois, Germains, Huns, Daces, Britons — ont longtemps résisté à la machine de guerre romaine. Cette page rassemble leurs commandants, leurs unités d'élite et le contexte historique qui les oppose à Rome.",
+    "loreP1": "Pendant plus de cinq siècles, les civilisations que Rome désignait comme « barbares » ont formé une ceinture continue d'adversaires autour de la Méditerranée. Loin d'être primitifs, ces peuples disposaient de sociétés guerrières structurées, de tactiques raffinées et, souvent, d'une supériorité numérique écrasante. Jules César lui-même a consacré huit campagnes à la conquête de la Gaule.",
+    "loreP2": "Great Conqueror: Rome reflète cette diversité stratégique. Les généraux barbares privilégient la cavalerie lourde (Huns), l'infanterie berserker (Germains), la guérilla en forêt (Gaulois) ou les cataphractes steppiques (Daces, Parthes). Leurs compositions d'armée imposent un contre-play différent de celui des légions méditerranéennes.",
+    "loreWarning": "⚠️ Les statistiques ci-dessous proviennent directement des fichiers de jeu Great Conqueror: Rome et peuvent évoluer entre les patches. Consultez la page Mises à jour pour le suivi des changements d'équilibrage."
   },
   "elitesPage": {
     "h1": "Unités d'Élite — World Conqueror 4",

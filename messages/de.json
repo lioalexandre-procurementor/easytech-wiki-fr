@@ -100,7 +100,13 @@
     "adSlot": "Werbung",
     "navBackToHub": "← Zurück zum GCR-Hub",
     "navAllGenerals": "👨‍✈️ Alle Generäle",
-    "navEliteUnits": "🏅 Elite-Einheiten"
+    "navEliteUnits": "🏅 Elite-Einheiten",
+    "seoTitle": "Barbaren — Great Conqueror: Rome | EasyTech Wiki",
+    "seoDescription": "Gallier, Germanen, Hunnen, Daker — entdecke die Generäle und Elite-Einheiten der barbarischen Völker, die sich in Great Conqueror: Rome gegen Rom stellten.",
+    "heroParagraph": "Die freien Völker jenseits der Grenzen des Imperiums — Gallier, Germanen, Hunnen, Daker, Briten — leisteten jahrhundertelang Widerstand gegen die römische Kriegsmaschinerie. Diese Seite versammelt ihre Feldherren, Elite-Einheiten und den historischen Kontext, der sie gegen Rom aufbringt.",
+    "loreP1": "Über fünf Jahrhunderte lang bildeten die von Rom als „barbarisch“ bezeichneten Zivilisationen einen durchgehenden Gürtel von Gegnern rund um das Mittelmeer. Weit davon entfernt, primitiv zu sein, verfügten diese Völker über strukturierte Kriegergesellschaften, verfeinerte Taktiken und oft erdrückende zahlenmäßige Überlegenheit. Julius Caesar selbst widmete acht Feldzüge der Eroberung Galliens.",
+    "loreP2": "Great Conqueror: Rome spiegelt diese strategische Vielfalt wider. Barbarische Generäle bevorzugen schwere Kavallerie (Hunnen), Berserker-Infanterie (Germanen), Waldguerilla (Gallier) oder Steppen-Kataphrakte (Daker, Parther). Ihre Heereszusammenstellungen erfordern ein anderes Counter-Play als die mediterranen Legionen.",
+    "loreWarning": "⚠️ Die Werte unten stammen direkt aus den Spieldateien von Great Conqueror: Rome und können sich zwischen Patches ändern. Im Updates-Bereich findest du die Nachverfolgung von Balance-Änderungen."
   },
   "elitesPage": {
     "h1": "Elite-Einheiten — World Conqueror 4",

@@ -1,0 +1,28 @@
+{
+  "slug": "infantry-attack",
+  "gameBranch": 1,
+  "gameTypeId": 1,
+  "nameEn": "Infantry Tactics — Attack",
+  "nameFr": "Tactiques Infanterie — Attaque",
+  "category": "infantry",
+  "effect": "AddAttack",
+  "maxLevel": 1,
+  "totalLevels": 1,
+  "levels": [
+    {
+      "gameId": 7,
+      "level": 1,
+      "costGold": 700,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 1,
+      "addHP": 0,
+      "addAttack": 5,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "步兵攻击1"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

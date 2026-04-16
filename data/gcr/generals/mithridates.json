@@ -4,12 +4,12 @@
   "nameEn": "Mithridates",
   "nameCanonical": "Mithridates",
   "faction": "standard",
-  "category": "balanced",
+  "category": "archer",
   "rank": "A",
   "quality": "bronze",
   "country": "EGY",
   "countryName": "Égypte",
-  "shortDesc": "Général balanced — Égypte.",
+  "shortDesc": "Général archer — Égypte.",
   "longDesc": "Mithridates — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

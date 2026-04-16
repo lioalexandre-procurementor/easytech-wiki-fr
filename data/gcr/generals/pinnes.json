@@ -3,13 +3,13 @@
   "name": "Pinnes",
   "nameEn": "Pinnes",
   "nameCanonical": "Pinnes",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "cavalry",
   "rank": "C",
   "quality": "gold",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général balanced — Gaule.",
+  "shortDesc": "Général cavalry — Gaule.",
   "longDesc": "Pinnes — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

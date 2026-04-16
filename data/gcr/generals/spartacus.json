@@ -3,13 +3,13 @@
   "name": "Spartacus",
   "nameEn": "Spartacus",
   "nameCanonical": "Spartacus",
-  "faction": "standard",
-  "category": "cavalry",
+  "faction": "barbarian",
+  "category": "infantry",
   "rank": "A",
   "quality": "bronze",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général cavalry — Gaule.",
+  "shortDesc": "Général infantry — Gaule.",
   "longDesc": "Spartacus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

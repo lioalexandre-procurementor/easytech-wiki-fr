@@ -3,13 +3,13 @@
   "name": "Huo",
   "nameEn": "Huo",
   "nameCanonical": "Huo",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "cavalry",
   "rank": "A",
   "quality": "bronze",
   "country": "GER",
   "countryName": "Germanie",
-  "shortDesc": "Général balanced — Germanie.",
+  "shortDesc": "Général cavalry — Germanie.",
   "longDesc": "Huo — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

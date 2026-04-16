@@ -65,24 +65,43 @@ COUNTRY_NAME_FR = {
     "XX": "—",
 }
 
-# GCR Talent id → primary category for the generals list grouping.
-# Talent is the field that in-game encodes the commander's specialty.
-TALENT_TO_CATEGORY = {
-    0: "balanced",
-    1: "infantry",
-    2: "cavalry",
-    3: "archer",
-    4: "navy",
-    5: "balanced",
-}
+# Races we classify as "barbarian" on the wiki side — these are the
+# non-Mediterranean / tribal civs opposing Rome. Everything else stays
+# in the "standard" faction.
+BARBARIAN_RACES = {5, 6, 7, 9, 10}  # GAU, GER, BRI, DAC, HUN
 
 # GCR in-shop Quality → wiki quality label.
-# 1 = bronze, 2 = silver, 3 = gold in GCR's 3-tier system.
+# 1 = bronze, 2 = silver, 3 = gold in GCR's 3-tier system. Nothing outside
+# that set exists in GeneralSettings; unknowns fall to bronze so the UI
+# always has a badge to render.
 QUALITY_MAP = {
     1: "bronze",
     2: "silver",
     3: "gold",
 }
+
+
+def classify_category(g: dict) -> str:
+    """Pick category from the highest of the four Max attributes.
+
+    Talent is a 2-26 enum pointing into GeneralTalentSettings, not the
+    4-slot category signal the WC4 schema uses, so we derive the category
+    from attribute dominance instead. Ties across three or more stats
+    fall back to "balanced" — that's actually the right label there.
+    """
+    maxes = {
+        "infantry": g.get("InfantryMax", 0) or 0,
+        "cavalry":  g.get("CavalryMax", 0)  or 0,
+        "archer":   g.get("ArcherMax", 0)   or 0,
+        "navy":     g.get("NavyMax", 0)     or 0,
+    }
+    top = max(maxes.values())
+    if top == 0:
+        return "balanced"
+    winners = [k for k, v in maxes.items() if v == top]
+    if len(winners) >= 2:
+        return "balanced"
+    return winners[0]
 
 # Rank 1..8 collapses to 4-letter tier. Rank 8 is the top-of-shop premium.
 def rank_to_tier(rank: int) -> str:
@@ -162,6 +181,13 @@ def main() -> int:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
+    # Stale-file cleanup: any .json in the output dir that isn't _index.json
+    # and isn't produced by this run is removed at the end so quality /
+    # faction reclassifications don't leave zombie records (e.g. the
+    # pre-existing "aetius.json" with quality: marshal from an older
+    # extraction that doesn't match the current schema).
+    produced_slugs: set[str] = set()
+
     index: list[dict] = []
     written = 0
     for g in generals:
@@ -174,9 +200,15 @@ def main() -> int:
         if not ename:
             continue
         slug = slugify(ename)
-        race_code = RACE_TO_CODE.get(g.get("Race", 0), "XX")
-        talent = g.get("Talent", 0)
-        category = TALENT_TO_CATEGORY.get(talent, "balanced")
+        race_id = g.get("Race", 0)
+        race_code = RACE_TO_CODE.get(race_id, "XX")
+        # Category = dominant max attribute (Talent is a 2-26 id that
+        # points into GeneralTalentSettings, not a 4-slot enum — see
+        # classify_category docstring).
+        category = classify_category(g)
+        # Barbarian civs (Gauls, Germans, Britons, Dacians, Huns) go to
+        # the barbarian faction; everyone else is standard.
+        faction = "barbarian" if race_id in BARBARIAN_RACES else "standard"
         quality = QUALITY_MAP.get(g.get("Quality", 1), "bronze")
         tier = rank_to_tier(g.get("Rank", 1))
 
@@ -201,7 +233,7 @@ def main() -> int:
             "name": ename,
             "nameEn": ename,
             "nameCanonical": ename,
-            "faction": "standard",  # TODO: infer barbarian from Race
+            "faction": faction,
             "category": category,
             "rank": tier,
             "quality": quality,
@@ -243,6 +275,7 @@ def main() -> int:
         (OUT_DIR / f"{slug}.json").write_text(
             json.dumps(record, indent=2, ensure_ascii=False), encoding="utf-8"
         )
+        produced_slugs.add(slug)
         index.append({
             "slug": slug,
             "name": ename,
@@ -263,7 +296,18 @@ def main() -> int:
     (OUT_DIR / "_index.json").write_text(
         json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8"
     )
-    print(f"Wrote {written} generals to {OUT_DIR}")
+
+    # Remove any stale records from previous extractor runs that no longer
+    # match a current roster entry.
+    removed = 0
+    for f in OUT_DIR.glob("*.json"):
+        if f.stem == "_index":
+            continue
+        if f.stem not in produced_slugs:
+            f.unlink()
+            removed += 1
+
+    print(f"Wrote {written} generals to {OUT_DIR}" + (f" (removed {removed} stale)" if removed else ""))
     return 0
 
 

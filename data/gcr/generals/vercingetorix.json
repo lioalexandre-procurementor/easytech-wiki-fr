@@ -3,13 +3,13 @@
   "name": "Vercingetorix",
   "nameEn": "Vercingetorix",
   "nameCanonical": "Vercingetorix",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "infantry",
   "rank": "A",
   "quality": "bronze",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général balanced — Gaule.",
+  "shortDesc": "Général infantry — Gaule.",
   "longDesc": "Vercingetorix — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

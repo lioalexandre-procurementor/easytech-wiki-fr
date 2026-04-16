@@ -4,12 +4,12 @@
   "nameEn": "Hannibal",
   "nameCanonical": "Hannibal",
   "faction": "standard",
-  "category": "archer",
+  "category": "cavalry",
   "rank": "A",
   "quality": "bronze",
   "country": "GRE",
   "countryName": "Grèce",
-  "shortDesc": "Général archer — Grèce.",
+  "shortDesc": "Général cavalry — Grèce.",
   "longDesc": "Hannibal — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

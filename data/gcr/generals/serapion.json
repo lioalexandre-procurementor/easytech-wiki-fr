@@ -4,12 +4,12 @@
   "nameEn": "Serapion",
   "nameCanonical": "Serapion",
   "faction": "standard",
-  "category": "balanced",
+  "category": "cavalry",
   "rank": "C",
   "quality": "gold",
   "country": "CAR",
   "countryName": "Carthage",
-  "shortDesc": "Général balanced — Carthage.",
+  "shortDesc": "Général cavalry — Carthage.",
   "longDesc": "Serapion — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

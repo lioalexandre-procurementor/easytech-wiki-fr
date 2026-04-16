@@ -36,6 +36,42 @@ CATEGORY_MAP = {
     7: "wargear",
 }
 
+BRANCH_NAME_EN = {
+    1: "Infantry",
+    2: "Cavalry",
+    3: "Archer",
+    4: "Navy",
+}
+BRANCH_NAME_FR = {
+    1: "Infanterie",
+    2: "Cavalerie",
+    3: "Archer",
+    4: "Marine",
+}
+
+EFFECT_NAME_EN = {
+    "AddHP": "Health",
+    "AddAttack": "Attack",
+    "AddDefense": "Defense",
+    "AddMobility": "Mobility",
+}
+EFFECT_NAME_FR = {
+    "AddHP": "PV",
+    "AddAttack": "Attaque",
+    "AddDefense": "Défense",
+    "AddMobility": "Mobilité",
+}
+
+
+def dominant_effect(entry: dict) -> str:
+    """Return the first non-zero Add* field — GCR tech lines are
+    single-stat (see AddHP/AddAttack/AddDefense/AddMobility exclusivity
+    in TechnologySettings)."""
+    for k in ("AddHP", "AddAttack", "AddDefense", "AddMobility"):
+        if entry.get(k):
+            return k
+    return "AddHP"
+
 
 def slugify(name: str) -> str:
     s = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
@@ -64,54 +100,63 @@ def main() -> int:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Group by Type — each Type is a tech line with MaxLv levels.
-    by_type: dict[int, list[dict]] = {}
+    # Group by (BelongType, Type) — each pair is one tech line with L levels.
+    # The previous version grouped by Type alone, producing duplicate slugs
+    # ("1", "2" …) because `Name` was Chinese and slugify collapsed to the
+    # branch index. BelongType (1-4) is the branch (infantry / cavalry /
+    # archer / navy), Type is the line id within that branch.
+    by_line: dict[tuple[int, int], list[dict]] = {}
     for t in techs:
-        by_type.setdefault(t.get("Type", 0), []).append(t)
+        by_line.setdefault((t.get("BelongType", 0), t.get("Type", 0)), []).append(t)
 
     by_category: dict[str, int] = {}
     index: list[dict] = []
+    produced: set[str] = set()
 
-    for tid, entries in sorted(by_type.items()):
+    for (branch, tid), entries in sorted(by_line.items()):
         entries.sort(key=lambda e: e.get("Level", 1))
         head = entries[0]
-        name = strings_en.get(f"TechName_{tid}") or head.get("Name") or f"Tech_{tid}"
-        slug = slugify(name)
-        category_id = head.get("Category", 0)
-        category = CATEGORY_MAP.get(category_id, "infantry")
+        category = CATEGORY_MAP.get(branch, "infantry")
+        effect = dominant_effect(head)
+
+        # Composable, collision-free slug/name: e.g. "infantry-attack",
+        # "cavalry-health", "archer-defense", "navy-mobility".
+        branch_en = BRANCH_NAME_EN.get(branch, "Unknown")
+        branch_fr = BRANCH_NAME_FR.get(branch, "Inconnu")
+        effect_en = EFFECT_NAME_EN.get(effect, effect)
+        effect_fr = EFFECT_NAME_FR.get(effect, effect)
+        name_en = f"{branch_en} Tactics — {effect_en}"
+        name_fr = f"Tactiques {branch_fr} — {effect_fr}"
+        slug = slugify(f"{branch_en}-{effect_en}")
 
         levels = []
         for e in entries:
             levels.append({
                 "gameId": e.get("Id"),
                 "level": e.get("Level", 1),
-                "x": e.get("X", 0),
-                "y": e.get("Y", 0),
                 "costGold": e.get("CostGold", 0),
                 "costIndustry": e.get("CostIndustry", 0),
-                "costEnergy": e.get("CostEnergy", 0),
-                "costTech": e.get("CostTech", 0),
-                "needHQLv": e.get("NeedHQLv"),
-                "needScenarioId": e.get("NeedScenarioId"),
-                "descEn": strings_en.get(f"TechDesc_{tid}_{e.get('Level',1)}", ""),
-                "descTemplate": strings_en.get(f"TechDesc_{tid}", ""),
-                "techValues": e.get("TechValues", []),
-                "techDescKeys": e.get("TechDescKeys", []),
-                "prerequisiteIds": e.get("PrerequisiteIds", []),
-                "upgradeToId": e.get("UpgradeToId"),
+                "upgradeId": e.get("UpgradeId"),
+                "armyType": e.get("ArmyType"),
+                "addHP": e.get("AddHP", 0),
+                "addAttack": e.get("AddAttack", 0),
+                "addDefense": e.get("AddDefense", 0),
+                "addMobility": e.get("AddMobility", 0),
+                # Chinese-only name from data file; keep for reference until
+                # CN→EN/FR translation pass lands.
+                "nameCn": e.get("Name"),
             })
 
         record = {
             "slug": slug,
+            "gameBranch": branch,   # 1=infantry,2=cavalry,3=archer,4=navy
             "gameTypeId": tid,
-            "gameCategoryId": category_id,
-            "nameEn": name,
-            "nameFr": name,  # TODO: localize
+            "nameEn": name_en,
+            "nameFr": name_fr,
             "category": category,
-            "effectArmy": head.get("EffectArmy"),
+            "effect": effect,
             "maxLevel": max(e.get("Level", 1) for e in entries),
-            "needHQLv": head.get("NeedHQLv", 1),
-            "needScenarioId": head.get("NeedScenarioId", 0),
+            "totalLevels": len(entries),
             "levels": levels,
             "prerequisites": [],
             "affectsArmyIds": [],
@@ -119,22 +164,33 @@ def main() -> int:
         (OUT_DIR / f"{slug}.json").write_text(
             json.dumps(record, indent=2, ensure_ascii=False), encoding="utf-8"
         )
+        produced.add(slug)
         index.append({
-            "slug": slug, "nameEn": name, "category": category,
+            "slug": slug, "nameEn": name_en, "category": category,
             "maxLevel": record["maxLevel"], "gameTypeId": tid,
+            "gameBranch": branch, "effect": effect,
         })
         by_category[category] = by_category.get(category, 0) + 1
 
     (OUT_DIR / "_index.json").write_text(
         json.dumps({
-            "version": 1,
+            "version": 2,
             "totalTechs": len(index),
             "byCategory": by_category,
             "techs": index,
         }, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
-    print(f"Wrote {len(index)} techs to {OUT_DIR}")
+    # Remove stale dedup slugs from v1 runs (the ones named "1.json",
+    # "2.json", etc.).
+    removed = 0
+    for f in OUT_DIR.glob("*.json"):
+        if f.stem == "_index":
+            continue
+        if f.stem not in produced:
+            f.unlink()
+            removed += 1
+    print(f"Wrote {len(index)} techs to {OUT_DIR}" + (f" (removed {removed} stale)" if removed else ""))
     return 0
 
 

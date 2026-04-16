@@ -1,0 +1,41 @@
+{
+  "slug": "cavalry-health",
+  "gameBranch": 2,
+  "gameTypeId": 4,
+  "nameEn": "Cavalry Tactics — Health",
+  "nameFr": "Tactiques Cavalerie — PV",
+  "category": "cavalry",
+  "effect": "AddHP",
+  "maxLevel": 2,
+  "totalLevels": 2,
+  "levels": [
+    {
+      "gameId": 13,
+      "level": 1,
+      "costGold": 900,
+      "costIndustry": 0,
+      "upgradeId": 14,
+      "armyType": 2,
+      "addHP": 12,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "骑兵生命1"
+    },
+    {
+      "gameId": 14,
+      "level": 2,
+      "costGold": 1800,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 2,
+      "addHP": 24,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "骑兵生命2"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

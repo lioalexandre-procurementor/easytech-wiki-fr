@@ -3,13 +3,13 @@
   "name": "Commius",
   "nameEn": "Commius",
   "nameCanonical": "Commius",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "cavalry",
   "rank": "B",
   "quality": "silver",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général balanced — Gaule.",
+  "shortDesc": "Général cavalry — Gaule.",
   "longDesc": "Commius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

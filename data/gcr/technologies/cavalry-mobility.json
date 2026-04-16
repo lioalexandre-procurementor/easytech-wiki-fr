@@ -1,0 +1,41 @@
+{
+  "slug": "cavalry-mobility",
+  "gameBranch": 2,
+  "gameTypeId": 7,
+  "nameEn": "Cavalry Tactics — Mobility",
+  "nameFr": "Tactiques Cavalerie — Mobilité",
+  "category": "cavalry",
+  "effect": "AddMobility",
+  "maxLevel": 2,
+  "totalLevels": 2,
+  "levels": [
+    {
+      "gameId": 23,
+      "level": 1,
+      "costGold": 900,
+      "costIndustry": 0,
+      "upgradeId": 24,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 1,
+      "nameCn": "骑兵行动1"
+    },
+    {
+      "gameId": 24,
+      "level": 2,
+      "costGold": 1800,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 0,
+      "addMobility": 2,
+      "nameCn": "骑兵行动2"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

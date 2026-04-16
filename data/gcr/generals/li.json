@@ -3,13 +3,13 @@
   "name": "Li",
   "nameEn": "Li",
   "nameCanonical": "Li",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "archer",
   "rank": "A",
   "quality": "silver",
   "country": "GER",
   "countryName": "Germanie",
-  "shortDesc": "Général balanced — Germanie.",
+  "shortDesc": "Général archer — Germanie.",
   "longDesc": "Li — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

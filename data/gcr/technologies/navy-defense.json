@@ -1,0 +1,93 @@
+{
+  "slug": "navy-defense",
+  "gameBranch": 4,
+  "gameTypeId": 12,
+  "nameEn": "Navy Tactics — Defense",
+  "nameFr": "Tactiques Marine — Défense",
+  "category": "navy",
+  "effect": "AddDefense",
+  "maxLevel": 6,
+  "totalLevels": 6,
+  "levels": [
+    {
+      "gameId": 37,
+      "level": 1,
+      "costGold": 600,
+      "costIndustry": 0,
+      "upgradeId": 38,
+      "armyType": 4,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 2,
+      "addMobility": 0,
+      "nameCn": "海军防御1"
+    },
+    {
+      "gameId": 38,
+      "level": 2,
+      "costGold": 1200,
+      "costIndustry": 0,
+      "upgradeId": 39,
+      "armyType": 4,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 4,
+      "addMobility": 0,
+      "nameCn": "海军防御2"
+    },
+    {
+      "gameId": 39,
+      "level": 3,
+      "costGold": 1800,
+      "costIndustry": 0,
+      "upgradeId": 40,
+      "armyType": 4,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 6,
+      "addMobility": 0,
+      "nameCn": "海军防御3"
+    },
+    {
+      "gameId": 40,
+      "level": 4,
+      "costGold": 2400,
+      "costIndustry": 0,
+      "upgradeId": 41,
+      "armyType": 4,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 8,
+      "addMobility": 0,
+      "nameCn": "海军防御4"
+    },
+    {
+      "gameId": 41,
+      "level": 5,
+      "costGold": 3000,
+      "costIndustry": 0,
+      "upgradeId": 42,
+      "armyType": 4,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 10,
+      "addMobility": 0,
+      "nameCn": "海军防御5"
+    },
+    {
+      "gameId": 42,
+      "level": 6,
+      "costGold": 3600,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 4,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 12,
+      "addMobility": 0,
+      "nameCn": "海军防御6"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

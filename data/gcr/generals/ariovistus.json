@@ -3,13 +3,13 @@
   "name": "Ariovistus",
   "nameEn": "Ariovistus",
   "nameCanonical": "Ariovistus",
-  "faction": "standard",
-  "category": "balanced",
+  "faction": "barbarian",
+  "category": "infantry",
   "rank": "B",
   "quality": "silver",
   "country": "GAU",
   "countryName": "Gaule",
-  "shortDesc": "Général balanced — Gaule.",
+  "shortDesc": "Général infantry — Gaule.",
   "longDesc": "Ariovistus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

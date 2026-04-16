@@ -1,0 +1,93 @@
+{
+  "slug": "cavalry-defense",
+  "gameBranch": 2,
+  "gameTypeId": 6,
+  "nameEn": "Cavalry Tactics — Defense",
+  "nameFr": "Tactiques Cavalerie — Défense",
+  "category": "cavalry",
+  "effect": "AddDefense",
+  "maxLevel": 6,
+  "totalLevels": 6,
+  "levels": [
+    {
+      "gameId": 17,
+      "level": 1,
+      "costGold": 900,
+      "costIndustry": 0,
+      "upgradeId": 18,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 2,
+      "addMobility": 0,
+      "nameCn": "骑兵防御1"
+    },
+    {
+      "gameId": 18,
+      "level": 2,
+      "costGold": 1800,
+      "costIndustry": 0,
+      "upgradeId": 19,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 4,
+      "addMobility": 0,
+      "nameCn": "骑兵防御2"
+    },
+    {
+      "gameId": 19,
+      "level": 3,
+      "costGold": 2700,
+      "costIndustry": 0,
+      "upgradeId": 20,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 6,
+      "addMobility": 0,
+      "nameCn": "骑兵防御3"
+    },
+    {
+      "gameId": 20,
+      "level": 4,
+      "costGold": 3600,
+      "costIndustry": 0,
+      "upgradeId": 21,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 8,
+      "addMobility": 0,
+      "nameCn": "骑兵防御4"
+    },
+    {
+      "gameId": 21,
+      "level": 5,
+      "costGold": 4500,
+      "costIndustry": 0,
+      "upgradeId": 22,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 10,
+      "addMobility": 0,
+      "nameCn": "骑兵防御5"
+    },
+    {
+      "gameId": 22,
+      "level": 6,
+      "costGold": 5400,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 0,
+      "addDefense": 12,
+      "addMobility": 0,
+      "nameCn": "骑兵防御6"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}

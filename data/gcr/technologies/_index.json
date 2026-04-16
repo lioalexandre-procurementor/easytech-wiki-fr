@@ -1,107 +1,138 @@
 {
-  "version": 1,
+  "version": 2,
   "totalTechs": 14,
   "byCategory": {
-    "infantry": 14
+    "infantry": 4,
+    "cavalry": 4,
+    "archer": 4,
+    "navy": 2
   },
   "techs": [
     {
-      "slug": "1",
-      "nameEn": "步兵生命1",
+      "slug": "infantry-health",
+      "nameEn": "Infantry Tactics — Health",
       "category": "infantry",
       "maxLevel": 6,
-      "gameTypeId": 0
+      "gameTypeId": 0,
+      "gameBranch": 1,
+      "effect": "AddHP"
     },
     {
-      "slug": "1",
-      "nameEn": "步兵攻击1",
+      "slug": "infantry-attack",
+      "nameEn": "Infantry Tactics — Attack",
       "category": "infantry",
       "maxLevel": 1,
-      "gameTypeId": 1
+      "gameTypeId": 1,
+      "gameBranch": 1,
+      "effect": "AddAttack"
     },
     {
-      "slug": "1",
-      "nameEn": "步兵防御1",
+      "slug": "infantry-defense",
+      "nameEn": "Infantry Tactics — Defense",
       "category": "infantry",
       "maxLevel": 2,
-      "gameTypeId": 2
+      "gameTypeId": 2,
+      "gameBranch": 1,
+      "effect": "AddDefense"
     },
     {
-      "slug": "1",
-      "nameEn": "步兵行动1",
+      "slug": "infantry-mobility",
+      "nameEn": "Infantry Tactics — Mobility",
       "category": "infantry",
       "maxLevel": 3,
-      "gameTypeId": 3
+      "gameTypeId": 3,
+      "gameBranch": 1,
+      "effect": "AddMobility"
     },
     {
-      "slug": "1",
-      "nameEn": "骑兵生命1",
-      "category": "infantry",
+      "slug": "cavalry-health",
+      "nameEn": "Cavalry Tactics — Health",
+      "category": "cavalry",
       "maxLevel": 2,
-      "gameTypeId": 4
+      "gameTypeId": 4,
+      "gameBranch": 2,
+      "effect": "AddHP"
     },
     {
-      "slug": "1",
-      "nameEn": "骑兵攻击1",
-      "category": "infantry",
+      "slug": "cavalry-attack",
+      "nameEn": "Cavalry Tactics — Attack",
+      "category": "cavalry",
       "maxLevel": 2,
-      "gameTypeId": 5
+      "gameTypeId": 5,
+      "gameBranch": 2,
+      "effect": "AddAttack"
     },
     {
-      "slug": "1",
-      "nameEn": "骑兵防御1",
-      "category": "infantry",
+      "slug": "cavalry-defense",
+      "nameEn": "Cavalry Tactics — Defense",
+      "category": "cavalry",
       "maxLevel": 6,
-      "gameTypeId": 6
+      "gameTypeId": 6,
+      "gameBranch": 2,
+      "effect": "AddDefense"
     },
     {
-      "slug": "1",
-      "nameEn": "骑兵行动1",
-      "category": "infantry",
+      "slug": "cavalry-mobility",
+      "nameEn": "Cavalry Tactics — Mobility",
+      "category": "cavalry",
       "maxLevel": 2,
-      "gameTypeId": 7
+      "gameTypeId": 7,
+      "gameBranch": 2,
+      "effect": "AddMobility"
     },
     {
-      "slug": "1",
-      "nameEn": "弓兵生命1",
-      "category": "infantry",
+      "slug": "archer-health",
+      "nameEn": "Archer Tactics — Health",
+      "category": "archer",
       "maxLevel": 3,
-      "gameTypeId": 8
+      "gameTypeId": 8,
+      "gameBranch": 3,
+      "effect": "AddHP"
     },
     {
-      "slug": "1",
-      "nameEn": "弓兵攻击1",
-      "category": "infantry",
+      "slug": "archer-attack",
+      "nameEn": "Archer Tactics — Attack",
+      "category": "archer",
       "maxLevel": 6,
-      "gameTypeId": 9
+      "gameTypeId": 9,
+      "gameBranch": 3,
+      "effect": "AddAttack"
     },
     {
-      "slug": "1",
-      "nameEn": "弓兵防御1",
-      "category": "infantry",
+      "slug": "archer-defense",
+      "nameEn": "Archer Tactics — Defense",
+      "category": "archer",
       "maxLevel": 2,
-      "gameTypeId": 10
+      "gameTypeId": 10,
+      "gameBranch": 3,
+      "effect": "AddDefense"
     },
     {
-      "slug": "1",
-      "nameEn": "弓兵行动1",
-      "category": "infantry",
+      "slug": "archer-mobility",
+      "nameEn": "Archer Tactics — Mobility",
+      "category": "archer",
       "maxLevel": 1,
-      "gameTypeId": 11
+      "gameTypeId": 11,
+      "gameBranch": 3,
+      "effect": "AddMobility"
     },
     {
-      "slug": "1",
-      "nameEn": "海军防御1",
-      "category": "infantry",
+      "slug": "navy-defense",
+      "nameEn": "Navy Tactics — Defense",
+      "category": "navy",
       "maxLevel": 6,
-      "gameTypeId": 12
+      "gameTypeId": 12,
+      "gameBranch": 4,
+      "effect": "AddDefense"
     },
     {
-      "slug": "1",
-      "nameEn": "海军行动1",
-      "category": "infantry",
+      "slug": "navy-mobility",
+      "nameEn": "Navy Tactics — Mobility",
+      "category": "navy",
       "maxLevel": 6,
-      "gameTypeId": 13
+      "gameTypeId": 13,
+      "gameBranch": 4,
+      "effect": "AddMobility"
     }
   ]
 }

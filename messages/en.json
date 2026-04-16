@@ -100,7 +100,13 @@
     "adSlot": "Advertisement",
     "navBackToHub": "← Back to GCR hub",
     "navAllGenerals": "👨‍✈️ All generals",
-    "navEliteUnits": "🏅 Elite units"
+    "navEliteUnits": "🏅 Elite units",
+    "seoTitle": "Barbarians — Great Conqueror: Rome | EasyTech Wiki",
+    "seoDescription": "Gauls, Germans, Huns, Dacians — discover the generals and elite units of the barbarian peoples who stood against Rome in Great Conqueror: Rome.",
+    "heroParagraph": "The free peoples beyond the Empire's frontiers — Gauls, Germans, Huns, Dacians, Britons — resisted Rome's war machine for centuries. This page gathers their commanders, elite units and the historical context that pitted them against Rome.",
+    "loreP1": "For over five centuries, the civilizations Rome labelled 'barbarian' formed a continuous belt of adversaries around the Mediterranean. Far from primitive, these peoples fielded structured warrior societies, refined tactics and often crushing numerical superiority. Julius Caesar himself spent eight campaigns conquering Gaul.",
+    "loreP2": "Great Conqueror: Rome mirrors this strategic diversity. Barbarian generals favor heavy cavalry (Huns), berserker infantry (Germans), forest guerrilla warfare (Gauls) or steppe cataphracts (Dacians, Parthians). Their army compositions demand a different counter-play than the Mediterranean legions.",
+    "loreWarning": "⚠️ The stats below come directly from the Great Conqueror: Rome game files and may change between patches. Check the Updates page for balance-change tracking."
   },
   "elitesPage": {
     "h1": "Elite Units — World Conqueror 4",

@@ -4,12 +4,12 @@
   "nameEn": "Achillas",
   "nameCanonical": "Achillas",
   "faction": "standard",
-  "category": "balanced",
+  "category": "infantry",
   "rank": "B",
   "quality": "gold",
   "country": "CAR",
   "countryName": "Carthage",
-  "shortDesc": "Général balanced — Carthage.",
+  "shortDesc": "Général infantry — Carthage.",
   "longDesc": "Achillas — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {

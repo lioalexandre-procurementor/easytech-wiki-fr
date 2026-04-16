@@ -1,0 +1,41 @@
+{
+  "slug": "cavalry-attack",
+  "gameBranch": 2,
+  "gameTypeId": 5,
+  "nameEn": "Cavalry Tactics — Attack",
+  "nameFr": "Tactiques Cavalerie — Attaque",
+  "category": "cavalry",
+  "effect": "AddAttack",
+  "maxLevel": 2,
+  "totalLevels": 2,
+  "levels": [
+    {
+      "gameId": 15,
+      "level": 1,
+      "costGold": 900,
+      "costIndustry": 0,
+      "upgradeId": 16,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 5,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "骑兵攻击1"
+    },
+    {
+      "gameId": 16,
+      "level": 2,
+      "costGold": 1800,
+      "costIndustry": 0,
+      "upgradeId": 0,
+      "armyType": 2,
+      "addHP": 0,
+      "addAttack": 10,
+      "addDefense": 0,
+      "addMobility": 0,
+      "nameCn": "骑兵攻击2"
+    }
+  ],
+  "prerequisites": [],
+  "affectsArmyIds": []
+}
