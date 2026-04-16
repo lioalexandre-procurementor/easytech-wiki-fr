@@ -330,6 +330,8 @@
       "title": "Votre général préféré",
       "close": "Fermer",
       "searchPlaceholder": "🔎 Rechercher un général…",
+      "searchHint": "Envie d'un autre ? Recherchez-le ci-dessous.",
+      "prefilledLabel": "Votre sélection",
       "noResults": "Aucun général ne correspond.",
       "turnstileMissing": "(Turnstile non configuré — vérification désactivée en dev)",
       "cancel": "Annuler",
@@ -347,7 +349,7 @@
     },
     "landingTeaser": {
       "heading": "🗳 Votez pour votre général préféré !",
-      "body": "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Qui mérite la première place ? Participez au classement communautaire.",
+      "body": "Qui mérite la première place ? Participez au classement communautaire — votre vote compte.",
       "cta": "Voter maintenant →"
     }
   },
@@ -559,7 +561,8 @@
       "label": "Filtrer par type",
       "all": "Tous"
     },
-    "voteForAnother": "Voter pour un autre général",
+    "primaryVoteCta": "Voter pour un général",
+    "voteForAnother": "Voter pour quelqu'un d'autre",
     "placeholderBadge": "À promouvoir — votez",
     "voteToReveal": "Votez pour révéler",
     "ourPick": "Notre choix",

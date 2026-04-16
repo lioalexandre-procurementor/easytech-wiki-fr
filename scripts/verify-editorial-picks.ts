@@ -24,37 +24,59 @@ for (const slug of BEST_GENERAL_PLACEHOLDER.gcr) {
   assert(getGeneralGcr(slug) !== null, `gcr placeholder ${slug} is a real general`);
 }
 
-// 3. Every WC4 elite unit has an editorial pick AND it resolves to a real general.
+// 3. Every WC4 elite unit has an editorial pick AND its primary (and
+//    optional secondary) slot resolves to a real general.
 const wc4Units = getAllEliteUnitsWc4();
 const wc4Picks = UNIT_EDITORIAL_PICKS.wc4;
 const wc4Missing: string[] = [];
 for (const unit of wc4Units) {
   const pick = wc4Picks[unit.slug];
-  if (typeof pick !== "string") {
+  if (!pick || typeof pick.primary !== "string") {
     wc4Missing.push(unit.slug);
     continue;
   }
   assert(
-    getGeneralWc4(pick) !== null,
-    `wc4 pick for ${unit.slug} -> ${pick} is a real general`
+    getGeneralWc4(pick.primary) !== null,
+    `wc4 primary pick for ${unit.slug} -> ${pick.primary} is a real general`
   );
+  if (pick.secondary) {
+    assert(
+      getGeneralWc4(pick.secondary) !== null,
+      `wc4 secondary pick for ${unit.slug} -> ${pick.secondary} is a real general`
+    );
+    assert(
+      pick.secondary !== pick.primary,
+      `wc4 pick for ${unit.slug} — primary/secondary differ`
+    );
+  }
 }
 assert(wc4Missing.length === 0, `every WC4 unit has a pick (missing: ${wc4Missing.join(", ") || "none"})`);
 
-// 4. Every GCR elite unit has an editorial pick AND it resolves to a real general.
+// 4. Every GCR elite unit has an editorial pick AND its primary (and
+//    optional secondary) slot resolves to a real general.
 const gcrUnits = getAllEliteUnitsGcr();
 const gcrPicks = UNIT_EDITORIAL_PICKS.gcr;
 const gcrMissing: string[] = [];
 for (const unit of gcrUnits) {
   const pick = gcrPicks[unit.slug];
-  if (typeof pick !== "string") {
+  if (!pick || typeof pick.primary !== "string") {
     gcrMissing.push(unit.slug);
     continue;
   }
   assert(
-    getGeneralGcr(pick) !== null,
-    `gcr pick for ${unit.slug} -> ${pick} is a real general`
+    getGeneralGcr(pick.primary) !== null,
+    `gcr primary pick for ${unit.slug} -> ${pick.primary} is a real general`
   );
+  if (pick.secondary) {
+    assert(
+      getGeneralGcr(pick.secondary) !== null,
+      `gcr secondary pick for ${unit.slug} -> ${pick.secondary} is a real general`
+    );
+    assert(
+      pick.secondary !== pick.primary,
+      `gcr pick for ${unit.slug} — primary/secondary differ`
+    );
+  }
 }
 assert(gcrMissing.length === 0, `every GCR unit has a pick (missing: ${gcrMissing.join(", ") || "none"})`);
 

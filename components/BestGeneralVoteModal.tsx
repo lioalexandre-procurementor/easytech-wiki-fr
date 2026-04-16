@@ -191,6 +191,17 @@ export default function BestGeneralVoteModal({
     );
   })();
 
+  // When a preselection is active, pin that general at the top of the list
+  // so the user immediately sees the current pick, and knows where to look
+  // if they want to swap. The pinned row is only rendered when prefillSlug
+  // matches a general in our list, and is always visible regardless of the
+  // current search query.
+  const pinned =
+    prefillSlug && generals.find((g) => g.slug === prefillSlug);
+  const belowList = pinned
+    ? filtered.filter((g) => g.slug !== pinned.slug)
+    : filtered;
+
   return (
     <div
       role="dialog"
@@ -216,7 +227,12 @@ export default function BestGeneralVoteModal({
           </button>
         </div>
 
-        <div className="p-4 border-b border-border">
+        <div className="p-4 border-b border-border space-y-2">
+          {pinned && (
+            <div className="text-[11px] uppercase tracking-widest text-muted">
+              {t("modal.searchHint")}
+            </div>
+          )}
           <input
             type="search"
             value={query}
@@ -227,54 +243,35 @@ export default function BestGeneralVoteModal({
         </div>
 
         <div className="overflow-y-auto flex-1 p-2">
-          {filtered.length === 0 ? (
+          {pinned && (
+            <div className="mb-2">
+              <div className="text-[10px] uppercase tracking-widest text-gold2/80 px-1 pb-1">
+                {t("modal.prefilledLabel")}
+              </div>
+              <GeneralRadioRow
+                g={pinned}
+                checked={selectedSlug === pinned.slug}
+                onSelect={() => setSelectedSlug(pinned.slug)}
+                locale={locale}
+              />
+            </div>
+          )}
+          {belowList.length === 0 && !pinned ? (
             <div className="text-muted text-xs italic text-center py-6">
               {t("modal.noResults")}
             </div>
           ) : (
             <ul className="space-y-1">
-              {filtered.map((g) => {
-                const checked = selectedSlug === g.slug;
-                return (
-                  <li key={g.slug}>
-                    <label
-                      className={`block border rounded px-3 py-2 cursor-pointer transition-colors ${
-                        checked
-                          ? "border-gold bg-gold/10"
-                          : "border-border bg-bg3 hover:border-gold/50"
-                      }`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <input
-                          type="radio"
-                          name="best-general"
-                          checked={checked}
-                          onChange={() => setSelectedSlug(g.slug)}
-                        />
-                        <div className="relative w-8 h-8 rounded-full overflow-hidden bg-bg2 border border-gold/30 shrink-0">
-                          {g.portrait ? (
-                            <Image
-                              src={g.portrait}
-                              alt=""
-                              fill
-                              sizes="32px"
-                              className="object-cover"
-                            />
-                          ) : null}
-                        </div>
-                        <span className="flex-1 min-w-0 text-sm text-gold2 font-bold truncate">
-                          {displayName(g, locale)}
-                        </span>
-                        {g.rank && (
-                          <span className="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded border bg-red-500/20 border-red-500/40 text-red-300 shrink-0">
-                            {g.rank}
-                          </span>
-                        )}
-                      </div>
-                    </label>
-                  </li>
-                );
-              })}
+              {belowList.map((g) => (
+                <li key={g.slug}>
+                  <GeneralRadioRow
+                    g={g}
+                    checked={selectedSlug === g.slug}
+                    onSelect={() => setSelectedSlug(g.slug)}
+                    locale={locale}
+                  />
+                </li>
+              ))}
             </ul>
           )}
         </div>
@@ -316,5 +313,55 @@ export default function BestGeneralVoteModal({
         </div>
       </div>
     </div>
+  );
+}
+
+function GeneralRadioRow({
+  g,
+  checked,
+  onSelect,
+  locale,
+}: {
+  g: GeneralOption;
+  checked: boolean;
+  onSelect: () => void;
+  locale: string;
+}) {
+  return (
+    <label
+      className={`block border rounded px-3 py-2 cursor-pointer transition-colors ${
+        checked
+          ? "border-gold bg-gold/10"
+          : "border-border bg-bg3 hover:border-gold/50"
+      }`}
+    >
+      <div className="flex items-center gap-3">
+        <input
+          type="radio"
+          name="best-general"
+          checked={checked}
+          onChange={onSelect}
+        />
+        <div className="relative w-8 h-8 rounded-full overflow-hidden bg-bg2 border border-gold/30 shrink-0">
+          {g.portrait ? (
+            <Image
+              src={g.portrait}
+              alt=""
+              fill
+              sizes="32px"
+              className="object-cover"
+            />
+          ) : null}
+        </div>
+        <span className="flex-1 min-w-0 text-sm text-gold2 font-bold truncate">
+          {displayName(g, locale)}
+        </span>
+        {g.rank && (
+          <span className="text-[10px] font-extrabold uppercase px-1.5 py-0.5 rounded border bg-red-500/20 border-red-500/40 text-red-300 shrink-0">
+            {g.rank}
+          </span>
+        )}
+      </div>
+    </label>
   );
 }

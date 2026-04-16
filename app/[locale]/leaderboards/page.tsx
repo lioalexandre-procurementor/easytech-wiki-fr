@@ -15,6 +15,7 @@ import {
   type UnitsRanking,
 } from "@/lib/leaderboards";
 import { getEditorialPick } from "@/lib/editorial-picks";
+import { generalsHubPath, unitHubPath } from "@/lib/games";
 import { parseGame, type Game } from "@/lib/types";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
@@ -51,18 +52,6 @@ function getAllGeneralsForGame(game: Game) {
   if (game === "wc4") return getAllGeneralsWc4();
   if (game === "gcr") return getAllGeneralsGcr();
   return getAllGeneralsEw6();
-}
-
-function generalsHubPath(game: Game) {
-  if (game === "wc4") return "/world-conqueror-4/generaux";
-  if (game === "gcr") return "/great-conqueror-rome/generaux";
-  return "/european-war-6/generaux";
-}
-
-function unitHubPath(game: Game) {
-  if (game === "wc4") return "/world-conqueror-4/unites-elite";
-  if (game === "gcr") return "/great-conqueror-rome/unites-elite";
-  return "/european-war-6/unites-elite";
 }
 
 export function generateStaticParams() {
@@ -448,7 +437,7 @@ function UnitsTab({
           const catMeta = catLabels[r.unitCategory as keyof typeof catLabels];
           const editorialSlug = r.reachedThreshold
             ? null
-            : getEditorialPick(game, r.unitSlug);
+            : getEditorialPick(game, r.unitSlug)?.primary ?? null;
 
           const unitHref = `${unitHrefBase}/${r.unitSlug}#best-general-vote`;
           const generalHref = (slug: string) => `${generalHrefBase}/${slug}`;

@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
+import { generalsHubPath } from "@/lib/games";
 import type { Game } from "@/lib/types";
 
 type VoteApiResponse = {
@@ -18,6 +19,7 @@ export type Candidate = {
   nameEn?: string;     // EN canonical
   rank: "S" | "A" | "B" | "C" | null;
   country?: string | null;
+  portrait?: string | null; // head image path, e.g. /img/wc4/heads/Manstein.webp
 };
 
 type Props = {
@@ -29,6 +31,9 @@ type Props = {
    *  placeholder instead of a leaderboard. Pass `0` to always show results.
    *  Default lowered from 100 → 50 in the voting redesign. */
   threshold?: number;
+  /** Slug of the editorial pick general — shown in slot 1 even before
+   *  the threshold is reached, so the widget is never fully empty. */
+  editorialSlug?: string;
 };
 
 const TURNSTILE_SRC =
@@ -89,6 +94,8 @@ const LABELS: Record<
     placeholder: (threshold: number) => string;
     progressTo: (current: number, threshold: number) => string;
     communityPick: string;
+    ourPick: string;
+    voteToReveal: string;
     voteCta: string;
     thanks: string;
     openModal: string;
@@ -107,6 +114,7 @@ const LABELS: Record<
     totalVotes: (n: number) => string;
     search: string;
     noMatch: string;
+    openProfile: string;
   }
 > = {
   fr: {
@@ -115,6 +123,8 @@ const LABELS: Record<
       `Pas encore assez de votes. La recommandation communautaire s'affiche à partir de ${n} votes.`,
     progressTo: (c, n) => `${c} / ${n} votes`,
     communityPick: "Choix de la communauté",
+    ourPick: "Notre suggestion",
+    voteToReveal: "Votez pour révéler",
     voteCta: "🗳 Voter pour votre général",
     thanks: "✓ Merci — votre vote est enregistré (valide 30 jours)",
     openModal: "Ouvrir le vote",
@@ -135,6 +145,7 @@ const LABELS: Record<
       n === 1 ? "1 vote au total" : `${n} votes au total`,
     search: "Rechercher un général…",
     noMatch: "Aucun général ne correspond.",
+    openProfile: "Voir le profil",
   },
   en: {
     heading: "🏆 Community's top-pick general",
@@ -142,6 +153,8 @@ const LABELS: Record<
       `Not enough votes yet. The community pick shows up once ${n} votes are cast.`,
     progressTo: (c, n) => `${c} / ${n} votes`,
     communityPick: "Community pick",
+    ourPick: "Our pick",
+    voteToReveal: "Vote to reveal",
     voteCta: "🗳 Vote for your general",
     thanks: "✓ Thanks — your vote is counted (valid 30 days)",
     openModal: "Open vote",
@@ -161,6 +174,7 @@ const LABELS: Record<
     totalVotes: (n) => (n === 1 ? "1 total vote" : `${n} total votes`),
     search: "Search a general…",
     noMatch: "No general matches.",
+    openProfile: "View profile",
   },
   de: {
     heading: "🏆 Community-Favorit",
@@ -168,6 +182,8 @@ const LABELS: Record<
       `Noch nicht genug Stimmen. Die Community-Empfehlung erscheint ab ${n} Stimmen.`,
     progressTo: (c, n) => `${c} / ${n} Stimmen`,
     communityPick: "Community-Wahl",
+    ourPick: "Unser Tipp",
+    voteToReveal: "Abstimmen zum Enthüllen",
     voteCta: "🗳 Für deinen General abstimmen",
     thanks: "✓ Danke — deine Stimme wurde gezählt (30 Tage gültig)",
     openModal: "Abstimmung öffnen",
@@ -187,6 +203,7 @@ const LABELS: Record<
     totalVotes: (n) => (n === 1 ? "1 Stimme insgesamt" : `${n} Stimmen insgesamt`),
     search: "General suchen…",
     noMatch: "Kein General entspricht.",
+    openProfile: "Profil öffnen",
   },
 };
 
@@ -203,6 +220,7 @@ export default function UnitBestGeneralVote({
   unitDisplayName,
   candidates,
   threshold = 50,
+  editorialSlug,
 }: Props) {
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
@@ -365,18 +383,79 @@ export default function UnitBestGeneralVote({
           <div className="h-5 rounded bg-border/40 animate-pulse w-2/3" />
         </div>
       ) : belowThreshold ? (
-        // Placeholder until threshold is reached
-        <div className="bg-bg3/60 border border-dashed border-gold/30 rounded p-3">
-          <p className="text-dim text-xs md:text-sm italic mb-2 leading-relaxed">
-            {L.placeholder(threshold)}
-          </p>
-          <div className="flex items-center gap-2 text-[10px] text-muted">
+        // Placeholder until threshold is reached — show editorial pick in slot 1
+        <div className="space-y-1.5">
+          {(() => {
+            const editorial = editorialSlug
+              ? candidates.find((c) => c.slug === editorialSlug)
+              : null;
+            return (
+              <>
+                {/* Slot 1 — editorial pick */}
+                {editorial ? (
+                  <div className="flex items-center gap-2 text-sm bg-gold/5 border border-gold/25 rounded px-2 py-1.5">
+                    <span className="text-base w-5 text-center" aria-hidden="true">⭐</span>
+                    {editorial.portrait && (
+                      <img
+                        src={editorial.portrait}
+                        alt=""
+                        width={28}
+                        height={28}
+                        className="rounded-full object-cover shrink-0 border border-gold/30"
+                        style={{ width: 28, height: 28 }}
+                      />
+                    )}
+                    <a
+                      href={`/${locale}${generalsHubPath(game)}/${editorial.slug}`}
+                      className="flex-1 text-gold2 font-semibold hover:underline truncate no-underline"
+                    >
+                      {displayName(editorial)}
+                    </a>
+                    {editorial.rank && (
+                      <span className={`text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded border ${RANK_COLOR[editorial.rank] ?? RANK_COLOR.C}`}>
+                        {editorial.rank}
+                      </span>
+                    )}
+                    <a
+                      href={`/${locale}${generalsHubPath(game)}/${editorial.slug}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={L.openProfile}
+                      aria-label={L.openProfile}
+                      className="text-muted hover:text-gold2 transition-colors shrink-0 no-underline"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                        <path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                        <path fillRule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <span className="text-gold text-[9px] uppercase tracking-widest font-bold shrink-0">{L.ourPick}</span>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-2 px-2 py-1.5 rounded border border-dashed border-border opacity-50">
+                    <span className="text-base w-5 text-center" aria-hidden="true">🥇</span>
+                    <div className="w-7 h-7 rounded-full bg-border/60 shrink-0" />
+                    <span className="flex-1 text-muted text-xs italic">{L.voteToReveal}</span>
+                  </div>
+                )}
+                {/* Slots 2 & 3 — locked */}
+                {[["🥈", "2"], ["🥉", "3"]].map(([medal, key]) => (
+                  <div key={key} className="flex items-center gap-2 px-2 py-1.5 rounded border border-dashed border-border opacity-40">
+                    <span className="text-base w-5 text-center" aria-hidden="true">{medal}</span>
+                    <div className="w-7 h-7 rounded-full bg-border/60 shrink-0" />
+                    <span className="flex-1 text-muted text-xs italic">{L.voteToReveal}</span>
+                  </div>
+                ))}
+              </>
+            );
+          })()}
+          {/* Progress bar */}
+          <div className="flex items-center gap-2 text-[10px] text-muted mt-2 pt-2 border-t border-border/50">
             <div className="flex-1 h-1.5 rounded-full bg-border overflow-hidden">
               <div
                 className="h-full bg-gradient-to-r from-gold to-red-500 transition-all"
-                style={{
-                  width: `${Math.min(100, (total / threshold) * 100)}%`,
-                }}
+                style={{ width: `${Math.min(100, (total / threshold) * 100)}%` }}
               />
             </div>
             <span className="tabular-nums whitespace-nowrap">
@@ -397,8 +476,18 @@ export default function UnitBestGeneralVote({
                 <span className="text-base w-5 text-center" aria-hidden="true">
                   {medal}
                 </span>
+                {c.portrait && (
+                  <img
+                    src={c.portrait}
+                    alt=""
+                    width={28}
+                    height={28}
+                    className="rounded-full object-cover shrink-0 border border-gold/20"
+                    style={{ width: 28, height: 28 }}
+                  />
+                )}
                 <a
-                  href={`/${locale}/world-conqueror-4/generaux/${c.slug}`}
+                  href={`/${locale}${generalsHubPath(game)}/${c.slug}`}
                   className="flex-1 text-gold2 hover:underline truncate no-underline"
                 >
                   {displayName(c)}
@@ -410,6 +499,20 @@ export default function UnitBestGeneralVote({
                     {c.rank}
                   </span>
                 )}
+                <a
+                  href={`/${locale}${generalsHubPath(game)}/${c.slug}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={L.openProfile}
+                  aria-label={L.openProfile}
+                  className="text-muted hover:text-gold2 transition-colors shrink-0 no-underline"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                    <path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                    <path fillRule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clipRule="evenodd" />
+                  </svg>
+                </a>
                 <span className="text-gold2 font-bold text-xs tabular-nums shrink-0">
                   {c.votes}
                 </span>
@@ -508,6 +611,16 @@ export default function UnitBestGeneralVote({
                         onChange={() => setSelected(c.slug)}
                         className="accent-gold"
                       />
+                      {c.portrait && (
+                        <img
+                          src={c.portrait}
+                          alt=""
+                          width={28}
+                          height={28}
+                          className="rounded-full object-cover shrink-0 border border-gold/20"
+                          style={{ width: 28, height: 28 }}
+                        />
+                      )}
                       <span className="flex-1 text-sm text-ink truncate">
                         {displayName(c)}
                       </span>
@@ -521,6 +634,20 @@ export default function UnitBestGeneralVote({
                       <span className="text-muted text-[11px] tabular-nums w-10 text-right">
                         {v}
                       </span>
+                      <a
+                        href={`/${locale}${generalsHubPath(game)}/${c.slug}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={L.openProfile}
+                        aria-label={L.openProfile}
+                        className="text-muted hover:text-gold2 transition-colors shrink-0 no-underline"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                          <path d="M10 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
+                          <path fillRule="evenodd" d="M.664 10.59a1.651 1.651 0 0 1 0-1.186A10.004 10.004 0 0 1 10 3c4.257 0 7.893 2.66 9.336 6.41.147.381.146.804 0 1.186A10.004 10.004 0 0 1 10 17c-4.257 0-7.893-2.66-9.336-6.41ZM14 10a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" clipRule="evenodd" />
+                        </svg>
+                      </a>
                     </label>
                   );
                 })

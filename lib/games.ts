@@ -1,4 +1,4 @@
-import type { GameMeta } from "./types";
+import type { Game, GameMeta } from "./types";
 
 export const GAMES: GameMeta[] = [
   {
@@ -55,4 +55,23 @@ export const GAMES: GameMeta[] = [
 
 export function getGame(slug: string): GameMeta | null {
   return GAMES.find((g) => g.slug === slug) ?? null;
+}
+
+/**
+ * Per-game URL segment for the "generals" hub (locale-prefix free).
+ * Single source of truth; used by the leaderboards page, unit-detail
+ * best-general widget, and any other surface that deep-links into a
+ * game's generals. Regressions here produce cross-game 404s (e.g. a
+ * WC4 general slug resolving under /great-conqueror-rome/generaux).
+ */
+export function generalsHubPath(game: Game): string {
+  if (game === "wc4") return "/world-conqueror-4/generaux";
+  if (game === "gcr") return "/great-conqueror-rome/generaux";
+  return "/european-war-6/generaux";
+}
+
+export function unitHubPath(game: Game): string {
+  if (game === "wc4") return "/world-conqueror-4/unites-elite";
+  if (game === "gcr") return "/great-conqueror-rome/unites-elite";
+  return "/european-war-6/unites-elite";
 }

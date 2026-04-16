@@ -330,6 +330,8 @@
       "title": "Dein Lieblingsgeneral",
       "close": "Schließen",
       "searchPlaceholder": "🔎 General suchen…",
+      "searchHint": "Jemand anderen im Kopf? Such unten.",
+      "prefilledLabel": "Deine Auswahl",
       "noResults": "Kein General gefunden.",
       "turnstileMissing": "(Turnstile nicht konfiguriert — Verifizierung im Dev-Modus deaktiviert)",
       "cancel": "Abbrechen",
@@ -347,7 +349,7 @@
     },
     "landingTeaser": {
       "heading": "🗳 Stimme für deinen Lieblingsgeneral!",
-      "body": "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Wer verdient den ersten Platz? Mach beim Community-Ranking mit.",
+      "body": "Wer verdient den ersten Platz? Mach beim Community-Ranking mit — deine Stimme zählt.",
       "cta": "Jetzt abstimmen →"
     }
   },
@@ -559,7 +561,8 @@
       "label": "Nach Typ filtern",
       "all": "Alle"
     },
-    "voteForAnother": "Für einen anderen General stimmen",
+    "primaryVoteCta": "Für einen General stimmen",
+    "voteForAnother": "Für jemand anderen stimmen",
     "placeholderBadge": "Platzhalter — jetzt wählen",
     "voteToReveal": "Abstimmen zum Aufdecken",
     "ourPick": "Unsere Wahl",
