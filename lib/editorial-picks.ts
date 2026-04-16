@@ -83,6 +83,12 @@ export const UNIT_EDITORIAL_PICKS: Record<Game, Record<string, string>> = {
     "mystery-paratrooper": "manstein",
     "rpg-rocket-soldier": "chuikov",       // RU urban combat
   },
+  ew6: {
+    // Empty initially — EW6 leaderboard isn't surfaced yet. The module is
+    // still shaped per-game so voting API routes can validate EW6 slugs
+    // without special-casing. Populate later when the EW6 leaderboard
+    // page ships.
+  },
   gcr: {
     // Infantry
     "anubis": "cleopatra",                 // Egyptian theme
@@ -161,6 +167,18 @@ export const BEST_GENERAL_PLACEHOLDER: Record<Game, string[]> = {
     "pompey",
     "attila",
     "antony",
+  ],
+  ew6: [
+    "napoleon",
+    "nelson",
+    "blucher",
+    "kutuzov",
+    "moltke",
+    "davout",
+    "suvorov",
+    "ney",
+    "murat",
+    "washington",
   ],
 };
 

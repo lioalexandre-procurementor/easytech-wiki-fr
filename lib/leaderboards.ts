@@ -32,6 +32,11 @@ import {
   getEliteUnit as getEliteUnitGcr,
   getAllEliteUnits as getAllEliteUnitsGcr,
 } from "./gcr";
+import {
+  getAllGenerals as getAllGeneralsEw6,
+  getEliteUnit as getEliteUnitEw6,
+  getAllEliteUnits as getAllEliteUnitsEw6,
+} from "./ew6";
 import type { GeneralData, Game, UnitData } from "./types";
 
 const TOTAL_FIELD = "__total";
@@ -40,15 +45,21 @@ const TOTAL_FIELD = "__total";
 export const UNITS_LEADERBOARD_THRESHOLD = 50;
 
 function getAllGeneralsForGame(game: Game): GeneralData[] {
-  return game === "wc4" ? getAllGeneralsWc4() : getAllGeneralsGcr();
+  if (game === "wc4") return getAllGeneralsWc4();
+  if (game === "gcr") return getAllGeneralsGcr();
+  return getAllGeneralsEw6();
 }
 
 function getEliteUnitForGame(game: Game, slug: string): UnitData | null {
-  return game === "wc4" ? getEliteUnitWc4(slug) : getEliteUnitGcr(slug);
+  if (game === "wc4") return getEliteUnitWc4(slug);
+  if (game === "gcr") return getEliteUnitGcr(slug);
+  return getEliteUnitEw6(slug);
 }
 
 function getAllEliteUnitsForGame(game: Game): UnitData[] {
-  return game === "wc4" ? getAllEliteUnitsWc4() : getAllEliteUnitsGcr();
+  if (game === "wc4") return getAllEliteUnitsWc4();
+  if (game === "gcr") return getAllEliteUnitsGcr();
+  return getAllEliteUnitsEw6();
 }
 
 // ─── GENERAL BEST-GENERAL VOTE (single hash) ────────────────────────
