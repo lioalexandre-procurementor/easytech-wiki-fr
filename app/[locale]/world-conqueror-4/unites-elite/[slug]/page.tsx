@@ -10,6 +10,11 @@ import { AdSlot } from "@/components/AdSlot";
 import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
+import {
+  getEligibleGeneralsForUnit,
+  UNIT_VOTE_THRESHOLD,
+} from "@/lib/unit-general-vote";
+import UnitBestGeneralVote from "@/components/UnitBestGeneralVote";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
@@ -221,6 +226,29 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                     </Link>
                   )}
                 </div>
+                {/* Community vote — "best general for this unit". Placeholder
+                    until UNIT_VOTE_THRESHOLD total votes, then top-3 podium. */}
+                {(() => {
+                  const eligible = getEligibleGeneralsForUnit(unit.slug);
+                  if (eligible.length === 0) return null;
+                  const candidates = eligible.map((g) => ({
+                    slug: g.slug,
+                    name: g.name,
+                    nameEn: g.nameEn,
+                    rank: (g.rank ?? null) as "S" | "A" | "B" | "C" | null,
+                    country: g.country ?? null,
+                  }));
+                  const unitDisplayName =
+                    params.locale === "fr" ? unit.name : unit.nameEn || unit.name;
+                  return (
+                    <UnitBestGeneralVote
+                      unitSlug={unit.slug}
+                      unitDisplayName={unitDisplayName}
+                      candidates={candidates}
+                      threshold={UNIT_VOTE_THRESHOLD}
+                    />
+                  );
+                })()}
               </div>
               <div>
                 <h4 className="text-ink font-bold mb-2.5">📈 {tL("Ordre de leveling recommandé", "Recommended leveling order", "Empfohlene Level-Reihenfolge")}</h4>

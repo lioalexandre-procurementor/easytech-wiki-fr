@@ -145,7 +145,14 @@ function loadTurnstile(): Promise<void> {
   });
 }
 
-export default function ReportMistakeLink({ className }: { className?: string }) {
+export default function ReportMistakeLink({
+  className,
+  prefixIcon,
+}: {
+  className?: string;
+  /** Optional emoji/icon shown before the label (e.g. "⚠️"). */
+  prefixIcon?: string;
+}) {
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
   const [open, setOpen] = useState(false);
@@ -258,6 +265,11 @@ export default function ReportMistakeLink({ className }: { className?: string })
         onClick={() => setOpen(true)}
         className={className ?? "hover:text-gold2 cursor-pointer"}
       >
+        {prefixIcon && (
+          <span aria-hidden="true" className="inline-block mr-1.5">
+            {prefixIcon}
+          </span>
+        )}
         {L.triggerLabel}
       </button>
 

@@ -53,8 +53,16 @@ export default async function TechHubPage({
   return (
     <>
       <TopBar />
-      <div className="max-w-[1320px] mx-auto px-6 pb-20">
-        <header className="mb-6 mt-4">
+      <div className="max-w-[1320px] mx-auto px-4 md:px-6 pb-20">
+        <nav className="mt-4 mb-5">
+          <Link
+            href={"/world-conqueror-4" as any}
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-panel hover:border-gold hover:bg-gold/5 text-dim hover:text-gold2 text-sm font-semibold transition-colors no-underline"
+          >
+            {t("nav.backToHubWc4")}
+          </Link>
+        </nav>
+        <header className="mb-6">
           <h1 className="text-3xl md:text-4xl font-extrabold text-gold2 mb-2">
             {t("techPage.hubTitle")}
           </h1>

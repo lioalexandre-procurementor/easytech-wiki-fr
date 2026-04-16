@@ -14,3 +14,8 @@ export function getRedis(): Redis | null {
 export function voteKey(general: string, slot: number) {
   return `vote:wc4:gen:${general}:slot${slot}`;
 }
+
+/** Redis hash key for the "best general for elite unit X" community vote. */
+export function unitGeneralVoteKey(unitSlug: string) {
+  return `vote:wc4:unit-general:${unitSlug}`;
+}
