@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useLocale } from "next-intl";
+import type { Game } from "@/lib/types";
 
 type VoteApiResponse = {
   counts: Record<string, number>;
@@ -20,11 +21,13 @@ export type Candidate = {
 };
 
 type Props = {
+  game: Game;
   unitSlug: string;
   unitDisplayName: string;
   candidates: Candidate[];
   /** When total votes < threshold, the widget shows a "not enough data yet"
-   *  placeholder instead of a leaderboard. Pass `0` to always show results. */
+   *  placeholder instead of a leaderboard. Pass `0` to always show results.
+   *  Default lowered from 100 → 50 in the voting redesign. */
   threshold?: number;
 };
 
@@ -195,10 +198,11 @@ const RANK_COLOR: Record<string, string> = {
 };
 
 export default function UnitBestGeneralVote({
+  game,
   unitSlug,
   unitDisplayName,
   candidates,
-  threshold = 100,
+  threshold = 50,
 }: Props) {
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
@@ -220,9 +224,10 @@ export default function UnitBestGeneralVote({
 
   useEffect(() => {
     let cancelled = false;
-    fetch(`/api/vote/unit-general?unit=${encodeURIComponent(unitSlug)}`, {
-      cache: "no-store",
-    })
+    fetch(
+      `/api/vote/unit-general?game=${game}&unit=${encodeURIComponent(unitSlug)}`,
+      { cache: "no-store" }
+    )
       .then((r) => r.json() as Promise<VoteApiResponse>)
       .then((d) => {
         if (cancelled) return;
@@ -291,6 +296,7 @@ export default function UnitBestGeneralVote({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          game,
           unit: unitSlug,
           general: selected,
           turnstileToken,
