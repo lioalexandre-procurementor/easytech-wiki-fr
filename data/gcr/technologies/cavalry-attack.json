@@ -20,7 +20,7 @@
       "addAttack": 5,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "骑兵攻击1"
+      "nameCn": "1"
     },
     {
       "gameId": 16,
@@ -33,7 +33,7 @@
       "addAttack": 10,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "骑兵攻击2"
+      "nameCn": "2"
     }
   ],
   "prerequisites": [],

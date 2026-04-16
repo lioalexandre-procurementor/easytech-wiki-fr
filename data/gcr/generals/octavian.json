@@ -13,8 +13,8 @@
   "longDesc": "Octavian — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "精准2",
-      "nameEn": "精准2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "反击3",
-      "nameEn": "反击3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +41,8 @@
       "slot": 2
     },
     {
-      "name": "弓兵指挥2",
-      "nameEn": "弓兵指挥2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -55,8 +55,8 @@
       "slot": 3
     },
     {
-      "name": "包围4",
-      "nameEn": "包围4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,

@@ -13,8 +13,8 @@
   "longDesc": "Pacorus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "奇袭1",
-      "nameEn": "奇袭1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "游击1",
-      "nameEn": "游击1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,

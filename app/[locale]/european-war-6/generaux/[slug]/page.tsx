@@ -19,11 +19,11 @@ import {
 } from "@/lib/ew6";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
-import { loadGeneral } from "@/lib/content-editable";
 import type {
   Metadata,
 } from "next";
 import type {
+  GeneralData,
   GeneralQuality,
   GeneralSkill,
   TrainingStage,
@@ -41,24 +41,37 @@ export function generateStaticParams() {
   );
 }
 
+/**
+ * Placeholder detection — EW6 generals auto-generated from decrypted game
+ * files carry a boilerplate longDesc ending "à enrichir". Those pages are
+ * not yet editorial quality (thin content for AdSense, low SEO value), so
+ * we noindex them and skip ad rendering until the longDesc is humanised.
+ * See EasyTech-Wiki-SEO-Ads-Strategy-Assessment-2026-04-16.md (Plan A).
+ */
+function isPlaceholderGeneral(g: GeneralData | null): boolean {
+  if (!g) return false;
+  const long = (g.longDesc ?? "") as string;
+  return /à enrichir|Fiche générée automatiquement/i.test(long);
+}
+
 export async function generateMetadata({
   params: { locale, slug },
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const g = await loadGeneral(slug);
+  const g = getGeneral(slug);
   if (!g) return { title: "404" };
   const name = g.nameEn || g.name;
   const shortDescLocalized = localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", locale);
   const TITLE_COPY: Record<string, string> = {
-    fr: `${name} (GCR) — Compétences, attributs & guide`,
-    en: `${name} (GCR) — Skills, attributes & guide`,
-    de: `${name} (GCR) — Fähigkeiten, Attribute & Guide`,
+    fr: `${name} (EW6) — Compétences, attributs & guide`,
+    en: `${name} (EW6) — Skills, attributes & guide`,
+    de: `${name} (EW6) — Fähigkeiten, Attribute & Guide`,
   };
   const DESC_COPY: Record<string, string> = {
-    fr: `Fiche complète du général ${name} dans Great Conqueror: Rome : ${shortDescLocalized} Attributs, skills, training, unités recommandées.`,
-    en: `Complete profile of general ${name} in Great Conqueror: Rome: ${shortDescLocalized} Attributes, skills, training, recommended units.`,
-    de: `Vollständiges Profil des Generals ${name} in Great Conqueror: Rome: ${shortDescLocalized} Attribute, Fähigkeiten, Training, empfohlene Einheiten.`,
+    fr: `Fiche complète du général ${name} dans European War 6 : ${shortDescLocalized} Attributs, skills, training, unités recommandées.`,
+    en: `Complete profile of general ${name} in European War 6: ${shortDescLocalized} Attributes, skills, training, recommended units.`,
+    de: `Vollständiges Profil des Generals ${name} in European War 6: ${shortDescLocalized} Attribute, Fähigkeiten, Training, empfohlene Einheiten.`,
   };
   const title = TITLE_COPY[locale] ?? TITLE_COPY.en;
   const description = DESC_COPY[locale] ?? DESC_COPY.en;
@@ -86,7 +99,12 @@ export async function generateMetadata({
       title,
       description,
     },
-    robots: { index: true, follow: true },
+    // Placeholder pages stay crawlable (follow) but out of the index until
+    // editorial longDesc is written. Flip back to index:true in the JSON
+    // by removing "à enrichir" / "Fiche générée automatiquement".
+    robots: isPlaceholderGeneral(g)
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
   };
 }
 
@@ -104,8 +122,9 @@ const QUALITY_META: Record<
 export default async function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
-  const g = await loadGeneral(params.slug);
+  const g = getGeneral(params.slug);
   if (!g) notFound();
+  const placeholder = isPlaceholderGeneral(g);
 
   const GENERAL_CAT = getGeneralCategoryMeta(params.locale);
   const FACTION = getFactionMeta(params.locale);
@@ -301,8 +320,11 @@ export default async function GeneralPage({ params }: { params: { locale: string
             )}
           </div>
 
-          {/* IN-ARTICLE TOP AD — between hero/cross-links and the stats block */}
-          <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          {/* IN-ARTICLE TOP AD — between hero/cross-links and the stats block.
+              Hidden on placeholder pages (thin content = AdSense policy risk). */}
+          {!placeholder && (
+            <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* ATTRIBUTES (4 aptitudes for GCR: infantry/cavalry/archer/navy) */}
           <StatsGrid attributes={g.attributes} mode="base" />
@@ -432,7 +454,9 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
           </div>
 
-          <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          {!placeholder && (
+            <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* RECOMMENDED UNITS */}
           {recommended.length > 0 && (
@@ -506,10 +530,10 @@ export default async function GeneralPage({ params }: { params: { locale: string
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: `${g.nameEn || g.name} — Great Conqueror: Rome`,
+            headline: `${g.nameEn || g.name} — European War 6`,
             about: {
               "@type": "VideoGame",
-              name: "Great Conqueror: Rome",
+              name: "European War 6: 1804",
               gamePlatform: ["Android", "iOS"],
               publisher: { "@type": "Organization", name: "EasyTech" },
             },

@@ -13,8 +13,8 @@
   "longDesc": "Crixus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "冲锋2",
-      "nameEn": "冲锋2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "破坏2",
-      "nameEn": "破坏2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,

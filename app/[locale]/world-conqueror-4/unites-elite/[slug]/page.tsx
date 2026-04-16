@@ -15,6 +15,7 @@ import {
   getEligibleGeneralsForUnit,
   UNIT_VOTE_THRESHOLD,
 } from "@/lib/unit-general-vote";
+import { getEditorialPick } from "@/lib/editorial-picks";
 import UnitBestGeneralVote from "@/components/UnitBestGeneralVote";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -230,7 +231,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                 {/* Community vote — "best general for this unit". Placeholder
                     until UNIT_VOTE_THRESHOLD total votes, then top-3 podium. */}
                 {(() => {
-                  const eligible = getEligibleGeneralsForUnit(unit.slug);
+                  const eligible = getEligibleGeneralsForUnit("wc4", unit.slug);
                   if (eligible.length === 0) return null;
                   const candidates = eligible.map((g) => ({
                     slug: g.slug,
@@ -238,15 +239,19 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                     nameEn: g.nameEn,
                     rank: (g.rank ?? null) as "S" | "A" | "B" | "C" | null,
                     country: g.country ?? null,
+                    portrait: g.image?.head ?? null,
                   }));
                   const unitDisplayName =
                     params.locale === "fr" ? unit.name : unit.nameEn || unit.name;
+                  const editorialPick = getEditorialPick("wc4", unit.slug);
                   return (
                     <UnitBestGeneralVote
+                      game="wc4"
                       unitSlug={unit.slug}
                       unitDisplayName={unitDisplayName}
                       candidates={candidates}
                       threshold={UNIT_VOTE_THRESHOLD}
+                      editorialSlug={editorialPick?.primary ?? undefined}
                     />
                   );
                 })()}

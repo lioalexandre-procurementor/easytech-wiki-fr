@@ -330,6 +330,8 @@
       "title": "Dein Lieblingsgeneral",
       "close": "Schließen",
       "searchPlaceholder": "🔎 General suchen…",
+      "searchHint": "Jemand anderen im Kopf? Such unten.",
+      "prefilledLabel": "Deine Auswahl",
       "noResults": "Kein General gefunden.",
       "turnstileMissing": "(Turnstile nicht konfiguriert — Verifizierung im Dev-Modus deaktiviert)",
       "cancel": "Abbrechen",
@@ -347,7 +349,7 @@
     },
     "landingTeaser": {
       "heading": "🗳 Stimme für deinen Lieblingsgeneral!",
-      "body": "Manstein, Guderian, Rokossovsky, Simo Häyhä, De Gaulle… Wer verdient den ersten Platz? Mach beim Community-Ranking mit.",
+      "body": "Wer verdient den ersten Platz? Mach beim Community-Ranking mit — deine Stimme zählt.",
       "cta": "Jetzt abstimmen →"
     }
   },
@@ -529,31 +531,52 @@
     "tocLabel": "Inhalt"
   },
   "leaderboardsPage": {
-    "seoTitle": "WC4 Community-Bestenlisten — Top-Generäle, Fähigkeiten & Elite-Einheiten",
-    "seoDescription": "Von der Community gewählte Bestenlisten zu World Conqueror 4: bester General, meistgewählte trainierbare Fähigkeiten, bester General pro Elite-Einheit. Live aktualisiert.",
+    "seoTitle": "Community-Bestenlisten — Top-Generäle & Elite-Einheiten",
+    "seoDescription": "Von der Community gewählte Bestenlisten: bester General, bester General pro Elite-Einheit. Live aktualisiert.",
     "h1": "Community-Bestenlisten",
-    "intro": "Spieler stimmen ab, die Community rankt. Drei Ranglisten in Echtzeit, gespeist aus anonymen Wiki-Abstimmungen (30 Tage gültig).",
+    "intro": "Spieler stimmen ab, die Community rankt. Zwei Ranglisten in Echtzeit, gespeist aus anonymen Wiki-Abstimmungen (30 Tage gültig).",
     "tabGenerals": "Top-Generäle",
-    "tabSkills": "Top-Fähigkeiten",
     "tabUnits": "Bester General je Elite-Einheit",
-    "tabGeneralsDesc": "Welchen General hält die Community für den besten in World Conqueror 4? Eine Stimme pro Besucher.",
-    "tabSkillsDesc": "Die meistgewählten Akademie-Fähigkeiten über alle trainierbaren Slots und Generäle hinweg.",
+    "tabGeneralsDesc": "Welchen General hält die Community für den besten? Eine Stimme pro Besucher.",
     "tabUnitsDesc": "Für jede Elite-Einheit der von der Community empfohlene General (Schwelle: {threshold} Stimmen).",
     "rank": "Rang",
     "name": "Name",
     "votes": "Stimmen",
     "share": "Anteil",
     "total": "Gesamt",
-    "emptyGenerals": "Noch keine Stimmen. Sei der Erste auf dem WC4-Hub.",
-    "emptySkills": "Noch keine Stimmen zu trainierbaren Fähigkeiten. Stimme auf einer Generalsseite ab.",
-    "emptyUnits": "Noch hat keine Einheit die 100-Stimmen-Schwelle erreicht. Stimme auf den Elite-Einheiten-Seiten ab.",
-    "voteOnHub": "Auf dem WC4-Hub abstimmen →",
-    "voteOnGeneralPage": "Auf einer Generalsseite abstimmen →",
-    "voteOnUnitPage": "Auf einer Elite-Einheiten-Seite abstimmen →",
+    "emptyGenerals": "Noch keine Stimmen. Sei der Erste.",
+    "emptyUnits": "Noch keine Einheit hat Stimmen erhalten. Stimme auf den Elite-Einheiten-Seiten ab.",
+    "voteOnHub": "Auf dem Hub abstimmen →",
+    "voteOnUnitPage": "Auf der Einheitenseite abstimmen",
     "belowThreshold": "{count} / {threshold} Stimmen",
     "topPick": "Community-Wahl",
-    "appearsOn": "Erscheint auf",
-    "totalVotes": "{total, plural, one {# Stimme} other {# Stimmen}}"
+    "totalVotes": "{total, plural, =0 {Noch keine Stimmen} one {# Stimme insgesamt} other {# Stimmen insgesamt}}",
+    "gameSwitcher": {
+      "label": "Spiel auswählen",
+      "wc4": "World Conqueror 4",
+      "gcr": "Great Conqueror: Rome",
+      "ew6": "European War 6"
+    },
+    "filterChips": {
+      "label": "Nach Typ filtern",
+      "all": "Alle"
+    },
+    "primaryVoteCta": "Für einen General stimmen",
+    "voteForAnother": "Für jemand anderen stimmen",
+    "placeholderBadge": "Platzhalter — jetzt wählen",
+    "voteToReveal": "Abstimmen zum Aufdecken",
+    "ourPick": "Unsere Wahl",
+    "communityPick": "Community-Wahl",
+    "ordinal": {
+      "first": "1.",
+      "second": "2.",
+      "third": "3."
+    },
+    "generalsGridHint": "Echte Rangliste ab {threshold} Stimmen ({total}/{threshold} bisher)",
+    "voteProgress": "{count} / {threshold} Stimmen",
+    "voteCountShort": "{count, plural, =0 {0 Stimmen} one {# Stimme} other {# Stimmen}}",
+    "tileAria": "Für {name} stimmen",
+    "tileAriaPlaceholder": "Für {name} stimmen (Platzhalter)"
   },
   "ew6Hub": {
     "h1": "European War 6: 1914 — Wiki DE",

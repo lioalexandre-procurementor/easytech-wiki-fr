@@ -13,8 +13,8 @@
   "longDesc": "Sextus Pompey — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "阵型2",
-      "nameEn": "阵型2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "水手2",
-      "nameEn": "水手2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +41,8 @@
       "slot": 2
     },
     {
-      "name": "护航1",
-      "nameEn": "护航1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,

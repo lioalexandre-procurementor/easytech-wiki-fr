@@ -13,8 +13,8 @@
   "longDesc": "Cativolcus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "精准2",
-      "nameEn": "精准2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "攻城1",
-      "nameEn": "攻城1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,

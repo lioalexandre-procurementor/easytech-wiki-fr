@@ -20,7 +20,7 @@
       "addAttack": 0,
       "addDefense": 2,
       "addMobility": 0,
-      "nameCn": "步兵防御1"
+      "nameCn": "1"
     },
     {
       "gameId": 9,
@@ -33,7 +33,7 @@
       "addAttack": 0,
       "addDefense": 4,
       "addMobility": 0,
-      "nameCn": "步兵防御2"
+      "nameCn": "2"
     }
   ],
   "prerequisites": [],

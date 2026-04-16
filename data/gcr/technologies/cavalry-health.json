@@ -20,7 +20,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "骑兵生命1"
+      "nameCn": "1"
     },
     {
       "gameId": 14,
@@ -33,7 +33,7 @@
       "addAttack": 0,
       "addDefense": 0,
       "addMobility": 0,
-      "nameCn": "骑兵生命2"
+      "nameCn": "2"
     }
   ],
   "prerequisites": [],

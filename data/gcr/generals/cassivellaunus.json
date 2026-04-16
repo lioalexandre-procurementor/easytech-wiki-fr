@@ -13,8 +13,8 @@
   "longDesc": "Cassivellaunus — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "反击2",
-      "nameEn": "反击2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "箭雨2",
-      "nameEn": "箭雨2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +41,8 @@
       "slot": 2
     },
     {
-      "name": "水手1",
-      "nameEn": "水手1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,

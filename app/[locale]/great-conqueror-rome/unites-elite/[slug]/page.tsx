@@ -11,10 +11,23 @@ import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCa
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
 import { loadEliteUnit } from "@/lib/content-editable";
+import type { UnitData } from "@/lib/types";
+
+/**
+ * Placeholder detection — GCR entities auto-generated from decrypted game
+ * files carry a boilerplate longDesc ending "à enrichir". Those pages are
+ * not yet editorial quality (thin content for AdSense), so we noindex them
+ * and skip ad rendering. See EasyTech-Wiki-SEO-Ads-Strategy-Assessment-2026-04-16.md.
+ */
+function isPlaceholderUnit(u: UnitData | null | undefined): boolean {
+  if (!u) return false;
+  return /à enrichir|Fiche générée automatiquement/i.test((u.longDesc ?? "") as string);
+}
 import {
   getEligibleGeneralsForUnit,
   UNIT_VOTE_THRESHOLD,
 } from "@/lib/unit-general-vote";
+import { getEditorialPick } from "@/lib/editorial-picks";
 import UnitBestGeneralVote from "@/components/UnitBestGeneralVote";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -45,6 +58,9 @@ export async function generateMetadata({ params }: { params: { locale: string; s
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    robots: isPlaceholderUnit(u as unknown as UnitData)
+      ? { index: false, follow: true }
+      : { index: true, follow: true },
   };
 }
 
@@ -55,6 +71,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
   const unit = await loadEliteUnit(params.slug);
   if (!unit) notFound();
+  const placeholder = isPlaceholderUnit(unit as unknown as UnitData);
 
   const sameCat = getUnitsByCategory(unit.category, unit.faction)
     .filter(u => u.slug !== unit.slug)
@@ -187,7 +204,9 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <div id="perks"></div>
           <UnitDetailClient unit={unit}/>
 
-          <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          {!placeholder && (
+            <AdSlot name="inArticleTop" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* STRATEGY */}
           <div id="strategy" className="bg-panel border border-border rounded-lg p-6 mb-6">
@@ -230,7 +249,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                 {/* Community vote — "best general for this unit". Placeholder
                     until UNIT_VOTE_THRESHOLD total votes, then top-3 podium. */}
                 {(() => {
-                  const eligible = getEligibleGeneralsForUnit(unit.slug);
+                  const eligible = getEligibleGeneralsForUnit("gcr", unit.slug);
                   if (eligible.length === 0) return null;
                   const candidates = eligible.map((g) => ({
                     slug: g.slug,
@@ -238,15 +257,19 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                     nameEn: g.nameEn,
                     rank: (g.rank ?? null) as "S" | "A" | "B" | "C" | null,
                     country: g.country ?? null,
+                    portrait: g.image?.head ?? null,
                   }));
                   const unitDisplayName =
                     params.locale === "fr" ? unit.name : unit.nameEn || unit.name;
+                  const editorialPick = getEditorialPick("gcr", unit.slug);
                   return (
                     <UnitBestGeneralVote
+                      game="gcr"
                       unitSlug={unit.slug}
                       unitDisplayName={unitDisplayName}
                       candidates={candidates}
                       threshold={UNIT_VOTE_THRESHOLD}
+                      editorialSlug={editorialPick?.primary ?? undefined}
                     />
                   );
                 })()}
@@ -266,7 +289,9 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           </div>
 
           {/* IN-ARTICLE MID AD — between Strategy and Related */}
-          <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          {!placeholder && (
+            <AdSlot name="inArticleMid" label={t("ui.adSlot")} className="my-6" />
+          )}
 
           {/* RELATED */}
           {sameCat.length > 0 && (

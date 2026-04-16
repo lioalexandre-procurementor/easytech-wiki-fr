@@ -10,11 +10,13 @@
   "country": "ROM",
   "countryName": "Rome",
   "shortDesc": "Général archer — Rome.",
-  "longDesc": "Caesar — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "longDesc": "Caesar est l'un des deux seuls S ranks archer disponibles en bronze dans Great Conqueror: Rome. Son profil est atypique pour un archer romain : caps d'attributs 7/9 en archer et 5/8 en cavalerie, ce qui en fait un commandant hybride capable de mener des archers auxiliaires comme des escadrons équestres. Débloqué au quartier général niveau 20 et rang militaire 8, il apparaît en mid-late game. Quatre slots de compétences et le rang S le rendent éligible à la plupart des builds sur le théâtre gaulois et dans les scénarios de guerre civile. Dans le meta GCR, on le place en tête d'une colonne d'arcs composites + cavalerie de flanc : ses bonus de dégâts soulèvent la DPS des archers, et le cap 8 en cavalerie offre de la flexibilité quand la carte exige une redéploiement rapide. Comparé à Octavian, autre archer romain bronze A rank, Caesar est moins accessible tôt mais nettement plus polyvalent. Les joueurs qui farment des médailles pour un seul S-ranker de début privilégient Caesar ; ceux qui jouent Rome en multi-pôle le gardent pour la Gaule pendant qu'un autre commandant tient l'Orient. Ses 5/7 en marine suffisent pour un débarquement, pas pour un engagement naval prolongé.",
+  "longDescEn": "Caesar is one of only two S-rank archer commanders available in bronze quality in Great Conqueror: Rome. His profile is atypical for a Roman archer: attribute caps of 7/9 archer and 5/8 cavalry make him a hybrid commander who can lead archer auxiliaries as well as equestrian squadrons. Unlocked at headquarters level 20 and Military Rank 8, he arrives in mid-to-late game. Four skill slots and the S rank make him eligible for most builds on the Gallic theater and in civil-war scenarios. In the GCR meta, he heads a column of composite bows plus flanking cavalry: his damage bonuses lift archer DPS, and the cavalry cap of 8 provides flexibility when the map demands fast redeployment. Compared with Octavian, another bronze Roman archer at A rank, Caesar is less accessible early but notably more versatile. Players farming medals for a single early-campaign S-ranker prioritize Caesar; those running Rome in multi-theater reserve him for Gaul while another commander holds the East. His 5/7 navy cap is adequate for a landing, not for a sustained naval engagement.",
+  "longDescDe": "Caesar ist einer von nur zwei S-Rang-Schützen-Kommandeuren, die in Bronze-Qualität in Great Conqueror: Rome verfügbar sind. Sein Profil ist für einen römischen Schützen untypisch: Attributskappen von 7/9 bei Schütze und 5/8 bei Kavallerie machen ihn zum Hybrid-Kommandeur, der sowohl Schützen-Auxiliare als auch Reitergeschwader führen kann. Freigeschaltet bei Hauptquartier Stufe 20 und Militärrang 8, erscheint er im Mid- bis Late-Game. Vier Skill-Slots und der S-Rang machen ihn für die meisten Builds auf dem gallischen Schauplatz und in Bürgerkriegsszenarien geeignet. Im GCR-Meta führt er eine Kolonne aus Kompositbögen plus Flanken-Kavallerie: seine Schadensboni heben die Schützen-DPS, und der Kavallerie-Cap von 8 bietet Flexibilität, wenn die Karte schnelle Umgruppierung verlangt. Verglichen mit Octavian, einem weiteren bronzenen römischen Schützen im A-Rang, ist Caesar weniger früh zugänglich, aber deutlich vielseitiger. Spieler, die Medaillen für einen einzigen frühen S-Ranker farmen, priorisieren Caesar; wer Rom im Mehr-Theater-Betrieb spielt, reserviert ihn für Gallien, während ein anderer Kommandeur den Osten sichert. Sein Marine-Cap von 5/7 reicht für eine Landung, nicht für ein anhaltendes Seegefecht.",
   "skills": [
     {
-      "name": "优势4",
-      "nameEn": "优势4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +29,8 @@
       "slot": 1
     },
     {
-      "name": "包围4",
-      "nameEn": "包围4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +43,8 @@
       "slot": 2
     },
     {
-      "name": "平原战3",
-      "nameEn": "平原战3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -55,8 +57,8 @@
       "slot": 3
     },
     {
-      "name": "弓兵指挥3",
-      "nameEn": "弓兵指挥3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,

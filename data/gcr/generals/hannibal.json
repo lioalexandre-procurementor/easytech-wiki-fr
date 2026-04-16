@@ -10,11 +10,13 @@
   "country": "GRE",
   "countryName": "Grèce",
   "shortDesc": "Général cavalry — Grèce.",
-  "longDesc": "Hannibal — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
+  "longDesc": "Hannibal — le stratège carthaginois historique, classé dans la faction « Grèce » par Great Conqueror: Rome pour des raisons de couverture géographique hellénistique. Bronze A rank cavalerie, il présente des caps 7/9 en cavalerie, 5/7 en infanterie, 4/7 en archer et 4/7 en marine. Ces statistiques le placent au-dessus de la majorité des A-rank cavaliers grecs en bronze, tout en restant sous les S-ranks comme Alexandre ou Philippe. Dans le meta GCR, Hannibal est le choix logique pour une stratégie hellénistique cavalerie lourde : phalange + cavalerie compagnonne, Hannibal en tête de charge. Son cap cavalerie 9 est le maximum pour un A-rank bronze ; il tient tête à des golds A-rank sans surclasser les S-ranks dans les scénarios puniques où Scipion l'Africain est l'adversaire scripté. Le cap archer 7 le rend également capable d'encadrer une ligne d'archers grecs si la composition le demande. Avantage pratique : débloqué plus tôt que les S-ranks, il est le général de transition idéal quand on remplace les commandants de début de campagne. Les joueurs qui farment la Grèce en campagne hellénistique ou méditerranéenne le placent en deuxième tier prioritaire, après les S-ranks naturels.",
+  "longDescEn": "Hannibal — the historical Carthaginian strategist, filed under the \"Greece\" faction by Great Conqueror: Rome for Hellenistic geographic coverage reasons. Bronze A-rank cavalry, he shows caps of 7/9 cavalry, 5/7 infantry, 4/7 archer, and 4/7 navy. These stats place him above most A-rank Greek bronze cavalry while staying under the S-ranks like Alexander or Philip. In the GCR meta, Hannibal is the logical pick for a heavy-cavalry Hellenistic strategy: phalanx plus companion cavalry, Hannibal at the head of the charge. His cavalry cap of 9 is the maximum for an A-rank bronze; he holds his own against A-rank golds without surpassing the S-ranks in the Punic scenarios where Scipio Africanus is the scripted opponent. His archer cap of 7 also lets him lead a line of Greek archers when the composition demands it. Practical advantage: unlocked earlier than the S-ranks, he is the ideal transition general for replacing early-campaign commanders. Players farming Greece in Hellenistic or Mediterranean campaigns place him in the second priority tier, behind the natural S-ranks.",
+  "longDescDe": "Hannibal — der historische karthagische Stratege, von Great Conqueror: Rome aus Gründen der hellenistischen geografischen Abdeckung in die Fraktion „Griechenland“ eingeordnet. Bronze A-Rang-Kavallerie, zeigt er Kappen von 7/9 Kavallerie, 5/7 Infanterie, 4/7 Schütze und 4/7 Marine. Diese Werte platzieren ihn über den meisten griechischen bronzenen A-Rang-Kavalleristen, bleiben aber unter den S-Rängen wie Alexander oder Philipp. Im GCR-Meta ist Hannibal die logische Wahl für eine schwere hellenistische Kavallerie-Strategie: Phalanx plus Hetairen-Kavallerie, Hannibal an der Spitze der Ladung. Sein Kavallerie-Cap von 9 ist das Maximum für einen A-Rang-Bronze; er hält sich gegen A-Rang-Golds, ohne die S-Ränge in den punischen Szenarien zu überflügeln, in denen Scipio Africanus der geskriptete Gegner ist. Sein Schützen-Cap von 7 lässt ihn zudem eine Linie griechischer Schützen führen, wenn die Zusammensetzung es verlangt. Praktischer Vorteil: früher freigeschaltet als die S-Ränge, ist er der ideale Übergangsgeneral, um Frühkampagnen-Kommandeure zu ersetzen. Spieler, die Griechenland in hellenistischen oder Mittelmeer-Kampagnen farmen, platzieren ihn in der zweiten Prioritätsstufe, hinter den natürlichen S-Rängen.",
   "skills": [
     {
-      "name": "骑兵指挥3",
-      "nameEn": "骑兵指挥3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +29,8 @@
       "slot": 1
     },
     {
-      "name": "冲锋4",
-      "nameEn": "冲锋4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +43,8 @@
       "slot": 2
     },
     {
-      "name": "游击4",
-      "nameEn": "游击4",
+      "name": "4",
+      "nameEn": "4",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -55,8 +57,8 @@
       "slot": 3
     },
     {
-      "name": "突击3",
-      "nameEn": "突击3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,

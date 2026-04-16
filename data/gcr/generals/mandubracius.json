@@ -13,8 +13,8 @@
   "longDesc": "Mandubracius — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "舵手1",
-      "nameEn": "舵手1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "山地战1",
-      "nameEn": "山地战1",
+      "name": "1",
+      "nameEn": "1",
       "desc": "",
       "rating": null,
       "stars": null,

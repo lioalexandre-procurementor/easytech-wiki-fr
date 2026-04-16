@@ -13,8 +13,8 @@
   "longDesc": "Scipio — commandant antique de Great Conqueror: Rome. Fiche générée automatiquement depuis les fichiers de jeu ; à enrichir.",
   "skills": [
     {
-      "name": "冲锋2",
-      "nameEn": "冲锋2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -27,8 +27,8 @@
       "slot": 1
     },
     {
-      "name": "街巷战2",
-      "nameEn": "街巷战2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -41,8 +41,8 @@
       "slot": 2
     },
     {
-      "name": "奇袭2",
-      "nameEn": "奇袭2",
+      "name": "2",
+      "nameEn": "2",
       "desc": "",
       "rating": null,
       "stars": null,
@@ -55,8 +55,8 @@
       "slot": 3
     },
     {
-      "name": "反击3",
-      "nameEn": "反击3",
+      "name": "3",
+      "nameEn": "3",
       "desc": "",
       "rating": null,
       "stars": null,

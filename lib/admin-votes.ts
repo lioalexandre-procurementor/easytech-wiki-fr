@@ -1,13 +1,14 @@
-import { getRedis } from "./redis";
+import { getRedis, bestGeneralVoteKey } from "./redis";
+import type { Game } from "./types";
 
-export async function getBestGeneralTally(): Promise<{
+export async function getBestGeneralTally(game: Game): Promise<{
   total: number;
   entries: Array<{ slug: string; votes: number }>;
   configured: boolean;
 }> {
   const redis = getRedis();
   if (!redis) return { total: 0, entries: [], configured: false };
-  const raw = (await redis.hgetall("vote:wc4:best-general")) as Record<string, unknown> | null;
+  const raw = (await redis.hgetall(bestGeneralVoteKey(game))) as Record<string, unknown> | null;
   if (!raw) return { total: 0, entries: [], configured: true };
   let total = 0;
   const entries: Array<{ slug: string; votes: number }> = [];
@@ -21,23 +22,29 @@ export async function getBestGeneralTally(): Promise<{
   return { total, entries, configured: true };
 }
 
-export async function deleteBestGeneralSlug(slug: string): Promise<number> {
+export async function deleteBestGeneralSlug(game: Game, slug: string): Promise<number> {
   const redis = getRedis();
   if (!redis) return 0;
-  const prev = (await redis.hget("vote:wc4:best-general", slug)) as string | number | null;
+  const key = bestGeneralVoteKey(game);
+  const prev = (await redis.hget(key, slug)) as string | number | null;
   const n = typeof prev === "number" ? prev : Number(prev);
   if (!Number.isFinite(n) || n <= 0) return 0;
-  await redis.hdel("vote:wc4:best-general", slug);
-  await redis.hincrby("vote:wc4:best-general", "__total", -n);
+  await redis.hdel(key, slug);
+  await redis.hincrby(key, "__total", -n);
   return n;
 }
 
-export async function resetBestGeneral(): Promise<void> {
+export async function resetBestGeneral(game: Game): Promise<void> {
   const redis = getRedis();
   if (!redis) return;
-  await redis.del("vote:wc4:best-general");
+  await redis.del(bestGeneralVoteKey(game));
 }
 
+/**
+ * Per-general skill-slot admin helpers — stays WC4-only (matches
+ * lib/redis.ts:voteKey which hardcodes `vote:wc4:gen:...`). Other
+ * games don't have per-general skill voting yet.
+ */
 export async function listSkillVoteKeys(): Promise<
   Array<{ general: string; slot: number; total: number }>
 > {

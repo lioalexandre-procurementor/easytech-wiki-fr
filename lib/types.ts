@@ -586,9 +586,9 @@ export interface ComparableRow {
 // ─── Game dimension ────────────────────────────────────────────────
 // Voting surfaces are parameterized by game. Redis keys, API routes,
 // cookies, and rate-limit keys all include the validated game slug.
-export type Game = "wc4" | "gcr";
+export type Game = "wc4" | "gcr" | "ew6";
 
-const GAME_VALUES: readonly Game[] = ["wc4", "gcr"] as const;
+const GAME_VALUES: readonly Game[] = ["wc4", "gcr", "ew6"] as const;
 
 export function isGame(x: unknown): x is Game {
   return typeof x === "string" && (GAME_VALUES as readonly string[]).includes(x);
