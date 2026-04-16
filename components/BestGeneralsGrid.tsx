@@ -43,35 +43,40 @@ function buildTiles(
   const bySlug = new Map(generals.map((g) => [g.slug, g]));
   const below = total < threshold;
 
-  if (below) {
-    // All 10 tiles come from the placeholder list.
+  // Real votes first — present at any vote count. Sorted desc by votes.
+  // Only include slugs whose votes > 0 so a count map with stale zero
+  // entries never outranks placeholders.
+  const realSorted = Object.entries(counts)
+    .filter(([slug, v]) => bySlug.has(slug) && (v ?? 0) > 0)
+    .map(([slug, votes]) => ({ slug, votes, general: bySlug.get(slug)! }))
+    .sort((a, b) => b.votes - a.votes);
+
+  if (realSorted.length === 0) {
+    // No votes anywhere yet → all 10 tiles are editorial placeholders.
     const placeholders = pickPlaceholderSlugs(game, new Set(), 10);
-    const tiles: Tile[] = [];
-    placeholders.forEach((slug, i) => {
-      const g = bySlug.get(slug);
-      if (!g) return;
-      tiles.push({
-        rank: i + 1,
-        slug,
-        general: g,
-        votes: 0,
-        isPlaceholder: true,
-      });
-    });
-    return tiles;
+    return placeholders
+      .map((slug, i): Tile | null => {
+        const g = bySlug.get(slug);
+        if (!g) return null;
+        return {
+          rank: i + 1,
+          slug,
+          general: g,
+          votes: 0,
+          isPlaceholder: true,
+        };
+      })
+      .filter((t): t is Tile => t !== null);
   }
 
-  // Above threshold: ranks 1–8 from real votes.
-  const realSorted = Object.entries(counts)
-    .filter(([slug]) => bySlug.has(slug))
-    .map(([slug, votes]) => ({ slug, votes, general: bySlug.get(slug)! }))
-    .sort((a, b) => b.votes - a.votes)
-    .slice(0, 8);
-
-  const realSlugs = new Set(realSorted.map((r) => r.slug));
-  const placeholderSlugs = pickPlaceholderSlugs(game, realSlugs, 2);
-
-  const tiles: Tile[] = realSorted.map((r, i) => ({
+  // Above threshold: top 8 real + 2 placeholders (legacy behaviour, for
+  // gentle mix of editorial flavor on a fully-populated board).
+  // Below threshold but with at least one real vote: real votes hold ranks
+  // 1..N, placeholders pad the remainder up to 10. This preserves user
+  // trust that their vote shows up immediately instead of being discarded
+  // until the threshold trips.
+  const realCap = below ? realSorted.length : Math.min(8, realSorted.length);
+  const realTiles: Tile[] = realSorted.slice(0, realCap).map((r, i) => ({
     rank: i + 1,
     slug: r.slug,
     general: r.general,
@@ -79,19 +84,25 @@ function buildTiles(
     isPlaceholder: false,
   }));
 
-  placeholderSlugs.forEach((slug) => {
-    const g = bySlug.get(slug);
-    if (!g) return;
-    tiles.push({
-      rank: tiles.length + 1,
-      slug,
-      general: g,
-      votes: 0,
-      isPlaceholder: true,
-    });
-  });
+  const realSlugs = new Set(realTiles.map((t) => t.slug));
+  const placeholderCount = Math.max(0, 10 - realTiles.length);
+  const placeholderSlugs = pickPlaceholderSlugs(game, realSlugs, placeholderCount);
 
-  return tiles;
+  const placeholderTiles: Tile[] = placeholderSlugs
+    .map((slug, i): Tile | null => {
+      const g = bySlug.get(slug);
+      if (!g) return null;
+      return {
+        rank: realTiles.length + i + 1,
+        slug,
+        general: g,
+        votes: 0,
+        isPlaceholder: true,
+      };
+    })
+    .filter((t): t is Tile => t !== null);
+
+  return [...realTiles, ...placeholderTiles];
 }
 
 export default function BestGeneralsGrid({
@@ -164,7 +175,7 @@ export default function BestGeneralsGrid({
             onClick={() => openFor(null)}
             className="min-h-[44px] px-4 py-2 rounded-lg bg-gold text-[#0a0e13] text-sm font-extrabold uppercase tracking-widest hover:bg-gold2 transition-colors shrink-0"
           >
-            {t("voteForAnother")}
+            {t("primaryVoteCta")}
           </button>
         ) : (
           <div className="min-h-[44px] flex items-center text-xs text-gold2 px-4 py-2 border border-gold/30 rounded-lg bg-gold/5 shrink-0">
