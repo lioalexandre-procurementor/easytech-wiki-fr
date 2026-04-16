@@ -33,7 +33,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const ORDER: Category[] = ["infantry", "cavalry", "archer", "navy"];
+const ORDER: Category[] = ["infantry", "cavalry", "artillery", "navy"];
 
 export default async function ElitesList({ params }: { params: { locale: string } }) {
   unstable_setRequestLocale(params.locale);
@@ -66,7 +66,6 @@ export default async function ElitesList({ params }: { params: { locale: string 
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">{t("nav.navigationHeading")}</h4>
           <ul className="list-none">
             <li><Link href="/european-war-6" className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">{t("nav.backToHubGcr")}</Link></li>
-            <li><Link href="/european-war-6/grande-guerre" className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">🦅 {t("nav.barbarian")}</Link></li>
             <li><Link href="/european-war-6/generaux" className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">👨‍✈️ {t("nav.generals")}</Link></li>
           </ul>
         </aside>
@@ -79,12 +78,6 @@ export default async function ElitesList({ params }: { params: { locale: string 
               <b>{t("elitesPage.introBold", { count: all.length })}</b> {t("elitesPage.intro")}
             </p>
             <div className="mt-4 flex flex-wrap gap-3 items-center">
-              <Link
-                href="/european-war-6/grande-guerre"
-                className="inline-block bg-red-500/15 border border-red-500/40 text-red-200 px-4 py-2 rounded-md text-sm font-semibold no-underline hover:bg-red-500/25 transition-colors"
-              >
-                {t("elitesPage.seeBarbarian")}
-              </Link>
               <span className="text-amber-300/80 text-xs">
                 {t("elitesPage.statsWarning")}
               </span>
