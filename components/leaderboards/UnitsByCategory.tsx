@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTranslations } from "next-intl";
 import UnitVoteModal, {
   type UnitVoteCandidate,
   type UnitVoteResult,
@@ -39,7 +40,6 @@ export type CategoryMetaItem = {
 
 export type UnitsByCategoryLabels = UnitRowLabels & {
   emptyCategory: string;
-  sectionHeading: (icon: string, plural: string, count: number) => string;
 };
 
 type Props = {
@@ -84,6 +84,7 @@ export default function UnitsByCategory({
   flagBySlug,
   labels,
 }: Props) {
+  const t = useTranslations("leaderboardsPage");
   // Initialise per-row live state from the server-rendered ranking.
   const [liveByUnit, setLiveByUnit] = useState<Record<string, LiveRow>>(() => {
     const out: Record<string, LiveRow> = {};
@@ -187,7 +188,7 @@ export default function UnitsByCategory({
           return (
             <section key={cat}>
               <h2 className="text-gold2 font-extrabold uppercase tracking-widest text-sm md:text-base mb-3 border-b border-border pb-2">
-                {labels.sectionHeading(icon, plural, rows.length)}
+                {t("sectionHeading", { icon, plural, count: rows.length, suffix: t("unitsCountSuffix") })}
               </h2>
               <div className="grid gap-3 md:grid-cols-2">
                 {rows.map((r) => {

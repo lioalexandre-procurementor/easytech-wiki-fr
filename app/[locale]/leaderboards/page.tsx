@@ -259,21 +259,8 @@ export default async function LeaderboardsPage({
                 communityPick: t("leaderboardsPage.communityPick"),
                 voteToReveal: t("leaderboardsPage.voteToReveal"),
                 thanksVoted: t("leaderboardsPage.rowThanksVoted"),
-                progressBelow: (count, threshold) =>
-                  t("leaderboardsPage.progressBelow", { count, threshold }),
-                progressAbove: (count) =>
-                  t("leaderboardsPage.progressAbove", { count }),
-                boxAria: (name) =>
-                  t("leaderboardsPage.boxAria", { name }),
                 emptyBoxAria: t("leaderboardsPage.emptyBoxAria"),
                 emptyCategory: t("leaderboardsPage.emptyUnits"),
-                sectionHeading: (icon, plural, count) =>
-                  t("leaderboardsPage.sectionHeading", {
-                    icon,
-                    plural,
-                    count,
-                    suffix: t("leaderboardsPage.unitsCountSuffix"),
-                  }),
               }}
             />
           )}

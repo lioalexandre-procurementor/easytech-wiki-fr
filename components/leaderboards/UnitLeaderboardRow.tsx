@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/src/i18n/navigation";
 import { generalsHubPath, unitHubPath } from "@/lib/games";
 import type { Game } from "@/lib/types";
@@ -17,10 +18,6 @@ export type GeneralBoxInfo = {
 };
 
 export type UnitRowLabels = {
-  /** e.g. "12 / 50 votes · notre choix affiché jusqu'au seuil" */
-  progressBelow: (count: number, threshold: number) => string;
-  /** e.g. "112 votes · classement communauté" */
-  progressAbove: (count: number) => string;
   /** Vote CTA button label, e.g. "🗳 Voter" */
   voteCta: string;
   /** Slot-1 caption when below threshold. */
@@ -32,8 +29,6 @@ export type UnitRowLabels = {
   /** Row "thanks" pill, replacing the vote CTA after the visitor has
    *  voted on this unit. */
   thanksVoted: string;
-  /** Aria-label for clicking a filled general box — "{name} — voter pour cette unité". */
-  boxAria: (name: string) => string;
   /** Aria-label for a dashed empty box. */
   emptyBoxAria: string;
 };
@@ -71,11 +66,12 @@ export default function UnitLeaderboardRow({
   onRequestVote,
   labels,
 }: Props) {
+  const t = useTranslations("leaderboardsPage");
   const unitHref = `${unitHubPath(game)}/${unitSlug}`;
   const slot1Caption = reachedThreshold ? labels.communityPick : labels.ourPick;
   const progress = reachedThreshold
-    ? labels.progressAbove(totalVotes)
-    : labels.progressBelow(totalVotes, threshold);
+    ? t("progressAbove", { count: totalVotes })
+    : t("progressBelow", { count: totalVotes, threshold });
 
   return (
     <article className="bg-bg3 border border-border rounded-lg p-3 hover:border-gold/40 transition-colors">
@@ -111,7 +107,7 @@ export default function UnitLeaderboardRow({
           isEditorial={!reachedThreshold && slot1 !== null}
           onClick={(slug) => onRequestVote(slug)}
           disabled={hasVoted}
-          aria={slot1 ? labels.boxAria(slot1.name) : labels.emptyBoxAria}
+          aria={slot1 ? t("boxAria", { name: slot1.name }) : labels.emptyBoxAria}
           game={game}
           locale={locale}
         />
@@ -123,7 +119,7 @@ export default function UnitLeaderboardRow({
           emptyLabel={labels.voteToReveal}
           onClick={(slug) => onRequestVote(slug)}
           disabled={hasVoted}
-          aria={slot2 ? labels.boxAria(slot2.name) : labels.emptyBoxAria}
+          aria={slot2 ? t("boxAria", { name: slot2.name }) : labels.emptyBoxAria}
           game={game}
           locale={locale}
         />
@@ -135,7 +131,7 @@ export default function UnitLeaderboardRow({
           emptyLabel={labels.voteToReveal}
           onClick={(slug) => onRequestVote(slug)}
           disabled={hasVoted}
-          aria={slot3 ? labels.boxAria(slot3.name) : labels.emptyBoxAria}
+          aria={slot3 ? t("boxAria", { name: slot3.name }) : labels.emptyBoxAria}
           game={game}
           locale={locale}
         />
