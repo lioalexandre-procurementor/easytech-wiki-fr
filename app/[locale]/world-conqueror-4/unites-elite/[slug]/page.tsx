@@ -10,6 +10,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
+import { loadEliteUnit } from "@/lib/content-editable";
 import {
   getEligibleGeneralsForUnit,
   UNIT_VOTE_THRESHOLD,
@@ -26,8 +27,8 @@ export function generateStaticParams() {
   );
 }
 
-export function generateMetadata({ params }: { params: { locale: string; slug: string } }): Metadata {
-  const u = getEliteUnit(params.slug);
+export async function generateMetadata({ params }: { params: { locale: string; slug: string } }): Promise<Metadata> {
+  const u = await loadEliteUnit(params.slug);
   if (!u) return { title: "404" };
   const { locale } = params;
   const titleByLocale: Record<string, string> = {
@@ -52,7 +53,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
   const t = await getTranslations();
   const tL = (fr: string, en: string, de: string): string =>
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
-  const unit = getEliteUnit(params.slug);
+  const unit = await loadEliteUnit(params.slug);
   if (!unit) notFound();
 
   const sameCat = getUnitsByCategory(unit.category, unit.faction)

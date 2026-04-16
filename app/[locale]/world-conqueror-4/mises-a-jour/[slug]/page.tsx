@@ -4,6 +4,7 @@ import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getAllUpdateSlugs, getUpdate } from "@/lib/updates";
+import { loadUpdate } from "@/lib/content-editable";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
@@ -18,7 +19,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const u = getUpdate(slug);
+  const u = await loadUpdate(slug);
   if (!u) return { title: "404" };
   const t = await getTranslations({ locale, namespace: "updatesPage" });
   const loc = locale as Locale;
@@ -113,7 +114,7 @@ export default async function UpdateDetailPage({
 }) {
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
-  const u = getUpdate(slug);
+  const u = await loadUpdate(slug);
   if (!u) notFound();
   const t = await getTranslations();
   const loc = locale as Locale;

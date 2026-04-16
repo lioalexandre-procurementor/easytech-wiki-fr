@@ -60,6 +60,13 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <NavSection title="Overview">
               <NavLink href="/admin">Dashboard</NavLink>
             </NavSection>
+            <NavSection title="Wiki content">
+              <NavLink href="/admin/content">All entities</NavLink>
+              <NavLink href="/admin/content/elite-unit">Elite units</NavLink>
+              <NavLink href="/admin/content/general">Generals</NavLink>
+              <NavLink href="/admin/content/guide">Guides</NavLink>
+              <NavLink href="/admin/content/update">Updates</NavLink>
+            </NavSection>
             <NavSection title="Tickets">
               <NavLink href="/admin/tickets?status=open">
                 Open tickets

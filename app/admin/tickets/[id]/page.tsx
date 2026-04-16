@@ -11,6 +11,29 @@ function ts(n?: number): string {
   return new Date(n).toISOString().replace("T", " ").slice(0, 19) + " UTC";
 }
 
+/**
+ * Map a ticket's `context` to an admin editor deep-link.
+ * Context strings look like: "elite-units/delta-force", "generals/dowding",
+ * "generals/dowding:trained" (we treat the `:trained` suffix as hinting the
+ * trainedSkills section — same entity, same editor), "legends/…" (no editor
+ * yet → returns null), etc.
+ */
+function ticketContextToEditorHref(context: string, ticketId: string): string | null {
+  const base = context.split(":")[0]; // strip ":trained" / ":training" etc.
+  const [type, slug] = base.split("/");
+  if (!type || !slug) return null;
+  // Map plural/friendly context names to the editor's entity-type slugs.
+  const map: Record<string, string> = {
+    "elite-units": "elite-unit",
+    generals: "general",
+    guides: "guide",
+    updates: "update",
+  };
+  const entityType = map[type];
+  if (!entityType) return null;
+  return `/admin/content/${entityType}/${encodeURIComponent(slug)}?ticket=${encodeURIComponent(ticketId)}`;
+}
+
 export default async function TicketDetailPage({ params }: { params: { id: string } }) {
   const ticket = await getTicket(params.id);
   if (!ticket) return notFound();
@@ -52,6 +75,35 @@ export default async function TicketDetailPage({ params }: { params: { id: strin
       </div>
 
       <TicketActions id={ticket.id} status={ticket.status} />
+
+      {ticket.context && ticket.status === "open" && (() => {
+        const editorHref = ticketContextToEditorHref(ticket.context, ticket.id);
+        if (!editorHref) return null;
+        return (
+          <div style={{ marginTop: 14 }}>
+            <Link
+              href={editorHref}
+              style={{
+                display: "inline-block",
+                padding: "10px 16px",
+                background: "#d4a44a",
+                color: "#0a0e13",
+                borderRadius: 6,
+                fontWeight: 800,
+                fontSize: 13,
+                textTransform: "uppercase",
+                letterSpacing: 1.5,
+                textDecoration: "none",
+              }}
+            >
+              ✏ Open editor for this entity →
+            </Link>
+            <span style={{ marginLeft: 10, color: "#9aa5b4", fontSize: 11 }}>
+              Saving there auto-resolves this ticket.
+            </span>
+          </div>
+        );
+      })()}
 
       <Section title="Description">
         <pre

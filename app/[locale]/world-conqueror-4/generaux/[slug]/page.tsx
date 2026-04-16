@@ -19,6 +19,7 @@ import {
 } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
+import { loadGeneral } from "@/lib/content-editable";
 import type {
   Metadata,
 } from "next";
@@ -45,7 +46,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const g = getGeneral(slug);
+  const g = await loadGeneral(slug);
   if (!g) return { title: "404" };
   const name = g.nameEn || g.name;
   const shortDescLocalized = localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", locale);
@@ -103,7 +104,7 @@ const QUALITY_META: Record<
 export default async function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
-  const g = getGeneral(params.slug);
+  const g = await loadGeneral(params.slug);
   if (!g) notFound();
 
   const GENERAL_CAT = getGeneralCategoryMeta(params.locale);

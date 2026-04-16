@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { StatsGrid } from "@/components/general/StatsGrid";
 import { buildPremiumTrainingView } from "@/lib/general-trained";
 import { getAllGeneralSlugs, getGeneral, getSkill } from "@/lib/units";
+import { loadGeneral } from "@/lib/content-editable";
 import { splitGeneralName } from "@/lib/general-name";
 import { localizedUnitField } from "@/lib/localized-copy";
 import { locales, type Locale } from "@/src/i18n/config";
@@ -39,7 +40,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const g = getGeneral(slug);
+  const g = await loadGeneral(slug);
   if (!g) return { title: "404" };
   const t = await getTranslations({ locale, namespace: "premiumTrainingPage" });
   const name = g.nameEn || g.name;
@@ -80,7 +81,7 @@ export default async function PremiumTrainingPage({
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
 
-  const g = getGeneral(slug);
+  const g = await loadGeneral(slug);
   if (!g) notFound();
 
   const view = buildPremiumTrainingView(g);

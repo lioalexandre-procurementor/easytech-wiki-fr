@@ -5,6 +5,7 @@ import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { getAllGuideSlugs, getGuide } from "@/lib/guides";
+import { loadGuide } from "@/lib/content-editable";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
@@ -28,7 +29,7 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
-  const g = getGuide(slug);
+  const g = await loadGuide(slug);
   if (!g) return { title: "404" };
   const loc = locale as Locale;
   const t = await getTranslations({ locale, namespace: "guidesPage" });
@@ -290,7 +291,7 @@ export default async function GuideDetailPage({
 }) {
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
-  const guide = getGuide(slug);
+  const guide = await loadGuide(slug);
   if (!guide) notFound();
   const loc = locale as Locale;
   const t = await getTranslations();
