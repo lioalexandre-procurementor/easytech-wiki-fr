@@ -4,8 +4,15 @@
   "publishedAt": "2026-04-15",
   "lastReviewed": "2026-04-15",
   "readingTimeMinutes": 5,
-  "tags": ["generals", "early-game", "shop"],
-  "related": ["getting-started-2026", "farm-medals"],
+  "tags": [
+    "generals",
+    "early-game",
+    "shop"
+  ],
+  "related": [
+    "getting-started-2026",
+    "farm-medals"
+  ],
   "title": {
     "fr": "Premiers généraux à recruter sur WC4",
     "en": "First Generals to Recruit on WC4",
@@ -72,5 +79,7 @@
         "a": "Nein. Guderian ist herausragend, braucht aber Tier-S-Elite-Panzer (King Tiger, IS-3, M1A1), um zu glänzen. Kauf ihn, wenn du diese Einheiten bereits hast – nicht vorher."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/generals/Auchinleck.webp",
+  "heroAlt": "Claude Auchinleck — bronze starter general"
 }

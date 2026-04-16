@@ -64,6 +64,18 @@ export interface UnitData {
     sprite?: string | null;   // /img/wc4/elites/<armyId>.webp
     lvl12?: string | null;    // /img/wc4/elites/<armyId_lvl12>.webp if different
   };
+  /**
+   * True for entries shipped before complete in-game stats are captured
+   * (e.g. brand-new patch units). The unit detail page renders a banner
+   * saying "stats being verified" and admin verification tickets track
+   * what's still missing. Flip to false / remove once stats are confirmed.
+   */
+  preliminary?: boolean;
+  /** Optional per-locale sibling description fields read by localizedUnitField. */
+  shortDescEn?: string;
+  shortDescDe?: string;
+  longDescEn?: string;
+  longDescDe?: string;
 }
 
 export interface GameMeta {
@@ -479,12 +491,25 @@ export interface Guide {
   readingTimeMinutes: number;
   tags: string[];
   related: string[];
+  /** Optional author byline — E-E-A-T signal. */
+  byline?: string;
+  /**
+   * Optional hero image path (under /public/img/wc4/...). Shown on the
+   * guide detail header and as the thumbnail on the hub card. When
+   * absent, the card falls back to a category-colored gradient.
+   */
+  heroImage?: string;
+  /** Alt text for the hero image. Short and descriptive. */
+  heroAlt?: string;
   /** Per-locale content — all supported site locales. */
   title: { fr: string; en: string; de: string };
   description: { fr: string; en: string; de: string };
   /** TL;DR bullets — 3-5. */
   tldr: { fr: string[]; en: string[]; de: string[] };
-  /** Body in minimal markdown (## headings, - lists, > blockquotes, paragraphs). */
+  /**
+   * Body in minimal markdown. Supports: `## Heading {#anchor}`, `### Heading`,
+   * `- list`, `1. list`, `> blockquote`, `| pipe | tables |`, and inline `**bold**`.
+   */
   body: { fr: string; en: string; de: string };
   /** FAQ entries for FAQPage JSON-LD rich snippets. */
   faqs: { fr: GuideFAQ[]; en: GuideFAQ[]; de: GuideFAQ[] };

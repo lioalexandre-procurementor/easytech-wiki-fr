@@ -133,5 +133,7 @@
         "a": "Setze ein 4 000-Medaillen-Limit pro Slot. Darüber hinaus akzeptiere einen Alternativ-Skill (Commander Elite, Defense Expert), der ebenfalls stark ist. Blitz-Chance liegt bei rund 6% — im Schnitt brauchst du 16 Würfe oder ~3 200 Medaillen, aber die Varianz ist hoch."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/generals/Rokossovsky.webp",
+  "heroAlt": "Rokossovsky — signature trainable skill archetype"
 }

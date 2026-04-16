@@ -4,8 +4,15 @@
   "publishedAt": "2026-04-15",
   "lastReviewed": "2026-04-15",
   "readingTimeMinutes": 6,
-  "tags": ["beginner", "tutorial", "scenarios"],
-  "related": ["first-generals", "farm-medals"],
+  "tags": [
+    "beginner",
+    "tutorial",
+    "scenarios"
+  ],
+  "related": [
+    "first-generals",
+    "farm-medals"
+  ],
   "title": {
     "fr": "Démarrer sur World Conqueror 4 en 2026",
     "en": "Getting Started with World Conqueror 4 in 2026",
@@ -84,5 +91,7 @@
         "a": "Das erste Alliierten-Szenario (Schlacht um Frankreich) ist das natürliche Tutorial: Es erklärt Bewegung, Kampf, Stadteroberung und Generalsnutzung ohne Risiko."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/generals/Eisenhower.webp",
+  "heroAlt": "Dwight Eisenhower — Supreme Allied Commander"
 }

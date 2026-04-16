@@ -133,5 +133,7 @@
         "a": "Nein, es gibt eine Rekrutierungs-Obergrenze pro General und Stadt. Du kannst maximal 3–4 schwere Elite-Panzer gleichzeitig an einer Front haben. Das ist beabsichtigt: schwere Panzer sind ein Durchbruch-Werkzeug, keine Massenarmee."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/elites/318001.webp",
+  "heroAlt": "IS-3 — Soviet heavy tank elite unit"
 }

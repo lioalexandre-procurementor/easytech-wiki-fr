@@ -4,8 +4,15 @@
   "publishedAt": "2026-04-15",
   "lastReviewed": "2026-04-15",
   "readingTimeMinutes": 4,
-  "tags": ["medals", "economy", "f2p"],
-  "related": ["getting-started-2026", "first-generals"],
+  "tags": [
+    "medals",
+    "economy",
+    "f2p"
+  ],
+  "related": [
+    "getting-started-2026",
+    "first-generals"
+  ],
   "title": {
     "fr": "Comment farmer des médailles efficacement",
     "en": "How to Farm Medals Efficiently",
@@ -60,5 +67,7 @@
         "a": "Zwischen 80 und 150 Medaillen mit Login + Missionen + 1 Eroberung. Über einen Monat reicht das für einen Bronze-General oder die Hälfte eines Silber-Generals."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/generals/Patton.webp",
+  "heroAlt": "George Patton — medal-earning campaign icon"
 }

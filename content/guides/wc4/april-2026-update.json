@@ -4,8 +4,20 @@
   "publishedAt": "2026-04-15",
   "lastReviewed": "2026-04-15",
   "readingTimeMinutes": 12,
-  "tags": ["patch", "april-2026", "delta-force", "bismarck", "dowding", "legends", "events"],
-  "related": ["tier-list-generaux-wc4", "unites-elite-wc4", "generaux-premium-wc4"],
+  "tags": [
+    "patch",
+    "april-2026",
+    "delta-force",
+    "bismarck",
+    "dowding",
+    "legends",
+    "events"
+  ],
+  "related": [
+    "tier-list-generaux-wc4",
+    "unites-elite-wc4",
+    "generaux-premium-wc4"
+  ],
   "title": {
     "fr": "WC4 — Patch d'avril 2026 : Delta Force, Bismarck, Dowding, Légendes et événements",
     "en": "WC4 — April 2026 Patch: Delta Force, Bismarck, Dowding, Legends and Events",
@@ -111,5 +123,7 @@
         "a": "Nein. Warte, bis Legenden und Elites stehen. Rise of the Scorpion Empire bestraft schlecht gelevelte Stacks und North Atlantic deckt jede Lücke in Flugabwehr und U-Boot-Jagd auf. Räum erst die historischen Rückblicke ab."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/generals/Dowding.webp",
+  "heroAlt": "Hugh Dowding — spotlight of the April 2026 patch"
 }

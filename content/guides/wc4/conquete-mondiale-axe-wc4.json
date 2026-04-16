@@ -133,5 +133,7 @@
         "a": "Nein, optional für den Sieg. Aber Kairo öffnet direkten Zugang zum Nahen Osten und Indien, was Phase 5 deutlich verkürzt. Der Aufwand lohnt sich, wenn du einen 100%-Ziele-Run anstrebst."
       }
     ]
-  }
+  },
+  "heroImage": "/img/wc4/generals/Manstein.webp",
+  "heroAlt": "Erich von Manstein — Axis field commander"
 }
