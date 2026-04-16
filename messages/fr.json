@@ -491,7 +491,11 @@
       "airforce": "Aviation",
       "fortifications": "Fortifications",
       "antiair": "Anti-aérien",
-      "missile": "Missiles"
+      "missile": "Missiles",
+      "cavalry": "Cavalerie",
+      "archer": "Archers",
+      "siege": "Siège",
+      "wargear": "Équipements de guerre"
     },
     "seoTitle": "Technologies WC4 — Catalogue complet de la recherche",
     "seoDescription": "Catalogue exhaustif des 58 chaînes de technologies de World Conqueror 4 : coûts, niveaux, effets et unités affectées."

@@ -491,7 +491,11 @@
       "airforce": "Luftwaffe",
       "fortifications": "Befestigungen",
       "antiair": "Flugabwehr",
-      "missile": "Raketen"
+      "missile": "Raketen",
+      "cavalry": "Kavallerie",
+      "archer": "Bogenschützen",
+      "siege": "Belagerung",
+      "wargear": "Kriegsausrüstung"
     },
     "seoTitle": "WC4 Technologien — Vollständiger Forschungskatalog",
     "seoDescription": "Umfassender Katalog aller 58 Technologie-Ketten in World Conqueror 4: Kosten, Stufen, Effekte und betroffene Einheiten."
