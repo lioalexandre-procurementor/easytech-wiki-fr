@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import ConfirmDestructive from "./ConfirmDestructive";
 
 export default function BestGeneralActions({
@@ -12,6 +12,8 @@ export default function BestGeneralActions({
   hasAny?: boolean;
 }) {
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const game = searchParams.get("game") || "wc4";
   const [confirmOpen, setConfirmOpen] = useState(false);
   const [busy, setBusy] = useState(false);
 
@@ -19,7 +21,7 @@ export default function BestGeneralActions({
     if (!slug) return;
     setBusy(true);
     try {
-      await fetch(`/api/admin/votes/best-general/${slug}`, { method: "DELETE" });
+      await fetch(`/api/admin/votes/best-general/${slug}?game=${game}`, { method: "DELETE" });
       router.refresh();
     } finally {
       setBusy(false);
@@ -29,7 +31,7 @@ export default function BestGeneralActions({
   async function resetAll() {
     setBusy(true);
     try {
-      await fetch(`/api/admin/votes/best-general`, { method: "DELETE" });
+      await fetch(`/api/admin/votes/best-general?game=${game}`, { method: "DELETE" });
       router.refresh();
     } finally {
       setBusy(false);

@@ -1,17 +1,45 @@
 import { getBestGeneralTally } from "@/lib/admin-votes";
 import BestGeneralActions from "@/components/admin/BestGeneralActions";
+import { parseGame } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
-export default async function BestGeneralVotesAdmin() {
-  const tally = await getBestGeneralTally();
+export default async function BestGeneralVotesAdmin({
+  searchParams,
+}: {
+  searchParams: Record<string, string | string[] | undefined>;
+}) {
+  const game = parseGame(searchParams.game) ?? "wc4";
+  const tally = await getBestGeneralTally(game);
 
   return (
     <div>
       <h2 style={{ margin: "0 0 14px", fontSize: 24, fontWeight: 800 }}>
-        Best-general votes
+        Best-general votes — {game.toUpperCase()}
       </h2>
+      <div style={{ display: "flex", gap: 8, marginBottom: 14 }}>
+        {(["wc4", "gcr", "ew6"] as const).map((g) => (
+          <a
+            key={g}
+            href={`?game=${g}`}
+            style={{
+              padding: "4px 10px",
+              borderRadius: 6,
+              fontSize: 11,
+              fontWeight: 700,
+              textTransform: "uppercase",
+              letterSpacing: 1.5,
+              textDecoration: "none",
+              border: g === game ? "1px solid #d4a44a" : "1px solid #2a3344",
+              background: g === game ? "rgba(212,164,74,0.2)" : "#131924",
+              color: g === game ? "#d4a44a" : "#9aa5b4",
+            }}
+          >
+            {g}
+          </a>
+        ))}
+      </div>
       <div
         style={{
           display: "flex",
