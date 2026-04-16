@@ -78,9 +78,8 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🌍 {t("nav.conquests")}</SidebarLink>
           </SidebarSection>
           <SidebarSection title={t("nav.tools")}>
-            <SidebarLink href="#">🏆 {t("nav.leaderboards")}</SidebarLink>
-            <SidebarLink href="#">⚖️ {t("nav.comparator")}</SidebarLink>
-            <SidebarLink href="#">🧮 {t("nav.xpCalculator")}</SidebarLink>
+            <SidebarLink href="/leaderboards">🏆 {t("nav.leaderboards")}</SidebarLink>
+            <SidebarLink href="/world-conqueror-4/comparateur/generaux">⚖️ {t("nav.comparator")}</SidebarLink>
           </SidebarSection>
         </aside>
 

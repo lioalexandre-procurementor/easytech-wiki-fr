@@ -468,6 +468,34 @@
     "seoTitle": "Guides WC4 — Tutoriels et stratégies",
     "seoDescription": "Tous les guides pour World Conqueror 4 : tutoriels débutants, mécaniques de jeu, stratégies avancées et conseils méta.",
     "detailSeoTitle": "{title} | Guides WC4",
-    "detailSeoDescription": "{description}"
+    "detailSeoDescription": "{description}",
+    "tocLabel": "Sommaire"
+  },
+  "leaderboardsPage": {
+    "seoTitle": "Classements communautaires WC4 — Top Généraux, Compétences & Unités",
+    "seoDescription": "Classements votés par la communauté World Conqueror 4 : meilleur général, compétences entraînées plébiscitées, meilleure paire général/unité d'élite. Mis à jour en temps réel.",
+    "h1": "Classements communautaires",
+    "intro": "Les joueurs votent, la communauté classe. Trois palmarès mis à jour en temps réel d'après les votes anonymes du wiki (valables 30 jours).",
+    "tabGenerals": "Meilleurs généraux",
+    "tabSkills": "Compétences plébiscitées",
+    "tabUnits": "Généraux par unité d'élite",
+    "tabGeneralsDesc": "Quel général la communauté considère-t-elle comme le meilleur de World Conqueror 4 ? Un vote par visiteur.",
+    "tabSkillsDesc": "Les compétences d'Académie les plus votées à travers tous les slots entraînables, tous généraux confondus.",
+    "tabUnitsDesc": "Pour chaque unité d'élite, le général que la communauté recommande (seuil : {threshold} votes).",
+    "rank": "Rang",
+    "name": "Nom",
+    "votes": "Votes",
+    "share": "Part",
+    "total": "Total",
+    "emptyGenerals": "Pas encore de votes. Soyez le premier à voter sur le hub WC4.",
+    "emptySkills": "Pas encore de votes sur les compétences entraînables. Votez sur une fiche de général.",
+    "emptyUnits": "Aucune unité n'a encore atteint les 100 votes. Votez sur les fiches d'unités d'élite.",
+    "voteOnHub": "Voter sur le hub WC4 →",
+    "voteOnGeneralPage": "Voter sur une fiche de général →",
+    "voteOnUnitPage": "Voter sur une fiche d'unité →",
+    "belowThreshold": "{count} / {threshold} votes",
+    "topPick": "Choix communautaire",
+    "appearsOn": "Apparaît sur",
+    "totalVotes": "{total, plural, one {# vote} other {# votes}}"
   }
 }

@@ -468,6 +468,34 @@
     "seoTitle": "WC4 Guides — Tutorials und Strategien",
     "seoDescription": "Alle Guides zu World Conqueror 4: Einsteiger-Tutorials, Spielmechaniken, fortgeschrittene Strategien und Meta-Tipps.",
     "detailSeoTitle": "{title} | WC4 Guides",
-    "detailSeoDescription": "{description}"
+    "detailSeoDescription": "{description}",
+    "tocLabel": "Inhalt"
+  },
+  "leaderboardsPage": {
+    "seoTitle": "WC4 Community-Bestenlisten — Top-Generäle, Fähigkeiten & Elite-Einheiten",
+    "seoDescription": "Von der Community gewählte Bestenlisten zu World Conqueror 4: bester General, meistgewählte trainierbare Fähigkeiten, bester General pro Elite-Einheit. Live aktualisiert.",
+    "h1": "Community-Bestenlisten",
+    "intro": "Spieler stimmen ab, die Community rankt. Drei Ranglisten in Echtzeit, gespeist aus anonymen Wiki-Abstimmungen (30 Tage gültig).",
+    "tabGenerals": "Top-Generäle",
+    "tabSkills": "Top-Fähigkeiten",
+    "tabUnits": "Bester General je Elite-Einheit",
+    "tabGeneralsDesc": "Welchen General hält die Community für den besten in World Conqueror 4? Eine Stimme pro Besucher.",
+    "tabSkillsDesc": "Die meistgewählten Akademie-Fähigkeiten über alle trainierbaren Slots und Generäle hinweg.",
+    "tabUnitsDesc": "Für jede Elite-Einheit der von der Community empfohlene General (Schwelle: {threshold} Stimmen).",
+    "rank": "Rang",
+    "name": "Name",
+    "votes": "Stimmen",
+    "share": "Anteil",
+    "total": "Gesamt",
+    "emptyGenerals": "Noch keine Stimmen. Sei der Erste auf dem WC4-Hub.",
+    "emptySkills": "Noch keine Stimmen zu trainierbaren Fähigkeiten. Stimme auf einer Generalsseite ab.",
+    "emptyUnits": "Noch hat keine Einheit die 100-Stimmen-Schwelle erreicht. Stimme auf den Elite-Einheiten-Seiten ab.",
+    "voteOnHub": "Auf dem WC4-Hub abstimmen →",
+    "voteOnGeneralPage": "Auf einer Generalsseite abstimmen →",
+    "voteOnUnitPage": "Auf einer Elite-Einheiten-Seite abstimmen →",
+    "belowThreshold": "{count} / {threshold} Stimmen",
+    "topPick": "Community-Wahl",
+    "appearsOn": "Erscheint auf",
+    "totalVotes": "{total, plural, one {# Stimme} other {# Stimmen}}"
   }
 }

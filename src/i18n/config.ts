@@ -15,6 +15,11 @@ export const defaultLocale: Locale = "fr";
  */
 export const pathnames = {
   "/": "/",
+  "/leaderboards": {
+    fr: "/classements",
+    en: "/leaderboards",
+    de: "/bestenlisten",
+  },
   "/world-conqueror-4": {
     fr: "/world-conqueror-4",
     en: "/world-conqueror-4",

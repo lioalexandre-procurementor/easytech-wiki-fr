@@ -468,6 +468,34 @@
     "seoTitle": "WC4 Guides — Tutorials and Strategies",
     "seoDescription": "All guides for World Conqueror 4: beginner tutorials, game mechanics, advanced strategies and meta tips.",
     "detailSeoTitle": "{title} | WC4 Guides",
-    "detailSeoDescription": "{description}"
+    "detailSeoDescription": "{description}",
+    "tocLabel": "Contents"
+  },
+  "leaderboardsPage": {
+    "seoTitle": "WC4 Community Leaderboards — Top Generals, Skills & Elite Unit Picks",
+    "seoDescription": "Community-voted leaderboards for World Conqueror 4: best general, top-voted trainable skills, best general per elite unit. Updated in real time.",
+    "h1": "Community leaderboards",
+    "intro": "Players vote, the community ranks. Three real-time rankings fed by anonymous wiki votes (valid 30 days).",
+    "tabGenerals": "Top generals",
+    "tabSkills": "Top skills",
+    "tabUnits": "Best general per elite unit",
+    "tabGeneralsDesc": "Which general does the community consider the best in World Conqueror 4? One vote per visitor.",
+    "tabSkillsDesc": "The most-voted Academy skills across every trainable slot, all generals combined.",
+    "tabUnitsDesc": "For each elite unit, the general the community recommends pairing with it (threshold: {threshold} votes).",
+    "rank": "Rank",
+    "name": "Name",
+    "votes": "Votes",
+    "share": "Share",
+    "total": "Total",
+    "emptyGenerals": "No votes yet. Be the first to vote on the WC4 hub.",
+    "emptySkills": "No votes on trainable skills yet. Vote from a general's page.",
+    "emptyUnits": "No unit has reached the 100-vote threshold yet. Vote from elite unit pages.",
+    "voteOnHub": "Vote on the WC4 hub →",
+    "voteOnGeneralPage": "Vote from a general's page →",
+    "voteOnUnitPage": "Vote from an elite unit page →",
+    "belowThreshold": "{count} / {threshold} votes",
+    "topPick": "Community pick",
+    "appearsOn": "Carried on",
+    "totalVotes": "{total, plural, one {# vote} other {# votes}}"
   }
 }
