@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function GET(req: NextRequest) {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
 
   const { searchParams } = new URL(req.url);

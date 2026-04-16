@@ -15,7 +15,7 @@ export async function GET(
   _req: NextRequest,
   { params }: { params: { general: string; slot: string } }
 ) {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
   const slot = parseSlot(params.slot);
   if (!slot) return NextResponse.json({ error: "bad slot" }, { status: 400 });
@@ -27,7 +27,7 @@ export async function DELETE(
   _req: NextRequest,
   { params }: { params: { general: string; slot: string } }
 ) {
-  const gate = requireAdminWithReauth();
+  const gate = await requireAdminWithReauth();
   if (gate) return gate;
   const slot = parseSlot(params.slot);
   if (!slot) return NextResponse.json({ error: "bad slot" }, { status: 400 });

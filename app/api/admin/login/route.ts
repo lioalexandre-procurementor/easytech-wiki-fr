@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const token = issueSession(SESSION_TTL_MS);
+  const token = await issueSession(SESSION_TTL_MS);
   if (!token) {
     return NextResponse.json({ error: "session issuance failed" }, { status: 500 });
   }

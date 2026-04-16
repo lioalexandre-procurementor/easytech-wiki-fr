@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
   if (!isAdminConfigured()) {
     return NextResponse.json({ error: "admin not configured" }, { status: 503 });
   }
-  const session = verifySession(cookies().get(ADMIN_COOKIE)?.value);
+  const session = await verifySession(cookies().get(ADMIN_COOKIE)?.value);
   if (!session) {
     return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   }
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "invalid password" }, { status: 401 });
   }
 
-  const token = issueReauth(REAUTH_TTL_MS);
+  const token = await issueReauth(REAUTH_TTL_MS);
   if (!token) {
     return NextResponse.json({ error: "reauth issuance failed" }, { status: 500 });
   }

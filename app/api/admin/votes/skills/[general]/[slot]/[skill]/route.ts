@@ -9,7 +9,7 @@ export async function DELETE(
   _req: NextRequest,
   { params }: { params: { general: string; slot: string; skill: string } }
 ) {
-  const gate = requireAdminWithReauth();
+  const gate = await requireAdminWithReauth();
   if (gate) return gate;
   const slot = Number(params.slot);
   if (!Number.isInteger(slot) || slot < 1 || slot > 5) {

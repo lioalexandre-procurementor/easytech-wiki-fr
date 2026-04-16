@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function DELETE(_req: NextRequest, { params }: { params: { slug: string } }) {
-  const gate = requireAdminWithReauth();
+  const gate = await requireAdminWithReauth();
   if (gate) return gate;
   const removed = await deleteBestGeneralSlug(params.slug);
   return NextResponse.json({ ok: true, removed });

@@ -6,14 +6,14 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function GET() {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
   const data = await getBestGeneralTally();
   return NextResponse.json(data);
 }
 
 export async function DELETE() {
-  const gate = requireAdminWithReauth();
+  const gate = await requireAdminWithReauth();
   if (gate) return gate;
   await resetBestGeneral();
   return NextResponse.json({ ok: true });

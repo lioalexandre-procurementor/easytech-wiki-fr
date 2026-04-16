@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function GET() {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
   const keys = await listSkillVoteKeys();
   return NextResponse.json({ keys });

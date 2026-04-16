@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 export async function GET(_req: NextRequest, { params }: { params: { id: string } }) {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
   const ticket = await getTicket(params.id);
   if (!ticket) return NextResponse.json({ error: "not found" }, { status: 404 });
@@ -14,7 +14,7 @@ export async function GET(_req: NextRequest, { params }: { params: { id: string 
 }
 
 export async function PATCH(req: NextRequest, { params }: { params: { id: string } }) {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
   let body: { status?: string };
   try {
@@ -32,7 +32,7 @@ export async function PATCH(req: NextRequest, { params }: { params: { id: string
 
 export async function DELETE(_req: NextRequest, { params }: { params: { id: string } }) {
   // Delete is destructive → require fresh reauth.
-  const gate = requireAdminWithReauth();
+  const gate = await requireAdminWithReauth();
   if (gate) return gate;
   const ok = await deleteTicket(params.id);
   if (!ok) return NextResponse.json({ error: "not found" }, { status: 404 });

@@ -1,7 +1,17 @@
-import crypto from "node:crypto";
+/**
+ * Web Crypto-based session + reauth token helpers.
+ *
+ * Written against the WebCrypto API (globalThis.crypto.subtle) rather than
+ * node:crypto so the same module can be imported from Next.js middleware
+ * (Edge runtime, no node: scheme) and from API routes (Node runtime).
+ * All sign/verify operations are therefore async.
+ */
 
 export const ADMIN_COOKIE = "ew_admin_session";
 export const REAUTH_COOKIE = "ew_admin_reauth";
+
+export const SESSION_TTL_MS = 24 * 60 * 60 * 1000; // 24h
+export const REAUTH_TTL_MS = 60 * 1000; // 60s
 
 function sessionSecret(): string | null {
   const s = process.env.ADMIN_SESSION_SECRET;
@@ -15,12 +25,30 @@ function adminPassword(): string | null {
   return p;
 }
 
-/** Constant-time string compare — avoids leaking length-or-char timing info. */
+export function isAdminConfigured(): boolean {
+  return sessionSecret() !== null && adminPassword() !== null;
+}
+
+const textEncoder = new TextEncoder();
+
+/** base64url encode a Uint8Array (no padding). */
+function b64urlEncode(bytes: Uint8Array): string {
+  let bin = "";
+  for (let i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+  return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+}
+
+/** Constant-time byte comparison. */
+function constantTimeEqualBytes(a: Uint8Array, b: Uint8Array): boolean {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i++) diff |= a[i] ^ b[i];
+  return diff === 0;
+}
+
+/** Constant-time string comparison (encodes both to UTF-8 bytes first). */
 export function timingSafeEqual(a: string, b: string): boolean {
-  const ab = Buffer.from(a, "utf8");
-  const bb = Buffer.from(b, "utf8");
-  if (ab.length !== bb.length) return false;
-  return crypto.timingSafeEqual(ab, bb);
+  return constantTimeEqualBytes(textEncoder.encode(a), textEncoder.encode(b));
 }
 
 export function isPasswordValid(candidate: string): boolean {
@@ -29,12 +57,26 @@ export function isPasswordValid(candidate: string): boolean {
   return timingSafeEqual(candidate, p);
 }
 
-export function isAdminConfigured(): boolean {
-  return sessionSecret() !== null && adminPassword() !== null;
+async function importHmacKey(secret: string): Promise<CryptoKey> {
+  return crypto.subtle.importKey(
+    "raw",
+    textEncoder.encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign", "verify"]
+  );
 }
 
-function hmac(secret: string, data: string): string {
-  return crypto.createHmac("sha256", secret).update(data).digest("base64url");
+async function hmacSignB64url(secret: string, data: string): Promise<string> {
+  const key = await importHmacKey(secret);
+  const sig = await crypto.subtle.sign("HMAC", key, textEncoder.encode(data));
+  return b64urlEncode(new Uint8Array(sig));
+}
+
+function randomB64url(byteLength: number): string {
+  const bytes = new Uint8Array(byteLength);
+  crypto.getRandomValues(bytes);
+  return b64urlEncode(bytes);
 }
 
 /**
@@ -42,14 +84,15 @@ function hmac(secret: string, data: string): string {
  * HMAC covers `<issuedAtMs>.<expiresAtMs>.<nonce>` so the cookie is
  * tamper-proof without a server-side session store.
  */
-export function issueSession(ttlMs: number): string | null {
+export async function issueSession(ttlMs: number): Promise<string | null> {
   const secret = sessionSecret();
   if (!secret) return null;
   const now = Date.now();
   const expires = now + ttlMs;
-  const nonce = crypto.randomBytes(12).toString("base64url");
+  const nonce = randomB64url(12);
   const payload = `${now}.${expires}.${nonce}`;
-  return `${payload}.${hmac(secret, payload)}`;
+  const sig = await hmacSignB64url(secret, payload);
+  return `${payload}.${sig}`;
 }
 
 export type VerifiedSession = {
@@ -57,7 +100,9 @@ export type VerifiedSession = {
   expiresAt: number;
 };
 
-export function verifySession(token: string | undefined | null): VerifiedSession | null {
+export async function verifySession(
+  token: string | undefined | null
+): Promise<VerifiedSession | null> {
   if (!token) return null;
   const secret = sessionSecret();
   if (!secret) return null;
@@ -65,7 +110,7 @@ export function verifySession(token: string | undefined | null): VerifiedSession
   if (parts.length !== 4) return null;
   const [issuedStr, expiresStr, nonce, sig] = parts;
   const payload = `${issuedStr}.${expiresStr}.${nonce}`;
-  const expectedSig = hmac(secret, payload);
+  const expectedSig = await hmacSignB64url(secret, payload);
   if (!timingSafeEqual(sig, expectedSig)) return null;
   const issuedAt = Number(issuedStr);
   const expiresAt = Number(expiresStr);
@@ -75,20 +120,23 @@ export function verifySession(token: string | undefined | null): VerifiedSession
 }
 
 /**
- * Short-lived re-auth token. Separate from the session cookie so that
- * stealing a logged-in laptop doesn't let an attacker click "reset all
- * votes" without re-entering the password.
+ * Short-lived reauth token. Separate from the session cookie so stealing
+ * a logged-in laptop doesn't let an attacker click "reset all votes"
+ * without re-entering the password.
  */
-export function issueReauth(ttlMs: number): string | null {
+export async function issueReauth(ttlMs: number): Promise<string | null> {
   const secret = sessionSecret();
   if (!secret) return null;
   const expires = Date.now() + ttlMs;
-  const nonce = crypto.randomBytes(8).toString("base64url");
+  const nonce = randomB64url(8);
   const payload = `reauth.${expires}.${nonce}`;
-  return `${payload}.${hmac(secret, payload)}`;
+  const sig = await hmacSignB64url(secret, payload);
+  return `${payload}.${sig}`;
 }
 
-export function verifyReauth(token: string | undefined | null): boolean {
+export async function verifyReauth(
+  token: string | undefined | null
+): Promise<boolean> {
   if (!token) return false;
   const secret = sessionSecret();
   if (!secret) return false;
@@ -97,11 +145,9 @@ export function verifyReauth(token: string | undefined | null): boolean {
   const [kind, expiresStr, nonce, sig] = parts;
   if (kind !== "reauth") return false;
   const payload = `${kind}.${expiresStr}.${nonce}`;
-  if (!timingSafeEqual(sig, hmac(secret, payload))) return false;
+  const expectedSig = await hmacSignB64url(secret, payload);
+  if (!timingSafeEqual(sig, expectedSig)) return false;
   const expires = Number(expiresStr);
   if (!Number.isFinite(expires) || Date.now() > expires) return false;
   return true;
 }
-
-export const SESSION_TTL_MS = 24 * 60 * 60 * 1000; // 24h
-export const REAUTH_TTL_MS = 60 * 1000; // 60s — short-lived confirmation window

@@ -17,7 +17,7 @@ type SeedEntry = {
 };
 
 export async function POST() {
-  const gate = requireAdmin();
+  const gate = await requireAdmin();
   if (gate) return gate;
 
   const seedPath = path.join(process.cwd(), "data", "verification-tickets-seed.json");
