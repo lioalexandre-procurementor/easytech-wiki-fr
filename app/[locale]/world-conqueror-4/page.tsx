@@ -5,18 +5,11 @@ import { UnitCard } from "@/components/UnitCard";
 import { AdSlot } from "@/components/AdSlot";
 import BestGeneralVote from "@/components/BestGeneralVote";
 import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, getCategoryMeta } from "@/lib/units";
+import { BEST_GENERAL_PLACEHOLDER } from "@/lib/editorial-picks";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
-
-const BEST_GENERAL_PLACEHOLDER: string[] = [
-  "manstein",
-  "guderian",
-  "rokossovsky",
-  "simo-hayha",
-  "de-gaulle",
-];
 
 export async function generateMetadata({
   params: { locale },
@@ -125,6 +118,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
 
           <div className="mt-8">
             <BestGeneralVote
+              game="wc4"
               generals={generals.map((g) => ({
                 slug: g.slug,
                 name: g.name,
@@ -133,7 +127,8 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
                 country: g.country ?? null,
                 portrait: g.image?.head ?? null,
               }))}
-              placeholderTop5={BEST_GENERAL_PLACEHOLDER}
+              placeholderTop5={BEST_GENERAL_PLACEHOLDER.wc4}
+              placeholderThreshold={100}
             />
           </div>
 
