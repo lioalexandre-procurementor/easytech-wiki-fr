@@ -3,29 +3,66 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
-import { COUNTRY_FLAGS, getCategoryMeta } from "@/lib/units";
-import { countryLabel } from "@/lib/countries";
+import BestGeneralsGrid from "@/components/BestGeneralsGrid";
+import { getAllGenerals as getAllGeneralsWc4, getCategoryMeta as getCategoryMetaWc4, COUNTRY_FLAGS } from "@/lib/units";
+import { getAllGenerals as getAllGeneralsGcr, getCategoryMeta as getCategoryMetaGcr } from "@/lib/gcr";
+import { getAllGenerals as getAllGeneralsEw6, getCategoryMeta as getCategoryMetaEw6 } from "@/lib/ew6";
 import {
   loadGeneralsLeaderboard,
-  loadSkillsLeaderboard,
   loadUnitsLeaderboard,
   UNITS_LEADERBOARD_THRESHOLD,
   type GeneralsRanking,
-  type SkillsRanking,
   type UnitsRanking,
 } from "@/lib/leaderboards";
+import { getEditorialPick } from "@/lib/editorial-picks";
+import { parseGame, type Game } from "@/lib/types";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 
-export const dynamic = "force-dynamic"; // always fresh — vote totals are live
-export const revalidate = 30; // but fronted by a 30s edge cache to smooth bursts
+export const dynamic = "force-dynamic";
+export const revalidate = 30;
 
-type TabKey = "generals" | "skills" | "units";
+const BEST_GENERAL_THRESHOLD = 100;
+
+type TabKey = "generals" | "units";
 
 function parseTab(raw: unknown): TabKey {
-  if (raw === "skills" || raw === "units") return raw;
+  if (raw === "units") return "units";
   return "generals";
+}
+
+function parseGameParam(raw: unknown): Game {
+  return parseGame(raw) ?? "wc4";
+}
+
+function parseCat(raw: unknown): string | null {
+  if (typeof raw !== "string" || !raw) return null;
+  return raw;
+}
+
+function getCategoryMetaForGame(game: Game, locale: string) {
+  if (game === "wc4") return getCategoryMetaWc4(locale);
+  if (game === "gcr") return getCategoryMetaGcr(locale);
+  return getCategoryMetaEw6(locale);
+}
+
+function getAllGeneralsForGame(game: Game) {
+  if (game === "wc4") return getAllGeneralsWc4();
+  if (game === "gcr") return getAllGeneralsGcr();
+  return getAllGeneralsEw6();
+}
+
+function generalsHubPath(game: Game) {
+  if (game === "wc4") return "/world-conqueror-4/generaux";
+  if (game === "gcr") return "/great-conqueror-rome/generaux";
+  return "/european-war-6/generaux";
+}
+
+function unitHubPath(game: Game) {
+  if (game === "wc4") return "/world-conqueror-4/unites-elite";
+  if (game === "gcr") return "/great-conqueror-rome/unites-elite";
+  return "/european-war-6/unites-elite";
 }
 
 export function generateStaticParams() {
@@ -34,24 +71,30 @@ export function generateStaticParams() {
 
 export async function generateMetadata({
   params: { locale },
+  searchParams,
 }: {
   params: { locale: string };
+  searchParams: Record<string, string | string[] | undefined>;
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "leaderboardsPage" });
+  const game = parseGameParam(searchParams.game);
+  const tab = parseTab(searchParams.tab);
+  const suffix =
+    game === "gcr" ? " · GCR" : game === "ew6" ? " · EW6" : " · WC4";
   return {
-    title: t("seoTitle"),
+    title: t("seoTitle") + suffix,
     description: t("seoDescription"),
     alternates: {
-      canonical: `/${locale}/leaderboards`,
+      canonical: `/${locale}/leaderboards?game=${game}&tab=${tab}`,
       languages: {
-        fr: "/fr/classements",
-        en: "/en/leaderboards",
-        de: "/de/bestenlisten",
-        "x-default": "/fr/classements",
+        fr: `/fr/classements?game=${game}&tab=${tab}`,
+        en: `/en/leaderboards?game=${game}&tab=${tab}`,
+        de: `/de/bestenlisten?game=${game}&tab=${tab}`,
+        "x-default": `/fr/classements?game=${game}&tab=${tab}`,
       },
     },
     openGraph: {
-      title: t("seoTitle"),
+      title: t("seoTitle") + suffix,
       description: t("seoDescription"),
       type: "website",
       locale: ogLocale(locale),
@@ -59,13 +102,6 @@ export async function generateMetadata({
     robots: { index: true, follow: true },
   };
 }
-
-const RANK_COLOR: Record<string, string> = {
-  S: "bg-red-500/20 border-red-500/40 text-red-300",
-  A: "bg-gold/20 border-gold/40 text-gold2",
-  B: "bg-blue-500/15 border-blue-500/40 text-blue-300",
-  C: "bg-border text-dim",
-};
 
 export default async function LeaderboardsPage({
   params: { locale },
@@ -78,26 +114,25 @@ export default async function LeaderboardsPage({
   unstable_setRequestLocale(locale);
   const t = await getTranslations();
   const loc = locale as Locale;
+  const game = parseGameParam(searchParams.game);
   const tab = parseTab(searchParams.tab);
+  const cat = parseCat(searchParams.cat);
 
-  // Only fetch the bucket for the selected tab — keeps the request light
-  // and dodges N unnecessary Redis round-trips when a visitor only wants
-  // one ranking.
-  const [generalsRanking, skillsRanking, unitsRanking] = await Promise.all([
-    tab === "generals" ? loadGeneralsLeaderboard() : Promise.resolve(null),
-    tab === "skills" ? loadSkillsLeaderboard() : Promise.resolve(null),
+  const [generalsRanking, unitsRanking] = await Promise.all([
+    tab === "generals" ? loadGeneralsLeaderboard(game) : Promise.resolve(null),
     tab === "units"
-      ? loadUnitsLeaderboard(UNITS_LEADERBOARD_THRESHOLD)
+      ? loadUnitsLeaderboard(game, UNITS_LEADERBOARD_THRESHOLD)
       : Promise.resolve(null),
   ]);
 
-  const CAT = getCategoryMeta(locale);
+  const allGenerals = getAllGeneralsForGame(game);
+  const CAT = getCategoryMetaForGame(game, locale);
 
   return (
     <>
       <TopBar />
       <div className="max-w-[1200px] mx-auto px-4 md:px-6 pb-20">
-        {/* Breadcrumb + back */}
+        {/* Breadcrumb */}
         <nav className="mt-4 mb-5">
           <Link
             href={"/" as any}
@@ -116,7 +151,36 @@ export default async function LeaderboardsPage({
           </p>
         </header>
 
-        {/* Tabs — URL-param driven, work without JS */}
+        {/* Game switcher */}
+        <nav
+          role="tablist"
+          aria-label={t("leaderboardsPage.gameSwitcher.label")}
+          className="flex flex-wrap gap-2 mb-4"
+        >
+          <GameChip
+            game="wc4"
+            active={game === "wc4"}
+            label={t("leaderboardsPage.gameSwitcher.wc4")}
+            locale={locale}
+            tab={tab}
+          />
+          <GameChip
+            game="gcr"
+            active={game === "gcr"}
+            label={t("leaderboardsPage.gameSwitcher.gcr")}
+            locale={locale}
+            tab={tab}
+          />
+          <GameChip
+            game="ew6"
+            active={game === "ew6"}
+            label={t("leaderboardsPage.gameSwitcher.ew6")}
+            locale={locale}
+            tab={tab}
+          />
+        </nav>
+
+        {/* Tabs */}
         <nav
           role="tablist"
           aria-label="Leaderboards"
@@ -127,72 +191,42 @@ export default async function LeaderboardsPage({
             active={tab === "generals"}
             label={t("leaderboardsPage.tabGenerals")}
             locale={locale}
-          />
-          <TabLink
-            tab="skills"
-            active={tab === "skills"}
-            label={t("leaderboardsPage.tabSkills")}
-            locale={locale}
+            game={game}
           />
           <TabLink
             tab="units"
             active={tab === "units"}
             label={t("leaderboardsPage.tabUnits")}
             locale={locale}
+            game={game}
           />
         </nav>
 
         <section className="bg-panel border border-border rounded-lg p-4 md:p-6">
           {tab === "generals" && generalsRanking && (
             <GeneralsTab
-              data={generalsRanking}
-              locale={loc}
+              game={game}
+              ranking={generalsRanking}
+              allGenerals={allGenerals}
+              threshold={BEST_GENERAL_THRESHOLD}
               desc={t("leaderboardsPage.tabGeneralsDesc")}
-              empty={t("leaderboardsPage.emptyGenerals")}
-              voteCta={t("leaderboardsPage.voteOnHub")}
-              labels={{
-                rank: t("leaderboardsPage.rank"),
-                name: t("leaderboardsPage.name"),
-                votes: t("leaderboardsPage.votes"),
-                share: t("leaderboardsPage.share"),
-                total: t("leaderboardsPage.total"),
-              }}
             />
           )}
-
-          {tab === "skills" && skillsRanking && (
-            <SkillsTab
-              data={skillsRanking}
-              locale={loc}
-              desc={t("leaderboardsPage.tabSkillsDesc")}
-              empty={t("leaderboardsPage.emptySkills")}
-              voteCta={t("leaderboardsPage.voteOnGeneralPage")}
-              appearsOn={t("leaderboardsPage.appearsOn")}
-              labels={{
-                rank: t("leaderboardsPage.rank"),
-                name: t("leaderboardsPage.name"),
-                votes: t("leaderboardsPage.votes"),
-                share: t("leaderboardsPage.share"),
-                total: t("leaderboardsPage.total"),
-              }}
-            />
-          )}
-
           {tab === "units" && unitsRanking && (
             <UnitsTab
+              game={game}
               data={unitsRanking}
               locale={loc}
+              cat={cat}
               desc={t("leaderboardsPage.tabUnitsDesc", {
                 threshold: UNITS_LEADERBOARD_THRESHOLD,
               })}
               empty={t("leaderboardsPage.emptyUnits")}
               voteCta={t("leaderboardsPage.voteOnUnitPage")}
-              topPick={t("leaderboardsPage.topPick")}
-              labels={{
-                rank: t("leaderboardsPage.rank"),
-                votes: t("leaderboardsPage.votes"),
-                share: t("leaderboardsPage.share"),
-              }}
+              ourPick={t("leaderboardsPage.ourPick")}
+              communityPick={t("leaderboardsPage.communityPick")}
+              voteToReveal={t("leaderboardsPage.voteToReveal")}
+              filterAll={t("leaderboardsPage.filterChips.all")}
               catLabels={CAT}
             />
           )}
@@ -203,25 +237,53 @@ export default async function LeaderboardsPage({
   );
 }
 
-/** ─── Components ─────────────────────────────────────────────────── */
+/** ─── Helpers ─────────────────────────────────────────────────────── */
+
+function GameChip({
+  game,
+  active,
+  label,
+  locale,
+  tab,
+}: {
+  game: Game;
+  active: boolean;
+  label: string;
+  locale: string;
+  tab: TabKey;
+}) {
+  return (
+    <a
+      href={`/${locale}/leaderboards?game=${game}&tab=${tab}`}
+      role="tab"
+      aria-selected={active}
+      className={
+        active
+          ? "inline-flex items-center px-3 py-1.5 rounded-full border border-gold bg-gold/20 text-gold2 font-bold text-xs uppercase tracking-widest no-underline"
+          : "inline-flex items-center px-3 py-1.5 rounded-full border border-border text-dim hover:text-gold2 hover:border-gold/40 text-xs font-semibold uppercase tracking-widest no-underline"
+      }
+    >
+      {label}
+    </a>
+  );
+}
 
 function TabLink({
   tab,
   active,
   label,
   locale,
+  game,
 }: {
   tab: TabKey;
   active: boolean;
   label: string;
   locale: string;
+  game: Game;
 }) {
-  // Using a plain <a> so the query string is preserved as-is and the
-  // tab selection survives browser back/forward without next-intl
-  // pathname rewriting.
   return (
     <a
-      href={`/${locale}/leaderboards?tab=${tab}`}
+      href={`/${locale}/leaderboards?game=${game}&tab=${tab}`}
       role="tab"
       aria-selected={active}
       className={
@@ -236,222 +298,176 @@ function TabLink({
 }
 
 function GeneralsTab({
-  data,
-  locale,
+  game,
+  ranking,
+  allGenerals,
+  threshold,
   desc,
-  empty,
-  voteCta,
-  labels,
 }: {
-  data: GeneralsRanking;
-  locale: Locale;
+  game: Game;
+  ranking: GeneralsRanking;
+  allGenerals: ReturnType<typeof getAllGeneralsWc4>;
+  threshold: number;
   desc: string;
-  empty: string;
-  voteCta: string;
-  labels: Record<"rank" | "name" | "votes" | "share" | "total", string>;
 }) {
-  if (data.rows.length === 0) {
-    return (
-      <EmptyState text={empty} cta={voteCta} href={`/${locale}/world-conqueror-4`} />
-    );
-  }
+  const initialCounts: Record<string, number> = {};
+  for (const r of ranking.rows) initialCounts[r.slug] = r.votes;
+  const generalOptions = allGenerals.map((g) => ({
+    slug: g.slug,
+    name: g.name,
+    nameEn: g.nameEn,
+    portrait: g.image?.head ?? null,
+    rank: g.rank ?? null,
+    country: g.country ?? null,
+  }));
   return (
     <>
       <p className="text-dim text-sm mb-4">{desc}</p>
-      <div className="text-muted text-xs uppercase tracking-widest mb-2">
-        {labels.total}: {data.total.toLocaleString(locale)}
-      </div>
-      <div className="overflow-x-auto -mx-2 md:mx-0 rounded-lg border border-border">
-        <table className="w-full text-sm border-collapse min-w-[520px]">
-          <thead>
-            <tr className="bg-gradient-to-r from-gold/15 to-gold/5">
-              <th className="text-left text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-14">
-                {labels.rank}
-              </th>
-              <th className="text-left text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30">
-                {labels.name}
-              </th>
-              <th className="text-right text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-20">
-                {labels.votes}
-              </th>
-              <th className="text-right text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-20">
-                {labels.share}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.rows.map((r, i) => (
-              <tr
-                key={r.slug}
-                className={`border-b border-border/30 ${i % 2 === 1 ? "bg-bg3/40" : ""} hover:bg-gold/5 transition-colors`}
-              >
-                <td className="p-2.5 md:p-3 font-bold text-gold2 tabular-nums">
-                  {medalFor(i) ?? `#${i + 1}`}
-                </td>
-                <td className="p-2.5 md:p-3">
-                  <Link
-                    href={`/world-conqueror-4/generaux/${r.slug}` as any}
-                    className="text-gold2 hover:underline no-underline inline-flex items-center gap-2"
-                  >
-                    {r.country && (
-                      <span aria-hidden="true" className="text-base">
-                        {COUNTRY_FLAGS[r.country] ?? "🏳"}
-                      </span>
-                    )}
-                    <span>
-                      {locale === "fr" ? r.name : r.nameEn || r.name}
-                    </span>
-                    {r.country && (
-                      <span className="text-muted text-xs font-normal">
-                        · {countryLabel(r.country, locale)}
-                      </span>
-                    )}
-                    {r.rank && (
-                      <span
-                        className={`text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded border ${RANK_COLOR[r.rank] ?? RANK_COLOR.C}`}
-                      >
-                        {r.rank}
-                      </span>
-                    )}
-                  </Link>
-                </td>
-                <td className="p-2.5 md:p-3 text-right font-bold text-gold2 tabular-nums">
-                  {r.votes.toLocaleString(locale)}
-                </td>
-                <td className="p-2.5 md:p-3 text-right text-dim tabular-nums">
-                  {r.share}%
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+      <BestGeneralsGrid
+        game={game}
+        generals={generalOptions}
+        threshold={threshold}
+        initialCounts={initialCounts}
+        initialTotal={ranking.total}
+      />
     </>
   );
 }
 
-function SkillsTab({
-  data,
+function CategoryChips({
+  categories,
+  active,
   locale,
-  desc,
-  empty,
-  voteCta,
-  appearsOn,
-  labels,
+  game,
+  filterAll,
 }: {
-  data: SkillsRanking;
-  locale: Locale;
-  desc: string;
-  empty: string;
-  voteCta: string;
-  appearsOn: string;
-  labels: Record<"rank" | "name" | "votes" | "share" | "total", string>;
+  categories: Array<{ slug: string; label: string; icon: string }>;
+  active: string | null;
+  locale: string;
+  game: Game;
+  filterAll: string;
 }) {
-  if (data.rows.length === 0) {
-    return (
-      <EmptyState
-        text={empty}
-        cta={voteCta}
-        href={`/${locale}/world-conqueror-4/generaux`}
-      />
-    );
-  }
   return (
-    <>
-      <p className="text-dim text-sm mb-4">{desc}</p>
-      <div className="text-muted text-xs uppercase tracking-widest mb-2">
-        {labels.total}: {data.total.toLocaleString(locale)}
-      </div>
-      <div className="overflow-x-auto -mx-2 md:mx-0 rounded-lg border border-border">
-        <table className="w-full text-sm border-collapse min-w-[520px]">
-          <thead>
-            <tr className="bg-gradient-to-r from-gold/15 to-gold/5">
-              <th className="text-left text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-14">
-                {labels.rank}
-              </th>
-              <th className="text-left text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30">
-                {labels.name}
-              </th>
-              <th className="text-right text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-24 hidden md:table-cell">
-                {appearsOn}
-              </th>
-              <th className="text-right text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-20">
-                {labels.votes}
-              </th>
-              <th className="text-right text-gold2 text-[10px] md:text-xs uppercase tracking-widest font-bold p-2.5 md:p-3 border-b-2 border-gold/30 w-20">
-                {labels.share}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.rows.map((r, i) => (
-              <tr
-                key={r.id}
-                className={`border-b border-border/30 ${i % 2 === 1 ? "bg-bg3/40" : ""} hover:bg-gold/5 transition-colors`}
-              >
-                <td className="p-2.5 md:p-3 font-bold text-gold2 tabular-nums">
-                  {medalFor(i) ?? `#${i + 1}`}
-                </td>
-                <td className="p-2.5 md:p-3">
-                  <Link
-                    href={`/world-conqueror-4/competences/${r.id}` as any}
-                    className="text-gold2 hover:underline no-underline"
-                  >
-                    {locale === "fr" ? r.nameFr || r.name : r.name}
-                  </Link>
-                </td>
-                <td className="p-2.5 md:p-3 text-right text-dim tabular-nums hidden md:table-cell">
-                  {r.appearsIn}
-                </td>
-                <td className="p-2.5 md:p-3 text-right font-bold text-gold2 tabular-nums">
-                  {r.votes.toLocaleString(locale)}
-                </td>
-                <td className="p-2.5 md:p-3 text-right text-dim tabular-nums">
-                  {r.share}%
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </>
+    <nav aria-label="Filter units" className="flex flex-wrap gap-1.5 mb-4">
+      <a
+        href={`/${locale}/leaderboards?game=${game}&tab=units`}
+        aria-current={active === null ? "page" : undefined}
+        className={
+          active === null
+            ? "inline-flex items-center px-3 py-1.5 rounded-full border border-gold bg-gold/20 text-gold2 font-bold text-xs uppercase tracking-widest no-underline"
+            : "inline-flex items-center px-3 py-1.5 rounded-full border border-border text-dim hover:text-gold2 hover:border-gold/40 text-xs font-semibold uppercase tracking-widest no-underline"
+        }
+      >
+        {filterAll}
+      </a>
+      {categories.map((c) => (
+        <a
+          key={c.slug}
+          href={`/${locale}/leaderboards?game=${game}&tab=units&cat=${c.slug}`}
+          aria-current={active === c.slug ? "page" : undefined}
+          className={
+            active === c.slug
+              ? "inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-gold bg-gold/20 text-gold2 font-bold text-xs uppercase tracking-widest no-underline"
+              : "inline-flex items-center gap-1 px-3 py-1.5 rounded-full border border-border text-dim hover:text-gold2 hover:border-gold/40 text-xs font-semibold uppercase tracking-widest no-underline"
+          }
+        >
+          <span aria-hidden="true">{c.icon}</span>
+          {c.label}
+        </a>
+      ))}
+    </nav>
   );
 }
 
 function UnitsTab({
+  game,
   data,
   locale,
+  cat,
   desc,
   empty,
   voteCta,
-  topPick,
-  labels,
+  ourPick,
+  communityPick,
+  voteToReveal,
+  filterAll,
   catLabels,
 }: {
+  game: Game;
   data: UnitsRanking;
   locale: Locale;
+  cat: string | null;
   desc: string;
   empty: string;
   voteCta: string;
-  topPick: string;
-  labels: Record<"rank" | "votes" | "share", string>;
+  ourPick: string;
+  communityPick: string;
+  voteToReveal: string;
+  filterAll: string;
   catLabels: Record<string, { label: string; icon: string; plural: string }>;
 }) {
-  if (data.rows.length === 0) {
+  const categories = Object.entries(catLabels).map(([slug, meta]) => ({
+    slug,
+    label: meta.plural,
+    icon: meta.icon,
+  }));
+  const rows = cat ? data.rows.filter((r) => r.unitCategory === cat) : data.rows;
+
+  if (rows.length === 0) {
     return (
-      <EmptyState
-        text={empty}
-        cta={voteCta}
-        href={`/${locale}/world-conqueror-4/unites-elite`}
-      />
+      <>
+        <p className="text-dim text-sm mb-4">{desc}</p>
+        <CategoryChips
+          categories={categories}
+          active={cat}
+          locale={locale}
+          game={game}
+          filterAll={filterAll}
+        />
+        <p className="text-muted text-sm italic text-center py-10">{empty}</p>
+      </>
     );
   }
+
+  const unitHrefBase = unitHubPath(game);
+  const generalHrefBase = generalsHubPath(game);
+
   return (
     <>
       <p className="text-dim text-sm mb-4">{desc}</p>
+      <CategoryChips
+        categories={categories}
+        active={cat}
+        locale={locale}
+        game={game}
+        filterAll={filterAll}
+      />
+
       <div className="grid gap-3 md:grid-cols-2">
-        {data.rows.map((r, i) => {
-          const cat = catLabels[r.unitCategory as keyof typeof catLabels];
+        {rows.map((r, i) => {
+          const catMeta = catLabels[r.unitCategory as keyof typeof catLabels];
+          const editorialSlug = r.reachedThreshold
+            ? null
+            : getEditorialPick(game, r.unitSlug);
+
+          const unitHref = `${unitHrefBase}/${r.unitSlug}#best-general-vote`;
+          const generalHref = (slug: string) => `${generalHrefBase}/${slug}`;
+
+          const slot1Slug = r.reachedThreshold ? r.topGeneralSlug : editorialSlug;
+          const slot1Name = r.reachedThreshold
+            ? locale === "fr"
+              ? r.topGeneralName
+              : r.topGeneralNameEn || r.topGeneralName
+            : slot1Slug;
+          const slot2Slug = r.reachedThreshold ? r.top2GeneralSlug : null;
+          const slot3Slug = r.reachedThreshold ? r.top3GeneralSlug : null;
+          const slot1Label = r.reachedThreshold ? communityPick : ourPick;
+
+          const unitCountryFlag =
+            r.unitCountry && COUNTRY_FLAGS[r.unitCountry]
+              ? COUNTRY_FLAGS[r.unitCountry]
+              : "";
+
           return (
             <article
               key={r.unitSlug}
@@ -459,83 +475,90 @@ function UnitsTab({
             >
               <div className="flex items-center justify-between mb-2 gap-2">
                 <span className="text-gold2 font-bold tabular-nums text-sm">
-                  {medalFor(i) ?? `#${i + 1}`}
+                  #{i + 1}
                 </span>
-                {cat && (
+                {catMeta && (
                   <span className="text-muted text-[10px] uppercase tracking-widest flex items-center gap-1">
-                    <span aria-hidden="true">{cat.icon}</span>
-                    {cat.label}
+                    <span aria-hidden="true">{catMeta.icon}</span>
+                    {catMeta.label}
                   </span>
                 )}
               </div>
               <Link
-                href={`/world-conqueror-4/unites-elite/${r.unitSlug}` as any}
-                className="block text-gold2 font-bold text-base md:text-lg hover:underline no-underline mb-1"
+                href={unitHref as any}
+                className="block text-gold2 font-bold text-base md:text-lg hover:underline no-underline mb-2"
               >
-                {COUNTRY_FLAGS[r.unitCountry ?? ""] ?? ""}{" "}
+                {unitCountryFlag && <span className="mr-1">{unitCountryFlag}</span>}
                 {locale === "fr" ? r.unitName : r.unitNameEn || r.unitName}
               </Link>
-              {r.topGeneralSlug && (
-                <div className="flex items-baseline justify-between gap-2 mt-2">
-                  <div className="min-w-0">
-                    <div className="text-muted text-[10px] uppercase tracking-widest">
-                      {topPick}
-                    </div>
+
+              <div className="grid grid-cols-3 gap-2 text-xs">
+                <div className="border border-gold/30 rounded p-2 bg-gold/5">
+                  <div className="text-[9px] uppercase tracking-widest text-muted mb-1">
+                    {slot1Label}
+                  </div>
+                  {slot1Slug ? (
                     <Link
-                      href={`/world-conqueror-4/generaux/${r.topGeneralSlug}` as any}
-                      className="text-gold2 font-semibold hover:underline no-underline truncate block"
+                      href={generalHref(slot1Slug) as any}
+                      className="text-gold2 font-bold hover:underline no-underline text-[11px]"
                     >
-                      {locale === "fr"
-                        ? r.topGeneralName
-                        : r.topGeneralNameEn || r.topGeneralName}
+                      {slot1Name || slot1Slug}
                     </Link>
-                  </div>
-                  <div className="text-right shrink-0">
-                    <div className="text-gold2 font-bold tabular-nums">
-                      {r.topGeneralVotes}/{r.totalVotes}
-                    </div>
-                    <div className="text-muted text-[10px] tabular-nums">
-                      {r.topGeneralShare}%
-                    </div>
-                  </div>
+                  ) : (
+                    <span className="text-muted italic">—</span>
+                  )}
                 </div>
-              )}
+                <div className="border border-dashed border-border rounded p-2">
+                  <div className="text-[9px] uppercase tracking-widest text-muted mb-1">
+                    #2
+                  </div>
+                  {slot2Slug ? (
+                    <Link
+                      href={generalHref(slot2Slug) as any}
+                      className="text-gold2 font-bold hover:underline no-underline text-[11px]"
+                    >
+                      {r.top2GeneralName}
+                    </Link>
+                  ) : (
+                    <span className="text-muted italic text-[10px]">
+                      {voteToReveal}
+                    </span>
+                  )}
+                </div>
+                <div className="border border-dashed border-border rounded p-2">
+                  <div className="text-[9px] uppercase tracking-widest text-muted mb-1">
+                    #3
+                  </div>
+                  {slot3Slug ? (
+                    <Link
+                      href={generalHref(slot3Slug) as any}
+                      className="text-gold2 font-bold hover:underline no-underline text-[11px]"
+                    >
+                      {r.top3GeneralName}
+                    </Link>
+                  ) : (
+                    <span className="text-muted italic text-[10px]">
+                      {voteToReveal}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div className="mt-2 text-muted text-[10px] flex items-center justify-between">
+                <span className="tabular-nums">
+                  {r.totalVotes} / {data.threshold}
+                </span>
+                <Link
+                  href={unitHref as any}
+                  className="text-gold2 hover:underline no-underline uppercase tracking-widest text-[10px]"
+                >
+                  {voteCta} →
+                </Link>
+              </div>
             </article>
           );
         })}
       </div>
-      <p className="text-muted text-xs mt-4 italic">
-        {data.thresholdReached} / {data.threshold}+ votes · Seuil : {data.threshold}
-      </p>
     </>
   );
-}
-
-function EmptyState({
-  text,
-  cta,
-  href,
-}: {
-  text: string;
-  cta: string;
-  href: string;
-}) {
-  return (
-    <div className="text-center py-10">
-      <p className="text-dim text-sm mb-4">{text}</p>
-      <a
-        href={href}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold bg-gold/15 text-gold2 font-bold text-sm uppercase tracking-widest hover:bg-gold/25 transition-colors no-underline"
-      >
-        {cta}
-      </a>
-    </div>
-  );
-}
-
-function medalFor(index: number): string | null {
-  if (index === 0) return "🥇";
-  if (index === 1) return "🥈";
-  if (index === 2) return "🥉";
-  return null;
 }
