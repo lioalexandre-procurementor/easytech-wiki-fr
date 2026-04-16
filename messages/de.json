@@ -498,7 +498,11 @@
       "wargear": "Kriegsausrüstung"
     },
     "seoTitle": "WC4 Technologien — Vollständiger Forschungskatalog",
-    "seoDescription": "Umfassender Katalog aller 58 Technologie-Ketten in World Conqueror 4: Kosten, Stufen, Effekte und betroffene Einheiten."
+    "seoDescription": "Umfassender Katalog aller 58 Technologie-Ketten in World Conqueror 4: Kosten, Stufen, Effekte und betroffene Einheiten.",
+    "categoryMilitary": "Militär",
+    "categoryEconomy": "Wirtschaft",
+    "categoryDefense": "Verteidigung",
+    "categoryNaval": "Marine"
   },
   "guidesPage": {
     "hubTitle": "World Conqueror 4 Guides",

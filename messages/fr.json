@@ -498,7 +498,11 @@
       "wargear": "Équipements de guerre"
     },
     "seoTitle": "Technologies WC4 — Catalogue complet de la recherche",
-    "seoDescription": "Catalogue exhaustif des 58 chaînes de technologies de World Conqueror 4 : coûts, niveaux, effets et unités affectées."
+    "seoDescription": "Catalogue exhaustif des 58 chaînes de technologies de World Conqueror 4 : coûts, niveaux, effets et unités affectées.",
+    "categoryMilitary": "Militaire",
+    "categoryEconomy": "Économie",
+    "categoryDefense": "Défense",
+    "categoryNaval": "Naval"
   },
   "guidesPage": {
     "hubTitle": "Guides World Conqueror 4",

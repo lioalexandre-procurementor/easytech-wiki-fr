@@ -498,7 +498,11 @@
       "wargear": "War gear"
     },
     "seoTitle": "WC4 Technologies — Complete Research Catalog",
-    "seoDescription": "Exhaustive catalog of all 58 World Conqueror 4 technology chains: costs, levels, effects and affected units."
+    "seoDescription": "Exhaustive catalog of all 58 World Conqueror 4 technology chains: costs, levels, effects and affected units.",
+    "categoryMilitary": "Military",
+    "categoryEconomy": "Economy",
+    "categoryDefense": "Defense",
+    "categoryNaval": "Naval"
   },
   "guidesPage": {
     "hubTitle": "World Conqueror 4 Guides",
