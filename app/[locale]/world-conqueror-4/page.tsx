@@ -68,7 +68,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <SidebarSection title={t("nav.wc4")}>
             <SidebarLink href="/world-conqueror-4" active>🏠 {t("nav.wc4Home")}</SidebarLink>
-            <SidebarLink href="#">📘 {t("nav.beginnerGuide")}</SidebarLink>
+            <SidebarLink href="/world-conqueror-4/guides">📘 {t("nav.beginnerGuide")}</SidebarLink>
             <SidebarLink href="/world-conqueror-4/unites-elite">🏅 {t("nav.eliteUnits")}</SidebarLink>
             <SidebarLink href="/world-conqueror-4/empire-du-scorpion">🦂 {t("nav.scorpion")}</SidebarLink>
             <SidebarLink href="/world-conqueror-4/generaux">👨‍✈️ {t("nav.generals")}</SidebarLink>
@@ -96,7 +96,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
                 className="inline-block bg-gold text-[#0f1419] px-5 py-2.5 rounded-md font-bold text-sm no-underline">
                 {t("wc4Hub.ctaExplore")}
               </Link>
-              <Link href="#"
+              <Link href="/world-conqueror-4/guides"
                 className="inline-block bg-transparent text-gold2 px-5 py-2.5 rounded-md font-bold text-sm no-underline border border-gold">
                 {t("wc4Hub.ctaBeginner")}
               </Link>
