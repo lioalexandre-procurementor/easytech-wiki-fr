@@ -28,7 +28,7 @@ export async function TopBar() {
     { href: "#", label: "Great Conqueror Rome", disabled: true },
     { href: "/world-conqueror-4/mises-a-jour", label: t("nav.updates") },
     { href: "/world-conqueror-4/guides", label: t("nav.guides") },
-    { href: "#", label: leaderboardsLabel, disabled: true },
+    { href: "/leaderboards", label: leaderboardsLabel },
   ];
 
   return (
