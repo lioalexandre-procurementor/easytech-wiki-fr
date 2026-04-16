@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Link } from "@/src/i18n/navigation";
-import { unitHubPath } from "@/lib/games";
+import { generalsHubPath, unitHubPath } from "@/lib/games";
 import type { Game } from "@/lib/types";
 
 /**
@@ -112,6 +112,8 @@ export default function UnitLeaderboardRow({
           onClick={(slug) => onRequestVote(slug)}
           disabled={hasVoted}
           aria={slot1 ? labels.boxAria(slot1.name) : labels.emptyBoxAria}
+          game={game}
+          locale={locale}
         />
         <GeneralBox
           rank={2}
@@ -122,6 +124,8 @@ export default function UnitLeaderboardRow({
           onClick={(slug) => onRequestVote(slug)}
           disabled={hasVoted}
           aria={slot2 ? labels.boxAria(slot2.name) : labels.emptyBoxAria}
+          game={game}
+          locale={locale}
         />
         <GeneralBox
           rank={3}
@@ -132,6 +136,8 @@ export default function UnitLeaderboardRow({
           onClick={(slug) => onRequestVote(slug)}
           disabled={hasVoted}
           aria={slot3 ? labels.boxAria(slot3.name) : labels.emptyBoxAria}
+          game={game}
+          locale={locale}
         />
       </div>
 
@@ -151,6 +157,8 @@ function GeneralBox({
   onClick,
   disabled,
   aria,
+  game,
+  locale,
 }: {
   rank: 1 | 2 | 3;
   caption: string;
@@ -160,30 +168,26 @@ function GeneralBox({
   onClick: (slug: string | null) => void;
   disabled: boolean;
   aria: string;
+  game: Game;
+  locale: string;
 }) {
   const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : "🥉";
   const filled = general !== null;
 
   const base =
-    "relative min-h-[118px] w-full rounded-lg p-2 flex flex-col items-center justify-start gap-1 text-center transition-colors";
+    "relative min-h-[118px] w-full rounded-lg p-2 flex flex-col items-center justify-start gap-1 text-center transition-colors no-underline";
   const bg = filled
     ? "bg-bg2 border border-border hover:border-gold"
     : "bg-bg3/40 border border-dashed border-gold/30";
+  // Post-vote: route filled boxes to the general's profile instead of
+  // reopening the modal, while keeping the "not-allowed" cursor so the
+  // user still sees the ballot is closed on this unit.
   const disabledCls = disabled ? "cursor-not-allowed opacity-80" : "cursor-pointer";
+  const profileHref =
+    filled ? `/${locale}${generalsHubPath(game)}/${general!.slug}` : null;
 
-  const handleClick = () => {
-    if (disabled) return;
-    onClick(filled ? general!.slug : null);
-  };
-
-  return (
-    <button
-      type="button"
-      aria-label={aria}
-      disabled={disabled}
-      onClick={handleClick}
-      className={`${base} ${bg} ${disabledCls}`}
-    >
+  const content = (
+    <>
       <div className="flex items-center gap-1 text-[10px] uppercase tracking-widest text-muted leading-none">
         <span aria-hidden="true">{medal}</span>
         <span>{caption}</span>
@@ -213,6 +217,30 @@ function GeneralBox({
           ✦
         </span>
       )}
+    </>
+  );
+
+  if (disabled && filled && profileHref) {
+    return (
+      <a
+        href={profileHref}
+        aria-label={aria}
+        className={`${base} ${bg} ${disabledCls}`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <button
+      type="button"
+      aria-label={aria}
+      disabled={disabled}
+      onClick={() => (disabled ? undefined : onClick(filled ? general!.slug : null))}
+      className={`${base} ${bg} ${disabledCls}`}
+    >
+      {content}
     </button>
   );
 }

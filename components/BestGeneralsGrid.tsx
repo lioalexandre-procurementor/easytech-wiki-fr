@@ -8,6 +8,7 @@ import BestGeneralVoteModal, {
   type VoteResult,
 } from "./BestGeneralVoteModal";
 import { pickPlaceholderSlugs } from "@/lib/editorial-picks";
+import { generalsHubPath } from "@/lib/games";
 import type { Game } from "@/lib/types";
 
 interface Props {
@@ -207,21 +208,39 @@ export default function BestGeneralsGrid({
           const ariaLabel = tile.isPlaceholder
             ? t("tileAriaPlaceholder", { name: label })
             : t("tileAria", { name: label });
+          // After voting, tiles stop opening the modal but still click
+          // through to the general's profile — visually they keep the
+          // "not-allowed" cursor to signal the ballot is closed.
+          const profileHref = `/${locale}${generalsHubPath(game)}/${tile.slug}`;
+          const tileClass = `min-h-[180px] rounded-lg px-2 py-3 flex flex-col items-center justify-between text-center gap-1 transition-colors no-underline ${
+            tile.isPlaceholder
+              ? "border border-dashed border-gold/40 bg-bg3/40"
+              : "border border-border bg-bg3 hover:border-gold"
+          } ${hasVoted ? "cursor-not-allowed opacity-80" : "cursor-pointer hover:bg-gold/5"}`;
+          const TileWrapper = ({ children }: { children: React.ReactNode }) =>
+            hasVoted ? (
+              <a
+                key={`${tile.slug}-${tile.rank}`}
+                href={profileHref}
+                aria-label={label}
+                title={tVote("thanksVoted")}
+                className={tileClass}
+              >
+                {children}
+              </a>
+            ) : (
+              <button
+                key={`${tile.slug}-${tile.rank}`}
+                type="button"
+                aria-label={ariaLabel}
+                onClick={() => openFor(tile.slug)}
+                className={tileClass}
+              >
+                {children}
+              </button>
+            );
           return (
-            <button
-              key={`${tile.slug}-${tile.rank}`}
-              type="button"
-              disabled={hasVoted}
-              aria-disabled={hasVoted}
-              aria-label={ariaLabel}
-              onClick={() => openFor(tile.slug)}
-              title={hasVoted ? tVote("thanksVoted") : undefined}
-              className={`min-h-[180px] rounded-lg px-2 py-3 flex flex-col items-center justify-between text-center gap-1 transition-colors ${
-                tile.isPlaceholder
-                  ? "border border-dashed border-gold/40 bg-bg3/40"
-                  : "border border-border bg-bg3 hover:border-gold"
-              } ${hasVoted ? "cursor-not-allowed opacity-80" : "cursor-pointer hover:bg-gold/5"}`}
-            >
+            <TileWrapper key={`${tile.slug}-${tile.rank}`}>
               <div
                 className={`relative ${imgSize} rounded-full overflow-hidden bg-bg2`}
                 style={ring}
@@ -250,7 +269,7 @@ export default function BestGeneralsGrid({
                   ? t("placeholderBadge")
                   : t("voteCountShort", { count: tile.votes })}
               </div>
-            </button>
+            </TileWrapper>
           );
         })}
       </div>
