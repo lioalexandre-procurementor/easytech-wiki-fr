@@ -1,29 +1,47 @@
 /**
  * POST /api/vote/unit-general
- *   body: { unit: <unit slug>, general: <general slug>, turnstileToken: string }
- * GET  /api/vote/unit-general?unit=<slug>
+ *   body: { game, unit, general, turnstileToken }
+ * GET  /api/vote/unit-general?game=wc4&unit=<slug>
  *
- * Each visitor can cast ONE vote per unit (tracked via httpOnly cookie),
- * picking the general they think pairs best with that elite unit.
- * Same Turnstile + Redis + 30-day cookie pattern as /api/vote.
+ * Each visitor can cast ONE vote per (game, unit) combination, tracked
+ * via an httpOnly cookie per pair. Cross-game voting is allowed: a
+ * visitor may vote once on a WC4 unit, once on a GCR unit, and once on
+ * an EW6 unit.
  */
 
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
 import { getRedis, unitGeneralVoteKey } from "@/lib/redis";
 import { verifyTurnstile } from "@/lib/turnstile";
-import { getEliteUnit } from "@/lib/units";
+import { getEliteUnit as getEliteUnitWc4 } from "@/lib/units";
+import { getEliteUnit as getEliteUnitGcr } from "@/lib/gcr";
+import { getEliteUnit as getEliteUnitEw6 } from "@/lib/ew6";
 import { isEligibleGeneralForUnit } from "@/lib/unit-general-vote";
+import { parseGame, type Game } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
 const VOTE_TTL_DAYS = 30;
-const COOKIE_PREFIX = "wc4_vote_unit_";
 const TOTAL_FIELD = "__total";
+const LEGACY_COOKIE_PREFIX = "wc4_vote_unit_"; // pre-game-dimension; kept for graceful read
 
-function cookieName(unitSlug: string) {
-  return `${COOKIE_PREFIX}${unitSlug}`;
+function cookieName(game: Game, unitSlug: string): string {
+  return `wc4_vote_unit_${game}_${unitSlug}`;
+}
+
+function lookupUnit(game: Game, slug: string) {
+  if (game === "wc4") return getEliteUnitWc4(slug);
+  if (game === "gcr") return getEliteUnitGcr(slug);
+  return getEliteUnitEw6(slug);
+}
+
+function hasVoted(game: Game, unitSlug: string): boolean {
+  const c = cookies();
+  if (c.get(cookieName(game, unitSlug))?.value) return true;
+  // Legacy WC4 cookie (no game suffix): treat as a WC4 vote for grace window.
+  if (game === "wc4" && c.get(`${LEGACY_COOKIE_PREFIX}${unitSlug}`)?.value) return true;
+  return false;
 }
 
 function clientIp(req: NextRequest): string | null {
@@ -34,10 +52,11 @@ function clientIp(req: NextRequest): string | null {
 
 async function readCounts(
   redis: ReturnType<typeof getRedis>,
+  game: Game,
   unitSlug: string
 ): Promise<{ counts: Record<string, number>; total: number }> {
   if (!redis) return { counts: {}, total: 0 };
-  const raw = (await redis.hgetall(unitGeneralVoteKey(unitSlug))) as
+  const raw = (await redis.hgetall(unitGeneralVoteKey(game, unitSlug))) as
     | Record<string, unknown>
     | null;
   if (!raw) return { counts: {}, total: 0 };
@@ -46,19 +65,19 @@ async function readCounts(
   for (const [k, v] of Object.entries(raw)) {
     const n = typeof v === "number" ? v : Number(v);
     if (!Number.isFinite(n)) continue;
-    if (k === TOTAL_FIELD) {
-      total = n;
-    } else {
-      counts[k] = n;
-    }
+    if (k === TOTAL_FIELD) total = n;
+    else counts[k] = n;
   }
   return { counts, total };
 }
 
-// GET /api/vote/unit-general?unit=king-tiger
 export async function GET(req: NextRequest) {
+  const game = parseGame(req.nextUrl.searchParams.get("game"));
+  if (!game) {
+    return NextResponse.json({ error: "invalid game" }, { status: 400 });
+  }
   const unitSlug = req.nextUrl.searchParams.get("unit") ?? "";
-  if (!unitSlug || !getEliteUnit(unitSlug)) {
+  if (!unitSlug || !lookupUnit(game, unitSlug)) {
     return NextResponse.json({ error: "unknown unit" }, { status: 400 });
   }
   const redis = getRedis();
@@ -68,19 +87,24 @@ export async function GET(req: NextRequest) {
       { status: 200 }
     );
   }
-  const { counts, total } = await readCounts(redis, unitSlug);
-  const hasVoted = Boolean(cookies().get(cookieName(unitSlug))?.value);
-  return NextResponse.json({ counts, total, hasVoted, disabled: false });
+  const { counts, total } = await readCounts(redis, game, unitSlug);
+  return NextResponse.json({
+    counts,
+    total,
+    hasVoted: hasVoted(game, unitSlug),
+    disabled: false,
+  });
 }
 
-// POST /api/vote/unit-general  { unit, general, turnstileToken }
 export async function POST(req: NextRequest) {
-  let body: { unit?: string; general?: string; turnstileToken?: string };
+  let body: { game?: string; unit?: string; general?: string; turnstileToken?: string };
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ error: "bad json" }, { status: 400 });
   }
+  const game = parseGame(body.game);
+  if (!game) return NextResponse.json({ error: "invalid game" }, { status: 400 });
   const { unit, general, turnstileToken } = body;
   if (!unit || typeof unit !== "string") {
     return NextResponse.json({ error: "bad params" }, { status: 400 });
@@ -88,12 +112,12 @@ export async function POST(req: NextRequest) {
   if (!general || typeof general !== "string") {
     return NextResponse.json({ error: "bad params" }, { status: 400 });
   }
-  if (!getEliteUnit(unit)) {
+  if (!lookupUnit(game, unit)) {
     return NextResponse.json({ error: "unknown unit" }, { status: 400 });
   }
   // Server-side validation: the chosen general must be eligible for this
   // unit's category (e.g. no Patton votes on a battleship).
-  if (!isEligibleGeneralForUnit(unit, general)) {
+  if (!isEligibleGeneralForUnit(game, unit, general)) {
     return NextResponse.json(
       { error: "general not eligible for this unit" },
       { status: 400 }
@@ -106,7 +130,7 @@ export async function POST(req: NextRequest) {
   }
 
   const cookieJar = cookies();
-  if (cookieJar.get(cookieName(unit))?.value) {
+  if (hasVoted(game, unit)) {
     return NextResponse.json({ error: "already voted" }, { status: 429 });
   }
 
@@ -115,10 +139,11 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "captcha failed" }, { status: 403 });
   }
 
-  await redis.hincrby(unitGeneralVoteKey(unit), general, 1);
-  await redis.hincrby(unitGeneralVoteKey(unit), TOTAL_FIELD, 1);
+  const key = unitGeneralVoteKey(game, unit);
+  await redis.hincrby(key, general, 1);
+  await redis.hincrby(key, TOTAL_FIELD, 1);
 
-  cookieJar.set(cookieName(unit), general, {
+  cookieJar.set(cookieName(game, unit), general, {
     httpOnly: true,
     sameSite: "lax",
     secure: process.env.NODE_ENV === "production",
@@ -126,6 +151,6 @@ export async function POST(req: NextRequest) {
     path: "/",
   });
 
-  const { counts, total } = await readCounts(redis, unit);
+  const { counts, total } = await readCounts(redis, game, unit);
   return NextResponse.json({ counts, total, hasVoted: true, disabled: false });
 }
