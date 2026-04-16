@@ -230,7 +230,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                 {/* Community vote — "best general for this unit". Placeholder
                     until UNIT_VOTE_THRESHOLD total votes, then top-3 podium. */}
                 {(() => {
-                  const eligible = getEligibleGeneralsForUnit(unit.slug);
+                  const eligible = getEligibleGeneralsForUnit("wc4", unit.slug);
                   if (eligible.length === 0) return null;
                   const candidates = eligible.map((g) => ({
                     slug: g.slug,
@@ -243,6 +243,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                     params.locale === "fr" ? unit.name : unit.nameEn || unit.name;
                   return (
                     <UnitBestGeneralVote
+                      game="wc4"
                       unitSlug={unit.slug}
                       unitDisplayName={unitDisplayName}
                       candidates={candidates}
