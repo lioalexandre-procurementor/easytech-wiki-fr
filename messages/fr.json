@@ -576,7 +576,16 @@
     "voteProgress": "{count} / {threshold} votes",
     "voteCountShort": "{count, plural, =0 {0 vote} one {# vote} other {# votes}}",
     "tileAria": "Voter pour {name}",
-    "tileAriaPlaceholder": "Voter pour {name} (position placeholder)"
+    "tileAriaPlaceholder": "Voter pour {name} (position placeholder)",
+    "sectionHeading": "{icon} {plural} — {count} {suffix}",
+    "unitsCountSuffix": "unités",
+    "progressBelow": "{count} / {threshold} votes · notre choix affiché jusqu'au seuil",
+    "progressAbove": "{count} votes · classement communauté",
+    "voteForThisUnit": "🗳 Voter pour cette unité",
+    "voteForThisUnitShort": "🗳 Voter",
+    "rowThanksVoted": "✓ Voté",
+    "boxAria": "{name} — voter pour cette unité",
+    "emptyBoxAria": "Emplacement verrouillé — votez pour le révéler"
   },
   "ew6Hub": {
     "h1": "European War 6: 1914 — Wiki Francophone",

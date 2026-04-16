@@ -576,7 +576,16 @@
     "voteProgress": "{count} / {threshold} Stimmen",
     "voteCountShort": "{count, plural, =0 {0 Stimmen} one {# Stimme} other {# Stimmen}}",
     "tileAria": "Für {name} stimmen",
-    "tileAriaPlaceholder": "Für {name} stimmen (Platzhalter)"
+    "tileAriaPlaceholder": "Für {name} stimmen (Platzhalter)",
+    "sectionHeading": "{icon} {plural} — {count} {suffix}",
+    "unitsCountSuffix": "Einheiten",
+    "progressBelow": "{count} / {threshold} Stimmen · unsere Empfehlung bis zur Schwelle",
+    "progressAbove": "{count} Stimmen · Community-Ranking",
+    "voteForThisUnit": "🗳 Für diese Einheit stimmen",
+    "voteForThisUnitShort": "🗳 Abstimmen",
+    "rowThanksVoted": "✓ Abgestimmt",
+    "boxAria": "{name} — für diese Einheit abstimmen",
+    "emptyBoxAria": "Gesperrt — abstimmen zum Enthüllen"
   },
   "ew6Hub": {
     "h1": "European War 6: 1914 — Wiki DE",
