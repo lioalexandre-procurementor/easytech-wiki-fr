@@ -32,6 +32,8 @@ type Props = {
   /** Slug of the editorial pick general — shown in slot 1 even before
    *  the threshold is reached so the widget is never fully empty. */
   editorialSlug?: string;
+  /** Elite unit sprite image — displayed at the leading edge of the block. */
+  unitImage?: string | null;
 };
 
 /**
@@ -140,6 +142,7 @@ export default function UnitBestGeneralVote({
   candidates,
   threshold = 50,
   editorialSlug,
+  unitImage,
 }: Props) {
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
@@ -206,6 +209,7 @@ export default function UnitBestGeneralVote({
 
   return (
     <div className="mt-4 border border-gold/40 rounded-lg p-4 bg-gradient-to-br from-gold/10 to-transparent">
+      {/* Header row */}
       <div className="flex items-center justify-between flex-wrap gap-2 mb-3">
         <h5 className="text-gold2 font-extrabold uppercase tracking-widest text-xs md:text-sm">
           {L.heading}
@@ -215,127 +219,116 @@ export default function UnitBestGeneralVote({
         </span>
       </div>
 
-      {loading ? (
-        <div className="space-y-2">
-          <div className="h-5 rounded bg-border/40 animate-pulse" />
-          <div className="h-5 rounded bg-border/40 animate-pulse w-2/3" />
-        </div>
-      ) : belowThreshold ? (
-        /* Placeholder until threshold — slot 1 shows editorial pick with portrait */
-        <div className="space-y-1.5">
-          {/* Slot 1 — editorial pick or locked */}
-          {editorial ? (
-            <button
-              type="button"
-              disabled={hasVoted}
-              onClick={() => openVote(editorial.slug)}
-              className="w-full flex items-center gap-2 text-sm bg-gold/5 border border-gold/25 rounded px-2 py-1.5 hover:bg-gold/10 transition-colors disabled:cursor-default"
-            >
-              <span className="text-base w-5 text-center shrink-0" aria-hidden="true">⭐</span>
-              <div className="relative w-7 h-7 rounded-full overflow-hidden bg-bg2 border border-gold/30 shrink-0">
-                {editorial.portrait ? (
-                  <Image
-                    src={editorial.portrait}
-                    alt=""
-                    fill
-                    sizes="28px"
-                    className="object-cover"
-                  />
-                ) : null}
-              </div>
-              <span className="flex-1 text-gold2 font-semibold truncate text-left">
-                {displayName(editorial)}
-              </span>
-              {editorial.rank && (
-                <span className={`text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded border shrink-0 ${RANK_COLOR[editorial.rank] ?? RANK_COLOR.C}`}>
-                  {editorial.rank}
-                </span>
-              )}
-              <EyeLink
-                href={`/${locale}${generalsHubPath(game)}/${editorial.slug}`}
-                label={L.openProfile}
-              />
-              <span className="text-gold text-[9px] uppercase tracking-widest font-bold shrink-0">{L.ourPick}</span>
-            </button>
-          ) : (
-            <div className="flex items-center gap-2 px-2 py-1.5 rounded border border-dashed border-border opacity-50">
-              <span className="text-base w-5 text-center shrink-0" aria-hidden="true">🥇</span>
-              <div className="w-7 h-7 rounded-full bg-border/60 shrink-0" />
-              <span className="flex-1 text-muted text-xs italic">{L.voteToReveal}</span>
-            </div>
-          )}
-          {/* Slots 2 & 3 — always locked */}
-          {(["🥈", "🥉"] as const).map((medal, i) => (
-            <div
-              key={i}
-              className="flex items-center gap-2 px-2 py-1.5 rounded border border-dashed border-border opacity-40"
-            >
-              <span className="text-base w-5 text-center shrink-0" aria-hidden="true">{medal}</span>
-              <div className="w-7 h-7 rounded-full bg-border/60 shrink-0" />
-              <span className="flex-1 text-muted text-xs italic">{L.voteToReveal}</span>
-            </div>
-          ))}
-          {/* Progress bar */}
-          <div className="flex items-center gap-2 text-[10px] text-muted mt-2 pt-2 border-t border-border/50">
-            <div className="flex-1 h-1.5 rounded-full bg-border overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-gold to-red-500 transition-all"
-                style={{ width: `${Math.min(100, (total / threshold) * 100)}%` }}
-              />
-            </div>
-            <span className="tabular-nums whitespace-nowrap">
-              {L.progressTo(total, threshold)}
-            </span>
+      {/* Body: unit image + general slots side by side */}
+      <div className="flex gap-3 items-start">
+        {/* Unit sprite — fixed 72px column */}
+        {unitImage && (
+          <div className="relative w-[72px] h-[72px] shrink-0 rounded-lg overflow-hidden bg-bg2 border border-border/50">
+            <Image
+              src={unitImage}
+              alt={unitDisplayName}
+              fill
+              sizes="72px"
+              className="object-contain p-1"
+            />
           </div>
-        </div>
-      ) : (
-        /* Results — top 3 with portrait + eye icon */
-        <ol className="space-y-1.5">
-          {top.map((c, i) => {
-            const pct = total > 0 ? Math.round((c.votes / total) * 100) : 0;
-            const medal = ["🥇", "🥈", "🥉"][i];
-            const profileHref = `/${locale}${generalsHubPath(game)}/${c.slug}`;
-            return (
-              <li key={c.slug} className="flex items-center gap-2 text-sm">
-                <span className="text-base w-5 text-center shrink-0" aria-hidden="true">
-                  {medal}
-                </span>
-                <div className="relative w-7 h-7 rounded-full overflow-hidden bg-bg2 border border-gold/20 shrink-0">
-                  {c.portrait ? (
-                    <Image
-                      src={c.portrait}
-                      alt=""
-                      fill
-                      sizes="28px"
-                      className="object-cover"
-                    />
-                  ) : null}
-                </div>
-                <a
-                  href={profileHref}
-                  className="flex-1 text-gold2 hover:underline truncate no-underline"
+        )}
+
+        {/* General slots at 75% scale */}
+        <div className="flex-1 min-w-0" style={{ fontSize: "0.75em" }}>
+          {loading ? (
+            <div className="space-y-1.5">
+              <div className="h-4 rounded bg-border/40 animate-pulse" />
+              <div className="h-4 rounded bg-border/40 animate-pulse w-2/3" />
+            </div>
+          ) : belowThreshold ? (
+            /* Placeholder — slot 1 editorial pick, slots 2–3 locked */
+            <div className="space-y-1">
+              {editorial ? (
+                <button
+                  type="button"
+                  disabled={hasVoted}
+                  onClick={() => openVote(editorial.slug)}
+                  className="w-full flex items-center gap-1.5 bg-gold/5 border border-gold/25 rounded px-1.5 py-1 hover:bg-gold/10 transition-colors disabled:cursor-default"
                 >
-                  {displayName(c)}
-                </a>
-                {c.rank && (
-                  <span
-                    className={`text-[9px] font-extrabold uppercase px-1.5 py-0.5 rounded border ${RANK_COLOR[c.rank] ?? RANK_COLOR.C}`}
-                  >
-                    {c.rank}
+                  <span className="w-4 text-center shrink-0" aria-hidden="true">⭐</span>
+                  <div className="relative w-5 h-5 rounded-full overflow-hidden bg-bg2 border border-gold/30 shrink-0">
+                    {editorial.portrait ? (
+                      <Image src={editorial.portrait} alt="" fill sizes="20px" className="object-cover" />
+                    ) : null}
+                  </div>
+                  <span className="flex-1 text-gold2 font-semibold truncate text-left">
+                    {displayName(editorial)}
                   </span>
-                )}
-                <EyeLink href={profileHref} label={L.openProfile} />
-                <span className="text-gold2 font-bold text-xs tabular-nums shrink-0">
-                  {c.votes}
-                </span>
-                <span className="text-muted text-[10px] tabular-nums w-10 text-right shrink-0">
-                  ({pct}%)
-                </span>
-              </li>
-            );
-          })}
-        </ol>
-      )}
+                  {editorial.rank && (
+                    <span className={`font-extrabold uppercase px-1 py-0.5 rounded border shrink-0 ${RANK_COLOR[editorial.rank] ?? RANK_COLOR.C}`} style={{ fontSize: "0.7em" }}>
+                      {editorial.rank}
+                    </span>
+                  )}
+                  <EyeLink
+                    href={`/${locale}${generalsHubPath(game)}/${editorial.slug}`}
+                    label={L.openProfile}
+                  />
+                  <span className="text-gold uppercase tracking-widest font-bold shrink-0" style={{ fontSize: "0.7em" }}>{L.ourPick}</span>
+                </button>
+              ) : (
+                <div className="flex items-center gap-1.5 px-1.5 py-1 rounded border border-dashed border-border opacity-50">
+                  <span className="w-4 text-center shrink-0" aria-hidden="true">🥇</span>
+                  <div className="w-5 h-5 rounded-full bg-border/60 shrink-0" />
+                  <span className="flex-1 text-muted italic">{L.voteToReveal}</span>
+                </div>
+              )}
+              {(["🥈", "🥉"] as const).map((medal, i) => (
+                <div key={i} className="flex items-center gap-1.5 px-1.5 py-1 rounded border border-dashed border-border opacity-40">
+                  <span className="w-4 text-center shrink-0" aria-hidden="true">{medal}</span>
+                  <div className="w-5 h-5 rounded-full bg-border/60 shrink-0" />
+                  <span className="flex-1 text-muted italic">{L.voteToReveal}</span>
+                </div>
+              ))}
+              {/* Progress bar */}
+              <div className="flex items-center gap-1.5 text-muted mt-1.5 pt-1.5 border-t border-border/50" style={{ fontSize: "0.85em" }}>
+                <div className="flex-1 h-1 rounded-full bg-border overflow-hidden">
+                  <div
+                    className="h-full bg-gradient-to-r from-gold to-red-500 transition-all"
+                    style={{ width: `${Math.min(100, (total / threshold) * 100)}%` }}
+                  />
+                </div>
+                <span className="tabular-nums whitespace-nowrap">{L.progressTo(total, threshold)}</span>
+              </div>
+            </div>
+          ) : (
+            /* Results — top 3 with portrait + eye icon */
+            <ol className="space-y-1">
+              {top.map((c, i) => {
+                const pct = total > 0 ? Math.round((c.votes / total) * 100) : 0;
+                const medal = ["🥇", "🥈", "🥉"][i];
+                const profileHref = `/${locale}${generalsHubPath(game)}/${c.slug}`;
+                return (
+                  <li key={c.slug} className="flex items-center gap-1.5">
+                    <span className="w-4 text-center shrink-0" aria-hidden="true">{medal}</span>
+                    <div className="relative w-5 h-5 rounded-full overflow-hidden bg-bg2 border border-gold/20 shrink-0">
+                      {c.portrait ? (
+                        <Image src={c.portrait} alt="" fill sizes="20px" className="object-cover" />
+                      ) : null}
+                    </div>
+                    <a href={profileHref} className="flex-1 text-gold2 hover:underline truncate no-underline">
+                      {displayName(c)}
+                    </a>
+                    {c.rank && (
+                      <span className={`font-extrabold uppercase px-1 py-0.5 rounded border ${RANK_COLOR[c.rank] ?? RANK_COLOR.C}`} style={{ fontSize: "0.7em" }}>
+                        {c.rank}
+                      </span>
+                    )}
+                    <EyeLink href={profileHref} label={L.openProfile} />
+                    <span className="text-gold2 font-bold tabular-nums shrink-0">{c.votes}</span>
+                    <span className="text-muted tabular-nums w-9 text-right shrink-0">({pct}%)</span>
+                  </li>
+                );
+              })}
+            </ol>
+          )}
+        </div>
+      </div>
 
       <div className="mt-3">
         {hasVoted ? (

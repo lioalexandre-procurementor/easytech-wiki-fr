@@ -252,6 +252,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                       candidates={candidates}
                       threshold={UNIT_VOTE_THRESHOLD}
                       editorialSlug={editorialPick?.primary ?? undefined}
+                      unitImage={unit.image?.sprite ?? null}
                     />
                   );
                 })()}
