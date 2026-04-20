@@ -294,10 +294,12 @@ export default function UnitVoteModal({
     // reset trigger.
   }, [open, game, unitSlug, prefillGeneralSlug, initialCounts, initialTotal, initialHasVoted]);
 
-  // Bootstrap Turnstile once the modal is visible. Reset the widget on
-  // subsequent opens so a fresh token is issued per vote attempt.
+  // Bootstrap Turnstile once the modal body is actually visible. We wait
+  // for `loading` to flip to false because the widget container div lives
+  // inside the post-loading branch of the render tree — firing earlier
+  // would find `widgetContainer.current === null` and silently give up.
   useEffect(() => {
-    if (!open || disabled || hasVoted || !siteKey) return;
+    if (!open || loading || disabled || hasVoted || !siteKey) return;
     let active = true;
     loadTurnstile().then(() => {
       if (!active || !window.turnstile || !widgetContainer.current) return;
@@ -317,7 +319,7 @@ export default function UnitVoteModal({
     return () => {
       active = false;
     };
-  }, [open, disabled, hasVoted, siteKey]);
+  }, [open, loading, disabled, hasVoted, siteKey]);
 
   // Escape-to-close + body-scroll-lock.
   useEffect(() => {
