@@ -221,15 +221,22 @@ export default function UnitBestGeneralVote({
 
       {/* Body: unit image + general slots side by side */}
       <div className="flex gap-3 items-start">
-        {/* Unit sprite — fixed 72px column */}
+        {/* Unit sprite — fixed 72×72 column. Uses plain <img> (not next/image)
+            so the browser fetches the local /public path immediately without
+            the optimisation pipeline that can silently skip rendering in
+            client components. onError hides the element if the file is absent. */}
         {unitImage && (
-          <div className="relative w-[72px] h-[72px] shrink-0 rounded-lg overflow-hidden bg-bg2 border border-border/50">
-            <Image
+          <div className="w-[72px] h-[72px] shrink-0 rounded-lg overflow-hidden bg-bg2/60 border border-border/50 flex items-center justify-center">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src={unitImage}
               alt={unitDisplayName}
-              fill
-              sizes="72px"
-              className="object-contain p-1"
+              width={72}
+              height={72}
+              className="w-full h-full object-contain p-1"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = "none";
+              }}
             />
           </div>
         )}
