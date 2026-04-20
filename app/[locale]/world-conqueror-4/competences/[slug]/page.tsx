@@ -50,6 +50,7 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/world-conqueror-4/competences/${slug}`,
         en: `/en/world-conqueror-4/skills/${slug}`,
+        de: `/de/world-conqueror-4/skills/${slug}`,
         "x-default": `/fr/world-conqueror-4/competences/${slug}`,
       },
     },

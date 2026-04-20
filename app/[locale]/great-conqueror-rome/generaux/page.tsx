@@ -11,6 +11,7 @@ import {
 } from "@/lib/gcr";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
+import { isPlaceholder } from "@/lib/placeholder";
 import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -255,6 +256,7 @@ function GCRGeneralCard({
         barbarian ? "hover:border-red-500" : "hover:border-gold"
       }`}
       style={barbarian ? { borderColor: "#3a1f26" } : undefined}
+      rel={isPlaceholder(g) ? "nofollow" : undefined}
     >
       <div className="flex items-start justify-between mb-3">
         {g.image?.head ? (

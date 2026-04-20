@@ -295,32 +295,6 @@ export default async function GeneralPage({ params }: { params: { locale: string
             </div>
           </div>
 
-          {/* CROSS-LINK: maxed-out variant (all generals) + premium training (19 only) */}
-          <div className="mb-4 flex flex-wrap gap-2">
-            <Link
-              href={
-                params.locale === "fr"
-                  ? `/great-conqueror-rome/generaux/${g.slug}/entraine`
-                  : `/great-conqueror-rome/generals/${g.slug}/trained`
-              }
-              className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold/10 border border-gold/30 text-gold2 hover:bg-gold/20 transition-colors"
-            >
-              ★ {t("general.viewMaxed")}
-            </Link>
-            {g.hasTrainingPath && g.trainedSkills && g.trainedSkills.length > 0 && (
-              <Link
-                href={
-                  params.locale === "fr"
-                    ? `/great-conqueror-rome/generaux/${g.slug}/entrainement-premium`
-                    : `/great-conqueror-rome/generals/${g.slug}/premium-training`
-                }
-                className="inline-flex items-center gap-2 px-4 py-2 rounded bg-red-500/10 border border-red-500/40 text-red-300 hover:bg-red-500/20 transition-colors"
-              >
-                ⚔ {t("general.viewPremiumTraining")}
-              </Link>
-            )}
-          </div>
-
           {/* IN-ARTICLE TOP AD — between hero/cross-links and the stats block.
               Hidden on placeholder pages (thin content = AdSense policy risk). */}
           {!placeholder && (

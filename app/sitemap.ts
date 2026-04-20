@@ -20,23 +20,10 @@ import {
   getEliteUnit as getEw6EliteUnit,
 } from "@/lib/ew6";
 import { getGame } from "@/lib/games";
+import { isPlaceholder } from "@/lib/placeholder";
 import { locales } from "@/src/i18n/config";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
-
-/**
- * Placeholder detection — GCR/EW6 entities auto-generated from decrypted
- * game files carry a boilerplate longDesc ending "à enrichir". We do NOT
- * publish those URLs in the sitemap (they're already noindex'd on the
- * page) so Google does not waste crawl budget or surface thin content
- * during the AdSense review window. See
- * EasyTech-Wiki-SEO-Ads-Strategy-Assessment-2026-04-16.md (Plan A).
- */
-const PLACEHOLDER_RE = /à enrichir|Fiche générée automatiquement/i;
-function isPlaceholder(entity: { longDesc?: string | null } | null): boolean {
-  if (!entity) return true; // missing entity → don't emit
-  return PLACEHOLDER_RE.test(entity.longDesc ?? "");
-}
 
 /**
  * Localized path pair for a given canonical route suffix.
@@ -365,7 +352,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // GCR generals (placeholder pages excluded — they're noindex)
     for (const slug of getAllGcrGeneralSlugs()) {
-      if (isPlaceholder(getGcrGeneral(slug))) continue;
+      const entity = getGcrGeneral(slug);
+      if (!entity || isPlaceholder(entity)) continue;
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/generaux/${slug}`,
         en: `/great-conqueror-rome/generals/${slug}`,
@@ -384,7 +372,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // GCR elite units (placeholder pages excluded — they're noindex)
     for (const slug of getAllGcrEliteSlugs()) {
-      if (isPlaceholder(getGcrEliteUnit(slug))) continue;
+      const entity = getGcrEliteUnit(slug);
+      if (!entity || isPlaceholder(entity)) continue;
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/unites-elite/${slug}`,
         en: `/great-conqueror-rome/elite-units/${slug}`,
@@ -469,7 +458,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // EW6 generals (placeholder pages excluded — they're noindex)
     for (const slug of getAllEw6GeneralSlugs()) {
-      if (isPlaceholder(getEw6General(slug))) continue;
+      const entity = getEw6General(slug);
+      if (!entity || isPlaceholder(entity)) continue;
       const pair: LocalePair = {
         fr: `/european-war-6/generaux/${slug}`,
         en: `/european-war-6/generals/${slug}`,
@@ -488,7 +478,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // EW6 elite units (placeholder pages excluded — they're noindex)
     for (const slug of getAllEw6EliteSlugs()) {
-      if (isPlaceholder(getEw6EliteUnit(slug))) continue;
+      const entity = getEw6EliteUnit(slug);
+      if (!entity || isPlaceholder(entity)) continue;
       const pair: LocalePair = {
         fr: `/european-war-6/unites-elite/${slug}`,
         en: `/european-war-6/elite-units/${slug}`,

@@ -43,9 +43,20 @@ export async function generateMetadata({ params }: { params: { locale: string; s
     en: `Complete profile of ${u.nameEn || u.name} in World Conqueror 4: ${shortDescLocalized} Detailed stats, per-level perks, recommended generals.`,
     de: `Komplettes Profil der ${u.nameEn || u.name} in World Conqueror 4: ${shortDescLocalized} Detaillierte Werte, Boni pro Stufe, empfohlene Generäle.`,
   };
+  const baseSlugSegment = locale === "fr" ? "unites-elite" : "elite-units";
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    alternates: {
+      canonical: `/${locale}/world-conqueror-4/${baseSlugSegment}/${params.slug}`,
+      languages: {
+        fr: `/fr/world-conqueror-4/unites-elite/${params.slug}`,
+        en: `/en/world-conqueror-4/elite-units/${params.slug}`,
+        de: `/de/world-conqueror-4/elite-units/${params.slug}`,
+        "x-default": `/fr/world-conqueror-4/unites-elite/${params.slug}`,
+      },
+    },
+    robots: { index: true, follow: true },
   };
 }
 

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
 import Image from "next/image";
 import type { UnitData } from "@/lib/types";
 import { TierBadge } from "./TierBadge";
@@ -6,15 +6,34 @@ import { UnitIcon } from "./UnitIcon";
 import { COUNTRY_FLAGS } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
+import { isPlaceholder } from "@/lib/placeholder";
 
-export function UnitRow({ unit, locale }: { unit: UnitData; locale?: string }) {
-  const i = unit.stats.atk.length - 1;
+type Game = "wc4" | "gcr" | "ew6";
+
+const HUB_PATH: Record<Game, "/world-conqueror-4/unites-elite" | "/great-conqueror-rome/unites-elite" | "/european-war-6/unites-elite"> = {
+  wc4: "/world-conqueror-4/unites-elite",
+  gcr: "/great-conqueror-rome/unites-elite",
+  ew6: "/european-war-6/unites-elite",
+};
+
+export function UnitRow({
+  unit,
+  locale,
+  game = "wc4",
+}: {
+  unit: UnitData;
+  locale?: string;
+  game?: Game;
+}) {
   const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
   const displayShortDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", locale);
+  const href = `${HUB_PATH[game]}/${unit.slug}` as const;
+  const nofollow = isPlaceholder(unit as unknown as { longDesc?: string | null });
   return (
-    <Link href={`/world-conqueror-4/unites-elite/${unit.slug}`}
+    <Link href={href as any}
       className="bg-panel border border-border rounded-lg p-3 px-4 grid items-center gap-4 hover:border-gold transition-colors no-underline"
-      style={{ gridTemplateColumns: "60px 1fr auto auto auto" }}>
+      style={{ gridTemplateColumns: "60px 1fr auto auto auto" }}
+      rel={nofollow ? "nofollow" : undefined}>
       <div className="w-15">
         {unit.image?.sprite ? (
           <div className="relative w-[60px] h-[60px]">

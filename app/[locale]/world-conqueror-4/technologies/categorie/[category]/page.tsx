@@ -42,10 +42,13 @@ export async function generateMetadata({
     title: t("techPage.categoryHeading" as any, { name: catName }),
     description: t("techPage.hubIntro" as any),
     alternates: {
-      canonical: `/${locale}/world-conqueror-4/technologies/categorie/${category}`,
+      canonical: `/${locale}/world-conqueror-4/technologies/${
+        locale === "fr" ? "categorie" : "category"
+      }/${category}`,
       languages: {
         fr: `/fr/world-conqueror-4/technologies/categorie/${category}`,
         en: `/en/world-conqueror-4/technologies/category/${category}`,
+        de: `/de/world-conqueror-4/technologies/category/${category}`,
         "x-default": `/fr/world-conqueror-4/technologies/categorie/${category}`,
       },
     },

@@ -12,9 +12,9 @@
   "shortDesc": "Cuirassé loup solitaire — crits garantis, bonus en isolation, récupération sur kill.",
   "shortDescEn": "Lone-wolf battleship — guaranteed crits, solo-attack bonus, heal on kill.",
   "shortDescDe": "Einzelgänger-Schlachtschiff — garantierte Krits, Solobonus, Heilung bei Kill.",
-  "longDesc": "Cuirassé d'élite allemand ajouté avec le patch d'avril 2026. Conçu pour opérer détaché de la flotte principale : Broadside Volley garantit des coups critiques, Solitary Surge +30 % d'attaque quand aucune unité navale alliée à 3 cases (au prix de +30 % de dégâts subis), Indomitable Will récupère 2 % des PV max à chaque élimination. Doctrine opposée à Prince of Wales ou Yamato qui récompensent la cohésion de flotte.",
-  "longDescEn": "German elite battleship added in the April 2026 patch. Designed to operate detached from the main fleet: Broadside Volley guarantees critical hits, Solitary Surge +30% attack when no allied naval units are within 3 tiles (at the cost of +30% incoming damage), Indomitable Will recovers 2% max HP on each kill. Opposite doctrine to Prince of Wales or Yamato, which reward fleet cohesion.",
-  "longDescDe": "Deutsches Elite-Schlachtschiff, eingeführt mit dem April-2026-Patch. Konzipiert für den Einsatz getrennt von der Hauptflotte: Broadside Volley garantiert kritische Treffer, Solitary Surge +30 % Angriff, wenn keine verbündeten Marineeinheiten innerhalb von 3 Feldern stehen (zum Preis von +30 % erlittenem Schaden), Indomitable Will stellt bei jedem Kill 2 % Max-TP wieder her. Entgegengesetzte Doktrin zu Prince of Wales oder Yamato, die Flottenkohäsion belohnen.",
+  "longDesc": "Le cuirassé Bismarck fut l'un des navires capitaux majeurs de la Kriegsmarine allemande durant la Seconde Guerre mondiale, réputé pour la puissance écrasante de son artillerie principale, son blindage lourd et ses remarquables capacités de combat océaniques. Équipé de canons principaux de 380 mm capables de frappes de haute précision contre des cibles lointaines, il possédait également une vitesse et une protection excellentes. Plateforme de combat maritime lourde équilibrant puissance offensive et survivabilité, il incarnait l'apogée des réalisations de la marine allemande en matière de grands bâtiments de surface.",
+  "longDescEn": "The battleship Bismarck was one of the primary capital ships of the German Kriegsmarine during World War II, renowned for its overwhelming main battery firepower, heavy armor, and outstanding ocean-going combat capabilities. Equipped with 380mm main guns capable of delivering high-precision strikes against distant targets, it also possessed excellent speed and protection. A heavy maritime combat platform balancing offensive power with survivability, it symbolized the pinnacle of the German Navy's achievements in large surface combatants.",
+  "longDescDe": "Das Schlachtschiff Bismarck war eines der wichtigsten Großkampfschiffe der deutschen Kriegsmarine im Zweiten Weltkrieg, bekannt für die überwältigende Feuerkraft seiner Hauptartillerie, seine schwere Panzerung und seine herausragenden Hochseekampffähigkeiten. Mit 380-mm-Hauptgeschützen ausgerüstet, die hochpräzise Schläge gegen weit entfernte Ziele ermöglichten, verfügte es zudem über exzellente Geschwindigkeit und Schutz. Als schwere Marinekampfplattform, die offensive Schlagkraft und Überlebensfähigkeit vereinte, symbolisierte es den Höhepunkt der Leistungen der deutschen Marine bei großen Überwassereinheiten.",
   "stats": {
     "atk": [86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86, 86],
     "def": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -28,11 +28,11 @@
       "type": "active-skill",
       "icon": "💥",
       "name": "Broadside Volley",
-      "desc": "Les attaques sont garanties critiques et +30 % de dégâts critiques pendant 1 tour. Cooldown 2 tours.",
+      "desc": "Les attaques sont garanties critiques et +30 % de dégâts critiques pendant 1 tour. Cooldown 2 tours. (Lv.9 : +50 %.)",
       "nameEn": "Broadside Volley",
-      "descEn": "Attacks are guaranteed to be critical and increase critical attack damage by 30%, lasting for 1 turn, with a cooldown of 2 turns.",
+      "descEn": "Attacks are guaranteed to be critical and increase critical attack damage by 30%, lasting for 1 turn, with a cooldown of 2 turns. (Lv.9: +50%.)",
       "nameDe": "Broadside Volley",
-      "descDe": "Angriffe sind garantiert kritische Treffer mit +30 % Krit-Schaden für 1 Runde, Cooldown 2 Runden.",
+      "descDe": "Angriffe sind garantiert kritische Treffer mit +30 % Krit-Schaden für 1 Runde, Cooldown 2 Runden. (Stufe 9: +50 %.)",
       "milestone": true
     },
     {
@@ -40,11 +40,11 @@
       "type": "passive",
       "icon": "🌊",
       "name": "Solitary Surge",
-      "desc": "Si aucune unité navale alliée dans un rayon de 3 cases, +30 % d'attaque mais +30 % de dégâts subis.",
+      "desc": "Si aucune unité navale alliée dans un rayon de 3 cases, +30 % d'attaque mais +30 % de dégâts subis. (Lv.9 : rayon 2 cases, +50 % d'attaque, +25 % de dégâts subis.)",
       "nameEn": "Solitary Surge",
-      "descEn": "If there are no allied naval units within 3 tiles, this unit's attack increases by 30%, but the damage it receives also increases by 30%.",
+      "descEn": "If there are no allied naval units within 3 tiles, this unit's attack increases by 30%, but the damage it receives also increases by 30%. (Lv.9: 2-tile radius, +50% attack, +25% incoming damage.)",
       "nameDe": "Solitary Surge",
-      "descDe": "Wenn keine verbündeten Marineeinheiten innerhalb von 3 Feldern stehen, steigt der Angriff um 30 %, der erlittene Schaden aber ebenfalls um 30 %.",
+      "descDe": "Wenn keine verbündeten Marineeinheiten innerhalb von 3 Feldern stehen, steigt der Angriff um 30 %, der erlittene Schaden aber ebenfalls um 30 %. (Stufe 9: Radius 2 Felder, +50 % Angriff, +25 % erlittener Schaden.)",
       "milestone": true
     },
     {
@@ -52,14 +52,42 @@
       "type": "passive",
       "icon": "❤️‍🔥",
       "name": "Indomitable Will",
-      "desc": "À chaque élimination d'une cible, récupère 2 % de ses PV max.",
+      "desc": "À chaque élimination d'une cible, récupère 2 % de ses PV max. (Lv.9 : 6 %.)",
       "nameEn": "Indomitable Will",
-      "descEn": "Upon eliminating a target, recover 2% of your maximum HP.",
+      "descEn": "Upon eliminating a target, recover 2% of your maximum HP. (Lv.9: 6%.)",
       "nameDe": "Indomitable Will",
-      "descDe": "Bei jeder Eliminierung eines Ziels werden 2 % der maximalen HP wiederhergestellt.",
+      "descDe": "Bei jeder Eliminierung eines Ziels werden 2 % der maximalen HP wiederhergestellt. (Stufe 9: 6 %.)",
+      "milestone": true
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "🛡️",
+      "name": "Air-Defense",
+      "desc": "Niveau de déblocage à confirmer ; visible à Lv.9. Probablement un slot d'équipement / tech passif de défense anti-aérienne ; effet exact à vérifier.",
+      "nameEn": "Air-Defense",
+      "descEn": "Unlock level to be confirmed; visible at Lv.9. Likely an anti-air equipment or tech passive slot; exact effect pending verification.",
+      "nameDe": "Air-Defense",
+      "descDe": "Freischaltstufe noch zu bestätigen; bei Stufe 9 sichtbar. Vermutlich ein Ausrüstungs-/Tech-Slot für Flugabwehr; genauer Effekt noch zu überprüfen.",
+      "milestone": false
+    },
+    {
+      "lvl": 9,
+      "type": "passive",
+      "icon": "⚓",
+      "name": "Ironclad Fortress",
+      "desc": "Niveau de déblocage à confirmer ; à Lv.9, récupère 5 % des PV max à chaque tour.",
+      "nameEn": "Ironclad Fortress",
+      "descEn": "Unlock level to be confirmed; at Lv.9, recovers 5% of maximum HP each turn.",
+      "nameDe": "Ironclad Fortress",
+      "descDe": "Freischaltstufe noch zu bestätigen; bei Stufe 9 werden pro Runde 5 % der maximalen HP wiederhergestellt.",
       "milestone": true
     }
   ],
+  "image": {
+    "sprite": "/img/wc4/elites/353001.webp",
+    "lvl12": null
+  },
   "recommendedGenerals": ["raeder", "donitz", "yamamoto"],
   "levelingPriority": [
     "Détacher Bismarck de la flotte principale — son bonus Solitary Surge dépend de l'isolation.",

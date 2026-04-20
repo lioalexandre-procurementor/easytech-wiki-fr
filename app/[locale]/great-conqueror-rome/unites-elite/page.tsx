@@ -102,7 +102,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
                   <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">{units.length} {t("elitesPage.unitsCountSuffix")}</span>
                 </div>
                 <div className="grid gap-2.5">
-                  {units.map(u => <UnitRow key={u.slug} unit={u} locale={params.locale}/>)}
+                  {units.map(u => <UnitRow key={u.slug} unit={u} locale={params.locale} game="gcr"/>)}
                 </div>
               </section>
             );

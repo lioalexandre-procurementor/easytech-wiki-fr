@@ -12,9 +12,9 @@
   "shortDesc": "Infanterie spéciale assassin — immunité aux actifs, frappe chirurgicale anti-général.",
   "shortDescEn": "Tier-one assassin infantry — immune to active skills, precision anti-general striker.",
   "shortDescDe": "Tier-Eins-Assassinen-Infanterie — immun gegen aktive Skills, Präzisions-Anti-General-Striker.",
-  "longDesc": "Unité d'élite des forces spéciales américaines ajoutée avec le patch d'avril 2026. Spécialisée dans la neutralisation de cibles à haute valeur : Camouflage Cover la rend immune aux compétences actives à dégâts directs et à tous les débuffs, tandis que Decapitation Strike ignore esquive, fumigène et stealth pour décapiter les piles adverses.",
-  "longDescEn": "US special operations elite infantry added in the April 2026 patch. Specializes in neutralizing high-value targets: Camouflage Cover makes her immune to direct-damage active skills and all debuffs, while Decapitation Strike ignores dodge, smoke and stealth to kill the opponent's highest-value stacks.",
-  "longDescDe": "US-Spezialkräfte-Elite-Infanterie, eingeführt mit dem April-2026-Patch. Spezialisiert auf die Ausschaltung hochwertiger Ziele: Camouflage Cover macht sie immun gegen direkte aktive Schadensskills und alle Debuffs, während Decapitation Strike Ausweichen, Rauch und Stealth ignoriert und die wertvollsten gegnerischen Stacks ausschaltet.",
+  "longDesc": "Delta Force compte parmi les unités d'opérations spéciales les plus élites de l'armée américaine, spécialisée dans le contre-terrorisme, la neutralisation ciblée et les missions d'infiltration à haut risque. Ses membres suivent un processus de sélection et d'entraînement extrêmement rigoureux, excellant dans le déploiement rapide, l'infiltration clandestine et les frappes de précision. Généralement équipés d'armement et de systèmes de communication avancés, ils sont capables de mener rapidement des frappes sur cibles à haute valeur dans des environnements complexes, ce qui en fait l'une des unités de référence pour les missions critiques de la guerre moderne.",
+  "longDescEn": "Delta Force is among the most elite special operations units of the U.S. Army, specializing in counterterrorism, targeted neutralization, and high-risk infiltration missions. Its members undergo an extremely rigorous selection and training process, excelling in rapid deployment, covert infiltration, and precision strikes. They are typically equipped with advanced weaponry and communication systems, capable of swiftly accomplishing high-value target strikes in complex environments, establishing them as one of the premier units for carrying out critical missions in modern warfare.",
+  "longDescDe": "Die Delta Force gehört zu den elitärsten Spezialoperationseinheiten der US-Armee und ist auf Terrorismusbekämpfung, gezielte Ausschaltung und risikoreiche Infiltrationseinsätze spezialisiert. Ihre Mitglieder durchlaufen ein äußerst strenges Auswahl- und Ausbildungsverfahren und zeichnen sich durch schnelle Verlegung, verdeckte Infiltration und Präzisionsschläge aus. Mit hochmoderner Bewaffnung und Kommunikationssystemen ausgerüstet, können sie in komplexen Umgebungen zügig Schläge gegen hochwertige Ziele durchführen und zählen damit zu den führenden Einheiten für kritische Einsätze in der modernen Kriegsführung.",
   "stats": {
     "atk": [72, 72, 72, 72, 72, 72, 72, 72, 72, 72, 72, 72],
     "def": [20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20],
@@ -28,11 +28,11 @@
       "type": "passive",
       "icon": "🥷",
       "name": "Camouflage Cover",
-      "desc": "Ne peut pas être choisie comme cible des compétences actives à dégâts directs. Immune à tous les débuffs. Réduit les dégâts subis de 30 % contre attaques à 1 case et de 15 % à 2–3 cases.",
+      "desc": "Ne peut pas être choisie comme cible des compétences actives à dégâts directs. Immune à tous les débuffs. Réduit les dégâts subis de 30 % contre attaques à 1 case et de 15 % à 2–3 cases. (Lv.12 : 50 % / 25 %.)",
       "nameEn": "Camouflage Cover",
-      "descEn": "Cannot be chosen as the target of direct-damage active skills. Immune to all debuffs. Damage taken reduced by 30% when attacked from 1 tile away and by 15% when attacked from 2–3 tiles away.",
+      "descEn": "Cannot be chosen as the target of direct-damage active skills. Immune to all debuffs. Damage taken reduced by 30% when attacked from 1 tile away and by 15% when attacked from 2–3 tiles away. (Lv.12: 50% / 25%.)",
       "nameDe": "Camouflage Cover",
-      "descDe": "Kann nicht als Ziel direkter aktiver Schadensskills gewählt werden. Immun gegen alle Debuffs. Erlittener Schaden um 30 % reduziert bei Angriffen aus 1 Feld und um 15 % aus 2–3 Feldern Entfernung.",
+      "descDe": "Kann nicht als Ziel direkter aktiver Schadensskills gewählt werden. Immun gegen alle Debuffs. Erlittener Schaden um 30 % reduziert bei Angriffen aus 1 Feld und um 15 % aus 2–3 Feldern Entfernung. (Lv.12: 50 % / 25 %.)",
       "milestone": true
     },
     {
@@ -40,14 +40,42 @@
       "type": "active-skill",
       "icon": "🎯",
       "name": "Decapitation Strike",
-      "desc": "Marque 1 cible dans un rayon de 2 cases ; ignore esquive, fumigène et stealth. Les dégâts contre chaque cible marquée sont augmentés de 60 % pendant un tour, cooldown 2 tours. Si une cible marquée est tuée, une attaque supplémentaire est déclenchée avec +20 % de dégâts.",
+      "desc": "Marque 1 cible dans un rayon de 2 cases ; ignore esquive, fumigène et stealth. Les dégâts contre chaque cible marquée sont augmentés de 60 % pendant un tour, cooldown 2 tours. Si une cible marquée est tuée, une attaque supplémentaire est déclenchée avec +20 % de dégâts. (Lv.12 : 3 cibles, +80 %, +30 %.)",
       "nameEn": "Decapitation Strike",
-      "descEn": "Mark 1 target within a 2-tile range and ignore their dodge, smoke bomb, or stealth effects. Damage dealt to each marked target is increased by 60% for one turn, with a cooldown of two turns. If a marked target is killed, an additional attack can be made, and damage for that attack is increased by an extra 20%.",
+      "descEn": "Mark 1 target within a 2-tile range and ignore their dodge, smoke bomb, or stealth effects. Damage dealt to each marked target is increased by 60% for one turn, with a cooldown of two turns. If a marked target is killed, an additional attack can be made, and damage for that attack is increased by an extra 20%. (Lv.12: 3 targets, +80%, +30%.)",
       "nameDe": "Decapitation Strike",
-      "descDe": "Markiere 1 Ziel in 2 Feldern Umkreis; ignoriere Ausweichen, Rauch und Stealth. Schaden gegen markierte Ziele +60 % für eine Runde, Cooldown 2 Runden. Wird ein markiertes Ziel getötet, folgt ein Extra-Angriff mit +20 % Schaden.",
+      "descDe": "Markiere 1 Ziel in 2 Feldern Umkreis; ignoriere Ausweichen, Rauch und Stealth. Schaden gegen markierte Ziele +60 % für eine Runde, Cooldown 2 Runden. Wird ein markiertes Ziel getötet, folgt ein Extra-Angriff mit +20 % Schaden. (Lv.12: 3 Ziele, +80 %, +30 %.)",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "active-skill",
+      "icon": "🪂",
+      "name": "Call for Airborne Landing",
+      "desc": "Niveau de déblocage à confirmer. Valeurs observées à Lv.12 : largage aéroporté sur 9 cases, cooldown 2 tours.",
+      "nameEn": "Call for Airborne Landing",
+      "descEn": "Unlock level to be confirmed. Values observed at Lv.12: airborne drop across 9 grids, cooldown 2 turns.",
+      "nameDe": "Call for Airborne Landing",
+      "descDe": "Freischaltstufe noch zu bestätigen. Werte bei Stufe 12: Luftlandung über 9 Felder, Cooldown 2 Runden.",
+      "milestone": true
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "🛫",
+      "name": "Airborne Assault",
+      "desc": "Niveau de déblocage à confirmer. Valeur observée à Lv.12 : +100 % de dégâts (conditions exactes à vérifier).",
+      "nameEn": "Airborne Assault",
+      "descEn": "Unlock level to be confirmed. Value observed at Lv.12: +100% damage (exact trigger conditions pending verification).",
+      "nameDe": "Airborne Assault",
+      "descDe": "Freischaltstufe noch zu bestätigen. Wert bei Stufe 12: +100 % Schaden (genaue Auslösebedingungen noch zu überprüfen).",
       "milestone": true
     }
   ],
+  "image": {
+    "sprite": "/img/wc4/elites/352001.webp",
+    "lvl12": null
+  },
   "recommendedGenerals": ["eisenhower", "patton", "bradley"],
   "levelingPriority": [
     "Priorité absolue : maximiser Delta Force dès que possible — son kit est déjà complet à Lv.1, chaque niveau améliore l'enveloppe de stats.",
