@@ -3,10 +3,22 @@
 import { useMemo, useState } from "react";
 import Image from "next/image";
 import { Link } from "@/src/i18n/navigation";
-import { COUNTRY_FLAGS } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
 import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
+
+// Inlined to avoid pulling `@/lib/units` (which imports node:fs) into this
+// client bundle. Keep in sync with COUNTRY_FLAGS in lib/units.ts.
+const COUNTRY_FLAGS: Record<string, string> = {
+  GB: "🇬🇧", US: "🇺🇸", DE: "🇩🇪", FR: "🇫🇷", RU: "🇷🇺",
+  JP: "🇯🇵", IT: "🇮🇹", CN: "🇨🇳", IL: "🇮🇱", PL: "🇵🇱",
+  CA: "🇨🇦", AU: "🇦🇺", FI: "🇫🇮", YU: "🇷🇸", TR: "🇹🇷",
+  EG: "🇪🇬", NO: "🇳🇴", SE: "🇸🇪", DK: "🇩🇰", NL: "🇳🇱",
+  BE: "🇧🇪", ES: "🇪🇸", PT: "🇵🇹", HU: "🇭🇺", RO: "🇷🇴",
+  BG: "🇧🇬", CH: "🇨🇭", GR: "🇬🇷", CZ: "🇨🇿", IN: "🇮🇳",
+  TH: "🇹🇭", MX: "🇲🇽", BR: "🇧🇷", AR: "🇦🇷", KR: "🇰🇷",
+  XX: "🦂",
+};
 
 export type GeneralView = GeneralData & { isEco: boolean };
 
