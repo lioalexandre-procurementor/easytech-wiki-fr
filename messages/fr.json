@@ -50,6 +50,7 @@
     "terms": "CGU",
     "votes": "Votes communautaires",
     "contact": "Contact",
+    "followUs": "Suivez-nous",
     "unofficialDisclaimer": "Wiki non-officiel et indépendant. Non affilié, associé, autorisé ni sponsorisé par EasyTech Studio. World Conqueror, European War et les autres marques citées appartiennent à leurs détenteurs respectifs."
   },
   "breadcrumb": {
@@ -69,7 +70,11 @@
     "underConstructionNote": "les statistiques sont vérifiées sur la version actuelle du jeu (WC4 v1.24.2). Les fiches éditoriales (descriptions, bonus, stratégie) sont en cours d'enrichissement.",
     "exploreByCategory": "Explorer les unités d'élite par catégorie",
     "mostViewed": "Unités d'élite les plus consultées",
-    "unitsCountSuffix": "unités"
+    "unitsCountSuffix": "unités",
+    "voteBoxTitle": "🗳 Vote communautaire",
+    "voteBoxDesc": "Aidez à élire le meilleur général et la meilleure unité d'élite par catégorie.",
+    "voteBoxGeneral": "Voter : meilleur général",
+    "voteBoxUnit": "Voter : meilleure unité d'élite"
   },
   "gcrHub": {
     "h1": "Great Conqueror: Rome — Wiki Francophone",

@@ -20,6 +20,31 @@ export async function Footer() {
           prefixIcon="⚠️"
         />
       </div>
+      <div className="mb-5 flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-sm">
+        <span className="text-dim uppercase tracking-widest text-[10px] md:text-xs">
+          {t("footer.followUs")}
+        </span>
+        <a
+          href="https://instagram.com/easytech.wiki"
+          target="_blank"
+          rel="noopener noreferrer me"
+          aria-label="Instagram — @easytech.wiki"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border hover:border-gold bg-panel hover:bg-gold/5 text-dim hover:text-gold2 font-semibold transition-colors"
+        >
+          <span aria-hidden="true">📸</span>
+          <span>@easytech.wiki</span>
+        </a>
+        <a
+          href="https://reddit.com/user/easytechwiki"
+          target="_blank"
+          rel="noopener noreferrer me"
+          aria-label="Reddit — u/easytechwiki"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border hover:border-gold bg-panel hover:bg-gold/5 text-dim hover:text-gold2 font-semibold transition-colors"
+        >
+          <span aria-hidden="true">👽</span>
+          <span>u/easytechwiki</span>
+        </a>
+      </div>
       <nav className="flex flex-wrap justify-center gap-x-4 md:gap-x-5 gap-y-2 mb-3 text-xs md:text-sm">
         <Link href="/legal/a-propos" className="hover:text-gold2">
           {t("footer.about")}

@@ -104,6 +104,35 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             </div>
           </section>
 
+          <section
+            aria-label={t("wc4Hub.voteBoxTitle")}
+            className="bg-panel border border-gold/40 rounded-lg px-4 py-3 md:px-5 md:py-4 mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-3"
+            style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.08) 0%, rgba(200,55,45,0.05) 100%), #1a2230" }}
+          >
+            <div className="min-w-0">
+              <h2 className="text-gold2 font-bold text-base md:text-lg leading-tight">
+                {t("wc4Hub.voteBoxTitle")}
+              </h2>
+              <p className="text-dim text-xs md:text-sm mt-0.5">
+                {t("wc4Hub.voteBoxDesc")}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2 shrink-0">
+              <Link
+                href={"/leaderboards?game=wc4&tab=generals" as any}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-md bg-gold text-[#0f1419] text-xs md:text-sm font-bold no-underline hover:bg-gold2 transition-colors"
+              >
+                👨‍✈️ {t("wc4Hub.voteBoxGeneral")}
+              </Link>
+              <Link
+                href={"/leaderboards?game=wc4&tab=units" as any}
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-md border border-gold text-gold2 text-xs md:text-sm font-bold no-underline hover:bg-gold/10 transition-colors"
+              >
+                🏅 {t("wc4Hub.voteBoxUnit")}
+              </Link>
+            </div>
+          </section>
+
           <h2 className="text-xl mb-4 mt-8">{t("wc4Hub.exploreByCategory")}</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {counts.map(c => (
