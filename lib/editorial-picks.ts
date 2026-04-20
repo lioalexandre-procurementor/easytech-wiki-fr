@@ -37,63 +37,53 @@ export type EditorialPick = {
 
 export const UNIT_EDITORIAL_PICKS: Record<Game, Record<string, EditorialPick>> = {
   wc4: {
-    // Airforce
+    // Airforce — Spitfire / Stuka / C-47 Skytrain / P-40 excluded in
+    // lib/unit-general-vote.ts NON_VOTABLE_UNITS (no general slot in-game).
     "ah-64-apache": { primary: "doolittle" },
     "b-52-stratofortress": { primary: "spaatz" },
-    "c-47-skytrain": { primary: "eisenhower" },
     "harrier": { primary: "dowding" },
-    "ju-87-stuka": { primary: "de-gaulle" },            // rumor-skill synergy with dive bombers
-    "mi-24-hind": { primary: "bagramyan" },
-    "mystic-bomber": { primary: "de-gaulle" },
-    "mystic-strategic-bomber": { primary: "spaatz" },
-    "p-40-warhawk": { primary: "doolittle" },
-    "su-30": { primary: "bagramyan" },
-    "supermarine-spitfire": { primary: "dowding" },     // Battle of Britain classic
-    "sva-23": { primary: "richthofen" },
+    "mi-24-hind": { primary: "hartmann" },              // community vote
+    "su-30": { primary: "hartmann" },                   // community vote
     // Navy
     "akagi": { primary: "yamamoto" },
     "arleigh-burke": { primary: "nimitz" },
     "bismarck": { primary: "raeder" },
     "enterprise-cv": { primary: "halsey" },
-    "hms-prince-of-wales": { primary: "cunningham" },
-    "richelieu": { primary: "de-gaulle" },              // FR naval (limited FR naval roster)
+    "hms-prince-of-wales": { primary: "halsey" },       // community vote
+    "richelieu": { primary: "nimitz" },                 // community vote
     "type-vii-uboat": { primary: "donitz" },
     "typhoon-submarine": { primary: "kuznetsov" },
     "yukikaze": { primary: "yamamoto" },
-    // Tank
+    // Tank — Scorpion units excluded (e-775, heavenly-beginning-tank,
+    // titan-tank) in NON_VOTABLE_UNITS.
     "centurion": { primary: "montgomery" },
-    "e-775": { primary: "guderian" },
-    "heavenly-beginning-tank": { primary: "guderian" },
-    "honeycomb": { primary: "rommel" },
-    "is-3": { primary: "zhukov" },
+    "honeycomb": { primary: "auchinleck" },             // community vote
+    "is-3": { primary: "abrams" },                      // community vote
     "konigs-tiger": { primary: "guderian" },            // DE Panzer doctrine
     "leopard-2": { primary: "manstein" },
     "m1a1-abrams": { primary: "abrams" },               // namesake
     "m26-pershing": { primary: "patton" },
     "t-44": { primary: "rokossovsky" },
-    "t-72": { primary: "zhukov" },
-    "titan-tank": { primary: "guderian" },
-    // Artillery
+    "t-72": { primary: "rokossovsky" },                 // community vote
+    // Artillery — KS-90 (scorpion) excluded.
     "auf1-spg": { primary: "de-gaulle" },               // FR artillery
     "b-4-howitzer": { primary: "voronov" },
     "bm-21-grad": { primary: "bagramyan" },
     "flak-88": { primary: "heinrici" },
-    "ks-90": { primary: "bagramyan" },
-    "m142-himars": { primary: "marshall" },
-    "m7-priest": { primary: "marshall" },
+    "m142-himars": { primary: "zhukov" },               // community vote
+    "m7-priest": { primary: "govorov" },                // community vote
     "schwerer-gustav": { primary: "rundstedt" },
     "stuka-rocket": { primary: "de-gaulle" },           // rocket-artillery rumor synergy
     "topol-m": { primary: "voronov" },
-    // Infantry
+    // Infantry — Mystery Paratrooper (scorpion) excluded.
     "alpini": { primary: "messe" },                     // IT mountain infantry
     "brandenburg-infantry": { primary: "manstein" },    // DE special forces
-    "combat-medic": { primary: "eisenhower" },
-    "delta-force": { primary: "patton" },
+    "combat-medic": { primary: "marshall" },            // community vote
+    "delta-force": { primary: "marshall" },             // community vote
     "engineer-unit": { primary: "marshall" },
     "ghost-troop": { primary: "simo-hayha" },           // stealth/sniper archetype
     "hawkeye": { primary: "simo-hayha" },               // crit/recon synergy
-    "mystery-paratrooper": { primary: "manstein" },
-    "rpg-rocket-soldier": { primary: "chuikov" },       // RU urban combat
+    "rpg-rocket-soldier": { primary: "vasilevsky" },    // community vote
   },
   ew6: {
     // Empty initially — EW6 leaderboard isn't surfaced yet. The module is

@@ -43,6 +43,41 @@ const UNIT_CATEGORY_TO_GENERAL_CATEGORIES: Partial<Record<Category, GeneralCateg
 
 const RANK_ORDER: Record<string, number> = { S: 0, A: 1, B: 2, C: 3 };
 
+/**
+ * Elite units that shouldn't accept general-pairing votes. These units
+ * have no general slot in-game (classic WWII planes the player can't
+ * assign a commander to) or belong to the Scorpion faction that
+ * doesn't participate in the community pairing vote.
+ *
+ * Making eligibility empty for these slugs cascades through:
+ *   - leaderboards `loadUnitsLeaderboard` drops the row
+ *   - unit detail page's vote widget renders null (early return on
+ *     `eligible.length === 0`)
+ *   - POST /api/vote/unit-general rejects incoming votes as ineligible
+ */
+const NON_VOTABLE_UNITS: Partial<Record<Game, Set<string>>> = {
+  wc4: new Set([
+    // Airforce units with no assignable general in-game
+    "supermarine-spitfire",
+    "ju-87-stuka",
+    "c-47-skytrain",
+    "p-40-warhawk",
+    // Scorpion faction units — out of scope for the community vote
+    "e-775",
+    "heavenly-beginning-tank",
+    "ks-90",
+    "mystery-paratrooper",
+    "mystic-bomber",
+    "mystic-strategic-bomber",
+    "sva-23",
+    "titan-tank",
+  ]),
+};
+
+export function isNonVotableUnit(game: Game, unitSlug: string): boolean {
+  return NON_VOTABLE_UNITS[game]?.has(unitSlug) ?? false;
+}
+
 function getAllGeneralsForGame(game: Game): GeneralData[] {
   if (game === "wc4") return getAllGeneralsWc4();
   if (game === "gcr") return getAllGeneralsGcr();
@@ -59,6 +94,7 @@ export function getEligibleGeneralsForUnit(
   game: Game,
   unitSlug: string
 ): GeneralData[] {
+  if (isNonVotableUnit(game, unitSlug)) return [];
   const unit = getEliteUnitForGame(game, unitSlug);
   if (!unit) return [];
   const allowed = UNIT_CATEGORY_TO_GENERAL_CATEGORIES[unit.category] ?? [];

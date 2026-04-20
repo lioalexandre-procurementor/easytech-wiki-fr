@@ -37,6 +37,7 @@ import {
   getEliteUnit as getEliteUnitEw6,
   getAllEliteUnits as getAllEliteUnitsEw6,
 } from "./ew6";
+import { isNonVotableUnit } from "./unit-general-vote";
 import type { GeneralData, Game, UnitData } from "./types";
 
 const TOTAL_FIELD = "__total";
@@ -156,7 +157,9 @@ export async function loadUnitsLeaderboard(
   game: Game,
   threshold: number = UNITS_LEADERBOARD_THRESHOLD
 ): Promise<UnitsRanking> {
-  const allUnits = getAllEliteUnitsForGame(game);
+  const allUnits = getAllEliteUnitsForGame(game).filter(
+    (u) => !isNonVotableUnit(game, u.slug)
+  );
   // Start with every unit as a zero-vote row. We overwrite entries as we
   // scan Redis; units never scanned (zero votes ever) stay with the
   // default zero-vote row so the UI can always show an editorial pick.

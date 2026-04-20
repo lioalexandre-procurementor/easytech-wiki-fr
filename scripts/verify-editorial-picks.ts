@@ -6,6 +6,7 @@ import {
 } from "../lib/editorial-picks";
 import { getAllEliteUnits as getAllEliteUnitsWc4, getGeneral as getGeneralWc4 } from "../lib/units";
 import { getAllEliteUnits as getAllEliteUnitsGcr, getGeneral as getGeneralGcr } from "../lib/gcr";
+import { isNonVotableUnit } from "../lib/unit-general-vote";
 
 function assert(cond: unknown, msg: string): void {
   if (!cond) throw new Error("FAIL: " + msg);
@@ -26,7 +27,9 @@ for (const slug of BEST_GENERAL_PLACEHOLDER.gcr) {
 
 // 3. Every WC4 elite unit has an editorial pick AND its primary (and
 //    optional secondary) slot resolves to a real general.
-const wc4Units = getAllEliteUnitsWc4();
+const wc4Units = getAllEliteUnitsWc4().filter(
+  (u) => !isNonVotableUnit("wc4", u.slug)
+);
 const wc4Picks = UNIT_EDITORIAL_PICKS.wc4;
 const wc4Missing: string[] = [];
 for (const unit of wc4Units) {
