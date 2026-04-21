@@ -1,35 +1,31 @@
+import { headers } from "next/headers";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import SearchBar from "./SearchBar";
 import MobileNavDrawer from "./MobileNavDrawer";
-
-const BRAND_TAGLINE: Record<string, string> = {
-  fr: "La référence FR",
-  en: "The EN reference",
-  de: "Das DE Referenzwiki",
-};
-
-const LEADERBOARDS_LABEL: Record<string, string> = {
-  fr: "Classements",
-  en: "Leaderboards",
-  de: "Bestenlisten",
-};
+import GameSwitcher from "./GameSwitcher";
+import { GAMES } from "@/lib/games";
+import { getNavItemsForGame } from "@/lib/nav-items";
 
 export async function TopBar() {
   const t = await getTranslations();
   const locale = await getLocale();
-  const tagline = BRAND_TAGLINE[locale] ?? BRAND_TAGLINE.en;
-  const leaderboardsLabel = LEADERBOARDS_LABEL[locale] ?? LEADERBOARDS_LABEL.en;
 
-  const navItems: Array<{ href: string; label: string; disabled?: boolean }> = [
-    { href: "/world-conqueror-4", label: t("nav.wc4") },
-    { href: "/great-conqueror-rome", label: "Great Conqueror Rome" },
-    { href: "/european-war-6", label: "European War 6" },
-    { href: "/world-conqueror-4/mises-a-jour", label: t("nav.updates") },
-    { href: "/world-conqueror-4/guides", label: t("nav.guides") },
-    { href: "/leaderboards", label: leaderboardsLabel },
-  ];
+  const pathname = headers().get("x-pathname") ?? "";
+  const segments = pathname.split("/").filter(Boolean);
+  const gameSlug = segments[1] ?? null;
+  const activeGame = GAMES.find((g) => g.slug === gameSlug) ?? null;
+
+  const navItems = getNavItemsForGame(activeGame?.slug ?? null, (key) => t(key as any));
+
+  const drawerLabels = {
+    open: t("nav.drawer.open"),
+    close: t("nav.drawer.close"),
+    nav: t("nav.drawer.nav"),
+    menu: t("nav.drawer.menu"),
+    language: t("nav.drawer.language"),
+  };
 
   return (
     <div className="bg-gradient-to-b from-[#0a0e13] to-[#121820] border-b border-border sticky top-0 z-50">
@@ -47,13 +43,14 @@ export async function TopBar() {
           <div className="hidden sm:block">
             <div className="text-gold2 leading-none">{t("site.shortTitle")}</div>
             <div className="text-muted text-[11px] font-semibold uppercase tracking-widest mt-0.5">
-              {tagline}
+              {t("site.tagline")}
             </div>
           </div>
         </Link>
 
-        {/* Desktop nav — hidden under lg */}
-        <nav className="hidden lg:flex gap-0.5 ml-3 flex-1">
+        <GameSwitcher activeGameSlug={activeGame?.slug ?? null} />
+
+        <nav className="hidden lg:flex gap-0.5 flex-1">
           {navItems.map((item, i) =>
             item.disabled ? (
               <span
@@ -74,19 +71,20 @@ export async function TopBar() {
           )}
         </nav>
 
-        {/* Search grows to fill available space on mobile */}
         <div className="flex flex-1 min-w-0">
           <SearchBar />
         </div>
 
-        {/* Locale switcher on desktop only — mobile puts it in the drawer */}
         <div className="hidden lg:block">
           <LocaleSwitcher />
         </div>
 
-        {/* Mobile menu trigger */}
         <div className="lg:hidden">
-          <MobileNavDrawer navItems={navItems} />
+          <MobileNavDrawer
+            navItems={navItems}
+            activeGameSlug={activeGame?.slug ?? null}
+            drawerLabels={drawerLabels}
+          />
         </div>
       </div>
     </div>
