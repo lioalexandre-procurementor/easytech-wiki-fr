@@ -57,25 +57,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
         <span>{t("nav.wc4")}</span>
       </div>
 
-      <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
-        <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
-          <SidebarSection title={t("nav.wc4")}>
-            <SidebarLink href="/world-conqueror-4" active>🏠 {t("nav.wc4Home")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/guides">📘 {t("nav.beginnerGuide")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/unites-elite">🏅 {t("nav.eliteUnits")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/empire-du-scorpion">🦂 {t("nav.scorpion")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/generaux">👨‍✈️ {t("nav.generals")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/competences">⚡ {t("nav.skills")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/technologies">🔬 {t("nav.techs")}</SidebarLink>
-            <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🗺 {t("nav.scenarios")}</SidebarLink>
-            <SidebarLink href="#" disabled soonLabel={t("ui.soonLabel")} soonTooltip={t("ui.soonTooltip")}>🌍 {t("nav.conquests")}</SidebarLink>
-          </SidebarSection>
-          <SidebarSection title={t("nav.tools")}>
-            <SidebarLink href="/leaderboards">🏆 {t("nav.leaderboards")}</SidebarLink>
-            <SidebarLink href="/world-conqueror-4/comparateur/generaux">⚖️ {t("nav.comparator")}</SidebarLink>
-          </SidebarSection>
-        </aside>
-
+      <div className="max-w-[1320px] mx-auto px-6 pb-20">
         <main>
           <section className="bg-panel border border-border rounded-lg p-9 mb-6 relative overflow-hidden"
             style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230" }}>
@@ -181,50 +163,5 @@ function Stat({ n, l }: { n: number | string; l: string }) {
       <div className="text-2xl text-gold2 font-extrabold">{n}</div>
       <div className="text-[11px] text-muted uppercase tracking-widest">{l}</div>
     </div>
-  );
-}
-function SidebarSection({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="mb-4">
-      <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">{title}</h4>
-      <ul className="list-none">{children}</ul>
-    </div>
-  );
-}
-function SidebarLink({
-  href,
-  children,
-  active,
-  disabled,
-  soonLabel,
-  soonTooltip,
-}: {
-  href: string;
-  children: React.ReactNode;
-  active?: boolean;
-  disabled?: boolean;
-  soonLabel?: string;
-  soonTooltip?: string;
-}) {
-  if (disabled) {
-    return (
-      <li>
-        <span
-          className="block px-2 py-1 rounded text-sm text-dim opacity-40 cursor-not-allowed select-none"
-          title={soonTooltip}
-        >
-          {children}{" "}
-          <span className="text-[10px] uppercase tracking-widest ml-1 text-muted">
-            · {soonLabel ?? "soon"}
-          </span>
-        </span>
-      </li>
-    );
-  }
-  return (
-    <li><Link href={href as any}
-      className={`block px-2 py-1 rounded text-sm no-underline ${active ? "bg-gold/10 text-gold2 font-bold border-l-2 border-gold pl-2.5" : "text-dim hover:bg-gold/10 hover:text-gold2"}`}>
-      {children}
-    </Link></li>
   );
 }
