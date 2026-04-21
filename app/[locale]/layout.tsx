@@ -5,11 +5,13 @@ import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import ConsentBanner from "@/components/ConsentBanner";
+import { JsonLd } from "@/components/JsonLd";
 import "../globals.css";
 
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
 const GSC_TOKEN = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.fr";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -74,6 +76,25 @@ export default async function LocaleLayout({
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
   const messages = await getMessages();
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "EasyTech Wiki",
+    url: SITE_URL,
+    logo: `${SITE_URL}/icon.png`,
+  };
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "EasyTech Wiki",
+    url: SITE_URL,
+    potentialAction: {
+      "@type": "SearchAction",
+      target: `${SITE_URL}/${locale}/search?q={search_term_string}`,
+      "query-input": "required name=search_term_string",
+    },
+  };
 
   return (
     <html lang={locale}>
@@ -150,6 +171,8 @@ export default async function LocaleLayout({
             />
           </>
         )}
+        <JsonLd data={organizationSchema} />
+        <JsonLd data={websiteSchema} />
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>

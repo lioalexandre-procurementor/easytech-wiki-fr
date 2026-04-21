@@ -140,6 +140,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { pair: { fr: "/world-conqueror-4/competences", en: "/world-conqueror-4/skills", de: "/world-conqueror-4/skills" }, priority: 0.8, changeFrequency: "weekly" },
     { pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire", de: "/world-conqueror-4/scorpion-empire" }, priority: 0.6, changeFrequency: "monthly" },
     { pair: { fr: "/world-conqueror-4/mises-a-jour", en: "/world-conqueror-4/updates", de: "/world-conqueror-4/updates" }, priority: 0.8, changeFrequency: "weekly" },
+    { pair: { fr: "/world-conqueror-4/tier-list", en: "/world-conqueror-4/tier-list", de: "/world-conqueror-4/tier-list" }, priority: 0.8, changeFrequency: "monthly" },
     { pair: { fr: "/legal/votes", en: "/legal/votes", de: "/legal/votes" }, priority: 0.3, changeFrequency: "yearly" },
     { pair: { fr: "/legal/mentions-legales", en: "/legal/legal-notice", de: "/legal/legal-notice" }, priority: 0.3, changeFrequency: "yearly" },
     { pair: { fr: "/legal/confidentialite", en: "/legal/privacy", de: "/legal/privacy" }, priority: 0.3, changeFrequency: "yearly" },
