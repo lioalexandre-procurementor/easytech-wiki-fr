@@ -11,7 +11,31 @@ import {
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
-import type { ComparableRow, GeneralData, GeneralAttributes } from "@/lib/types";
+import type {
+  ComparableRow,
+  GeneralData,
+  GeneralAttributes,
+  GeneralSkill,
+  SkillRating,
+} from "@/lib/types";
+
+/**
+ * Lightweight per-general metadata shipped to the comparator client so it can
+ * render a portrait header and a quick skills comparison alongside the stat
+ * table. Kept separate from `ComparableRow` so the existing `lib/types` shape
+ * stays stable.
+ */
+export type CompareMeta = {
+  headImage: string | null;
+  skills: Array<{
+    slot: number;
+    name: string;       // EN canonical
+    nameFr: string;     // FR native
+    rating: SkillRating | null;
+    replaceable: boolean;
+    icon: string | null;
+  }>;
+};
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -110,6 +134,29 @@ function generalToRow(g: GeneralData, mode: CompareMode): ComparableRow | null {
   };
 }
 
+function skillsToMeta(skills: GeneralSkill[] | null | undefined): CompareMeta["skills"] {
+  if (!skills) return [];
+  return skills.map((s) => ({
+    slot: s.slot,
+    name: s.nameEn || s.name,
+    nameFr: s.name,
+    rating: (s.rating ?? null) as SkillRating | null,
+    replaceable: !!s.replaceable,
+    icon: s.icon ?? null,
+  }));
+}
+
+function generalToMeta(g: GeneralData, mode: CompareMode): CompareMeta {
+  const isTrained = mode === "trained";
+  const headImage = isTrained
+    ? g.image?.headTrained ?? g.image?.head ?? null
+    : g.image?.head ?? null;
+  const skills = isTrained && g.trainedSkills?.length
+    ? skillsToMeta(g.trainedSkills)
+    : skillsToMeta(g.skills);
+  return { headImage, skills };
+}
+
 export default async function GeneralComparatorPage({
   params: { locale },
   searchParams,
@@ -125,15 +172,24 @@ export default async function GeneralComparatorPage({
   // Pre-compute all three row sets server-side so the client can switch
   // modes without an extra round-trip. Ids that have no trained-mode
   // variant are filtered out up front.
-  const unlockRows = generals
-    .map((g) => generalToRow(g, "unlock"))
-    .filter((r): r is ComparableRow => r !== null);
-  const maxedRows = generals
-    .map((g) => generalToRow(g, "maxed"))
-    .filter((r): r is ComparableRow => r !== null);
-  const trainedRows = generals
-    .map((g) => generalToRow(g, "trained"))
-    .filter((r): r is ComparableRow => r !== null);
+  const buildRowsAndMeta = (mode: CompareMode) => {
+    const rows: ComparableRow[] = [];
+    const meta: Record<string, CompareMeta> = {};
+    for (const g of generals) {
+      const row = generalToRow(g, mode);
+      if (!row) continue;
+      rows.push(row);
+      meta[g.slug] = generalToMeta(g, mode);
+    }
+    return { rows, meta };
+  };
+
+  const unlock = buildRowsAndMeta("unlock");
+  const maxed = buildRowsAndMeta("maxed");
+  const trained = buildRowsAndMeta("trained");
+  const unlockRows = unlock.rows;
+  const maxedRows = maxed.rows;
+  const trainedRows = trained.rows;
 
   const trainedEligible = new Set(trainedRows.map((r) => r.id));
 
@@ -222,6 +278,12 @@ export default async function GeneralComparatorPage({
             maxed: maxedRows,
             trained: trainedRows,
           }}
+          metaByMode={{
+            unlock: unlock.meta,
+            maxed: maxed.meta,
+            trained: trained.meta,
+          }}
+          locale={locale}
           trainedEligibleIds={Array.from(trainedEligible)}
           initialIds={picks}
           initialMode={initialMode}
@@ -229,6 +291,9 @@ export default async function GeneralComparatorPage({
           radarLabels={radarLabels}
           statsHeading={t("comparatorPage.statsHeading")}
           radarHeading={t("comparatorPage.radarHeading")}
+          skillsHeading={t("comparatorPage.skillsHeading")}
+          slotLabel={t("comparatorPage.slotLabel")}
+          noSkillLabel={t("comparatorPage.noSkill")}
           modeLabels={L}
           modeHints={H}
         />

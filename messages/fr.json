@@ -444,7 +444,10 @@
       "marching": "Marche"
     },
     "pickUnit": "Choisir une unité",
-    "pickGeneral": "Choisir un général"
+    "pickGeneral": "Choisir un général",
+    "skillsHeading": "Comparaison des compétences",
+    "slotLabel": "Emplacement",
+    "noSkill": "— emplacement vide —"
   },
   "votesLegalPage": {
     "seoTitle": "Politique de vote communautaire",

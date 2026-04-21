@@ -444,7 +444,10 @@
       "marching": "Marsch"
     },
     "pickUnit": "Einheit wählen",
-    "pickGeneral": "General wählen"
+    "pickGeneral": "General wählen",
+    "skillsHeading": "Fähigkeiten-Vergleich",
+    "slotLabel": "Slot",
+    "noSkill": "— leerer Slot —"
   },
   "votesLegalPage": {
     "seoTitle": "Community-Abstimmungsrichtlinie",

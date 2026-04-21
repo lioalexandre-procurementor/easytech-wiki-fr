@@ -444,7 +444,10 @@
       "marching": "March"
     },
     "pickUnit": "Pick a unit",
-    "pickGeneral": "Pick a general"
+    "pickGeneral": "Pick a general",
+    "skillsHeading": "Skills comparison",
+    "slotLabel": "Slot",
+    "noSkill": "— empty slot —"
   },
   "votesLegalPage": {
     "seoTitle": "Community Voting Policy",
