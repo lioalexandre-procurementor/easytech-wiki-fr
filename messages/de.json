@@ -2,7 +2,8 @@
   "site": {
     "title": "EasyTech Wiki — World Conqueror, European War & mehr",
     "description": "Das Referenz-Wiki für die Strategiespiele von EasyTech: World Conqueror 4, European War 6/7, Great Conqueror Rome. Detaillierte Statistiken zu Elite-Einheiten, Generälen, Technologien und Guides.",
-    "shortTitle": "EasyTech Wiki"
+    "shortTitle": "EasyTech Wiki",
+    "tagline": "Das DE Referenzwiki"
   },
   "nav": {
     "home": "Startseite",
@@ -38,7 +39,14 @@
     "barbarian": "Barbaren",
     "ew6": "European War 6",
     "ew6Home": "EW6 Startseite",
-    "backToHubEw6": "← Zurück zum EW6-Hub"
+    "backToHubEw6": "← Zurück zum EW6-Hub",
+    "drawer": {
+      "open": "Menü öffnen",
+      "close": "Menü schließen",
+      "nav": "Navigationsmenü",
+      "menu": "Menü",
+      "language": "Sprache"
+    }
   },
   "footer": {
     "about": "Über uns",
@@ -608,5 +616,32 @@
     "underConstructionNote": "Daten aus den Spieldateien von European War 6: 1914 extrahiert. Redaktionelle Inhalte werden noch ergänzt.",
     "exploreByCategory": "Einheiten nach Kategorie erkunden",
     "unitsCountSuffix": "Einheiten"
+  },
+  "home": {
+    "h1": "Das deutsche Wiki für EasyTech-Spiele",
+    "lede": "Strategien, Elite-Einheiten, Generäle und Guides zu World Conqueror 4, Great Conqueror Rome, European War 6 und allen Spielen des EasyTech-Studios — vollständig auf Deutsch.",
+    "cta": "🏅 World Conqueror 4 entdecken",
+    "otherGames": "Andere verfügbare Spiele",
+    "gamesHeading": "Abgedeckte Spiele",
+    "available": "● Verfügbar",
+    "soon": "○ Bald",
+    "explore": "Entdecken →",
+    "statsEliteUnits": "Elite-Einheiten",
+    "statsGenerals": "Generäle",
+    "statsVotes": "Community-Stimmen",
+    "statsTechs": "Technologien",
+    "guidesHeading": "Neueste WC4-Guides",
+    "guidesViewAll": "Alle Guides →",
+    "updatesHeading": "Neueste WC4-Updates",
+    "updatesViewAll": "Alle Updates →",
+    "podiumHeading": "🗳 Beliebteste Generäle — WC4",
+    "podiumVoteCta": "Jetzt abstimmen →",
+    "faqHeading": "Häufig gestellte Fragen",
+    "faq": [
+      { "q": "Was ist World Conqueror 4?", "a": "World Conqueror 4 ist ein rundenbasiertes Strategiespiel von EasyTech, in dem du Armeen durch historische Epochen von WW2 bis zum Kalten Krieg führst." },
+      { "q": "Was ist der Unterschied zwischen WC4, GCR und EW6?", "a": "World Conqueror 4 behandelt WW2 und den Kalten Krieg, Great Conqueror: Rome das antike Rom, und European War 6: 1914 die napoleonische Ära bis zum Ersten Weltkrieg." },
+      { "q": "Ist dieses Wiki offiziell?", "a": "Nein. EasyTech Wiki ist ein unabhängiges Community-Wiki, das nicht mit EasyTech Studio verbunden oder von diesem unterstützt wird." },
+      { "q": "Auf welchen Plattformen ist WC4 verfügbar?", "a": "World Conqueror 4 ist kostenlos auf iOS und Android erhältlich, mit optionalen In-App-Käufen." }
+    ]
   }
 }

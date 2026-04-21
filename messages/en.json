@@ -2,7 +2,8 @@
   "site": {
     "title": "EasyTech Wiki — World Conqueror, European War & more",
     "description": "The reference wiki for EasyTech strategy games: World Conqueror 4, European War 6/7, Great Conqueror Rome. Detailed elite unit stats, generals, technologies and guides.",
-    "shortTitle": "EasyTech Wiki"
+    "shortTitle": "EasyTech Wiki",
+    "tagline": "The EN reference"
   },
   "nav": {
     "home": "Home",
@@ -38,7 +39,14 @@
     "barbarian": "Barbarians",
     "ew6": "European War 6",
     "ew6Home": "EW6 Home",
-    "backToHubEw6": "← Back to EW6 hub"
+    "backToHubEw6": "← Back to EW6 hub",
+    "drawer": {
+      "open": "Open menu",
+      "close": "Close menu",
+      "nav": "Navigation menu",
+      "menu": "Menu",
+      "language": "Language"
+    }
   },
   "footer": {
     "about": "About",
@@ -608,5 +616,32 @@
     "underConstructionNote": "data is extracted from European War 6: 1914 game files. Editorial content is being enriched.",
     "exploreByCategory": "Explore units by category",
     "unitsCountSuffix": "units"
+  },
+  "home": {
+    "h1": "The English Wiki for EasyTech Games",
+    "lede": "Strategies, elite units, generals and guides for World Conqueror 4, Great Conqueror Rome, European War 6 and all EasyTech studio games — entirely in English.",
+    "cta": "🏅 Explore World Conqueror 4",
+    "otherGames": "Other available games",
+    "gamesHeading": "Games covered",
+    "available": "● Available",
+    "soon": "○ Soon",
+    "explore": "Explore →",
+    "statsEliteUnits": "Elite units",
+    "statsGenerals": "Generals",
+    "statsVotes": "Community votes",
+    "statsTechs": "Technologies",
+    "guidesHeading": "Latest WC4 Guides",
+    "guidesViewAll": "All guides →",
+    "updatesHeading": "Latest WC4 Updates",
+    "updatesViewAll": "All updates →",
+    "podiumHeading": "🗳 Favourite generals — WC4",
+    "podiumVoteCta": "Vote now →",
+    "faqHeading": "Frequently Asked Questions",
+    "faq": [
+      { "q": "What is World Conqueror 4?", "a": "World Conqueror 4 is a turn-based strategy game developed by EasyTech. It lets you command armies across different historical eras from WW2 to the Cold War." },
+      { "q": "What is the difference between WC4, GCR and EW6?", "a": "World Conqueror 4 covers WW2 and the Cold War, Great Conqueror: Rome covers ancient Rome, and European War 6: 1914 covers the Napoleonic era through WW1." },
+      { "q": "Is this wiki official?", "a": "No. EasyTech Wiki is an independent community wiki, not affiliated with or endorsed by EasyTech Studio." },
+      { "q": "Which platforms support WC4?", "a": "World Conqueror 4 is available on iOS and Android, free to download with optional in-app purchases." }
+    ]
   }
 }
