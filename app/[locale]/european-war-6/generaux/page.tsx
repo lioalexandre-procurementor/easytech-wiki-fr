@@ -148,10 +148,7 @@ export default async function GCRGeneralsList({
 
         <main>
           <section
-            className="bg-panel border border-border rounded-lg p-6 mb-6"
-            style={{
-              background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(139,58,46,0.10) 100%), #1a2230",
-            }}
+            className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel"
           >
             <h1 className="text-3xl text-gold2 font-extrabold mb-2">
               {tL("Généraux de European War 6: 1914", "European War 6: 1914 Generals", "Generäle von European War 6: 1914")}
@@ -186,7 +183,7 @@ export default async function GCRGeneralsList({
           <section id="standard" className="mb-10">
             <div className="flex items-center gap-3 mb-4">
               <h2 className="text-2xl">🏛 {FACTION.standard?.label ?? "Civilizations"}</h2>
-              <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
+              <span className="bg-gold text-bg text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
                 {standard.length}
               </span>
             </div>

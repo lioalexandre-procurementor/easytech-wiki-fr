@@ -106,11 +106,7 @@ export default async function GCRHub({ params }: { params: { locale: string } })
 
         <main>
           <section
-            className="bg-panel border border-border rounded-lg p-9 mb-6 relative overflow-hidden"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(139,58,46,0.10) 100%), #1a2230",
-            }}
+            className="hero-surface border border-border rounded-lg p-9 mb-6 relative overflow-hidden shadow-panel"
           >
             <h1 className="text-4xl text-gold2 font-extrabold mb-2">
               {t("gcrHub.h1")}
@@ -119,7 +115,7 @@ export default async function GCRHub({ params }: { params: { locale: string } })
             <div className="flex flex-wrap gap-2.5">
               <Link
                 href="/great-conqueror-rome/generaux"
-                className="inline-block bg-gold text-[#0f1419] px-5 py-2.5 rounded-md font-bold text-sm no-underline"
+                className="inline-block bg-gold text-bg px-5 py-2.5 rounded-md font-bold text-sm no-underline"
               >
                 {t("gcrHub.ctaExplore")}
               </Link>

@@ -137,11 +137,7 @@ export default async function GeneralsList({
 
         <main>
           <section
-            className="bg-panel border border-border rounded-lg p-6 mb-6"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230",
-            }}
+            className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel"
           >
             <h1 className="text-3xl text-gold2 font-extrabold mb-2">
               {tL("Généraux de World Conqueror 4", "World Conqueror 4 Generals", "Generäle von World Conqueror 4")}

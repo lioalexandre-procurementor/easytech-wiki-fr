@@ -69,8 +69,7 @@ export default async function TierListPage({ params }: { params: { locale: strin
       <BreadcrumbNav items={breadcrumbs} locale={params.locale} />
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
         <main>
-          <section className="bg-panel border border-border rounded-lg p-9 mb-6"
-            style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230" }}>
+          <section className="hero-surface border border-border rounded-lg p-9 mb-6 shadow-panel">
             <h1 className="text-4xl text-gold2 font-extrabold mb-2">
               {titleByLocale[params.locale] ?? titleByLocale.en}
             </h1>

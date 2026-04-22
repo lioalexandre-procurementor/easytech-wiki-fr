@@ -78,15 +78,12 @@ export default async function Home({ params }: { params: { locale: string } }) {
       <JsonLd data={faqSchema} />
       <main className="max-w-[1320px] mx-auto px-6 py-10">
 
-        <section
-          className="bg-panel border border-border rounded-lg p-9 mb-6 relative overflow-hidden"
-          style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230" }}
-        >
+        <section className="hero-surface border border-border rounded-lg p-9 mb-6 relative overflow-hidden shadow-panel">
           <h1 className="text-4xl text-gold2 font-extrabold mb-2">{t("home.h1")}</h1>
           <p className="text-dim text-base max-w-3xl mb-5">{t("home.lede")}</p>
           <Link
             href="/world-conqueror-4"
-            className="inline-block bg-gold text-[#0f1419] px-5 py-2.5 rounded-md font-bold text-sm no-underline mb-4"
+            className="inline-block bg-gold text-bg px-5 py-2.5 rounded-md font-bold text-sm no-underline mb-4"
           >
             {t("home.cta")}
           </Link>
@@ -132,9 +129,9 @@ export default async function Home({ params }: { params: { locale: string } }) {
             { value: voteTotal.toLocaleString(), label: t("home.statsVotes") },
             { value: techCount, label: t("home.statsTechs") },
           ].map(({ value, label }) => (
-            <div key={label} className="bg-panel border border-border rounded-lg p-4 text-center">
-              <div className="text-gold2 font-extrabold text-2xl">{value}</div>
-              <div className="text-muted text-[11px] font-semibold uppercase tracking-widest mt-1">{label}</div>
+            <div key={label} className="bg-panel border border-border rounded-lg p-4 stat-block">
+              <div className="text-gold2 font-extrabold text-2xl leading-none">{value}</div>
+              <div className="text-muted text-[11px] font-semibold uppercase tracking-widest mt-2">{label}</div>
             </div>
           ))}
         </div>

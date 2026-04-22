@@ -72,8 +72,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
         </aside>
 
         <main id="all">
-          <section className="bg-panel border border-border rounded-lg p-6 mb-6"
-            style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230" }}>
+          <section className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel">
             <h1 className="text-3xl text-gold2 font-extrabold mb-2">{t("elitesPage.h1")}</h1>
             <p className="text-dim max-w-3xl">
               <b>{t("elitesPage.introBold", { count: all.length })}</b> {t("elitesPage.intro")}
@@ -99,7 +98,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
               <section key={cat} id={cat} className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
                   <h2 className="text-2xl">{meta.icon} {meta.plural} {t("elitesPage.sectionSuffix")}</h2>
-                  <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">{units.length} {t("elitesPage.unitsCountSuffix")}</span>
+                  <span className="bg-gold text-bg text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">{units.length} {t("elitesPage.unitsCountSuffix")}</span>
                 </div>
                 <div className="grid gap-2.5">
                   {units.map(u => <UnitRow key={u.slug} unit={u} locale={params.locale} game="gcr"/>)}

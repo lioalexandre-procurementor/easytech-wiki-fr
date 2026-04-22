@@ -3,12 +3,13 @@ import { Link } from "@/src/i18n/navigation";
 import { legalConfig } from "@/lib/legal-config";
 import ManageCookiesLink from "./ManageCookiesLink";
 import ReportMistakeLink from "./ReportMistakeLink";
+import Icon from "./Icon";
 
 export async function Footer() {
   const t = await getTranslations();
   const year = new Date().getFullYear();
   return (
-    <footer className="bg-[#0a0e13] border-t border-border py-8 md:py-10 px-6 mt-10 text-center text-muted text-sm">
+    <footer className="bg-bg-deep border-t border-border py-8 md:py-10 px-6 mt-10 text-center text-muted text-sm">
       {/*
         Report-a-mistake CTA — lifted out of the dense link list and turned
         into a distinct accent button so visitors spot it. Anchored above
@@ -17,7 +18,7 @@ export async function Footer() {
       <div className="mb-5 flex justify-center">
         <ReportMistakeLink
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-red-500/50 bg-red-500/10 text-red-200 hover:bg-red-500/20 hover:border-red-500/70 hover:text-red-100 text-xs md:text-sm font-semibold uppercase tracking-widest cursor-pointer shadow-[0_1px_3px_rgba(200,55,45,0.2)] hover:shadow-[0_2px_8px_rgba(200,55,45,0.35)] transition-all"
-          prefixIcon="⚠️"
+          prefixIcon={<Icon name="warning" size={14} />}
         />
       </div>
       <div className="mb-5 flex flex-wrap items-center justify-center gap-2 md:gap-3 text-xs md:text-sm">
@@ -31,7 +32,7 @@ export async function Footer() {
           aria-label="Instagram — @easytech.wiki"
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border hover:border-gold bg-panel hover:bg-gold/5 text-dim hover:text-gold2 font-semibold transition-colors"
         >
-          <span aria-hidden="true">📸</span>
+          <Icon name="instagram" size={16} />
           <span>@easytech.wiki</span>
         </a>
         <a
@@ -41,7 +42,7 @@ export async function Footer() {
           aria-label="Reddit — u/easytechwiki"
           className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border hover:border-gold bg-panel hover:bg-gold/5 text-dim hover:text-gold2 font-semibold transition-colors"
         >
-          <span aria-hidden="true">👽</span>
+          <Icon name="reddit" size={16} />
           <span>u/easytechwiki</span>
         </a>
       </div>

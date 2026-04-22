@@ -5,6 +5,7 @@ import Fuse from "fuse.js";
 import { useLocale, useTranslations } from "next-intl";
 import { useRouter } from "@/src/i18n/navigation";
 import type { Locale } from "@/src/i18n/config";
+import Icon from "./Icon";
 
 type SearchItem = {
   type: "general" | "unit" | "skill" | "update" | "tech" | "guide";
@@ -179,7 +180,7 @@ export default function SearchBar() {
   return (
     <div ref={containerRef} className="relative flex-1 max-w-md">
       <div className="flex items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5">
-        <span>🔍</span>
+        <Icon name="search" size={16} className="text-muted shrink-0" />
         <input
           ref={inputRef}
           type="search"

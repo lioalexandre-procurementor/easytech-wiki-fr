@@ -93,7 +93,7 @@ export function SkillsBrowserClient({
                 <h2 className="text-2xl">
                   {s.icon} {s.label}
                 </h2>
-                <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
+                <span className="bg-gold text-bg text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
                   {skills.length}
                 </span>
               </div>

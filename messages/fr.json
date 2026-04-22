@@ -46,6 +46,10 @@
       "nav": "Menu de navigation",
       "menu": "Menu",
       "language": "Langue"
+    },
+    "theme": {
+      "toLight": "Passer au thème clair",
+      "toDark": "Passer au thème sombre"
     }
   },
   "footer": {
@@ -638,10 +642,22 @@
     "podiumVoteCta": "Voter maintenant →",
     "faqHeading": "Questions fréquentes",
     "faq": [
-      { "q": "Qu'est-ce que World Conqueror 4 ?", "a": "World Conqueror 4 est un jeu de stratégie au tour par tour développé par EasyTech. Il vous permet de commander des armées à travers différentes époques historiques, de la Seconde Guerre mondiale à la Guerre froide." },
-      { "q": "Quelle est la différence entre WC4, GCR et EW6 ?", "a": "World Conqueror 4 couvre la Seconde Guerre mondiale et la Guerre froide, Great Conqueror Rome l'Antiquité romaine, et European War 6 la période napoléonienne et la Première Guerre mondiale." },
-      { "q": "Ce wiki est-il officiel ?", "a": "Non. EasyTech Wiki est un wiki communautaire indépendant, non affilié à EasyTech Studio ni endorsé par celui-ci." },
-      { "q": "Sur quels appareils puis-je jouer à WC4 ?", "a": "World Conqueror 4 est disponible sur iOS et Android, gratuitement avec des achats intégrés optionnels." }
+      {
+        "q": "Qu'est-ce que World Conqueror 4 ?",
+        "a": "World Conqueror 4 est un jeu de stratégie au tour par tour développé par EasyTech. Il vous permet de commander des armées à travers différentes époques historiques, de la Seconde Guerre mondiale à la Guerre froide."
+      },
+      {
+        "q": "Quelle est la différence entre WC4, GCR et EW6 ?",
+        "a": "World Conqueror 4 couvre la Seconde Guerre mondiale et la Guerre froide, Great Conqueror Rome l'Antiquité romaine, et European War 6 la période napoléonienne et la Première Guerre mondiale."
+      },
+      {
+        "q": "Ce wiki est-il officiel ?",
+        "a": "Non. EasyTech Wiki est un wiki communautaire indépendant, non affilié à EasyTech Studio ni endorsé par celui-ci."
+      },
+      {
+        "q": "Sur quels appareils puis-je jouer à WC4 ?",
+        "a": "World Conqueror 4 est disponible sur iOS et Android, gratuitement avec des achats intégrés optionnels."
+      }
     ]
   }
 }

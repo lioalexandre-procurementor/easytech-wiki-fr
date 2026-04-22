@@ -1,36 +1,42 @@
 import type { Config } from "tailwindcss";
 
+const withVar = (name: string) => `rgb(var(${name}) / <alpha-value>)`;
+
 const config: Config = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // Theme swapping is handled by CSS variables — no dark: variants needed.
   theme: {
     extend: {
       colors: {
-        bg: "#0f1419",
-        bg2: "#151c24",
-        bg3: "#1c2530",
-        panel: "#1a2230",
-        border: "#2a3544",
-        gold: "#d4a44a",
-        gold2: "#f2c265",
-        khaki: "#8b7d4a",
-        accent: "#c8372d",
-        ink: "#e8ebf0",
-        dim: "#9aa5b4",
-        muted: "#6b7685",
-        ok: "#4a9d5f",
-        tierS: "#ff4d4d",
-        tierA: "#ff9c40",
-        tierB: "#ffd24d",
-        tierC: "#6bb86b",
+        bg: withVar("--c-bg"),
+        bg2: withVar("--c-bg2"),
+        bg3: withVar("--c-bg3"),
+        "bg-deep": withVar("--c-bg-deep"),
+        panel: withVar("--c-panel"),
+        "panel-2": withVar("--c-panel-2"),
+        border: withVar("--c-border"),
+        gold: withVar("--c-gold"),
+        gold2: withVar("--c-gold2"),
+        khaki: withVar("--c-khaki"),
+        accent: withVar("--c-accent"),
+        ink: withVar("--c-ink"),
+        dim: withVar("--c-dim"),
+        muted: withVar("--c-muted"),
+        ok: withVar("--c-ok"),
+        tierS: withVar("--c-tierS"),
+        tierA: withVar("--c-tierA"),
+        tierB: withVar("--c-tierB"),
+        tierC: withVar("--c-tierC"),
       },
       fontFamily: {
         serif: ["Georgia", "ui-serif", "serif"],
       },
       boxShadow: {
-        panel: "0 6px 20px rgba(0,0,0,0.4)",
+        panel: "var(--shadow-panel)",
+        pop: "var(--shadow-pop)",
       },
     },
   },

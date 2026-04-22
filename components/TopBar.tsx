@@ -4,6 +4,7 @@ import { Link } from "@/src/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import SearchBar from "./SearchBar";
 import MobileNavDrawer from "./MobileNavDrawer";
+import ThemeToggle from "./ThemeToggle";
 import GameSwitcher from "./GameSwitcher";
 import { GAMES } from "@/lib/games";
 import { getNavItemsForGame } from "@/lib/nav-items";
@@ -28,16 +29,13 @@ export async function TopBar() {
   };
 
   return (
-    <div className="bg-gradient-to-b from-[#0a0e13] to-[#121820] border-b border-border sticky top-0 z-50">
+    <div className="topbar-surface border-b border-border sticky top-0 z-50">
       <div className="max-w-[1320px] mx-auto flex items-center gap-3 lg:gap-7 px-4 lg:px-6 py-3 lg:py-3.5">
         <Link
           href="/"
           className="flex items-center gap-2 lg:gap-2.5 font-extrabold text-lg tracking-wide no-underline shrink-0"
         >
-          <div
-            className="w-9 h-9 rounded-md grid place-items-center text-[#0f1419] font-black text-lg font-serif"
-            style={{ background: "linear-gradient(135deg, #d4a44a, #c8372d)" }}
-          >
+          <div className="w-9 h-9 rounded-md grid place-items-center text-bg font-black text-lg font-serif logo-mark">
             W
           </div>
           <div className="hidden sm:block">
@@ -74,6 +72,11 @@ export async function TopBar() {
         <div className="flex flex-1 min-w-0">
           <SearchBar />
         </div>
+
+        <ThemeToggle
+          labelDark={t("nav.theme.toDark")}
+          labelLight={t("nav.theme.toLight")}
+        />
 
         <div className="hidden lg:block">
           <LocaleSwitcher />

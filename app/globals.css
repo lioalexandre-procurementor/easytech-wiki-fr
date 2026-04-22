@@ -2,30 +2,125 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   Design tokens.
+   Channels stored as "R G B" triplets so Tailwind's <alpha-value>
+   modifier (bg-gold/10, text-gold2/50, …) keeps working.
+   ============================================================ */
+:root,
+[data-theme="dark"] {
+  --c-bg:         15 20 25;      /* #0f1419 */
+  --c-bg-deep:    10 14 19;      /* #0a0e13 */
+  --c-bg2:        21 28 36;      /* #151c24 */
+  --c-bg3:        28 37 48;      /* #1c2530 */
+  --c-panel:      26 34 48;      /* #1a2230 */
+  --c-panel-2:    18 24 32;      /* #121820 */
+  --c-border:     42 53 68;      /* #2a3544 */
+
+  --c-ink:        232 235 240;   /* #e8ebf0 */
+  --c-dim:        154 165 180;   /* #9aa5b4 */
+  --c-muted:      107 118 133;   /* #6b7685 */
+
+  --c-gold:       212 164 74;    /* #d4a44a */
+  --c-gold2:      242 194 101;   /* #f2c265 */
+  --c-khaki:      139 125 74;    /* #8b7d4a */
+  --c-accent:     200 55 45;     /* #c8372d */
+
+  --c-ok:         74 157 95;
+
+  --c-tierS:      255 77 77;
+  --c-tierA:      255 156 64;
+  --c-tierB:      255 210 77;
+  --c-tierC:      107 184 107;
+
+  --grad-logo:    linear-gradient(135deg, rgb(var(--c-gold)), rgb(var(--c-accent)));
+  --grad-topbar:  linear-gradient(to bottom, rgb(var(--c-bg-deep)), rgb(var(--c-panel-2)));
+  --grad-hero:    linear-gradient(135deg, rgb(var(--c-gold) / 0.12) 0%, rgb(var(--c-accent) / 0.08) 100%), rgb(var(--c-panel));
+  --shadow-panel: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-pop:   0 10px 30px rgba(0, 0, 0, 0.55);
+}
+
+/* Warm-paper light theme.
+   Deeper gold tones keep WCAG contrast on cream surfaces;
+   crimson darkens too. Tier ladder stays saturated. */
+[data-theme="light"] {
+  --c-bg:         247 243 234;   /* #f7f3ea cream */
+  --c-bg-deep:    235 227 207;   /* #ebe3cf */
+  --c-bg2:        242 236 221;   /* #f2ecdd */
+  --c-bg3:        234 225 201;   /* #eae1c9 */
+  --c-panel:      255 252 245;   /* #fffcf5 */
+  --c-panel-2:    248 241 226;   /* #f8f1e2 */
+  --c-border:     217 205 168;   /* #d9cda8 */
+
+  --c-ink:        26 34 48;      /* #1a2230 */
+  --c-dim:        74 85 102;     /* #4a5566 */
+  --c-muted:      107 118 133;   /* #6b7685 */
+
+  --c-gold:       139 106 31;    /* #8b6a1f deeper for text on cream */
+  --c-gold2:      111 83 26;     /* #6f531a deepest for headings / links */
+  --c-khaki:      139 125 74;    /* unchanged */
+  --c-accent:     168 42 32;     /* #a82a20 darker crimson */
+
+  --c-ok:         47 122 63;
+
+  --grad-topbar:  linear-gradient(to bottom, rgb(var(--c-bg-deep)), rgb(var(--c-panel-2)));
+  --grad-hero:    linear-gradient(135deg, rgb(var(--c-gold) / 0.10) 0%, rgb(var(--c-accent) / 0.06) 100%), rgb(var(--c-panel));
+  --shadow-panel: 0 4px 14px rgba(26, 34, 48, 0.08);
+  --shadow-pop:   0 10px 30px rgba(26, 34, 48, 0.12);
+}
+
 html, body {
-  background: #0f1419;
-  color: #e8ebf0;
+  background: rgb(var(--c-bg));
+  color: rgb(var(--c-ink));
   font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
 }
-a { color: #f2c265; text-decoration: none; }
+
+/* Theme transitions — scoped to major surfaces so we don't pay transition
+   cost on every DOM node. Individual components inherit naturally. */
+html,
+body,
+.topbar-surface,
+.hero-surface,
+footer,
+nav {
+  transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease;
+}
+
+a { color: rgb(var(--c-gold2)); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .ad-slot {
-  background: repeating-linear-gradient(45deg, rgba(212,164,74,0.05) 0, rgba(212,164,74,0.05) 10px, transparent 10px, transparent 20px);
-  border: 1px dashed #8b7d4a;
+  background: repeating-linear-gradient(45deg,
+    rgb(var(--c-gold) / 0.08) 0,
+    rgb(var(--c-gold) / 0.08) 10px,
+    transparent 10px,
+    transparent 20px);
+  border: 1px dashed rgb(var(--c-khaki));
   border-radius: 8px;
   padding: 18px;
   text-align: center;
-  color: #6b7685;
+  color: rgb(var(--c-muted));
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 16px 0;
 }
 
+/* Stat block signature — gold left rule + big number + micro label.
+   Referenced by the homepage stat grid and hub landings. */
+.stat-block {
+  border-left: 4px solid rgb(var(--c-gold));
+  padding-left: 12px;
+}
+
+.topbar-surface { background: var(--grad-topbar); }
+.hero-surface   { background: var(--grad-hero); }
+.logo-mark      { background: var(--grad-logo); }
+
 @keyframes pulse-bg {
   0%, 100% { background: transparent; }
-  50% { background: rgba(212,164,74,0.08); }
+  50%      { background: rgb(var(--c-gold) / 0.08); }
 }
 .pulse-bg { animation: pulse-bg 1.2s ease; }

@@ -46,6 +46,10 @@
       "nav": "Navigationsmenü",
       "menu": "Menü",
       "language": "Sprache"
+    },
+    "theme": {
+      "toLight": "Zum hellen Theme wechseln",
+      "toDark": "Zum dunklen Theme wechseln"
     }
   },
   "footer": {
@@ -638,10 +642,22 @@
     "podiumVoteCta": "Jetzt abstimmen →",
     "faqHeading": "Häufig gestellte Fragen",
     "faq": [
-      { "q": "Was ist World Conqueror 4?", "a": "World Conqueror 4 ist ein rundenbasiertes Strategiespiel von EasyTech, in dem du Armeen durch historische Epochen von WW2 bis zum Kalten Krieg führst." },
-      { "q": "Was ist der Unterschied zwischen WC4, GCR und EW6?", "a": "World Conqueror 4 behandelt WW2 und den Kalten Krieg, Great Conqueror: Rome das antike Rom, und European War 6: 1914 die napoleonische Ära bis zum Ersten Weltkrieg." },
-      { "q": "Ist dieses Wiki offiziell?", "a": "Nein. EasyTech Wiki ist ein unabhängiges Community-Wiki, das nicht mit EasyTech Studio verbunden oder von diesem unterstützt wird." },
-      { "q": "Auf welchen Plattformen ist WC4 verfügbar?", "a": "World Conqueror 4 ist kostenlos auf iOS und Android erhältlich, mit optionalen In-App-Käufen." }
+      {
+        "q": "Was ist World Conqueror 4?",
+        "a": "World Conqueror 4 ist ein rundenbasiertes Strategiespiel von EasyTech, in dem du Armeen durch historische Epochen von WW2 bis zum Kalten Krieg führst."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen WC4, GCR und EW6?",
+        "a": "World Conqueror 4 behandelt WW2 und den Kalten Krieg, Great Conqueror: Rome das antike Rom, und European War 6: 1914 die napoleonische Ära bis zum Ersten Weltkrieg."
+      },
+      {
+        "q": "Ist dieses Wiki offiziell?",
+        "a": "Nein. EasyTech Wiki ist ein unabhängiges Community-Wiki, das nicht mit EasyTech Studio verbunden oder von diesem unterstützt wird."
+      },
+      {
+        "q": "Auf welchen Plattformen ist WC4 verfügbar?",
+        "a": "World Conqueror 4 ist kostenlos auf iOS und Android erhältlich, mit optionalen In-App-Käufen."
+      }
     ]
   }
 }

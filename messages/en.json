@@ -46,6 +46,10 @@
       "nav": "Navigation menu",
       "menu": "Menu",
       "language": "Language"
+    },
+    "theme": {
+      "toLight": "Switch to light theme",
+      "toDark": "Switch to dark theme"
     }
   },
   "footer": {
@@ -638,10 +642,22 @@
     "podiumVoteCta": "Vote now →",
     "faqHeading": "Frequently Asked Questions",
     "faq": [
-      { "q": "What is World Conqueror 4?", "a": "World Conqueror 4 is a turn-based strategy game developed by EasyTech. It lets you command armies across different historical eras from WW2 to the Cold War." },
-      { "q": "What is the difference between WC4, GCR and EW6?", "a": "World Conqueror 4 covers WW2 and the Cold War, Great Conqueror: Rome covers ancient Rome, and European War 6: 1914 covers the Napoleonic era through WW1." },
-      { "q": "Is this wiki official?", "a": "No. EasyTech Wiki is an independent community wiki, not affiliated with or endorsed by EasyTech Studio." },
-      { "q": "Which platforms support WC4?", "a": "World Conqueror 4 is available on iOS and Android, free to download with optional in-app purchases." }
+      {
+        "q": "What is World Conqueror 4?",
+        "a": "World Conqueror 4 is a turn-based strategy game developed by EasyTech. It lets you command armies across different historical eras from WW2 to the Cold War."
+      },
+      {
+        "q": "What is the difference between WC4, GCR and EW6?",
+        "a": "World Conqueror 4 covers WW2 and the Cold War, Great Conqueror: Rome covers ancient Rome, and European War 6: 1914 covers the Napoleonic era through WW1."
+      },
+      {
+        "q": "Is this wiki official?",
+        "a": "No. EasyTech Wiki is an independent community wiki, not affiliated with or endorsed by EasyTech Studio."
+      },
+      {
+        "q": "Which platforms support WC4?",
+        "a": "World Conqueror 4 is available on iOS and Android, free to download with optional in-app purchases."
+      }
     ]
   }
 }

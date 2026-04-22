@@ -59,15 +59,14 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
         <main>
-          <section className="bg-panel border border-border rounded-lg p-9 mb-6 relative overflow-hidden"
-            style={{ background: "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230" }}>
+          <section className="hero-surface border border-border rounded-lg p-9 mb-6 relative overflow-hidden shadow-panel">
             <h1 className="text-4xl text-gold2 font-extrabold mb-2">{t("wc4Hub.h1")}</h1>
             <p className="text-dim text-base max-w-3xl mb-5">
               {t("wc4Hub.tagline")}
             </p>
             <div className="flex flex-wrap gap-2.5">
               <Link href="/world-conqueror-4/unites-elite"
-                className="inline-block bg-gold text-[#0f1419] px-5 py-2.5 rounded-md font-bold text-sm no-underline">
+                className="inline-block bg-gold text-bg px-5 py-2.5 rounded-md font-bold text-sm no-underline">
                 {t("wc4Hub.ctaExplore")}
               </Link>
               <Link href="/world-conqueror-4/guides"
@@ -102,7 +101,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
             <div className="flex flex-wrap gap-2 shrink-0">
               <Link
                 href={"/leaderboards?game=wc4&tab=generals" as any}
-                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-md bg-gold text-[#0f1419] text-xs md:text-sm font-bold no-underline hover:bg-gold2 transition-colors"
+                className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-md bg-gold text-bg text-xs md:text-sm font-bold no-underline hover:bg-gold2 transition-colors"
               >
                 👨‍✈️ {t("wc4Hub.voteBoxGeneral")}
               </Link>

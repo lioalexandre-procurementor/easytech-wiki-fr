@@ -195,7 +195,7 @@ export function GeneralsBrowserClient({
         <section id="standard" className="mb-10">
           <div className="flex items-center gap-3 mb-4">
             <h2 className="text-2xl">🌍 {labels.standardHeading}</h2>
-            <span className="bg-gold text-[#0f1419] text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
+            <span className="bg-gold text-bg text-[11px] font-bold px-2 py-0.5 rounded uppercase tracking-widest">
               {filteredStandard.length}
             </span>
           </div>

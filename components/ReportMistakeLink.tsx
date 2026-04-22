@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import { useLocale } from "next-intl";
 
 type Labels = {
@@ -150,8 +150,8 @@ export default function ReportMistakeLink({
   prefixIcon,
 }: {
   className?: string;
-  /** Optional emoji/icon shown before the label (e.g. "⚠️"). */
-  prefixIcon?: string;
+  /** Optional emoji or icon node rendered before the label. */
+  prefixIcon?: ReactNode;
 }) {
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
@@ -266,7 +266,7 @@ export default function ReportMistakeLink({
         className={className ?? "hover:text-gold2 cursor-pointer"}
       >
         {prefixIcon && (
-          <span aria-hidden="true" className="inline-block mr-1.5">
+          <span aria-hidden="true" className="inline-flex items-center mr-1.5">
             {prefixIcon}
           </span>
         )}

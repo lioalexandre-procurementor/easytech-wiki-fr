@@ -123,11 +123,7 @@ export default async function SkillsBrowser({
 
         <main>
           <section
-            className="bg-panel border border-border rounded-lg p-6 mb-6"
-            style={{
-              background:
-                "linear-gradient(135deg, rgba(212,164,74,0.12) 0%, rgba(200,55,45,0.08) 100%), #1a2230",
-            }}
+            className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel"
           >
             <h1 className="text-3xl text-gold2 font-extrabold mb-2">
               ⚡ {t("skillsPage.h1")}
