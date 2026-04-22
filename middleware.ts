@@ -26,20 +26,13 @@ export default async function middleware(req: NextRequest) {
 
   const intlResponse = intlMiddleware(req);
 
-  // If next-intl wants to redirect (missing locale prefix, etc.) honour it as-is
-  if (intlResponse.headers.has("location")) return intlResponse;
+  // Forward raw pathname to server components so TopBar can detect the active game.
+  // IMPORTANT: use the intlResponse directly — it carries internal rewrites
+  // (e.g. /fr/classements → /fr/leaderboards). Creating a fresh NextResponse.next()
+  // would discard those rewrites and cause 404s on localized paths.
+  intlResponse.headers.set("x-pathname", pathname);
 
-  // Forward raw pathname to server components so TopBar can detect the active game
-  const requestHeaders = new Headers(req.headers);
-  requestHeaders.set("x-pathname", pathname);
-  const response = NextResponse.next({ request: { headers: requestHeaders } });
-
-  // Preserve locale cookie set by next-intl
-  intlResponse.headers.forEach((value, key) => {
-    if (key.toLowerCase() === "set-cookie") response.headers.append("set-cookie", value);
-  });
-
-  return response;
+  return intlResponse;
 }
 
 export const config = {
