@@ -48,7 +48,12 @@ export function getNavItemsForGame(gameSlug: string | null, t: T): NavItem[] {
       ];
     default:
       return [
+        { href: "/world-conqueror-4", label: "World Conqueror 4", primary: true },
+        { href: "/great-conqueror-rome", label: "Great Conqueror: Rome", primary: true },
+        { href: "/european-war-6", label: "European War 6", primary: true },
         { href: "/leaderboards", label: t("nav.leaderboards"), primary: true },
+        { href: "/world-conqueror-4/generaux", label: t("nav.generals"), icon: "👨‍✈️" },
+        { href: "/world-conqueror-4/unites-elite", label: t("nav.eliteUnits"), icon: "🏅" },
         { href: "/world-conqueror-4/guides", label: t("nav.guides"), icon: "📘" },
         { href: "/world-conqueror-4/mises-a-jour", label: t("nav.updates"), icon: "📣" },
       ];
