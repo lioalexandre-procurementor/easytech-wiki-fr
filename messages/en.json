@@ -49,7 +49,9 @@
     },
     "theme": {
       "toLight": "Switch to light theme",
-      "toDark": "Switch to dark theme"
+      "toDark": "Switch to dark theme",
+      "dark": "Dark",
+      "light": "Light"
     }
   },
   "footer": {
@@ -628,7 +630,7 @@
     "otherGames": "Other available games",
     "gamesHeading": "Games covered",
     "available": "● Available",
-    "soon": "○ Soon",
+    "soon": "Soon",
     "explore": "Explore →",
     "statsEliteUnits": "Elite units",
     "statsGenerals": "Generals",
@@ -658,6 +660,7 @@
         "q": "Which platforms support WC4?",
         "a": "World Conqueror 4 is available on iOS and Android, free to download with optional in-app purchases."
       }
-    ]
+    ],
+    "enterCta": "Enter"
   }
 }

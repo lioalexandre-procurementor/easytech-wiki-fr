@@ -6,11 +6,19 @@ import { VotePodium } from "@/components/VotePodium";
 import { GuideCard } from "@/components/GuideCard";
 import { UpdateCard } from "@/components/UpdateCard";
 import { FaqAccordion } from "@/components/FaqAccordion";
+import { GameCardsGrid } from "@/components/GameCardsGrid";
 import { JsonLd } from "@/components/JsonLd";
-import { GAMES } from "@/lib/games";
 import { getAllGuides } from "@/lib/guides";
 import { getAllUpdates } from "@/lib/updates";
 import { getAllEliteUnits, getAllGenerals } from "@/lib/units";
+import {
+  getAllEliteUnits as getAllEliteUnitsGcr,
+  getAllGenerals as getAllGeneralsGcr,
+} from "@/lib/gcr";
+import {
+  getAllEliteUnits as getAllEliteUnitsEw6,
+  getAllGenerals as getAllGeneralsEw6,
+} from "@/lib/ew6";
 import { getAllTechSlugs } from "@/lib/tech";
 import { getRedis, bestGeneralVoteKey } from "@/lib/redis";
 import { locales } from "@/src/i18n/config";
@@ -43,6 +51,11 @@ export default async function Home({ params }: { params: { locale: string } }) {
   const generals = getAllGenerals();
   const techCount = getAllTechSlugs().length;
 
+  const eliteUnitsGcr = getAllEliteUnitsGcr();
+  const generalsGcr = getAllGeneralsGcr();
+  const eliteUnitsEw6 = getAllEliteUnitsEw6();
+  const generalsEw6 = getAllGeneralsEw6();
+
   const redis = getRedis();
   const voteCounts: Record<string, number> = {};
   let voteTotal = 0;
@@ -57,8 +70,40 @@ export default async function Home({ params }: { params: { locale: string } }) {
     }
   }
 
-  const availableGames = GAMES.filter((g) => g.available && g.slug !== "world-conqueror-4");
-  const soonGames = GAMES.filter((g) => !g.available);
+  const gameCardsData = [
+    {
+      key: "wc4",
+      slug: "world-conqueror-4",
+      name: "World Conqueror 4",
+      era: "1939 · 1945",
+      sub: `${eliteUnits.length} ${t("home.statsEliteUnits")} · ${generals.length} ${t("home.statsGenerals")}`,
+      status: "live" as const,
+    },
+    {
+      key: "ew6",
+      slug: "european-war-6",
+      name: "European War 6",
+      era: "1914",
+      sub: `${eliteUnitsEw6.length} ${t("home.statsEliteUnits")} · ${generalsEw6.length} ${t("home.statsGenerals")}`,
+      status: "live" as const,
+    },
+    {
+      key: "gcr",
+      slug: "great-conqueror-rome",
+      name: "Great Conqueror: Rome",
+      era: locale === "de" ? "Antike" : locale === "en" ? "Antiquity" : "Antiquité",
+      sub: `${eliteUnitsGcr.length} ${t("home.statsEliteUnits")} · ${generalsGcr.length} ${t("home.statsGenerals")}`,
+      status: "live" as const,
+    },
+    {
+      key: "ew7",
+      slug: "european-war-7",
+      name: "European War 7",
+      era: locale === "de" ? "Mittelalter" : locale === "en" ? "Medieval" : "Médiéval",
+      sub: locale === "de" ? "Demnächst" : locale === "en" ? "Coming soon" : "Fiche à venir",
+      status: "soon" as const,
+    },
+  ];
 
   type FaqItem = { q: string; a: string };
   const faqItems = t.raw("home.faq") as FaqItem[];
@@ -87,45 +132,18 @@ export default async function Home({ params }: { params: { locale: string } }) {
           >
             {t("home.cta")}
           </Link>
-          {(availableGames.length > 0 || soonGames.length > 0) && (
-            <div className="border-t border-white/7 pt-4">
-              <p className="text-[10px] text-muted font-bold uppercase tracking-widest mb-3">
-                {t("home.otherGames")}
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {availableGames.map((g) => (
-                  <Link
-                    key={g.slug}
-                    href={`/${g.slug}` as any}
-                    className="flex items-center gap-2 bg-white/4 border border-white/8 rounded-md px-3 py-2 no-underline hover:border-gold/30 group"
-                  >
-                    <div className="text-left">
-                      <div className="text-dim text-xs font-semibold group-hover:text-gold2">{g.name}</div>
-                      <div className="text-muted text-[10px]">{g.era}</div>
-                    </div>
-                    <span className="text-muted text-xs ml-1">→</span>
-                  </Link>
-                ))}
-                {soonGames.map((g) => (
-                  <div
-                    key={g.slug}
-                    className="flex items-center gap-2 bg-white/2 border border-white/5 rounded-md px-3 py-2 opacity-40"
-                  >
-                    <div className="text-left">
-                      <div className="text-muted text-xs font-semibold">{g.name}</div>
-                      <div className="text-muted text-[10px]">{t("home.soon")}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
         </section>
+
+        <GameCardsGrid
+          games={gameCardsData}
+          enterLabel={t("home.enterCta")}
+          soonLabel={t("home.soon")}
+        />
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
           {[
-            { value: eliteUnits.length, label: t("home.statsEliteUnits") },
-            { value: generals.length, label: t("home.statsGenerals") },
+            { value: eliteUnits.length + eliteUnitsGcr.length + eliteUnitsEw6.length, label: t("home.statsEliteUnits") },
+            { value: generals.length + generalsGcr.length + generalsEw6.length, label: t("home.statsGenerals") },
             { value: voteTotal.toLocaleString(), label: t("home.statsVotes") },
             { value: techCount, label: t("home.statsTechs") },
           ].map(({ value, label }) => (
@@ -176,30 +194,6 @@ export default async function Home({ params }: { params: { locale: string } }) {
             </div>
           </section>
         )}
-
-        <section className="mb-6">
-          <h2 className="text-xl mb-4">{t("home.gamesHeading")}</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {GAMES.map((g) => (
-              <div key={g.slug} className="bg-panel border border-border rounded-lg p-4">
-                <span
-                  className="text-xs uppercase tracking-widest font-bold"
-                  style={{ color: g.available ? "#4a9d5f" : "#6b7685" }}
-                >
-                  {g.available ? t("home.available") : t("home.soon")}
-                </span>
-                <h3 className="text-gold2 font-bold mb-1 mt-2">{g.name}</h3>
-                <p className="text-dim text-sm mb-3">{g.tagline}</p>
-                <div className="text-muted text-[11px] uppercase tracking-widest">{g.era}</div>
-                {g.available && (
-                  <Link href={`/${g.slug}` as any} className="text-gold2 text-sm font-semibold mt-3 inline-block no-underline hover:underline">
-                    {t("home.explore")}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
 
         <FaqAccordion items={faqItems} heading={t("home.faqHeading")} />
 

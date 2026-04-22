@@ -41,25 +41,24 @@
 }
 
 /* Warm-paper light theme.
-   Deeper gold tones keep WCAG contrast on cream surfaces;
-   crimson darkens too. Tier ladder stays saturated. */
+   Darker dim / muted / gold tones pass WCAG AA on cream surfaces. */
 [data-theme="light"] {
-  --c-bg:         247 243 234;   /* #f7f3ea cream */
-  --c-bg-deep:    235 227 207;   /* #ebe3cf */
-  --c-bg2:        242 236 221;   /* #f2ecdd */
-  --c-bg3:        234 225 201;   /* #eae1c9 */
-  --c-panel:      255 252 245;   /* #fffcf5 */
-  --c-panel-2:    248 241 226;   /* #f8f1e2 */
-  --c-border:     217 205 168;   /* #d9cda8 */
+  --c-bg:         244 239 227;   /* #f4efe3 cream */
+  --c-bg-deep:    236 229 211;   /* #ece5d3 */
+  --c-bg2:        240 234 220;   /* #f0eadc */
+  --c-bg3:        247 243 232;   /* #f7f3e8 field bg */
+  --c-panel:      255 255 255;   /* #ffffff */
+  --c-panel-2:    255 255 255;   /* #ffffff */
+  --c-border:     217 207 181;   /* #d9cfb5 */
 
-  --c-ink:        26 34 48;      /* #1a2230 */
-  --c-dim:        74 85 102;     /* #4a5566 */
-  --c-muted:      107 118 133;   /* #6b7685 */
+  --c-ink:        20 22 26;      /* #14161a */
+  --c-dim:        58 65 80;      /* #3a4150 — AA on cream ~9:1 */
+  --c-muted:      90 100 112;    /* #5a6470 — AA on cream ~6:1 */
 
-  --c-gold:       139 106 31;    /* #8b6a1f deeper for text on cream */
-  --c-gold2:      111 83 26;     /* #6f531a deepest for headings / links */
+  --c-gold:       168 121 42;    /* #a8792a */
+  --c-gold2:      138 93 28;     /* #8a5d1c — AA on cream ~5:1 */
   --c-khaki:      139 125 74;    /* unchanged */
-  --c-accent:     168 42 32;     /* #a82a20 darker crimson */
+  --c-accent:     155 42 32;     /* #9b2a20 */
 
   --c-ok:         47 122 63;
 

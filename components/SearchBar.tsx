@@ -178,7 +178,7 @@ export default function SearchBar() {
   let indexCounter = 0;
 
   return (
-    <div ref={containerRef} className="relative flex-1 max-w-md">
+    <div ref={containerRef} className="relative flex-1 min-w-0 w-full">
       <div className="flex items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5">
         <Icon name="search" size={16} className="text-muted shrink-0" />
         <input
