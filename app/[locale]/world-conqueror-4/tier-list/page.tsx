@@ -1,11 +1,38 @@
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
-import { TierList, type TierEntry } from "@/components/TierList";
+import { TierList, type TierEntry, type CategoryColumn } from "@/components/TierList";
 import { getAllGenerals } from "@/lib/units";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+
+const CATEGORY_COLUMNS: Record<string, CategoryColumn[]> = {
+  fr: [
+    { key: "tank", label: "Blindés", icon: "🎯" },
+    { key: "artillery", label: "Artillerie", icon: "💥" },
+    { key: "infantry", label: "Infanterie", icon: "🪖" },
+    { key: "navy", label: "Marine", icon: "⚓" },
+    { key: "airforce", label: "Aviation", icon: "✈️" },
+    { key: "balanced", label: "Polyvalent", icon: "⚖️" },
+  ],
+  en: [
+    { key: "tank", label: "Armored", icon: "🎯" },
+    { key: "artillery", label: "Artillery", icon: "💥" },
+    { key: "infantry", label: "Infantry", icon: "🪖" },
+    { key: "navy", label: "Navy", icon: "⚓" },
+    { key: "airforce", label: "Air Force", icon: "✈️" },
+    { key: "balanced", label: "Balanced", icon: "⚖️" },
+  ],
+  de: [
+    { key: "tank", label: "Panzer", icon: "🎯" },
+    { key: "artillery", label: "Artillerie", icon: "💥" },
+    { key: "infantry", label: "Infanterie", icon: "🪖" },
+    { key: "navy", label: "Marine", icon: "⚓" },
+    { key: "airforce", label: "Luftwaffe", icon: "✈️" },
+    { key: "balanced", label: "Ausgewogen", icon: "⚖️" },
+  ],
+};
 
 export async function generateMetadata({
   params: { locale },
@@ -42,9 +69,11 @@ export default async function TierListPage({ params }: { params: { locale: strin
     slug: g.slug,
     name: g.name,
     rank: (g.rank as string) ?? "C",
+    category: g.category ?? "balanced",
     country: g.country ?? null,
     portrait: g.image?.head ?? null,
   }));
+  const columns = CATEGORY_COLUMNS[params.locale] ?? CATEGORY_COLUMNS.en;
 
   const titleByLocale: Record<string, string> = {
     fr: "Tier List — Généraux WC4",
@@ -80,6 +109,7 @@ export default async function TierListPage({ params }: { params: { locale: strin
 
           <TierList
             entries={entries}
+            columns={columns}
             hrefFor={(slug) => `/world-conqueror-4/generaux/${slug}`}
           />
         </main>
