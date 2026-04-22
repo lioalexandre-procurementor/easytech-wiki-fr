@@ -53,7 +53,7 @@ export default function KebabMenu({ items, label }: Props) {
           />
           <div
             role="menu"
-            className="absolute top-full right-0 mt-1.5 min-w-[220px] bg-panel border border-border rounded-lg shadow-panel z-[56]"
+            className="absolute top-full right-0 mt-1.5 min-w-[260px] bg-panel border border-border rounded-lg shadow-panel z-[56]"
           >
             {items.map((item, i) => {
               const cls =

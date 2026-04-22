@@ -30,8 +30,8 @@ export async function TopBar() {
 
   return (
     <div className="topbar-surface border-b border-border sticky top-0 z-50">
-      {/* Row 1: logo + nav / title + actions */}
-      <div className="max-w-[1320px] mx-auto flex items-center gap-1 md:gap-2 px-3 md:px-4 lg:px-6 py-2.5">
+      <div className="max-w-[1320px] mx-auto flex items-center gap-1 lg:gap-2 px-3 md:px-4 lg:px-6 py-2.5">
+        {/* Logo */}
         <Link
           href="/"
           className="flex items-center gap-2 font-extrabold tracking-wide no-underline shrink-0"
@@ -51,35 +51,45 @@ export async function TopBar() {
           )}
         </Link>
 
-        {activeGame && (
-          <nav className="flex items-center gap-1 flex-1 overflow-hidden ml-1">
-            {primaryItems.map((item, i) =>
-              item.disabled ? (
-                <span
-                  key={i}
-                  className="px-2.5 py-2 text-dim text-xs font-bold rounded-md opacity-50 cursor-not-allowed whitespace-nowrap"
-                >
-                  {item.label}
-                </span>
-              ) : (
-                <Link
-                  key={i}
-                  href={item.href as any}
-                  className="px-2.5 py-2 text-dim text-xs font-bold rounded-md hover:bg-gold/14 hover:text-gold2 no-underline whitespace-nowrap"
-                >
-                  {item.label}
-                </Link>
-              )
-            )}
+        {/* Inline nav — mobile: first item only; desktop (lg+): all primary items */}
+        {activeGame && primaryItems.length > 0 && (
+          <nav className="flex items-center gap-0.5 lg:gap-1 overflow-hidden ml-1">
+            {primaryItems.map((item, i) => (
+              <Link
+                key={i}
+                href={item.href as any}
+                className={`px-2 lg:px-2.5 py-2 text-dim text-xs font-bold rounded-md hover:bg-gold/14 hover:text-gold2 no-underline whitespace-nowrap ${
+                  i > 0 ? "hidden lg:inline-flex" : "inline-flex"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
           </nav>
         )}
 
-        {!activeGame && <div className="flex-1" />}
+        <div className="flex-1" />
 
+        {/* Kebab — desktop only */}
         {activeGame && secondaryItems.length > 0 && (
-          <KebabMenu items={secondaryItems} label={t("nav.drawer.menu")} />
+          <div className="hidden lg:block">
+            <KebabMenu items={secondaryItems} label={t("nav.drawer.menu")} />
+          </div>
         )}
 
+        {/* Search — desktop only (inline); mobile gets it in row 2 below */}
+        {activeGame && (
+          <div className="hidden lg:flex flex-1 min-w-0 max-w-sm">
+            <SearchBar />
+          </div>
+        )}
+        {!activeGame && (
+          <div className="hidden lg:flex flex-1 min-w-0 max-w-md">
+            <SearchBar />
+          </div>
+        )}
+
+        {/* Hamburger — always visible */}
         <MobileNavDrawer
           navItems={navItems}
           activeGameSlug={activeGame?.slug ?? null}
@@ -87,8 +97,8 @@ export async function TopBar() {
         />
       </div>
 
-      {/* Row 2: full-width search */}
-      <div className="max-w-[1320px] mx-auto px-3 md:px-4 lg:px-6 pb-2.5">
+      {/* Row 2: search on mobile/tablet only */}
+      <div className="lg:hidden max-w-[1320px] mx-auto px-3 md:px-4 pb-2.5">
         <SearchBar />
       </div>
     </div>
