@@ -1,0 +1,83 @@
+{
+  "slug": "lightning-division",
+  "order": 6,
+  "name": "Division Lightning",
+  "nameEn": "Lightning Division",
+  "nameDe": "Lightning-Division",
+  "country": "IT",
+  "countryName": "Italie",
+  "countryNameEn": "Italy",
+  "countryNameDe": "Italien",
+  "historicalUnit": "Division Folgore",
+  "historicalUnitEn": "Folgore Division",
+  "historicalUnitDe": "Division Folgore",
+  "lore": {
+    "short": "Unité d'élite italienne renommée pour sa ténacité défensive et ses manœuvres éclairs, inspirée de la division parachutiste Folgore.",
+    "shortEn": "Italian elite unit renowned for its defensive tenacity and lightning maneuvers, inspired by the Folgore paratrooper division.",
+    "shortDe": "Italienische Elite-Einheit, bekannt für ihre defensive Zähigkeit und Blitzmanöver, inspiriert von der Fallschirmjäger-Division Folgore.",
+    "long": [
+      "La Division Folgore combattit avec distinction à El Alamein en 1942, où elle tint ses positions face à des forces britanniques largement supérieures.",
+      "Surnommée « Lightning » pour la vitesse de ses contre-attaques et sa résistance défensive exceptionnelle, elle allie mobilité rapide et ténacité en retranchement.",
+      "Dans le jeu, Lightning Division représente la doctrine italienne combinée : une défense inébranlable couplée à des mouvements anti-char rapides."
+    ],
+    "longEn": [
+      "The Folgore Division fought with distinction at El Alamein in 1942, where it held its positions against overwhelmingly superior British forces.",
+      "Nicknamed 'Lightning' for the speed of its counterattacks and exceptional defensive resilience, it combines rapid mobility with entrenchment tenacity.",
+      "In the game, Lightning Division represents the Italian combined doctrine: unshakeable defense paired with swift anti-tank maneuvers."
+    ],
+    "longDe": [
+      "Die Division Folgore zeichnete sich 1942 bei El Alamein aus, wo sie ihre Stellungen gegen weit überlegene britische Kräfte hielt.",
+      "Wegen der Geschwindigkeit ihrer Gegenangriffe und ihrer außergewöhnlichen Defensivfähigkeit 'Lightning' genannt, verbindet sie schnelle Mobilität mit Verschanzungsbeharrlichkeit.",
+      "Im Spiel verkörpert Lightning Division die kombinierte italienische Doktrin: unerschütterliche Verteidigung gepaart mit schnellen Panzerabwehrmanövern."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+  ],
+  "preliminaryUnits": true,
+  "generalBuff": {
+    "text": "Toutes les unités « Division Lightning » qui ne se déplacent pas ce tour-ci gagnent le statut « Retranchement » à la fin du tour. (Retranchement : Défense +30 %, retiré automatiquement après un déplacement.)",
+    "textEn": "All Lightning Division units that did not move this turn gain the Entrenchment status at the end of the turn. (Entrenchment: Defense +30%, automatically removed after moving.)",
+    "textDe": "Alle Lightning-Division-Einheiten, die sich in dieser Runde nicht bewegt haben, erhalten am Ende der Runde den Status 'Verschanzung'. (Verschanzung: Verteidigung +30 %, wird nach einer Bewegung automatisch entfernt.)",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Foudre céleste",
+      "nameEn": "Sky Lightning",
+      "nameDe": "Himmelsblitz",
+      "desc": "Si un ennemi dans un rayon de 3 cases de la « Division Lightning » est attaqué par une force aérienne, la « Division Lightning » gagne +20 en attaque pour ce tour.",
+      "descEn": "If an enemy within 3 tiles of the Lightning Division is attacked by an air force, the Lightning Division gains +20 Attack for this turn.",
+      "descDe": "Wenn ein Feind in 3 Feldern Umkreis der Lightning-Division von Luftstreitkräften angegriffen wird, erhält die Lightning-Division für diese Runde +20 Angriff.",
+      "appliesTo": ["all"]
+    },
+    {
+      "name": "Manœuvre légère",
+      "nameEn": "Light Maneuver",
+      "nameDe": "Leichtes Manöver",
+      "desc": "Si une unité d'infanterie « Division Lightning » ne se déplace pas ce tour-ci, alors à la fin du tour, toutes les unités « Division Lightning » dans un rayon de 2 cases gagnent +6 en mobilité au tour suivant.",
+      "descEn": "If a Lightning Division infantry unit does not move during this turn, at the end of the turn, all Lightning Division units within 2 tiles gain +6 mobility for the next turn.",
+      "descDe": "Wenn sich eine Lightning-Infanterieeinheit in dieser Runde nicht bewegt, erhalten am Ende der Runde alle Lightning-Einheiten in 2 Feldern Umkreis +6 Mobilität für die nächste Runde.",
+      "appliesTo": ["infantry"]
+    },
+    {
+      "name": "Tactiques anti-char",
+      "nameEn": "Anti-Tank Tactics",
+      "nameDe": "Panzerabwehrtaktik",
+      "desc": "Lorsqu'une unité d'infanterie « Division Lightning » se trouve à moins de 2 cases d'une unité d'artillerie « Division Lightning », les dégâts infligés par l'artillerie aux unités blindées sont augmentés de 30 %.",
+      "descEn": "When a Lightning Division infantry unit is within 2 tiles of a Lightning Division artillery unit, the artillery unit's damage dealt to armored units +30%.",
+      "descDe": "Wenn sich eine Lightning-Infanterieeinheit in 2 Feldern Umkreis einer Lightning-Artillerieeinheit befindet, erhöht sich der Schaden der Artillerie gegen Panzereinheiten um 30 %.",
+      "appliesTo": ["artillery"]
+    }
+  ],
+  "lockedToCountry": true
+}

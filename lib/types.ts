@@ -597,3 +597,60 @@ export function isGame(x: unknown): x is Game {
 export function parseGame(x: unknown): Game | null {
   return isGame(x) ? x : null;
 }
+
+/** Unit-type scope for which a formation buff/effect applies. */
+export type AppliesTo = "all" | "infantry" | "tank" | "artillery" | "navy" | "airforce";
+
+/** One unit included in a formation. Base units reference a generic Category; elite units reference an existing elite-unit slug. */
+export type FormationUnit =
+  | { kind: "base"; name: string; nameEn: string; nameDe: string; category: Category }
+  | { kind: "elite"; slug: string };
+
+/** One tactical effect on a formation (e.g. "Joint Offensive"). */
+export interface FormationEffect {
+  name: string;
+  nameEn: string;
+  nameDe: string;
+  desc: string;
+  descEn: string;
+  descDe: string;
+  appliesTo: AppliesTo[];
+}
+
+/** A WC4 Legend Formation (Army Group / Legend Army in game data). */
+export interface Formation {
+  slug: string;
+  order: number;
+  name: string;
+  nameEn: string;
+  nameDe: string;
+  country: string;
+  countryName: string;
+  countryNameEn: string;
+  countryNameDe: string;
+  operationName?: string;
+  operationNameEn?: string;
+  operationNameDe?: string;
+  historicalUnit: string;
+  historicalUnitEn: string;
+  historicalUnitDe: string;
+  lore: {
+    short: string;
+    shortEn: string;
+    shortDe: string;
+    long: string[];
+    longEn: string[];
+    longDe: string[];
+  };
+  units: FormationUnit[];
+  generalBuff: {
+    text: string;
+    textEn: string;
+    textDe: string;
+    appliesTo: AppliesTo[];
+  };
+  tacticalEffects: FormationEffect[];
+  lockedToCountry: true;
+  /** Marks entries whose unit list hasn't been cross-verified against in-game Army Group screens yet. */
+  preliminaryUnits?: boolean;
+}

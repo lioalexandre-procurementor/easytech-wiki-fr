@@ -51,8 +51,11 @@ export async function TopBar() {
           )}
         </Link>
 
-        {/* Inline nav — mobile: first item only; desktop (lg+): all primary items */}
-        {activeGame && primaryItems.length > 0 && (
+        {/* Inline nav — mobile: first item only; desktop (lg+): all primary items.
+            Render whenever there are primary items to show — even when the URL
+            has no game context (e.g. /leaderboards), the default nav still
+            surfaces game hubs + key destinations. */}
+        {primaryItems.length > 0 && (
           <nav className="flex items-center gap-0.5 lg:gap-1 overflow-hidden ml-1">
             {primaryItems.map((item, i) => (
               <Link
@@ -71,7 +74,7 @@ export async function TopBar() {
         <div className="flex-1" />
 
         {/* Kebab — desktop only */}
-        {activeGame && secondaryItems.length > 0 && (
+        {secondaryItems.length > 0 && (
           <div className="hidden lg:block">
             <KebabMenu items={secondaryItems} label={t("nav.drawer.menu")} />
           </div>

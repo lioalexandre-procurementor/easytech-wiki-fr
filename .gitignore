@@ -8,3 +8,5 @@ out/
 tsconfig.tsbuildinfo
 .next-broken-*
 scripts/__pycache__/
+.claude/
+.superpowers/

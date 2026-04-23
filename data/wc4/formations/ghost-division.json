@@ -1,0 +1,83 @@
+{
+  "slug": "ghost-division",
+  "order": 1,
+  "name": "Division Fantôme",
+  "nameEn": "Ghost Division",
+  "nameDe": "Gespensterdivision",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "countryNameEn": "Germany",
+  "countryNameDe": "Deutschland",
+  "historicalUnit": "7e Panzerdivision",
+  "historicalUnitEn": "7th Panzer Division",
+  "historicalUnitDe": "7. Panzer-Division",
+  "lore": {
+    "short": "Formation blindée commandée par Rommel, célèbre pour sa vitesse fulgurante lors de la campagne de France et de l'invasion de l'Union soviétique.",
+    "shortEn": "Armored formation commanded by Rommel, famous for its lightning-fast advance in the France campaign and the invasion of the Soviet Union.",
+    "shortDe": "Panzerverband unter Rommels Kommando, berühmt für seinen blitzschnellen Vormarsch im Frankreichfeldzug und beim Überfall auf die Sowjetunion.",
+    "long": [
+      "La 7e Panzerdivision, surnommée « Division Fantôme » en raison de la vitesse à laquelle elle apparaissait et disparaissait sur les champs de bataille, a été commandée par Erwin Rommel lors de la campagne de France de 1940. Sa progression éclair la rendit célèbre dans toute l'Europe.",
+      "Lors de l'opération Barbarossa, la division participa à la Bataille d'Alytus, où elle repoussa plus de 200 chars soviétiques de la 5e division blindée et ouvrit la voie vers Vilnius, puis Moscou.",
+      "Le 2 octobre 1941, lors de la phase finale de Barbarossa, la Division Fantôme perça les défenses occidentales soviétiques et contribua à l'encerclement de Viazma aux côtés de la 10e Panzerdivision."
+    ],
+    "longEn": [
+      "The 7th Panzer Division, nicknamed the 'Ghost Division' because of how fast it appeared and vanished on the battlefield, was commanded by Erwin Rommel in the 1940 France campaign. Its lightning advance made it legendary across Europe.",
+      "During Operation Barbarossa, the division fought the Battle of Alytus, where it repelled more than 200 Soviet tanks of the 5th Armored Division and opened the path to Vilnius, then Moscow.",
+      "On October 2, 1941, during the final phase of Barbarossa, the Ghost Division broke through Soviet western defenses and contributed to the encirclement at Vyazma alongside the 10th Panzer Division."
+    ],
+    "longDe": [
+      "Die 7. Panzer-Division, wegen ihrer rasanten Erscheinungs- und Verschwindens-Geschwindigkeit auf dem Schlachtfeld als 'Gespensterdivision' bekannt, stand 1940 unter dem Kommando von Erwin Rommel im Frankreichfeldzug. Ihr blitzschneller Vormarsch machte sie in ganz Europa berühmt.",
+      "Während des Unternehmens Barbarossa bestritt die Division die Schlacht von Alytus, bei der sie über 200 sowjetische Panzer der 5. Panzerdivision zurückwarf und den Weg nach Vilnius und weiter nach Moskau öffnete.",
+      "Am 2. Oktober 1941, in der Endphase von Barbarossa, durchbrach die Gespensterdivision die sowjetischen Westverteidigungen und trug zusammen mit der 10. Panzer-Division zum Kessel von Wjasma bei."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+  ],
+  "preliminaryUnits": true,
+  "generalBuff": {
+    "text": "Toutes les unités de la Division Fantôme gagnent +3 en mobilité.",
+    "textEn": "All Ghost Division units receive +3 mobility.",
+    "textDe": "Alle Einheiten der Gespensterdivision erhalten +3 Mobilität.",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Offensive conjointe",
+      "nameEn": "Joint Offensive",
+      "nameDe": "Gemeinsame Offensive",
+      "desc": "Pour chaque unité alliée « Division Fantôme » dans un rayon de 2 hexagones, les unités blindées infligent 2 % de dégâts supplémentaires lors d'une attaque.",
+      "descEn": "For each friendly Ghost Division unit within 2 hexes, tank units deal an additional 2% damage when attacking.",
+      "descDe": "Für jede befreundete Gespensterdivision-Einheit innerhalb von 2 Feldern verursachen Panzereinheiten +2 % Schaden beim Angriff.",
+      "appliesTo": ["tank"]
+    },
+    {
+      "name": "Poursuite de l'ennemi en fuite",
+      "nameEn": "Pursue the Fleeing Enemy",
+      "nameDe": "Verfolgung des fliehenden Feindes",
+      "desc": "Si une unité alliée « Division Fantôme » adjacente a éliminé un ennemi ce tour-ci, les unités d'infanterie peuvent se déplacer à nouveau (une fois par tour).",
+      "descEn": "If an adjacent friendly Ghost Division unit has eliminated an enemy this turn, infantry units can move again (once per turn).",
+      "descDe": "Wenn eine benachbarte befreundete Gespensterdivision-Einheit diese Runde einen Gegner ausgeschaltet hat, können Infanterieeinheiten erneut ziehen (einmal pro Runde).",
+      "appliesTo": ["infantry"]
+    },
+    {
+      "name": "Observation frontalière",
+      "nameEn": "Frontier Observations",
+      "nameDe": "Grenzbeobachtung",
+      "desc": "Si une unité d'infanterie alliée « Division Fantôme » est adjacente, les unités d'artillerie infligent +10 % de dégâts.",
+      "descEn": "If an adjacent friendly Ghost Division infantry unit is present, artillery units damage +10%.",
+      "descDe": "Befindet sich eine benachbarte befreundete Gespensterdivision-Infanterieeinheit in der Nähe, verursachen Artillerieeinheiten +10 % Schaden.",
+      "appliesTo": ["artillery"]
+    }
+  ],
+  "lockedToCountry": true
+}

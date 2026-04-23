@@ -32,6 +32,7 @@
     "updates": "Updates",
     "technologies": "Technologies",
     "guides": "Guides",
+    "formations": "Legend Formations",
     "gcr": "Great Conqueror: Rome",
     "gcrHome": "GCR Home",
     "gcrCampaign": "Roman Conquest",
@@ -662,5 +663,27 @@
       }
     ],
     "enterCta": "Enter"
+  },
+  "formations": {
+    "hub": {
+      "metaTitle": "Legend Formations — World Conqueror 4 Guide",
+      "metaDescription": "Complete guide to all 8 WC4 Legend Formations: Ghost Division, Spearhead, Taman, Desert Rats, Leclerc, Lightning, Großdeutschland, 4th Guards Tank.",
+      "breadcrumb": "Legend Formations",
+      "h1": "Legend Formations",
+      "intro": "Legend Formations are historical elite groups you can form in Legend, Conquest, or Army Group modes. Each grants a general buff and three tactical effects to all its units. Explore the 8 formations available in World Conqueror 4.",
+      "selectPrompt": "Select a formation",
+      "historicalUnit": "Historical unit",
+      "unitsInFormation": "Units in formation",
+      "generalBuff": "General Buff",
+      "tacticalEffects": "Tactical Effects",
+      "countryLock": "This formation can only be formed in Legend, Conquest, or Army Group modes when you are the corresponding country.",
+      "readFullGuide": "Read full guide",
+      "browseAll": "All formations"
+    },
+    "detail": {
+      "metaTitleSuffix": "WC4 Legend Formation Guide",
+      "otherFormations": "Other legend formations",
+      "backToHub": "Back to all formations"
+    }
   }
 }

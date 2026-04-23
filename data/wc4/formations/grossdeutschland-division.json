@@ -1,0 +1,87 @@
+{
+  "slug": "grossdeutschland-division",
+  "order": 7,
+  "name": "Division Großdeutschland",
+  "nameEn": "Großdeutschland Division",
+  "nameDe": "Division Großdeutschland",
+  "country": "DE",
+  "countryName": "Allemagne",
+  "countryNameEn": "Germany",
+  "countryNameDe": "Deutschland",
+  "operationName": "Opération Mars",
+  "operationNameEn": "Operation Mars",
+  "operationNameDe": "Unternehmen Mars",
+  "historicalUnit": "Division d'infanterie Großdeutschland",
+  "historicalUnitEn": "Großdeutschland Infantry Division",
+  "historicalUnitDe": "Infanterie-Division Großdeutschland",
+  "lore": {
+    "short": "Division d'élite de la Wehrmacht déployée lors de l'opération Mars en 1942 contre le saillant de Rjev, réputée pour sa combinaison infanterie-blindés-artillerie.",
+    "shortEn": "Wehrmacht elite division deployed during Operation Mars in 1942 against the Rzhev salient, renowned for its combined infantry-armor-artillery doctrine.",
+    "shortDe": "Wehrmacht-Elite-Division im Einsatz während Unternehmen Mars 1942 gegen den Rschewer Bogen, bekannt für ihre kombinierte Infanterie-Panzer-Artillerie-Doktrin.",
+    "long": [
+      "La division Großdeutschland était l'une des unités d'élite les plus prestigieuses de la Heer, composée de volontaires de tout le Reich et équipée du matériel le plus moderne.",
+      "Lors de l'opération Mars en novembre-décembre 1942, contre-offensive soviétique visant le saillant de Rjev, Großdeutschland fut l'une des principales formations allemandes à endiguer l'assaut de l'Armée rouge.",
+      "Sa doctrine combinée d'infanterie, de blindés et d'artillerie lourde (avec des unités spéciales comme le King Tiger et le Stuka zu Fuss) en faisait une force polyvalente capable de défense féroce et de contre-attaques dévastatrices."
+    ],
+    "longEn": [
+      "The Großdeutschland Division was one of the most prestigious elite units of the Heer, composed of volunteers from across the Reich and equipped with the most modern hardware.",
+      "During Operation Mars in November-December 1942, the Soviet counteroffensive aimed at the Rzhev salient, Großdeutschland was one of the principal German formations that stemmed the Red Army's assault.",
+      "Its combined infantry-armor-heavy artillery doctrine (including special units like the King Tiger and Stuka zu Fuss) made it a versatile force capable of ferocious defense and devastating counterattacks."
+    ],
+    "longDe": [
+      "Die Division Großdeutschland zählte zu den prestigeträchtigsten Elite-Einheiten des Heeres, zusammengesetzt aus Freiwilligen des gesamten Reiches und mit modernstem Material ausgestattet.",
+      "Während des Unternehmens Mars im November/Dezember 1942, der sowjetischen Gegenoffensive gegen den Rschewer Bogen, war Großdeutschland eine der zentralen deutschen Formationen, die den Angriff der Roten Armee aufhielten.",
+      "Ihre kombinierte Infanterie-Panzer-Schwerartillerie-Doktrin (einschließlich Spezialeinheiten wie Königstiger und Stuka zu Fuß) machte sie zu einer vielseitigen Streitmacht, fähig zu erbitterter Verteidigung und verheerenden Gegenangriffen."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" },
+    { "kind": "elite", "slug": "konigs-tiger" },
+    { "kind": "elite", "slug": "stuka-rocket" }
+  ],
+  "generalBuff": {
+    "text": "Toutes les unités « Division Großdeutschland » gagnent +2 en attaque par unité ennemie dans un rayon de 2 cases, jusqu'à un total de +20.",
+    "textEn": "All Großdeutschland Division units gain +2 Attack for each enemy unit within 2 tiles, up to a total of +20.",
+    "textDe": "Alle Einheiten der Division Großdeutschland erhalten +2 Angriff pro feindlicher Einheit in 2 Feldern Umkreis, bis zu insgesamt +20.",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Garnison d'élite",
+      "nameEn": "Elite Garrison",
+      "nameDe": "Elite-Garnison",
+      "desc": "Si une unité d'infanterie « Großdeutschland » est à une case d'une unité d'artillerie ou blindée « Großdeutschland », à la fin du tour, toutes les unités Großdeutschland dans un rayon d'une case gagnent le statut « Garnison » pour un tour. (Garnison : pour chaque unité alliée à une case, Défense +3, Dégâts de contre-attaque +3 %.)",
+      "descEn": "If a Großdeutschland infantry unit is within 1 tile of a Großdeutschland artillery or armored unit, at the end of the turn, all Großdeutschland units within 1 tile gain a 1-turn Garrison buff. (Garrison: For each friendly unit within 1 tile, Defense +3, Counterattack Damage +3%.)",
+      "descDe": "Wenn sich eine Großdeutschland-Infanterieeinheit innerhalb eines Feldes einer Großdeutschland-Artillerie- oder Panzereinheit befindet, erhalten am Ende der Runde alle Großdeutschland-Einheiten innerhalb eines Feldes für eine Runde den 'Garnison'-Bonus. (Garnison: Pro verbündeter Einheit im Feldumkreis Verteidigung +3, Gegenangriffsschaden +3 %.)",
+      "appliesTo": ["infantry", "tank", "artillery"]
+    },
+    {
+      "name": "Percée blindée",
+      "nameEn": "Armored Breakthrough",
+      "nameDe": "Panzerdurchbruch",
+      "desc": "Lorsqu'une unité blindée « Großdeutschland » est à une case d'une unité d'infanterie « Großdeutschland » et attaque, s'il ne reste aucun ennemi dans un rayon de 2 cases après l'attaque, toutes les unités « Großdeutschland » dans un rayon de 2 cases gagnent +5 en mobilité pour ce tour. (Non cumulable.)",
+      "descEn": "When a Großdeutschland armored unit is within 1 tile of a Großdeutschland infantry unit, if there are no enemy units within 2 tiles after attacking, all Großdeutschland units within 2 tiles gain +5 mobility for this turn. (Cannot stack.)",
+      "descDe": "Wenn eine Großdeutschland-Panzereinheit innerhalb eines Feldes einer Großdeutschland-Infanterieeinheit angreift und sich danach keine Feinde in 2 Feldern Umkreis befinden, erhalten alle Großdeutschland-Einheiten in 2 Feldern Umkreis +5 Mobilität für diese Runde. (Nicht stapelbar.)",
+      "appliesTo": ["tank"]
+    },
+    {
+      "name": "Étourdissement par la puissance de feu",
+      "nameEn": "Firepower Stun",
+      "nameDe": "Feuerkraft-Betäubung",
+      "desc": "Si une unité d'artillerie « Großdeutschland » est dans un rayon de 2 cases d'une unité blindée « Großdeutschland », toute attaque de cette artillerie applique un étourdissement d'un tour à la cible. (Étourdissement : -3 en mobilité pour le tour en cours, cumulable jusqu'à trois fois.)",
+      "descEn": "If a Großdeutschland artillery unit is within 2 tiles of a Großdeutschland armored unit, any attack made by this artillery unit applies a one-turn Stun buff to the target. (Stun: -3 mobility for the current turn, stackable up to three times.)",
+      "descDe": "Wenn sich eine Großdeutschland-Artillerieeinheit in 2 Feldern Umkreis einer Großdeutschland-Panzereinheit befindet, wendet jeder Angriff dieser Artillerie einen 1-Runden-'Betäubungs'-Effekt auf das Ziel an. (Betäubung: -3 Mobilität für die aktuelle Runde, bis zu dreimal stapelbar.)",
+      "appliesTo": ["artillery"]
+    }
+  ],
+  "lockedToCountry": true
+}

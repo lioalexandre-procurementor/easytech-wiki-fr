@@ -1,0 +1,83 @@
+{
+  "slug": "taman-division",
+  "order": 3,
+  "name": "Division Taman",
+  "nameEn": "Taman Division",
+  "nameDe": "Taman-Division",
+  "country": "SU",
+  "countryName": "Union soviétique",
+  "countryNameEn": "Soviet Union",
+  "countryNameDe": "Sowjetunion",
+  "historicalUnit": "Brigade d'infanterie navale de Taman",
+  "historicalUnitEn": "Taman Naval Infantry Brigade",
+  "historicalUnitDe": "Marineinfanterie-Brigade Taman",
+  "lore": {
+    "short": "Unité d'élite d'infanterie navale de la flotte de la mer Noire, célèbre pour sa contribution à la libération de Sébastopol en mai 1944.",
+    "shortEn": "Elite naval infantry unit of the Black Sea Fleet, famous for its role in liberating Sevastopol in May 1944.",
+    "shortDe": "Elite-Marineinfanterieeinheit der Schwarzmeerflotte, berühmt für ihren Anteil an der Befreiung Sewastopols im Mai 1944.",
+    "long": [
+      "En mai 1944, la « Brigade Taman », unité d'élite de la flotte de la mer Noire sous le commandement de l'Armée côtière indépendante, participa à une offensive de représailles pour libérer Sébastopol.",
+      "Cette opération défit de manière décisive le dernier bastion allemand en Crimée, vengeant l'humiliation causée par la chute de cette forteresse stratégiquement vitale en 1942.",
+      "Spécialisée dans les débarquements amphibies et les combats côtiers, la division est renommée pour sa mobilité exceptionnelle entre mer et terre."
+    ],
+    "longEn": [
+      "In May 1944, the 'Taman Brigade,' an elite unit of the Black Sea Fleet operating under the command of the Independent Coastal Army, participated in a retaliatory offensive to liberate Sevastopol.",
+      "This operation decisively defeated the last German stronghold in Crimea, avenging the humiliation caused by the fall of this strategically vital fortress in 1942.",
+      "Specialized in amphibious landings and coastal combat, the division is renowned for its exceptional mobility between sea and land."
+    ],
+    "longDe": [
+      "Im Mai 1944 nahm die 'Taman-Brigade', eine Elite-Einheit der Schwarzmeerflotte unter dem Kommando der Selbständigen Küstenarmee, an einer Vergeltungsoffensive zur Befreiung Sewastopols teil.",
+      "Diese Operation zerschlug endgültig die letzte deutsche Bastion auf der Krim und rächte die Demütigung durch den Fall dieser strategisch wichtigen Festung im Jahr 1942.",
+      "Auf amphibische Landungen und Küstengefechte spezialisiert, ist die Division für ihre außergewöhnliche Mobilität zwischen See und Land bekannt."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Destroyer", "nameEn": "Destroyer", "nameDe": "Zerstörer", "category": "navy" },
+    { "kind": "base", "name": "Croiseur", "nameEn": "Cruiser", "nameDe": "Kreuzer", "category": "navy" }
+  ],
+  "preliminaryUnits": true,
+  "generalBuff": {
+    "text": "Toutes les unités terrestres de la « Division Taman » gagnent 10 % de chance d'esquive (peut être contourné par une frappe aérienne).",
+    "textEn": "All Taman Division land units gain a 10% chance to dodge (can be bypassed by airstrike).",
+    "textDe": "Alle Landeinheiten der Taman-Division erhalten 10 % Chance auf Ausweichen (kann durch Luftangriffe umgangen werden).",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Opérations amphibies",
+      "nameEn": "Amphibious Operations",
+      "nameDe": "Amphibische Operationen",
+      "desc": "Les unités terrestres alliées « Division Taman » dans un rayon de 2 hexagones d'une unité navale ignorent la pénalité de mobilité lors de l'embarquement, +2 en mobilité.",
+      "descEn": "Friendly Taman Division land units within 2 hexes of another naval unit ignore the mobility penalty when embarking, mobility +2.",
+      "descDe": "Befreundete Landeinheiten der Taman-Division innerhalb von 2 Feldern einer Marineeinheit ignorieren beim Einschiffen den Mobilitätsabzug und erhalten +2 Mobilität.",
+      "appliesTo": ["all"]
+    },
+    {
+      "name": "Guidage de tir",
+      "nameEn": "Fire Guidance",
+      "nameDe": "Feuerleitung",
+      "desc": "Pour chaque unité alliée « Division Taman » dans un rayon de 2 hexagones, les unités d'artillerie gagnent +4 % de chance d'attaque critique.",
+      "descEn": "For each friendly Taman Division unit within 2 hexes, artillery units critical attack chance +4%.",
+      "descDe": "Für jede befreundete Taman-Division-Einheit innerhalb von 2 Feldern erhalten Artillerieeinheiten +4 % kritische Trefferchance.",
+      "appliesTo": ["artillery"]
+    },
+    {
+      "name": "Appui de puissance de feu",
+      "nameEn": "Firepower Support",
+      "nameDe": "Feuerunterstützung",
+      "desc": "Si une unité alliée « Division Taman » est adjacente, les unités d'infanterie gagnent +1 en portée, mais -15 % de dégâts à portée maximale.",
+      "descEn": "If an adjacent friendly Taman Division unit is present, infantry units range +1 but damage -15% at maximum range.",
+      "descDe": "Befindet sich eine benachbarte befreundete Taman-Division-Einheit in der Nähe, erhalten Infanterieeinheiten +1 Reichweite, aber -15 % Schaden auf maximaler Reichweite.",
+      "appliesTo": ["infantry"]
+    }
+  ],
+  "lockedToCountry": true
+}

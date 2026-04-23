@@ -1,0 +1,87 @@
+{
+  "slug": "4th-guards-tank-division",
+  "order": 8,
+  "name": "4e Division Blindée de la Garde",
+  "nameEn": "4th Guards Tank Division",
+  "nameDe": "4. Garde-Panzerdivision",
+  "country": "SU",
+  "countryName": "Union soviétique",
+  "countryNameEn": "Soviet Union",
+  "countryNameDe": "Sowjetunion",
+  "operationName": "Opération Roumiantsev",
+  "operationNameEn": "Operation Rumyantsev",
+  "operationNameDe": "Unternehmen Rumjanzew",
+  "historicalUnit": "4e Corps Blindé de la Garde",
+  "historicalUnitEn": "4th Guards Tank Corps",
+  "historicalUnitDe": "4. Garde-Panzerkorps",
+  "lore": {
+    "short": "Formation blindée soviétique d'élite engagée lors de l'opération Roumiantsev en août 1943, qui libéra Belgorod et Kharkov.",
+    "shortEn": "Soviet elite armored formation engaged during Operation Rumyantsev in August 1943, which liberated Belgorod and Kharkov.",
+    "shortDe": "Sowjetische Elite-Panzerformation, eingesetzt während Unternehmen Rumjanzew im August 1943, die Belgorod und Charkow befreite.",
+    "long": [
+      "L'opération Roumiantsev (3-23 août 1943) fut la deuxième phase de la grande offensive soviétique de l'été 1943, succédant à la bataille de Koursk.",
+      "La 4e Division Blindée de la Garde, unité d'élite de l'Armée rouge, fut l'un des fers de lance de cette offensive qui brisa les défenses allemandes autour de Belgorod et aboutit à la libération de Kharkov le 23 août.",
+      "Équipée des nouveaux chars T-44 et IS-3, la division combinait puissance blindée, coordination artillerie-infanterie et capacité de percée stratégique à grande échelle."
+    ],
+    "longEn": [
+      "Operation Rumyantsev (August 3-23, 1943) was the second phase of the great Soviet summer offensive of 1943, following the Battle of Kursk.",
+      "The 4th Guards Tank Division, an elite unit of the Red Army, was one of the spearheads of this offensive, which broke through the German defenses around Belgorod and resulted in the liberation of Kharkov on August 23.",
+      "Equipped with the new T-44 and IS-3 tanks, the division combined armored power, artillery-infantry coordination, and large-scale strategic breakthrough capability."
+    ],
+    "longDe": [
+      "Unternehmen Rumjanzew (3. bis 23. August 1943) bildete die zweite Phase der großen sowjetischen Sommeroffensive 1943 nach der Schlacht im Kursker Bogen.",
+      "Die 4. Garde-Panzerdivision, eine Elite-Einheit der Roten Armee, war eine der Speerspitzen dieser Offensive, die die deutschen Verteidigungslinien um Belgorod durchbrach und am 23. August zur Befreiung Charkows führte.",
+      "Ausgerüstet mit den neuen Panzern T-44 und IS-3, kombinierte die Division Panzerkraft, Artillerie-Infanterie-Koordination und großräumige strategische Durchbruchsfähigkeit."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Super roquette", "nameEn": "Super Rocket", "nameDe": "Super-Rakete", "category": "artillery" },
+    { "kind": "elite", "slug": "t-44" },
+    { "kind": "elite", "slug": "is-3" }
+  ],
+  "generalBuff": {
+    "text": "Au début du tour, chaque unité de la « 4e Division Blindée de la Garde » gagne +2 en mobilité pour ce tour, pour chaque autre unité de la 4e Division Blindée de la Garde dans un rayon d'une case, jusqu'à un maximum de +6.",
+    "textEn": "At the start of the turn, each 4th Guards Tank Division unit gains +2 mobility for this turn for each other 4th Guards Tank Division unit within 1 tile, up to a maximum of +6.",
+    "textDe": "Zu Beginn der Runde erhält jede Einheit der 4. Garde-Panzerdivision +2 Mobilität für diese Runde pro weiterer Einheit der 4. Garde-Panzerdivision innerhalb eines Feldes, bis zu maximal +6.",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Reconnaissance de tir",
+      "nameEn": "Fire Reconnaissance",
+      "nameDe": "Feueraufklärung",
+      "desc": "Lorsqu'une unité d'infanterie de la « 4e Division Blindée de la Garde » attaque, toutes les unités blindées de la division dans un rayon de 2 cases gagnent un « Préparation de tir » d'un tour. (Préparation de tir : augmente les dégâts de la prochaine attaque de 40 % et expire immédiatement après.)",
+      "descEn": "When an infantry unit of the 4th Guards Tank Division attacks, any armored units of the 4th Guards Tank Division within 2 tiles gain a 1-turn Fire Preparation buff. (Fire Preparation: Increases the damage of the next attack by 40% and expires immediately after.)",
+      "descDe": "Wenn eine Infanterieeinheit der 4. Garde-Panzerdivision angreift, erhalten alle Panzereinheiten der 4. Garde-Panzerdivision in 2 Feldern Umkreis für eine Runde 'Feuervorbereitung'. (Feuervorbereitung: Erhöht den Schaden des nächsten Angriffs um 40 % und läuft unmittelbar danach ab.)",
+      "appliesTo": ["infantry", "tank"]
+    },
+    {
+      "name": "Ralliement de percée",
+      "nameEn": "Breakthrough Rally",
+      "nameDe": "Durchbruchs-Sammlung",
+      "desc": "Lorsqu'une unité blindée de la « 4e Division Blindée de la Garde » élimine un ennemi, elle accorde un buff « Ralliement » à toutes les unités de la division dans un rayon de 2 cases pendant un tour. (Ralliement : distribue 30 % des dégâts reçus aux unités voisines de la 4e Division Blindée de la Garde. Ne peut pas être ciblé par Déflexion balistique.)",
+      "descEn": "Whenever an armored unit of the 4th Guards Tank Division eliminates an enemy, it grants a Rally buff to all 4th Guards Tank Division units within a two-tile radius for one turn. (Rally: Distributes 30% of the damage it receives to surrounding 4th Guards Tank Division units. Cannot be targeted by Ballistic Deflection.)",
+      "descDe": "Wenn eine Panzereinheit der 4. Garde-Panzerdivision einen Gegner ausschaltet, erhalten alle Einheiten der Division in 2 Feldern Umkreis für eine Runde den 'Sammlungs'-Effekt. (Sammlung: Verteilt 30 % des erhaltenen Schadens auf umliegende Einheiten der 4. Garde-Panzerdivision. Kann nicht durch ballistische Ablenkung beeinflusst werden.)",
+      "appliesTo": ["tank"]
+    },
+    {
+      "name": "Préparation d'artillerie",
+      "nameEn": "Artillery Preparation",
+      "nameDe": "Artillerievorbereitung",
+      "desc": "Après l'attaque d'une unité d'artillerie de la « 4e Division Blindée de la Garde », toute unité ennemie à une case de la cible reçoit un statut « Désorganisé » d'un tour. (Désorganisé : à chaque fois que ces unités sont attaquées par l'infanterie ou les chars de la 4e Division Blindée de la Garde, leur moral diminue d'un niveau. L'effet disparaît alors et ne peut être réappliqué ce tour-ci.)",
+      "descEn": "After an artillery unit of the 4th Guards Tank Division attacks, any enemy units within one tile of the target receive a one-turn Disorganized status. (Disorganized: Whenever these units are attacked by infantry or tank units of the 4th Guards Tank Division, their morale is reduced by 1 level. The effect then ends once triggered and cannot be reapplied this turn.)",
+      "descDe": "Nach dem Angriff einer Artillerieeinheit der 4. Garde-Panzerdivision erhalten alle feindlichen Einheiten innerhalb eines Feldes um das Ziel für eine Runde den Status 'Desorganisiert'. (Desorganisiert: Jedes Mal, wenn diese Einheiten von Infanterie- oder Panzereinheiten der 4. Garde-Panzerdivision angegriffen werden, sinkt ihre Moral um eine Stufe. Der Effekt endet danach und kann in dieser Runde nicht erneut angewendet werden.)",
+      "appliesTo": ["artillery"]
+    }
+  ],
+  "lockedToCountry": true
+}

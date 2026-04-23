@@ -18,6 +18,7 @@ export function getNavItemsForGame(gameSlug: string | null, t: T): NavItem[] {
         { href: "/leaderboards", label: t("nav.leaderboards"), primary: true },
         { href: "/world-conqueror-4/guides", label: t("nav.guides"), primary: true },
         { href: "/world-conqueror-4/tier-list", label: "Tier List", icon: "🏆" },
+        { href: "/world-conqueror-4/formations-legendes", label: t("nav.formations"), icon: "🎖" },
         { href: "/world-conqueror-4/competences", label: t("nav.skills"), icon: "⚡" },
         { href: "/world-conqueror-4/technologies", label: t("nav.technologies"), icon: "🔬" },
         { href: "/world-conqueror-4/comparateur/generaux", label: t("nav.comparator"), icon: "⚖️" },

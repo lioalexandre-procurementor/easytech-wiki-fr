@@ -1,0 +1,83 @@
+{
+  "slug": "leclerc-division",
+  "order": 5,
+  "name": "Division Leclerc",
+  "nameEn": "Leclerc Division",
+  "nameDe": "Leclerc-Division",
+  "country": "FR",
+  "countryName": "France",
+  "countryNameEn": "France",
+  "countryNameDe": "Frankreich",
+  "historicalUnit": "2e Division Blindée",
+  "historicalUnitEn": "2nd Armored Division",
+  "historicalUnitDe": "2. Französische Panzerdivision",
+  "lore": {
+    "short": "Division blindée française libre commandée par le général Leclerc, libératrice de Paris en août 1944.",
+    "shortEn": "Free French armored division commanded by General Leclerc, liberator of Paris in August 1944.",
+    "shortDe": "Panzerdivision der Freien Französischen Streitkräfte unter General Leclerc, Befreier von Paris im August 1944.",
+    "long": [
+      "Formée en Afrique et équipée par les Américains, la 2e Division Blindée française libre combat sous les ordres du général Philippe Leclerc de Hauteclocque.",
+      "Le 25 août 1944, elle entre à Paris et reçoit la reddition du général allemand von Choltitz, libérant la capitale après quatre ans d'occupation.",
+      "La division poursuit sa progression à travers la France, l'Alsace et l'Allemagne, culminant par la prise de Berchtesgaden en mai 1945."
+    ],
+    "longEn": [
+      "Formed in Africa and equipped by the Americans, the Free French 2nd Armored Division fought under the command of General Philippe Leclerc de Hauteclocque.",
+      "On August 25, 1944, it entered Paris and received the surrender of German General von Choltitz, liberating the capital after four years of occupation.",
+      "The division continued its advance across France, Alsace, and Germany, culminating in the capture of Berchtesgaden in May 1945."
+    ],
+    "longDe": [
+      "In Afrika aufgestellt und von den Amerikanern ausgerüstet, kämpfte die 2. Französische Panzerdivision der Freien Französischen Streitkräfte unter dem Kommando von General Philippe Leclerc de Hauteclocque.",
+      "Am 25. August 1944 zog sie in Paris ein und nahm die Kapitulation des deutschen Generals von Choltitz entgegen und befreite damit die Hauptstadt nach vier Jahren Besatzung.",
+      "Die Division setzte ihren Vormarsch durch Frankreich, das Elsass und Deutschland fort und erreichte im Mai 1945 ihren Höhepunkt mit der Einnahme von Berchtesgaden."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+  ],
+  "preliminaryUnits": true,
+  "generalBuff": {
+    "text": "Après chaque attaque d'une unité « Division Leclerc », toutes les unités « Division Leclerc » dans un rayon de 2 cases reçoivent le « Serment de Restauration » pendant un tour. Serment de Restauration : ces unités ne peuvent pas être Confuses.",
+    "textEn": "After all Leclerc Division units launch an attack, they grant the Restoration Oath to all Leclerc Division units within a two-tile radius for one turn. Restoration Oath: They cannot be Confused.",
+    "textDe": "Nach jedem Angriff einer Leclerc-Division-Einheit erhalten alle Leclerc-Division-Einheiten in 2 Feldern Umkreis für eine Runde den 'Wiederherstellungseid'. Wiederherstellungseid: Diese Einheiten können nicht verwirrt werden.",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Inspiration au combat",
+      "nameEn": "Combat Inspiration",
+      "nameDe": "Kampfinspiration",
+      "desc": "Lorsqu'une unité blindée « Division Leclerc » détruit un ennemi sous l'effet du « Serment de Restauration », le moral des unités Leclerc dans un rayon de 2 cases augmente d'1 niveau. Peut se déclencher 1 fois par unité par tour.",
+      "descEn": "When a Leclerc Division armored unit destroys an enemy unit while under the Restoration Oath effect, the morale of Leclerc Division units in a two-tile radius increases by 1 level. This effect can occur 1 time per unit per turn.",
+      "descDe": "Wenn eine Leclerc-Panzereinheit unter dem Effekt des Wiederherstellungseides einen Feind zerstört, steigt die Moral aller Leclerc-Einheiten in 2 Feldern Umkreis um 1 Stufe. Dieser Effekt kann einmal pro Einheit und Runde auftreten.",
+      "appliesTo": ["tank"]
+    },
+    {
+      "name": "Soutien coordonné",
+      "nameEn": "Coordinated Support",
+      "nameDe": "Koordinierte Unterstützung",
+      "desc": "Lorsque les unités d'artillerie « Division Leclerc » sous le « Serment de Restauration » attaquent une ville ou une forteresse, si une unité d'infanterie ou blindée Leclerc se trouve à une case de la cible, leurs dégâts sont augmentés de 10 %.",
+      "descEn": "When Leclerc Division artillery units are under the Restoration Oath status and attack a city or fortress, if there is a Leclerc infantry or armored unit within one hex of the target, their dealt damage increases by 10%.",
+      "descDe": "Wenn Leclerc-Artillerieeinheiten unter dem Wiederherstellungseid-Status eine Stadt oder Festung angreifen und sich eine Leclerc-Infanterie- oder Panzereinheit innerhalb eines Feldes vom Ziel befindet, erhöht sich ihr Schaden um 10 %.",
+      "appliesTo": ["artillery"]
+    },
+    {
+      "name": "Poursuite de soutien",
+      "nameEn": "Supporting Pursuit",
+      "nameDe": "Verfolgung als Unterstützung",
+      "desc": "Lorsque les unités d'infanterie « Division Leclerc » attaquent sous le « Serment de Restauration », les unités Leclerc dans un rayon de 2 cases gagnent +5 en mobilité pour ce tour.",
+      "descEn": "When Leclerc Division infantry units attack while under the Restoration Oath status, Leclerc Division units within 2 tiles gain +5 mobility for this turn.",
+      "descDe": "Wenn Leclerc-Infanterieeinheiten unter dem Wiederherstellungseid-Status angreifen, erhalten Leclerc-Einheiten in 2 Feldern Umkreis +5 Mobilität für diese Runde.",
+      "appliesTo": ["infantry"]
+    }
+  ],
+  "lockedToCountry": true
+}

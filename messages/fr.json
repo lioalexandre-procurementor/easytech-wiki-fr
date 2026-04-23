@@ -32,6 +32,7 @@
     "updates": "Mises à jour",
     "technologies": "Technologies",
     "guides": "Guides",
+    "formations": "Formations Légendaires",
     "gcr": "Great Conqueror: Rome",
     "gcrHome": "Accueil GCR",
     "gcrCampaign": "Conquête romaine",
@@ -662,5 +663,27 @@
       }
     ],
     "enterCta": "Entrer"
+  },
+  "formations": {
+    "hub": {
+      "metaTitle": "Formations Légendaires — World Conqueror 4",
+      "metaDescription": "Guide complet des 8 formations légendaires de WC4 : Ghost Division, Spearhead, Taman, Desert Rats, Leclerc, Lightning, Großdeutschland, 4e Garde Blindée.",
+      "breadcrumb": "Formations Légendaires",
+      "h1": "Formations Légendaires",
+      "intro": "Les formations légendaires sont des groupes d'élite historiques que vous pouvez former dans les modes Legend, Conquête ou Groupe d'Armée. Chacune accorde un bonus général et trois effets tactiques à toutes ses unités. Explorez les 8 formations disponibles dans le jeu.",
+      "selectPrompt": "Sélectionner une formation",
+      "historicalUnit": "Unité historique",
+      "unitsInFormation": "Unités de la formation",
+      "generalBuff": "Bonus Général",
+      "tacticalEffects": "Effets Tactiques",
+      "countryLock": "Cette formation ne peut être constituée qu'en mode Legend, Conquête ou Groupe d'Armée, avec le pays correspondant.",
+      "readFullGuide": "Lire le guide complet",
+      "browseAll": "Toutes les formations"
+    },
+    "detail": {
+      "metaTitleSuffix": "Guide Formation Légendaire WC4",
+      "otherFormations": "Autres formations légendaires",
+      "backToHub": "Retour à toutes les formations"
+    }
   }
 }

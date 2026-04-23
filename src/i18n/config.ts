@@ -80,6 +80,16 @@ export const pathnames = {
     en: "/world-conqueror-4/scorpion-empire",
     de: "/world-conqueror-4/scorpion-empire",
   },
+  "/world-conqueror-4/formations-legendes": {
+    fr: "/world-conqueror-4/formations-legendes",
+    en: "/world-conqueror-4/legend-formations",
+    de: "/world-conqueror-4/legend-formations",
+  },
+  "/world-conqueror-4/formations-legendes/[slug]": {
+    fr: "/world-conqueror-4/formations-legendes/[slug]",
+    en: "/world-conqueror-4/legend-formations/[slug]",
+    de: "/world-conqueror-4/legend-formations/[slug]",
+  },
   "/world-conqueror-4/competences": {
     fr: "/world-conqueror-4/competences",
     en: "/world-conqueror-4/skills",

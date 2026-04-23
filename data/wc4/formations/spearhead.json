@@ -1,0 +1,83 @@
+{
+  "slug": "spearhead",
+  "order": 2,
+  "name": "Spearhead",
+  "nameEn": "Spearhead",
+  "nameDe": "Spearhead",
+  "country": "US",
+  "countryName": "États-Unis",
+  "countryNameEn": "United States",
+  "countryNameDe": "Vereinigte Staaten",
+  "historicalUnit": "3e Division Blindée",
+  "historicalUnitEn": "3rd Armored Division",
+  "historicalUnitDe": "3. US-Panzerdivision",
+  "lore": {
+    "short": "Division blindée d'élite de la 1ère Armée américaine, héroïne de la Bataille des Ardennes et de l'offensive à travers l'Allemagne en 1945.",
+    "shortEn": "Elite armored division of the US 1st Army, hero of the Battle of the Bulge and the 1945 offensive across Germany.",
+    "shortDe": "Elite-Panzerdivision der US-1. Armee, Heldin der Ardennenoffensive und des Vormarsches durch Deutschland 1945.",
+    "long": [
+      "Le 16 décembre 1944, l'armée allemande lance une contre-attaque surprise dans la forêt des Ardennes. La 3e Division Blindée américaine, réserve d'élite de la 1ère Armée, est dépêchée sur le front nord.",
+      "Coordonnant rapidement avec d'autres unités en plusieurs points stratégiques clés, elle lance une contre-offensive qui désorganise avec succès l'assaut allemand.",
+      "En 1945, Spearhead traverse l'Allemagne comme fer de lance de la percée alliée, écrasant les dernières poches de résistance de la Wehrmacht."
+    ],
+    "longEn": [
+      "On December 16, 1944, the German army launched a surprise counterattack in the Ardennes Forest. The U.S. 3rd Armored Division, as an elite reserve of the 1st Army, was urgently dispatched to the northern front.",
+      "It quickly coordinated with other units at several key strategic points to launch a counteroffensive, successfully disrupting the German offensive.",
+      "In 1945, Spearhead drove across Germany as the tip of the Allied breakthrough, crushing the last pockets of Wehrmacht resistance."
+    ],
+    "longDe": [
+      "Am 16. Dezember 1944 startete die Wehrmacht eine überraschende Gegenoffensive im Ardennenwald. Die US-3. Panzerdivision, eine Elite-Reserve der 1. Armee, wurde umgehend an die Nordfront beordert.",
+      "Sie koordinierte rasch mit anderen Einheiten an mehreren strategischen Schlüsselpunkten und leitete eine Gegenoffensive ein, die den deutschen Angriff erfolgreich zerschlug.",
+      "1945 zog Spearhead als Speerspitze des alliierten Durchbruchs quer durch Deutschland und zerschlug die letzten Widerstandsnester der Wehrmacht."
+    ]
+  },
+  "units": [
+    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
+    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
+    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
+    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
+    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
+    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+  ],
+  "preliminaryUnits": true,
+  "generalBuff": {
+    "text": "Toutes les unités « Spearhead » gagnent +10 en attaque.",
+    "textEn": "All Spearhead units attack +10.",
+    "textDe": "Alle Spearhead-Einheiten erhalten +10 Angriff.",
+    "appliesTo": ["all"]
+  },
+  "tacticalEffects": [
+    {
+      "name": "Coordination Infanterie-Char",
+      "nameEn": "Infantry-Tank Coordination",
+      "nameDe": "Infanterie-Panzer-Koordination",
+      "desc": "Si une unité d'infanterie alliée « Spearhead » est adjacente, les chars gagnent +20 % de dégâts critiques.",
+      "descEn": "If an adjacent friendly Spearhead infantry unit is present, tank units critical damage +20%.",
+      "descDe": "Befindet sich eine benachbarte befreundete Spearhead-Infanterieeinheit in der Nähe, erhalten Panzer +20 % kritischen Schaden.",
+      "appliesTo": ["tank"]
+    },
+    {
+      "name": "Manœuvres en essaim",
+      "nameEn": "Swarm Maneuvers",
+      "nameDe": "Schwarmmanöver",
+      "desc": "Pour chaque unité alliée « Spearhead » dans un rayon de 2 hexagones, les unités d'infanterie gagnent +2 en mobilité.",
+      "descEn": "For each friendly Spearhead unit within 2 hexes, infantry units mobility +2.",
+      "descDe": "Für jede befreundete Spearhead-Einheit innerhalb von 2 Feldern erhalten Infanterieeinheiten +2 Mobilität.",
+      "appliesTo": ["infantry"]
+    },
+    {
+      "name": "Soutien de position défensive",
+      "nameEn": "Defensive Position Support",
+      "nameDe": "Unterstützung aus Defensivstellung",
+      "desc": "Si une unité alliée « Spearhead » est adjacente, les unités d'artillerie reçoivent 15 % de dégâts en moins.",
+      "descEn": "If an adjacent friendly Spearhead unit is present, artillery units damage received -15%.",
+      "descDe": "Befindet sich eine benachbarte befreundete Spearhead-Einheit in der Nähe, erhalten Artillerieeinheiten 15 % weniger Schaden.",
+      "appliesTo": ["artillery"]
+    }
+  ],
+  "lockedToCountry": true
+}

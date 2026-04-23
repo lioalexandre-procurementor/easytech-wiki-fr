@@ -3,6 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { getAllGeneralSlugs, getAllSlugs as getAllEliteSlugs } from "@/lib/units";
 import { getAllGuideSlugs } from "@/lib/guides";
+import { getAllFormationSlugs } from "@/lib/formations";
 import {
   getAllGeneralSlugs as getAllGcrGeneralSlugs,
   getAllSlugs as getAllGcrEliteSlugs,
@@ -141,6 +142,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire", de: "/world-conqueror-4/scorpion-empire" }, priority: 0.6, changeFrequency: "monthly" },
     { pair: { fr: "/world-conqueror-4/mises-a-jour", en: "/world-conqueror-4/updates", de: "/world-conqueror-4/updates" }, priority: 0.8, changeFrequency: "weekly" },
     { pair: { fr: "/world-conqueror-4/tier-list", en: "/world-conqueror-4/tier-list", de: "/world-conqueror-4/tier-list" }, priority: 0.8, changeFrequency: "monthly" },
+    { pair: { fr: "/world-conqueror-4/formations-legendes", en: "/world-conqueror-4/legend-formations", de: "/world-conqueror-4/legend-formations" }, priority: 0.8, changeFrequency: "monthly" },
     { pair: { fr: "/legal/votes", en: "/legal/votes", de: "/legal/votes" }, priority: 0.3, changeFrequency: "yearly" },
     { pair: { fr: "/legal/mentions-legales", en: "/legal/legal-notice", de: "/legal/legal-notice" }, priority: 0.3, changeFrequency: "yearly" },
     { pair: { fr: "/legal/confidentialite", en: "/legal/privacy", de: "/legal/privacy" }, priority: 0.3, changeFrequency: "yearly" },
@@ -529,6 +531,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
           alternates: alternates(pair),
         });
       }
+    }
+  }
+
+  // Legend Formations detail pages
+  for (const slug of getAllFormationSlugs()) {
+    const pair: LocalePair = {
+      fr: `/world-conqueror-4/formations-legendes/${slug}`,
+      en: `/world-conqueror-4/legend-formations/${slug}`,
+      de: `/world-conqueror-4/legend-formations/${slug}`,
+    };
+    for (const locale of locales) {
+      entries.push({
+        url: pathFor(locale, pair),
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: alternates(pair),
+      });
     }
   }
 

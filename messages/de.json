@@ -32,6 +32,7 @@
     "updates": "Updates",
     "technologies": "Technologien",
     "guides": "Guides",
+    "formations": "Legenden-Formationen",
     "gcr": "Great Conqueror: Rome",
     "gcrHome": "GCR Startseite",
     "gcrCampaign": "Römische Eroberung",
@@ -662,5 +663,27 @@
       }
     ],
     "enterCta": "Eingeben"
+  },
+  "formations": {
+    "hub": {
+      "metaTitle": "Legenden-Formationen — World Conqueror 4 Guide",
+      "metaDescription": "Vollständiger Guide zu allen 8 WC4 Legenden-Formationen: Ghost Division, Spearhead, Taman, Desert Rats, Leclerc, Lightning, Großdeutschland, 4. Garde-Panzerdivision.",
+      "breadcrumb": "Legenden-Formationen",
+      "h1": "Legenden-Formationen",
+      "intro": "Legenden-Formationen sind historische Elite-Gruppen, die Sie in den Modi Legende, Eroberung oder Heeresgruppe aufstellen können. Jede gewährt einen allgemeinen Bonus und drei taktische Effekte für alle ihre Einheiten. Entdecken Sie die 8 im Spiel verfügbaren Formationen.",
+      "selectPrompt": "Formation auswählen",
+      "historicalUnit": "Historische Einheit",
+      "unitsInFormation": "Einheiten der Formation",
+      "generalBuff": "Allgemeiner Bonus",
+      "tacticalEffects": "Taktische Effekte",
+      "countryLock": "Diese Formation kann nur in den Modi Legende, Eroberung oder Heeresgruppe aufgestellt werden, wenn Sie das entsprechende Land spielen.",
+      "readFullGuide": "Vollständigen Guide lesen",
+      "browseAll": "Alle Formationen"
+    },
+    "detail": {
+      "metaTitleSuffix": "WC4 Legenden-Formation Guide",
+      "otherFormations": "Weitere Legenden-Formationen",
+      "backToHub": "Zurück zu allen Formationen"
+    }
   }
 }
