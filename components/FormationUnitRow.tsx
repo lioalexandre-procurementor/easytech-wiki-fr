@@ -7,7 +7,9 @@ export function FormationUnitRow({ unit }: { unit: ResolvedFormationUnit }) {
   if (unit.kind === "base") {
     return (
       <div className="flex items-center gap-2 bg-panel/50 border border-border rounded-md px-2 py-1.5 text-sm">
-        <UnitIcon category={unit.category} size={24} />
+        <div className="relative w-7 h-7 rounded bg-bg3 overflow-hidden flex-shrink-0">
+          <Image src={unit.sprite} alt={unit.name} fill sizes="28px" className="object-contain p-0.5" />
+        </div>
         <span className="text-text">{unit.name}</span>
       </div>
     );

@@ -601,9 +601,9 @@ export function parseGame(x: unknown): Game | null {
 /** Unit-type scope for which a formation buff/effect applies. */
 export type AppliesTo = "all" | "infantry" | "tank" | "artillery" | "navy" | "airforce";
 
-/** One unit included in a formation. Base units reference a generic Category; elite units reference an existing elite-unit slug. */
+/** One unit included in a formation. Base units reference a generic Category and a spriteCode (legion icon 1..19 extracted from the APK); elite units reference an existing elite-unit slug. */
 export type FormationUnit =
-  | { kind: "base"; name: string; nameEn: string; nameDe: string; category: Category }
+  | { kind: "base"; name: string; nameEn: string; nameDe: string; category: Category; spriteCode: number }
   | { kind: "elite"; slug: string };
 
 /** One tactical effect on a formation (e.g. "Joint Offensive"). */

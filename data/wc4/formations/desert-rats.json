@@ -32,23 +32,95 @@
     ]
   },
   "units": [
-    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
-    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
-    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+    {
+      "kind": "base",
+      "name": "Infanterie motorisée",
+      "nameEn": "Motorized Infantry",
+      "nameDe": "Motorisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 3
+    },
+    {
+      "kind": "base",
+      "name": "Infanterie mécanisée",
+      "nameEn": "Mechanized Infantry",
+      "nameDe": "Mechanisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 4
+    },
+    {
+      "kind": "base",
+      "name": "Char léger",
+      "nameEn": "Light Tank",
+      "nameDe": "Leichter Panzer",
+      "category": "tank",
+      "spriteCode": 7
+    },
+    {
+      "kind": "base",
+      "name": "Char moyen",
+      "nameEn": "Medium Tank",
+      "nameDe": "Mittlerer Panzer",
+      "category": "tank",
+      "spriteCode": 8
+    },
+    {
+      "kind": "base",
+      "name": "Char lourd",
+      "nameEn": "Heavy Tank",
+      "nameDe": "Schwerer Panzer",
+      "category": "tank",
+      "spriteCode": 9
+    },
+    {
+      "kind": "base",
+      "name": "Super char",
+      "nameEn": "Super Tank",
+      "nameDe": "Superpanzer",
+      "category": "tank",
+      "spriteCode": 10
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie de campagne",
+      "nameEn": "Field Artillery",
+      "nameDe": "Feldartillerie",
+      "category": "artillery",
+      "spriteCode": 11
+    },
+    {
+      "kind": "base",
+      "name": "Obusier",
+      "nameEn": "Howitzer",
+      "nameDe": "Haubitze",
+      "category": "artillery",
+      "spriteCode": 12
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie à roquettes",
+      "nameEn": "Rocket Artillery",
+      "nameDe": "Raketenartillerie",
+      "category": "artillery",
+      "spriteCode": 13
+    },
+    {
+      "kind": "base",
+      "name": "Super artillerie",
+      "nameEn": "Super Artillery",
+      "nameDe": "Superartillerie",
+      "category": "artillery",
+      "spriteCode": 14
+    }
   ],
   "preliminaryUnits": true,
   "generalBuff": {
     "text": "Pour toutes les unités « Desert Rats » se déplaçant sur des cases de désert, le coût de mobilité est réduit de 1.",
     "textEn": "For all Desert Rats units, when moving on desert tiles, the mobility consumption -1.",
     "textDe": "Für alle Desert-Rats-Einheiten wird der Mobilitätsverbrauch auf Wüstenfeldern um 1 reduziert.",
-    "appliesTo": ["all"]
+    "appliesTo": [
+      "all"
+    ]
   },
   "tacticalEffects": [
     {
@@ -58,7 +130,9 @@
       "desc": "Après l'attaque d'une unité d'artillerie, les ennemis dans un rayon de 2 cases reçoivent « Suppression d'artillerie » : ils subissent 10 % de dégâts supplémentaires lorsqu'ils sont attaqués par une unité Desert Rats.",
       "descEn": "After an artillery unit attacks, enemy units within 2 tiles receive Artillery Suppression: 10% additional damage when attacked by a Desert Rats unit.",
       "descDe": "Nach dem Angriff einer Artillerieeinheit erhalten Feinde in 2 Feldern Umkreis 'Artillerieunterdrückung': 10 % Zusatzschaden, wenn sie von einer Desert-Rats-Einheit angegriffen werden.",
-      "appliesTo": ["artillery"]
+      "appliesTo": [
+        "artillery"
+      ]
     },
     {
       "name": "Rôdeur blindé",
@@ -67,7 +141,9 @@
       "desc": "Lorsqu'une unité blindée tue un ennemi sous l'effet « Suppression d'artillerie », elle gagne +2 en mobilité au tour suivant. Augmente la mobilité maximale de 20.",
       "descEn": "Whenever an armored unit kills an enemy unit having the Artillery Suppression buff, that armored unit gains +2 mobility on its next turn. Increases maximum Mobility by 20.",
       "descDe": "Wenn eine Panzereinheit einen Gegner mit dem Status 'Artillerieunterdrückung' ausschaltet, erhält sie in der nächsten Runde +2 Mobilität. Erhöht die maximale Mobilität um 20.",
-      "appliesTo": ["tank"]
+      "appliesTo": [
+        "tank"
+      ]
     },
     {
       "name": "Maintenance mécanique",
@@ -76,7 +152,9 @@
       "desc": "À la fin de chaque tour, toute unité d'artillerie ou blindée « Desert Rats » située à une case d'une unité d'infanterie « Desert Rats » regagne 50 PV.",
       "descEn": "At the end of each turn, any Desert Rats Artillery and Armored Units within one tile of a Desert Rats Infantry Unit regain 50 HP.",
       "descDe": "Am Ende jeder Runde regenerieren alle Desert-Rats-Artillerie- und -Panzereinheiten innerhalb eines Feldes um eine Desert-Rats-Infanterieeinheit 50 LP.",
-      "appliesTo": ["infantry"]
+      "appliesTo": [
+        "infantry"
+      ]
     }
   ],
   "lockedToCountry": true

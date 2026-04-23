@@ -8,6 +8,9 @@
   "countryName": "Allemagne",
   "countryNameEn": "Germany",
   "countryNameDe": "Deutschland",
+  "operationName": "La Défense de Kiev",
+  "operationNameEn": "The Defensive Battle of Kyiv",
+  "operationNameDe": "Die Verteidigungsschlacht um Kiew",
   "historicalUnit": "7e Panzerdivision",
   "historicalUnitEn": "7th Panzer Division",
   "historicalUnitDe": "7. Panzer-Division",
@@ -32,23 +35,98 @@
     ]
   },
   "units": [
-    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
-    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
-    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+    {
+      "kind": "base",
+      "name": "Infanterie motorisée",
+      "nameEn": "Motorized Infantry",
+      "nameDe": "Motorisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 3
+    },
+    {
+      "kind": "base",
+      "name": "Infanterie mécanisée",
+      "nameEn": "Mechanized Infantry",
+      "nameDe": "Mechanisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 4
+    },
+    {
+      "kind": "base",
+      "name": "Char léger",
+      "nameEn": "Light Tank",
+      "nameDe": "Leichter Panzer",
+      "category": "tank",
+      "spriteCode": 7
+    },
+    {
+      "kind": "base",
+      "name": "Char moyen",
+      "nameEn": "Medium Tank",
+      "nameDe": "Mittlerer Panzer",
+      "category": "tank",
+      "spriteCode": 8
+    },
+    {
+      "kind": "base",
+      "name": "Char lourd",
+      "nameEn": "Heavy Tank",
+      "nameDe": "Schwerer Panzer",
+      "category": "tank",
+      "spriteCode": 9
+    },
+    {
+      "kind": "base",
+      "name": "Super char",
+      "nameEn": "Super Tank",
+      "nameDe": "Superpanzer",
+      "category": "tank",
+      "spriteCode": 10
+    },
+    {
+      "kind": "base",
+      "name": "Obusier",
+      "nameEn": "Howitzer",
+      "nameDe": "Haubitze",
+      "category": "artillery",
+      "spriteCode": 12
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie à roquettes",
+      "nameEn": "Rocket Artillery",
+      "nameDe": "Raketenartillerie",
+      "category": "artillery",
+      "spriteCode": 13
+    },
+    {
+      "kind": "base",
+      "name": "Super artillerie",
+      "nameEn": "Super Artillery",
+      "nameDe": "Superartillerie",
+      "category": "artillery",
+      "spriteCode": 14
+    },
+    {
+      "kind": "elite",
+      "slug": "brandenburg-infantry"
+    },
+    {
+      "kind": "elite",
+      "slug": "konigs-tiger"
+    },
+    {
+      "kind": "elite",
+      "slug": "flak-88"
+    }
   ],
-  "preliminaryUnits": true,
   "generalBuff": {
     "text": "Toutes les unités de la Division Fantôme gagnent +3 en mobilité.",
     "textEn": "All Ghost Division units receive +3 mobility.",
     "textDe": "Alle Einheiten der Gespensterdivision erhalten +3 Mobilität.",
-    "appliesTo": ["all"]
+    "appliesTo": [
+      "all"
+    ]
   },
   "tacticalEffects": [
     {
@@ -58,7 +136,9 @@
       "desc": "Pour chaque unité alliée « Division Fantôme » dans un rayon de 2 hexagones, les unités blindées infligent 2 % de dégâts supplémentaires lors d'une attaque.",
       "descEn": "For each friendly Ghost Division unit within 2 hexes, tank units deal an additional 2% damage when attacking.",
       "descDe": "Für jede befreundete Gespensterdivision-Einheit innerhalb von 2 Feldern verursachen Panzereinheiten +2 % Schaden beim Angriff.",
-      "appliesTo": ["tank"]
+      "appliesTo": [
+        "tank"
+      ]
     },
     {
       "name": "Poursuite de l'ennemi en fuite",
@@ -67,7 +147,9 @@
       "desc": "Si une unité alliée « Division Fantôme » adjacente a éliminé un ennemi ce tour-ci, les unités d'infanterie peuvent se déplacer à nouveau (une fois par tour).",
       "descEn": "If an adjacent friendly Ghost Division unit has eliminated an enemy this turn, infantry units can move again (once per turn).",
       "descDe": "Wenn eine benachbarte befreundete Gespensterdivision-Einheit diese Runde einen Gegner ausgeschaltet hat, können Infanterieeinheiten erneut ziehen (einmal pro Runde).",
-      "appliesTo": ["infantry"]
+      "appliesTo": [
+        "infantry"
+      ]
     },
     {
       "name": "Observation frontalière",
@@ -76,7 +158,9 @@
       "desc": "Si une unité d'infanterie alliée « Division Fantôme » est adjacente, les unités d'artillerie infligent +10 % de dégâts.",
       "descEn": "If an adjacent friendly Ghost Division infantry unit is present, artillery units damage +10%.",
       "descDe": "Befindet sich eine benachbarte befreundete Gespensterdivision-Infanterieeinheit in der Nähe, verursachen Artillerieeinheiten +10 % Schaden.",
-      "appliesTo": ["artillery"]
+      "appliesTo": [
+        "artillery"
+      ]
     }
   ],
   "lockedToCountry": true

@@ -8,6 +8,9 @@
   "countryName": "France",
   "countryNameEn": "France",
   "countryNameDe": "Frankreich",
+  "operationName": "La Ruée sur Strasbourg",
+  "operationNameEn": "Strasbourg Dash",
+  "operationNameDe": "Der Stoß auf Straßburg",
   "historicalUnit": "2e Division Blindée",
   "historicalUnitEn": "2nd Armored Division",
   "historicalUnitDe": "2. Französische Panzerdivision",
@@ -32,23 +35,102 @@
     ]
   },
   "units": [
-    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
-    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
-    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+    {
+      "kind": "base",
+      "name": "Infanterie motorisée",
+      "nameEn": "Motorized Infantry",
+      "nameDe": "Motorisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 3
+    },
+    {
+      "kind": "base",
+      "name": "Infanterie mécanisée",
+      "nameEn": "Mechanized Infantry",
+      "nameDe": "Mechanisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 4
+    },
+    {
+      "kind": "base",
+      "name": "Char léger",
+      "nameEn": "Light Tank",
+      "nameDe": "Leichter Panzer",
+      "category": "tank",
+      "spriteCode": 7
+    },
+    {
+      "kind": "base",
+      "name": "Char moyen",
+      "nameEn": "Medium Tank",
+      "nameDe": "Mittlerer Panzer",
+      "category": "tank",
+      "spriteCode": 8
+    },
+    {
+      "kind": "base",
+      "name": "Char lourd",
+      "nameEn": "Heavy Tank",
+      "nameDe": "Schwerer Panzer",
+      "category": "tank",
+      "spriteCode": 9
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie de campagne",
+      "nameEn": "Field Artillery",
+      "nameDe": "Feldartillerie",
+      "category": "artillery",
+      "spriteCode": 11
+    },
+    {
+      "kind": "base",
+      "name": "Obusier",
+      "nameEn": "Howitzer",
+      "nameDe": "Haubitze",
+      "category": "artillery",
+      "spriteCode": 12
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie à roquettes",
+      "nameEn": "Rocket Artillery",
+      "nameDe": "Raketenartillerie",
+      "category": "artillery",
+      "spriteCode": 13
+    },
+    {
+      "kind": "base",
+      "name": "Super artillerie",
+      "nameEn": "Super Artillery",
+      "nameDe": "Superartillerie",
+      "category": "artillery",
+      "spriteCode": 14
+    },
+    {
+      "kind": "elite",
+      "slug": "hawkeye"
+    },
+    {
+      "kind": "elite",
+      "slug": "combat-medic"
+    },
+    {
+      "kind": "elite",
+      "slug": "m26-pershing"
+    },
+    {
+      "kind": "elite",
+      "slug": "auf1-spg"
+    }
   ],
-  "preliminaryUnits": true,
   "generalBuff": {
     "text": "Après chaque attaque d'une unité « Division Leclerc », toutes les unités « Division Leclerc » dans un rayon de 2 cases reçoivent le « Serment de Restauration » pendant un tour. Serment de Restauration : ces unités ne peuvent pas être Confuses.",
     "textEn": "After all Leclerc Division units launch an attack, they grant the Restoration Oath to all Leclerc Division units within a two-tile radius for one turn. Restoration Oath: They cannot be Confused.",
     "textDe": "Nach jedem Angriff einer Leclerc-Division-Einheit erhalten alle Leclerc-Division-Einheiten in 2 Feldern Umkreis für eine Runde den 'Wiederherstellungseid'. Wiederherstellungseid: Diese Einheiten können nicht verwirrt werden.",
-    "appliesTo": ["all"]
+    "appliesTo": [
+      "all"
+    ]
   },
   "tacticalEffects": [
     {
@@ -58,7 +140,9 @@
       "desc": "Lorsqu'une unité blindée « Division Leclerc » détruit un ennemi sous l'effet du « Serment de Restauration », le moral des unités Leclerc dans un rayon de 2 cases augmente d'1 niveau. Peut se déclencher 1 fois par unité par tour.",
       "descEn": "When a Leclerc Division armored unit destroys an enemy unit while under the Restoration Oath effect, the morale of Leclerc Division units in a two-tile radius increases by 1 level. This effect can occur 1 time per unit per turn.",
       "descDe": "Wenn eine Leclerc-Panzereinheit unter dem Effekt des Wiederherstellungseides einen Feind zerstört, steigt die Moral aller Leclerc-Einheiten in 2 Feldern Umkreis um 1 Stufe. Dieser Effekt kann einmal pro Einheit und Runde auftreten.",
-      "appliesTo": ["tank"]
+      "appliesTo": [
+        "tank"
+      ]
     },
     {
       "name": "Soutien coordonné",
@@ -67,7 +151,9 @@
       "desc": "Lorsque les unités d'artillerie « Division Leclerc » sous le « Serment de Restauration » attaquent une ville ou une forteresse, si une unité d'infanterie ou blindée Leclerc se trouve à une case de la cible, leurs dégâts sont augmentés de 10 %.",
       "descEn": "When Leclerc Division artillery units are under the Restoration Oath status and attack a city or fortress, if there is a Leclerc infantry or armored unit within one hex of the target, their dealt damage increases by 10%.",
       "descDe": "Wenn Leclerc-Artillerieeinheiten unter dem Wiederherstellungseid-Status eine Stadt oder Festung angreifen und sich eine Leclerc-Infanterie- oder Panzereinheit innerhalb eines Feldes vom Ziel befindet, erhöht sich ihr Schaden um 10 %.",
-      "appliesTo": ["artillery"]
+      "appliesTo": [
+        "artillery"
+      ]
     },
     {
       "name": "Poursuite de soutien",
@@ -76,7 +162,9 @@
       "desc": "Lorsque les unités d'infanterie « Division Leclerc » attaquent sous le « Serment de Restauration », les unités Leclerc dans un rayon de 2 cases gagnent +5 en mobilité pour ce tour.",
       "descEn": "When Leclerc Division infantry units attack while under the Restoration Oath status, Leclerc Division units within 2 tiles gain +5 mobility for this turn.",
       "descDe": "Wenn Leclerc-Infanterieeinheiten unter dem Wiederherstellungseid-Status angreifen, erhalten Leclerc-Einheiten in 2 Feldern Umkreis +5 Mobilität für diese Runde.",
-      "appliesTo": ["infantry"]
+      "appliesTo": [
+        "infantry"
+      ]
     }
   ],
   "lockedToCountry": true

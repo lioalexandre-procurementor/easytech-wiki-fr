@@ -7,7 +7,7 @@ const DATA_DIR = path.join(process.cwd(), "data", "wc4", "formations");
 
 /** Render-ready unit row — pre-resolved server-side so client components don't import node:fs. */
 export type ResolvedFormationUnit =
-  | { kind: "base"; name: string; category: Category }
+  | { kind: "base"; name: string; category: Category; sprite: string }
   | {
       kind: "elite";
       slug: string;
@@ -52,7 +52,7 @@ export function resolveFormationUnits(units: FormationUnit[], locale?: string): 
   return units.map((u): ResolvedFormationUnit => {
     if (u.kind === "base") {
       const name = locale === "en" ? u.nameEn : locale === "de" ? u.nameDe : u.name;
-      return { kind: "base", name, category: u.category };
+      return { kind: "base", name, category: u.category, sprite: `/img/wc4/units/${u.spriteCode}.webp` };
     }
     const elite = getEliteUnit(u.slug);
     if (!elite) {

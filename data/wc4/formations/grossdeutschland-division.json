@@ -35,24 +35,102 @@
     ]
   },
   "units": [
-    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
-    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
-    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" },
-    { "kind": "elite", "slug": "konigs-tiger" },
-    { "kind": "elite", "slug": "stuka-rocket" }
+    {
+      "kind": "base",
+      "name": "Infanterie motorisée",
+      "nameEn": "Motorized Infantry",
+      "nameDe": "Motorisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 3
+    },
+    {
+      "kind": "base",
+      "name": "Infanterie mécanisée",
+      "nameEn": "Mechanized Infantry",
+      "nameDe": "Mechanisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 4
+    },
+    {
+      "kind": "base",
+      "name": "Char léger",
+      "nameEn": "Light Tank",
+      "nameDe": "Leichter Panzer",
+      "category": "tank",
+      "spriteCode": 7
+    },
+    {
+      "kind": "base",
+      "name": "Char moyen",
+      "nameEn": "Medium Tank",
+      "nameDe": "Mittlerer Panzer",
+      "category": "tank",
+      "spriteCode": 8
+    },
+    {
+      "kind": "base",
+      "name": "Char lourd",
+      "nameEn": "Heavy Tank",
+      "nameDe": "Schwerer Panzer",
+      "category": "tank",
+      "spriteCode": 9
+    },
+    {
+      "kind": "base",
+      "name": "Super char",
+      "nameEn": "Super Tank",
+      "nameDe": "Superpanzer",
+      "category": "tank",
+      "spriteCode": 10
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie de campagne",
+      "nameEn": "Field Artillery",
+      "nameDe": "Feldartillerie",
+      "category": "artillery",
+      "spriteCode": 11
+    },
+    {
+      "kind": "base",
+      "name": "Obusier",
+      "nameEn": "Howitzer",
+      "nameDe": "Haubitze",
+      "category": "artillery",
+      "spriteCode": 12
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie à roquettes",
+      "nameEn": "Rocket Artillery",
+      "nameDe": "Raketenartillerie",
+      "category": "artillery",
+      "spriteCode": 13
+    },
+    {
+      "kind": "base",
+      "name": "Super artillerie",
+      "nameEn": "Super Artillery",
+      "nameDe": "Superartillerie",
+      "category": "artillery",
+      "spriteCode": 14
+    },
+    {
+      "kind": "elite",
+      "slug": "konigs-tiger"
+    },
+    {
+      "kind": "elite",
+      "slug": "stuka-rocket"
+    }
   ],
   "generalBuff": {
     "text": "Toutes les unités « Division Großdeutschland » gagnent +2 en attaque par unité ennemie dans un rayon de 2 cases, jusqu'à un total de +20.",
     "textEn": "All Großdeutschland Division units gain +2 Attack for each enemy unit within 2 tiles, up to a total of +20.",
     "textDe": "Alle Einheiten der Division Großdeutschland erhalten +2 Angriff pro feindlicher Einheit in 2 Feldern Umkreis, bis zu insgesamt +20.",
-    "appliesTo": ["all"]
+    "appliesTo": [
+      "all"
+    ]
   },
   "tacticalEffects": [
     {
@@ -62,7 +140,11 @@
       "desc": "Si une unité d'infanterie « Großdeutschland » est à une case d'une unité d'artillerie ou blindée « Großdeutschland », à la fin du tour, toutes les unités Großdeutschland dans un rayon d'une case gagnent le statut « Garnison » pour un tour. (Garnison : pour chaque unité alliée à une case, Défense +3, Dégâts de contre-attaque +3 %.)",
       "descEn": "If a Großdeutschland infantry unit is within 1 tile of a Großdeutschland artillery or armored unit, at the end of the turn, all Großdeutschland units within 1 tile gain a 1-turn Garrison buff. (Garrison: For each friendly unit within 1 tile, Defense +3, Counterattack Damage +3%.)",
       "descDe": "Wenn sich eine Großdeutschland-Infanterieeinheit innerhalb eines Feldes einer Großdeutschland-Artillerie- oder Panzereinheit befindet, erhalten am Ende der Runde alle Großdeutschland-Einheiten innerhalb eines Feldes für eine Runde den 'Garnison'-Bonus. (Garnison: Pro verbündeter Einheit im Feldumkreis Verteidigung +3, Gegenangriffsschaden +3 %.)",
-      "appliesTo": ["infantry", "tank", "artillery"]
+      "appliesTo": [
+        "infantry",
+        "tank",
+        "artillery"
+      ]
     },
     {
       "name": "Percée blindée",
@@ -71,7 +153,9 @@
       "desc": "Lorsqu'une unité blindée « Großdeutschland » est à une case d'une unité d'infanterie « Großdeutschland » et attaque, s'il ne reste aucun ennemi dans un rayon de 2 cases après l'attaque, toutes les unités « Großdeutschland » dans un rayon de 2 cases gagnent +5 en mobilité pour ce tour. (Non cumulable.)",
       "descEn": "When a Großdeutschland armored unit is within 1 tile of a Großdeutschland infantry unit, if there are no enemy units within 2 tiles after attacking, all Großdeutschland units within 2 tiles gain +5 mobility for this turn. (Cannot stack.)",
       "descDe": "Wenn eine Großdeutschland-Panzereinheit innerhalb eines Feldes einer Großdeutschland-Infanterieeinheit angreift und sich danach keine Feinde in 2 Feldern Umkreis befinden, erhalten alle Großdeutschland-Einheiten in 2 Feldern Umkreis +5 Mobilität für diese Runde. (Nicht stapelbar.)",
-      "appliesTo": ["tank"]
+      "appliesTo": [
+        "tank"
+      ]
     },
     {
       "name": "Étourdissement par la puissance de feu",
@@ -80,7 +164,9 @@
       "desc": "Si une unité d'artillerie « Großdeutschland » est dans un rayon de 2 cases d'une unité blindée « Großdeutschland », toute attaque de cette artillerie applique un étourdissement d'un tour à la cible. (Étourdissement : -3 en mobilité pour le tour en cours, cumulable jusqu'à trois fois.)",
       "descEn": "If a Großdeutschland artillery unit is within 2 tiles of a Großdeutschland armored unit, any attack made by this artillery unit applies a one-turn Stun buff to the target. (Stun: -3 mobility for the current turn, stackable up to three times.)",
       "descDe": "Wenn sich eine Großdeutschland-Artillerieeinheit in 2 Feldern Umkreis einer Großdeutschland-Panzereinheit befindet, wendet jeder Angriff dieser Artillerie einen 1-Runden-'Betäubungs'-Effekt auf das Ziel an. (Betäubung: -3 Mobilität für die aktuelle Runde, bis zu dreimal stapelbar.)",
-      "appliesTo": ["artillery"]
+      "appliesTo": [
+        "artillery"
+      ]
     }
   ],
   "lockedToCountry": true

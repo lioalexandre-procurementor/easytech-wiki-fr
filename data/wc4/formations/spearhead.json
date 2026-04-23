@@ -8,6 +8,9 @@
   "countryName": "États-Unis",
   "countryNameEn": "United States",
   "countryNameDe": "Vereinigte Staaten",
+  "operationName": "Opération Tempête du désert",
+  "operationNameEn": "Operation Desert Storm",
+  "operationNameDe": "Operation Wüstensturm",
   "historicalUnit": "3e Division Blindée",
   "historicalUnitEn": "3rd Armored Division",
   "historicalUnitDe": "3. US-Panzerdivision",
@@ -32,23 +35,98 @@
     ]
   },
   "units": [
-    { "kind": "base", "name": "Infanterie motorisée", "nameEn": "Motorized Infantry", "nameDe": "Motorisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Infanterie mécanisée", "nameEn": "Mechanized Infantry", "nameDe": "Mechanisierte Infanterie", "category": "infantry" },
-    { "kind": "base", "name": "Char léger", "nameEn": "Light Tank", "nameDe": "Leichter Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char moyen", "nameEn": "Medium Tank", "nameDe": "Mittlerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Char lourd", "nameEn": "Heavy Tank", "nameDe": "Schwerer Panzer", "category": "tank" },
-    { "kind": "base", "name": "Super char", "nameEn": "Super Tank", "nameDe": "Superpanzer", "category": "tank" },
-    { "kind": "base", "name": "Artillerie de campagne", "nameEn": "Field Artillery", "nameDe": "Feldartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Obusier", "nameEn": "Howitzer", "nameDe": "Haubitze", "category": "artillery" },
-    { "kind": "base", "name": "Artillerie à roquettes", "nameEn": "Rocket Artillery", "nameDe": "Raketenartillerie", "category": "artillery" },
-    { "kind": "base", "name": "Super artillerie", "nameEn": "Super Artillery", "nameDe": "Superartillerie", "category": "artillery" }
+    {
+      "kind": "base",
+      "name": "Infanterie motorisée",
+      "nameEn": "Motorized Infantry",
+      "nameDe": "Motorisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 3
+    },
+    {
+      "kind": "base",
+      "name": "Infanterie mécanisée",
+      "nameEn": "Mechanized Infantry",
+      "nameDe": "Mechanisierte Infanterie",
+      "category": "infantry",
+      "spriteCode": 4
+    },
+    {
+      "kind": "base",
+      "name": "Char léger",
+      "nameEn": "Light Tank",
+      "nameDe": "Leichter Panzer",
+      "category": "tank",
+      "spriteCode": 7
+    },
+    {
+      "kind": "base",
+      "name": "Char moyen",
+      "nameEn": "Medium Tank",
+      "nameDe": "Mittlerer Panzer",
+      "category": "tank",
+      "spriteCode": 8
+    },
+    {
+      "kind": "base",
+      "name": "Char lourd",
+      "nameEn": "Heavy Tank",
+      "nameDe": "Schwerer Panzer",
+      "category": "tank",
+      "spriteCode": 9
+    },
+    {
+      "kind": "base",
+      "name": "Super char",
+      "nameEn": "Super Tank",
+      "nameDe": "Superpanzer",
+      "category": "tank",
+      "spriteCode": 10
+    },
+    {
+      "kind": "base",
+      "name": "Obusier",
+      "nameEn": "Howitzer",
+      "nameDe": "Haubitze",
+      "category": "artillery",
+      "spriteCode": 12
+    },
+    {
+      "kind": "base",
+      "name": "Artillerie à roquettes",
+      "nameEn": "Rocket Artillery",
+      "nameDe": "Raketenartillerie",
+      "category": "artillery",
+      "spriteCode": 13
+    },
+    {
+      "kind": "elite",
+      "slug": "hawkeye"
+    },
+    {
+      "kind": "elite",
+      "slug": "m7-priest"
+    },
+    {
+      "kind": "elite",
+      "slug": "m26-pershing"
+    },
+    {
+      "kind": "elite",
+      "slug": "ghost-troop"
+    },
+    {
+      "kind": "elite",
+      "slug": "m1a1-abrams"
+    }
   ],
-  "preliminaryUnits": true,
   "generalBuff": {
     "text": "Toutes les unités « Spearhead » gagnent +10 en attaque.",
     "textEn": "All Spearhead units attack +10.",
     "textDe": "Alle Spearhead-Einheiten erhalten +10 Angriff.",
-    "appliesTo": ["all"]
+    "appliesTo": [
+      "all"
+    ]
   },
   "tacticalEffects": [
     {
@@ -58,7 +136,9 @@
       "desc": "Si une unité d'infanterie alliée « Spearhead » est adjacente, les chars gagnent +20 % de dégâts critiques.",
       "descEn": "If an adjacent friendly Spearhead infantry unit is present, tank units critical damage +20%.",
       "descDe": "Befindet sich eine benachbarte befreundete Spearhead-Infanterieeinheit in der Nähe, erhalten Panzer +20 % kritischen Schaden.",
-      "appliesTo": ["tank"]
+      "appliesTo": [
+        "tank"
+      ]
     },
     {
       "name": "Manœuvres en essaim",
@@ -67,7 +147,9 @@
       "desc": "Pour chaque unité alliée « Spearhead » dans un rayon de 2 hexagones, les unités d'infanterie gagnent +2 en mobilité.",
       "descEn": "For each friendly Spearhead unit within 2 hexes, infantry units mobility +2.",
       "descDe": "Für jede befreundete Spearhead-Einheit innerhalb von 2 Feldern erhalten Infanterieeinheiten +2 Mobilität.",
-      "appliesTo": ["infantry"]
+      "appliesTo": [
+        "infantry"
+      ]
     },
     {
       "name": "Soutien de position défensive",
@@ -76,7 +158,9 @@
       "desc": "Si une unité alliée « Spearhead » est adjacente, les unités d'artillerie reçoivent 15 % de dégâts en moins.",
       "descEn": "If an adjacent friendly Spearhead unit is present, artillery units damage received -15%.",
       "descDe": "Befindet sich eine benachbarte befreundete Spearhead-Einheit in der Nähe, erhalten Artillerieeinheiten 15 % weniger Schaden.",
-      "appliesTo": ["artillery"]
+      "appliesTo": [
+        "artillery"
+      ]
     }
   ],
   "lockedToCountry": true
