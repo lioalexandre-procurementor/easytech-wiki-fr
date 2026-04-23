@@ -7,6 +7,8 @@ import { TierBadge } from "@/components/TierBadge";
 import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
 import { AdSlot } from "@/components/AdSlot";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { JsonLd } from "@/components/JsonLd";
 import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
@@ -96,18 +98,42 @@ export default async function UnitPage({ params }: { params: { locale: string; s
     new Map([...linkedGenerals, ...reverseGens].map(g => [g.slug, g])).values()
   );
 
+  const unitDisplayName = params.locale === "fr" ? unit.name : unit.nameEn || unit.name;
+  const unitDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "longDesc", params.locale);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
+  const unitSlugSegment = params.locale === "fr" ? "unites-elite" : "elite-units";
+  // Represent the in-game elite unit as a schema.org Thing with a
+  // gaming context. "VideoGame" is a conceptual match but forces a
+  // software-product shape; "Thing" is permissive and, combined with
+  // isPartOf → VideoGame, correctly models the unit as an item within
+  // World Conqueror 4.
+  const unitSchema = {
+    "@context": "https://schema.org",
+    "@type": "Thing",
+    name: unitDisplayName,
+    description: unitDesc,
+    ...(unit.image?.sprite ? { image: `${siteUrl}${unit.image.sprite}` } : {}),
+    url: `${siteUrl}/${params.locale}/world-conqueror-4/${unitSlugSegment}/${unit.slug}`,
+    isPartOf: {
+      "@type": "VideoGame",
+      name: "World Conqueror 4",
+      publisher: { "@type": "Organization", name: "EasyTech" },
+    },
+  };
+
   return (
     <>
       <TopBar/>
-      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">{t("nav.home")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <Link href="/world-conqueror-4" className="text-dim">{t("nav.wc4")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <Link href="/world-conqueror-4/unites-elite" className="text-dim">{t("nav.eliteUnits")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <span>{unit.name}</span>
-      </div>
+      <JsonLd data={unitSchema} />
+      <BreadcrumbNav
+        locale={params.locale}
+        items={[
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.wc4"), href: "/world-conqueror-4" },
+          { label: t("nav.eliteUnits"), href: "/world-conqueror-4/unites-elite" },
+          { label: unit.name },
+        ]}
+      />
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">

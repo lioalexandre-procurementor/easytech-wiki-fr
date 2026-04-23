@@ -32,6 +32,7 @@ export async function generateMetadata({
   if (!locales.includes(locale as Locale)) notFound();
   const t = await getTranslations({ locale, namespace: "site" });
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
       default: t("title"),
       template: `%s | ${t("shortTitle")}`,

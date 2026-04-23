@@ -17,6 +17,8 @@ export type GeneralOption = {
 export type VoteResult = {
   counts: Record<string, number>;
   total: number;
+  /** Slug the user voted for — surfaced so callers can fire analytics events. */
+  votedSlug?: string;
 };
 
 interface Props {
@@ -173,7 +175,7 @@ export default function BestGeneralVoteModal({
         setSubmitting(false);
         return;
       }
-      onVoted({ counts: data.counts || {}, total: data.total || 0 });
+      onVoted({ counts: data.counts || {}, total: data.total || 0, votedSlug: selectedSlug ?? undefined });
     } catch {
       setErrorMsg(t("errors.connectionLost"));
     } finally {

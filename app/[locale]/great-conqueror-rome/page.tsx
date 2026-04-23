@@ -2,12 +2,15 @@ import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { JsonLd } from "@/components/JsonLd";
 import {
   getAllEliteUnits,
   getUnitsByFaction,
   getAllGenerals,
   getCategoryMeta,
 } from "@/lib/gcr";
+import { getHubFaqs, HUB_FAQ_HEADING } from "@/lib/hub-faq";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -31,6 +34,20 @@ export async function generateMetadata({
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    alternates: {
+      canonical: `/${locale}/great-conqueror-rome`,
+      languages: {
+        fr: "/fr/great-conqueror-rome",
+        en: "/en/great-conqueror-rome",
+        de: "/de/great-conqueror-rome",
+        "x-default": "/fr/great-conqueror-rome",
+      },
+    },
+    openGraph: {
+      title: titleByLocale[locale] ?? titleByLocale.en,
+      description: descByLocale[locale] ?? descByLocale.en,
+      type: "website",
+    },
   };
 }
 
@@ -52,16 +69,28 @@ export default async function GCRHub({ params }: { params: { locale: string } })
     ...CAT[k],
   }));
 
+  const faqs = getHubFaqs("gcr", params.locale);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
       <TopBar />
-      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">
-          {t("nav.home")}
-        </Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <span>{t("nav.gcr")}</span>
-      </div>
+      <JsonLd data={faqSchema} />
+      <BreadcrumbNav
+        locale={params.locale}
+        items={[
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.gcr") },
+        ]}
+      />
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
@@ -159,6 +188,20 @@ export default async function GCRHub({ params }: { params: { locale: string } })
           </div>
 
           <AdSlot name="listingBottom" label={t("ui.adSlot")} className="my-6" />
+
+          {faqs.length > 0 && (
+            <section className="bg-panel border border-border rounded-lg p-6 mt-10" aria-labelledby="gcr-hub-faq">
+              <h2 id="gcr-hub-faq" className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
+                ❓ {HUB_FAQ_HEADING[params.locale] ?? HUB_FAQ_HEADING.en}
+              </h2>
+              {faqs.map((f, i) => (
+                <div key={i} className="border-b border-border last:border-none py-3.5">
+                  <h3 className="font-bold text-ink mb-1.5 text-sm">{f.q}</h3>
+                  <p className="text-dim text-sm leading-relaxed">{f.a}</p>
+                </div>
+              ))}
+            </section>
+          )}
         </main>
       </div>
 

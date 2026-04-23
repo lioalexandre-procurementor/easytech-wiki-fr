@@ -8,6 +8,7 @@ import BestGeneralVoteModal, {
   type VoteResult,
 } from "./BestGeneralVoteModal";
 import type { Game } from "@/lib/types";
+import { analytics } from "@/lib/analytics";
 
 interface Props {
   game: Game;
@@ -97,6 +98,13 @@ export default function BestGeneralVote({
     setTotal(r.total);
     setHasVoted(true);
     setModalOpen(false);
+    // GA4 key event — lets us measure the main conversion action on the
+    // site (Search Console has 0 key events today).
+    analytics.voteCast({
+      game,
+      entity: "best_general",
+      slug: r.votedSlug ?? "unknown",
+    });
   };
 
   return (

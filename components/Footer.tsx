@@ -3,6 +3,7 @@ import { Link } from "@/src/i18n/navigation";
 import { legalConfig } from "@/lib/legal-config";
 import ManageCookiesLink from "./ManageCookiesLink";
 import ReportMistakeLink from "./ReportMistakeLink";
+import { OutboundLink } from "./OutboundLink";
 import Icon from "./Icon";
 import ThemeToggle from "./ThemeToggle";
 
@@ -21,8 +22,10 @@ export async function Footer() {
         <span className="text-dim uppercase tracking-widest text-[10px] md:text-xs">
           {t("footer.followUs")}
         </span>
-        <a
+        <OutboundLink
           href="https://instagram.com/easytech.wiki"
+          network="instagram"
+          location="footer"
           target="_blank"
           rel="noopener noreferrer me"
           aria-label="Instagram — @easytech.wiki"
@@ -30,9 +33,11 @@ export async function Footer() {
         >
           <Icon name="instagram" size={16} />
           <span>@easytech.wiki</span>
-        </a>
-        <a
+        </OutboundLink>
+        <OutboundLink
           href="https://reddit.com/user/easytechwiki"
+          network="reddit"
+          location="footer"
           target="_blank"
           rel="noopener noreferrer me"
           aria-label="Reddit — u/easytechwiki"
@@ -40,7 +45,7 @@ export async function Footer() {
         >
           <Icon name="reddit" size={16} />
           <span>u/easytechwiki</span>
-        </a>
+        </OutboundLink>
       </div>
       <nav className="flex flex-wrap justify-center gap-x-4 md:gap-x-5 gap-y-2 mb-3 text-xs md:text-sm">
         <Link href="/legal/a-propos" className="hover:text-gold2">

@@ -3,9 +3,12 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitCard } from "@/components/UnitCard";
 import { AdSlot } from "@/components/AdSlot";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { JsonLd } from "@/components/JsonLd";
 import BestGeneralVote from "@/components/BestGeneralVote";
 import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, getCategoryMeta } from "@/lib/units";
 import { BEST_GENERAL_PLACEHOLDER } from "@/lib/editorial-picks";
+import { getHubFaqs, HUB_FAQ_HEADING } from "@/lib/hub-faq";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -29,6 +32,20 @@ export async function generateMetadata({
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    alternates: {
+      canonical: `/${locale}/world-conqueror-4`,
+      languages: {
+        fr: "/fr/world-conqueror-4",
+        en: "/en/world-conqueror-4",
+        de: "/de/world-conqueror-4",
+        "x-default": "/fr/world-conqueror-4",
+      },
+    },
+    openGraph: {
+      title: titleByLocale[locale] ?? titleByLocale.en,
+      description: descByLocale[locale] ?? descByLocale.en,
+      type: "website",
+    },
   };
 }
 
@@ -48,14 +65,28 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
   const counts = (Object.keys(CAT) as Category[])
     .map(k => ({ key: k, count: standardUnits.filter(u => u.category === k).length, ...CAT[k] }));
 
+  const faqs = getHubFaqs("wc4", params.locale);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  };
+
   return (
     <>
       <TopBar/>
-      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">{t("nav.home")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <span>{t("nav.wc4")}</span>
-      </div>
+      <JsonLd data={faqSchema} />
+      <BreadcrumbNav
+        locale={params.locale}
+        items={[
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.wc4") },
+        ]}
+      />
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
         <main>
@@ -148,6 +179,20 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {top.map(u => <UnitCard key={u.slug} unit={u} locale={params.locale}/>)}
           </div>
+
+          {faqs.length > 0 && (
+            <section className="bg-panel border border-border rounded-lg p-6 mt-10" aria-labelledby="wc4-hub-faq">
+              <h2 id="wc4-hub-faq" className="text-gold2 font-bold uppercase tracking-widest text-lg mb-4">
+                ❓ {HUB_FAQ_HEADING[params.locale] ?? HUB_FAQ_HEADING.en}
+              </h2>
+              {faqs.map((f, i) => (
+                <div key={i} className="border-b border-border last:border-none py-3.5">
+                  <h3 className="font-bold text-ink mb-1.5 text-sm">{f.q}</h3>
+                  <p className="text-dim text-sm leading-relaxed">{f.a}</p>
+                </div>
+              ))}
+            </section>
+          )}
         </main>
       </div>
 

@@ -5,6 +5,8 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
 import TrainedSkillVote from "@/components/TrainedSkillVote";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { JsonLd } from "@/components/JsonLd";
 import {
   getAllGeneralSlugs,
   getGeneral,
@@ -147,18 +149,31 @@ export default async function GeneralPage({ params }: { params: { locale: string
   const slotRecommendations = buildSlotRecommendationMap(g);
   const { family, given } = splitGeneralName(g.name);
 
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
+  const generalSlugSegment = params.locale === "fr" ? "generaux" : "generals";
+  const generalSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: g.nameEn || g.name,
+    description: localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", params.locale),
+    ...(g.image?.head ? { image: `${siteUrl}${g.image.head}` } : {}),
+    url: `${siteUrl}/${params.locale}/world-conqueror-4/${generalSlugSegment}/${params.slug}`,
+    ...(g.country ? { nationality: g.country } : {}),
+  };
+
   return (
     <>
       <TopBar />
-      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted">
-        <Link href="/" className="text-dim">{t("nav.home")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <Link href="/world-conqueror-4" className="text-dim">{t("nav.wc4")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <Link href="/world-conqueror-4/generaux" className="text-dim">{t("nav.generals")}</Link>{" "}
-        <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
-        <span>{g.name}</span>
-      </div>
+      <JsonLd data={generalSchema} />
+      <BreadcrumbNav
+        locale={params.locale}
+        items={[
+          { label: t("nav.home"), href: "/" },
+          { label: t("nav.wc4"), href: "/world-conqueror-4" },
+          { label: t("nav.generals"), href: "/world-conqueror-4/generaux" },
+          { label: g.name },
+        ]}
+      />
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
