@@ -15,12 +15,15 @@ async function countByMember(redis: ReturnType<typeof getRedis>, key: string): P
 
 async function countSkillKeys(redis: ReturnType<typeof getRedis>): Promise<number> {
   if (!redis) return 0;
-  // Upstash supports SCAN. Count all `vote:wc4:gen:*:slot*` hash keys.
+  // Counts all per-unit vote hashes across games (`vote:*:unit-general:*`),
+  // i.e. how many elite units have at least one community vote. The
+  // function name is kept for back-compat with the dashboard tile and
+  // type signature; pre-redesign it counted `vote:wc4:gen:*:slot*`.
   let cursor: string | number = 0;
   let total = 0;
   do {
     const res = (await redis.scan(cursor, {
-      match: "vote:wc4:gen:*:slot*",
+      match: "vote:*:unit-general:*",
       count: 200,
     })) as [string | number, string[]];
     cursor = res[0];

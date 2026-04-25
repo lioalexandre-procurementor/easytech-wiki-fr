@@ -43,7 +43,7 @@ export default async function AdminDashboard() {
         <Tile label="Bug reports" value={stats.ticketsByKind.bug} />
         <Tile label="Verification tasks" value={stats.ticketsByKind.verification} />
         <Tile label="Best-general votes" value={stats.votes.bestGeneralTotal} />
-        <Tile label="Skill-vote keys" value={stats.votes.skillKeys} />
+        <Tile label="Per-unit vote keys" value={stats.votes.skillKeys} />
       </div>
 
       <h3 style={{ margin: "0 0 10px", fontSize: 16, fontWeight: 700 }}>
@@ -55,7 +55,7 @@ export default async function AdminDashboard() {
           Verification queue →
         </QuickLink>
         <QuickLink href="/admin/votes/best-general">Manage best-general votes →</QuickLink>
-        <QuickLink href="/admin/votes/skills">Manage skill votes →</QuickLink>
+        <QuickLink href="/admin/votes/skills">Generals per elite unit →</QuickLink>
       </div>
 
       <h3 style={{ margin: "28px 0 10px", fontSize: 16, fontWeight: 700 }}>

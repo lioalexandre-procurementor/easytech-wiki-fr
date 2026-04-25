@@ -90,7 +90,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             </NavSection>
             <NavSection title="Votes">
               <NavLink href="/admin/votes/best-general">Best general</NavLink>
-              <NavLink href="/admin/votes/skills">Skill votes</NavLink>
+              <NavLink href="/admin/votes/skills">Generals per elite unit</NavLink>
             </NavSection>
             <NavSection title="Site">
               <NavLink href="/" external>
