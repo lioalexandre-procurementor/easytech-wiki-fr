@@ -23,55 +23,75 @@ import {
 import { getGame } from "@/lib/games";
 import { isPlaceholder } from "@/lib/placeholder";
 import { locales } from "@/src/i18n/config";
-
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
+import {
+  BASE_URL,
+  urlFor,
+  sitemapAlternates,
+  type LocalePair,
+} from "@/lib/seo-alternates";
 
 /**
- * Localized path pair for a given canonical route suffix.
- * The keys mirror the locale → external URL rewrites defined in
- * src/i18n/config.ts. If a route is added there, mirror it here.
+ * Sitemap rules enforced here (mirror Google's "Sitemaps general guidelines"):
  *
- * German routes mirror English slugs — we localize content, not URL
- * segments, as a deliberate v1 trade-off.
+ *  1. Only canonical URLs that return HTTP 200. We never list redirects
+ *     (e.g. `/book` → `/services`) and never list URLs whose canonical
+ *     points elsewhere — the `/[slug]/trained` and
+ *     `/[slug]/premium-training` "alternate views" are intentionally
+ *     omitted because their `<link rel="canonical">` points back to the
+ *     base general page (see app/[locale]/world-conqueror-4/generaux/[slug]/
+ *     trained/page.tsx and .../premium-training/page.tsx).
+ *
+ *  2. Only URLs the page itself marks as indexable. EW6/GCR placeholder
+ *     general/unit pages set `robots: { index: false }` AND we filter
+ *     them out here via `isPlaceholder()` so noindex pages never appear
+ *     in the sitemap.
+ *
+ *  3. `lastModified` reflects real content change time when we have it
+ *     (file mtime for JSON-derived routes); falls back to build time for
+ *     code-only static routes.
+ *
+ *  4. Hreflang alternates are emitted in HTML metadata AND here. Both
+ *     must use the same path pairs — see lib/seo-alternates.ts.
  */
-type LocalePair = { fr: string; en: string; de: string };
 
-function alternates(pair: LocalePair) {
-  return {
-    languages: {
-      fr: `${BASE_URL}/fr${pair.fr}`,
-      en: `${BASE_URL}/en${pair.en}`,
-      de: `${BASE_URL}/de${pair.de}`,
-      "x-default": `${BASE_URL}/fr${pair.fr}`,
-    },
-  };
+const BUILD_TIME = new Date();
+
+/** mtime of a file, or BUILD_TIME if it doesn't exist. */
+function mtimeOrBuild(filepath: string): Date {
+  try {
+    return fs.statSync(filepath).mtime;
+  } catch {
+    return BUILD_TIME;
+  }
 }
 
-function pathFor(locale: "fr" | "en" | "de", pair: LocalePair): string {
-  return `${BASE_URL}/${locale}${pair[locale]}`;
+/** Newest mtime across the JSONs in `dir` (excluding `_index.json`). */
+function dirNewestMtime(dir: string): Date {
+  if (!fs.existsSync(dir)) return BUILD_TIME;
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json") && !f.startsWith("_"));
+  let newest = 0;
+  for (const f of files) {
+    const m = fs.statSync(path.join(dir, f)).mtimeMs;
+    if (m > newest) newest = m;
+  }
+  return newest > 0 ? new Date(newest) : BUILD_TIME;
 }
+
+const WC4_DATA = path.join(process.cwd(), "data", "wc4");
+const GCR_DATA = path.join(process.cwd(), "data", "gcr");
+const EW6_DATA = path.join(process.cwd(), "data", "ew6");
+
+// ---------------------------------------------------------------------
+// Localized path pairs — must mirror src/i18n/config.ts pathnames.
+// ---------------------------------------------------------------------
 
 function generalBase(slug: string): LocalePair {
   return {
     fr: `/world-conqueror-4/generaux/${slug}`,
     en: `/world-conqueror-4/generals/${slug}`,
     de: `/world-conqueror-4/generals/${slug}`,
-  };
-}
-
-function generalTrained(slug: string): LocalePair {
-  return {
-    fr: `/world-conqueror-4/generaux/${slug}/entraine`,
-    en: `/world-conqueror-4/generals/${slug}/trained`,
-    de: `/world-conqueror-4/generals/${slug}/trained`,
-  };
-}
-
-function generalPremiumTraining(slug: string): LocalePair {
-  return {
-    fr: `/world-conqueror-4/generaux/${slug}/entrainement-premium`,
-    en: `/world-conqueror-4/generals/${slug}/premium-training`,
-    de: `/world-conqueror-4/generals/${slug}/premium-training`,
   };
 }
 
@@ -100,7 +120,7 @@ function updateDetail(slug: string): LocalePair {
 }
 
 function getAllUpdateSlugsFromFs(): string[] {
-  const dir = path.join(process.cwd(), "data", "wc4", "updates");
+  const dir = path.join(WC4_DATA, "updates");
   if (!fs.existsSync(dir)) return [];
   return fs
     .readdirSync(dir)
@@ -108,9 +128,8 @@ function getAllUpdateSlugsFromFs(): string[] {
     .map((f) => f.replace(/\.json$/, ""));
 }
 
-/** Read all tech slugs from data/wc4/technologies/*.json (excluding _index.json). */
 function getAllTechSlugsFromFs(): string[] {
-  const dir = path.join(process.cwd(), "data", "wc4", "technologies");
+  const dir = path.join(WC4_DATA, "technologies");
   if (!fs.existsSync(dir)) return [];
   return fs
     .readdirSync(dir)
@@ -118,117 +137,228 @@ function getAllTechSlugsFromFs(): string[] {
     .map((f) => f.replace(/\.json$/, ""));
 }
 
-/** Read all skill slugs from data/wc4/skills/*.json (excluding _index.json). */
 function getAllSkillSlugs(): string[] {
-  const dir = path.join(process.cwd(), "data", "wc4", "skills");
+  const dir = path.join(WC4_DATA, "skills");
   if (!fs.existsSync(dir)) return [];
   return fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
     .map((f) => f.replace(/\.json$/, ""));
+}
+
+type StaticRoute = {
+  pair: LocalePair;
+  priority: number;
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  lastModified?: Date;
+};
+
+function emitLocalized(
+  entries: MetadataRoute.Sitemap,
+  route: StaticRoute,
+): void {
+  for (const locale of locales) {
+    entries.push({
+      url: urlFor(locale, route.pair),
+      lastModified: route.lastModified ?? BUILD_TIME,
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+      alternates: sitemapAlternates(route.pair),
+    });
+  }
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
 
-  // Static roots
-  const staticRoutes: { pair: LocalePair; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+  const wc4GeneralsMtime = dirNewestMtime(path.join(WC4_DATA, "generals"));
+  const wc4EliteMtime = dirNewestMtime(path.join(WC4_DATA, "elite-units"));
+  const wc4SkillsMtime = dirNewestMtime(path.join(WC4_DATA, "skills"));
+  const wc4TechMtime = dirNewestMtime(path.join(WC4_DATA, "technologies"));
+  const wc4UpdatesMtime = dirNewestMtime(path.join(WC4_DATA, "updates"));
+
+  // -------------------------------------------------------------------
+  // Site-wide / cross-game
+  // -------------------------------------------------------------------
+  const siteRoutes: StaticRoute[] = [
     { pair: { fr: "", en: "", de: "" }, priority: 1, changeFrequency: "weekly" },
-    { pair: { fr: "/world-conqueror-4", en: "/world-conqueror-4", de: "/world-conqueror-4" }, priority: 0.9, changeFrequency: "weekly" },
-    { pair: { fr: "/world-conqueror-4/generaux", en: "/world-conqueror-4/generals", de: "/world-conqueror-4/generals" }, priority: 0.9, changeFrequency: "weekly" },
-    { pair: { fr: "/world-conqueror-4/unites-elite", en: "/world-conqueror-4/elite-units", de: "/world-conqueror-4/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
-    { pair: { fr: "/world-conqueror-4/competences", en: "/world-conqueror-4/skills", de: "/world-conqueror-4/skills" }, priority: 0.8, changeFrequency: "weekly" },
-    { pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire", de: "/world-conqueror-4/scorpion-empire" }, priority: 0.6, changeFrequency: "monthly" },
-    { pair: { fr: "/world-conqueror-4/mises-a-jour", en: "/world-conqueror-4/updates", de: "/world-conqueror-4/updates" }, priority: 0.8, changeFrequency: "weekly" },
-    { pair: { fr: "/world-conqueror-4/tier-list", en: "/world-conqueror-4/tier-list", de: "/world-conqueror-4/tier-list" }, priority: 0.8, changeFrequency: "monthly" },
-    { pair: { fr: "/world-conqueror-4/formations-legendes", en: "/world-conqueror-4/legend-formations", de: "/world-conqueror-4/legend-formations" }, priority: 0.8, changeFrequency: "monthly" },
-    { pair: { fr: "/legal/votes", en: "/legal/votes", de: "/legal/votes" }, priority: 0.3, changeFrequency: "yearly" },
-    { pair: { fr: "/legal/mentions-legales", en: "/legal/legal-notice", de: "/legal/legal-notice" }, priority: 0.3, changeFrequency: "yearly" },
-    { pair: { fr: "/legal/confidentialite", en: "/legal/privacy", de: "/legal/privacy" }, priority: 0.3, changeFrequency: "yearly" },
-    { pair: { fr: "/legal/cookies", en: "/legal/cookies", de: "/legal/cookies" }, priority: 0.3, changeFrequency: "yearly" },
-    { pair: { fr: "/legal/cgu", en: "/legal/terms", de: "/legal/terms" }, priority: 0.3, changeFrequency: "yearly" },
-    { pair: { fr: "/legal/a-propos", en: "/legal/about", de: "/legal/about" }, priority: 0.4, changeFrequency: "monthly" },
-    { pair: { fr: "/legal/contact", en: "/legal/contact", de: "/legal/contact" }, priority: 0.4, changeFrequency: "yearly" },
+    {
+      pair: { fr: "/classements", en: "/leaderboards", de: "/bestenlisten" },
+      priority: 0.8,
+      changeFrequency: "daily",
+    },
   ];
+  for (const route of siteRoutes) emitLocalized(entries, route);
 
-  for (const route of staticRoutes) {
-    for (const locale of locales) {
-      entries.push({
-        url: pathFor(locale, route.pair),
-        lastModified: now,
-        changeFrequency: route.changeFrequency,
-        priority: route.priority,
-        alternates: alternates(route.pair),
-      });
-    }
-  }
+  // -------------------------------------------------------------------
+  // World Conqueror 4 — static hubs
+  // -------------------------------------------------------------------
+  const wc4StaticRoutes: StaticRoute[] = [
+    {
+      pair: { fr: "/world-conqueror-4", en: "/world-conqueror-4", de: "/world-conqueror-4" },
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
+      pair: { fr: "/world-conqueror-4/generaux", en: "/world-conqueror-4/generals", de: "/world-conqueror-4/generals" },
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: wc4GeneralsMtime,
+    },
+    {
+      pair: { fr: "/world-conqueror-4/unites-elite", en: "/world-conqueror-4/elite-units", de: "/world-conqueror-4/elite-units" },
+      priority: 0.9,
+      changeFrequency: "weekly",
+      lastModified: wc4EliteMtime,
+    },
+    {
+      pair: { fr: "/world-conqueror-4/competences", en: "/world-conqueror-4/skills", de: "/world-conqueror-4/skills" },
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: wc4SkillsMtime,
+    },
+    {
+      pair: { fr: "/world-conqueror-4/empire-du-scorpion", en: "/world-conqueror-4/scorpion-empire", de: "/world-conqueror-4/scorpion-empire" },
+      priority: 0.6,
+      changeFrequency: "monthly",
+    },
+    {
+      pair: { fr: "/world-conqueror-4/mises-a-jour", en: "/world-conqueror-4/updates", de: "/world-conqueror-4/updates" },
+      priority: 0.8,
+      changeFrequency: "weekly",
+      lastModified: wc4UpdatesMtime,
+    },
+    {
+      pair: { fr: "/world-conqueror-4/tier-list", en: "/world-conqueror-4/tier-list", de: "/world-conqueror-4/tier-list" },
+      priority: 0.8,
+      changeFrequency: "monthly",
+      lastModified: wc4GeneralsMtime,
+    },
+    {
+      pair: { fr: "/world-conqueror-4/formations-legendes", en: "/world-conqueror-4/legend-formations", de: "/world-conqueror-4/legend-formations" },
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      pair: { fr: "/world-conqueror-4/comparateur/generaux", en: "/world-conqueror-4/comparator/generals", de: "/world-conqueror-4/comparator/generals" },
+      priority: 0.7,
+      changeFrequency: "monthly",
+    },
+    {
+      pair: { fr: "/world-conqueror-4/comparateur/unites", en: "/world-conqueror-4/comparator/units", de: "/world-conqueror-4/comparator/units" },
+      priority: 0.7,
+      changeFrequency: "monthly",
+    },
+    {
+      pair: { fr: "/world-conqueror-4/technologies", en: "/world-conqueror-4/technologies", de: "/world-conqueror-4/technologies" },
+      priority: 0.7,
+      changeFrequency: "monthly",
+      lastModified: wc4TechMtime,
+    },
+    {
+      pair: { fr: "/world-conqueror-4/guides", en: "/world-conqueror-4/guides", de: "/world-conqueror-4/guides" },
+      priority: 0.8,
+      changeFrequency: "weekly",
+    },
+  ];
+  for (const route of wc4StaticRoutes) emitLocalized(entries, route);
 
-  // Generals: base + trained + premium-training variants per locale
+  // -------------------------------------------------------------------
+  // Legal pages — translated content, real URLs
+  // -------------------------------------------------------------------
+  const legalRoutes: StaticRoute[] = [
+    {
+      pair: { fr: "/legal/votes", en: "/legal/votes", de: "/legal/votes" },
+      priority: 0.3,
+      changeFrequency: "yearly",
+    },
+    {
+      pair: { fr: "/legal/mentions-legales", en: "/legal/legal-notice", de: "/legal/legal-notice" },
+      priority: 0.3,
+      changeFrequency: "yearly",
+    },
+    {
+      pair: { fr: "/legal/confidentialite", en: "/legal/privacy", de: "/legal/privacy" },
+      priority: 0.3,
+      changeFrequency: "yearly",
+    },
+    {
+      pair: { fr: "/legal/cookies", en: "/legal/cookies", de: "/legal/cookies" },
+      priority: 0.3,
+      changeFrequency: "yearly",
+    },
+    {
+      pair: { fr: "/legal/cgu", en: "/legal/terms", de: "/legal/terms" },
+      priority: 0.3,
+      changeFrequency: "yearly",
+    },
+    {
+      pair: { fr: "/legal/a-propos", en: "/legal/about", de: "/legal/about" },
+      priority: 0.4,
+      changeFrequency: "monthly",
+    },
+    {
+      pair: { fr: "/legal/contact", en: "/legal/contact", de: "/legal/contact" },
+      priority: 0.4,
+      changeFrequency: "yearly",
+    },
+  ];
+  for (const route of legalRoutes) emitLocalized(entries, route);
+
+  // -------------------------------------------------------------------
+  // WC4 generals — base view ONLY. The /trained ("Maxed out") and
+  // /premium-training views canonical back to this base page (see those
+  // page.tsx files), so listing them here would create
+  // "alternate page with proper canonical tag" GSC entries and waste
+  // crawl budget. Additionally, /premium-training only renders for the
+  // 20 generals with hasTrainingPath+trainedSkills — emitting it for
+  // all 104 generated 252 hard 404s in the previous version of this file.
+  // -------------------------------------------------------------------
   for (const slug of getAllGeneralSlugs()) {
-    const variants: { pair: LocalePair; priority: number }[] = [
-      { pair: generalBase(slug), priority: 0.8 },
-      { pair: generalTrained(slug), priority: 0.7 },
-      { pair: generalPremiumTraining(slug), priority: 0.7 },
-    ];
-    for (const v of variants) {
-      for (const locale of locales) {
-        entries.push({
-          url: pathFor(locale, v.pair),
-          lastModified: now,
-          changeFrequency: "monthly",
-          priority: v.priority,
-          alternates: alternates(v.pair),
-        });
-      }
-    }
-  }
-
-  // Elite units
-  for (const slug of getAllEliteSlugs()) {
-    const pair = eliteBase(slug);
+    const pair = generalBase(slug);
+    const lm = mtimeOrBuild(path.join(WC4_DATA, "generals", `${slug}.json`));
     for (const locale of locales) {
       entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
+        url: urlFor(locale, pair),
+        lastModified: lm,
         changeFrequency: "monthly",
         priority: 0.8,
-        alternates: alternates(pair),
+        alternates: sitemapAlternates(pair),
       });
     }
   }
 
-  // Skill catalog detail pages
-  for (const slug of getAllSkillSlugs()) {
-    const pair = skillBase(slug);
+  // WC4 elite units
+  for (const slug of getAllEliteSlugs()) {
+    const pair = eliteBase(slug);
+    const lm = mtimeOrBuild(path.join(WC4_DATA, "elite-units", `${slug}.json`));
     for (const locale of locales) {
       entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
+        url: urlFor(locale, pair),
+        lastModified: lm,
         changeFrequency: "monthly",
-        priority: 0.6,
-        alternates: alternates(pair),
+        priority: 0.8,
+        alternates: sitemapAlternates(pair),
       });
     }
   }
 
-  // Tech hub
-  const techHubPair: LocalePair = {
-    fr: "/world-conqueror-4/technologies",
-    en: "/world-conqueror-4/technologies",
-    de: "/world-conqueror-4/technologies",
-  };
-  for (const locale of locales) {
-    entries.push({
-      url: pathFor(locale, techHubPair),
-      lastModified: now,
-      changeFrequency: "monthly",
-      priority: 0.7,
-      alternates: alternates(techHubPair),
-    });
+  // WC4 skill catalog detail pages
+  for (const slug of getAllSkillSlugs()) {
+    const pair = skillBase(slug);
+    const lm = mtimeOrBuild(path.join(WC4_DATA, "skills", `${slug}.json`));
+    for (const locale of locales) {
+      entries.push({
+        url: urlFor(locale, pair),
+        lastModified: lm,
+        changeFrequency: "monthly",
+        priority: 0.6,
+        alternates: sitemapAlternates(pair),
+      });
+    }
   }
 
-  // Tech categories
+  // WC4 tech categories
   const TECH_CATS = [
     "infantry",
     "armor",
@@ -247,64 +377,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
     for (const locale of locales) {
       entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
+        url: urlFor(locale, pair),
+        lastModified: wc4TechMtime,
         changeFrequency: "monthly",
         priority: 0.6,
-        alternates: alternates(pair),
+        alternates: sitemapAlternates(pair),
       });
     }
   }
 
-  // Tech detail pages
+  // WC4 tech detail pages
   for (const slug of getAllTechSlugsFromFs()) {
     const pair: LocalePair = {
       fr: `/world-conqueror-4/technologies/${slug}`,
       en: `/world-conqueror-4/technologies/${slug}`,
       de: `/world-conqueror-4/technologies/${slug}`,
     };
+    const lm = mtimeOrBuild(path.join(WC4_DATA, "technologies", `${slug}.json`));
     for (const locale of locales) {
       entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
+        url: urlFor(locale, pair),
+        lastModified: lm,
         changeFrequency: "monthly",
         priority: 0.5,
-        alternates: alternates(pair),
+        alternates: sitemapAlternates(pair),
       });
     }
   }
 
-  // Updates detail pages
+  // WC4 updates detail pages
   for (const slug of getAllUpdateSlugsFromFs()) {
     const pair = updateDetail(slug);
+    const lm = mtimeOrBuild(path.join(WC4_DATA, "updates", `${slug}.json`));
     for (const locale of locales) {
       entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
+        url: urlFor(locale, pair),
+        lastModified: lm,
         changeFrequency: "yearly",
         priority: 0.5,
-        alternates: alternates(pair),
+        alternates: sitemapAlternates(pair),
       });
     }
   }
 
-  // Guides hub
-  const guidesHubPair: LocalePair = {
-    fr: "/world-conqueror-4/guides",
-    en: "/world-conqueror-4/guides",
-    de: "/world-conqueror-4/guides",
-  };
-  for (const locale of locales) {
-    entries.push({
-      url: pathFor(locale, guidesHubPair),
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-      alternates: alternates(guidesHubPair),
-    });
-  }
-
-  // Guide detail pages
+  // WC4 guide detail pages
   for (const slug of getAllGuideSlugs()) {
     const pair: LocalePair = {
       fr: `/world-conqueror-4/guides/${slug}`,
@@ -313,47 +429,58 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
     for (const locale of locales) {
       entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
+        url: urlFor(locale, pair),
+        lastModified: BUILD_TIME,
         changeFrequency: "monthly",
         priority: 0.7,
-        alternates: alternates(pair),
+        alternates: sitemapAlternates(pair),
       });
     }
   }
 
-  // ---------------------------------------------------------------------
-  // Great Conqueror: Rome — only emitted when the game is marked
-  // available in lib/games.ts. Keeps crawlers out of the scaffolded routes
-  // until the game launches.
-  // ---------------------------------------------------------------------
+  // WC4 legend formations detail pages
+  for (const slug of getAllFormationSlugs()) {
+    const pair: LocalePair = {
+      fr: `/world-conqueror-4/formations-legendes/${slug}`,
+      en: `/world-conqueror-4/legend-formations/${slug}`,
+      de: `/world-conqueror-4/legend-formations/${slug}`,
+    };
+    for (const locale of locales) {
+      entries.push({
+        url: urlFor(locale, pair),
+        lastModified: BUILD_TIME,
+        changeFrequency: "monthly",
+        priority: 0.7,
+        alternates: sitemapAlternates(pair),
+      });
+    }
+  }
+
+  // -------------------------------------------------------------------
+  // Great Conqueror: Rome — gated on game.available so scaffolded
+  // routes don't leak into the index pre-launch.
+  // -------------------------------------------------------------------
   const gcrGame = getGame("great-conqueror-rome");
   if (gcrGame?.available) {
-    const gcrStaticRoutes: { pair: LocalePair; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+    const gcrGenMtime = dirNewestMtime(path.join(GCR_DATA, "generals"));
+    const gcrEliteMtime = dirNewestMtime(path.join(GCR_DATA, "elite-units"));
+    const gcrSkillsMtime = dirNewestMtime(path.join(GCR_DATA, "skills"));
+    const gcrTechMtime = dirNewestMtime(path.join(GCR_DATA, "technologies"));
+
+    const gcrStaticRoutes: StaticRoute[] = [
       { pair: { fr: "/great-conqueror-rome", en: "/great-conqueror-rome", de: "/great-conqueror-rome" }, priority: 0.9, changeFrequency: "weekly" },
-      { pair: { fr: "/great-conqueror-rome/generaux", en: "/great-conqueror-rome/generals", de: "/great-conqueror-rome/generals" }, priority: 0.9, changeFrequency: "weekly" },
-      { pair: { fr: "/great-conqueror-rome/unites-elite", en: "/great-conqueror-rome/elite-units", de: "/great-conqueror-rome/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
-      { pair: { fr: "/great-conqueror-rome/competences", en: "/great-conqueror-rome/skills", de: "/great-conqueror-rome/skills" }, priority: 0.8, changeFrequency: "weekly" },
-      { pair: { fr: "/great-conqueror-rome/technologies", en: "/great-conqueror-rome/technologies", de: "/great-conqueror-rome/technologies" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/great-conqueror-rome/generaux", en: "/great-conqueror-rome/generals", de: "/great-conqueror-rome/generals" }, priority: 0.9, changeFrequency: "weekly", lastModified: gcrGenMtime },
+      { pair: { fr: "/great-conqueror-rome/unites-elite", en: "/great-conqueror-rome/elite-units", de: "/great-conqueror-rome/elite-units" }, priority: 0.9, changeFrequency: "weekly", lastModified: gcrEliteMtime },
+      { pair: { fr: "/great-conqueror-rome/competences", en: "/great-conqueror-rome/skills", de: "/great-conqueror-rome/skills" }, priority: 0.8, changeFrequency: "weekly", lastModified: gcrSkillsMtime },
+      { pair: { fr: "/great-conqueror-rome/technologies", en: "/great-conqueror-rome/technologies", de: "/great-conqueror-rome/technologies" }, priority: 0.7, changeFrequency: "monthly", lastModified: gcrTechMtime },
       { pair: { fr: "/great-conqueror-rome/conquete-romaine", en: "/great-conqueror-rome/roman-conquest", de: "/great-conqueror-rome/roman-conquest" }, priority: 0.6, changeFrequency: "monthly" },
       { pair: { fr: "/great-conqueror-rome/comparateur/generaux", en: "/great-conqueror-rome/comparator/generals", de: "/great-conqueror-rome/comparator/generals" }, priority: 0.7, changeFrequency: "monthly" },
       { pair: { fr: "/great-conqueror-rome/comparateur/unites", en: "/great-conqueror-rome/comparator/units", de: "/great-conqueror-rome/comparator/units" }, priority: 0.7, changeFrequency: "monthly" },
       { pair: { fr: "/great-conqueror-rome/guides", en: "/great-conqueror-rome/guides", de: "/great-conqueror-rome/guides" }, priority: 0.7, changeFrequency: "weekly" },
       { pair: { fr: "/great-conqueror-rome/mises-a-jour", en: "/great-conqueror-rome/updates", de: "/great-conqueror-rome/updates" }, priority: 0.7, changeFrequency: "weekly" },
     ];
-    for (const route of gcrStaticRoutes) {
-      for (const locale of locales) {
-        entries.push({
-          url: pathFor(locale, route.pair),
-          lastModified: now,
-          changeFrequency: route.changeFrequency,
-          priority: route.priority,
-          alternates: alternates(route.pair),
-        });
-      }
-    }
+    for (const route of gcrStaticRoutes) emitLocalized(entries, route);
 
-    // GCR generals (placeholder pages excluded — they're noindex)
     for (const slug of getAllGcrGeneralSlugs()) {
       const entity = getGcrGeneral(slug);
       if (!entity || isPlaceholder(entity)) continue;
@@ -362,18 +489,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `/great-conqueror-rome/generals/${slug}`,
         de: `/great-conqueror-rome/generals/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(GCR_DATA, "generals", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.8,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
 
-    // GCR elite units (placeholder pages excluded — they're noindex)
     for (const slug of getAllGcrEliteSlugs()) {
       const entity = getGcrEliteUnit(slug);
       if (!entity || isPlaceholder(entity)) continue;
@@ -382,84 +509,78 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `/great-conqueror-rome/elite-units/${slug}`,
         de: `/great-conqueror-rome/elite-units/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(GCR_DATA, "elite-units", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.8,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
 
-    // GCR skills
     for (const slug of getAllGcrSkillSlugs()) {
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/competences/${slug}`,
         en: `/great-conqueror-rome/skills/${slug}`,
         de: `/great-conqueror-rome/skills/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(GCR_DATA, "skills", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.6,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
 
-    // GCR tech detail pages
     for (const slug of getAllGcrTechSlugs()) {
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/technologies/${slug}`,
         en: `/great-conqueror-rome/technologies/${slug}`,
         de: `/great-conqueror-rome/technologies/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(GCR_DATA, "technologies", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.5,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
   }
 
-  // ---------------------------------------------------------------------
-  // European War 6: 1914 — only emitted when the game is marked available
-  // in lib/games.ts. Keeps crawlers out of scaffolded routes until launch.
-  // ---------------------------------------------------------------------
+  // -------------------------------------------------------------------
+  // European War 6: 1914 — gated on game.available
+  // -------------------------------------------------------------------
   const ew6Game = getGame("european-war-6");
   if (ew6Game?.available) {
-    const ew6StaticRoutes: { pair: LocalePair; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+    const ew6GenMtime = dirNewestMtime(path.join(EW6_DATA, "generals"));
+    const ew6EliteMtime = dirNewestMtime(path.join(EW6_DATA, "elite-units"));
+    const ew6SkillsMtime = dirNewestMtime(path.join(EW6_DATA, "skills"));
+    const ew6TechMtime = dirNewestMtime(path.join(EW6_DATA, "technologies"));
+
+    const ew6StaticRoutes: StaticRoute[] = [
       { pair: { fr: "/european-war-6", en: "/european-war-6", de: "/european-war-6" }, priority: 0.9, changeFrequency: "weekly" },
-      { pair: { fr: "/european-war-6/generaux", en: "/european-war-6/generals", de: "/european-war-6/generals" }, priority: 0.9, changeFrequency: "weekly" },
-      { pair: { fr: "/european-war-6/unites-elite", en: "/european-war-6/elite-units", de: "/european-war-6/elite-units" }, priority: 0.9, changeFrequency: "weekly" },
-      { pair: { fr: "/european-war-6/competences", en: "/european-war-6/skills", de: "/european-war-6/skills" }, priority: 0.8, changeFrequency: "weekly" },
-      { pair: { fr: "/european-war-6/technologies", en: "/european-war-6/technologies", de: "/european-war-6/technologies" }, priority: 0.7, changeFrequency: "monthly" },
+      { pair: { fr: "/european-war-6/generaux", en: "/european-war-6/generals", de: "/european-war-6/generals" }, priority: 0.9, changeFrequency: "weekly", lastModified: ew6GenMtime },
+      { pair: { fr: "/european-war-6/unites-elite", en: "/european-war-6/elite-units", de: "/european-war-6/elite-units" }, priority: 0.9, changeFrequency: "weekly", lastModified: ew6EliteMtime },
+      { pair: { fr: "/european-war-6/competences", en: "/european-war-6/skills", de: "/european-war-6/skills" }, priority: 0.8, changeFrequency: "weekly", lastModified: ew6SkillsMtime },
+      { pair: { fr: "/european-war-6/technologies", en: "/european-war-6/technologies", de: "/european-war-6/technologies" }, priority: 0.7, changeFrequency: "monthly", lastModified: ew6TechMtime },
       { pair: { fr: "/european-war-6/comparateur/generaux", en: "/european-war-6/comparator/generals", de: "/european-war-6/comparator/generals" }, priority: 0.7, changeFrequency: "monthly" },
       { pair: { fr: "/european-war-6/comparateur/unites", en: "/european-war-6/comparator/units", de: "/european-war-6/comparator/units" }, priority: 0.7, changeFrequency: "monthly" },
       { pair: { fr: "/european-war-6/guides", en: "/european-war-6/guides", de: "/european-war-6/guides" }, priority: 0.7, changeFrequency: "weekly" },
       { pair: { fr: "/european-war-6/mises-a-jour", en: "/european-war-6/updates", de: "/european-war-6/updates" }, priority: 0.7, changeFrequency: "weekly" },
     ];
-    for (const route of ew6StaticRoutes) {
-      for (const locale of locales) {
-        entries.push({
-          url: pathFor(locale, route.pair),
-          lastModified: now,
-          changeFrequency: route.changeFrequency,
-          priority: route.priority,
-          alternates: alternates(route.pair),
-        });
-      }
-    }
+    for (const route of ew6StaticRoutes) emitLocalized(entries, route);
 
-    // EW6 generals (placeholder pages excluded — they're noindex)
     for (const slug of getAllEw6GeneralSlugs()) {
       const entity = getEw6General(slug);
       if (!entity || isPlaceholder(entity)) continue;
@@ -468,18 +589,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `/european-war-6/generals/${slug}`,
         de: `/european-war-6/generals/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(EW6_DATA, "generals", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.8,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
 
-    // EW6 elite units (placeholder pages excluded — they're noindex)
     for (const slug of getAllEw6EliteSlugs()) {
       const entity = getEw6EliteUnit(slug);
       if (!entity || isPlaceholder(entity)) continue;
@@ -488,13 +609,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `/european-war-6/elite-units/${slug}`,
         de: `/european-war-6/elite-units/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(EW6_DATA, "elite-units", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.8,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
@@ -505,13 +627,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `/european-war-6/skills/${slug}`,
         de: `/european-war-6/skills/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(EW6_DATA, "skills", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.6,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
@@ -522,35 +645,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
         en: `/european-war-6/technologies/${slug}`,
         de: `/european-war-6/technologies/${slug}`,
       };
+      const lm = mtimeOrBuild(path.join(EW6_DATA, "technologies", `${slug}.json`));
       for (const locale of locales) {
         entries.push({
-          url: pathFor(locale, pair),
-          lastModified: now,
+          url: urlFor(locale, pair),
+          lastModified: lm,
           changeFrequency: "monthly",
           priority: 0.5,
-          alternates: alternates(pair),
+          alternates: sitemapAlternates(pair),
         });
       }
     }
   }
 
-  // Legend Formations detail pages
-  for (const slug of getAllFormationSlugs()) {
-    const pair: LocalePair = {
-      fr: `/world-conqueror-4/formations-legendes/${slug}`,
-      en: `/world-conqueror-4/legend-formations/${slug}`,
-      de: `/world-conqueror-4/legend-formations/${slug}`,
-    };
-    for (const locale of locales) {
-      entries.push({
-        url: pathFor(locale, pair),
-        lastModified: now,
-        changeFrequency: "monthly",
-        priority: 0.7,
-        alternates: alternates(pair),
-      });
-    }
-  }
-
   return entries;
 }
+
+// Suppress unused-import warning when BASE_URL is not referenced directly here
+// (we use it indirectly via urlFor / sitemapAlternates).
+void BASE_URL;

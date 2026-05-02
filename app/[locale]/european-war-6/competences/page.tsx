@@ -6,6 +6,7 @@ import { getSkillIndex } from "@/lib/ew6";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 import type { SkillSeriesMeta } from "@/lib/types";
 
 export async function generateMetadata({
@@ -26,6 +27,11 @@ export async function generateMetadata({
   return {
     title: titles[locale] ?? titles.en,
     description: descriptions[locale] ?? descriptions.en,
+    alternates: pageAlternates(locale, {
+      fr: "/european-war-6/competences",
+      en: "/european-war-6/skills",
+      de: "/european-war-6/skills",
+    }),
   };
 }
 

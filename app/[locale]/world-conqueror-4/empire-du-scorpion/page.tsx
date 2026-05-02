@@ -16,6 +16,7 @@ import { localizedUnitField } from "@/lib/localized-copy";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export async function generateMetadata({
   params: { locale },
@@ -26,6 +27,11 @@ export async function generateMetadata({
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
+    alternates: pageAlternates(locale, {
+      fr: "/world-conqueror-4/empire-du-scorpion",
+      en: "/world-conqueror-4/scorpion-empire",
+      de: "/world-conqueror-4/scorpion-empire",
+    }),
   };
 }
 

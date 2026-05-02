@@ -1,7 +1,7 @@
 import { Link } from "@/src/i18n/navigation";
 import { JsonLd } from "./JsonLd";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.fr";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
 
 export interface BreadcrumbItem {
   label: string;

@@ -31,6 +31,7 @@ import UnitBestGeneralVote from "@/components/UnitBestGeneralVote";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export function generateStaticParams() {
   const slugs = getAllSlugs();
@@ -57,6 +58,11 @@ export async function generateMetadata({ params }: { params: { locale: string; s
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    alternates: pageAlternates(locale, {
+      fr: `/european-war-6/unites-elite/${params.slug}`,
+      en: `/european-war-6/elite-units/${params.slug}`,
+      de: `/european-war-6/elite-units/${params.slug}`,
+    }),
     robots: isPlaceholderUnit(u as unknown as UnitData)
       ? { index: false, follow: true }
       : { index: true, follow: true },

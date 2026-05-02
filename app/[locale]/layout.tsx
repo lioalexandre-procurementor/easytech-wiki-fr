@@ -11,7 +11,7 @@ import "../globals.css";
 const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT ?? "";
 const GSC_TOKEN = process.env.NEXT_PUBLIC_GSC_VERIFICATION ?? "";
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.fr";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -38,15 +38,13 @@ export async function generateMetadata({
       template: `%s | ${t("shortTitle")}`,
     },
     description: t("description"),
-    alternates: {
-      canonical: `/${locale}`,
-      languages: {
-        fr: "/fr",
-        en: "/en",
-        de: "/de",
-        "x-default": "/fr",
-      },
-    },
+    // NOTE: alternates intentionally NOT set here. In App Router,
+    // generateMetadata in a layout cascades to every child page that
+    // doesn't override it — setting `alternates.canonical` here pointed
+    // every legal page, hub page, and unbranded route's <link rel=
+    // "canonical"> at the locale homepage, which is exactly the
+    // "non-canonical" GSC bucket. Each page.tsx now declares its own
+    // alternates via lib/seo-alternates.ts pageAlternates().
     openGraph: {
       title: t("title"),
       description: t("description"),

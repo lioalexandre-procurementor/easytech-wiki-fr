@@ -22,6 +22,7 @@ import {
 import { getAllTechSlugs } from "@/lib/tech";
 import { getRedis, bestGeneralVoteKey } from "@/lib/redis";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -37,6 +38,7 @@ export async function generateMetadata({
   return {
     title: t("h1"),
     description: t("lede"),
+    alternates: pageAlternates(locale, { fr: "", en: "", de: "" }),
   };
 }
 

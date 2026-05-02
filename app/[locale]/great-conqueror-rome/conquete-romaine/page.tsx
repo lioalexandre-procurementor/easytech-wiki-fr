@@ -16,6 +16,7 @@ import { localizedUnitField } from "@/lib/localized-copy";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export async function generateMetadata({
   params: { locale },
@@ -26,6 +27,11 @@ export async function generateMetadata({
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
+    alternates: pageAlternates(locale, {
+      fr: "/great-conqueror-rome/conquete-romaine",
+      en: "/great-conqueror-rome/roman-conquest",
+      de: "/great-conqueror-rome/roman-conquest",
+    }),
   };
 }
 

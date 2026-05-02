@@ -7,6 +7,7 @@ import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export async function generateMetadata({
   params: { locale },
@@ -26,6 +27,11 @@ export async function generateMetadata({
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
+    alternates: pageAlternates(locale, {
+      fr: "/world-conqueror-4/unites-elite",
+      en: "/world-conqueror-4/elite-units",
+      de: "/world-conqueror-4/elite-units",
+    }),
   };
 }
 

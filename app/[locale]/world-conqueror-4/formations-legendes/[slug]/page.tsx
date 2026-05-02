@@ -13,7 +13,7 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { JsonLd } from "@/components/JsonLd";
 import { locales } from "@/src/i18n/config";
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.fr";
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
 
 const LOCALE_PATHS = {
   fr: "/world-conqueror-4/formations-legendes",

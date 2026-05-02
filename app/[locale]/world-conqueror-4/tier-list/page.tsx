@@ -6,6 +6,7 @@ import { getAllGenerals } from "@/lib/units";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 const CATEGORY_COLUMNS: Record<string, CategoryColumn[]> = {
   fr: [
@@ -54,7 +55,15 @@ export async function generateMetadata({
     },
   };
   const m = byLocale[locale] ?? byLocale.en;
-  return { title: m.t, description: m.d };
+  return {
+    title: m.t,
+    description: m.d,
+    alternates: pageAlternates(locale, {
+      fr: "/world-conqueror-4/tier-list",
+      en: "/world-conqueror-4/tier-list",
+      de: "/world-conqueror-4/tier-list",
+    }),
+  };
 }
 
 export function generateStaticParams() {

@@ -3,6 +3,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
 import { LegalLayout, LegalSection, LegalField } from "@/components/LegalLayout";
 import { legalConfig } from "@/lib/legal-config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -26,6 +27,11 @@ export async function generateMetadata({
   return {
     title: titles[locale] ?? titles.en,
     description: descriptions[locale] ?? descriptions.en,
+    alternates: pageAlternates(locale, {
+      fr: "/legal/mentions-legales",
+      en: "/legal/legal-notice",
+      de: "/legal/legal-notice",
+    }),
     robots: { index: true, follow: true },
   };
 }

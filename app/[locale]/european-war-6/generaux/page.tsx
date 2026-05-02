@@ -16,6 +16,7 @@ import type { GeneralCategory, GeneralData, GeneralQuality } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export async function generateMetadata({
   params: { locale },
@@ -35,6 +36,11 @@ export async function generateMetadata({
   return {
     title: titles[locale] ?? titles.en,
     description: descriptions[locale] ?? descriptions.en,
+    alternates: pageAlternates(locale, {
+      fr: "/european-war-6/generaux",
+      en: "/european-war-6/generals",
+      de: "/european-war-6/generals",
+    }),
   };
 }
 

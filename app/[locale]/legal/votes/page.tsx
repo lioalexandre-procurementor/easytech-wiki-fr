@@ -4,6 +4,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import type { Metadata } from "next";
 import { locales } from "@/src/i18n/config";
+import { pageAlternates } from "@/lib/seo-alternates";
 
 export async function generateMetadata({
   params: { locale },
@@ -14,6 +15,11 @@ export async function generateMetadata({
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
+    alternates: pageAlternates(locale, {
+      fr: "/legal/votes",
+      en: "/legal/votes",
+      de: "/legal/votes",
+    }),
   };
 }
 
