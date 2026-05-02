@@ -123,3 +123,16 @@ a:hover { text-decoration: underline; }
   50%      { background: rgb(var(--c-gold) / 0.08); }
 }
 .pulse-bg { animation: pulse-bg 1.2s ease; }
+
+/* Per-step delta chip pop-in — used by StatCard on the elite-unit page when
+   the user steps the level slider; React re-keys the chip on each value
+   change which restarts this animation. */
+@keyframes etwPopIn {
+  0%   { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+
+/* Horizontal-scroll chip rails (sticky level bar) — hide native scrollbar
+   without losing scroll capability. */
+.hide-scroll { scrollbar-width: none; -ms-overflow-style: none; }
+.hide-scroll::-webkit-scrollbar { display: none; }

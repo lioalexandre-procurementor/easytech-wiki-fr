@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocale } from "next-intl";
 import type { Perk, UnitData } from "@/lib/types";
 import { localizedField } from "@/lib/localized-copy";
+import { StickyLevelBar, type LevelBarLabels } from "@/components/elite/StickyLevelBar";
 
 const MILESTONES = [5, 9, 12];
 
@@ -23,16 +24,15 @@ type UILabels = {
   experienced: string;
   trained: string;
   novice: string;
-  currentLevel: string;
-  evolutionTitle: string;
-  milestone5: string;
-  milestone9: string;
-  milestone12: string;
   loadoutHint: string;
   chronHeading: string;
   chronBody: string;
   newBadge: string;
+  hint: string;
+  prevAria: string;
+  nextAria: string;
   levelAria: (n: number) => string;
+  totalAt: string;
 };
 
 const LABELS: Record<string, UILabels> = {
@@ -43,7 +43,7 @@ const LABELS: Record<string, UILabels> = {
     hp: "HP",
     movement: "Mouvement",
     range: "Portée",
-    activeLoadout: "🎯 Loadout actif — Niveau",
+    activeLoadout: "🎯 Loadout actif",
     level: "Niveau",
     skillCount: (n) => `${n} compétence${n > 1 ? "s" : ""}`,
     noneUnlocked: "Aucune compétence débloquée à ce niveau.",
@@ -52,18 +52,17 @@ const LABELS: Record<string, UILabels> = {
     experienced: "Expérimenté",
     trained: "Formé",
     novice: "Débutant",
-    currentLevel: "Niveau actuel",
-    evolutionTitle: "🎚 Évolution niveau 1 → 12",
-    milestone5: `⭐ <b>Milestone niveau 5</b> : première compétence majeure débloquée. Premier gros power spike de l'unité.`,
-    milestone9: `⭐ <b>Milestone niveau 9</b> : la communauté NamuWiki recommande de prioriser ce palier pour la plupart des unités d'élite.`,
-    milestone12: `⭐ <b>Niveau maximum (12)</b> : pleine puissance, perks emblématiques actifs.`,
     loadoutHint:
-      "💡 Ce bloc montre l'état réel de l'unité au niveau sélectionné. Les compétences remplacées par une version supérieure (ex. Niv.1 → Niv.2) sont automatiquement masquées. Le journal complet de progression est disponible plus bas.",
+      "💡 État réel de l'unité au niveau sélectionné. Les compétences remplacées par une version supérieure sont masquées.",
     chronHeading: "📜 Historique complet des perks",
     chronBody:
-      "Liste chronologique complète — inclut les versions remplacées. Pour l'état actuel du loadout, voir le bloc « Loadout actif » plus haut.",
+      "Cliquez sur un point pour positionner le slider à ce niveau. Inclut les versions remplacées.",
     newBadge: "✨ Nouveau",
+    hint: "💡 Cliquez sur un niveau ou utilisez les flèches ←→ du clavier",
+    prevAria: "Niveau précédent",
+    nextAria: "Niveau suivant",
     levelAria: (n) => `Niveau ${n}`,
+    totalAt: "au total",
   },
   en: {
     statsTitle: "Stats — Level",
@@ -72,7 +71,7 @@ const LABELS: Record<string, UILabels> = {
     hp: "HP",
     movement: "Movement",
     range: "Range",
-    activeLoadout: "🎯 Active loadout — Level",
+    activeLoadout: "🎯 Active loadout",
     level: "Level",
     skillCount: (n) => `${n} skill${n > 1 ? "s" : ""}`,
     noneUnlocked: "No skills unlocked at this level.",
@@ -81,18 +80,17 @@ const LABELS: Record<string, UILabels> = {
     experienced: "Experienced",
     trained: "Trained",
     novice: "Novice",
-    currentLevel: "Current level",
-    evolutionTitle: "🎚 Level 1 → 12 progression",
-    milestone5: `⭐ <b>Level 5 milestone</b>: first major perk unlocked. First big power spike for the unit.`,
-    milestone9: `⭐ <b>Level 9 milestone</b>: the NamuWiki community recommends prioritizing this breakpoint for most elite units.`,
-    milestone12: `⭐ <b>Max level (12)</b>: full power, iconic perks active.`,
     loadoutHint:
-      "💡 This block shows the unit's actual state at the selected level. Perks superseded by a higher version (e.g. Lv.1 → Lv.2) are automatically hidden. The full progression log is available further down.",
+      "💡 The unit's actual state at the selected level. Perks superseded by a higher version are hidden.",
     chronHeading: "📜 Full perk history",
     chronBody:
-      "Full chronological list — includes superseded versions. For the current loadout state, see the \"Active loadout\" block above.",
+      "Tap any dot to jump the slider to that level. Includes superseded versions.",
     newBadge: "✨ New",
+    hint: "💡 Click a level or use the ←→ arrow keys",
+    prevAria: "Previous level",
+    nextAria: "Next level",
     levelAria: (n) => `Level ${n}`,
+    totalAt: "total",
   },
   de: {
     statsTitle: "Werte — Stufe",
@@ -101,7 +99,7 @@ const LABELS: Record<string, UILabels> = {
     hp: "HP",
     movement: "Bewegung",
     range: "Reichweite",
-    activeLoadout: "🎯 Aktive Ausrüstung — Stufe",
+    activeLoadout: "🎯 Aktive Ausrüstung",
     level: "Stufe",
     skillCount: (n) => `${n} ${n > 1 ? "Fähigkeiten" : "Fähigkeit"}`,
     noneUnlocked: "Auf dieser Stufe sind keine Fähigkeiten freigeschaltet.",
@@ -110,18 +108,17 @@ const LABELS: Record<string, UILabels> = {
     experienced: "Erfahren",
     trained: "Ausgebildet",
     novice: "Anfänger",
-    currentLevel: "Aktuelle Stufe",
-    evolutionTitle: "🎚 Entwicklung Stufe 1 → 12",
-    milestone5: `⭐ <b>Meilenstein Stufe 5</b>: Erste große Fähigkeit freigeschaltet. Erster großer Power-Spike der Einheit.`,
-    milestone9: `⭐ <b>Meilenstein Stufe 9</b>: Die NamuWiki-Community empfiehlt, diesen Breakpoint für die meisten Elite-Einheiten zu priorisieren.`,
-    milestone12: `⭐ <b>Maximalstufe (12)</b>: volle Kraft, ikonische Boni aktiv.`,
     loadoutHint:
-      "💡 Dieser Block zeigt den tatsächlichen Zustand der Einheit auf der gewählten Stufe. Fähigkeiten, die durch eine höhere Version ersetzt wurden (z. B. Stufe 1 → Stufe 2), werden automatisch ausgeblendet. Das vollständige Entwicklungsprotokoll findest du weiter unten.",
+      "💡 Tatsächlicher Zustand der Einheit auf der gewählten Stufe. Ersetzte Fähigkeiten werden ausgeblendet.",
     chronHeading: "📜 Vollständige Boni-Historie",
     chronBody:
-      "Chronologische Gesamtliste — einschließlich überholter Versionen. Den aktuellen Loadout-Zustand findest du im Block „Aktive Ausrüstung“ oben.",
+      "Tippe einen Punkt an, um den Slider auf diese Stufe zu setzen. Beinhaltet überholte Versionen.",
     newBadge: "✨ Neu",
+    hint: "💡 Klicke auf eine Stufe oder verwende die Pfeiltasten ←→",
+    prevAria: "Vorherige Stufe",
+    nextAria: "Nächste Stufe",
     levelAria: (n) => `Stufe ${n}`,
+    totalAt: "insgesamt",
   },
 };
 
@@ -153,11 +150,11 @@ function buildActiveLoadout(perks: Perk[], currentLevel: number): Perk[] {
       byFamily.set(key, p);
     }
   }
-  // Order: passives first, then active skills, then stats; preserve insertion order inside each bucket.
+  // Order: passives first, then active skills, then stats; stable inside each bucket.
   const order: Record<string, number> = {
     passive: 0,
     "active-skill": 1,
-    "active-compétence": 1, // fr alias
+    "active-compétence": 1,
     stat: 2,
   };
   return Array.from(byFamily.values()).sort((a, b) => {
@@ -168,244 +165,364 @@ function buildActiveLoadout(perks: Perk[], currentLevel: number): Perk[] {
   });
 }
 
+function tierFor(lvl: number, L: UILabels): string {
+  if (lvl >= 12) return L.maxLevel;
+  if (lvl >= 9) return L.veteran;
+  if (lvl >= 5) return L.experienced;
+  if (lvl >= 3) return L.trained;
+  return L.novice;
+}
+
 export function UnitDetailClient({ unit }: { unit: UnitData }) {
   const [lvl, setLvl] = useState(1);
+  /** Snapshot of `lvl` *before* the latest change, so stat cells can show the
+   *  per-step delta as an animated chip when the user steps the slider. */
+  const prevLvlRef = useRef(1);
+  const [prevLvl, setPrevLvl] = useState(1);
+
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
-  const perkName = (p: Perk) => localizedField(p as unknown as Record<string, unknown>, "name", locale) || p.name;
-  const perkDesc = (p: Perk) => localizedField(p as unknown as Record<string, unknown>, "desc", locale) || p.desc;
+  const perkName = (p: Perk) =>
+    localizedField(p as unknown as Record<string, unknown>, "name", locale) || p.name;
+  const perkDesc = (p: Perk) =>
+    localizedField(p as unknown as Record<string, unknown>, "desc", locale) || p.desc;
+
+  const setLvlSafe = (n: number) => {
+    const clamped = Math.max(1, Math.min(12, n));
+    prevLvlRef.current = lvl;
+    setPrevLvl(lvl);
+    setLvl(clamped);
+  };
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "ArrowRight") setLvl(l => Math.min(12, l + 1));
-      if (e.key === "ArrowLeft")  setLvl(l => Math.max(1, l - 1));
+      if (e.key === "ArrowRight") setLvlSafe(lvl + 1);
+      if (e.key === "ArrowLeft") setLvlSafe(lvl - 1);
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lvl]);
 
   const i = lvl - 1;
+  const pi = Math.max(0, prevLvl - 1);
   const s = unit.stats;
-  const fillPct = ((lvl - 1) / 11) * 100;
 
   const activeLoadout = useMemo(
     () => buildActiveLoadout(unit.perks, lvl),
     [unit.perks, lvl]
   );
 
-  const tierLabel =
-    lvl >= 12 ? L.maxLevel :
-    lvl >= 9  ? L.veteran :
-    lvl >= 5  ? L.experienced :
-    lvl >= 3  ? L.trained : L.novice;
-
-  const milestoneNotes: Record<number, string> = {
-    5:  L.milestone5,
-    9:  L.milestone9,
-    12: L.milestone12,
+  const levelBarLabels: LevelBarLabels = {
+    level: L.level,
+    prevAria: L.prevAria,
+    nextAria: L.nextAria,
+    hint: L.hint,
+    tierFor: (n) => tierFor(n, L),
+    levelAria: L.levelAria,
   };
 
   return (
-    <>
+    <div id="stats">
+      <StickyLevelBar lvl={lvl} setLvl={setLvlSafe} labels={levelBarLabels} />
+
       {/* STATS */}
       <div className="bg-panel border border-border rounded-lg p-3.5 md:p-5 mb-6">
-        <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm md:text-base mb-3">
-          {L.statsTitle} <span>{lvl}</span>
-        </h3>
+        <div className="flex items-center justify-between mb-3">
+          <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm md:text-base m-0">
+            {L.statsTitle} <span>{lvl}</span>
+          </h3>
+          <span className="text-[10px] md:text-[11px] text-muted uppercase tracking-widest">
+            Δ {L.level} 1
+          </span>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3">
-          <Stat icon="⚔️" name={L.attack}    val={s.atk[i]} base={s.atk[0]}/>
-          <Stat icon="🛡️" name={L.defense}   val={s.def[i]} base={s.def[0]}/>
-          <Stat icon="❤️" name={L.hp}        val={s.hp[i]}  base={s.hp[0]}/>
-          <Stat icon="🏃" name={L.movement}  val={s.mov[i]} base={s.mov[0]}/>
-          <Stat icon="🎯" name={L.range}     val={s.rng[i]} base={s.rng[0]}/>
+          <Stat
+            icon="⚔️"
+            name={L.attack}
+            val={s.atk[i]}
+            base={s.atk[0]}
+            prev={s.atk[pi]}
+            accent
+          />
+          <Stat
+            icon="🛡️"
+            name={L.defense}
+            val={s.def[i]}
+            base={s.def[0]}
+            prev={s.def[pi]}
+            accent
+          />
+          <Stat icon="❤️" name={L.hp} val={s.hp[i]} base={s.hp[0]} prev={s.hp[pi]} />
+          <Stat
+            icon="🏃"
+            name={L.movement}
+            val={s.mov[i]}
+            base={s.mov[0]}
+            prev={s.mov[pi]}
+          />
+          <Stat icon="🎯" name={L.range} val={s.rng[i]} base={s.rng[0]} prev={s.rng[pi]} />
         </div>
       </div>
 
-      {/* ACTIVE LOADOUT AT CURRENT LEVEL */}
-      <div className="bg-panel border border-border rounded-lg p-5 mb-6">
+      {/* ACTIVE LOADOUT */}
+      <div id="loadout" className="bg-panel border border-border rounded-lg p-4 md:p-5 mb-6">
         <div className="flex items-center justify-between mb-3.5">
-          <h3 className="text-gold2 font-bold uppercase tracking-widest text-base">
-            {L.activeLoadout} {lvl}
+          <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm md:text-base m-0">
+            {L.activeLoadout} — {L.level} {lvl}
           </h3>
           <span className="text-muted text-[10px] uppercase tracking-widest">
             {L.skillCount(activeLoadout.length)}
           </span>
         </div>
         {activeLoadout.length === 0 ? (
-          <div className="text-muted text-sm italic">
+          <div className="text-muted text-sm italic text-center py-3">
             {L.noneUnlocked}
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {activeLoadout.map((p, idx) => {
-              const unlockedAt = p.lvl;
-              const justUnlocked = unlockedAt === lvl;
+              const justUnlocked = p.lvl === lvl;
               return (
                 <div
                   key={idx}
-                  className={`border rounded-lg p-3 ${
+                  className={`relative border rounded-lg p-3 transition-shadow ${
                     p.milestone
                       ? "border-red-500/40 bg-red-500/5"
                       : "border-border bg-bg3"
                   }`}
+                  style={
+                    justUnlocked
+                      ? {
+                          boxShadow:
+                            "0 0 0 2px rgb(var(--c-gold2) / 0.40), 0 4px 12px rgb(var(--c-gold) / 0.20)",
+                        }
+                      : undefined
+                  }
                 >
-                  <div className="flex items-start justify-between gap-2 mb-1">
-                    <h4 className="text-ink text-sm font-bold flex items-center gap-1.5 min-w-0">
-                      <span className="text-base shrink-0">{p.icon}</span>
-                      <span className="truncate">{perkName(p)}</span>
-                    </h4>
-                    <div className="flex flex-wrap gap-1 shrink-0">
-                      <PerkBadge type={p.type} locale={locale} />
-                      {justUnlocked && (
-                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-gold/20 border border-gold/40 text-gold2 uppercase tracking-widest">
-                          {L.newBadge}
+                  {justUnlocked && (
+                    <div
+                      className="absolute font-black uppercase tracking-widest"
+                      style={{
+                        top: -8,
+                        right: 10,
+                        background:
+                          "linear-gradient(135deg, rgb(var(--c-gold2)), rgb(var(--c-gold)))",
+                        color: "rgb(var(--c-bg))",
+                        fontSize: 9,
+                        padding: "2px 7px",
+                        borderRadius: 4,
+                        boxShadow: "0 2px 6px rgba(0,0,0,0.4)",
+                      }}
+                    >
+                      {L.newBadge}
+                    </div>
+                  )}
+                  <div className="flex items-start gap-2.5">
+                    <div
+                      className="grid place-items-center shrink-0 rounded-lg"
+                      style={{
+                        width: 36,
+                        height: 36,
+                        background: p.milestone
+                          ? "rgb(var(--c-accent) / 0.18)"
+                          : "rgb(var(--c-gold) / 0.12)",
+                        border: `1px solid ${
+                          p.milestone ? "rgb(var(--c-accent))" : "rgb(var(--c-gold))"
+                        }`,
+                        fontSize: 18,
+                      }}
+                    >
+                      {p.icon}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center flex-wrap gap-1.5 mb-1">
+                        <h4 className="m-0 text-sm font-bold text-ink">{perkName(p)}</h4>
+                        <PerkBadge type={p.type} locale={locale} />
+                        <span
+                          className="text-[9px] font-bold uppercase tracking-wider text-muted border border-border rounded px-1.5 py-px"
+                          style={{ background: "rgb(var(--c-bg-deep))" }}
+                        >
+                          L{p.lvl}
                         </span>
-                      )}
-                      {!justUnlocked && unlockedAt > 1 && (
-                        <span className="text-[9px] font-bold px-1.5 py-0.5 rounded bg-bg3 border border-border text-muted uppercase tracking-widest">
-                          L{unlockedAt}
-                        </span>
-                      )}
+                      </div>
+                      <p className="m-0 text-xs md:text-[12.5px] text-dim leading-relaxed">
+                        {perkDesc(p)}
+                      </p>
                     </div>
                   </div>
-                  <p className="text-dim text-xs leading-relaxed">{perkDesc(p)}</p>
                 </div>
               );
             })}
           </div>
         )}
-        <div className="mt-3 text-muted text-[11px] italic">
-          {L.loadoutHint}
-        </div>
+        <div className="mt-3 text-muted text-[11px] italic">{L.loadoutHint}</div>
       </div>
 
-      {/* SLIDER */}
-      <div className="bg-panel border border-border rounded-lg p-6 mb-6">
-        <div className="flex justify-between items-center mb-5">
-          <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg">{L.evolutionTitle}</h3>
-          <div className="flex items-center gap-3">
-            <div className="text-gold2 text-4xl font-black font-serif leading-none">{lvl}</div>
-            <div>
-              <div className="text-muted text-xs uppercase tracking-widest">{L.currentLevel}</div>
-              <div className="text-dim text-sm">{tierLabel}</div>
-            </div>
-          </div>
+      {/* INTERACTIVE TIMELINE */}
+      <div id="perks" className="bg-panel border border-border rounded-lg p-4 md:p-5 mb-6">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="text-gold2 font-bold uppercase tracking-widest text-sm md:text-base m-0">
+            {L.chronHeading}
+          </h3>
+          <span className="text-muted text-[10px] uppercase tracking-widest">
+            {unit.perks.length} {L.totalAt}
+          </span>
         </div>
-
-        <div className="relative py-5">
-          <div className="relative h-1.5 bg-bg3 rounded-full">
-            <div className="absolute top-0 left-0 h-full rounded-full transition-all duration-200"
-                 style={{ width: `${fillPct}%`, background: "linear-gradient(90deg, #d4a44a, #f2c265)" }}/>
-          </div>
-          <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center">
-            {Array.from({ length: 12 }, (_, idx) => {
-              const n = idx + 1;
-              const reached = n <= lvl;
-              const isMs = MILESTONES.includes(n);
-              const isCurr = n === lvl;
-              return (
-                <button
-                  key={n}
-                  onClick={() => setLvl(n)}
-                  aria-label={L.levelAria(n)}
-                  className="relative grid place-items-center cursor-pointer touch-manipulation h-11 w-6 shrink-0"
-                >
-                  <span
-                    className="rounded-full grid place-items-center text-[10px] font-bold transition-all"
-                    style={{
-                      width: 20,
-                      height: 20,
-                      background: reached ? (isMs ? "#c8372d" : "#d4a44a") : "#1c2530",
-                      color: reached ? (isMs ? "#fff" : "#0f1419") : "#6b7685",
-                      border: `${isMs ? 3 : 2}px solid ${isMs ? "#c8372d" : reached ? "#d4a44a" : "#2a3544"}`,
-                      transform: isCurr ? "scale(1.4)" : "scale(1)",
-                      boxShadow: isCurr ? "0 0 0 4px rgba(212,164,74,0.3)" : "none",
-                    }}
-                  >
-                    {n}
-                  </span>
-                </button>
-              );
-            })}
-          </div>
-          <div className="flex justify-between mt-3.5 text-[11px] text-muted uppercase tracking-widest">
-            <span>Lvl 1</span>
-            <span style={{ color: "#c8372d", fontWeight: 700, marginLeft: "26%" }}>Lvl 5 ⭐</span>
-            <span style={{ color: "#c8372d", fontWeight: 700 }}>Lvl 9 ⭐</span>
-            <span style={{ color: "#c8372d", fontWeight: 700 }}>Lvl 12 ⭐</span>
-          </div>
-        </div>
-
-        {milestoneNotes[lvl] && (
-          <div className="bg-accent/10 border-l-4 border-accent rounded-r p-3 px-3.5 mt-4 text-sm text-dim"
-               dangerouslySetInnerHTML={{ __html: milestoneNotes[lvl] }}/>
-        )}
-
-        <div className="mt-3.5 text-xs text-muted text-center">
-          {locale === "fr"
-            ? "💡 Cliquez sur un niveau ou utilisez les flèches ←→ du clavier"
-            : locale === "de"
-            ? "💡 Klicke auf eine Stufe oder verwende die Pfeiltasten ←→"
-            : "💡 Click a level or use the ←→ arrow keys"}
-        </div>
-      </div>
-
-      {/* PERKS TIMELINE */}
-      <div className="bg-panel border border-border rounded-lg p-6 mb-6">
-        <h3 className="text-gold2 font-bold uppercase tracking-widest text-lg mb-2">{L.chronHeading}</h3>
         <p className="text-muted text-xs mb-4 italic">{L.chronBody}</p>
-        <div className="relative pl-7">
-          <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-border"/>
+
+        <div className="relative">
+          <div
+            className="absolute"
+            style={{
+              left: 18,
+              top: 8,
+              bottom: 8,
+              width: 2,
+              background: "rgb(var(--c-border))",
+            }}
+            aria-hidden="true"
+          />
           {unit.perks.map((p, idx) => {
             const unlocked = p.lvl <= lvl;
             return (
-              <div key={idx} className="relative grid gap-4 py-3.5"
-                   style={{
-                     gridTemplateColumns: "60px 1fr",
-                     opacity: unlocked ? 1 : 0.35,
-                     transition: "opacity 0.3s",
-                   }}>
-                <span className="absolute -left-[23px] top-5 w-3 h-3 rounded-full"
-                      style={{
-                        background: unlocked ? (p.milestone ? "#c8372d" : "#d4a44a") : "#1c2530",
-                        border: `2px solid ${unlocked ? (p.milestone ? "#c8372d" : "#d4a44a") : "#2a3544"}`,
-                        boxShadow: unlocked ? `0 0 0 3px ${p.milestone ? "rgba(200,55,45,0.2)" : "rgba(212,164,74,0.2)"}` : "none",
-                      }}/>
-                <div className="font-serif text-2xl font-black text-center pt-1.5"
-                     style={{ color: unlocked ? "#f2c265" : "#6b7685" }}>{p.lvl}</div>
-                <div>
-                  <h4 className="text-base text-ink mb-1 flex items-center gap-2">
-                    <span className="text-lg">{p.icon}</span> {perkName(p)}
-                  </h4>
-                  <div>
-                    <PerkBadge type={p.type} locale={locale}/>
-                    <span className="text-sm text-dim leading-relaxed">{perkDesc(p)}</span>
+              <button
+                key={idx}
+                type="button"
+                onClick={() => setLvlSafe(p.lvl)}
+                aria-label={L.levelAria(p.lvl)}
+                className="w-full flex items-start gap-3 py-3 cursor-pointer transition-opacity text-left"
+                style={{ opacity: unlocked ? 1 : 0.4 }}
+              >
+                <div
+                  className="relative grid place-items-center shrink-0"
+                  style={{ width: 38, zIndex: 1 }}
+                >
+                  <div
+                    className="grid place-items-center font-serif font-black"
+                    style={{
+                      width: 36,
+                      height: 36,
+                      borderRadius: "50%",
+                      background: unlocked
+                        ? p.milestone
+                          ? "linear-gradient(135deg, rgb(var(--c-accent)), #8b1d15)"
+                          : "linear-gradient(135deg, rgb(var(--c-gold)), rgb(var(--c-khaki)))"
+                        : "rgb(var(--c-bg3))",
+                      border: `2px solid ${
+                        unlocked
+                          ? p.milestone
+                            ? "rgb(var(--c-accent))"
+                            : "rgb(var(--c-gold))"
+                          : "rgb(var(--c-border))"
+                      }`,
+                      color: unlocked ? "rgb(var(--c-bg))" : "rgb(var(--c-muted))",
+                      fontSize: 14,
+                      boxShadow: unlocked
+                        ? `0 0 0 4px ${
+                            p.milestone
+                              ? "rgb(var(--c-accent) / 0.15)"
+                              : "rgb(var(--c-gold) / 0.15)"
+                          }`
+                        : "none",
+                    }}
+                  >
+                    {p.lvl}
                   </div>
                 </div>
-              </div>
+                <div className="flex-1 min-w-0 pt-1">
+                  <div className="flex items-center flex-wrap gap-1.5 mb-1">
+                    <span className="text-base">{p.icon}</span>
+                    <h4
+                      className="m-0 text-[13.5px] font-bold"
+                      style={{
+                        color: unlocked ? "rgb(var(--c-ink))" : "rgb(var(--c-muted))",
+                      }}
+                    >
+                      {perkName(p)}
+                    </h4>
+                    <PerkBadge type={p.type} locale={locale} />
+                    {p.milestone && (
+                      <span
+                        className="text-xs"
+                        style={{ color: "rgb(var(--c-accent))" }}
+                        aria-hidden="true"
+                      >
+                        ⭐
+                      </span>
+                    )}
+                  </div>
+                  <p
+                    className="m-0 text-xs md:text-[12.5px] leading-relaxed"
+                    style={{
+                      color: unlocked ? "rgb(var(--c-dim))" : "rgb(var(--c-muted))",
+                    }}
+                  >
+                    {perkDesc(p)}
+                  </p>
+                </div>
+              </button>
             );
           })}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
-function Stat({ icon, name, val, base }: { icon: string; name: string; val: number; base: number }) {
+function Stat({
+  icon,
+  name,
+  val,
+  base,
+  prev,
+  accent,
+}: {
+  icon: string;
+  name: string;
+  val: number;
+  base: number;
+  prev: number;
+  accent?: boolean;
+}) {
   const delta = val - base;
+  const stepDelta = val - prev;
   return (
-    <div className="bg-bg3 border border-border rounded-md p-2 md:p-3 md:text-center relative flex items-center gap-2 md:block">
-      {/* Mobile: icon + label left, value right. md+: stacked, centered. */}
+    <div
+      className={`relative rounded-md p-2 md:p-3 flex items-center gap-2 md:block md:text-center border ${
+        accent ? "border-gold/40" : "border-border bg-bg3"
+      }`}
+      style={
+        accent
+          ? {
+              background:
+                "linear-gradient(135deg, rgb(var(--c-gold) / 0.10), rgb(var(--c-accent) / 0.04))",
+            }
+          : undefined
+      }
+    >
       <div className="text-base md:text-lg md:mb-1 shrink-0">{icon}</div>
-      <div className="text-[10px] md:text-[11px] text-muted uppercase tracking-wide md:tracking-widest md:mb-1 min-w-0 truncate md:truncate-none flex-1">
+      <div className="text-[10px] md:text-[11px] text-muted uppercase tracking-wide md:tracking-widest md:mb-1 min-w-0 truncate flex-1">
         {name}
       </div>
-      <div className="text-base md:text-2xl text-gold2 font-extrabold tabular-nums shrink-0">
+      <div className="text-base md:text-2xl text-gold2 font-extrabold tabular-nums shrink-0 leading-none">
         {val}
       </div>
       {delta > 0 && (
         <div className="absolute top-1 right-1 md:top-2 md:right-2 text-[9px] md:text-[10px] text-ok font-bold">
           +{delta}
+        </div>
+      )}
+      {stepDelta > 0 && (
+        <div
+          key={`${name}-${val}`}
+          className="absolute bottom-1 right-1 text-[9px] text-ok font-bold rounded px-1"
+          style={{
+            background: "rgb(var(--c-ok) / 0.15)",
+            animation: "etwPopIn 280ms ease",
+          }}
+        >
+          ↑{stepDelta}
         </div>
       )}
     </div>
@@ -416,24 +533,26 @@ function PerkBadge({ type, locale = "en" }: { type: string; locale?: string }) {
   const BY_LOCALE: Record<string, Record<string, { label: string; cls: string }>> = {
     fr: {
       "active-skill": { label: "Compétence active", cls: "bg-accent/15 border-accent text-accent" },
-      "passive":      { label: "Passif",            cls: "bg-ok/15 border-ok text-ok" },
-      "stat":         { label: "Stat",              cls: "bg-gold/15 border-gold text-gold2" },
+      passive: { label: "Passif", cls: "bg-ok/15 border-ok text-ok" },
+      stat: { label: "Stat", cls: "bg-gold/15 border-gold text-gold2" },
     },
     en: {
       "active-skill": { label: "Active skill", cls: "bg-accent/15 border-accent text-accent" },
-      "passive":      { label: "Passive",      cls: "bg-ok/15 border-ok text-ok" },
-      "stat":         { label: "Stat",         cls: "bg-gold/15 border-gold text-gold2" },
+      passive: { label: "Passive", cls: "bg-ok/15 border-ok text-ok" },
+      stat: { label: "Stat", cls: "bg-gold/15 border-gold text-gold2" },
     },
     de: {
       "active-skill": { label: "Aktive Fähigkeit", cls: "bg-accent/15 border-accent text-accent" },
-      "passive":      { label: "Passiv",           cls: "bg-ok/15 border-ok text-ok" },
-      "stat":         { label: "Statuswert",       cls: "bg-gold/15 border-gold text-gold2" },
+      passive: { label: "Passiv", cls: "bg-ok/15 border-ok text-ok" },
+      stat: { label: "Statuswert", cls: "bg-gold/15 border-gold text-gold2" },
     },
   };
   const map = BY_LOCALE[locale] ?? BY_LOCALE.en;
   const m = map[type] ?? map.passive;
   return (
-    <span className={`inline-block text-[10px] border rounded px-2 py-0.5 mr-1.5 uppercase tracking-widest font-semibold ${m.cls}`}>
+    <span
+      className={`inline-block text-[9px] border rounded px-1.5 py-px uppercase tracking-widest font-semibold ${m.cls}`}
+    >
       {m.label}
     </span>
   );

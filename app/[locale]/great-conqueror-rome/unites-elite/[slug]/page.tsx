@@ -6,6 +6,11 @@ import { Footer } from "@/components/Footer";
 import { TierBadge } from "@/components/TierBadge";
 import { UnitIcon } from "@/components/UnitIcon";
 import { UnitDetailClient } from "@/components/UnitDetailClient";
+import { UnitHero } from "@/components/elite/UnitHero";
+import {
+  RecommendedGeneralsPodium,
+  type PodiumGeneral,
+} from "@/components/elite/RecommendedGeneralsPodium";
 import { AdSlot } from "@/components/AdSlot";
 import { getAllSlugs, getEliteUnit, getCategoryMeta, COUNTRY_FLAGS, getUnitsByCategory, getFactionMeta, getAllGenerals } from "@/lib/gcr";
 import { countryLabel } from "@/lib/countries";
@@ -120,12 +125,12 @@ export default async function UnitPage({ params }: { params: { locale: string; s
         <span>{unit.name}</span>
       </div>
 
-      <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
-        <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
+      <div className="max-w-[1320px] mx-auto px-3 md:px-6 pb-20 lg:grid lg:grid-cols-[240px_1fr] lg:gap-7">
+        <aside className="hidden lg:block bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">{t("nav.onThisPage")}</h4>
           <ul className="list-none text-sm">
             <li><a href="#stats" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Stats par niveau", "Per-level stats", "Werte pro Stufe")}</a></li>
-            <li><a href="#slider" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Slider niveau 1-12", "Level 1-12 slider", "Stufen 1–12 Slider")}</a></li>
+            <li><a href="#loadout" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Loadout actif", "Active loadout", "Aktive Ausrüstung")}</a></li>
             <li><a href="#perks" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Perks détaillés", "Detailed perks", "Detaillierte Boni")}</a></li>
             <li><a href="#strategy" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("Stratégie", "Strategy", "Strategie")}</a></li>
             <li><a href="#faq" className="block px-2 py-1 text-dim no-underline hover:text-gold2">FAQ</a></li>
@@ -170,44 +175,23 @@ export default async function UnitPage({ params }: { params: { locale: string; s
             </div>
           )}
 
-          {/* HEADER */}
-          <div className="grid md:grid-cols-[220px_1fr] gap-5 md:gap-7 bg-panel border border-border rounded-lg p-4 md:p-6 mb-6">
-            <div className="rounded-lg border-2 border-gold h-[180px] md:h-[220px] w-full max-w-[200px] md:max-w-none mx-auto md:mx-0 grid place-items-center relative bg-gradient-to-br from-bg3 to-bg overflow-hidden">
-              {unit.image?.sprite ? (
-                <Image
-                  src={unit.image.sprite}
-                  alt={unit.name}
-                  fill
-                  sizes="(max-width: 768px) 200px, 220px"
-                  className="object-contain p-4"
-                  priority
-                />
-              ) : (
-                <UnitIcon category={unit.category} country={unit.country} size={140}/>
-              )}
-              <div className="absolute top-2.5 right-2.5 z-10"><TierBadge tier={unit.tier} size="md"/></div>
-            </div>
-            <div>
-              <h1 className="text-3xl text-gold2 font-extrabold mb-1">{params.locale === "fr" ? unit.name : unit.nameEn || unit.name}</h1>
-              <div className="text-dim text-sm mb-4">{localizedUnitField(unit as unknown as Record<string, unknown>, "longDesc", params.locale).split(".")[0]}.</div>
-              <div className="flex flex-wrap gap-2 mb-4">
-                <Tag accent>{meta.icon} {meta.label} {t("elitesPage.sectionSuffix")}</Tag>
-                <Tag>{COUNTRY_FLAGS[unit.country]} {countryLabel(unit.country, params.locale)}</Tag>
-                <Tag scorpion={isScorpion}>
-                  {isScorpion ? "🦂" : "🌍"} {factionMeta.label}
-                </Tag>
-                <Tag>📊 {tL("Niveaux 1-12", "Levels 1-12", "Stufen 1–12")}</Tag>
-                <Tag>🎁 {obtainabilityLabel(unit.obtainability, params.locale)}</Tag>
-              </div>
-              <p className="text-ink text-sm leading-relaxed">{localizedUnitField(unit as unknown as Record<string, unknown>, "longDesc", params.locale)}</p>
-            </div>
-          </div>
+          {/* HERO */}
+          <UnitHero
+            unit={unit}
+            displayName={params.locale === "fr" ? unit.name : unit.nameEn || unit.name}
+            description={localizedUnitField(unit as unknown as Record<string, unknown>, "longDesc", params.locale)}
+            shortDesc={localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", params.locale) || null}
+            categoryLabel={meta.label}
+            categoryIcon={meta.icon}
+            categorySuffix={t("elitesPage.sectionSuffix")}
+            countryLabel={countryLabel(unit.country, params.locale)}
+            countryFlag={COUNTRY_FLAGS[unit.country]}
+            obtainabilityLabel={obtainabilityLabel(unit.obtainability, params.locale)}
+            factionLabel={factionMeta.label}
+            factionScorpion={isScorpion}
+          />
 
-
-          {/* INTERACTIVE BLOCK */}
-          <div id="stats"></div>
-          <div id="slider"></div>
-          <div id="perks"></div>
+          {/* INTERACTIVE BLOCK — sticky level bar + stats + loadout + timeline */}
           <UnitDetailClient unit={unit}/>
 
           {!placeholder && (
@@ -220,38 +204,48 @@ export default async function UnitPage({ params }: { params: { locale: string; s
             <div className="grid md:grid-cols-2 gap-5">
               <div>
                 <h4 className="text-ink font-bold mb-2.5">👨‍✈️ {tL("Généraux recommandés", "Recommended generals", "Empfohlene Generäle")}</h4>
-                <p className="text-dim text-sm mb-3">{tL("Les généraux les plus efficaces avec cette unité :", "The most effective generals paired with this unit:", "Die effektivsten Generäle für diese Einheit:")}</p>
-                <div>
-                  {matchedGenerals.length > 0 ? (
-                    matchedGenerals.map(g => (
-                      <Link
-                        key={g.slug}
-                        href={`/great-conqueror-rome/generaux/${g.slug}` as any}
-                        className="inline-flex items-center gap-2 bg-bg3 border border-border px-3 py-1.5 rounded-full mr-1.5 mb-1.5 text-sm no-underline hover:border-gold transition-colors"
+                {matchedGenerals.length > 0 ? (
+                  <RecommendedGeneralsPodium
+                    game="gcr"
+                    leaderboardHref={`/leaderboards?game=gcr&tab=generals` as never}
+                    generalHrefBuilder={(slug) => `/great-conqueror-rome/generaux/${slug}`}
+                    generals={matchedGenerals.slice(0, 3).map<PodiumGeneral>((g) => ({
+                      slug: g.slug,
+                      name: g.name,
+                      displayName: params.locale === "fr" ? g.name : g.nameEn || g.name,
+                      rank: (g.rank ?? null) as PodiumGeneral["rank"],
+                      portrait: g.image?.head ?? null,
+                    }))}
+                    labels={{
+                      topVoted: tL("🏆 Top généraux votés", "🏆 Top voted generals", "🏆 Top gewählte Generäle"),
+                      viewRanking: tL("Voir le classement", "View ranking", "Rangliste ansehen"),
+                      rankPrefix: tL("Rang ", "Rank ", "Rang "),
+                      premiumTraining: tL("Premium training", "Premium training", "Premium-Training"),
+                      votesSuffix: tL("votes", "votes", "Stimmen"),
+                    }}
+                  />
+                ) : unit.recommendedGenerals.length > 0 ? (
+                  <div>
+                    {unit.recommendedGenerals.map((g) => (
+                      <span
+                        key={g}
+                        className="inline-flex items-center gap-2 bg-bg3 border border-border px-3 py-1.5 rounded-full mr-1.5 mb-1.5 text-sm"
                       >
-                        <span className="w-5 h-5 rounded-full grid place-items-center text-[10px] font-extrabold text-[#0f1419]"
-                              style={{ background: "linear-gradient(135deg, #8b7d4a, #d4a44a)" }}>
-                          {g.name.split(" ").map(s => s[0]).slice(0, 2).join("").toUpperCase()}
-                        </span>
-                        <span className="text-gold2">{g.name}</span>
-                      </Link>
-                    ))
-                  ) : unit.recommendedGenerals.length > 0 ? (
-                    unit.recommendedGenerals.map(g => (
-                      <span key={g} className="inline-flex items-center gap-2 bg-bg3 border border-border px-3 py-1.5 rounded-full mr-1.5 mb-1.5 text-sm">
-                        <span className="w-5 h-5 rounded-full grid place-items-center text-[10px] font-extrabold text-[#0f1419]"
-                              style={{ background: "linear-gradient(135deg, #8b7d4a, #d4a44a)" }}>
+                        <span
+                          className="w-5 h-5 rounded-full grid place-items-center text-[10px] font-extrabold text-[#0f1419]"
+                          style={{ background: "linear-gradient(135deg, #8b7d4a, #d4a44a)" }}
+                        >
                           {g.slice(0, 2).toUpperCase()}
                         </span>
                         {g}
                       </span>
-                    ))
-                  ) : (
-                    <Link href="/great-conqueror-rome/generaux" className="text-dim text-sm no-underline hover:text-gold2">
-                      {tL("Explorer les généraux du wiki →", "Browse all generals →", "Alle Generäle durchsuchen →")}
-                    </Link>
-                  )}
-                </div>
+                    ))}
+                  </div>
+                ) : (
+                  <Link href="/great-conqueror-rome/generaux" className="text-dim text-sm no-underline hover:text-gold2">
+                    {tL("Explorer les généraux du wiki →", "Browse all generals →", "Alle Generäle durchsuchen →")}
+                  </Link>
+                )}
                 {/* Community vote — "best general for this unit". Placeholder
                     until UNIT_VOTE_THRESHOLD total votes, then top-3 podium. */}
                 {(() => {
