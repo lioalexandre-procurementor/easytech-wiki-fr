@@ -15,7 +15,7 @@
       "chance": 12,
       "costMedal": 120,
       "renderedDesc": "12% chance the enemy will not fight back when commanding ship units.",
-      "renderedDescFr": "12% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
+      "renderedDescFr": "12% chances l'ennemi pas fight back lorsque vous commandez des navires unités."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 24,
       "costMedal": 170,
       "renderedDesc": "24% chance the enemy will not fight back when commanding ship units.",
-      "renderedDescFr": "24% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
+      "renderedDescFr": "24% chances l'ennemi pas fight back lorsque vous commandez des navires unités."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 36,
       "costMedal": 250,
       "renderedDesc": "36% chance the enemy will not fight back when commanding ship units.",
-      "renderedDescFr": "36% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
+      "renderedDescFr": "36% chances l'ennemi pas fight back lorsque vous commandez des navires unités."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 48,
       "costMedal": 350,
       "renderedDesc": "48% chance the enemy will not fight back when commanding ship units.",
-      "renderedDescFr": "48% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
+      "renderedDescFr": "48% chances l'ennemi pas fight back lorsque vous commandez des navires unités."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 60,
       "costMedal": 450,
       "renderedDesc": "60% chance the enemy will not fight back when commanding ship units.",
-      "renderedDescFr": "60% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales."
+      "renderedDescFr": "60% chances l'ennemi pas fight back lorsque vous commandez des navires unités."
     }
   ],
   "usage": {
@@ -89,7 +89,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Night Raid",
-  "descriptionTemplateFr": "X% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales.",
+  "descriptionTemplateFr": "X% chances l'ennemi pas fight back lorsque vous commandez des navires unités.",
   "longDesc": "Compétence spécifique à un général. « Night Raid » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 60% chance the ennemi ne ripostera pas lorsque vous commandez des unités navales. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Night Raid\" scales up to level 5. At max level (5), the skill applies the following effect: \"60% chance the enemy will not fight back when commanding ship units.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Night Raid“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „60% chance the enemy will not fight back when commanding ship units.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

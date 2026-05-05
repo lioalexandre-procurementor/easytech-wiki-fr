@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 100,
       "renderedDesc": "Damage +8% when attacking the stronghold units",
-      "renderedDescFr": "Dégâts +8% lors d'une attaque the stronghold unités"
+      "renderedDescFr": "Dégâts +8% lorsque attaquant la stronghold unités"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Damage +16% when attacking the stronghold units",
-      "renderedDescFr": "Dégâts +16% lors d'une attaque the stronghold unités"
+      "renderedDescFr": "Dégâts +16% lorsque attaquant la stronghold unités"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Damage +24% when attacking the stronghold units",
-      "renderedDescFr": "Dégâts +24% lors d'une attaque the stronghold unités"
+      "renderedDescFr": "Dégâts +24% lorsque attaquant la stronghold unités"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 320,
       "renderedDesc": "Damage +32% when attacking the stronghold units",
-      "renderedDescFr": "Dégâts +32% lors d'une attaque the stronghold unités"
+      "renderedDescFr": "Dégâts +32% lorsque attaquant la stronghold unités"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 400,
       "renderedDesc": "Damage +40% when attacking the stronghold units",
-      "renderedDescFr": "Dégâts +40% lors d'une attaque the stronghold unités"
+      "renderedDescFr": "Dégâts +40% lorsque attaquant la stronghold unités"
     }
   ],
   "usage": {
@@ -958,7 +958,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Explosives",
-  "descriptionTemplateFr": "Dégâts +X% lors d'une attaque the stronghold unités",
+  "descriptionTemplateFr": "Dégâts +X% lorsque attaquant la stronghold unités",
   "longDesc": "Compétence de pression offensive. « Explosives » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts +40% lors d'une attaque the stronghold unités ». À privilégier sur les cartes offensives tier-S afin de casser vite les stacks ennemies.",
   "longDescEn": "An offensive-pressure skill. \"Explosives\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage +40% when attacking the stronghold units\". Prefer it on tier-S offensive cards to break enemy stacks quickly.",
   "longDescDe": "Eine Offensivdruck-Fähigkeit. „Explosives“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage +40% when attacking the stronghold units“. Auf S-Klasse-Offensivkarten zu bevorzugen, um feindliche Stacks schnell zu brechen."

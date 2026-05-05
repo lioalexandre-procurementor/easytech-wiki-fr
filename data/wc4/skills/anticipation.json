@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "When commanding troops to move, dealt damage +2% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "When commanding troops to move, dégâts infligés +2% (up to 50%) for each grid moved pendant 1 tour."
+      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +2% (up à 50%) pour chaque case moved pour 1 tour."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "When commanding troops to move, dealt damage +4% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "When commanding troops to move, dégâts infligés +4% (up to 50%) for each grid moved pendant 1 tour."
+      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +4% (up à 50%) pour chaque case moved pour 1 tour."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "When commanding troops to move, dealt damage +6% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "When commanding troops to move, dégâts infligés +6% (up to 50%) for each grid moved pendant 1 tour."
+      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +6% (up à 50%) pour chaque case moved pour 1 tour."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "When commanding troops to move, dealt damage +8% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "When commanding troops to move, dégâts infligés +8% (up to 50%) for each grid moved pendant 1 tour."
+      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +8% (up à 50%) pour chaque case moved pour 1 tour."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "When commanding troops to move, dégâts infligés +10% (up to 50%) for each grid moved pendant 1 tour."
+      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +10% (up à 50%) pour chaque case moved pour 1 tour."
     }
   ],
   "usage": {
@@ -89,7 +89,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Anticipation",
-  "descriptionTemplateFr": "When commanding troops to move, dealt dégâts +X% (up to 50%) for each grid moved pendant 1 tour.",
+  "descriptionTemplateFr": "Lorsque vous commandez troupes à move, dealt dégâts +X% (up à 50%) pour chaque case moved pour 1 tour.",
   "longDesc": "Compétence spécifique à un général. « Anticipation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops to move, dégâts infligés +10% (up to 50%) for each grid moved pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Anticipation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Anticipation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

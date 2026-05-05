@@ -100,12 +100,10 @@ export async function generateMetadata({
       title,
       description,
     },
-    // Placeholder pages stay crawlable (follow) but out of the index until
-    // editorial longDesc is written. Flip back to index:true in the JSON
-    // by removing "à enrichir" / "Fiche générée automatiquement".
-    robots: isPlaceholderGeneral(g)
-      ? { index: false, follow: true }
-      : { index: true, follow: true },
+    // Per the 2026-05-05 SEO remediation plan, generals must be indexable.
+    // The placeholder noindex gate is removed; placeholder status still
+    // suppresses ad slots below but no longer affects indexability.
+    robots: { index: true, follow: true },
   };
 }
 

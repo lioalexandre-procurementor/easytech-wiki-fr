@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 100,
       "renderedDesc": "Mobility +1% when commanding land units on board",
-      "renderedDescFr": "Mobility +1% when commanding land unités on board"
+      "renderedDescFr": "Mobility +1% lorsque vous commandez land unités sur board"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Mobility +2% when commanding land units on board",
-      "renderedDescFr": "Mobility +2% when commanding land unités on board"
+      "renderedDescFr": "Mobility +2% lorsque vous commandez land unités sur board"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Mobility +3% when commanding land units on board",
-      "renderedDescFr": "Mobility +3% when commanding land unités on board"
+      "renderedDescFr": "Mobility +3% lorsque vous commandez land unités sur board"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 320,
       "renderedDesc": "Mobility +4% when commanding land units on board",
-      "renderedDescFr": "Mobility +4% when commanding land unités on board"
+      "renderedDescFr": "Mobility +4% lorsque vous commandez land unités sur board"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 400,
       "renderedDesc": "Mobility +5% when commanding land units on board",
-      "renderedDescFr": "Mobility +5% when commanding land unités on board"
+      "renderedDescFr": "Mobility +5% lorsque vous commandez land unités sur board"
     }
   ],
   "usage": {
@@ -69,7 +69,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Guerre amphibie",
-  "descriptionTemplateFr": "Mobility +X% when commanding land unités on board",
+  "descriptionTemplateFr": "Mobility +X% lorsque vous commandez land unités sur board",
   "longDesc": "Compétence spécifique à un général. « Guerre amphibie » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Mobility +5% when commanding land unités on board ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Amphibious Warfare\" scales up to level 5. At max level (5), the skill applies the following effect: \"Mobility +5% when commanding land units on board\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Amphibious Warfare“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Mobility +5% when commanding land units on board“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

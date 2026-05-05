@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 150,
       "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +4.",
-      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +4."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, you pas fall into Chaos. Attaque de you et friendly troupes de 1 case autour you +4."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +8.",
-      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +8."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, you pas fall into Chaos. Attaque de you et friendly troupes de 1 case autour you +8."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +12.",
-      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +12."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, you pas fall into Chaos. Attaque de you et friendly troupes de 1 case autour you +12."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +16.",
-      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +16."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, you pas fall into Chaos. Attaque de you et friendly troupes de 1 case autour you +16."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 550,
       "renderedDesc": "When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20.",
-      "renderedDescFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +20."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, you pas fall into Chaos. Attaque de you et friendly troupes de 1 case autour you +20."
     }
   ],
   "usage": {
@@ -109,7 +109,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Leadership",
-  "descriptionTemplateFr": "When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +X.",
+  "descriptionTemplateFr": "Lorsque vous commandez un navires unités, you pas fall into Chaos. Attaque de you et friendly troupes de 1 case autour you +X.",
   "longDesc": "Compétence spécifique à un général. « Leadership » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding a ship unité, you will not fall into Chaos. Attaque of you and allié troops of 1 grid around you +20. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Leadership\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Leadership“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding a ship unit, you will not fall into Chaos. Attack of you and friendly troops of 1 grid around you +20.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

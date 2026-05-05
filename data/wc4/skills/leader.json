@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Dealt damage of commanded units against land units +6%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +6%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
+      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +6%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Dealt damage of commanded units against land units +12%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +12%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
+      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +12%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "Dealt damage of commanded units against land units +18%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +18%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
+      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +18%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "Dealt damage of commanded units against land units +24%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +24%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
+      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +24%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts of commanded unités against land unités +30%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours"
+      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +30%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
     }
   ],
   "usage": {
@@ -73,7 +73,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Leader",
-  "descriptionTemplateFr": "Dealt dégâts of commanded unités against land unités +X%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours",
+  "descriptionTemplateFr": "Dealt dégâts de commanded unités against land unités +X%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours",
   "longDesc": "Compétence spécifique à un général. « Leader » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dealt dégâts of commanded unités against land unités +30%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

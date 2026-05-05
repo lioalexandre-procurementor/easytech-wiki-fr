@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by 6% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
-      "renderedDescFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 6% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion."
+      "renderedDescFr": "Ennemi unités within 3 tiles de la commandant unités have leur défense réduit de 6% et also take 20% augmente dégâts de nucléaire bombs, satellite strikes, et drone tactical explosion."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by 12% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
-      "renderedDescFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 12% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion."
+      "renderedDescFr": "Ennemi unités within 3 tiles de la commandant unités have leur défense réduit de 12% et also take 20% augmente dégâts de nucléaire bombs, satellite strikes, et drone tactical explosion."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by 18% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
-      "renderedDescFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 18% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion."
+      "renderedDescFr": "Ennemi unités within 3 tiles de la commandant unités have leur défense réduit de 18% et also take 20% augmente dégâts de nucléaire bombs, satellite strikes, et drone tactical explosion."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by 24% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
-      "renderedDescFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 24% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion."
+      "renderedDescFr": "Ennemi unités within 3 tiles de la commandant unités have leur défense réduit de 24% et also take 20% augmente dégâts de nucléaire bombs, satellite strikes, et drone tactical explosion."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "Enemy units within 3 tiles of the commanding unit have their defense reduced by 30% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.",
-      "renderedDescFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 30% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion."
+      "renderedDescFr": "Ennemi unités within 3 tiles de la commandant unités have leur défense réduit de 30% et also take 20% augmente dégâts de nucléaire bombs, satellite strikes, et drone tactical explosion."
     }
   ],
   "usage": {
@@ -69,7 +69,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Inescapable Net",
-  "descriptionTemplateFr": "Unités ennemies within 3 tiles of the commanding unité have their défense réduit by X% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion.",
+  "descriptionTemplateFr": "Ennemi unités within 3 tiles de la commandant unités have leur défense réduit de X% et also take 20% augmente dégâts de nucléaire bombs, satellite strikes, et drone tactical explosion.",
   "longDesc": "Compétence spécifique à un général. « Inescapable Net » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Unités ennemies within 3 tiles of the commanding unité have their défense réduit de 30% and also take 20% augmenté dégâts from nuclear bombs, satellite strikes, and drone tactical explosion. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Inescapable Net\" scales up to level 5. At max level (5), the skill applies the following effect: \"Enemy units within 3 tiles of the commanding unit have their defense reduced by 30% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Inescapable Net“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Enemy units within 3 tiles of the commanding unit have their defense reduced by 30% and also take 20% increased damage from nuclear bombs, satellite strikes, and drone tactical explosion.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

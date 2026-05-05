@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 100,
       "renderedDesc": "Damage to the enemy +5 when fighting in the city",
-      "renderedDescFr": "Dégâts infligés +5 when fighting in the city"
+      "renderedDescFr": "Dégâts à l'ennemi +5 lorsque fighting dans la city"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Damage to the enemy +10 when fighting in the city",
-      "renderedDescFr": "Dégâts infligés +10 when fighting in the city"
+      "renderedDescFr": "Dégâts à l'ennemi +10 lorsque fighting dans la city"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Damage to the enemy +15 when fighting in the city",
-      "renderedDescFr": "Dégâts infligés +15 when fighting in the city"
+      "renderedDescFr": "Dégâts à l'ennemi +15 lorsque fighting dans la city"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 320,
       "renderedDesc": "Damage to the enemy +20 when fighting in the city",
-      "renderedDescFr": "Dégâts infligés +20 when fighting in the city"
+      "renderedDescFr": "Dégâts à l'ennemi +20 lorsque fighting dans la city"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 400,
       "renderedDesc": "Damage to the enemy +25 when fighting in the city",
-      "renderedDescFr": "Dégâts infligés +25 when fighting in the city"
+      "renderedDescFr": "Dégâts à l'ennemi +25 lorsque fighting dans la city"
     }
   ],
   "usage": {
@@ -337,7 +337,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Combat urbain",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X when fighting in the city",
+  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque fighting dans la city",
   "longDesc": "Compétence spécifique à un général. « Combat urbain » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 when fighting in the city ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Street Fighting\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when fighting in the city\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Street Fighting“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when fighting in the city“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

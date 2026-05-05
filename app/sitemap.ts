@@ -21,7 +21,6 @@ import {
   getEliteUnit as getEw6EliteUnit,
 } from "@/lib/ew6";
 import { getGame } from "@/lib/games";
-import { isPlaceholder } from "@/lib/placeholder";
 import { locales } from "@/src/i18n/config";
 import {
   BASE_URL,
@@ -41,10 +40,10 @@ import {
  *     base general page (see app/[locale]/world-conqueror-4/generaux/[slug]/
  *     trained/page.tsx and .../premium-training/page.tsx).
  *
- *  2. Only URLs the page itself marks as indexable. EW6/GCR placeholder
- *     general/unit pages set `robots: { index: false }` AND we filter
- *     them out here via `isPlaceholder()` so noindex pages never appear
- *     in the sitemap.
+ *  2. Only URLs the page itself marks as indexable. Per the 2026-05-05
+ *     SEO remediation plan, EW6/GCR generals + elite-units (including
+ *     placeholder pages) are now indexable; the previous noindex+sitemap
+ *     filter was rolled back.
  *
  *  3. `lastModified` reflects real content change time when we have it
  *     (file mtime for JSON-derived routes); falls back to build time for
@@ -483,7 +482,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const slug of getAllGcrGeneralSlugs()) {
       const entity = getGcrGeneral(slug);
-      if (!entity || isPlaceholder(entity)) continue;
+      if (!entity) continue;
+      // Placeholder pages are now indexable per the 2026-05-05 SEO plan
+      // (Bucket A) — they're included in the sitemap.
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/generaux/${slug}`,
         en: `/great-conqueror-rome/generals/${slug}`,
@@ -503,7 +504,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const slug of getAllGcrEliteSlugs()) {
       const entity = getGcrEliteUnit(slug);
-      if (!entity || isPlaceholder(entity)) continue;
+      if (!entity) continue;
+      // Placeholder pages are now indexable per the 2026-05-05 SEO plan.
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/unites-elite/${slug}`,
         en: `/great-conqueror-rome/elite-units/${slug}`,
@@ -583,7 +585,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const slug of getAllEw6GeneralSlugs()) {
       const entity = getEw6General(slug);
-      if (!entity || isPlaceholder(entity)) continue;
+      if (!entity) continue;
+      // Placeholder pages are now indexable per the 2026-05-05 SEO plan.
       const pair: LocalePair = {
         fr: `/european-war-6/generaux/${slug}`,
         en: `/european-war-6/generals/${slug}`,
@@ -603,7 +606,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const slug of getAllEw6EliteSlugs()) {
       const entity = getEw6EliteUnit(slug);
-      if (!entity || isPlaceholder(entity)) continue;
+      if (!entity) continue;
+      // Placeholder pages are now indexable per the 2026-05-05 SEO plan.
       const pair: LocalePair = {
         fr: `/european-war-6/unites-elite/${slug}`,
         en: `/european-war-6/elite-units/${slug}`,

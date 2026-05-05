@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 120,
       "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +6 for 2 turns.",
-      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +6 pendant 2 tours."
+      "renderedDescFr": "Lorsque friendly troupes within 1 case autour you sont killed dans battle, you gagne la Vengeance status, avec attaque +6 pour 2 tours."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 170,
       "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +12 for 2 turns.",
-      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +12 pendant 2 tours."
+      "renderedDescFr": "Lorsque friendly troupes within 1 case autour you sont killed dans battle, you gagne la Vengeance status, avec attaque +12 pour 2 tours."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +18 for 2 turns.",
-      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +18 pendant 2 tours."
+      "renderedDescFr": "Lorsque friendly troupes within 1 case autour you sont killed dans battle, you gagne la Vengeance status, avec attaque +18 pour 2 tours."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +24 for 2 turns.",
-      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +24 pendant 2 tours."
+      "renderedDescFr": "Lorsque friendly troupes within 1 case autour you sont killed dans battle, you gagne la Vengeance status, avec attaque +24 pour 2 tours."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns.",
-      "renderedDescFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +30 pendant 2 tours."
+      "renderedDescFr": "Lorsque friendly troupes within 1 case autour you sont killed dans battle, you gagne la Vengeance status, avec attaque +30 pour 2 tours."
     }
   ],
   "usage": {
@@ -117,7 +117,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Retaliation",
-  "descriptionTemplateFr": "When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +X pendant 2 tours.",
+  "descriptionTemplateFr": "Lorsque friendly troupes within 1 case autour you sont killed dans battle, you gagne la Vengeance status, avec attaque +X pour 2 tours.",
   "longDesc": "Compétence spécifique à un général. « Retaliation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When allié troops within 1 grid around you are killed in battle, you will gagne l'état correspondant, with attaque +30 pendant 2 tours. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Retaliation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Retaliation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When friendly troops within 1 grid around you are killed in battle, you will gain the Vengeance status, with attack +30 for 2 turns.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

@@ -43,10 +43,13 @@ export function generateStaticParams() {
 
 /**
  * Placeholder detection — EW6 generals auto-generated from decrypted game
- * files carry a boilerplate longDesc ending "à enrichir". Those pages are
- * not yet editorial quality (thin content for AdSense, low SEO value), so
- * we noindex them and skip ad rendering until the longDesc is humanised.
- * See EasyTech-Wiki-SEO-Ads-Strategy-Assessment-2026-04-16.md (Plan A).
+ * files carry a boilerplate longDesc ending "à enrichir". We still detect
+ * them so we can skip ad rendering (AdSense thin-content rule), but we no
+ * longer apply `robots: { index: false }` here. Per the 2026-05-05 SEO
+ * remediation plan, generals/elite-troop pages must be indexable; the
+ * earlier blanket noindex caused the 4/22 indexing cliff (~643 EW6 URLs
+ * + ~308 GC:Rome URLs excluded by Google). Editorial humanisation is
+ * still tracked, but it's no longer a gating signal for indexability.
  */
 function isPlaceholderGeneral(g: GeneralData | null): boolean {
   if (!g) return false;
@@ -99,12 +102,12 @@ export async function generateMetadata({
       title,
       description,
     },
-    // Placeholder pages stay crawlable (follow) but out of the index until
-    // editorial longDesc is written. Flip back to index:true in the JSON
-    // by removing "à enrichir" / "Fiche générée automatiquement".
-    robots: isPlaceholderGeneral(g)
-      ? { index: false, follow: true }
-      : { index: true, follow: true },
+    // Per the 2026-05-05 SEO remediation plan, entity pages (generals,
+    // elite-units) must be indexable. The previous gate that flipped
+    // placeholder pages to noindex is removed; the placeholder check
+    // still drives `placeholder` for ad-rendering decisions below but
+    // no longer affects indexability.
+    robots: { index: true, follow: true },
   };
 }
 

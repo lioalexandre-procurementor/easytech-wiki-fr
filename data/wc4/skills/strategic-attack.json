@@ -15,7 +15,7 @@
       "chance": 20,
       "costMedal": 120,
       "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 20% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
-      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 20% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
+      "renderedDescFr": "Après commandant un unités à attaque, si la target est pas annihilated, il y a 20% de chance que un tracking mark être added à que target. Targets avec tracking marks receive 20% more dégâts, lasts pour 1 tours."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 40,
       "costMedal": 170,
       "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 40% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
-      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 40% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
+      "renderedDescFr": "Après commandant un unités à attaque, si la target est pas annihilated, il y a 40% de chance que un tracking mark être added à que target. Targets avec tracking marks receive 20% more dégâts, lasts pour 1 tours."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 60,
       "costMedal": 250,
       "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 60% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
-      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 60% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
+      "renderedDescFr": "Après commandant un unités à attaque, si la target est pas annihilated, il y a 60% de chance que un tracking mark être added à que target. Targets avec tracking marks receive 20% more dégâts, lasts pour 1 tours."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 80,
       "costMedal": 350,
       "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 80% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
-      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 80% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
+      "renderedDescFr": "Après commandant un unités à attaque, si la target est pas annihilated, il y a 80% de chance que un tracking mark être added à que target. Targets avec tracking marks receive 20% more dégâts, lasts pour 1 tours."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.",
-      "renderedDescFr": "After commanding a unité to attaque, if the cible is not annihilated, there is 100% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours."
+      "renderedDescFr": "Après commandant un unités à attaque, si la target est pas annihilated, il y a 100% de chance que un tracking mark être added à que target. Targets avec tracking marks receive 20% more dégâts, lasts pour 1 tours."
     }
   ],
   "usage": {
@@ -145,7 +145,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Strategic attaque",
-  "descriptionTemplateFr": "After commanding a unité to attaque, if the cible is not annihilated, there is X% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours.",
+  "descriptionTemplateFr": "Après commandant un unités à attaque, si la target est pas annihilated, il y a X% chances que un tracking mark être added à que target. Targets avec tracking marks receive 20% more dégâts, lasts pour 1 tours.",
   "longDesc": "Compétence spécifique à un général. « Strategic attaque » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a unité to attaque, if the cible is not annihilated, there is 100% chance that a tracking mark will be added to that cible. Targets with tracking marks receive 20% more dégâts, lasts pendant 1 tours. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Strategic Attack\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Strategic Attack“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a unit to attack, if the target is not annihilated, there is 100% chance that a tracking mark will be added to that target. Targets with tracking marks receive 20% more damage, lasts for 1 turns.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

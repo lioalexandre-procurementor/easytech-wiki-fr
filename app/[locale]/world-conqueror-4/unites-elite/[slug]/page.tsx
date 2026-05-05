@@ -297,17 +297,27 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                   );
                 })()}
               </div>
-              <div>
-                <h4 className="text-ink font-bold mb-2.5">📈 {tL("Ordre de leveling recommandé", "Recommended leveling order", "Empfohlene Level-Reihenfolge")}</h4>
-                <ul className="list-none">
-                  {unit.levelingPriority.map((step, i) => (
-                    <li key={i} className="py-2 border-b border-border last:border-none text-sm text-dim flex gap-2.5">
-                      <span className="text-ok font-bold">✓</span>
-                      <span dangerouslySetInnerHTML={{ __html: step }}/>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {/*
+                The `levelingPriority` array on each unit JSON is currently
+                authored in French only. Until we have per-locale variants
+                (or translations are backfilled into a structured field),
+                we gate this block behind `locale === "fr"` so French prose
+                doesn't bleed onto /en/ and /de/ pages. See language audit
+                Issue E (2026-05-06).
+              */}
+              {params.locale === "fr" && unit.levelingPriority.length > 0 && (
+                <div>
+                  <h4 className="text-ink font-bold mb-2.5">📈 Ordre de leveling recommandé</h4>
+                  <ul className="list-none">
+                    {unit.levelingPriority.map((step, i) => (
+                      <li key={i} className="py-2 border-b border-border last:border-none text-sm text-dim flex gap-2.5">
+                        <span className="text-ok font-bold">✓</span>
+                        <span dangerouslySetInnerHTML={{ __html: step }}/>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
 

@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy",
-      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 4% dégâts dealt by ennemi"
+      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 4% dégâts dealt de ennemi"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy",
-      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 8% dégâts dealt by ennemi"
+      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 8% dégâts dealt de ennemi"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy",
-      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 12% dégâts dealt by ennemi"
+      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 12% dégâts dealt de ennemi"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 16% damage dealt by enemy",
-      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 16% dégâts dealt by ennemi"
+      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 16% dégâts dealt de ennemi"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy",
-      "renderedDescFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 20% dégâts dealt by ennemi"
+      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 20% dégâts dealt de ennemi"
     }
   ],
   "usage": {
@@ -221,7 +221,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Hold Fast",
-  "descriptionTemplateFr": "Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade X% dégâts dealt by ennemi",
+  "descriptionTemplateFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade X% dégâts dealt de ennemi",
   "longDesc": "Compétence spécifique à un général. « Hold Fast » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 20% dégâts dealt by ennemi ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Hold Fast\" scales up to level 5. At max level (5), the skill applies the following effect: \"Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Hold Fast“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

@@ -15,7 +15,7 @@
       "chance": 12,
       "costMedal": 150,
       "renderedDesc": "12% chance that the enemy will not fight back when commanding armored units",
-      "renderedDescFr": "12% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
+      "renderedDescFr": "12% chances que l'ennemi pas fight back lorsque vous commandez des unités blindées"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 24,
       "costMedal": 250,
       "renderedDesc": "24% chance that the enemy will not fight back when commanding armored units",
-      "renderedDescFr": "24% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
+      "renderedDescFr": "24% chances que l'ennemi pas fight back lorsque vous commandez des unités blindées"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 36,
       "costMedal": 350,
       "renderedDesc": "36% chance that the enemy will not fight back when commanding armored units",
-      "renderedDescFr": "36% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
+      "renderedDescFr": "36% chances que l'ennemi pas fight back lorsque vous commandez des unités blindées"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 48,
       "costMedal": 450,
       "renderedDesc": "48% chance that the enemy will not fight back when commanding armored units",
-      "renderedDescFr": "48% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
+      "renderedDescFr": "48% chances que l'ennemi pas fight back lorsque vous commandez des unités blindées"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 60,
       "costMedal": 550,
       "renderedDesc": "60% chance that the enemy will not fight back when commanding armored units",
-      "renderedDescFr": "60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées"
+      "renderedDescFr": "60% chances que l'ennemi pas fight back lorsque vous commandez des unités blindées"
     }
   ],
   "usage": {
@@ -537,7 +537,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Guerre éclair",
-  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées",
+  "descriptionTemplateFr": "X% chances que l'ennemi pas fight back lorsque vous commandez des unités blindées",
   "longDesc": "Compétence spécifique à un général. « Guerre éclair » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités blindées ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Blitzkrieg\" scales up to level 5. At max level (5), the skill applies the following effect: \"60% chance that the enemy will not fight back when commanding armored units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Blitzkrieg“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „60% chance that the enemy will not fight back when commanding armored units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

@@ -15,7 +15,7 @@
       "chance": 20,
       "costMedal": 160,
       "renderedDesc": "20% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
-      "renderedDescFr": "20% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)"
+      "renderedDescFr": "20% chances que two de la inactives infanterie unités autour rejoindre l'attaque (seulement once per tour)"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 40,
       "costMedal": 240,
       "renderedDesc": "40% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
-      "renderedDescFr": "40% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)"
+      "renderedDescFr": "40% chances que two de la inactives infanterie unités autour rejoindre l'attaque (seulement once per tour)"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 60,
       "costMedal": 480,
       "renderedDesc": "60% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
-      "renderedDescFr": "60% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)"
+      "renderedDescFr": "60% chances que two de la inactives infanterie unités autour rejoindre l'attaque (seulement once per tour)"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 80,
       "costMedal": 640,
       "renderedDesc": "80% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
-      "renderedDescFr": "80% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)"
+      "renderedDescFr": "80% chances que two de la inactives infanterie unités autour rejoindre l'attaque (seulement once per tour)"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "100% chance that two of the inactive infantry units around will join the attack (Only once per turn)",
-      "renderedDescFr": "100% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)"
+      "renderedDescFr": "100% chances que two de la inactives infanterie unités autour rejoindre l'attaque (seulement once per tour)"
     }
   ],
   "usage": {
@@ -115,7 +115,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Infanterie Group Charge",
-  "descriptionTemplateFr": "X% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour)",
+  "descriptionTemplateFr": "X% chances que two de la inactives infanterie unités autour rejoindre l'attaque (seulement once per tour)",
   "longDesc": "Compétence spécifique à un général. « Infanterie Group Charge » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that two of the inactive unités d'infanterie around will join the attaque (Only once par tour) ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Infantry Group Charge\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that two of the inactive infantry units around will join the attack (Only once per turn)\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Infantry Group Charge“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that two of the inactive infantry units around will join the attack (Only once per turn)“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

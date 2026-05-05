@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 100,
       "renderedDesc": "After commanding a troop to counterattack, +8 HP to yourself and surrounding friendly troops.",
-      "renderedDescFr": "After commanding a troop to counterattack, +8 PV to yourself and surrounding allié troops."
+      "renderedDescFr": "Après commandant un troupes à counterattack, +8 HP à yourself et surrounding friendly troupes."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "After commanding a troop to counterattack, +16 HP to yourself and surrounding friendly troops.",
-      "renderedDescFr": "After commanding a troop to counterattack, +16 PV to yourself and surrounding allié troops."
+      "renderedDescFr": "Après commandant un troupes à counterattack, +16 HP à yourself et surrounding friendly troupes."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "After commanding a troop to counterattack, +24 HP to yourself and surrounding friendly troops.",
-      "renderedDescFr": "After commanding a troop to counterattack, +24 PV to yourself and surrounding allié troops."
+      "renderedDescFr": "Après commandant un troupes à counterattack, +24 HP à yourself et surrounding friendly troupes."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 320,
       "renderedDesc": "After commanding a troop to counterattack, +32 HP to yourself and surrounding friendly troops.",
-      "renderedDescFr": "After commanding a troop to counterattack, +32 PV to yourself and surrounding allié troops."
+      "renderedDescFr": "Après commandant un troupes à counterattack, +32 HP à yourself et surrounding friendly troupes."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 400,
       "renderedDesc": "After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops.",
-      "renderedDescFr": "After commanding a troop to counterattack, +40 PV to yourself and surrounding allié troops."
+      "renderedDescFr": "Après commandant un troupes à counterattack, +40 HP à yourself et surrounding friendly troupes."
     }
   ],
   "usage": {
@@ -125,7 +125,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Fighting Spirit",
-  "descriptionTemplateFr": "After commanding a troop to counterattack, +X PV to yourself and surrounding allié troops.",
+  "descriptionTemplateFr": "Après commandant un troupes à counterattack, +X HP à yourself et surrounding friendly troupes.",
   "longDesc": "Compétence logistique de soutien. « Fighting Spirit » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a troop to counterattack, +40 PV to yourself and surrounding allié troops. ». Pertinente sur les longues campagnes où le gain marginal de chaque tour compte.",
   "longDescEn": "A logistics support skill. \"Fighting Spirit\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops.\". Relevant on long campaigns where the marginal gain per turn matters.",
   "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Fighting Spirit“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a troop to counterattack, +40 HP to yourself and surrounding friendly troops.“. Lohnend in langen Kampagnen, in denen jeder Rundenbonus zählt."

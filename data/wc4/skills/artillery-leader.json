@@ -15,7 +15,7 @@
       "chance": 8,
       "costMedal": 100,
       "renderedDesc": "8% chance to give the enemy a critical attack when commanding artillery units",
-      "renderedDescFr": "8% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
+      "renderedDescFr": "8% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 16,
       "costMedal": 160,
       "renderedDesc": "16% chance to give the enemy a critical attack when commanding artillery units",
-      "renderedDescFr": "16% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
+      "renderedDescFr": "16% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 24,
       "costMedal": 240,
       "renderedDesc": "24% chance to give the enemy a critical attack when commanding artillery units",
-      "renderedDescFr": "24% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
+      "renderedDescFr": "24% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 32,
       "costMedal": 320,
       "renderedDesc": "32% chance to give the enemy a critical attack when commanding artillery units",
-      "renderedDescFr": "32% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
+      "renderedDescFr": "32% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 40,
       "costMedal": 400,
       "renderedDesc": "40% chance to give the enemy a critical attack when commanding artillery units",
-      "renderedDescFr": "40% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
+      "renderedDescFr": "40% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie"
     }
   ],
   "usage": {
@@ -653,7 +653,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Commandant d'artillerie",
-  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie",
+  "descriptionTemplateFr": "X% chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie",
   "longDesc": "Compétence spécifique à un général. « Commandant d'artillerie » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 40% chance d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Artillery Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"40% chance to give the enemy a critical attack when commanding artillery units\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „40% chance to give the enemy a critical attack when commanding artillery units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

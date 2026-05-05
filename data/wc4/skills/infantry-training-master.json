@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 150,
       "renderedDesc": "Reduce the damage taken by 1% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduire the dégâts taken de 1% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit."
+      "renderedDescFr": "Réduit la dégâts taken de 1% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "Reduce the damage taken by 2% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduire the dégâts taken de 2% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit."
+      "renderedDescFr": "Réduit la dégâts taken de 2% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "Reduce the damage taken by 2% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduire the dégâts taken de 2% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit."
+      "renderedDescFr": "Réduit la dégâts taken de 2% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "Reduce the damage taken by 3% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduire the dégâts taken de 3% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit."
+      "renderedDescFr": "Réduit la dégâts taken de 3% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 550,
       "renderedDesc": "Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduire the dégâts taken de 4% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit."
+      "renderedDescFr": "Réduit la dégâts taken de 4% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
     }
   ],
   "usage": {
@@ -89,7 +89,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Infanterie Training Master",
-  "descriptionTemplateFr": "Réduire the dégâts taken by X% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit.",
+  "descriptionTemplateFr": "Réduit la dégâts taken de X% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit.",
   "longDesc": "Compétence spécifique à un général. « Infanterie Training Master » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Réduire the dégâts taken de 4% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Infantry Training Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Infantry Training Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

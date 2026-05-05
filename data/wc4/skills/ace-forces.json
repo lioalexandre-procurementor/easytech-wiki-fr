@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 80,
       "renderedDesc": "Experience gained by the army in combat increases by 20%",
-      "renderedDescFr": "Experience gained by the army in combat augmente de 20%"
+      "renderedDescFr": "L'expérience gagnée par l'armée au combat augmente de 20%"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 120,
       "renderedDesc": "Experience gained by the army in combat increases by 40%",
-      "renderedDescFr": "Experience gained by the army in combat augmente de 40%"
+      "renderedDescFr": "L'expérience gagnée par l'armée au combat augmente de 40%"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 180,
       "renderedDesc": "Experience gained by the army in combat increases by 60%",
-      "renderedDescFr": "Experience gained by the army in combat augmente de 60%"
+      "renderedDescFr": "L'expérience gagnée par l'armée au combat augmente de 60%"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Experience gained by the army in combat increases by 80%",
-      "renderedDescFr": "Experience gained by the army in combat augmente de 80%"
+      "renderedDescFr": "L'expérience gagnée par l'armée au combat augmente de 80%"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 300,
       "renderedDesc": "Experience gained by the army in combat increases by 100%",
-      "renderedDescFr": "Experience gained by the army in combat augmente de 100%"
+      "renderedDescFr": "L'expérience gagnée par l'armée au combat augmente de 100%"
     }
   ],
   "usage": {
@@ -588,7 +588,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Forces d'élite",
-  "descriptionTemplateFr": "Experience gained by the army in combat augmente by X%",
+  "descriptionTemplateFr": "L'expérience gagnée par l'armée au combat augmente de X%",
   "longDesc": "Compétence logistique de soutien. « Forces d'élite » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Experience gained by the army in combat augmente de 100% ». À maxer sur un général de soutien qui se déplace peu.",
   "longDescEn": "A logistics support skill. \"Ace Forces\" scales up to level 5. At max level (5), the skill applies the following effect: \"Experience gained by the army in combat increases by 100%\". Max this on a support general that moves little.",
   "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Ace Forces“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Experience gained by the army in combat increases by 100%“. Auf einem bewegungsarmen Unterstützungs-General maxen."

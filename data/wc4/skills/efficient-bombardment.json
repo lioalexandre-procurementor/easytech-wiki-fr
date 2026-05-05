@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 10%.",
-      "renderedDescFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + 10%."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, l'aviation unités et missile attaque l'ennemi et inflige dégâts + 10%."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 20%.",
-      "renderedDescFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + 20%."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, l'aviation unités et missile attaque l'ennemi et inflige dégâts + 20%."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 30%.",
-      "renderedDescFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + 30%."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, l'aviation unités et missile attaque l'ennemi et inflige dégâts + 30%."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 40%.",
-      "renderedDescFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + 40%."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, l'aviation unités et missile attaque l'ennemi et inflige dégâts + 40%."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 50%.",
-      "renderedDescFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + 50%."
+      "renderedDescFr": "Lorsque vous commandez un navires unités, l'aviation unités et missile attaque l'ennemi et inflige dégâts + 50%."
     }
   ],
   "usage": {
@@ -101,7 +101,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Efficient Bombardment",
-  "descriptionTemplateFr": "When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + X%.",
+  "descriptionTemplateFr": "Lorsque vous commandez un navires unités, l'aviation unités et missile attaque l'ennemi et inflige dégâts + X%.",
   "longDesc": "Compétence spécifique à un général. « Efficient Bombardment » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding a ship unité, unités aériennes and missiles attaque the ennemi and deal dégâts + 50%. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Efficient Bombardment\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 50%.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Efficient Bombardment“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding a ship unit, air force units and missiles attack the enemy and deal damage + 50%.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Consumption of resources when attacking with air force -10%",
-      "renderedDescFr": "Consumption of resources lors d'une attaque with air force -10%"
+      "renderedDescFr": "Consommation de resources lorsque attaquant avec l'aviation -10%"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Consumption of resources when attacking with air force -20%",
-      "renderedDescFr": "Consumption of resources lors d'une attaque with air force -20%"
+      "renderedDescFr": "Consommation de resources lorsque attaquant avec l'aviation -20%"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "Consumption of resources when attacking with air force -30%",
-      "renderedDescFr": "Consumption of resources lors d'une attaque with air force -30%"
+      "renderedDescFr": "Consommation de resources lorsque attaquant avec l'aviation -30%"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "Consumption of resources when attacking with air force -40%",
-      "renderedDescFr": "Consumption of resources lors d'une attaque with air force -40%"
+      "renderedDescFr": "Consommation de resources lorsque attaquant avec l'aviation -40%"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "Consumption of resources when attacking with air force -50%",
-      "renderedDescFr": "Consumption of resources lors d'une attaque with air force -50%"
+      "renderedDescFr": "Consommation de resources lorsque attaquant avec l'aviation -50%"
     }
   ],
   "usage": {
@@ -77,7 +77,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Aviation Expert",
-  "descriptionTemplateFr": "Consumption of resources lors d'une attaque with air force -X%",
+  "descriptionTemplateFr": "Consommation de resources lorsque attaquant avec l'aviation -X%",
   "longDesc": "Compétence spécifique à un général. « Aviation Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Consumption of resources lors d'une attaque with air force -50% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Aviation Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Consumption of resources when attacking with air force -50%\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Aviation Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Consumption of resources when attacking with air force -50%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

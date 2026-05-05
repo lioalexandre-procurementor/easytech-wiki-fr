@@ -15,7 +15,7 @@
       "chance": 12,
       "costMedal": 150,
       "renderedDesc": "12% chance that the enemy will not fight back when commanding infantry units",
-      "renderedDescFr": "12% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
+      "renderedDescFr": "12% chances que l'ennemi pas fight back lorsque vous commandez des unités d'infanterie"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 24,
       "costMedal": 250,
       "renderedDesc": "24% chance that the enemy will not fight back when commanding infantry units",
-      "renderedDescFr": "24% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
+      "renderedDescFr": "24% chances que l'ennemi pas fight back lorsque vous commandez des unités d'infanterie"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 36,
       "costMedal": 350,
       "renderedDesc": "36% chance that the enemy will not fight back when commanding infantry units",
-      "renderedDescFr": "36% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
+      "renderedDescFr": "36% chances que l'ennemi pas fight back lorsque vous commandez des unités d'infanterie"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 48,
       "costMedal": 450,
       "renderedDesc": "48% chance that the enemy will not fight back when commanding infantry units",
-      "renderedDescFr": "48% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
+      "renderedDescFr": "48% chances que l'ennemi pas fight back lorsque vous commandez des unités d'infanterie"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 60,
       "costMedal": 550,
       "renderedDesc": "60% chance that the enemy will not fight back when commanding infantry units",
-      "renderedDescFr": "60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie"
+      "renderedDescFr": "60% chances que l'ennemi pas fight back lorsque vous commandez des unités d'infanterie"
     }
   ],
   "usage": {
@@ -364,7 +364,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Guerrilla",
-  "descriptionTemplateFr": "X% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie",
+  "descriptionTemplateFr": "X% chances que l'ennemi pas fight back lorsque vous commandez des unités d'infanterie",
   "longDesc": "Compétence spécifique à un général. « Guerrilla » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 60% chance que l'ennemi ne ripostera pas lorsque vous commandez des unités d'infanterie ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Guerrilla\" scales up to level 5. At max level (5), the skill applies the following effect: \"60% chance that the enemy will not fight back when commanding infantry units\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Guerrilla“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „60% chance that the enemy will not fight back when commanding infantry units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

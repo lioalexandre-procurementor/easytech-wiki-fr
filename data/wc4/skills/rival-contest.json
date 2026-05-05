@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 150,
       "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +4%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +4%"
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +4%"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +8%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +8%"
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +8%"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +12%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +12%"
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +12%"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +16%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +16%"
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +16%"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 550,
       "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +20%"
+      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +20%"
     }
   ],
   "usage": {
@@ -83,7 +83,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Duel de rivaux",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +X%",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +X%",
   "longDesc": "Compétence spécifique à un général. « Duel de rivaux » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +20% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Rival Contest\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, dealt damage to enemy elite force +20%\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Rival Contest“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, dealt damage to enemy elite force +20%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

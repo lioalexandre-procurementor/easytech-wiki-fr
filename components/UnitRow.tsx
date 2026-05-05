@@ -6,7 +6,6 @@ import { UnitIcon } from "./UnitIcon";
 import { COUNTRY_FLAGS } from "@/lib/units";
 import { countryLabel } from "@/lib/countries";
 import { localizedUnitField } from "@/lib/localized-copy";
-import { isPlaceholder } from "@/lib/placeholder";
 
 type Game = "wc4" | "gcr" | "ew6";
 
@@ -28,12 +27,10 @@ export function UnitRow({
   const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
   const displayShortDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", locale);
   const href = `${HUB_PATH[game]}/${unit.slug}` as const;
-  const nofollow = isPlaceholder(unit as unknown as { longDesc?: string | null });
   return (
     <Link href={href as any}
       className="bg-panel border border-border rounded-lg p-3 px-4 grid items-center gap-4 hover:border-gold transition-colors no-underline"
-      style={{ gridTemplateColumns: "60px 1fr auto auto auto" }}
-      rel={nofollow ? "nofollow" : undefined}>
+      style={{ gridTemplateColumns: "60px 1fr auto auto auto" }}>
       <div className="w-15">
         {unit.image?.sprite ? (
           <div className="relative w-[60px] h-[60px]">

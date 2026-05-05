@@ -69,9 +69,11 @@ export async function generateMetadata({ params }: { params: { locale: string; s
       en: `/great-conqueror-rome/elite-units/${params.slug}`,
       de: `/great-conqueror-rome/elite-units/${params.slug}`,
     }),
-    robots: isPlaceholderUnit(u as unknown as UnitData)
-      ? { index: false, follow: true }
-      : { index: true, follow: true },
+    // Per the 2026-05-05 SEO remediation plan, elite-unit pages must be
+    // indexable. The placeholder noindex gate is removed; placeholder
+    // status still suppresses ad slots below but no longer affects
+    // indexability.
+    robots: { index: true, follow: true },
   };
 }
 
@@ -275,17 +277,20 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                   );
                 })()}
               </div>
-              <div>
-                <h4 className="text-ink font-bold mb-2.5">📈 {tL("Ordre de leveling recommandé", "Recommended leveling order", "Empfohlene Level-Reihenfolge")}</h4>
-                <ul className="list-none">
-                  {unit.levelingPriority.map((step, i) => (
-                    <li key={i} className="py-2 border-b border-border last:border-none text-sm text-dim flex gap-2.5">
-                      <span className="text-ok font-bold">✓</span>
-                      <span dangerouslySetInnerHTML={{ __html: step }}/>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              {/* See language audit Issue E — bullets are FR-only authored. */}
+              {params.locale === "fr" && unit.levelingPriority.length > 0 && (
+                <div>
+                  <h4 className="text-ink font-bold mb-2.5">📈 Ordre de leveling recommandé</h4>
+                  <ul className="list-none">
+                    {unit.levelingPriority.map((step, i) => (
+                      <li key={i} className="py-2 border-b border-border last:border-none text-sm text-dim flex gap-2.5">
+                        <span className="text-ok font-bold">✓</span>
+                        <span dangerouslySetInnerHTML={{ __html: step }}/>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
 

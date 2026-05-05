@@ -15,7 +15,7 @@
       "chance": 20,
       "costMedal": 160,
       "renderedDesc": "20% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
-      "renderedDescFr": "20% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
+      "renderedDescFr": "20% de chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez des unités d'infanterie (si le général possède cette compétence, les effets de infanterie Leader sont inapplicable.)"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 40,
       "costMedal": 240,
       "renderedDesc": "40% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
-      "renderedDescFr": "40% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
+      "renderedDescFr": "40% de chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez des unités d'infanterie (si le général possède cette compétence, les effets de infanterie Leader sont inapplicable.)"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 60,
       "costMedal": 480,
       "renderedDesc": "60% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
-      "renderedDescFr": "60% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
+      "renderedDescFr": "60% de chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez des unités d'infanterie (si le général possède cette compétence, les effets de infanterie Leader sont inapplicable.)"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 80,
       "costMedal": 640,
       "renderedDesc": "80% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
-      "renderedDescFr": "80% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
+      "renderedDescFr": "80% de chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez des unités d'infanterie (si le général possède cette compétence, les effets de infanterie Leader sont inapplicable.)"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)",
-      "renderedDescFr": "100% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)"
+      "renderedDescFr": "100% de chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez des unités d'infanterie (si le général possède cette compétence, les effets de infanterie Leader sont inapplicable.)"
     }
   ],
   "usage": {
@@ -85,7 +85,7 @@
   },
   "varyingField": "ActivatesChance",
   "nameFr": "Tireur d'élite",
-  "descriptionTemplateFr": "X% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.)",
+  "descriptionTemplateFr": "X% chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez des unités d'infanterie (si le général possède cette compétence, les effets de infanterie Leader sont inapplicable.)",
   "longDesc": "Compétence spécifique à un général. « Tireur d'élite » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance d'infliger une attaque critique à l'ennemi and portée d'attaque +1 when commanding infanterie unité (If the general has this skill, the effects of infanterie Leader are inapplicable.) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Ace Sniper\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Sniper“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance to give the enemy a critical attack and attack range +1 when commanding infantry unit (If the general has this skill, the effects of Infantry Leader are inapplicable.)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

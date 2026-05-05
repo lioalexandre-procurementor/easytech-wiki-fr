@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 150,
       "renderedDesc": "Attack of friendly surrounding army units +4",
-      "renderedDescFr": "Attaque of allié surrounding army unités +4"
+      "renderedDescFr": "Attaque de friendly surrounding armée unités +4"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "Attack of friendly surrounding army units +8",
-      "renderedDescFr": "Attaque of allié surrounding army unités +8"
+      "renderedDescFr": "Attaque de friendly surrounding armée unités +8"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "Attack of friendly surrounding army units +12",
-      "renderedDescFr": "Attaque of allié surrounding army unités +12"
+      "renderedDescFr": "Attaque de friendly surrounding armée unités +12"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "Attack of friendly surrounding army units +16",
-      "renderedDescFr": "Attaque of allié surrounding army unités +16"
+      "renderedDescFr": "Attaque de friendly surrounding armée unités +16"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 550,
       "renderedDesc": "Attack of friendly surrounding army units +20",
-      "renderedDescFr": "Attaque of allié surrounding army unités +20"
+      "renderedDescFr": "Attaque de friendly surrounding armée unités +20"
     }
   ],
   "usage": {
@@ -236,7 +236,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Crowd Tactics",
-  "descriptionTemplateFr": "Attaque of allié surrounding army unités +X",
+  "descriptionTemplateFr": "Attaque de friendly surrounding armée unités +X",
   "longDesc": "Compétence spécifique à un général. « Crowd Tactics » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Attaque of allié surrounding army unités +20 ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
   "longDescEn": "A general-specific skill. \"Crowd Tactics\" scales up to level 5. At max level (5), the skill applies the following effect: \"Attack of friendly surrounding army units +20\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Crowd Tactics“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Attack of friendly surrounding army units +20“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."

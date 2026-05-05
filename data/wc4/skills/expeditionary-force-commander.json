@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 1% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 1% attaque and counterattack dégâts for every 3 mobility."
+      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 1% attaque et counterattack dégâts pour chaque 3 mobility."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 2% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 2% attaque and counterattack dégâts for every 3 mobility."
+      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 2% attaque et counterattack dégâts pour chaque 3 mobility."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 3% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 3% attaque and counterattack dégâts for every 3 mobility."
+      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 3% attaque et counterattack dégâts pour chaque 3 mobility."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 4% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 4% attaque and counterattack dégâts for every 3 mobility."
+      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 4% attaque et counterattack dégâts pour chaque 3 mobility."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 5% attaque and counterattack dégâts for every 3 mobility."
+      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 5% attaque et counterattack dégâts pour chaque 3 mobility."
     }
   ],
   "usage": {
@@ -71,7 +71,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Expeditionary Force Commander",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter X% attaque and counterattack dégâts for every 3 mobility.",
+  "descriptionTemplateFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente X% attaque et counterattack dégâts pour chaque 3 mobility.",
   "longDesc": "Compétence spécifique à un général. « Expeditionary Force Commander » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 5% attaque and counterattack dégâts for every 3 mobility. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Expeditionary Force Commander\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Expeditionary Force Commander“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

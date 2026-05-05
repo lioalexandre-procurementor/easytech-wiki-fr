@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 150,
       "renderedDesc": "Morale of armored units under command will not diminish, +3% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
-      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +3% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
+      "renderedDescFr": "Morale de blindé unités sous votre commandement pas diminish, +3% dégâts. Après commandant une blindé unités à annihilate un ennemi, gagne la \"Hero\" status, augmentant la chances de critique attaque de 10% pour 1 tour."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "Morale of armored units under command will not diminish, +6% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
-      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +6% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
+      "renderedDescFr": "Morale de blindé unités sous votre commandement pas diminish, +6% dégâts. Après commandant une blindé unités à annihilate un ennemi, gagne la \"Hero\" status, augmentant la chances de critique attaque de 10% pour 1 tour."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "Morale of armored units under command will not diminish, +9% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
-      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +9% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
+      "renderedDescFr": "Morale de blindé unités sous votre commandement pas diminish, +9% dégâts. Après commandant une blindé unités à annihilate un ennemi, gagne la \"Hero\" status, augmentant la chances de critique attaque de 10% pour 1 tour."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "Morale of armored units under command will not diminish, +12% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
-      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +12% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
+      "renderedDescFr": "Morale de blindé unités sous votre commandement pas diminish, +12% dégâts. Après commandant une blindé unités à annihilate un ennemi, gagne la \"Hero\" status, augmentant la chances de critique attaque de 10% pour 1 tour."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 550,
       "renderedDesc": "Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.",
-      "renderedDescFr": "La moral des unités blindées sous votre commandement ne diminue pas, +15% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour."
+      "renderedDescFr": "Morale de blindé unités sous votre commandement pas diminish, +15% dégâts. Après commandant une blindé unités à annihilate un ennemi, gagne la \"Hero\" status, augmentant la chances de critique attaque de 10% pour 1 tour."
     }
   ],
   "usage": {
@@ -71,7 +71,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Héros",
-  "descriptionTemplateFr": "La moral des unités blindées sous votre commandement ne diminue pas, +X% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour.",
+  "descriptionTemplateFr": "Morale de blindé unités sous votre commandement pas diminish, +X% dégâts. Après commandant une blindé unités à annihilate un ennemi, gagne la \"Hero\" status, augmentant la chances de critique attaque de 10% pour 1 tour.",
   "longDesc": "Compétence spécifique à un général. « Héros » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « La moral des unités blindées sous votre commandement ne diminue pas, +15% dégâts. Après avoir ordonné à une unité blindée d'anéantir un ennemi, gagne le statut « Hero », augmentant la chance d'attaque critique de 10% pendant 1 tour. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Hero\" scales up to level 5. At max level (5), the skill applies the following effect: \"Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Hero“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Morale of armored units under command will not diminish, +15% damage. After commanding an armored unit to annihilate an enemy, gain the \"Hero\" status, increasing the chance of critical attack by 10% for 1 turn.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

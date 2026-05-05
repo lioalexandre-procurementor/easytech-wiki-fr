@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 150,
       "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 5% damage to enemies around the target.",
-      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 5% dégâts aux ennemis around the cible."
+      "renderedDescFr": "Après commandant une blindé unités à annihilate un ennemi troupes, inflige une additional 5% dégâts à ennemis autour la target."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 250,
       "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 10% damage to enemies around the target.",
-      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 10% dégâts aux ennemis around the cible."
+      "renderedDescFr": "Après commandant une blindé unités à annihilate un ennemi troupes, inflige une additional 10% dégâts à ennemis autour la target."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 350,
       "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 15% damage to enemies around the target.",
-      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 15% dégâts aux ennemis around the cible."
+      "renderedDescFr": "Après commandant une blindé unités à annihilate un ennemi troupes, inflige une additional 15% dégâts à ennemis autour la target."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 450,
       "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 20% damage to enemies around the target.",
-      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 20% dégâts aux ennemis around the cible."
+      "renderedDescFr": "Après commandant une blindé unités à annihilate un ennemi troupes, inflige une additional 20% dégâts à ennemis autour la target."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 550,
       "renderedDesc": "After commanding an armored unit to annihilate an enemy troop, deal an additional 25% damage to enemies around the target.",
-      "renderedDescFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 25% dégâts aux ennemis around the cible."
+      "renderedDescFr": "Après commandant une blindé unités à annihilate un ennemi troupes, inflige une additional 25% dégâts à ennemis autour la target."
     }
   ],
   "usage": {
@@ -101,7 +101,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Blasting Impact",
-  "descriptionTemplateFr": "Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional X% dégâts aux ennemis around the cible.",
+  "descriptionTemplateFr": "Après commandant une blindé unités à annihilate un ennemi troupes, inflige une additional X% dégâts à ennemis autour la target.",
   "longDesc": "Compétence spécifique à un général. « Blasting Impact » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Après avoir ordonné à une unité blindée d'anéantir un ennemi troop, deal an additional 25% dégâts aux ennemis around the cible. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Blasting Impact\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding an armored unit to annihilate an enemy troop, deal an additional 25% damage to enemies around the target.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Blasting Impact“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding an armored unit to annihilate an enemy troop, deal an additional 25% damage to enemies around the target.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

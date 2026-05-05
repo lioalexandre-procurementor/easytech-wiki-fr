@@ -8,6 +8,7 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
 import { pageAlternates } from "@/lib/seo-alternates";
 import type { SkillSeriesMeta } from "@/lib/types";
+import { localizeSeriesList } from "@/lib/skill-series-i18n";
 
 export async function generateMetadata({
   params: { locale },
@@ -58,9 +59,10 @@ export default async function SkillsBrowser({
   const seriesMap = new Map<number, SkillSeriesMeta>();
   for (const s of index.series) seriesMap.set(s.series, s);
 
-  const sectionsInOrder = SERIES_DISPLAY_ORDER
+  const rawSections = SERIES_DISPLAY_ORDER
     .map((num) => seriesMap.get(num))
     .filter((s): s is SkillSeriesMeta => !!s);
+  const sectionsInOrder = localizeSeriesList(rawSections, params.locale);
 
   const totalCount = index.skills.length;
 

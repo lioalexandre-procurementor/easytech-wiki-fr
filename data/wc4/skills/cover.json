@@ -15,7 +15,7 @@
       "chance": 12,
       "costMedal": 80,
       "renderedDesc": "12% chance to dodge 18% damage from the enemy",
-      "renderedDescFr": "12% chance to esquive 18% dégâts de l'ennemi"
+      "renderedDescFr": "12% chances à esquive 18% dégâts de l'ennemi"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 12,
       "costMedal": 120,
       "renderedDesc": "12% chance to dodge 36% damage from the enemy",
-      "renderedDescFr": "12% chance to esquive 36% dégâts de l'ennemi"
+      "renderedDescFr": "12% chances à esquive 36% dégâts de l'ennemi"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 12,
       "costMedal": 180,
       "renderedDesc": "12% chance to dodge 54% damage from the enemy",
-      "renderedDescFr": "12% chance to esquive 54% dégâts de l'ennemi"
+      "renderedDescFr": "12% chances à esquive 54% dégâts de l'ennemi"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 12,
       "costMedal": 240,
       "renderedDesc": "12% chance to dodge 72% damage from the enemy",
-      "renderedDescFr": "12% chance to esquive 72% dégâts de l'ennemi"
+      "renderedDescFr": "12% chances à esquive 72% dégâts de l'ennemi"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 12,
       "costMedal": 300,
       "renderedDesc": "12% chance to dodge 90% damage from the enemy",
-      "renderedDescFr": "12% chance to esquive 90% dégâts de l'ennemi"
+      "renderedDescFr": "12% chances à esquive 90% dégâts de l'ennemi"
     }
   ],
   "usage": {
@@ -389,7 +389,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Cover",
-  "descriptionTemplateFr": "12% chance to esquive X% dégâts de l'ennemi",
+  "descriptionTemplateFr": "12% chances à esquive X% dégâts de l'ennemi",
   "longDesc": "Compétence spécifique à un général. « Cover » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 12% chance to esquive 90% dégâts de l'ennemi ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Cover\" scales up to level 5. At max level (5), the skill applies the following effect: \"12% chance to dodge 90% damage from the enemy\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Cover“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „12% chance to dodge 90% damage from the enemy“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

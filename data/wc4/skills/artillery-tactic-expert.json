@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "When commanding artillery units to attack, ignore enemy units 20% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 20% défense"
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie à attaque, ignore ennemi unités 20% défense"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "When commanding artillery units to attack, ignore enemy units 40% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 40% défense"
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie à attaque, ignore ennemi unités 40% défense"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "When commanding artillery units to attack, ignore enemy units 60% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 60% défense"
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie à attaque, ignore ennemi unités 60% défense"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "When commanding artillery units to attack, ignore enemy units 80% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 80% défense"
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie à attaque, ignore ennemi unités 80% défense"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "When commanding artillery units to attack, ignore enemy units 100% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 100% défense"
+      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie à attaque, ignore ennemi unités 100% défense"
     }
   ],
   "usage": {
@@ -133,7 +133,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Artillerie Tactic Expert",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies X% défense",
+  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie à attaque, ignore ennemi unités X% défense",
   "longDesc": "Compétence spécifique à un général. « Artillerie Tactic Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie to attaque, ignore unités ennemies 100% défense ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Artillery Tactic Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units to attack, ignore enemy units 100% defense\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery Tactic Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units to attack, ignore enemy units 100% defense“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

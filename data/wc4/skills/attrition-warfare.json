@@ -15,7 +15,7 @@
       "chance": 20,
       "costMedal": 160,
       "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 20% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
-      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 20% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDescFr": "Après commandant un unités attaque, it causes la target et 2 ennemi unités 1 square autour it à have un 20% probability de getting “Fatigue” pour 1 tour. Troupes avec “Fatigue” have une additional 6% HP reduction de attaque et aérien strikes, et leur morale est lowered. La Fatigue effets does pas apply à troupes qui sont already demoralized."
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 40,
       "costMedal": 240,
       "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 40% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
-      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 40% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDescFr": "Après commandant un unités attaque, it causes la target et 2 ennemi unités 1 square autour it à have un 40% probability de getting “Fatigue” pour 1 tour. Troupes avec “Fatigue” have une additional 6% HP reduction de attaque et aérien strikes, et leur morale est lowered. La Fatigue effets does pas apply à troupes qui sont already demoralized."
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 60,
       "costMedal": 480,
       "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 60% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
-      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 60% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDescFr": "Après commandant un unités attaque, it causes la target et 2 ennemi unités 1 square autour it à have un 60% probability de getting “Fatigue” pour 1 tour. Troupes avec “Fatigue” have une additional 6% HP reduction de attaque et aérien strikes, et leur morale est lowered. La Fatigue effets does pas apply à troupes qui sont already demoralized."
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 80,
       "costMedal": 640,
       "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 80% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
-      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 80% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDescFr": "Après commandant un unités attaque, it causes la target et 2 ennemi unités 1 square autour it à have un 80% probability de getting “Fatigue” pour 1 tour. Troupes avec “Fatigue” have une additional 6% HP reduction de attaque et aérien strikes, et leur morale est lowered. La Fatigue effets does pas apply à troupes qui sont already demoralized."
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 100% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
-      "renderedDescFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 100% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized."
+      "renderedDescFr": "Après commandant un unités attaque, it causes la target et 2 ennemi unités 1 square autour it à have un 100% probability de getting “Fatigue” pour 1 tour. Troupes avec “Fatigue” have une additional 6% HP reduction de attaque et aérien strikes, et leur morale est lowered. La Fatigue effets does pas apply à troupes qui sont already demoralized."
     }
   ],
   "usage": {
@@ -75,7 +75,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Attrition Warfare",
-  "descriptionTemplateFr": "After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a X% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized.",
+  "descriptionTemplateFr": "Après commandant un unités attaque, it causes la target et 2 ennemi unités 1 square autour it à have un X% probability de getting “Fatigue” pour 1 tour. Troupes avec “Fatigue” have une additional 6% HP reduction de attaque et aérien strikes, et leur morale est lowered. La Fatigue effets does pas apply à troupes qui sont already demoralized.",
   "longDesc": "Compétence spécifique à un général. « Attrition Warfare » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding a unité attaque, it causes the cible and 2 unités ennemies 1 square around it to have a 100% probability of getting “Fatigue” pendant 1 tour. Troops with “Fatigue” have an additional 6% PV reduction from attaques and air strikes, and their moral is lowered. The Fatigue effect does not apply to troops that are already demoralized. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
   "longDescEn": "A general-specific skill. \"Attrition Warfare\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 100% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Attrition Warfare“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding a unit attack, it causes the target and 2 enemy units 1 square around it to have a 100% probability of getting “Fatigue” for 1 turn. Troops with “Fatigue” have an additional 6% HP reduction from attacks and air strikes, and their morale is lowered. The Fatigue effect does not apply to troops that are already demoralized.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."

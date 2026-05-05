@@ -15,7 +15,7 @@
       "chance": 100,
       "costMedal": 160,
       "renderedDesc": "Evade 5% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
-      "renderedDescFr": "Evade 5% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
+      "renderedDescFr": "Evade 5% dégâts dealt de ennemi land unités. Après attaquant, restore 20% HP de la dégâts dealt à ennemi unités"
     },
     {
       "level": 2,
@@ -24,7 +24,7 @@
       "chance": 100,
       "costMedal": 240,
       "renderedDesc": "Evade 10% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
-      "renderedDescFr": "Evade 10% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
+      "renderedDescFr": "Evade 10% dégâts dealt de ennemi land unités. Après attaquant, restore 20% HP de la dégâts dealt à ennemi unités"
     },
     {
       "level": 3,
@@ -33,7 +33,7 @@
       "chance": 100,
       "costMedal": 480,
       "renderedDesc": "Evade 15% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
-      "renderedDescFr": "Evade 15% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
+      "renderedDescFr": "Evade 15% dégâts dealt de ennemi land unités. Après attaquant, restore 20% HP de la dégâts dealt à ennemi unités"
     },
     {
       "level": 4,
@@ -42,7 +42,7 @@
       "chance": 100,
       "costMedal": 640,
       "renderedDesc": "Evade 20% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
-      "renderedDescFr": "Evade 20% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
+      "renderedDescFr": "Evade 20% dégâts dealt de ennemi land unités. Après attaquant, restore 20% HP de la dégâts dealt à ennemi unités"
     },
     {
       "level": 5,
@@ -51,7 +51,7 @@
       "chance": 100,
       "costMedal": 800,
       "renderedDesc": "Evade 25% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units",
-      "renderedDescFr": "Evade 25% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies"
+      "renderedDescFr": "Evade 25% dégâts dealt de ennemi land unités. Après attaquant, restore 20% HP de la dégâts dealt à ennemi unités"
     }
   ],
   "usage": {
@@ -113,7 +113,7 @@
   },
   "varyingField": "SkillEffect",
   "nameFr": "Guerrilla Master",
-  "descriptionTemplateFr": "Evade X% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies",
+  "descriptionTemplateFr": "Evade X% dégâts dealt de ennemi land unités. Après attaquant, restore 20% HP de la dégâts dealt à ennemi unités",
   "longDesc": "Compétence spécifique à un général. « Guerrilla Master » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Evade 25% dégâts dealt by ennemi land unités. Après avoir attaqué, restaurer 20% PV of the dégâts dealt to unités ennemies ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
   "longDescEn": "A general-specific skill. \"Guerrilla Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Evade 25% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units\". A general-specific signature: its max level drives the card's overall value.",
   "longDescDe": "Eine generalspezifische Fähigkeit. „Guerrilla Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Evade 25% damage dealt by enemy land units. After attacking, restore 20% HP of the damage dealt to enemy units“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."

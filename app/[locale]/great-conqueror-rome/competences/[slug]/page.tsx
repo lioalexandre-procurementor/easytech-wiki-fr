@@ -71,9 +71,19 @@ export default async function SkillDetailPage({
   const tL = (fr: string, en: string, de: string): string =>
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
   const isFr = params.locale === "fr";
-  const displayName = (isFr && skill.nameFr) || skill.name;
+  const isDe = params.locale === "de";
+  const skillAny = skill as unknown as Record<string, unknown>;
+  const displayName =
+    (isFr && skill.nameFr) ||
+    (isDe && (skillAny.nameDe as string | undefined)) ||
+    skill.name;
   const displayDesc =
-    (isFr && skill.descriptionTemplateFr) || skill.descriptionTemplate;
+    (isFr && skill.descriptionTemplateFr) ||
+    (isDe && (skillAny.descriptionTemplateDe as string | undefined)) ||
+    skill.descriptionTemplate;
+  const showEnFallback =
+    (isFr && !skill.descriptionTemplateFr) ||
+    (isDe && !(skillAny.descriptionTemplateDe as string | undefined));
 
   const index = getSkillIndex();
   const seriesMeta = index.series.find((s) => s.series === skill.series);
@@ -291,13 +301,14 @@ export default async function SkillDetailPage({
               if (!longDesc) return null;
               return <p className="text-ink text-sm leading-relaxed mt-3">{longDesc}</p>;
             })()}
-            {isFr && skill.descriptionTemplateFr && (
+            {((isFr && skill.descriptionTemplateFr) ||
+              (isDe && (skillAny.descriptionTemplateDe as string | undefined))) && (
               <p className="text-muted text-[11px] mt-2 italic">
                 {t("skillDetailPage.officialEnVersion")} : {skill.descriptionTemplate}
               </p>
             )}
             <p className="text-muted text-xs mt-3 italic">
-              {isFr
+              {isFr || (isDe && showEnFallback)
                 ? t("skillDetailPage.descFootnoteFr")
                 : t("skillDetailPage.descFootnoteEn")}
             </p>
@@ -347,7 +358,12 @@ export default async function SkillDetailPage({
                         )}
                       </td>
                       <td className="py-3 text-ink leading-relaxed">
-                        {(isFr && p.renderedDescFr) || p.renderedDesc}
+                        {(isFr && p.renderedDescFr) ||
+                          (isDe &&
+                            ((p as unknown as Record<string, unknown>).renderedDescDe as
+                              | string
+                              | undefined)) ||
+                          p.renderedDesc}
                       </td>
                     </tr>
                   ))}
