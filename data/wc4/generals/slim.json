@@ -80,7 +80,7 @@
       "max": 4
     }
   },
-  "hasTrainingPath": true,
+  "hasTrainingPath": false,
   "training": null,
   "acquisition": {
     "type": "medals",

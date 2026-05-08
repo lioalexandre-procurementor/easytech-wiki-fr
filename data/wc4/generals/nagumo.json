@@ -90,7 +90,7 @@
       "max": 2
     }
   },
-  "hasTrainingPath": true,
+  "hasTrainingPath": false,
   "training": null,
   "acquisition": {
     "type": "medals",

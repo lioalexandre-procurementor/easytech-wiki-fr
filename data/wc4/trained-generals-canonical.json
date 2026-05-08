@@ -1,0 +1,41 @@
+{
+  "source": "https://world-conqueror-4.fandom.com/wiki/Training",
+  "fetchedAt": "2026-05-08",
+  "schemaNote": "Canonical list of WC4 generals that have a real 'trained' (orange-tier) form unlocked via Swords + Sceptres of Dominance. Order = release order from the fandom page.",
+  "f2pTrainable": [
+    { "slug": "de-gaulle",   "rank":  1, "totalSwords": 24, "totalSceptres":  8, "notes": "Final orange skill: Firepower Blockade." },
+    { "slug": "rundstedt",   "rank":  2, "totalSwords": 16, "totalSceptres":  8, "notes": "Cheapest trainable. Final skills: Iron Will, Provocation." },
+    { "slug": "halsey",      "rank":  3, "totalSwords": 24, "totalSceptres":  8, "notes": "Final skill: Naval Overlord. Best on Enterprise." },
+    { "slug": "bock",        "rank":  4, "totalSwords": 24, "totalSceptres":  8, "notes": "Final skill: War Machine." },
+    { "slug": "kuznetsov",   "rank":  5, "totalSwords": 24, "totalSceptres":  8, "notes": "Final skill: Joint Offensive." },
+    { "slug": "model",       "rank":  6, "totalSwords": 16, "totalSceptres":  8, "notes": "Final skill: Positional Warfare." },
+    { "slug": "patton",      "rank":  7, "totalSwords":  0, "totalSceptres": 10, "notes": "Higher sceptre cost. Final skills: Heroic Charge, Rival Contest." },
+    { "slug": "govorov",     "rank":  8, "totalSwords": 16, "totalSceptres":  8, "notes": "Final skill: Coordinated Counterattack." },
+    { "slug": "tito",        "rank":  9, "totalSwords": 24, "totalSceptres":  8, "notes": "Final skill: Unyielding And Self-improving. Best econ general." },
+    { "slug": "auchinleck",  "rank": 10, "totalSwords": 24, "totalSceptres":  8, "notes": "Final skill: Attrition Warfare." },
+    { "slug": "rokossovsky", "rank": 11, "totalSwords":  0, "totalSceptres": 10, "notes": "Higher sceptre cost. Final skill: Wipe Out The North." },
+    { "slug": "bradley",     "rank": 12, "totalSwords": 16, "totalSceptres":  8, "notes": "Final skill: Command and Coordination." },
+    { "slug": "nimitz",      "rank": 13, "totalSwords":  0, "totalSceptres":  8, "notes": "Final skills: Knight of the Sea, Deep Blue Resolve." },
+    { "slug": "vasilevsky",  "rank": 14, "totalSwords": 16, "totalSceptres":  8, "notes": "Final skill: August Storm. Sept 2025 update." },
+    { "slug": "messe",       "rank": 15, "totalSwords": 24, "totalSceptres":  8, "notes": "Final skill: Mareth Line. Player-vote winner #2." },
+    { "slug": "dowding",     "rank": 16, "totalSwords":  0, "totalSceptres":  8, "notes": "Training rolling out April 2026 patch. Final skills: Dowding System, The Britannic Eagle." }
+  ],
+  "goldIapTrainable": [
+    { "slug": "manstein",   "trainOrder": 1, "totalSwords": 0, "totalSceptres": 8, "notes": "Final skills: Steel Maneuver, Sickle Cut. P2W gold." },
+    { "slug": "eisenhower", "trainOrder": 2, "totalSwords": 0, "totalSceptres": 8, "notes": "Final skills: Operation Overlord, Expeditionary Force Commander. P2W gold." },
+    { "slug": "zhukov",     "trainOrder": 3, "totalSwords": 0, "totalSceptres": 8, "notes": "Final skills: Soviet Deep Battle, Fire-Fighting Captain. P2W gold." },
+    { "slug": "marshall",   "trainOrder": 4, "totalSwords": 0, "totalSceptres": 8, "notes": "Final skills: War Mobilization, Marshall Plan. P2W gold." }
+  ],
+  "explicitlyExcluded": [
+    { "slug": "katukov", "reason": "Gold IAP general but explicitly excluded from training per fandom." }
+  ],
+  "scheduledNotYetTrainable": [
+    { "slug": "yamamoto", "reason": "Won the player vote (#1, 4039 votes) and is on EasyTech's training roadmap, but trained skills not yet shipped/finalized as of 2026-05-08. Re-add to f2pTrainable when the patch lands." }
+  ],
+  "summary": {
+    "totalTrainableInGame": 20,
+    "f2pCount": 16,
+    "goldIapCount": 4,
+    "rolloutNote": "Messe was added through a community vote (#2 winner, 2792 votes). Dowding ranked #3 (2667 votes) and shipped in the April 2026 patch. Yamamoto won the vote (4039) but his training skills had not yet been finalized as of this audit."
+  }
+}
