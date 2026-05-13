@@ -100,12 +100,13 @@ export default async function LocaleLayout({
       <head>
         {/*
           No-flash theme boot. Runs before React hydrates so the initial
-          paint matches the user's saved preference; falls back to the
-          browser's prefers-color-scheme when nothing is stored.
+          paint matches the user's saved preference. Defaults to dark for
+          first-time visitors regardless of OS preference; only an explicit
+          toggle to light (stored in localStorage) opts out.
         */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `(function(){try{var s=localStorage.getItem('etw-theme');var m=window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches;var t=s==='light'||s==='dark'?s:(m?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
+            __html: `(function(){try{var s=localStorage.getItem('etw-theme');var t=s==='light'?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`,
           }}
         />
         {/*
