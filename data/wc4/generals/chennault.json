@@ -1,0 +1,118 @@
+{
+  "slug": "chennault",
+  "name": "Claire Chennault",
+  "nameEn": "Chennault",
+  "faction": "standard",
+  "category": "airforce",
+  "rank": "S",
+  "quality": "gold",
+  "country": "US",
+  "countryName": "États-Unis",
+  "shortDesc": "Général aérien S-gold — États-Unis. Gratuit via Pass Conquête (70 pts).",
+  "longDesc": "Claire Lee Chennault (1893-1958) commande les Tigres Volants en Chine pendant la Seconde Guerre mondiale puis l'armée de l'air nationaliste chinoise. Carte WC4 aérienne S-gold obtenable gratuitement via le Pass Conquête (70 points). Sa compétence exclusive « Inspection » applique l'état terrifié aux unités ennemies après une frappe aérienne, réduisant fortement la contre-attaque. Considéré comme le meilleur général aérien à orientation économique : associez Carpet Bombing + compétences éco (Industrial Expert, Tech Expert, Economic Expert, Finance) pour maximiser le revenu tout en gardant une puissance offensive aérienne sérieuse.",
+  "skills": [
+    {
+      "slot": 1,
+      "name": "Inspection",
+      "desc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 60% for 1 turn.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_120.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence signature exclusive — ne peut pas être remplacée.",
+      "nameEn": "Inspection",
+      "skillSlug": "inspection",
+      "skillType": 120,
+      "skillLevel": 3
+    },
+    {
+      "slot": 2,
+      "name": "Airforce Leader",
+      "desc": "Critical hit chance against enemies +8% when commanding air units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_22.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Airforce Leader",
+      "skillSlug": "airforce-leader",
+      "skillType": 22,
+      "skillLevel": 1
+    },
+    {
+      "slot": 3,
+      "name": "Carpet Bombing",
+      "desc": "Damage +8% to the defending forces in the city when air-raiding",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_41.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Carpet Bombing",
+      "skillSlug": "carpet-bombing",
+      "skillType": 41,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — recommandé : Economic Expert ou Industrial Expert.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert (à débloquer puis voter une compétence économique)."
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — recommandé : Technology Expert ou Finance.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert (deuxième slot éco recommandé)."
+    }
+  ],
+  "attributes": {
+    "infantry":  { "start": 0, "max": 1 },
+    "artillery": { "start": 0, "max": 1 },
+    "armor":     { "start": 0, "max": 1 },
+    "navy":      { "start": 0, "max": 2 },
+    "airforce":  { "start": 5, "max": 6 },
+    "marching":  { "start": 3, "max": 4 }
+  },
+  "hasTrainingPath": false,
+  "hasReplaceableSkills": true,
+  "training": null,
+  "acquisition": {
+    "type": "conquest-battle-pass",
+    "cost": 70,
+    "currency": "battle-pass-points",
+    "notes": "Disponible gratuitement en atteignant 70 points dans le Pass Conquête."
+  },
+  "bonuses": [],
+  "recommendedUnits": [],
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Chennault",
+    "https://world-conqueror-4.fandom.com/wiki/Inspection",
+    "https://european-war-4.boards.net/thread/19354/chennault-discussion"
+  ],
+  "nameCanonical": "Chennault",
+  "skillSlots": 5,
+  "image": {
+    "photo": "/img/wc4/generals/Chennault.webp",
+    "head": "/img/wc4/heads/Chennault.webp",
+    "photoTrained": null,
+    "headTrained": null
+  },
+  "shortDescEn": "Gold air-force general — United States. Free via Conquest Battle Pass (70 pts).",
+  "shortDescDe": "Gold-Luftwaffen-General — Vereinigte Staaten. Kostenlos über Eroberungs-Battle-Pass (70 Punkte).",
+  "longDescEn": "Claire Lee Chennault (1893-1958) led the Flying Tigers in China during World War II and later the Chinese Nationalist Air Force. WC4 S-gold air-force card obtainable for free via the Conquest Battle Pass (70 points). His exclusive skill 'Inspection' applies the terrified state to enemy units after airstrikes, slashing their counterattack rate. Treated by the community as the best economy-leaning air general: pair Carpet Bombing with economic skills (Industrial Expert, Tech Expert, Economic Expert, Finance) to stack income while keeping a serious air-strike kit.",
+  "longDescDe": "Claire Lee Chennault (1893-1958) führte die Flying Tigers in China im Zweiten Weltkrieg und später die chinesische nationalistische Luftwaffe. WC4 S-Gold-Luftwaffenkarte, kostenlos über den Eroberungs-Battle-Pass (70 Punkte) erhältlich. Seine exklusive Fähigkeit „Inspection“ versetzt feindliche Einheiten nach einem Luftschlag in den Terrified-Zustand und senkt deren Gegenangriffsrate. Gilt als bester wirtschaftsorientierter Luftwaffen-General: kombiniere Carpet Bombing mit Wirtschaftsfähigkeiten (Industrial Expert, Tech Expert, Economic Expert, Finance), um Einkommen zu stapeln und gleichzeitig schlagkräftige Luftangriffe zu behalten.",
+  "_meta": {
+    "createdBy": "manual scaffold from fandom verification 2026-05-09",
+    "verifiedSources": ["fandom:Chennault", "fandom:Inspection"],
+    "tbd": ["exact attribute caps", "exact base skill level for Carpet Bombing", "trained portrait when EasyTech ships training"]
+  }
+}
