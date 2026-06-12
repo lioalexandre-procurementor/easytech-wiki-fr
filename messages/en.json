@@ -182,7 +182,9 @@
     "signatureExplainer": "👑 This skill cannot be learned at the Academy: it is carried directly by the generals listed below (base kit or via Swords/Sceptres training).",
     "viaTraining": "⚔ Via training",
     "notIndexedSuffix": "entries reference generals not yet catalogued in the wiki (premium training, unindexed variants).",
-    "notIndexedOnly": "This skill is carried by {count} general(s) not yet indexed in the wiki. Entries coming soon."
+    "notIndexedOnly": "This skill is carried by {count} general(s) not yet indexed in the wiki. Entries coming soon.",
+    "relatedHeading": "Other skills in this series",
+    "relatedSeeAll": "See the whole series"
   },
   "general": {
     "onThisPage": "On this page",
@@ -527,7 +529,8 @@
     "categoryMilitary": "Military",
     "categoryEconomy": "Economy",
     "categoryDefense": "Defense",
-    "categoryNaval": "Naval"
+    "categoryNaval": "Naval",
+    "relatedHeading": "Other technologies in this category"
   },
   "guidesPage": {
     "hubTitle": "World Conqueror 4 Guides",
@@ -686,5 +689,8 @@
       "otherFormations": "Other legend formations",
       "backToHub": "Back to all formations"
     }
+  },
+  "relatedRail": {
+    "similarUnits": "Similar units"
   }
 }

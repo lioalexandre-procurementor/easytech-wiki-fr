@@ -182,7 +182,9 @@
     "signatureExplainer": "👑 Cette compétence n'est pas apprenable via l'Académie : elle est portée directement par les généraux listés ci-dessous (base ou via entraînement Épées/Sceptres).",
     "viaTraining": "⚔ Via entraînement",
     "notIndexedSuffix": "entrée(s) référencent des généraux pas encore répertoriés dans le wiki (entraînements premium, variantes non indexées).",
-    "notIndexedOnly": "Cette compétence est portée par {count} général(s) pas encore indexés dans le wiki. Fiches en cours de rédaction."
+    "notIndexedOnly": "Cette compétence est portée par {count} général(s) pas encore indexés dans le wiki. Fiches en cours de rédaction.",
+    "relatedHeading": "Autres compétences de cette série",
+    "relatedSeeAll": "Voir toute la série"
   },
   "general": {
     "onThisPage": "Sur cette page",
@@ -527,7 +529,8 @@
     "categoryMilitary": "Militaire",
     "categoryEconomy": "Économie",
     "categoryDefense": "Défense",
-    "categoryNaval": "Naval"
+    "categoryNaval": "Naval",
+    "relatedHeading": "Autres technologies de cette catégorie"
   },
   "guidesPage": {
     "hubTitle": "Guides World Conqueror 4",
@@ -686,5 +689,8 @@
       "otherFormations": "Autres formations légendaires",
       "backToHub": "Retour à toutes les formations"
     }
+  },
+  "relatedRail": {
+    "similarUnits": "Unités similaires"
   }
 }

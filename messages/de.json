@@ -182,7 +182,9 @@
     "signatureExplainer": "👑 Diese Fähigkeit lässt sich nicht in der Akademie lernen: Sie wird direkt von den unten aufgeführten Generälen getragen (Grundausstattung oder durch Schwerter/Zepter-Training).",
     "viaTraining": "⚔ Durch Training",
     "notIndexedSuffix": "Einträge verweisen auf Generäle, die noch nicht im Wiki katalogisiert sind (Premium-Training, nicht indexierte Varianten).",
-    "notIndexedOnly": "Diese Fähigkeit wird von {count} General/en getragen, die noch nicht im Wiki indexiert sind. Einträge folgen in Kürze."
+    "notIndexedOnly": "Diese Fähigkeit wird von {count} General/en getragen, die noch nicht im Wiki indexiert sind. Einträge folgen in Kürze.",
+    "relatedHeading": "Weitere Fähigkeiten dieser Reihe",
+    "relatedSeeAll": "Ganze Reihe ansehen"
   },
   "general": {
     "onThisPage": "Auf dieser Seite",
@@ -527,7 +529,8 @@
     "categoryMilitary": "Militär",
     "categoryEconomy": "Wirtschaft",
     "categoryDefense": "Verteidigung",
-    "categoryNaval": "Marine"
+    "categoryNaval": "Marine",
+    "relatedHeading": "Weitere Technologien dieser Kategorie"
   },
   "guidesPage": {
     "hubTitle": "World Conqueror 4 Guides",
@@ -686,5 +689,8 @@
       "otherFormations": "Weitere Legenden-Formationen",
       "backToHub": "Zurück zu allen Formationen"
     }
+  },
+  "relatedRail": {
+    "similarUnits": "Ähnliche Einheiten"
   }
 }

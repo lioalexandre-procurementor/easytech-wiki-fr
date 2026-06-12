@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
+import { RelatedRail } from "@/components/RelatedRail";
 import {
   getAllSkillSlugs,
   getSkill,
@@ -98,6 +99,21 @@ export default async function SkillDetailPage({
   const index = getSkillIndex();
   const seriesMeta = index.series.find((s) => s.series === skill.series);
   const signature = skill.series === 0;
+
+  // Sibling skills in the same series — internal-linking rail so every
+  // skill page connects to its ~8-10 peers (was: only a sidebar anchor).
+  const skillSeg = isFr ? "competences" : "skills";
+  const siblingSkills = getSkillIndex()
+    .skills.filter((s) => s.series === skill.series && s.slug !== skill.slug)
+    .slice(0, 6)
+    .map((s) => ({
+      href: `/great-conqueror-rome/${skillSeg}/${s.slug}`,
+      name: (isFr && s.nameFr) || (isDe && s.nameDe) || s.name,
+      sublabel:
+        (isFr && s.shortDescFr) || (isDe && s.shortDescDe) || s.shortDesc,
+      icon: s.icon,
+      badge: `L${s.maxLevel}`,
+    }));
 
   // Resolve usage entries → generals. Dedupe by slug across base+promoted.
   const resolvedMap = new Map<
@@ -479,6 +495,13 @@ export default async function SkillDetailPage({
               </p>
             </section>
           )}
+
+          <RelatedRail
+            title={t("skillDetailPage.relatedHeading")}
+            items={siblingSkills}
+            seeAllHref={`/great-conqueror-rome/${skillSeg}#series-${skill.series}`}
+            seeAllLabel={t("skillDetailPage.relatedSeeAll")}
+          />
         </main>
       </div>
       <Footer />

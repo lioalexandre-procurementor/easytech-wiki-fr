@@ -3,7 +3,8 @@ import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
-import { getAllTechSlugs, getTech } from "@/lib/tech";
+import { getAllTechSlugs, getTech, getTechsByCategory } from "@/lib/tech";
+import { RelatedRail } from "@/components/RelatedRail";
 import { locales, type Locale } from "@/src/i18n/config";
 import type { Metadata } from "next";
 
@@ -51,6 +52,18 @@ export default async function TechDetailPage({
   const t = await getTranslations();
   const loc = locale as Locale;
   const name = loc === "fr" ? tech.nameFr || tech.nameEn : tech.nameEn;
+
+  // Same-category techs — the tech pages were dead ends with no outbound
+  // internal links; this rail connects each tech to its tree siblings.
+  const relatedTechs = getTechsByCategory(tech.category)
+    .filter((x) => x.slug !== tech.slug)
+    .slice(0, 6)
+    .map((x) => ({
+      href: `/world-conqueror-4/technologies/${x.slug}`,
+      name: loc === "fr" ? x.nameFr || x.nameEn : x.nameEn,
+      sublabel: t("techPage.needHQ" as any, { level: x.needHQLv }),
+      badge: `L${x.maxLevel}`,
+    }));
 
   return (
     <>
@@ -149,6 +162,14 @@ export default async function TechDetailPage({
             </table>
           </section>
         )}
+        <div className="mt-6">
+          <RelatedRail
+            title={t("techPage.relatedHeading" as any)}
+            items={relatedTechs}
+            seeAllHref={"/world-conqueror-4/technologies"}
+            seeAllLabel={t("techPage.backToHub" as any)}
+          />
+        </div>
       </div>
       <Footer />
     </>
