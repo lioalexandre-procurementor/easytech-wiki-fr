@@ -1,86 +1,93 @@
 {
-  "slug": "unyielding-and-self-improving",
-  "type": 154,
-  "name": "Unyielding And Self-improving",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Economic and industrial income +X when the commanding force with no enemy troops at 1 square around.",
-  "icon": "/img/wc4/skills/general_skill_154.png",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3541,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Economic and industrial income +10 when the commanding force with no enemy troops at 1 square around.",
-      "renderedDescFr": "Economic et industrial income +10 lorsque la commandant force avec no ennemi troupes at 1 square autour."
-    },
-    {
-      "level": 2,
-      "skillId": 3542,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Economic and industrial income +20 when the commanding force with no enemy troops at 1 square around.",
-      "renderedDescFr": "Economic et industrial income +20 lorsque la commandant force avec no ennemi troupes at 1 square autour."
-    },
-    {
-      "level": 3,
-      "skillId": 3543,
-      "effect": 30,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Economic and industrial income +30 when the commanding force with no enemy troops at 1 square around.",
-      "renderedDescFr": "Economic et industrial income +30 lorsque la commandant force avec no ennemi troupes at 1 square autour."
-    },
-    {
-      "level": 4,
-      "skillId": 3544,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Economic and industrial income +40 when the commanding force with no enemy troops at 1 square around.",
-      "renderedDescFr": "Economic et industrial income +40 lorsque la commandant force avec no ennemi troupes at 1 square autour."
-    },
-    {
-      "level": 5,
-      "skillId": 3545,
-      "effect": 50,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.",
-      "renderedDescFr": "Economic et industrial income +50 lorsque la commandant force avec no ennemi troupes at 1 square autour."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25383,
-        "level": 5
-      },
-      {
-        "generalId": 25403,
-        "level": 5
-      },
-      {
-        "generalId": 25443,
-        "level": 1
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1029,
-        "level": 5,
-        "promotionId": 10293
-      }
-    ]
+ "slug": "unyielding-and-self-improving",
+ "type": 154,
+ "name": "Unyielding And Self-improving",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Economic and industrial income +X when the commanding force with no enemy troops at 1 square around.",
+ "icon": "/img/wc4/skills/general_skill_154.png",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3541,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Economic and industrial income +10 when the commanding force with no enemy troops at 1 square around.",
+   "renderedDescFr": "Revenu économique et industriel +10 lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+   "renderedDescDe": "Wirtschafts- und Industrieeinkommen +10, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Unyielding And Self-improving",
-  "descriptionTemplateFr": "Economic et industrial income +X lorsque la commandant force avec no ennemi troupes at 1 square autour.",
-  "longDesc": "Compétence spécifique à un général. « Unyielding And Self-improving » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Economic and industrial income +50 when the commanding force with no ennemi troops at 1 square around. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Unyielding And Self-improving\" scales up to level 5. At max level (5), the skill applies the following effect: \"Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Unyielding And Self-improving“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 3542,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Economic and industrial income +20 when the commanding force with no enemy troops at 1 square around.",
+   "renderedDescFr": "Revenu économique et industriel +20 lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+   "renderedDescDe": "Wirtschafts- und Industrieeinkommen +20, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden."
+  },
+  {
+   "level": 3,
+   "skillId": 3543,
+   "effect": 30,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Economic and industrial income +30 when the commanding force with no enemy troops at 1 square around.",
+   "renderedDescFr": "Revenu économique et industriel +30 lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+   "renderedDescDe": "Wirtschafts- und Industrieeinkommen +30, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden."
+  },
+  {
+   "level": 4,
+   "skillId": 3544,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Economic and industrial income +40 when the commanding force with no enemy troops at 1 square around.",
+   "renderedDescFr": "Revenu économique et industriel +40 lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+   "renderedDescDe": "Wirtschafts- und Industrieeinkommen +40, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden."
+  },
+  {
+   "level": 5,
+   "skillId": 3545,
+   "effect": 50,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.",
+   "renderedDescFr": "Revenu économique et industriel +50 lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+   "renderedDescDe": "Wirtschafts- und Industrieeinkommen +50, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25383,
+    "level": 5
+   },
+   {
+    "generalId": 25403,
+    "level": 5
+   },
+   {
+    "generalId": 25443,
+    "level": 1
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1029,
+    "level": 5,
+    "promotionId": 10293
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Unyielding And Self-improving",
+ "descriptionTemplateFr": "Revenu économique et industriel +X lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+ "longDesc": "Compétence spécifique à un général. « Unyielding And Self-improving » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Economic and industrial income +50 when the commanding force with no ennemi troops at 1 square around. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Unyielding And Self-improving\" scales up to level 5. At max level (5), the skill applies the following effect: \"Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Unyielding And Self-improving“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Economic and industrial income +50 when the commanding force with no enemy troops at 1 square around.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Unnachgiebig und strebsam",
+ "descriptionTemplateDe": "Wirtschafts- und Industrieeinkommen +X, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden."
 }

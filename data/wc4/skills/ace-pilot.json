@@ -1,104 +1,111 @@
 {
-  "slug": "ace-pilot",
-  "type": 56,
-  "name": "Ace Pilot",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When using air and missile attacks, ignore enemy units X% defense",
-  "icon": "/img/wc4/skills/general_skill_56.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1451,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "When using air and missile attacks, ignore enemy units 20% defense",
-      "renderedDescFr": "Lorsque utilisant aérien et missile attaque, ignore ennemi unités 20% défense"
-    },
-    {
-      "level": 2,
-      "skillId": 1452,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "When using air and missile attacks, ignore enemy units 40% defense",
-      "renderedDescFr": "Lorsque utilisant aérien et missile attaque, ignore ennemi unités 40% défense"
-    },
-    {
-      "level": 3,
-      "skillId": 1453,
-      "effect": 60,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "When using air and missile attacks, ignore enemy units 60% defense",
-      "renderedDescFr": "Lorsque utilisant aérien et missile attaque, ignore ennemi unités 60% défense"
-    },
-    {
-      "level": 4,
-      "skillId": 1454,
-      "effect": 80,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "When using air and missile attacks, ignore enemy units 80% defense",
-      "renderedDescFr": "Lorsque utilisant aérien et missile attaque, ignore ennemi unités 80% défense"
-    },
-    {
-      "level": 5,
-      "skillId": 1455,
-      "effect": 100,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "When using air and missile attacks, ignore enemy units 100% defense",
-      "renderedDescFr": "Lorsque utilisant aérien et missile attaque, ignore ennemi unités 100% défense"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1059,
-        "level": 5
-      },
-      {
-        "generalId": 22112,
-        "level": 1
-      },
-      {
-        "generalId": 22126,
-        "level": 1
-      },
-      {
-        "generalId": 22134,
-        "level": 1
-      },
-      {
-        "generalId": 25179,
-        "level": 5
-      },
-      {
-        "generalId": 25198,
-        "level": 3
-      },
-      {
-        "generalId": 25286,
-        "level": 1
-      },
-      {
-        "generalId": 25365,
-        "level": 1
-      },
-      {
-        "generalId": 25433,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "ace-pilot",
+ "type": 56,
+ "name": "Ace Pilot",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When using air and missile attacks, ignore enemy units X% defense",
+ "icon": "/img/wc4/skills/general_skill_56.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1451,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "When using air and missile attacks, ignore enemy units 20% defense",
+   "renderedDescFr": "Lors des attaques aériennes et de missiles, ignore 20% de la défense des unités ennemies",
+   "renderedDescDe": "Bei Luft- und Raketenangriffen werden 20% der Verteidigung feindlicher Einheiten ignoriert"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "As du ciel",
-  "descriptionTemplateFr": "Lorsque utilisant aérien et missile attaque, ignore ennemi unités X% défense",
-  "longDesc": "Compétence spécifique à un général. « As du ciel » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lors d'attaques aériennes ou de missiles, ignore unités ennemies 100% défense ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Ace Pilot\" scales up to level 5. At max level (5), the skill applies the following effect: \"When using air and missile attacks, ignore enemy units 100% defense\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Pilot“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When using air and missile attacks, ignore enemy units 100% defense“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 1452,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "When using air and missile attacks, ignore enemy units 40% defense",
+   "renderedDescFr": "Lors des attaques aériennes et de missiles, ignore 40% de la défense des unités ennemies",
+   "renderedDescDe": "Bei Luft- und Raketenangriffen werden 40% der Verteidigung feindlicher Einheiten ignoriert"
+  },
+  {
+   "level": 3,
+   "skillId": 1453,
+   "effect": 60,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "When using air and missile attacks, ignore enemy units 60% defense",
+   "renderedDescFr": "Lors des attaques aériennes et de missiles, ignore 60% de la défense des unités ennemies",
+   "renderedDescDe": "Bei Luft- und Raketenangriffen werden 60% der Verteidigung feindlicher Einheiten ignoriert"
+  },
+  {
+   "level": 4,
+   "skillId": 1454,
+   "effect": 80,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "When using air and missile attacks, ignore enemy units 80% defense",
+   "renderedDescFr": "Lors des attaques aériennes et de missiles, ignore 80% de la défense des unités ennemies",
+   "renderedDescDe": "Bei Luft- und Raketenangriffen werden 80% der Verteidigung feindlicher Einheiten ignoriert"
+  },
+  {
+   "level": 5,
+   "skillId": 1455,
+   "effect": 100,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "When using air and missile attacks, ignore enemy units 100% defense",
+   "renderedDescFr": "Lors des attaques aériennes et de missiles, ignore 100% de la défense des unités ennemies",
+   "renderedDescDe": "Bei Luft- und Raketenangriffen werden 100% der Verteidigung feindlicher Einheiten ignoriert"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1059,
+    "level": 5
+   },
+   {
+    "generalId": 22112,
+    "level": 1
+   },
+   {
+    "generalId": 22126,
+    "level": 1
+   },
+   {
+    "generalId": 22134,
+    "level": 1
+   },
+   {
+    "generalId": 25179,
+    "level": 5
+   },
+   {
+    "generalId": 25198,
+    "level": 3
+   },
+   {
+    "generalId": 25286,
+    "level": 1
+   },
+   {
+    "generalId": 25365,
+    "level": 1
+   },
+   {
+    "generalId": 25433,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "As du ciel",
+ "descriptionTemplateFr": "Lors des attaques aériennes et de missiles, ignore X% de la défense des unités ennemies",
+ "longDesc": "Compétence spécifique à un général. « As du ciel » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lors d'attaques aériennes ou de missiles, ignore unités ennemies 100% défense ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Ace Pilot\" scales up to level 5. At max level (5), the skill applies the following effect: \"When using air and missile attacks, ignore enemy units 100% defense\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Pilot“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When using air and missile attacks, ignore enemy units 100% defense“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Fliegerass",
+ "descriptionTemplateDe": "Bei Luft- und Raketenangriffen werden X% der Verteidigung feindlicher Einheiten ignoriert"
 }

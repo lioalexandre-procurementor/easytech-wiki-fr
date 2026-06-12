@@ -35,6 +35,7 @@ import { StatsGrid } from "@/components/general/StatsGrid";
 import { locales } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import { splitGeneralName } from "@/lib/general-name";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   const slugs = getAllGeneralSlugs();
@@ -64,6 +65,11 @@ export async function generateMetadata({
   };
   const title = TITLE_COPY[locale] ?? TITLE_COPY.en;
   const description = DESC_COPY[locale] ?? DESC_COPY.en;
+  const ogImages = ogImage({
+    title: name,
+    sub: "World Conqueror 4",
+    img: g.image?.head,
+  });
   return {
     title,
     description,
@@ -82,11 +88,13 @@ export async function generateMetadata({
       type: "article",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };
@@ -598,12 +606,21 @@ function SkillBlock({
     catalog && skill.skillLevel != null
       ? catalog.progression.find((p) => p.level === skill.skillLevel) ?? null
       : null;
+  const isDe = locale === "de";
   const rawName = isFr
     ? catalog?.nameFr || skill.name
+    : isDe
+    ? catalog?.nameDe || catalog?.name || skill.nameEn || skill.name
     : catalog?.name || skill.nameEn || skill.name;
   const rawDesc = isFr
     ? progEntry?.renderedDescFr ||
       catalog?.descriptionTemplateFr ||
+      skill.desc
+    : isDe
+    ? progEntry?.renderedDescDe ||
+      catalog?.descriptionTemplateDe ||
+      progEntry?.renderedDesc ||
+      catalog?.descriptionTemplate ||
       skill.desc
     : progEntry?.renderedDesc ||
       catalog?.descriptionTemplate ||

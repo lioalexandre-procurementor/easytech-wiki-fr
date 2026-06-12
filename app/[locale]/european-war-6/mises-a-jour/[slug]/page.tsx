@@ -8,6 +8,7 @@ import { loadUpdate } from "@/lib/content-editable";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   const slugs = getAllUpdateSlugs();
@@ -23,6 +24,10 @@ export async function generateMetadata({
   if (!u) return { title: "404" };
   const t = await getTranslations({ locale, namespace: "updatesPage" });
   const loc = locale as Locale;
+  const ogImages = ogImage({
+    title: u.title[loc],
+    sub: "European War 6",
+  });
   return {
     title: t("detailSeoTitle", { title: u.title[loc] }),
     description: t("detailSeoDescription", {
@@ -46,6 +51,7 @@ export async function generateMetadata({
       description: u.summary[loc],
       type: "article",
       locale: ogLocale(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

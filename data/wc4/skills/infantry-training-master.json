@@ -1,96 +1,103 @@
 {
-  "slug": "infantry-training-master",
-  "type": 134,
-  "name": "Infantry Training Master",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Reduce the damage taken by X% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-  "icon": "/img/wc4/skills/general_skill_134.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3341,
-      "effect": 1,
-      "chance": 100,
-      "costMedal": 150,
-      "renderedDesc": "Reduce the damage taken by 1% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduit la dégâts taken de 1% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
-    },
-    {
-      "level": 2,
-      "skillId": 3342,
-      "effect": 2,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "Reduce the damage taken by 2% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduit la dégâts taken de 2% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
-    },
-    {
-      "level": 3,
-      "skillId": 3343,
-      "effect": 2,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "Reduce the damage taken by 2% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduit la dégâts taken de 2% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
-    },
-    {
-      "level": 4,
-      "skillId": 3344,
-      "effect": 3,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "Reduce the damage taken by 3% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduit la dégâts taken de 3% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
-    },
-    {
-      "level": 5,
-      "skillId": 3345,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 550,
-      "renderedDesc": "Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
-      "renderedDescFr": "Réduit la dégâts taken de 4% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1099,
-        "level": 5
-      },
-      {
-        "generalId": 22099,
-        "level": 5
-      },
-      {
-        "generalId": 22109,
-        "level": 1
-      },
-      {
-        "generalId": 25407,
-        "level": 5
-      },
-      {
-        "generalId": 25411,
-        "level": 1
-      },
-      {
-        "generalId": 25432,
-        "level": 1
-      },
-      {
-        "generalId": 25467,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "infantry-training-master",
+ "type": 134,
+ "name": "Infantry Training Master",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Reduce the damage taken by X% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+ "icon": "/img/wc4/skills/general_skill_134.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3341,
+   "effect": 1,
+   "chance": 100,
+   "costMedal": 150,
+   "renderedDesc": "Reduce the damage taken by 1% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+   "renderedDescFr": "Réduit les dégâts subis de 1% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+   "renderedDescDe": "Reduziert den erlittenen Schaden um 1% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Infanterie Training Master",
-  "descriptionTemplateFr": "Réduit la dégâts taken de X% per niveau based sur la niveau de la elite force infanterie sous votre commandement. Elite Force infanterie does pas lose attaque power lorsque leur HP est réduit.",
-  "longDesc": "Compétence spécifique à un général. « Infanterie Training Master » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Réduire the dégâts taken de 4% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Infantry Training Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Infantry Training Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3342,
+   "effect": 2,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "Reduce the damage taken by 2% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+   "renderedDescFr": "Réduit les dégâts subis de 2% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+   "renderedDescDe": "Reduziert den erlittenen Schaden um 2% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft."
+  },
+  {
+   "level": 3,
+   "skillId": 3343,
+   "effect": 2,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "Reduce the damage taken by 2% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+   "renderedDescFr": "Réduit les dégâts subis de 2% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+   "renderedDescDe": "Reduziert den erlittenen Schaden um 2% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft."
+  },
+  {
+   "level": 4,
+   "skillId": 3344,
+   "effect": 3,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "Reduce the damage taken by 3% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+   "renderedDescFr": "Réduit les dégâts subis de 3% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+   "renderedDescDe": "Reduziert den erlittenen Schaden um 3% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft."
+  },
+  {
+   "level": 5,
+   "skillId": 3345,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 550,
+   "renderedDesc": "Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.",
+   "renderedDescFr": "Réduit les dégâts subis de 4% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+   "renderedDescDe": "Reduziert den erlittenen Schaden um 4% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1099,
+    "level": 5
+   },
+   {
+    "generalId": 22099,
+    "level": 5
+   },
+   {
+    "generalId": 22109,
+    "level": 1
+   },
+   {
+    "generalId": 25407,
+    "level": 5
+   },
+   {
+    "generalId": 25411,
+    "level": 1
+   },
+   {
+    "generalId": 25432,
+    "level": 1
+   },
+   {
+    "generalId": 25467,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Infanterie Training Master",
+ "descriptionTemplateFr": "Réduit les dégâts subis de X% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+ "longDesc": "Compétence spécifique à un général. « Infanterie Training Master » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Réduire the dégâts taken de 4% per niveau based on the niveau of the unités d'élite infanterie sous votre commandement. Unités d'élite infanterie does not lose attaque power when their PV is réduit. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Infantry Training Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Infantry Training Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reduce the damage taken by 4% per level based on the level of the elite force infantry under command. Elite Force Infantry does not lose attack power when their HP is reduced.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Infanterieausbildungsmeister",
+ "descriptionTemplateDe": "Reduziert den erlittenen Schaden um X% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft."
 }

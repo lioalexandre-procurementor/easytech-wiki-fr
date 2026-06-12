@@ -8,6 +8,7 @@ import { getAllGuideSlugs, getGuide } from "@/lib/guides";
 import { loadGuide } from "@/lib/content-editable";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
+import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
 
 /** Per-category tint applied behind the hero image when the guide has no
@@ -33,6 +34,11 @@ export async function generateMetadata({
   if (!g) return { title: "404" };
   const loc = locale as Locale;
   const t = await getTranslations({ locale, namespace: "guidesPage" });
+  const ogImages = ogImage({
+    title: g.title[loc],
+    sub: "Great Conqueror: Rome",
+    img: g.heroImage,
+  });
   return {
     title: t("detailSeoTitle", { title: g.title[loc] }),
     description: t("detailSeoDescription", { description: g.description[loc] }),
@@ -50,6 +56,7 @@ export async function generateMetadata({
       description: g.description[loc],
       type: "article",
       locale: ogLocale(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

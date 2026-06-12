@@ -1,88 +1,95 @@
 {
-  "slug": "air-raid-cover",
-  "type": 119,
-  "name": "Air Raid Cover",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding an airforce unit to attack, there is X% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
-  "icon": "/img/wc4/skills/general_skill_119.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3191,
-      "effect": 0,
-      "chance": 10,
-      "costMedal": 160,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 10% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
-      "renderedDescFr": "Lorsque vous commandez l'aviation unités à attaque, il y a 10% de chances que nos inactives unités qui sont 1 case autour l'ennemi unités sous attaque rejoindre l'attaque (up à 1 troupes participer simultanément)."
-    },
-    {
-      "level": 2,
-      "skillId": 3192,
-      "effect": 0,
-      "chance": 20,
-      "costMedal": 240,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 20% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
-      "renderedDescFr": "Lorsque vous commandez l'aviation unités à attaque, il y a 20% de chances que nos inactives unités qui sont 1 case autour l'ennemi unités sous attaque rejoindre l'attaque (up à 1 troupes participer simultanément)."
-    },
-    {
-      "level": 3,
-      "skillId": 3193,
-      "effect": 0,
-      "chance": 30,
-      "costMedal": 480,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 30% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
-      "renderedDescFr": "Lorsque vous commandez l'aviation unités à attaque, il y a 30% de chances que nos inactives unités qui sont 1 case autour l'ennemi unités sous attaque rejoindre l'attaque (up à 1 troupes participer simultanément)."
-    },
-    {
-      "level": 4,
-      "skillId": 3194,
-      "effect": 0,
-      "chance": 40,
-      "costMedal": 640,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 40% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
-      "renderedDescFr": "Lorsque vous commandez l'aviation unités à attaque, il y a 40% de chances que nos inactives unités qui sont 1 case autour l'ennemi unités sous attaque rejoindre l'attaque (up à 1 troupes participer simultanément)."
-    },
-    {
-      "level": 5,
-      "skillId": 3195,
-      "effect": 0,
-      "chance": 50,
-      "costMedal": 800,
-      "renderedDesc": "When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
-      "renderedDescFr": "Lorsque vous commandez l'aviation unités à attaque, il y a 50% de chances que nos inactives unités qui sont 1 case autour l'ennemi unités sous attaque rejoindre l'attaque (up à 1 troupes participer simultanément)."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1080,
-        "level": 5
-      },
-      {
-        "generalId": 22100,
-        "level": 5
-      },
-      {
-        "generalId": 22112,
-        "level": 1
-      },
-      {
-        "generalId": 25282,
-        "level": 5
-      },
-      {
-        "generalId": 25323,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "air-raid-cover",
+ "type": 119,
+ "name": "Air Raid Cover",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding an airforce unit to attack, there is X% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+ "icon": "/img/wc4/skills/general_skill_119.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3191,
+   "effect": 0,
+   "chance": 10,
+   "costMedal": 160,
+   "renderedDesc": "When commanding an airforce unit to attack, there is 10% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+   "renderedDescFr": "Lorsque vous commandez une unité aérienne à l'attaque, 10% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+   "renderedDescDe": "Beim Angriff mit einer Luftwaffeneinheit besteht eine 10% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig)."
   },
-  "varyingField": "ActivatesChance",
-  "nameFr": "Couverture anti-aérienne",
-  "descriptionTemplateFr": "Lorsque vous commandez l'aviation unités à attaque, il y a X% taux que nos inactives unités qui sont 1 case autour l'ennemi unités sous attaque rejoindre l'attaque (up à 1 troupes participer simultanément).",
-  "longDesc": "Compétence spécifique à un général. « Couverture anti-aérienne » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding an aviation unité to attaque, there is 50% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously). ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Air Raid Cover\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Air Raid Cover“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 3192,
+   "effect": 0,
+   "chance": 20,
+   "costMedal": 240,
+   "renderedDesc": "When commanding an airforce unit to attack, there is 20% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+   "renderedDescFr": "Lorsque vous commandez une unité aérienne à l'attaque, 20% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+   "renderedDescDe": "Beim Angriff mit einer Luftwaffeneinheit besteht eine 20% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig)."
+  },
+  {
+   "level": 3,
+   "skillId": 3193,
+   "effect": 0,
+   "chance": 30,
+   "costMedal": 480,
+   "renderedDesc": "When commanding an airforce unit to attack, there is 30% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+   "renderedDescFr": "Lorsque vous commandez une unité aérienne à l'attaque, 30% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+   "renderedDescDe": "Beim Angriff mit einer Luftwaffeneinheit besteht eine 30% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig)."
+  },
+  {
+   "level": 4,
+   "skillId": 3194,
+   "effect": 0,
+   "chance": 40,
+   "costMedal": 640,
+   "renderedDesc": "When commanding an airforce unit to attack, there is 40% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+   "renderedDescFr": "Lorsque vous commandez une unité aérienne à l'attaque, 40% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+   "renderedDescDe": "Beim Angriff mit einer Luftwaffeneinheit besteht eine 40% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig)."
+  },
+  {
+   "level": 5,
+   "skillId": 3195,
+   "effect": 0,
+   "chance": 50,
+   "costMedal": 800,
+   "renderedDesc": "When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).",
+   "renderedDescFr": "Lorsque vous commandez une unité aérienne à l'attaque, 50% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+   "renderedDescDe": "Beim Angriff mit einer Luftwaffeneinheit besteht eine 50% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig)."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1080,
+    "level": 5
+   },
+   {
+    "generalId": 22100,
+    "level": 5
+   },
+   {
+    "generalId": 22112,
+    "level": 1
+   },
+   {
+    "generalId": 25282,
+    "level": 5
+   },
+   {
+    "generalId": 25323,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "ActivatesChance",
+ "nameFr": "Couverture anti-aérienne",
+ "descriptionTemplateFr": "Lorsque vous commandez une unité aérienne à l'attaque, X% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+ "longDesc": "Compétence spécifique à un général. « Couverture anti-aérienne » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding an aviation unité to attaque, there is 50% rate that our inactive unités that are 1 grid around the unités ennemies under attaque will join the attaque (up to 1 troop will participate simultaneously). ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Air Raid Cover\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Air Raid Cover“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding an airforce unit to attack, there is 50% rate that our inactive units that are 1 grid around the enemy unit under attack will join the attack (up to 1 troop will participate simultaneously).“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Luftangriffsdeckung",
+ "descriptionTemplateDe": "Beim Angriff mit einer Luftwaffeneinheit besteht eine X% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig)."
 }

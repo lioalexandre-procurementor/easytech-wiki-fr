@@ -148,7 +148,7 @@
     "intro": "organisées exactement comme dans l'Académie. Les 5 séries apprenables (Tactiques de terrain, Commandement, Logistique, Défense, Offensive) regroupent les compétences que vous pouvez débloquer contre des médailles. La section",
     "introSignature": "Compétences spécifiques aux généraux",
     "introEnd": "couvre toutes les compétences de signature ou d'entraînement liées à un héros précis (Rokossovsky — Hero, Eisenhower — Super Commander, etc.).",
-    "introFootnote": "Chaque fiche détaille la description complète, la progression L1→L5, le coût en médailles par niveau et la liste des généraux concernés. Descriptions en anglais — traduction française en cours.",
+    "introFootnote": "Chaque fiche détaille la description complète, la progression L1→L5, le coût en médailles par niveau et la liste des généraux concernés.",
     "searchPlaceholder": "🔎 Rechercher une compétence…",
     "searchNoResults": "Aucune compétence ne correspond à votre recherche.",
     "signatureBadge": "signature"
@@ -662,7 +662,8 @@
         "a": "World Conqueror 4 est disponible sur iOS et Android, gratuitement avec des achats intégrés optionnels."
       }
     ],
-    "enterCta": "Entrer"
+    "enterCta": "Entrer",
+    "metaTitle": "Wiki World Conqueror 4, European War 6 & Great Conqueror Rome — en français"
   },
   "formations": {
     "hub": {

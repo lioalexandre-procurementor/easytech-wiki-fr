@@ -33,6 +33,7 @@ import { StatsGrid } from "@/components/general/StatsGrid";
 import { locales } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import { splitGeneralName } from "@/lib/general-name";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   const slugs = getAllGeneralSlugs();
@@ -78,6 +79,11 @@ export async function generateMetadata({
   };
   const title = TITLE_COPY[locale] ?? TITLE_COPY.en;
   const description = DESC_COPY[locale] ?? DESC_COPY.en;
+  const ogImages = ogImage({
+    title: name,
+    sub: "European War 6",
+    img: g.image?.head,
+  });
   return {
     title,
     description,
@@ -96,11 +102,13 @@ export async function generateMetadata({
       type: "article",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
+      images: ogImages,
     },
     // Per the 2026-05-05 SEO remediation plan, entity pages (generals,
     // elite-units) must be indexable. The previous gate that flipped
@@ -578,12 +586,21 @@ function SkillBlock({
     catalog && skill.skillLevel != null
       ? catalog.progression.find((p) => p.level === skill.skillLevel) ?? null
       : null;
+  const isDe = locale === "de";
   const rawName = isFr
     ? catalog?.nameFr || skill.name
+    : isDe
+    ? catalog?.nameDe || catalog?.name || skill.nameEn || skill.name
     : catalog?.name || skill.nameEn || skill.name;
   const rawDesc = isFr
     ? progEntry?.renderedDescFr ||
       catalog?.descriptionTemplateFr ||
+      skill.desc
+    : isDe
+    ? progEntry?.renderedDescDe ||
+      catalog?.descriptionTemplateDe ||
+      progEntry?.renderedDesc ||
+      catalog?.descriptionTemplate ||
       skill.desc
     : progEntry?.renderedDesc ||
       catalog?.descriptionTemplate ||

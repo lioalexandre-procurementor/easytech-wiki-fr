@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { JsonLd } from "@/components/JsonLd";
 import { locales } from "@/src/i18n/config";
+import { ogImage } from "@/lib/og";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
 
@@ -28,6 +29,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "formations.hub" });
   const localePath = LOCALE_PATHS[locale as keyof typeof LOCALE_PATHS] ?? LOCALE_PATHS.fr;
+  const ogImages = ogImage({
+    title: t("metaTitle"),
+    sub: "World Conqueror 4",
+  });
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
@@ -45,6 +50,7 @@ export async function generateMetadata({
       description: t("metaDescription"),
       url: `${BASE_URL}/${locale}${localePath}`,
       type: "website",
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

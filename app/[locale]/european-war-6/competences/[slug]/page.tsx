@@ -17,6 +17,7 @@ import type {
   SkillUsageEntry,
   GeneralData,
 } from "@/lib/types";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   const slugs = getAllSkillSlugs();
@@ -31,15 +32,26 @@ export async function generateMetadata({
   const s = getSkill(slug);
   if (!s) return { title: "404" };
   const isFr = locale === "fr";
-  const displayName = (isFr && s.nameFr) || s.name;
-  const displayDesc = (isFr && s.descriptionTemplateFr) || s.descriptionTemplate;
+  const isDe = locale === "de";
+  const displayName = (isFr && s.nameFr) || (isDe && s.nameDe) || s.name;
+  const displayDesc =
+    (isFr && s.descriptionTemplateFr) ||
+    (isDe && s.descriptionTemplateDe) ||
+    s.descriptionTemplate;
+  // NOTE: was "(GCR)" before 2026-06-12 — copy-paste from the GCR template
+  // that shipped the wrong game abbreviation in every EW6 skill title.
   const titles: Record<string, string> = {
-    fr: `${displayName} (GCR) — Effet, progression L1→L5 & généraux`,
-    en: `${displayName} (GCR) — Effect, L1→L5 progression & generals`,
-    de: `${displayName} (GCR) — Effekt, Progression L1→L5 & Generäle`,
+    fr: `${displayName} (EW6) — Effet, progression L1→L5 & généraux`,
+    en: `${displayName} (EW6) — Effect, L1→L5 progression & generals`,
+    de: `${displayName} (EW6) — Effekt, Progression L1→L5 & Generäle`,
   };
   const title = titles[locale] ?? titles.en;
   const description = `${displayDesc} Maximum level ${s.maxLevel}, series "${s.seriesLabel}".`;
+  const ogImages = ogImage({
+    title: displayName,
+    sub: "European War 6",
+    img: s.icon ?? undefined,
+  });
   return {
     title,
     description,
@@ -53,7 +65,7 @@ export async function generateMetadata({
         "x-default": `/fr/european-war-6/competences/${slug}`,
       },
     },
-    openGraph: { title, description, type: "article" },
+    openGraph: { title, description, type: "article", images: ogImages },
     robots: { index: true, follow: true },
   };
 }

@@ -1,80 +1,87 @@
 {
-  "slug": "leader",
-  "type": 149,
-  "name": "Leader",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Dealt damage of commanded units against land units +X%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-  "icon": "/img/wc4/skills/general_skill_149.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3491,
-      "effect": 6,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Dealt damage of commanded units against land units +6%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +6%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
-    },
-    {
-      "level": 2,
-      "skillId": 3492,
-      "effect": 12,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Dealt damage of commanded units against land units +12%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +12%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
-    },
-    {
-      "level": 3,
-      "skillId": 3493,
-      "effect": 18,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Dealt damage of commanded units against land units +18%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +18%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
-    },
-    {
-      "level": 4,
-      "skillId": 3494,
-      "effect": 24,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Dealt damage of commanded units against land units +24%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +24%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
-    },
-    {
-      "level": 5,
-      "skillId": 3495,
-      "effect": 30,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
-      "renderedDescFr": "Dealt dégâts de commanded unités against land unités +30%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1104,
-        "level": 5
-      },
-      {
-        "generalId": 25344,
-        "level": 5
-      },
-      {
-        "generalId": 25356,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "leader",
+ "type": 149,
+ "name": "Leader",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Dealt damage of commanded units against land units +X%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+ "icon": "/img/wc4/skills/general_skill_149.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3491,
+   "effect": 6,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Dealt damage of commanded units against land units +6%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+   "renderedDescFr": "Dégâts infligés par les unités commandées aux unités terrestres +6%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+   "renderedDescDe": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +6%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Leader",
-  "descriptionTemplateFr": "Dealt dégâts de commanded unités against land unités +X%. Lorsque capturing un ennemi city, grant \"commendation\" à friendly unités within 3 hexes et yourself, augmentant attaque de les unités de 15%, lasts pour 3 tours",
-  "longDesc": "Compétence spécifique à un général. « Leader » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dealt dégâts of commanded unités against land unités +30%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 3492,
+   "effect": 12,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Dealt damage of commanded units against land units +12%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+   "renderedDescFr": "Dégâts infligés par les unités commandées aux unités terrestres +12%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+   "renderedDescDe": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +12%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden"
+  },
+  {
+   "level": 3,
+   "skillId": 3493,
+   "effect": 18,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Dealt damage of commanded units against land units +18%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+   "renderedDescFr": "Dégâts infligés par les unités commandées aux unités terrestres +18%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+   "renderedDescDe": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +18%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden"
+  },
+  {
+   "level": 4,
+   "skillId": 3494,
+   "effect": 24,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Dealt damage of commanded units against land units +24%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+   "renderedDescFr": "Dégâts infligés par les unités commandées aux unités terrestres +24%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+   "renderedDescDe": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +24%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden"
+  },
+  {
+   "level": 5,
+   "skillId": 3495,
+   "effect": 30,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns",
+   "renderedDescFr": "Dégâts infligés par les unités commandées aux unités terrestres +30%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+   "renderedDescDe": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +30%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1104,
+    "level": 5
+   },
+   {
+    "generalId": 25344,
+    "level": 5
+   },
+   {
+    "generalId": 25356,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Leader",
+ "descriptionTemplateFr": "Dégâts infligés par les unités commandées aux unités terrestres +X%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+ "longDesc": "Compétence spécifique à un général. « Leader » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dealt dégâts of commanded unités against land unités +30%. When capturing an ennemi city, grant \"commendation\" to unités alliées dans un rayon de 3 hex and yourself, increasing attaque of the unité de 15%, lasts pendant 3 tours ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Dealt damage of commanded units against land units +30%. When capturing an enemy city, grant \"commendation\" to friendly units within 3 hexes and yourself, increasing attack of the unit by 15%, lasts for 3 turns“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Anführer",
+ "descriptionTemplateDe": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +X%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden"
 }

@@ -1,94 +1,101 @@
 {
-  "slug": "war-machine",
-  "type": 139,
-  "name": "War Machine",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +X%",
-  "icon": "/img/wc4/skills/general_skill_139.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3391,
-      "effect": 8,
-      "chance": 100,
-      "costMedal": 150,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +8%",
-      "renderedDescFr": "Lorsque vous commandez blindé troupes dans portée de ennemi territory, critique attaque dégâts de self et nearby friendly forces +8%"
-    },
-    {
-      "level": 2,
-      "skillId": 3392,
-      "effect": 16,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +16%",
-      "renderedDescFr": "Lorsque vous commandez blindé troupes dans portée de ennemi territory, critique attaque dégâts de self et nearby friendly forces +16%"
-    },
-    {
-      "level": 3,
-      "skillId": 3393,
-      "effect": 24,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +24%",
-      "renderedDescFr": "Lorsque vous commandez blindé troupes dans portée de ennemi territory, critique attaque dégâts de self et nearby friendly forces +24%"
-    },
-    {
-      "level": 4,
-      "skillId": 3394,
-      "effect": 32,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +32%",
-      "renderedDescFr": "Lorsque vous commandez blindé troupes dans portée de ennemi territory, critique attaque dégâts de self et nearby friendly forces +32%"
-    },
-    {
-      "level": 5,
-      "skillId": 3395,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 550,
-      "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%",
-      "renderedDescFr": "Lorsque vous commandez blindé troupes dans portée de ennemi territory, critique attaque dégâts de self et nearby friendly forces +40%"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 22105,
-        "level": 1
-      },
-      {
-        "generalId": 22115,
-        "level": 1
-      },
-      {
-        "generalId": 22131,
-        "level": 1
-      },
-      {
-        "generalId": 25336,
-        "level": 4
-      },
-      {
-        "generalId": 25348,
-        "level": 4
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1043,
-        "level": 5,
-        "promotionId": 10433
-      }
-    ]
+ "slug": "war-machine",
+ "type": 139,
+ "name": "War Machine",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +X%",
+ "icon": "/img/wc4/skills/general_skill_139.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3391,
+   "effect": 8,
+   "chance": 100,
+   "costMedal": 150,
+   "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +8%",
+   "renderedDescFr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +8%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +8%"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "War Machine",
-  "descriptionTemplateFr": "Lorsque vous commandez blindé troupes dans portée de ennemi territory, critique attaque dégâts de self et nearby friendly forces +X%",
-  "longDesc": "Compétence spécifique à un général. « War Machine » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +40% ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"War Machine\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „War Machine“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 3392,
+   "effect": 16,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +16%",
+   "renderedDescFr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +16%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +16%"
+  },
+  {
+   "level": 3,
+   "skillId": 3393,
+   "effect": 24,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +24%",
+   "renderedDescFr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +24%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +24%"
+  },
+  {
+   "level": 4,
+   "skillId": 3394,
+   "effect": 32,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +32%",
+   "renderedDescFr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +32%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +32%"
+  },
+  {
+   "level": 5,
+   "skillId": 3395,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 550,
+   "renderedDesc": "When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%",
+   "renderedDescFr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +40%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +40%"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 22105,
+    "level": 1
+   },
+   {
+    "generalId": 22115,
+    "level": 1
+   },
+   {
+    "generalId": 22131,
+    "level": 1
+   },
+   {
+    "generalId": 25336,
+    "level": 4
+   },
+   {
+    "generalId": 25348,
+    "level": 4
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1043,
+    "level": 5,
+    "promotionId": 10433
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "War Machine",
+ "descriptionTemplateFr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +X%",
+ "longDesc": "Compétence spécifique à un général. « War Machine » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding armored troops in portée of ennemi territory, attaques critiques dégâts of self and nearby allié forces +40% ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"War Machine\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „War Machine“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored troops in range of enemy territory, critical attack damage of self and nearby friendly forces +40%“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Kriegsmaschine",
+ "descriptionTemplateDe": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +X%"
 }

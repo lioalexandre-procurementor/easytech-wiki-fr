@@ -12,6 +12,7 @@ import {
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { ogImage } from "@/lib/og";
 import type {
   SkillCatalogEntry,
   SkillUsageEntry,
@@ -31,8 +32,12 @@ export async function generateMetadata({
   const s = getSkill(slug);
   if (!s) return { title: "404" };
   const isFr = locale === "fr";
-  const displayName = (isFr && s.nameFr) || s.name;
-  const displayDesc = (isFr && s.descriptionTemplateFr) || s.descriptionTemplate;
+  const isDe = locale === "de";
+  const displayName = (isFr && s.nameFr) || (isDe && s.nameDe) || s.name;
+  const displayDesc =
+    (isFr && s.descriptionTemplateFr) ||
+    (isDe && s.descriptionTemplateDe) ||
+    s.descriptionTemplate;
   const titles: Record<string, string> = {
     fr: `${displayName} (GCR) — Effet, progression L1→L5 & généraux`,
     en: `${displayName} (GCR) — Effect, L1→L5 progression & generals`,
@@ -40,6 +45,11 @@ export async function generateMetadata({
   };
   const title = titles[locale] ?? titles.en;
   const description = `${displayDesc} Maximum level ${s.maxLevel}, series "${s.seriesLabel}".`;
+  const ogImages = ogImage({
+    title: displayName,
+    sub: "Great Conqueror: Rome",
+    img: s.icon ?? undefined,
+  });
   return {
     title,
     description,
@@ -53,7 +63,7 @@ export async function generateMetadata({
         "x-default": `/fr/great-conqueror-rome/competences/${slug}`,
       },
     },
-    openGraph: { title, description, type: "article" },
+    openGraph: { title, description, type: "article", images: ogImages },
     robots: { index: true, follow: true },
   };
 }

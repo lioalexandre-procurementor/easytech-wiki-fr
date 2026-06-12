@@ -1,228 +1,235 @@
 {
-  "slug": "hold-fast",
-  "type": 108,
-  "name": "Hold Fast",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
-  "icon": "/img/wc4/skills/general_skill_108.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3081,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy",
-      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 4% dégâts dealt de ennemi"
-    },
-    {
-      "level": 2,
-      "skillId": 3082,
-      "effect": 8,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy",
-      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 8% dégâts dealt de ennemi"
-    },
-    {
-      "level": 3,
-      "skillId": 3083,
-      "effect": 12,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy",
-      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 12% dégâts dealt de ennemi"
-    },
-    {
-      "level": 4,
-      "skillId": 3084,
-      "effect": 16,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 16% damage dealt by enemy",
-      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 16% dégâts dealt de ennemi"
-    },
-    {
-      "level": 5,
-      "skillId": 3085,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy",
-      "renderedDescFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade 20% dégâts dealt de ennemi"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1061,
-        "level": 1
-      },
-      {
-        "generalId": 1076,
-        "level": 2
-      },
-      {
-        "generalId": 1103,
-        "level": 3
-      },
-      {
-        "generalId": 22097,
-        "level": 2
-      },
-      {
-        "generalId": 22108,
-        "level": 1
-      },
-      {
-        "generalId": 22109,
-        "level": 1
-      },
-      {
-        "generalId": 22112,
-        "level": 1
-      },
-      {
-        "generalId": 22113,
-        "level": 1
-      },
-      {
-        "generalId": 22133,
-        "level": 1
-      },
-      {
-        "generalId": 25236,
-        "level": 5
-      },
-      {
-        "generalId": 25242,
-        "level": 5
-      },
-      {
-        "generalId": 25245,
-        "level": 5
-      },
-      {
-        "generalId": 25251,
-        "level": 5
-      },
-      {
-        "generalId": 25254,
-        "level": 1
-      },
-      {
-        "generalId": 25258,
-        "level": 5
-      },
-      {
-        "generalId": 25269,
-        "level": 1
-      },
-      {
-        "generalId": 25274,
-        "level": 5
-      },
-      {
-        "generalId": 25287,
-        "level": 1
-      },
-      {
-        "generalId": 25288,
-        "level": 1
-      },
-      {
-        "generalId": 25291,
-        "level": 1
-      },
-      {
-        "generalId": 25310,
-        "level": 1
-      },
-      {
-        "generalId": 25319,
-        "level": 5
-      },
-      {
-        "generalId": 25326,
-        "level": 1
-      },
-      {
-        "generalId": 25340,
-        "level": 2
-      },
-      {
-        "generalId": 25343,
-        "level": 1
-      },
-      {
-        "generalId": 25355,
-        "level": 1
-      },
-      {
-        "generalId": 25356,
-        "level": 1
-      },
-      {
-        "generalId": 25357,
-        "level": 1
-      },
-      {
-        "generalId": 25359,
-        "level": 1
-      },
-      {
-        "generalId": 25369,
-        "level": 1
-      },
-      {
-        "generalId": 25377,
-        "level": 1
-      },
-      {
-        "generalId": 25381,
-        "level": 1
-      },
-      {
-        "generalId": 25385,
-        "level": 1
-      },
-      {
-        "generalId": 25400,
-        "level": 1
-      },
-      {
-        "generalId": 25406,
-        "level": 1
-      },
-      {
-        "generalId": 25409,
-        "level": 1
-      },
-      {
-        "generalId": 25417,
-        "level": 1
-      },
-      {
-        "generalId": 25426,
-        "level": 1
-      },
-      {
-        "generalId": 25438,
-        "level": 5
-      },
-      {
-        "generalId": 25454,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "hold-fast",
+ "type": 108,
+ "name": "Hold Fast",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade X% damage dealt by enemy",
+ "icon": "/img/wc4/skills/general_skill_108.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3081,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 4% damage dealt by enemy",
+   "renderedDescFr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive 4% des dégâts infligés par l'ennemi",
+   "renderedDescDe": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird 4% des feindlichen Schadens ausgewichen"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Hold Fast",
-  "descriptionTemplateFr": "Troupes morale pas deminish. Lorsque il y a friendly unités nearby within 1 case, evade X% dégâts dealt de ennemi",
-  "longDesc": "Compétence spécifique à un général. « Hold Fast » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 20% dégâts dealt by ennemi ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Hold Fast\" scales up to level 5. At max level (5), the skill applies the following effect: \"Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Hold Fast“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3082,
+   "effect": 8,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 8% damage dealt by enemy",
+   "renderedDescFr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive 8% des dégâts infligés par l'ennemi",
+   "renderedDescDe": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird 8% des feindlichen Schadens ausgewichen"
+  },
+  {
+   "level": 3,
+   "skillId": 3083,
+   "effect": 12,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 12% damage dealt by enemy",
+   "renderedDescFr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive 12% des dégâts infligés par l'ennemi",
+   "renderedDescDe": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird 12% des feindlichen Schadens ausgewichen"
+  },
+  {
+   "level": 4,
+   "skillId": 3084,
+   "effect": 16,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 16% damage dealt by enemy",
+   "renderedDescFr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive 16% des dégâts infligés par l'ennemi",
+   "renderedDescDe": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird 16% des feindlichen Schadens ausgewichen"
+  },
+  {
+   "level": 5,
+   "skillId": 3085,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy",
+   "renderedDescFr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive 20% des dégâts infligés par l'ennemi",
+   "renderedDescDe": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird 20% des feindlichen Schadens ausgewichen"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1061,
+    "level": 1
+   },
+   {
+    "generalId": 1076,
+    "level": 2
+   },
+   {
+    "generalId": 1103,
+    "level": 3
+   },
+   {
+    "generalId": 22097,
+    "level": 2
+   },
+   {
+    "generalId": 22108,
+    "level": 1
+   },
+   {
+    "generalId": 22109,
+    "level": 1
+   },
+   {
+    "generalId": 22112,
+    "level": 1
+   },
+   {
+    "generalId": 22113,
+    "level": 1
+   },
+   {
+    "generalId": 22133,
+    "level": 1
+   },
+   {
+    "generalId": 25236,
+    "level": 5
+   },
+   {
+    "generalId": 25242,
+    "level": 5
+   },
+   {
+    "generalId": 25245,
+    "level": 5
+   },
+   {
+    "generalId": 25251,
+    "level": 5
+   },
+   {
+    "generalId": 25254,
+    "level": 1
+   },
+   {
+    "generalId": 25258,
+    "level": 5
+   },
+   {
+    "generalId": 25269,
+    "level": 1
+   },
+   {
+    "generalId": 25274,
+    "level": 5
+   },
+   {
+    "generalId": 25287,
+    "level": 1
+   },
+   {
+    "generalId": 25288,
+    "level": 1
+   },
+   {
+    "generalId": 25291,
+    "level": 1
+   },
+   {
+    "generalId": 25310,
+    "level": 1
+   },
+   {
+    "generalId": 25319,
+    "level": 5
+   },
+   {
+    "generalId": 25326,
+    "level": 1
+   },
+   {
+    "generalId": 25340,
+    "level": 2
+   },
+   {
+    "generalId": 25343,
+    "level": 1
+   },
+   {
+    "generalId": 25355,
+    "level": 1
+   },
+   {
+    "generalId": 25356,
+    "level": 1
+   },
+   {
+    "generalId": 25357,
+    "level": 1
+   },
+   {
+    "generalId": 25359,
+    "level": 1
+   },
+   {
+    "generalId": 25369,
+    "level": 1
+   },
+   {
+    "generalId": 25377,
+    "level": 1
+   },
+   {
+    "generalId": 25381,
+    "level": 1
+   },
+   {
+    "generalId": 25385,
+    "level": 1
+   },
+   {
+    "generalId": 25400,
+    "level": 1
+   },
+   {
+    "generalId": 25406,
+    "level": 1
+   },
+   {
+    "generalId": 25409,
+    "level": 1
+   },
+   {
+    "generalId": 25417,
+    "level": 1
+   },
+   {
+    "generalId": 25426,
+    "level": 1
+   },
+   {
+    "generalId": 25438,
+    "level": 5
+   },
+   {
+    "generalId": 25454,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Hold Fast",
+ "descriptionTemplateFr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive X% des dégâts infligés par l'ennemi",
+ "longDesc": "Compétence spécifique à un général. « Hold Fast » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Troop moral will not deminish. When there is unités alliées nearby within 1 grid, evade 20% dégâts dealt by ennemi ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Hold Fast\" scales up to level 5. At max level (5), the skill applies the following effect: \"Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Hold Fast“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Troop morale will not deminish. When there is friendly units nearby within 1 grid, evade 20% damage dealt by enemy“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Standhalten",
+ "descriptionTemplateDe": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird X% des feindlichen Schadens ausgewichen"
 }

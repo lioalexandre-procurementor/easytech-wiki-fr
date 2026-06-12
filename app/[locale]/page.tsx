@@ -36,7 +36,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "home" });
   return {
-    title: t("h1"),
+    // Keyword-rich SERP title (game names front-loaded), decoupled from the
+    // visible hero h1. `absolute` bypasses the layout's "%s | EasyTech Wiki"
+    // template — the brand suffix would push the long title past truncation
+    // for no ranking benefit.
+    title: { absolute: `${t("metaTitle")} | EasyTech Wiki` },
     description: t("lede"),
     alternates: pageAlternates(locale, { fr: "", en: "", de: "" }),
   };

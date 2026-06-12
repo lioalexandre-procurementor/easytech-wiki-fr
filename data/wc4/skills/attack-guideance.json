@@ -1,112 +1,119 @@
 {
-  "slug": "attack-guideance",
-  "type": 113,
-  "name": "Attack Guideance",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "X% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-  "icon": "/img/wc4/skills/general_skill_113.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3131,
-      "effect": 1,
-      "chance": 20,
-      "costMedal": 160,
-      "renderedDesc": "20% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-      "renderedDescFr": "20% chances que one de la inactives artillerie unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 2,
-      "skillId": 3132,
-      "effect": 1,
-      "chance": 40,
-      "costMedal": 240,
-      "renderedDesc": "40% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-      "renderedDescFr": "40% chances que one de la inactives artillerie unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 3,
-      "skillId": 3133,
-      "effect": 1,
-      "chance": 60,
-      "costMedal": 480,
-      "renderedDesc": "60% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-      "renderedDescFr": "60% chances que one de la inactives artillerie unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 4,
-      "skillId": 3134,
-      "effect": 1,
-      "chance": 80,
-      "costMedal": 640,
-      "renderedDesc": "80% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-      "renderedDescFr": "80% chances que one de la inactives artillerie unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 5,
-      "skillId": 3135,
-      "effect": 1,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "100% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
-      "renderedDescFr": "100% chances que one de la inactives artillerie unités autour rejoindre l'attaque (seulement once per tour)"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1074,
-        "level": 3
-      },
-      {
-        "generalId": 22119,
-        "level": 1
-      },
-      {
-        "generalId": 22136,
-        "level": 1
-      },
-      {
-        "generalId": 25187,
-        "level": 5
-      },
-      {
-        "generalId": 25210,
-        "level": 5
-      },
-      {
-        "generalId": 25233,
-        "level": 5
-      },
-      {
-        "generalId": 25249,
-        "level": 5
-      },
-      {
-        "generalId": 25254,
-        "level": 3
-      },
-      {
-        "generalId": 25257,
-        "level": 5
-      },
-      {
-        "generalId": 25310,
-        "level": 1
-      },
-      {
-        "generalId": 25481,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "attack-guideance",
+ "type": 113,
+ "name": "Attack Guideance",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "X% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
+ "icon": "/img/wc4/skills/general_skill_113.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3131,
+   "effect": 1,
+   "chance": 20,
+   "costMedal": 160,
+   "renderedDesc": "20% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
+   "renderedDescFr": "20% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "20% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
   },
-  "varyingField": "ActivatesChance",
-  "nameFr": "Attaque Guideance",
-  "descriptionTemplateFr": "X% chances que one de la inactives artillerie unités autour rejoindre l'attaque (seulement once per tour)",
-  "longDesc": "Compétence spécifique à un général. « Attaque Guideance » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that one of the inactive unités d'artillerie around will join the attaque (Only once par tour) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Attack Guideance\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that one of the inactive artillery units around will join the attack (Only once per turn)\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Attack Guideance“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that one of the inactive artillery units around will join the attack (Only once per turn)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3132,
+   "effect": 1,
+   "chance": 40,
+   "costMedal": 240,
+   "renderedDesc": "40% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
+   "renderedDescFr": "40% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "40% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  },
+  {
+   "level": 3,
+   "skillId": 3133,
+   "effect": 1,
+   "chance": 60,
+   "costMedal": 480,
+   "renderedDesc": "60% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
+   "renderedDescFr": "60% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "60% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  },
+  {
+   "level": 4,
+   "skillId": 3134,
+   "effect": 1,
+   "chance": 80,
+   "costMedal": 640,
+   "renderedDesc": "80% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
+   "renderedDescFr": "80% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "80% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  },
+  {
+   "level": 5,
+   "skillId": 3135,
+   "effect": 1,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "100% chance that one of the inactive artillery units around will join the attack (Only once per turn)",
+   "renderedDescFr": "100% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "100% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1074,
+    "level": 3
+   },
+   {
+    "generalId": 22119,
+    "level": 1
+   },
+   {
+    "generalId": 22136,
+    "level": 1
+   },
+   {
+    "generalId": 25187,
+    "level": 5
+   },
+   {
+    "generalId": 25210,
+    "level": 5
+   },
+   {
+    "generalId": 25233,
+    "level": 5
+   },
+   {
+    "generalId": 25249,
+    "level": 5
+   },
+   {
+    "generalId": 25254,
+    "level": 3
+   },
+   {
+    "generalId": 25257,
+    "level": 5
+   },
+   {
+    "generalId": 25310,
+    "level": 1
+   },
+   {
+    "generalId": 25481,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "ActivatesChance",
+ "nameFr": "Attaque Guideance",
+ "descriptionTemplateFr": "X% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+ "longDesc": "Compétence spécifique à un général. « Attaque Guideance » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that one of the inactive unités d'artillerie around will join the attaque (Only once par tour) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Attack Guideance\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that one of the inactive artillery units around will join the attack (Only once per turn)\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Attack Guideance“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that one of the inactive artillery units around will join the attack (Only once per turn)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Feuerleitung",
+ "descriptionTemplateDe": "X% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
 }

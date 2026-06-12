@@ -36,5 +36,7 @@ export default async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
+  // `og` is excluded so the OG-image generator route (app/og/route.tsx) is
+  // reachable at /og without being locale-redirected to /fr/og by next-intl.
+  matcher: ["/((?!api|og|_next|_vercel|.*\\..*).*)"],
 };

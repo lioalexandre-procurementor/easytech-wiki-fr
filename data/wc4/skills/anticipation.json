@@ -1,96 +1,103 @@
 {
-  "slug": "anticipation",
-  "type": 118,
-  "name": "Anticipation",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding troops to move, dealt damage +X% (up to 50%) for each grid moved for 1 turn.",
-  "icon": "/img/wc4/skills/general_skill_118.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3181,
-      "effect": 2,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "When commanding troops to move, dealt damage +2% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +2% (up à 50%) pour chaque case moved pour 1 tour."
-    },
-    {
-      "level": 2,
-      "skillId": 3182,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "When commanding troops to move, dealt damage +4% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +4% (up à 50%) pour chaque case moved pour 1 tour."
-    },
-    {
-      "level": 3,
-      "skillId": 3183,
-      "effect": 6,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "When commanding troops to move, dealt damage +6% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +6% (up à 50%) pour chaque case moved pour 1 tour."
-    },
-    {
-      "level": 4,
-      "skillId": 3184,
-      "effect": 8,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "When commanding troops to move, dealt damage +8% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +8% (up à 50%) pour chaque case moved pour 1 tour."
-    },
-    {
-      "level": 5,
-      "skillId": 3185,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.",
-      "renderedDescFr": "Lorsque vous commandez troupes à move, dealt dégâts +10% (up à 50%) pour chaque case moved pour 1 tour."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1077,
-        "level": 5
-      },
-      {
-        "generalId": 22117,
-        "level": 1
-      },
-      {
-        "generalId": 22124,
-        "level": 1
-      },
-      {
-        "generalId": 22125,
-        "level": 1
-      },
-      {
-        "generalId": 22131,
-        "level": 1
-      },
-      {
-        "generalId": 22135,
-        "level": 1
-      },
-      {
-        "generalId": 25212,
-        "level": 3
-      }
-    ],
-    "promoted": []
+ "slug": "anticipation",
+ "type": 118,
+ "name": "Anticipation",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding troops to move, dealt damage +X% (up to 50%) for each grid moved for 1 turn.",
+ "icon": "/img/wc4/skills/general_skill_118.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3181,
+   "effect": 2,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "When commanding troops to move, dealt damage +2% (up to 50%) for each grid moved for 1 turn.",
+   "renderedDescFr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +2% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+   "renderedDescDe": "Beim Bewegen befehligter Truppen: verursachter Schaden +2% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Anticipation",
-  "descriptionTemplateFr": "Lorsque vous commandez troupes à move, dealt dégâts +X% (up à 50%) pour chaque case moved pour 1 tour.",
-  "longDesc": "Compétence spécifique à un général. « Anticipation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops to move, dégâts infligés +10% (up to 50%) for each grid moved pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"Anticipation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Anticipation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 3182,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "When commanding troops to move, dealt damage +4% (up to 50%) for each grid moved for 1 turn.",
+   "renderedDescFr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +4% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+   "renderedDescDe": "Beim Bewegen befehligter Truppen: verursachter Schaden +4% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde."
+  },
+  {
+   "level": 3,
+   "skillId": 3183,
+   "effect": 6,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "When commanding troops to move, dealt damage +6% (up to 50%) for each grid moved for 1 turn.",
+   "renderedDescFr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +6% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+   "renderedDescDe": "Beim Bewegen befehligter Truppen: verursachter Schaden +6% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde."
+  },
+  {
+   "level": 4,
+   "skillId": 3184,
+   "effect": 8,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "When commanding troops to move, dealt damage +8% (up to 50%) for each grid moved for 1 turn.",
+   "renderedDescFr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +8% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+   "renderedDescDe": "Beim Bewegen befehligter Truppen: verursachter Schaden +8% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde."
+  },
+  {
+   "level": 5,
+   "skillId": 3185,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.",
+   "renderedDescFr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +10% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+   "renderedDescDe": "Beim Bewegen befehligter Truppen: verursachter Schaden +10% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1077,
+    "level": 5
+   },
+   {
+    "generalId": 22117,
+    "level": 1
+   },
+   {
+    "generalId": 22124,
+    "level": 1
+   },
+   {
+    "generalId": 22125,
+    "level": 1
+   },
+   {
+    "generalId": 22131,
+    "level": 1
+   },
+   {
+    "generalId": 22135,
+    "level": 1
+   },
+   {
+    "generalId": 25212,
+    "level": 3
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Anticipation",
+ "descriptionTemplateFr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +X% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+ "longDesc": "Compétence spécifique à un général. « Anticipation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding troops to move, dégâts infligés +10% (up to 50%) for each grid moved pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"Anticipation\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Anticipation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding troops to move, dealt damage +10% (up to 50%) for each grid moved for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Antizipation",
+ "descriptionTemplateDe": "Beim Bewegen befehligter Truppen: verursachter Schaden +X% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde."
 }

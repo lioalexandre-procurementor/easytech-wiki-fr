@@ -1,112 +1,119 @@
 {
-  "slug": "technology-expert",
-  "type": 13,
-  "name": "Technology Expert",
-  "series": 3,
-  "seriesLabel": "Logistique",
-  "descriptionTemplate": "The technological output of the city +X",
-  "icon": "/img/wc4/skills/general_skill_13.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1131,
-      "effect": 1,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "The technological output of the city +1",
-      "renderedDescFr": "La technological output de la city +1"
-    },
-    {
-      "level": 2,
-      "skillId": 1132,
-      "effect": 2,
-      "chance": 100,
-      "costMedal": 260,
-      "renderedDesc": "The technological output of the city +2",
-      "renderedDescFr": "La technological output de la city +2"
-    },
-    {
-      "level": 3,
-      "skillId": 1133,
-      "effect": 3,
-      "chance": 100,
-      "costMedal": 360,
-      "renderedDesc": "The technological output of the city +3",
-      "renderedDescFr": "La technological output de la city +3"
-    },
-    {
-      "level": 4,
-      "skillId": 1134,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 470,
-      "renderedDesc": "The technological output of the city +4",
-      "renderedDescFr": "La technological output de la city +4"
-    },
-    {
-      "level": 5,
-      "skillId": 1135,
-      "effect": 5,
-      "chance": 100,
-      "costMedal": 570,
-      "renderedDesc": "The technological output of the city +5",
-      "renderedDescFr": "La technological output de la city +5"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 21044,
-        "level": 3
-      },
-      {
-        "generalId": 20011,
-        "level": 3
-      },
-      {
-        "generalId": 20021,
-        "level": 3
-      },
-      {
-        "generalId": 20091,
-        "level": 3
-      },
-      {
-        "generalId": 22025,
-        "level": 3
-      },
-      {
-        "generalId": 22028,
-        "level": 1
-      },
-      {
-        "generalId": 22051,
-        "level": 1
-      },
-      {
-        "generalId": 25250,
-        "level": 5
-      },
-      {
-        "generalId": 25253,
-        "level": 2
-      },
-      {
-        "generalId": 25381,
-        "level": 1
-      },
-      {
-        "generalId": 25443,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "technology-expert",
+ "type": 13,
+ "name": "Technology Expert",
+ "series": 3,
+ "seriesLabel": "Logistique",
+ "descriptionTemplate": "The technological output of the city +X",
+ "icon": "/img/wc4/skills/general_skill_13.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1131,
+   "effect": 1,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "The technological output of the city +1",
+   "renderedDescFr": "Production technologique de la ville +1",
+   "renderedDescDe": "Technologieleistung der Stadt +1"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Technology Expert",
-  "descriptionTemplateFr": "La technological output de la city +X",
-  "longDesc": "Compétence logistique de soutien. « Technology Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « The technological output of the city +5 ». À maxer sur un général de soutien qui se déplace peu.",
-  "longDescEn": "A logistics support skill. \"Technology Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"The technological output of the city +5\". Max this on a support general that moves little.",
-  "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Technology Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „The technological output of the city +5“. Auf einem bewegungsarmen Unterstützungs-General maxen."
+  {
+   "level": 2,
+   "skillId": 1132,
+   "effect": 2,
+   "chance": 100,
+   "costMedal": 260,
+   "renderedDesc": "The technological output of the city +2",
+   "renderedDescFr": "Production technologique de la ville +2",
+   "renderedDescDe": "Technologieleistung der Stadt +2"
+  },
+  {
+   "level": 3,
+   "skillId": 1133,
+   "effect": 3,
+   "chance": 100,
+   "costMedal": 360,
+   "renderedDesc": "The technological output of the city +3",
+   "renderedDescFr": "Production technologique de la ville +3",
+   "renderedDescDe": "Technologieleistung der Stadt +3"
+  },
+  {
+   "level": 4,
+   "skillId": 1134,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 470,
+   "renderedDesc": "The technological output of the city +4",
+   "renderedDescFr": "Production technologique de la ville +4",
+   "renderedDescDe": "Technologieleistung der Stadt +4"
+  },
+  {
+   "level": 5,
+   "skillId": 1135,
+   "effect": 5,
+   "chance": 100,
+   "costMedal": 570,
+   "renderedDesc": "The technological output of the city +5",
+   "renderedDescFr": "Production technologique de la ville +5",
+   "renderedDescDe": "Technologieleistung der Stadt +5"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 21044,
+    "level": 3
+   },
+   {
+    "generalId": 20011,
+    "level": 3
+   },
+   {
+    "generalId": 20021,
+    "level": 3
+   },
+   {
+    "generalId": 20091,
+    "level": 3
+   },
+   {
+    "generalId": 22025,
+    "level": 3
+   },
+   {
+    "generalId": 22028,
+    "level": 1
+   },
+   {
+    "generalId": 22051,
+    "level": 1
+   },
+   {
+    "generalId": 25250,
+    "level": 5
+   },
+   {
+    "generalId": 25253,
+    "level": 2
+   },
+   {
+    "generalId": 25381,
+    "level": 1
+   },
+   {
+    "generalId": 25443,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Technology Expert",
+ "descriptionTemplateFr": "Production technologique de la ville +X",
+ "longDesc": "Compétence logistique de soutien. « Technology Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « The technological output of the city +5 ». À maxer sur un général de soutien qui se déplace peu.",
+ "longDescEn": "A logistics support skill. \"Technology Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"The technological output of the city +5\". Max this on a support general that moves little.",
+ "longDescDe": "Eine logistische Unterstützungs-Fähigkeit. „Technology Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „The technological output of the city +5“. Auf einem bewegungsarmen Unterstützungs-General maxen.",
+ "nameDe": "Technologieexperte",
+ "descriptionTemplateDe": "Technologieleistung der Stadt +X"
 }

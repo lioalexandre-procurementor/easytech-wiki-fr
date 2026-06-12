@@ -148,7 +148,7 @@
     "intro": "organised exactly like the Academy. The 5 learnable series (Field Tactics, Command, Logistics, Defense, Offense) group all skills you can unlock with medals. The section",
     "introSignature": "General-specific skills",
     "introEnd": "covers every signature or training skill tied to a particular hero (Rokossovsky — Hero, Eisenhower — Super Commander, etc.).",
-    "introFootnote": "Each entry details the full description, the L1→L5 progression, the per-level medal cost and the list of generals who carry it. Descriptions are in English.",
+    "introFootnote": "Each entry details the full description, the L1→L5 progression, the per-level medal cost and the list of generals who carry it.",
     "searchPlaceholder": "🔎 Search for a skill…",
     "searchNoResults": "No skill matches your search.",
     "signatureBadge": "signature"
@@ -662,7 +662,8 @@
         "a": "World Conqueror 4 is available on iOS and Android, free to download with optional in-app purchases."
       }
     ],
-    "enterCta": "Enter"
+    "enterCta": "Enter",
+    "metaTitle": "World Conqueror 4, European War 6 & Great Conqueror Rome Wiki — Generals, Units & Tier Lists"
   },
   "formations": {
     "hub": {

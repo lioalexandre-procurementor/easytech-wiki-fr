@@ -1,92 +1,99 @@
 {
-  "slug": "ace-tank",
-  "type": 55,
-  "name": "Ace Tank",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding armored units to attack, ignore enemy units X% defense",
-  "icon": "/img/wc4/skills/general_skill_55.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1441,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 20% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées à attaque, ignore ennemi unités 20% défense"
-    },
-    {
-      "level": 2,
-      "skillId": 1442,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 40% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées à attaque, ignore ennemi unités 40% défense"
-    },
-    {
-      "level": 3,
-      "skillId": 1443,
-      "effect": 60,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 60% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées à attaque, ignore ennemi unités 60% défense"
-    },
-    {
-      "level": 4,
-      "skillId": 1444,
-      "effect": 80,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 80% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées à attaque, ignore ennemi unités 80% défense"
-    },
-    {
-      "level": 5,
-      "skillId": 1445,
-      "effect": 100,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "When commanding armored units to attack, ignore enemy units 100% defense",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées à attaque, ignore ennemi unités 100% défense"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1056,
-        "level": 5
-      },
-      {
-        "generalId": 22115,
-        "level": 1
-      },
-      {
-        "generalId": 22131,
-        "level": 1
-      },
-      {
-        "generalId": 25178,
-        "level": 5
-      },
-      {
-        "generalId": 25348,
-        "level": 1
-      },
-      {
-        "generalId": 25405,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "ace-tank",
+ "type": 55,
+ "name": "Ace Tank",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding armored units to attack, ignore enemy units X% defense",
+ "icon": "/img/wc4/skills/general_skill_55.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1441,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "When commanding armored units to attack, ignore enemy units 20% defense",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées à l'attaque, ignore 20% de la défense des unités ennemies",
+   "renderedDescDe": "Beim Angriff mit gepanzerten Einheiten werden 20% der Verteidigung feindlicher Einheiten ignoriert"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "As des blindés",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées à attaque, ignore ennemi unités X% défense",
-  "longDesc": "Compétence spécifique à un général. « As des blindés » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 100% défense ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Ace Tank\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units to attack, ignore enemy units 100% defense\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Tank“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units to attack, ignore enemy units 100% defense“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 1442,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "When commanding armored units to attack, ignore enemy units 40% defense",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées à l'attaque, ignore 40% de la défense des unités ennemies",
+   "renderedDescDe": "Beim Angriff mit gepanzerten Einheiten werden 40% der Verteidigung feindlicher Einheiten ignoriert"
+  },
+  {
+   "level": 3,
+   "skillId": 1443,
+   "effect": 60,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "When commanding armored units to attack, ignore enemy units 60% defense",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées à l'attaque, ignore 60% de la défense des unités ennemies",
+   "renderedDescDe": "Beim Angriff mit gepanzerten Einheiten werden 60% der Verteidigung feindlicher Einheiten ignoriert"
+  },
+  {
+   "level": 4,
+   "skillId": 1444,
+   "effect": 80,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "When commanding armored units to attack, ignore enemy units 80% defense",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées à l'attaque, ignore 80% de la défense des unités ennemies",
+   "renderedDescDe": "Beim Angriff mit gepanzerten Einheiten werden 80% der Verteidigung feindlicher Einheiten ignoriert"
+  },
+  {
+   "level": 5,
+   "skillId": 1445,
+   "effect": 100,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "When commanding armored units to attack, ignore enemy units 100% defense",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées à l'attaque, ignore 100% de la défense des unités ennemies",
+   "renderedDescDe": "Beim Angriff mit gepanzerten Einheiten werden 100% der Verteidigung feindlicher Einheiten ignoriert"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1056,
+    "level": 5
+   },
+   {
+    "generalId": 22115,
+    "level": 1
+   },
+   {
+    "generalId": 22131,
+    "level": 1
+   },
+   {
+    "generalId": 25178,
+    "level": 5
+   },
+   {
+    "generalId": 25348,
+    "level": 1
+   },
+   {
+    "generalId": 25405,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "As des blindés",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités blindées à l'attaque, ignore X% de la défense des unités ennemies",
+ "longDesc": "Compétence spécifique à un général. « As des blindés » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées to attaque, ignore unités ennemies 100% défense ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Ace Tank\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units to attack, ignore enemy units 100% defense\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Ace Tank“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units to attack, ignore enemy units 100% defense“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Panzer-Ass",
+ "descriptionTemplateDe": "Beim Angriff mit gepanzerten Einheiten werden X% der Verteidigung feindlicher Einheiten ignoriert"
 }

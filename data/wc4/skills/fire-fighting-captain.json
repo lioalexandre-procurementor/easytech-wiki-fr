@@ -1,82 +1,89 @@
 {
-  "slug": "fire-fighting-captain",
-  "type": 169,
-  "name": "Fire-Fighting Captain",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a X% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
-  "icon": "/img/wc4/skills/general_skill_169.png",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3691,
-      "effect": 14,
-      "chance": 14,
-      "costMedal": 160,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 14% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gagne +3 mobility. Après avoir éliminé un ennemi, il y a un 14% chances à attaque à nouveau, which augmente de une additional 10% pour chaque 200 HP les unités has."
-    },
-    {
-      "level": 2,
-      "skillId": 3692,
-      "effect": 28,
-      "chance": 28,
-      "costMedal": 240,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 28% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gagne +3 mobility. Après avoir éliminé un ennemi, il y a un 28% chances à attaque à nouveau, which augmente de une additional 10% pour chaque 200 HP les unités has."
-    },
-    {
-      "level": 3,
-      "skillId": 3693,
-      "effect": 42,
-      "chance": 42,
-      "costMedal": 480,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 42% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gagne +3 mobility. Après avoir éliminé un ennemi, il y a un 42% chances à attaque à nouveau, which augmente de une additional 10% pour chaque 200 HP les unités has."
-    },
-    {
-      "level": 4,
-      "skillId": 3694,
-      "effect": 56,
-      "chance": 56,
-      "costMedal": 640,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 56% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gagne +3 mobility. Après avoir éliminé un ennemi, il y a un 56% chances à attaque à nouveau, which augmente de une additional 10% pour chaque 200 HP les unités has."
-    },
-    {
-      "level": 5,
-      "skillId": 3695,
-      "effect": 70,
-      "chance": 70,
-      "costMedal": 800,
-      "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
-      "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, gagne +3 mobility. Après avoir éliminé un ennemi, il y a un 70% chances à attaque à nouveau, which augmente de une additional 10% pour chaque 200 HP les unités has."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25457,
-        "level": 5
-      },
-      {
-        "generalId": 25478,
-        "level": 1
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1018,
-        "level": 5,
-        "promotionId": 10181
-      }
-    ]
+ "slug": "fire-fighting-captain",
+ "type": 169,
+ "name": "Fire-Fighting Captain",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a X% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+ "icon": "/img/wc4/skills/general_skill_169.png",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3691,
+   "effect": 14,
+   "chance": 14,
+   "costMedal": 160,
+   "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 14% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+   "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, 14% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+   "renderedDescDe": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine 14% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Fire-Fighting Captain",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, gagne +3 mobility. Après avoir éliminé un ennemi, il y a un X% chances à attaque à nouveau, which augmente de une additional 10% pour chaque 200 HP les unités has.",
-  "longDesc": "Compétence spécifique à un général. « Fire-Fighting Captain » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 70% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Fire-Fighting Captain\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Fire-Fighting Captain“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 3692,
+   "effect": 28,
+   "chance": 28,
+   "costMedal": 240,
+   "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 28% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+   "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, 28% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+   "renderedDescDe": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine 28% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt."
+  },
+  {
+   "level": 3,
+   "skillId": 3693,
+   "effect": 42,
+   "chance": 42,
+   "costMedal": 480,
+   "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 42% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+   "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, 42% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+   "renderedDescDe": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine 42% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt."
+  },
+  {
+   "level": 4,
+   "skillId": 3694,
+   "effect": 56,
+   "chance": 56,
+   "costMedal": 640,
+   "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 56% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+   "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, 56% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+   "renderedDescDe": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine 56% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt."
+  },
+  {
+   "level": 5,
+   "skillId": 3695,
+   "effect": 70,
+   "chance": 70,
+   "costMedal": 800,
+   "renderedDesc": "When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.",
+   "renderedDescFr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, 70% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+   "renderedDescDe": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine 70% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25457,
+    "level": 5
+   },
+   {
+    "generalId": 25478,
+    "level": 1
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1018,
+    "level": 5,
+    "promotionId": 10181
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Fire-Fighting Captain",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, X% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+ "longDesc": "Compétence spécifique à un général. « Fire-Fighting Captain » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités d'artillerie, gain +3 mobility. Après avoir éliminé un ennemi, there is a 70% chance to attaque again, which augmente by an additional 10% for every 200 PV the unité has. ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Fire-Fighting Captain\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Fire-Fighting Captain“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding artillery units, gain +3 mobility. After eliminating an enemy, there is a 70% chance to attack again, which increases by an additional 10% for every 200 HP the unit has.“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Feuerkampf-Kapitän",
+ "descriptionTemplateDe": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine X% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt."
 }

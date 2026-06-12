@@ -1,90 +1,97 @@
 {
-  "slug": "heroic-charge",
-  "type": 145,
-  "name": "Heroic Charge",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding armored units, for every enemy within 2 hexes, dealt damage +X% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
-  "icon": "/img/wc4/skills/general_skill_145.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3451,
-      "effect": 2,
-      "chance": 100,
-      "costMedal": 150,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +2% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, pour chaque ennemi within 2 hexes, dealt dégâts +2% (Maximum 50%). Lorsque blindé unités have high morale, lower dégâts received de 20%"
-    },
-    {
-      "level": 2,
-      "skillId": 3452,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +4% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, pour chaque ennemi within 2 hexes, dealt dégâts +4% (Maximum 50%). Lorsque blindé unités have high morale, lower dégâts received de 20%"
-    },
-    {
-      "level": 3,
-      "skillId": 3453,
-      "effect": 6,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +6% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, pour chaque ennemi within 2 hexes, dealt dégâts +6% (Maximum 50%). Lorsque blindé unités have high morale, lower dégâts received de 20%"
-    },
-    {
-      "level": 4,
-      "skillId": 3454,
-      "effect": 8,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +8% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, pour chaque ennemi within 2 hexes, dealt dégâts +8% (Maximum 50%). Lorsque blindé unités have high morale, lower dégâts received de 20%"
-    },
-    {
-      "level": 5,
-      "skillId": 3455,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 550,
-      "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, pour chaque ennemi within 2 hexes, dealt dégâts +10% (Maximum 50%). Lorsque blindé unités have high morale, lower dégâts received de 20%"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25346,
-        "level": 5
-      },
-      {
-        "generalId": 25353,
-        "level": 5
-      },
-      {
-        "generalId": 25359,
-        "level": 1
-      },
-      {
-        "generalId": 25376,
-        "level": 1
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1037,
-        "level": 5,
-        "promotionId": 10371
-      }
-    ]
+ "slug": "heroic-charge",
+ "type": 145,
+ "name": "Heroic Charge",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding armored units, for every enemy within 2 hexes, dealt damage +X% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+ "icon": "/img/wc4/skills/general_skill_145.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3451,
+   "effect": 2,
+   "chance": 100,
+   "costMedal": 150,
+   "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +2% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +2% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +2% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Charge héroïque",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, pour chaque ennemi within 2 hexes, dealt dégâts +X% (Maximum 50%). Lorsque blindé unités have high morale, lower dégâts received de 20%",
-  "longDesc": "Compétence spécifique à un général. « Charge héroïque » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +10% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Heroic Charge\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Heroic Charge“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3452,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +4% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +4% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +4% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%"
+  },
+  {
+   "level": 3,
+   "skillId": 3453,
+   "effect": 6,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +6% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +6% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +6% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%"
+  },
+  {
+   "level": 4,
+   "skillId": 3454,
+   "effect": 8,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +8% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +8% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +8% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%"
+  },
+  {
+   "level": 5,
+   "skillId": 3455,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 550,
+   "renderedDesc": "When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +10% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +10% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25346,
+    "level": 5
+   },
+   {
+    "generalId": 25353,
+    "level": 5
+   },
+   {
+    "generalId": 25359,
+    "level": 1
+   },
+   {
+    "generalId": 25376,
+    "level": 1
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1037,
+    "level": 5,
+    "promotionId": 10371
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Charge héroïque",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dégâts infligés +X% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+ "longDesc": "Compétence spécifique à un général. « Charge héroïque » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, for every ennemi dans un rayon de 2 hex, dégâts infligés +10% (Maximum 50%). When unités blindées have moral élevé, réduit les dégâts reçus de 20% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Heroic Charge\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Heroic Charge“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, for every enemy within 2 hexes, dealt damage +10% (Maximum 50%). When armored units have high morale, lower damage received by 20%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Heldenhafter Sturmangriff",
+ "descriptionTemplateDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +X% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%"
 }

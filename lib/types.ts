@@ -332,9 +332,11 @@ export interface SkillProgression {
   costMedal: number;
   /** Template with %d substituted — the in-game player-facing text. */
   renderedDesc: string;
-  /** First-pass FR translation of renderedDesc. May partially contain English
-   *  for phrases not yet covered by the phrase-level translator. */
+  /** Curated FR translation of renderedDesc (re-rendered from
+   *  descriptionTemplateFr by scripts/i18n/apply_skill_translations.py). */
   renderedDescFr?: string;
+  /** Curated DE translation of renderedDesc (same pipeline as FR). */
+  renderedDescDe?: string;
 }
 
 export interface SkillUsageEntry {
@@ -349,12 +351,16 @@ export interface SkillCatalogEntry {
   name: string;               // English canonical name
   /** Hand-curated FR display name (falls back to `name` when absent). */
   nameFr?: string;
+  /** Curated DE display name (falls back to `name` when absent). */
+  nameDe?: string;
   series: number;             // 0 = signature, 1..5 = learnable series
   seriesLabel: string;
   /** Template with placeholder rendered as `X` — the generic description. */
   descriptionTemplate: string;
-  /** First-pass FR translation of descriptionTemplate. */
+  /** Curated FR translation of descriptionTemplate. */
   descriptionTemplateFr?: string;
+  /** Curated DE translation of descriptionTemplate. */
+  descriptionTemplateDe?: string;
   icon: string | null;
   maxLevel: number;
   progression: SkillProgression[];
@@ -377,13 +383,17 @@ export interface SkillIndexItem {
   name: string;
   /** Hand-curated FR display name. */
   nameFr?: string;
+  /** Curated DE display name. */
+  nameDe?: string;
   series: number;
   seriesLabel: string;
   seriesSlug: string;
   icon: string | null;
   shortDesc: string;
-  /** First-pass FR translation of shortDesc. */
+  /** Curated FR translation of shortDesc. */
   shortDescFr?: string;
+  /** Curated DE translation of shortDesc. */
+  shortDescDe?: string;
   maxLevel: number;
 }
 

@@ -8,6 +8,7 @@ import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 import type { ComparableRow, UnitData } from "@/lib/types";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -19,6 +20,10 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "comparatorPage" });
+  const ogImages = ogImage({
+    title: t("seoTitle"),
+    sub: "European War 6",
+  });
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
@@ -40,6 +45,7 @@ export async function generateMetadata({
       type: "website",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

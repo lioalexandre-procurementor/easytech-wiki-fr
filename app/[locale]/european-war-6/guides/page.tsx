@@ -8,6 +8,7 @@ import { getAllGuides } from "@/lib/guides";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -19,6 +20,10 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "guidesPage" });
+  const ogImages = ogImage({
+    title: t("seoTitle"),
+    sub: "European War 6",
+  });
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
@@ -36,6 +41,7 @@ export async function generateMetadata({
       description: t("seoDescription"),
       type: "website",
       locale: ogLocale(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

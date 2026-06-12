@@ -6,6 +6,7 @@ import UnitComparatorClient from "@/components/UnitComparatorClient";
 import { getAllEliteUnits } from "@/lib/gcr";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
+import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
 import type { ComparableRow, UnitData } from "@/lib/types";
 
@@ -19,6 +20,10 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "comparatorPage" });
+  const ogImages = ogImage({
+    title: t("seoTitle"),
+    sub: "Great Conqueror: Rome",
+  });
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
@@ -40,6 +45,7 @@ export async function generateMetadata({
       type: "website",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

@@ -12,6 +12,7 @@ import { splitGeneralName } from "@/lib/general-name";
 import { localizedUnitField } from "@/lib/localized-copy";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
+import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
 
 /**
@@ -45,6 +46,11 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "premiumTrainingPage" });
   const name = g.nameEn || g.name;
   const baseSlugSegment = locale === "fr" ? "generaux" : "generals";
+  const ogImages = ogImage({
+    title: name,
+    sub: "World Conqueror 4",
+    img: g.image?.headTrained ?? g.image?.head,
+  });
   return {
     title: t("seoTitle", { name }),
     description: t("seoDesc", { name }),
@@ -63,11 +69,13 @@ export async function generateMetadata({
       type: "article",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     twitter: {
       card: "summary_large_image",
       title: t("seoTitle", { name }),
       description: t("seoDesc", { name }),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };
@@ -89,6 +97,7 @@ export default async function PremiumTrainingPage({
 
   const t = await getTranslations();
   const isFr = locale === "fr";
+  const isDe = locale === "de";
   // Top-level header keeps the English canonical (stable across locales for
   // SEO/branding). Skill rows below resolve to locale-aware names via the
   // `nameForSkill`/`descForSkill` helpers.
@@ -110,6 +119,7 @@ export default async function PremiumTrainingPage({
     if (s.name === "Emplacement libre") return FREE_SLOT_LABEL[locale] ?? FREE_SLOT_LABEL.en;
     const cat = s.skillSlug ? getSkill(s.skillSlug) : null;
     if (isFr) return cat?.nameFr || s.name;
+    if (isDe) return cat?.nameDe || cat?.name || s.nameEn || s.name;
     return cat?.name || s.nameEn || s.name;
   };
   const descForSkill = (s: {
@@ -133,7 +143,15 @@ export default async function PremiumTrainingPage({
         s.desc
       );
     }
-    // English/German share the English source data (no per-locale skill descriptions).
+    if (isDe) {
+      return (
+        prog?.renderedDescDe ||
+        cat?.descriptionTemplateDe ||
+        prog?.renderedDesc ||
+        cat?.descriptionTemplate ||
+        s.desc
+      );
+    }
     return prog?.renderedDesc || cat?.descriptionTemplate || s.desc;
   };
 

@@ -1,80 +1,87 @@
 {
-  "slug": "battlefield-intuition",
-  "type": 150,
-  "name": "Battlefield Intuition",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +X%",
-  "icon": "/img/wc4/skills/general_skill_150.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3501,
-      "effect": 5,
-      "chance": 100,
-      "costMedal": 150,
-      "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +5%",
-      "renderedDescFr": "Commanded unités ignore smoke bomb, phantom status, esquive effets, et EMCON. Dealt dégâts à ennemi below half HP +5%"
-    },
-    {
-      "level": 2,
-      "skillId": 3502,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +10%",
-      "renderedDescFr": "Commanded unités ignore smoke bomb, phantom status, esquive effets, et EMCON. Dealt dégâts à ennemi below half HP +10%"
-    },
-    {
-      "level": 3,
-      "skillId": 3503,
-      "effect": 15,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +15%",
-      "renderedDescFr": "Commanded unités ignore smoke bomb, phantom status, esquive effets, et EMCON. Dealt dégâts à ennemi below half HP +15%"
-    },
-    {
-      "level": 4,
-      "skillId": 3504,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +20%",
-      "renderedDescFr": "Commanded unités ignore smoke bomb, phantom status, esquive effets, et EMCON. Dealt dégâts à ennemi below half HP +20%"
-    },
-    {
-      "level": 5,
-      "skillId": 3505,
-      "effect": 25,
-      "chance": 100,
-      "costMedal": 550,
-      "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%",
-      "renderedDescFr": "Commanded unités ignore smoke bomb, phantom status, esquive effets, et EMCON. Dealt dégâts à ennemi below half HP +25%"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1104,
-        "level": 3
-      },
-      {
-        "generalId": 25344,
-        "level": 1
-      },
-      {
-        "generalId": 25386,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "battlefield-intuition",
+ "type": 150,
+ "name": "Battlefield Intuition",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +X%",
+ "icon": "/img/wc4/skills/general_skill_150.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3501,
+   "effect": 5,
+   "chance": 100,
+   "costMedal": 150,
+   "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +5%",
+   "renderedDescFr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +5%",
+   "renderedDescDe": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +5%"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Battlefield Intuition",
-  "descriptionTemplateFr": "Commanded unités ignore smoke bomb, phantom status, esquive effets, et EMCON. Dealt dégâts à ennemi below half HP +X%",
-  "longDesc": "Compétence spécifique à un général. « Battlefield Intuition » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Commanded unités ignore smoke bomb, phantom status, esquive effect, and EMCON. Dealt dégâts to ennemi below half PV +25% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Battlefield Intuition\" scales up to level 5. At max level (5), the skill applies the following effect: \"Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Battlefield Intuition“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3502,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +10%",
+   "renderedDescFr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +10%",
+   "renderedDescDe": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +10%"
+  },
+  {
+   "level": 3,
+   "skillId": 3503,
+   "effect": 15,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +15%",
+   "renderedDescFr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +15%",
+   "renderedDescDe": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +15%"
+  },
+  {
+   "level": 4,
+   "skillId": 3504,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +20%",
+   "renderedDescFr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +20%",
+   "renderedDescDe": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +20%"
+  },
+  {
+   "level": 5,
+   "skillId": 3505,
+   "effect": 25,
+   "chance": 100,
+   "costMedal": 550,
+   "renderedDesc": "Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%",
+   "renderedDescFr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +25%",
+   "renderedDescDe": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +25%"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1104,
+    "level": 3
+   },
+   {
+    "generalId": 25344,
+    "level": 1
+   },
+   {
+    "generalId": 25386,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Battlefield Intuition",
+ "descriptionTemplateFr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +X%",
+ "longDesc": "Compétence spécifique à un général. « Battlefield Intuition » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Commanded unités ignore smoke bomb, phantom status, esquive effect, and EMCON. Dealt dégâts to ennemi below half PV +25% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Battlefield Intuition\" scales up to level 5. At max level (5), the skill applies the following effect: \"Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Battlefield Intuition“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Commanded units ignore smoke bomb, phantom status, dodge effect, and EMCON. Dealt damage to enemy below half HP +25%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Schlachtfeldintuition",
+ "descriptionTemplateDe": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +X%"
 }

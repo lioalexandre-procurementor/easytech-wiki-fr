@@ -9,6 +9,7 @@ import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import type { Metadata } from "next";
 import type { ComparableRow, UnitData } from "@/lib/types";
+import { ogImage } from "@/lib/og";
 
 function unitToRow(u: UnitData): ComparableRow {
   const lastIdx = Math.max(0, u.stats.atk.length - 1);
@@ -67,6 +68,10 @@ export async function generateMetadata({
   const loc = locale as Locale;
   const aName = loc === "fr" ? a.name : a.nameEn || a.name;
   const bName = loc === "fr" ? b.name : b.nameEn || b.name;
+  const ogImages = ogImage({
+    title: `${aName} vs ${bName}`,
+    sub: "European War 6",
+  });
   return {
     title: t("matchupTitle", { a: aName, b: bName }),
     description: t("matchupDescription", { a: aName, b: bName }),
@@ -85,6 +90,7 @@ export async function generateMetadata({
       type: "article",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

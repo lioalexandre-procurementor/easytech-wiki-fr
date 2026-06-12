@@ -1,108 +1,115 @@
 {
-  "slug": "artillery-armor",
-  "type": 60,
-  "name": "Artillery armor",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Defense +X% when commanding artillery units",
-  "icon": "/img/wc4/skills/general_skill_60.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1491,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Defense +40% when commanding artillery units",
-      "renderedDescFr": "Défense +40% lorsque vous commandez des unités d'artillerie"
-    },
-    {
-      "level": 2,
-      "skillId": 1492,
-      "effect": 55,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Defense +55% when commanding artillery units",
-      "renderedDescFr": "Défense +55% lorsque vous commandez des unités d'artillerie"
-    },
-    {
-      "level": 3,
-      "skillId": 1493,
-      "effect": 70,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Defense +70% when commanding artillery units",
-      "renderedDescFr": "Défense +70% lorsque vous commandez des unités d'artillerie"
-    },
-    {
-      "level": 4,
-      "skillId": 1494,
-      "effect": 85,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Defense +85% when commanding artillery units",
-      "renderedDescFr": "Défense +85% lorsque vous commandez des unités d'artillerie"
-    },
-    {
-      "level": 5,
-      "skillId": 1495,
-      "effect": 100,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Defense +100% when commanding artillery units",
-      "renderedDescFr": "Défense +100% lorsque vous commandez des unités d'artillerie"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1058,
-        "level": 5
-      },
-      {
-        "generalId": 1079,
-        "level": 3
-      },
-      {
-        "generalId": 22118,
-        "level": 5
-      },
-      {
-        "generalId": 22120,
-        "level": 5
-      },
-      {
-        "generalId": 22121,
-        "level": 5
-      },
-      {
-        "generalId": 22133,
-        "level": 1
-      },
-      {
-        "generalId": 25177,
-        "level": 5
-      },
-      {
-        "generalId": 25214,
-        "level": 3
-      },
-      {
-        "generalId": 25234,
-        "level": 5
-      },
-      {
-        "generalId": 25409,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "artillery-armor",
+ "type": 60,
+ "name": "Artillery armor",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Defense +X% when commanding artillery units",
+ "icon": "/img/wc4/skills/general_skill_60.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1491,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Defense +40% when commanding artillery units",
+   "renderedDescFr": "Défense +40% lorsque vous commandez des unités d'artillerie",
+   "renderedDescDe": "Verteidigung +40%, wenn Sie Artillerieeinheiten befehligen"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Artillerie blindage",
-  "descriptionTemplateFr": "Défense +X% lorsque vous commandez des unités d'artillerie",
-  "longDesc": "Compétence spécifique à un général. « Artillerie blindage » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Défense +100% lorsque vous commandez des unités d'artillerie ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"Artillery armor\" scales up to level 5. At max level (5), the skill applies the following effect: \"Defense +100% when commanding artillery units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery armor“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Defense +100% when commanding artillery units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 1492,
+   "effect": 55,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Defense +55% when commanding artillery units",
+   "renderedDescFr": "Défense +55% lorsque vous commandez des unités d'artillerie",
+   "renderedDescDe": "Verteidigung +55%, wenn Sie Artillerieeinheiten befehligen"
+  },
+  {
+   "level": 3,
+   "skillId": 1493,
+   "effect": 70,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Defense +70% when commanding artillery units",
+   "renderedDescFr": "Défense +70% lorsque vous commandez des unités d'artillerie",
+   "renderedDescDe": "Verteidigung +70%, wenn Sie Artillerieeinheiten befehligen"
+  },
+  {
+   "level": 4,
+   "skillId": 1494,
+   "effect": 85,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Defense +85% when commanding artillery units",
+   "renderedDescFr": "Défense +85% lorsque vous commandez des unités d'artillerie",
+   "renderedDescDe": "Verteidigung +85%, wenn Sie Artillerieeinheiten befehligen"
+  },
+  {
+   "level": 5,
+   "skillId": 1495,
+   "effect": 100,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Defense +100% when commanding artillery units",
+   "renderedDescFr": "Défense +100% lorsque vous commandez des unités d'artillerie",
+   "renderedDescDe": "Verteidigung +100%, wenn Sie Artillerieeinheiten befehligen"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1058,
+    "level": 5
+   },
+   {
+    "generalId": 1079,
+    "level": 3
+   },
+   {
+    "generalId": 22118,
+    "level": 5
+   },
+   {
+    "generalId": 22120,
+    "level": 5
+   },
+   {
+    "generalId": 22121,
+    "level": 5
+   },
+   {
+    "generalId": 22133,
+    "level": 1
+   },
+   {
+    "generalId": 25177,
+    "level": 5
+   },
+   {
+    "generalId": 25214,
+    "level": 3
+   },
+   {
+    "generalId": 25234,
+    "level": 5
+   },
+   {
+    "generalId": 25409,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Artillerie blindage",
+ "descriptionTemplateFr": "Défense +X% lorsque vous commandez des unités d'artillerie",
+ "longDesc": "Compétence spécifique à un général. « Artillerie blindage » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Défense +100% lorsque vous commandez des unités d'artillerie ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"Artillery armor\" scales up to level 5. At max level (5), the skill applies the following effect: \"Defense +100% when commanding artillery units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Artillery armor“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Defense +100% when commanding artillery units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Artilleriepanzerung",
+ "descriptionTemplateDe": "Verteidigung +X%, wenn Sie Artillerieeinheiten befehligen"
 }

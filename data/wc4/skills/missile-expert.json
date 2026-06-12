@@ -1,76 +1,83 @@
 {
-  "slug": "missile-expert",
-  "type": 58,
-  "name": "Missile Expert",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Consumption of resources When attacking with missiles -X%",
-  "icon": "/img/wc4/skills/general_skill_58.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1471,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Consumption of resources When attacking with missiles -10%",
-      "renderedDescFr": "Consommation de resources lorsque attaquant avec missile -10%"
-    },
-    {
-      "level": 2,
-      "skillId": 1472,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Consumption of resources When attacking with missiles -20%",
-      "renderedDescFr": "Consommation de resources lorsque attaquant avec missile -20%"
-    },
-    {
-      "level": 3,
-      "skillId": 1473,
-      "effect": 30,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Consumption of resources When attacking with missiles -30%",
-      "renderedDescFr": "Consommation de resources lorsque attaquant avec missile -30%"
-    },
-    {
-      "level": 4,
-      "skillId": 1474,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Consumption of resources When attacking with missiles -40%",
-      "renderedDescFr": "Consommation de resources lorsque attaquant avec missile -40%"
-    },
-    {
-      "level": 5,
-      "skillId": 1475,
-      "effect": 50,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Consumption of resources When attacking with missiles -50%",
-      "renderedDescFr": "Consommation de resources lorsque attaquant avec missile -50%"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1057,
-        "level": 5
-      },
-      {
-        "generalId": 25176,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "missile-expert",
+ "type": 58,
+ "name": "Missile Expert",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Consumption of resources When attacking with missiles -X%",
+ "icon": "/img/wc4/skills/general_skill_58.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1471,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Consumption of resources When attacking with missiles -10%",
+   "renderedDescFr": "Consommation de ressources lors des attaques de missiles -10%",
+   "renderedDescDe": "Ressourcenverbrauch bei Raketenangriffen -10%"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Missile Expert",
-  "descriptionTemplateFr": "Consommation de resources lorsque attaquant avec missile -X%",
-  "longDesc": "Compétence spécifique à un général. « Missile Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Consumption of resources lors d'une attaque with missiles -50% ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Missile Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Consumption of resources When attacking with missiles -50%\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Missile Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Consumption of resources When attacking with missiles -50%“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 1472,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Consumption of resources When attacking with missiles -20%",
+   "renderedDescFr": "Consommation de ressources lors des attaques de missiles -20%",
+   "renderedDescDe": "Ressourcenverbrauch bei Raketenangriffen -20%"
+  },
+  {
+   "level": 3,
+   "skillId": 1473,
+   "effect": 30,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Consumption of resources When attacking with missiles -30%",
+   "renderedDescFr": "Consommation de ressources lors des attaques de missiles -30%",
+   "renderedDescDe": "Ressourcenverbrauch bei Raketenangriffen -30%"
+  },
+  {
+   "level": 4,
+   "skillId": 1474,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Consumption of resources When attacking with missiles -40%",
+   "renderedDescFr": "Consommation de ressources lors des attaques de missiles -40%",
+   "renderedDescDe": "Ressourcenverbrauch bei Raketenangriffen -40%"
+  },
+  {
+   "level": 5,
+   "skillId": 1475,
+   "effect": 50,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Consumption of resources When attacking with missiles -50%",
+   "renderedDescFr": "Consommation de ressources lors des attaques de missiles -50%",
+   "renderedDescDe": "Ressourcenverbrauch bei Raketenangriffen -50%"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1057,
+    "level": 5
+   },
+   {
+    "generalId": 25176,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Missile Expert",
+ "descriptionTemplateFr": "Consommation de ressources lors des attaques de missiles -X%",
+ "longDesc": "Compétence spécifique à un général. « Missile Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Consumption of resources lors d'une attaque with missiles -50% ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Missile Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Consumption of resources When attacking with missiles -50%\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Missile Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Consumption of resources When attacking with missiles -50%“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Raketenexperte",
+ "descriptionTemplateDe": "Ressourcenverbrauch bei Raketenangriffen -X%"
 }

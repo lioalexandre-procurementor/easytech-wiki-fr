@@ -1,112 +1,119 @@
 {
-  "slug": "inspection",
-  "type": 120,
-  "name": "Inspection",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of X% for 1 turn.",
-  "icon": "/img/wc4/skills/general_skill_120.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3201,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 120,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 20% for 1 turn.",
-      "renderedDescFr": "Après commandant l'aviation unités à attaque, la target gagne la terrified state avec un réduit counterattack taux de 20% pour 1 tour."
-    },
-    {
-      "level": 2,
-      "skillId": 3202,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 170,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 40% for 1 turn.",
-      "renderedDescFr": "Après commandant l'aviation unités à attaque, la target gagne la terrified state avec un réduit counterattack taux de 40% pour 1 tour."
-    },
-    {
-      "level": 3,
-      "skillId": 3203,
-      "effect": 60,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 60% for 1 turn.",
-      "renderedDescFr": "Après commandant l'aviation unités à attaque, la target gagne la terrified state avec un réduit counterattack taux de 60% pour 1 tour."
-    },
-    {
-      "level": 4,
-      "skillId": 3204,
-      "effect": 80,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 80% for 1 turn.",
-      "renderedDescFr": "Après commandant l'aviation unités à attaque, la target gagne la terrified state avec un réduit counterattack taux de 80% pour 1 tour."
-    },
-    {
-      "level": 5,
-      "skillId": 3205,
-      "effect": 100,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.",
-      "renderedDescFr": "Après commandant l'aviation unités à attaque, la target gagne la terrified state avec un réduit counterattack taux de 100% pour 1 tour."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1078,
-        "level": 3
-      },
-      {
-        "generalId": 1086,
-        "level": 4
-      },
-      {
-        "generalId": 22126,
-        "level": 1
-      },
-      {
-        "generalId": 22127,
-        "level": 1
-      },
-      {
-        "generalId": 25213,
-        "level": 5
-      },
-      {
-        "generalId": 25216,
-        "level": 2
-      },
-      {
-        "generalId": 25275,
-        "level": 5
-      },
-      {
-        "generalId": 25286,
-        "level": 5
-      },
-      {
-        "generalId": 25304,
-        "level": 1
-      },
-      {
-        "generalId": 25311,
-        "level": 1
-      },
-      {
-        "generalId": 25466,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "inspection",
+ "type": 120,
+ "name": "Inspection",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of X% for 1 turn.",
+ "icon": "/img/wc4/skills/general_skill_120.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3201,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 120,
+   "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 20% for 1 turn.",
+   "renderedDescFr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de 20% pendant 1 tour.",
+   "renderedDescDe": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um 20% gesenkt, für 1 Runde."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Inspection",
-  "descriptionTemplateFr": "Après commandant l'aviation unités à attaque, la target gagne la terrified state avec un réduit counterattack taux de X% pour 1 tour.",
-  "longDesc": "Compétence spécifique à un général. « Inspection » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 100% pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"Inspection\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Inspection“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 3202,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 170,
+   "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 40% for 1 turn.",
+   "renderedDescFr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de 40% pendant 1 tour.",
+   "renderedDescDe": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um 40% gesenkt, für 1 Runde."
+  },
+  {
+   "level": 3,
+   "skillId": 3203,
+   "effect": 60,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 60% for 1 turn.",
+   "renderedDescFr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de 60% pendant 1 tour.",
+   "renderedDescDe": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um 60% gesenkt, für 1 Runde."
+  },
+  {
+   "level": 4,
+   "skillId": 3204,
+   "effect": 80,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 80% for 1 turn.",
+   "renderedDescFr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de 80% pendant 1 tour.",
+   "renderedDescDe": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um 80% gesenkt, für 1 Runde."
+  },
+  {
+   "level": 5,
+   "skillId": 3205,
+   "effect": 100,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.",
+   "renderedDescFr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de 100% pendant 1 tour.",
+   "renderedDescDe": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um 100% gesenkt, für 1 Runde."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1078,
+    "level": 3
+   },
+   {
+    "generalId": 1086,
+    "level": 4
+   },
+   {
+    "generalId": 22126,
+    "level": 1
+   },
+   {
+    "generalId": 22127,
+    "level": 1
+   },
+   {
+    "generalId": 25213,
+    "level": 5
+   },
+   {
+    "generalId": 25216,
+    "level": 2
+   },
+   {
+    "generalId": 25275,
+    "level": 5
+   },
+   {
+    "generalId": 25286,
+    "level": 5
+   },
+   {
+    "generalId": 25304,
+    "level": 1
+   },
+   {
+    "generalId": 25311,
+    "level": 1
+   },
+   {
+    "generalId": 25466,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Inspection",
+ "descriptionTemplateFr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de X% pendant 1 tour.",
+ "longDesc": "Compétence spécifique à un général. « Inspection » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « After commanding an aviation unité to attaque, the cible gains the terrified state with a réduit counterattack rate of 100% pendant 1 tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"Inspection\" scales up to level 5. At max level (5), the skill applies the following effect: \"After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Inspection“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After commanding an airforce unit to attack, the target gains the terrified state with a reduced counterattack rate of 100% for 1 turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Inspektion",
+ "descriptionTemplateDe": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um X% gesenkt, für 1 Runde."
 }

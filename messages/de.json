@@ -148,7 +148,7 @@
     "intro": "genau wie in der Akademie organisiert. Die 5 lernbaren Reihen (Feldtaktik, Kommando, Logistik, Verteidigung, Offensive) gruppieren alle Fähigkeiten, die du mit Medaillen freischalten kannst. Der Abschnitt",
     "introSignature": "Generalsspezifische Fähigkeiten",
     "introEnd": "umfasst alle Signature- oder Trainingsfähigkeiten, die an einen bestimmten Helden gebunden sind (Rokossovsky — Hero, Eisenhower — Super Commander usw.).",
-    "introFootnote": "Jeder Eintrag beschreibt die vollständige Wirkung, den Verlauf L1→L5, die Medaillenkosten pro Stufe und die Liste der Generäle, die ihn tragen. Beschreibungen sind auf Englisch.",
+    "introFootnote": "Jeder Eintrag beschreibt die vollständige Wirkung, den Verlauf L1→L5, die Medaillenkosten pro Stufe und die Liste der Generäle, die ihn tragen.",
     "searchPlaceholder": "🔎 Fähigkeit suchen…",
     "searchNoResults": "Keine Fähigkeit entspricht deiner Suche.",
     "signatureBadge": "Signature"
@@ -662,7 +662,8 @@
         "a": "World Conqueror 4 ist kostenlos auf iOS und Android erhältlich, mit optionalen In-App-Käufen."
       }
     ],
-    "enterCta": "Eingeben"
+    "enterCta": "Eingeben",
+    "metaTitle": "World Conqueror 4, European War 6 & Great Conqueror Rome Wiki — Generäle, Einheiten & Tier-Listen"
   },
   "formations": {
     "hub": {

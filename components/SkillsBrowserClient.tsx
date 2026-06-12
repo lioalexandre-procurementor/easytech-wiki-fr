@@ -9,6 +9,14 @@ type SkillsBrowserClientProps = {
   sections: SkillSeriesMeta[];
   allSkills: SkillIndexItem[];
   isFr: boolean;
+  isDe?: boolean;
+  /**
+   * Locale-internal base path of the skill detail pages, e.g.
+   * "/european-war-6/competences". Defaults to the WC4 path — before
+   * 2026-06-12 this was hardcoded, which sent EW6/GCR skill cards to
+   * /world-conqueror-4/... (wrong game, mostly 404).
+   */
+  hrefBase?: string;
   t: {
     searchPlaceholder: string;
     searchNoResults: string;
@@ -28,6 +36,8 @@ export function SkillsBrowserClient({
   sections,
   allSkills,
   isFr,
+  isDe,
+  hrefBase = "/world-conqueror-4/competences",
   t,
 }: SkillsBrowserClientProps) {
   const [query, setQuery] = useState("");
@@ -44,13 +54,17 @@ export function SkillsBrowserClient({
     return allSkills.filter((sk) => {
       const name = sk.name?.toLowerCase() ?? "";
       const nameFr = sk.nameFr?.toLowerCase() ?? "";
+      const nameDe = sk.nameDe?.toLowerCase() ?? "";
       const short = sk.shortDesc?.toLowerCase() ?? "";
       const shortFr = sk.shortDescFr?.toLowerCase() ?? "";
+      const shortDe = sk.shortDescDe?.toLowerCase() ?? "";
       return (
         name.includes(normalized) ||
         nameFr.includes(normalized) ||
+        nameDe.includes(normalized) ||
         short.includes(normalized) ||
-        shortFr.includes(normalized)
+        shortFr.includes(normalized) ||
+        shortDe.includes(normalized)
       );
     });
   }, [normalized, allSkills]);
@@ -78,6 +92,8 @@ export function SkillsBrowserClient({
                 skill={sk}
                 signature={sk.series === 0}
                 isFr={isFr}
+                isDe={isDe}
+                hrefBase={hrefBase}
                 signatureLabel={t.signatureBadge}
               />
             ))}
@@ -105,6 +121,8 @@ export function SkillsBrowserClient({
                     skill={sk}
                     signature={s.series === 0}
                     isFr={isFr}
+                    isDe={isDe}
+                    hrefBase={hrefBase}
                     signatureLabel={t.signatureBadge}
                   />
                 ))}
@@ -123,19 +141,32 @@ function SkillCard({
   skill,
   signature,
   isFr,
+  isDe,
+  hrefBase = "/world-conqueror-4/competences",
   signatureLabel,
 }: {
   skill: SkillIndexItem;
   signature?: boolean;
   isFr?: boolean;
+  isDe?: boolean;
+  hrefBase?: string;
   signatureLabel: string;
 }) {
-  const displayName = (isFr && skill.nameFr) || skill.name;
+  const displayName =
+    (isFr && skill.nameFr) || (isDe && skill.nameDe) || skill.name;
   const displayShort =
-    (isFr && skill.shortDescFr) || skill.shortDesc || "";
+    (isFr && skill.shortDescFr) ||
+    (isDe && skill.shortDescDe) ||
+    skill.shortDesc ||
+    "";
   return (
     <Link
-      href={`/world-conqueror-4/competences/${skill.slug}` as any}
+      // NOTE: renders the FR-canonical segment; on /en|/de the middleware
+      // 307s to the localized /skills/ URL. Site-wide behavior (navigation
+      // uses createSharedPathnamesNavigation, which ignores the pathnames
+      // map) — switching to createLocalizedPathnamesNavigation is the real
+      // fix, tracked for the redesign phase.
+      href={`${hrefBase}/${skill.slug}` as any}
       className={`block bg-panel border rounded-lg p-4 transition-colors no-underline ${
         signature ? "hover:border-red-400" : "hover:border-gold"
       }`}
@@ -165,7 +196,8 @@ function SkillCard({
           <h3 className="text-gold2 font-bold text-sm leading-tight mb-0.5 truncate">
             {displayName}
           </h3>
-          {isFr && skill.nameFr && skill.nameFr !== skill.name && (
+          {((isFr && skill.nameFr && skill.nameFr !== skill.name) ||
+            (isDe && skill.nameDe && skill.nameDe !== skill.name)) && (
             <div className="text-muted text-[9px] italic truncate">
               {skill.name}
             </div>

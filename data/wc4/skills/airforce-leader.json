@@ -1,516 +1,523 @@
 {
-  "slug": "airforce-leader",
-  "type": 22,
-  "name": "Airforce Leader",
-  "series": 2,
-  "seriesLabel": "Commandement",
-  "descriptionTemplate": "X% chance to give the enemy a critical attack when commanding air units",
-  "icon": "/img/wc4/skills/general_skill_22.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1221,
-      "effect": 150,
-      "chance": 8,
-      "costMedal": 100,
-      "renderedDesc": "8% chance to give the enemy a critical attack when commanding air units",
-      "renderedDescFr": "8% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes"
-    },
-    {
-      "level": 2,
-      "skillId": 1222,
-      "effect": 150,
-      "chance": 16,
-      "costMedal": 160,
-      "renderedDesc": "16% chance to give the enemy a critical attack when commanding air units",
-      "renderedDescFr": "16% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes"
-    },
-    {
-      "level": 3,
-      "skillId": 1223,
-      "effect": 150,
-      "chance": 24,
-      "costMedal": 240,
-      "renderedDesc": "24% chance to give the enemy a critical attack when commanding air units",
-      "renderedDescFr": "24% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes"
-    },
-    {
-      "level": 4,
-      "skillId": 1224,
-      "effect": 150,
-      "chance": 32,
-      "costMedal": 320,
-      "renderedDesc": "32% chance to give the enemy a critical attack when commanding air units",
-      "renderedDescFr": "32% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes"
-    },
-    {
-      "level": 5,
-      "skillId": 1225,
-      "effect": 150,
-      "chance": 40,
-      "costMedal": 400,
-      "renderedDesc": "40% chance to give the enemy a critical attack when commanding air units",
-      "renderedDescFr": "40% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1007,
-        "level": 1
-      },
-      {
-        "generalId": 1027,
-        "level": 1
-      },
-      {
-        "generalId": 1035,
-        "level": 1
-      },
-      {
-        "generalId": 1047,
-        "level": 1
-      },
-      {
-        "generalId": 1057,
-        "level": 4
-      },
-      {
-        "generalId": 1059,
-        "level": 4
-      },
-      {
-        "generalId": 1073,
-        "level": 2
-      },
-      {
-        "generalId": 1078,
-        "level": 3
-      },
-      {
-        "generalId": 1080,
-        "level": 4
-      },
-      {
-        "generalId": 1086,
-        "level": 4
-      },
-      {
-        "generalId": 1089,
-        "level": 2
-      },
-      {
-        "generalId": 1102,
-        "level": 3
-      },
-      {
-        "generalId": 1108,
-        "level": 5
-      },
-      {
-        "generalId": 1109,
-        "level": 4
-      },
-      {
-        "generalId": 1111,
-        "level": 2
-      },
-      {
-        "generalId": 21044,
-        "level": 1
-      },
-      {
-        "generalId": 21082,
-        "level": 1
-      },
-      {
-        "generalId": 21121,
-        "level": 1
-      },
-      {
-        "generalId": 21122,
-        "level": 1
-      },
-      {
-        "generalId": 21125,
-        "level": 1
-      },
-      {
-        "generalId": 21127,
-        "level": 1
-      },
-      {
-        "generalId": 21133,
-        "level": 2
-      },
-      {
-        "generalId": 20011,
-        "level": 1
-      },
-      {
-        "generalId": 20014,
-        "level": 1
-      },
-      {
-        "generalId": 20021,
-        "level": 1
-      },
-      {
-        "generalId": 20023,
-        "level": 1
-      },
-      {
-        "generalId": 20036,
-        "level": 1
-      },
-      {
-        "generalId": 20044,
-        "level": 1
-      },
-      {
-        "generalId": 20091,
-        "level": 1
-      },
-      {
-        "generalId": 20103,
-        "level": 1
-      },
-      {
-        "generalId": 20122,
-        "level": 1
-      },
-      {
-        "generalId": 20123,
-        "level": 1
-      },
-      {
-        "generalId": 20126,
-        "level": 1
-      },
-      {
-        "generalId": 20128,
-        "level": 1
-      },
-      {
-        "generalId": 20132,
-        "level": 2
-      },
-      {
-        "generalId": 20247,
-        "level": 1
-      },
-      {
-        "generalId": 20289,
-        "level": 1
-      },
-      {
-        "generalId": 22010,
-        "level": 1
-      },
-      {
-        "generalId": 22013,
-        "level": 1
-      },
-      {
-        "generalId": 22025,
-        "level": 1
-      },
-      {
-        "generalId": 22045,
-        "level": 1
-      },
-      {
-        "generalId": 22052,
-        "level": 1
-      },
-      {
-        "generalId": 22053,
-        "level": 1
-      },
-      {
-        "generalId": 22065,
-        "level": 1
-      },
-      {
-        "generalId": 22080,
-        "level": 1
-      },
-      {
-        "generalId": 22095,
-        "level": 1
-      },
-      {
-        "generalId": 22100,
-        "level": 4
-      },
-      {
-        "generalId": 22102,
-        "level": 2
-      },
-      {
-        "generalId": 22112,
-        "level": 1
-      },
-      {
-        "generalId": 22134,
-        "level": 1
-      },
-      {
-        "generalId": 29007,
-        "level": 1
-      },
-      {
-        "generalId": 29027,
-        "level": 1
-      },
-      {
-        "generalId": 29035,
-        "level": 1
-      },
-      {
-        "generalId": 29047,
-        "level": 1
-      },
-      {
-        "generalId": 29138,
-        "level": 3
-      },
-      {
-        "generalId": 25017,
-        "level": 1
-      },
-      {
-        "generalId": 25042,
-        "level": 1
-      },
-      {
-        "generalId": 25054,
-        "level": 1
-      },
-      {
-        "generalId": 25062,
-        "level": 3
-      },
-      {
-        "generalId": 25091,
-        "level": 1
-      },
-      {
-        "generalId": 25119,
-        "level": 1
-      },
-      {
-        "generalId": 25126,
-        "level": 1
-      },
-      {
-        "generalId": 25146,
-        "level": 1
-      },
-      {
-        "generalId": 25153,
-        "level": 1
-      },
-      {
-        "generalId": 25163,
-        "level": 1
-      },
-      {
-        "generalId": 25173,
-        "level": 3
-      },
-      {
-        "generalId": 25176,
-        "level": 4
-      },
-      {
-        "generalId": 25179,
-        "level": 4
-      },
-      {
-        "generalId": 25189,
-        "level": 5
-      },
-      {
-        "generalId": 25198,
-        "level": 2
-      },
-      {
-        "generalId": 25207,
-        "level": 5
-      },
-      {
-        "generalId": 25213,
-        "level": 3
-      },
-      {
-        "generalId": 25215,
-        "level": 2
-      },
-      {
-        "generalId": 25216,
-        "level": 2
-      },
-      {
-        "generalId": 25227,
-        "level": 3
-      },
-      {
-        "generalId": 25241,
-        "level": 5
-      },
-      {
-        "generalId": 25250,
-        "level": 5
-      },
-      {
-        "generalId": 25253,
-        "level": 1
-      },
-      {
-        "generalId": 25275,
-        "level": 3
-      },
-      {
-        "generalId": 25279,
-        "level": 1
-      },
-      {
-        "generalId": 25282,
-        "level": 1
-      },
-      {
-        "generalId": 25283,
-        "level": 2
-      },
-      {
-        "generalId": 25284,
-        "level": 1
-      },
-      {
-        "generalId": 25286,
-        "level": 4
-      },
-      {
-        "generalId": 25297,
-        "level": 5
-      },
-      {
-        "generalId": 25299,
-        "level": 1
-      },
-      {
-        "generalId": 25301,
-        "level": 1
-      },
-      {
-        "generalId": 25304,
-        "level": 1
-      },
-      {
-        "generalId": 25306,
-        "level": 3
-      },
-      {
-        "generalId": 25308,
-        "level": 3
-      },
-      {
-        "generalId": 25311,
-        "level": 1
-      },
-      {
-        "generalId": 25323,
-        "level": 4
-      },
-      {
-        "generalId": 25338,
-        "level": 1
-      },
-      {
-        "generalId": 25351,
-        "level": 1
-      },
-      {
-        "generalId": 25354,
-        "level": 1
-      },
-      {
-        "generalId": 25358,
-        "level": 1
-      },
-      {
-        "generalId": 25365,
-        "level": 1
-      },
-      {
-        "generalId": 25370,
-        "level": 5
-      },
-      {
-        "generalId": 25371,
-        "level": 4
-      },
-      {
-        "generalId": 25374,
-        "level": 4
-      },
-      {
-        "generalId": 25382,
-        "level": 1
-      },
-      {
-        "generalId": 25401,
-        "level": 5
-      },
-      {
-        "generalId": 25410,
-        "level": 1
-      },
-      {
-        "generalId": 25421,
-        "level": 1
-      },
-      {
-        "generalId": 25433,
-        "level": 1
-      },
-      {
-        "generalId": 25435,
-        "level": 2
-      },
-      {
-        "generalId": 25444,
-        "level": 5
-      },
-      {
-        "generalId": 25445,
-        "level": 1
-      },
-      {
-        "generalId": 25453,
-        "level": 1
-      },
-      {
-        "generalId": 25459,
-        "level": 5
-      },
-      {
-        "generalId": 25466,
-        "level": 1
-      },
-      {
-        "generalId": 25471,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "airforce-leader",
+ "type": 22,
+ "name": "Airforce Leader",
+ "series": 2,
+ "seriesLabel": "Commandement",
+ "descriptionTemplate": "X% chance to give the enemy a critical attack when commanding air units",
+ "icon": "/img/wc4/skills/general_skill_22.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1221,
+   "effect": 150,
+   "chance": 8,
+   "costMedal": 100,
+   "renderedDesc": "8% chance to give the enemy a critical attack when commanding air units",
+   "renderedDescFr": "8% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+   "renderedDescDe": "8% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen"
   },
-  "varyingField": "ActivatesChance",
-  "nameFr": "Commandant de l'armée de l'air",
-  "descriptionTemplateFr": "X% chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
-  "longDesc": "Compétence spécifique à un général. « Commandant de l'armée de l'air » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 40% chance d'infliger une attaque critique à l'ennemi when commanding air unités ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"Airforce Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"40% chance to give the enemy a critical attack when commanding air units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Airforce Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „40% chance to give the enemy a critical attack when commanding air units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 1222,
+   "effect": 150,
+   "chance": 16,
+   "costMedal": 160,
+   "renderedDesc": "16% chance to give the enemy a critical attack when commanding air units",
+   "renderedDescFr": "16% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+   "renderedDescDe": "16% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen"
+  },
+  {
+   "level": 3,
+   "skillId": 1223,
+   "effect": 150,
+   "chance": 24,
+   "costMedal": 240,
+   "renderedDesc": "24% chance to give the enemy a critical attack when commanding air units",
+   "renderedDescFr": "24% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+   "renderedDescDe": "24% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen"
+  },
+  {
+   "level": 4,
+   "skillId": 1224,
+   "effect": 150,
+   "chance": 32,
+   "costMedal": 320,
+   "renderedDesc": "32% chance to give the enemy a critical attack when commanding air units",
+   "renderedDescFr": "32% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+   "renderedDescDe": "32% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen"
+  },
+  {
+   "level": 5,
+   "skillId": 1225,
+   "effect": 150,
+   "chance": 40,
+   "costMedal": 400,
+   "renderedDesc": "40% chance to give the enemy a critical attack when commanding air units",
+   "renderedDescFr": "40% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+   "renderedDescDe": "40% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1007,
+    "level": 1
+   },
+   {
+    "generalId": 1027,
+    "level": 1
+   },
+   {
+    "generalId": 1035,
+    "level": 1
+   },
+   {
+    "generalId": 1047,
+    "level": 1
+   },
+   {
+    "generalId": 1057,
+    "level": 4
+   },
+   {
+    "generalId": 1059,
+    "level": 4
+   },
+   {
+    "generalId": 1073,
+    "level": 2
+   },
+   {
+    "generalId": 1078,
+    "level": 3
+   },
+   {
+    "generalId": 1080,
+    "level": 4
+   },
+   {
+    "generalId": 1086,
+    "level": 4
+   },
+   {
+    "generalId": 1089,
+    "level": 2
+   },
+   {
+    "generalId": 1102,
+    "level": 3
+   },
+   {
+    "generalId": 1108,
+    "level": 5
+   },
+   {
+    "generalId": 1109,
+    "level": 4
+   },
+   {
+    "generalId": 1111,
+    "level": 2
+   },
+   {
+    "generalId": 21044,
+    "level": 1
+   },
+   {
+    "generalId": 21082,
+    "level": 1
+   },
+   {
+    "generalId": 21121,
+    "level": 1
+   },
+   {
+    "generalId": 21122,
+    "level": 1
+   },
+   {
+    "generalId": 21125,
+    "level": 1
+   },
+   {
+    "generalId": 21127,
+    "level": 1
+   },
+   {
+    "generalId": 21133,
+    "level": 2
+   },
+   {
+    "generalId": 20011,
+    "level": 1
+   },
+   {
+    "generalId": 20014,
+    "level": 1
+   },
+   {
+    "generalId": 20021,
+    "level": 1
+   },
+   {
+    "generalId": 20023,
+    "level": 1
+   },
+   {
+    "generalId": 20036,
+    "level": 1
+   },
+   {
+    "generalId": 20044,
+    "level": 1
+   },
+   {
+    "generalId": 20091,
+    "level": 1
+   },
+   {
+    "generalId": 20103,
+    "level": 1
+   },
+   {
+    "generalId": 20122,
+    "level": 1
+   },
+   {
+    "generalId": 20123,
+    "level": 1
+   },
+   {
+    "generalId": 20126,
+    "level": 1
+   },
+   {
+    "generalId": 20128,
+    "level": 1
+   },
+   {
+    "generalId": 20132,
+    "level": 2
+   },
+   {
+    "generalId": 20247,
+    "level": 1
+   },
+   {
+    "generalId": 20289,
+    "level": 1
+   },
+   {
+    "generalId": 22010,
+    "level": 1
+   },
+   {
+    "generalId": 22013,
+    "level": 1
+   },
+   {
+    "generalId": 22025,
+    "level": 1
+   },
+   {
+    "generalId": 22045,
+    "level": 1
+   },
+   {
+    "generalId": 22052,
+    "level": 1
+   },
+   {
+    "generalId": 22053,
+    "level": 1
+   },
+   {
+    "generalId": 22065,
+    "level": 1
+   },
+   {
+    "generalId": 22080,
+    "level": 1
+   },
+   {
+    "generalId": 22095,
+    "level": 1
+   },
+   {
+    "generalId": 22100,
+    "level": 4
+   },
+   {
+    "generalId": 22102,
+    "level": 2
+   },
+   {
+    "generalId": 22112,
+    "level": 1
+   },
+   {
+    "generalId": 22134,
+    "level": 1
+   },
+   {
+    "generalId": 29007,
+    "level": 1
+   },
+   {
+    "generalId": 29027,
+    "level": 1
+   },
+   {
+    "generalId": 29035,
+    "level": 1
+   },
+   {
+    "generalId": 29047,
+    "level": 1
+   },
+   {
+    "generalId": 29138,
+    "level": 3
+   },
+   {
+    "generalId": 25017,
+    "level": 1
+   },
+   {
+    "generalId": 25042,
+    "level": 1
+   },
+   {
+    "generalId": 25054,
+    "level": 1
+   },
+   {
+    "generalId": 25062,
+    "level": 3
+   },
+   {
+    "generalId": 25091,
+    "level": 1
+   },
+   {
+    "generalId": 25119,
+    "level": 1
+   },
+   {
+    "generalId": 25126,
+    "level": 1
+   },
+   {
+    "generalId": 25146,
+    "level": 1
+   },
+   {
+    "generalId": 25153,
+    "level": 1
+   },
+   {
+    "generalId": 25163,
+    "level": 1
+   },
+   {
+    "generalId": 25173,
+    "level": 3
+   },
+   {
+    "generalId": 25176,
+    "level": 4
+   },
+   {
+    "generalId": 25179,
+    "level": 4
+   },
+   {
+    "generalId": 25189,
+    "level": 5
+   },
+   {
+    "generalId": 25198,
+    "level": 2
+   },
+   {
+    "generalId": 25207,
+    "level": 5
+   },
+   {
+    "generalId": 25213,
+    "level": 3
+   },
+   {
+    "generalId": 25215,
+    "level": 2
+   },
+   {
+    "generalId": 25216,
+    "level": 2
+   },
+   {
+    "generalId": 25227,
+    "level": 3
+   },
+   {
+    "generalId": 25241,
+    "level": 5
+   },
+   {
+    "generalId": 25250,
+    "level": 5
+   },
+   {
+    "generalId": 25253,
+    "level": 1
+   },
+   {
+    "generalId": 25275,
+    "level": 3
+   },
+   {
+    "generalId": 25279,
+    "level": 1
+   },
+   {
+    "generalId": 25282,
+    "level": 1
+   },
+   {
+    "generalId": 25283,
+    "level": 2
+   },
+   {
+    "generalId": 25284,
+    "level": 1
+   },
+   {
+    "generalId": 25286,
+    "level": 4
+   },
+   {
+    "generalId": 25297,
+    "level": 5
+   },
+   {
+    "generalId": 25299,
+    "level": 1
+   },
+   {
+    "generalId": 25301,
+    "level": 1
+   },
+   {
+    "generalId": 25304,
+    "level": 1
+   },
+   {
+    "generalId": 25306,
+    "level": 3
+   },
+   {
+    "generalId": 25308,
+    "level": 3
+   },
+   {
+    "generalId": 25311,
+    "level": 1
+   },
+   {
+    "generalId": 25323,
+    "level": 4
+   },
+   {
+    "generalId": 25338,
+    "level": 1
+   },
+   {
+    "generalId": 25351,
+    "level": 1
+   },
+   {
+    "generalId": 25354,
+    "level": 1
+   },
+   {
+    "generalId": 25358,
+    "level": 1
+   },
+   {
+    "generalId": 25365,
+    "level": 1
+   },
+   {
+    "generalId": 25370,
+    "level": 5
+   },
+   {
+    "generalId": 25371,
+    "level": 4
+   },
+   {
+    "generalId": 25374,
+    "level": 4
+   },
+   {
+    "generalId": 25382,
+    "level": 1
+   },
+   {
+    "generalId": 25401,
+    "level": 5
+   },
+   {
+    "generalId": 25410,
+    "level": 1
+   },
+   {
+    "generalId": 25421,
+    "level": 1
+   },
+   {
+    "generalId": 25433,
+    "level": 1
+   },
+   {
+    "generalId": 25435,
+    "level": 2
+   },
+   {
+    "generalId": 25444,
+    "level": 5
+   },
+   {
+    "generalId": 25445,
+    "level": 1
+   },
+   {
+    "generalId": 25453,
+    "level": 1
+   },
+   {
+    "generalId": 25459,
+    "level": 5
+   },
+   {
+    "generalId": 25466,
+    "level": 1
+   },
+   {
+    "generalId": 25471,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "ActivatesChance",
+ "nameFr": "Commandant de l'armée de l'air",
+ "descriptionTemplateFr": "X% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+ "longDesc": "Compétence spécifique à un général. « Commandant de l'armée de l'air » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 40% chance d'infliger une attaque critique à l'ennemi when commanding air unités ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"Airforce Leader\" scales up to level 5. At max level (5), the skill applies the following effect: \"40% chance to give the enemy a critical attack when commanding air units\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Airforce Leader“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „40% chance to give the enemy a critical attack when commanding air units“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Luftwaffenführer",
+ "descriptionTemplateDe": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen"
 }

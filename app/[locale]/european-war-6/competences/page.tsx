@@ -54,6 +54,7 @@ export default async function SkillsBrowser({
   const tL = (fr: string, en: string, de: string): string =>
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
   const isFr = params.locale === "fr";
+  const isDe = params.locale === "de";
   const index = getSkillIndex();
   const seriesMap = new Map<number, SkillSeriesMeta>();
   for (const s of index.series) seriesMap.set(s.series, s);
@@ -149,6 +150,8 @@ export default async function SkillsBrowser({
             sections={sectionsInOrder}
             allSkills={index.skills}
             isFr={isFr}
+            isDe={isDe}
+            hrefBase="/european-war-6/competences"
             t={{
               searchPlaceholder: t("skillsPage.searchPlaceholder"),
               searchNoResults: t("skillsPage.searchNoResults"),

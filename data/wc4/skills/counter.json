@@ -1,92 +1,99 @@
 {
-  "slug": "counter",
-  "type": 125,
-  "name": "Counter",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When the commanding force is attacked and receives damage, the enemy also takes X% of that damage.(Each attack only takes effect once)",
-  "icon": "/img/wc4/skills/general_skill_125.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3251,
-      "effect": 5,
-      "chance": 100,
-      "costMedal": 120,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 5% of that damage.(Each attack only takes effect once)",
-      "renderedDescFr": "Lorsque la commandant force est attacked et receives dégâts, l'ennemi also takes 5% de que dégâts.(chaque attaque seulement takes effets once)"
-    },
-    {
-      "level": 2,
-      "skillId": 3252,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 170,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 10% of that damage.(Each attack only takes effect once)",
-      "renderedDescFr": "Lorsque la commandant force est attacked et receives dégâts, l'ennemi also takes 10% de que dégâts.(chaque attaque seulement takes effets once)"
-    },
-    {
-      "level": 3,
-      "skillId": 3253,
-      "effect": 15,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 15% of that damage.(Each attack only takes effect once)",
-      "renderedDescFr": "Lorsque la commandant force est attacked et receives dégâts, l'ennemi also takes 15% de que dégâts.(chaque attaque seulement takes effets once)"
-    },
-    {
-      "level": 4,
-      "skillId": 3254,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 20% of that damage.(Each attack only takes effect once)",
-      "renderedDescFr": "Lorsque la commandant force est attacked et receives dégâts, l'ennemi also takes 20% de que dégâts.(chaque attaque seulement takes effets once)"
-    },
-    {
-      "level": 5,
-      "skillId": 3255,
-      "effect": 25,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)",
-      "renderedDescFr": "Lorsque la commandant force est attacked et receives dégâts, l'ennemi also takes 25% de que dégâts.(chaque attaque seulement takes effets once)"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1085,
-        "level": 2
-      },
-      {
-        "generalId": 22111,
-        "level": 1
-      },
-      {
-        "generalId": 22127,
-        "level": 1
-      },
-      {
-        "generalId": 25217,
-        "level": 2
-      },
-      {
-        "generalId": 25256,
-        "level": 2
-      },
-      {
-        "generalId": 25333,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "counter",
+ "type": 125,
+ "name": "Counter",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When the commanding force is attacked and receives damage, the enemy also takes X% of that damage.(Each attack only takes effect once)",
+ "icon": "/img/wc4/skills/general_skill_125.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3251,
+   "effect": 5,
+   "chance": 100,
+   "costMedal": 120,
+   "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 5% of that damage.(Each attack only takes effect once)",
+   "renderedDescFr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également 5% de ces dégâts. (Une seule fois par attaque)",
+   "renderedDescDe": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls 5% dieses Schadens. (Wirkt nur einmal je Angriff)"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Counter",
-  "descriptionTemplateFr": "Lorsque la commandant force est attacked et receives dégâts, l'ennemi also takes X% de que dégâts.(chaque attaque seulement takes effets once)",
-  "longDesc": "Compétence spécifique à un général. « Counter » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When the commanding force is attacked and receives dégâts, the ennemi also takes 25% of that dégâts.(Each attaque only takes effect once) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Counter\" scales up to level 5. At max level (5), the skill applies the following effect: \"When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Counter“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3252,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 170,
+   "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 10% of that damage.(Each attack only takes effect once)",
+   "renderedDescFr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également 10% de ces dégâts. (Une seule fois par attaque)",
+   "renderedDescDe": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls 10% dieses Schadens. (Wirkt nur einmal je Angriff)"
+  },
+  {
+   "level": 3,
+   "skillId": 3253,
+   "effect": 15,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 15% of that damage.(Each attack only takes effect once)",
+   "renderedDescFr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également 15% de ces dégâts. (Une seule fois par attaque)",
+   "renderedDescDe": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls 15% dieses Schadens. (Wirkt nur einmal je Angriff)"
+  },
+  {
+   "level": 4,
+   "skillId": 3254,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 20% of that damage.(Each attack only takes effect once)",
+   "renderedDescFr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également 20% de ces dégâts. (Une seule fois par attaque)",
+   "renderedDescDe": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls 20% dieses Schadens. (Wirkt nur einmal je Angriff)"
+  },
+  {
+   "level": 5,
+   "skillId": 3255,
+   "effect": 25,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)",
+   "renderedDescFr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également 25% de ces dégâts. (Une seule fois par attaque)",
+   "renderedDescDe": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls 25% dieses Schadens. (Wirkt nur einmal je Angriff)"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1085,
+    "level": 2
+   },
+   {
+    "generalId": 22111,
+    "level": 1
+   },
+   {
+    "generalId": 22127,
+    "level": 1
+   },
+   {
+    "generalId": 25217,
+    "level": 2
+   },
+   {
+    "generalId": 25256,
+    "level": 2
+   },
+   {
+    "generalId": 25333,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Counter",
+ "descriptionTemplateFr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également X% de ces dégâts. (Une seule fois par attaque)",
+ "longDesc": "Compétence spécifique à un général. « Counter » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When the commanding force is attacked and receives dégâts, the ennemi also takes 25% of that dégâts.(Each attaque only takes effect once) ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Counter\" scales up to level 5. At max level (5), the skill applies the following effect: \"When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Counter“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When the commanding force is attacked and receives damage, the enemy also takes 25% of that damage.(Each attack only takes effect once)“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Konter",
+ "descriptionTemplateDe": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls X% dieses Schadens. (Wirkt nur einmal je Angriff)"
 }

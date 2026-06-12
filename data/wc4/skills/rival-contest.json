@@ -1,90 +1,97 @@
 {
-  "slug": "rival-contest",
-  "type": 146,
-  "name": "Rival Contest",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding armored units, dealt damage to enemy elite force +X%",
-  "icon": "/img/wc4/skills/general_skill_146.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3461,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 150,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +4%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +4%"
-    },
-    {
-      "level": 2,
-      "skillId": 3462,
-      "effect": 8,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +8%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +8%"
-    },
-    {
-      "level": 3,
-      "skillId": 3463,
-      "effect": 12,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +12%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +12%"
-    },
-    {
-      "level": 4,
-      "skillId": 3464,
-      "effect": 16,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +16%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +16%"
-    },
-    {
-      "level": 5,
-      "skillId": 3465,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 550,
-      "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +20%",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +20%"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25346,
-        "level": 4
-      },
-      {
-        "generalId": 25353,
-        "level": 4
-      },
-      {
-        "generalId": 25368,
-        "level": 1
-      },
-      {
-        "generalId": 25386,
-        "level": 5
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1037,
-        "level": 4,
-        "promotionId": 10371
-      }
-    ]
+ "slug": "rival-contest",
+ "type": 146,
+ "name": "Rival Contest",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding armored units, dealt damage to enemy elite force +X%",
+ "icon": "/img/wc4/skills/general_skill_146.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3461,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 150,
+   "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +4%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +4%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +4%"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Duel de rivaux",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dealt dégâts à ennemi elite force +X%",
-  "longDesc": "Compétence spécifique à un général. « Duel de rivaux » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +20% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Rival Contest\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, dealt damage to enemy elite force +20%\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Rival Contest“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, dealt damage to enemy elite force +20%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3462,
+   "effect": 8,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +8%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +8%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +8%"
+  },
+  {
+   "level": 3,
+   "skillId": 3463,
+   "effect": 12,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +12%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +12%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +12%"
+  },
+  {
+   "level": 4,
+   "skillId": 3464,
+   "effect": 16,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +16%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +16%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +16%"
+  },
+  {
+   "level": 5,
+   "skillId": 3465,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 550,
+   "renderedDesc": "When commanding armored units, dealt damage to enemy elite force +20%",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +20%",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +20%"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25346,
+    "level": 4
+   },
+   {
+    "generalId": 25353,
+    "level": 4
+   },
+   {
+    "generalId": 25368,
+    "level": 1
+   },
+   {
+    "generalId": 25386,
+    "level": 5
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1037,
+    "level": 4,
+    "promotionId": 10371
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Duel de rivaux",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +X%",
+ "longDesc": "Compétence spécifique à un général. « Duel de rivaux » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, dealt dégâts to ennemi unités d'élite +20% ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Rival Contest\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, dealt damage to enemy elite force +20%\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Rival Contest“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, dealt damage to enemy elite force +20%“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Rivalenduell",
+ "descriptionTemplateDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +X%"
 }

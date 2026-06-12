@@ -1,78 +1,85 @@
 {
-  "slug": "marshall-plan",
-  "type": 173,
-  "name": "Marshall Plan",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding land units, X% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
-  "icon": "/img/wc4/skills/general_skill_173.png",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3731,
-      "effect": 8,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "When commanding land units, 8% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
-      "renderedDescFr": "Lorsque vous commandez land unités, 8% de la economy spent pendant la tour être regained dans la next tour (up à 1200). Lorsque commandant land unités, pour chaque ennemi eliminated within 3 hexes de la commandant unités, you gagne 40 Industry et 4 Technology (peut être triggered up à 3 times per tour)."
-    },
-    {
-      "level": 2,
-      "skillId": 3732,
-      "effect": 16,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "When commanding land units, 16% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
-      "renderedDescFr": "Lorsque vous commandez land unités, 16% de la economy spent pendant la tour être regained dans la next tour (up à 1200). Lorsque commandant land unités, pour chaque ennemi eliminated within 3 hexes de la commandant unités, you gagne 40 Industry et 4 Technology (peut être triggered up à 3 times per tour)."
-    },
-    {
-      "level": 3,
-      "skillId": 3733,
-      "effect": 24,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "When commanding land units, 24% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
-      "renderedDescFr": "Lorsque vous commandez land unités, 24% de la economy spent pendant la tour être regained dans la next tour (up à 1200). Lorsque commandant land unités, pour chaque ennemi eliminated within 3 hexes de la commandant unités, you gagne 40 Industry et 4 Technology (peut être triggered up à 3 times per tour)."
-    },
-    {
-      "level": 4,
-      "skillId": 3734,
-      "effect": 32,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "When commanding land units, 32% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
-      "renderedDescFr": "Lorsque vous commandez land unités, 32% de la economy spent pendant la tour être regained dans la next tour (up à 1200). Lorsque commandant land unités, pour chaque ennemi eliminated within 3 hexes de la commandant unités, you gagne 40 Industry et 4 Technology (peut être triggered up à 3 times per tour)."
-    },
-    {
-      "level": 5,
-      "skillId": 3735,
-      "effect": 40,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
-      "renderedDescFr": "Lorsque vous commandez land unités, 40% de la economy spent pendant la tour être regained dans la next tour (up à 1200). Lorsque commandant land unités, pour chaque ennemi eliminated within 3 hexes de la commandant unités, you gagne 40 Industry et 4 Technology (peut être triggered up à 3 times per tour)."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25474,
-        "level": 5
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1062,
-        "level": 5,
-        "promotionId": 10621
-      }
-    ]
+ "slug": "marshall-plan",
+ "type": 173,
+ "name": "Marshall Plan",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding land units, X% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+ "icon": "/img/wc4/skills/general_skill_173.png",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3731,
+   "effect": 8,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "When commanding land units, 8% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités terrestres, 8% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+   "renderedDescDe": "Beim Befehligen von Landeinheiten werden 8% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde)."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Marshall Plan",
-  "descriptionTemplateFr": "Lorsque vous commandez land unités, X% de la economy spent pendant la tour être regained dans la next tour (up à 1200). Lorsque commandant land unités, pour chaque ennemi eliminated within 3 hexes de la commandant unités, you gagne 40 Industry et 4 Technology (peut être triggered up à 3 times per tour).",
-  "longDesc": "Compétence spécifique à un général. « Marshall Plan » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding land unités, 40% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour). ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Marshall Plan\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Marshall Plan“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3732,
+   "effect": 16,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "When commanding land units, 16% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités terrestres, 16% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+   "renderedDescDe": "Beim Befehligen von Landeinheiten werden 16% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde)."
+  },
+  {
+   "level": 3,
+   "skillId": 3733,
+   "effect": 24,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "When commanding land units, 24% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités terrestres, 24% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+   "renderedDescDe": "Beim Befehligen von Landeinheiten werden 24% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde)."
+  },
+  {
+   "level": 4,
+   "skillId": 3734,
+   "effect": 32,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "When commanding land units, 32% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités terrestres, 32% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+   "renderedDescDe": "Beim Befehligen von Landeinheiten werden 32% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde)."
+  },
+  {
+   "level": 5,
+   "skillId": 3735,
+   "effect": 40,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités terrestres, 40% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+   "renderedDescDe": "Beim Befehligen von Landeinheiten werden 40% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde)."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25474,
+    "level": 5
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1062,
+    "level": 5,
+    "promotionId": 10621
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Marshall Plan",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités terrestres, X% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+ "longDesc": "Compétence spécifique à un général. « Marshall Plan » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When commanding land unités, 40% of the economy spent during the tour will be regained in the next tour (up to 1200). When commanding land unités, for each ennemi eliminated dans un rayon de 3 hex of the commanding unités, you gain 40 Industry and 4 Technology (can be triggered up to 3 times par tour). ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Marshall Plan\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Marshall Plan“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding land units, 40% of the economy spent during the turn will be regained in the next turn (up to 1200). When commanding land units, for each enemy eliminated within 3 hexes of the commanding units, you gain 40 Industry and 4 Technology (can be triggered up to 3 times per turn).“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Marshallplan",
+ "descriptionTemplateDe": "Beim Befehligen von Landeinheiten werden X% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde)."
 }

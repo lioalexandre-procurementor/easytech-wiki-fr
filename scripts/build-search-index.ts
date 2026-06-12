@@ -25,6 +25,10 @@ interface SearchItem {
   desc?: string;
   /** French short description. */
   descFr?: string;
+  /** German display name (skills only for now). */
+  nameDe?: string;
+  /** German short description (skills only for now). */
+  descDe?: string;
   /** Category / faction / tier string for grouping or display. */
   category?: string;
   /** ISO country code for flag rendering (generals only). */
@@ -90,8 +94,12 @@ function buildSkills(): SearchItem[] {
     slug: s.slug as string,
     name: (s.name as string) || "",
     nameFr: (s.nameFr as string) || (s.name as string) || "",
-    desc: (s.shortDesc as string) || "",
-    descFr: (s.shortDescFr as string) || "",
+    nameDe: (s.nameDe as string) || (s.name as string) || "",
+    desc: (s.shortDesc as string) || (s.descriptionTemplate as string) || "",
+    descFr:
+      (s.shortDescFr as string) || (s.descriptionTemplateFr as string) || "",
+    descDe:
+      (s.shortDescDe as string) || (s.descriptionTemplateDe as string) || "",
     category: s.series != null ? `Series ${s.series}` : "",
     path: {
       fr: `/world-conqueror-4/competences/${s.slug as string}`,

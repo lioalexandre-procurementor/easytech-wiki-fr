@@ -1,294 +1,301 @@
 {
-  "slug": "jungle-fighting",
-  "type": 9,
-  "name": "Jungle Fighting",
-  "series": 1,
-  "seriesLabel": "Tactiques de terrain",
-  "descriptionTemplate": "Damage to the enemy +X when fighting in the jungle",
-  "icon": "/img/wc4/skills/general_skill_9.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 1091,
-      "effect": 5,
-      "chance": 100,
-      "costMedal": 100,
-      "renderedDesc": "Damage to the enemy +5 when fighting in the jungle",
-      "renderedDescFr": "Dégâts à l'ennemi +5 lorsque fighting dans la jungle"
-    },
-    {
-      "level": 2,
-      "skillId": 1092,
-      "effect": 10,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Damage to the enemy +10 when fighting in the jungle",
-      "renderedDescFr": "Dégâts à l'ennemi +10 lorsque fighting dans la jungle"
-    },
-    {
-      "level": 3,
-      "skillId": 1093,
-      "effect": 15,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Damage to the enemy +15 when fighting in the jungle",
-      "renderedDescFr": "Dégâts à l'ennemi +15 lorsque fighting dans la jungle"
-    },
-    {
-      "level": 4,
-      "skillId": 1094,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 320,
-      "renderedDesc": "Damage to the enemy +20 when fighting in the jungle",
-      "renderedDescFr": "Dégâts à l'ennemi +20 lorsque fighting dans la jungle"
-    },
-    {
-      "level": 5,
-      "skillId": 1095,
-      "effect": 25,
-      "chance": 100,
-      "costMedal": 400,
-      "renderedDesc": "Damage to the enemy +25 when fighting in the jungle",
-      "renderedDescFr": "Dégâts à l'ennemi +25 lorsque fighting dans la jungle"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1002,
-        "level": 3
-      },
-      {
-        "generalId": 1020,
-        "level": 4
-      },
-      {
-        "generalId": 1039,
-        "level": 3
-      },
-      {
-        "generalId": 1092,
-        "level": 1
-      },
-      {
-        "generalId": 21011,
-        "level": 3
-      },
-      {
-        "generalId": 21032,
-        "level": 3
-      },
-      {
-        "generalId": 21066,
-        "level": 4
-      },
-      {
-        "generalId": 21071,
-        "level": 3
-      },
-      {
-        "generalId": 21074,
-        "level": 3
-      },
-      {
-        "generalId": 23071,
-        "level": 1
-      },
-      {
-        "generalId": 23072,
-        "level": 4
-      },
-      {
-        "generalId": 21094,
-        "level": 3
-      },
-      {
-        "generalId": 21097,
-        "level": 4
-      },
-      {
-        "generalId": 21108,
-        "level": 1
-      },
-      {
-        "generalId": 21132,
-        "level": 1
-      },
-      {
-        "generalId": 21133,
-        "level": 2
-      },
-      {
-        "generalId": 21142,
-        "level": 1
-      },
-      {
-        "generalId": 20051,
-        "level": 1
-      },
-      {
-        "generalId": 20056,
-        "level": 3
-      },
-      {
-        "generalId": 20058,
-        "level": 1
-      },
-      {
-        "generalId": 20071,
-        "level": 1
-      },
-      {
-        "generalId": 20074,
-        "level": 1
-      },
-      {
-        "generalId": 20086,
-        "level": 1
-      },
-      {
-        "generalId": 20093,
-        "level": 1
-      },
-      {
-        "generalId": 20102,
-        "level": 1
-      },
-      {
-        "generalId": 20132,
-        "level": 2
-      },
-      {
-        "generalId": 20153,
-        "level": 1
-      },
-      {
-        "generalId": 20161,
-        "level": 1
-      },
-      {
-        "generalId": 20194,
-        "level": 4
-      },
-      {
-        "generalId": 20215,
-        "level": 1
-      },
-      {
-        "generalId": 22004,
-        "level": 3
-      },
-      {
-        "generalId": 22033,
-        "level": 1
-      },
-      {
-        "generalId": 22038,
-        "level": 4
-      },
-      {
-        "generalId": 22047,
-        "level": 4
-      },
-      {
-        "generalId": 22056,
-        "level": 2
-      },
-      {
-        "generalId": 22057,
-        "level": 3
-      },
-      {
-        "generalId": 22067,
-        "level": 3
-      },
-      {
-        "generalId": 22070,
-        "level": 1
-      },
-      {
-        "generalId": 22072,
-        "level": 2
-      },
-      {
-        "generalId": 22074,
-        "level": 3
-      },
-      {
-        "generalId": 22079,
-        "level": 1
-      },
-      {
-        "generalId": 22085,
-        "level": 1
-      },
-      {
-        "generalId": 29002,
-        "level": 3
-      },
-      {
-        "generalId": 29020,
-        "level": 4
-      },
-      {
-        "generalId": 29039,
-        "level": 3
-      },
-      {
-        "generalId": 29129,
-        "level": 2
-      },
-      {
-        "generalId": 25003,
-        "level": 3
-      },
-      {
-        "generalId": 25036,
-        "level": 4
-      },
-      {
-        "generalId": 25082,
-        "level": 3
-      },
-      {
-        "generalId": 25106,
-        "level": 4
-      },
-      {
-        "generalId": 25139,
-        "level": 4
-      },
-      {
-        "generalId": 25226,
-        "level": 3
-      },
-      {
-        "generalId": 25237,
-        "level": 3
-      },
-      {
-        "generalId": 25267,
-        "level": 1
-      },
-      {
-        "generalId": 25289,
-        "level": 1
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1020,
-        "level": 4,
-        "promotionId": 10201
-      }
-    ]
+ "slug": "jungle-fighting",
+ "type": 9,
+ "name": "Jungle Fighting",
+ "series": 1,
+ "seriesLabel": "Tactiques de terrain",
+ "descriptionTemplate": "Damage to the enemy +X when fighting in the jungle",
+ "icon": "/img/wc4/skills/general_skill_9.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 1091,
+   "effect": 5,
+   "chance": 100,
+   "costMedal": 100,
+   "renderedDesc": "Damage to the enemy +5 when fighting in the jungle",
+   "renderedDescFr": "Dégâts infligés à l'ennemi +5 lors des combats dans la jungle",
+   "renderedDescDe": "Schaden am Feind +5 bei Kämpfen im Dschungel"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Jungle Fighting",
-  "descriptionTemplateFr": "Dégâts à l'ennemi +X lorsque fighting dans la jungle",
-  "longDesc": "Compétence spécifique à un général. « Jungle Fighting » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 when fighting in the jungle ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Jungle Fighting\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when fighting in the jungle\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Jungle Fighting“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when fighting in the jungle“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 1092,
+   "effect": 10,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Damage to the enemy +10 when fighting in the jungle",
+   "renderedDescFr": "Dégâts infligés à l'ennemi +10 lors des combats dans la jungle",
+   "renderedDescDe": "Schaden am Feind +10 bei Kämpfen im Dschungel"
+  },
+  {
+   "level": 3,
+   "skillId": 1093,
+   "effect": 15,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Damage to the enemy +15 when fighting in the jungle",
+   "renderedDescFr": "Dégâts infligés à l'ennemi +15 lors des combats dans la jungle",
+   "renderedDescDe": "Schaden am Feind +15 bei Kämpfen im Dschungel"
+  },
+  {
+   "level": 4,
+   "skillId": 1094,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 320,
+   "renderedDesc": "Damage to the enemy +20 when fighting in the jungle",
+   "renderedDescFr": "Dégâts infligés à l'ennemi +20 lors des combats dans la jungle",
+   "renderedDescDe": "Schaden am Feind +20 bei Kämpfen im Dschungel"
+  },
+  {
+   "level": 5,
+   "skillId": 1095,
+   "effect": 25,
+   "chance": 100,
+   "costMedal": 400,
+   "renderedDesc": "Damage to the enemy +25 when fighting in the jungle",
+   "renderedDescFr": "Dégâts infligés à l'ennemi +25 lors des combats dans la jungle",
+   "renderedDescDe": "Schaden am Feind +25 bei Kämpfen im Dschungel"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1002,
+    "level": 3
+   },
+   {
+    "generalId": 1020,
+    "level": 4
+   },
+   {
+    "generalId": 1039,
+    "level": 3
+   },
+   {
+    "generalId": 1092,
+    "level": 1
+   },
+   {
+    "generalId": 21011,
+    "level": 3
+   },
+   {
+    "generalId": 21032,
+    "level": 3
+   },
+   {
+    "generalId": 21066,
+    "level": 4
+   },
+   {
+    "generalId": 21071,
+    "level": 3
+   },
+   {
+    "generalId": 21074,
+    "level": 3
+   },
+   {
+    "generalId": 23071,
+    "level": 1
+   },
+   {
+    "generalId": 23072,
+    "level": 4
+   },
+   {
+    "generalId": 21094,
+    "level": 3
+   },
+   {
+    "generalId": 21097,
+    "level": 4
+   },
+   {
+    "generalId": 21108,
+    "level": 1
+   },
+   {
+    "generalId": 21132,
+    "level": 1
+   },
+   {
+    "generalId": 21133,
+    "level": 2
+   },
+   {
+    "generalId": 21142,
+    "level": 1
+   },
+   {
+    "generalId": 20051,
+    "level": 1
+   },
+   {
+    "generalId": 20056,
+    "level": 3
+   },
+   {
+    "generalId": 20058,
+    "level": 1
+   },
+   {
+    "generalId": 20071,
+    "level": 1
+   },
+   {
+    "generalId": 20074,
+    "level": 1
+   },
+   {
+    "generalId": 20086,
+    "level": 1
+   },
+   {
+    "generalId": 20093,
+    "level": 1
+   },
+   {
+    "generalId": 20102,
+    "level": 1
+   },
+   {
+    "generalId": 20132,
+    "level": 2
+   },
+   {
+    "generalId": 20153,
+    "level": 1
+   },
+   {
+    "generalId": 20161,
+    "level": 1
+   },
+   {
+    "generalId": 20194,
+    "level": 4
+   },
+   {
+    "generalId": 20215,
+    "level": 1
+   },
+   {
+    "generalId": 22004,
+    "level": 3
+   },
+   {
+    "generalId": 22033,
+    "level": 1
+   },
+   {
+    "generalId": 22038,
+    "level": 4
+   },
+   {
+    "generalId": 22047,
+    "level": 4
+   },
+   {
+    "generalId": 22056,
+    "level": 2
+   },
+   {
+    "generalId": 22057,
+    "level": 3
+   },
+   {
+    "generalId": 22067,
+    "level": 3
+   },
+   {
+    "generalId": 22070,
+    "level": 1
+   },
+   {
+    "generalId": 22072,
+    "level": 2
+   },
+   {
+    "generalId": 22074,
+    "level": 3
+   },
+   {
+    "generalId": 22079,
+    "level": 1
+   },
+   {
+    "generalId": 22085,
+    "level": 1
+   },
+   {
+    "generalId": 29002,
+    "level": 3
+   },
+   {
+    "generalId": 29020,
+    "level": 4
+   },
+   {
+    "generalId": 29039,
+    "level": 3
+   },
+   {
+    "generalId": 29129,
+    "level": 2
+   },
+   {
+    "generalId": 25003,
+    "level": 3
+   },
+   {
+    "generalId": 25036,
+    "level": 4
+   },
+   {
+    "generalId": 25082,
+    "level": 3
+   },
+   {
+    "generalId": 25106,
+    "level": 4
+   },
+   {
+    "generalId": 25139,
+    "level": 4
+   },
+   {
+    "generalId": 25226,
+    "level": 3
+   },
+   {
+    "generalId": 25237,
+    "level": 3
+   },
+   {
+    "generalId": 25267,
+    "level": 1
+   },
+   {
+    "generalId": 25289,
+    "level": 1
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1020,
+    "level": 4,
+    "promotionId": 10201
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Jungle Fighting",
+ "descriptionTemplateFr": "Dégâts infligés à l'ennemi +X lors des combats dans la jungle",
+ "longDesc": "Compétence spécifique à un général. « Jungle Fighting » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts infligés +25 when fighting in the jungle ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Jungle Fighting\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage to the enemy +25 when fighting in the jungle\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Jungle Fighting“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage to the enemy +25 when fighting in the jungle“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Dschungelkampf",
+ "descriptionTemplateDe": "Schaden am Feind +X bei Kämpfen im Dschungel"
 }

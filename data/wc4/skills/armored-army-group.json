@@ -1,108 +1,115 @@
 {
-  "slug": "armored-army-group",
-  "type": 114,
-  "name": "armored Army Group",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "X% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-  "icon": "/img/wc4/skills/general_skill_114.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3141,
-      "effect": 1,
-      "chance": 20,
-      "costMedal": 160,
-      "renderedDesc": "20% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-      "renderedDescFr": "20% chances que one de la inactives blindé unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 2,
-      "skillId": 3142,
-      "effect": 1,
-      "chance": 40,
-      "costMedal": 240,
-      "renderedDesc": "40% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-      "renderedDescFr": "40% chances que one de la inactives blindé unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 3,
-      "skillId": 3143,
-      "effect": 1,
-      "chance": 60,
-      "costMedal": 480,
-      "renderedDesc": "60% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-      "renderedDescFr": "60% chances que one de la inactives blindé unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 4,
-      "skillId": 3144,
-      "effect": 1,
-      "chance": 80,
-      "costMedal": 640,
-      "renderedDesc": "80% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-      "renderedDescFr": "80% chances que one de la inactives blindé unités autour rejoindre l'attaque (seulement once per tour)"
-    },
-    {
-      "level": 5,
-      "skillId": 3145,
-      "effect": 1,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "100% chance that one of the inactive armored units around will join the attack (Only once per turn)",
-      "renderedDescFr": "100% chances que one de la inactives blindé unités autour rejoindre l'attaque (seulement once per tour)"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1075,
-        "level": 3
-      },
-      {
-        "generalId": 22098,
-        "level": 3
-      },
-      {
-        "generalId": 22114,
-        "level": 1
-      },
-      {
-        "generalId": 22130,
-        "level": 1
-      },
-      {
-        "generalId": 25208,
-        "level": 5
-      },
-      {
-        "generalId": 25230,
-        "level": 5
-      },
-      {
-        "generalId": 25239,
-        "level": 5
-      },
-      {
-        "generalId": 25272,
-        "level": 5
-      },
-      {
-        "generalId": 25332,
-        "level": 5
-      },
-      {
-        "generalId": 25387,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "armored-army-group",
+ "type": 114,
+ "name": "armored Army Group",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "X% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+ "icon": "/img/wc4/skills/general_skill_114.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3141,
+   "effect": 1,
+   "chance": 20,
+   "costMedal": 160,
+   "renderedDesc": "20% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+   "renderedDescFr": "20% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "20% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
   },
-  "varyingField": "ActivatesChance",
-  "nameFr": "Armored Army Group",
-  "descriptionTemplateFr": "X% chances que one de la inactives blindé unités autour rejoindre l'attaque (seulement once per tour)",
-  "longDesc": "Compétence spécifique à un général. « Armored Army Group » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that one of the inactive unités blindées around will join the attaque (Only once par tour) ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"armored Army Group\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that one of the inactive armored units around will join the attack (Only once per turn)\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „armored Army Group“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that one of the inactive armored units around will join the attack (Only once per turn)“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 3142,
+   "effect": 1,
+   "chance": 40,
+   "costMedal": 240,
+   "renderedDesc": "40% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+   "renderedDescFr": "40% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "40% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  },
+  {
+   "level": 3,
+   "skillId": 3143,
+   "effect": 1,
+   "chance": 60,
+   "costMedal": 480,
+   "renderedDesc": "60% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+   "renderedDescFr": "60% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "60% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  },
+  {
+   "level": 4,
+   "skillId": 3144,
+   "effect": 1,
+   "chance": 80,
+   "costMedal": 640,
+   "renderedDesc": "80% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+   "renderedDescFr": "80% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "80% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  },
+  {
+   "level": 5,
+   "skillId": 3145,
+   "effect": 1,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "100% chance that one of the inactive armored units around will join the attack (Only once per turn)",
+   "renderedDescFr": "100% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+   "renderedDescDe": "100% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1075,
+    "level": 3
+   },
+   {
+    "generalId": 22098,
+    "level": 3
+   },
+   {
+    "generalId": 22114,
+    "level": 1
+   },
+   {
+    "generalId": 22130,
+    "level": 1
+   },
+   {
+    "generalId": 25208,
+    "level": 5
+   },
+   {
+    "generalId": 25230,
+    "level": 5
+   },
+   {
+    "generalId": 25239,
+    "level": 5
+   },
+   {
+    "generalId": 25272,
+    "level": 5
+   },
+   {
+    "generalId": 25332,
+    "level": 5
+   },
+   {
+    "generalId": 25387,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "ActivatesChance",
+ "nameFr": "Armored Army Group",
+ "descriptionTemplateFr": "X% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+ "longDesc": "Compétence spécifique à un général. « Armored Army Group » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 100% chance that one of the inactive unités blindées around will join the attaque (Only once par tour) ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"armored Army Group\" scales up to level 5. At max level (5), the skill applies the following effect: \"100% chance that one of the inactive armored units around will join the attack (Only once per turn)\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „armored Army Group“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „100% chance that one of the inactive armored units around will join the attack (Only once per turn)“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Panzerarmeegruppe",
+ "descriptionTemplateDe": "X% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)"
 }

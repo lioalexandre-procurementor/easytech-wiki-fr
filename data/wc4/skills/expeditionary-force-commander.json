@@ -1,78 +1,85 @@
 {
-  "slug": "expeditionary-force-commander",
-  "type": 166,
-  "name": "Expeditionary Force Commander",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase X% attack and counterattack damage for every 3 mobility.",
-  "icon": "/img/wc4/skills/general_skill_166.png",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3661,
-      "effect": 1,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 1% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 1% attaque et counterattack dégâts pour chaque 3 mobility."
-    },
-    {
-      "level": 2,
-      "skillId": 3662,
-      "effect": 2,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 2% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 2% attaque et counterattack dégâts pour chaque 3 mobility."
-    },
-    {
-      "level": 3,
-      "skillId": 3663,
-      "effect": 3,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 3% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 3% attaque et counterattack dégâts pour chaque 3 mobility."
-    },
-    {
-      "level": 4,
-      "skillId": 3664,
-      "effect": 4,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 4% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 4% attaque et counterattack dégâts pour chaque 3 mobility."
-    },
-    {
-      "level": 5,
-      "skillId": 3665,
-      "effect": 5,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.",
-      "renderedDescFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente 5% attaque et counterattack dégâts pour chaque 3 mobility."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25456,
-        "level": 5
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1031,
-        "level": 5,
-        "promotionId": 10311
-      }
-    ]
+ "slug": "expeditionary-force-commander",
+ "type": 166,
+ "name": "Expeditionary Force Commander",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase X% attack and counterattack damage for every 3 mobility.",
+ "icon": "/img/wc4/skills/general_skill_166.png",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3661,
+   "effect": 1,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 1% attack and counterattack damage for every 3 mobility.",
+   "renderedDescFr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +1% par tranche de 3 points de mobilité.",
+   "renderedDescDe": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um 1% je 3 Mobilität."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Expeditionary Force Commander",
-  "descriptionTemplateFr": "Lorsque vous commandez des navires unités, gagne +5 mobility et unaffected de effets que disable counterattack. Lorsque vous commandez unités, augmente X% attaque et counterattack dégâts pour chaque 3 mobility.",
-  "longDesc": "Compétence spécifique à un général. « Expeditionary Force Commander » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 5% attaque and counterattack dégâts for every 3 mobility. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Expeditionary Force Commander\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Expeditionary Force Commander“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3662,
+   "effect": 2,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 2% attack and counterattack damage for every 3 mobility.",
+   "renderedDescFr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +2% par tranche de 3 points de mobilité.",
+   "renderedDescDe": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um 2% je 3 Mobilität."
+  },
+  {
+   "level": 3,
+   "skillId": 3663,
+   "effect": 3,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 3% attack and counterattack damage for every 3 mobility.",
+   "renderedDescFr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +3% par tranche de 3 points de mobilité.",
+   "renderedDescDe": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um 3% je 3 Mobilität."
+  },
+  {
+   "level": 4,
+   "skillId": 3664,
+   "effect": 4,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 4% attack and counterattack damage for every 3 mobility.",
+   "renderedDescFr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +4% par tranche de 3 points de mobilité.",
+   "renderedDescDe": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um 4% je 3 Mobilität."
+  },
+  {
+   "level": 5,
+   "skillId": 3665,
+   "effect": 5,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.",
+   "renderedDescFr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +5% par tranche de 3 points de mobilité.",
+   "renderedDescDe": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um 5% je 3 Mobilität."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25456,
+    "level": 5
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1031,
+    "level": 5,
+    "promotionId": 10311
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Expeditionary Force Commander",
+ "descriptionTemplateFr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +X% par tranche de 3 points de mobilité.",
+ "longDesc": "Compétence spécifique à un général. « Expeditionary Force Commander » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités navales, gain +5 mobility and unaffected by effect that disable counterattack. When commanding unités, augmenter 5% attaque and counterattack dégâts for every 3 mobility. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Expeditionary Force Commander\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Expeditionary Force Commander“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding ship units, gain +5 mobility and unaffected by effect that disable counterattack. When commanding units, increase 5% attack and counterattack damage for every 3 mobility.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Kommandeur des Expeditionskorps",
+ "descriptionTemplateDe": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um X% je 3 Mobilität."
 }

@@ -60,8 +60,10 @@ export default function SearchBar() {
         keys: [
           { name: "name", weight: 2 },
           { name: "nameFr", weight: 2 },
+          { name: "nameDe", weight: 2 },
           { name: "desc", weight: 0.5 },
           { name: "descFr", weight: 0.5 },
+          { name: "descDe", weight: 0.5 },
           { name: "category", weight: 0.3 },
         ],
         threshold: 0.35,

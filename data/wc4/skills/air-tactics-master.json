@@ -1,80 +1,87 @@
 {
-  "slug": "air-tactics-master",
-  "type": 153,
-  "name": "Air Tactics Master",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy X% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
-  "icon": "/img/wc4/skills/general_skill_153.png",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3531,
-      "effect": 15,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 15% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
-      "renderedDescFr": "Réduit l'aviation commandement (sauf aéroportées troupes) et missile consommation de 20%. Gagne “en échelon offensive” après commandant l'aviation et missile attaque. Lorsque l'aviation et missile attaque, ignore ennemi 15% défense et inflicts critique strikes sur any ennemi avec less than 20 final défense (nukes sont ineffective), et effets est clear à la end de la tour."
-    },
-    {
-      "level": 2,
-      "skillId": 3532,
-      "effect": 30,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 30% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
-      "renderedDescFr": "Réduit l'aviation commandement (sauf aéroportées troupes) et missile consommation de 20%. Gagne “en échelon offensive” après commandant l'aviation et missile attaque. Lorsque l'aviation et missile attaque, ignore ennemi 30% défense et inflicts critique strikes sur any ennemi avec less than 20 final défense (nukes sont ineffective), et effets est clear à la end de la tour."
-    },
-    {
-      "level": 3,
-      "skillId": 3533,
-      "effect": 45,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 45% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
-      "renderedDescFr": "Réduit l'aviation commandement (sauf aéroportées troupes) et missile consommation de 20%. Gagne “en échelon offensive” après commandant l'aviation et missile attaque. Lorsque l'aviation et missile attaque, ignore ennemi 45% défense et inflicts critique strikes sur any ennemi avec less than 20 final défense (nukes sont ineffective), et effets est clear à la end de la tour."
-    },
-    {
-      "level": 4,
-      "skillId": 3534,
-      "effect": 60,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 60% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
-      "renderedDescFr": "Réduit l'aviation commandement (sauf aéroportées troupes) et missile consommation de 20%. Gagne “en échelon offensive” après commandant l'aviation et missile attaque. Lorsque l'aviation et missile attaque, ignore ennemi 60% défense et inflicts critique strikes sur any ennemi avec less than 20 final défense (nukes sont ineffective), et effets est clear à la end de la tour."
-    },
-    {
-      "level": 5,
-      "skillId": 3535,
-      "effect": 75,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
-      "renderedDescFr": "Réduit l'aviation commandement (sauf aéroportées troupes) et missile consommation de 20%. Gagne “en échelon offensive” après commandant l'aviation et missile attaque. Lorsque l'aviation et missile attaque, ignore ennemi 75% défense et inflicts critique strikes sur any ennemi avec less than 20 final défense (nukes sont ineffective), et effets est clear à la end de la tour."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1109,
-        "level": 4
-      },
-      {
-        "generalId": 25371,
-        "level": 4
-      },
-      {
-        "generalId": 25374,
-        "level": 4
-      }
-    ],
-    "promoted": []
+ "slug": "air-tactics-master",
+ "type": 153,
+ "name": "Air Tactics Master",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy X% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+ "icon": "/img/wc4/skills/general_skill_153.png",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3531,
+   "effect": 15,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 15% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+   "renderedDescFr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore 15% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+   "renderedDescDe": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden 15% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Maître des tactiques aériennes",
-  "descriptionTemplateFr": "Réduit l'aviation commandement (sauf aéroportées troupes) et missile consommation de 20%. Gagne “en échelon offensive” après commandant l'aviation et missile attaque. Lorsque l'aviation et missile attaque, ignore ennemi X% défense et inflicts critique strikes sur any ennemi avec less than 20 final défense (nukes sont ineffective), et effets est clear à la end de la tour.",
-  "longDesc": "Compétence spécifique à un général. « Maître des tactiques aériennes » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 75% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
-  "longDescEn": "A general-specific skill. \"Air Tactics Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Air Tactics Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals."
+  {
+   "level": 2,
+   "skillId": 3532,
+   "effect": 30,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 30% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+   "renderedDescFr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore 30% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+   "renderedDescDe": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden 30% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende."
+  },
+  {
+   "level": 3,
+   "skillId": 3533,
+   "effect": 45,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 45% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+   "renderedDescFr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore 45% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+   "renderedDescDe": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden 45% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende."
+  },
+  {
+   "level": 4,
+   "skillId": 3534,
+   "effect": 60,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 60% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+   "renderedDescFr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore 60% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+   "renderedDescDe": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden 60% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende."
+  },
+  {
+   "level": 5,
+   "skillId": 3535,
+   "effect": 75,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.",
+   "renderedDescFr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore 75% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+   "renderedDescDe": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden 75% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1109,
+    "level": 4
+   },
+   {
+    "generalId": 25371,
+    "level": 4
+   },
+   {
+    "generalId": 25374,
+    "level": 4
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Maître des tactiques aériennes",
+ "descriptionTemplateFr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore X% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+ "longDesc": "Compétence spécifique à un général. « Maître des tactiques aériennes » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Réduit le coût de commandement aérien (sauf les troupes aéroportées) and consommation de missiles de 20%. Gain “offensive en échelon” après avoir ordonné des attaques aériennes et missiles. When the air force and missile attaque, ignore 75% de la défense ennemie and inflicts frappe critiques sur tout ennemi ayant moins de 20 en défense finale (les bombes nucléaires sont inefficaces), and effect is clear à la fin du tour. ». Signature de carte — impossible à remplacer, définit souvent l'identité tactique du général.",
+ "longDescEn": "A general-specific skill. \"Air Tactics Master\" scales up to level 5. At max level (5), the skill applies the following effect: \"Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.\". A card signature — cannot be swapped; it often defines the general's tactical identity.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Air Tactics Master“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Reduces air force command (except airborne troops) and missile consumption by 20%. Gain “Echeloned Offensive” after commanding air force and missile attacks. When the air force and missile attack, ignores enemy 75% defense and inflicts critical strikes on any enemy with less than 20 final defense (nukes are ineffective), and effect is clear at the end of the turn.“. Eine Karten-Signatur — nicht austauschbar, prägt oft die taktische Identität des Generals.",
+ "nameDe": "Meister der Lufttaktik",
+ "descriptionTemplateDe": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden X% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende."
 }

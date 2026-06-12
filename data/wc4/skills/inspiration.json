@@ -1,244 +1,251 @@
 {
-  "slug": "inspiration",
-  "type": 110,
-  "name": "Inspiration",
-  "series": 5,
-  "seriesLabel": "Offensive",
-  "descriptionTemplate": "30% chance to boost morale after attacking. Damage +X% when morale is high",
-  "icon": "/img/wc4/skills/general_skill_110.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3101,
-      "effect": 3,
-      "chance": 100,
-      "costMedal": 100,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +3% when morale is high",
-      "renderedDescFr": "30% chances à boost morale après attaquant. Dégâts +3% lorsque morale est high"
-    },
-    {
-      "level": 2,
-      "skillId": 3102,
-      "effect": 6,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +6% when morale is high",
-      "renderedDescFr": "30% chances à boost morale après attaquant. Dégâts +6% lorsque morale est high"
-    },
-    {
-      "level": 3,
-      "skillId": 3103,
-      "effect": 9,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +9% when morale is high",
-      "renderedDescFr": "30% chances à boost morale après attaquant. Dégâts +9% lorsque morale est high"
-    },
-    {
-      "level": 4,
-      "skillId": 3104,
-      "effect": 12,
-      "chance": 100,
-      "costMedal": 320,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +12% when morale is high",
-      "renderedDescFr": "30% chances à boost morale après attaquant. Dégâts +12% lorsque morale est high"
-    },
-    {
-      "level": 5,
-      "skillId": 3105,
-      "effect": 15,
-      "chance": 100,
-      "costMedal": 400,
-      "renderedDesc": "30% chance to boost morale after attacking. Damage +15% when morale is high",
-      "renderedDescFr": "30% chances à boost morale après attaquant. Dégâts +15% lorsque morale est high"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1070,
-        "level": 3
-      },
-      {
-        "generalId": 1075,
-        "level": 1
-      },
-      {
-        "generalId": 1076,
-        "level": 2
-      },
-      {
-        "generalId": 1094,
-        "level": 4
-      },
-      {
-        "generalId": 1110,
-        "level": 2
-      },
-      {
-        "generalId": 22096,
-        "level": 4
-      },
-      {
-        "generalId": 22097,
-        "level": 2
-      },
-      {
-        "generalId": 22098,
-        "level": 1
-      },
-      {
-        "generalId": 22110,
-        "level": 1
-      },
-      {
-        "generalId": 22116,
-        "level": 1
-      },
-      {
-        "generalId": 22117,
-        "level": 1
-      },
-      {
-        "generalId": 22122,
-        "level": 1
-      },
-      {
-        "generalId": 22123,
-        "level": 1
-      },
-      {
-        "generalId": 22126,
-        "level": 1
-      },
-      {
-        "generalId": 22132,
-        "level": 1
-      },
-      {
-        "generalId": 22135,
-        "level": 1
-      },
-      {
-        "generalId": 25203,
-        "level": 2
-      },
-      {
-        "generalId": 25204,
-        "level": 3
-      },
-      {
-        "generalId": 25228,
-        "level": 5
-      },
-      {
-        "generalId": 25233,
-        "level": 5
-      },
-      {
-        "generalId": 25239,
-        "level": 5
-      },
-      {
-        "generalId": 25240,
-        "level": 5
-      },
-      {
-        "generalId": 25272,
-        "level": 2
-      },
-      {
-        "generalId": 25283,
-        "level": 1
-      },
-      {
-        "generalId": 25285,
-        "level": 1
-      },
-      {
-        "generalId": 25313,
-        "level": 3
-      },
-      {
-        "generalId": 25314,
-        "level": 1
-      },
-      {
-        "generalId": 25325,
-        "level": 3
-      },
-      {
-        "generalId": 25331,
-        "level": 2
-      },
-      {
-        "generalId": 25332,
-        "level": 5
-      },
-      {
-        "generalId": 25334,
-        "level": 1
-      },
-      {
-        "generalId": 25359,
-        "level": 1
-      },
-      {
-        "generalId": 25363,
-        "level": 1
-      },
-      {
-        "generalId": 25364,
-        "level": 1
-      },
-      {
-        "generalId": 25380,
-        "level": 1
-      },
-      {
-        "generalId": 25388,
-        "level": 5
-      },
-      {
-        "generalId": 25399,
-        "level": 5
-      },
-      {
-        "generalId": 25413,
-        "level": 1
-      },
-      {
-        "generalId": 25419,
-        "level": 1
-      },
-      {
-        "generalId": 25437,
-        "level": 1
-      },
-      {
-        "generalId": 25451,
-        "level": 1
-      },
-      {
-        "generalId": 25455,
-        "level": 5
-      },
-      {
-        "generalId": 25479,
-        "level": 1
-      },
-      {
-        "generalId": 25480,
-        "level": 1
-      }
-    ],
-    "promoted": []
+ "slug": "inspiration",
+ "type": 110,
+ "name": "Inspiration",
+ "series": 5,
+ "seriesLabel": "Offensive",
+ "descriptionTemplate": "30% chance to boost morale after attacking. Damage +X% when morale is high",
+ "icon": "/img/wc4/skills/general_skill_110.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3101,
+   "effect": 3,
+   "chance": 100,
+   "costMedal": 100,
+   "renderedDesc": "30% chance to boost morale after attacking. Damage +3% when morale is high",
+   "renderedDescFr": "30% de chances d'augmenter le moral après une attaque. Dégâts +3% lorsque le moral est élevé",
+   "renderedDescDe": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +3% bei hoher Moral"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Inspiration",
-  "descriptionTemplateFr": "30% chances à boost morale après attaquant. Dégâts +X% lorsque morale est high",
-  "longDesc": "Compétence de pression offensive. « Inspiration » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 30% chance d'augmenter le moral après avoir attaqué. Dégâts +15% lorsque le moral est élevé ». Excellente pour les scénarios de percée où l'on multiplie les combats rapprochés.",
-  "longDescEn": "An offensive-pressure skill. \"Inspiration\" scales up to level 5. At max level (5), the skill applies the following effect: \"30% chance to boost morale after attacking. Damage +15% when morale is high\". Excellent on breakthrough scenarios where close-combat exchanges stack up.",
-  "longDescDe": "Eine Offensivdruck-Fähigkeit. „Inspiration“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „30% chance to boost morale after attacking. Damage +15% when morale is high“. Hervorragend für Durchbruchsszenarien mit vielen Nahkampfkontakten."
+  {
+   "level": 2,
+   "skillId": 3102,
+   "effect": 6,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "30% chance to boost morale after attacking. Damage +6% when morale is high",
+   "renderedDescFr": "30% de chances d'augmenter le moral après une attaque. Dégâts +6% lorsque le moral est élevé",
+   "renderedDescDe": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +6% bei hoher Moral"
+  },
+  {
+   "level": 3,
+   "skillId": 3103,
+   "effect": 9,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "30% chance to boost morale after attacking. Damage +9% when morale is high",
+   "renderedDescFr": "30% de chances d'augmenter le moral après une attaque. Dégâts +9% lorsque le moral est élevé",
+   "renderedDescDe": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +9% bei hoher Moral"
+  },
+  {
+   "level": 4,
+   "skillId": 3104,
+   "effect": 12,
+   "chance": 100,
+   "costMedal": 320,
+   "renderedDesc": "30% chance to boost morale after attacking. Damage +12% when morale is high",
+   "renderedDescFr": "30% de chances d'augmenter le moral après une attaque. Dégâts +12% lorsque le moral est élevé",
+   "renderedDescDe": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +12% bei hoher Moral"
+  },
+  {
+   "level": 5,
+   "skillId": 3105,
+   "effect": 15,
+   "chance": 100,
+   "costMedal": 400,
+   "renderedDesc": "30% chance to boost morale after attacking. Damage +15% when morale is high",
+   "renderedDescFr": "30% de chances d'augmenter le moral après une attaque. Dégâts +15% lorsque le moral est élevé",
+   "renderedDescDe": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +15% bei hoher Moral"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1070,
+    "level": 3
+   },
+   {
+    "generalId": 1075,
+    "level": 1
+   },
+   {
+    "generalId": 1076,
+    "level": 2
+   },
+   {
+    "generalId": 1094,
+    "level": 4
+   },
+   {
+    "generalId": 1110,
+    "level": 2
+   },
+   {
+    "generalId": 22096,
+    "level": 4
+   },
+   {
+    "generalId": 22097,
+    "level": 2
+   },
+   {
+    "generalId": 22098,
+    "level": 1
+   },
+   {
+    "generalId": 22110,
+    "level": 1
+   },
+   {
+    "generalId": 22116,
+    "level": 1
+   },
+   {
+    "generalId": 22117,
+    "level": 1
+   },
+   {
+    "generalId": 22122,
+    "level": 1
+   },
+   {
+    "generalId": 22123,
+    "level": 1
+   },
+   {
+    "generalId": 22126,
+    "level": 1
+   },
+   {
+    "generalId": 22132,
+    "level": 1
+   },
+   {
+    "generalId": 22135,
+    "level": 1
+   },
+   {
+    "generalId": 25203,
+    "level": 2
+   },
+   {
+    "generalId": 25204,
+    "level": 3
+   },
+   {
+    "generalId": 25228,
+    "level": 5
+   },
+   {
+    "generalId": 25233,
+    "level": 5
+   },
+   {
+    "generalId": 25239,
+    "level": 5
+   },
+   {
+    "generalId": 25240,
+    "level": 5
+   },
+   {
+    "generalId": 25272,
+    "level": 2
+   },
+   {
+    "generalId": 25283,
+    "level": 1
+   },
+   {
+    "generalId": 25285,
+    "level": 1
+   },
+   {
+    "generalId": 25313,
+    "level": 3
+   },
+   {
+    "generalId": 25314,
+    "level": 1
+   },
+   {
+    "generalId": 25325,
+    "level": 3
+   },
+   {
+    "generalId": 25331,
+    "level": 2
+   },
+   {
+    "generalId": 25332,
+    "level": 5
+   },
+   {
+    "generalId": 25334,
+    "level": 1
+   },
+   {
+    "generalId": 25359,
+    "level": 1
+   },
+   {
+    "generalId": 25363,
+    "level": 1
+   },
+   {
+    "generalId": 25364,
+    "level": 1
+   },
+   {
+    "generalId": 25380,
+    "level": 1
+   },
+   {
+    "generalId": 25388,
+    "level": 5
+   },
+   {
+    "generalId": 25399,
+    "level": 5
+   },
+   {
+    "generalId": 25413,
+    "level": 1
+   },
+   {
+    "generalId": 25419,
+    "level": 1
+   },
+   {
+    "generalId": 25437,
+    "level": 1
+   },
+   {
+    "generalId": 25451,
+    "level": 1
+   },
+   {
+    "generalId": 25455,
+    "level": 5
+   },
+   {
+    "generalId": 25479,
+    "level": 1
+   },
+   {
+    "generalId": 25480,
+    "level": 1
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Inspiration",
+ "descriptionTemplateFr": "30% de chances d'augmenter le moral après une attaque. Dégâts +X% lorsque le moral est élevé",
+ "longDesc": "Compétence de pression offensive. « Inspiration » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « 30% chance d'augmenter le moral après avoir attaqué. Dégâts +15% lorsque le moral est élevé ». Excellente pour les scénarios de percée où l'on multiplie les combats rapprochés.",
+ "longDescEn": "An offensive-pressure skill. \"Inspiration\" scales up to level 5. At max level (5), the skill applies the following effect: \"30% chance to boost morale after attacking. Damage +15% when morale is high\". Excellent on breakthrough scenarios where close-combat exchanges stack up.",
+ "longDescDe": "Eine Offensivdruck-Fähigkeit. „Inspiration“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „30% chance to boost morale after attacking. Damage +15% when morale is high“. Hervorragend für Durchbruchsszenarien mit vielen Nahkampfkontakten.",
+ "nameDe": "Inspiration",
+ "descriptionTemplateDe": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +X% bei hoher Moral"
 }

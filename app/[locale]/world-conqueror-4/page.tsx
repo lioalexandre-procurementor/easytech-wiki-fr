@@ -13,6 +13,7 @@ import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { ogImage } from "@/lib/og";
 
 export async function generateMetadata({
   params: { locale },
@@ -29,6 +30,10 @@ export async function generateMetadata({
     en: "The most complete English-language guide to World Conqueror 4: elite units, Scorpion Empire faction, generals, technologies, scenarios and strategies.",
     de: "Der umfassendste deutschsprachige Guide zu World Conqueror 4: Elite-Einheiten, Skorpion-Imperium, Generäle, Technologien, Szenarien und Strategien.",
   };
+  const ogImages = ogImage({
+    title: titleByLocale[locale] ?? titleByLocale.en,
+    sub: "World Conqueror 4",
+  });
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
@@ -45,6 +50,7 @@ export async function generateMetadata({
       title: titleByLocale[locale] ?? titleByLocale.en,
       description: descByLocale[locale] ?? descByLocale.en,
       type: "website",
+      images: ogImages,
     },
   };
 }

@@ -1,0 +1,845 @@
+{
+ "comment": "Curated FR/DE skill translations (Tier 1 SEO, 2026-06-12). Source of truth for apply_skill_translations.py. FR replaces word-swap franglais; DE is new. WC4 nameFr kept (already curated).",
+ "templates": {
+  "wc4": {
+   "accuracy": {
+    "fr": "Inflige +X% de dégâts à l'ennemi lorsque vous commandez des unités d'artillerie",
+    "de": "Verursacht +X% Schaden am Feind, wenn Sie Artillerieeinheiten befehligen",
+    "nameDe": "Präzision"
+   },
+   "ace-forces": {
+    "fr": "L'expérience gagnée au combat par l'armée augmente de X%",
+    "de": "Die im Kampf gewonnene Erfahrung der Armee steigt um X%",
+    "nameDe": "Elitetruppen"
+   },
+   "ace-pilot": {
+    "fr": "Lors des attaques aériennes et de missiles, ignore X% de la défense des unités ennemies",
+    "de": "Bei Luft- und Raketenangriffen werden X% der Verteidigung feindlicher Einheiten ignoriert",
+    "nameDe": "Fliegerass"
+   },
+   "ace-sniper": {
+    "fr": "X% de chances d'infliger une attaque critique à l'ennemi et portée d'attaque +1 lorsque vous commandez une unité d'infanterie (si le général possède cette compétence, les effets de Chef d'infanterie ne s'appliquent pas.)",
+    "de": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, und Angriffsreichweite +1 beim Befehligen von Infanterieeinheiten (besitzt der General diese Fähigkeit, sind die Effekte von Infanterieführer unwirksam.)",
+    "nameDe": "Meisterschütze"
+   },
+   "ace-submarine": {
+    "fr": "Les sous-marins sous commandement (hors sous-marins nucléaires) ignorent la défense ennemie et leur portée d'attaque augmente de 1 ; après avoir éliminé un ennemi, X% de chances d'attaquer à nouveau, chance augmentée de 25% supplémentaires en cas d'attaque critique.",
+    "de": "Befehligte U-Boote (außer Atom-U-Boote) ignorieren die feindliche Verteidigung und ihre Angriffsreichweite steigt um 1; nach dem Ausschalten eines Feindes besteht eine X% Chance auf einen erneuten Angriff, bei einem kritischen Treffer um weitere 25% erhöht.",
+    "nameDe": "U-Boot-Ass"
+   },
+   "ace-tank": {
+    "fr": "Lorsque vous commandez des unités blindées à l'attaque, ignore X% de la défense des unités ennemies",
+    "de": "Beim Angriff mit gepanzerten Einheiten werden X% der Verteidigung feindlicher Einheiten ignoriert",
+    "nameDe": "Panzer-Ass"
+   },
+   "air-raid-cover": {
+    "fr": "Lorsque vous commandez une unité aérienne à l'attaque, X% de chances que nos unités inactives situées à 1 case de l'unité ennemie attaquée se joignent à l'attaque (au plus 1 troupe participe simultanément).",
+    "de": "Beim Angriff mit einer Luftwaffeneinheit besteht eine X% Chance, dass eigene inaktive Einheiten im Umkreis von 1 Feld um den angegriffenen Feind sich dem Angriff anschließen (höchstens 1 Truppe gleichzeitig).",
+    "nameDe": "Luftangriffsdeckung"
+   },
+   "air-superiority": {
+    "fr": "X% de chances d'ignorer les armes antiaériennes lorsque vous commandez l'aviation. Dégâts +20% avec l'avion furtif et le B-52 Stratofortress.",
+    "de": "X% Chance, Flugabwehrwaffen zu ignorieren, wenn Sie die Luftwaffe befehligen. Schaden +20% mit Tarnkappenflugzeug und B-52 Stratofortress.",
+    "nameDe": "Luftüberlegenheit"
+   },
+   "air-tactics-master": {
+    "fr": "Réduit de 20% la consommation des commandements aériens (sauf troupes aéroportées) et des missiles. Obtient « Offensive échelonnée » après avoir commandé des attaques aériennes et de missiles. Lors des attaques aériennes et de missiles, ignore X% de la défense ennemie et inflige des coups critiques à tout ennemi dont la défense finale est inférieure à 20 (sans effet sur les armes nucléaires) ; l'effet disparaît à la fin du tour.",
+    "de": "Reduziert den Verbrauch von Luftwaffenkommandos (außer Luftlandetruppen) und Raketen um 20%. Erhält nach Luft- und Raketenangriffen „Gestaffelte Offensive“. Bei Luft- und Raketenangriffen werden X% der feindlichen Verteidigung ignoriert und kritische Treffer gegen jeden Feind mit weniger als 20 Endverteidigung erzielt (Atomwaffen ausgenommen); der Effekt endet am Rundenende.",
+    "nameDe": "Meister der Lufttaktik"
+   },
+   "airforce-leader": {
+    "fr": "X% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités aériennes",
+    "de": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Lufteinheiten befehligen",
+    "nameDe": "Luftwaffenführer"
+   },
+   "amphibious-warfare": {
+    "fr": "Mobilité +X% lorsque vous commandez des unités terrestres embarquées",
+    "de": "Mobilität +X%, wenn Sie eingeschiffte Landeinheiten befehligen",
+    "nameDe": "Amphibische Kriegsführung"
+   },
+   "anticipation": {
+    "fr": "Lorsque vous commandez des troupes en déplacement, dégâts infligés +X% (jusqu'à 50%) par case parcourue, pendant 1 tour.",
+    "de": "Beim Bewegen befehligter Truppen: verursachter Schaden +X% (bis zu 50%) pro zurückgelegtem Feld, für 1 Runde.",
+    "nameDe": "Antizipation"
+   },
+   "architecture": {
+    "fr": "Répare la ville : PV de la ville +X à chaque tour",
+    "de": "Repariert die Stadt: Stadt-HP +X pro Runde",
+    "nameDe": "Baukunst"
+   },
+   "armed-neutrality": {
+    "fr": "Attaque +15 sur votre propre territoire ; le risque de subir une attaque critique est réduit de X%.",
+    "de": "Angriff +15 auf eigenem Territorium; die Chance, einen kritischen Treffer zu erleiden, sinkt um X%.",
+    "nameDe": "Bewaffnete Neutralität"
+   },
+   "armored-army-group": {
+    "fr": "X% de chances qu'une unité blindée inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+    "de": "X% Chance, dass sich eine inaktive gepanzerte Einheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)",
+    "nameDe": "Panzerarmeegruppe"
+   },
+   "armored-assault": {
+    "fr": "Inflige +X% de dégâts à l'ennemi lorsque vous commandez des unités blindées",
+    "de": "Verursacht +X% Schaden am Feind, wenn Sie gepanzerte Einheiten befehligen",
+    "nameDe": "Panzerangriff"
+   },
+   "armored-tactic-expert": {
+    "fr": "Récupère X% des PV maximum au tour suivant lorsque les unités blindées sont endommagées à plus de moitié",
+    "de": "Stellt X% der maximalen HP in der nächsten Runde wieder her, wenn gepanzerte Einheiten mehr als zur Hälfte beschädigt sind",
+    "nameDe": "Panzertaktik-Experte"
+   },
+   "artillery-armor": {
+    "fr": "Défense +X% lorsque vous commandez des unités d'artillerie",
+    "de": "Verteidigung +X%, wenn Sie Artillerieeinheiten befehligen",
+    "nameDe": "Artilleriepanzerung"
+   },
+   "artillery-barrage": {
+    "fr": "Dégâts infligés à l'ennemi +X lorsque les unités d'artillerie sont endommagées à plus de moitié",
+    "de": "Schaden am Feind +X, wenn Artillerieeinheiten mehr als zur Hälfte beschädigt sind",
+    "nameDe": "Artilleriesperrfeuer"
+   },
+   "artillery-leader": {
+    "fr": "X% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'artillerie",
+    "de": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Artillerieeinheiten befehligen",
+    "nameDe": "Artillerieführer"
+   },
+   "artillery-tactic-expert": {
+    "fr": "Lorsque vous commandez des unités d'artillerie à l'attaque, ignore X% de la défense des unités ennemies",
+    "de": "Beim Angriff mit Artillerieeinheiten werden X% der Verteidigung feindlicher Einheiten ignoriert",
+    "nameDe": "Artillerietaktik-Experte"
+   },
+   "artillery-training-master": {
+    "fr": "Augmente de X% par niveau de la force d'élite d'artillerie la récupération de PV convertie depuis les dégâts infligés. Les dégâts critiques de la force d'élite d'artillerie augmentent de 25%",
+    "de": "Erhöht die aus verursachtem Schaden gewonnene HP-Wiederherstellung um X% je Stufe der Artillerie-Eliteeinheit. Kritischer Schaden der Artillerie-Eliteeinheit steigt um 25%",
+    "nameDe": "Artillerieausbildungsmeister"
+   },
+   "attack-guideance": {
+    "fr": "X% de chances qu'une unité d'artillerie inactive à proximité se joigne à l'attaque (une seule fois par tour)",
+    "de": "X% Chance, dass sich eine inaktive Artillerieeinheit in der Nähe dem Angriff anschließt (nur einmal pro Runde)",
+    "nameDe": "Feuerleitung"
+   },
+   "attrition-warfare": {
+    "fr": "Après une attaque commandée, la cible et 2 unités ennemies à 1 case d'elle ont X% de chances de subir « Fatigue » pendant 1 tour. Les troupes « fatiguées » perdent 6% de PV supplémentaires lors des attaques et frappes aériennes, et leur moral baisse. L'effet Fatigue ne s'applique pas aux troupes déjà démoralisées.",
+    "de": "Nach einem befohlenen Angriff erhalten das Ziel und 2 feindliche Einheiten im Umkreis von 1 Feld mit X% Wahrscheinlichkeit für 1 Runde „Erschöpfung“. Erschöpfte Truppen verlieren durch Angriffe und Luftschläge zusätzlich 6% HP und ihre Moral sinkt. Der Erschöpfungseffekt wirkt nicht auf bereits demoralisierte Truppen.",
+    "nameDe": "Zermürbungskrieg"
+   },
+   "august-storm": {
+    "fr": "Lorsque vous commandez une force d'élite d'infanterie, les unités alliées (y compris l'unité commandée) dans un rayon d'1 case infligent +10% de dégâts aux unités terrestres (bonus porté à 15% si la force d'élite est au moins niveau 9). Chaque force d'élite alliée supplémentaire à portée ajoute +X% de dégâts, jusqu'à 25%.",
+    "de": "Beim Befehligen einer Infanterie-Eliteeinheit verursachen verbündete Einheiten (einschließlich der befehligten Einheit) im Umkreis von 1 Feld +10% Schaden an Landeinheiten (ab Stufe 9 der Eliteeinheit 15%). Jede weitere verbündete Eliteeinheit in Reichweite gewährt zusätzlich +X% Schaden, bis zu 25%.",
+    "nameDe": "Auguststurm"
+   },
+   "aviation-expert": {
+    "fr": "Consommation de ressources lors des attaques aériennes -X%",
+    "de": "Ressourcenverbrauch bei Angriffen mit der Luftwaffe -X%",
+    "nameDe": "Luftfahrtexperte"
+   },
+   "battlefield-intuition": {
+    "fr": "Les unités commandées ignorent les bombes fumigènes, le statut fantôme, l'effet d'esquive et l'EMCON. Dégâts infligés aux ennemis sous la moitié de leurs PV +X%",
+    "de": "Befehligte Einheiten ignorieren Rauchbomben, Phantomstatus, Ausweicheffekte und EMCON. Verursachter Schaden an Feinden unter halben HP +X%",
+    "nameDe": "Schlachtfeldintuition"
+   },
+   "bayonet-charge": {
+    "fr": "Dégâts infligés à l'ennemi +X lorsque les unités d'infanterie sont endommagées à plus de moitié",
+    "de": "Schaden am Feind +X, wenn Infanterieeinheiten mehr als zur Hälfte beschädigt sind",
+    "nameDe": "Bajonettangriff"
+   },
+   "blasting-impact": {
+    "fr": "Après avoir anéanti une troupe ennemie avec une unité blindée commandée, inflige X% de dégâts supplémentaires aux ennemis autour de la cible.",
+    "de": "Nachdem eine befehligte gepanzerte Einheit eine feindliche Truppe vernichtet hat, erleiden Feinde um das Ziel zusätzlich X% Schaden.",
+    "nameDe": "Sprengwirkung"
+   },
+   "blitzkrieg": {
+    "fr": "X% de chances que l'ennemi ne riposte pas lorsque vous commandez des unités blindées",
+    "de": "X% Chance, dass der Feind nicht zurückschlägt, wenn Sie gepanzerte Einheiten befehligen",
+    "nameDe": "Blitzkrieg"
+   },
+   "break-the-encirclement": {
+    "fr": "Après avoir anéanti des troupes ennemies, X% de chances de faire baisser le moral de 2 ennemis situés à 1 case de vous.",
+    "de": "Nach dem Vernichten feindlicher Truppen: X% Chance, die Moral von 2 Feinden im Umkreis von 1 Feld zu senken.",
+    "nameDe": "Ausbruch aus der Einkesselung"
+   },
+   "camouflage": {
+    "fr": "Permet d'esquiver X% des dégâts des unités aériennes ennemies",
+    "de": "Weicht X% des Schadens feindlicher Lufteinheiten aus",
+    "nameDe": "Tarnung"
+   },
+   "carpet-bombing": {
+    "fr": "Dégâts +X% contre les forces défendant la ville lors des raids aériens",
+    "de": "Schaden +X% gegen Verteidigungstruppen in der Stadt bei Luftangriffen",
+    "nameDe": "Flächenbombardement"
+   },
+   "command-and-coordination": {
+    "fr": "Après avoir commandé une unité terrestre à l'attaque, X% de chances d'accorder « Coordination » aux alliés proches et à vous-même pendant 1 tour. Les unités avec « Coordination » gagnent +15% de dégâts. Annule le statut négatif appliqué à l'unité (sauf s'il provient d'une baisse de moral), puis retire « Coordination ».",
+    "de": "Nach einem Angriff mit einer Landeinheit besteht eine X% Chance, nahen Verbündeten und sich selbst für 1 Runde „Koordination“ zu gewähren. Einheiten mit „Koordination“ erhalten +15% Schaden. Negative Statuseffekte auf der Einheit werden aufgehoben (außer durch Moralverlust ausgelöste), danach endet „Koordination“.",
+    "nameDe": "Kommando und Koordination"
+   },
+   "coordinated-counterattack": {
+    "fr": "Lorsque vous commandez des unités d'artillerie, l'unité ignore les effets de compétence qui désactivent la riposte. Lorsqu'une unité alliée voisine riposte, X% de chances de se joindre à la riposte",
+    "de": "Beim Befehligen von Artillerieeinheiten ist die Einheit immun gegen Fähigkeitseffekte, die den Gegenangriff verhindern. Wenn eine benachbarte verbündete Einheit zurückschlägt, besteht eine X% Chance, sich dem Gegenangriff anzuschließen",
+    "nameDe": "Koordinierter Gegenangriff"
+   },
+   "counter": {
+    "fr": "Lorsque la force commandée est attaquée et subit des dégâts, l'ennemi subit également X% de ces dégâts. (Une seule fois par attaque)",
+    "de": "Wenn die befehligte Truppe angegriffen wird und Schaden erleidet, erleidet der Feind ebenfalls X% dieses Schadens. (Wirkt nur einmal je Angriff)",
+    "nameDe": "Konter"
+   },
+   "cover": {
+    "fr": "12% de chances d'esquiver X% des dégâts ennemis",
+    "de": "12% Chance, X% des feindlichen Schadens auszuweichen",
+    "nameDe": "Deckung"
+   },
+   "crossfire": {
+    "fr": "Riposte +X% lorsque vous êtes attaqué par l'ennemi sur terre",
+    "de": "Gegenangriff +X%, wenn Sie an Land vom Feind angegriffen werden",
+    "nameDe": "Kreuzfeuer"
+   },
+   "crowd-tactics": {
+    "fr": "Attaque des unités terrestres alliées adjacentes +X",
+    "de": "Angriff benachbarter verbündeter Heereseinheiten +X",
+    "nameDe": "Massentaktik"
+   },
+   "decoy-and-strike": {
+    "fr": "Après avoir commandé une troupe à l'attaque, elle gagne le statut « Leurre » pendant 1 tour : les troupes alliées à 1 case infligent +X% de dégâts (sauf elle-même).",
+    "de": "Nach einem befohlenen Angriff erhält die Truppe für 1 Runde den Status „Köder“: verbündete Truppen im Umkreis von 1 Feld verursachen +X% Schaden (außer ihr selbst).",
+    "nameDe": "Ködern und Zuschlagen"
+   },
+   "deep-blue-resolve": {
+    "fr": "Lorsque vous commandez des navires, X% de chances d'infliger une attaque critique en attaquant ou en lançant des frappes aériennes. (Si le général possède cette compétence, les effets de Chef de flotte et Chef de l'aviation ne s'appliquent pas.)",
+    "de": "Beim Befehligen von Schiffseinheiten besteht eine X% Chance auf einen kritischen Treffer bei Angriffen oder Luftschlägen. (Besitzt der General diese Fähigkeit, sind die Effekte von Flottenführer und Luftwaffenführer unwirksam.)",
+    "nameDe": "Entschlossenheit der Hochsee"
+   },
+   "deep-operation": {
+    "fr": "Lorsque vous commandez des unités d'artillerie, dégâts infligés +X% aux ennemis à 2 cases ou plus",
+    "de": "Beim Befehligen von Artillerieeinheiten: verursachter Schaden +X% gegen Feinde in 2 oder mehr Feldern Entfernung",
+    "nameDe": "Tiefe Operation"
+   },
+   "depot-ship": {
+    "fr": "Répare les navires endommagés : PV +X à chaque tour",
+    "de": "Repariert beschädigte Schiffseinheiten: HP +X pro Runde",
+    "nameDe": "Versorgungsschiff"
+   },
+   "desert-fighting": {
+    "fr": "Dégâts infligés à l'ennemi +X lors des combats dans le désert",
+    "de": "Schaden am Feind +X bei Kämpfen in der Wüste",
+    "nameDe": "Wüstenkampf"
+   },
+   "deterrence": {
+    "fr": "Après avoir infligé une attaque critique, l'attaque de l'unité ennemie est réduite de X% pendant un tour",
+    "de": "Nach einem kritischen Treffer wird der Angriff der feindlichen Einheit für eine Runde um X% gesenkt",
+    "nameDe": "Abschreckung"
+   },
+   "dominance": {
+    "fr": "Inflige +X% de dégâts aux ennemis démoralisés et en déroute.",
+    "de": "Verursacht +X% Schaden an demoralisierten und chaotischen Feinden.",
+    "nameDe": "Dominanz"
+   },
+   "eagle-fly": {
+    "fr": "Esquive +X% et mobilité +4 lorsque vous commandez une unité d'aéroglisseurs, et dégâts subis des forces aériennes -30%. Lors des attaques d'unités en vol stationnaire, +1% de dégâts critiques par 1% de taux d'esquive.",
+    "de": "Erhöht die Ausweichrate um X% und die Mobilität um 4 beim Befehligen schwebender Lufteinheiten, und verringert erlittenen Schaden durch Luftstreitkräfte um 30%. Beim Angriff schwebender Einheiten steigt der kritische Schaden um 1% je 1% Ausweichrate.",
+    "nameDe": "Adlerflug"
+   },
+   "early-warning": {
+    "fr": "X% de chances d'esquiver 20% des dégâts lorsque vous commandez des navires",
+    "de": "X% Chance, 20% des Schadens auszuweichen, wenn Sie Schiffseinheiten befehligen",
+    "nameDe": "Frühwarnung"
+   },
+   "economic-expert": {
+    "fr": "Production économique de la ville +X",
+    "de": "Wirtschaftsleistung der Stadt +X",
+    "nameDe": "Wirtschaftsexperte"
+   },
+   "efficient-bombardment": {
+    "fr": "Lorsque vous commandez un navire, les attaques de l'aviation et des missiles infligent +X% de dégâts.",
+    "de": "Beim Befehligen eines Schiffes verursachen Angriffe von Luftwaffe und Raketen +X% Schaden.",
+    "nameDe": "Effizientes Bombardement"
+   },
+   "elastic-defence": {
+    "fr": "Répare les forteresses proches : PV +X à chaque tour",
+    "de": "Repariert nahe Festungseinheiten: HP +X pro Runde",
+    "nameDe": "Elastische Verteidigung"
+   },
+   "entrenchment": {
+    "fr": "Permet d'esquiver X% des dégâts de l'artillerie ennemie",
+    "de": "Weicht X% des Schadens feindlicher Artillerieeinheiten aus",
+    "nameDe": "Verschanzung"
+   },
+   "expeditionary-force-commander": {
+    "fr": "Lorsque vous commandez des navires, mobilité +5 et immunité aux effets qui désactivent la riposte. Lorsque vous commandez des unités, dégâts d'attaque et de riposte +X% par tranche de 3 points de mobilité.",
+    "de": "Beim Befehligen von Schiffseinheiten: Mobilität +5 und Immunität gegen Effekte, die den Gegenangriff verhindern. Beim Befehligen von Einheiten steigen Angriffs- und Gegenangriffsschaden um X% je 3 Mobilität.",
+    "nameDe": "Kommandeur des Expeditionskorps"
+   },
+   "explosives": {
+    "fr": "Dégâts +X% lors des attaques contre les unités de place forte",
+    "de": "Schaden +X% beim Angriff auf Stützpunkteinheiten",
+    "nameDe": "Sprengstoff"
+   },
+   "fighting-spirit": {
+    "fr": "Après avoir commandé une riposte, +X PV pour vous et les troupes alliées adjacentes.",
+    "de": "Nach einem befohlenen Gegenangriff: +X HP für die eigene Einheit und benachbarte verbündete Truppen.",
+    "nameDe": "Kampfgeist"
+   },
+   "finance": {
+    "fr": "Lorsque la production économique de la ville où les troupes sont stationnées est d'au moins 100 (seuil réduit à 70 si le général possède Inflexible ou Coordination du ravitaillement), le revenu économique par tour augmente de X.",
+    "de": "Beträgt die Wirtschaftsleistung der Stadt, in der die Truppen stationiert sind, mindestens 100 (mit den Fähigkeiten Unnachgiebig oder Nachschubkoordination nur 70), steigt das Wirtschaftseinkommen pro Runde um X.",
+    "nameDe": "Finanzwesen"
+   },
+   "fire-fighting-captain": {
+    "fr": "Lorsque vous commandez des unités d'artillerie, mobilité +3. Après avoir éliminé un ennemi, X% de chances d'attaquer à nouveau, augmentées de 10% par tranche de 200 PV de l'unité.",
+    "de": "Beim Befehligen von Artillerieeinheiten: Mobilität +3. Nach dem Ausschalten eines Feindes besteht eine X% Chance auf einen erneuten Angriff, die je 200 HP der Einheit um weitere 10% steigt.",
+    "nameDe": "Feuerkampf-Kapitän"
+   },
+   "firepower-blockade": {
+    "fr": "Lorsque votre attaque rend le moral ennemi bas ou affaibli, X% de chances d'attaquer à nouveau. Lorsque votre attaque met l'ennemi en déroute, 100% de chances d'attaquer à nouveau (sans effet sur les ennemis déjà en déroute)",
+    "de": "Senkt Ihr Angriff die Moral des Feindes auf niedrig oder geschwächt, besteht eine X% Chance auf einen erneuten Angriff. Versetzt Ihr Angriff den Feind ins Chaos, beträgt die Chance 100% (wirkungslos gegen bereits chaotische Feinde)",
+    "nameDe": "Feuerkraftblockade"
+   },
+   "fleet-leader": {
+    "fr": "X% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des navires",
+    "de": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Schiffseinheiten befehligen",
+    "nameDe": "Flottenführer"
+   },
+   "fluke": {
+    "fr": "Lorsque la troupe commandée esquive, récupère X% de ses PV maximum (au plus 1 fois par tour)",
+    "de": "Weicht die befehligte Truppe aus, stellt sie X% ihrer maximalen HP wieder her (höchstens 1-mal pro Runde)",
+    "nameDe": "Glückstreffer"
+   },
+   "fortification": {
+    "fr": "Lorsque vous commandez des troupes blindées, dégâts subis -X%.",
+    "de": "Beim Befehligen gepanzerter Truppen: erlittener Schaden -X%.",
+    "nameDe": "Befestigung"
+   },
+   "guerrilla-master": {
+    "fr": "Esquive X% des dégâts infligés par les unités terrestres ennemies. Après une attaque, récupère 20% des dégâts infligés à l'ennemi en PV",
+    "de": "Weicht X% des Schadens feindlicher Landeinheiten aus. Nach einem Angriff werden 20% des am Feind verursachten Schadens als HP wiederhergestellt",
+    "nameDe": "Guerillameister"
+   },
+   "guerrilla": {
+    "fr": "X% de chances que l'ennemi ne riposte pas lorsque vous commandez des unités d'infanterie",
+    "de": "X% Chance, dass der Feind nicht zurückschlägt, wenn Sie Infanterieeinheiten befehligen",
+    "nameDe": "Guerilla"
+   },
+   "hero": {
+    "fr": "Le moral des unités blindées commandées ne baisse pas, dégâts +X%. Après avoir anéanti un ennemi avec une unité blindée commandée, gagne le statut « Héros » : chance d'attaque critique +10% pendant 1 tour.",
+    "de": "Die Moral befehligter gepanzerter Einheiten sinkt nicht, Schaden +X%. Nachdem eine befehligte gepanzerte Einheit einen Feind vernichtet hat, wird der Status „Held“ gewährt: Chance auf kritische Treffer +10% für 1 Runde.",
+    "nameDe": "Held"
+   },
+   "heroic-charge": {
+    "fr": "Lorsque vous commandez des unités blindées, dégâts infligés +X% par ennemi à 2 cases ou moins (maximum 50%). Lorsque le moral des unités blindées est élevé, dégâts subis -20%",
+    "de": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +X% je Feind im Umkreis von 2 Feldern (maximal 50%). Bei hoher Moral der gepanzerten Einheiten: erlittener Schaden -20%",
+    "nameDe": "Heldenhafter Sturmangriff"
+   },
+   "hold-fast": {
+    "fr": "Le moral de la troupe ne baisse pas. Lorsqu'une unité alliée se trouve à 1 case, esquive X% des dégâts infligés par l'ennemi",
+    "de": "Die Moral der Truppe sinkt nicht. Befindet sich eine verbündete Einheit im Umkreis von 1 Feld, wird X% des feindlichen Schadens ausgewichen",
+    "nameDe": "Standhalten"
+   },
+   "industrial-expert": {
+    "fr": "Production industrielle de la ville +X",
+    "de": "Industrieleistung der Stadt +X",
+    "nameDe": "Industrieexperte"
+   },
+   "inescapable-net": {
+    "fr": "Les unités ennemies à 3 cases ou moins de l'unité commandée voient leur défense réduite de X% et subissent 20% de dégâts supplémentaires des bombes nucléaires, frappes satellites et explosions tactiques de drones.",
+    "de": "Feindliche Einheiten im Umkreis von 3 Feldern um die befehligte Einheit verlieren X% Verteidigung und erleiden 20% mehr Schaden durch Atombomben, Satellitenschläge und taktische Drohnenexplosionen.",
+    "nameDe": "Unentrinnbares Netz"
+   },
+   "infantry-group-charge": {
+    "fr": "X% de chances que deux unités d'infanterie inactives à proximité se joignent à l'attaque (une seule fois par tour)",
+    "de": "X% Chance, dass sich zwei inaktive Infanterieeinheiten in der Nähe dem Angriff anschließen (nur einmal pro Runde)",
+    "nameDe": "Infanterie-Massensturm"
+   },
+   "infantry-leader": {
+    "fr": "X% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités d'infanterie",
+    "de": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie Infanterieeinheiten befehligen",
+    "nameDe": "Infanterieführer"
+   },
+   "infantry-training-master": {
+    "fr": "Réduit les dégâts subis de X% par niveau de la force d'élite d'infanterie commandée. L'infanterie d'élite ne perd pas de puissance d'attaque lorsque ses PV diminuent.",
+    "de": "Reduziert den erlittenen Schaden um X% je Stufe der befehligten Infanterie-Eliteeinheit. Elite-Infanterie verliert bei sinkenden HP keine Angriffskraft.",
+    "nameDe": "Infanterieausbildungsmeister"
+   },
+   "inferior-victory": {
+    "fr": "Dégâts +X% lorsqu'une seule formation de troupes est sous commandement.",
+    "de": "Schaden +X%, wenn nur 1 Truppenformation befehligt wird.",
+    "nameDe": "Sieg der Unterlegenen"
+   },
+   "inspection": {
+    "fr": "Après une attaque aérienne commandée, la cible est terrifiée : taux de riposte réduit de X% pendant 1 tour.",
+    "de": "Nach einem befohlenen Luftwaffenangriff wird das Ziel eingeschüchtert: Gegenangriffsrate um X% gesenkt, für 1 Runde.",
+    "nameDe": "Inspektion"
+   },
+   "inspiration": {
+    "fr": "30% de chances d'augmenter le moral après une attaque. Dégâts +X% lorsque le moral est élevé",
+    "de": "30% Chance auf Moralanstieg nach einem Angriff. Schaden +X% bei hoher Moral",
+    "nameDe": "Inspiration"
+   },
+   "iron-will": {
+    "fr": "Lorsque vous commandez de l'infanterie, dégâts subis -X%. Après avoir été attaqué, réduction de dégâts supplémentaire de 10% pendant 1 tour, cumulable jusqu'à 3 fois.",
+    "de": "Beim Befehligen von Infanterie: erlittener Schaden -X%. Nach einem feindlichen Angriff zusätzliche Schadensreduktion von 10% für 1 Runde, bis zu 3-mal stapelbar.",
+    "nameDe": "Eiserner Wille"
+   },
+   "joint-offensive": {
+    "fr": "Après une attaque, X% de chances de marquer la cible et les ennemis à 1 case d'elle d'une balise de traque. Les cibles marquées subissent 20% de dégâts supplémentaires pendant 1 tour.",
+    "de": "Nach einem Angriff besteht eine X% Chance, das Ziel und weitere Feinde im Umkreis von 1 Feld mit einer Ortungsmarkierung zu versehen. Markierte Ziele erleiden 20% mehr Schaden, für 1 Runde.",
+    "nameDe": "Gemeinsame Offensive"
+   },
+   "jungle-fighting": {
+    "fr": "Dégâts infligés à l'ennemi +X lors des combats dans la jungle",
+    "de": "Schaden am Feind +X bei Kämpfen im Dschungel",
+    "nameDe": "Dschungelkampf"
+   },
+   "knight-of-the-sea": {
+    "fr": "Lorsque vous commandez des navires, le moral ne baisse pas. Les attaques critiques navales infligent +X% de dégâts. Si un porte-avions allié est à 2 cases ou si le commandant est déployé sur un porte-avions, les frappes aériennes, missiles et bombes nucléaires infligent +30% de dégâts. Tous les porte-avions alliés à 2 cases gagnent +15% de dégâts de frappe aérienne.",
+    "de": "Beim Befehligen von Schiffseinheiten sinkt die Moral nicht. Kritische Treffer zur See verursachen +X% Schaden. Befindet sich ein verbündeter Flugzeugträger im Umkreis von 2 Feldern oder ist der Kommandant auf einem Träger stationiert, verursachen Luftschläge, Raketen und Atombomben +30% Schaden. Alle verbündeten Flugzeugträger im Umkreis von 2 Feldern erhalten +15% Luftschlagschaden.",
+    "nameDe": "Ritter der See"
+   },
+   "leader": {
+    "fr": "Dégâts infligés par les unités commandées aux unités terrestres +X%. Lors de la prise d'une ville ennemie, accorde « Citation » aux unités alliées à 3 cases et à vous-même : attaque +15% pendant 3 tours",
+    "de": "Verursachter Schaden befehligter Einheiten gegen Landeinheiten +X%. Bei der Eroberung einer feindlichen Stadt erhalten verbündete Einheiten im Umkreis von 3 Feldern und die eigene Einheit „Belobigung“: Angriff +15% für 3 Runden",
+    "nameDe": "Anführer"
+   },
+   "leadership": {
+    "fr": "Lorsque vous commandez un navire, vous ne pouvez pas être mis en déroute. Attaque +X pour vous et les troupes alliées à 1 case.",
+    "de": "Beim Befehligen eines Schiffes verfallen Sie nicht ins Chaos. Angriff +X für die eigene Einheit und verbündete Truppen im Umkreis von 1 Feld.",
+    "nameDe": "Führungsstärke"
+   },
+   "machinist": {
+    "fr": "Ravitaille les unités blindées et d'artillerie endommagées : PV +X à chaque tour",
+    "de": "Versorgt beschädigte Panzer- und Artillerieeinheiten: HP +X pro Runde",
+    "nameDe": "Maschinist"
+   },
+   "mareth-line": {
+    "fr": "En terrain montagneux ou désertique, vous et les alliés à 1 case subissez X% de dégâts en moins. Lorsque vous commandez des unités terrestres, la chance d'activation de la compétence « Rumeur » augmente de 25%. À la fin du tour, si un ennemi à 2 cases a le moral bas ou est en déroute, vous et les alliés à 1 case récupérez 10% de vos PV maximum.",
+    "de": "In Gebirgs- oder Wüstengelände erleiden Sie und Verbündete im Umkreis von 1 Feld X% weniger Schaden. Beim Befehligen von Landeinheiten steigt die Auslösechance der Fähigkeit „Gerücht“ um 25%. Befindet sich am Rundenende ein Feind mit gesenkter Moral oder im Chaos im Umkreis von 2 Feldern, stellen Sie und Verbündete im Umkreis von 1 Feld 10% der maximalen HP wieder her.",
+    "nameDe": "Mareth-Linie"
+   },
+   "marshall-plan": {
+    "fr": "Lorsque vous commandez des unités terrestres, X% de l'économie dépensée pendant le tour est récupérée au tour suivant (jusqu'à 1200). Pour chaque ennemi éliminé à 3 cases des unités commandées, vous gagnez 40 d'industrie et 4 de technologie (jusqu'à 3 fois par tour).",
+    "de": "Beim Befehligen von Landeinheiten werden X% der in der Runde ausgegebenen Wirtschaft in der nächsten Runde zurückgewonnen (bis zu 1200). Für jeden im Umkreis von 3 Feldern um die befehligten Einheiten ausgeschalteten Feind erhalten Sie 40 Industrie und 4 Technologie (bis zu 3-mal pro Runde).",
+    "nameDe": "Marshallplan"
+   },
+   "missile-expert": {
+    "fr": "Consommation de ressources lors des attaques de missiles -X%",
+    "de": "Ressourcenverbrauch bei Raketenangriffen -X%",
+    "nameDe": "Raketenexperte"
+   },
+   "modernized-air-force": {
+    "fr": "Lorsqu'une frappe aérienne commandée déclenche un coup fatal, dégâts infligés +X%.",
+    "de": "Löst ein befohlener Luftschlag einen tödlichen Treffer aus, steigt der verursachte Schaden um +X%.",
+    "nameDe": "Modernisierte Luftwaffe"
+   },
+   "mountain-fighting": {
+    "fr": "Dégâts infligés à l'ennemi +X lors des combats en montagne",
+    "de": "Schaden am Feind +X bei Kämpfen im Gebirge",
+    "nameDe": "Gebirgskampf"
+   },
+   "naval-assault": {
+    "fr": "Dégâts +X% lorsque vous commandez des navires. Après une attaque, récupère 5% des PV maximum (une seule fois par tour)",
+    "de": "Schaden +X% beim Befehligen von Schiffseinheiten. Nach einem Angriff werden 5% der maximalen HP wiederhergestellt (nur einmal pro Runde)",
+    "nameDe": "Seeangriff"
+   },
+   "naval-overlord": {
+    "fr": "Après une attaque navale commandée, 50% de chances d'appliquer « Secousse » à l'ennemi : mobilité -X% pendant 2 tours. Lorsque vous commandez l'Enterprise, tous les coûts aériens -1 sauf les chasseurs.",
+    "de": "Nach einem befohlenen Flottenangriff besteht eine 50% Chance, dem Feind „Erschütterung“ zuzufügen: Mobilität -X% für 2 Runden. Beim Befehligen der Enterprise sinken alle Luftwaffenkosten um 1, außer für Jäger.",
+    "nameDe": "Herrscher der Meere"
+   },
+   "navigation": {
+    "fr": "Lorsque vous commandez un navire à l'attaque, X% de chances qu'un navire inactif à proximité participe à l'attaque. (Une seule fois par tour)",
+    "de": "Beim Angriff mit einer Marineeinheit besteht eine X% Chance, dass sich eine inaktive Marineeinheit in der Nähe dem Angriff anschließt. (Nur einmal pro Runde)",
+    "nameDe": "Navigation"
+   },
+   "night-raid": {
+    "fr": "X% de chances que l'ennemi ne riposte pas lorsque vous commandez des navires.",
+    "de": "X% Chance, dass der Feind nicht zurückschlägt, wenn Sie Schiffseinheiten befehligen.",
+    "nameDe": "Nachtangriff"
+   },
+   "nuclear-warfare-expert": {
+    "fr": "Dégâts des bombes nucléaires +X%.",
+    "de": "Schaden durch Atombomben +X%.",
+    "nameDe": "Atomkriegsexperte"
+   },
+   "operation-overlord": {
+    "fr": "Les unités ennemies à 3 cases subissent 35% de dégâts supplémentaires, et les effets de blindage incliné, dispositif de protection, provocation, diversion et combat coordonné sont désactivés. Après avoir éliminé un ennemi avec des navires commandés, X% de chances d'obtenir une attaque supplémentaire.",
+    "de": "Feindliche Einheiten im Umkreis von 3 Feldern erleiden 35% zusätzlichen Schaden; die Effekte von Schrägpanzerung, Schutzvorrichtung, Provokation, Ablenkung und Kampfverbund werden deaktiviert. Nachdem befehligte Schiffseinheiten einen Feind ausgeschaltet haben, besteht eine X% Chance auf einen zusätzlichen Angriff.",
+    "nameDe": "Operation Overlord"
+   },
+   "organisation": {
+    "fr": "Récupère X% des PV maximum au tour suivant lorsque les unités d'infanterie sont endommagées à plus de moitié",
+    "de": "Stellt X% der maximalen HP in der nächsten Runde wieder her, wenn Infanterieeinheiten mehr als zur Hälfte beschädigt sind",
+    "nameDe": "Organisation"
+   },
+   "panzer-leader": {
+    "fr": "X% de chances d'infliger une attaque critique à l'ennemi lorsque vous commandez des unités blindées",
+    "de": "X% Chance, dem Feind einen kritischen Treffer zuzufügen, wenn Sie gepanzerte Einheiten befehligen",
+    "nameDe": "Panzerführer"
+   },
+   "plain-fighting": {
+    "fr": "Dégâts infligés à l'ennemi +X lors des combats en plaine",
+    "de": "Schaden am Feind +X bei Kämpfen in der Ebene",
+    "nameDe": "Feldschlacht"
+   },
+   "positional-warfare": {
+    "fr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -X%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+    "de": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -X%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert",
+    "nameDe": "Stellungskrieg"
+   },
+   "provocation": {
+    "fr": "Après une attaque, X% de chances d'obtenir l'effet « Provocation »",
+    "de": "Nach einem Angriff besteht eine X% Chance, den Effekt „Provokation“ zu erhalten",
+    "nameDe": "Provokation"
+   },
+   "prudence": {
+    "fr": "Votre moral ne peut pas être perturbé. Vous et les troupes alliées à 1 case gagnez +X% de dégâts de riposte.",
+    "de": "Die eigene Moral kann nicht gestört werden. Die eigene Einheit und verbündete Truppen im Umkreis von 1 Feld erhalten +X% Gegenangriffsschaden.",
+    "nameDe": "Besonnenheit"
+   },
+   "raider": {
+    "fr": "Inflige +X% de dégâts à l'ennemi lorsque vous commandez des unités d'infanterie",
+    "de": "Verursacht +X% Schaden am Feind, wenn Sie Infanterieeinheiten befehligen",
+    "nameDe": "Stoßtruppführer"
+   },
+   "replacement": {
+    "fr": "Renforce les unités d'infanterie endommagées : PV +X à chaque tour",
+    "de": "Verstärkt beschädigte Infanterieeinheiten: HP +X pro Runde",
+    "nameDe": "Ersatztruppen"
+   },
+   "retaliation": {
+    "fr": "Lorsque des troupes alliées à 1 case de vous sont anéanties au combat, vous gagnez le statut « Vengeance » : attaque +X pendant 2 tours.",
+    "de": "Werden verbündete Truppen im Umkreis von 1 Feld im Kampf vernichtet, erhalten Sie den Status „Vergeltung“: Angriff +X für 2 Runden.",
+    "nameDe": "Vergeltung"
+   },
+   "rival-contest": {
+    "fr": "Lorsque vous commandez des unités blindées, dégâts infligés aux forces d'élite ennemies +X%",
+    "de": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden gegen feindliche Eliteeinheiten +X%",
+    "nameDe": "Rivalenduell"
+   },
+   "rumor": {
+    "fr": "X% de chances de faire baisser le moral de l'ennemi lors d'une attaque",
+    "de": "X% Chance, die Moral des Feindes beim Angriff zu senken",
+    "nameDe": "Gerücht"
+   },
+   "sailor": {
+    "fr": "Riposte +X% lorsque vous êtes attaqué par l'ennemi en mer",
+    "de": "Gegenangriff +X%, wenn Sie auf See vom Feind angegriffen werden",
+    "nameDe": "Seemann"
+   },
+   "self-propelled-artillery": {
+    "fr": "Lorsque vous commandez une unité d'artillerie à l'attaque, X% de chances d'attaquer à nouveau après avoir anéanti des troupes ennemies",
+    "de": "Beim Angriff mit einer Artillerieeinheit besteht eine X% Chance auf einen erneuten Angriff nach dem Vernichten feindlicher Truppen",
+    "nameDe": "Selbstfahrlafette"
+   },
+   "shelter": {
+    "fr": "Permet d'esquiver X% des dégâts des unités de missiles ennemies",
+    "de": "Weicht X% des Schadens feindlicher Raketeneinheiten aus",
+    "nameDe": "Schutzbunker"
+   },
+   "sickle-cut": {
+    "fr": "Lorsque vous commandez des unités blindées, leur moral ne peut pas baisser. À l'attaque, X% de chances que l'ennemi ne puisse pas riposter. Après avoir éliminé un ennemi, gagne l'effet « Moisson » pendant 1 tour (dégâts +20% et ignore l'esquive). Par tranche de 30 points d'attaque des unités blindées commandées, dégâts critiques +5%. Si l'attaque de l'unité atteint au moins 180, sa portée augmente de 1.",
+    "de": "Beim Befehligen gepanzerter Einheiten kann deren Moral nicht sinken. Beim Angriff besteht eine X% Chance, dass der Feind nicht zurückschlagen kann. Nach dem Ausschalten eines Feindes wird für 1 Runde der Effekt „Schnitter“ gewährt (+20% Schaden, ignoriert Ausweichen). Je 30 Angriff der befehligten gepanzerten Einheiten steigt der kritische Schaden um 5%. Erreicht der Angriff der Einheit mindestens 180, steigt ihre Reichweite um 1.",
+    "nameDe": "Sichelschnitt"
+   },
+   "soviet-deep-battle": {
+    "fr": "Lorsque vous commandez des unités terrestres, chaque ennemi éliminé dans un rayon de 3 cases augmente votre moral et vous accorde le statut « Groupement de percée » (dégâts +X%, cumulable jusqu'à 42%), qui dure jusqu'à la fin de la phase.",
+    "de": "Beim Befehligen von Landeinheiten steigt die Moral, wann immer ein Feind im Umkreis von 3 Feldern ausgeschaltet wird, und Sie erhalten den Status „Durchbruchsverband“ (verursachter Schaden +X%, stapelbar bis 42%), der bis zum Ende der Phase anhält.",
+    "nameDe": "Sowjetische Tiefenoperation"
+   },
+   "star-fall": {
+    "fr": "Lorsque vous commandez des troupes à l'attaque, X% de chances de déclencher une frappe satellite de niveau II sur la cible. Lorsque vous commandez des aéroglisseurs, les dégâts de cette frappe satellite augmentent de 30% supplémentaires.",
+    "de": "Beim Angriff befehligter Truppen besteht eine X% Chance, einen Satellitenschlag der Stufe II auf das Ziel auszulösen. Beim Befehligen schwebender Lufteinheiten steigt der Schaden dieses Satellitenschlags um weitere 30%.",
+    "nameDe": "Sternenfall"
+   },
+   "steel-maneuver": {
+    "fr": "Lorsque vous commandez des unités blindées, dégâts infligés +X%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+    "de": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +X%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde).",
+    "nameDe": "Stahlmanöver"
+   },
+   "strategic-attack": {
+    "fr": "Après une attaque commandée, si la cible n'est pas anéantie, X% de chances de la marquer d'une balise de traque. Les cibles marquées subissent 20% de dégâts supplémentaires pendant 1 tour.",
+    "de": "Wird das Ziel nach einem befohlenen Angriff nicht vernichtet, besteht eine X% Chance, es mit einer Ortungsmarkierung zu versehen. Markierte Ziele erleiden 20% mehr Schaden, für 1 Runde.",
+    "nameDe": "Strategischer Angriff"
+   },
+   "strategic-deployment": {
+    "fr": "Après une attaque d'infanterie commandée, récupère X% des dégâts infligés en PV. Si une unité blindée ou d'artillerie alliée est à 1 case, portée d'attaque et de riposte de l'infanterie +1.",
+    "de": "Nach einem befohlenen Infanterieangriff werden X% des verursachten Schadens als HP wiederhergestellt. Befindet sich eine verbündete Panzer- oder Artillerieeinheit im Umkreis von 1 Feld: Angriffs- und Gegenangriffsreichweite der Infanterie +1.",
+    "nameDe": "Strategische Aufstellung"
+   },
+   "street-fighting": {
+    "fr": "Dégâts infligés à l'ennemi +X lors des combats en ville",
+    "de": "Schaden am Feind +X bei Kämpfen in der Stadt",
+    "nameDe": "Straßenkampf"
+   },
+   "submergence-evasion": {
+    "fr": "Les sous-marins commandés subissent X% de dégâts en moins et ont 50% de chances d'esquiver les frappes aériennes et les missiles. Les sous-marins récupèrent 5% de leurs PV maximum à chaque tour.",
+    "de": "Befehligte U-Boote erleiden X% weniger Schaden und haben eine 50% Chance, Luftschlägen und Raketen auszuweichen. U-Boote stellen jede Runde 5% ihrer maximalen HP wieder her.",
+    "nameDe": "Tauchmanöver"
+   },
+   "supply-organization": {
+    "fr": "Lorsque vous commandez des troupes sur votre territoire, production économique, industrielle et technologique +X%.",
+    "de": "Beim Befehligen von Truppen auf eigenem Territorium: Wirtschafts-, Industrie- und Technologieleistung +X%.",
+    "nameDe": "Nachschuborganisation"
+   },
+   "system-of-systems-operations": {
+    "fr": "Lorsque vous commandez des troupes à l'attaque ou des frappes aériennes, X% de chances d'infliger une attaque critique.",
+    "de": "Beim Angriff befehligter Truppen und bei Luftschlägen besteht eine X% Chance auf einen kritischen Treffer.",
+    "nameDe": "Systemverbund-Operationen"
+   },
+   "technology-expert": {
+    "fr": "Production technologique de la ville +X",
+    "de": "Technologieleistung der Stadt +X",
+    "nameDe": "Technologieexperte"
+   },
+   "tide-of-iron": {
+    "fr": "Dégâts infligés à l'ennemi +X lorsque les unités blindées sont endommagées à plus de moitié",
+    "de": "Schaden am Feind +X, wenn gepanzerte Einheiten mehr als zur Hälfte beschädigt sind",
+    "nameDe": "Eiserne Flut"
+   },
+   "unyielding-and-self-improving": {
+    "fr": "Revenu économique et industriel +X lorsque la force commandée n'a aucune troupe ennemie à 1 case.",
+    "de": "Wirtschafts- und Industrieeinkommen +X, wenn sich keine feindlichen Truppen im Umkreis von 1 Feld um die befehligte Truppe befinden.",
+    "nameDe": "Unnachgiebig und strebsam"
+   },
+   "veteran-general": {
+    "fr": "PV maximum des unités commandées +X% ; l'unité ne peut pas être mise en déroute tant qu'elle a plus de la moitié de ses PV",
+    "de": "Maximale HP befehligter Einheiten +X%; die Einheit kann nicht ins Chaos verfallen, solange sie über halben HP liegt",
+    "nameDe": "Veteranengeneral"
+   },
+   "war-machine": {
+    "fr": "Lorsque vous commandez des troupes blindées à portée du territoire ennemi, dégâts critiques pour vous et les forces alliées proches +X%",
+    "de": "Beim Befehligen gepanzerter Truppen in Reichweite feindlichen Territoriums: kritischer Schaden der eigenen und naher verbündeter Einheiten +X%",
+    "nameDe": "Kriegsmaschine"
+   },
+   "wartime-mobilization": {
+    "fr": "Lorsque vous commandez des unités d'infanterie, X% de chances d'infliger une attaque critique et récupération de 15% de vos PV maximum à chaque tour. De plus, le commandant et toutes les unités d'infanterie dans un rayon de 2 cases infligent 30% de dégâts en plus et en subissent 25% de moins. (Si le général possède cette compétence, les effets de Chef d'infanterie ne s'appliquent pas.)",
+    "de": "Beim Befehligen von Infanterieeinheiten besteht eine X% Chance auf einen kritischen Treffer, und jede Runde werden 15% der maximalen HP wiederhergestellt. Zugleich verursachen der Kommandant und alle Infanterieeinheiten im Umkreis von 2 Feldern 30% mehr Schaden und erleiden 25% weniger. (Besitzt der General diese Fähigkeit, sind die Effekte von Infanterieführer unwirksam.)",
+    "nameDe": "Kriegsmobilisierung"
+   },
+   "wipe-out-the-north": {
+    "fr": "Lorsque vous commandez des unités blindées, +20% de dégâts contre les unités non-bâtiments hors garnisons de ville. Si vous ne pouvez pas attaquer ou vous déplacer après une attaque, X% de chances d'attaquer à nouveau (une seule fois par tour). Chaque élimination ce tour augmente cette chance de 20% (max 100%), transformant l'effet en action supplémentaire.",
+    "de": "Beim Befehligen gepanzerter Einheiten: +20% Schaden gegen Nicht-Gebäudeeinheiten außer Stadtgarnisonen. Können Sie nach einem Angriff weder angreifen noch ziehen, besteht eine X% Chance auf einen erneuten Angriff (nur einmal pro Runde). Jeder Abschuss in dieser Runde erhöht die Chance um 20% (max. 100%) und wertet den Effekt zu einer zusätzlichen Aktion auf.",
+    "nameDe": "Säuberung des Nordens"
+   },
+   "wolfpack": {
+    "fr": "Attaque des navires alliés adjacents +X",
+    "de": "Angriff benachbarter verbündeter Schiffseinheiten +X",
+    "nameDe": "Wolfsrudel"
+   }
+  },
+  "ew6": {
+   "alert": {
+    "nameFr": "Vigilance",
+    "nameDe": "Wachsamkeit",
+    "fr": "Réduit les dégâts de X% lors des attaques à distance subies",
+    "de": "Verringert den Schaden um X% bei Angriffen aus der Ferne"
+   },
+   "ambush": {
+    "nameFr": "Embuscade",
+    "nameDe": "Hinterhalt",
+    "fr": "Y% de chances d'éviter l'attaque ennemie lorsque vous commandez de l'infanterie",
+    "de": "Y% Chance, dem feindlichen Angriff auszuweichen, wenn Sie Infanterie befehligen"
+   },
+   "artillery-expert": {
+    "nameFr": "Expert en artillerie",
+    "nameDe": "Artillerie-Experte",
+    "fr": "Attaque de l'artillerie +X dans un rayon de Z cases",
+    "de": "Erhöht den Artillerieangriff um X im Umkreis von Z Feldern"
+   },
+   "artillery-master": {
+    "nameFr": "Maître artilleur",
+    "nameDe": "Artilleriemeister",
+    "fr": "Coups critiques +Y% lors des attaques d'artillerie",
+    "de": "Erhöht kritische Treffer um Y% bei Angriffen mit Artillerie"
+   },
+   "assault": {
+    "nameFr": "Assaut",
+    "nameDe": "Sturmangriff",
+    "fr": "Dégâts supplémentaires +X lors des attaques d'infanterie",
+    "de": "X zusätzlicher Schaden bei Angriffen mit Infanterie"
+   },
+   "battle-array": {
+    "nameFr": "Ordre de bataille",
+    "nameDe": "Schlachtordnung",
+    "fr": "Y% de chances d'ignorer l'effet des tranchées lors des attaques d'infanterie",
+    "de": "Y% Chance, den Effekt von Schützengräben bei Infanterieangriffen zu ignorieren"
+   },
+   "cavalry-commander": {
+    "nameFr": "Commandant de cavalerie",
+    "nameDe": "Kavalleriekommandant",
+    "fr": "Attaque de la cavalerie +X dans un rayon de Z cases",
+    "de": "Erhöht den Kavallerieangriff um X im Umkreis von Z Feldern"
+   },
+   "counterattack": {
+    "nameFr": "Contre-attaque",
+    "nameDe": "Gegenangriff",
+    "fr": "Dégâts supplémentaires +X lors des ripostes",
+    "de": "X zusätzlicher Schaden beim Zurückschlagen"
+   },
+   "cover": {
+    "nameFr": "Couverture",
+    "nameDe": "Deckung",
+    "fr": "Lors des opérations terrestres, Y% de chances de réduire les dégâts de X%.",
+    "de": "Bei Landoperationen besteht eine Y% Chance, den Schaden um X% zu verringern."
+   },
+   "defense-formation": {
+    "nameFr": "Formation défensive",
+    "nameDe": "Verteidigungsformation",
+    "fr": "Attaque +X% lorsque l'infanterie combat dans des installations urbaines",
+    "de": "Angriff +X%, wenn Infanterie in städtischen Anlagen kämpft"
+   },
+   "desert-fighting": {
+    "nameFr": "Combat dans le désert",
+    "nameDe": "Wüstenkampf",
+    "fr": "Attaque +X% lors des combats dans le désert",
+    "de": "Angriff +X% bei Kämpfen in der Wüste"
+   },
+   "edge": {
+    "nameFr": "Avantage",
+    "nameDe": "Überlegenheit",
+    "fr": "Dégâts supplémentaires +X lorsque la cavalerie attaque l'infanterie",
+    "de": "X zusätzlicher Schaden, wenn Kavallerie Infanterie angreift"
+   },
+   "escorting": {
+    "nameFr": "Escorte",
+    "nameDe": "Geleitschutz",
+    "fr": "Défense des navires +X dans un rayon de Z cases",
+    "de": "Erhöht die Schiffsverteidigung um X im Umkreis von Z Feldern"
+   },
+   "explosives": {
+    "nameFr": "Explosifs",
+    "nameDe": "Sprengstoff",
+    "fr": "Y% de chances d'ignorer l'effet des bunkers lors des attaques d'artillerie",
+    "de": "Y% Chance, den Effekt von Bunkern bei Artillerieangriffen zu ignorieren"
+   },
+   "formation-master": {
+    "nameFr": "Maître des formations",
+    "nameDe": "Formationsmeister",
+    "fr": "Coups critiques +Y% lors des attaques d'infanterie",
+    "de": "Erhöht kritische Treffer um Y% bei Angriffen mit Infanterie"
+   },
+   "helmsman": {
+    "nameFr": "Timonier",
+    "nameDe": "Steuermann",
+    "fr": "Lors des opérations navales, Y% de chances de réduire les dégâts de X%",
+    "de": "Bei Seeoperationen besteht eine Y% Chance, den Schaden um X% zu verringern"
+   },
+   "infantry-master": {
+    "nameFr": "Maître de l'infanterie",
+    "nameDe": "Infanteriemeister",
+    "fr": "Attaque de l'infanterie +X dans un rayon de Z cases",
+    "de": "Erhöht den Infanterieangriff um X im Umkreis von Z Feldern"
+   },
+   "inspiration": {
+    "nameFr": "Inspiration",
+    "nameDe": "Inspiration",
+    "fr": "Y% de chances d'augmenter le moral après une attaque",
+    "de": "Y% Chance auf Moralanstieg nach einem Angriff"
+   },
+   "intercept": {
+    "nameFr": "Interception",
+    "nameDe": "Abfangen",
+    "fr": "Dégâts supplémentaires +X lorsque l'infanterie attaque la cavalerie",
+    "de": "X zusätzlicher Schaden, wenn Infanterie Kavallerie angreift"
+   },
+   "jungle-fighting": {
+    "nameFr": "Combat en jungle",
+    "nameDe": "Dschungelkampf",
+    "fr": "Attaque +X% lors des combats dans la jungle",
+    "de": "Angriff +X% bei Kämpfen im Dschungel"
+   },
+   "land-fort": {
+    "nameFr": "Fort terrestre",
+    "nameDe": "Landfestung",
+    "fr": "Attaque +X% lorsque l'artillerie combat dans des installations urbaines",
+    "de": "Angriff +X%, wenn Artillerie in städtischen Anlagen kämpft"
+   },
+   "line-of-battle": {
+    "nameFr": "Ligne de bataille",
+    "nameDe": "Schlachtlinie",
+    "fr": "Dégâts supplémentaires +X lors des attaques navales",
+    "de": "X zusätzlicher Schaden bei Angriffen mit Schiffen"
+   },
+   "maneuver": {
+    "nameFr": "Manœuvre",
+    "nameDe": "Manöver",
+    "fr": "Y% de chances d'ignorer l'effet des barrières lors des attaques de cavalerie",
+    "de": "Y% Chance, den Effekt von Barrieren bei Kavallerieangriffen zu ignorieren"
+   },
+   "mountain-fighting": {
+    "nameFr": "Combat en montagne",
+    "nameDe": "Gebirgskampf",
+    "fr": "Attaque +X% lors des combats en montagne",
+    "de": "Angriff +X% bei Kämpfen im Gebirge"
+   },
+   "plain-fighting": {
+    "nameFr": "Combat en plaine",
+    "nameDe": "Feldschlacht",
+    "fr": "Attaque +X% lors des combats en plaine",
+    "de": "Angriff +X% bei Kämpfen in der Ebene"
+   },
+   "position": {
+    "nameFr": "Position",
+    "nameDe": "Stellung",
+    "fr": "Coups critiques +Y% lors des attaques navales",
+    "de": "Erhöht kritische Treffer um Y% bei Angriffen mit Schiffen"
+   },
+   "precision-strike": {
+    "nameFr": "Frappe de précision",
+    "nameDe": "Präzisionsschlag",
+    "fr": "Dégâts supplémentaires +X lors des attaques de cavalerie",
+    "de": "X zusätzlicher Schaden bei Angriffen mit Kavallerie"
+   },
+   "riding-master": {
+    "nameFr": "Maître cavalier",
+    "nameDe": "Reitmeister",
+    "fr": "Coups critiques +Y% lors des attaques de cavalerie",
+    "de": "Erhöht kritische Treffer um Y% bei Angriffen mit Kavallerie"
+   },
+   "sailor": {
+    "nameFr": "Marin",
+    "nameDe": "Seemann",
+    "fr": "Dégâts des unités de l'armée de terre +X% lors des combats en mer",
+    "de": "Erhöht den Schaden von Heereseinheiten um X% bei Kämpfen auf See"
+   },
+   "salvo": {
+    "nameFr": "Salve",
+    "nameDe": "Salve",
+    "fr": "Dégâts supplémentaires +X lors des attaques d'artillerie",
+    "de": "X zusätzlicher Schaden bei Angriffen mit Artillerie"
+   },
+   "station": {
+    "nameFr": "Garnison",
+    "nameDe": "Stationierung",
+    "fr": "Attaque +X% lorsque la cavalerie combat dans des installations urbaines",
+    "de": "Angriff +X%, wenn Kavallerie in städtischen Anlagen kämpft"
+   },
+   "storm-fortifications": {
+    "nameFr": "Assaut des fortifications",
+    "nameDe": "Festungssturm",
+    "fr": "Dégâts supplémentaires +X lorsque l'artillerie attaque les défenses urbaines",
+    "de": "X zusätzlicher Schaden, wenn Artillerie Stadtverteidigungen angreift"
+   },
+   "surprise-attack": {
+    "nameFr": "Attaque surprise",
+    "nameDe": "Überraschungsangriff",
+    "fr": "Plus la cavalerie se déplace loin, plus elle inflige de dégâts",
+    "de": "Je weiter sich die Kavallerie bewegt, desto höher der verursachte Schaden"
+   },
+   "tactic-master": {
+    "nameFr": "Maître tacticien",
+    "nameDe": "Taktikmeister",
+    "fr": "Y% de chances d'une seconde attaque après avoir attaqué",
+    "de": "Y% Chance auf einen zweiten Angriff nach dem Angreifen"
+   },
+   "tunnel": {
+    "nameFr": "Sape",
+    "nameDe": "Tunnelbau",
+    "fr": "Dégâts supplémentaires +X lorsque l'infanterie attaque les défenses urbaines",
+    "de": "X zusätzlicher Schaden, wenn Infanterie Stadtverteidigungen angreift"
+   }
+  },
+  "gcr": {
+   "1": {
+    "nameFr": "Compétence signature",
+    "nameDe": "Signaturfähigkeit"
+   }
+  }
+ }
+}

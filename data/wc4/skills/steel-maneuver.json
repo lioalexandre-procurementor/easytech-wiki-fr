@@ -1,78 +1,85 @@
 {
-  "slug": "steel-maneuver",
-  "type": 170,
-  "name": "Steel Maneuver",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding armored units, damage dealt is increased by X%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
-  "icon": "/img/wc4/skills/general_skill_170.png",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3701,
-      "effect": 7,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 7%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt est augmenté de 7%. Après chaque attaque, les unités restores HP equal à 10% de la dégâts dealt. Tant que any buff est active, la blindé unités' critique hit chances augmente de 10% et its attaque ignore 30% de l'ennemi’s défense. Unités peut move unimpeded de ennemi blocking. Si un target survives une attaque, les unités peut make one additional attaque (once per tour)."
-    },
-    {
-      "level": 2,
-      "skillId": 3702,
-      "effect": 14,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 14%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt est augmenté de 14%. Après chaque attaque, les unités restores HP equal à 10% de la dégâts dealt. Tant que any buff est active, la blindé unités' critique hit chances augmente de 10% et its attaque ignore 30% de l'ennemi’s défense. Unités peut move unimpeded de ennemi blocking. Si un target survives une attaque, les unités peut make one additional attaque (once per tour)."
-    },
-    {
-      "level": 3,
-      "skillId": 3703,
-      "effect": 21,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 21%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt est augmenté de 21%. Après chaque attaque, les unités restores HP equal à 10% de la dégâts dealt. Tant que any buff est active, la blindé unités' critique hit chances augmente de 10% et its attaque ignore 30% de l'ennemi’s défense. Unités peut move unimpeded de ennemi blocking. Si un target survives une attaque, les unités peut make one additional attaque (once per tour)."
-    },
-    {
-      "level": 4,
-      "skillId": 3704,
-      "effect": 28,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 28%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt est augmenté de 28%. Après chaque attaque, les unités restores HP equal à 10% de la dégâts dealt. Tant que any buff est active, la blindé unités' critique hit chances augmente de 10% et its attaque ignore 30% de l'ennemi’s défense. Unités peut move unimpeded de ennemi blocking. Si un target survives une attaque, les unités peut make one additional attaque (once per tour)."
-    },
-    {
-      "level": 5,
-      "skillId": 3705,
-      "effect": 35,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts dealt est augmenté de 35%. Après chaque attaque, les unités restores HP equal à 10% de la dégâts dealt. Tant que any buff est active, la blindé unités' critique hit chances augmente de 10% et its attaque ignore 30% de l'ennemi’s défense. Unités peut move unimpeded de ennemi blocking. Si un target survives une attaque, les unités peut make one additional attaque (once per tour)."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25473,
-        "level": 5
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1050,
-        "level": 5,
-        "promotionId": 10501
-      }
-    ]
+ "slug": "steel-maneuver",
+ "type": 170,
+ "name": "Steel Maneuver",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding armored units, damage dealt is increased by X%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+ "icon": "/img/wc4/skills/general_skill_170.png",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3701,
+   "effect": 7,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "When commanding armored units, damage dealt is increased by 7%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +7%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +7%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde)."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Steel Maneuver",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dégâts dealt est augmente de X%. Après chaque attaque, les unités restores HP equal à 10% de la dégâts dealt. Tant que any buff est active, la blindé unités' critique hit chances augmente de 10% et its attaque ignore 30% de l'ennemi’s défense. Unités peut move unimpeded de ennemi blocking. Si un target survives une attaque, les unités peut make one additional attaque (once per tour).",
-  "longDesc": "Compétence spécifique à un général. « Steel Maneuver » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 35%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour). ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Steel Maneuver\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Steel Maneuver“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 3702,
+   "effect": 14,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "When commanding armored units, damage dealt is increased by 14%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +14%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +14%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde)."
+  },
+  {
+   "level": 3,
+   "skillId": 3703,
+   "effect": 21,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "When commanding armored units, damage dealt is increased by 21%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +21%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +21%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde)."
+  },
+  {
+   "level": 4,
+   "skillId": 3704,
+   "effect": 28,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "When commanding armored units, damage dealt is increased by 28%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +28%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +28%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde)."
+  },
+  {
+   "level": 5,
+   "skillId": 3705,
+   "effect": 35,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées, dégâts infligés +35%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +35%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde)."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25473,
+    "level": 5
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1050,
+    "level": 5,
+    "promotionId": 10501
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Steel Maneuver",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités blindées, dégâts infligés +X%. Après chaque attaque, l'unité récupère 10% des dégâts infligés en PV. Tant qu'un bonus est actif, la chance de coup critique des unités blindées augmente de 10% et leurs attaques ignorent 30% de la défense ennemie. Les unités se déplacent sans être bloquées par l'ennemi. Si la cible survit à une attaque, l'unité peut attaquer une fois de plus (une fois par tour).",
+ "longDesc": "Compétence spécifique à un général. « Steel Maneuver » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées, dégâts dealt is augmenté de 35%. Après chaque attaque, the unité restaure des PV équivalents à 10% des dégâts infligés. Tant qu'un bonus est actif, the unités blindées' chance de coup critique augmente de 10% and its attaques ignore 30% of the ennemi’s défense. Unités can se déplacer sans être bloqué par l'ennemi. Si une cible survit à une attaque, l'unité peut effectuer une attaque supplémentaire (once par tour). ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Steel Maneuver\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Steel Maneuver“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units, damage dealt is increased by 35%. After each attack, the unit restores HP equal to 10% of the damage dealt. While any buff is active, the armored units' critical hit chance increases by 10% and its attacks ignore 30% of the enemy’s defense. Units can move unimpeded by enemy blocking. If a target survives an attack, the unit may make one additional attack (once per turn).“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Stahlmanöver",
+ "descriptionTemplateDe": "Beim Befehligen gepanzerter Einheiten: verursachter Schaden +X%. Nach jedem Angriff stellt die Einheit HP in Höhe von 10% des verursachten Schadens wieder her. Solange ein Buff aktiv ist, steigt die kritische Trefferchance gepanzerter Einheiten um 10% und ihre Angriffe ignorieren 30% der feindlichen Verteidigung. Einheiten bewegen sich ungehindert durch feindliche Blockaden. Überlebt ein Ziel einen Angriff, darf die Einheit einmal zusätzlich angreifen (einmal pro Runde)."
 }

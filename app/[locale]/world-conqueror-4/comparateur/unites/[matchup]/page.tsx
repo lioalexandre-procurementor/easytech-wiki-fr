@@ -7,6 +7,7 @@ import { ComparatorRadar } from "@/components/ComparatorRadar";
 import { getAllEliteUnits, getEliteUnit } from "@/lib/units";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
+import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
 import type { ComparableRow, UnitData } from "@/lib/types";
 
@@ -67,6 +68,11 @@ export async function generateMetadata({
   const loc = locale as Locale;
   const aName = loc === "fr" ? a.name : a.nameEn || a.name;
   const bName = loc === "fr" ? b.name : b.nameEn || b.name;
+  const ogImages = ogImage({
+    title: `${aName} vs ${bName}`,
+    sub: "World Conqueror 4",
+    img: a.image?.sprite ?? undefined,
+  });
   return {
     title: t("matchupTitle", { a: aName, b: bName }),
     description: t("matchupDescription", { a: aName, b: bName }),
@@ -85,6 +91,7 @@ export async function generateMetadata({
       type: "article",
       locale: ogLocale(locale),
       alternateLocale: ogAlternateLocales(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

@@ -18,6 +18,7 @@ import type {
   GeneralData,
 } from "@/lib/types";
 import { localizeSeries } from "@/lib/skill-series-i18n";
+import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
   const slugs = getAllSkillSlugs();
@@ -32,8 +33,12 @@ export async function generateMetadata({
   const s = getSkill(slug);
   if (!s) return { title: "404" };
   const isFr = locale === "fr";
-  const displayName = (isFr && s.nameFr) || s.name;
-  const displayDesc = (isFr && s.descriptionTemplateFr) || s.descriptionTemplate;
+  const isDe = locale === "de";
+  const displayName = (isFr && s.nameFr) || (isDe && s.nameDe) || s.name;
+  const displayDesc =
+    (isFr && s.descriptionTemplateFr) ||
+    (isDe && s.descriptionTemplateDe) ||
+    s.descriptionTemplate;
   const titles: Record<string, string> = {
     fr: `${displayName} (WC4) — Effet, progression L1→L5 & généraux`,
     en: `${displayName} (WC4) — Effect, L1→L5 progression & generals`,
@@ -43,6 +48,11 @@ export async function generateMetadata({
   const { getSeriesLabel } = await import("@/lib/skill-series-i18n");
   const localizedSeriesLabel = getSeriesLabel(s.series, locale) ?? s.seriesLabel;
   const description = `${displayDesc} Maximum level ${s.maxLevel}, series "${localizedSeriesLabel}".`;
+  const ogImages = ogImage({
+    title: displayName,
+    sub: "World Conqueror 4",
+    img: s.icon ?? undefined,
+  });
   return {
     title,
     description,
@@ -57,7 +67,7 @@ export async function generateMetadata({
         "x-default": `/fr/world-conqueror-4/competences/${slug}`,
       },
     },
-    openGraph: { title, description, type: "article" },
+    openGraph: { title, description, type: "article", images: ogImages },
     robots: { index: true, follow: true },
   };
 }

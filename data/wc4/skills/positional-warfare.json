@@ -1,94 +1,101 @@
 {
-  "slug": "positional-warfare",
-  "type": 143,
-  "name": "Positional Warfare",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "When commanding armored units in range of your own or an ally's territory, -X% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
-  "icon": "/img/wc4/skills/general_skill_143.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3431,
-      "effect": 15,
-      "chance": 100,
-      "costMedal": 150,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -15% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées dans portée de your own or une ally's territory, -15% dégâts received. Lorsque being attacked de ennemi généraux, additionally reflect 50% de la dégâts dealt de this attaque"
-    },
-    {
-      "level": 2,
-      "skillId": 3432,
-      "effect": 20,
-      "chance": 100,
-      "costMedal": 250,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -20% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées dans portée de your own or une ally's territory, -20% dégâts received. Lorsque being attacked de ennemi généraux, additionally reflect 50% de la dégâts dealt de this attaque"
-    },
-    {
-      "level": 3,
-      "skillId": 3433,
-      "effect": 25,
-      "chance": 100,
-      "costMedal": 350,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -25% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées dans portée de your own or une ally's territory, -25% dégâts received. Lorsque being attacked de ennemi généraux, additionally reflect 50% de la dégâts dealt de this attaque"
-    },
-    {
-      "level": 4,
-      "skillId": 3434,
-      "effect": 30,
-      "chance": 100,
-      "costMedal": 450,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -30% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées dans portée de your own or une ally's territory, -30% dégâts received. Lorsque being attacked de ennemi généraux, additionally reflect 50% de la dégâts dealt de this attaque"
-    },
-    {
-      "level": 5,
-      "skillId": 3435,
-      "effect": 35,
-      "chance": 100,
-      "costMedal": 550,
-      "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
-      "renderedDescFr": "Lorsque vous commandez des unités blindées dans portée de your own or une ally's territory, -35% dégâts received. Lorsque being attacked de ennemi généraux, additionally reflect 50% de la dégâts dealt de this attaque"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 25342,
-        "level": 5
-      },
-      {
-        "generalId": 25379,
-        "level": 1
-      },
-      {
-        "generalId": 25399,
-        "level": 5
-      },
-      {
-        "generalId": 25406,
-        "level": 5
-      },
-      {
-        "generalId": 25454,
-        "level": 1
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1052,
-        "level": 5,
-        "promotionId": 10522
-      }
-    ]
+ "slug": "positional-warfare",
+ "type": 143,
+ "name": "Positional Warfare",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "When commanding armored units in range of your own or an ally's territory, -X% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+ "icon": "/img/wc4/skills/general_skill_143.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3431,
+   "effect": 15,
+   "chance": 100,
+   "costMedal": 150,
+   "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -15% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -15%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -15%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Positional Warfare",
-  "descriptionTemplateFr": "Lorsque vous commandez des unités blindées dans portée de your own or une ally's territory, -X% dégâts received. Lorsque being attacked de ennemi généraux, additionally reflect 50% de la dégâts dealt de this attaque",
-  "longDesc": "Compétence spécifique à un général. « Positional Warfare » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -35% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
-  "longDescEn": "A general-specific skill. \"Positional Warfare\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Positional Warfare“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte."
+  {
+   "level": 2,
+   "skillId": 3432,
+   "effect": 20,
+   "chance": 100,
+   "costMedal": 250,
+   "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -20% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -20%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -20%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert"
+  },
+  {
+   "level": 3,
+   "skillId": 3433,
+   "effect": 25,
+   "chance": 100,
+   "costMedal": 350,
+   "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -25% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -25%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -25%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert"
+  },
+  {
+   "level": 4,
+   "skillId": 3434,
+   "effect": 30,
+   "chance": 100,
+   "costMedal": 450,
+   "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -30% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -30%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -30%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert"
+  },
+  {
+   "level": 5,
+   "skillId": 3435,
+   "effect": 35,
+   "chance": 100,
+   "costMedal": 550,
+   "renderedDesc": "When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack",
+   "renderedDescFr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -35%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+   "renderedDescDe": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -35%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 25342,
+    "level": 5
+   },
+   {
+    "generalId": 25379,
+    "level": 1
+   },
+   {
+    "generalId": 25399,
+    "level": 5
+   },
+   {
+    "generalId": 25406,
+    "level": 5
+   },
+   {
+    "generalId": 25454,
+    "level": 1
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1052,
+    "level": 5,
+    "promotionId": 10522
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Positional Warfare",
+ "descriptionTemplateFr": "Lorsque vous commandez des unités blindées sur votre territoire ou celui d'un allié, dégâts subis -X%. Lorsque vous êtes attaqué par un général ennemi, renvoie en plus 50% des dégâts subis lors de cette attaque",
+ "longDesc": "Compétence spécifique à un général. « Positional Warfare » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Lorsque vous commandez des unités blindées in portée of your own or an ally's territory, -35% dégâts received. When being attacked by ennemi generals, additionally reflect 50% of the dégâts dealt from this attaque ». Compétence signature liée à une carte précise, à niveauer quand on investit dans ce général.",
+ "longDescEn": "A general-specific skill. \"Positional Warfare\" scales up to level 5. At max level (5), the skill applies the following effect: \"When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack\". A signature tied to a specific card, worth levelling whenever you invest in that general.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Positional Warfare“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When commanding armored units in range of your own or an ally's territory, -35% damage received. When being attacked by enemy generals, additionally reflect 50% of the damage dealt from this attack“. Eine an eine bestimmte Karte gebundene Signatur, die beim Investieren geleveled werden sollte.",
+ "nameDe": "Stellungskrieg",
+ "descriptionTemplateDe": "Beim Befehligen gepanzerter Einheiten auf eigenem oder verbündetem Territorium: erlittener Schaden -X%. Bei Angriffen feindlicher Generäle werden zusätzlich 50% des erlittenen Schadens reflektiert"
 }

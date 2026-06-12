@@ -1,64 +1,71 @@
 {
-  "slug": "helmsman",
-  "type": 35,
-  "name": "Helmsman",
-  "nameFr": "Helmsman",
-  "series": 1,
-  "seriesLabel": "Generic learnable skill (series 1)",
-  "descriptionTemplate": "In sea operations there is Y% chance of reducing damage by X%",
-  "descriptionTemplateFr": "In sea operations there is Y% chance of reducing damage by X%",
-  "icon": "/img/ew6/skills/skill_35.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 13501,
-      "effect": 0,
-      "chance": 0,
-      "costMedal": 0,
-      "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
-      "renderedDescFr": "In sea operations there is 0% chance of reducing damage by 0%"
-    },
-    {
-      "level": 2,
-      "skillId": 13502,
-      "effect": 0,
-      "chance": 0,
-      "costMedal": 60,
-      "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
-      "renderedDescFr": "In sea operations there is 0% chance of reducing damage by 0%"
-    },
-    {
-      "level": 3,
-      "skillId": 13503,
-      "effect": 0,
-      "chance": 0,
-      "costMedal": 105,
-      "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
-      "renderedDescFr": "In sea operations there is 0% chance of reducing damage by 0%"
-    },
-    {
-      "level": 4,
-      "skillId": 13504,
-      "effect": 0,
-      "chance": 0,
-      "costMedal": 150,
-      "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
-      "renderedDescFr": "In sea operations there is 0% chance of reducing damage by 0%"
-    },
-    {
-      "level": 5,
-      "skillId": 13505,
-      "effect": 0,
-      "chance": 0,
-      "costMedal": 210,
-      "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
-      "renderedDescFr": "In sea operations there is 0% chance of reducing damage by 0%"
-    }
-  ],
-  "usage": {
-    "base": [],
-    "promoted": []
+ "slug": "helmsman",
+ "type": 35,
+ "name": "Helmsman",
+ "nameFr": "Timonier",
+ "series": 1,
+ "seriesLabel": "Generic learnable skill (series 1)",
+ "descriptionTemplate": "In sea operations there is Y% chance of reducing damage by X%",
+ "descriptionTemplateFr": "Lors des opérations navales, Y% de chances de réduire les dégâts de X%",
+ "icon": "/img/ew6/skills/skill_35.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 13501,
+   "effect": 0,
+   "chance": 0,
+   "costMedal": 0,
+   "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
+   "renderedDescFr": "Lors des opérations navales, 0% de chances de réduire les dégâts de 0%",
+   "renderedDescDe": "Bei Seeoperationen besteht eine 0% Chance, den Schaden um 0% zu verringern"
   },
-  "varyingField": "ActivatesChance"
+  {
+   "level": 2,
+   "skillId": 13502,
+   "effect": 0,
+   "chance": 0,
+   "costMedal": 60,
+   "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
+   "renderedDescFr": "Lors des opérations navales, 0% de chances de réduire les dégâts de 0%",
+   "renderedDescDe": "Bei Seeoperationen besteht eine 0% Chance, den Schaden um 0% zu verringern"
+  },
+  {
+   "level": 3,
+   "skillId": 13503,
+   "effect": 0,
+   "chance": 0,
+   "costMedal": 105,
+   "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
+   "renderedDescFr": "Lors des opérations navales, 0% de chances de réduire les dégâts de 0%",
+   "renderedDescDe": "Bei Seeoperationen besteht eine 0% Chance, den Schaden um 0% zu verringern"
+  },
+  {
+   "level": 4,
+   "skillId": 13504,
+   "effect": 0,
+   "chance": 0,
+   "costMedal": 150,
+   "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
+   "renderedDescFr": "Lors des opérations navales, 0% de chances de réduire les dégâts de 0%",
+   "renderedDescDe": "Bei Seeoperationen besteht eine 0% Chance, den Schaden um 0% zu verringern"
+  },
+  {
+   "level": 5,
+   "skillId": 13505,
+   "effect": 0,
+   "chance": 0,
+   "costMedal": 210,
+   "renderedDesc": "In sea operations there is 0% chance of reducing damage by 0%",
+   "renderedDescFr": "Lors des opérations navales, 0% de chances de réduire les dégâts de 0%",
+   "renderedDescDe": "Bei Seeoperationen besteht eine 0% Chance, den Schaden um 0% zu verringern"
+  }
+ ],
+ "usage": {
+  "base": [],
+  "promoted": []
+ },
+ "varyingField": "ActivatesChance",
+ "nameDe": "Steuermann",
+ "descriptionTemplateDe": "Bei Seeoperationen besteht eine Y% Chance, den Schaden um X% zu verringern"
 }

@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { getAllUpdates } from "@/lib/updates";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
+import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
 
 export function generateStaticParams() {
@@ -18,6 +19,10 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "updatesPage" });
+  const ogImages = ogImage({
+    title: t("seoTitle"),
+    sub: "Great Conqueror: Rome",
+  });
   return {
     title: t("seoTitle"),
     description: t("seoDescription"),
@@ -38,6 +43,7 @@ export async function generateMetadata({
       description: t("seoDescription"),
       type: "website",
       locale: ogLocale(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

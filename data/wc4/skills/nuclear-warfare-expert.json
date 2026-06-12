@@ -1,80 +1,87 @@
 {
-  "slug": "nuclear-warfare-expert",
-  "type": 115,
-  "name": "Nuclear Warfare Expert",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "Damage caused by nuclear bombs + X%.",
-  "icon": "/img/wc4/skills/general_skill_115.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3151,
-      "effect": 25,
-      "chance": 100,
-      "costMedal": 160,
-      "renderedDesc": "Damage caused by nuclear bombs + 25%.",
-      "renderedDescFr": "Dégâts caused de nucléaire bombs + 25%."
-    },
-    {
-      "level": 2,
-      "skillId": 3152,
-      "effect": 35,
-      "chance": 100,
-      "costMedal": 240,
-      "renderedDesc": "Damage caused by nuclear bombs + 35%.",
-      "renderedDescFr": "Dégâts caused de nucléaire bombs + 35%."
-    },
-    {
-      "level": 3,
-      "skillId": 3153,
-      "effect": 45,
-      "chance": 100,
-      "costMedal": 480,
-      "renderedDesc": "Damage caused by nuclear bombs + 45%.",
-      "renderedDescFr": "Dégâts caused de nucléaire bombs + 45%."
-    },
-    {
-      "level": 4,
-      "skillId": 3154,
-      "effect": 55,
-      "chance": 100,
-      "costMedal": 640,
-      "renderedDesc": "Damage caused by nuclear bombs + 55%.",
-      "renderedDescFr": "Dégâts caused de nucléaire bombs + 55%."
-    },
-    {
-      "level": 5,
-      "skillId": 3155,
-      "effect": 65,
-      "chance": 100,
-      "costMedal": 800,
-      "renderedDesc": "Damage caused by nuclear bombs + 65%.",
-      "renderedDescFr": "Dégâts caused de nucléaire bombs + 65%."
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 1079,
-        "level": 5
-      },
-      {
-        "generalId": 25214,
-        "level": 5
-      },
-      {
-        "generalId": 25301,
-        "level": 5
-      }
-    ],
-    "promoted": []
+ "slug": "nuclear-warfare-expert",
+ "type": 115,
+ "name": "Nuclear Warfare Expert",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "Damage caused by nuclear bombs + X%.",
+ "icon": "/img/wc4/skills/general_skill_115.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3151,
+   "effect": 25,
+   "chance": 100,
+   "costMedal": 160,
+   "renderedDesc": "Damage caused by nuclear bombs + 25%.",
+   "renderedDescFr": "Dégâts des bombes nucléaires +25%.",
+   "renderedDescDe": "Schaden durch Atombomben +25%."
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Nuclear Warfare Expert",
-  "descriptionTemplateFr": "Dégâts caused de nucléaire bombs + X%.",
-  "longDesc": "Compétence spécifique à un général. « Nuclear Warfare Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts caused by nuclear bombs + 65%. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Nuclear Warfare Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage caused by nuclear bombs + 65%.\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Nuclear Warfare Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage caused by nuclear bombs + 65%.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3152,
+   "effect": 35,
+   "chance": 100,
+   "costMedal": 240,
+   "renderedDesc": "Damage caused by nuclear bombs + 35%.",
+   "renderedDescFr": "Dégâts des bombes nucléaires +35%.",
+   "renderedDescDe": "Schaden durch Atombomben +35%."
+  },
+  {
+   "level": 3,
+   "skillId": 3153,
+   "effect": 45,
+   "chance": 100,
+   "costMedal": 480,
+   "renderedDesc": "Damage caused by nuclear bombs + 45%.",
+   "renderedDescFr": "Dégâts des bombes nucléaires +45%.",
+   "renderedDescDe": "Schaden durch Atombomben +45%."
+  },
+  {
+   "level": 4,
+   "skillId": 3154,
+   "effect": 55,
+   "chance": 100,
+   "costMedal": 640,
+   "renderedDesc": "Damage caused by nuclear bombs + 55%.",
+   "renderedDescFr": "Dégâts des bombes nucléaires +55%.",
+   "renderedDescDe": "Schaden durch Atombomben +55%."
+  },
+  {
+   "level": 5,
+   "skillId": 3155,
+   "effect": 65,
+   "chance": 100,
+   "costMedal": 800,
+   "renderedDesc": "Damage caused by nuclear bombs + 65%.",
+   "renderedDescFr": "Dégâts des bombes nucléaires +65%.",
+   "renderedDescDe": "Schaden durch Atombomben +65%."
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 1079,
+    "level": 5
+   },
+   {
+    "generalId": 25214,
+    "level": 5
+   },
+   {
+    "generalId": 25301,
+    "level": 5
+   }
+  ],
+  "promoted": []
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Nuclear Warfare Expert",
+ "descriptionTemplateFr": "Dégâts des bombes nucléaires +X%.",
+ "longDesc": "Compétence spécifique à un général. « Nuclear Warfare Expert » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Dégâts caused by nuclear bombs + 65%. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Nuclear Warfare Expert\" scales up to level 5. At max level (5), the skill applies the following effect: \"Damage caused by nuclear bombs + 65%.\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Nuclear Warfare Expert“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „Damage caused by nuclear bombs + 65%.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Atomkriegsexperte",
+ "descriptionTemplateDe": "Schaden durch Atombomben +X%."
 }

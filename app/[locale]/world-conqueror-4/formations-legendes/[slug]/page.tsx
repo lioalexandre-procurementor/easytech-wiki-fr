@@ -12,6 +12,7 @@ import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { JsonLd } from "@/components/JsonLd";
 import { locales } from "@/src/i18n/config";
+import { ogImage } from "@/lib/og";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
 
@@ -42,6 +43,10 @@ export async function generateMetadata({
         ? formation.lore.shortDe
         : formation.lore.short;
   const t = await getTranslations({ locale, namespace: "formations.detail" });
+  const ogImages = ogImage({
+    title: name,
+    sub: "World Conqueror 4",
+  });
   return {
     title: `${name} — ${t("metaTitleSuffix")}`,
     description: short,
@@ -58,6 +63,7 @@ export async function generateMetadata({
       title: name,
       description: short,
       type: "article",
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

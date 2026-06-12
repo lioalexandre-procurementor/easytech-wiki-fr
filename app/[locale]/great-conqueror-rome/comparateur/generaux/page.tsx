@@ -10,6 +10,7 @@ import {
 } from "@/lib/general-trained";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
+import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
 import type { ComparableRow, GeneralData, GeneralAttributes } from "@/lib/types";
 
@@ -23,6 +24,10 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "comparatorPage" });
+  const ogImages = ogImage({
+    title: t("generalsTitle"),
+    sub: "Great Conqueror: Rome",
+  });
   return {
     title: `${t("generalsTitle")} — GCR`,
     description: t("generalsIntro"),
@@ -43,6 +48,7 @@ export async function generateMetadata({
       description: t("generalsIntro"),
       type: "website",
       locale: ogLocale(locale),
+      images: ogImages,
     },
     robots: { index: true, follow: true },
   };

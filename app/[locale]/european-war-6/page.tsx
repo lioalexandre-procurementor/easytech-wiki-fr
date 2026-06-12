@@ -15,6 +15,7 @@ import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import { ogImage } from "@/lib/og";
 
 export async function generateMetadata({
   params: { locale },
@@ -31,6 +32,10 @@ export async function generateMetadata({
     en: "English-language guide to European War 6: 1914: generals, units, technologies, Napoleonic and Great War campaigns.",
     de: "Der deutschsprachige Guide zu European War 6: 1914: Generäle, Einheiten, Technologien, napoleonische Kampagnen und Erster Weltkrieg.",
   };
+  const ogImages = ogImage({
+    title: titleByLocale[locale] ?? titleByLocale.en,
+    sub: "European War 6",
+  });
   return {
     title: titleByLocale[locale] ?? titleByLocale.en,
     description: descByLocale[locale] ?? descByLocale.en,
@@ -47,6 +52,7 @@ export async function generateMetadata({
       title: titleByLocale[locale] ?? titleByLocale.en,
       description: descByLocale[locale] ?? descByLocale.en,
       type: "website",
+      images: ogImages,
     },
   };
 }

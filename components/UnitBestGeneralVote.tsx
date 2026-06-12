@@ -233,6 +233,7 @@ export default function UnitBestGeneralVote({
               alt={unitDisplayName}
               width={72}
               height={72}
+              loading="lazy"
               className="w-full h-full object-contain p-1"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).style.display = "none";

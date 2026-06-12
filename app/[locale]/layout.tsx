@@ -4,6 +4,7 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from "next-in
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
+import { defaultOgImage } from "@/lib/og";
 import ConsentBanner from "@/components/ConsentBanner";
 import { JsonLd } from "@/components/JsonLd";
 import "../globals.css";
@@ -51,11 +52,16 @@ export async function generateMetadata({
       locale: ogLocale(locale),
       type: "website",
       alternateLocale: ogAlternateLocales(locale),
+      // Site-wide fallback card. CAUTION: pages that define their own
+      // `openGraph` replace this whole block (no deep-merge) and must set
+      // `images:` themselves via lib/og.ts ogImage().
+      images: defaultOgImage(t("title")),
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
+      images: defaultOgImage(t("title")),
     },
     robots: {
       index: true,

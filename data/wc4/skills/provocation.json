@@ -1,98 +1,105 @@
 {
-  "slug": "provocation",
-  "type": 138,
-  "name": "Provocation",
-  "series": 0,
-  "seriesLabel": "Compétences spécifiques aux généraux",
-  "descriptionTemplate": "After attacking, there is X% to gain \"provocation\" effect",
-  "icon": "/img/wc4/skills/general_skill_138.webp",
-  "maxLevel": 5,
-  "progression": [
-    {
-      "level": 1,
-      "skillId": 3381,
-      "effect": 15,
-      "chance": 15,
-      "costMedal": 150,
-      "renderedDesc": "After attacking, there is 15% to gain \"provocation\" effect",
-      "renderedDescFr": "Après attaquant, il y a 15% à gagne \"provocation\" effets"
-    },
-    {
-      "level": 2,
-      "skillId": 3382,
-      "effect": 30,
-      "chance": 30,
-      "costMedal": 250,
-      "renderedDesc": "After attacking, there is 30% to gain \"provocation\" effect",
-      "renderedDescFr": "Après attaquant, il y a 30% à gagne \"provocation\" effets"
-    },
-    {
-      "level": 3,
-      "skillId": 3383,
-      "effect": 45,
-      "chance": 45,
-      "costMedal": 350,
-      "renderedDesc": "After attacking, there is 45% to gain \"provocation\" effect",
-      "renderedDescFr": "Après attaquant, il y a 45% à gagne \"provocation\" effets"
-    },
-    {
-      "level": 4,
-      "skillId": 3384,
-      "effect": 60,
-      "chance": 60,
-      "costMedal": 450,
-      "renderedDesc": "After attacking, there is 60% to gain \"provocation\" effect",
-      "renderedDescFr": "Après attaquant, il y a 60% à gagne \"provocation\" effets"
-    },
-    {
-      "level": 5,
-      "skillId": 3385,
-      "effect": 75,
-      "chance": 75,
-      "costMedal": 550,
-      "renderedDesc": "After attacking, there is 75% to gain \"provocation\" effect",
-      "renderedDescFr": "Après attaquant, il y a 75% à gagne \"provocation\" effets"
-    }
-  ],
-  "usage": {
-    "base": [
-      {
-        "generalId": 22105,
-        "level": 1
-      },
-      {
-        "generalId": 22128,
-        "level": 1
-      },
-      {
-        "generalId": 22134,
-        "level": 1
-      },
-      {
-        "generalId": 25339,
-        "level": 1
-      },
-      {
-        "generalId": 25347,
-        "level": 1
-      },
-      {
-        "generalId": 25431,
-        "level": 1
-      }
-    ],
-    "promoted": [
-      {
-        "generalId": 1045,
-        "level": 4,
-        "promotionId": 10451
-      }
-    ]
+ "slug": "provocation",
+ "type": 138,
+ "name": "Provocation",
+ "series": 0,
+ "seriesLabel": "Compétences spécifiques aux généraux",
+ "descriptionTemplate": "After attacking, there is X% to gain \"provocation\" effect",
+ "icon": "/img/wc4/skills/general_skill_138.webp",
+ "maxLevel": 5,
+ "progression": [
+  {
+   "level": 1,
+   "skillId": 3381,
+   "effect": 15,
+   "chance": 15,
+   "costMedal": 150,
+   "renderedDesc": "After attacking, there is 15% to gain \"provocation\" effect",
+   "renderedDescFr": "Après une attaque, 15% de chances d'obtenir l'effet « Provocation »",
+   "renderedDescDe": "Nach einem Angriff besteht eine 15% Chance, den Effekt „Provokation“ zu erhalten"
   },
-  "varyingField": "SkillEffect",
-  "nameFr": "Provocation",
-  "descriptionTemplateFr": "Après attaquant, il y a X% à gagne \"provocation\" effets",
-  "longDesc": "Compétence spécifique à un général. « Provocation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Après avoir attaqué, there is 75% to gain \"provocation\" effect ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
-  "longDescEn": "A general-specific skill. \"Provocation\" scales up to level 5. At max level (5), the skill applies the following effect: \"After attacking, there is 75% to gain \"provocation\" effect\". A general-specific signature: its max level drives the card's overall value.",
-  "longDescDe": "Eine generalspezifische Fähigkeit. „Provocation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After attacking, there is 75% to gain \"provocation\" effect“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte."
+  {
+   "level": 2,
+   "skillId": 3382,
+   "effect": 30,
+   "chance": 30,
+   "costMedal": 250,
+   "renderedDesc": "After attacking, there is 30% to gain \"provocation\" effect",
+   "renderedDescFr": "Après une attaque, 30% de chances d'obtenir l'effet « Provocation »",
+   "renderedDescDe": "Nach einem Angriff besteht eine 30% Chance, den Effekt „Provokation“ zu erhalten"
+  },
+  {
+   "level": 3,
+   "skillId": 3383,
+   "effect": 45,
+   "chance": 45,
+   "costMedal": 350,
+   "renderedDesc": "After attacking, there is 45% to gain \"provocation\" effect",
+   "renderedDescFr": "Après une attaque, 45% de chances d'obtenir l'effet « Provocation »",
+   "renderedDescDe": "Nach einem Angriff besteht eine 45% Chance, den Effekt „Provokation“ zu erhalten"
+  },
+  {
+   "level": 4,
+   "skillId": 3384,
+   "effect": 60,
+   "chance": 60,
+   "costMedal": 450,
+   "renderedDesc": "After attacking, there is 60% to gain \"provocation\" effect",
+   "renderedDescFr": "Après une attaque, 60% de chances d'obtenir l'effet « Provocation »",
+   "renderedDescDe": "Nach einem Angriff besteht eine 60% Chance, den Effekt „Provokation“ zu erhalten"
+  },
+  {
+   "level": 5,
+   "skillId": 3385,
+   "effect": 75,
+   "chance": 75,
+   "costMedal": 550,
+   "renderedDesc": "After attacking, there is 75% to gain \"provocation\" effect",
+   "renderedDescFr": "Après une attaque, 75% de chances d'obtenir l'effet « Provocation »",
+   "renderedDescDe": "Nach einem Angriff besteht eine 75% Chance, den Effekt „Provokation“ zu erhalten"
+  }
+ ],
+ "usage": {
+  "base": [
+   {
+    "generalId": 22105,
+    "level": 1
+   },
+   {
+    "generalId": 22128,
+    "level": 1
+   },
+   {
+    "generalId": 22134,
+    "level": 1
+   },
+   {
+    "generalId": 25339,
+    "level": 1
+   },
+   {
+    "generalId": 25347,
+    "level": 1
+   },
+   {
+    "generalId": 25431,
+    "level": 1
+   }
+  ],
+  "promoted": [
+   {
+    "generalId": 1045,
+    "level": 4,
+    "promotionId": 10451
+   }
+  ]
+ },
+ "varyingField": "SkillEffect",
+ "nameFr": "Provocation",
+ "descriptionTemplateFr": "Après une attaque, X% de chances d'obtenir l'effet « Provocation »",
+ "longDesc": "Compétence spécifique à un général. « Provocation » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « Après avoir attaqué, there is 75% to gain \"provocation\" effect ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
+ "longDescEn": "A general-specific skill. \"Provocation\" scales up to level 5. At max level (5), the skill applies the following effect: \"After attacking, there is 75% to gain \"provocation\" effect\". A general-specific signature: its max level drives the card's overall value.",
+ "longDescDe": "Eine generalspezifische Fähigkeit. „Provocation“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „After attacking, there is 75% to gain \"provocation\" effect“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "nameDe": "Provokation",
+ "descriptionTemplateDe": "Nach einem Angriff besteht eine X% Chance, den Effekt „Provokation“ zu erhalten"
 }
