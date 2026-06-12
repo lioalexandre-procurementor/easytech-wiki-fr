@@ -5,6 +5,7 @@ import { UnitCard } from "@/components/UnitCard";
 import { AdSlot } from "@/components/AdSlot";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { JsonLd } from "@/components/JsonLd";
+import { gameSchema } from "@/lib/game-schema";
 import BestGeneralVote from "@/components/BestGeneralVote";
 import { getAllEliteUnits, getUnitsByFaction, getAllGenerals, getCategoryMeta } from "@/lib/units";
 import { BEST_GENERAL_PLACEHOLDER } from "@/lib/editorial-picks";
@@ -86,6 +87,14 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
     <>
       <TopBar/>
       <JsonLd data={faqSchema} />
+      <JsonLd
+        data={gameSchema({
+          gameSlug: "world-conqueror-4",
+          locale: params.locale,
+          hubPath: "/world-conqueror-4",
+          description: t("wc4Hub.tagline"),
+        })}
+      />
       <BreadcrumbNav
         locale={params.locale}
         items={[

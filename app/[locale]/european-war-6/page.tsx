@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { JsonLd } from "@/components/JsonLd";
+import { gameSchema } from "@/lib/game-schema";
 import {
   getAllEliteUnits,
   getUnitsByFaction,
@@ -89,6 +90,14 @@ export default async function EW6Hub({ params }: { params: { locale: string } })
     <>
       <TopBar />
       <JsonLd data={faqSchema} />
+      <JsonLd
+        data={gameSchema({
+          gameSlug: "european-war-6",
+          locale: params.locale,
+          hubPath: "/european-war-6",
+          description: t("ew6Hub.tagline"),
+        })}
+      />
       <BreadcrumbNav
         locale={params.locale}
         items={[

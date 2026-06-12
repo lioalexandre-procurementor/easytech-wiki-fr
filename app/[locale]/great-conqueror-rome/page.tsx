@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { JsonLd } from "@/components/JsonLd";
+import { gameSchema } from "@/lib/game-schema";
 import {
   getAllEliteUnits,
   getUnitsByFaction,
@@ -90,6 +91,14 @@ export default async function GCRHub({ params }: { params: { locale: string } })
     <>
       <TopBar />
       <JsonLd data={faqSchema} />
+      <JsonLd
+        data={gameSchema({
+          gameSlug: "great-conqueror-rome",
+          locale: params.locale,
+          hubPath: "/great-conqueror-rome",
+          description: t("gcrHub.tagline"),
+        })}
+      />
       <BreadcrumbNav
         locale={params.locale}
         items={[

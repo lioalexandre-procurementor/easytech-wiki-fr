@@ -10,3 +10,4 @@ tsconfig.tsbuildinfo
 scripts/__pycache__/
 .claude/
 .superpowers/
+.vercel/
