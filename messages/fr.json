@@ -666,7 +666,28 @@
       }
     ],
     "enterCta": "Entrer",
-    "metaTitle": "Wiki World Conqueror 4, European War 6 & Great Conqueror Rome — en français"
+    "metaTitle": "Wiki World Conqueror 4, European War 6 & Great Conqueror Rome — en français",
+    "eyebrow": "Le wiki stratégie · FR · EN · DE",
+    "heroTitleA": "Maîtrisez chaque",
+    "heroTitleHi": "général, unité & stratégie",
+    "heroTitleB": "des jeux EasyTech",
+    "heroSub": "Stats vérifiées, tier lists, compétences niveau par niveau et guides pour World Conqueror 4, European War 6 et Great Conqueror: Rome — en français.",
+    "heroCtaSecondary": "Voir tous les jeux",
+    "trustLine": "Mis à jour à chaque patch · 3 jeux couverts · 100 % francophone",
+    "statsPages": "Fiches détaillées",
+    "whyHeading": "Pourquoi ce wiki",
+    "whySub": "La ressource que ces jeux n'ont jamais eue.",
+    "feature1Title": "Données exactes",
+    "feature1Desc": "Stats extraites du jeu, vérifiées et datées par patch. Pas d'approximation.",
+    "feature2Title": "Profondeur stratégique",
+    "feature2Desc": "Tier lists, builds de généraux, synergies de compétences et comparateurs interactifs.",
+    "feature3Title": "Clair & rapide",
+    "feature3Desc": "Réponse dans le premier écran, sur mobile, sans pavé. Conçu pour les joueurs pressés.",
+    "gamesPickHeading": "Choisissez votre jeu",
+    "gamesPickSub": "Trois jeux entièrement documentés. Un quatrième en route.",
+    "ctaBandTitle": "Prêt à dominer le champ de bataille ?",
+    "ctaBandText": "Commencez par le général qui change tout dans World Conqueror 4.",
+    "ctaBandButton": "Ouvrir le guide WC4"
   },
   "formations": {
     "hub": {

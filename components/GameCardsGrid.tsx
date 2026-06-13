@@ -49,7 +49,9 @@ export function GameCardsGrid({ games, enterLabel, soonLabel }: Props) {
 
         const content = (
           <div
-            className="relative overflow-hidden rounded-[10px] p-4 min-h-[140px] flex flex-col"
+            className={`relative overflow-hidden rounded-xl p-4 min-h-[150px] flex flex-col ${
+              isSoon ? "" : "etw-lift"
+            }`}
             style={{
               background: accent.bg,
               boxShadow: isSoon ? "none" : "var(--shadow-panel)",
