@@ -3,6 +3,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { UnitRow } from "@/components/UnitRow";
 import { getUnitsByFaction, getCategoryMeta } from "@/lib/units";
+import { PageHero } from "@/components/PageHero";
 import type { Category } from "@/lib/types";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -78,23 +79,29 @@ export default async function ElitesList({ params }: { params: { locale: string 
         </aside>
 
         <main id="all">
-          <section className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel">
-            <h1 className="text-3xl text-gold2 font-extrabold mb-2">{t("elitesPage.h1")}</h1>
-            <p className="text-dim max-w-3xl">
-              <b>{t("elitesPage.introBold", { count: all.length })}</b> {t("elitesPage.intro")}
-            </p>
-            <div className="mt-4 flex flex-wrap gap-3 items-center">
+          <PageHero
+            className="mb-6"
+            eyebrow={t("nav.wc4")}
+            title={t("elitesPage.h1")}
+            subtitle={
+              <>
+                <b className="text-ink">{t("elitesPage.introBold", { count: all.length })}</b>{" "}
+                {t("elitesPage.intro")}
+              </>
+            }
+          >
+            <div className="flex flex-wrap gap-3 items-center">
               <Link
                 href="/world-conqueror-4/empire-du-scorpion"
-                className="inline-block bg-red-500/15 border border-red-500/40 text-red-200 px-4 py-2 rounded-md text-sm font-semibold no-underline hover:bg-red-500/25 transition-colors"
+                className="inline-flex items-center gap-2 bg-red-500/15 border border-red-500/40 text-red-200 px-4 py-2 rounded-lg text-sm font-semibold no-underline hover:bg-red-500/25 transition-colors"
               >
-                {t("elitesPage.seeScorpion")}
+                {t("elitesPage.seeScorpion")} →
               </Link>
               <span className="text-amber-300/80 text-xs">
                 {t("elitesPage.statsWarning")}
               </span>
             </div>
-          </section>
+          </PageHero>
 
           {ORDER.map(cat => {
             const units = all.filter(u => u.category === cat);

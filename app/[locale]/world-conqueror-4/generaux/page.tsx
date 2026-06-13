@@ -1,5 +1,6 @@
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
+import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { AdSlot } from "@/components/AdSlot";
 import {
@@ -142,14 +143,12 @@ export default async function GeneralsList({
         </aside>
 
         <main>
-          <section
-            className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel"
-          >
-            <h1 className="text-3xl text-gold2 font-extrabold mb-2">
-              {tL("Généraux de World Conqueror 4", "World Conqueror 4 Generals", "Generäle von World Conqueror 4")}
-            </h1>
-            <p className="text-dim max-w-3xl">
-              {params.locale === "fr" ? (
+          <PageHero
+            className="mb-6"
+            eyebrow={t("nav.wc4")}
+            title={tL("Généraux de World Conqueror 4", "World Conqueror 4 Generals", "Generäle von World Conqueror 4")}
+            subtitle={
+              params.locale === "fr" ? (
                 <>
                   {all.length} commandants répertoriés : les meilleurs généraux du roster standard
                   (Guderian, Rommel, Patton, Rokossovsky, Konev…) et les trois capitaines de l'Empire du Scorpion.
@@ -167,12 +166,17 @@ export default async function GeneralsList({
                   (Guderian, Rommel, Patton, Rokossovsky, Konev…) and the three captains of the
                   Scorpion Empire. Each entry covers skills, bonuses and recommended units.
                 </>
-              )}
+              )
+            }
+          >
+            <p className="flex items-start gap-2 text-amber-200/90 text-xs">
+              <span aria-hidden="true">⚠️</span>
+              <span>
+                <strong>{t("wc4Hub.underConstruction")}</strong> —{" "}
+                {t("wc4Hub.underConstructionNote")}
+              </span>
             </p>
-            <div className="mt-4 p-3 bg-amber-500/10 border border-amber-500/30 rounded text-amber-200 text-xs">
-              ⚠️ <strong>{t("wc4Hub.underConstruction")}</strong> — {t("wc4Hub.underConstructionNote")}
-            </div>
-          </section>
+          </PageHero>
 
           <GeneralsBrowserClient
             standard={standard}

@@ -1,5 +1,6 @@
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
+import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { SkillsBrowserClient } from "@/components/SkillsBrowserClient";
 import { getSkillIndex } from "@/lib/units";
@@ -131,22 +132,23 @@ export default async function SkillsBrowser({
         </aside>
 
         <main>
-          <section
-            className="hero-surface border border-border rounded-lg p-6 mb-6 shadow-panel"
+          <PageHero
+            className="mb-6"
+            eyebrow={t("nav.wc4")}
+            title={<>⚡ {t("skillsPage.h1")}</>}
+            subtitle={
+              <>
+                <strong className="text-ink">{t("skillsPage.introBold", { count: totalCount })}</strong>{" "}
+                {t("skillsPage.intro")}{" "}
+                <em>{t("skillsPage.introSignature")}</em>{" "}
+                {t("skillsPage.introEnd")}
+              </>
+            }
           >
-            <h1 className="text-3xl text-gold2 font-extrabold mb-2">
-              ⚡ {t("skillsPage.h1")}
-            </h1>
-            <p className="text-dim max-w-3xl">
-              <strong>{t("skillsPage.introBold", { count: totalCount })}</strong>{" "}
-              {t("skillsPage.intro")}{" "}
-              <em>{t("skillsPage.introSignature")}</em>{" "}
-              {t("skillsPage.introEnd")}
-            </p>
-            <p className="text-muted text-xs mt-3">
+            <p className="text-muted text-xs">
               {t("skillsPage.introFootnote")}
             </p>
-          </section>
+          </PageHero>
 
           <SkillsBrowserClient
             sections={sectionsInOrder}

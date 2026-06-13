@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
+import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { getTechIndex, TECH_CATEGORIES } from "@/lib/tech";
 import { locales, type Locale } from "@/src/i18n/config";
@@ -68,17 +69,16 @@ export default async function TechHubPage({
             {t("nav.backToHubWc4")}
           </Link>
         </nav>
-        <header className="mb-6">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-gold2 mb-2">
-            {t("techPage.hubTitle")}
-          </h1>
-          <p className="text-dim text-base max-w-3xl leading-relaxed">
-            {t("techPage.hubIntro")}
-          </p>
-          <p className="text-muted text-xs uppercase tracking-widest mt-3">
+        <PageHero
+          className="mb-6"
+          eyebrow={t("nav.wc4")}
+          title={t("techPage.hubTitle")}
+          subtitle={t("techPage.hubIntro")}
+        >
+          <p className="text-muted text-xs uppercase tracking-widest">
             {t("techPage.totalLabel", { count: idx.totalTechs })}
           </p>
-        </header>
+        </PageHero>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {TECH_CATEGORIES.map((cat) => {
@@ -88,9 +88,12 @@ export default async function TechHubPage({
               <Link
                 key={cat.id}
                 href={`/world-conqueror-4/technologies/categorie/${cat.id}` as any}
-                className="block bg-panel border border-border rounded-lg p-6 hover:border-gold transition-colors no-underline"
+                className="etw-lift block bg-panel border border-border rounded-xl p-6 hover:border-gold no-underline"
               >
-                <div className="text-3xl mb-2">{cat.icon}</div>
+                <div className="w-12 h-12 rounded-lg grid place-items-center text-2xl mb-3 border border-gold/30"
+                  style={{ background: "linear-gradient(135deg, rgb(var(--c-gold) / 0.15), rgb(var(--c-accent) / 0.08))" }}>
+                  {cat.icon}
+                </div>
                 <h2 className="text-gold2 font-bold text-lg mb-1">
                   {t(cat.nameKey as any)}
                 </h2>

@@ -1,4 +1,5 @@
 import { TopBar } from "@/components/TopBar";
+import { PageHero } from "@/components/PageHero";
 import { Footer } from "@/components/Footer";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { TierList, type TierEntry, type CategoryColumn } from "@/components/TierList";
@@ -107,14 +108,12 @@ export default async function TierListPage({ params }: { params: { locale: strin
       <BreadcrumbNav items={breadcrumbs} locale={params.locale} />
       <div className="max-w-[1320px] mx-auto px-6 pb-20">
         <main>
-          <section className="hero-surface border border-border rounded-lg p-9 mb-6 shadow-panel">
-            <h1 className="text-4xl text-gold2 font-extrabold mb-2">
-              {titleByLocale[params.locale] ?? titleByLocale.en}
-            </h1>
-            <p className="text-dim text-base max-w-3xl">
-              {leadByLocale[params.locale] ?? leadByLocale.en}
-            </p>
-          </section>
+          <PageHero
+            className="mb-6"
+            eyebrow={t("nav.wc4")}
+            title={titleByLocale[params.locale] ?? titleByLocale.en}
+            subtitle={leadByLocale[params.locale] ?? leadByLocale.en}
+          />
 
           <TierList
             entries={entries}
