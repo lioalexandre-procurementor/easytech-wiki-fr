@@ -1,0 +1,5 @@
+{
+  "lastChecked": "2026-06-01T00:00:00Z",
+  "lastPostId": null,
+  "notes": "Initial value set to June 1 2026 — first run should catch all May+June+July content. lastPostId tracks Reddit post fullname (t3_xxx) to deduplicate across runs."
+}
