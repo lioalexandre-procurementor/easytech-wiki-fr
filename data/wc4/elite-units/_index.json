@@ -398,5 +398,13 @@
     "faction": "scorpion",
     "tier": "A",
     "country": "XX"
+  },
+  {
+    "slug": "admiral-kuznetsov-carrier",
+    "name": "Amiral Kuznetsov",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "S",
+    "country": "RU"
   }
 ]

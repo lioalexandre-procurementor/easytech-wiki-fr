@@ -100,8 +100,21 @@
       "max": 6
     }
   },
-  "hasTrainingPath": false,
-  "training": null,
+  "hasTrainingPath": true,
+  "training": {
+    "stages": [
+      {
+        "stage": 1,
+        "label": "Entraînement final",
+        "swordCost": 0,
+        "sceptreCost": 8,
+        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite. Débloque les slots 6 et 7 avec les compétences signature."
+      }
+    ],
+    "totalSwordCost": 0,
+    "totalSceptreCost": 8,
+    "summary": "L'entraînement premium de MacArthur débloque deux compétences signature : Strategic Deployment (récupération HP infanterie + synergy blindé/artillerie) et I Shall Return (bonus amphibie + contre-attaque sur débarquement)."
+  },
   "acquisition": {
     "type": "medals",
     "cost": 2425,
@@ -122,9 +135,101 @@
   "image": {
     "photo": "/img/wc4/generals/MacArthur.webp",
     "head": "/img/wc4/heads/MacArthur.webp",
-    "photoTrained": null,
-    "headTrained": null
+    "photoTrained": "/img/wc4/generals/MacArthur2.webp",
+    "headTrained": "/img/wc4/heads/MacArthur2.webp"
   },
+  "trainedSkills": [
+    {
+      "slot": 1,
+      "name": "Infantry Leader",
+      "desc": "8% chance to give the enemy a critical attack when commanding infantry units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_18.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Infantry Leader",
+      "skillSlug": "infantry-leader",
+      "skillType": 18,
+      "skillLevel": 1
+    },
+    {
+      "slot": 2,
+      "name": "Street Fighting",
+      "desc": "Damage to the enemy +15 when fighting in the city",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_6.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Street Fighting",
+      "skillSlug": "street-fighting",
+      "skillType": 6,
+      "skillLevel": 3
+    },
+    {
+      "slot": 3,
+      "name": "Entrenchment",
+      "desc": "Able to dodge 6% damage from the enemy's artillery units",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": null,
+      "nameEn": "Entrenchment",
+      "skillSlug": "entrenchment",
+      "skillType": 29,
+      "skillLevel": 1
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert"
+    },
+    {
+      "slot": 6,
+      "name": "Strategic Deployment",
+      "nameEn": "Strategic Deployment",
+      "desc": "After commanding infantry to attack, recover HP equal to X% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry attack and counterattack range +1.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_165.png",
+      "replaceable": false,
+      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "strategic-deployment",
+      "skillType": 165,
+      "skillLevel": 5
+    },
+    {
+      "slot": 7,
+      "name": "I Shall Return",
+      "nameEn": "I Shall Return",
+      "desc": "When commanding infantry units on board or during amphibious landings, mobility +15% and counterattack damage +30%. After eliminating an enemy unit on a coastal tile, 50% chance to gain an additional attack.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_103.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence signature débloquée via l'entraînement (Épées/Sceptres de Domination).",
+      "skillSlug": "i-shall-return",
+      "skillType": 103,
+      "skillLevel": 5
+    }
+  ],
   "shortDescEn": "Gold infantry general — United States.",
   "shortDescDe": "Gold-Infanterie-General — Vereinigte Staaten.",
   "longDescEn": "Douglas MacArthur commanded the South West Pacific Area, pledged 'I shall return' to the Philippines and accepted the Japanese surrender in September 1945. A WC4 tier-S gold infantry card with amphibious-landing bonuses — a must-have on Saipan, Leyte and Iwo Jima.",
