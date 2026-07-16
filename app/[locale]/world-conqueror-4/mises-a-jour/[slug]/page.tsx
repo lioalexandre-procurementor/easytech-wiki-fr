@@ -57,7 +57,29 @@ export async function generateMetadata({
   };
 }
 
-/** Minimal safe-ish markdown renderer: paragraphs, headings, lists, blockquotes. */
+/** Inline formatter — supports **bold** and *italic* (matches guide page). */
+function renderInline(text: string): React.ReactNode {
+  const tokens: Array<{ kind: "text" | "bold" | "italic"; value: string }> = [];
+  const pattern = /(\*\*([^*]+)\*\*|\*([^*]+)\*)/g;
+  let lastIdx = 0;
+  let m: RegExpExecArray | null;
+  while ((m = pattern.exec(text)) !== null) {
+    if (m.index > lastIdx) tokens.push({ kind: "text", value: text.slice(lastIdx, m.index) });
+    if (m[2] !== undefined) tokens.push({ kind: "bold", value: m[2] });
+    else if (m[3] !== undefined) tokens.push({ kind: "italic", value: m[3] });
+    lastIdx = m.index + m[0].length;
+  }
+  if (lastIdx < text.length) tokens.push({ kind: "text", value: text.slice(lastIdx) });
+  return tokens.map((tk, i) => {
+    if (tk.kind === "bold")
+      return <strong key={i} className="font-bold text-gold2">{tk.value}</strong>;
+    if (tk.kind === "italic")
+      return <em key={i} className="italic text-dim">{tk.value}</em>;
+    return <span key={i}>{tk.value}</span>;
+  });
+}
+
+/** Markdown renderer: ## / ### headings, - lists, > blockquotes, **bold**, *italic*. */
 function renderMarkdown(md: string): React.ReactNode {
   const lines = md.split("\n");
   const blocks: React.ReactNode[] = [];
@@ -69,10 +91,19 @@ function renderMarkdown(md: string): React.ReactNode {
       i++;
       continue;
     }
+    if (line.startsWith("### ")) {
+      blocks.push(
+        <h3 key={key++} className="text-gold2 text-lg font-bold mt-6 mb-2">
+          {renderInline(line.slice(4).trim())}
+        </h3>
+      );
+      i++;
+      continue;
+    }
     if (line.startsWith("## ")) {
       blocks.push(
         <h2 key={key++} className="text-gold2 text-2xl font-bold uppercase tracking-widest mt-8 mb-3">
-          {line.slice(3).trim()}
+          {renderInline(line.slice(3).trim())}
         </h2>
       );
       i++;
@@ -85,9 +116,9 @@ function renderMarkdown(md: string): React.ReactNode {
         i++;
       }
       blocks.push(
-        <ul key={key++} className="list-disc pl-6 text-ink space-y-1 mb-4">
+        <ul key={key++} className="list-disc marker:text-gold pl-6 text-ink space-y-1 mb-4">
           {items.map((it, j) => (
-            <li key={j}>{it}</li>
+            <li key={j}>{renderInline(it)}</li>
           ))}
         </ul>
       );
@@ -96,7 +127,7 @@ function renderMarkdown(md: string): React.ReactNode {
     if (line.startsWith("> ")) {
       blocks.push(
         <blockquote key={key++} className="border-l-4 border-gold pl-4 italic text-dim my-4">
-          {line.slice(2).trim()}
+          {renderInline(line.slice(2).trim())}
         </blockquote>
       );
       i++;
@@ -105,7 +136,7 @@ function renderMarkdown(md: string): React.ReactNode {
     // default: paragraph
     blocks.push(
       <p key={key++} className="text-ink leading-relaxed mb-4">
-        {line}
+        {renderInline(line)}
       </p>
     );
     i++;

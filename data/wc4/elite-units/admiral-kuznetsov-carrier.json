@@ -88,7 +88,7 @@
     "sprite": "/img/wc4/elites/354001.webp",
     "lvl12": null
   },
-  "recommendedGenerals": ["kuznetsov", "nimitz", "yamamoto"],
+  "recommendedGenerals": ["nimitz", "spruance"],
   "levelingPriority": [
     "Priorité absolue : maximiser les sorties aériennes (Integrated Air Wing) — le porte-avions est principalement une plateforme de projection de puissance aérienne.",
     "Granit Missile Salvo au niveau 5 pour la capacité anti-navire lourd — complémentaire aux sorties aériennes.",

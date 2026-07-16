@@ -8,8 +8,8 @@
   "quality": "gold",
   "country": "US",
   "countryName": "États-Unis",
-  "shortDesc": "Général d'infanterie or — États-Unis.",
-  "longDesc": "Douglas MacArthur dirige le théâtre du Pacifique Sud-Ouest, promet « I shall return » aux Philippines et accepte la reddition japonaise en septembre 1945. Carte WC4 infanterie tier-S or : bonus débarquement amphibie, à jouer sur Saipan, Leyte et Iwo Jima.",
+  "shortDesc": "Général d'infanterie or — États-Unis. Entraînable : Island Hopping et Old Soldiers Never Die.",
+  "longDesc": "Douglas MacArthur dirige le théâtre du Pacifique Sud-Ouest, promet « I shall return » aux Philippines et accepte la reddition japonaise en septembre 1945. Carte WC4 infanterie tier-S or : bonus débarquement amphibie, à jouer sur Saipan, Leyte et Iwo Jima. L'entraînement remplace Street Fighting par Island Hopping et Entrenchment par Old Soldiers Never Die.",
   "skills": [
     {
       "slot": 1,
@@ -56,49 +56,31 @@
     {
       "slot": 4,
       "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "desc": "Compétence apprenable — recommandé: Raider.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "replaceableReason": "Emplacement ouvert — recommandé: Raider"
     },
     {
       "slot": 5,
       "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
+      "desc": "Compétence apprenable — recommandé: Inspiration.",
       "rating": null,
       "stars": null,
       "icon": null,
       "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
+      "replaceableReason": "Emplacement ouvert — recommandé: Inspiration"
     }
   ],
   "attributes": {
-    "infantry": {
-      "start": 5,
-      "max": 5
-    },
-    "artillery": {
-      "start": 2,
-      "max": 2
-    },
-    "armor": {
-      "start": 3,
-      "max": 3
-    },
-    "navy": {
-      "start": 3,
-      "max": 4
-    },
-    "airforce": {
-      "start": 2,
-      "max": 3
-    },
-    "marching": {
-      "start": 6,
-      "max": 6
-    }
+    "infantry": { "start": 5, "max": 5 },
+    "artillery": { "start": 2, "max": 2 },
+    "armor": { "start": 3, "max": 3 },
+    "navy": { "start": 3, "max": 4 },
+    "airforce": { "start": 2, "max": 3 },
+    "marching": { "start": 6, "max": 6 }
   },
   "hasTrainingPath": true,
   "training": {
@@ -108,12 +90,12 @@
         "label": "Entraînement final",
         "swordCost": 0,
         "sceptreCost": 8,
-        "notes": "Slots max : 5. Coût additionnel : 0 médailles, 100 mérite. Débloque les slots 6 et 7 avec les compétences signature."
+        "notes": "Coût additionnel : 100 certificats. Remplace Street Fighting par Island Hopping (Lv 5) et Entrenchment par Old Soldiers Never Die (Lv 4). Source : Fandom wiki — page MacArthur."
       }
     ],
     "totalSwordCost": 0,
     "totalSceptreCost": 8,
-    "summary": "L'entraînement premium de MacArthur débloque deux compétences signature : Strategic Deployment (récupération HP infanterie + synergy blindé/artillerie) et I Shall Return (bonus amphibie + contre-attaque sur débarquement)."
+    "summary": "L'entraînement de MacArthur remplace deux compétences : Street Fighting → Island Hopping (bonus amphibie, attaque supplémentaire) et Entrenchment → Old Soldiers Never Die (réduction de dégâts accumulative, régénération HP)."
   },
   "acquisition": {
     "type": "medals",
@@ -124,7 +106,8 @@
   "bonuses": [],
   "recommendedUnits": [],
   "sources": [
-    "https://world-conqueror-4.fandom.com/wiki/Generals",
+    "https://world-conqueror-4.fandom.com/wiki/MacArthur",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
     "Données extraites des fichiers de jeu World Conqueror 4"
   ],
   "nameCanonical": "MacArthur",
@@ -132,6 +115,7 @@
   "unlockHQLv": 18,
   "militaryRank": 8,
   "gameId": 1030,
+  "generalIdGame": null,
   "image": {
     "photo": "/img/wc4/generals/MacArthur.webp",
     "head": "/img/wc4/heads/MacArthur.webp",
@@ -155,83 +139,55 @@
     },
     {
       "slot": 2,
-      "name": "Street Fighting",
-      "desc": "Damage to the enemy +15 when fighting in the city",
-      "rating": null,
-      "stars": null,
-      "icon": "/img/wc4/skills/general_skill_6.webp",
-      "replaceable": false,
-      "replaceableReason": null,
-      "nameEn": "Street Fighting",
-      "skillSlug": "street-fighting",
-      "skillType": 6,
-      "skillLevel": 3
-    },
-    {
-      "slot": 3,
-      "name": "Entrenchment",
-      "desc": "Able to dodge 6% damage from the enemy's artillery units",
-      "rating": null,
-      "stars": null,
-      "icon": "/img/wc4/skills/general_skill_29.webp",
-      "replaceable": false,
-      "replaceableReason": null,
-      "nameEn": "Entrenchment",
-      "skillSlug": "entrenchment",
-      "skillType": 29,
-      "skillLevel": 1
-    },
-    {
-      "slot": 4,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
-      "rating": null,
-      "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
-    },
-    {
-      "slot": 5,
-      "name": "Emplacement libre",
-      "desc": "Compétence apprenable — à remplir via l'Académie.",
-      "rating": null,
-      "stars": null,
-      "icon": null,
-      "replaceable": true,
-      "replaceableReason": "Emplacement ouvert"
-    },
-    {
-      "slot": 6,
-      "name": "Strategic Deployment",
-      "nameEn": "Strategic Deployment",
-      "desc": "After commanding infantry to attack, recover HP equal to X% of the damage dealt. If a friendly armored unit or artillery is within 1 hex, infantry attack and counterattack range +1.",
-      "rating": null,
-      "stars": null,
-      "icon": "/img/wc4/skills/general_skill_165.png",
-      "replaceable": false,
-      "replaceableReason": "Compétence débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "skillSlug": "strategic-deployment",
-      "skillType": 165,
-      "skillLevel": 5
-    },
-    {
-      "slot": 7,
-      "name": "I Shall Return",
-      "nameEn": "I Shall Return",
-      "desc": "When commanding infantry units on board or during amphibious landings, mobility +15% and counterattack damage +30%. After eliminating an enemy unit on a coastal tile, 50% chance to gain an additional attack.",
+      "name": "Island Hopping",
+      "nameEn": "Island Hopping",
+      "desc": "After commanding infantry units to attack, there is a chance to trigger an additional attack. When commanding infantry on board or during amphibious operations, mobility and damage are increased.",
       "rating": null,
       "stars": null,
       "icon": "/img/wc4/skills/general_skill_103.webp",
       "replaceable": false,
-      "replaceableReason": "Compétence signature débloquée via l'entraînement (Épées/Sceptres de Domination).",
-      "skillSlug": "i-shall-return",
+      "replaceableReason": "Compétence signature débloquée via l'entraînement (Sceptres de Domination). Remplace Street Fighting.",
+      "skillSlug": "island-hopping",
       "skillType": 103,
       "skillLevel": 5
+    },
+    {
+      "slot": 3,
+      "name": "Old Soldiers Never Die",
+      "nameEn": "Old Soldiers Never Die",
+      "desc": "When commanding infantry units, damage received is reduced. After being attacked by an enemy, damage reduction increases further, stackable. When HP drops below 50%, recovers a percentage of max HP on the next turn.",
+      "rating": null,
+      "stars": null,
+      "icon": "/img/wc4/skills/general_skill_29.webp",
+      "replaceable": false,
+      "replaceableReason": "Compétence signature débloquée via l'entraînement (Sceptres de Domination). Remplace Entrenchment.",
+      "skillSlug": "old-soldiers-never-die",
+      "skillType": 29,
+      "skillLevel": 4
+    },
+    {
+      "slot": 4,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — recommandé: Raider.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert — recommandé: Raider"
+    },
+    {
+      "slot": 5,
+      "name": "Emplacement libre",
+      "desc": "Compétence apprenable — recommandé: Inspiration.",
+      "rating": null,
+      "stars": null,
+      "icon": null,
+      "replaceable": true,
+      "replaceableReason": "Emplacement ouvert — recommandé: Inspiration"
     }
   ],
-  "shortDescEn": "Gold infantry general — United States.",
-  "shortDescDe": "Gold-Infanterie-General — Vereinigte Staaten.",
-  "longDescEn": "Douglas MacArthur commanded the South West Pacific Area, pledged 'I shall return' to the Philippines and accepted the Japanese surrender in September 1945. A WC4 tier-S gold infantry card with amphibious-landing bonuses — a must-have on Saipan, Leyte and Iwo Jima.",
-  "longDescDe": "Douglas MacArthur führte den Südwestpazifik, versprach „I shall return“ auf den Philippinen und nahm im September 1945 die japanische Kapitulation entgegen. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Amphibien-Landungsboni — ein Muss für Saipan, Leyte und Iwojima."
+  "shortDescEn": "Gold infantry general — United States. Trainable: Island Hopping and Old Soldiers Never Die.",
+  "shortDescDe": "Gold-Infanterie-General — Vereinigte Staaten. Trainierbar: Island Hopping und Old Soldiers Never Die.",
+  "longDescEn": "Douglas MacArthur commanded the South West Pacific Area, pledged 'I shall return' to the Philippines and accepted the Japanese surrender in September 1945. A WC4 tier-S gold infantry card with amphibious-landing bonuses — a must-have on Saipan, Leyte and Iwo Jima. Training replaces Street Fighting with Island Hopping and Entrenchment with Old Soldiers Never Die.",
+  "longDescDe": "Douglas MacArthur führte den Südwestpazifik, versprach \"I shall return\" auf den Philippinen und nahm im September 1945 die japanische Kapitulation entgegen. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Amphibien-Landungsboni — ein Muss für Saipan, Leyte und Iwojima. Das Training ersetzt Street Fighting durch Island Hopping und Entrenchment durch Old Soldiers Never Die."
 }
