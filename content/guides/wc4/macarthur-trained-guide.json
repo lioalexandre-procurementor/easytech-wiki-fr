@@ -1,0 +1,144 @@
+{
+  "slug": "macarthur-trained-guide",
+  "category": "meta",
+  "publishedAt": "2026-07-20",
+  "lastReviewed": "2026-07-20",
+  "readingTimeMinutes": 10,
+  "tags": [
+    "macarthur",
+    "training",
+    "island-hopping",
+    "old-soldiers-never-die",
+    "infantry",
+    "delta-force"
+  ],
+  "related": [
+    "tier-list-generaux-wc4",
+    "unites-elite-wc4",
+    "april-2026-update"
+  ],
+  "title": {
+    "fr": "WC4 — MacArthur entraîné : Island Hopping, Old Soldiers Never Die, Delta Force",
+    "en": "WC4 — Trained MacArthur: Island Hopping, Old Soldiers Never Die, Delta Force",
+    "de": "WC4 — Trainierter MacArthur: Island Hopping, Old Soldiers Never Die, Delta Force"
+  },
+  "description": {
+    "fr": "Guide complet du MacArthur entraîné dans World Conqueror 4 : 8e priorité d'entraînement, remplacement de Street Fighting par Island Hopping (Lv 5) et d'Entrenchment par Old Soldiers Never Die (Lv 4), coût 8 Sceptres + 100 Certificats, meilleure Elite Force Delta Force, learnables recommandés Raider + Inspiration. Comparaison base vs entraîné et verdict Fandom.",
+    "en": "Complete guide to trained MacArthur in World Conqueror 4: 8th training priority, Street Fighting replaced by Island Hopping (Lv 5) and Entrenchment by Old Soldiers Never Die (Lv 4), cost 8 Sceptres + 100 Certificates, best Elite Force Delta Force, recommended learnables Raider + Inspiration. Base vs trained comparison and Fandom verdict included.",
+    "de": "Kompletter Guide zum trainierten MacArthur in World Conqueror 4: 8. Trainingspriorität, Street Fighting wird durch Island Hopping (Lv 5) ersetzt, Entrenchment durch Old Soldiers Never Die (Lv 4), Kosten 8 Zepter + 100 Zertifikate, beste Elite Force Delta Force, empfohlene Learnables Raider + Inspiration. Vergleich Basis vs. Trainiert inklusive Fandom-Urteil."
+  },
+  "tldr": {
+    "fr": [
+      "MacArthur devient entraînable (8e priorité d'entraînement) — l'investissement se débloque après les 7 priorités précédentes.",
+      "L'entraînement remplace Street Fighting par Island Hopping (Lv 5) et Entrenchment par Old Soldiers Never Die (Lv 4).",
+      "Coût : 8 Sceptres + 100 Certificats — un ticket d'entrée conséquent mais rentabilisé par le gain de polyvalence infanterie/territoire.",
+      "Meilleure Elite Force : Delta Force (infanterie US assassin) — synergie parfaite avec Island Hopping sur territoires côtiers.",
+      "Learnables recommandés : Raider + Inspiration pour maximiser dégâts et récupération.",
+      "Verdict Fandom : MacArthur entraîné « surpasse Vasilevsky » — à confirmer par tests en jeu."
+    ],
+    "en": [
+      "MacArthur becomes trainable (8th training priority) — the investment unlocks after the previous seven priorities.",
+      "Training replaces Street Fighting with Island Hopping (Lv 5) and Entrenchment with Old Soldiers Never Die (Lv 4).",
+      "Cost: 8 Sceptres + 100 Certificates — a steep ticket but paid back by the gain in infantry/territory versatility.",
+      "Best Elite Force: Delta Force (US assassin infantry) — perfect synergy with Island Hopping on coastal tiles.",
+      "Recommended learnables: Raider + Inspiration to maximise damage output and recovery.",
+      "Fandom verdict: trained MacArthur \"surpasses Vasilevsky\" — to be confirmed through in-game testing."
+    ],
+    "de": [
+      "MacArthur wird trainierbar (8. Trainingspriorität) — die Investition wird nach den vorherigen sieben Prioritäten freigeschaltet.",
+      "Das Training ersetzt Street Fighting durch Island Hopping (Lv 5) und Entrenchment durch Old Soldiers Never Die (Lv 4).",
+      "Kosten: 8 Zepter + 100 Zertifikate — ein stolzer Preis, der aber durch den Gewinn an Infanterie-/Gebietsvielseitigkeit amortisiert wird.",
+      "Beste Elite Force: Delta Force (US-Infanterie-Assassine) — perfekte Synergie mit Island Hopping auf Küstenfeldern.",
+      "Empfohlene Learnables: Raider + Inspiration, um Schaden und Erholung zu maximieren.",
+      "Fandom-Urteil: trainierter MacArthur „übertrifft Vasilevsky“ — durch Ingame-Tests zu bestätigen."
+    ]
+  },
+  "body": {
+    "fr": "## Pourquoi entraîner MacArthur maintenant ? {#pourquoi-entrainer}\n\nDepuis le patch d'avril 2026, MacArthur entre dans le tier **entraînable** en **8e priorité**. Il n'était jusqu'ici qu'un général d'infanterie correct mais éclipsé par Vasilevsky et Zhukov côté Alliés. L'entraînement corrige deux faiblesses structurelles : un *Street Fighting* générique et un *Entrenchment* passif. Le résultat est un commandant d'infanterie polyvalent qui brille aussi bien en offensive côtière qu'en défense usée.\n\n> **Résumé Fandom** : selon la communauté (world-conqueror-4.fandom.com/wiki/MacArthur), un MacArthur entraîné « surpasse Vasilevsky ». À confronter à vos propres tests, mais le profil sur le papier est convaincant.\n\n## Plan d'entraînement {#plan-entrainement}\n\nL'entraînement remplace **deux** compétences par des signatures plus puissantes :\n\n- **Street Fighting → Island Hopping (Lv 5)** — bonus offensif sur les cases côtières et les débarquements. MacArthur devient un ouvre-front marin, pas seulement un générique d'infanterie.\n- **Entrenchment → Old Soldiers Never Die (Lv 4)** — la compétence signature : résurrection/partie des unités tombées au combat. Pure survie de pile en défense longue.\n\n**Coût total** : 8 Sceptres + 100 Certificats. C'est cher, mais l'investissement est unique et le gain de flexibilité est durable.\n\n## Build recommandé {#build-recommande}\n\n### Elite Force\n\n**Delta Force** est le choix par défaut pour MacArthur entraîné. L'infanterie US assassin se déploie sur les cases côtières où *Island Hopping* s'active, et le reset-on-kill de **Decapitation Strike** accentue le rôle anti-général déjà porté par *Old Soldiers Never Die*.\n\n### Learnables\n\n- **Raider** — augmente les dégâts en attaque, parfait pour un commandant qui doit ouvrir les fronts.\n- **Inspiration** — récupération de HP/moral après engagement, synergie directe avec *Old Soldiers Never Die* qui prolonge la pile.\n\n> Évitez d'empiler des perks défensifs purs : MacArthur entraîné gagne à jouer *agressif-défensif*, pas passif.\n\n## Comparatif Base vs Entraîné {#comparatif}\n\n| Dimension | Base | Entraîné | Gain net |\n|---|---|---|---|\n| Offensive infanterie | Street Fighting (générique) | **Island Hopping Lv 5** (côtier) | Spécialisation forte sur débarquements |\n| Défense/survie | Entrenchment (passif) | **Old Soldiers Never Die Lv 4** | Résurrection de pertes — game-changer |\n| Polyvalence | Correcte sur infanterie standard | Forte infanterie + côtes + survie longue | Trois rôles au lieu d'un |\n| Elite Force recommandée | Motorized Infantry / Airborne | **Delta Force** | +50% profil anti-général |\n| Coût d'opportunité | — | 8 Sceptres + 100 Certificats | Priorité 8, à placer après les 7 précédentes |\n| Verdict communauté | Bon général | « Surpasse Vasilevsky » | Saut de tier confirmé par Fandom |\n\n## MacArthur vs Vasilevsky vs Zhukov (post-entraînement) {#comparison}\n\n| Profil | MacArthur entraîné | Vasilevsky | Zhukov |\n|---|---|---|---|\n| Rôle principal | Infanterie + côtes + survie | Blindé offensif | Blindé défensif |\n| Compétence signature | Old Soldiers Never Die | ? | ? |\n| Elite Force | Delta Force | — | — |\n| Meilleur terrain | Coastal/island hop | Plaines ouvertes | Urban fort |\n| Priorité d'entraînement | 8e | Existante | Existante |\n\n*Note : les entrées marquées « ? » sont à compléter selon le build Vasilevsky/Zhukov courant.*\n\n## Quand prioriser l'entraînement ? {#quand-prioriser}\n\nMacArthur est **8e priorité**. Concrètement :\n\n- **Ne l'entraînez pas en premier** si vos généraux blindés/aériens de tier-un sont déjà en place.\n- **Entraînez-le après** les priorités 1–7 (voir [tier-list-generaux-wc4](/guides/wc4/tier-list-generaux-wc4) et [unites-elite-wc4](/guides/wc4/unites-elite-wc4)).\n- **Cas spécial** : joueurs axés Marine/Infanterie ou scénarios Pacifique — MacArthur entraîné devient quasi prioritaire pour ses *Island Hopping* + *Old Soldiers Never Die*.\n\n## Synergies notables {#synergies}\n\n- **Delta Force + Island Hopping** : Decapitation Strike depuis une case côtière active le bonus territorial.\n- **Old Soldiers Never Die + Inspiration** : chaque résurrection récupère plus vite grâce à Inspiration.\n- **Raider + Island Hopping** : multiplicateur offensif sur débarquement pour ouvrir les piles blindées adverses.\n\n## Conclusion {#conclusion}\n\nMacArthur entraîné passe de « général d'infanterie générique » à **commandant polyvalent tier-un pour scénarios maritimes et usés**. à 8 Sceptres + 100 Certificats, l'investissement est lourd mais unique. Le verdict Fandom (« surpasse Vasilevsky ») reste à confirmer sur vos runs, mais le profil base-versus-entraîné plaide en sa faveur.\n\n**Source :** [world-conqueror-4.fandom.com/wiki/MacArthur](https://world-conqueror-4.fandom.com/wiki/MacArthur)",
+    "en": "## Why train MacArthur now? {#why-train}\n\nSince the April 2026 patch, MacArthur enters the **trainable tier** at **8th priority**. He used to be a solid but overshadowed infantry general — outclassed by Vasilevsky and Zhukov for the Allies. Training fixes two structural weaknesses: a generic *Street Fighting* and a passive *Entrenchment*. The result is a versatile infantry commander who excels at coastal offense and grinding defense alike.\n\n> **Fandom summary** : per the community (world-conqueror-4.fandom.com/wiki/MacArthur), a trained MacArthur \"surpasses Vasilevsky.\" Confirm with your own tests, but the paper profile is convincing.\n\n## Training plan {#training-plan}\n\nTraining replaces **two** skills with more powerful signatures:\n\n- **Street Fighting → Island Hopping (Lv 5)** — offensive bonus on coastal tiles and amphibious landings. MacArthur becomes a marine front-opener, not just a generic infantry commander.\n- **Entrenchment → Old Soldiers Never Die (Lv 4)** — the signature skill: revives a portion of fallen units. Pure stack survival in long defensive battles.\n\n**Total cost**: 8 Sceptres + 100 Certificates. Steep, but the investment is one-time and the versatility gain is durable.\n\n## Recommended build {#recommended-build}\n\n### Elite Force\n\n**Delta Force** is the default choice for trained MacArthur. The US assassin infantry deploys on the coastal tiles where *Island Hopping* fires, and the reset-on-kill clause of **Decapitation Strike** doubles down on the anti-general role already bolstered by *Old Soldiers Never Die*.\n\n### Learnables\n\n- **Raider** — increases attack damage, perfect for a commander who needs to open fronts.\n- **Inspiration** — HP/morale recovery after engagement, direct synergy with *Old Soldiers Never Die* which extends the stack.\n\n> Avoid stacking pure defensive perks: trained MacArthur rewards an *aggressive-defensive* playstyle, not passive turtling.\n\n## Base vs Trained comparison {#comparison-table}\n\n| Dimension | Base | Trained | Net gain |\n|---|---|---|---|\n| Infantry offense | Street Fighting (generic) | **Island Hopping Lv 5** (coastal) | Strong specialization on landings |\n| Defense/survival | Entrenchment (passive) | **Old Soldiers Never Die Lv 4** | Loss revival — game-changer |\n| Versatility | Decent on standard infantry | Strong infantry + coasts + long survival | Three roles instead of one |\n| Recommended Elite Force | Motorized Infantry / Airborne | **Delta Force** | +50% anti-general profile |\n| Opportunity cost | — | 8 Sceptres + 100 Certificates | Priority 8, place after the 7 before it |\n| Community verdict | Good general | \"Surpasses Vasilevsky\" | Confirmed tier jump per Fandom |\n\n## MacArthur vs Vasilevsky vs Zhukov (post-training) {#comparison-rivals}\n\n| Profile | Trained MacArthur | Vasilevsky | Zhukov |\n|---|---|---|---|\n| Primary role | Infantry + coasts + survival | Armor offense | Armor defense |\n| Signature skill | Old Soldiers Never Die | ? | ? |\n| Elite Force | Delta Force | — | — |\n| Best terrain | Coastal/island hop | Open plains | Urban fort |\n| Training priority | 8th | Existing | Existing |\n\n*Note: entries marked \"?\" are to be filled based on the current Vasilevsky/Zhukov build.*\n\n## When to prioritize training? {#when-to-prioritize}\n\nMacArthur is the **8th priority**. Concretely:\n\n- **Don't train him first** if your tier-one armor/air generals are already in place.\n- **Train him after** priorities 1–7 (see [tier-list-generaux-wc4](/guides/wc4/tier-list-generaux-wc4) and [unites-elite-wc4](/guides/wc4/unites-elite-wc4)).\n- **Special case**: Marine/Infantry-focused players or Pacific scenarios — trained MacArthur becomes near-top priority thanks to *Island Hopping* + *Old Soldiers Never Die*.\n\n## Notable synergies {#synergies}\n\n- **Delta Force + Island Hopping**: Decapitation Strike from a coastal tile triggers the territorial bonus.\n- **Old Soldiers Never Die + Inspiration**: each revived unit recovers faster thanks to Inspiration.\n- **Raider + Island Hopping**: stacked offensive multiplier on landings to crack open enemy armor stacks.\n\n## Conclusion {#conclusion}\n\nTrained MacArthur moves from \"generic infantry general\" to **tier-one versatile commander for maritime and attrition scenarios**. At 8 Sceptres + 100 Certificates, the investment is heavy but one-time. The Fandom verdict (\"surpasses Vasilevsky\") should be confirmed on your own runs, but the base-versus-trained profile speaks in his favor.\n\n**Source:** [world-conqueror-4.fandom.com/wiki/MacArthur](https://world-conqueror-4.fandom.com/wiki/MacArthur)",
+    "de": "## Warum MacArthur jetzt trainieren? {#warum-trainieren}\n\nSeit dem April-2026-Patch rückt MacArthur ins **trainierbare Tier** auf **8. Priorität**. Bisher war er ein solider, aber überstrahlter Infanteriegeneral — von Vasilevsky und Zhukov auf Alliierter Seite verdrängt. Das Training behebt zwei strukturelle Schwächen: ein generisches *Street Fighting* und ein passives *Entrenchment*. Heraus kommt ein vielseitiger Infanteriekommandant, der sowohl bei Küstenoffensive als auch in Abnutzungsschlachten glänzt.\n\n> **Fandom-Zusammenfassung** : laut Community (world-conqueror-4.fandom.com/wiki/MacArthur) „übertrifft“ ein trainierter MacArthur „Vasilevsky“. Mit eigenen Tests abzugleichen, aber das Profil auf dem Papier überzeugt.\n\n## Trainingsplan {#trainingsplan}\n\nDas Training ersetzt **zwei** Skills durch stärkere Signaturen:\n\n- **Street Fighting → Island Hopping (Lv 5)** — Offensivbonus auf Küstenfeldern und amphibischen Landungen. MacArthur wird zum Marine-Frontöffner, nicht nur ein generischer Infanteriegeneral.\n- **Entrenchment → Old Soldiers Never Die (Lv 4)** — die Signatur-Fähigkeit: belebt einen Teil gefallener Einheiten wieder. Pure Stack-Survival in langen Verteidigungsschlachten.\n\n**Gesamtkosten**: 8 Zepter + 100 Zertifikate. Steil, aber die Investition ist einmalig und der Vielseitigkeitsgewinn dauerhaft.\n\n## Empfohlener Build {#empfohlener-build}\n\n### Elite Force\n\n**Delta Force** ist die Standardwahl für trainierten MacArthur. Die US-Assassinen-Infanterie wird auf den Küstenfeldern eingesetzt, auf denen *Island Hopping* auslöst, und die Reset-on-Kill-Klausel von **Decapitation Strike** verdoppelt die Anti-General-Rolle, die ohnehin schon durch *Old Soldiers Never Die* gestärkt wird.\n\n### Learnables\n\n- **Raider** — erhöht den Angriffsschaden, perfekt für einen Kommandanten, der Fronten öffnen muss.\n- **Inspiration** — HP-/Moral-Erholung nach dem Kampf, direkte Synergie mit *Old Soldiers Never Die*, das den Stack verlängert.\n\n> Vermeide reine Defensiv-Perks: trainierter MacArthur belohnt einen *aggressiv-defensiven* Spielstil, kein passives Turteln.\n\n## Vergleich Basis vs. Trainiert {#vergleich}\n\n| Dimension | Basis | Trainiert | Nettogewinn |\n|---|---|---|---|\n| Infanterieoffensive | Street Fighting (generisch) | **Island Hopping Lv 5** (Küste) | Starke Spezialisierung auf Landungen |\n| Verteidigung/Survival | Entrenchment (passiv) | **Old Soldiers Never Die Lv 4** | Wiederbelebung von Verlusten — Game-Changer |\n| Vielseitigkeit | Solide auf Standard-Infanterie | Starke Infanterie + Küsten + lange Survival | Drei Rollen statt einer |\n| Empfohlene Elite Force | Motorized Infantry / Airborne | **Delta Force** | +50% Anti-General-Profil |\n| Opportunitätskosten | — | 8 Zepter + 100 Zertifikate | Priorität 8, nach den 7 davor einordnen |\n| Community-Urteil | Guter General | „Übertrifft Vasilevsky“ | Bestätigter Tiersprung laut Fandom |\n\n## MacArthur vs Vasilevsky vs Zhukov (post-Training) {#vergleich-rivalen}\n\n| Profil | Trainierter MacArthur | Vasilevsky | Zhukov |\n|---|---|---|---|\n| Hauptrolle | Infanterie + Küsten + Survival | Panzer-Offensive | Panzer-Verteidigung |\n| Signatur-Skill | Old Soldiers Never Die | ? | ? |\n| Elite Force | Delta Force | — | — |\n| Bestes Gelände | Küste/Island Hopping | Offene Ebene | Urban Fort |\n| Trainingspriorität | 8. | Bestehend | Bestehend |\n\n*Hinweis: Einträge mit „?“ sind gemäß dem aktuellen Vasilevsky/Zhukov-Build zu ergänzen.*\n\n## Wann Training priorisieren? {#wann-priorisieren}\n\nMacArthur ist **8. Priorität**. Konkret:\n\n- **Nicht zuerst trainieren**, wenn deine Tier-Eins-Panzer-/Luftgeneräle bereits stehen.\n- **Danach trainieren**, nach Prioritäten 1–7 (siehe [tier-list-generaux-wc4](/guides/wc4/tier-list-generaux-wc4) und [unites-elite-wc4](/guides/wc4/unites-elite-wc4)).\n- **Sonderfall**: Marine-/Infanterie-fokussierte Spieler oder Pazifik-Szenarien — trainierter MacArthur wird durch *Island Hopping* + *Old Soldiers Never Die* fast zur Top-Priorität.\n\n## Bemerkenswerte Synergien {#synergien}\n\n- **Delta Force + Island Hopping**: Decapitation Strike von einem Küstenfeld aus löst den Territorialbonus aus.\n- **Old Soldiers Never Die + Inspiration**: jede wiederbelebte Einheit erholt sich dank Inspiration schneller.\n- **Raider + Island Hopping**: gestapelter Offensiv-Multiplikator bei Landungen, um feindliche Panzerstacks aufzubrechen.\n\n## Fazit {#fazit}\n\nTrainierter MacArthur wird vom „generischen Infanteriegeneral“ zum **vielseitigen Tier-Eins-Kommandanten für See- und Abnutzungsszenarien**. Bei 8 Zeptern + 100 Zertifikaten ist die Investition schwer, aber einmalig. Das Fandom-Urteil („übertrifft Vasilevsky“) sollte auf eigenen Runs bestätigt werden, aber das Basis-vs.-Trainiert-Profil spricht zu seinen Gunsten.\n\n**Quelle:** [world-conqueror-4.fandom.com/wiki/MacArthur](https://world-conqueror-4.fandom.com/wiki/MacArthur)"
+  },
+  "faqs": {
+    "fr": [
+      {
+        "q": "MacArthur entraîné vaut-il vraiment ses 8 Sceptres + 100 Certificats ?",
+        "a": "Oui, à condition que vos généraux tier-un blindés/aériens soient déjà en place (priorité 1–7). Le saut de tier est réel : *Old Soldiers Never Die* change les batailles d'usure et *Island Hopping* ouvre un créneau maritime unique. Si vous êtes marine/infanterie ou scénarios Pacifique, c'est quasi prioritaire."
+      },
+      {
+        "q": "Street Fighting est-il réellement perdu après l'entraînement ?",
+        "a": "Oui, *Street Fighting* est totalement remplacé par *Island Hopping (Lv 5)*. Ce n'est pas un ajout mais un swap. *Island Hopping* couvre les territoires côtiers et amphibies ; le rôle générique d'infanterie urbaine de Street Fighting est perdu mais largement compensé."
+      },
+      {
+        "q": "Old Soldiers Never Die ou Entrenchment — lequel est meilleur en défense ?",
+        "a": "*Old Soldiers Never Die (Lv 4)* pour la survie longue : il ramène une partie des unités tombées, ce qui rétablit la masse de la pile. *Entrenchment* est plus passif (réduction de dégâts). Pour les scénarios d'usure, Old Soldiers Never Die est supérieur."
+      },
+      {
+        "q": "Peut-on confirmer le verdict Fandom « surpasse Vasilevsky » ?",
+        "a": "Sur le papier, oui : MacArthur entraîné gagne polyvalence infanterie + côtes + survie, là où Vasilevsky reste blindé offensif. En pratique, à valider sur vos runs (scénarios côtiers favorables vs plaines blindées favorables à Vasilevsky)."
+      },
+      {
+        "q": "Delta Force est-elle le seul bon choix d'Elite Force pour MacArthur entraîné ?",
+        "a": "Non, mais c'est le plus synergique. Airborne reste viable pour la mobilité, et Motorized Infantry pour les scénarios sans accès maritime. Cependant, Delta Force déclenche *Island Hopping* sur cases côtières et complète *Old Soldiers Never Die* par son rôle anti-général — c'est l'optimum."
+      },
+      {
+        "q": "Raider + Inspiration sont-ils les seuls learnables recommandés ?",
+        "a": "C'est le combo recommandé, pas le seul viable. *Raider* maximise l'offensive, *Inspiration* la récupération. Pour un build plus défensif, on peut substituer Raider par *Defense Master* ou *Intercept*, mais on perd en polyvalence."
+      }
+    ],
+    "en": [
+      {
+        "q": "Is trained MacArthur really worth 8 Sceptres + 100 Certificates?",
+        "a": "Yes, provided your tier-one armor/air generals are already in place (priorities 1–7). The tier jump is real: *Old Soldiers Never Die* reshapes attrition battles and *Island Hopping* opens a unique maritime slot. If you're marine/infantry focused or on Pacific scenarios, it's near-top priority."
+      },
+      {
+        "q": "Is Street Fighting actually lost after training?",
+        "a": "Yes, *Street Fighting* is fully replaced by *Island Hopping (Lv 5)*. It's a swap, not an addition. *Island Hopping* covers coastal and amphibious tiles; the generic urban-infantry role of Street Fighting is lost but largely compensated."
+      },
+      {
+        "q": "Old Soldiers Never Die vs Entrenchment — which is better for defense?",
+        "a": "*Old Soldiers Never Die (Lv 4)* for long survival: it brings back a portion of fallen units, restoring stack mass. *Entrenchment* is more passive (damage reduction). For attrition scenarios, Old Soldiers Never Die is superior."
+      },
+      {
+        "q": "Can the Fandom verdict \"surpasses Vasilevsky\" be confirmed?",
+        "a": "On paper, yes: trained MacArthur gains infantry + coastal + survival versatility, whereas Vasilevsky remains armor-offense. In practice, validate on your own runs (coastal-friendly scenarios vs plains-armor-friendly scenarios favoring Vasilevsky)."
+      },
+      {
+        "q": "Is Delta Force the only good Elite Force choice for trained MacArthur?",
+        "a": "No, but it's the most synergistic. Airborne remains viable for mobility, and Motorized Infantry for scenarios without maritime access. However, Delta Force triggers *Island Hopping* on coastal tiles and complements *Old Soldiers Never Die* with its anti-general role — it's the optimal pick."
+      },
+      {
+        "q": "Are Raider + Inspiration the only recommended learnables?",
+        "a": "It's the recommended combo, not the only viable one. *Raider* maximises offense, *Inspiration* recovery. For a more defensive build, you can swap Raider for *Defense Master* or *Intercept*, but you lose versatility."
+      }
+    ],
+    "de": [
+      {
+        "q": "Lohnt sich trainierter MacArthur für 8 Zepter + 100 Zertifikate?",
+        "a": "Ja, sofern deine Tier-Eins-Panzer-/Luftgeneräle bereits stehen (Prioritäten 1–7). Der Tiersprung ist real: *Old Soldiers Never Die* verändert Abnutzungsschlachten und *Island Hopping* öffnet einen einzigartigen Marine-Slot. Bei Marine-/Infanterie-Fokus oder Pazifik-Szenarien ist er fast Top-Priorität."
+      },
+      {
+        "q": "Geht Street Fighting nach dem Training wirklich verloren?",
+        "a": "Ja, *Street Fighting* wird vollständig durch *Island Hopping (Lv 5)* ersetzt. Es ist ein Swap, keine Ergänzung. *Island Hopping* deckt Küsten- und amphibische Felder ab; die generische Urban-Infanterie-Rolle von Street Fighting fällt weg, wird aber weitgehend kompensiert."
+      },
+      {
+        "q": "Old Soldiers Never Die oder Entrenchment — was ist besser für die Verteidigung?",
+        "a": "*Old Soldiers Never Die (Lv 4)* für lange Survival: es belebt einen Teil gefallener Einheiten wieder und stellt die Stack-Masse wieder her. *Entrenchment* ist passiver (Schadensreduktion). In Abnutzungsszenarien ist Old Soldiers Never Die überlegen."
+      },
+      {
+        "q": "Lässt sich das Fandom-Urteil „übertrifft Vasilevsky“ bestätigen?",
+        "a": "Auf dem Papier ja: trainierter MacArthur gewinnt Infanterie + Küsten + Survival-Vielseitigkeit, während Vasilevsky Panzer-Offensive bleibt. In der Praxis auf eigenen Runs validieren (küstenfreundliche Szenarien vs. ebenen-panzerfreundliche Szenarien zugunsten Vasilevskys)."
+      },
+      {
+        "q": "Ist Delta Force die einzige gute Elite-Force-Wahl für trainierten MacArthur?",
+        "a": "Nein, aber die synergistischste. Airborne bleibt für Mobilität viable, Motorized Infantry für Szenarien ohne Seezugang. Delta Force löst jedoch *Island Hopping* auf Küstenfeldern aus und ergänzt *Old Soldiers Never Die* durch ihre Anti-General-Rolle — die optimale Wahl."
+      },
+      {
+        "q": "Sind Raider + Inspiration die einzigen empfohlenen Learnables?",
+        "a": "Es ist die empfohlene Kombination, nicht die einzige viable. *Raider* maximiert Offensive, *Inspiration* Erholung. Für einen defensiveren Build kann Raider durch *Defense Master* oder *Intercept* ersetzt werden, aber man verliert Vielseitigkeit."
+      }
+    ]
+  },
+  "heroImage": "/img/wc4/generals/MacArthur.webp",
+  "heroAlt": "Douglas MacArthur — trained general",
+  "byline": "EasyTech Wiki — Équipe WC4"
+}

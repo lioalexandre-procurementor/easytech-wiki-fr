@@ -1,0 +1,141 @@
+{
+  "slug": "training-priority-2026",
+  "category": "meta",
+  "publishedAt": "2026-07-20",
+  "lastReviewed": "2026-07-20",
+  "readingTimeMinutes": 15,
+  "tags": [
+    "training",
+    "tier-list",
+    "priority",
+    "sceptres",
+    "swords",
+    "2026"
+  ],
+  "related": [
+    "tier-list-generaux-wc4",
+    "generaux-premium-wc4",
+    "macarthur-trained-guide"
+  ],
+  "byline": "EasyTech Wiki — Équipe WC4",
+  "heroImage": "/img/wc4/generals/Rokossovsky.webp",
+  "heroAlt": "Rokossovsky — top training priority",
+  "title": {
+    "fr": "WC4 — Priorité d'entraînement 2026 : tier list complète des généraux entraînables (1-17)",
+    "en": "WC4 — Training Priority 2026: Complete Trainable Generals Tier List (1-17)",
+    "de": "WC4 — Trainingspriorität 2026: Vollständige Tier-List der trainierbaren Generäle (1-17)"
+  },
+  "description": {
+    "fr": "Guide complet de la priorité d'entraînement des généraux World Conqueror 4 en 2026 : tier list 1-17 entière, coûts en Or/Argent/Bronze (Sceptres, Épées, Certificats), apport mensuel gratuit et recommandations par rôle. Inclut le nouveau MacArthur entraînable et le tier IAP (Zhukov, Eisenhower, Manstein, Marshall).",
+    "en": "Complete guide to World Conqueror 4 general training priority in 2026: full 1-17 tier list, Gold/Silver/Bronze costs (Sceptres, Swords, Certificates), free monthly income and per-role recommendations. Includes the newly trainable MacArthur and the IAP tier (Zhukov, Eisenhower, Manstein, Marshall).",
+    "de": "Kompletter Guide zur WC4-Trainingspriorität 2026: vollständige Tier-List 1-17, Kosten in Gold/Silber/Bronze (Zepter, Schwerter, Zertifikate), kostenloses monatliches Einkommen und Rollen-Empfehlungen. Enthält den neu trainierbaren MacArthur und die IAP-Stufe (Zhukov, Eisenhower, Manstein, Marshall)."
+  },
+  "tldr": {
+    "fr": [
+      "Priorité n°1 : Rokossovsky (Or) — le meilleur retour sur investissement du tier entraînable, ultra polyvalent blindé.",
+      "Le tier IAP (Zhukov, Eisenhower, Manstein, Marshall) est séparé : hors entraînement Sceptres/Épées, acquisition exclusivement par achat réel.",
+      "MacArthur rejoint le tier entraînable en 2026 (priorité 8) — panzer polyvalent accessible en Or après Rokossovsky/de Gaulle/Vasilevsky/Patton/Nimitz/Tito/Auchinleck.",
+      "Coûts : Or = 8 Sceptres + 100 Certificats ; Argent = 16 Épées + 8 Sceptres ; Bronze = 24 Épées + 8 Sceptres.",
+      "Apport mensuel gratuit : 4 Épées + 2 Sceptres — un général Or complet prend ~4 mois de grinding sans événements."
+    ],
+    "en": [
+      "Priority #1: Rokossovsky (Gold) — the best return on investment in the trainable tier, ultra-versatile armor commander.",
+      "The IAP tier (Zhukov, Eisenhower, Manstein, Marshall) is separate: outside the Sceptre/Sword training path, acquired exclusively via real-money purchase.",
+      "MacArthur joins the trainable tier in 2026 (priority 8) — versatile panzer general accessible in Gold after Rokossovsky/de Gaulle/Vasilevsky/Patton/Nimitz/Tito/Auchinleck.",
+      "Costs: Gold = 8 Sceptres + 100 Certificates; Silver = 16 Swords + 8 Sceptres; Bronze = 24 Swords + 8 Sceptres.",
+      "Free monthly income: 4 Swords + 2 Sceptres — a full Gold general takes ~4 months of grinding without events."
+    ],
+    "de": [
+      "Priorität Nr. 1: Rokossovsky (Gold) — bestes Preis-Leistungs-Verhältnis im trainierbaren Tier, extrem vielseitiger Panzergeneral.",
+      "Der IAP-Tier (Zhukov, Eisenhower, Manstein, Marshall) ist separat: außerhalb des Zepter/Schwert-Trainingspfads, ausschließlich durch Echtgeldkauf erhältlich.",
+      "MacArthur kommt 2026 in den trainierbaren Tier (Priorität 8) — vielseitiger Panzergeneral in Gold nach Rokossovsky/de Gaulle/Vasilevsky/Patton/Nimitz/Tito/Auchinleck.",
+      "Kosten: Gold = 8 Zepter + 100 Zertifikate; Silber = 16 Schwerter + 8 Zepter; Bronze = 24 Schwerter + 8 Zepter.",
+      "Kostenloses monatliches Einkommen: 4 Schwerter + 2 Zepter — ein voller Gold-General dauert ~4 Monate Grinding ohne Events."
+    ]
+  },
+  "body": {
+    "fr": "## Tier IAP (n°0) — hors entraînement Sceptres/Épées\n\nLe tier IAP regroupe les quatre généraux premium achetables uniquement en monnaie réelle : **Zhukov**, **Eisenhower**, **Manstein** et **Marshall**. Ils ne se rencontrent pas dans le pipeline d'entraînement standard Sceptres/Épées et restent exclusifs au magasin. Si vous avez le budget, **Manstein** est généralement considéré comme le plus impactant (panzer polyvalent), suivi de **Zhukov** (tank d'assaut) et **Eisenhower** (air+terre).\n\n## Tier entraînable : priorité 1-17\n\nLa priorité ci-dessous reflète le consensus Fandom 2026 (world-conqueror-4.fandom.com/wiki/Training) — le meilleur rapport coût/impact pour un joueur qui monte son roster du zero. **Or** = rang max, **Argent** = rang intermédiaire, **Bronze** = rang de base. Un général Or nécessite 8 Sceptres + 100 Certificats.\n\n| Priorité | Général | Rôle | Rang conseillé | Notes |\n|---|---|---|---|---|\n| 1 | Rokossovsky | Panzer | Or | Meilleur ROI du tier — polyvalent blindé, buff de défense universel. |\n| 2 | de Gaulle | Panzer | Or | Excellent panzer, alternative si Rokossovsky déjà maxé. |\n| 3 | Vasilevsky | Panzer | Or | Panzer solide + buffs de groupe. |\n| 4 | Patton | Panzer | Or | Panzer US, bon coureur front-line. |\n| 5 | Nimitz | Naval | Or | Meilleur général naval entraînable. |\n| 6 | Tito | Panzer | Argent | Bon panzer à coût réduit, alternative URSS/alliés再来 |\n| 7 | Auchinleck | Panzer | Argent | Panzer défensif britannique. |\n| 8 | MacArthur (NEW) | Panzer | Or/Argent | Nouveau 2026 — panzer US polyvalent, priorité haute si roster panzer incomplet. |\n| 9 | Govorov | Panzer | Argent | Panzer URSS, alternative bon marché. |\n| 10 | Bradley | Panzer | Argent | Panzer US défensif. |\n| 11 | Kuznetsov | Naval | Argent | Naval URSS secondaire. |\n| 12 | Dowding | Air | Bronze/Argent | Air défensif et économique — bon premier général air (avril 2026). |\n| 13 | Halsey | Naval | Bronze/Argent | Naval US secondaire. |\n| 14 | Bock | Panzer | Bronze | Panzer Axe de base. |\n| 15 | Model | Panzer | Bronze | Panzer défensif Axe. |\n| 16 | Rundstedt | Panzer | Bronze | Panzer Axe, investissement limité. |\n| 17 | Messe | Panzer | Bronze | Dernier choix — seulement si vous avez déjà tout le reste. |\n\n## Coûts et apport mensuel\n\nLes rangs d'entraînement ont un coût fixe en Sceptres, Épées et Certificats :\n\n| Rang | Coût |\n|---|---|\n| Or | 8 Sceptres + 100 Certificats |\n| Argent | 16 Épées + 8 Sceptres |\n| Bronze | 24 Épées + 8 Sceptres |\n\n**Apport mensuel gratuit** (sans événements ni achat IAP) : **4 Épées + 2 Sceptres**. Cela signifie qu'un général Or complet prend environ **4 mois de grinding** pour les Sceptres (8 Sceptres ÷ 2/mois), plus un effort parallèle en Certificats via Conquest, Front militaire et les récompenses d'événement.\n\n## Recommandations par rôle\n\n- **Panzer** : Rokossovsky > de Gaulle > Vasilevsky > Patton > MacArthur > Tito. Le tier panzer est profond et c'est le rôle qui pèse le plus en PvE endgame — maximisez d'abord Rokossovsky.\n- **Naval** : Nimitz > Kuznetsov > Halsey. Nimitz est le seul naval Or vraiment dévaillant. Si vous ne jouez pas de campagnes navales régulières, laissez Naval à Argent/Bronze.\n- **Air** : Dowding est l'alternative low-cost — Bronze/Argent suffit pour un premier air défensif sans casser votre économie Sceptres.\n- **Défensif purge** : Auchinleck (Argent) et Model (Bronze) couvrent le slot si vous intensifiez votre roster Axis.\n\n## Erreurs à éviter\n\n1. **Monter MacArthur en Or avant Rokossovsky.** MacArthur est excellent mais Rokossovsky reste strictement supérieur en ROI.\n2. **Maxer Dowding en Or.** Dowding peut rester Argent — gardez vos 8 Sceptres pour un panzer top-tier.\n3. **Entraîner Messe tôt.** Messe est priorité 17 — n'y touchez qu'une fois tout le reste en place.\n4. **Oublier le tier IAP.** Si vous avez le budget réel, Manstein remplace de Gaulle/Vasilevsky dans votre rotation directement.",
+    "en": "## IAP Tier (#0) — outside the Sceptre/Sword training path\n\nThe IAP tier groups the four premium generals purchasable only with real money: **Zhukov**, **Eisenhower**, **Manstein** and **Marshall**. They do not enter the standard Sceptre/Sword training pipeline and remain store-exclusive. If you have the budget, **Manstein** is generally considered the most impactful (versatile panzer), followed by **Zhukov** (assault tank) and **Eisenhower** (air+land).\n\n## Trainable tier: priority 1-17\n\nThe priority below reflects the 2026 Fandom consensus (world-conqueror-4.fandom.com/wiki/Training) — the best cost/impact ratio for a player building their roster from zero. **Gold** = top rank, **Silver** = intermediate rank, **Bronze** = base rank. A Gold general requires 8 Sceptres + 100 Certificates.\n\n| Priority | General | Role | Recommended Rank | Notes |\n|---|---|---|---|---|\n| 1 | Rokossovsky | Panzer | Gold | Best ROI in the tier — versatile armor, universal defense buff. |\n| 2 | de Gaulle | Panzer | Gold | Excellent panzer, alternative once Rokossovsky is maxed. |\n| 3 | Vasilevsky | Panzer | Gold | Solid panzer + group buffs. |\n| 4 | Patton | Panzer | Gold | US panzer, good frontline runner. |\n| 5 | Nimitz | Naval | Gold | Best trainable naval general. |\n| 6 | Tito | Panzer | Silver | Good mid-cost panzer, USSR/Allies alternative. |\n| 7 | Auchinleck | Panzer | Silver | Defensive British panzer. |\n| 8 | MacArthur (NEW) | Panzer | Gold/Silver | New in 2026 — versatile US panzer, high priority if panzer roster incomplete. |\n| 9 | Govorov | Panzer | Silver | USSR panzer, budget alternative. |\n| 10 | Bradley | Panzer | Silver | Defensive US panzer. |\n| 11 | Kuznetsov | Naval | Silver | Secondary USSR naval. |\n| 12 | Dowding | Air | Bronze/Silver | Defensive + economy air — good first air general (April 2026). |\n| 13 | Halsey | Naval | Bronze/Silver | Secondary US naval. |\n| 14 | Bock | Panzer | Bronze | Base Axis panzer. |\n| 15 | Model | Panzer | Bronze | Defensive Axis panzer. |\n| 16 | Rundstedt | Panzer | Bronze | Axis panzer, limited investment. |\n| 17 | Messe | Panzer | Bronze | Last pick — only once everything else is in place. |\n\n## Costs and monthly income\n\nTraining ranks have a fixed cost in Sceptres, Swords and Certificates:\n\n| Rank | Cost |\n|---|---|\n| Gold | 8 Sceptres + 100 Certificates |\n| Silver | 16 Swords + 8 Sceptres |\n| Bronze | 24 Swords + 8 Sceptres |\n\n**Free monthly income** (no events, no IAP): **4 Swords + 2 Sceptres**. This means a full Gold general takes about **4 months of grinding** for the Sceptres alone (8 Sceptres ÷ 2/month), plus parallel effort on Certificates via Conquest, Military Front and event rewards.\n\n## Per-role recommendations\n\n- **Panzer**: Rokossovsky > de Gaulle > Vasilevsky > Patton > MacArthur > Tito. The panzer tier is deep and it is the role that matters most in endgame PvE — max Rokossovsky first.\n- **Naval**: Nimitz > Kuznetsov > Halsey. Nimitz is the only truly standout Gold naval. If you don't run regular naval campaigns, leave Naval at Silver/Bronze.\n- **Air**: Dowding is the low-cost alternative — Bronze/Silver is enough for a first defensive air general without tanking your Sceptre economy.\n- **Defensive Axis**: Auchinleck (Silver) and Model (Bronze) cover the slot when you beef up your Axis roster.\n\n## Mistakes to avoid\n\n1. **Maxing MacArthur before Rokossovsky.** MacArthur is excellent but Rokossovsky remains strictly superior in ROI.\n2. **Taking Dowding to Gold.** Dowding can stay Silver — save your 8 Sceptres for a top-tier panzer.\n3. **Training Messe early.** Messe is priority 17 — only touch him once everything else is in place.\n4. **Ignoring the IAP tier.** If you have the real-money budget, Manstein directly replaces de Gaulle/Vasilevsky in your rotation.",
+    "de": "## IAP-Tier (Nr. 0) — außerhalb des Zepter/Schwert-Trainingspfads\n\nDer IAP-Tier umfasst die vier Premium-Generäle, die nur mit Echtgeld kaufbar sind: **Zhukov**, **Eisenhower**, **Manstein** und **Marshall**. Sie erscheinen nicht im Standard-Zepter/Schwert-Trainingspfad und bleiben Shop-exklusiv. Wenn du das Budget hast, gilt **Manstein** allgemein als der einflussreichste (vielseitiger Panzer), gefolgt von **Zhukov** (Sturmtank) und **Eisenhower** (Luft+Land).\n\n## Trainierbarer Tier: Priorität 1-17\n\nDie folgende Priorität spiegelt den Fandom-Konsens 2026 (world-conqueror-4.fandom.com/wiki/Training) wider — das beste Kosten-/Wirkungsverhältnis für einen Spieler, der sein Roster von null aufbaut. **Gold** = Top-Rang, **Silber** = mittlerer Rang, **Bronze** = Basis-Rang. Ein Gold-General kostet 8 Zepter + 100 Zertifikate.\n\n| Priorität | General | Rolle | Empfohlener Rang | Anmerkungen |\n|---|---|---|---|---|\n| 1 | Rokossovsky | Panzer | Gold | Bestes ROI im Tier — vielseitige Panzer, universeller Verteidigungs-Buff. |\n| 2 | de Gaulle | Panzer | Gold | Hervorragender Panzer, Alternative, sobald Rokossovsky maxed ist. |\n| 3 | Vasilevsky | Panzer | Gold | Solider Panzer + Gruppen-Buffs. |\n| 4 | Patton | Panzer | Gold | US-Panzer, guter Frontline-Läufer. |\n| 5 | Nimitz | Marine | Gold | Bester trainierbarer Marine-General. |\n| 6 | Tito | Panzer | Silber | Guter mittelpreisiger Panzer, UdSSR/Alliierte-Alternative. |\n| 7 | Auchinleck | Panzer | Silber | Defensiver britischer Panzer. |\n| 8 | MacArthur (NEU) | Panzer | Gold/Silber | Neu 2026 — vielseitiger US-Panzer, hohe Priorität bei unvollständigem Panzer-Roster. |\n| 9 | Govorov | Panzer | Silber | UdSSR-Panzer, Budget-Alternative. |\n| 10 | Bradley | Panzer | Silber | Defensiver US-Panzer. |\n| 11 | Kuznetsov | Marine | Silber | Sekundärer UdSSR-Marine. |\n| 12 | Dowding | Luft | Bronze/Silber | Defensiver + Wirtschafts-Luft — guter erster Luftgeneral (April 2026). |\n| 13 | Halsey | Marine | Bronze/Silber | Sekundärer US-Marine. |\n| 14 | Bock | Panzer | Bronze | Basis-Achsen-Panzer. |\n| 15 | Model | Panzer | Bronze | Defensiver Achsen-Panzer. |\n| 16 | Rundstedt | Panzer | Bronze | Achsen-Panzer, begrenztes Investment. |\n| 17 | Messe | Panzer | Bronze | Letzte Wahl — nur, wenn alles andere steht. |\n\n## Kosten und monatliches Einkommen\n\nDie Trainingsränge haben feste Kosten in Zeptern, Schwertern und Zertifikaten:\n\n| Rang | Kosten |\n|---|---|\n| Gold | 8 Zepter + 100 Zertifikate |\n| Silber | 16 Schwerter + 8 Zepter |\n| Bronze | 24 Schwerter + 8 Zepter |\n\n**Kostenloses monatliches Einkommen** (ohne Events, ohne IAP): **4 Schwerter + 2 Zepter**. Das bedeutet, dass ein voller Gold-General etwa **4 Monate Grinding** allein für die Zepter braucht (8 Zepter ÷ 2/Monat), plus parallele Arbeit an Zertifikaten über Conquest, Military Front und Event-Belohnungen.\n\n## Rollen-Empfehlungen\n\n- **Panzer**: Rokossovsky > de Gaulle > Vasilevsky > Patton > MacArthur > Tito. Das Panzer-Tier ist tief und es ist die Rolle, die im Endgame-PvE am meisten zählt — maxe zuerst Rokossovsky.\n- **Marine**: Nimitz > Kuznetsov > Halsey. Nimitz ist der einzige wirklich herausragende Gold-Marine. Wenn du keine regelmäßigen Marine-Kampagnen spielst, lass Marine bei Silber/Bronze.\n- **Luft**: Dowding ist die kostengünstige Alternative — Bronze/Silber reicht für einen ersten defensiven Luftgeneral, ohne deine Zepter-Wirtschaft zu zerstören.\n- **Defensive Achse**: Auchinleck (Silber) und Model (Bronze) decken den Slot, wenn du dein Achsen-Roster verstärkst.\n\n## Fehler, die du vermeiden solltest\n\n1. **MacArthur vor Rokossovsky maxen.** MacArthur ist hervorragend, aber Rokossovsky bleibt beim ROI strikt überlegen.\n2. **Dowding auf Gold bringen.** Dowding kann bei Silber bleiben — heb dir deine 8 Zepter für einen Top-Tier-Panzer auf.\n3. **Messe früh trainieren.** Messe ist Priorität 17 — fass ihn erst an, wenn alles andere steht.\n4. **Den IAP-Tier ignorieren.** Wenn du das Echtgeld-Budget hast, ersetzt Manstein de Gaulle/Vasilevsky direkt in deiner Rotation."
+  },
+  "faqs": {
+    "fr": [
+      {
+        "q": "Quel est le premier général à entraîner en 2026 ?",
+        "a": "Rokossovsky (priorité 1, rang Or). C'est le meilleur rapport coût/impact du tier entraînable — panzer polyvalent avec buff de défense universel. Ensuite enchaînez sur de Gaulle puis Vasilevsky pour solidifier votre tier panzer."
+      },
+      {
+        "q": "MacArthur est-il devenu entraînable en 2026 ?",
+        "a": "Oui — MacArthur rejoint le tier entraînable à la priorité 8. C'est un panzer US polyvalent. Il est marqué NEW dans le tier et peut être monté en Or si votre roster panzer est incomplet après avoir maxé Rokossovsky/de Gaulle/Vasilevsky/Patton/Nimitz/Tito/Auchinleck."
+      },
+      {
+        "q": "Combien de temps pour un général Or complet sans IAP ni événements ?",
+        "a": "Environ 4 mois de grinding minimum, uniquement pour les 8 Sceptres (apport mensuel gratuit de 2 Sceptres). Les 100 Certificats s'obtiennent en parallèle via Conquest, Military Front et les récompenses d'événement. Les événements réguliers accélèrent significativement le timeline."
+      },
+      {
+        "q": "Quelle différence entre les rangs Or, Argent et Bronze ?",
+        "a": "Or = 8 Sceptres + 100 Certificats (rang max), Argent = 16 Épées + 8 Sceptres (intermédiaire), Bronze = 24 Épées + 8 Sceptres (base). Tous les rangs nécessitent 8 Sceptres — la différence est Certificats vs Épées. Bronze peut suffire pour les généraux de transition comme Bock, Model, Rundstedt, Messe."
+      },
+      {
+        "q": "Le tier IAP (Zhukov, Eisenhower, Manstein, Marshall) est-il entraînable ?",
+        "a": "Non. Le tier IAP est entièrement séparé : Zhukov, Eisenhower, Manstein et Marshall ne se rencontrent pas dans le pipeline Sceptres/Épées et ne s'acquièrent que par achat réel. Manstein est généralement le plus impactant (panzer polyvalent) et remplace directement de Gaulle/Vasilevsky dans votre rotation si vous avez le budget."
+      },
+      {
+        "q": "Faut-il monter Dowding en Or ?",
+        "a": "Non. Dowding (priorité 12) peut rester en Argent ou Bronze. Gardez vos 8 Sceptres pour un panzer top-tier — l'apport gratuit mensuel de 2 Sceptres rend chaque Sceptre précieux. Dowding en Argent suffit pour un premier général air défensif."
+      }
+    ],
+    "en": [
+      {
+        "q": "Which general should I train first in 2026?",
+        "a": "Rokossovsky (priority 1, Gold rank). It has the best cost/impact ratio in the trainable tier — versatile panzer with a universal defense buff. Then chain into de Gaulle and Vasilevsky to solidify your panzer tier."
+      },
+      {
+        "q": "Did MacArthur become trainable in 2026?",
+        "a": "Yes — MacArthur joins the trainable tier at priority 8. He is a versatile US panzer. Marked NEW in the tier and can be taken to Gold if your panzer roster is incomplete after maxing Rokossovsky/de Gaulle/Vasilevsky/Patton/Nimitz/Tito/Auchinleck."
+      },
+      {
+        "q": "How long does a full Gold general take without IAP or events?",
+        "a": "About 4 months of grinding minimum, just for the 8 Sceptres (free monthly income of 2 Sceptres). The 100 Certificates come in parallel via Conquest, Military Front and event rewards. Regular events significantly speed up the timeline."
+      },
+      {
+        "q": "What's the difference between Gold, Silver and Bronze ranks?",
+        "a": "Gold = 8 Sceptres + 100 Certificates (top rank), Silver = 16 Swords + 8 Sceptres (intermediate), Bronze = 24 Swords + 8 Sceptres (base). All ranks require 8 Sceptres — the difference is Certificates vs Swords. Bronze is enough for transitional generals like Bock, Model, Rundstedt, Messe."
+      },
+      {
+        "q": "Is the IAP tier (Zhukov, Eisenhower, Manstein, Marshall) trainable?",
+        "a": "No. The IAP tier is entirely separate: Zhukov, Eisenhower, Manstein and Marshall do not enter the Sceptre/Sword pipeline and are only acquired by real-money purchase. Manstein is generally the most impactful (versatile panzer) and directly replaces de Gaulle/Vasilevsky in your rotation if you have the budget."
+      },
+      {
+        "q": "Should I take Dowding to Gold?",
+        "a": "No. Dowding (priority 12) can stay at Silver or Bronze. Save your 8 Sceptres for a top-tier panzer — the free monthly income of 2 Sceptres makes each Sceptre precious. Silver Dowding is enough for a first defensive air general."
+      }
+    ],
+    "de": [
+      {
+        "q": "Welchen General sollte ich 2026 zuerst trainieren?",
+        "a": "Rokossovsky (Priorität 1, Gold-Rang). Er hat das beste Kosten-/Wirkungsverhältnis im trainierbaren Tier — vielseitiger Panzer mit universellem Verteidigungs-Buff. Danach folge mit de Gaulle und Vasilevsky, um dein Panzer-Tier zu festigen."
+      },
+      {
+        "q": "Ist MacArthur 2026 trainierbar geworden?",
+        "a": "Ja — MacArthur kommt in den trainierbaren Tier auf Priorität 8. Er ist ein vielseitiger US-Panzer. Er ist im Tier als NEU markiert und kann auf Gold gebracht werden, wenn dein Panzer-Roster nach Rokossovsky/de Gaulle/Vasilevsky/Patton/Nimitz/Tito/Auchinleck noch unvollständig ist."
+      },
+      {
+        "q": "Wie lange dauert ein voller Gold-General ohne IAP und Events?",
+        "a": "Etwa 4 Monate Grinding mindestens, allein für die 8 Zepter (kostenloses monatliches Einkommen von 2 Zeptern). Die 100 Zertifikate kommen parallel über Conquest, Military Front und Event-Belohnungen. Regelmäßige Events beschleunigen den Zeitplan deutlich."
+      },
+      {
+        "q": "Was ist der Unterschied zwischen Gold, Silber und Bronze?",
+        "a": "Gold = 8 Zepter + 100 Zertifikate (Top-Rang), Silber = 16 Schwerter + 8 Zepter (mittlerer Rang), Bronze = 24 Schwerter + 8 Zepter (Basis). Alle Ränge brauchen 8 Zepter — der Unterschied ist Zertifikate vs. Schwerter. Bronze reicht für Übergangs-Generäle wie Bock, Model, Rundstedt, Messe."
+      },
+      {
+        "q": "Ist der IAP-Tier (Zhukov, Eisenhower, Manstein, Marshall) trainierbar?",
+        "a": "Nein. Der IAP-Tier ist komplett separat: Zhukov, Eisenhower, Manstein und Marshall erscheinen nicht im Zepter/Schwert-Pipeline und sind nur über Echtgeldkauf erhältlich. Manstein gilt allgemein als der einflussreichste (vielseitiger Panzer) und ersetzt direkt de Gaulle/Vasilevsky in deiner Rotation, wenn du das Budget hast."
+      },
+      {
+        "q": "Sollte ich Dowding auf Gold bringen?",
+        "a": "Nein. Dowding (Priorität 12) kann bei Silber oder Bronze bleiben. Heb dir deine 8 Zepter für einen Top-Tier-Panzer auf — das kostenlose monatliche Einkommen von 2 Zeptern macht jedes Zepter wertvoll. Silber-Dowding reicht für einen ersten defensiven Luftgeneral."
+      }
+    ]
+  }
+}
