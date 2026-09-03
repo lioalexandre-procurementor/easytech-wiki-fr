@@ -1,7 +1,7 @@
 {
   "slug": "admiral-kuznetsov-carrier",
-  "name": "Amiral Kuznetsov",
-  "nameEn": "Admiral Kuznetsov Carrier",
+  "name": "Porte-avions Amiral Kuznetsov",
+  "nameEn": "Aircraft Carrier Kuznetsov",
   "category": "navy",
   "faction": "standard",
   "country": "RU",
@@ -9,136 +9,109 @@
   "tier": "S",
   "obtainability": "event",
   "preliminary": true,
-  "shortDesc": "Porte-avions soviétique — couverture aérienne-navale intégrée, frappe stratégique à longue portée.",
-  "shortDescEn": "Soviet aircraft carrier — integrated naval-air coverage, long-range strategic strike.",
-  "shortDescDe": "Sowjetischer Flugzeugträger — integrierte See-Luft-Abdeckung, strategischer Langreichweitenangriff.",
-  "longDesc": "Le porte-avions Amiral Kuznetsov (Projet 1143.5) est le seul porte-avions en service dans la marine russe. Conçu pendant la Guerre froide, il combine une piste d'envol « ski-jump » avec des missiles anti-navires lourds — une doctrine hybride unique. Dans WC4, c'est une unité d'élite navale tier S qui fusionne couverture aérienne et frappe navale : elle génère des sorties aériennes comme un porte-avions mais conserve l'arsenal lourd d'un croiseur de bataille.",
-  "longDescEn": "The Admiral Kuznetsov carrier (Project 1143.5) is the sole aircraft carrier serving in the Russian Navy. Designed during the Cold War, it combines a ski-jump flight deck with heavy anti-ship missiles — a uniquely hybrid doctrine. In WC4, it is a tier-S naval elite unit that fuses air coverage with naval strike: it generates air sorties like a carrier while retaining the heavy arsenal of a battlecruiser.",
-  "longDescDe": "Der Flugzeugträger Admiral Kusnezow (Projekt 1143.5) ist der einzige Flugzeugträger der russischen Marine. Er kombiniert ein Ski-Jump-Flugdeck mit schweren Seezielflugkörpern — eine einzigartige hybride Doktrin. In WC4 ist er eine Tier-S-Marine-Elite-Einheit, die Luftabdeckung mit Seeangriff verbindet:Er generiert Luftangriffe wie ein Träger und behält das schwere Arsenal eines Schlachtkreuzers.",
+  "shortDesc": "Porte-avions soviétique — unité d'élite navale confirmée par la version officielle 3.4.1. Détails en cours de vérification.",
+  "shortDescEn": "Soviet aircraft carrier — naval elite unit confirmed in official version 3.4.1. Details pending verification.",
+  "shortDescDe": "Sowjetischer Flugzeugträger — Marine-Elite-Einheit, bestätigt in der offiziellen Version 3.4.1. Details werden geprüft.",
+  "longDesc": "Le porte-avions Amiral Kuznetsov (Projet 1143.5) est une unité d'élite navale ajoutée à World Conqueror 4 dans la version officielle 3.4.1 (23 juin 2026), confirmée par les notes de version de l'App Store. Sa fiche complète — statistiques par niveau, perks (dont Sustained Pursuit), coût en fragments et conditions de déblocage exactes — est en cours de vérification en jeu et sera publiée dès confirmation. Les informations affichées ci-dessous se limitent à ce que les sources officielles confirment.",
+  "longDescEn": "The Admiral Kuznetsov carrier (Project 1143.5) is a naval elite unit added to World Conqueror 4 in official version 3.4.1 (June 23, 2026), confirmed by App Store release notes. Its full sheet — per-level statistics, perks (including Sustained Pursuit), fragment cost, and exact unlock conditions — is being verified in-game and will be published once confirmed. The information below is limited to what official sources confirm.",
+  "longDescDe": "Der Flugzeugträger Admiral Kusnezow (Projekt 1143.5) ist eine Marine-Elite-Einheit, die in World Conqueror 4 mit der offiziellen Version 3.4.1 (23. Juni 2026) hinzugefügt wurde, bestätigt durch die App-Store-Versionshinweise. Der vollständige Eintrag — Werte pro Stufe, Perks (einschließlich Sustained Pursuit), Fragmentkosten und genaue Freischaltbedingungen — wird derzeit im Spiel überprüft und nach Bestätigung veröffentlicht. Die folgenden Angaben beschränken sich auf das, was offizielle Quellen bestätigen.",
   "stats": {
-    "atk": [85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85, 85],
-    "def": [28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28, 28],
-    "hp": [845, 845, 845, 845, 845, 845, 845, 845, 845, 845, 845, 845],
-    "mov": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
-    "rng": [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+    "atk": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "def": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "hp": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "mov": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "rng": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
   },
   "perks": [
     {
       "lvl": 1,
       "type": "passive",
-      "icon": "🛫",
-      "name": "Integrated Air Wing",
-      "desc": "Génère 1 sortie aérienne par tour (chasseur ou bombardier léger). Les unités aériennes générées héritent de 50% des stats du porte-avions. (Lv.12 : 2 sorties, 75% des stats.)",
-      "nameEn": "Integrated Air Wing",
-      "descEn": "Generates 1 air sortie per turn (fighter or light bomber). Air units inherit 50% of carrier's stats. (Lv.12: 2 sorties, 75% stats.)",
-      "nameDe": "Integrierte Luftflotte",
-      "descDe": "Erzeugt 1 Lufteinsatz pro Runde (Jäger oder leichter Bomber). Lufteinheiten erben 50% der Träger-Werte. (St.12: 2 Einsätze, 75% Werte.)",
+      "icon": "❓",
+      "name": "Sustained Pursuit",
+      "desc": "Perk observé en jeu — permet une attaque supplémentaire après une attaque réussie. Description exacte et valeurs par niveau en cours de vérification.",
+      "nameEn": "Sustained Pursuit",
+      "descEn": "Perk observed in-game — allows an additional attack after a successful attack. Exact description and per-level values pending verification.",
+      "nameDe": "Sustained Pursuit",
+      "descDe": "Im Spiel beobachteter Perk — erlaubt einen zusätzlichen Angriff nach einem erfolgreichen Angriff. Genaue Beschreibung und Werte pro Stufe werden geprüft.",
       "milestone": true
     },
     {
       "lvl": 1,
-      "type": "active-skill",
-      "icon": "🚀",
-      "name": "Granit Missile Salvo",
-      "desc": "Tire 12 missiles anti-navires Granit P-700 sur une cible à portée 3-5 cases. Ignore 40% de la défense navale. Cooldown 3 tours. (Lv.12 : portée 7 cases, ignore 60%.)",
-      "nameEn": "Granit Missile Salvo",
-      "descEn": "Fires 12 P-700 Granit anti-ship missiles at a target within 3-5 tiles. Ignores 40% naval defense. Cooldown 3 turns. (Lv.12: range 7 tiles, ignores 60%.)",
-      "nameDe": "Granit-Raketensalve",
-      "descDe": "Feuert 12 P-700 Granit Seezielraketen auf ein Ziel in 3-5 Feldern Entfernung. Ignoriert 40% der Marineverteidigung. Abklingzeit 3 Runden. (St.12: Reichweite 7 Felder, ignoriert 60%.)",
-      "milestone": true
-    },
-    {
-      "lvl": 5,
       "type": "passive",
-      "icon": "🛡️",
-      "name": "Carrier Battle Group",
-      "desc": "Toutes les unités navales alliées dans un rayon de 2 cases gagnent +15% de défense et +10% de dégâts de riposte.",
-      "nameEn": "Carrier Battle Group",
-      "descEn": "All allied naval units within a 2-tile radius gain +15% defense and +10% counterattack damage.",
-      "nameDe": "Trägerkampfgruppe",
-      "descDe": "Alle verbündeten Marineeinheiten im Umkreis von 2 Feldern erhalten +15% Verteidigung und +10% Gegenangriffsschaden.",
-      "milestone": true
-    },
-    {
-      "lvl": 9,
-      "type": "active-skill",
-      "icon": "⚡",
-      "name": "Strategic Air Strike",
-      "desc": "Lance une frappe aérienne stratégique sur une zone de 3x3 cases. Dégâts équivalents à 120% de l'attaque du porte-avions. Cooldown 4 tours. (Lv.12 : zone 5x5, 160%.)",
-      "nameEn": "Strategic Air Strike",
-      "descEn": "Launches a strategic air strike on a 3x3 tile area. Damage equals 120% of carrier's attack. Cooldown 4 turns. (Lv.12: 5x5 area, 160%.)",
-      "nameDe": "Strategischer Luftschlag",
-      "descDe": "Startet einen strategischen Luftschlag auf ein 3x3-Feld-Gebiet. Schaden entspricht 120% des Träger-Angriffs. Abklingzeit 4 Runden. (St.12: 5x5-Gebiet, 160%.)",
-      "milestone": true
-    },
-    {
-      "lvl": 12,
-      "type": "passive",
-      "icon": "⚓",
-      "name": "Soviet Naval Supremacy",
-      "desc": "Lorsque le porte-avions est adjacent à au moins 2 unités navales alliées, toutes les sorties aériennes générées deviennent des frappes critiques garanties. De plus, récupère 10% des HP maximum après chaque élimination.",
-      "nameEn": "Soviet Naval Supremacy",
-      "descEn": "When the carrier is adjacent to at least 2 allied naval units, all generated air sorties become guaranteed critical strikes. Additionally, recovers 10% max HP after each kill.",
-      "nameDe": "Sowjetische Vorherrschaft zur See",
-      "descDe": "Wenn der Träger an mindestens 2 verbündete Marineeinheiten angrenzt, werden alle erzeugten Lufteinsätze zu garantierten kritischen Treffern. Zusätzlich werden 10% der maximalen HP nach jedem Kill wiederhergestellt.",
-      "milestone": true
+      "icon": "❓",
+      "name": "Perks supplémentaires",
+      "desc": "Le porte-avions possède d'autres perks non documentés dans les sources officielles accessibles. Liste complète en cours de vérification en jeu.",
+      "nameEn": "Additional perks",
+      "descEn": "The carrier has additional perks not documented in accessible official sources. Full list pending in-game verification.",
+      "nameDe": "Zusätzliche Perks",
+      "descDe": "Der Träger verfügt über weitere Perks, die in zugänglichen offiziellen Quellen nicht dokumentiert sind. Vollständige Liste wird im Spiel geprüft.",
+      "milestone": false
     }
   ],
   "image": {
-    "sprite": "/img/wc4/elites/354001.webp",
+    "sprite": null,
     "lvl12": null
   },
   "recommendedGenerals": ["nimitz", "spruance"],
   "levelingPriority": [
-    "Priorité absolue : maximiser les sorties aériennes (Integrated Air Wing) — le porte-avions est principalement une plateforme de projection de puissance aérienne.",
-    "Granit Missile Salvo au niveau 5 pour la capacité anti-navire lourd — complémentaire aux sorties aériennes.",
-    "Strategic Air Strike au niveau 9 pour la polyvalence offensive terrestre/navale.",
-    "Le niveau 12 transforme le porte-avions en hub tactique complet avec frappes critiques garanties en formation."
+    "Statistiques et perks en cours de vérification en jeu — la priorité de montée en niveau sera publiée dès confirmation des valeurs."
   ],
   "faqs": [
     {
-      "q": "Comment débloquer l'Amiral Kuznetsov ?",
-      "a": "Le porte-avions Amiral Kuznetsov est introduit avec le patch d'été 2026. Coût de déblocage : 40 fragments. Disponible via événement saisonnier."
+      "q": "Comment débloquer le porte-avions Amiral Kuznetsov ?",
+      "a": "L'unité est confirmée dans la version officielle 3.4.1 du 23 juin 2026. Elle se recrute au Dock niveau 2. Le coût exact en fragments sera publié après vérification en jeu."
     },
     {
       "q": "Quel est le rôle du porte-avions Amiral Kuznetsov ?",
-      "a": "C'est une unité hybride qui combine couverture aérienne (génère des sorties aériennes chaque tour) et frappe navale lourde (missiles Granit). Sa force principale est la polyvalence : il peut attaquer à distance avec des missiles, défendre avec des sorties aériennes, et soutenir une flotte avec des bonus de groupe. Placez-le au centre d'un groupe de combat naval pour maximiser son perk Carrier Battle Group."
+      "a": "C'est un porte-avions soviétique — une plateforme navale de projection aérienne. Le perk Sustained Pursuit observé en jeu lui permet d'attaquer à nouveau après une attaque réussie. Le kit complet de perks est en cours de vérification."
     },
     {
-      "q": "Les statistiques affichées sont-elles exactes ?",
-      "a": "Non — seules les valeurs de base (Attaque 85, Défense 28, HP 845, Mouvement 4, Portée 3) sont des estimations basées sur la doctrine et le historique du navire. Les valeurs de progression pour les niveaux 2 à 12 sont des placeholders en attendant la capture complète en jeu. Le bandeau en haut de cette fiche indique ce qui reste à vérifier."
+      "q": "Pourquoi les statistiques affichées sont-elles à zéro ?",
+      "a": "Les sources officielles accessibles (notes de version App Store, wiki Fandom) ne documentent pas encore les statistiques détaillées de cette unité. Par souci d'exactitude, nous ne publions pas de valeurs non vérifiées. Les chiffres seront ajoutés dès capture en jeu."
+    },
+    {
+      "q": "Quels généraux recommander ?",
+      "a": "Le wiki communautaire Fandom recommande Nimitz (entraîné) et Spruance pour cette unité."
     }
   ],
   "faqsEn": [
     {
-      "q": "How do you unlock Admiral Kuznetsov?",
-      "a": "The Admiral Kuznetsov carrier is introduced with the summer 2026 patch. Unlock cost: 40 fragments. Available via seasonal event."
+      "q": "How do you unlock the Admiral Kuznetsov carrier?",
+      "a": "The unit is confirmed in official version 3.4.1 of June 23, 2026. It is recruited at a level 2 Dock. The exact fragment cost will be published after in-game verification."
     },
     {
-      "q": "What is Admiral Kuznetsov's role?",
-      "a": "It's a hybrid unit combining air coverage (generates air sorties each turn) and heavy naval strike (Granit missiles). Its main strength is versatility: long-range missile attacks, air defense sorties, and fleet support bonuses. Place it at the center of a naval battle group to maximize its Carrier Battle Group perk."
+      "q": "What is the Admiral Kuznetsov carrier's role?",
+      "a": "It is a Soviet aircraft carrier — a naval air-projection platform. The Sustained Pursuit perk observed in-game allows it to attack again after a successful attack. The complete perk kit is being verified."
     },
     {
-      "q": "Are the displayed stats accurate?",
-      "a": "No — only the base values (Attack 85, Defense 28, HP 845, Movement 4, Range 3) are estimates based on the ship's doctrine and historical performance. Progression values for levels 2 through 12 are placeholders pending full in-game capture. The banner at the top of this page lists what remains to verify."
+      "q": "Why are the displayed stats zero?",
+      "a": "Accessible official sources (App Store release notes, Fandom wiki) do not yet document this unit's detailed statistics. For accuracy, we do not publish unverified values. Numbers will be added once captured in-game."
+    },
+    {
+      "q": "Which generals are recommended?",
+      "a": "The Fandom community wiki recommends Trained Nimitz and Spruance for this unit."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie schaltet man den Admiral Kusnezow frei?",
-      "a": "Der Flugzeugträger Admiral Kusnezow wird mit dem Sommer-Patch 2026 eingeführt. Freischaltkosten: 40 Fragmente. Verfügbar über saisonales Event."
+      "q": "Wie schaltet man den Träger Admiral Kusnezow frei?",
+      "a": "Die Einheit ist in der offiziellen Version 3.4.1 vom 23. Juni 2026 bestätigt. Rekrutiert wird er in einer Werft der Stufe 2. Die genauen Fragmentkosten werden nach In-Game-Überprüfung veröffentlicht."
     },
     {
-      "q": "Welche Rolle hat der Admiral Kusnezow?",
-      "a": "Er ist eine hybride Einheit, die Luftabdeckung (erzeugt Lufteinsätze pro Runde) mit schwerem Seeangriff (Granit-Raketen) verbindet. Seine Stärke ist Vielseitigkeit: Langstrecken-Raketenangriffe, Luftverteidigungseinsätze und Flottenunterstützung. Platziere ihn im Zentrum einer Kampfgruppe, um den Trägerkampfgruppe-Perk zu maximieren."
+      "q": "Welche Rolle hat der Träger Admiral Kusnezow?",
+      "a": "Er ist ein sowjetischer Flugzeugträger — eine Marineplattform für Luftprojektion. Der im Spiel beobachtete Perk Sustained Pursuit erlaubt einen erneuten Angriff nach einem erfolgreichen Angriff. Das vollständige Perk-Set wird geprüft."
     },
     {
-      "q": "Sind die angezeigten Werte korrekt?",
-      "a": "Nein — nur die Basiswerte (Angriff 85, Verteidigung 28, HP 845, Bewegung 4, Reichweite 3) sind Schätzungen basierend auf Doktrin und historischen Daten des Schiffes. Die Werte für Stufe 2 bis 12 sind Platzhalter, bis die vollständige Erfassung im Spiel vorliegt."
+      "q": "Warum sind die angezeigten Werte null?",
+      "a": "Zugängliche offizielle Quellen (App-Store-Hinweise, Fandom-Wiki) dokumentieren die detaillierten Werte dieser Einheit noch nicht. Aus Genauigkeitsgründen veröffentlichen wir keine ungeprüften Zahlen. Die Werte werden nach der Erfassung im Spiel ergänzt."
+    },
+    {
+      "q": "Welche Generäle werden empfohlen?",
+      "a": "Das Fandom-Community-Wiki empfiehlt trainierten Nimitz und Spruance für diese Einheit."
     }
   ],
   "sources": [
-    "Reddit r/WorldConqueror4 — community patch posts",
-    "https://world-conqueror-4.fandom.com/wiki/Elite_Forces"
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force"
   ]
 }
