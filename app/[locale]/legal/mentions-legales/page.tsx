@@ -25,7 +25,7 @@ export async function generateMetadata({
     de: "Impressum des EasyTech Wiki: Anbieter, verantwortlich für den Inhalt, Hosting und Hinweise zum Urheberrecht.",
   };
   return {
-    title: titles[locale] ?? titles.en,
+    title: { absolute: titles[locale] ?? titles.en },
     description: descriptions[locale] ?? descriptions.en,
     alternates: pageAlternates(locale, {
       fr: "/legal/mentions-legales",

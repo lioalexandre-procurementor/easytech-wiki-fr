@@ -64,7 +64,7 @@ export function VotePodium({ counts, total, generals, locale, heading, voteCta }
           return (
             <Link
               key={entry.slug}
-              href={`/world-conqueror-4/generaux/${entry.slug}` as any}
+              href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug: entry.slug } }}
               className="flex flex-col items-center gap-1 no-underline group"
             >
               <div
@@ -98,7 +98,7 @@ export function VotePodium({ counts, total, generals, locale, heading, voteCta }
       </div>
       <div className="text-center">
         <Link
-          href="/world-conqueror-4#best-general-vote"
+          href={{ pathname: "/world-conqueror-4", hash: "best-general-vote" } as any}
           className="inline-block border border-gold/40 text-gold2 text-sm font-semibold px-4 py-2 rounded-md hover:bg-gold/10 no-underline"
         >
           {voteCta}

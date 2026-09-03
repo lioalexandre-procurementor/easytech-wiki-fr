@@ -85,7 +85,7 @@ export default async function GuidesHubPage({
             return (
               <Link
                 key={g.slug}
-                href={`/world-conqueror-4/guides/${g.slug}` as any}
+                href={{ pathname: "/world-conqueror-4/guides/[slug]", params: { slug: g.slug } }}
                 className="group block bg-panel border border-border rounded-lg overflow-hidden hover:border-gold hover:-translate-y-0.5 transition-all no-underline shadow-[0_1px_3px_rgba(0,0,0,0.2)] hover:shadow-[0_6px_16px_rgba(0,0,0,0.35)]"
               >
                 {/* Card image header */}

@@ -25,7 +25,7 @@ export async function generateMetadata({
     de: "Datenschutzerklärung und DSGVO-Informationen für EasyTech Wiki: welche Daten, warum, wie lange und wie Sie Ihre Rechte ausüben können.",
   };
   return {
-    title: titles[locale] ?? titles.en,
+    title: { absolute: titles[locale] ?? titles.en },
     description: descriptions[locale] ?? descriptions.en,
     alternates: pageAlternates(locale, {
       fr: "/legal/confidentialite",

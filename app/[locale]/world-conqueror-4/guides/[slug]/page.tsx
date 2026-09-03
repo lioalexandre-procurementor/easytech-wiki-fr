@@ -10,6 +10,7 @@ import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
+import ReportMistakeLink from "@/components/ReportMistakeLink";
 
 /** Per-category tint applied behind the hero image when the guide has no
  *  image or on empty-card fallback. Keeps the hub visually scannable. */
@@ -438,6 +439,27 @@ export default async function GuideDetailPage({
           {renderMarkdown(body)}
         </section>
 
+        {guide.sources && guide.sources.length > 0 && (
+          <section className="bg-panel border border-border rounded-lg p-4 md:p-6 mb-6" aria-labelledby="guide-sources">
+            <h2 id="guide-sources" className="text-gold2 text-xl font-bold mb-3">
+              {loc === "fr" ? "Sources et méthodologie" : loc === "de" ? "Quellen und Methodik" : "Sources and methodology"}
+            </h2>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-dim">
+              {guide.sources.map((source) => (
+                <li key={source}>
+                  {/^https?:\/\//.test(source) ? (
+                    <a href={source} target="_blank" rel="noopener" className="text-gold hover:underline break-all">
+                      {source}
+                    </a>
+                  ) : (
+                    source
+                  )}
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         {guide.faqs[loc]?.length > 0 && (
           <section
             id="faq"
@@ -461,6 +483,8 @@ export default async function GuideDetailPage({
           </section>
         )}
 
+        <ReportMistakeLink className="mb-6" />
+
         {/* BreadcrumbList JSON-LD */}
         <script
           type="application/ld+json"
@@ -477,7 +501,12 @@ export default async function GuideDetailPage({
               headline: guide.title[loc],
               datePublished: guide.publishedAt,
               dateModified: guide.lastReviewed,
-              author: { "@type": "Organization", name: "EasyTech Wiki" },
+              author: guide.byline
+                ? { "@type": "Person", name: guide.byline }
+                : { "@type": "Organization", name: "EasyTech Wiki" },
+              publisher: { "@type": "Organization", name: "EasyTech Wiki" },
+              ...(guide.heroImage ? { image: guide.heroImage } : {}),
+              ...(guide.sources?.length ? { citation: guide.sources } : {}),
               inLanguage: locale,
               description: guide.description[loc],
               about: {

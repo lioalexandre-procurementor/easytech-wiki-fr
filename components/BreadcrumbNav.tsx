@@ -1,4 +1,5 @@
-import { Link } from "@/src/i18n/navigation";
+import { getPathname, Link } from "@/src/i18n/navigation";
+import type { Locale } from "@/src/i18n/config";
 import { JsonLd } from "./JsonLd";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://easytech-wiki.com";
@@ -15,6 +16,7 @@ interface Props {
 }
 
 export function BreadcrumbNav({ items, locale, separator = "›" }: Props) {
+  const breadcrumbLabel = locale === "fr" ? "Fil d'Ariane" : locale === "de" ? "Brotkrümelnavigation" : "Breadcrumb";
   const schema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -22,7 +24,14 @@ export function BreadcrumbNav({ items, locale, separator = "›" }: Props) {
       "@type": "ListItem",
       position: i + 1,
       name: item.label,
-      ...(item.href ? { item: `${SITE_URL}/${locale}${item.href}` } : {}),
+      ...(item.href
+        ? {
+            item: new URL(
+              getPathname({ locale: locale as Locale, href: item.href as any }),
+              SITE_URL,
+            ).toString(),
+          }
+        : {}),
     })),
   };
 
@@ -30,7 +39,7 @@ export function BreadcrumbNav({ items, locale, separator = "›" }: Props) {
     <>
       <JsonLd data={schema} />
       <nav
-        aria-label="Breadcrumb"
+        aria-label={breadcrumbLabel}
         className="max-w-[1320px] mx-auto px-6 py-3.5 text-xs text-muted"
       >
         <ol className="flex items-center flex-wrap gap-1">

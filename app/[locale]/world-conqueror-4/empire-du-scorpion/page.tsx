@@ -145,7 +145,7 @@ export default async function ScorpionHub({ params }: { params: { locale: string
               {generals.map((g) => (
                 <Link
                   key={g.slug}
-                  href={`/world-conqueror-4/generaux/${g.slug}`}
+                  href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug: g.slug } }}
                   className="block bg-panel border border-border rounded-lg p-5 hover:border-red-500 transition-colors no-underline"
                   style={{ borderColor: "#3a1f26" }}
                 >

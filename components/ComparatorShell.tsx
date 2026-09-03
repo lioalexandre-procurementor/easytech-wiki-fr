@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { usePathname, useRouter } from "@/src/i18n/navigation";
+import { useParams } from "next/navigation";
 import type { ComparableRow } from "@/lib/types";
 
 export interface ComparatorShellProps {
@@ -23,6 +24,7 @@ export default function ComparatorShell({
 }: ComparatorShellProps) {
   const router = useRouter();
   const pathname = usePathname();
+  const routeParams = useParams();
   const [ids, setIds] = useState<string[]>(
     initialIds.length > 0 ? initialIds : [allRows[0]?.id ?? ""],
   );
@@ -33,9 +35,8 @@ export default function ComparatorShell({
     ids.forEach((id, i) => {
       if (id && keys[i]) params.set(keys[i], id);
     });
-    const qs = params.toString();
-    router.replace(`${pathname}${qs ? `?${qs}` : ""}`);
-  }, [ids, pathname, router]);
+    router.replace({ pathname, params: routeParams, query: Object.fromEntries(params) } as any);
+  }, [ids, pathname, routeParams, router]);
 
   const setAt = useCallback((slot: number, id: string) => {
     setIds((prev) => {

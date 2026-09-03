@@ -81,6 +81,7 @@ function dirNewestMtime(dir: string): Date {
 const WC4_DATA = path.join(process.cwd(), "data", "wc4");
 const GCR_DATA = path.join(process.cwd(), "data", "gcr");
 const EW6_DATA = path.join(process.cwd(), "data", "ew6");
+const INDEX_EXPERIMENTAL_GAME_ENTITIES = false;
 
 // ---------------------------------------------------------------------
 // Localized path pairs — must mirror src/i18n/config.ts pathnames.
@@ -159,7 +160,7 @@ function emitLocalized(
   for (const locale of locales) {
     entries.push({
       url: urlFor(locale, route.pair),
-      lastModified: route.lastModified ?? BUILD_TIME,
+      lastModified: route.lastModified,
       changeFrequency: route.changeFrequency,
       priority: route.priority,
       alternates: sitemapAlternates(route.pair),
@@ -429,7 +430,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: urlFor(locale, pair),
-        lastModified: BUILD_TIME,
+        lastModified: mtimeOrBuild(
+          path.join(process.cwd(), "content", "guides", "wc4", `${slug}.json`),
+        ),
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: sitemapAlternates(pair),
@@ -447,7 +450,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of locales) {
       entries.push({
         url: urlFor(locale, pair),
-        lastModified: BUILD_TIME,
+        lastModified: mtimeOrBuild(
+          path.join(WC4_DATA, "formations", `${slug}.json`),
+        ),
         changeFrequency: "monthly",
         priority: 0.7,
         alternates: sitemapAlternates(pair),
@@ -475,12 +480,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { pair: { fr: "/great-conqueror-rome/conquete-romaine", en: "/great-conqueror-rome/roman-conquest", de: "/great-conqueror-rome/roman-conquest" }, priority: 0.6, changeFrequency: "monthly" },
       { pair: { fr: "/great-conqueror-rome/comparateur/generaux", en: "/great-conqueror-rome/comparator/generals", de: "/great-conqueror-rome/comparator/generals" }, priority: 0.7, changeFrequency: "monthly" },
       { pair: { fr: "/great-conqueror-rome/comparateur/unites", en: "/great-conqueror-rome/comparator/units", de: "/great-conqueror-rome/comparator/units" }, priority: 0.7, changeFrequency: "monthly" },
-      { pair: { fr: "/great-conqueror-rome/guides", en: "/great-conqueror-rome/guides", de: "/great-conqueror-rome/guides" }, priority: 0.7, changeFrequency: "weekly" },
-      { pair: { fr: "/great-conqueror-rome/mises-a-jour", en: "/great-conqueror-rome/updates", de: "/great-conqueror-rome/updates" }, priority: 0.7, changeFrequency: "weekly" },
     ];
     for (const route of gcrStaticRoutes) emitLocalized(entries, route);
 
-    for (const slug of getAllGcrGeneralSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllGcrGeneralSlugs()) {
       const entity = getGcrGeneral(slug);
       if (!entity) continue;
       // Placeholder pages are now indexable per the 2026-05-05 SEO plan
@@ -502,7 +505,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     }
 
-    for (const slug of getAllGcrEliteSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllGcrEliteSlugs()) {
       const entity = getGcrEliteUnit(slug);
       if (!entity) continue;
       // Placeholder pages are now indexable per the 2026-05-05 SEO plan.
@@ -523,7 +526,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     }
 
-    for (const slug of getAllGcrSkillSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllGcrSkillSlugs()) {
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/competences/${slug}`,
         en: `/great-conqueror-rome/skills/${slug}`,
@@ -541,7 +544,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     }
 
-    for (const slug of getAllGcrTechSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllGcrTechSlugs()) {
       const pair: LocalePair = {
         fr: `/great-conqueror-rome/technologies/${slug}`,
         en: `/great-conqueror-rome/technologies/${slug}`,
@@ -578,12 +581,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { pair: { fr: "/european-war-6/technologies", en: "/european-war-6/technologies", de: "/european-war-6/technologies" }, priority: 0.7, changeFrequency: "monthly", lastModified: ew6TechMtime },
       { pair: { fr: "/european-war-6/comparateur/generaux", en: "/european-war-6/comparator/generals", de: "/european-war-6/comparator/generals" }, priority: 0.7, changeFrequency: "monthly" },
       { pair: { fr: "/european-war-6/comparateur/unites", en: "/european-war-6/comparator/units", de: "/european-war-6/comparator/units" }, priority: 0.7, changeFrequency: "monthly" },
-      { pair: { fr: "/european-war-6/guides", en: "/european-war-6/guides", de: "/european-war-6/guides" }, priority: 0.7, changeFrequency: "weekly" },
-      { pair: { fr: "/european-war-6/mises-a-jour", en: "/european-war-6/updates", de: "/european-war-6/updates" }, priority: 0.7, changeFrequency: "weekly" },
     ];
     for (const route of ew6StaticRoutes) emitLocalized(entries, route);
 
-    for (const slug of getAllEw6GeneralSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllEw6GeneralSlugs()) {
       const entity = getEw6General(slug);
       if (!entity) continue;
       // Placeholder pages are now indexable per the 2026-05-05 SEO plan.
@@ -604,7 +605,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     }
 
-    for (const slug of getAllEw6EliteSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllEw6EliteSlugs()) {
       const entity = getEw6EliteUnit(slug);
       if (!entity) continue;
       // Placeholder pages are now indexable per the 2026-05-05 SEO plan.
@@ -625,7 +626,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     }
 
-    for (const slug of getAllEw6SkillSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllEw6SkillSlugs()) {
       const pair: LocalePair = {
         fr: `/european-war-6/competences/${slug}`,
         en: `/european-war-6/skills/${slug}`,
@@ -643,7 +644,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     }
 
-    for (const slug of getAllEw6TechSlugs()) {
+    if (INDEX_EXPERIMENTAL_GAME_ENTITIES) for (const slug of getAllEw6TechSlugs()) {
       const pair: LocalePair = {
         fr: `/european-war-6/technologies/${slug}`,
         en: `/european-war-6/technologies/${slug}`,

@@ -4,7 +4,7 @@ import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
 import { ComparatorTable } from "@/components/ComparatorTable";
 import { ComparatorRadar } from "@/components/ComparatorRadar";
-import { getAllEliteUnits, getEliteUnit } from "@/lib/gcr";
+import { getEliteUnit } from "@/lib/gcr";
 import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import { ogImage } from "@/lib/og";
@@ -39,20 +39,6 @@ function parseMatchup(matchup: string): [string, string] | null {
   return [parts[0], parts[1]];
 }
 
-export function generateStaticParams() {
-  const units = getAllEliteUnits().filter((u) => u.tier === "S");
-  const slugs = units.map((u) => u.slug).sort();
-  const matchups: { locale: string; matchup: string }[] = [];
-  for (const locale of locales) {
-    for (let i = 0; i < slugs.length; i++) {
-      for (let j = i + 1; j < slugs.length; j++) {
-        matchups.push({ locale, matchup: `${slugs[i]}-vs-${slugs[j]}` });
-      }
-    }
-  }
-  return matchups;
-}
-
 export async function generateMetadata({
   params: { locale, matchup },
 }: {
@@ -76,7 +62,10 @@ export async function generateMetadata({
     title: t("matchupTitle", { a: aName, b: bName }),
     description: t("matchupDescription", { a: aName, b: bName }),
     alternates: {
-      canonical: `/${locale}/great-conqueror-rome/comparateur/unites/${matchup}`,
+      canonical:
+        locale === "fr"
+          ? `/fr/great-conqueror-rome/comparateur/unites/${matchup}`
+          : `/${locale}/great-conqueror-rome/comparator/units/${matchup}`,
       languages: {
         fr: `/fr/great-conqueror-rome/comparateur/unites/${matchup}`,
         en: `/en/great-conqueror-rome/comparator/units/${matchup}`,
@@ -92,7 +81,7 @@ export async function generateMetadata({
       alternateLocale: ogAlternateLocales(locale),
       images: ogImages,
     },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
   };
 }
 

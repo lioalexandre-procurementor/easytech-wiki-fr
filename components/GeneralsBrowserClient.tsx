@@ -264,7 +264,7 @@ function FilterChip({
     <button
       type="button"
       onClick={onClick}
-      className={`text-[11px] font-semibold uppercase tracking-widest px-2.5 py-1 rounded border transition-colors ${
+      className={`min-h-11 text-xs font-semibold uppercase tracking-widest px-3 py-2 rounded border transition-colors ${
         active
           ? "bg-gold/25 border-gold text-gold2"
           : "bg-bg3 border-border text-dim hover:border-gold/60 hover:text-gold2"
@@ -300,7 +300,7 @@ function GeneralCard({
   const isFr = locale === "fr";
   return (
     <Link
-      href={`/world-conqueror-4/generaux/${g.slug}` as any}
+      href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug: g.slug } }}
       className={`block bg-panel border rounded-lg p-4 transition-colors no-underline ${
         scorpion ? "hover:border-red-500" : "hover:border-gold"
       }`}

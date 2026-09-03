@@ -35,7 +35,7 @@ export async function generateMetadata({
         "x-default": `/fr/great-conqueror-rome/technologies/${slug}`,
       },
     },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -99,7 +99,8 @@ export default async function TechDetailPage({
           </div>
         ) : (
           <section className="bg-panel border border-border rounded-lg p-6">
-            <table className="w-full text-sm border-collapse">
+            <div className="overflow-x-auto">
+            <table className="w-full min-w-[640px] text-sm border-collapse">
               <thead>
                 <tr>
                   <th className="text-left text-muted text-[10px] uppercase tracking-widest p-3 border-b border-border">
@@ -147,6 +148,7 @@ export default async function TechDetailPage({
                 ))}
               </tbody>
             </table>
+            </div>
           </section>
         )}
       </div>

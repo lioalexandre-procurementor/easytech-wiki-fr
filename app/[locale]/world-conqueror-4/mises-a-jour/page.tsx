@@ -90,7 +90,7 @@ export default async function UpdatesListPage({
             {updates.map((u) => (
               <Link
                 key={u.slug}
-                href={`/world-conqueror-4/mises-a-jour/${u.slug}` as any}
+                href={{ pathname: "/world-conqueror-4/mises-a-jour/[slug]", params: { slug: u.slug } }}
                 className="block bg-panel border border-border rounded-lg p-6 hover:border-gold transition-colors no-underline"
               >
                 <div className="flex flex-wrap items-baseline gap-3 mb-2">

@@ -35,6 +35,7 @@ import { StatsGrid } from "@/components/general/StatsGrid";
 import { locales } from "@/src/i18n/config";
 import { ogLocale, ogAlternateLocales } from "@/src/i18n/og-locale";
 import { splitGeneralName } from "@/lib/general-name";
+import ReportMistakeLink from "@/components/ReportMistakeLink";
 import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
@@ -161,12 +162,12 @@ export default async function GeneralPage({ params }: { params: { locale: string
   const generalSlugSegment = params.locale === "fr" ? "generaux" : "generals";
   const generalSchema = {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "Thing",
     name: g.nameEn || g.name,
     description: localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", params.locale),
     ...(g.image?.head ? { image: `${siteUrl}${g.image.head}` } : {}),
     url: `${siteUrl}/${params.locale}/world-conqueror-4/${generalSlugSegment}/${params.slug}`,
-    ...(g.country ? { nationality: g.country } : {}),
+    isPartOf: { "@type": "VideoGame", name: "World Conqueror 4" },
   };
 
   return (
@@ -184,7 +185,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
       />
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
-        <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
+        <aside className="hidden lg:block bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
             {t("general.onThisPage")}
           </h4>
@@ -302,22 +303,14 @@ export default async function GeneralPage({ params }: { params: { locale: string
           {/* CROSS-LINK: maxed-out variant (all generals) + premium training (19 only) */}
           <div className="mb-4 flex flex-wrap gap-2">
             <Link
-              href={
-                params.locale === "fr"
-                  ? `/world-conqueror-4/generaux/${g.slug}/entraine`
-                  : `/world-conqueror-4/generals/${g.slug}/trained`
-              }
+              href={{ pathname: "/world-conqueror-4/generaux/[slug]/trained", params: { slug: g.slug } }}
               className="inline-flex items-center gap-2 px-4 py-2 rounded bg-gold/10 border border-gold/30 text-gold2 hover:bg-gold/20 transition-colors"
             >
               ★ {t("general.viewMaxed")}
             </Link>
             {g.hasTrainingPath && g.trainedSkills && g.trainedSkills.length > 0 && (
               <Link
-                href={
-                  params.locale === "fr"
-                    ? `/world-conqueror-4/generaux/${g.slug}/entrainement-premium`
-                    : `/world-conqueror-4/generals/${g.slug}/premium-training`
-                }
+                href={{ pathname: "/world-conqueror-4/generaux/[slug]/premium-training", params: { slug: g.slug } }}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded bg-red-500/10 border border-red-500/40 text-red-300 hover:bg-red-500/20 transition-colors"
               >
                 ⚔ {t("general.viewPremiumTraining")}
@@ -356,7 +349,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
             {replaceableCount > 0 && (
               <div
                 className="mt-4 text-muted text-[11px] italic"
-                dangerouslySetInnerHTML={{ __html: t("general.academyHint") }}
+                dangerouslySetInnerHTML={{ __html: t.raw("general.academyHint") }}
               />
             )}
           </div>
@@ -473,7 +466,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
                 {recommended.map((u) => (
                   <Link
                     key={u.slug}
-                    href={`/world-conqueror-4/unites-elite/${u.slug}`}
+                    href={{ pathname: "/world-conqueror-4/unites-elite/[slug]", params: { slug: u.slug } }}
                     className="block bg-bg3 border border-border rounded-lg p-4 hover:border-gold transition-colors no-underline"
                   >
                     <div className="text-gold2 font-bold text-sm mb-1">{params.locale === "fr" ? u.name : u.nameEn || u.name}</div>
@@ -506,7 +499,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
                 {related.map((r) => (
                   <Link
                     key={r.slug}
-                    href={`/world-conqueror-4/generaux/${r.slug}`}
+                    href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug: r.slug } }}
                     className="block bg-panel border border-border rounded-lg p-4 hover:border-gold transition-colors no-underline"
                   >
                     <h3 className="text-gold2 font-bold text-base mb-1">{params.locale === "fr" ? r.name : r.nameEn || r.name}</h3>
@@ -522,10 +515,20 @@ export default async function GeneralPage({ params }: { params: { locale: string
 
           {/* SOURCES */}
           {g.sources && g.sources.length > 0 && (
-            <div className="text-muted text-xs mt-8">
-              <b>{t("general.sources")}</b> {g.sources.join(" · ")}
-            </div>
+            <section className="text-muted text-xs mt-8" aria-labelledby="general-sources">
+              <h2 id="general-sources" className="font-bold text-sm text-gold2 mb-2">{t("general.sources")}</h2>
+              <ul className="list-disc pl-5 space-y-1">
+                {g.sources.map((source) => (
+                  <li key={source}>
+                    {/^https?:\/\//.test(source) ? (
+                      <a href={source} target="_blank" rel="noopener" className="text-gold hover:underline break-all">{source}</a>
+                    ) : source}
+                  </li>
+                ))}
+              </ul>
+            </section>
           )}
+          <ReportMistakeLink className="mt-6" />
         </main>
       </div>
       <Footer />
@@ -536,6 +539,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
             "@context": "https://schema.org",
             "@type": "Article",
             headline: `${g.nameEn || g.name} — World Conqueror 4`,
+            mainEntity: generalSchema,
             about: {
               "@type": "VideoGame",
               name: "World Conqueror 4",
@@ -543,6 +547,9 @@ export default async function GeneralPage({ params }: { params: { locale: string
               publisher: { "@type": "Organization", name: "EasyTech" },
             },
             author: { "@type": "Organization", name: "EasyTech Wiki" },
+            publisher: { "@type": "Organization", name: "EasyTech Wiki" },
+            url: generalSchema.url,
+            ...(g.image?.head ? { image: `${siteUrl}${g.image.head}` } : {}),
             inLanguage: params.locale,
             description: localizedUnitField(g as unknown as Record<string, unknown>, "shortDesc", params.locale),
           }),

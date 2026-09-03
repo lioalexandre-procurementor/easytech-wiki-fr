@@ -118,12 +118,12 @@ export async function generateMetadata({
     title: t("seoTitle") + suffix,
     description: t("seoDescription"),
     alternates: {
-      canonical: `/${locale}/${slug}?game=${game}&tab=${tab}`,
+      canonical: `/${locale}/${slug}`,
       languages: {
-        fr: `/fr/classements?game=${game}&tab=${tab}`,
-        en: `/en/leaderboards?game=${game}&tab=${tab}`,
-        de: `/de/bestenlisten?game=${game}&tab=${tab}`,
-        "x-default": `/fr/classements?game=${game}&tab=${tab}`,
+        fr: "/fr/classements",
+        en: "/en/leaderboards",
+        de: "/de/bestenlisten",
+        "x-default": "/fr/classements",
       },
     },
     openGraph: {

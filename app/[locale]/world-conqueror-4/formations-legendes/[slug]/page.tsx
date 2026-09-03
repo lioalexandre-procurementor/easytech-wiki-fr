@@ -125,7 +125,7 @@ export default async function FormationDetailPage({
 
   const breadcrumbs = [
     { label: "World Conqueror 4", href: "/world-conqueror-4" },
-    { label: tHub("breadcrumb"), href: LOCALE_PATHS[localeKey] },
+    { label: tHub("breadcrumb"), href: "/world-conqueror-4/formations-legendes" },
     { label: name },
   ];
 
@@ -200,7 +200,7 @@ export default async function FormationDetailPage({
 
         <div className="mt-6">
           <Link
-            href={`/${locale}${LOCALE_PATHS[localeKey]}`}
+            href="/world-conqueror-4/formations-legendes"
             className="inline-flex items-center gap-1 text-gold2 font-semibold hover:text-gold no-underline"
           >
             ← {t("backToHub")}

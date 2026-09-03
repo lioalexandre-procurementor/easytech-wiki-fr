@@ -212,3 +212,26 @@ a:hover { text-decoration: underline; }
     transform: none !important;
   }
 }
+
+/* Shared interaction and mobile layout foundation. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid rgb(var(--c-gold2));
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+main { min-width: 0; }
+
+:where(section, article, div)[id] {
+  scroll-margin-top: 7.5rem;
+}
+
+@media (min-width: 1024px) {
+  :where(section, article, div)[id] { scroll-margin-top: 5.5rem; }
+}
+
+@media (forced-colors: active) {
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 3px solid Highlight;
+  }
+}

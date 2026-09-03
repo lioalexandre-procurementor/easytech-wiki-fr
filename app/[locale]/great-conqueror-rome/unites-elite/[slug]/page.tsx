@@ -69,11 +69,7 @@ export async function generateMetadata({ params }: { params: { locale: string; s
       en: `/great-conqueror-rome/elite-units/${params.slug}`,
       de: `/great-conqueror-rome/elite-units/${params.slug}`,
     }),
-    // Per the 2026-05-05 SEO remediation plan, elite-unit pages must be
-    // indexable. The placeholder noindex gate is removed; placeholder
-    // status still suppresses ad slots below but no longer affects
-    // indexability.
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -143,7 +139,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <ul className="list-none text-sm">
             {sidebarUnits.map(u => (
               <li key={u.slug}>
-                <Link href={`/great-conqueror-rome/unites-elite/${u.slug}` as any}
+                <Link href={{ pathname: "/great-conqueror-rome/unites-elite/[slug]", params: { slug: u.slug } }}
                   className={`block px-2 py-1 rounded no-underline ${u.slug === unit.slug ? "text-gold2 font-bold bg-gold/10 border-l-2 border-gold pl-2.5" : "text-dim hover:text-gold2"}`}>
                   {u.name}
                 </Link>
@@ -153,9 +149,6 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <h4 className="text-gold2 text-xs uppercase tracking-widest mt-4 mb-1.5 border-b border-border pb-1.5">{t("nav.navigationHeading")}</h4>
           <ul className="list-none text-sm">
             <li><Link href="/great-conqueror-rome/unites-elite" className="block px-2 py-1 text-dim no-underline hover:text-gold2">{tL("← Toutes les unités d'élite", "← All elite units", "← Alle Elite-Einheiten")}</Link></li>
-            {isScorpion && (
-              <li><Link href="/great-conqueror-rome/empire-du-scorpion" className="block px-2 py-1 text-dim no-underline hover:text-gold2">🦂 {t("nav.scorpion")}</Link></li>
-            )}
             <li><Link href="/great-conqueror-rome/generaux" className="block px-2 py-1 text-dim no-underline hover:text-gold2">👨‍✈️ {t("nav.generals")}</Link></li>
           </ul>
         </aside>
@@ -305,7 +298,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
               <h2 className="text-xl mb-4 mt-8">{tL(`Comparer avec d'autres ${meta.plural.toLowerCase()} d'élite`, `Compare with other elite ${meta.plural.toLowerCase()}`, `Mit anderen Elite-${meta.plural} vergleichen`)}</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {sameCat.map(u => (
-                  <Link key={u.slug} href={`/great-conqueror-rome/unites-elite/${u.slug}`}
+                  <Link key={u.slug} href={{ pathname: "/great-conqueror-rome/unites-elite/[slug]", params: { slug: u.slug } }}
                     className="block bg-panel border border-border rounded-lg p-4 hover:border-gold transition-all no-underline">
                     <div className="flex justify-between items-start mb-2">
                       {u.image?.sprite ? (

@@ -37,7 +37,7 @@ export async function generateMetadata({
     sub: "World Conqueror 4",
   });
   return {
-    title: titleByLocale[locale] ?? titleByLocale.en,
+    title: { absolute: titleByLocale[locale] ?? titleByLocale.en },
     description: descByLocale[locale] ?? descByLocale.en,
     alternates: {
       canonical: `/${locale}/world-conqueror-4`,
@@ -170,7 +170,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
           <h2 className="text-2xl font-extrabold text-ink mb-4 mt-10">{t("wc4Hub.exploreByCategory")}</h2>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {counts.map(c => (
-              <Link key={c.key} href={`/world-conqueror-4/unites-elite#${c.key}` as any}
+              <Link key={c.key} href={{ pathname: "/world-conqueror-4/unites-elite", hash: c.key } as any}
                 className="etw-lift bg-panel border border-border rounded-xl p-5 hover:border-gold no-underline block">
                 <div className="w-11 h-11 rounded-lg grid place-items-center text-2xl mb-3 border border-gold/30"
                   style={{ background: "linear-gradient(135deg, rgb(var(--c-gold) / 0.15), rgb(var(--c-accent) / 0.08))" }}>

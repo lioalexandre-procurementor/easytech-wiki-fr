@@ -18,7 +18,7 @@ export function UpdateCard({ update, locale }: Props) {
 
   return (
     <Link
-      href={`/world-conqueror-4/mises-a-jour/${update.slug}` as any}
+      href={{ pathname: "/world-conqueror-4/mises-a-jour/[slug]", params: { slug: update.slug } }}
       className="bg-panel border border-border rounded-lg p-4 flex flex-col gap-1.5 hover:border-gold/50 no-underline"
     >
       <div className="flex items-center justify-between gap-2">

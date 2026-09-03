@@ -9,6 +9,7 @@ import { locales, type Locale } from "@/src/i18n/config";
 import { ogLocale } from "@/src/i18n/og-locale";
 import { ogImage } from "@/lib/og";
 import type { Metadata } from "next";
+import ReportMistakeLink from "@/components/ReportMistakeLink";
 
 export function generateStaticParams() {
   const slugs = getAllUpdateSlugs();
@@ -200,7 +201,7 @@ export default async function UpdateDetailPage({
               <a
                 href={u.sourceUrl}
                 target="_blank"
-                rel="nofollow noopener"
+                rel="noopener"
                 className="text-gold hover:underline"
               >
                 {t("updatesPage.sourceLabel")} &#x2197;
@@ -213,6 +214,25 @@ export default async function UpdateDetailPage({
           {renderMarkdown(u.body[loc])}
         </section>
 
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Article",
+              headline: u.title[loc],
+              description: u.summary[loc],
+              datePublished: u.date,
+              dateModified: u.date,
+              inLanguage: locale,
+              author: { "@type": "Organization", name: "EasyTech Wiki" },
+              publisher: { "@type": "Organization", name: "EasyTech Wiki" },
+              about: { "@type": "VideoGame", name: "World Conqueror 4" },
+              ...(u.sourceUrl ? { citation: u.sourceUrl } : {}),
+            }),
+          }}
+        />
+
         <div className="mt-6">
           <Link
             href={"/world-conqueror-4/mises-a-jour" as any}
@@ -221,6 +241,7 @@ export default async function UpdateDetailPage({
             {t("updatesPage.backToList")}
           </Link>
         </div>
+        <ReportMistakeLink className="mt-6" />
       </article>
       <Footer />
     </>

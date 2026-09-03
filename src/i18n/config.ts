@@ -1,4 +1,4 @@
-import type { Pathnames } from "next-intl/routing";
+import { defineRouting, type Pathnames } from "next-intl/routing";
 
 export const locales = ["fr", "en", "de"] as const;
 export type Locale = (typeof locales)[number];
@@ -169,6 +169,11 @@ export const pathnames = {
     fr: "/world-conqueror-4/guides/[slug]",
     en: "/world-conqueror-4/guides/[slug]",
     de: "/world-conqueror-4/guides/[slug]",
+  },
+  "/world-conqueror-4/tier-list": {
+    fr: "/world-conqueror-4/tier-list",
+    en: "/world-conqueror-4/tier-list",
+    de: "/world-conqueror-4/tier-list",
   },
 
   // ---------------------------------------------------------------------
@@ -354,3 +359,10 @@ export const pathnames = {
 } satisfies Pathnames<typeof locales>;
 
 export const localePrefix = "always" as const;
+
+export const routing = defineRouting({
+  locales,
+  defaultLocale,
+  localePrefix,
+  pathnames,
+});

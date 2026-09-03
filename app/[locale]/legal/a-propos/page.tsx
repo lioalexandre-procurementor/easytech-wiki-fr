@@ -25,7 +25,7 @@ export async function generateMetadata({
     de: "Wer hinter dem EasyTech Wiki steht, warum dieses Projekt existiert und wie die Daten erhoben und überprüft werden.",
   };
   return {
-    title: titleByLocale[locale] ?? titleByLocale.en,
+    title: { absolute: titleByLocale[locale] ?? titleByLocale.en },
     description: descByLocale[locale] ?? descByLocale.en,
     alternates: pageAlternates(locale, {
       fr: "/legal/a-propos",

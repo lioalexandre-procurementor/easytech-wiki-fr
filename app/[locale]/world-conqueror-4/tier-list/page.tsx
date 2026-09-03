@@ -57,7 +57,7 @@ export async function generateMetadata({
   };
   const m = byLocale[locale] ?? byLocale.en;
   return {
-    title: m.t,
+    title: { absolute: m.t },
     description: m.d,
     alternates: pageAlternates(locale, {
       fr: "/world-conqueror-4/tier-list",

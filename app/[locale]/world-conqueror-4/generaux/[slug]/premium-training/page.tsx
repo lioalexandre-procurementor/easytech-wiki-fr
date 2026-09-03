@@ -182,7 +182,7 @@ export default async function PremiumTrainingPage({
         </Link>
         <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
         <Link
-          href={`/world-conqueror-4/generaux/${slug}`}
+          href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug } }}
           className="text-dim"
         >
           {name}
@@ -219,17 +219,13 @@ export default async function PremiumTrainingPage({
             </p>
             <div className="flex flex-wrap gap-3 mt-4">
               <Link
-                href={`/world-conqueror-4/generaux/${slug}`}
+                href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug } }}
                 className="text-sm text-gold hover:underline"
               >
                 {t("premiumTrainingPage.backToBase")}
               </Link>
               <Link
-                href={
-                  locale === "fr"
-                    ? `/world-conqueror-4/generaux/${slug}/entraine`
-                    : `/world-conqueror-4/generals/${slug}/trained`
-                }
+                href={{ pathname: "/world-conqueror-4/generaux/[slug]/trained", params: { slug } }}
                 className="text-sm text-gold hover:underline"
               >
                 {t("general.viewMaxed")}
@@ -269,7 +265,7 @@ export default async function PremiumTrainingPage({
                       </span>
                       {s.skillSlug ? (
                         <Link
-                          href={`/world-conqueror-4/competences/${s.skillSlug}` as any}
+                          href={{ pathname: "/world-conqueror-4/competences/[slug]", params: { slug: s.skillSlug } }}
                           className="text-red-300 font-bold text-sm hover:underline no-underline"
                         >
                           {nameForSkill(s)}

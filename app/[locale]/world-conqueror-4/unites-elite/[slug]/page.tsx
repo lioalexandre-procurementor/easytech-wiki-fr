@@ -27,6 +27,7 @@ import UnitBestGeneralVote from "@/components/UnitBestGeneralVote";
 import type { Metadata } from "next";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { locales } from "@/src/i18n/config";
+import ReportMistakeLink from "@/components/ReportMistakeLink";
 
 export function generateStaticParams() {
   const slugs = getAllSlugs();
@@ -156,7 +157,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
           <ul className="list-none text-sm">
             {sidebarUnits.map(u => (
               <li key={u.slug}>
-                <Link href={`/world-conqueror-4/unites-elite/${u.slug}` as any}
+                <Link href={{ pathname: "/world-conqueror-4/unites-elite/[slug]", params: { slug: u.slug } }}
                   className={`block px-2 py-1 rounded no-underline ${u.slug === unit.slug ? "text-gold2 font-bold bg-gold/10 border-l-2 border-gold pl-2.5" : "text-dim hover:text-gold2"}`}>
                   {u.name}
                 </Link>
@@ -330,7 +331,7 @@ export default async function UnitPage({ params }: { params: { locale: string; s
               <h2 className="text-xl mb-4 mt-8">{tL(`Comparer avec d'autres ${meta.plural.toLowerCase()} d'élite`, `Compare with other elite ${meta.plural.toLowerCase()}`, `Mit anderen Elite-${meta.plural} vergleichen`)}</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 {sameCat.map(u => (
-                  <Link key={u.slug} href={`/world-conqueror-4/unites-elite/${u.slug}`}
+                  <Link key={u.slug} href={{ pathname: "/world-conqueror-4/unites-elite/[slug]", params: { slug: u.slug } }}
                     className="block bg-panel border border-border rounded-lg p-4 hover:border-gold transition-all no-underline">
                     <div className="flex justify-between items-start mb-2">
                       {u.image?.sprite ? (
@@ -389,10 +390,20 @@ export default async function UnitPage({ params }: { params: { locale: string; s
 
           {/* SOURCES */}
           {unit.sources && unit.sources.length > 0 && (
-            <div className="text-muted text-xs mt-6">
-              <b>{tL("Sources :", "Sources:", "Quellen:")}</b> {unit.sources.join(" · ")}
-            </div>
+            <section className="text-muted text-xs mt-6" aria-labelledby="unit-sources">
+              <h2 id="unit-sources" className="font-bold text-sm text-gold2 mb-2">{tL("Sources", "Sources", "Quellen")}</h2>
+              <ul className="list-disc pl-5 space-y-1">
+                {unit.sources.map((source) => (
+                  <li key={source}>
+                    {/^https?:\/\//.test(source) ? (
+                      <a href={source} target="_blank" rel="noopener" className="text-gold hover:underline break-all">{source}</a>
+                    ) : source}
+                  </li>
+                ))}
+              </ul>
+            </section>
           )}
+          <ReportMistakeLink className="mt-6" />
         </main>
       </div>
       <Footer/>

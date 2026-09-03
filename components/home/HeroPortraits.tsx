@@ -41,7 +41,7 @@ export function HeroPortraits({ portraits }: { portraits: HeroPortrait[] }) {
           return (
             <Link
               key={p.slug}
-              href={`/world-conqueror-4/generaux/${p.slug}` as any}
+              href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug: p.slug } }}
               className="absolute group no-underline"
               style={{
                 top: s.top,

@@ -37,15 +37,15 @@ export function RelatedRail({
 }) {
   if (items.length === 0) return null;
   return (
-    <section className="bg-panel border border-border rounded-lg p-6 mb-6">
-      <div className="flex items-center justify-between gap-3 mb-4">
+    <section className="bg-panel border border-border rounded-lg p-4 md:p-6 mb-6">
+      <div className="flex flex-col items-start sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-3 mb-4">
         <h2 className="text-gold2 font-bold uppercase tracking-widest text-lg">
           {title}
         </h2>
         {seeAllHref && seeAllLabel && (
           <Link
             href={seeAllHref as any}
-            className="text-gold text-xs font-semibold hover:underline whitespace-nowrap no-underline"
+            className="inline-flex min-h-11 items-center text-gold text-xs font-semibold hover:underline sm:whitespace-nowrap no-underline"
           >
             {seeAllLabel} →
           </Link>
@@ -56,7 +56,7 @@ export function RelatedRail({
           <Link
             key={it.href}
             href={it.href as any}
-            className="flex items-center gap-3 bg-bg3 border border-border rounded-lg p-3 hover:border-gold transition-colors no-underline"
+            className="flex min-h-11 items-center gap-3 bg-bg3 border border-border rounded-lg p-3 hover:border-gold transition-colors no-underline"
           >
             <div className="w-10 h-10 rounded-md border border-gold/40 bg-bg2/60 grid place-items-center relative overflow-hidden flex-shrink-0">
               {it.icon ? (

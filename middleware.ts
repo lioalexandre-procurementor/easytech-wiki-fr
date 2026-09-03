@@ -1,14 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import createMiddleware from "next-intl/middleware";
-import { locales, defaultLocale, localePrefix, pathnames } from "@/src/i18n/config";
+import { routing } from "@/src/i18n/config";
 import { verifySession, ADMIN_COOKIE } from "@/lib/admin-session";
 
-const intlMiddleware = createMiddleware({
-  locales,
-  defaultLocale,
-  localePrefix,
-  pathnames,
-});
+const intlMiddleware = createMiddleware(routing);
 
 export default async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;

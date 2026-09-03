@@ -233,7 +233,7 @@ export default async function SkillDetailPage({
             {seriesMeta && (
               <li>
                 <Link
-                  href={`/world-conqueror-4/competences#series-${seriesMeta.series}` as any}
+                  href={{ pathname: "/world-conqueror-4/competences", hash: `series-${seriesMeta.series}` } as any}
                   className="block px-2 py-1 text-dim no-underline hover:text-gold2"
                 >
                   {seriesMeta.icon} {seriesMeta.label}
@@ -442,7 +442,7 @@ export default async function SkillDetailPage({
                 {resolved.map(({ general: g, levels, viaPromotion }) => (
                   <Link
                     key={g.slug}
-                    href={`/world-conqueror-4/generaux/${g.slug}` as any}
+                    href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug: g.slug } }}
                     className="flex items-start gap-3 bg-bg3 border border-border rounded-lg p-3 hover:border-gold transition-colors no-underline"
                   >
                     {g.image?.head ? (

@@ -61,8 +61,8 @@ export async function TopBar() {
               <Link
                 key={i}
                 href={item.href as any}
-                className={`px-2 lg:px-2.5 py-2 text-dim text-xs font-bold rounded-md hover:bg-gold/14 hover:text-gold2 no-underline whitespace-nowrap ${
-                  i > 0 ? "hidden lg:inline-flex" : "inline-flex"
+                className={`min-h-11 items-center px-2 lg:px-2.5 py-2 text-dim text-xs font-bold rounded-md hover:bg-gold/14 hover:text-gold2 no-underline whitespace-nowrap ${
+                  i > 0 ? "hidden lg:inline-flex" : "hidden sm:inline-flex"
                 }`}
               >
                 {item.label}

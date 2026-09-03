@@ -61,11 +61,12 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/great-conqueror-rome/competences/${slug}`,
         en: `/en/great-conqueror-rome/skills/${slug}`,
+        de: `/de/great-conqueror-rome/skills/${slug}`,
         "x-default": `/fr/great-conqueror-rome/competences/${slug}`,
       },
     },
     openGraph: { title, description, type: "article", images: ogImages },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -221,7 +222,7 @@ export default async function SkillDetailPage({
             {seriesMeta && (
               <li>
                 <Link
-                  href={`/great-conqueror-rome/competences#series-${seriesMeta.series}` as any}
+                  href={{ pathname: "/great-conqueror-rome/competences", hash: `series-${seriesMeta.series}` } as any}
                   className="block px-2 py-1 text-dim no-underline hover:text-gold2"
                 >
                   {seriesMeta.icon} {seriesMeta.label}
@@ -427,7 +428,7 @@ export default async function SkillDetailPage({
                 {resolved.map(({ general: g, levels, viaPromotion }) => (
                   <Link
                     key={g.slug}
-                    href={`/great-conqueror-rome/generaux/${g.slug}` as any}
+                    href={{ pathname: "/great-conqueror-rome/generaux/[slug]", params: { slug: g.slug } }}
                     className="flex items-start gap-3 bg-bg3 border border-border rounded-lg p-3 hover:border-gold transition-colors no-underline"
                   >
                     {g.image?.head ? (

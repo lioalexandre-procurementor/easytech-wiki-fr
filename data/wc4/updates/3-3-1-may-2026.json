@@ -1,0 +1,22 @@
+{
+  "slug": "3-3-1-may-2026",
+  "version": "3.3.1",
+  "date": "2026-05-19",
+  "tags": ["events", "bug-fixes"],
+  "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+  "title": {
+    "fr": "WC4 v3.3.1 - calendrier d'événements et correctifs",
+    "en": "WC4 v3.3.1 - event schedule and fixes",
+    "de": "WC4 v3.3.1 - Event-Zeitplan und Fehlerbehebungen"
+  },
+  "summary": {
+    "fr": "La version 3.3.1 reprend le cycle Berlin, Cauchemar, Légendes, Delta Force, Bismarck et Dowding avec des dates d'événements mises à jour.",
+    "en": "Version 3.3.1 continues the Berlin, Nightmare, Legends, Delta Force, Bismarck and Dowding cycle with an updated event schedule.",
+    "de": "Version 3.3.1 führt den Berlin-, Nightmare-, Legenden-, Delta-Force-, Bismarck- und Dowding-Zyklus mit aktualisiertem Event-Zeitplan fort."
+  },
+  "body": {
+    "fr": "## Note officielle\n\nLa note 3.3.1 confirme le même ensemble de contenu principal que la version 3.3.0 : Campagne de Berlin, opérations Cauchemar Rise of Scorpion Empire et North Atlantic, groupe d'armées The Blazing Dunes en mode difficile, formations Großdeutschland et 4th Guards Tank Division, Delta Force, Bismarck et entraînement de Dowding.\n\nElle précise également le calendrier des rétrospections historiques, dont Battle of Arras le 21 mai, Battle of Gazala le 26 mai et Vyborg Offensive le 10 juin 2026, ainsi que diverses corrections de bugs.\n\n> La note officielle ne publie pas de changements chiffrés de statistiques pour Delta Force ou Bismarck.",
+    "en": "## Official release note\n\nThe 3.3.1 note confirms the same main content set as version 3.3.0: Berlin Campaign, Rise of Scorpion Empire and North Atlantic Nightmare operations, The Blazing Dunes Hard Mode Army Group, Großdeutschland and 4th Guards Tank Division Legends, Delta Force, Bismarck and Dowding training.\n\nIt also gives the Historical Retrospection schedule, including Battle of Arras on May 21, Battle of Gazala on May 26 and Vyborg Offensive on June 10, 2026, plus various bug fixes.\n\n> The official note does not publish numerical stat changes for Delta Force or Bismarck.",
+    "de": "## Offizielle Versionsnotiz\n\nDie Notiz zu 3.3.1 bestätigt dieselben Hauptinhalte wie Version 3.3.0: Berlin Campaign, die Nightmare-Operationen Rise of Scorpion Empire und North Atlantic, The Blazing Dunes im schweren Modus, die Legenden Großdeutschland und 4th Guards Tank Division, Delta Force, Bismarck und Dowding-Training.\n\nAußerdem nennt sie den Zeitplan der historischen Rückblicke, darunter Battle of Arras am 21. Mai, Battle of Gazala am 26. Mai und Vyborg Offensive am 10. Juni 2026, sowie verschiedene Fehlerbehebungen.\n\n> Die offizielle Notiz nennt keine numerischen Werteänderungen für Delta Force oder Bismarck."
+  }
+}

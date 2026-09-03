@@ -25,7 +25,7 @@ export async function generateMetadata({
     de: "Nutzungsbedingungen des EasyTech Wiki DE.",
   };
   return {
-    title: titles[locale] ?? titles.en,
+    title: { absolute: titles[locale] ?? titles.en },
     description: descriptions[locale] ?? descriptions.en,
     alternates: pageAlternates(locale, {
       fr: "/legal/cgu",

@@ -44,7 +44,7 @@ export function StickyLevelBar({
 
   return (
     <div
-      className="sticky top-14 lg:top-[72px] z-30 -mx-3 md:-mx-5 mb-4 px-3 md:px-5 py-3 border-y border-border backdrop-blur-md"
+      className="sticky top-[104px] lg:top-[72px] z-30 -mx-3 md:-mx-5 mb-4 px-3 md:px-5 py-3 border-y border-border backdrop-blur-md"
       style={{
         background:
           "linear-gradient(to bottom, rgb(var(--c-panel) / 0.96), rgb(var(--c-bg-deep) / 0.94))",
@@ -107,10 +107,8 @@ export function StickyLevelBar({
               onClick={() => setLvl(n)}
               aria-label={labels.levelAria(n)}
               aria-pressed={isCurr}
-              className="relative shrink-0 rounded-lg text-sm font-extrabold tabular-nums cursor-pointer transition-transform"
+              className="relative shrink-0 w-11 h-11 lg:w-9 lg:h-9 rounded-lg text-sm font-extrabold tabular-nums cursor-pointer transition-transform"
               style={{
-                width: 36,
-                height: 36,
                 border: isCurr
                   ? "2px solid rgb(var(--c-gold2))"
                   : isMs

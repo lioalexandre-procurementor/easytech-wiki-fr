@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/src/i18n/navigation";
 import Image from "next/image";
 import type { UnitData } from "@/lib/types";
 import { TierBadge } from "./TierBadge";
@@ -20,7 +20,7 @@ export function UnitCard({ unit, locale }: { unit: UnitData; locale?: string }) 
   const displayShortDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", locale);
   return (
     <Link
-      href={`/world-conqueror-4/unites-elite/${unit.slug}`}
+      href={{ pathname: "/world-conqueror-4/unites-elite/[slug]", params: { slug: unit.slug } }}
       className="block bg-panel border border-border rounded-lg p-4 hover:border-gold hover:-translate-y-0.5 transition-all no-underline"
     >
       <div className="flex justify-between items-start mb-3">

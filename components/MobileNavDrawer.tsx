@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useLocale } from "next-intl";
 import { Link } from "@/src/i18n/navigation";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { GAMES } from "@/lib/games";
@@ -23,25 +24,57 @@ interface Props {
 export default function MobileNavDrawer({ navItems, activeGameSlug, drawerLabels }: Props) {
   const [open, setOpen] = useState(false);
   const [gameSwitcherOpen, setGameSwitcherOpen] = useState(false);
+  const locale = useLocale();
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
+  const closeRef = useRef<HTMLButtonElement>(null);
   const activeGame = GAMES.find((g) => g.slug === activeGameSlug) ?? null;
+  const localCopy = locale === "fr"
+    ? { choose: "Choisir un jeu", active: "actif", soon: "bientôt", home: "Accueil multi-jeux" }
+    : locale === "de"
+      ? { choose: "Spiel auswählen", active: "aktiv", soon: "bald", home: "Alle Spiele" }
+      : { choose: "Choose a game", active: "active", soon: "soon", home: "All games" };
 
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
+    const previouslyFocused = document.activeElement as HTMLElement | null;
     document.body.style.overflow = "hidden";
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        return;
+      }
+      if (e.key !== "Tab" || !panelRef.current) return;
+      const focusable = Array.from(
+        panelRef.current.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        ),
+      );
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     };
     window.addEventListener("keydown", onKey);
+    requestAnimationFrame(() => closeRef.current?.focus());
     return () => {
       document.body.style.overflow = prev;
       window.removeEventListener("keydown", onKey);
+      (previouslyFocused ?? triggerRef.current)?.focus();
     };
   }, [open]);
 
   return (
     <>
       <button
+        ref={triggerRef}
         type="button"
         onClick={() => setOpen(true)}
         aria-label={drawerLabels.open}
@@ -59,20 +92,22 @@ export default function MobileNavDrawer({ navItems, activeGameSlug, drawerLabels
         <div
           role="dialog"
           aria-modal="true"
-          aria-label={drawerLabels.nav}
-          className="fixed inset-0 z-[60] flex"
+          aria-labelledby="mobile-navigation-title"
+          className="fixed inset-0 z-[60] flex h-[100dvh]"
           onClick={() => setOpen(false)}
         >
           <div className="absolute inset-0 bg-black/70" />
           <div
-            className="relative ml-auto h-full w-[min(320px,85vw)] bg-panel border-l border-border flex flex-col overflow-y-auto"
+            ref={panelRef}
+            className="relative ml-auto h-[100dvh] w-[min(340px,90vw)] bg-panel border-l border-border flex flex-col overflow-y-auto pb-[env(safe-area-inset-bottom)]"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between px-4 py-3 border-b border-border">
-              <span className="text-gold2 font-bold uppercase tracking-widest text-sm">
+              <span id="mobile-navigation-title" className="text-gold2 font-bold uppercase tracking-widest text-sm">
                 {drawerLabels.menu}
               </span>
               <button
+                ref={closeRef}
                 type="button"
                 onClick={() => setOpen(false)}
                 aria-label={drawerLabels.close}
@@ -85,10 +120,10 @@ export default function MobileNavDrawer({ navItems, activeGameSlug, drawerLabels
             <button
               type="button"
               onClick={() => setGameSwitcherOpen((o) => !o)}
-              className="flex items-center justify-between px-4 py-3 border-b border-border text-left hover:bg-gold/5 cursor-pointer w-full"
+              className="flex min-h-11 items-center justify-between px-4 py-3 border-b border-border text-left hover:bg-gold/5 cursor-pointer w-full"
             >
               <span className="text-gold2 font-semibold text-sm">
-                🎮 {activeGame ? activeGame.name : "Choisir un jeu"}
+                🎮 {activeGame ? activeGame.name : localCopy.choose}
               </span>
               <span className="text-muted text-xs">{gameSwitcherOpen ? "▲" : "▼"}</span>
             </button>
@@ -100,26 +135,26 @@ export default function MobileNavDrawer({ navItems, activeGameSlug, drawerLabels
                     key={g.slug}
                     href={`/${g.slug}` as any}
                     onClick={() => setOpen(false)}
-                    className={`flex items-center justify-between px-6 py-2.5 text-sm no-underline hover:bg-gold/10 ${
+                    className={`flex min-h-11 items-center justify-between px-6 py-2.5 text-sm no-underline hover:bg-gold/10 ${
                       g.slug === activeGameSlug ? "text-gold2 font-bold" : "text-dim"
                     }`}
                   >
                     {g.name}
-                    {g.slug === activeGameSlug && <span className="text-[10px] text-green-400">● actif</span>}
+                    {g.slug === activeGameSlug && <span className="text-[10px] text-green-400">● {localCopy.active}</span>}
                   </Link>
                 ))}
                 {GAMES.filter((g) => !g.available).map((g) => (
-                  <div key={g.slug} className="flex items-center justify-between px-6 py-2.5 text-sm text-muted/40">
+                  <div key={g.slug} className="flex min-h-11 items-center justify-between px-6 py-2.5 text-sm text-muted/40">
                     {g.name}
-                    <span className="text-[10px]">bientôt</span>
+                    <span className="text-[10px]">{localCopy.soon}</span>
                   </div>
                 ))}
                 <Link
                   href="/"
                   onClick={() => setOpen(false)}
-                  className="block px-6 py-2.5 text-sm text-blue-400 no-underline hover:bg-gold/10 border-t border-border"
+                  className="flex min-h-11 items-center px-6 py-2.5 text-sm text-blue-400 no-underline hover:bg-gold/10 border-t border-border"
                 >
-                  ← Accueil multi-jeux
+                  ← {localCopy.home}
                 </Link>
               </div>
             )}
@@ -135,7 +170,7 @@ export default function MobileNavDrawer({ navItems, activeGameSlug, drawerLabels
                     key={i}
                     href={item.href as any}
                     onClick={() => setOpen(false)}
-                    className="px-4 py-3 text-dim text-base font-semibold rounded-md hover:bg-gold/10 hover:text-gold2 no-underline"
+                    className="flex min-h-11 items-center px-4 py-3 text-dim text-base font-semibold rounded-md hover:bg-gold/10 hover:text-gold2 no-underline"
                   >
                     {item.label}
                   </Link>

@@ -156,7 +156,7 @@ export default async function TrainedGeneralPage({
         <Link href="/world-conqueror-4/generaux" className="text-dim">{t("nav.generals")}</Link>
         <span className="mx-2 text-border">{t("breadcrumb.separator")}</span>
         <Link
-          href={`/world-conqueror-4/generaux/${slug}`}
+          href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug } }}
           className="text-dim"
         >
           {name}
@@ -191,18 +191,14 @@ export default async function TrainedGeneralPage({
             <p className="text-muted mt-2">{t("trainedPage.intro", { name })}</p>
             <div className="flex flex-wrap gap-2 mt-4">
               <Link
-                href={`/world-conqueror-4/generaux/${slug}`}
+                href={{ pathname: "/world-conqueror-4/generaux/[slug]", params: { slug } }}
                 className="text-sm text-gold hover:underline"
               >
                 {t("trainedPage.backToBase")}
               </Link>
               {g.hasTrainingPath && g.trainedSkills && g.trainedSkills.length > 0 && (
                 <Link
-                  href={
-                    locale === "fr"
-                      ? `/world-conqueror-4/generaux/${slug}/entrainement-premium`
-                      : `/world-conqueror-4/generals/${slug}/premium-training`
-                  }
+                  href={{ pathname: "/world-conqueror-4/generaux/[slug]/premium-training", params: { slug } }}
                   className="text-sm text-red-300 hover:underline"
                 >
                   {t("general.viewPremiumTraining")}

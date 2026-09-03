@@ -145,7 +145,7 @@ export default async function BarbarianHub({ params }: { params: { locale: strin
               {generals.map((g) => (
                 <Link
                   key={g.slug}
-                  href={`/great-conqueror-rome/generaux/${g.slug}`}
+                  href={{ pathname: "/great-conqueror-rome/generaux/[slug]", params: { slug: g.slug } }}
                   className="block bg-panel border border-border rounded-lg p-5 hover:border-red-500 transition-colors no-underline"
                   style={{ borderColor: "#3a1f26" }}
                 >

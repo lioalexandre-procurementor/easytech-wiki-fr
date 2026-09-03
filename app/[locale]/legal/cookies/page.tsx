@@ -25,7 +25,7 @@ export async function generateMetadata({
     de: "Welche Cookies EasyTech Wiki verwendet, wofür sie dienen und wie Sie sie steuern können.",
   };
   return {
-    title: titles[locale] ?? titles.en,
+    title: { absolute: titles[locale] ?? titles.en },
     description: descriptions[locale] ?? descriptions.en,
     alternates: pageAlternates(locale, {
       fr: "/legal/cookies",

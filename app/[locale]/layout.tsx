@@ -94,11 +94,6 @@ export default async function LocaleLayout({
     "@type": "WebSite",
     name: "EasyTech Wiki",
     url: SITE_URL,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: `${SITE_URL}/${locale}/search?q={search_term_string}`,
-      "query-input": "required name=search_term_string",
-    },
   };
 
   return (
@@ -192,7 +187,15 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <a
+            href="#main-content"
+            className="fixed left-3 top-3 z-[100] -translate-y-24 rounded-md bg-gold px-4 py-2 font-bold text-bg transition-transform focus:translate-y-0"
+          >
+            {locale === "fr" ? "Aller au contenu" : locale === "de" ? "Zum Inhalt" : "Skip to content"}
+          </a>
+          <div id="main-content" tabIndex={-1} className="contents">
+            {children}
+          </div>
           <ConsentBanner />
         </NextIntlClientProvider>
       </body>

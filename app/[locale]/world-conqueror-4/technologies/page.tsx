@@ -87,7 +87,7 @@ export default async function TechHubPage({
             return (
               <Link
                 key={cat.id}
-                href={`/world-conqueror-4/technologies/categorie/${cat.id}` as any}
+                href={{ pathname: "/world-conqueror-4/technologies/categorie/[category]", params: { category: cat.id } }}
                 className="etw-lift block bg-panel border border-border rounded-xl p-6 hover:border-gold no-underline"
               >
                 <div className="w-12 h-12 rounded-lg grid place-items-center text-2xl mb-3 border border-gold/30"

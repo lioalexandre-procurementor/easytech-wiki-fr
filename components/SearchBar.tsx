@@ -154,14 +154,17 @@ export default function SearchBar() {
     return (
       <button
         key={`${it.type}-${it.slug}`}
+        id={`search-option-${globalIndex}`}
         type="button"
+        role="option"
+        aria-selected={active}
         onMouseEnter={() => setSelectedIndex(globalIndex)}
         onClick={() => {
           setOpen(false);
           setQuery("");
           router.push(href as any);
         }}
-        className={`w-full text-left px-3 py-2 rounded flex items-start gap-2 ${
+        className={`w-full min-h-11 text-left px-3 py-2 rounded flex items-center gap-2 ${
           active ? "bg-gold/10 text-gold2" : "text-dim hover:bg-gold/5"
         }`}
       >
@@ -181,7 +184,7 @@ export default function SearchBar() {
 
   return (
     <div ref={containerRef} className="relative flex-1 min-w-0 w-full">
-      <div className="flex items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5">
+      <div className="flex min-h-11 items-center gap-2 bg-bg3 border border-border rounded-md px-3 py-1.5">
         <Icon name="search" size={16} className="text-muted shrink-0" />
         <input
           ref={inputRef}
@@ -195,6 +198,11 @@ export default function SearchBar() {
           placeholder={t("placeholder")}
           className="bg-transparent outline-none flex-1 text-sm placeholder:text-muted text-ink"
           aria-label={t("placeholder")}
+          role="combobox"
+          aria-autocomplete="list"
+          aria-expanded={open && query.trim().length >= 2}
+          aria-controls="search-results"
+          aria-activedescendant={flat.length > 0 ? `search-option-${selectedIndex}` : undefined}
         />
         <kbd className="hidden md:inline text-[10px] text-muted border border-border px-1.5 py-0.5 rounded">
           ⌘K
@@ -202,7 +210,7 @@ export default function SearchBar() {
       </div>
 
       {open && query.trim().length >= 2 && (
-        <div className="absolute top-full left-0 right-0 mt-1 bg-panel border border-border rounded-md shadow-xl max-h-[70vh] overflow-y-auto z-50">
+        <div id="search-results" role="listbox" className="absolute top-full left-0 right-0 mt-1 bg-panel border border-border rounded-md shadow-xl max-h-[70vh] overflow-y-auto z-50">
           {loading && (
             <div className="p-3 text-center text-muted text-xs">{t("loading")}</div>
           )}

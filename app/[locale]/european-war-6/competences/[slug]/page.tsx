@@ -63,11 +63,12 @@ export async function generateMetadata({
       languages: {
         fr: `/fr/european-war-6/competences/${slug}`,
         en: `/en/european-war-6/skills/${slug}`,
+        de: `/de/european-war-6/skills/${slug}`,
         "x-default": `/fr/european-war-6/competences/${slug}`,
       },
     },
     openGraph: { title, description, type: "article", images: ogImages },
-    robots: { index: true, follow: true },
+    robots: { index: false, follow: true },
   };
 }
 
@@ -223,7 +224,7 @@ export default async function SkillDetailPage({
             {seriesMeta && (
               <li>
                 <Link
-                  href={`/european-war-6/competences#series-${seriesMeta.series}` as any}
+                  href={{ pathname: "/european-war-6/competences", hash: `series-${seriesMeta.series}` } as any}
                   className="block px-2 py-1 text-dim no-underline hover:text-gold2"
                 >
                   {seriesMeta.icon} {seriesMeta.label}
@@ -429,7 +430,7 @@ export default async function SkillDetailPage({
                 {resolved.map(({ general: g, levels, viaPromotion }) => (
                   <Link
                     key={g.slug}
-                    href={`/european-war-6/generaux/${g.slug}` as any}
+                    href={{ pathname: "/european-war-6/generaux/[slug]", params: { slug: g.slug } }}
                     className="flex items-start gap-3 bg-bg3 border border-border rounded-lg p-3 hover:border-gold transition-colors no-underline"
                   >
                     {g.image?.head ? (

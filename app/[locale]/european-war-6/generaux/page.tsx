@@ -114,7 +114,7 @@ export default async function GCRGeneralsList({
       </div>
 
       <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
-        <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
+        <aside className="hidden lg:block bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
             {tL("Sections", "Sections", "Abschnitte")}
           </h4>
@@ -255,7 +255,7 @@ function GCRGeneralCard({
   const q = QUALITY_META[g.quality] ?? QUALITY_META.bronze;
   return (
     <Link
-      href={`/european-war-6/generaux/${g.slug}` as any}
+      href={{ pathname: "/european-war-6/generaux/[slug]", params: { slug: g.slug } }}
       className={`block bg-panel border rounded-lg p-4 transition-colors no-underline ${
         barbarian ? "hover:border-red-500" : "hover:border-gold"
       }`}

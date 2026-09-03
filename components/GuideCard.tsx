@@ -24,7 +24,7 @@ export function GuideCard({ guide, locale }: Props) {
 
   return (
     <Link
-      href={`/world-conqueror-4/guides/${guide.slug}` as any}
+      href={{ pathname: "/world-conqueror-4/guides/[slug]", params: { slug: guide.slug } }}
       className="bg-panel border border-border rounded-lg p-4 flex flex-col gap-2 hover:border-gold/50 no-underline"
     >
       <span className={`text-[10px] font-bold uppercase tracking-widest ${colorClass}`}>

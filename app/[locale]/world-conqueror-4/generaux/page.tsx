@@ -107,8 +107,8 @@ export default async function GeneralsList({
         <span>{t("nav.generals")}</span>
       </div>
 
-      <div className="max-w-[1320px] mx-auto px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
-        <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
+      <div className="max-w-[1320px] mx-auto px-4 md:px-6 pb-20 grid lg:grid-cols-[240px_1fr] gap-7">
+        <aside className="hidden lg:block bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">
             {tL("Sections", "Sections", "Abschnitte")}
           </h4>
