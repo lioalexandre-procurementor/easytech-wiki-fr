@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-06-01T00:00:00Z",
+  "lastChecked": "2026-10-02T08:35:00Z",
   "lastPostId": null,
-  "notes": "Initial value set to June 1 2026 — first run should catch all May+June+July content. lastPostId tracks Reddit post fullname (t3_xxx) to deduplicate across runs."
+  "notes": "Fandom-based run. Diffed all 110 unit names on the Elite Force page against data/wc4/elite-units/_index.json (was 53 entries): added Hive Tactical Vehicle (354001) and Divine Wrath MBT (354002). Remaining apparent gaps are naming variants (e.g. '8.8 cm Flak 36' vs our 'flak-88', 'King Tiger' vs 'konigs-tiger'), not missing entities. KS-90 Howitzer already present. No new trainable generals or version notes found this cycle; the 1960 Challenge Conquest and the Sep 25-Oct 2 Nightmare campaign edits contained no new entities. Also noted for a future run: recentchanges shows new historical campaign pages (Battle of Peleliu, Battle of the Bzura, Kuril Islands) and Nightmare-mode general rosters that are not yet covered by any guide. Next standard IDs: 354003+. lastPostId tracks a Reddit post fullname (t3_xxx) and is unused while Reddit OAuth is not configured."
 }
