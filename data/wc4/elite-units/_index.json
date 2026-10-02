@@ -401,10 +401,42 @@
   },
   {
     "slug": "admiral-kuznetsov-carrier",
-    "name": "Amiral Kuznetsov",
+    "name": "Porte-avions Amiral Kuznetsov",
     "category": "navy",
     "faction": "standard",
     "tier": "S",
     "country": "RU"
+  },
+  {
+    "slug": "delta-force",
+    "name": "Delta Force",
+    "category": "infantry",
+    "faction": "standard",
+    "tier": "S",
+    "country": "US"
+  },
+  {
+    "slug": "bismarck",
+    "name": "Cuirassé Bismarck",
+    "category": "navy",
+    "faction": "standard",
+    "tier": "S",
+    "country": "DE"
+  },
+  {
+    "slug": "hive-tactical-vehicle",
+    "name": "Hive Tactical Vehicle",
+    "category": "tank",
+    "faction": "standard",
+    "tier": "A",
+    "country": "US"
+  },
+  {
+    "slug": "divine-wrath-mbt",
+    "name": "Divine Wrath MBT",
+    "category": "tank",
+    "faction": "scorpion",
+    "tier": "S",
+    "country": "XX"
   }
 ]

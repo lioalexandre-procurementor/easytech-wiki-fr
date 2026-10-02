@@ -1,0 +1,119 @@
+{
+  "slug": "hive-tactical-vehicle",
+  "name": "Hive Tactical Vehicle",
+  "nameEn": "Hive Tactical Vehicle",
+  "category": "tank",
+  "faction": "standard",
+  "country": "US",
+  "countryName": "États-Unis",
+  "tier": "A",
+  "obtainability": "shop",
+  "preliminary": false,
+  "shortDesc": "Véhicule tactique américain qui déploie un drone autonome et se dissimule en EMCON.",
+  "shortDescEn": "American tactical vehicle that deploys an autonomous drone and hides in EMCON.",
+  "shortDescDe": "Amerikanisches Fahrzeug, das eine autonome Drohne einsetzt und sich mit EMCON verbirgt.",
+  "longDesc": "Le Hive Tactical Vehicle est une unité blindée d'élite standard, recrutée exclusivement pour les États-Unis et obtenable une seule fois. Son identité tient à trois mécaniques : la tourelle de mitrailleuse anti-infanterie, le déploiement d'un drone autonome capable d'agir dès le tour de son apparition, et l'état EMCON qui la rend intouchable par les unités blindées, d'artillerie et navales pendant un tour. Le coût en pièces, en industrie et en technologie augmente à chaque niveau jusqu'au niveau 12, où il réclame des badges d'honneur. Ses statistiques de base sont de 59/23/345 au niveau 1 ; l'unité gagne ensuite une appreciable endurance (555 HP au niveau 12) mais reste une unité de ligne à portée courte.",
+  "longDescEn": "The Hive Tactical Vehicle is a standard Elite Force armoured unit recruited exclusively for the United States and obtained only once. Its identity rests on three mechanics: the heavy machine gun turret, the deployment of an autonomous drone that acts immediately on the turn it appears, and the EMCON state that shields it from armoured, artillery and naval units for one turn. Costs in pieces, industry and technology rise each level up to level 12, which requires Honour Armor Badges. It starts at 59/23/345 at level 1 and gains solid durability (555 HP at level 12), but remains a short-range line unit.",
+  "longDescDe": "Der Hive Tactical Vehicle ist eine Standard-Eliteeinheit der Kategorie Panzer, die ausschließlich für die Vereinigten Staaten rekrutiert und nur einmal beschafft werden kann. Drei Mechaniken definieren ihn: das Schützenmaschinengewehrturm, der Einsatz einer autonomen Drohne, die sofort im Einsatzdreh agiert, und der EMCON-Zustand, der ihn für einen Zug vor Panzer-, Artillerie- und Marineeinheiten schützt. Die Kosten in Teilen, Industrie und Technologie steigen bis Stufe 12, die Ehrenabzeichen verlangt. Er startet bei 59/23/345 auf Stufe 1 und erreicht 555 HP auf Stufe 12, bleibt aber eine Nahbereichseinheit der ersten Linie.",
+  "stats": {
+    "atk": [59, 59, 67, 67, 75, 75, 84, 84, 93, 93, 93, 98],
+    "def": [23, 32, 32, 32, 32, 38, 38, 38, 38, 45, 45, 45],
+    "hp": [345, 345, 345, 445, 445, 445, 445, 445, 545, 545, 545, 555],
+    "mov": [13, 14, 14, 14, 14, 15, 15, 12, 15, 16, 16, 16],
+    "rng": [1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Mitrailleuse lourde",
+      "desc": "Dégâts contre les unités d'infanterie +30% (niv. 1-4). Dégâts contre l'infanterie +45% et 100% de chance d'attaquer à nouveau après avoir détruit l'ennemi (niv. 5 et plus).",
+      "nameEn": "Heavy Machine Gun",
+      "descEn": "Damage to Infantry Units +30% (Lv.1-4). Damage to Infantry Units +45% with a 100% chance to attack again after destroying the enemy (Lv.5+).",
+      "nameDe": "Schweres Maschinengewehr",
+      "descDe": "Schaden gegen Infanterieeinheiten +30% (Stufe 1-4). Schaden gegen Infanterieeinheiten +45% mit 100% Chance auf einen erneuten Angriff nach Besiegung des Feindes (Stufe 5+).",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "active-skill",
+      "icon": "🚁",
+      "name": "Déploiement en essaim",
+      "desc": "Déploie un drone à 1 case de distance (2 cases à un niveau non précisé sur le wiki). Une fois déployé, il peut bouger et attaquer immédiatement. Le drone agit de façon indépendante et ne peut attaquer qu'une fois par tour. Durée : 1 tour (2 tours au niv. 5). Temps de recharge : 1 tour.",
+      "nameEn": "Swarm Deployment",
+      "descEn": "Deploy a drone within 1 hex (2 at an unspecified level per the wiki). After deployment, it can move and attack immediately. The drone operates independently and can attack only once per turn. It lasts 1 turn (2 at Lv.5). 1-turn cooldown.",
+      "nameDe": "Schwarm-Einsatz",
+      "descDe": "Setzt eine Drohne in 1 (2 auf einer im Wiki nicht angegebenen Stufe) Feld Entfernung ein. Die Drohne kann sich danach sofort bewegen und angreifen. Sie handelt unabhängig und kann nur einmal pro Zug angreifen. Dauer: 1 Zug (2 auf Stufe 5). Abklingzeit: 1 Zug.",
+      "milestone": true
+    },
+    {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🛰️",
+      "name": "EMCON",
+      "desc": "Restaure 25 HP (50 au niv. 5) et entre en état EMCON : l'unité ne peut pas être attaquée activement par les unités blindées, d'artillerie et navales pendant 1 tour. Temps de recharge : 2 tours. EMCON prend fin dès que l'unité attaque.",
+      "nameEn": "EMCON",
+      "descEn": "Restore 25 HP (50 at Lv.5) and enter EMCON state: the unit cannot be actively attacked by armoured, artillery and naval units for 1 turn. 2-turn cooldown. EMCON ends when the unit attacks.",
+      "nameDe": "EMCON",
+      "descDe": "Stellt 25 HP (50 auf Stufe 5) wieder her und aktiviert EMCON: Die Einheit kann von Panzer-, Artillerie- und Marineeinheiten 1 Zug lang nicht aktiv angegriffen werden. Abklingzeit: 2 Züge. EMCON endet beim Angriff.",
+      "milestone": true
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/354001.webp",
+    "lvl12": null
+  },
+  "recommendedGenerals": ["auchinleck", "tito", "eisenhower", "wu-r"],
+  "levelingPriority": [
+    "Prioriser le niveau 5 : il débloque la portée 2 et l'EMCON amélioré (50 HP)",
+    "Niveau 9 : transition argent et gain de 100 HP",
+    "Niveaux 10 à 12 : ranking d'honneur (5, 15 puis 25 badges) et palier diamant au niveau 12"
+  ],
+  "faqs": [
+    {
+      "q": "Le Hive Tactical Vehicle est-il déroulable au niveau 12 ?",
+      "a": "Le wiki Fandom ne documente que les niveaux 1 à 9 du tableau d'effets. Les niveaux 10 à 12 apparaissent dans le wiki mais leur tableau de statistiques n'est pas vérifié : les valeurs des niveaux 10, 11 et 12 doivent être confirmées en jeu."
+    },
+    {
+      "q": "EMCON empêche-t-il completely les dégâts ?",
+      "a": "Non. EMCON empêche l'attaque active des unités blindées, d'artillerie et navales pendant un tour, mais il prend fin dès que le Hive attaque. Ce n'est donc pas une immunité permanente."
+    },
+    {
+      "q": "Quels généraux sont recommandés ?",
+      "a": "Le wiki Fandom cite Auchinleck (entraîné) car les drones multiplient l'effet de fatigue, ainsi que Tito (entraîné), Eisenhower pour ses dégâts de zone et Wu.R. Ce sont des recommandations communautaires, pas des données officielles."
+    }
+  ],
+  "faqsEn": [
+    {
+      "q": "Is the Hive Tactical Vehicle fully documented through level 12?",
+      "a": "The Fandom wiki only documents levels 1 to 9 in its level effects table. Levels 10 to 12 are mentioned but their stat table is not verified: the level 10, 11 and 12 values must be confirmed in-game."
+    },
+    {
+      "q": "Does EMCON fully prevent damage?",
+      "a": "No. EMCON blocks active attacks from armoured, artillery and naval units for one turn, but it ends as soon as the Hive attacks. It is not a permanent immunity."
+    },
+    {
+      "q": "Which generals are recommended?",
+      "a": "The Fandom wiki lists trained Auchinleck, since the drones multiply the Fatigue effect, as well as trained Tito, Eisenhower for area damage and Wu.R. These are community recommendations, not official data."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Ist der Hive Tactical Vehicle bis Stufe 12 dokumentiert?",
+      "a": "Das Fandom-Wiki dokumentiert in seiner Stufentabelle nur die Stufen 1 bis 9. Die Stufen 10 bis 12 werden erwähnt, ihre Werte sind jedoch nicht verifiziert und müssen im Spiel bestätigt werden."
+    },
+    {
+      "q": "Verhindert EMCON jeden Schaden?",
+      "a": "Nein. EMCON blockiert aktive Angriffe von Panzer-, Artillerie- und Marineeinheiten für einen Zug, endet aber, sobald der Hive angreift. Es ist keine dauerhafte Immunität."
+    },
+    {
+      "q": "Welche Generäle werden empfohlen?",
+      "a": "Das Fandom-Wiki nennt den trainierten Auchinleck, da die Drohnen den Ermüdungseffekt vervielfachen, sowie den trainierten Tito, Eisenhower für Flächenschaden und Wu.R. Das sind Community-Empfehlungen, keine offiziellen Daten."
+    }
+  ],
+  "sources": [
+    "https://world-conqueror-4.fandom.com/wiki/Hive_Tactical_Vehicle",
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force"
+  ]
+}
