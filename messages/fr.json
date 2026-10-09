@@ -73,7 +73,7 @@
   },
   "wc4Hub": {
     "h1": "World Conqueror 4 — Wiki Francophone",
-    "tagline": "Le guide le plus complet en français pour maîtriser World Conqueror 4 d'EasyTech. Stats détaillées, unités d'élite niveau par niveau, généraux optimaux et stratégies de conquête.",
+    "tagline": "Wiki communautaire de World Conqueror 4 : généraux, unités, mises à jour et guides, avec un état des vérifications.",
     "ctaExplore": "🏅 Explorer les unités d'élite",
     "ctaBeginner": "📘 Guide débutant",
     "statEliteUnits": "Unités d'élite",
@@ -82,7 +82,7 @@
     "statMaxLevels": "Niveaux max",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki en construction",
-    "underConstructionNote": "le wiki suit la version officielle WC4 v3.4.2. La vérification en jeu des statistiques détaillées et l'enrichissement éditorial sont en cours.",
+    "underConstructionNote": "Les statistiques historiques et les stratégies ne sont pas toutes revalidées. Les fiches indiquent les informations encore à vérifier.",
     "exploreByCategory": "Explorer les unités d'élite par catégorie",
     "mostViewed": "Unités d'élite les plus consultées",
     "unitsCountSuffix": "unités",
@@ -427,7 +427,8 @@
       "skill": "Compétences",
       "update": "Mises à jour",
       "tech": "Technologies",
-      "guide": "Guides"
+      "guide": "Guides",
+      "formation": "Formations"
     }
   },
   "comparatorPage": {
@@ -673,7 +674,7 @@
     "heroTitleB": "des jeux EasyTech",
     "heroSub": "Stats vérifiées, tier lists, compétences niveau par niveau et guides pour World Conqueror 4, European War 6 et Great Conqueror: Rome — en français.",
     "heroCtaSecondary": "Voir tous les jeux",
-    "trustLine": "Mis à jour à chaque patch · 3 jeux couverts · 100 % francophone",
+    "trustLine": "Wiki communautaire · Sources et état des vérifications sur les fiches",
     "statsPages": "Fiches détaillées",
     "whyHeading": "Pourquoi ce wiki",
     "whySub": "La ressource que ces jeux n'ont jamais eue.",

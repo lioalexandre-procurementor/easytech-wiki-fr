@@ -46,7 +46,15 @@
    "label": "Compétences spécifiques aux généraux",
    "summary": "Compétences uniques liées à un général (base ou entraînement).",
    "icon": "👑",
-   "count": 77
+   "count": 76
+  },
+  {
+   "series": -1,
+   "slug": "challenge-pass",
+   "label": "Challenge Pass",
+   "summary": "Officially announced rewards; verify unlock requirements in-game.",
+   "icon": "🎟",
+   "count": 1
   }
  ],
  "skills": [
@@ -789,16 +797,17 @@
    "slug": "modernized-air-force",
    "type": 161,
    "name": "Modernized Air Force",
-   "series": 0,
-   "seriesLabel": "Compétences spécifiques aux généraux",
-   "seriesSlug": "signature",
+   "series": -1,
+   "seriesLabel": "Challenge Pass",
+   "seriesSlug": "challenge-pass",
    "icon": "/img/wc4/skills/general_skill_161.png",
-   "shortDesc": "When you command an airstrike that triggers a fatal blow, the damage dealt +X%.",
+   "shortDesc": "Confirmed Challenge Pass reward; progression and eligibility awaiting verification.",
    "maxLevel": 5,
    "nameFr": "Modernized Air Force",
-   "shortDescFr": "Lorsqu'une frappe aérienne commandée déclenche un coup fatal, dégâts infligés +X%.",
+   "shortDescFr": "Récompense confirmée du Pass de Conquête ; progression et compatibilité à vérifier.",
    "nameDe": "Modernisierte Luftwaffe",
-   "shortDescDe": "Löst ein befohlener Luftschlag einen tödlichen Treffer aus, steigt der verursachte Schaden um +X%."
+   "shortDescDe": "Bestätigte Belohnung des Eroberungspasses; Progression und Kompatibilität noch zu prüfen.",
+   "detailsPending": true
   },
   {
    "slug": "naval-assault",

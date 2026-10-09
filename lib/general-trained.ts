@@ -78,7 +78,7 @@ export function buildTrainedView(g: GeneralData): TrainedGeneralView {
  * description for every slot.
  */
 export function buildPremiumTrainingView(g: GeneralData): TrainedGeneralView | null {
-  if (!g.hasTrainingPath || !g.trainedSkills || g.trainedSkills.length === 0) {
+  if (!g.hasTrainingPath || g.trainingDetailsPending || !g.trainedSkills || g.trainedSkills.length === 0) {
     return null;
   }
 

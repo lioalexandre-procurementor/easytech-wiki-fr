@@ -3,14 +3,11 @@
 Wiki francophone des jeux EasyTech (World Conqueror 4, European War 6/7, Great Conqueror Rome).
 Stack : Next.js 14 (App Router) + TypeScript + Tailwind CSS, génération statique (SSG), data en JSON file-based.
 
-## État du build
+## État du contenu WC4
 
-- Next.js 14.2.18, TypeScript strict
-- 44 pages statiques générées (1 home + 1 hub WC4 + 1 liste élite + 38 fiches unités + 404 + sitemap)
-- 38 unités d'élite couvertes (chars, infanterie, artillerie, marine, aviation)
-- Slider niveau 1-12 interactif (client component) avec navigation clavier ←/→
-- SEO : metadata par fiche, breadcrumbs, FAQ structurées
-- Icônes SVG dynamiques par catégorie (fallback en attendant les screenshots emulator)
+La mise à jour de septembre 2026 distingue les fiches détaillées et les références dont les statistiques restent à vérifier. Les versions mobiles suivies sont centralisées dans `data/wc4/release-status.json`.
+
+Voir `docs/WC4-CONTENT-STATUS.md` pour les changements et les preuves encore nécessaires, et `CONTENT-WORKFLOW.md` pour le processus de vérification. Les anciens exemples de structure ci-dessous ne constituent pas un inventaire à jour.
 
 ## Démarrage local
 

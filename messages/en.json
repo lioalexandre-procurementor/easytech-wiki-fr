@@ -73,7 +73,7 @@
   },
   "wc4Hub": {
     "h1": "World Conqueror 4 — English Wiki",
-    "tagline": "The most complete English-language guide to mastering EasyTech's World Conqueror 4. Detailed stats, elite units level by level, optimal generals and conquest strategies.",
+    "tagline": "A community World Conqueror 4 wiki: generals, units, releases and guides, with visible verification status.",
     "ctaExplore": "🏅 Explore elite units",
     "ctaBeginner": "📘 Beginner guide",
     "statEliteUnits": "Elite units",
@@ -82,7 +82,7 @@
     "statMaxLevels": "Max levels",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki under construction",
-    "underConstructionNote": "the wiki tracks official WC4 version 3.4.2. Detailed in-game stat verification and editorial enrichment are still in progress.",
+    "underConstructionNote": "Historical stats and strategies have not all been revalidated. Reference pages identify information still awaiting verification.",
     "exploreByCategory": "Explore elite units by category",
     "mostViewed": "Most viewed elite units",
     "unitsCountSuffix": "units",
@@ -427,7 +427,8 @@
       "skill": "Skills",
       "update": "Updates",
       "tech": "Technologies",
-      "guide": "Guides"
+      "guide": "Guides",
+      "formation": "Formations"
     }
   },
   "comparatorPage": {
@@ -673,7 +674,7 @@
     "heroTitleB": "in EasyTech's games",
     "heroSub": "Verified stats, tier lists, level-by-level skills and guides for World Conqueror 4, European War 6 and Great Conqueror: Rome.",
     "heroCtaSecondary": "Browse all games",
-    "trustLine": "Updated every patch · 3 games covered · built for players",
+    "trustLine": "Community wiki · Sources and verification status on reference pages",
     "statsPages": "Detailed pages",
     "whyHeading": "Why this wiki",
     "whySub": "The resource these games never had.",

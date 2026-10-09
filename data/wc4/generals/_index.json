@@ -607,7 +607,7 @@
     "rank": "S",
     "quality": "gold",
     "country": "US",
-    "hasTrainingPath": false,
+    "hasTrainingPath": true,
     "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
@@ -1075,7 +1075,7 @@
     "rank": "B",
     "quality": "silver",
     "country": "RU",
-    "hasTrainingPath": false,
+    "hasTrainingPath": true,
     "hasReplaceableSkills": true,
     "acquisition": "medals"
   },
@@ -1246,5 +1246,17 @@
     "hasTrainingPath": true,
     "hasReplaceableSkills": true,
     "acquisition": "iron-cross"
+  },
+  {
+    "slug": "chennault",
+    "name": "Claire Chennault",
+    "category": "airforce",
+    "faction": "standard",
+    "rank": "S",
+    "quality": "gold",
+    "country": "US",
+    "hasTrainingPath": false,
+    "hasReplaceableSkills": true,
+    "acquisition": "conquest-battle-pass"
   }
 ]

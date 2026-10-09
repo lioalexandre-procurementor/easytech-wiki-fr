@@ -19,9 +19,11 @@ interface Props {
 const COLORS = ["#d4a44a", "#c8372d", "#6bcb77", "#4d96ff"];
 
 export function ComparatorRadar({ rows, statLabels }: Props) {
-  if (rows.length === 0) return null;
-  const normalized = normalizeStats(rows);
   const statKeys = Object.keys(statLabels);
+  // Incomplete records must not be drawn as zero-valued polygons.
+  const chartRows = rows.filter(row => statKeys.every(key => typeof row.stats[key] === "number" && Number.isFinite(row.stats[key])));
+  if (chartRows.length === 0) return null;
+  const normalized = normalizeStats(chartRows);
   const data = statKeys.map((k) => {
     const point: Record<string, string | number> = { stat: statLabels[k] };
     normalized.forEach((r) => {
@@ -36,7 +38,7 @@ export function ComparatorRadar({ rows, statLabels }: Props) {
           <PolarGrid stroke="#3a3a3a" />
           <PolarAngleAxis dataKey="stat" stroke="#a0a0a0" fontSize={11} />
           <PolarRadiusAxis stroke="#3a3a3a" fontSize={10} />
-          {rows.map((r, i) => (
+          {chartRows.map((r, i) => (
             <Radar
               key={r.id}
               name={r.name}

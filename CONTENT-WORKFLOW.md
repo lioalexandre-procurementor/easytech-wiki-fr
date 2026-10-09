@@ -1,102 +1,39 @@
-# Content Workflow — EasyTech Wiki FR
+# Content workflow — EasyTech Wiki
 
-Pipeline éditorial pour produire du contenu wiki à grande échelle, optimisé SEO français.
+## Establish the release
 
-## Principe directeur
+Check official store metadata and dated publisher announcements. Record platform, version, release date, source URL and date checked. Android and iOS use different numbering. Repeated notes do not establish a new addition.
 
-Le wiki gagne en référencement Google FR si chaque page :
-1. Répond à une intention de recherche précise (ex : "perks A41 Centurion niveau 9")
-2. Affiche la donnée au-dessus de la ligne de flottaison (slider stats, tableau perks)
-3. A un FAQ block répondant à 3-5 questions long-tail
-4. Lie vers 3-5 unités/concepts proches (maillage interne)
-5. A au moins 1 visuel — idéalement un screenshot in-game (voir SCREENSHOT-GUIDE.md)
+For WC4, update `data/wc4/release-status.json` and the release archive. Separate application releases, event openings, future announcements and recurring dates. A past opening does not mean an event remains open.
 
-## Pipeline en 4 étapes
+## Use evidence appropriate to the claim
 
-### 1. Recherche (par batch de 5-10 unités)
+Official notes establish existence, timing and explicitly stated mechanics. Community wikis, videos and discussions are secondary leads and must be labelled accordingly.
 
-**Sources primaires :**
-- NamuWiki KR (le plus complet) — utiliser DeepL/Google Translate
-- WC4 Fandom EN — souvent moins détaillé mais structuré
-- Reddit r/WorldConqueror4 — perks récents post-mise à jour
-- YouTube guides FR/EN — vérification visuelle des effets
+Use `data/wc4/reference-entries.json` when an addition lacks verified detail. Supply its localized name, confirmed summary, pending details and provenance. Do not invent stats, prices, countries, tiers or abilities to satisfy a detailed-record schema.
 
-**Données à extraire pour chaque unité :**
-- Stats lvl 1 et lvl 12 (interpolation linéaire pour le reste)
-- Liste des 8-13 perks débloqués entre lvl 1 et 12
-  - Marquer le type : `active-skill`, `passive`, `stat`
-  - Niveaux clefs : 5, 9, 12 (milestones)
-- 2-3 généraux recommandés (synergies de bonus)
-- Pays / faction d'origine
-- Mode d'obtention : free / event / shop / premium
+For numerical data, capture or extract evidence from a named game version and platform. Record level, technology, general, medals, ribbons and other modifiers. Keep a screenshot or extraction reference with the claim. Milestone screenshots do not establish intermediate levels. Never interpolate missing values and present them as measurements.
 
-**Output :** un fichier JSON par unité dans `data/wc4/elite-units/`. Tant que la donnée n'est pas vérifiée en jeu, laisser `verified: false` (un badge ⚠️ s'affiche automatiquement).
+Distinguish official announcements, verified gameplay, community sources, editorial opinions and pending verification. Confirmation that a unit exists does not confirm all of its abilities.
 
-### 2. Vérification in-game (par batch de 10 unités)
+## Reconcile related pages
 
-Sur émulateur Android (voir SCREENSHOT-GUIDE.md) :
-1. Lancer WC4, mode Conquête
-2. Acheter/sélectionner l'unité d'élite
-3. Pour chaque niveau (1, 5, 9, 12), screenshot de la fiche unité
-4. Comparer aux stats du JSON, corriger
-5. Passer `verified: true` une fois validé
+Update the entity, guides, FAQs, search copy, comparison data and training registry together. Review French, English and German. Advance review dates only after checking the actual claims.
 
-**Astuce :** capturer aussi l'icône de l'unité (PNG ~256x256) pour remplacer le SVG fallback. Placer dans `public/units/{slug}.png` puis modifier `components/UnitIcon.tsx` pour préférer le PNG si présent.
+Keep recommendations separate from unlock requirements. Player voting is not evidence of mechanics. Unknown compatibility must not create skill-vote candidates.
 
-### 3. Enrichissement éditorial
+## Validate and publish
 
-Pour chaque fiche, ajouter manuellement :
-- `longDesc` : 2-3 phrases sur l'historique de l'unité (contexte WW2)
-- `levelingPriority` : ordre d'investissement XP justifié
-- `faqs` : 3-5 questions copiées du Reddit/Discord communautaire
-- `recommendedGenerals` : avec un mini-rationnel dans la réponse FAQ
+Run `npm run build`: search generation, SEO metadata checks, WC4 content checks, type checking and production generation. Review localization diagnostics as well as the exit status.
 
-**Tip SEO :** intégrer naturellement les keywords longue traîne :
-- "comment débloquer [unité] WC4"
-- "[unité] vs [unité] World Conqueror 4"
-- "meilleur général pour [unité]"
-- "[unité] niveau 12 perks"
+Check pages in all three languages, search, canonical/hreflang URLs, sitemap, trained forms and comparisons. Unknown values must not be plotted as zero or ranked as measured data.
 
-### 4. Maillage et publication
+After deployment, compare the public pages with reviewed source and inspect conflicting admin overrides. Record the deployed revision and date checked. A local build does not establish successful publication.
 
-- Ajouter l'unité à `_index.json` (déjà fait par le script Python)
-- Vérifier que la page apparaît dans `/world-conqueror-4/unites-elite`
-- Vérifier les "related units" en bas de fiche (3 unités même catégorie)
-- `npm run build` puis `git push` → Vercel auto-deploy
+## Maintain freshness
 
-## Cadence cible
+Check official sources weekly and after known releases. Do not assume a fixed annual patch count. Publish a sourced overview first, then exact data and tested strategies as evidence becomes available. Recheck upcoming events near their opening dates.
 
-| Phase | Cadence | Volume |
-|---|---|---|
-| Bootstrap (actuel) | one-shot | 38 unités élite WC4 (✓ fait, données extrapolées) |
-| Vérification | 10/semaine | 38 unités validées en 4 semaines |
-| Enrichissement | 5/semaine | FAQ + visuels custom |
-| Expansion généraux | 175 généraux WC4 | ~3 mois à 15/sem |
-| EW7 + GCR | ~150 unités combinées | Q3 2026 |
+Track release-summary lag, changed-entity coverage, unresolved contradictions and the proportion of new numerical claims backed by evidence. Display actual coverage instead of promising every page is updated after every patch.
 
-## Métriques à suivre (Search Console)
-
-À paramétrer dès le déploiement :
-- Impressions par fiche unité (cible : >500 / mois après 3 mois)
-- CTR moyen (cible : >5%)
-- Position moyenne sur la requête `[nom unité] WC4` (cible : top 3)
-- Temps moyen sur page (cible : >2min sur fiches élite)
-
-## Outils de production
-
-| Besoin | Outil |
-|---|---|
-| Traduction NamuWiki | DeepL Pro (limite gratuite OK pour ce volume) |
-| Capture émulateur | BlueStacks 5 ou LDPlayer 9 (gratuits) |
-| Édition image | Squoosh.app (compression WebP) |
-| Vérification SEO | Ahrefs Webmaster Tools (gratuit) + Search Console |
-| Suivi des perks après mise à jour | Reddit r/WorldConqueror4 + RSS |
-
-## Mises à jour du jeu
-
-EasyTech publie ~2 patchs majeurs par an pour WC4. Procédure :
-1. Surveiller les patch notes sur le Discord officiel
-2. Lister les unités modifiées
-3. Re-vérifier les stats sur émulateur
-4. Ajouter une note `[Maj YYYY-MM]` dans la `longDesc` si l'unité a changé significativement
-5. Le `verified` reste `true` mais la date du patch est mentionnée
+See `docs/WC4-CONTENT-STATUS.md` for current implementation coverage and outstanding evidence.

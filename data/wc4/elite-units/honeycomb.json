@@ -1,15 +1,15 @@
 {
   "slug": "honeycomb",
-  "name": "Honeycomb",
+  "name": "Hive Tactical Vehicle",
   "nameEn": "Hive Tactical Vehicle",
   "category": "tank",
   "faction": "standard",
-  "country": "XX",
-  "countryName": "Inconnu",
+  "country": "US",
+  "countryName": "États-Unis",
   "tier": "A",
   "obtainability": "event",
-  "shortDesc": "Char d'élite secondaire accessible via événement — détails à vérifier in-game.",
-  "longDesc": "Mentionné dans la liste NamuWiki des tanks d'élite WC4. Origines et stats exactes à confirmer in-game.",
+  "shortDesc": "Véhicule tactique américain qui lâche un drone autonome et peut passer en EMCON pour échapper aux blindés, à l'artillerie et à la marine.",
+  "longDesc": "Le Hive Tactical Vehicle (« véhicule tactique Ruche ») est la première unité d'élite blindée de type véhicule à roues jouable, rattachée aux États-Unis et recrutée dans une usine de niveau 2. Son identité repose sur trois compétences présentes dès le niveau 1 : une mitrailleuse lourde anti-infanterie, le déploiement d'un drone qui agit le tour même de son apparition, et l'état EMCON qui le rend impossible à cibler par les blindés, l'artillerie et la marine pendant un tour. NamuWiki précise que le drone reprend la compétence aérienne et le grade du général affecté, et que son autodestruction inflige des dégâts ignorant la défense sur 1 case autour de lui. Les statistiques affichées proviennent des fichiers du jeu extraits en avril 2026 ; le tableau du wiki Fandom, plus récent, donne des valeurs plus élevées (voir FAQ).",
   "stats": {
     "atk": [
       53,
@@ -166,12 +166,12 @@
       "type": "active-skill",
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.2",
-      "desc": "Dégâts à l'infanterie +45%",
+      "desc": "Dégâts à l'infanterie +45 %. 100 % de chance d'attaquer à nouveau après avoir détruit l'ennemi.",
       "milestone": false,
       "nameEn": "Heavy machine gun Lv.2",
       "nameDe": "Schweres Maschinengewehr Stufe 2",
-      "descEn": "Damage to infantry +45%",
-      "descDe": "Schaden gegen Infanterie +45 %"
+      "descEn": "Damage to infantry +45%. 100% chance to attack again after destroying the enemy.",
+      "descDe": "Schaden gegen Infanterie +45 %. 100 % Chance auf einen erneuten Angriff nach Vernichtung des Gegners."
     },
     {
       "lvl": 5,
@@ -186,16 +186,28 @@
       "descDe": "Erholt 50 TP und tritt in den EMCON-Zustand: kann für 1 Runde nicht aktiv von Panzer-, Artillerie- oder Marineeinheiten angegriffen werden. EMCON endet beim Angriff. Erholung in 2 Runden."
     },
     {
+      "lvl": 5,
+      "type": "active-skill",
+      "icon": "🛸",
+      "name": "Déploiement de drones Niv.2",
+      "desc": "Déploie un drone dans 1 case ; il peut bouger et attaquer immédiatement, agit indépendamment et n'attaque qu'une fois par tour. Durée 2 tours. Récupération en 1 tour.",
+      "nameEn": "Drone deployment Lv.2",
+      "descEn": "Deploys a drone within 1 tile; it can move and attack immediately, acts independently and attacks only once per turn. Lasts 2 turns. Recovery in 1 turn.",
+      "nameDe": "Drohneneinsatz Stufe 2",
+      "descDe": "Setzt eine Drohne im Umkreis von 1 Feld ein; sie kann sofort ziehen und angreifen, handelt unabhängig und greift nur einmal pro Zug an. Dauer 2 Züge. Erholung in 1 Zug.",
+      "milestone": false
+    },
+    {
       "lvl": 9,
       "type": "active-skill",
       "icon": "🔫",
       "name": "Mitrailleuse lourde Niv.3",
-      "desc": "Dégâts à l'infanterie +60%",
+      "desc": "Dégâts à l'infanterie +60 %. 100 % de chance d'attaquer à nouveau après avoir détruit l'ennemi.",
       "milestone": false,
       "nameEn": "Heavy machine gun Lv.3",
       "nameDe": "Schweres Maschinengewehr Stufe 3",
-      "descEn": "Damage to infantry +60%",
-      "descDe": "Schaden gegen Infanterie +60 %"
+      "descEn": "Damage to infantry +60%. 100% chance to attack again after destroying the enemy.",
+      "descDe": "Schaden gegen Infanterie +60 %. 100 % Chance auf einen erneuten Angriff nach Vernichtung des Gegners."
     },
     {
       "lvl": 9,
@@ -208,6 +220,30 @@
       "nameDe": "Gewaltmarsch",
       "descEn": "Mobility consumption on difficult terrain -35%",
       "descDe": "Mobilitätsverbrauch in schwierigem Gelände -35 %"
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "🛸",
+      "name": "Déploiement de drones Niv.3",
+      "desc": "Déploie un drone dans un rayon de 2 cases ; il peut bouger et attaquer immédiatement, agit indépendamment et n'attaque qu'une fois par tour. Durée 2 tours. Récupération en 1 tour.",
+      "nameEn": "Drone deployment Lv.3",
+      "descEn": "Deploys a drone within 2 tiles; it can move and attack immediately, acts independently and attacks only once per turn. Lasts 2 turns. Recovery in 1 turn.",
+      "nameDe": "Drohneneinsatz Stufe 3",
+      "descDe": "Setzt eine Drohne im Umkreis von 2 Feldern ein; sie kann sofort ziehen und angreifen, handelt unabhängig und greift nur einmal pro Zug an. Dauer 2 Züge. Erholung in 1 Zug.",
+      "milestone": true
+    },
+    {
+      "lvl": 9,
+      "type": "active-skill",
+      "icon": "⭐",
+      "name": "EMCON Niv.3",
+      "desc": "Récupère 50 PV et entre en état EMCON : ne peut être ciblé activement par les unités blindées, d'artillerie ou navales pendant 1 tour. Attaquer ne met plus fin à l'EMCON. Récupération en 2 tours.",
+      "nameEn": "EMCON Lv.3",
+      "descEn": "Recovers 50 HP and enters EMCON state: cannot be actively targeted by armor, artillery or naval units for 1 turn. Attacking no longer ends EMCON. Recovery in 2 turns.",
+      "nameDe": "EMCON Stufe 3",
+      "descDe": "Erholt 50 TP und tritt in den EMCON-Zustand: kann 1 Zug lang nicht aktiv von Panzer-, Artillerie- oder Marineeinheiten angegriffen werden. Angreifen beendet EMCON nicht mehr. Erholung in 2 Zügen.",
+      "milestone": false
     },
     {
       "lvl": 10,
@@ -234,41 +270,48 @@
       "descDe": "Erholt 75 TP und tritt in den EMCON-Zustand: kann für 1 Runde nicht aktiv von Panzer-, Artillerie- oder Marineeinheiten angegriffen werden. EMCON endet beim Angriff. Erholung in 2 Runden."
     }
   ],
-  "recommendedGenerals": [],
+  "recommendedGenerals": [
+    "auchinleck",
+    "tito",
+    "wu",
+    "weygand",
+    "eisenhower"
+  ],
   "levelingPriority": [
-    "Débloquer les perks milestones (5, 9, 12) en priorité",
-    "Les perks stat sont moins prioritaires que les active-skills",
-    "À partir du niveau 9, spécialiser selon votre style : offensif ou défensif"
+    "Niveau 5 : portée 2, drone actif 2 tours, EMCON à 50 PV et nouvelle attaque après une élimination à la mitrailleuse.",
+    "Niveau 9 : drone lancé jusqu'à 2 cases, l'EMCON ne se rompt plus en attaquant, et Marche forcée réduit le coût des terrains difficiles.",
+    "Niveaux 10 à 12 : badges d'honneur blindés requis (5, 15 puis 25 selon Fandom) pour la mitrailleuse +75 % et l'EMCON à 75 PV."
   ],
   "faqs": [
     {
-      "q": "Comment débloquer Honeycomb dans World Conqueror 4 ?",
-      "a": "Honeycomb est distribuée lors d'événements limités : récompenses de connexion, passe saisonnier ou boutique tournante. Hors de ces fenêtres elle reste inaccessible — gardez 30 items d'élite de côté pour la prochaine ouverture. Tier A."
+      "q": "Honeycomb et Hive Tactical Vehicle sont-ils la même unité ?",
+      "a": "Oui. Le nom coréen 벌집 se traduit aussi bien par « ruche » que par « nid d'abeille » ; le nom officiel anglais est Hive Tactical Vehicle. Cette fiche conserve son ancienne adresse pour ne pas casser les liens existants."
     },
     {
-      "q": "Quelles sont les statistiques maximales de Honeycomb au niveau 12 ?",
-      "a": "Au niveau 12, Honeycomb culmine à 96 en attaque, 35 en défense, 555 HP, 12 de mouvement et 2 de portée. Profil blindé robuste — équilibre solide entre frappe et encaissement, bien au-dessus des blindés standards."
+      "q": "Comment débloquer le Hive Tactical Vehicle ?",
+      "a": "Avec 30 fragments, comme toute unité d'élite. Il se recrute ensuite dans une usine de niveau 2 et, selon Fandom, une seule fois par partie. Les améliorations coûtent de l'industrie et de la technologie jusqu'au niveau 9, puis des badges d'honneur blindés aux niveaux 10 à 12."
     },
     {
-      "q": "Quels perks milestone débloque Honeycomb ?",
-      "a": "Palier milestone principal : niveau 9 « Marche forcée ». C'est le niveau à cibler en priorité pour Honeycomb — il débloque un effet passif ou une compétence active qui change le profil tactique de l'unité."
+      "q": "Pourquoi les statistiques diffèrent-elles du wiki Fandom ?",
+      "a": "Les valeurs affichées ici viennent des fichiers du jeu extraits en avril 2026 (53 / 11 / 255 PV au niveau 1). Le tableau Fandom, rédigé plus tard à partir de l'écran d'amélioration, indique 59 / 23 / 345 PV au niveau 1 et 98 / 45 / 555 PV au niveau 12. L'écart peut venir d'un rééquilibrage depuis avril ; une vérification en jeu tranchera. Le même écart existe pour plusieurs autres unités du wiki."
     },
     {
-      "q": "Combien coûte l'amélioration complète de Honeycomb jusqu'au niveau 12 ?",
-      "a": "Cumul niveaux 1 → 12 pour Honeycomb : ~268k d'industrie, ~7.9k de tech, 780 items d'élite, 60 badges. Le principal goulot est l'industrie et les items d'élite — visez les niveaux milestone 5, 9 et 12 en premier plutôt que de lisser les upgrades intermédiaires."
+      "q": "Que fait exactement le drone ?",
+      "a": "Il apparaît à 1 case (2 cases dès le niveau 9), peut bouger et attaquer le tour même, agit seul et n'attaque qu'une fois par tour. Il dure 1 tour, puis 2 tours dès le niveau 5. NamuWiki indique qu'il reprend la compétence aérienne et le grade du général affecté, et que son autodestruction frappe toutes les cases voisines en ignorant la défense."
     },
     {
-      "q": "Quels généraux s'associent le mieux avec Honeycomb ?",
-      "a": "Priorisez les généraux à spécialité Blindé (Rommel, Guderian, Patton, Model) avec compétences Blitz, Charge blindée ou Supériorité mécanisée. La synergie est directe : +attaque blindée et bonus de mouvement amplifient le profil offensif."
+      "q": "EMCON rend-il l'unité invulnérable ?",
+      "a": "Non. Pendant un tour, les blindés, l'artillerie et la marine ne peuvent pas l'attaquer activement, mais l'infanterie et l'aviation le peuvent. Jusqu'au niveau 8, attaquer met fin à l'EMCON ; à partir du niveau 9, l'état persiste même après une attaque."
     },
     {
-      "q": "Dans quels scénarios Honeycomb est-elle la plus utile ?",
-      "a": "Utilisez-la comme colonne vertébrale d'une poussée blindée en campagne moderne. Moins explosive qu'une tête de liste S-tier mais robuste et polyvalente, elle absorbe la contre-attaque pendant que vos unités offensives font la différence."
+      "q": "Quels généraux choisir ?",
+      "a": "Fandom cite Auchinleck entraîné (les drones propagent son effet de fatigue), Tito entraîné, Eisenhower et Wu.R. NamuWiki ajoute Weygand et réserve Auchinleck entraîné aux événements de défense. Ce sont des recommandations communautaires ; aucun test chiffré ne les classe encore."
     }
   ],
   "sources": [
-    "https://world-conqueror-4.fandom.com/wiki/Elite_Force",
-    "https://en.namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80"
+    "https://world-conqueror-4.fandom.com/wiki/Hive_Tactical_Vehicle",
+    "https://namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80",
+    "https://world-conqueror-4.fandom.com/wiki/Elite_Force"
   ],
   "armyId": 347001,
   "tierCosts": [
@@ -397,60 +440,60 @@
     "sprite": "/img/wc4/elites/347001.png",
     "lvl12": null
   },
-  "shortDescEn": "Secondary elite tank unlocked through an event — details to verify in-game.",
-  "shortDescDe": "Sekundärer Elite-Panzer, per Event freigeschaltet — Details im Spiel zu prüfen.",
-  "longDescEn": "Listed on NamuWiki's WC4 elite tanks. Exact origin and stats to be confirmed in-game.",
-  "longDescDe": "Auf NamuWikis Liste der WC4-Elite-Panzer aufgeführt. Genaue Herkunft und Werte im Spiel noch zu bestätigen.",
+  "shortDescEn": "American tactical vehicle that releases an autonomous drone and can switch to EMCON to avoid armour, artillery and naval attacks.",
+  "shortDescDe": "Amerikanisches Taktikfahrzeug, das eine autonome Drohne startet und per EMCON Angriffen von Panzern, Artillerie und Marine entgeht.",
+  "longDescEn": "The Hive Tactical Vehicle is the first playable wheeled-vehicle armoured elite unit, tied to the United States and recruited from a level 2 factory. It is built around three skills available from level 1: an anti-infantry heavy machine gun, a drone deployment whose drone acts on the turn it appears, and the EMCON state that keeps it from being targeted by armour, artillery and naval units for one turn. NamuWiki adds that the drone inherits the assigned general's air-force skill and rank, and that its self-destruct deals defence-ignoring damage to every hex adjacent to it. The stats shown come from game files extracted in April 2026; the newer Fandom wiki table lists higher values (see FAQ).",
+  "longDescDe": "Das Hive Tactical Vehicle ist die erste spielbare Radfahrzeug-Eliteeinheit der Panzerklasse, den Vereinigten Staaten zugeordnet und in einer Fabrik der Stufe 2 rekrutierbar. Es stützt sich auf drei Fähigkeiten ab Stufe 1: ein schweres Maschinengewehr gegen Infanterie, den Einsatz einer Drohne, die schon im Einsatzzug handelt, und den EMCON-Zustand, der es einen Zug lang vor Angriffen von Panzern, Artillerie und Marine schützt. Laut NamuWiki übernimmt die Drohne die Luftwaffenfähigkeit und den Rang des zugewiesenen Generals, und ihre Selbstzerstörung verursacht verteidigungsignorierenden Schaden auf allen angrenzenden Feldern. Die angezeigten Werte stammen aus im April 2026 extrahierten Spieldateien; die neuere Fandom-Tabelle nennt höhere Werte (siehe FAQ).",
   "faqsEn": [
     {
-      "q": "How do you unlock Hive Tactical Vehicle in World Conqueror 4?",
-      "a": "Hive Tactical Vehicle is handed out through limited-time events: login rewards, season pass, or the rotating elite shop. Outside those windows it cannot be acquired — stash 30 elite items for the next opening. Tier A."
+      "q": "Are Honeycomb and Hive Tactical Vehicle the same unit?",
+      "a": "Yes. The Korean name 벌집 translates as either \"hive\" or \"honeycomb\"; the official English name is Hive Tactical Vehicle. This page keeps its old address so existing links keep working."
     },
     {
-      "q": "What are Hive Tactical Vehicle's maximum stats at level 12?",
-      "a": "At level 12, Hive Tactical Vehicle peaks at 96 attack, 35 defense, 555 HP, 12 movement and range 2. Sturdy armor profile — a solid balance of damage and bulk, clearly above stock tanks."
+      "q": "How do you unlock the Hive Tactical Vehicle?",
+      "a": "With 30 fragments, like every elite unit. It is then recruited from a level 2 factory and, according to Fandom, only once per match. Upgrades cost industry and technology up to level 9, then Honor Armor Badges at levels 10 to 12."
     },
     {
-      "q": "Which milestone perks does Hive Tactical Vehicle unlock?",
-      "a": "Main milestone tier: level 9 \"Forced march\". That is the level to prioritize for Hive Tactical Vehicle — it unlocks a passive effect or active ability that reshapes the unit's tactical profile."
+      "q": "Why do the stats differ from the Fandom wiki?",
+      "a": "The values shown here come from game files extracted in April 2026 (53 / 11 / 255 HP at level 1). The Fandom table, written later from the upgrade screen, lists 59 / 23 / 345 HP at level 1 and 98 / 45 / 555 HP at level 12. The gap may come from a rebalance since April; an in-game check will settle it. The same gap exists for several other units on this wiki."
     },
     {
-      "q": "How expensive is fully upgrading Hive Tactical Vehicle to level 12?",
-      "a": "Cumulative cost levels 1 → 12 for Hive Tactical Vehicle: ~268k industry, ~7.9k tech, 780 elite items, 60 badges. The main bottleneck is industry and elite items — hit the milestone levels 5, 9 and 12 first rather than evenly smoothing intermediate upgrades."
+      "q": "What exactly does the drone do?",
+      "a": "It appears within 1 tile (2 tiles from level 9), can move and attack on the same turn, acts on its own and attacks only once per turn. It lasts 1 turn, then 2 turns from level 5. NamuWiki says it inherits the assigned general's air-force skill and rank, and that its self-destruct hits every adjacent tile while ignoring defence."
     },
     {
-      "q": "Which generals pair best with Hive Tactical Vehicle?",
-      "a": "Prioritize generals with an Armor specialty (Rommel, Guderian, Patton, Model) running Blitz, Armored Charge or Mechanized Supremacy. The synergy is direct: armor-attack bonuses and movement buffs amplify the unit's offensive profile."
+      "q": "Does EMCON make the unit invulnerable?",
+      "a": "No. For one turn, armour, artillery and naval units cannot actively attack it, but infantry and aircraft still can. Up to level 8, attacking ends EMCON; from level 9 the state persists after an attack."
     },
     {
-      "q": "In which scenarios is Hive Tactical Vehicle most useful?",
-      "a": "Use it as the backbone of an armored push in modern campaigns. Less explosive than an S-tier headline act but sturdy and versatile — it soaks the counter-attack while your offensive units close the deal."
+      "q": "Which generals fit best?",
+      "a": "Fandom names trained Auchinleck (the drones spread his Fatigue effect), trained Tito, Eisenhower and Wu.R. NamuWiki adds Weygand and limits trained Auchinleck to defence events. These are community recommendations; no numeric test ranks them yet."
     }
   ],
   "faqsDe": [
     {
-      "q": "Wie schaltet man Hive Tactical Vehicle in World Conqueror 4 frei?",
-      "a": "Hive Tactical Vehicle wird über zeitlich begrenzte Events vergeben: Login-Belohnungen, Saisonpass oder rotierender Elite-Shop. Außerhalb dieser Fenster nicht erhältlich — halten Sie 30 Elite-Items für die nächste Gelegenheit bereit. Stufe A."
+      "q": "Sind Honeycomb und Hive Tactical Vehicle dieselbe Einheit?",
+      "a": "Ja. Der koreanische Name 벌집 bedeutet sowohl „Bienenstock“ als auch „Wabe“; der offizielle englische Name ist Hive Tactical Vehicle. Die Seite behält ihre alte Adresse, damit bestehende Links funktionieren."
     },
     {
-      "q": "Wie lauten die maximalen Werte von Hive Tactical Vehicle auf Stufe 12?",
-      "a": "Auf Stufe 12 erreicht Hive Tactical Vehicle 96 Angriff, 35 Verteidigung, 555 HP, 12 Bewegung und Reichweite 2. Robustes Panzer-Profil — solider Ausgleich zwischen Schlagkraft und Hülle, deutlich über Standardpanzern."
+      "q": "Wie schaltet man das Hive Tactical Vehicle frei?",
+      "a": "Mit 30 Fragmenten, wie jede Eliteeinheit. Danach wird es in einer Fabrik der Stufe 2 rekrutiert, laut Fandom nur einmal pro Partie. Verbesserungen kosten bis Stufe 9 Industrie und Technologie, auf Stufe 10 bis 12 Ehren-Panzerabzeichen."
     },
     {
-      "q": "Welche Meilenstein-Perks schaltet Hive Tactical Vehicle frei?",
-      "a": "Haupt-Meilenstein: Stufe 9 „Gewaltmarsch“. Diese Stufe zuerst für Hive Tactical Vehicle ansteuern — sie schaltet einen passiven Effekt oder eine aktive Fähigkeit frei, die das taktische Profil der Einheit verändert."
+      "q": "Warum weichen die Werte vom Fandom-Wiki ab?",
+      "a": "Die hier gezeigten Werte stammen aus im April 2026 extrahierten Spieldateien (53 / 11 / 255 TP auf Stufe 1). Die später anhand des Verbesserungsbildschirms erstellte Fandom-Tabelle nennt 59 / 23 / 345 TP auf Stufe 1 und 98 / 45 / 555 TP auf Stufe 12. Die Abweichung kann von einer Neuausbalancierung seit April stammen; eine Prüfung im Spiel klärt das. Dieselbe Abweichung gibt es bei mehreren anderen Einheiten dieses Wikis."
     },
     {
-      "q": "Wie teuer ist die volle Aufrüstung von Hive Tactical Vehicle auf Stufe 12?",
-      "a": "Kumulative Kosten Stufe 1 → 12 für Hive Tactical Vehicle: ~268k Industrie, ~7.9k Tech, 780 Elite-Items, 60 Abzeichen. Der Hauptengpass sind Industrie und Elite-Items — zuerst die Meilensteine 5, 9 und 12 ansteuern, statt Zwischenstufen gleichmäßig hochzuziehen."
+      "q": "Was genau macht die Drohne?",
+      "a": "Sie erscheint im Umkreis von 1 Feld (ab Stufe 9: 2 Felder), kann im selben Zug ziehen und angreifen, handelt eigenständig und greift nur einmal pro Zug an. Sie hält 1 Zug, ab Stufe 5 2 Züge. Laut NamuWiki übernimmt sie Luftwaffenfähigkeit und Rang des zugewiesenen Generals, und ihre Selbstzerstörung trifft alle angrenzenden Felder unter Ignorieren der Verteidigung."
     },
     {
-      "q": "Welche Generäle passen am besten zu Hive Tactical Vehicle?",
-      "a": "Bevorzugen Sie Generäle mit Panzer-Spezialisierung (Rommel, Guderian, Patton, Model) und Fertigkeiten wie Blitz, Panzerangriff oder Mechanisierte Überlegenheit. Die Synergie ist direkt: Boni auf Panzerangriff und Bewegung verstärken das offensive Profil der Einheit."
+      "q": "Macht EMCON die Einheit unverwundbar?",
+      "a": "Nein. Einen Zug lang können Panzer, Artillerie und Marine sie nicht aktiv angreifen, Infanterie und Flugzeuge aber schon. Bis Stufe 8 beendet ein Angriff EMCON; ab Stufe 9 bleibt der Zustand nach einem Angriff bestehen."
     },
     {
-      "q": "In welchen Szenarien ist Hive Tactical Vehicle am nützlichsten?",
-      "a": "Als Rückgrat einer gepanzerten Offensive in modernen Kampagnen einsetzen. Weniger explosiv als eine S-Tier-Spitze, aber robust und vielseitig — sie fängt den Gegenangriff ab, während Ihre Offensiveinheiten den Sieg erzwingen."
+      "q": "Welche Generäle passen am besten?",
+      "a": "Fandom nennt den trainierten Auchinleck (die Drohnen verbreiten seinen Ermüdungseffekt), den trainierten Tito, Eisenhower und Wu.R. NamuWiki ergänzt Weygand und empfiehlt den trainierten Auchinleck nur für Verteidigungsevents. Das sind Community-Empfehlungen; ein Zahlentest dazu existiert noch nicht."
     }
   ]
 }

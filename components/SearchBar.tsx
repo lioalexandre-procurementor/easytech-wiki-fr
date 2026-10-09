@@ -8,12 +8,14 @@ import type { Locale } from "@/src/i18n/config";
 import Icon from "./Icon";
 
 type SearchItem = {
-  type: "general" | "unit" | "skill" | "update" | "tech" | "guide";
+  type: "general" | "unit" | "skill" | "update" | "tech" | "guide" | "formation";
   slug: string;
   name: string;
   nameFr: string;
+  nameDe?: string;
   desc?: string;
   descFr?: string;
+  descDe?: string;
   category?: string;
   country?: string;
   tier?: string;
@@ -29,6 +31,7 @@ const TYPE_ICON: Record<SearchItem["type"], string> = {
   update: "📣",
   tech: "🔬",
   guide: "📘",
+  formation: "🎖",
 };
 
 export default function SearchBar() {
@@ -91,12 +94,13 @@ export default function SearchBar() {
       update: [],
       tech: [],
       guide: [],
+      formation: [],
     };
     for (const r of results) g[r.type].push(r);
     return g;
   }, [results]);
 
-  const flat = useMemo(() => [...grouped.general, ...grouped.unit, ...grouped.skill, ...grouped.update, ...grouped.tech, ...grouped.guide], [grouped]);
+  const flat = useMemo(() => [...grouped.general, ...grouped.unit, ...grouped.skill, ...grouped.update, ...grouped.tech, ...grouped.guide, ...grouped.formation], [grouped]);
 
   // Keyboard: global Cmd/Ctrl + K, plus local arrow keys / Enter / Escape.
   useEffect(() => {
@@ -147,8 +151,8 @@ export default function SearchBar() {
   }, [query]);
 
   const renderItem = (it: SearchItem, globalIndex: number) => {
-    const display = locale === "fr" ? it.nameFr || it.name : it.name || it.nameFr;
-    const sub = locale === "fr" ? it.descFr || it.desc : it.desc || it.descFr;
+    const display = locale === "fr" ? it.nameFr || it.name : locale === "de" ? it.nameDe || it.name : it.name || it.nameFr;
+    const sub = locale === "fr" ? it.descFr || it.desc : locale === "de" ? it.descDe || it.desc : it.desc || it.descFr;
     const href = it.path[pathLocale] ?? it.path.en;
     const active = globalIndex === selectedIndex;
     return (
@@ -219,7 +223,7 @@ export default function SearchBar() {
           )}
           {!loading && flat.length > 0 && (
             <div className="p-1">
-              {(["general", "unit", "skill", "update", "tech", "guide"] as const).map((type) => {
+              {(["general", "unit", "skill", "update", "tech", "guide", "formation"] as const).map((type) => {
                 const group = grouped[type];
                 if (group.length === 0) return null;
                 return (

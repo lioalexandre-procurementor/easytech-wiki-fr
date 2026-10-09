@@ -33,6 +33,7 @@ type UILabels = {
   nextAria: string;
   levelAria: (n: number) => string;
   totalAt: string;
+  unmeasured: (levels: string) => string;
 };
 
 const LABELS: Record<string, UILabels> = {
@@ -63,6 +64,7 @@ const LABELS: Record<string, UILabels> = {
     nextAria: "Niveau suivant",
     levelAria: (n) => `Niveau ${n}`,
     totalAt: "au total",
+    unmeasured: (levels) => `Valeurs non relevées à ce niveau. Niveaux sourcés : ${levels}. Aucune valeur n'est estimée.`,
   },
   en: {
     statsTitle: "Stats — Level",
@@ -91,6 +93,7 @@ const LABELS: Record<string, UILabels> = {
     nextAria: "Next level",
     levelAria: (n) => `Level ${n}`,
     totalAt: "total",
+    unmeasured: (levels) => `No sourced values at this level. Sourced levels: ${levels}. Nothing is estimated.`,
   },
   de: {
     statsTitle: "Werte — Stufe",
@@ -119,6 +122,7 @@ const LABELS: Record<string, UILabels> = {
     nextAria: "Nächste Stufe",
     levelAria: (n) => `Stufe ${n}`,
     totalAt: "insgesamt",
+    unmeasured: (levels) => `Für diese Stufe liegen keine belegten Werte vor. Belegte Stufen: ${levels}. Es wird nichts geschätzt.`,
   },
 };
 
@@ -174,11 +178,14 @@ function tierFor(lvl: number, L: UILabels): string {
 }
 
 export function UnitDetailClient({ unit }: { unit: UnitData }) {
-  const [lvl, setLvl] = useState(1);
+  // Open on the first sourced level so partially documented units do not
+  // greet the reader with a row of "—".
+  const firstKnown = unit.knownLevels && unit.knownLevels.length > 0 ? Math.min(...unit.knownLevels) : 1;
+  const [lvl, setLvl] = useState(firstKnown);
   /** Snapshot of `lvl` *before* the latest change, so stat cells can show the
    *  per-step delta as an animated chip when the user steps the slider. */
-  const prevLvlRef = useRef(1);
-  const [prevLvl, setPrevLvl] = useState(1);
+  const prevLvlRef = useRef(firstKnown);
+  const [prevLvl, setPrevLvl] = useState(firstKnown);
 
   const locale = useLocale();
   const L = LABELS[locale] ?? LABELS.en;
@@ -207,6 +214,14 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
   const i = lvl - 1;
   const pi = Math.max(0, prevLvl - 1);
   const s = unit.stats;
+  const known = (n: number) => !unit.knownLevels || unit.knownLevels.includes(n);
+  const isKnown = known(lvl);
+  const baseLvl = unit.knownLevels && unit.knownLevels.length > 0 ? Math.min(...unit.knownLevels) : 1;
+  const bi = baseLvl - 1;
+  /** Value at the current level, or null when that level is unmeasured. */
+  const cur = (arr: number[]) => (isKnown ? arr[i] ?? null : null);
+  const prv = (arr: number[]) => (known(prevLvl) ? arr[pi] ?? null : null);
+  const bas = (arr: number[]) => arr[bi] ?? null;
 
   const activeLoadout = useMemo(
     () => buildActiveLoadout(unit.perks, lvl),
@@ -233,36 +248,21 @@ export function UnitDetailClient({ unit }: { unit: UnitData }) {
             {L.statsTitle} <span>{lvl}</span>
           </h3>
           <span className="text-[10px] md:text-[11px] text-muted uppercase tracking-widest">
-            Δ {L.level} 1
+            Δ {L.level} {baseLvl}
           </span>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-2 md:gap-3">
-          <Stat
-            icon="⚔️"
-            name={L.attack}
-            val={s.atk[i]}
-            base={s.atk[0]}
-            prev={s.atk[pi]}
-            accent
-          />
-          <Stat
-            icon="🛡️"
-            name={L.defense}
-            val={s.def[i]}
-            base={s.def[0]}
-            prev={s.def[pi]}
-            accent
-          />
-          <Stat icon="❤️" name={L.hp} val={s.hp[i]} base={s.hp[0]} prev={s.hp[pi]} />
-          <Stat
-            icon="🏃"
-            name={L.movement}
-            val={s.mov[i]}
-            base={s.mov[0]}
-            prev={s.mov[pi]}
-          />
-          <Stat icon="🎯" name={L.range} val={s.rng[i]} base={s.rng[0]} prev={s.rng[pi]} />
+          <Stat icon="⚔️" name={L.attack} val={cur(s.atk)} base={bas(s.atk)} prev={prv(s.atk)} accent />
+          <Stat icon="🛡️" name={L.defense} val={cur(s.def)} base={bas(s.def)} prev={prv(s.def)} accent />
+          <Stat icon="❤️" name={L.hp} val={cur(s.hp)} base={bas(s.hp)} prev={prv(s.hp)} />
+          <Stat icon="🏃" name={L.movement} val={cur(s.mov)} base={bas(s.mov)} prev={prv(s.mov)} />
+          <Stat icon="🎯" name={L.range} val={cur(s.rng)} base={bas(s.rng)} prev={prv(s.rng)} />
         </div>
+        {!isKnown && unit.knownLevels && (
+          <p className="mt-3 text-xs text-amber-200/90 leading-relaxed" role="note">
+            {L.unmeasured(unit.knownLevels.join(", "))}
+          </p>
+        )}
       </div>
 
       {/* ACTIVE LOADOUT */}
@@ -480,13 +480,13 @@ function Stat({
 }: {
   icon: string;
   name: string;
-  val: number;
-  base: number;
-  prev: number;
+  val: number | null;
+  base: number | null;
+  prev: number | null;
   accent?: boolean;
 }) {
-  const delta = val - base;
-  const stepDelta = val - prev;
+  const delta = val !== null && base !== null ? val - base : 0;
+  const stepDelta = val !== null && prev !== null ? val - prev : 0;
   return (
     <div
       className={`relative rounded-md p-2 md:p-3 flex items-center gap-2 md:block md:text-center border ${
@@ -506,7 +506,7 @@ function Stat({
         {name}
       </div>
       <div className="text-base md:text-2xl text-gold2 font-extrabold tabular-nums shrink-0 leading-none">
-        {val}
+        {val ?? "?"}
       </div>
       {delta > 0 && (
         <div className="absolute top-1 right-1 md:top-2 md:right-2 text-[9px] md:text-[10px] text-ok font-bold">

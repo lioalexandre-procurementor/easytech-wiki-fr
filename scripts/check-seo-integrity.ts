@@ -32,9 +32,11 @@ for (const file of updates) {
     slug?: string;
     version?: string;
     sourceUrl?: string;
+    platform?: "ios" | "android";
   };
   if (!data.slug || file !== `${data.slug}.json`) errors.push(`${file} has a mismatched slug`);
-  if (!/^3\./.test(data.version ?? "")) errors.push(`${file} uses an unsupported WC4 version series`);
+  const versionPattern = data.platform === "ios" ? /^3\.\d+\.\d+$/ : data.platform === "android" ? /^1\.\d+\.\d+$/ : null;
+  if (!versionPattern?.test(data.version ?? "")) errors.push(`${file} needs a valid platform-specific WC4 version`);
   if (!/^https:\/\//.test(data.sourceUrl ?? "")) errors.push(`${file} needs an HTTPS primary source`);
 }
 
@@ -53,4 +55,4 @@ if (errors.length > 0) {
   process.exit(1);
 }
 
-console.log(`SEO integrity checks passed (${updates.length} verified WC4 update records).`);
+console.log(`SEO integrity checks passed (${updates.length} WC4 release records; metadata validation only).`);

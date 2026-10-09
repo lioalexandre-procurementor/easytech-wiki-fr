@@ -90,7 +90,7 @@
       "max": 1
     }
   },
-  "hasTrainingPath": false,
+  "hasTrainingPath": true,
   "training": null,
   "acquisition": {
     "type": "medals",
@@ -102,7 +102,8 @@
   "recommendedUnits": [],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Generals",
-    "Données extraites des fichiers de jeu World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4",
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290"
   ],
   "nameCanonical": "Vatutin",
   "skillSlots": 4,
@@ -118,5 +119,6 @@
   "shortDescEn": "Silver armor general — USSR.",
   "shortDescDe": "Silber-Panzer-General — UdSSR.",
   "longDescEn": "Nikolai Vatutin led the Southwestern Front during the Stalingrad counter-offensive and at Kursk. Wounded by UPA partisans in February 1944, he died in April. A WC4 silver-A armor card with an offensive profile — a coherent pick for Uranus and Citadel.",
-  "longDescDe": "Nikolai Watutin führte während der Stalingrader Gegenoffensive und bei Kursk die Südwestfront. Im Februar 1944 von UPA-Partisanen verwundet, starb er im April. Im WC4 eine Silber-A-Panzerkarte mit offensivem Profil — stimmig für Uranus und Zitadelle."
+  "longDescDe": "Nikolai Watutin führte während der Stalingrader Gegenoffensive und bei Kursk die Südwestfront. Im Februar 1944 von UPA-Partisanen verwundet, starb er im April. Im WC4 eine Silber-A-Panzerkarte mit offensivem Profil — stimmig für Uranus und Zitadelle.",
+  "trainingDetailsPending": true
 }

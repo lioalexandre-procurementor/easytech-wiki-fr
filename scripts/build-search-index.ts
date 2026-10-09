@@ -11,8 +11,9 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { getReferences, referencePath } from "../lib/wc4-coverage";
 
-type SearchItemType = "general" | "unit" | "skill" | "update" | "tech" | "guide";
+type SearchItemType = "general" | "unit" | "skill" | "update" | "tech" | "guide" | "formation";
 
 interface SearchItem {
   type: SearchItemType;
@@ -173,14 +174,34 @@ function buildGuides(): SearchItem[] {
   });
 }
 
-const items: SearchItem[] = [
+const itemsByPath = new Map<string, SearchItem>();
+const existingItems: SearchItem[] = [
   ...buildGenerals(),
   ...buildUnits(),
   ...buildSkills(),
   ...buildUpdates(),
   ...buildTechs(),
   ...buildGuides(),
+  ...readJsonDir("formations").map(f => ({
+    type: "formation" as const, slug: f.slug as string,
+    name: f.nameEn as string, nameFr: f.name as string, nameDe: f.nameDe as string,
+    path: { fr: `/world-conqueror-4/formations-legendes/${f.slug}`, en: `/world-conqueror-4/legend-formations/${f.slug}` },
+  })),
 ];
+for (const item of existingItems) itemsByPath.set(item.path.en, item);
+for (const kind of ["unit", "general", "formation", "skill", "training"] as const) {
+  for (const entry of getReferences(kind)) {
+    const item: SearchItem = {
+      type: kind === "training" ? "general" : kind,
+      slug: entry.slug, name: entry.name.en, nameFr: entry.name.fr, nameDe: entry.name.de,
+      desc: entry.summary.en, descFr: entry.summary.fr, descDe: entry.summary.de,
+      path: { fr: referencePath(entry, "fr"), en: referencePath(entry, "en") },
+    };
+    // Reference copy replaces any older provisional search description at this URL.
+    itemsByPath.set(item.path.en, item);
+  }
+}
+const items = [...itemsByPath.values()];
 
 fs.mkdirSync(path.dirname(OUT), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify({ version: 1, builtAt: new Date().toISOString(), items }));

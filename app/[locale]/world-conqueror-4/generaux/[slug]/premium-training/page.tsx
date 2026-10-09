@@ -1,3 +1,5 @@
+import { getReference, getReferences, referenceMetadata } from "@/lib/wc4-coverage";
+import { ReferencePage } from "@/components/Wc4Coverage";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -29,7 +31,7 @@ export function generateStaticParams() {
   // Only generate for trainable generals — no point pre-rendering 404s.
   const trainableSlugs = slugs.filter((slug) => {
     const g = getGeneral(slug);
-    return !!(g?.hasTrainingPath && g.trainedSkills?.length);
+    return !!(g?.hasTrainingPath && (g.trainedSkills?.length || getReference("training", slug)));
   });
   return locales.flatMap((locale) =>
     trainableSlugs.map((slug) => ({ locale, slug }))
@@ -41,6 +43,8 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
+  const reference = getReference("training", slug);
+  if (reference) return referenceMetadata(reference, locale);
   const g = await loadGeneral(slug);
   if (!g) return { title: "404" };
   const t = await getTranslations({ locale, namespace: "premiumTrainingPage" });
@@ -88,6 +92,8 @@ export default async function PremiumTrainingPage({
 }) {
   if (!locales.includes(locale as Locale)) notFound();
   unstable_setRequestLocale(locale);
+  const reference = getReference("training", slug);
+  if (reference) return <ReferencePage entry={reference} locale={locale} />;
 
   const g = await loadGeneral(slug);
   if (!g) notFound();

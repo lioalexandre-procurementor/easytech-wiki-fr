@@ -1,0 +1,36 @@
+{
+  "checkedAtUtc": "2026-09-29T12:48:12.355889+00:00",
+  "scope": "Official mobile release metadata, directly fetched; extracted fields only",
+  "ios": {
+    "sourceUrl": "https://itunes.apple.com/lookup?id=1258468290&country=us",
+    "trackName": "World Conqueror 4",
+    "bundleId": "com.zhangyue.wc4",
+    "version": "3.5.5",
+    "currentVersionReleaseDate": "2026-09-29T06:15:23Z",
+    "minimumOsVersion": "15.0",
+    "releaseNotesStatus": "Repeats September feature list; no distinct new gameplay change established"
+  },
+  "android": {
+    "sourceUrl": "https://play.google.com/store/apps/details?id=com.easytech.wc4.android&hl=en&gl=US",
+    "version": "1.29.2",
+    "updatedOn": "2026-09-29",
+    "versionEvidence": "Embedded app metadata",
+    "dateEvidence": "Visible Updated on field",
+    "releaseNotesStatus": "No separate 1.29.2 changelog exposed in final fetched metadata"
+  },
+  "earlierSnapshot": {
+    "androidVersion": "1.29.0",
+    "androidUpdatedOn": "2026-09-16",
+    "note": "Superseded by final direct check during audit"
+  },
+  "septemberFeatureSource": "https://note.com/easytech_game/n/n81e3ca31df6b",
+  "liveSiteChecks": {
+    "hub": "https://easytech-wiki.com/en/world-conqueror-4",
+    "hubVersion": "3.4.2",
+    "updateArchive": "https://easytech-wiki.com/en/world-conqueror-4/updates",
+    "latestArchivedVersion": "3.4.2",
+    "kuznetsovGuide": "https://easytech-wiki.com/en/world-conqueror-4/guides/admiral-kuznetsov-carrier-guide",
+    "liveGuideReviewedAt": "2026-07-20",
+    "localGuideReviewedAt": "2026-09-06"
+  }
+}

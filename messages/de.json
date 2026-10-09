@@ -73,7 +73,7 @@
   },
   "wc4Hub": {
     "h1": "World Conqueror 4 — Deutsches Wiki",
-    "tagline": "Der umfassendste deutschsprachige Guide, um World Conqueror 4 von EasyTech zu meistern. Detaillierte Statistiken, Elite-Einheiten Level für Level, optimale Generäle und Eroberungsstrategien.",
+    "tagline": "Community-Wiki zu World Conqueror 4: Generäle, Einheiten, Versionen und Guides mit sichtbarem Prüfstand.",
     "ctaExplore": "🏅 Elite-Einheiten entdecken",
     "ctaBeginner": "📘 Einsteiger-Guide",
     "statEliteUnits": "Elite-Einheiten",
@@ -82,7 +82,7 @@
     "statMaxLevels": "Max. Level",
     "statMaxLevelsValue": "12",
     "underConstruction": "Wiki im Aufbau",
-    "underConstructionNote": "Das Wiki folgt der offiziellen WC4-Version 3.4.2. Die Prüfung detaillierter Werte im Spiel und die redaktionelle Ergänzung laufen noch.",
+    "underConstructionNote": "Ältere Werte und Strategien sind nicht vollständig erneut geprüft. Referenzseiten nennen noch ungeprüfte Angaben.",
     "exploreByCategory": "Elite-Einheiten nach Kategorie durchstöbern",
     "mostViewed": "Beliebteste Elite-Einheiten",
     "unitsCountSuffix": "Einheiten",
@@ -427,7 +427,8 @@
       "skill": "Fähigkeiten",
       "update": "Updates",
       "tech": "Technologien",
-      "guide": "Guides"
+      "guide": "Guides",
+      "formation": "Formationen"
     }
   },
   "comparatorPage": {
@@ -673,7 +674,7 @@
     "heroTitleB": "in EasyTechs Spielen",
     "heroSub": "Geprüfte Werte, Tier-Listen, Fähigkeiten Stufe für Stufe und Guides zu World Conqueror 4, European War 6 und Great Conqueror: Rome.",
     "heroCtaSecondary": "Alle Spiele ansehen",
-    "trustLine": "Mit jedem Patch aktualisiert · 3 Spiele · für Spieler gemacht",
+    "trustLine": "Community-Wiki · Quellen und Prüfstand auf Referenzseiten",
     "statsPages": "Detailseiten",
     "whyHeading": "Warum dieses Wiki",
     "whySub": "Die Ressource, die diese Spiele nie hatten.",

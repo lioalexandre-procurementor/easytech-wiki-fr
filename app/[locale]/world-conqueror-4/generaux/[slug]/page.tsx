@@ -1,3 +1,6 @@
+import { ReferenceDetails } from "@/components/Wc4Coverage";
+import { getReference, getReferences, referenceMetadata } from "@/lib/wc4-coverage";
+import { ReferencePage } from "@/components/Wc4Coverage";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Link } from "@/src/i18n/navigation";
@@ -39,7 +42,7 @@ import ReportMistakeLink from "@/components/ReportMistakeLink";
 import { ogImage } from "@/lib/og";
 
 export function generateStaticParams() {
-  const slugs = getAllGeneralSlugs();
+  const slugs = [...new Set([...getAllGeneralSlugs(), ...getReferences("general").map(r => r.slug)])];
   return locales.flatMap((locale) =>
     slugs.map((slug) => ({ locale, slug }))
   );
@@ -50,6 +53,8 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
+  const reference = getReference("general", slug);
+  if (reference) return referenceMetadata(reference, locale);
   const g = await loadGeneral(slug);
   if (!g) return { title: "404" };
   const name = g.nameEn || g.name;
@@ -115,6 +120,8 @@ const QUALITY_META: Record<
 export default async function GeneralPage({ params }: { params: { locale: string; slug: string } }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
+  const reference = getReference("general", params.slug);
+  if (reference) return <ReferencePage entry={reference} locale={params.locale} />;
   const g = await loadGeneral(params.slug);
   if (!g) notFound();
 
@@ -308,7 +315,7 @@ export default async function GeneralPage({ params }: { params: { locale: string
             >
               ★ {t("general.viewMaxed")}
             </Link>
-            {g.hasTrainingPath && g.trainedSkills && g.trainedSkills.length > 0 && (
+            {g.hasTrainingPath && !g.trainingDetailsPending && g.trainedSkills && g.trainedSkills.length > 0 && (
               <Link
                 href={{ pathname: "/world-conqueror-4/generaux/[slug]/premium-training", params: { slug: g.slug } }}
                 className="inline-flex items-center gap-2 px-4 py-2 rounded bg-red-500/10 border border-red-500/40 text-red-300 hover:bg-red-500/20 transition-colors"
@@ -354,8 +361,14 @@ export default async function GeneralPage({ params }: { params: { locale: string
             )}
           </div>
 
+          {g.trainingDetailsPending && getReference("training", g.slug) && (
+            <div id="training" className="mb-6">
+              <ReferenceDetails entry={getReference("training", g.slug)!} locale={params.locale} />
+              <Link href={{ pathname: "/world-conqueror-4/generaux/[slug]/premium-training", params: { slug: g.slug } }} className="inline-block mt-3 text-gold2 underline">{t("general.trainingHeading")}</Link>
+            </div>
+          )}
           {/* TRAINING PATH (Swords/Sceptres of Dominance) */}
-          {g.hasTrainingPath && g.training && (
+          {g.hasTrainingPath && !g.trainingDetailsPending && g.training && (
             <div
               id="training"
               className="border-2 rounded-lg p-6 mb-6"

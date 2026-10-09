@@ -1,0 +1,518 @@
+[
+  {
+    "kind": "unit",
+    "slug": "delta-force",
+    "name": {
+      "fr": "Delta Force",
+      "en": "Delta Force",
+      "de": "Delta Force"
+    },
+    "summary": {
+      "fr": "L’ajout de cette unité est confirmé par la note officielle. Les anciens chiffres provisoires ont été retirés de l’affichage en attendant leur vérification.",
+      "en": "The official release note confirms this unit. Earlier provisional numbers are withheld from display until verified.",
+      "de": "Die offizielle Versionsnotiz bestätigt diese Einheit. Frühere vorläufige Zahlen werden bis zur Prüfung nicht angezeigt."
+    },
+    "pending": {
+      "fr": "Statistiques par niveau, compétences, coût et conditions de recrutement, puis comparaisons testées.",
+      "en": "Per-level stats, perks, recruitment cost and requirements, then tested comparisons.",
+      "de": "Werte pro Stufe, Fähigkeiten, Rekrutierungskosten und Voraussetzungen sowie getestete Vergleiche."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.3.0",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-04-14",
+      "lastVerifiedAt": "2026-09-30"
+    },
+    "category": "infantry"
+  },
+  {
+    "kind": "unit",
+    "slug": "bismarck",
+    "name": {
+      "fr": "Battleship Bismarck",
+      "en": "Battleship Bismarck",
+      "de": "Battleship Bismarck"
+    },
+    "summary": {
+      "fr": "L’ajout de cette unité est confirmé par la note officielle. Les anciens chiffres provisoires ont été retirés de l’affichage en attendant leur vérification.",
+      "en": "The official release note confirms this unit. Earlier provisional numbers are withheld from display until verified.",
+      "de": "Die offizielle Versionsnotiz bestätigt diese Einheit. Frühere vorläufige Zahlen werden bis zur Prüfung nicht angezeigt."
+    },
+    "pending": {
+      "fr": "Statistiques par niveau, compétences, coût et conditions de recrutement, puis comparaisons testées.",
+      "en": "Per-level stats, perks, recruitment cost and requirements, then tested comparisons.",
+      "de": "Werte pro Stufe, Fähigkeiten, Rekrutierungskosten und Voraussetzungen sowie getestete Vergleiche."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.3.0",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-04-14",
+      "lastVerifiedAt": "2026-09-30"
+    },
+    "category": "navy"
+  },
+  {
+    "kind": "unit",
+    "slug": "admiral-kuznetsov-carrier",
+    "name": {
+      "fr": "Aircraft Carrier Kuznetsov",
+      "en": "Aircraft Carrier Kuznetsov",
+      "de": "Aircraft Carrier Kuznetsov"
+    },
+    "summary": {
+      "fr": "L’ajout de cette unité est confirmé par la note officielle. Les anciens chiffres provisoires ont été retirés de l’affichage en attendant leur vérification.",
+      "en": "The official release note confirms this unit. Earlier provisional numbers are withheld from display until verified.",
+      "de": "Die offizielle Versionsnotiz bestätigt diese Einheit. Frühere vorläufige Zahlen werden bis zur Prüfung nicht angezeigt."
+    },
+    "pending": {
+      "fr": "Statistiques par niveau, compétences, coût et conditions de recrutement, puis comparaisons testées.",
+      "en": "Per-level stats, perks, recruitment cost and requirements, then tested comparisons.",
+      "de": "Werte pro Stufe, Fähigkeiten, Rekrutierungskosten und Voraussetzungen sowie getestete Vergleiche."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    },
+    "category": "navy"
+  },
+  {
+    "kind": "general",
+    "slug": "paulus",
+    "name": {
+      "fr": "Paulus",
+      "en": "Paulus",
+      "de": "Paulus"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "balck",
+    "name": {
+      "fr": "Balck",
+      "en": "Balck",
+      "de": "Balck"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "vasily",
+    "name": {
+      "fr": "Vasily",
+      "en": "Vasily",
+      "de": "Vasily"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "qasim",
+    "name": {
+      "fr": "Qasim",
+      "en": "Qasim",
+      "de": "Qasim"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "pahlavi",
+    "name": {
+      "fr": "Pahlavi",
+      "en": "Pahlavi",
+      "de": "Pahlavi"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "alberto",
+    "name": {
+      "fr": "Alberto",
+      "en": "Alberto",
+      "de": "Alberto"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "lhagvasuren",
+    "name": {
+      "fr": "Lhagvasuren",
+      "en": "Lhagvasuren",
+      "de": "Lhagvasuren"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "kimmel",
+    "name": {
+      "fr": "Kimmel",
+      "en": "Kimmel",
+      "de": "Kimmel"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "luigi",
+    "name": {
+      "fr": "Luigi",
+      "en": "Luigi",
+      "de": "Luigi"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "gariboldi",
+    "name": {
+      "fr": "Gariboldi",
+      "en": "Gariboldi",
+      "de": "Gariboldi"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "general",
+    "slug": "percival",
+    "name": {
+      "fr": "Percival",
+      "en": "Percival",
+      "de": "Percival"
+    },
+    "summary": {
+      "fr": "Général à médailles annoncé dans le cycle de juin 2026. Le nom reprend la note officielle anglaise.",
+      "en": "A medal general announced in the June 2026 cycle. The name follows the official English release note.",
+      "de": "Ein Medaillen-General aus dem Inhaltszyklus Juni 2026. Der Name folgt der offiziellen englischen Versionsnotiz."
+    },
+    "pending": {
+      "fr": "Identité en jeu, prix, attributs, compétences et rôle à vérifier avant tout classement ou conseil d’achat.",
+      "en": "Verify in-game identity, price, attributes, skills and role before assigning a tier or purchase recommendation.",
+      "de": "Identität im Spiel, Preis, Attribute, Fähigkeiten und Rolle vor einer Rang- oder Kaufempfehlung prüfen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "formation",
+    "slug": "1st-marine-division",
+    "name": {
+      "fr": "1st Marine Division",
+      "en": "1st Marine Division",
+      "de": "1st Marine Division"
+    },
+    "summary": {
+      "fr": "Formation Légende ajoutée dans le cycle de juin 2026.",
+      "en": "A Legend formation added in the June 2026 content cycle.",
+      "de": "Eine Legendenformation aus dem Inhaltszyklus Juni 2026."
+    },
+    "pending": {
+      "fr": "Troupes incluses, effets, restrictions et conditions d’accès à relever dans le jeu.",
+      "en": "Capture included troops, effects, restrictions and access requirements in-game.",
+      "de": "Enthaltene Truppen, Effekte, Einschränkungen und Zugangsvoraussetzungen im Spiel erfassen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "formation",
+    "slug": "51st-highland-division",
+    "name": {
+      "fr": "51st Highland Division",
+      "en": "51st Highland Division",
+      "de": "51st Highland Division"
+    },
+    "summary": {
+      "fr": "Formation Légende ajoutée dans le cycle de juin 2026.",
+      "en": "A Legend formation added in the June 2026 content cycle.",
+      "de": "Eine Legendenformation aus dem Inhaltszyklus Juni 2026."
+    },
+    "pending": {
+      "fr": "Troupes incluses, effets, restrictions et conditions d’accès à relever dans le jeu.",
+      "en": "Capture included troops, effects, restrictions and access requirements in-game.",
+      "de": "Enthaltene Truppen, Effekte, Einschränkungen und Zugangsvoraussetzungen im Spiel erfassen."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "training",
+    "slug": "vatutin",
+    "name": {
+      "fr": "Entraînement de Vatutin",
+      "en": "Vatutin training",
+      "de": "Vatutin-Training"
+    },
+    "summary": {
+      "fr": "Entraînement ajouté en septembre 2026. L’aperçu officiel d’EasyTech confirme la compétence exclusive Opération Petite Saturne (niv. 5) : avec des blindés, mobilité +3 et 25 % de la défense ennemie ignorée ; si l’unité n’a pas attaqué au tour précédent, elle récupère 8 % de ses PV max en début de tour et gagne 1 tour « Général éclair » (+30 % de dégâts, 100 % de chance de rattaquer si la cible survit, une fois par tour). Le wiki Fandom donne le reste du loadout entraîné : Blitzkrieg (niv. 1), Meneur de blindés (niv. 3) et 2 emplacements libres.",
+      "en": "Training added in September 2026. EasyTech’s official preview confirms the exclusive skill Operation Little Saturn (Lv. 5): with armoured units, mobility +3 and 25% of enemy defence ignored; if the unit did not attack on the previous turn, it recovers 8% of max HP at the start of its turn and gains 1 turn of “Lightning General” (+30% damage, 100% chance to attack again if the target survives, once per turn). The Fandom wiki gives the rest of the trained loadout: Blitzkrieg (Lv. 1), Panzer Leader (Lv. 3) and 2 free slots.",
+      "de": "Training im September 2026 hinzugefügt. Die offizielle EasyTech-Vorschau bestätigt die exklusive Fähigkeit Operation Kleiner Saturn (Stufe 5): mit Panzereinheiten Mobilität +3 und 25 % der gegnerischen Verteidigung ignoriert; hat die Einheit im vorigen Zug nicht angegriffen, erholt sie zu Zugbeginn 8 % der max. TP und erhält 1 Zug „Blitzgeneral“ (+30 % Schaden, 100 % Chance auf erneuten Angriff, wenn das Ziel überlebt, einmal pro Zug). Das Fandom-Wiki nennt den Rest der trainierten Ausstattung: Blitzkrieg (Stufe 1), Panzerführer (Stufe 3) und 2 freie Plätze."
+    },
+    "pending": {
+      "fr": "Étapes et coûts d’entraînement, attributs après entraînement et confirmation en jeu du loadout donné par Fandom.",
+      "en": "Training stages and costs, post-training attributes and in-game confirmation of the loadout given by Fandom.",
+      "de": "Trainingsstufen und Kosten, Attribute nach dem Training und Bestätigung der Fandom-Ausstattung im Spiel."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.5.3",
+      "platform": "ios",
+      "sourceUrl": "https://note.com/easytech_game/n/n81e3ca31df6b",
+      "sourcePublishedAt": "2026-09-11",
+      "lastVerifiedAt": "2026-10-09"
+    }
+  },
+  {
+    "kind": "training",
+    "slug": "macarthur",
+    "name": {
+      "fr": "Entraînement de MacArthur",
+      "en": "MacArthur training",
+      "de": "MacArthur-Training"
+    },
+    "summary": {
+      "fr": "L’entraînement est confirmé par la note officielle. Son existence ne valide pas les anciens coûts ou compétences publiés sur ce wiki.",
+      "en": "Training is confirmed by the official release note. Its existence does not validate the costs or skills previously published on this wiki.",
+      "de": "Das Training ist durch die offizielle Versionsnotiz bestätigt. Das bestätigt nicht die früher im Wiki genannten Kosten oder Fähigkeiten."
+    },
+    "pending": {
+      "fr": "Étapes, coûts, attributs et compétences de la forme entraînée.",
+      "en": "Training stages, costs, attributes and trained skill loadout.",
+      "de": "Trainingsstufen, Kosten, Attribute und Fähigkeiten der trainierten Form."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.4.1",
+      "platform": "ios",
+      "sourceUrl": "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "sourcePublishedAt": "2026-06-23",
+      "lastVerifiedAt": "2026-09-30"
+    }
+  },
+  {
+    "kind": "skill",
+    "slug": "modernized-air-force",
+    "name": {
+      "fr": "Force aérienne modernisée",
+      "en": "Modernized Air Force",
+      "de": "Modernisierte Luftwaffe"
+    },
+    "summary": {
+      "fr": "Récompense du Pass de Conquête depuis septembre 2026. L’aperçu officiel la place au palier final de 350 points et donne son effet de niveau 1 : quand une frappe aérienne que vous commandez déclenche un coup critique, dégâts infligés +4 %.",
+      "en": "A Conquest Pass reward since September 2026. The official preview places it at the final 350-point tier and gives its level 1 effect: when an air strike you command triggers a critical hit, damage dealt +4%.",
+      "de": "Seit September 2026 Belohnung im Eroberungspass. Die offizielle Vorschau setzt sie auf die letzte Stufe bei 350 Punkten und nennt den Effekt auf Stufe 1: Löst ein von Ihnen befehligter Luftangriff einen kritischen Treffer aus, Schaden +4 %."
+    },
+    "pending": {
+      "fr": "Emplacements compatibles et valeurs des niveaux 2 à 5. Le wiki Fandom indique +8 / +12 / +16 / +20 % pour 250 à 550 médailles, sans confirmation officielle.",
+      "en": "Compatible slots and level 2 to 5 values. The Fandom wiki lists +8 / +12 / +16 / +20% for 250 to 550 medals, without official confirmation.",
+      "de": "Kompatible Plätze und Werte der Stufen 2 bis 5. Das Fandom-Wiki nennt +8 / +12 / +16 / +20 % für 250 bis 550 Medaillen, ohne offizielle Bestätigung."
+    },
+    "evidence": {
+      "status": "official-announcement",
+      "gameVersion": "3.5.3",
+      "platform": "ios",
+      "sourceUrl": "https://note.com/easytech_game/n/n81e3ca31df6b",
+      "sourcePublishedAt": "2026-09-11",
+      "lastVerifiedAt": "2026-10-09"
+    }
+  }
+]

@@ -75,12 +75,30 @@
     }
   ],
   "attributes": {
-    "infantry": { "start": 5, "max": 5 },
-    "artillery": { "start": 2, "max": 2 },
-    "armor": { "start": 3, "max": 3 },
-    "navy": { "start": 3, "max": 4 },
-    "airforce": { "start": 2, "max": 3 },
-    "marching": { "start": 6, "max": 6 }
+    "infantry": {
+      "start": 5,
+      "max": 5
+    },
+    "artillery": {
+      "start": 2,
+      "max": 2
+    },
+    "armor": {
+      "start": 3,
+      "max": 3
+    },
+    "navy": {
+      "start": 3,
+      "max": 4
+    },
+    "airforce": {
+      "start": 2,
+      "max": 3
+    },
+    "marching": {
+      "start": 6,
+      "max": 6
+    }
   },
   "hasTrainingPath": true,
   "training": {
@@ -108,7 +126,8 @@
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/MacArthur",
     "https://world-conqueror-4.fandom.com/wiki/Training",
-    "Données extraites des fichiers de jeu World Conqueror 4"
+    "Données extraites des fichiers de jeu World Conqueror 4",
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290"
   ],
   "nameCanonical": "MacArthur",
   "skillSlots": 5,
@@ -189,5 +208,6 @@
   "shortDescEn": "Gold infantry general — United States. Trainable: Island Hopping and Old Soldiers Never Die.",
   "shortDescDe": "Gold-Infanterie-General — Vereinigte Staaten. Trainierbar: Island Hopping und Old Soldiers Never Die.",
   "longDescEn": "Douglas MacArthur commanded the South West Pacific Area, pledged 'I shall return' to the Philippines and accepted the Japanese surrender in September 1945. A WC4 tier-S gold infantry card with amphibious-landing bonuses — a must-have on Saipan, Leyte and Iwo Jima. Training replaces Street Fighting with Island Hopping and Entrenchment with Old Soldiers Never Die.",
-  "longDescDe": "Douglas MacArthur führte den Südwestpazifik, versprach \"I shall return\" auf den Philippinen und nahm im September 1945 die japanische Kapitulation entgegen. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Amphibien-Landungsboni — ein Muss für Saipan, Leyte und Iwojima. Das Training ersetzt Street Fighting durch Island Hopping und Entrenchment durch Old Soldiers Never Die."
+  "longDescDe": "Douglas MacArthur führte den Südwestpazifik, versprach \"I shall return\" auf den Philippinen und nahm im September 1945 die japanische Kapitulation entgegen. Im WC4 eine S-Klasse-Gold-Infanteriekarte mit Amphibien-Landungsboni — ein Muss für Saipan, Leyte und Iwojima. Das Training ersetzt Street Fighting durch Island Hopping und Entrenchment durch Old Soldiers Never Die.",
+  "trainingDetailsPending": true
 }

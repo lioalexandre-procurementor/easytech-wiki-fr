@@ -17,14 +17,14 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const titles: Record<string, string> = {
-    fr: "Compétences de World Conqueror 4 — Catalogue complet (FR)",
-    en: "World Conqueror 4 Skills — Complete Catalog",
-    de: "World Conqueror 4 Fähigkeiten — Vollständiger Katalog (DE)",
+    fr: "Compétences de World Conqueror 4 — Catalogue et récompenses (FR)",
+    en: "World Conqueror 4 Skills — Catalog and Rewards",
+    de: "World Conqueror 4 Fähigkeiten — Katalog und Belohnungen (DE)",
   };
   const descriptions: Record<string, string> = {
-    fr: "Toutes les compétences de WC4 organisées comme en jeu : Tactiques de terrain, Commandement, Logistique, Défense, Offensive, plus toutes les compétences spécifiques aux généraux avec progression L1→L5.",
-    en: "Every WC4 skill organised as in-game: Field Tactics, Command, Logistics, Defense, Offense, plus all general-specific skills with L1→L5 progression.",
-    de: "Alle WC4-Fähigkeiten wie im Spiel gegliedert: Feldtaktik, Kommando, Logistik, Verteidigung, Offensive, sowie alle generalspezifischen Fähigkeiten mit Progression L1→L5.",
+    fr: "Catalogue des compétences WC4 : séries, compétences propres aux généraux et récompenses du Pass de Conquête. Les détails non vérifiés sont signalés.",
+    en: "Browse WC4 skill series, general-specific skills and Challenge Pass rewards. Details awaiting verification are clearly marked.",
+    de: "WC4-Fähigkeiten nach Serien, generalspezifischen Fähigkeiten und Eroberungspass-Belohnungen durchsuchen. Ungeprüfte Details sind gekennzeichnet.",
   };
   return {
     title: titles[locale] ?? titles.en,
@@ -41,10 +41,10 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-// Display order: learnable series (1..5) first, signature (series 0) last.
+// -1 is an editorial reward group, not an in-game skill series.
 // This matches the user expectation of seeing generic skills they can slot
 // into any general before the hero-locked signatures at the bottom.
-const SERIES_DISPLAY_ORDER = [1, 2, 3, 4, 5, 0];
+const SERIES_DISPLAY_ORDER = [1, 2, 3, 4, 5, -1, 0];
 
 export default async function SkillsBrowser({
   params,

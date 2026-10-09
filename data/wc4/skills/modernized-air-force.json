@@ -2,8 +2,8 @@
  "slug": "modernized-air-force",
  "type": 161,
  "name": "Modernized Air Force",
- "series": 0,
- "seriesLabel": "Compétences spécifiques aux généraux",
+ "series": -1,
+ "seriesLabel": "Challenge Pass",
  "descriptionTemplate": "When you command an airstrike that triggers a fatal blow, the damage dealt +X%.",
  "icon": "/img/wc4/skills/general_skill_161.png",
  "maxLevel": 5,
@@ -71,9 +71,11 @@
  "varyingField": "SkillEffect",
  "nameFr": "Modernized Air Force",
  "descriptionTemplateFr": "Lorsqu'une frappe aérienne commandée déclenche un coup fatal, dégâts infligés +X%.",
- "longDesc": "Compétence spécifique à un général. « Modernized Air Force » monte jusqu'au niveau 5. Au niveau maximum (5), elle applique l'effet suivant : « When you commandement an airstrike that triggers a fatal blow, the dégâts infligés +20%. ». Signature propre à un général : son niveau maximum conditionne la valorisation de la carte.",
- "longDescEn": "A general-specific skill. \"Modernized Air Force\" scales up to level 5. At max level (5), the skill applies the following effect: \"When you command an airstrike that triggers a fatal blow, the damage dealt +20%.\". A general-specific signature: its max level drives the card's overall value.",
- "longDescDe": "Eine generalspezifische Fähigkeit. „Modernized Air Force“ skaliert bis Stufe 5. Auf Maximalstufe (5) wirkt folgender Effekt: „When you command an airstrike that triggers a fatal blow, the damage dealt +20%.“. Eine generalspezifische Signatur: Ihr Maximallevel bestimmt den Gesamtwert der Karte.",
+ "longDesc": "Récompense du Pass de Conquête ajoutée en septembre 2026. Seuil, compatibilité et progression à vérifier.",
+ "longDescEn": "A Challenge Pass reward added in September 2026. Unlock threshold, compatibility and progression require verification.",
+ "longDescDe": "Seit September 2026 eine Belohnung im Eroberungspass. Freischaltschwelle, Kompatibilität und Entwicklung müssen geprüft werden.",
  "nameDe": "Modernisierte Luftwaffe",
- "descriptionTemplateDe": "Löst ein befohlener Luftschlag einen tödlichen Treffer aus, steigt der verursachte Schaden um +X%."
+ "descriptionTemplateDe": "Löst ein befohlener Luftschlag einen tödlichen Treffer aus, steigt der verursachte Schaden um +X%.",
+ "acquisitionSource": "challenge-pass",
+ "detailsPending": true
 }

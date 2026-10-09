@@ -101,7 +101,7 @@ let _learnableCache: LearnableSkill[] | null = null;
 export function getAllLearnableSkills(): LearnableSkill[] {
   if (_learnableCache) return _learnableCache;
   if (!fs.existsSync(LEARNABLE_FILE)) return [];
-  _learnableCache = JSON.parse(fs.readFileSync(LEARNABLE_FILE, "utf8")) as LearnableSkill[];
+  _learnableCache = (JSON.parse(fs.readFileSync(LEARNABLE_FILE, "utf8")) as LearnableSkill[]).filter(s => s.eligibilityVerified !== false);
   return _learnableCache;
 }
 

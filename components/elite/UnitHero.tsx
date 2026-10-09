@@ -47,6 +47,8 @@ export function UnitHero({
   badgeChildren?: React.ReactNode;
 }) {
   const tier = unit.tier as Tier;
+  // Pending units are never ranked, whether or not the caller passes isPreliminary.
+  const hideTier = isPreliminary || !!unit.preliminary;
   return (
     <section className="bg-panel border border-border rounded-xl overflow-hidden mb-6">
       {/* Hero image — full-width, zoomed sprite on hex-grid backdrop */}
@@ -124,9 +126,11 @@ export function UnitHero({
         </div>
 
         {/* Tier badge — top-right */}
-        <div className="absolute top-3 right-3">
-          <TierBadge tier={tier} size="md" />
-        </div>
+        {!hideTier && (
+          <div className="absolute top-3 right-3">
+            <TierBadge tier={tier} size="md" />
+          </div>
+        )}
 
         {/* Bottom name overlay */}
         <div
@@ -159,7 +163,7 @@ export function UnitHero({
 
         <div className="flex flex-wrap gap-2 mb-3">
           <Chip accent>🎁 {obtainabilityLabel}</Chip>
-          <Chip>📊 {tier} · 1–12</Chip>
+          {!hideTier && <Chip>📊 {tier} · 1–12</Chip>}
           {factionScorpion ? (
             <Chip scorpion>🦂 {factionLabel}</Chip>
           ) : (

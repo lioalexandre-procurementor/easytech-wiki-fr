@@ -1,3 +1,5 @@
+import { getReference, getReferences, referenceMetadata } from "@/lib/wc4-coverage";
+import { ReferencePage } from "@/components/Wc4Coverage";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Link } from "@/src/i18n/navigation";
@@ -30,13 +32,15 @@ import { locales } from "@/src/i18n/config";
 import ReportMistakeLink from "@/components/ReportMistakeLink";
 
 export function generateStaticParams() {
-  const slugs = getAllSlugs();
+  const slugs = [...new Set([...getAllSlugs(), ...getReferences("unit").map(r => r.slug)])];
   return locales.flatMap((locale) =>
     slugs.map((slug) => ({ locale, slug }))
   );
 }
 
 export async function generateMetadata({ params }: { params: { locale: string; slug: string } }): Promise<Metadata> {
+  const reference = getReference("unit", params.slug);
+  if (reference) return referenceMetadata(reference, params.locale);
   const u = await loadEliteUnit(params.slug);
   if (!u) return { title: "404" };
   const { locale } = params;
@@ -73,6 +77,8 @@ export default async function UnitPage({ params }: { params: { locale: string; s
   const t = await getTranslations();
   const tL = (fr: string, en: string, de: string): string =>
     params.locale === "fr" ? fr : params.locale === "de" ? de : en;
+  const reference = getReference("unit", params.slug);
+  if (reference) return <ReferencePage entry={reference} locale={params.locale} />;
   const unit = await loadEliteUnit(params.slug);
   if (!unit) notFound();
 
@@ -183,11 +189,15 @@ export default async function UnitPage({ params }: { params: { locale: string; s
                 "Daten werden überprüft"
               )}</strong>{" "}
               —{" "}
-              {tL(
-                "Cette fiche a été publiée dès la sortie du patch d'avril 2026. Seules les valeurs de niveau 1 et les compétences confirmées par captures d'écran en jeu sont fiables. Les niveaux 2 à 12 affichent des valeurs provisoires en attendant la progression complète. Toute erreur repérée peut être signalée via le lien « Signaler une erreur » en bas de page.",
-                "This page was shipped as soon as the April 2026 patch dropped. Only Lv.1 values and perks confirmed from in-game screenshots are reliable. Levels 2–12 show placeholder values pending the full progression capture. Any mistake can be flagged via the \"Report a mistake\" link in the footer.",
-                "Diese Seite wurde direkt mit dem April-2026-Patch veröffentlicht. Nur die Stufe-1-Werte und die durch Screenshots bestätigten Perks sind zuverlässig. Stufen 2–12 zeigen Platzhalterwerte, bis die vollständige Progression erfasst ist. Fehler können über den Link „Fehler melden“ im Footer gemeldet werden."
-              )}
+              {(() => {
+                const lv = unit.knownLevels?.length ? unit.knownLevels.join(", ") : null;
+                const many = (unit.knownLevels?.length ?? 0) > 1;
+                return tL(
+                  `Fiche publiée avant le relevé complet en jeu. Seules les valeurs et compétences citées dans les sources en bas de page sont affichées${lv ? ` (statistiques sourcées ${many ? "aux niveaux" : "au niveau"} ${lv} ; les autres niveaux affichent « ? »)` : ""}. Rien n'est extrapolé. Toute erreur peut être signalée via le lien « Signaler une erreur » en bas de page.`,
+                  `Published before a full in-game capture. Only values and skills cited in the sources at the bottom of the page are shown${lv ? ` (stats sourced at ${many ? "levels" : "level"} ${lv}; other levels show "?")` : ""}. Nothing is extrapolated. Any mistake can be flagged via the "Report a mistake" link in the footer.`,
+                  `Vor der vollständigen Erfassung im Spiel veröffentlicht. Angezeigt werden nur Werte und Fähigkeiten, die in den Quellen unten belegt sind${lv ? ` (Werte belegt für ${many ? "Stufen" : "Stufe"} ${lv}; andere Stufen zeigen „?“)` : ""}. Nichts wird hochgerechnet. Fehler können über den Link „Fehler melden“ im Footer gemeldet werden.`
+                );
+              })()}
             </div>
           )}
 
@@ -413,11 +423,12 @@ export default async function UnitPage({ params }: { params: { locale: string; s
 
 function obtainabilityLabel(o: string, locale: string): string {
   const labels: Record<string, Record<string, string>> = {
-    fr: { free: "Gratuite", event: "Événement", shop: "Boutique", premium: "Premium" },
-    en: { free: "Free", event: "Event", shop: "Shop", premium: "Premium" },
-    de: { free: "Kostenlos", event: "Event", shop: "Shop", premium: "Premium" },
+    fr: { free: "Gratuite", event: "Événement", shop: "Boutique", premium: "Premium", unrecruitable: "Non recrutable" },
+    en: { free: "Free", event: "Event", shop: "Shop", premium: "Premium", unrecruitable: "Not recruitable" },
+    de: { free: "Kostenlos", event: "Event", shop: "Shop", premium: "Premium", unrecruitable: "Nicht rekrutierbar" },
   };
   const dict = labels[locale] ?? labels.en;
+  if (o === "unrecruitable") return dict.unrecruitable;
   if (o === "free") return dict.free;
   if (o === "event") return dict.event;
   if (o === "shop") return dict.shop;

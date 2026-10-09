@@ -1,3 +1,5 @@
+import { getReferences } from "@/lib/wc4-coverage";
+import { ReferenceList } from "@/components/Wc4Coverage";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
@@ -47,6 +49,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
   const t = await getTranslations();
   const CAT = getCategoryMeta(params.locale);
   const all = getUnitsByFaction("standard");
+  const total = all.length + getReferences("unit").filter(r => !all.some(u => u.slug === r.slug)).length;
 
   return (
     <>
@@ -63,7 +66,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
         <aside className="bg-panel border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
           <h4 className="text-gold2 text-xs uppercase tracking-widest mb-1.5 border-b border-border pb-1.5">{t("nav.categoriesHeading")}</h4>
           <ul className="list-none">
-            <li><a href="#all" className="block px-2 py-1 rounded text-sm text-gold2 font-bold no-underline">{t("elitesPage.allLabel")} ({all.length})</a></li>
+            <li><a href="#all" className="block px-2 py-1 rounded text-sm text-gold2 font-bold no-underline">{t("elitesPage.allLabel")} ({total})</a></li>
             {ORDER.map(c => (
               <li key={c}><a href={`#${c}`} className="block px-2 py-1 rounded text-sm text-dim no-underline hover:text-gold2">
                 {CAT[c].icon} {CAT[c].plural} ({all.filter(u => u.category === c).length})
@@ -85,7 +88,7 @@ export default async function ElitesList({ params }: { params: { locale: string 
             title={t("elitesPage.h1")}
             subtitle={
               <>
-                <b className="text-ink">{t("elitesPage.introBold", { count: all.length })}</b>{" "}
+                <b className="text-ink">{t("elitesPage.introBold", { count: total })}</b>{" "}
                 {t("elitesPage.intro")}
               </>
             }
@@ -103,8 +106,26 @@ export default async function ElitesList({ params }: { params: { locale: string 
             </div>
           </PageHero>
 
+          <ReferenceList kind="unit" locale={params.locale} />
+          {(() => {
+            // Units with a detail page that is only partly sourced: listed apart,
+            // never ranked or mixed into the category sections below.
+            const partial = all.filter(u => u.preliminary && !getReferences("unit").some(r => r.slug === u.slug));
+            if (partial.length === 0) return null;
+            const heading = params.locale === "fr" ? "Fiches partielles (sources citées, valeurs incomplètes)"
+              : params.locale === "de" ? "Teilweise belegte Seiten (Quellen angegeben, Werte unvollständig)"
+              : "Partial pages (sources cited, values incomplete)";
+            return (
+              <section id="partial" className="mb-8">
+                <h2 className="text-xl font-bold text-gold2 mb-3">{heading}</h2>
+                <div className="grid gap-2.5">
+                  {partial.map(u => <UnitRow key={u.slug} unit={u} locale={params.locale} game="wc4"/>)}
+                </div>
+              </section>
+            );
+          })()}
           {ORDER.map(cat => {
-            const units = all.filter(u => u.category === cat);
+            const units = all.filter(u => u.category === cat && !u.preliminary);
             if (units.length === 0) return null;
             const meta = CAT[cat];
             return (

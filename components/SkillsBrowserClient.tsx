@@ -203,7 +203,9 @@ function SkillCard({
             </div>
           )}
           <div className="text-muted text-[10px] uppercase tracking-widest">
-            L1 → L{skill.maxLevel}
+            {skill.detailsPending
+              ? (isFr ? "Détails à vérifier" : isDe ? "Details noch zu prüfen" : "Details awaiting verification")
+              : <>L1 → L{skill.maxLevel}</>}
             {signature && (
               <span className="text-red-300 ml-1">· {signatureLabel}</span>
             )}

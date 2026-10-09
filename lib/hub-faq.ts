@@ -24,28 +24,61 @@ type LocalizedFaqs = Record<"fr" | "en" | "de", FaqItem[]>;
 
 const FAQS: Record<Game, LocalizedFaqs> = {
   wc4: {
-    fr: [
-      { q: "Qu'est-ce que World Conqueror 4 ?", a: "World Conqueror 4 (WC4) est un jeu de stratégie au tour par tour signé EasyTech sur la Seconde Guerre mondiale, avec campagnes 1939-1945, généraux recrutables et unités d'élite." },
-      { q: "Qui sont les meilleurs généraux de WC4 ?", a: "Le tier S communautaire regroupe Manstein, Guderian, Rokossovsky, Yamamoto et quelques autres profils selon l'arme. Le podium en haut de page est alimenté en direct par le vote des joueurs." },
-      { q: "Quelles sont les unités d'élite les plus fortes ?", a: "Côté infanterie : Delta Force (anti-général). Côté artillerie : Schwerer Gustav et M142 HIMARS. Côté blindé : König's Tiger et IS-3. Côté marine : Bismarck et Richelieu. Côté air : B-52 Stratofortress et Mi-24 Hind." },
-      { q: "Ce wiki est-il officiel ?", a: "Non. EasyTech Wiki est une base communautaire indépendante construite à partir des ressources du jeu. EasyTech n'est pas affilié à ce wiki." },
-      { q: "À quelle fréquence le contenu est-il mis à jour ?", a: "Après chaque patch majeur du jeu, généralement sous une semaine. Consultez la section « Mises à jour » pour l'historique complet des patchs couverts." },
-    ],
-    en: [
-      { q: "What is World Conqueror 4?", a: "World Conqueror 4 (WC4) is a turn-based strategy game from EasyTech set in World War II, with 1939–1945 campaigns, recruitable generals and elite units." },
-      { q: "Who are the best generals in WC4?", a: "The community-voted S tier includes Manstein, Guderian, Rokossovsky, Yamamoto and a handful of others depending on branch. The live podium at the top of the page is driven by player votes." },
-      { q: "What are the strongest elite units?", a: "Infantry: Delta Force (anti-general). Artillery: Schwerer Gustav and M142 HIMARS. Armor: King Tiger and IS-3. Navy: Bismarck and Richelieu. Air: B-52 Stratofortress and Mi-24 Hind." },
-      { q: "Is this wiki official?", a: "No. EasyTech Wiki is an independent community database built from in-game resources. EasyTech is not affiliated with this wiki." },
-      { q: "How often is the content updated?", a: "After each major game patch, usually within a week. Check the Updates section for the full history of patches covered." },
-    ],
-    de: [
-      { q: "Was ist World Conqueror 4?", a: "World Conqueror 4 (WC4) ist ein rundenbasiertes Strategiespiel von EasyTech über den Zweiten Weltkrieg, mit Kampagnen von 1939 bis 1945, rekrutierbaren Generälen und Elite-Einheiten." },
-      { q: "Wer sind die besten Generäle in WC4?", a: "Das von der Community gewählte S-Tier umfasst Manstein, Guderian, Rokossovsky, Yamamoto und einige weitere, je nach Waffengattung. Das Live-Podium oben auf der Seite wird durch Spielerabstimmungen gespeist." },
-      { q: "Was sind die stärksten Elite-Einheiten?", a: "Infanterie: Delta Force (Anti-General). Artillerie: Schwerer Gustav und M142 HIMARS. Panzer: Königstiger und IS-3. Marine: Bismarck und Richelieu. Luft: B-52 Stratofortress und Mi-24 Hind." },
-      { q: "Ist dieses Wiki offiziell?", a: "Nein. EasyTech Wiki ist eine unabhängige Community-Datenbank, die aus Spielressourcen aufgebaut ist. EasyTech ist nicht mit diesem Wiki verbunden." },
-      { q: "Wie oft wird der Inhalt aktualisiert?", a: "Nach jedem größeren Spiel-Patch, meist innerhalb einer Woche. Im Bereich „Updates\u201C findest du die vollständige Patch-Historie." },
-    ],
-  },
+  "fr": [
+    {
+      "q": "Quelles versions sont couvertes ?",
+      "a": "Consultez le bandeau des versions et la date de consultation des sources. Les ajouts sont recensés ; leur présence ne signifie pas que toutes les statistiques sont vérifiées."
+    },
+    {
+      "q": "Quels sont les meilleurs généraux ?",
+      "a": "Les préférences communautaires et les classements éditoriaux sont distincts des faits du jeu. Comparez les rôles et votre progression avant d’investir."
+    },
+    {
+      "q": "Comment comparer les nouvelles unités ?",
+      "a": "Les fiches de référence distinguent les ajouts officiels des valeurs à vérifier. Les chiffres provisoires sont masqués dans le comparateur."
+    },
+    {
+      "q": "Ce wiki est-il officiel ?",
+      "a": "Non. EasyTech Wiki est un site communautaire indépendant, non affilié à EasyTech."
+    }
+  ],
+  "en": [
+    {
+      "q": "Which versions are covered?",
+      "a": "Check the version banner and source-check date. Additions are catalogued; their presence does not mean all stats are verified."
+    },
+    {
+      "q": "Who are the best generals?",
+      "a": "Community preferences and editorial rankings are separate from game facts. Compare roles and your progression before investing."
+    },
+    {
+      "q": "How can I compare new units?",
+      "a": "Reference pages distinguish official additions from values awaiting verification. Provisional numbers are hidden in the comparator."
+    },
+    {
+      "q": "Is this wiki official?",
+      "a": "No. EasyTech Wiki is an independent community site, not affiliated with EasyTech."
+    }
+  ],
+  "de": [
+    {
+      "q": "Welche Versionen sind abgedeckt?",
+      "a": "Versionsanzeige und Datum der Quellenprüfung beachten. Ergänzungen sind erfasst; das bedeutet nicht, dass alle Werte geprüft sind."
+    },
+    {
+      "q": "Wer sind die besten Generäle?",
+      "a": "Community-Vorlieben und redaktionelle Ranglisten sind von Spielfakten zu unterscheiden. Rollen und eigenen Fortschritt vor einer Investition vergleichen."
+    },
+    {
+      "q": "Wie vergleiche ich neue Einheiten?",
+      "a": "Referenzseiten trennen offizielle Ergänzungen von ungeprüften Werten. Vorläufige Zahlen werden im Vergleich ausgeblendet."
+    },
+    {
+      "q": "Ist dieses Wiki offiziell?",
+      "a": "Nein. EasyTech Wiki ist eine unabhängige Community-Website ohne Verbindung zu EasyTech."
+    }
+  ]
+},
   gcr: {
     fr: [
       { q: "Qu'est-ce que Great Conqueror: Rome ?", a: "Great Conqueror: Rome (GCR) est le spin-off d'EasyTech sur l'Antiquité : campagnes romaines, généraux antiques, légions et factions barbares." },

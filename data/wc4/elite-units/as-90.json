@@ -1,0 +1,241 @@
+{
+  "slug": "as-90",
+  "name": "AS-90",
+  "nameEn": "AS-90 Howitzer",
+  "category": "artillery",
+  "faction": "standard",
+  "country": "GB",
+  "countryName": "Royaume-Uni",
+  "tier": "A",
+  "obtainability": "event",
+  "preliminary": true,
+  "knownLevels": [
+    12
+  ],
+  "shortDesc": "Obusier automoteur britannique de 155 mm ajouté en septembre 2026 : partage de vision, attaques supplémentaires et bonus à longue portée.",
+  "shortDescEn": "British 155 mm self-propelled howitzer added in September 2026: shared vision, extra attacks and a long-range damage bonus.",
+  "shortDescDe": "Britische 155-mm-Panzerhaubitze, im September 2026 hinzugefügt: geteilte Sicht, Zusatzangriffe und Fernkampfbonus.",
+  "longDesc": "L'AS-90 est l'unité d'élite d'artillerie ajoutée par la mise à jour de septembre 2026 (iOS 3.5.3). La présentation officielle d'EasyTech le décrit comme le principal obusier automoteur de l'armée britannique, armé d'un obusier de 155 mm, capable de tirs indirects rapides et précis sur des cibles hors de vue grâce aux coordonnées fournies par les unités alliées. Il se recrute dans une usine de niveau 2. Sa compétence signature, Partage de vision, lui donne la vision des unités terrestres alliées à 2 cases lorsqu'il attaque et lui accorde des attaques supplémentaires chaque tour : 1 au niveau 1 selon NamuWiki, 3 au niveau 12 selon l'aperçu officiel, qui ajoute l'ignorance de la réduction de dégâts liée au terrain, des obus fumigènes et des effets d'esquive. Les statistiques du niveau 12 (131 / 35 / 675 PV, mouvement 18, portée 3) proviennent de cet aperçu officiel, publié avant la sortie et susceptible d'évoluer. Les niveaux 1 à 11 n'ont pas encore été publiés par une source fiable et ne sont pas estimés ici.",
+  "longDescEn": "The AS-90 is the artillery elite unit added in the September 2026 update (iOS 3.5.3). EasyTech's official presentation describes it as the British Army's main self-propelled howitzer, armed with a 155 mm howitzer and able to deliver fast, accurate indirect fire on targets out of sight using coordinates supplied by friendly units. It is recruited from a level 2 factory. Its signature skill, Sight Sharing, gives it the vision of friendly land units within 2 hexes when it attacks and grants extra attacks each turn: 1 at level 1 according to NamuWiki, 3 at level 12 according to the official preview, which also adds ignoring terrain damage reduction, smoke shells and evasion effects. The level 12 stats (131 / 35 / 675 HP, movement 18, range 3) come from that official preview, published before release and subject to change. Levels 1 to 11 have not yet been published by a reliable source and are not estimated here.",
+  "longDescDe": "Die AS-90 ist die Artillerie-Eliteeinheit aus dem September-Update 2026 (iOS 3.5.3). Laut offizieller EasyTech-Vorstellung ist sie die wichtigste Panzerhaubitze der britischen Armee, mit 155-mm-Haubitze, und kann mithilfe von Zielkoordinaten verbündeter Einheiten schnell und präzise indirekt auf Ziele außer Sicht feuern. Sie wird in einer Fabrik der Stufe 2 rekrutiert. Ihre Kernfähigkeit, Sichtteilung, gibt ihr beim Angriff die Sicht verbündeter Landeinheiten im Umkreis von 2 Feldern und gewährt Zusatzangriffe pro Zug: 1 auf Stufe 1 laut NamuWiki, 3 auf Stufe 12 laut offizieller Vorschau, die zusätzlich Geländeschadensreduktion, Nebelgranaten und Ausweicheffekte ignoriert. Die Werte für Stufe 12 (131 / 35 / 675 TP, Bewegung 18, Reichweite 3) stammen aus dieser vor der Veröffentlichung erschienenen Vorschau und können sich ändern. Stufen 1 bis 11 wurden noch von keiner verlässlichen Quelle veröffentlicht und werden hier nicht geschätzt.",
+  "stats": {
+    "atk": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      131
+    ],
+    "def": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      35
+    ],
+    "hp": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      675
+    ],
+    "mov": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      18
+    ],
+    "rng": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ]
+  },
+  "perks": [
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🔫",
+      "name": "Mitrailleuse",
+      "desc": "Dégâts contre les unités d'infanterie augmentés. NamuWiki indique +35 % / +45 % / +55 % pour cette compétence commune, sans préciser à quel niveau de l'AS-90 chaque valeur s'applique.",
+      "nameEn": "Machine Gun",
+      "descEn": "Increased damage to infantry units. NamuWiki lists +35% / +45% / +55% for this shared skill without stating which AS-90 level each value applies to.",
+      "nameDe": "Maschinengewehr",
+      "descDe": "Erhöhter Schaden gegen Infanterie. NamuWiki nennt +35 % / +45 % / +55 % für diese gemeinsame Fähigkeit, ohne anzugeben, auf welcher AS-90-Stufe welcher Wert gilt.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "⭐",
+      "name": "Puissance de feu",
+      "desc": "Chance que l'ennemi ne puisse pas riposter lors d'une attaque. NamuWiki indique 50 % / 65 % / 80 % pour cette compétence commune, sans préciser la valeur par niveau pour l'AS-90.",
+      "nameEn": "Firepower",
+      "descEn": "Chance that the enemy cannot counter-attack when attacked. NamuWiki lists 50% / 65% / 80% for this shared skill without giving the per-level value for the AS-90.",
+      "nameDe": "Feuerkraft",
+      "descDe": "Chance, dass der Gegner beim Angriff nicht zurückschlagen kann. NamuWiki nennt 50 % / 65 % / 80 % für diese gemeinsame Fähigkeit, ohne den Wert pro Stufe für die AS-90 anzugeben.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "📡",
+      "name": "Partage de vision",
+      "desc": "En attaquant, obtient la vision des unités terrestres alliées dans un rayon de 2 cases (hors véhicules lance-missiles). Peut attaquer 1 fois de plus par tour.",
+      "nameEn": "Sight Sharing",
+      "descEn": "When attacking, gains the vision of friendly land units within 2 hexes (missile vehicles excluded). Can attack 1 extra time per turn.",
+      "nameDe": "Sichtteilung",
+      "descDe": "Erhält beim Angriff die Sicht verbündeter Landeinheiten im Umkreis von 2 Feldern (außer Raketenfahrzeuge). Kann 1 Mal zusätzlich pro Zug angreifen.",
+      "milestone": true
+    },
+    {
+      "lvl": 1,
+      "type": "passive",
+      "icon": "🎯",
+      "name": "Suppression à longue portée",
+      "desc": "Dégâts -40 % en attaque ou riposte contre un ennemi à 1 case ; dégâts +40 % en attaque ou riposte contre les blindés, l'artillerie et les aéroglisseurs à 2 cases ou plus.",
+      "nameEn": "Long-range suppression",
+      "descEn": "Damage -40% when attacking or counter-attacking an enemy at 1 hex; damage +40% when attacking or counter-attacking armour, artillery and hover units at 2 hexes or more.",
+      "nameDe": "Fernunterdrückung",
+      "descDe": "Schaden -40 % bei Angriff oder Gegenangriff auf einen Feind in 1 Feld Entfernung; Schaden +40 % gegen Panzer, Artillerie und Luftkissenfahrzeuge ab 2 Feldern Entfernung.",
+      "milestone": false
+    },
+    {
+      "lvl": 1,
+      "type": "stat",
+      "icon": "💥",
+      "name": "Coup critique",
+      "desc": "Chance de coup critique +10 %.",
+      "nameEn": "Critical attack",
+      "descEn": "Critical hit chance +10%.",
+      "nameDe": "Kritischer Angriff",
+      "descDe": "Chance auf kritische Treffer +10 %.",
+      "milestone": false
+    },
+    {
+      "lvl": 12,
+      "type": "passive",
+      "icon": "📡",
+      "name": "Partage de vision Niv.12",
+      "desc": "En attaquant, obtient la vision des unités terrestres alliées dans un rayon de 2 cases (hors véhicules lance-missiles). Peut attaquer 3 fois de plus par tour. En attaque comme en riposte, ignore la réduction de dégâts due au terrain de la cible, ainsi que les obus fumigènes et les effets d'esquive. (Aperçu officiel avant sortie.)",
+      "nameEn": "Sight Sharing Lv.12",
+      "descEn": "When attacking, gains the vision of friendly land units within 2 hexes (missile vehicles excluded). Can attack 3 extra times per turn. When attacking or counter-attacking, ignores the target's terrain damage reduction, smoke shells and evasion effects. (Official pre-release preview.)",
+      "nameDe": "Sichtteilung Stufe 12",
+      "descDe": "Erhält beim Angriff die Sicht verbündeter Landeinheiten im Umkreis von 2 Feldern (außer Raketenfahrzeuge). Kann 3 Mal zusätzlich pro Zug angreifen. Ignoriert bei Angriff und Gegenangriff die Geländeschadensreduktion des Ziels sowie Nebelgranaten und Ausweicheffekte. (Offizielle Vorschau vor Veröffentlichung.)",
+      "milestone": true
+    }
+  ],
+  "image": {
+    "sprite": "/img/wc4/elites/as-90.webp",
+    "lvl12": null
+  },
+  "recommendedGenerals": [
+    "govorov"
+  ],
+  "levelingPriority": [
+    "Les paliers des niveaux 5 et 9 ne sont pas encore documentés : aucune priorité chiffrée n'est proposée pour l'instant.",
+    "Le niveau 12 est le seul palier publié : Partage de vision passe à 3 attaques supplémentaires par tour et ignore terrain, fumigènes et esquive.",
+    "Suppression à longue portée pénalise le tir à 1 case : gardez l'AS-90 à 2 cases ou plus de ses cibles."
+  ],
+  "faqs": [
+    {
+      "q": "Comment obtenir l'AS-90 dans World Conqueror 4 ?",
+      "a": "Il faut 30 fragments pour le débloquer, comme toute unité d'élite. Le wiki Fandom liste des fragments d'AS-90 parmi les récompenses de l'événement Red Embers (modes normal et difficile) et des événements historiques Bataille de la Bzura et Bataille de Metz. En partie, il se recrute dans une usine de niveau 2 (présentation officielle EasyTech)."
+    },
+    {
+      "q": "Quelles sont les statistiques de l'AS-90 au niveau 12 ?",
+      "a": "D'après l'aperçu officiel publié par EasyTech pour la mise à jour de septembre 2026 : attaque 131, défense 35, mouvement 18, portée 3 et 675 PV. EasyTech précise que le contenu présenté avant la sortie peut encore changer."
+    },
+    {
+      "q": "Pourquoi les niveaux 1 à 11 affichent-ils « ? » ?",
+      "a": "Aucune source fiable n'a encore publié ces valeurs. Plutôt que de les extrapoler, le wiki ne les affiche pas et l'unité est exclue du comparateur chiffré jusqu'à vérification."
+    },
+    {
+      "q": "Quel général associer à l'AS-90 ?",
+      "a": "Le tableau d'entraînement du wiki Fandom désigne l'AS-90 comme la meilleure unité pour Govorov entraîné, et les propres scénarios d'EasyTech (Golfe de Finlande, Moscou dans Red Embers) placent Govorov entraîné sur un AS-90. Il s'agit d'une indication communautaire et d'un choix de scénario ; aucun classement testé n'existe encore."
+    }
+  ],
+  "faqsEn": [
+    {
+      "q": "How do you get the AS-90 in World Conqueror 4?",
+      "a": "Like every elite unit, it takes 30 fragments to unlock. The Fandom wiki lists AS-90 fragments among the rewards of the Red Embers event (normal and hard) and of the Battle of the Bzura and Battle of Metz historical events. In a match it is recruited from a level 2 factory (official EasyTech presentation)."
+    },
+    {
+      "q": "What are the AS-90's level 12 stats?",
+      "a": "According to EasyTech's official preview for the September 2026 update: attack 131, defense 35, movement 18, range 3 and 675 HP. EasyTech notes that content shown before release may still change."
+    },
+    {
+      "q": "Why do levels 1 to 11 show \"?\"",
+      "a": "No reliable source has published those values yet. Rather than extrapolate them, the wiki leaves them blank and keeps the unit out of the numeric comparator until they are verified."
+    },
+    {
+      "q": "Which general suits the AS-90?",
+      "a": "The Fandom wiki's training table names the AS-90 as the best unit for trained Govorov, and EasyTech's own scenarios (Gulf of Finland, Moscow in Red Embers) put trained Govorov on an AS-90. This is a community pointer and a scenario choice; no tested ranking exists yet."
+    }
+  ],
+  "faqsDe": [
+    {
+      "q": "Wie bekommt man die AS-90 in World Conqueror 4?",
+      "a": "Wie jede Eliteeinheit braucht sie 30 Fragmente zum Freischalten. Das Fandom-Wiki führt AS-90-Fragmente unter den Belohnungen des Events Red Embers (normal und schwer) sowie der historischen Events Schlacht an der Bzura und Schlacht um Metz. Im Spiel wird sie in einer Fabrik der Stufe 2 rekrutiert (offizielle EasyTech-Vorstellung)."
+    },
+    {
+      "q": "Welche Werte hat die AS-90 auf Stufe 12?",
+      "a": "Laut offizieller EasyTech-Vorschau zum September-Update 2026: Angriff 131, Verteidigung 35, Bewegung 18, Reichweite 3 und 675 TP. EasyTech weist darauf hin, dass vor der Veröffentlichung gezeigte Inhalte sich noch ändern können."
+    },
+    {
+      "q": "Warum zeigen die Stufen 1 bis 11 „?“",
+      "a": "Keine verlässliche Quelle hat diese Werte bisher veröffentlicht. Statt sie hochzurechnen, lässt das Wiki sie leer und nimmt die Einheit bis zur Prüfung nicht in den Zahlenvergleich auf."
+    },
+    {
+      "q": "Welcher General passt zur AS-90?",
+      "a": "Die Trainingstabelle des Fandom-Wikis nennt die AS-90 als beste Einheit für den trainierten Govorov, und EasyTechs eigene Szenarien (Finnischer Meerbusen, Moskau in Red Embers) setzen den trainierten Govorov auf eine AS-90. Das ist ein Community-Hinweis und eine Szenarioentscheidung; eine getestete Rangliste gibt es noch nicht."
+    }
+  ],
+  "sources": [
+    "https://note.com/easytech_game/n/n81e3ca31df6b",
+    "https://namu.wiki/w/%EC%84%B8%EA%B3%84%20%EC%A0%95%EB%B3%B5%EC%9E%90%204/%EC%97%98%EB%A6%AC%ED%8A%B8%20%EB%B6%80%EB%8C%80",
+    "https://world-conqueror-4.fandom.com/wiki/Training",
+    "https://world-conqueror-4.fandom.com/wiki/Red_Embers",
+    "https://world-conqueror-4.fandom.com/wiki/Battle_of_the_Bzura",
+    "https://world-conqueror-4.fandom.com/wiki/Gulf_of_Finland"
+  ]
+}

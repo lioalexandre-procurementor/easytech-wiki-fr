@@ -179,7 +179,7 @@ export default async function UpdateDetailPage({
         <header className="mb-6">
           <div className="flex flex-wrap items-baseline gap-3 mb-2">
             <span className="text-gold2 font-black uppercase tracking-widest text-xs">
-              {t("updatesPage.versionLabel")} {u.version}
+              {u.platform === "android" ? "Android" : "iOS"} {u.version}
             </span>
             <span className="text-muted text-xs">
               {t("updatesPage.publishedOn")} {u.date}

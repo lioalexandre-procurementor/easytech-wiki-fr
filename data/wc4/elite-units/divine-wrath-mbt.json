@@ -7,20 +7,85 @@
   "country": "XX",
   "countryName": "Empire du Scorpion",
   "tier": "S",
-  "obtainability": "campaign",
+  "obtainability": "unrecruitable",
   "preliminary": true,
-  "shortDesc": "Char d'assaut Scorpion à double tube, le plus puissant tank jamais vu dans le jeu.",
-  "shortDescEn": "Scorpion twin-barrel assault tank, the most powerful tank ever seen in the game.",
-  "shortDescDe": "Scorpion-Kampfwagen mit Zwillingsrohr, der stärkste Panzer im Spiel.",
-  "longDesc": "Le Divine Wrath MBT est une unité blindée d'élite exclusive à l'Empire du Scorpion. Le wiki Fandom indique qu'il ne peut pas être recru, même en jouant pour l'Empire du Scorpion : on l'obtient uniquement en l'affrontant dans le 1960 Challenge Conquest. Sa mécanique distinctive est Divine Wrath Punishment : lors d'une attaque, les deux canons tirent chacun un obus, chaque obus touchant la cible de façon indépendante et infligant 80% des dégâts de base par obus. À cela s'ajoutent un soin de 6% des PV en début de tour, une réduction de dégâts de 25% au-dessus de 50% de PV, et un Pulse Shockwave qui peut infliger le chaos pendant deux tours. Le wiki le décrit comme le char le plus puissant de l'histoire du jeu, mais ses statistiques ne sont documentées qu'aux niveaux 5 et 9, sans technologie.",
-  "longDescEn": "The Divine Wrath MBT is an Elite Force armoured unit exclusive to the Scorpion Empire. The Fandom wiki states it cannot be recruited even when playing as the Scorpion Empire: it is only obtained by fighting it in the 1960 Challenge Conquest. Its distinctive mechanic is Divine Wrath Punishment: when attacking, both barrels fire one shell each, each shell hitting the target independently and dealing 80% of base damage per shell. On top of that it restores 6% of max HP at the start of each turn, reduces damage taken by 25% above 50% HP, and has a Pulse Shockwave that can inflict Chaos for two turns. The wiki describes it as the most powerful tank in the game's history, but its stats are only documented at levels 5 and 9, without technology levels.",
-  "longDescDe": "Der Divine Wrath MBT ist eine Elite-Panzereinheit, die ausschließlich dem Scorpion-Imperium gehört. Laut Fandom-Wiki kann sie nicht einmal als Scorpion-Imperium rekrutiert werden: Man erhält sie ausschließlich im Kampf gegen sie im 1960 Challenge Conquest. Ihre Besonderheit ist Divine Wrath Punishment: Beim Angriff feuern beide Rohre je eine Granate, die unabhängig trifft und pro Granate 80% des Basisschadens verursacht. Hinzu kommen 6% PV-Regeneration zu Rundenbeginn, 25% Schadensreduktion über 50% PV und ein Pulse Shockwave, der zwei Runden lang Chaos verursachen kann. Das Wiki bezeichnet ihn als den stärksten Panzer der Spielgeschichte, dokumentiert seine Werte jedoch nur für Stufe 5 und 9 ohne Technologiestufen.",
+  "shortDesc": "Char Scorpion à double canon, non recrutable, affronté dans le défi de conquête 1960.",
+  "shortDescEn": "Twin-barrel Scorpion tank, not recruitable, fought in the 1960 Challenge Conquest.",
+  "shortDescDe": "Scorpion-Panzer mit Doppelrohr, nicht rekrutierbar, Gegner in der Challenge-Eroberung 1960.",
+  "longDesc": "Le Divine Wrath MBT est une unité d'élite blindée exclusive à l'Empire du Scorpion. Selon le wiki Fandom, il ne peut pas être recruté, même en jouant l'Empire du Scorpion : on le rencontre comme adversaire dans le défi de conquête 1960. Sa mécanique distinctive, Châtiment de la colère divine, fait tirer un obus par chacun de ses deux canons à chaque attaque, chaque obus touchant indépendamment pour 80 % des dégâts de base. S'y ajoutent une régénération de 6 % des PV en début de tour, une réduction de 25 % des dégâts subis au-dessus de 50 % de PV et une onde de choc pouvant plonger la cible dans le chaos pendant deux tours. Fandom le présente comme le char le plus puissant de l'histoire du jeu, mais ne documente ses statistiques qu'aux niveaux 5 et 9, relevées sans technologie.",
+  "longDescEn": "The Divine Wrath MBT is an armoured elite unit exclusive to the Scorpion Empire. According to the Fandom wiki it cannot be recruited, even when playing the Scorpion Empire: you meet it as an enemy in the 1960 Challenge Conquest. Its signature mechanic, Divine Wrath Punishment, makes each of its two barrels fire one shell per attack, each shell hitting independently for 80% of base damage. It also restores 6% of max HP at the start of each turn, takes 25% less damage while above 50% HP, and has a shockwave that can throw the target into Chaos for two turns. Fandom calls it the most powerful tank in the game's history but documents its stats only at levels 5 and 9, recorded without technology.",
+  "longDescDe": "Der Divine Wrath MBT ist eine Elite-Panzereinheit, die exklusiv dem Scorpion-Imperium gehört. Laut Fandom-Wiki kann er nicht rekrutiert werden, auch nicht als Scorpion-Imperium: Man trifft ihn als Gegner in der Challenge-Eroberung 1960. Seine Kernmechanik, Göttliche Strafe, lässt beide Rohre pro Angriff je eine Granate abfeuern, die unabhängig mit 80 % des Basisschadens trifft. Dazu kommen 6 % TP-Regeneration zu Zugbeginn, 25 % weniger erlittener Schaden über 50 % TP und eine Schockwelle, die das Ziel zwei Züge lang in Chaos versetzen kann. Fandom bezeichnet ihn als stärksten Panzer der Spielgeschichte, belegt seine Werte aber nur für Stufe 5 und 9, erfasst ohne Technologie.",
   "stats": {
-    "atk": [103, 103, 103, 103, 103, 103, 103, 103, 122, 122, 122, 122],
-    "def": [35, 35, 35, 35, 35, 35, 35, 35, 43, 43, 43, 43],
-    "hp": [675, 675, 675, 675, 675, 675, 675, 675, 775, 775, 775, 775],
-    "mov": [11, 11, 11, 11, 11, 11, 11, 11, 12, 12, 12, 12],
-    "rng": [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+    "atk": [
+      103,
+      103,
+      103,
+      103,
+      103,
+      103,
+      103,
+      103,
+      122,
+      122,
+      122,
+      122
+    ],
+    "def": [
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      35,
+      43,
+      43,
+      43,
+      43
+    ],
+    "hp": [
+      675,
+      675,
+      675,
+      675,
+      675,
+      675,
+      675,
+      675,
+      775,
+      775,
+      775,
+      775
+    ],
+    "mov": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      12,
+      12,
+      12,
+      12
+    ],
+    "rng": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
   },
   "perks": [
     {
@@ -64,11 +129,11 @@
       "type": "passive",
       "icon": "🔧",
       "name": "Nano-restauration",
-      "desc": "Au début de chaque tour, restaure 6% des PV maximum. Lorsque les PV sont au-dessus de 50%, les dégâts reçus sont réduits de 25%. Valeurs improvees indiquées pour le niveau 9 par le wiki mais non confirmées.",
+      "desc": "Au début de chaque tour, restaure 6% des PV maximum. Lorsque les PV sont au-dessus de 50%, les dégâts reçus sont réduits de 25%. Le wiki indique des valeurs améliorées au niveau 9 (10 % de PV, 35 % de réduction), suivies d'un point d'interrogation : elles ne sont pas confirmées.",
       "nameEn": "Nano-Restoration",
-      "descEn": "At the start of each turn, restore 6% of maximum HP. When HP is above 50%, damage received is reduced by 25%. Improved values are noted by the wiki for level 9 but are not confirmed.",
+      "descEn": "At the start of each turn, restore 6% of maximum HP. When HP is above 50%, damage received is reduced by 25%. The wiki notes improved level 9 values (10% HP, 35% reduction) followed by a question mark: they are not confirmed.",
       "nameDe": "Nano-Regeneration",
-      "descDe": "Zu Rundenbeginn werden 6% der maximalen HP wiederhergestellt. Über 50% HP werden eingehende Schäden um 25% reduziert. Verbesserte Werte für Stufe 9 sind im Wiki vermerkt, aber nicht bestätigt.",
+      "descDe": "Zu Rundenbeginn werden 6% der maximalen HP wiederhergestellt. Über 50% HP werden eingehende Schäden um 25% reduziert. Das Wiki nennt verbesserte Werte für Stufe 9 (10 % TP, 35 % Reduktion) mit Fragezeichen: Sie sind nicht bestätigt.",
       "milestone": false
     },
     {
@@ -80,7 +145,7 @@
       "nameEn": "Pulse Shockwave",
       "descEn": "When attacking or counterattacking, there is a 10% chance to cause the target into Chaos for 2 turns. A 15% value is noted by the wiki for level 9 but is not confirmed.",
       "nameDe": "Puls-Schockwelle",
-      "descDe": "Beim Angriff oder Gegenanggriff besteht eine 10%ige Chance, das Ziel 2 Züge lang in Chaos zu versetzen. Ein Wert von 15% ist im Wiki für Stufe 9 vermerkt, aber nicht bestätigt.",
+      "descDe": "Beim Angriff oder Gegenangriff besteht eine 10%ige Chance, das Ziel 2 Züge lang in Chaos zu versetzen. Ein Wert von 15% ist im Wiki für Stufe 9 vermerkt, aber nicht bestätigt.",
       "milestone": false
     },
     {
@@ -102,54 +167,58 @@
   },
   "recommendedGenerals": [],
   "levelingPriority": [
-    "Niveau de déblocage des perks non documenté par le wiki : les perks listés sont tous sans seuil de niveau",
-    "Ne pas tirer de conclusion sur l'utilité de ce char en dehors du 1960 Challenge Conquest : il n'est pas recruable",
-    "Si utilisé en combat contre ce char, viser le niveau 9 (122/43/775) qui est le seul palier documenté au-delà du niveau 5"
+    "Unité non recrutable : aucun investissement possible, les conseils portent sur la façon de l'affronter.",
+    "Niveau 9 documenté par Fandom : 122 d'attaque, 43 de défense, 775 PV, mouvement 12, portée 2 (sans technologie).",
+    "Ses deux obus sont résolus séparément : les effets qui réduisent un coup reçu s'appliquent à chaque obus."
   ],
   "faqs": [
     {
       "q": "Peut-on recruter le Divine Wrath MBT ?",
-      "a": "Non. Le wiki Fandom indique explicitement que l'unité ne peut pas être recru, même en jouant pour l'Empire du Scorpion. Elle apparaît dans le 1960 Challenge Conquest."
+      "a": "Non. Le wiki Fandom indique qu'il ne peut pas être recruté, même en jouant l'Empire du Scorpion. On l'affronte dans le défi de conquête 1960."
     },
     {
-      "q": "Pourquoi les statistiques ne sont-elles documentées qu'aux niveaux 5 et 9 ?",
-      "a": "Le wiki Fandom ne publie que ces deux paliers, relevés sans technologie. Les valeurs des autres niveaux restent inconnues et ne doivent pas être estimées. Le tableau de ce site répète volontairement les valeurs connues."
+      "q": "Pourquoi seuls les niveaux 5 et 9 affichent-ils des statistiques ?",
+      "a": "Fandom ne publie que ces deux paliers, relevés sans technologie. Les autres niveaux affichent « ? » : le wiki ne les estime pas et l'unité reste hors du comparateur chiffré."
     },
     {
-      "q": "Que fait exactement Divine Wrath Punishment ?",
-      "a": "Lors d'une attaque, les deux canons tirent chacun un obus. Chaque obus touche la cible indépendamment et infligent 80% des dégâts de base. Cela double potentiellement les dégâts mais chaque obus est treatable indépendamment par les parades de la cible."
+      "q": "Que fait exactement Châtiment de la colère divine ?",
+      "a": "À chaque attaque, les deux canons tirent un obus chacun. Chaque obus touche indépendamment pour 80 % des dégâts de base, soit jusqu'à 160 % au total si les deux portent. Fandom mentionne 90 % au niveau 9, avec un point d'interrogation."
     }
   ],
   "faqsEn": [
     {
       "q": "Can the Divine Wrath MBT be recruited?",
-      "a": "No. The Fandom wiki explicitly states the unit cannot be recruited even when playing as the Scorpion Empire. It appears in the 1960 Challenge Conquest."
+      "a": "No. The Fandom wiki states it cannot be recruited, even when playing the Scorpion Empire. You fight it in the 1960 Challenge Conquest."
     },
     {
-      "q": "Why are stats only documented at levels 5 and 9?",
-      "a": "The Fandom wiki only publishes those two data points, recorded without technology. Values for the other levels remain unknown and should not be estimated. This site's table deliberately repeats the known values."
+      "q": "Why do only levels 5 and 9 show stats?",
+      "a": "Fandom only publishes those two levels, recorded without technology. Other levels show \"?\": the wiki does not estimate them and the unit stays out of the numeric comparator."
     },
     {
-      "q": "What does Divine Wrath Punishment do exactly?",
-      "a": "When attacking, both barrels fire one shell each. Each shell hits the target independently and deals 80% of base damage. This can effectively double damage, but each shell is handled independently by the target's defences."
+      "q": "What exactly does Divine Wrath Punishment do?",
+      "a": "On each attack, both barrels fire one shell. Each shell hits independently for 80% of base damage, up to 160% in total when both land. Fandom mentions 90% at level 9, with a question mark."
     }
   ],
   "faqsDe": [
     {
-      "q": "Kann der Divine Wrath MBT rekrutiert werden?",
-      "a": "Nein. Laut Fandom-Wiki kann die Einheit nicht einmal als Scorpion-Imperium rekrutiert werden. Sie erscheint im 1960 Challenge Conquest."
+      "q": "Kann man den Divine Wrath MBT rekrutieren?",
+      "a": "Nein. Laut Fandom-Wiki ist er nicht rekrutierbar, auch nicht als Scorpion-Imperium. Man bekämpft ihn in der Challenge-Eroberung 1960."
     },
     {
-      "q": "Warum sind Werte nur für Stufe 5 und 9 dokumentiert?",
-      "a": "Das Fandom-Wiki veröffentlicht nur diese beiden Messpunkte, ohne Technologiestufen. Werte für die übrigen Stufen bleiben unbekannt und dürfen nicht geschätzt werden. Die Tabelle dieser Seite wiederholt daher bewusst die bekannten Werte."
+      "q": "Warum zeigen nur Stufe 5 und 9 Werte?",
+      "a": "Fandom veröffentlicht nur diese beiden Stufen, erfasst ohne Technologie. Andere Stufen zeigen „?“: Das Wiki schätzt sie nicht, und die Einheit bleibt aus dem Zahlenvergleich."
     },
     {
       "q": "Was genau bewirkt Göttliche Strafe?",
-      "a": "Beim Angriff feuern beide Rohre je eine Granate. Jede Granate trifft unabhängig und verursacht 80% des Basisschadens. Dadurch verdoppelt sich der Schaden potenziell, jede Granate wird aber einzeln von der Verteidigung behandelt."
+      "a": "Bei jedem Angriff feuern beide Rohre je eine Granate. Jede trifft unabhängig mit 80 % des Basisschadens, zusammen bis zu 160 %, wenn beide treffen. Fandom nennt 90 % auf Stufe 9, mit Fragezeichen."
     }
   ],
   "sources": [
     "https://world-conqueror-4.fandom.com/wiki/Divine_Wrath_MBT",
     "https://world-conqueror-4.fandom.com/wiki/Elite_Force"
+  ],
+  "knownLevels": [
+    5,
+    9
   ]
 }

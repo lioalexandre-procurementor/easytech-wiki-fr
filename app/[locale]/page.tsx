@@ -1,3 +1,4 @@
+import { getReferences } from "@/lib/wc4-coverage";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
@@ -64,6 +65,8 @@ export default async function Home({ params }: { params: { locale: string } }) {
   const updates = getAllUpdates().slice(0, 2);
   const eliteUnits = getAllEliteUnits();
   const generals = getAllGenerals();
+  const wc4UnitCount = eliteUnits.length + getReferences("unit").filter(r => !eliteUnits.some(u => u.slug === r.slug)).length;
+  const wc4GeneralCount = generals.length + getReferences("general").length;
   const techCount = getAllTechSlugs().length;
 
   const eliteUnitsGcr = getAllEliteUnitsGcr();
@@ -95,9 +98,9 @@ export default async function Home({ params }: { params: { locale: string } }) {
   }).filter((p): p is HeroPortrait => p !== null);
 
   const totalUnits =
-    eliteUnits.length + eliteUnitsGcr.length + eliteUnitsEw6.length;
+    wc4UnitCount + eliteUnitsGcr.length + eliteUnitsEw6.length;
   const totalGenerals =
-    generals.length + generalsGcr.length + generalsEw6.length;
+    wc4GeneralCount + generalsGcr.length + generalsEw6.length;
 
   const stats: { value: number; label: string }[] = [
     { value: totalGenerals, label: t("home.statsGenerals") },
@@ -112,7 +115,7 @@ export default async function Home({ params }: { params: { locale: string } }) {
       slug: "world-conqueror-4",
       name: "World Conqueror 4",
       era: "1939 · 1945",
-      sub: `${eliteUnits.length} ${t("home.statsEliteUnits")} · ${generals.length} ${t("home.statsGenerals")}`,
+      sub: `${wc4UnitCount} ${t("home.statsEliteUnits")} · ${wc4GeneralCount} ${t("home.statsGenerals")}`,
       status: "live" as const,
     },
     {

@@ -22,31 +22,19 @@
     "de": "WC4 Stadtverteidigung — Top 8 Generäle nach Stadttyp"
   },
   "description": {
-    "fr": "Les 8 meilleurs généraux de défense de ville dans WC4 : Rundstedt, Mannerheim, Zhukov, Chuikov... Avec composition de garnison et type de ville optimal.",
-    "en": "The 8 best WC4 city defense generals: Rundstedt, Mannerheim, Zhukov, Chuikov... with garrison composition and optimal city type.",
-    "de": "Die 8 besten WC4-Stadtverteidigungs-Generäle: Rundstedt, Mannerheim, Schukow, Tschuikow... mit Garnisons-Zusammenstellung und optimalem Stadttyp."
+    "fr": "Guide historique : recommandations à revalider sur la version actuelle.",
+    "en": "Legacy guide: recommendations require review against the current version.",
+    "de": "Älterer Guide: Empfehlungen müssen für die aktuelle Version erneut geprüft werden."
   },
   "tldr": {
     "fr": [
-      "La défense de ville n'utilise pas les mêmes généraux que l'offensive.",
-      "Rundstedt, Mannerheim, Zhukov et Chuikov sont les 4 piliers à avoir.",
-      "Une bonne garnison = 3 à 5 unités + général avec skill urbain + bunker niveau 3.",
-      "Les généraux blindés purs (Patton, Guderian) sont inadaptés — 40 % de stats perdues.",
-      "Ne laissez jamais une ville clé avec 1 ou 2 unités — elle tombe en 2 tours."
+      "Guide historique : recommandations à revalider sur la version actuelle."
     ],
     "en": [
-      "City defense does not use the same generals as offense.",
-      "Rundstedt, Mannerheim, Zhukov and Chuikov are the 4 pillars to own.",
-      "A good garrison = 3–5 units + general with urban skill + level 3 bunker.",
-      "Pure armor generals (Patton, Guderian) are unsuited — 40 % stats wasted.",
-      "Never leave a key city with 1 or 2 units — it falls in 2 turns."
+      "Legacy guide: recommendations require review against the current version."
     ],
     "de": [
-      "Stadtverteidigung nutzt nicht dieselben Generäle wie Offensive.",
-      "Rundstedt, Mannerheim, Schukow und Tschuikow sind die 4 zu besitzenden Säulen.",
-      "Gute Garnison = 3–5 Einheiten + General mit städtischem Skill + Level-3-Bunker.",
-      "Reine Panzer-Generäle (Patton, Guderian) sind ungeeignet — 40 % Stats verschwendet.",
-      "Lass nie eine Schlüsselstadt mit 1–2 Einheiten — sie fällt in 2 Zügen."
+      "Älterer Guide: Empfehlungen müssen für die aktuelle Version erneut geprüft werden."
     ]
   },
   "body": {

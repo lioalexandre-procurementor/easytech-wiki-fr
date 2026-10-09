@@ -13,17 +13,19 @@ import type { ComparableRow, UnitData } from "@/lib/types";
 
 function unitToRow(u: UnitData): ComparableRow {
   const lastIdx = Math.max(0, u.stats.atk.length - 1);
+  // Pending units and unsourced max-level values never enter a comparison.
+  const hidden = u.preliminary || (u.knownLevels !== undefined && !u.knownLevels.includes(lastIdx + 1));
   return {
     id: u.slug,
     name: u.nameEn || u.name,
     nameFr: u.name,
     category: u.category,
     stats: {
-      atk: u.stats.atk[lastIdx] ?? null,
-      def: u.stats.def[lastIdx] ?? null,
-      hp: u.stats.hp[lastIdx] ?? null,
-      mov: u.stats.mov[lastIdx] ?? null,
-      rng: u.stats.rng[lastIdx] ?? null,
+      atk: hidden ? null : u.stats.atk[lastIdx] ?? null,
+      def: hidden ? null : u.stats.def[lastIdx] ?? null,
+      hp: hidden ? null : u.stats.hp[lastIdx] ?? null,
+      mov: hidden ? null : u.stats.mov[lastIdx] ?? null,
+      rng: hidden ? null : u.stats.rng[lastIdx] ?? null,
     },
     href: {
       fr: `/world-conqueror-4/unites-elite/${u.slug}`,
@@ -123,6 +125,7 @@ export default async function UnitMatchupPage({
           <h1 className="text-3xl md:text-4xl font-extrabold text-gold2 mb-2">
             {aName} <span className="text-muted mx-2">vs</span> {bName}
           </h1>
+          <p className="text-amber-200 text-sm mb-3">{locale === "fr" ? "Les valeurs provisoires sont masquées et exclues des comparaisons chiffrées." : locale === "de" ? "Vorläufige Werte sind ausgeblendet und von Zahlenvergleichen ausgeschlossen." : "Provisional values are hidden and excluded from numerical comparisons."}</p>
           <p className="text-dim text-base max-w-3xl leading-relaxed">
             {t("comparatorPage.matchupDescription", { a: aName, b: bName })}
           </p>

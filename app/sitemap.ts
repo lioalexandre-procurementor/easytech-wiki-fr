@@ -1,3 +1,4 @@
+import { getReferences, referencePath } from "@/lib/wc4-coverage";
 import type { MetadataRoute } from "next";
 import fs from "node:fs";
 import path from "node:path";
@@ -325,6 +326,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
         alternates: sitemapAlternates(pair),
       });
+    }
+  }
+
+  for (const kind of ["unit", "general", "formation", "training"] as const) {
+    for (const reference of getReferences(kind)) {
+      const pair = { fr: referencePath(reference, "fr"), en: referencePath(reference, "en"), de: referencePath(reference, "de") };
+      for (const locale of locales) {
+        const url = urlFor(locale, pair);
+        if (!entries.some(entry => entry.url === url)) entries.push({ url, lastModified: new Date(reference.evidence.lastVerifiedAt), changeFrequency: "monthly", priority: 0.6, alternates: sitemapAlternates(pair) });
+      }
     }
   }
 
@@ -663,7 +674,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  return entries;
+  return [...new Map(entries.map(entry => [entry.url, entry])).values()];
 }
 
 // Suppress unused-import warning when BASE_URL is not referenced directly here

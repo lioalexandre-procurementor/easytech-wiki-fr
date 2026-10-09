@@ -1,3 +1,4 @@
+import { getReferences, referencePath } from "@/lib/wc4-coverage";
 import { notFound } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { TopBar } from "@/components/TopBar";
@@ -53,17 +54,19 @@ export async function generateMetadata({
 
 function unitToRow(u: UnitData, _locale: Locale): ComparableRow {
   const lastIdx = Math.max(0, u.stats.atk.length - 1);
+  // Pending units and unsourced max-level values never enter a comparison.
+  const hidden = u.preliminary || (u.knownLevels !== undefined && !u.knownLevels.includes(lastIdx + 1));
   return {
     id: u.slug,
     name: u.nameEn || u.name,
     nameFr: u.name,
     category: u.category,
     stats: {
-      atk: u.stats.atk[lastIdx] ?? null,
-      def: u.stats.def[lastIdx] ?? null,
-      hp: u.stats.hp[lastIdx] ?? null,
-      mov: u.stats.mov[lastIdx] ?? null,
-      rng: u.stats.rng[lastIdx] ?? null,
+      atk: hidden ? null : u.stats.atk[lastIdx] ?? null,
+      def: hidden ? null : u.stats.def[lastIdx] ?? null,
+      hp: hidden ? null : u.stats.hp[lastIdx] ?? null,
+      mov: hidden ? null : u.stats.mov[lastIdx] ?? null,
+      rng: hidden ? null : u.stats.rng[lastIdx] ?? null,
     },
     href: {
       fr: `/world-conqueror-4/unites-elite/${u.slug}`,
@@ -86,6 +89,11 @@ export default async function UnitComparatorPage({
   const loc = locale as Locale;
   const units = getAllEliteUnits();
   const allRows = units.map((u) => unitToRow(u, loc));
+  for (const reference of getReferences("unit").filter(r => !units.some(u => u.slug === r.slug))) {
+    allRows.push({ id: reference.slug, name: reference.name.en, nameFr: reference.name.fr, category: reference.category,
+      stats: { atk: null, def: null, hp: null, mov: null, rng: null },
+      href: { fr: referencePath(reference, "fr"), en: referencePath(reference, "en"), de: referencePath(reference, "de") } });
+  }
 
   const picks: string[] = [];
   for (const k of ["left", "right", "third", "fourth"] as const) {
@@ -116,6 +124,7 @@ export default async function UnitComparatorPage({
           <h1 className="text-3xl md:text-4xl font-extrabold text-gold2 mb-2">
             {t("comparatorPage.unitsTitle")}
           </h1>
+          <p className="text-amber-200 text-sm mb-3">{locale === "fr" ? "Les valeurs provisoires sont masquées et exclues des comparaisons chiffrées." : locale === "de" ? "Vorläufige Werte sind ausgeblendet und von Zahlenvergleichen ausgeschlossen." : "Provisional values are hidden and excluded from numerical comparisons."}</p>
           <p className="text-dim text-base max-w-3xl leading-relaxed">
             {t("comparatorPage.unitsIntro")}
           </p>

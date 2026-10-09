@@ -1,3 +1,4 @@
+import { ReferenceList } from "@/components/Wc4Coverage";
 import type { Metadata } from "next";
 import { unstable_setRequestLocale, getTranslations } from "next-intl/server";
 import { getAllFormations, resolveFormationUnits } from "@/lib/formations";
@@ -98,6 +99,8 @@ export default async function FormationsHubPage({
           <h1 className="text-3xl md:text-4xl font-bold text-gold2 mb-2">{t("h1")}</h1>
           <p className="text-muted text-base leading-relaxed max-w-3xl">{t("intro")}</p>
         </header>
+
+        <ReferenceList kind="formation" locale={locale} />
 
         <FormationsHubClient
           formations={formations}

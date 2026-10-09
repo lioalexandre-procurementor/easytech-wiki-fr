@@ -1,0 +1,61 @@
+{
+  "slug": "battle-of-glory",
+  "category": "systems",
+  "publishedAt": "2026-09-30",
+  "lastReviewed": "2026-09-30",
+  "readingTimeMinutes": 2,
+  "tags": [
+    "WC4",
+    "2026"
+  ],
+  "related": [
+    "september-2026-update",
+    "events-2026"
+  ],
+  "byline": "EasyTech Wiki",
+  "sources": [
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+    "https://note.com/easytech_game/n/n81e3ca31df6b"
+  ],
+  "title": {
+    "fr": "WC4 — Battle of Glory",
+    "en": "WC4 — Battle of Glory",
+    "de": "WC4 — Battle of Glory"
+  },
+  "description": {
+    "fr": "Le module de juin et ses cinq ajouts de septembre.",
+    "en": "The June module and its five September additions.",
+    "de": "Das Juni-Modul und seine fünf September-Ergänzungen."
+  },
+  "tldr": {
+    "fr": [
+      "Le module de juin et ses cinq ajouts de septembre."
+    ],
+    "en": [
+      "The June module and its five September additions."
+    ],
+    "de": [
+      "Das Juni-Modul und seine fünf September-Ergänzungen."
+    ]
+  },
+  "body": {
+    "fr": "## Module de juin {#module}\n\nBattle of Glory apparaît dans le cycle 3.4.1. Les notes mentionnent des privilèges, des apparences d’armes, la complétion rapide d’épreuves de généraux et une utilisation élargie des troupes Légendes. Les conditions et limites doivent être vérifiées dans le module.\n\n## Ajouts de septembre {#entries}\n\n- Power of the Tides\n- Black Prism\n- Route 66\n- Horn of War\n- Ace Hellcat\n\n## Dépenser ses ressources {#resources}\n\nConseil éditorial : comparez le coût et le bénéfice affichés pour votre compte avant tout achat. La note officielle ne fournit pas les paliers, prix, bonus chiffrés ou conditions de déblocage de chaque entrée.",
+    "en": "## June module {#module}\n\nBattle of Glory appears in the 3.4.1 cycle. Notes mention privileges, weapon skins, sweeping general trial events and broader use of Legend troops. Check the module for conditions and limits.\n\n## September additions {#entries}\n\n- Power of the Tides\n- Black Prism\n- Route 66\n- Horn of War\n- Ace Hellcat\n\n## Spending resources {#resources}\n\nEditorial advice: compare the cost and benefit shown for your account before purchasing. The official notes do not establish each entry’s tiers, prices, numerical bonuses or unlock requirements.",
+    "de": "## Juni-Modul {#module}\n\nBattle of Glory erscheint im Zyklus 3.4.1. Die Notizen nennen Privilegien, Waffen-Skins, schnelles Abschließen von Generalsprüfungen und eine erweiterte Nutzung der Legendentruppe. Bedingungen und Grenzen im Modul prüfen.\n\n## September-Ergänzungen {#entries}\n\n- Power of the Tides\n- Black Prism\n- Route 66\n- Horn of War\n- Ace Hellcat\n\n## Ressourcen einsetzen {#resources}\n\nRedaktioneller Rat: Vor einem Kauf die für das eigene Konto angezeigten Kosten und Vorteile vergleichen. Die offiziellen Notizen nennen nicht die Stufen, Preise, Zahlenboni oder Freischaltbedingungen jedes Eintrags."
+  },
+  "faqs": {
+    "fr": [],
+    "en": [],
+    "de": []
+  },
+  "evidence": {
+    "status": "official-and-editorial",
+    "lastVerifiedAt": "2026-09-30",
+    "gameVersion": "iOS 3.5.5 / Android 1.29.2",
+    "platform": "mobile",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "https://note.com/easytech_game/n/n81e3ca31df6b"
+    ]
+  }
+}

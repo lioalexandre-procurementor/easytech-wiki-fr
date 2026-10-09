@@ -1,3 +1,5 @@
+import { getReference, getReferences, referenceMetadata } from "@/lib/wc4-coverage";
+import { ReferencePage } from "@/components/Wc4Coverage";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
@@ -23,7 +25,7 @@ const LOCALE_PATHS = {
 } as const;
 
 export function generateStaticParams() {
-  const slugs = getAllFormationSlugs();
+  const slugs = [...new Set([...getAllFormationSlugs(), ...getReferences("formation").map(r => r.slug)])];
   return locales.flatMap((locale) => slugs.map((slug) => ({ locale, slug })));
 }
 
@@ -32,6 +34,8 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
+  const reference = getReference("formation", slug);
+  if (reference) return referenceMetadata(reference, locale);
   const formation = getFormation(slug);
   if (!formation) return { title: "404" };
   const localeKey = (locale === "en" || locale === "de" ? locale : "fr") as "fr" | "en" | "de";
@@ -75,6 +79,8 @@ export default async function FormationDetailPage({
   params: { locale: string; slug: string };
 }) {
   unstable_setRequestLocale(locale);
+  const reference = getReference("formation", slug);
+  if (reference) return <ReferencePage entry={reference} locale={locale} />;
   const formation = getFormation(slug);
   if (!formation) notFound();
 

@@ -1,0 +1,26 @@
+{
+  "slug": "android-1-29-2-september-2026",
+  "version": "1.29.2",
+  "date": "2026-09-29",
+  "platform": "android",
+  "lastVerifiedAt": "2026-09-30",
+  "sourceUrl": "https://play.google.com/store/apps/details?id=com.easytech.wc4.android&hl=en&gl=US",
+  "tags": [
+    "release-history"
+  ],
+  "title": {
+    "fr": "WC4 Android 1.29.2 — version du 29 septembre",
+    "en": "WC4 Android 1.29.2 — September 29 release",
+    "de": "WC4 Android 1.29.2 — Version vom 29. September"
+  },
+  "summary": {
+    "fr": "Version et date confirmées dans Google Play.",
+    "en": "Version and date confirmed in Google Play.",
+    "de": "Version und Datum in Google Play bestätigt."
+  },
+  "body": {
+    "fr": "## Version Android\n\nGoogle Play affiche 1.29.2, mis à jour le 29 septembre 2026. Aucun changement de gameplay propre à cette version n’est établi par les métadonnées consultées. Le cycle de septembre reste la référence de contenu. La numérotation Android est différente de celle d’iOS.",
+    "en": "## Android version\n\nGoogle Play lists 1.29.2, updated September 29, 2026. The checked metadata does not establish a distinct gameplay change in this version. The September cycle remains the content baseline. Android and iOS use different version numbering.",
+    "de": "## Android-Version\n\nGoogle Play zeigt 1.29.2 mit Aktualisierung am 29. September 2026. Die geprüften Metadaten belegen keine eigene Gameplay-Änderung dieser Version. Der September-Zyklus bleibt die Inhaltsbasis. Android und iOS verwenden unterschiedliche Versionsnummern."
+  }
+}

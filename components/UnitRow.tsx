@@ -26,6 +26,8 @@ export function UnitRow({
 }) {
   const displayName = locale === "fr" ? unit.name : unit.nameEn || unit.name;
   const displayShortDesc = localizedUnitField(unit as unknown as Record<string, unknown>, "shortDesc", locale);
+  const pending = game === "wc4" && (unit.preliminary || (unit.knownLevels !== undefined && !unit.knownLevels.includes(1)));
+  const pendingLabel = locale === "fr" ? "Détails à vérifier" : locale === "de" ? "Details noch zu prüfen" : "Details awaiting verification";
   const href = `${HUB_PATH[game]}/${unit.slug}` as const;
   return (
     <Link href={href as any}
@@ -44,15 +46,15 @@ export function UnitRow({
         <h4 className="text-gold2 font-bold text-base">{displayName}</h4>
         <div className="text-dim text-sm">
           <span className="text-muted text-xs uppercase tracking-widest mr-1.5">{COUNTRY_FLAGS[unit.country]} {countryLabel(unit.country, locale)}</span>
-          {displayShortDesc}
+          {pending ? pendingLabel : displayShortDesc}
         </div>
       </div>
-      <TierBadge tier={unit.tier} size="md"/>
-      <div className="hidden md:flex gap-2.5 text-xs text-dim">
+      {!pending && <TierBadge tier={unit.tier} size="md"/>}
+      {!pending && <div className="hidden md:flex gap-2.5 text-xs text-dim">
         <span>ATQ <b className="text-gold2">{unit.stats.atk[0]}</b></span>
         <span>DEF <b className="text-gold2">{unit.stats.def[0]}</b></span>
         <span>HP <b className="text-gold2">{unit.stats.hp[0]}</b></span>
-      </div>
+      </div>}
       <div className="text-dim">›</div>
     </Link>
   );

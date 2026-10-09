@@ -1,0 +1,61 @@
+{
+  "slug": "challenge-conquest-1980",
+  "category": "strategy",
+  "publishedAt": "2026-09-30",
+  "lastReviewed": "2026-09-30",
+  "readingTimeMinutes": 2,
+  "tags": [
+    "WC4",
+    "2026"
+  ],
+  "related": [
+    "september-2026-update",
+    "events-2026"
+  ],
+  "byline": "EasyTech Wiki",
+  "sources": [
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+    "https://note.com/easytech_game/n/n81e3ca31df6b"
+  ],
+  "title": {
+    "fr": "WC4 — Conquête Défi 1980",
+    "en": "WC4 — 1980 Challenge Conquest",
+    "de": "WC4 — Herausforderungs-Eroberung 1980"
+  },
+  "description": {
+    "fr": "Ce que la mise à jour confirme et comment préparer une partie sans confondre les modes.",
+    "en": "What the update confirms and how to prepare without confusing the conquest modes.",
+    "de": "Was das Update bestätigt und wie sich die Eroberungsmodi unterscheiden."
+  },
+  "tldr": {
+    "fr": [
+      "Ce que la mise à jour confirme et comment préparer une partie sans confondre les modes."
+    ],
+    "en": [
+      "What the update confirms and how to prepare without confusing the conquest modes."
+    ],
+    "de": [
+      "Was das Update bestätigt und wie sich die Eroberungsmodi unterscheiden."
+    ]
+  },
+  "body": {
+    "fr": "## Le mode ajouté {#mode}\n\nLe cycle de septembre ajoute la Conquête Défi 1980. Il ne faut pas la confondre avec la conquête 1980 classique.\n\n## Avant de commencer {#preparation}\n\nConseil éditorial : vérifiez le mode sélectionné, les objectifs affichés, les contraintes de tours et les récompenses dans votre version du jeu. Choisissez ensuite un pays adapté à vos généraux et unités disponibles.\n\n## Pass de Conquête {#pass}\n\nLe plafond du pass atteint 350 points et Modernized Air Force rejoint ses récompenses. Le seuil propre à cette compétence et les conditions exactes d’accès à 1980 restent à relever en jeu.\n\n## Stratégies à vérifier {#verification}\n\nAucun classement de pays, itinéraire tour par tour ou revenu garanti n’est présenté comme testé ici. Un guide détaillé doit préciser le pays, la difficulté, le niveau des unités et les généraux utilisés.",
+    "en": "## Added mode {#mode}\n\nThe September cycle adds 1980 Challenge Conquest. This is distinct from standard 1980 conquest.\n\n## Before starting {#preparation}\n\nEditorial advice: check the selected mode, displayed objectives, turn limits and rewards in your game version. Then choose a country suited to your available generals and units.\n\n## Challenge Pass {#pass}\n\nThe pass cap is 350 points and Modernized Air Force joins its rewards. This skill’s exact threshold and the precise requirements for accessing 1980 still need in-game confirmation.\n\n## Strategies awaiting verification {#verification}\n\nNo country ranking, turn-by-turn route or guaranteed income is presented as tested here. A detailed walkthrough must identify the country, difficulty, unit levels and generals used.",
+    "de": "## Neuer Modus {#mode}\n\nDer September-Zyklus ergänzt die Herausforderungs-Eroberung 1980. Sie ist vom normalen Eroberungsmodus 1980 zu unterscheiden.\n\n## Vorbereitung {#preparation}\n\nRedaktioneller Rat: Modus, angezeigte Ziele, Rundengrenzen und Belohnungen in der eigenen Spielversion prüfen. Danach ein Land passend zu den verfügbaren Generälen und Einheiten wählen.\n\n## Eroberungspass {#pass}\n\nDas Passlimit beträgt 350 Punkte; Modernized Air Force ergänzt die Belohnungen. Die genaue Schwelle dieser Fähigkeit und die Zugangsvoraussetzungen für 1980 müssen noch im Spiel bestätigt werden.\n\n## Noch ungeprüfte Strategien {#verification}\n\nHier werden keine Länderrangliste, Rundenroute oder garantierten Einnahmen als getestet dargestellt. Ein detaillierter Guide muss Land, Schwierigkeit, Einheitenstufen und Generäle nennen."
+  },
+  "faqs": {
+    "fr": [],
+    "en": [],
+    "de": []
+  },
+  "evidence": {
+    "status": "official-and-editorial",
+    "lastVerifiedAt": "2026-09-30",
+    "gameVersion": "iOS 3.5.5 / Android 1.29.2",
+    "platform": "mobile",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "https://note.com/easytech_game/n/n81e3ca31df6b"
+    ]
+  }
+}

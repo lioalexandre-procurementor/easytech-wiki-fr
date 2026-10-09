@@ -31,7 +31,9 @@
     "name": "Commandant Panzer",
     "desc": "Bonus de dégâts offensifs pour les unités blindées commandées.",
     "rating": "S+",
-    "appliesTo": ["tank"],
+    "appliesTo": [
+      "tank"
+    ],
     "popularMeta": true,
     "editorialNote": "Le pick auto pour tout slot libre sur un général blindé."
   },
@@ -40,7 +42,9 @@
     "name": "Marin",
     "desc": "Bonus d'attaque et de défense pour les navires commandés.",
     "rating": "A",
-    "appliesTo": ["navy"],
+    "appliesTo": [
+      "navy"
+    ],
     "popularMeta": true,
     "editorialNote": "Solide pour les amiraux sans skill de type naval innée."
   },
@@ -49,7 +53,9 @@
     "name": "Commandant de flotte",
     "desc": "Bonus plus fort que Marin sur les flottes mais s'applique à tous les navires adjacents.",
     "rating": "S",
-    "appliesTo": ["navy"],
+    "appliesTo": [
+      "navy"
+    ],
     "popularMeta": true,
     "editorialNote": "Supérieur à Marin pour les conquêtes navales — pick meta naval."
   },
@@ -76,7 +82,9 @@
     "name": "Maître Canonnier",
     "desc": "Bonus de dégâts et de portée pour les unités d'artillerie commandées.",
     "rating": "S+",
-    "appliesTo": ["artillery"],
+    "appliesTo": [
+      "artillery"
+    ],
     "popularMeta": true,
     "editorialNote": "Auto-pick pour tout slot libre sur un général artillerie."
   },
@@ -85,7 +93,9 @@
     "name": "Maréchal du Ciel",
     "desc": "Bonus offensif et défensif pour les unités aéroportées commandées.",
     "rating": "S",
-    "appliesTo": ["airforce"],
+    "appliesTo": [
+      "airforce"
+    ],
     "popularMeta": true,
     "editorialNote": "Meta pour tout aviateur avec slot libre."
   },
@@ -94,7 +104,9 @@
     "name": "Maître des Tranchées",
     "desc": "Bonus de défense massif pour les unités d'infanterie en position retranchée.",
     "rating": "A",
-    "appliesTo": ["infantry"],
+    "appliesTo": [
+      "infantry"
+    ],
     "popularMeta": true,
     "editorialNote": "Excellent pour les généraux infanterie défensifs (Montgomery, Rundstedt)."
   },
@@ -103,7 +115,9 @@
     "name": "Commandant d'infanterie",
     "desc": "Bonus d'attaque pour les unités d'infanterie commandées.",
     "rating": "S",
-    "appliesTo": ["infantry"],
+    "appliesTo": [
+      "infantry"
+    ],
     "popularMeta": true,
     "editorialNote": "Pick auto pour infanterie offensive."
   },
@@ -130,7 +144,10 @@
     "name": "Tir Rapide",
     "desc": "Réduit le cooldown d'attaque de l'unité commandée.",
     "rating": "A",
-    "appliesTo": ["artillery", "airforce"],
+    "appliesTo": [
+      "artillery",
+      "airforce"
+    ],
     "popularMeta": false,
     "editorialNote": "Secondaire — préférer Maître Canonnier sur un slot d'artillerie."
   },
@@ -139,8 +156,19 @@
     "name": "Première Frappe",
     "desc": "L'unité commandée attaque en premier lors d'engagements corps-à-corps.",
     "rating": "S",
-    "appliesTo": ["tank", "infantry"],
+    "appliesTo": [
+      "tank",
+      "infantry"
+    ],
     "popularMeta": false,
     "editorialNote": "Fort en blindés agressifs. Bonne alternative à Inspiration."
+  },
+  {
+    "id": "modernized-air-force",
+    "name": "Force aérienne modernisée",
+    "desc": "Récompense du Pass de Conquête. Compatibilité des emplacements en attente de vérification.",
+    "rating": null,
+    "eligibilityVerified": false,
+    "sourceUrl": "https://note.com/easytech_game/n/n81e3ca31df6b"
   }
 ]

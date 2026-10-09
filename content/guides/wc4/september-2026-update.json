@@ -1,0 +1,63 @@
+{
+  "slug": "september-2026-update",
+  "category": "meta",
+  "publishedAt": "2026-09-30",
+  "lastReviewed": "2026-10-09",
+  "readingTimeMinutes": 2,
+  "tags": [
+    "WC4",
+    "2026"
+  ],
+  "related": [
+    "challenge-conquest-1980",
+    "battle-of-glory",
+    "events-2026",
+    "training-priority-2026"
+  ],
+  "byline": "EasyTech Wiki",
+  "sources": [
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+    "https://note.com/easytech_game/n/n81e3ca31df6b"
+  ],
+  "title": {
+    "fr": "WC4 — mise à jour de septembre 2026",
+    "en": "WC4 — September 2026 update",
+    "de": "WC4 — Update September 2026"
+  },
+  "description": {
+    "fr": "Nouveautés confirmées, versions par plateforme et détails encore à vérifier.",
+    "en": "Confirmed additions, platform versions and details still awaiting verification.",
+    "de": "Bestätigte Ergänzungen, Plattformversionen und noch ungeprüfte Details."
+  },
+  "tldr": {
+    "fr": [
+      "Nouveautés confirmées, versions par plateforme et détails encore à vérifier."
+    ],
+    "en": [
+      "Confirmed additions, platform versions and details still awaiting verification."
+    ],
+    "de": [
+      "Bestätigte Ergänzungen, Plattformversionen und noch ungeprüfte Details."
+    ]
+  },
+  "body": {
+    "fr": "## Cycle de septembre\n\n- Conquête Défi 1980.\n- Red Embers et Rift in the Ice Curtain en mode difficile.\n- AS-90 (aperçu officiel au niveau 12 : 131 / 35 / 675 PV, mouvement 18, portée 3) et entraînement de Vatutin (Opération Petite Saturne, niv. 5).\n- Nouveaux chapitres Battle of Glory et rétrospections historiques.\n- Pass de Conquête porté à 350 points, récompense Modernized Air Force.\n\nLes notes confirment les ajouts ; seuls le niveau 12 de l'AS-90 et la compétence exclusive de Vatutin ont des valeurs officielles. Le guide de septembre et le calendrier distinguent le contenu publié des événements annoncés pour octobre.",
+    "en": "## September content cycle\n\n- 1980 Challenge Conquest.\n- Red Embers and hard Rift in the Ice Curtain.\n- AS-90 (official level 12 preview: 131 / 35 / 675 HP, movement 18, range 3) and Vatutin training (Operation Little Saturn, Lv. 5).\n- New Battle of Glory entries and historical retrospections.\n- Challenge Pass cap of 350 points and Modernized Air Force reward.\n\nRelease notes confirm additions; only the AS-90's level 12 and Vatutin's exclusive skill have official values. The September guide and event calendar distinguish released content from events scheduled for October.",
+    "de": "## Inhaltszyklus September\n\n- Herausforderungs-Eroberung 1980.\n- Red Embers und Rift in the Ice Curtain im schweren Modus.\n- AS-90 (offizielle Vorschau Stufe 12: 131 / 35 / 675 TP, Bewegung 18, Reichweite 3) und Vatutin-Training (Operation Kleiner Saturn, Stufe 5).\n- Neue Battle-of-Glory-Einträge und historische Rückblicke.\n- Eroberungspass mit 350 Punkten und Modernized Air Force als Belohnung.\n\nVersionsnotizen bestätigen Ergänzungen; offizielle Werte gibt es nur für Stufe 12 der AS-90 und Vatutins exklusive Fähigkeit. September-Guide und Kalender trennen veröffentlichte Inhalte von Oktober-Terminen."
+  },
+  "faqs": {
+    "fr": [],
+    "en": [],
+    "de": []
+  },
+  "evidence": {
+    "status": "official-and-editorial",
+    "lastVerifiedAt": "2026-10-09",
+    "gameVersion": "iOS 3.5.5 / Android 1.29.2",
+    "platform": "mobile",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "https://note.com/easytech_game/n/n81e3ca31df6b"
+    ]
+  }
+}

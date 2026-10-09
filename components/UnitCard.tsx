@@ -37,10 +37,10 @@ export function UnitCard({ unit, locale }: { unit: UnitData; locale?: string }) 
         ) : (
           <UnitIcon category={unit.category} country={unit.country} size={56} />
         )}
-        <TierBadge tier={unit.tier} size="sm" />
+        {!unit.preliminary && <TierBadge tier={unit.tier} size="sm" />}
       </div>
       <h3 className="text-gold2 font-bold text-base mb-1">{displayName}</h3>
-      <p className="text-dim text-xs leading-relaxed line-clamp-2">{displayShortDesc}</p>
+      <p className="text-dim text-xs leading-relaxed line-clamp-2">{unit.preliminary ? (locale === "fr" ? "Détails à vérifier" : locale === "de" ? "Details noch zu prüfen" : "Details awaiting verification") : displayShortDesc}</p>
       <div className="text-muted text-[10px] uppercase tracking-widest mt-2 flex items-center gap-2">
         <span>{COUNTRY_FLAGS[unit.country] || "🏳"}</span>
         <span>{countryLabel(unit.country, locale)}</span>

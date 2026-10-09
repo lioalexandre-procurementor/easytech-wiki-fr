@@ -1,3 +1,5 @@
+import { Wc4ReleaseStatus } from "@/components/Wc4Coverage";
+import { getReferences } from "@/lib/wc4-coverage";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { Footer } from "@/components/Footer";
@@ -28,9 +30,9 @@ export async function generateMetadata({
     de: "World Conqueror 4 — Wiki DE | EasyTech Wiki",
   };
   const descByLocale: Record<string, string> = {
-    fr: "Le guide francophone le plus complet de World Conqueror 4 : unités d'élite, faction Empire du Scorpion, généraux, technologies, scénarios et stratégies.",
-    en: "The most complete English-language guide to World Conqueror 4: elite units, Scorpion Empire faction, generals, technologies, scenarios and strategies.",
-    de: "Der umfassendste deutschsprachige Guide zu World Conqueror 4: Elite-Einheiten, Skorpion-Imperium, Generäle, Technologien, Szenarien und Strategien.",
+    fr: "Wiki communautaire francophone de World Conqueror 4 : unités d'élite, faction Empire du Scorpion, généraux, technologies, scénarios et stratégies.",
+    en: "Community reference for World Conqueror 4: elite units, Scorpion Empire faction, generals, technologies, scenarios and strategies.",
+    de: "Deutschsprachiges Community-Wiki zu World Conqueror 4: Elite-Einheiten, Skorpion-Imperium, Generäle, Technologien, Szenarien und Strategien.",
   };
   const ogImages = ogImage({
     title: titleByLocale[locale] ?? titleByLocale.en,
@@ -66,12 +68,13 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
   const t = await getTranslations();
   void getAllEliteUnits();
   const standardUnits = getUnitsByFaction("standard");
+  const additionalUnitReferences = getReferences("unit").filter(r => !standardUnits.some(u => u.slug === r.slug));
   const scorpionUnits = getUnitsByFaction("scorpion");
   const generals = getAllGenerals();
-  const top = standardUnits.slice(0, 6);
+  const top = standardUnits.filter(u => !u.preliminary).slice(0, 6);
   const CAT = getCategoryMeta(params.locale);
   const counts = (Object.keys(CAT) as Category[])
-    .map(k => ({ key: k, count: standardUnits.filter(u => u.category === k).length, ...CAT[k] }));
+    .map(k => ({ key: k, count: standardUnits.filter(u => u.category === k).length + additionalUnitReferences.filter(r => r.category === k).length, ...CAT[k] }));
 
   const faqs = getHubFaqs("wc4", params.locale);
   const faqSchema = {
@@ -108,7 +111,7 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
         <main>
           <PageHero
             className="mb-6"
-            eyebrow="World Conqueror 4 · 1939 — 1945"
+            eyebrow="World Conqueror 4 · 1939 — 1980"
             title={t("wc4Hub.h1")}
             subtitle={t("wc4Hub.tagline")}
           >
@@ -123,12 +126,14 @@ export default async function WC4Hub({ params }: { params: { locale: string } })
               </Link>
             </div>
             <div className="flex flex-wrap gap-x-8 gap-y-4 mt-7">
-              <HeroStat n={standardUnits.length} l={t("wc4Hub.statEliteUnits")}/>
+              <HeroStat n={standardUnits.length + additionalUnitReferences.length} l={t("wc4Hub.statEliteUnits")}/>
               <HeroStat n={scorpionUnits.length} l={t("wc4Hub.statScorpionUnits")}/>
-              <HeroStat n={generals.length} l={t("wc4Hub.statGenerals")}/>
+              <HeroStat n={generals.length + getReferences("general").length} l={t("wc4Hub.statGenerals")}/>
               <HeroStat n={t("wc4Hub.statMaxLevelsValue")} l={t("wc4Hub.statMaxLevels")}/>
             </div>
           </PageHero>
+
+          <Wc4ReleaseStatus locale={params.locale} />
 
           <p className="flex items-start gap-2 text-amber-200/90 text-xs mb-6 px-1">
             <span aria-hidden="true">⚠️</span>

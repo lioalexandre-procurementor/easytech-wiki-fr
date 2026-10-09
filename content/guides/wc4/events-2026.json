@@ -1,0 +1,60 @@
+{
+  "slug": "events-2026",
+  "category": "systems",
+  "publishedAt": "2026-09-30",
+  "lastReviewed": "2026-09-30",
+  "readingTimeMinutes": 2,
+  "tags": [
+    "WC4",
+    "2026"
+  ],
+  "related": [
+    "september-2026-update"
+  ],
+  "byline": "EasyTech Wiki",
+  "sources": [
+    "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+    "https://note.com/easytech_game/n/n81e3ca31df6b"
+  ],
+  "title": {
+    "fr": "WC4 — calendrier des événements, automne 2026",
+    "en": "WC4 — autumn 2026 event calendar",
+    "de": "WC4 — Eventkalender Herbst 2026"
+  },
+  "description": {
+    "fr": "Premières occurrences officielles et dates à venir ; la rotation actuelle reste à vérifier dans le jeu.",
+    "en": "Official first occurrences and upcoming dates; check the current rotation in-game.",
+    "de": "Offizielle Ersttermine und kommende Termine; die aktuelle Rotation im Spiel prüfen."
+  },
+  "tldr": {
+    "fr": [
+      "Premières occurrences officielles et dates à venir ; la rotation actuelle reste à vérifier dans le jeu."
+    ],
+    "en": [
+      "Official first occurrences and upcoming dates; check the current rotation in-game."
+    ],
+    "de": [
+      "Offizielle Ersttermine und kommende Termine; die aktuelle Rotation im Spiel prüfen."
+    ]
+  },
+  "body": {
+    "fr": "## Septembre et octobre {#dates}\n\n| Événement | Première occurrence |\n|---|---|\n| Red Embers | 16 septembre 2026 |\n| Rift in the Ice Curtain — difficile | 16 septembre 2026 |\n| Battle of the Bzura | 22 septembre 2026 |\n| Battle of Peleliu | 24 septembre 2026 |\n| Battle of Cape Esperance | 11 octobre 2026 — annoncé |\n| Battle of Leyte | 20 octobre 2026 — annoncé |\n\n## Récurrence {#rotation}\n\nEasyTech prévoit le retour de Bzura au 9 septembre et de Peleliu au 15 septembre à partir de 2027. Une date passée ne signifie pas que l’événement reste ouvert. Les heures de fermeture et les conditions d’entrée ne sont pas établies ici.\n\n## Red Embers {#red-embers}\n\nCet événement propose une histoire alternative Black Scorpion. La note ne fournit pas de parcours optimal, de récompenses chiffrées ou de liste de généraux obligatoire.\n\n## Groupes d’armées {#army-groups}\n\nIron Curtain Frontline difficile appartient à la mise à jour d’août ; Rift in the Ice Curtain difficile à celle de septembre. Consultez le panneau de chaque événement avant d’engager vos ressources.",
+    "en": "## September and October {#dates}\n\n| Event | First occurrence |\n|---|---|\n| Red Embers | September 16, 2026 |\n| Rift in the Ice Curtain — Hard | September 16, 2026 |\n| Battle of the Bzura | September 22, 2026 |\n| Battle of Peleliu | September 24, 2026 |\n| Battle of Cape Esperance | October 11, 2026 — announced |\n| Battle of Leyte | October 20, 2026 — announced |\n\n## Rotation {#rotation}\n\nEasyTech plans to return Bzura to September 9 and Peleliu to September 15 from 2027. A past opening date does not mean an event remains open. Closing times and entry requirements are not established here.\n\n## Red Embers {#red-embers}\n\nThis event presents a Black Scorpion alternate-history story. The announcement does not establish an optimal route, numerical rewards or a required general roster.\n\n## Army Groups {#army-groups}\n\nHard Iron Curtain Frontline belongs to the August update; hard Rift in the Ice Curtain to September. Check each event panel before committing resources.",
+    "de": "## September und Oktober {#dates}\n\n| Event | Erster Termin |\n|---|---|\n| Red Embers | 16. September 2026 |\n| Rift in the Ice Curtain — schwer | 16. September 2026 |\n| Battle of the Bzura | 22. September 2026 |\n| Battle of Peleliu | 24. September 2026 |\n| Battle of Cape Esperance | 11. Oktober 2026 — angekündigt |\n| Battle of Leyte | 20. Oktober 2026 — angekündigt |\n\n## Rotation {#rotation}\n\nEasyTech plant ab 2027 Bzura wieder am 9. September und Peleliu am 15. September. Ein vergangener Starttermin bedeutet nicht, dass das Event weiterhin offen ist. Endzeiten und Zugangsvoraussetzungen sind hier nicht belegt.\n\n## Red Embers {#red-embers}\n\nDieses Event erzählt eine alternative Black-Scorpion-Geschichte. Die Ankündigung belegt weder eine optimale Route noch genaue Belohnungen oder Pflichtgeneräle.\n\n## Heeresgruppen {#army-groups}\n\nIron Curtain Frontline im schweren Modus gehört zum August-Update, Rift in the Ice Curtain im schweren Modus zu September. Vor dem Ressourceneinsatz das jeweilige Eventfenster prüfen."
+  },
+  "faqs": {
+    "fr": [],
+    "en": [],
+    "de": []
+  },
+  "evidence": {
+    "status": "official-and-editorial",
+    "lastVerifiedAt": "2026-09-30",
+    "gameVersion": "iOS 3.5.5 / Android 1.29.2",
+    "platform": "mobile",
+    "sourceUrls": [
+      "https://apps.apple.com/us/app/world-conqueror-4/id1258468290",
+      "https://note.com/easytech_game/n/n81e3ca31df6b"
+    ]
+  }
+}

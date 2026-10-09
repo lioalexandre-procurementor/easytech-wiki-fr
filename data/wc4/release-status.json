@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-09-30",
+  "platforms": {
+    "ios": {
+      "version": "3.5.5",
+      "releasedAt": "2026-09-29",
+      "sourceUrl": "https://itunes.apple.com/lookup?id=1258468290&country=us"
+    },
+    "android": {
+      "version": "1.29.2",
+      "releasedAt": "2026-09-29",
+      "sourceUrl": "https://play.google.com/store/apps/details?id=com.easytech.wc4.android&hl=en&gl=US"
+    }
+  },
+  "coverageGuide": "september-2026-update",
+  "latestUpdateSlug": "3-5-5-september-2026",
+  "contentBaseline": "2026-09",
+  "detailStatus": "partial"
+}

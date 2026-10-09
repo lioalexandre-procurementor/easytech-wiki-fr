@@ -1,3 +1,4 @@
+import { Wc4ReleaseStatus, GuideReviewNotice } from "@/components/Wc4Coverage";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
@@ -305,6 +306,10 @@ export default async function GuideDetailPage({
   const t = await getTranslations();
   const body = guide.body[loc] ?? guide.body.en ?? guide.body.fr;
   const toc = extractToc(body);
+  const relatedGuides = guide.related.flatMap((relatedSlug) => {
+    const related = getGuide(relatedSlug);
+    return related ? [related] : [];
+  });
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -402,6 +407,8 @@ export default async function GuideDetailPage({
           </p>
         </header>
 
+        <GuideReviewNotice locale={locale} reviewed={guide.lastReviewed} current={!!guide.evidence} />
+
         {guide.tldr[loc]?.length > 0 && (
           <section className="bg-gold/5 border border-gold/30 rounded-lg p-4 md:p-5 mb-6">
             <div className="text-gold2 font-black uppercase tracking-widest text-[10px] md:text-xs mb-2">
@@ -438,6 +445,8 @@ export default async function GuideDetailPage({
         <section className="bg-panel border border-border rounded-lg p-4 md:p-6 mb-6">
           {renderMarkdown(body)}
         </section>
+
+        <Wc4ReleaseStatus locale={locale} />
 
         {guide.sources && guide.sources.length > 0 && (
           <section className="bg-panel border border-border rounded-lg p-4 md:p-6 mb-6" aria-labelledby="guide-sources">
@@ -484,6 +493,23 @@ export default async function GuideDetailPage({
         )}
 
         <ReportMistakeLink className="mb-6" />
+
+        {relatedGuides.length > 0 && (
+          <section className="bg-panel border border-border rounded-lg p-4 md:p-6 mb-6">
+            <h2 className="text-gold2 text-xl font-bold mb-3">
+              {loc === "fr" ? "Guides associés" : loc === "de" ? "Weiterführende Guides" : "Related guides"}
+            </h2>
+            <ul className="space-y-2 text-sm">
+              {relatedGuides.map((related) => (
+                <li key={related.slug}>
+                  <Link href={{ pathname: "/world-conqueror-4/guides/[slug]", params: { slug: related.slug } }} className="text-gold2 underline">
+                    {related.title[loc]}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* BreadcrumbList JSON-LD */}
         <script

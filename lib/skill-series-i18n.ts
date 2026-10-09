@@ -14,6 +14,10 @@ const WC4_SERIES_I18N: Record<
   number,
   { label: { fr: string; en: string; de: string }; summary: { fr: string; en: string; de: string } }
 > = {
+  [-1]: {
+    label: { fr: "Pass de Conquête", en: "Challenge Pass", de: "Eroberungspass" },
+    summary: { fr: "Récompenses annoncées ; conditions à vérifier en jeu.", en: "Announced rewards; verify requirements in-game.", de: "Angekündigte Belohnungen; Voraussetzungen im Spiel prüfen." },
+  },
   1: {
     label:   { fr: "Tactiques de terrain", en: "Field Tactics", de: "Feldtaktik" },
     summary: {

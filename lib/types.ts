@@ -54,7 +54,7 @@ export interface UnitData {
   country: string;     // ISO emoji-friendly e.g. "GB", "US", "DE", "FR", "RU", "JP", "IT"; "XX" for Scorpion
   countryName: string; // FR display
   tier: Tier;
-  obtainability: "free" | "event" | "shop" | "premium";
+  obtainability: "free" | "event" | "shop" | "premium" | "unrecruitable";
   shortDesc: string;
   longDesc: string;
   stats: UnitStats;
@@ -82,6 +82,13 @@ export interface UnitData {
    * what's still missing. Flip to false / remove once stats are confirmed.
    */
   preliminary?: boolean;
+  /**
+   * Levels (1-12) whose stat values come from a cited source. When present,
+   * every other level is treated as unmeasured: the detail page shows "—"
+   * instead of a number and comparators ignore the unit at that level.
+   * Omit when all 12 levels are sourced.
+   */
+  knownLevels?: number[];
   /** Optional per-locale sibling description fields read by localizedUnitField. */
   shortDescEn?: string;
   shortDescDe?: string;
@@ -277,6 +284,7 @@ export interface GeneralData {
    */
   trainedSkills?: GeneralSkill[] | null;
   attributes?: GeneralAttributes | null;
+  trainingDetailsPending?: boolean;
   hasTrainingPath: boolean;               // eligible for Sword/Sceptre premium training
   training?: TrainingPath | null;         // full per-stage data (filled after verification)
   acquisition: Acquisition;
@@ -311,6 +319,8 @@ export interface GeneralData {
 // candidates from this catalog, optionally filtered by `appliesTo`.
 
 export interface LearnableSkill {
+  /** False while compatible slots are not verified; exclude from vote candidates. */
+  eligibilityVerified?: boolean;
   id: string;                            // slug, e.g. "panzer-leader"
   name: string;                          // FR display name
   desc: string;
@@ -378,6 +388,7 @@ export interface SkillCatalogEntry {
 }
 
 export interface SkillIndexItem {
+  detailsPending?: boolean;
   slug: string;
   type: number;
   name: string;
@@ -419,6 +430,8 @@ export interface SkillIndex {
  * a new update = one file, not two.
  */
 export interface UpdateEntry {
+  platform: "ios" | "android";
+  lastVerifiedAt: string;
   /** URL slug, e.g. "1-24-2-april-2026". */
   slug: string;
   /** Semantic version string as printed in-game, e.g. "1.24.2". */
@@ -546,6 +559,7 @@ export interface GuideFAQ {
 }
 
 export interface Guide {
+  evidence?: { status: "official-and-editorial"; lastVerifiedAt: string; gameVersion: string; platform: string; sourceUrls: string[] };
   slug: string;
   category: GuideCategory;
   publishedAt: string;
@@ -555,6 +569,8 @@ export interface Guide {
   related: string[];
   /** Optional author byline — E-E-A-T signal. */
   byline?: string;
+  /** Source URLs or source labels supporting factual claims in the guide. */
+  sources?: string[];
   /**
    * Optional hero image path (under /public/img/wc4/...). Shown on the
    * guide detail header and as the thumbnail on the hub card. When

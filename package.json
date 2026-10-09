@@ -9,7 +9,8 @@
     "lint": "next lint",
     "check:seo": "npx tsx scripts/check-seo-integrity.ts",
     "build-search": "npx tsx scripts/build-search-index.ts",
-    "prebuild": "npm run build-search && npm run check:seo"
+    "prebuild": "npm run build-search && npm run check:seo && npm run check:content",
+    "check:content": "tsx scripts/check-wc4-content.ts"
   },
   "dependencies": {
     "@upstash/redis": "^1.37.0",

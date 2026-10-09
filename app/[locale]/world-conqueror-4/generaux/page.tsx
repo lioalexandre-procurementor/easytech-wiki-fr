@@ -1,3 +1,5 @@
+import { getReferences } from "@/lib/wc4-coverage";
+import { ReferenceList } from "@/components/Wc4Coverage";
 import { Link } from "@/src/i18n/navigation";
 import { TopBar } from "@/components/TopBar";
 import { PageHero } from "@/components/PageHero";
@@ -143,31 +145,16 @@ export default async function GeneralsList({
         </aside>
 
         <main>
+          <ReferenceList kind="general" locale={params.locale} />
           <PageHero
             className="mb-6"
             eyebrow={t("nav.wc4")}
             title={tL("Généraux de World Conqueror 4", "World Conqueror 4 Generals", "Generäle von World Conqueror 4")}
-            subtitle={
-              params.locale === "fr" ? (
-                <>
-                  {all.length} commandants répertoriés : les meilleurs généraux du roster standard
-                  (Guderian, Rommel, Patton, Rokossovsky, Konev…) et les trois capitaines de l'Empire du Scorpion.
-                  Chaque fiche détaille les compétences, bonus et unités à coupler.
-                </>
-              ) : params.locale === "de" ? (
-                <>
-                  {all.length} Kommandanten katalogisiert: die besten Generäle des Standard-Rosters
-                  (Guderian, Rommel, Patton, Rokossowski, Konew…) und die drei Hauptmänner des
-                  Skorpion-Imperiums. Jeder Eintrag behandelt Fähigkeiten, Boni und empfohlene Einheiten.
-                </>
-              ) : (
-                <>
-                  {all.length} commanders catalogued: the best generals from the standard roster
-                  (Guderian, Rommel, Patton, Rokossovsky, Konev…) and the three captains of the
-                  Scorpion Empire. Each entry covers skills, bonuses and recommended units.
-                </>
-              )
-            }
+            subtitle={tL(
+              `${all.length} fiches détaillées et ${getReferences("general").length} références issues des notes officielles, dont les valeurs restent à vérifier.`,
+              `${all.length} detailed profiles and ${getReferences("general").length} references from official notes, with values still awaiting verification.`,
+              `${all.length} Detailprofile und ${getReferences("general").length} Referenzen aus offiziellen Notizen, deren Werte noch zu prüfen sind.`
+            )}
           >
             <p className="flex items-start gap-2 text-amber-200/90 text-xs">
               <span aria-hidden="true">⚠️</span>

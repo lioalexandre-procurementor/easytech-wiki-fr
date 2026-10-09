@@ -1,0 +1,35 @@
+{
+  "stage": "/private/tmp/wc4-release-4glqsaeb",
+  "baseCommit": "7cf6f8c685766178fb9c614b6e50016a9d18532a",
+  "sourceSha256": "5b2d7146f6fb4dd1da5f086a41aee2d7863f8db099a713e760213ea53a895988",
+  "fileCount": 2169,
+  "status": "published-and-verified",
+  "preparedAt": "2026-10-01",
+  "productionDomain": "https://easytech-wiki.com",
+  "project": "easytech-wiki",
+  "previousDeploymentId": "dpl_9mriUyNACYVEdyhyAW6BGJjfPXg5",
+  "previousDeploymentUrl": "https://easytech-wiki-3m6vxvghm-alexs-projects-c0ab49d0.vercel.app",
+  "deploymentFileCount": 2168,
+  "adminOverrideCheck": {
+    "checkedKeys": 15,
+    "overridesFound": 0
+  },
+  "validation": [
+    "production build passed",
+    "90 localized page checks passed",
+    "deployment file manifest checked"
+  ],
+  "publishedAt": "2026-10-01T13:35:26.075907+00:00",
+  "deploymentId": "dpl_9Z8AmFVQxRDPrV5D3txHs6sf7UPb",
+  "deploymentUrl": "https://easytech-wiki-k1264gysk-alexs-projects-c0ab49d0.vercel.app",
+  "inspectorUrl": "https://vercel.com/alexs-projects-c0ab49d0/easytech-wiki/9Z8AmFVQxRDPrV5D3txHs6sf7UPb",
+  "userApproval": "yes ublish",
+  "productionChecks": {
+    "localizedPages": 135,
+    "searchRecords": 394,
+    "status": "passed",
+    "browserVerifiedPage": "https://easytech-wiki.com/en/world-conqueror-4/guides/september-2026-update"
+  },
+  "publicationMethod": "Vercel CLI from reviewed local snapshot; GitHub was not changed",
+  "maintenanceNote": "Build reported a pre-existing Next.js 14.2.18 security deprecation. Framework upgrade remains a separate maintenance item."
+}

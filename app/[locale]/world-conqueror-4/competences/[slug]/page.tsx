@@ -1,3 +1,5 @@
+import { getReference, getReferences, referenceMetadata } from "@/lib/wc4-coverage";
+import { ReferencePage } from "@/components/Wc4Coverage";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Link } from "@/src/i18n/navigation";
@@ -31,6 +33,8 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
+  const reference = getReference("skill", slug);
+  if (reference) return referenceMetadata(reference, locale);
   const s = getSkill(slug);
   if (!s) return { title: "404" };
   const isFr = locale === "fr";
@@ -80,6 +84,8 @@ export default async function SkillDetailPage({
 }) {
   unstable_setRequestLocale(params.locale);
   const t = await getTranslations();
+  const reference = getReference("skill", params.slug);
+  if (reference) return <ReferencePage entry={reference} locale={params.locale} />;
   const skill = getSkill(params.slug);
   if (!skill) notFound();
 

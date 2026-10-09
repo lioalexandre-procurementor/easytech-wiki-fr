@@ -1,3 +1,4 @@
+import { Wc4ReleaseStatus, GuideReviewNotice } from "@/components/Wc4Coverage";
 import { notFound } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { Link } from "@/src/i18n/navigation";
@@ -81,6 +82,8 @@ export default async function UpdatesListPage({
           </p>
         </section>
 
+        <Wc4ReleaseStatus locale={locale} />
+
         {updates.length === 0 ? (
           <div className="bg-panel border border-border rounded-lg p-9 text-center text-muted italic">
             {t("updatesPage.emptyState")}
@@ -95,7 +98,7 @@ export default async function UpdatesListPage({
               >
                 <div className="flex flex-wrap items-baseline gap-3 mb-2">
                   <span className="text-gold2 font-black uppercase tracking-widest text-xs">
-                    {t("updatesPage.versionLabel")} {u.version}
+                    {u.platform === "android" ? "Android" : "iOS"} {u.version}
                   </span>
                   <span className="text-muted text-xs">
                     {t("updatesPage.publishedOn")} {u.date}

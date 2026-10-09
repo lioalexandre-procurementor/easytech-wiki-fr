@@ -27,31 +27,19 @@
     "de": "WC4 Kaputte Combos — Generäle, Skills und Elite-Einheiten, die stapeln"
   },
   "description": {
-    "fr": "Dix combos brisés entre généraux, compétences signature et unités d'élite de World Conqueror 4. Analyse tirée des fichiers de jeu v1.8.2 — patterns reproductibles, pas du feeling.",
-    "en": "Ten broken combos across WC4 generals, signature skills, and elite units. Pulled from the v1.8.2 game files — reproducible patterns, not vibes.",
-    "de": "Zehn kaputte Combos zwischen WC4-Generälen, Signatur-Skills und Elite-Einheiten. Aus den Spieldateien v1.8.2 — reproduzierbare Muster, kein Bauchgefühl."
+    "fr": "Guide historique : recommandations à revalider sur la version actuelle.",
+    "en": "Legacy guide: recommendations require review against the current version.",
+    "de": "Älterer Guide: Empfehlungen müssen für die aktuelle Version erneut geprüft werden."
   },
   "tldr": {
     "fr": [
-      "Auchinleck (fatigue AOE) + Mccampbell ace-pilot + Wu inescapable-net = chip airstrike sur cibles HP élevé.",
-      "Wu seul est un debuff d'aura à 3 cases : −30 % défense ennemie, +20 % missile/satellite/drone.",
-      "Marshall IAP sur Ghost Troop : 100 % critique + assassinat non-contrable + heal 15 %/tour.",
-      "Williams + Schwerer Gustav : deux villes pulvérisées par tour via self-propelled-artillery.",
-      "Carrier strike group Eisenhower + Nimitz + Spruance : multiplicateur × 2.6 sur les frappes navales."
+      "Guide historique : recommandations à revalider sur la version actuelle."
     ],
     "en": [
-      "Auchinleck (fatigue AOE) + Mccampbell ace-pilot + Wu inescapable-net = chip airstrike on high-HP targets.",
-      "Wu alone is a 3-tile debuff aura: −30% enemy defense, +20% missile/satellite/drone damage.",
-      "IAP Marshall on Ghost Troop: 100% crit + non-counterable assassination + 15%/turn heal.",
-      "Williams + Schwerer Gustav: two cities shelled per turn via self-propelled-artillery.",
-      "Eisenhower + Nimitz + Spruance carrier strike group: ×2.6 multiplier on naval air strikes."
+      "Legacy guide: recommendations require review against the current version."
     ],
     "de": [
-      "Auchinleck (Ermattung-AoE) + Mccampbell Ace-Pilot + Wu Inescapable-Net = Chip-Schaden auf HP-starke Ziele.",
-      "Wu allein ist eine Debuff-Aura auf 3 Felder: −30 % Feindverteidigung, +20 % Raketen/Satellit/Drohne.",
-      "IAP-Marshall auf Ghost Troop: 100 % Krit + nicht-konternbare Assassination + 15 %/Zug Heilung.",
-      "Williams + Schwerer Gustav: zwei Städte pro Zug via Self-Propelled-Artillery.",
-      "Eisenhower + Nimitz + Spruance Carrier-Group: ×2,6-Multiplikator auf Marine-Luftangriffe."
+      "Älterer Guide: Empfehlungen müssen für die aktuelle Version erneut geprüft werden."
     ]
   },
   "body": {
